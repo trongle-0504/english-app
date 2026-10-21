@@ -1,0 +1,117 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The name of the word, phrase, or structure (e.g., 'adequate', 'no matter what')"
+    },
+    "pronunciation": {
+      "type": "string",
+      "description": "Standard British/American IPA pronunciation for Vocabulary, Collocation, and Idiom between slashes (e.g., '/ˈpʌblɪk ˌrekəɡˈnɪʃən/', '/ˈædɪkwət/'). For Structure notes, always leave as empty string \"\" because grammatical sentence structures must not have pronunciation."
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Structure",
+        "Idiom",
+        "Collocation",
+        "Vocabulary",
+        "Other"
+      ],
+      "description": "The category of the note"
+    },
+    "formula": {
+      "type": "string",
+      "description": "The general grammatical formula if applicable. If none, use the word itself."
+    },
+    "meaning_vi": {
+      "type": "string",
+      "description": "Short explanation in Vietnamese. Markdown formatting allowed."
+    },
+    "usage_context": {
+      "type": "string",
+      "description": "Usage context or nuance in Vietnamese. Markdown formatting allowed."
+    },
+    "patterns": {
+      "type": "array",
+      "description": "List of usage patterns extracted from the input. Each pattern has its own formula, explanation, and examples.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "pattern": {
+            "type": "string",
+            "description": "The pattern label or formula (e.g., 'adequate for + N/V-ing')"
+          },
+          "meaning_vi": {
+            "type": "string",
+            "description": "Short explanation of this pattern in Vietnamese"
+          },
+          "examples": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 3,
+            "items": {
+              "type": "object",
+              "properties": {
+                "en": {
+                  "type": "string"
+                },
+                "vi": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "en",
+                "vi"
+              ]
+            }
+          }
+        },
+        "required": [
+          "pattern",
+          "meaning_vi",
+          "examples"
+        ]
+      }
+    },
+    "examples": {
+      "type": "array",
+      "description": "General illustrative examples (not tied to a specific pattern). Max 4.",
+      "minItems": 1,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "properties": {
+          "en": {
+            "type": "string"
+          },
+          "vi": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "en",
+          "vi"
+        ]
+      }
+    },
+    "related_notes": {
+      "type": "array",
+      "description": "Related synonyms, antonyms, or phrases",
+      "items": {
+        "type": "string"
+      }
+    },
+    "image_query": {
+      "type": "string",
+      "description": "3–7 plain English search words for a concrete stock photo that represents the scene or meaning (especially for Idiom, Collocation, Vocabulary). Empty string for abstract structures."
+    }
+  },
+  "required": [
+    "title",
+    "pronunciation",
+    "type",
+    "meaning_vi",
+    "examples"
+  ]
+}

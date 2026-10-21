@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Tên chủ điểm ngữ pháp (VD: Present Continuous, Conditional Type 1)"
+    },
+    "level": {
+      "type": "string",
+      "enum": ["A1", "A2", "B1", "B2", "C1", "C2"],
+      "description": "Độ khó / Trình độ CEFR phù hợp"
+    },
+    "brief_description_vi": {
+      "type": "string",
+      "description": "Giải thích ngắn gọn mầu sắc ý nghĩa cốt lõi bằng Tiếng Việt (1 câu)."
+    },
+    "structures": {
+      "type": "array",
+      "description": "Các dạng công thức cốt lõi (Khẳng định, Phủ định, Nghi vấn).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["affirmative", "negative", "question", "other"],
+            "description": "Loại câu (+ Khẳng định, - Phủ định, ? Câu hỏi)"
+          },
+          "formula": {
+            "type": "string",
+            "description": "Công thức vắn tắt (VD: S + is/am/are + V-ing)"
+          },
+          "example": {
+            "type": "string",
+            "description": "1 câu ví dụ minh hoạ"
+          }
+        },
+        "required": ["type", "formula", "example"]
+      }
+    },
+    "usages": {
+      "type": "array",
+      "description": "Các trường hợp/hoàn cảnh sử dụng.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "explanation_vi": {
+            "type": "string",
+            "description": "Diễn giải cách dùng bằng tiếng Việt"
+          },
+          "examples": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "en": { "type": "string" },
+                "vi": { "type": "string" }
+              },
+              "required": ["en", "vi"]
+            },
+            "minItems": 1,
+            "maxItems": 3
+          }
+        },
+        "required": ["explanation_vi", "examples"]
+      }
+    },
+    "signals": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Các dấu hiệu nhận biết (VD: now, currently)"
+    },
+    "notes_and_exceptions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Các lưu ý ngoại lệ"
+    }
+  },
+  "required": ["title", "level", "brief_description_vi", "structures", "usages"]
+}

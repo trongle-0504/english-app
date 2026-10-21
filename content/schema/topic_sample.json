@@ -1,0 +1,19 @@
+{
+  "topic": {
+    "name": "Travel",
+    "description_vi": "Chủ đề về du lịch và di chuyển",
+
+    "sub_topics": [
+      {
+        "name": "Airport",
+        "description_vi": "Các từ vựng tại sân bay",
+        "words": ["passport", "boarding pass", "luggage", "check-in", "departure"]
+      },
+      {
+        "name": "Hotel",
+        "description_vi": "Các từ vựng khi ở khách sạn",
+        "words": ["reservation", "check-in", "room service", "reception", "key card"]
+      }
+    ]
+  }
+}

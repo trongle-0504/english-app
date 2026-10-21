@@ -1,0 +1,11 @@
+/* Inline colours in posts target a white page (see rehypeDarkColors.ts). In dark mode keep the
+   hue but force text light and backgrounds dark; browsers without relative colours keep the original. */
+.dark .post-fg {
+  color: oklch(from var(--post-fg) max(l, 0.8) c h) !important;
+}
+.dark .post-bg {
+  background-color: oklch(from var(--post-bg) min(l, 0.34) c h) !important;
+}
+.dark .blog-post .border-black {
+  border-color: #334155;
+}

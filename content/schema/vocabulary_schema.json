@@ -1,0 +1,188 @@
+{
+  "type": "object",
+  "properties": {
+    "word": {
+      "type": "string",
+      "description": "Target English word or phrase"
+    },
+    "pronunciation": {
+      "type": "string",
+      "description": "IPA pronunciation"
+    },
+    "part_of_speech": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "noun, verb, adj, etc."
+    },
+    "image": {
+      "type": "string",
+      "description": "If the user provided an image link, return it exactly. Otherwise return an English keyword for Wikipedia search."
+    },
+    "senses": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "description": "ONLY include a maximum of 3 meanings that are most useful for the IELTS exam. Ignore rare or obscure definitions.",
+        "properties": {
+          "definition_vi": {
+            "type": "string",
+            "description": "Vietnamese meaning in the format: 'nghĩa chính - giải thích'. Example: 'Hoãn - Sắp xếp để một sự kiện diễn ra vào một thời điểm hoặc ngày muộn hơn so với dự kiến ban đầu.'"
+          },
+          "patterns": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "ONLY include patterns commonly used in IELTS. Use the format: '[phrase] + [form]', e.g., 'interested in + N/V-ing'."
+          },
+          "examples": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "2 natural English sentences using the word in this sense. STRICT RULE: BOLD the ENTIRE phrase/pattern using Markdown **phrase** (e.g., '**proposal for**', '**proposal to**')."
+          },
+          "usage_notes_vi": {
+            "type": "string",
+            "description": "Detailed usage notes in Vietnamese. 1. **Cách dùng:** Explain patterns/nuance with bullet points. 3. (Optional) 'Thường đi với các từ như: ...'. STRICT RULE: DO NOT include examples (Ví dụ: ...) here."
+          }
+        },
+        "required": [
+          "definition_vi",
+          "examples"
+        ]
+      },
+      "minItems": 1
+    },
+    "collocations": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "description": "ONLY include collocations that are commonly used in the IELTS exam (Academic Writing/Speaking).",
+        "properties": {
+          "text": {
+            "type": "string",
+            "description": "The collocation phrase"
+          },
+          "pronunciation": {
+            "type": "string",
+            "description": "IPA pronunciation"
+          },
+          "meaning_vi": {
+            "type": "string",
+            "description": "Vietnamese meaning"
+          },
+          "type": {
+            "type": "string",
+            "description": "verb, noun, adj, etc."
+          },
+          "examples": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "1-2 natural English sentences. STRICT RULE: BOLD the ENTIRE collocation using Markdown **collocation** (e.g., '**make a proposal**')."
+          }
+        },
+        "required": [
+          "text",
+          "meaning_vi"
+        ]
+      }
+    },
+    "synonyms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "word": {
+            "type": "string",
+            "description": "The related word or phrase"
+          },
+          "pronunciation": {
+            "type": "string",
+            "description": "IPA pronunciation"
+          },
+          "meaning_vi": {
+            "type": "string",
+            "description": "Brief Vietnamese meaning"
+          }
+        },
+        "required": [
+          "word"
+        ]
+      }
+    },
+    "antonyms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "word": {
+            "type": "string",
+            "description": "The related word or phrase"
+          },
+          "pronunciation": {
+            "type": "string",
+            "description": "IPA pronunciation"
+          },
+          "meaning_vi": {
+            "type": "string",
+            "description": "Brief Vietnamese meaning"
+          }
+        },
+        "required": [
+          "word"
+        ]
+      }
+    },
+    "word_family": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "word_roots": {
+      "type": "object",
+      "description": "Word origin and breakdown (Gốc từ và nguồn gốc từ)",
+      "properties": {
+        "origin": {
+          "type": "string",
+          "description": "Language of origin and original word, e.g., 'tiếng Latinh cổ (impeiorare)' or 'tiếng Hy Lạp cổ (bios)'"
+        },
+        "roots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "root": {
+                "type": "string",
+                "description": "The prefix, root, or suffix, e.g., 'in-', 'peior', '-ed'"
+              },
+              "meaning_vi": {
+                "type": "string",
+                "description": "Vietnamese explanation of the component's meaning"
+              }
+            },
+            "required": ["root", "meaning_vi"]
+          }
+        },
+        "mnemonic_vi": {
+          "type": "string",
+          "description": "Association tip/mnemonic in Vietnamese to help remember the word based on its roots"
+        }
+      },
+      "required": ["origin", "roots"]
+    }
+  },
+  "required": [
+    "word",
+    "pronunciation",
+    "part_of_speech",
+    "senses"
+  ]
+}

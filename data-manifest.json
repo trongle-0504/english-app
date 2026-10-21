@@ -1,0 +1,37 @@
+{
+  "$comment": "What is data (packed apart, never committed) and what is kept out of both. Read by scripts/sync-commit.ts and scripts/data.ts; .gitignore mirrors it. Paths are relative to the project root; a folder covers everything under it.",
+  "data": [
+    "content",
+    "public/vocab-images",
+    "public/note-images",
+    "public/blog-images",
+    "public/pdf",
+    "public/pronunciation",
+    "progress",
+    "config/gemini-pricing.json"
+  ],
+  "codeInsideData": [
+    "content/schema",
+    "content/grammar/analyze-prompt.md",
+    "content/speaking/linearthinking-skill.md",
+    "content/review/_example.json",
+    "content/review/_example.md"
+  ],
+  "minimalSkips": {
+    "$comment": "Left out of the minimal pack (pack --minimal): pictures scripts/fetch-images.ts downloads again from their source, blog originals (the site serves the WebP copies in public/blog-images), recordings, PDFs (lessons show without their PDF tab), and what restore builds again: the pronunciation list (scripts/build-pronunciation.ts) and the topic collocations index (scripts/build-topic-index.ts, from the per-topic files).",
+    "paths": ["public/vocab-images", "public/note-images", "content/blog/images", "public/pronunciation", "content/topic-collocations/index.json"],
+    "extensions": [".wav", ".mp3", ".webm", ".ogg", ".m4a", ".pdf"]
+  },
+  "neither": [
+    ".env",
+    ".git",
+    "data",
+    "models",
+    "cache",
+    "node_modules",
+    "dist",
+    "logs",
+    "input-file",
+    "user_note.md"
+  ]
+}

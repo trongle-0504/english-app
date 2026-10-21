@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "properties": {
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID for the question, e.g., 'q1', 'q2'"
+          },
+          "type": {
+            "type": "string",
+            "description": "The type of question: 'multiple_choice' or 'short_answer'"
+          },
+          "sentence": {
+            "type": "string",
+            "description": "The English sentence with a blank (___) for the student to fill. The blank should represent the target pattern or collocation."
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "a, b, c, d"
+                },
+                "text": {
+                  "type": "string",
+                  "description": "The option text"
+                }
+              },
+              "required": ["id", "text"]
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "correct_answer": {
+            "type": "string",
+            "description": "The ID of the correct option (a, b, c, or d)"
+          },
+          "explanation": {
+            "type": "string",
+            "description": "The specific pattern or collocation being tested (e.g., 'carry out an investigation')"
+          },
+          "hint": {
+            "type": "string",
+            "description": "Optional hint, usually the base word being tested (e.g., 'decline')"
+          }
+        },
+        "required": ["id", "type", "sentence", "options", "correct_answer", "explanation"]
+      }
+    }
+  },
+  "required": ["questions"]
+}

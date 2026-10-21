@@ -1,0 +1,18 @@
+{
+  "name": "Example deck (files starting with _ are ignored — copy this to e.g. my-words.json)",
+  "description": "Only `term` is required. Schema: content/schema/review_card_schema.json",
+  "cards": [
+    {
+      "term": "trustworthy",
+      "pronunciation": "/ˈtrʌstwɜːði/",
+      "part_of_speech": ["adjective"],
+      "meaning_vi": "đáng tin cậy",
+      "examples": [{ "en": "She is a **trustworthy** colleague.", "vi": "Cô ấy là một đồng nghiệp đáng tin cậy." }],
+      "collocations": [{ "text": "a trustworthy source", "meaning_vi": "nguồn đáng tin cậy", "example": "Always cite a **trustworthy source**." }],
+      "synonyms": ["reliable", "dependable"],
+      "tags": ["IELTS Writing"]
+    },
+    { "term": "take something for granted", "meaning_vi": "coi điều gì là hiển nhiên" },
+    { "term": "be on the verge of" }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "topic": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Main topic name, e.g., 'Travel', 'Business', 'Education'"
+      },
+
+      "description_vi": {
+        "type": "string",
+        "description": "Mô tả ngắn gọn về topic"
+      },
+
+      "sub_topics": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 8,
+        "description": "List of sub-topics. Keep only the most common and useful ones.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Sub-topic name, e.g., 'Airport', 'Hotel', 'Booking'"
+            },
+
+            "description_vi": {
+              "type": "string",
+              "description": "Mô tả ngắn gọn sub-topic"
+            },
+
+            "words": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 12,
+              "description": "Vocabulary items related to this sub-topic. Prioritize high-frequency and practical words.",
+              "items": {
+                "type": "string",
+                "description": "Vocabulary word only (should match 'word' field in vocab schema)"
+              }
+            }
+          },
+          "required": ["name", "words"]
+        }
+      }
+    },
+    "required": ["name", "sub_topics"]
+  }
+}

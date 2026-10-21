@@ -1,0 +1,33 @@
+import type { ApiHandler } from './api.ts'
+import { geminiConfigured } from './gemini.ts'
+import { adminRoutes } from './routes/admin.ts'
+import { analyzeRoutes } from './routes/analyze.ts'
+import { authRoutes } from './routes/auth.ts'
+import { essayRoutes } from './routes/essays.ts'
+import { ideaRoutes } from './routes/idea.ts'
+import { reportRoutes } from './routes/report.ts'
+import { listeningRoutes } from './routes/listening.ts'
+import { lookupRoutes } from './routes/lookup.ts'
+import { practiceRoutes } from './routes/practice.ts'
+import { reviewRoutes } from './routes/review.ts'
+import { speakingRoutes } from './routes/speaking.ts'
+import { speakingReviewRoutes } from './routes/speaking-review.ts'
+import { writingReviewRoutes } from './routes/writing-review.ts'
+
+/** All API endpoints, keyed "METHOD /path" relative to /api. */
+export const routes: Record<string, ApiHandler> = {
+  'GET /health': () => ({ json: { ok: true, gemini: geminiConfigured() } }),
+  ...authRoutes,
+  ...analyzeRoutes,
+  ...adminRoutes,
+  ...reviewRoutes,
+  ...practiceRoutes,
+  ...lookupRoutes,
+  ...writingReviewRoutes,
+  ...speakingRoutes,
+  ...speakingReviewRoutes,
+  ...ideaRoutes,
+  ...reportRoutes,
+  ...listeningRoutes,
+  ...essayRoutes,
+}

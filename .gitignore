@@ -1,0 +1,36 @@
+node_modules
+dist
+.env
+*.local
+*.tmp
+*.timestamp-*.mjs
+.DS_Store
+/logs/
+/models/
+/cache/
+# Accounts, sessions, restore backups.
+/data/
+
+# Data travels apart from the code (data-manifest.json, scripts/data.ts), so a restored copy never gets committed.
+# Keep this list in step with data-manifest.json.
+/progress/
+/input-file/
+/user_note.md
+/public/vocab-images/
+/public/note-images/
+/public/blog-images/
+/public/pdf/
+/public/pronunciation/
+/config/gemini-pricing.json
+/content/*
+# …except what the code needs from content/: schemas, prompts, the example review deck.
+!/content/schema/
+!/content/grammar/
+/content/grammar/*
+!/content/grammar/analyze-prompt.md
+!/content/speaking/
+/content/speaking/*
+!/content/speaking/linearthinking-skill.md
+!/content/review/
+/content/review/*
+!/content/review/_example.*

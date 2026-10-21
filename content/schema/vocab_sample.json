@@ -1,0 +1,183 @@
+[
+  {
+    "word": "boarding pass",
+    "pronunciation": "/ˈbɔː.dɪŋ ˌpɑːs/",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1000&auto=format&fit=crop",
+    "part_of_speech": ["noun"],
+    "senses": [
+      {
+        "definition_vi": "Thẻ lên máy bay hoặc tàu, cho phép hành khách đi vào khu vực khởi hành.",
+        "examples": [
+          "Please have your boarding pass and passport ready at the gate.",
+          "You can use a digital boarding pass on your smartphone instead of paper."
+        ],
+        "grammar_patterns": ["boarding pass for a flight", "show a boarding pass"],
+        "usage_notes_vi": "Thường được cấp sau khi hành khách hoàn tất thủ tục check-in."
+      }
+    ],
+    "collocations": [
+      {
+        "text": "print a boarding pass",
+        "pronunciation": "/prɪnt ə ˈbɔː.dɪŋ ˌpɑːs/",
+        "meaning_vi": "in thẻ lên máy bay",
+        "type": "verb",
+        "examples": ["I need to find a kiosk to print my boarding pass."]
+      },
+      {
+        "text": "digital boarding pass",
+        "pronunciation": "/ˈdɪdʒ.ɪ.təl ˈbɔː.dɪŋ ˌpɑːs/",
+        "meaning_vi": "thẻ lên máy bay điện tử",
+        "type": "noun",
+        "examples": ["The airline sent a digital boarding pass to my email."]
+      }
+    ],
+    "idioms": [
+      {
+        "text": "ticket to success",
+        "pronunciation": "/ˈtɪk.ɪt tuː səkˈses/",
+        "meaning_vi": "tấm vé dẫn đến thành công (có liên quan đến khái niệm thông hành)",
+        "examples": ["Hard work is your boarding pass and ticket to success in this industry."]
+      }
+    ],
+    "synonyms": [{ "word": "boarding card", "pronunciation": "/ˈbɔː.dɪŋ kɑːd/" }],
+    "antonyms": [],
+    "word_family": ["board", "boarding"]
+  },
+  {
+    "word": "luggage",
+    "pronunciation": "/ˈlʌɡ.ɪdʒ/",
+    "image": "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?q=80&w=1000&auto=format&fit=crop",
+    "part_of_speech": ["noun"],
+    "senses": [
+      {
+        "definition_vi": "Hành lý, bao gồm các loại túi, vali chứa đồ dùng cá nhân khi đi du lịch.",
+        "examples": [
+          "We left our luggage at the hotel reception while we explored the city.",
+          "How much luggage are you allowed to take on the plane?"
+        ],
+        "grammar_patterns": ["piece of luggage", "excess luggage"],
+        "usage_notes_vi": "Luggage là danh từ không đếm được. Không dùng 'luggages'."
+      }
+    ],
+    "collocations": [
+      {
+        "text": "hand luggage",
+        "pronunciation": "/hænd ˈlʌɡ.ɪdʒ/",
+        "meaning_vi": "hành lý xách tay",
+        "type": "noun",
+        "examples": ["Please ensure your hand luggage fits in the overhead locker."]
+      },
+      {
+        "text": "lost luggage",
+        "pronunciation": "/lɒst ˈlʌɡ.ɪdʒ/",
+        "meaning_vi": "hành lý thất lạc",
+        "type": "noun",
+        "examples": ["The airline is trying to locate my lost luggage."]
+      }
+    ],
+    "idioms": [
+      {
+        "text": "emotional baggage",
+        "pronunciation": "/ɪˈməʊ.ʃən.əl ˈbæɡ.ɪdʒ/",
+        "meaning_vi": "gánh nặng tâm lý từ quá khứ (baggage là từ đồng nghĩa phổ biến)",
+        "examples": [
+          "It's hard to start a new relationship when you have so much emotional baggage."
+        ]
+      }
+    ],
+    "synonyms": [
+      { "word": "baggage", "pronunciation": "/ˈbæɡ.ɪdʒ/" },
+      { "word": "suitcases", "pronunciation": "/ˈsuːt.keɪ.sɪz/" }
+    ],
+    "antonyms": [],
+    "word_family": ["luggable"]
+  },
+  {
+    "word": "reservation",
+    "pronunciation": "/ˌrez.əˈveɪ.ʃən/",
+    "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1000&auto=format&fit=crop",
+    "part_of_speech": ["noun"],
+    "senses": [
+      {
+        "definition_vi": "Sự đặt chỗ trước (phòng khách sạn, bàn ăn, chỗ ngồi).",
+        "examples": [
+          "I'd like to make a reservation for a table of four at 7 p.m.",
+          "The hotel sent a confirmation email for our room reservation."
+        ],
+        "grammar_patterns": ["make a reservation", "confirm a reservation"],
+        "usage_notes_vi": "Có thể dùng thay thế cho 'booking' trong nhiều ngữ cảnh."
+      }
+    ],
+    "collocations": [
+      {
+        "text": "cancel a reservation",
+        "pronunciation": "/ˈkæn.səl ə ˌrez.əˈveɪ.ʃən/",
+        "meaning_vi": "hủy đặt chỗ",
+        "type": "verb",
+        "examples": ["You must cancel your reservation at least 24 hours in advance."]
+      },
+      {
+        "text": "advance reservation",
+        "pronunciation": "/ədˈvɑːns ˌrez.əˈveɪ.ʃən/",
+        "meaning_vi": "đặt chỗ trước",
+        "type": "noun",
+        "examples": ["Advance reservation is highly recommended during the holiday season."]
+      }
+    ],
+    "idioms": [
+      {
+        "text": "without reservation",
+        "pronunciation": "/wɪˈðaʊt ˌrez.əˈveɪ.ʃən/",
+        "meaning_vi": "hoàn toàn, không chút do dự",
+        "examples": ["I can recommend this restaurant without reservation."]
+      }
+    ],
+    "synonyms": [{ "word": "booking", "pronunciation": "/ˈbʊk.ɪŋ/" }],
+    "antonyms": [],
+    "word_family": ["reserve", "reserved", "reserving"]
+  },
+  {
+    "word": "check-in",
+    "pronunciation": "/ˈtʃek.ɪn/",
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1000&auto=format&fit=crop",
+    "part_of_speech": ["noun"],
+    "senses": [
+      {
+        "definition_vi": "Việc làm thủ tục đăng ký khi đến khách sạn hoặc sân bay.",
+        "examples": [
+          "The check-in desk is located on the second floor of the terminal.",
+          "What time is check-in at the hotel?"
+        ],
+        "grammar_patterns": ["check-in for a flight", "check-in counter"],
+        "usage_notes_vi": "Check-in (danh từ) có dấu gạch ngang, check in (động từ) thì không."
+      }
+    ],
+    "collocations": [
+      {
+        "text": "online check-in",
+        "pronunciation": "/ˈɒn.laɪn ˈtʃek.ɪn/",
+        "meaning_vi": "làm thủ tục trực tuyến",
+        "type": "noun",
+        "examples": ["Online check-in opens 24 hours before the flight departure."]
+      },
+      {
+        "text": "check-in desk",
+        "pronunciation": "/ˈtʃek.ɪn desk/",
+        "meaning_vi": "quầy làm thủ tục",
+        "type": "noun",
+        "examples": ["There was a long queue at the airline check-in desk."]
+      }
+    ],
+    "idioms": [
+      {
+        "text": "check in with someone",
+        "pronunciation": "/tʃek ɪn wɪð ˈsʌm.wʌn/",
+        "meaning_vi": "liên lạc để thông báo tình hình cho ai đó",
+        "examples": ["Call me when you arrive just to check in with me."]
+      }
+    ],
+    "synonyms": [{ "word": "registration", "pronunciation": "/ˌredʒ.ɪˈstreɪ.ʃən/" }],
+    "antonyms": [{ "word": "check-out", "pronunciation": "/ˈtʃek.aʊt/" }],
+    "word_family": ["check"]
+  }
+]

@@ -1,0 +1,225 @@
+@import '@fontsource/be-vietnam-pro/400.css';
+@import '@fontsource/be-vietnam-pro/500.css';
+@import '@fontsource/be-vietnam-pro/600.css';
+@import '@fontsource/be-vietnam-pro/700.css';
+@import '@fontsource/be-vietnam-pro/800.css';
+/* Scan only the app and blog markdown (posts embed Tailwind classes in raw HTML). Automatic detection would
+   also watch content/*.json and logs/, and reload every page whenever they change. */
+@import 'tailwindcss' source(none);
+@source '../../src';
+@source '../../index.html';
+@source '../../content/blog/markdown';
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Inter', 'Be Vietnam Pro', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Code', 'Segoe UI Mono', Menlo, monospace;
+  /* IPA needs glyphs Be Vietnam Pro lacks; system fonts render them well. */
+  --font-ipa: 'Segoe UI', 'Noto Sans', 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+
+  --color-brand-50: #ecfbff;
+  --color-brand-100: #d2f4fd;
+  --color-brand-200: #a9e8fa;
+  --color-brand-300: #6dd6f5;
+  --color-brand-400: #2cbbe9;
+  --color-brand-500: #0d9fd2;
+  --color-brand-600: #0a7fb1;
+  --color-brand-700: #0f668f;
+  --color-brand-800: #145575;
+  --color-brand-900: #164763;
+  --color-brand-950: #0b2d42;
+
+  --animate-fade-in: fade-in 0.25s ease-out both;
+  --animate-slide-up: slide-up 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  --animate-scale-in: scale-in 0.18s ease-out both;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  }
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+  }
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.96);
+    }
+  }
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    scrollbar-gutter: stable;
+    /* No double-tap-to-zoom delay on buttons and links. */
+    touch-action: manipulation;
+  }
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased dark:bg-slate-950 dark:text-slate-200;
+    font-feature-settings: 'ss01';
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-500;
+  }
+  ::selection {
+    @apply bg-brand-200 text-slate-900;
+  }
+}
+
+/* Touch screens: an invisible 44px tap area around a small control (an icon button, a checkbox button, a small chip),
+   without changing how it looks or the layout. The element must be positioned: add `relative` unless it is already
+   absolute. Uses ::before, so it cannot go on an <input> (no pseudo-elements) or an element that styles its ::before. */
+@utility hit-area {
+  @media (pointer: coarse) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: max(100%, 44px);
+      height: max(100%, 44px);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+/* Phones: pages where most text is text-xs (Review, Writing Review) read at 12px, small at arm's length. Their root
+   gets this, and text-xs inside becomes 13px below the sm breakpoint. */
+@utility readable-xs {
+  @media (width < 40rem) {
+    & .text-xs {
+      font-size: 13px;
+      line-height: 1.35;
+    }
+  }
+}
+
+/* Rendered markdown (blog posts, collocation lessons, notes). */
+@utility markdown {
+  @apply prose max-w-none prose-slate dark:prose-invert;
+  @apply prose-headings:scroll-mt-24 prose-headings:font-bold prose-headings:tracking-tight;
+  @apply prose-a:text-brand-600 dark:prose-a:text-brand-400;
+  @apply prose-img:rounded-xl;
+  @apply prose-code:before:content-none prose-code:after:content-none;
+}
+@utility markdown-compact {
+  @apply markdown prose-sm prose-p:my-1 prose-ul:my-1 prose-ol:my-1 prose-li:my-0.5;
+}
+
+@layer components {
+  .ipa {
+    font-family: var(--font-ipa);
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(148 163 184 / 0.5) transparent;
+  }
+
+  .markdown :where(table),
+  .markdown-compact :where(table) {
+    @apply my-5 block w-full overflow-x-auto text-sm;
+  }
+  .markdown :where(th),
+  .markdown-compact :where(th) {
+    @apply bg-brand-50 text-brand-900 dark:bg-brand-950/60 dark:text-brand-100;
+  }
+  .markdown :where(th, td),
+  .markdown-compact :where(th, td) {
+    @apply border border-slate-200 px-3 py-2 align-top dark:border-slate-700;
+  }
+  .markdown :where(code):not(:where(pre *)),
+  .markdown-compact :where(code):not(:where(pre *)) {
+    @apply rounded bg-slate-100 px-1.5 py-0.5 text-[0.9em] font-medium dark:bg-slate-800;
+  }
+
+  /* GitHub-style alerts from remark-github-blockquote-alert. */
+  .markdown-alert {
+    @apply my-5 rounded-xl border-l-4 px-4 py-3 not-italic;
+  }
+  .markdown-alert-title {
+    @apply mb-1 flex items-center gap-2 text-sm font-semibold;
+  }
+  .markdown-alert-title svg {
+    @apply size-4 fill-current;
+  }
+  .markdown-alert-note {
+    @apply border-sky-500 bg-sky-50 dark:bg-sky-950/40;
+  }
+  .markdown-alert-tip {
+    @apply border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40;
+  }
+  .markdown-alert-important {
+    @apply border-violet-500 bg-violet-50 dark:bg-violet-950/40;
+  }
+  .markdown-alert-warning {
+    @apply border-amber-500 bg-amber-50 dark:bg-amber-950/40;
+  }
+  .markdown-alert-caution {
+    @apply border-rose-500 bg-rose-50 dark:bg-rose-950/40;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+}
+
+/* Login backdrop: a slow zoom-and-drift on each photo, and a turning aurora of brand colours behind them. */
+@keyframes ken-burns {
+  from {
+    transform: scale(1.04) translate(0, 0);
+  }
+  to {
+    transform: scale(1.18) translate(-2.5%, -1.5%);
+  }
+}
+@keyframes aurora-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.target-flash {
+  animation: target-flash 1.8s ease-out;
+}
+@keyframes target-flash {
+  0%,
+  30% {
+    box-shadow: 0 0 0 4px color-mix(in oklab, var(--color-brand-400) 55%, transparent);
+  }
+}
+
+ruby {
+  ruby-position: over;
+  ruby-align: center;
+}
+rt {
+  font-size: 10.5px;
+  line-height: 1.1;
+  color: #64748b;
+  user-select: none;
+  font-weight: 400;
+}
+.dark rt {
+  color: #94a3b8;
+}
+
+
+/* iOS Safari zooms the page when a focused field's text is under 16px; keep text fields at 16px on touch screens.
+   Selects are left out: they open the native picker, and 16px would overflow the small pills they sit in. */
+@media (pointer: coarse) {
+  input:not([type='checkbox'], [type='radio'], [type='range'], [type='file']),
+  textarea {
+    font-size: 16px;
+  }
+}

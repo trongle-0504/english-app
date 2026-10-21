@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "review_card_schema.json",
+  "title": "Review card",
+  "description": "One study card you add yourself (content/review/<deck>.json → cards[]). Only `term` is required; leave any other field out or empty. Also the shape Gemini returns when it fills a card in.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Optional stable id (letters, digits, dashes). Defaults to the term slug. Set it if you may later rename the term, so review progress is kept."
+    },
+    "term": {
+      "type": "string",
+      "description": "The English word, phrase, collocation or structure, e.g. 'trustworthy', 'take something for granted'."
+    },
+    "pronunciation": {
+      "type": "string",
+      "description": "British IPA between slashes, e.g. '/ˈtrʌstwɜːði/'. Empty if unknown."
+    },
+    "part_of_speech": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "e.g. ['adjective'] or ['noun', 'verb']. For collocations use the pattern, e.g. ['adjective + noun']."
+    },
+    "meaning_vi": {
+      "type": "string",
+      "description": "Vietnamese meaning. Markdown allowed (**bold**, lists). Several senses: one per line, numbered."
+    },
+    "meaning_en": {
+      "type": "string",
+      "description": "Optional short English definition."
+    },
+    "examples": {
+      "type": "array",
+      "description": "Example sentences. `vi` (translation) is optional. Plain strings are also accepted when written by hand.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "en": { "type": "string", "description": "English sentence; wrap the term in **bold**." },
+          "vi": { "type": "string", "description": "Vietnamese translation." }
+        },
+        "required": ["en"]
+      }
+    },
+    "collocations": {
+      "type": "array",
+      "description": "Related collocations, if any.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": { "type": "string", "description": "The collocation, e.g. 'a trustworthy source'." },
+          "meaning_vi": { "type": "string" },
+          "example": { "type": "string", "description": "One English example sentence." }
+        },
+        "required": ["text"]
+      }
+    },
+    "synonyms": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "antonyms": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "usage_note_vi": {
+      "type": "string",
+      "description": "Vietnamese usage note: register, common mistakes, when to use. Markdown allowed."
+    },
+    "mnemonic_vi": {
+      "type": "string",
+      "description": "Optional Vietnamese memory trick."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Free labels, e.g. ['IELTS Writing', 'environment']."
+    }
+  },
+  "required": ["term"]
+}
