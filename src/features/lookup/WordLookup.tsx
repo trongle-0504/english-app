@@ -344,7 +344,7 @@ export default function WordLookup({ open, onOpenChange }: { open: boolean; onOp
           ) : (
             <>
               <div className="flex items-center gap-3 border-b border-slate-200 bg-white px-4 dark:border-slate-800 dark:bg-slate-900">
-                {loading ? <Loader2 className="size-5 animate-spin text-slate-400" /> : <Search className="size-5 text-slate-400" />}
+                {loading ? <Loader2 className="size-5 shrink-0 animate-spin text-slate-400" /> : <Search className="size-5 shrink-0 text-slate-400" />}
                 <input
                   autoFocus
                   value={query}
@@ -363,7 +363,7 @@ export default function WordLookup({ open, onOpenChange }: { open: boolean; onOp
                   }}
                   placeholder="Look up a word or phrase — English or Vietnamese, e.g. đàm phán"
                   aria-label="Look up a word or phrase"
-                  className="h-14 flex-1 bg-transparent text-base text-slate-900 placeholder:text-slate-400 focus:outline-none dark:text-white"
+                  className="h-14 min-w-0 flex-1 bg-transparent text-base text-slate-900 placeholder:text-slate-400 focus:outline-none dark:text-white"
                 />
                 <Kbd>Esc</Kbd>
               </div>

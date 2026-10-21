@@ -53,10 +53,10 @@ function Player({ audio, duration }: { audio: AudioControl; duration: number }) 
         step={0.1}
         value={time}
         onChange={(e) => audio.seek(Number(e.target.value))}
-        className="h-1.5 flex-1 cursor-pointer accent-brand-600"
+        className="h-1.5 min-w-0 flex-1 cursor-pointer accent-brand-600"
         aria-label="Position"
       />
-      <span className="text-xs font-semibold text-slate-500 tabular-nums">
+      <span className="shrink-0 text-xs font-semibold text-slate-500 tabular-nums">
         {clock(time)} / {clock(duration)}
       </span>
     </div>

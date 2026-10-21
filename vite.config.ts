@@ -74,5 +74,5 @@ export default defineConfig({
   plugins: [authPlugin(), contentPlugin(rootDir), react(), tailwindcss(), apiPlugin()],
   resolve: { alias: { '@': path.join(rootDir, 'src') } },
   // logs/, progress/ and data/ are written while the server runs; watching them would reload pages.
-  server: { port: 5173, watch: { ignored: ['**/logs/**', '**/progress/**', '**/cache/**', '**/data/**'] } },
+  server: { port: 5173, allowedHosts: ['ailab.com.vn', '.ailab.com.vn'], watch: { ignored: ['**/logs/**', '**/progress/**', '**/cache/**', '**/data/**'] } },
 })

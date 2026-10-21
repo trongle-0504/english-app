@@ -46,7 +46,7 @@ function serveStatic(req: IncomingMessage, res: ServerResponse) {
   const urlPath = decodeURIComponent(new URL(req.url ?? '/', 'http://x').pathname)
   let file = path.join(distDir, urlPath)
   // Images uploaded through the admin after the last build live only in public/.
-  if (urlPath.startsWith('/blog-images/') && !existsSync(file)) file = path.join(rootDir, 'public', urlPath)
+  if (!existsSync(file)) file = path.join(rootDir, 'public', urlPath)
   if (!file.startsWith(distDir + path.sep) && !file.startsWith(path.join(rootDir, 'public') + path.sep)) {
     res.statusCode = 403
     return res.end()

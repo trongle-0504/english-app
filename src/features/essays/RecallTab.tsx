@@ -85,7 +85,7 @@ function Cloze({ essay, review, mode, kinds }: { essay: EssayDoc; review: Review
                 const value = answers[i] ?? ''
                 const ok = sameAnswer(value, b.answer)
                 out.push(
-                  <span key={i} className="inline-flex items-baseline gap-1">
+                  <span key={i} className="inline-flex max-w-full items-baseline gap-1">
                     <input
                       value={reveal && !ok ? b.answer : value}
                       onChange={(e) => setAnswers({ ...answers, [i]: e.target.value })}
@@ -95,7 +95,7 @@ function Cloze({ essay, review, mode, kinds }: { essay: EssayDoc; review: Review
                       title={`${KIND_META[b.item.kind].label}: ${b.item.meaning_vi}`}
                       style={{ width: `${Math.max(4, b.answer.length + 2)}ch` }}
                       className={cn(
-                        'rounded-md border-b-2 bg-slate-50 px-1 text-center text-[15px] leading-7 outline-none focus:bg-brand-50 dark:bg-slate-800 dark:focus:bg-brand-950/50',
+                        'max-w-full rounded-md border-b-2 bg-slate-50 px-1 text-center text-[15px] leading-7 outline-none focus:bg-brand-50 dark:bg-slate-800 dark:focus:bg-brand-950/50',
                         !checked ? 'border-slate-300 dark:border-slate-600' : ok ? 'border-emerald-500 text-emerald-700 dark:text-emerald-400' : 'border-rose-500 text-rose-600 dark:text-rose-400',
                       )}
                     />

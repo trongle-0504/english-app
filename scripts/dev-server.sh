@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# Keeps the dev server (live reload on content/ edits) running on http://localhost:5173.
-# Launched hidden at Windows logon by "LinearThinking.vbs" in the Windows Startup folder; safe to run by hand.
+# Runs the fast production server (serves prebuilt dist/ with Gzip + immutable cache + live /data and /api) on port 5173.
 set -u
 cd "$(dirname "$0")/.."
 PORT=5173
@@ -14,16 +13,17 @@ if running; then
   exit 0
 fi
 
-# Keep the log small: start fresh when it grows past 2 MB.
 [ -f "$LOG" ] && [ "$(stat -c%s "$LOG")" -gt 2097152 ] && : > "$LOG"
 
+if [ ! -f dist/index.html ]; then
+  echo "[$(date '+%F %T')] building dist/..." >> "$LOG"
+  npm run build >> "$LOG" 2>&1
+fi
+
 while true; do
-  echo "[$(date '+%F %T')] starting dev server on port $PORT" >> "$LOG"
-  # Same heap as `npm run dev`: with Node's default (~2 GB) the server ran out of memory after a few hours of
-  # restarts (every edit under server/ restarts it) and crashed with Speaking / Writing jobs still running.
-  NODE_OPTIONS="${NODE_OPTIONS:---max-old-space-size=4096}" ./node_modules/.bin/vite --port "$PORT" --strictPort >> "$LOG" 2>&1
-  echo "[$(date '+%F %T')] dev server exited with code $?" >> "$LOG"
-  # Another process took the port (e.g. started by hand): nothing to do.
+  echo "[$(date '+%F %T')] starting production server on port $PORT" >> "$LOG"
+  PORT="$PORT" NODE_OPTIONS="${NODE_OPTIONS:---max-old-space-size=4096}" node server/index.ts >> "$LOG" 2>&1
+  echo "[$(date '+%F %T')] server exited with code $?" >> "$LOG"
   running && exit 0
-  sleep 5
+  sleep 3
 done

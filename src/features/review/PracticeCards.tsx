@@ -111,9 +111,9 @@ export function FixExercise({ mistake, onSubmit }: { mistake: CardMistake; onSub
           autoComplete="off"
           autoCapitalize="off"
           spellCheck={false}
-          className="h-12 flex-1 rounded-xl border border-slate-200 bg-white px-4 text-lg focus:border-brand-400 focus:ring-4 focus:ring-brand-500/10 focus:outline-none dark:border-slate-700 dark:bg-slate-900"
+          className="h-12 min-w-0 flex-1 rounded-xl border border-slate-200 bg-white px-4 text-lg focus:border-brand-400 focus:ring-4 focus:ring-brand-500/10 focus:outline-none dark:border-slate-700 dark:bg-slate-900"
         />
-        <Button type="submit" size="lg">
+        <Button type="submit" size="lg" className="shrink-0">
           Check
         </Button>
       </form>

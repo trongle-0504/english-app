@@ -49,7 +49,7 @@ export function CollocateExercise({ task, onSubmit }: { task: CollocateTask; onS
           autoCapitalize="off"
           spellCheck={false}
           style={{ width: `${Math.max(6, answer.length + 3)}ch` }}
-          className="mx-1 inline-block h-10 rounded-lg border-b-2 border-brand-400 bg-brand-50/60 px-2 text-center text-lg focus:bg-white focus:ring-4 focus:ring-brand-500/10 focus:outline-none dark:bg-brand-950/40 dark:focus:bg-slate-900"
+          className="mx-1 inline-block h-10 max-w-full rounded-lg border-b-2 border-brand-400 bg-brand-50/60 px-2 text-center text-lg focus:bg-white focus:ring-4 focus:ring-brand-500/10 focus:outline-none dark:bg-brand-950/40 dark:focus:bg-slate-900"
         />
         {task.after}
       </p>
@@ -206,9 +206,9 @@ function Rewrite({ fixed }: { fixed: string }) {
           onChange={(e) => setText(e.target.value)}
           placeholder="Viết lại câu cho đúng…"
           aria-label="Rewrite the sentence"
-          className={cn(fieldClass, 'h-10 py-0')}
+          className={cn(fieldClass, 'h-10 min-w-0 flex-1 py-0')}
         />
-        <Button type="submit" variant="outline" disabled={!text.trim()}>
+        <Button type="submit" variant="outline" className="shrink-0" disabled={!text.trim()}>
           Kiểm tra
         </Button>
       </form>

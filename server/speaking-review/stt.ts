@@ -8,7 +8,7 @@ import path from 'node:path'
 import type { TalkWord } from '../../src/types/speakingReview.ts'
 import { ApiError } from '../api.ts'
 
-const MODEL_NAME = 'sherpa-onnx-nemo-parakeet_tdt_transducer_110m-en-36000-int8'
+const MODEL_NAME = 'sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8'
 /** SPEAKING_STT_MODEL: the model folder (encoder / decoder / joiner .onnx and tokens.txt), else models/<MODEL_NAME>. */
 export const modelDir = (rootDir: string) => process.env.SPEAKING_STT_MODEL || path.join(rootDir, 'models', MODEL_NAME)
 /** SPEAKING_STT_THREADS, else 4 (of the CPU's cores; more barely helps a model this size). */

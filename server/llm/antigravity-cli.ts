@@ -275,7 +275,7 @@ async function runJsonOnce(request: AntigravityJsonRequest, staged: StagedImages
     // If model has a suffix like -medium, strip it so base model can be used with --effort
     model = model.replace(effortSuffixRegex, '')
     // Default effort to the suffix if effort was not explicitly provided
-    effort = effort || match[1].toLowerCase()
+    effort = process.env.ANTIGRAVITY_EFFORT || match[1].toLowerCase() || effort
   }
 
   // The schema goes in the prompt only: agy's --json-schema makes the model submit through an extra tool turn (twice
@@ -415,7 +415,7 @@ async function runText(request: AntigravityTextRequest, staged: StagedImages): P
   const match = model.match(effortSuffixRegex)
   if (match) {
     model = model.replace(effortSuffixRegex, '')
-    effort = effort || match[1].toLowerCase()
+    effort = process.env.ANTIGRAVITY_EFFORT || match[1].toLowerCase() || effort
   }
 
   const args = [

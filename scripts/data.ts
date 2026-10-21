@@ -18,7 +18,7 @@ import { fileURLToPath } from 'node:url'
 import { buildTopicIndex, topicIndexDir } from './build-topic-index.ts'
 import { DATA_INDEX, kindOf, listFiles, projectRoot, sha256, skippedInMinimal, type DataIndex } from './lib/data-paths.ts'
 
-const MODEL = 'sherpa-onnx-nemo-parakeet_tdt_transducer_110m-en-36000-int8'
+const MODEL = 'sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8'
 const MODEL_URL = `https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/${MODEL}.tar.bz2`
 
 function tar(args: string[]): void {
