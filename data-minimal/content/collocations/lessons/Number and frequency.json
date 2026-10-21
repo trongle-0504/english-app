@@ -1,0 +1,1546 @@
+{
+  "metadata": {
+    "lesson_id": "number-and-frequency",
+    "topic": "Basic concepts",
+    "chapter_title": "Number and frequency",
+    "pdf_file": "Number and frequency.pdf"
+  },
+  "mindmap_data": {
+    "topic": "Basic concepts",
+    "chapter": {
+      "chapter_id": "ch_number_frequency",
+      "title": "Number and frequency",
+      "sessions": [
+        {
+          "session_id": "s_number_frequency_a",
+          "title": "A Commenting on how much or how many",
+          "description_vi": "Bình luận về số lượng nhiều hay ít.",
+          "value": "# Number and frequency\n\n## A Commenting on how much or how many\n\nThese adjectives collocate strongly with both **number** and **amount**. Try to use them instead of **small** or **large** where appropriate.\n\n- **minute** /mainˈjuːt/\n- **enormous**\n- **substantial**\n- **surprising**\n- **significant**\n- **tiny**",
+          "children_nodes": [
+            {
+              "node_id": "minute",
+              "label": "minute"
+            },
+            {
+              "node_id": "enormous",
+              "label": "enormous"
+            },
+            {
+              "node_id": "substantial",
+              "label": "substantial"
+            },
+            {
+              "node_id": "surprising",
+              "label": "surprising"
+            },
+            {
+              "node_id": "significant",
+              "label": "significant"
+            },
+            {
+              "node_id": "tiny",
+              "label": "tiny"
+            }
+          ]
+        },
+        {
+          "session_id": "s_number_frequency_b",
+          "title": "B Talking about numbers",
+          "description_vi": "Nói về các con số và cách chúng thay đổi.",
+          "value": "## B Talking about numbers\n\n| collocation                       | example                                                                   | comments                                                                               |\n| --------------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |\n| odd/even numbers                  | 51 is an **odd number** – 50 is an **even number**                        | odd numbers = 1, 3, 5, etc.; even numbers = 2, 4, 6, etc.                              |\n| a decline/drop in the number of   | There’s been a recent **decline in the number** of boys joining the army. | _Drop is more informal than decline._                                                  |\n| an increase/rise in the number of | The **increase in the number** of homeless people is worrying.            | _Rise is slightly more informal than increase._                                        |\n| come to a total of                | If we add up all the figures, it **comes to a total of 794**.             | _A calculation comes to a total of x; the person calculating arrives at a total of x._ |\n| birth rate rises/falls            | Over the last few years the **birth rate has been falling**.              | _A rate can also drop or decline as well as fall._                                     |\n| a unit of currency/measurement    | The standard **unit of currency** in most EU countries is the euro.       | _We also talk about a unit of electricity, unit of length._                            |",
+          "children_nodes": [
+            {
+              "node_id": "odd_even_numbers",
+              "label": "odd/even numbers"
+            },
+            {
+              "node_id": "decline_drop_in_the_number_of",
+              "label": "a decline/drop in the number of"
+            },
+            {
+              "node_id": "increase_rise_in_the_number_of",
+              "label": "an increase/rise in the number of"
+            },
+            {
+              "node_id": "come_to_a_total_of",
+              "label": "come to a total of"
+            },
+            {
+              "node_id": "birth_rate_rises_falls",
+              "label": "birth rate rises/falls"
+            },
+            {
+              "node_id": "unit_of_currency_measurement",
+              "label": "a unit of currency/measurement"
+            }
+          ]
+        },
+        {
+          "session_id": "s_number_frequency_c",
+          "title": "C Frequency",
+          "description_vi": "Tần suất xảy ra của sự việc.",
+          "value": "## C Frequency\n\n**Widespread** _[existing or happening in many places or among many people]_ collocates strongly with a lot of words relating to either attitude **(widespread interest, widespread support)** or problems **(widespread damage, widespread poverty)**:\n\nThere has been **widespread support** for the government’s new policy on education.\n\nThe heavy winds at the weekend have caused **widespread damage**.\n\n**Rare** _[infrequent and special]_ collocates with things in the natural world **(rare disease, rare bird, rare species)** and also with collectable items of special interest **(rare coins)**.\n\nIf someone repeatedly does something that annoys you, you can use the expression **keeps asking, keeps interrupting, keeps hitting, etc.** This is common in informal spoken English:\n\nPlease don’t **keep interrupting** me when I’m trying to work.\n\nThe children **keep asking** me when we’re going to buy a new computer.\n\n**Constant** and **continual** also convey the idea of something happening repeatedly:\n\nI couldn’t get on with my work today because of **constant interruptions** – the phone kept ringing every five minutes.\n\nIt was a mistake to go on holiday with them. Their **continual complaining** drove us mad.",
+          "children_nodes": [
+            {
+              "node_id": "widespread",
+              "label": "widespread"
+            },
+            {
+              "node_id": "rare",
+              "label": "rare"
+            },
+            {
+              "node_id": "keep_asking_interrupting_hitting",
+              "label": "keeps asking, keeps interrupting, keeps hitting, etc."
+            },
+            {
+              "node_id": "constant",
+              "label": "constant"
+            },
+            {
+              "node_id": "continual",
+              "label": "continual"
+            }
+          ]
+        },
+        {
+          "session_id": "s_number_frequency_d",
+          "title": "D Describing graphs and charts",
+          "description_vi": "Mô tả biểu đồ và đồ thị.",
+          "value": "## D Describing graphs and charts\n\nProfits **rose sharply/steeply** in July, but **fell sharply/steeply** in September.\n\nThere was a **dramatic rise/fall** in the number of students applying to university this year.\n\nNumbers of mature students have **increased steadily/gradually** since the 1960s.\n\nThe number of crimes committed in the city has **remained constant/stable** since 2011.",
+          "children_nodes": [
+            {
+              "node_id": "rose_sharply_steeply",
+              "label": "rose sharply/steeply"
+            },
+            {
+              "node_id": "fell_sharply_steeply",
+              "label": "fell sharply/steeply"
+            },
+            {
+              "node_id": "dramatic_rise_fall",
+              "label": "dramatic rise/fall"
+            },
+            {
+              "node_id": "increased_steadily_gradually",
+              "label": "increased steadily/gradually"
+            },
+            {
+              "node_id": "remained_constant_stable",
+              "label": "remained constant/stable"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "section_id": "A",
+      "session_ref": "s_number_frequency_a",
+      "title": "Commenting on how much or how many",
+      "instruction_vi": "Các tính từ này đi liền với cả 'number' và 'amount'. Hãy cố gắng sử dụng chúng thay cho 'small' hoặc 'large' khi thích hợp.",
+      "content_items": [
+        {
+          "type": "example_list",
+          "value": "- **minute** /mainˈjuːt/\n- **enormous**\n- **substantial**\n- **surprising**\n- **significant**\n- **tiny**",
+          "related_vocabulary_ids": [
+            "minute",
+            "enormous",
+            "substantial",
+            "surprising",
+            "significant",
+            "tiny"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "B",
+      "session_ref": "s_number_frequency_b",
+      "title": "Talking about numbers",
+      "instruction_vi": "Nói về các con số.",
+      "content_items": [
+        {
+          "type": "table",
+          "value": "| collocation                       | example                                                                   | comments                                                                               |\n| --------------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |\n| odd/even numbers                  | 51 is an **odd number** – 50 is an **even number**                        | odd numbers = 1, 3, 5, etc.; even numbers = 2, 4, 6, etc.                              |\n| a decline/drop in the number of   | There’s been a recent **decline in the number** of boys joining the army. | _Drop is more informal than decline._                                                  |\n| an increase/rise in the number of | The **increase in the number** of homeless people is worrying.            | _Rise is slightly more informal than increase._                                        |\n| come to a total of                | If we add up all the figures, it **comes to a total of 794**.             | _A calculation comes to a total of x; the person calculating arrives at a total of x._ |\n| birth rate rises/falls            | Over the last few years the **birth rate has been falling**.              | _A rate can also drop or decline as well as fall._                                     |\n| a unit of currency/measurement    | The standard **unit of currency** in most EU countries is the euro.       | _We also talk about a unit of electricity, unit of length._                            |",
+          "related_vocabulary_ids": [
+            "odd_even_numbers",
+            "decline_drop_in_the_number_of",
+            "increase_rise_in_the_number_of",
+            "come_to_a_total_of",
+            "birth_rate_rises_falls",
+            "unit_of_currency_measurement"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "C",
+      "session_ref": "s_number_frequency_c",
+      "title": "Frequency",
+      "instruction_vi": "Tần suất xảy ra của sự việc.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "**Widespread** _[existing or happening in many places or among many people]_ collocates strongly with a lot of words relating to either attitude **(widespread interest, widespread support)** or problems **(widespread damage, widespread poverty)**:\n\nThere has been **widespread support** for the government’s new policy on education.\n\nThe heavy winds at the weekend have caused **widespread damage**.\n\n**Rare** _[infrequent and special]_ collocates with things in the natural world **(rare disease, rare bird, rare species)** and also with collectable items of special interest **(rare coins)**.\n\nIf someone repeatedly does something that annoys you, you can use the expression **keeps asking, keeps interrupting, keeps hitting, etc.** This is common in informal spoken English:\n\nPlease don’t **keep interrupting** me when I’m trying to work.\n\nThe children **keep asking** me when we’re going to buy a new computer.\n\n**Constant** and **continual** also convey the idea of something happening repeatedly:\n\nI couldn’t get on with my work today because of **constant interruptions** – the phone kept ringing every five minutes.\n\nIt was a mistake to go on holiday with them. Their **continual complaining** drove us mad.",
+          "related_vocabulary_ids": [
+            "widespread",
+            "rare",
+            "keep_asking_interrupting_hitting",
+            "constant",
+            "continual"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "D",
+      "session_ref": "s_number_frequency_d",
+      "title": "Describing graphs and charts",
+      "instruction_vi": "Mô tả biểu đồ và đồ thị.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "Profits **rose sharply/steeply** in July, but **fell sharply/steeply** in September.\n\nThere was a **dramatic rise/fall** in the number of students applying to university this year.\n\nNumbers of mature students have **increased steadily/gradually** since the 1960s.\n\nThe number of crimes committed in the city has **remained constant/stable** since 2011.",
+          "related_vocabulary_ids": [
+            "rose_sharply_steeply",
+            "fell_sharply_steeply",
+            "dramatic_rise_fall",
+            "increased_steadily_gradually",
+            "remained_constant_stable"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary_data": {
+    "minute": {
+      "word": "minute",
+      "pronunciation": "/mainˈjuːt/",
+      "image": {
+        "type": "prompt",
+        "value": "minute adjective",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Dhaniyangal.jpg/960px-Dhaniyangal.jpg"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Cực kỳ nhỏ, không đáng kể.",
+          "examples": [
+            "The company's profit margin was minute."
+          ],
+          "grammar_patterns": [
+            "minute + noun"
+          ],
+          "usage_notes_vi": "Thường dùng để chỉ số lượng hoặc kích thước rất nhỏ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Health",
+          "question": "Are the health risks of mobile phones serious?",
+          "fits": []
+        },
+        {
+          "context": "Business",
+          "question": "Why do small shops struggle to compete with supermarkets?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Can tiny amounts of plastic in water harm us?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "minute",
+          "text": "The changes in the design were minute."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "minute",
+          "source": "The company's profits were extremely small.",
+          "model": "The company's profit margin was minute."
+        },
+        {
+          "target": "minute",
+          "source": "Only a very, very tiny amount of poison was found in the water.",
+          "model": "Only a minute amount of poison was found in the water."
+        }
+      ]
+    },
+    "enormous": {
+      "word": "enormous",
+      "pronunciation": "/ɪˈnɔːrməs/",
+      "image": {
+        "type": "prompt",
+        "value": "enormous adjective",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Southern_right_whale.jpg"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Rất lớn, to lớn.",
+          "examples": [
+            "There was an enormous amount of work to do."
+          ],
+          "grammar_patterns": [
+            "enormous + noun"
+          ],
+          "usage_notes_vi": "Nhấn mạnh sự to lớn về kích thước, số lượng hoặc mức độ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "Why do many workers feel stressed today?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How much waste do cities produce?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Why do students in your country feel under pressure?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "enormous",
+          "text": "There was an enormous amount of work to do."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "enormous",
+          "source": "We had a huge quantity of homework this week.",
+          "model": "We had an enormous amount of homework this week."
+        },
+        {
+          "target": "enormous",
+          "source": "The city produces a very large amount of rubbish.",
+          "model": "The city produces an enormous amount of rubbish."
+        }
+      ]
+    },
+    "substantial": {
+      "word": "substantial",
+      "pronunciation": "/səbˈstænʃəl/",
+      "image": {
+        "type": "prompt",
+        "value": "substantial adjective",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Philae_temple_at_night.jpg/960px-Philae_temple_at_night.jpg"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Đáng kể, lớn lao, quan trọng.",
+          "examples": [
+            "The project requires a substantial investment."
+          ],
+          "grammar_patterns": [
+            "substantial + noun"
+          ],
+          "usage_notes_vi": "Thường dùng để chỉ số lượng, giá trị hoặc tầm quan trọng lớn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Business",
+          "question": "What do companies need to grow quickly?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Should governments spend much more on universities?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How has technology improved healthcare?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "substantial",
+          "text": "The project needs a substantial investment."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "substantial",
+          "source": "The project needs a large amount of money.",
+          "model": "The project requires a substantial investment."
+        },
+        {
+          "target": "substantial",
+          "source": "There has been a big improvement in her health.",
+          "model": "There has been a substantial improvement in her health."
+        }
+      ]
+    },
+    "surprising": {
+      "word": "surprising",
+      "pronunciation": "/səˈpraɪzɪŋ/",
+      "image": {
+        "type": "prompt",
+        "value": "surprising adjective",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Duveltje_in_doosje%2C_houten_doosje_met_klepdeksel%2C_met_man_met_hoge_hoed_op_springveer%2C_springt_tevoorschijn_als_de_deksel_ontgrendeld_wordt%2C_objectnr_30270.JPG/960px-Duveltje_in_doosje%2C_houten_doosje_met_klepdeksel%2C_met_man_met_hoge_hoed_op_springveer%2C_springt_tevoorschijn_als_de_deksel_ontgrendeld_wordt%2C_objectnr_30270.JPG"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Gây ngạc nhiên, đáng ngạc nhiên.",
+          "examples": [
+            "There was a surprising number of people at the event."
+          ],
+          "grammar_patterns": [
+            "surprising + noun"
+          ],
+          "usage_notes_vi": "Diễn tả một số lượng hoặc kết quả không ngờ tới."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Culture",
+          "question": "Are traditional festivals still popular in your country?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How many older people use social media?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Do many people in your country do regular exercise?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "surprising",
+          "text": "A surprising number of people came to the event."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "surprising",
+          "source": "More people than expected came to the event.",
+          "model": "A surprising number of people came to the event."
+        },
+        {
+          "target": "surprising",
+          "source": "I was amazed by how many students cycle to school.",
+          "model": "A surprising number of students cycle to school."
+        }
+      ]
+    },
+    "significant": {
+      "word": "significant",
+      "pronunciation": "/sɪɡˈnɪfɪkənt/",
+      "image": {
+        "type": "prompt",
+        "value": "significant adjective",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Quan trọng, đáng kể.",
+          "examples": [
+            "There has been a significant increase in sales."
+          ],
+          "grammar_patterns": [
+            "significant + noun"
+          ],
+          "usage_notes_vi": "Thường dùng để chỉ sự thay đổi hoặc tầm quan trọng lớn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Business",
+          "question": "How has online shopping changed the retail industry?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How has the climate changed in your country recently?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Has obesity become more common in your country?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "significant",
+          "text": "There has been a significant increase in sales."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "significant",
+          "source": "Sales have grown a lot this year.",
+          "model": "There has been a significant increase in sales this year."
+        },
+        {
+          "target": "significant",
+          "source": "The new law has made an important difference to air quality.",
+          "model": "The new law has made a significant difference to air quality."
+        }
+      ]
+    },
+    "tiny": {
+      "word": "tiny",
+      "pronunciation": "/ˈtaɪni/",
+      "image": {
+        "type": "prompt",
+        "value": "tiny adjective",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Red_Ant_-_March_2025.jpg/960px-Red_Ant_-_March_2025.jpg"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Rất nhỏ, bé tí.",
+          "examples": [
+            "She wore a tiny diamond ring."
+          ],
+          "grammar_patterns": [
+            "tiny + noun"
+          ],
+          "usage_notes_vi": "Nhấn mạnh sự nhỏ bé về kích thước."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "What are flats like in big cities?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "What kind of jewellery do people in your country wear?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Can small actions really help the planet?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "tiny",
+          "text": "She wore a tiny diamond ring."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "tiny",
+          "source": "She lives in a very, very small flat.",
+          "model": "She lives in a tiny flat."
+        },
+        {
+          "target": "tiny",
+          "source": "Only a very small number of people voted.",
+          "model": "Only a tiny number of people voted."
+        }
+      ]
+    },
+    "odd_even_numbers": {
+      "word": "odd/even numbers",
+      "pronunciation": "/ˌɒd ˈiːvən ˈnʌmbərz/",
+      "image": {
+        "type": "prompt",
+        "value": "odd and even numbers",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/NumberSetinR2.svg/960px-NumberSetinR2.svg.png"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Số lẻ/số chẵn.",
+          "examples": [
+            "51 is an odd number – 50 is an even number."
+          ],
+          "grammar_patterns": [
+            "odd number",
+            "even number"
+          ],
+          "usage_notes_vi": "Số lẻ là các số không chia hết cho 2 (1, 3, 5,...); số chẵn là các số chia hết cho 2 (2, 4, 6,...)."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "What basic maths skills should young children learn?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "Are some numbers considered lucky in your country?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "How are houses numbered on streets in your country?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "odd/even numbers",
+          "text": "Houses on this side have even numbers."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "odd/even numbers",
+          "source": "You cannot divide seven exactly by two.",
+          "model": "Seven is an odd number."
+        },
+        {
+          "target": "odd/even numbers",
+          "source": "The houses on the left side have numbers that divide by two.",
+          "model": "The houses on the left side have even numbers."
+        }
+      ]
+    },
+    "decline_drop_in_the_number_of": {
+      "word": "a decline/drop in the number of",
+      "pronunciation": "/ə dɪˈklaɪn/",
+      "image": {
+        "type": "prompt",
+        "value": "decline in the number of",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự suy giảm về số lượng của cái gì đó.",
+          "examples": [
+            "There’s been a recent decline in the number of boys joining the army."
+          ],
+          "grammar_patterns": [
+            "a decline/drop in the number of + plural noun"
+          ],
+          "usage_notes_vi": "'Drop' mang tính thân mật hơn 'decline'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Why are fewer young people joining the army?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "What is happening to wild animal populations?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Why are fewer students choosing to study science?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "a decline/drop in the number of",
+          "text": "There has been a decline in the number of farmers."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "a decline/drop in the number of",
+          "source": "Fewer boys are joining the army these days.",
+          "model": "There has been a decline in the number of boys joining the army."
+        },
+        {
+          "target": "a decline/drop in the number of",
+          "source": "Fewer tourists visited the island this year.",
+          "model": "There was a drop in the number of tourists visiting the island this year."
+        }
+      ]
+    },
+    "increase_rise_in_the_number_of": {
+      "word": "an increase/rise in the number of",
+      "pronunciation": "/ən ɪnˈkriːs/",
+      "image": {
+        "type": "prompt",
+        "value": "increase in the number of",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự gia tăng về số lượng của cái gì đó.",
+          "examples": [
+            "The increase in the number of homeless people is worrying."
+          ],
+          "grammar_patterns": [
+            "an increase/rise in the number of + plural noun"
+          ],
+          "usage_notes_vi": "'Rise' mang tính thân mật hơn 'increase'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Why is homelessness becoming a bigger problem in cities?",
+          "fits": []
+        },
+        {
+          "context": "Transport",
+          "question": "Why are roads more crowded than before?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Why are more students studying abroad today?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "an increase/rise in the number of",
+          "text": "There has been an increase in the number of cars."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "an increase/rise in the number of",
+          "source": "More and more people are homeless, which is worrying.",
+          "model": "The increase in the number of homeless people is worrying."
+        },
+        {
+          "target": "an increase/rise in the number of",
+          "source": "More students are studying abroad than ever before.",
+          "model": "There has been a rise in the number of students studying abroad."
+        }
+      ]
+    },
+    "come_to_a_total_of": {
+      "word": "come to a total of",
+      "pronunciation": "/ˌkʌm tə ə ˈtoʊtəl ɒv/",
+      "image": {
+        "type": "prompt",
+        "value": "come to a total of",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Casio_calculator_JS-20WK_in_201901_002.jpg/960px-Casio_calculator_JS-20WK_in_201901_002.jpg"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Tổng cộng là, lên tới con số.",
+          "examples": [
+            "If we add up all the figures, it comes to a total of 794."
+          ],
+          "grammar_patterns": [
+            "come to a total of + number"
+          ],
+          "usage_notes_vi": "Một phép tính 'comes to a total of x'; người tính toán 'arrives at a total of x'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Shopping",
+          "question": "How much do you usually spend on a weekly shop?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "How much does a typical holiday cost in your country?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How much does a university education cost in your country?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "come to a total of",
+          "text": "The final bill comes to a total of several hundred dollars."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "come to a total of",
+          "source": "If we add up all the figures, the answer is seven hundred.",
+          "model": "If we add up all the figures, it comes to a total of seven hundred."
+        },
+        {
+          "target": "come to a total of",
+          "source": "All together, the cost of the repairs was two thousand dollars.",
+          "model": "The cost of the repairs came to a total of two thousand dollars."
+        }
+      ]
+    },
+    "birth_rate_rises_falls": {
+      "word": "birth rate rises/falls",
+      "pronunciation": "/ˈbɜːθ ˌreɪt ˈraɪzɪz/",
+      "image": {
+        "type": "prompt",
+        "value": "birth rate falls",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "noun",
+        "verb"
+      ],
+      "collocation_type": "noun+verb",
+      "senses": [
+        {
+          "definition_vi": "Tỷ lệ sinh tăng/giảm.",
+          "examples": [
+            "Over the last few years the birth rate has been falling."
+          ],
+          "grammar_patterns": [
+            "birth rate + rises/falls/drops/declines"
+          ],
+          "usage_notes_vi": "Tỷ lệ (rate) cũng có thể 'drop' hoặc 'decline' giống như 'fall'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Why are many young couples choosing to have fewer children?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "What problems does an ageing population cause for the economy?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How does better healthcare affect family size in developing countries?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "birth rate rises/falls",
+          "text": "The birth rate falls when women have more education."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "birth rate rises/falls",
+          "source": "Over the last few years, fewer babies have been born each year.",
+          "model": "Over the last few years, the birth rate has been falling."
+        },
+        {
+          "target": "birth rate rises/falls",
+          "source": "When the economy grows, more babies are often born.",
+          "model": "When the economy grows, the birth rate often rises."
+        }
+      ]
+    },
+    "unit_of_currency_measurement": {
+      "word": "a unit of currency/measurement",
+      "pronunciation": "/ə ˈjuːnɪt əv ˈkʌrənsi/",
+      "image": {
+        "type": "prompt",
+        "value": "unit of currency",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Diverse%C2%B7Ma%C3%9Fst%C3%A4be%2C15.365.jpg/960px-Diverse%C2%B7Ma%C3%9Fst%C3%A4be%2C15.365.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Đơn vị tiền tệ/đo lường.",
+          "examples": [
+            "The standard unit of currency in most EU countries is the euro."
+          ],
+          "grammar_patterns": [
+            "a unit of + currency/measurement"
+          ],
+          "usage_notes_vi": "Chúng ta cũng nói về 'a unit of electricity', 'unit of length'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "What money is used in your country?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Should all countries use the metric system?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What problems do travellers have with foreign money?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "a unit of currency/measurement",
+          "text": "The euro is the unit of currency in many countries."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "a unit of currency/measurement",
+          "source": "Most EU countries use the euro as their money.",
+          "model": "The standard unit of currency in most EU countries is the euro."
+        },
+        {
+          "target": "a unit of currency/measurement",
+          "source": "A metre is the standard way of measuring length.",
+          "model": "The metre is the standard unit of measurement for length."
+        }
+      ]
+    },
+    "widespread": {
+      "word": "widespread",
+      "pronunciation": "/ˈwaɪd.spred/",
+      "image": {
+        "type": "prompt",
+        "value": "widespread adjective",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Poa_annua.jpg/960px-Poa_annua.jpg"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Lan rộng, phổ biến, rộng khắp.",
+          "examples": [
+            "There has been widespread support for the government’s new policy on education."
+          ],
+          "grammar_patterns": [
+            "widespread + noun (interest, support, damage, poverty)"
+          ],
+          "usage_notes_vi": "Diễn tả sự tồn tại hoặc xảy ra ở nhiều nơi hoặc với nhiều người."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Politics",
+          "question": "How do people in your country feel about the government's education policy?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Is obesity a serious problem in your country?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How common is the use of smartphones among older people?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "widespread",
+          "text": "There is widespread support for the new policy."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "widespread",
+          "source": "Many people across the country support the new policy.",
+          "model": "There has been widespread support for the new policy."
+        },
+        {
+          "target": "widespread",
+          "source": "Flooding happened in many parts of the region.",
+          "model": "There was widespread flooding in the region."
+        }
+      ]
+    },
+    "rare": {
+      "word": "rare",
+      "pronunciation": "/reə(r)/",
+      "image": {
+        "type": "prompt",
+        "value": "rare bird",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Rough_Diamond.jpg"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Hiếm, quý hiếm.",
+          "examples": [
+            "The museum houses a collection of rare coins."
+          ],
+          "grammar_patterns": [
+            "rare + noun (disease, bird, species, coins)"
+          ],
+          "usage_notes_vi": "Dùng để chỉ những thứ không thường xuyên xảy ra và đặc biệt, thường liên quan đến thế giới tự nhiên hoặc các vật phẩm sưu tầm có giá trị đặc biệt."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Culture",
+          "question": "What kind of things do people like to collect?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Why should we protect endangered animals?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Should governments fund research into uncommon diseases?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "rare",
+          "text": "The museum has a collection of rare coins."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "rare",
+          "source": "The museum houses coins that are very hard to find.",
+          "model": "The museum houses a collection of rare coins."
+        },
+        {
+          "target": "rare",
+          "source": "This bird is seldom seen in the wild.",
+          "model": "This bird is a rare sight in the wild."
+        }
+      ]
+    },
+    "keep_asking_interrupting_hitting": {
+      "word": "keeps asking, keeps interrupting, keeps hitting, etc.",
+      "pronunciation": "/ˈkiːps ˈæskɪŋ/",
+      "image": {
+        "type": "prompt",
+        "value": "keep interrupting",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+gerund",
+      "senses": [
+        {
+          "definition_vi": "Cứ liên tục làm gì đó (thường gây khó chịu).",
+          "examples": [
+            "Please don’t keep interrupting me when I’m trying to work."
+          ],
+          "grammar_patterns": [
+            "keep + gerund"
+          ],
+          "usage_notes_vi": "Diễn tả hành động lặp đi lặp lại, thường dùng trong tiếng Anh nói thân mật."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What behaviour from colleagues annoys you the most?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "What do young children do that annoys their parents?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What kind of student behaviour makes teaching difficult?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "keeps asking, keeps interrupting, keeps hitting, etc.",
+          "text": "Please don't keep interrupting me when I'm working."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "keeps asking, keeps interrupting, keeps hitting, etc.",
+          "source": "My little brother asks me the same question again and again.",
+          "model": "My little brother keeps asking me the same question."
+        },
+        {
+          "target": "keeps asking, keeps interrupting, keeps hitting, etc.",
+          "source": "He interrupts me all the time when I am trying to speak.",
+          "model": "He keeps interrupting me when I'm trying to speak."
+        }
+      ]
+    },
+    "constant": {
+      "word": "constant",
+      "pronunciation": "/ˈkɒnstənt/",
+      "image": {
+        "type": "prompt",
+        "value": "constant interruptions",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Liên tục, không ngừng, thường xuyên.",
+          "examples": [
+            "I couldn’t get on with my work today because of constant interruptions."
+          ],
+          "grammar_patterns": [
+            "constant + noun (interruptions, noise, problems)"
+          ],
+          "usage_notes_vi": "Diễn tả điều gì đó xảy ra lặp đi lặp lại, đôi khi mang hàm ý tiêu cực."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What makes it hard to concentrate in an open-plan office?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "What are the disadvantages of living near a busy road?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How do smartphones affect our concentration?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "constant",
+          "text": "I could not work because of constant interruptions."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "constant",
+          "source": "People interrupted me all day, so I couldn't finish my work.",
+          "model": "I couldn't finish my work because of constant interruptions."
+        },
+        {
+          "target": "constant",
+          "source": "The noise from the traffic never stops.",
+          "model": "There is constant noise from the traffic."
+        }
+      ]
+    },
+    "continual": {
+      "word": "continual",
+      "pronunciation": "/kənˈtɪnjuəl/",
+      "image": {
+        "type": "prompt",
+        "value": "continual complaining",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Liên tục, tiếp diễn (có thể có ngắt quãng nhưng vẫn lặp lại).",
+          "examples": [
+            "Their continual complaining drove us mad."
+          ],
+          "grammar_patterns": [
+            "continual + noun (complaining, effort, changes)"
+          ],
+          "usage_notes_vi": "Diễn tả sự lặp lại của một hành động hoặc tình huống, có thể có những khoảng dừng ngắn giữa các lần."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "What causes stress in family life?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What makes a workplace unpleasant?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "What problems can neighbours cause?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "continual",
+          "text": "Their continual complaining drove us mad."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "continual",
+          "source": "They complained again and again, and it drove us mad.",
+          "model": "Their continual complaining drove us mad."
+        },
+        {
+          "target": "continual",
+          "source": "The machine breaks down again and again, which causes delays.",
+          "model": "The machine's continual breakdowns cause delays."
+        }
+      ]
+    },
+    "rose_sharply_steeply": {
+      "word": "rose sharply/steeply",
+      "pronunciation": "/ˌroʊz ˈʃɑːrpli/",
+      "image": {
+        "type": "prompt",
+        "value": "rose sharply graph",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "verb",
+        "adverb"
+      ],
+      "collocation_type": "verb+adverb",
+      "senses": [
+        {
+          "definition_vi": "Tăng mạnh mẽ, tăng vọt.",
+          "examples": [
+            "Profits rose sharply/steeply in July."
+          ],
+          "grammar_patterns": [
+            "rose + sharply/steeply"
+          ],
+          "usage_notes_vi": "Mô tả sự gia tăng nhanh chóng và đáng kể, thường dùng trong biểu đồ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "How have house prices changed in your city?",
+          "fits": []
+        },
+        {
+          "context": "Business",
+          "question": "How did online sales change during the pandemic?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How have temperatures changed over the past century?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "rose sharply/steeply",
+          "text": "Profits rose sharply in the summer."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "rose sharply/steeply",
+          "source": "Profits went up very quickly in July.",
+          "model": "Profits rose sharply in July."
+        },
+        {
+          "target": "rose sharply/steeply",
+          "source": "The price of oil increased very fast last year.",
+          "model": "The price of oil rose steeply last year."
+        }
+      ]
+    },
+    "fell_sharply_steeply": {
+      "word": "fell sharply/steeply",
+      "pronunciation": "/ˌfɛl ˈʃɑːrpli/",
+      "image": {
+        "type": "prompt",
+        "value": "fell sharply graph",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Wiki_slope_in_2d.svg/960px-Wiki_slope_in_2d.svg.png"
+      },
+      "part_of_speech": [
+        "verb",
+        "adverb"
+      ],
+      "collocation_type": "verb+adverb",
+      "senses": [
+        {
+          "definition_vi": "Giảm mạnh mẽ, giảm sâu.",
+          "examples": [
+            "Profits fell sharply/steeply in September."
+          ],
+          "grammar_patterns": [
+            "fell + sharply/steeply"
+          ],
+          "usage_notes_vi": "Mô tả sự suy giảm nhanh chóng và đáng kể, thường dùng trong biểu đồ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "What happened to the economy during the pandemic?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "How did tourism change when borders closed?",
+          "fits": []
+        },
+        {
+          "context": "Business",
+          "question": "What happens to sales when a product gets bad reviews?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "fell sharply/steeply",
+          "text": "Sales fell sharply after the bad reviews."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "fell sharply/steeply",
+          "source": "Profits went down very quickly in September.",
+          "model": "Profits fell sharply in September."
+        },
+        {
+          "target": "fell sharply/steeply",
+          "source": "The number of tourists dropped very fast during the crisis.",
+          "model": "The number of tourists fell steeply during the crisis."
+        }
+      ]
+    },
+    "dramatic_rise_fall": {
+      "word": "dramatic rise/fall",
+      "pronunciation": "/drəˈmætɪk ˈraɪz/",
+      "image": {
+        "type": "prompt",
+        "value": "dramatic rise graph",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự tăng/giảm đột ngột, kịch tính.",
+          "examples": [
+            "There was a dramatic rise/fall in the number of students applying to university this year."
+          ],
+          "grammar_patterns": [
+            "dramatic + rise/fall"
+          ],
+          "usage_notes_vi": "Diễn tả một sự thay đổi lớn và bất ngờ về số lượng hoặc mức độ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How has the number of university students changed in your country?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How have fish populations changed in recent years?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How has the use of smartphones changed in the last decade?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "dramatic rise/fall",
+          "text": "There was a dramatic rise in house prices."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "dramatic rise/fall",
+          "source": "The number of students applying to university went up very suddenly this year.",
+          "model": "There was a dramatic rise in the number of students applying to university this year."
+        },
+        {
+          "target": "dramatic rise/fall",
+          "source": "The fish population dropped very suddenly and sharply.",
+          "model": "There was a dramatic fall in the fish population."
+        }
+      ]
+    },
+    "increased_steadily_gradually": {
+      "word": "increased steadily/gradually",
+      "pronunciation": "/ɪnˈkriːst ˈstɛdəli/",
+      "image": {
+        "type": "prompt",
+        "value": "increased steadily graph",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Opera_Garnier_Stairway_2008.JPG/960px-Opera_Garnier_Stairway_2008.JPG"
+      },
+      "part_of_speech": [
+        "verb",
+        "adverb"
+      ],
+      "collocation_type": "verb+adverb",
+      "senses": [
+        {
+          "definition_vi": "Tăng đều đặn/dần dần.",
+          "examples": [
+            "Numbers of mature students have increased steadily/gradually since the 1960s."
+          ],
+          "grammar_patterns": [
+            "increased + steadily/gradually"
+          ],
+          "usage_notes_vi": "Mô tả sự gia tăng diễn ra một cách từ từ, ổn định theo thời gian."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How has the number of adult learners changed over time?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How have global temperatures changed over the last century?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How has life expectancy changed in your country?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "increased steadily/gradually",
+          "text": "The number of cyclists has increased steadily."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "increased steadily/gradually",
+          "source": "The number of mature students has gone up a little each year.",
+          "model": "The number of mature students has increased steadily."
+        },
+        {
+          "target": "increased steadily/gradually",
+          "source": "Life expectancy has slowly become longer over the years.",
+          "model": "Life expectancy has increased gradually over the years."
+        }
+      ]
+    },
+    "remained_constant_stable": {
+      "word": "remained constant/stable",
+      "pronunciation": "/rɪˈmeɪnd ˈkɒnstənt/",
+      "image": {
+        "type": "prompt",
+        "value": "remained constant graph",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "verb",
+        "adjective"
+      ],
+      "collocation_type": "verb+adjective",
+      "senses": [
+        {
+          "definition_vi": "Giữ nguyên, không đổi, ổn định.",
+          "examples": [
+            "The number of crimes committed in the city has remained constant/stable since 2011."
+          ],
+          "grammar_patterns": [
+            "remained + constant/stable"
+          ],
+          "usage_notes_vi": "Diễn tả tình trạng không thay đổi hoặc duy trì ở mức độ nhất định."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Has crime in your city changed over the years?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "How have food prices changed recently?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Have smoking rates changed in your country?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "remained constant/stable",
+          "text": "The number of crimes has remained stable."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "remained constant/stable",
+          "source": "The number of crimes in the city has not changed for years.",
+          "model": "The number of crimes in the city has remained constant for years."
+        },
+        {
+          "target": "remained constant/stable",
+          "source": "Prices have stayed the same since last year.",
+          "model": "Prices have remained stable since last year."
+        }
+      ]
+    }
+  }
+}

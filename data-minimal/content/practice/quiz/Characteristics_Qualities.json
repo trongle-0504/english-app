@@ -1,0 +1,1164 @@
+{
+  "questions": [
+    {
+      "id": "sa_suitable_0_0",
+      "type": "short_answer",
+      "sentence": "We are looking for ___ with excellent communication skills.",
+      "options": [],
+      "correct_answer": "a suitable candidate",
+      "explanation": "suitable candidate",
+      "hint": "Ứng viên phù hợp",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_suitable_1_0",
+      "type": "short_answer",
+      "sentence": "The film is not ___ due to its content.",
+      "options": [],
+      "correct_answer": "suitable for young children",
+      "explanation": "suitable for",
+      "hint": "Phù hợp cho",
+      "collocation_type": "prepositional phrase"
+    },
+    {
+      "id": "sa_suitable_2_0",
+      "type": "short_answer",
+      "sentence": "They searched for ___ to build their new factory.",
+      "options": [],
+      "correct_answer": "a suitable location",
+      "explanation": "suitable location",
+      "hint": "Địa điểm phù hợp",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_suitable_3_0",
+      "type": "short_answer",
+      "sentence": "He waited for ___ to ask for a raise.",
+      "options": [],
+      "correct_answer": "a suitable moment",
+      "explanation": "suitable moment",
+      "hint": "Thời điểm thích hợp",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_frightening_0_0",
+      "type": "short_answer",
+      "sentence": "The car crash was a ___ for the whole family.",
+      "options": [],
+      "correct_answer": "frightening experience",
+      "explanation": "frightening experience",
+      "hint": "trải nghiệm đáng sợ",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_frightening_1_0",
+      "type": "short_answer",
+      "sentence": "The ___ of unemployment loomed over him.",
+      "options": [],
+      "correct_answer": "frightening prospect",
+      "explanation": "frightening prospect",
+      "hint": "viễn cảnh đáng sợ",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_frightening_2_0",
+      "type": "short_answer",
+      "sentence": "It's a ___ that we might be alone in the universe.",
+      "options": [],
+      "correct_answer": "frightening thought",
+      "explanation": "frightening thought",
+      "hint": "suy nghĩ đáng sợ",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_frightening_3_0",
+      "type": "short_answer",
+      "sentence": "The movie was ___.",
+      "options": [],
+      "correct_answer": "truly frightening",
+      "explanation": "truly frightening",
+      "hint": "thực sự đáng sợ",
+      "collocation_type": "adV + Adj"
+    },
+    {
+      "id": "sa_familiar_0_0",
+      "type": "short_answer",
+      "sentence": "That face ___ to me, but I can't remember where I've seen it before.",
+      "options": [],
+      "correct_answer": "looks familiar",
+      "explanation": "look familiar",
+      "hint": "trông quen quen",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_familiar_1_0",
+      "type": "short_answer",
+      "sentence": "The name of the company ___, but I'm not sure if I've worked with them.",
+      "options": [],
+      "correct_answer": "sounds familiar",
+      "explanation": "sound familiar",
+      "hint": "nghe quen quen",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_familiar_2_0",
+      "type": "short_answer",
+      "sentence": "The old man walking his dog every morning is a ___ in our park.",
+      "options": [],
+      "correct_answer": "familiar figure",
+      "explanation": "familiar figure",
+      "hint": "hình bóng quen thuộc",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_familiar_3_0",
+      "type": "short_answer",
+      "sentence": "Many ___ from the previous season are returning for the new one.",
+      "options": [],
+      "correct_answer": "familiar names",
+      "explanation": "familiar name",
+      "hint": "cái tên quen thuộc",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_familiar_4_0",
+      "type": "short_answer",
+      "sentence": "The melody was ___, as if I'd heard it somewhere before.",
+      "options": [],
+      "correct_answer": "vaguely familiar",
+      "explanation": "vaguely familiar",
+      "hint": "hơi quen quen, mơ hồ quen thuộc",
+      "collocation_type": "Adj phrase"
+    },
+    {
+      "id": "sa_familiar_5_0",
+      "type": "short_answer",
+      "sentence": "Unfortunately, delays like this have become ___ with this airline.",
+      "options": [],
+      "correct_answer": "all too familiar",
+      "explanation": "all too familiar",
+      "hint": "quen thuộc đến mức đáng buồn/nhàm chán",
+      "collocation_type": "Adj phrase"
+    },
+    {
+      "id": "sa_familiar_6_0",
+      "type": "short_answer",
+      "sentence": "The author is ___ the historical period she writes about.",
+      "options": [],
+      "correct_answer": "intimately familiar with",
+      "explanation": "intimately familiar with",
+      "hint": "biết rất rõ, tường tận về",
+      "collocation_type": "Adj phrase"
+    },
+    {
+      "id": "sa_shabby_0_0",
+      "type": "short_answer",
+      "sentence": "Her apartment was decorated in a ___ style.",
+      "options": [],
+      "correct_answer": "shabby chic",
+      "explanation": "shabby chic",
+      "hint": "Phong cách thời trang/trang trí nội thất kết hợp giữa đồ cũ kỹ, sờn rách với sự sang trọng, tinh tế.",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_shabby_0_1",
+      "type": "short_answer",
+      "sentence": "The vintage dress had a certain ___ appeal.",
+      "options": [],
+      "correct_answer": "shabby chic",
+      "explanation": "shabby chic",
+      "hint": "Phong cách thời trang/trang trí nội thất kết hợp giữa đồ cũ kỹ, sờn rách với sự sang trọng, tinh tế.",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_remarkable_0_0",
+      "type": "short_answer",
+      "sentence": "Winning the championship with an undefeated record was ___.",
+      "options": [],
+      "correct_answer": "a remarkable achievement",
+      "explanation": "a remarkable achievement",
+      "hint": "Một thành tựu phi thường",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_remarkable_1_0",
+      "type": "short_answer",
+      "sentence": "She has had ___ in medicine, saving thousands of lives.",
+      "options": [],
+      "correct_answer": "a remarkable career",
+      "explanation": "a remarkable career",
+      "hint": "Một sự nghiệp đáng kinh ngạc",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_remarkable_2_0",
+      "type": "short_answer",
+      "sentence": "He possesses ___ for music at such a young age.",
+      "options": [],
+      "correct_answer": "a remarkable talent",
+      "explanation": "a remarkable talent",
+      "hint": "Một tài năng phi thường",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_practical_0_0",
+      "type": "short_answer",
+      "sentence": "Gaining ___ is crucial for landing a job.",
+      "options": [],
+      "correct_answer": "practical experience",
+      "explanation": "practical experience",
+      "hint": "kinh nghiệm thực tế",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_practical_1_0",
+      "type": "short_answer",
+      "sentence": "She gave me some ___ on how to prepare for the interview.",
+      "options": [],
+      "correct_answer": "practical advice",
+      "explanation": "practical advice",
+      "hint": "lời khuyên thực tế",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_practical_2_0",
+      "type": "short_answer",
+      "sentence": "Employers are looking for candidates with strong ___.",
+      "options": [],
+      "correct_answer": "practical skills",
+      "explanation": "practical skills",
+      "hint": "kỹ năng thực tế",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_practical_3_0",
+      "type": "short_answer",
+      "sentence": "We need to find a ___ to this problem.",
+      "options": [],
+      "correct_answer": "practical solution",
+      "explanation": "practical solution",
+      "hint": "giải pháp thực tế",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_practical_4_0",
+      "type": "short_answer",
+      "sentence": "The government is taking ___ to address the issue.",
+      "options": [],
+      "correct_answer": "practical steps",
+      "explanation": "practical steps",
+      "hint": "bước đi thực tế",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_steady_0_0",
+      "type": "short_answer",
+      "sentence": "The country has experienced ___ for the past decade.",
+      "options": [],
+      "correct_answer": "steady economic growth",
+      "explanation": "steady economic growth",
+      "hint": "tăng trưởng kinh tế ổn định",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_steady_1_0",
+      "type": "short_answer",
+      "sentence": "There has been a ___ in sales over the last quarter.",
+      "options": [],
+      "correct_answer": "steady decline",
+      "explanation": "steady decline",
+      "hint": "sự suy giảm đều đặn",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_steady_2_0",
+      "type": "short_answer",
+      "sentence": "We have seen a ___ in demand for our products.",
+      "options": [],
+      "correct_answer": "steady increase",
+      "explanation": "steady increase",
+      "hint": "sự gia tăng đều đặn",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_steady_3_0",
+      "type": "short_answer",
+      "sentence": "Despite the challenges, the team is making ___ towards its goals.",
+      "options": [],
+      "correct_answer": "steady progress",
+      "explanation": "steady progress",
+      "hint": "tiến bộ vững chắc/đều đặn",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_steady_4_0",
+      "type": "short_answer",
+      "sentence": "The museum receives a ___ of visitors every day.",
+      "options": [],
+      "correct_answer": "steady stream",
+      "explanation": "steady stream/flow",
+      "hint": "dòng chảy/luồng liên tục",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_steady_5_0",
+      "type": "short_answer",
+      "sentence": "He finally found a ___ after months of searching.",
+      "options": [],
+      "correct_answer": "steady job",
+      "explanation": "steady job/income",
+      "hint": "công việc/thu nhập ổn định",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_steady_6_0",
+      "type": "short_answer",
+      "sentence": "She walked at a ___, not too fast and not too slow.",
+      "options": [],
+      "correct_answer": "steady pace",
+      "explanation": "steady pace",
+      "hint": "nhịp độ ổn định",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_steady_7_0",
+      "type": "short_answer",
+      "sentence": "A surgeon needs a ___ to perform complex operations.",
+      "options": [],
+      "correct_answer": "steady hand",
+      "explanation": "steady hand",
+      "hint": "bàn tay vững vàng",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_steady_8_0",
+      "type": "short_answer",
+      "sentence": "They've been in a ___ for over two years.",
+      "options": [],
+      "correct_answer": "steady relationship",
+      "explanation": "steady relationship",
+      "hint": "mối quan hệ ổn định, nghiêm túc",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_noticeable_0_0",
+      "type": "short_answer",
+      "sentence": "Her scars are ___ now.",
+      "options": [],
+      "correct_answer": "hardly noticeable",
+      "explanation": "hardly noticeable",
+      "hint": "Hầu như không thể nhận thấy",
+      "collocation_type": "Adj phrase"
+    },
+    {
+      "id": "sa_noticeable_1_0",
+      "type": "short_answer",
+      "sentence": "This effect is ___ in younger patients.",
+      "options": [],
+      "correct_answer": "particularly noticeable",
+      "explanation": "particularly noticeable",
+      "hint": "Đặc biệt rõ ràng, dễ thấy",
+      "collocation_type": "Adj phrase"
+    },
+    {
+      "id": "sa_ordinary_0_0",
+      "type": "short_answer",
+      "sentence": "___, the ceremony would have lasted longer.",
+      "options": [],
+      "correct_answer": "In the ordinary course of events",
+      "explanation": "in the ordinary course of events",
+      "hint": "theo thường lệ, theo lẽ thường tình",
+      "collocation_type": "phrase"
+    },
+    {
+      "id": "sa_ordinary_1_0",
+      "type": "short_answer",
+      "sentence": "I'm looking for + sth a little more ___.",
+      "options": [],
+      "correct_answer": "out of the ordinary",
+      "explanation": "out of the ordinary",
+      "hint": "khác thường, bất thường",
+      "collocation_type": "phrase"
+    },
+    {
+      "id": "sa_ordinary_1_1",
+      "type": "short_answer",
+      "sentence": "His behaviour was nothing ___ (= not unusual).",
+      "options": [],
+      "correct_answer": "out of the ordinary",
+      "explanation": "out of the ordinary",
+      "hint": "khác thường, bất thường",
+      "collocation_type": "phrase"
+    },
+    {
+      "id": "sa_ordinary_2_0",
+      "type": "short_answer",
+      "sentence": "___, she's not a nervous person.",
+      "options": [],
+      "correct_answer": "In the ordinary way",
+      "explanation": "in the ordinary way",
+      "hint": "theo cách thông thường, thường thì",
+      "collocation_type": "phrase"
+    },
+    {
+      "id": "sa_standard_0_0",
+      "type": "short_answer",
+      "sentence": "This company has ___ for innovation in the tech industry.",
+      "options": [],
+      "correct_answer": "set the standard",
+      "explanation": "set the standard",
+      "hint": "thiết lập/trở thành tiêu chuẩn (cho người khác theo sau)",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_standard_1_0",
+      "type": "short_answer",
+      "sentence": "The project failed to ___ set by the government.",
+      "options": [],
+      "correct_answer": "meet the required safety standards",
+      "explanation": "meet/achieve the standard",
+      "hint": "đạt tiêu chuẩn (thường dùng trong bối cảnh đánh giá)",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_standard_2_0",
+      "type": "short_answer",
+      "sentence": "The new educational policy aims to ___ of literacy among young children.",
+      "options": [],
+      "correct_answer": "raise the standard",
+      "explanation": "raise the standard",
+      "hint": "nâng cao tiêu chuẩn (dùng trong giải pháp hoặc cải tiến)",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_standard_3_0",
+      "type": "short_answer",
+      "sentence": "Economic growth does not always lead to a higher ___ for all citizens.",
+      "options": [],
+      "correct_answer": "standard of living",
+      "explanation": "standard of living",
+      "hint": "mức sống/tiêu chuẩn sống (cụm từ 'vàng' cho chủ đề Economics/Society)",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_standard_4_0",
+      "type": "short_answer",
+      "sentence": "Many argue that ___ have declined significantly in the digital age.",
+      "options": [],
+      "correct_answer": "moral standards",
+      "explanation": "moral/ethical standards",
+      "hint": "tiêu chuẩn đạo đức (chủ đề xã hội/tội phạm)",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_standard_5_0",
+      "type": "short_answer",
+      "sentence": "Universities must maintain high ___ to remain competitive globally.",
+      "options": [],
+      "correct_answer": "academic standards",
+      "explanation": "academic/professional standards",
+      "hint": "tiêu chuẩn học thuật/nghề nghiệp",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_standard_6_0",
+      "type": "short_answer",
+      "sentence": "If the quality of the water ___, it can pose a health hazard.",
+      "options": [],
+      "correct_answer": "falls below standard",
+      "explanation": "fall below standard",
+      "hint": "không đạt tiêu chuẩn (dưới mức yêu cầu)",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_noticeable_0_0",
+      "type": "short_answer",
+      "sentence": "There is a ___ between the two results.",
+      "options": [],
+      "correct_answer": "noticeable difference",
+      "explanation": "noticeable difference",
+      "hint": "sự khác biệt rõ rệt",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_noticeable_1_0",
+      "type": "short_answer",
+      "sentence": "We observed a ___ in his behavior.",
+      "options": [],
+      "correct_answer": "noticeable change",
+      "explanation": "noticeable change",
+      "hint": "sự thay đổi rõ rệt",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_noticeable_2_0",
+      "type": "short_answer",
+      "sentence": "She made a ___ after practicing daily.",
+      "options": [],
+      "correct_answer": "noticeable improvement",
+      "explanation": "noticeable improvement",
+      "hint": "sự cải thiện rõ rệt",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_noticeable_3_0",
+      "type": "short_answer",
+      "sentence": "The impact was immediately ___.",
+      "options": [],
+      "correct_answer": "noticeable",
+      "explanation": "clearly / highly / immediately noticeable",
+      "hint": "rất dễ nhận thấy / nhận ra ngay lập tức",
+      "collocation_type": "adV + Adj"
+    },
+    {
+      "id": "mc_academic_0_1777697864004",
+      "type": "multiple_choice",
+      "sentence": "We were just talking about her when, at that ___, she walked in.",
+      "options": [
+        {
+          "id": "a",
+          "text": "precise moment"
+        },
+        {
+          "id": "b",
+          "text": "precise instructions"
+        },
+        {
+          "id": "c",
+          "text": "precise details"
+        },
+        {
+          "id": "d",
+          "text": "precise nature"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm \"precise moment\" có nghĩa là \"thời điểm chính xác\". Trong ngữ cảnh này, nó chỉ ra rằng cô ấy bước v��o đúng lúc họ đang nói về cô ấy."
+    },
+    {
+      "id": "mc_academic_1_1777697864004",
+      "type": "multiple_choice",
+      "sentence": "She is a skilled and ___ worker.",
+      "options": [
+        {
+          "id": "a",
+          "text": "complicated"
+        },
+        {
+          "id": "b",
+          "text": "precise"
+        },
+        {
+          "id": "c",
+          "text": "suitable"
+        },
+        {
+          "id": "d",
+          "text": "frightening"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Tính từ \"precise\" mô tả một người làm việc cẩn thận, chính xác và tỉ mỉ, phù hợp với ngữ cảnh nói về một người lao động có kỹ năng."
+    },
+    {
+      "id": "mc_academic_2_1777697864004",
+      "type": "multiple_choice",
+      "sentence": "The instructions look very ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "complicated"
+        },
+        {
+          "id": "b",
+          "text": "shabby"
+        },
+        {
+          "id": "c",
+          "text": "precise"
+        },
+        {
+          "id": "d",
+          "text": "familiar"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Tính từ \"complicated\" có nghĩa là \"phức tạp, rắc rối\", mô tả đúng tình trạng c���a những chỉ dẫn khó hiểu hoặc nhiều chi tiết."
+    },
+    {
+      "id": "mc_academic_3_1777697864004",
+      "type": "multiple_choice",
+      "sentence": "The teacher selected ___ for the class president position.",
+      "options": [
+        {
+          "id": "a",
+          "text": "a shabby candidate"
+        },
+        {
+          "id": "b",
+          "text": "a suitable candidate"
+        },
+        {
+          "id": "c",
+          "text": "a practical candidate"
+        },
+        {
+          "id": "d",
+          "text": "a steady candidate"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm từ \"suitable candidate\" có nghĩa là \"ứng viên phù hợp\". Điều này phù hợp với ngữ cảnh giáo viên chọn người cho vị trí chủ tịch lớp."
+    },
+    {
+      "id": "mc_academic_4_1777697864004",
+      "type": "multiple_choice",
+      "sentence": "She had a ___ experience during the storm.",
+      "options": [
+        {
+          "id": "a",
+          "text": "practical experience"
+        },
+        {
+          "id": "b",
+          "text": "steady experience"
+        },
+        {
+          "id": "c",
+          "text": "remarkable experience"
+        },
+        {
+          "id": "d",
+          "text": "frightening experience"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm từ \"frightening experience\" có nghĩa là \"trải nghiệm đáng sợ\". Từ \"frightening\" mô tả đúng cảm giác khi trải qua một sự kiện nguy hiểm như bão."
+    },
+    {
+      "id": "mc_academic_5_1777697864004",
+      "type": "multiple_choice",
+      "sentence": "I couldn’t see any ___ in the room.",
+      "options": [
+        {
+          "id": "a",
+          "text": "steady faces"
+        },
+        {
+          "id": "b",
+          "text": "practical faces"
+        },
+        {
+          "id": "c",
+          "text": "familiar faces"
+        },
+        {
+          "id": "d",
+          "text": "shabby faces"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm từ \"familiar faces\" có nghĩa là \"những gương mặt quen thuộc\". Điều này phù hợp với ngữ cảnh không nhận ra ai trong phòng."
+    },
+    {
+      "id": "mc_academic_6_1777697864004",
+      "type": "multiple_choice",
+      "sentence": "You will soon become ___ the different activities.",
+      "options": [
+        {
+          "id": "a",
+          "text": "shabby with"
+        },
+        {
+          "id": "b",
+          "text": "practical with"
+        },
+        {
+          "id": "c",
+          "text": "familiar with"
+        },
+        {
+          "id": "d",
+          "text": "steady with"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm từ \"familiar with\" có nghĩa là \"quen thuộc với\". Cấu trúc này được sử dụng khi ai đó trở nên quen với điều gì đó mới."
+    },
+    {
+      "id": "mc_academic_7_1777697864004",
+      "type": "multiple_choice",
+      "sentence": "The outside of the house was beginning to look ___ and neglected.",
+      "options": [
+        {
+          "id": "a",
+          "text": "practical"
+        },
+        {
+          "id": "b",
+          "text": "shabby"
+        },
+        {
+          "id": "c",
+          "text": "remarkable"
+        },
+        {
+          "id": "d",
+          "text": "steady"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Tính từ \"shabby\" có nghĩa là \"tồi tàn, cũ kỹ\". Nó mô tả đúng tình trạng của một ngôi nhà bắt đầu xuống cấp và bị bỏ bê."
+    },
+    {
+      "id": "mc_academic_8_1777697864004",
+      "type": "multiple_choice",
+      "sentence": "She tried to make up for her ___ of him during the meeting.",
+      "options": [
+        {
+          "id": "a",
+          "text": "practical treatment"
+        },
+        {
+          "id": "b",
+          "text": "remarkable treatment"
+        },
+        {
+          "id": "c",
+          "text": "steady treatment"
+        },
+        {
+          "id": "d",
+          "text": "shabby treatment"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm từ \"shabby treatment\" có nghĩa là \"sự đối xử tệ bạc\". Điều này phù hợp với ngữ cảnh người đó cố gắng bù đắp cho cách cư xử không tốt của mình."
+    },
+    {
+      "id": "mc_academic_9_1777697864004",
+      "type": "multiple_choice",
+      "sentence": "He scored three goals in his first match. ___ for a newcomer!",
+      "options": [
+        {
+          "id": "a",
+          "text": "Not too practical"
+        },
+        {
+          "id": "b",
+          "text": "Not too shabby"
+        },
+        {
+          "id": "c",
+          "text": "Not too familiar"
+        },
+        {
+          "id": "d",
+          "text": "Not too steady"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm từ \"Not too shabby\" là một cách diễn đạt thông tục, có nghĩa là \"không tệ lắm\" hoặc \"khá tốt\". Nó dùng để khen ngợi thành tích của người mới."
+    },
+    {
+      "id": "mc_academic_10_1777697864004",
+      "type": "multiple_choice",
+      "sentence": "It was a truly ___ achievement for the young scientist.",
+      "options": [
+        {
+          "id": "a",
+          "text": "practical"
+        },
+        {
+          "id": "b",
+          "text": "steady"
+        },
+        {
+          "id": "c",
+          "text": "frightening"
+        },
+        {
+          "id": "d",
+          "text": "remarkable"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Tính từ \"remarkable\" có nghĩa là \"đáng chú ý, phi thường\". Nó phù hợp để mô tả một thành tựu nổi bật của một nhà khoa học trẻ."
+    },
+    {
+      "id": "mc_academic_11_1777697864004",
+      "type": "multiple_choice",
+      "sentence": "The students are encouraged to gain ___ of the workplace.",
+      "options": [
+        {
+          "id": "a",
+          "text": "shabby experience"
+        },
+        {
+          "id": "b",
+          "text": "familiar experience"
+        },
+        {
+          "id": "c",
+          "text": "practical experience"
+        },
+        {
+          "id": "d",
+          "text": "steady experience"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm từ \"practical experience\" có nghĩa là \"kinh nghiệm thực tế\". Điều này phù hợp với lời khuyến khích sinh viên tích lũy kinh nghiệm làm việc thực tế."
+    },
+    {
+      "id": "mc_academic_12_1777697864004",
+      "type": "multiple_choice",
+      "sentence": "It was ___ to do ___ to save money.",
+      "options": [
+        {
+          "id": "a",
+          "text": "steady to do"
+        },
+        {
+          "id": "b",
+          "text": "familiar to do"
+        },
+        {
+          "id": "c",
+          "text": "practical to do"
+        },
+        {
+          "id": "d",
+          "text": "shabby to do"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cấu trúc \"practical to do sth\" có nghĩa là \"thực tế để làm gì đó\". Nó chỉ ra rằng hành động đó là hợp lý và có ích trong hoàn cảnh cụ thể."
+    },
+    {
+      "id": "mc_academic_13_1777697864004",
+      "type": "multiple_choice",
+      "sentence": "We've had five years of ___ economic growth.",
+      "options": [
+        {
+          "id": "a",
+          "text": "steady"
+        },
+        {
+          "id": "b",
+          "text": "practical"
+        },
+        {
+          "id": "c",
+          "text": "frightening"
+        },
+        {
+          "id": "d",
+          "text": "remarkable"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Tính từ \"steady\" có nghĩa là \"ổn định, đều đặn\". Nó mô tả đúng sự tăng trưởng kinh tế không có biến động lớn trong một khoảng thời gian."
+    },
+    {
+      "id": "mc_academic_14_1777697864004",
+      "type": "multiple_choice",
+      "sentence": "His breathing was ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "steady"
+        },
+        {
+          "id": "b",
+          "text": "practical"
+        },
+        {
+          "id": "c",
+          "text": "shabby"
+        },
+        {
+          "id": "d",
+          "text": "familiar"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Tính từ \"steady\" có nghĩa là \"đều, ổn định\". Nó mô tả trạng thái hơi thở không bị gấp gáp hay không đều, cho thấy sự bình tĩnh hoặc tình trạng sức khỏe ổn định."
+    },
+    {
+      "id": "mc_academic_15_1777697874292",
+      "type": "multiple_choice",
+      "sentence": "He held the boat ___ as she got in.",
+      "options": [
+        {
+          "id": "a",
+          "text": "steadied"
+        },
+        {
+          "id": "b",
+          "text": "steadiness"
+        },
+        {
+          "id": "c",
+          "text": "steadily"
+        },
+        {
+          "id": "d",
+          "text": "steady"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Trong cấu trúc \"hold something steady\", \"steady\" đóng vai trò là tính từ bổ nghĩa cho tân ngữ \"the boat\". \"Steadily\" là trạng từ và không phù hợp ở đây."
+    },
+    {
+      "id": "mc_academic_16_1777697874292",
+      "type": "multiple_choice",
+      "sentence": "The new filing system is a ___ on the old one.",
+      "options": [
+        {
+          "id": "a",
+          "text": "noticeable difference"
+        },
+        {
+          "id": "b",
+          "text": "noticeably improvement"
+        },
+        {
+          "id": "c",
+          "text": "noticeable improvement"
+        },
+        {
+          "id": "d",
+          "text": "noticeably difference"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm \"a noticeable improvement\" có nghĩa là \"sự cải thiện đáng chú ý\". \"Noticeable\" là tính từ bổ nghĩa cho danh từ \"improvement\"."
+    },
+    {
+      "id": "mc_academic_17_1777697874292",
+      "type": "multiple_choice",
+      "sentence": "We have no ___ of the battle.",
+      "options": [
+        {
+          "id": "a",
+          "text": "contemporary with"
+        },
+        {
+          "id": "b",
+          "text": "contemporary"
+        },
+        {
+          "id": "c",
+          "text": "contemporarily"
+        },
+        {
+          "id": "d",
+          "text": "contemporaries"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Trong câu này, \"contemporary\" đóng vai trò là tính từ, có nghĩa là \"cùng thời\" hoặc \"hiện đại\", bổ nghĩa cho danh từ \"account\"."
+    },
+    {
+      "id": "mc_academic_18_1777697874292",
+      "type": "multiple_choice",
+      "sentence": "He is among the best-known ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "contemporaries"
+        },
+        {
+          "id": "b",
+          "text": "contemporarily"
+        },
+        {
+          "id": "c",
+          "text": "contemporary with"
+        },
+        {
+          "id": "d",
+          "text": "contemporary"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm \"contemporary artists\" chỉ \"các nghệ sĩ đương đại\". \"Contemporaries\" là danh từ số nhiều, chỉ những người sống cùng thời với nhau."
+    },
+    {
+      "id": "mc_academic_19_1777697874292",
+      "type": "multiple_choice",
+      "sentence": "This was no ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "ordinarily"
+        },
+        {
+          "id": "b",
+          "text": "ordinary"
+        },
+        {
+          "id": "c",
+          "text": "ordained"
+        },
+        {
+          "id": "d",
+          "text": "ordinariness"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Trong câu này, \"ordinary\" là tính từ, có nghĩa là \"bình thường\", bổ nghĩa cho danh từ \"meeting\" (được ngụ ý trong câu \"This was no ordinary meeting.\")."
+    },
+    {
+      "id": "mc_academic_20_1777697874292",
+      "type": "multiple_choice",
+      "sentence": "The meal was very ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "ordinary"
+        },
+        {
+          "id": "b",
+          "text": "unordinary"
+        },
+        {
+          "id": "c",
+          "text": "ordinarily"
+        },
+        {
+          "id": "d",
+          "text": "ordinariness"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Trong câu này, \"ordinary\" là tính từ, có nghĩa là \"tầm thường\" hoặc \"bình thường\", mô tả cho danh từ \"meal\"."
+    },
+    {
+      "id": "mc_academic_21_1777697874292",
+      "type": "multiple_choice",
+      "sentence": "There has been a significant fall in living ___ in the region due to the economic crisis.",
+      "options": [
+        {
+          "id": "a",
+          "text": "standard"
+        },
+        {
+          "id": "b",
+          "text": "standardly"
+        },
+        {
+          "id": "c",
+          "text": "standardization"
+        },
+        {
+          "id": "d",
+          "text": "standards"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm \"living standards\" có nghĩa là \"mức sống\". \"Standards\" ở đây là danh từ số nhiều, chỉ các tiêu chuẩn hoặc mức độ."
+    },
+    {
+      "id": "mc_academic_22_1777697874292",
+      "type": "multiple_choice",
+      "sentence": "This software has become the industry ___ for graphic designers.",
+      "options": [
+        {
+          "id": "a",
+          "text": "standardly"
+        },
+        {
+          "id": "b",
+          "text": "standardization"
+        },
+        {
+          "id": "c",
+          "text": "standards"
+        },
+        {
+          "id": "d",
+          "text": "standard"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm \"industry standard\" có nghĩa là \"tiêu chuẩn ngành\". \"Standard\" ở đây là danh từ, chỉ một tiêu chuẩn được chấp nhận rộng rãi."
+    },
+    {
+      "id": "mc_academic_23_1777697874292",
+      "type": "multiple_choice",
+      "sentence": "Modern society is often accused of having lower moral ___ than in the past.",
+      "options": [
+        {
+          "id": "a",
+          "text": "standardly"
+        },
+        {
+          "id": "b",
+          "text": "standardization"
+        },
+        {
+          "id": "c",
+          "text": "standard"
+        },
+        {
+          "id": "d",
+          "text": "standards"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm \"moral standards\" có nghĩa là \"chuẩn mực đạo đức\". \"Standards\" ở đây là danh từ số nhiều, chỉ các tiêu chuẩn về đạo đức."
+    },
+    {
+      "id": "mc_academic_24_1777697874292",
+      "type": "multiple_choice",
+      "sentence": "There has been a ___ improvement in her English.",
+      "options": [
+        {
+          "id": "a",
+          "text": "noticeably"
+        },
+        {
+          "id": "b",
+          "text": "noticing"
+        },
+        {
+          "id": "c",
+          "text": "noticeable"
+        },
+        {
+          "id": "d",
+          "text": "notice"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Trong câu này, \"noticeable\" là tính từ, có nghĩa là \"đáng chú ý\", bổ nghĩa cho danh từ \"improvement\"."
+    },
+    {
+      "id": "mc_academic_25_1777697874292",
+      "type": "multiple_choice",
+      "sentence": "There was a ___ lack of enthusiasm in the team.",
+      "options": [
+        {
+          "id": "a",
+          "text": "noticing"
+        },
+        {
+          "id": "b",
+          "text": "noticeably"
+        },
+        {
+          "id": "c",
+          "text": "notice"
+        },
+        {
+          "id": "d",
+          "text": "noticeable"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm \"a noticeable lack\" có nghĩa là \"sự thiếu hụt rõ rệt\". \"Noticeable\" là tính từ bổ nghĩa cho danh từ \"lack\"."
+    }
+  ]
+}

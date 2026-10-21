@@ -1,0 +1,639 @@
+{
+  "questions": [
+    {
+      "id": "sa_absence_0_0",
+      "type": "short_answer",
+      "sentence": "He returned after a ___.",
+      "options": [],
+      "correct_answer": "long absence",
+      "explanation": "a long/brief absence",
+      "hint": "sự vắng mặt dài/ngắn",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_absence_1_0",
+      "type": "short_answer",
+      "sentence": "___ can affect performance.",
+      "options": [],
+      "correct_answer": "Frequent absences",
+      "explanation": "frequent/repeated absences",
+      "hint": "sự vắng mặt thường xuyên/lặp lại",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_absence_2_0",
+      "type": "short_answer",
+      "sentence": "Her ___ was noted.",
+      "options": [],
+      "correct_answer": "absence from work",
+      "explanation": "absence from work/school",
+      "hint": "vắng mặt khỏi công việc/trường học",
+      "collocation_type": "phrase"
+    },
+    {
+      "id": "sa_absence_3_0",
+      "type": "short_answer",
+      "sentence": "He returned after a ___.",
+      "options": [],
+      "correct_answer": "period of absence",
+      "explanation": "a period of absence",
+      "hint": "một khoảng thời gian vắng mặt",
+      "collocation_type": "phrase"
+    },
+    {
+      "id": "sa_absence_4_0",
+      "type": "short_answer",
+      "sentence": "___ evidence, no action was taken.",
+      "options": [],
+      "correct_answer": "In the absence of",
+      "explanation": "in the absence of",
+      "hint": "trong trường hợp không có",
+      "collocation_type": "phrase"
+    },
+    {
+      "id": "sa_absence_5_0",
+      "type": "short_answer",
+      "sentence": "The ___ leadership caused problems.",
+      "options": [],
+      "correct_answer": "absence of",
+      "explanation": "absence of + N",
+      "hint": "sự thiếu vắng của",
+      "collocation_type": "structure"
+    },
+    {
+      "id": "sa_bounds_0_0",
+      "type": "short_answer",
+      "sentence": "His enthusiasm ___.",
+      "options": [],
+      "correct_answer": "knew no bounds",
+      "explanation": "knew no bounds",
+      "hint": "không có giới hạn, vô cùng",
+      "collocation_type": "idiom"
+    },
+    {
+      "id": "sa_bounds_1_0",
+      "type": "short_answer",
+      "sentence": "The company's profits grew ___ last year.",
+      "options": [],
+      "correct_answer": "in leaps and bounds",
+      "explanation": "in leaps and bounds",
+      "hint": "vọt lên, tiến triển nhanh chóng",
+      "collocation_type": "idiom"
+    },
+    {
+      "id": "sa_bounds_2_0",
+      "type": "short_answer",
+      "sentence": "If the ball hits the wall, it's ___.",
+      "options": [],
+      "correct_answer": "out of bounds",
+      "explanation": "out of bounds",
+      "hint": "ngoài giới hạn cho phép (thể thao); không thể chấp nhận được",
+      "collocation_type": "idiom"
+    },
+    {
+      "id": "sa_bounds_2_1",
+      "type": "short_answer",
+      "sentence": "His behaviour was completely ___.",
+      "options": [],
+      "correct_answer": "out of bounds",
+      "explanation": "out of bounds",
+      "hint": "ngoài giới hạn cho phép (thể thao); không thể chấp nhận được",
+      "collocation_type": "idiom"
+    },
+    {
+      "id": "sa_discount_0_0",
+      "type": "short_answer",
+      "sentence": "Students can ___ on tickets.",
+      "options": [],
+      "correct_answer": "get a discount",
+      "explanation": "get/receive a discount",
+      "hint": "nhận được giảm giá",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_discount_1_0",
+      "type": "short_answer",
+      "sentence": "The store ___ during holidays.",
+      "options": [],
+      "correct_answer": "offers a discount",
+      "explanation": "give/offer a discount",
+      "hint": "cung cấp giảm giá",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_discount_2_0",
+      "type": "short_answer",
+      "sentence": "They are offering a ___.",
+      "options": [],
+      "correct_answer": "big discount",
+      "explanation": "a big/small discount",
+      "hint": "giảm giá lớn/nhỏ",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_discount_3_0",
+      "type": "short_answer",
+      "sentence": "Customers received a ___.",
+      "options": [],
+      "correct_answer": "substantial discount",
+      "explanation": "a substantial/good discount",
+      "hint": "giảm giá đáng kể",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_discount_4_0",
+      "type": "short_answer",
+      "sentence": "There is a ___ on all items.",
+      "options": [],
+      "correct_answer": "20% discount",
+      "explanation": "a 20% discount",
+      "hint": "mức giảm giá cụ thể",
+      "collocation_type": "structure"
+    },
+    {
+      "id": "sa_potential_0_0",
+      "type": "short_answer",
+      "sentence": "The company is trying to attract ___.",
+      "options": [],
+      "correct_answer": "potential customers",
+      "explanation": "potential customer/buyer/client",
+      "hint": "khách hàng/người mua tiềm năng",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_potential_1_0",
+      "type": "short_answer",
+      "sentence": "We need to identify ___ before starting the project.",
+      "options": [],
+      "correct_answer": "potential risks",
+      "explanation": "potential problem/risk/danger",
+      "hint": "vấn đề/rủi ro/nguy cơ tiềm ẩn",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_potential_2_0",
+      "type": "short_answer",
+      "sentence": "This idea has great ___.",
+      "options": [],
+      "correct_answer": "potential",
+      "explanation": "have potential",
+      "hint": "có tiềm năng",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_potential_3_0",
+      "type": "short_answer",
+      "sentence": "She has ___ in her studies.",
+      "options": [],
+      "correct_answer": "shown great potential",
+      "explanation": "show potential",
+      "hint": "thể hiện tiềm năng",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_potential_4_0",
+      "type": "short_answer",
+      "sentence": "Education helps individuals ___.",
+      "options": [],
+      "correct_answer": "achieve their full potential",
+      "explanation": "achieve/realize your potential",
+      "hint": "phát huy/đạt được tiềm năng",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_potential_5_0",
+      "type": "short_answer",
+      "sentence": "The region has ___ for tourism.",
+      "options": [],
+      "correct_answer": "great potential",
+      "explanation": "great/enormous/considerable potential",
+      "hint": "tiềm năng lớn",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_potential_6_0",
+      "type": "short_answer",
+      "sentence": "The area has strong ___.",
+      "options": [],
+      "correct_answer": "economic potential",
+      "explanation": "economic/commercial potential",
+      "hint": "tiềm năng kinh tế/thương mại",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_majority_0_0",
+      "type": "short_answer",
+      "sentence": "The ___ students prefer online learning.",
+      "options": [],
+      "correct_answer": "majority of",
+      "explanation": "the majority of",
+      "hint": "phần lớn của",
+      "collocation_type": "phrase"
+    },
+    {
+      "id": "sa_majority_1_0",
+      "type": "short_answer",
+      "sentence": "A ___ supported the new policy.",
+      "options": [],
+      "correct_answer": "large majority",
+      "explanation": "a large/great majority",
+      "hint": "đa số lớn",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_majority_2_0",
+      "type": "short_answer",
+      "sentence": "The decision was made by a ___.",
+      "options": [],
+      "correct_answer": "narrow majority",
+      "explanation": "a small/narrow majority",
+      "hint": "đa số sít sao",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_majority_3_0",
+      "type": "short_answer",
+      "sentence": "The proposal was approved by an ___.",
+      "options": [],
+      "correct_answer": "overwhelming majority",
+      "explanation": "an overwhelming majority",
+      "hint": "đa số áp đảo",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_majority_4_0",
+      "type": "short_answer",
+      "sentence": "A ___ agreed with the statement.",
+      "options": [],
+      "correct_answer": "majority of 60%",
+      "explanation": "a majority of + number",
+      "hint": "đa số (hơn một nửa)",
+      "collocation_type": "structure"
+    },
+    {
+      "id": "sa_majority_5_0",
+      "type": "short_answer",
+      "sentence": "The group ___ of the votes.",
+      "options": [],
+      "correct_answer": "holds a majority",
+      "explanation": "have/hold a majority",
+      "hint": "có đa số",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_majority_6_0",
+      "type": "short_answer",
+      "sentence": "They ___ in the vote.",
+      "options": [],
+      "correct_answer": "won a majority",
+      "explanation": "win/gain a majority",
+      "hint": "giành được đa số",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_majority_7_0",
+      "type": "short_answer",
+      "sentence": "The policy has ___.",
+      "options": [],
+      "correct_answer": "majority support",
+      "explanation": "majority support",
+      "hint": "sự ủng hộ của đa số",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_majority_8_0",
+      "type": "short_answer",
+      "sentence": "The decision was made by ___.",
+      "options": [],
+      "correct_answer": "majority vote",
+      "explanation": "majority vote",
+      "hint": "phiếu bầu của đa số",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "mc_academic_0_1777697888687",
+      "type": "multiple_choice",
+      "sentence": "Ms Leighton will be in charge ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "since my absence"
+        },
+        {
+          "id": "b",
+          "text": "while my absence"
+        },
+        {
+          "id": "c",
+          "text": "during my absence"
+        },
+        {
+          "id": "d",
+          "text": "when my absence"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm \"during my absence\" là cách diễn đạt chuẩn để nói về việc ai đó sẽ phụ trách khi người nói vắng mặt."
+    },
+    {
+      "id": "mc_academic_1_1777697888687",
+      "type": "multiple_choice",
+      "sentence": "A complete ___ planning led to failure.",
+      "options": [
+        {
+          "id": "a",
+          "text": "absence for"
+        },
+        {
+          "id": "b",
+          "text": "absence with"
+        },
+        {
+          "id": "c",
+          "text": "absence of"
+        },
+        {
+          "id": "d",
+          "text": "lack of"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cấu trúc \"absence of + danh từ\" dùng để chỉ sự thiếu vắng hoàn toàn của cái gì đó, trong trường hợp này là sự thiếu vắng của kế hoạch."
+    },
+    {
+      "id": "mc_academic_2_1777697888687",
+      "type": "multiple_choice",
+      "sentence": "Allow ___ time to get there.",
+      "options": [
+        {
+          "id": "a",
+          "text": "enough"
+        },
+        {
+          "id": "b",
+          "text": "plenty"
+        },
+        {
+          "id": "c",
+          "text": "adequate"
+        },
+        {
+          "id": "d",
+          "text": "sufficient"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Từ \"sufficient\" (đủ) được dùng ở đây để chỉ một lượng thời gian vừa đủ để đến nơi, phù hợp với ngữ cảnh yêu cầu."
+    },
+    {
+      "id": "mc_academic_3_1777697888687",
+      "type": "multiple_choice",
+      "sentence": "It took ___ time and effort.",
+      "options": [
+        {
+          "id": "a",
+          "text": "a lot"
+        },
+        {
+          "id": "b",
+          "text": "many"
+        },
+        {
+          "id": "c",
+          "text": "a great deal of"
+        },
+        {
+          "id": "d",
+          "text": "much"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm \"a great deal of\" đi kèm với danh từ không đếm được như \"time\" và \"effort\" để chỉ một số lượng lớn."
+    },
+    {
+      "id": "mc_academic_4_1777697888687",
+      "type": "multiple_choice",
+      "sentence": "Public spending must be kept ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "in reasonable bounds"
+        },
+        {
+          "id": "b",
+          "text": "within reasonable bounds"
+        },
+        {
+          "id": "c",
+          "text": "at reasonable bounds"
+        },
+        {
+          "id": "d",
+          "text": "to reasonable bounds"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm \"within reasonable bounds\" có nghĩa là giữ trong giới hạn hợp lý, đây là cách diễn đạt chuẩn trong trường hợp này."
+    },
+    {
+      "id": "mc_academic_5_1777697888687",
+      "type": "multiple_choice",
+      "sentence": "Her English has improved ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "in leaps and bounds"
+        },
+        {
+          "id": "b",
+          "text": "for leaps and bounds"
+        },
+        {
+          "id": "c",
+          "text": "by leaps and bounds"
+        },
+        {
+          "id": "d",
+          "text": "with leaps and bounds"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Thành ngữ \"in leaps and bounds\" dùng để diễn tả sự tiến bộ vượt bậc hoặc nhanh chóng."
+    },
+    {
+      "id": "mc_academic_6_1777697888687",
+      "type": "multiple_choice",
+      "sentence": "Members get ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "a discount of 15%"
+        },
+        {
+          "id": "b",
+          "text": "a discount with 15%"
+        },
+        {
+          "id": "c",
+          "text": "a discount 15%"
+        },
+        {
+          "id": "d",
+          "text": "a discount for 15%"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cấu trúc \"a discount of + phần trăm\" là cách diễn đạt chuẩn để nói về mức chiết khấu cụ thể."
+    },
+    {
+      "id": "mc_academic_7_1777697888687",
+      "type": "multiple_choice",
+      "sentence": "We shouldn't ___ that they will go bankrupt.",
+      "options": [
+        {
+          "id": "a",
+          "text": "discount the possibility"
+        },
+        {
+          "id": "b",
+          "text": "discount possibility"
+        },
+        {
+          "id": "c",
+          "text": "discount a possibility"
+        },
+        {
+          "id": "d",
+          "text": "discount on the possibility"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm \"discount the possibility\" có nghĩa là xem nhẹ hoặc bỏ qua khả năng xảy ra điều gì đó, đây là cách dùng chính xác trong ngữ cảnh này."
+    },
+    {
+      "id": "mc_academic_8_1777697888687",
+      "type": "multiple_choice",
+      "sentence": "They voted ___ against the proposal.",
+      "options": [
+        {
+          "id": "a",
+          "text": "mostly"
+        },
+        {
+          "id": "b",
+          "text": "largely"
+        },
+        {
+          "id": "c",
+          "text": "overwhelmingly"
+        },
+        {
+          "id": "d",
+          "text": "highly"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Trạng từ \"overwhelmingly\" (áp đảo) được dùng để nhấn mạnh rằng số lượng lớn người đã bỏ phiếu chống lại đề xu���t."
+    },
+    {
+      "id": "mc_academic_9_1777697888687",
+      "type": "multiple_choice",
+      "sentence": "The company has great ___ growth in the Asian market.",
+      "options": [
+        {
+          "id": "a",
+          "text": "potential for"
+        },
+        {
+          "id": "b",
+          "text": "possibility for"
+        },
+        {
+          "id": "c",
+          "text": "chance for"
+        },
+        {
+          "id": "d",
+          "text": "potential to"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cấu trúc \"potential for + danh từ\" dùng để chỉ khả năng hoặc tiềm năng cho sự phát triển của cái gì đó."
+    },
+    {
+      "id": "mc_academic_10_1777697888687",
+      "type": "multiple_choice",
+      "sentence": "We need to consider all ___ before launching the product.",
+      "options": [
+        {
+          "id": "a",
+          "text": "potential problems"
+        },
+        {
+          "id": "b",
+          "text": "likely problems"
+        },
+        {
+          "id": "c",
+          "text": "possible problems"
+        },
+        {
+          "id": "d",
+          "text": "probable problems"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Tính từ \"potential\" đứng trước danh từ \"problems\" để chỉ những vấn đề có thể xảy ra trong tương lai, cần được xem xét."
+    },
+    {
+      "id": "mc_academic_11_1777697888687",
+      "type": "multiple_choice",
+      "sentence": "The ___ workers find it quite hard to live on the amount of money they earn.",
+      "options": [
+        {
+          "id": "a",
+          "text": "more part of"
+        },
+        {
+          "id": "b",
+          "text": "majority of"
+        },
+        {
+          "id": "c",
+          "text": "mainity of"
+        },
+        {
+          "id": "d",
+          "text": "most part of"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm \"the majority of\" được sử dụng để chỉ phần lớn hoặc đa số trong một nhóm, trong trường hợp này là đa số công nhân."
+    },
+    {
+      "id": "mc_academic_12_1777697888687",
+      "type": "multiple_choice",
+      "sentence": "The proposal was accepted by a narrow ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "margin"
+        },
+        {
+          "id": "b",
+          "text": "plurality"
+        },
+        {
+          "id": "c",
+          "text": "lead"
+        },
+        {
+          "id": "d",
+          "text": "majority"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm \"by a narrow majority\" có nghĩa là được chấp nhận với số phiếu bầu sít sao, chỉ hơn một chút so với phe đối lập."
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "tasks": [
+    {
+      "taskId": "task_1_fitb",
+      "taskType": "fill_in_the_blank",
+      "title": "Complete the IELTS Essay: Career Advancement",
+      "content": {
+        "passage": "In the modern era, the path to success in a large company has changed significantly. Many people believe that the only way to succeed is to [1] through years of loyal service. However, modern employers look for more than just time spent in the office; they require a [2] to the organization's core values and long-term goals.\n\nTo begin with, employees who wish to [3] must demonstrate their value every single day. In an [4] environment, simply performing basic tasks is no longer sufficient to stand out. One must [5] to learn new technologies and adapt to rapidly changing market conditions. Those who show they can lead and innovate are the ones most likely to reach senior management positions. By doing more than what is required, workers prove they are ready for more responsibility.\n\nFurthermore, communication is a vital part of the professional workplace. Having excellent [6] allows an individual to handle internal conflicts and reach successful agreements with international clients. This ability places an employee in a much stronger [7] during salary reviews or high-stakes project discussions. Without these essential interpersonal skills, even the most technically talented worker might find their career progress stalled for years.\n\nIn conclusion, achieving professional success in the 21st century requires a blend of dedication and soft skills. By showing a [8] and mastering the art of communication, individuals can navigate the complexities of the modern workplace. Ultimately, those who combine hard work with social intelligence are the most likely to reach the top of their field.",
+        "options": [
+          "work your way up the ladder",
+          "high level of commitment",
+          "make a promotion",
+          "increasingly competitive",
+          "make an effort",
+          "negotiating skills",
+          "negotiating position",
+          "strong commitment"
+        ],
+        "correctAnswers": {
+          "1": "work your way up the ladder",
+          "2": "high level of commitment",
+          "3": "make a promotion",
+          "4": "increasingly competitive",
+          "5": "make an effort",
+          "6": "negotiating skills",
+          "7": "negotiating position",
+          "8": "strong commitment"
+        }
+      }
+    },
+    {
+      "taskId": "task_1_gw",
+      "taskType": "guided_writing",
+      "title": "Topic: Qualities for Career Success",
+      "content": {
+        "prompt": "In today's corporate world, what are the most important factors for an employee to be successful? Use specific collocations related to work and commitment.",
+        "outlineEnglish": "Introduction: Success in large companies is changing; it requires more than just time.\n\nBody Paragraph 1: The importance of working hard to be promoted in a competitive market.\n\nBody Paragraph 2: The role of communication and negotiation skills in career growth.\n\nConclusion: Success comes from a mix of dedication and interpersonal skills.",
+        "vietnameseText": "Trong thời đại hiện nay, con đường dẫn đến thành công trong một công ty lớn đã thay đổi đáng kể. Nhiều người tin rằng cách duy nhất để thành công là **thăng tiến qua từng nấc thang** thông qua nhiều năm phục vụ trung thành. Tuy nhiên, các nhà tuyển dụng hiện đại tìm kiếm nhiều hơn là chỉ thời gian ngồi ở văn phòng; họ yêu cầu một **mức độ cam kết cao** đối với các giá trị cốt lõi và mục tiêu dài hạn của tổ chức.\n\nĐầu tiên, những nhân viên mong muốn **được thăng chức** phải chứng minh giá trị của mình mỗi ngày. Trong một môi trường **ngày càng cạnh tranh**, việc chỉ thực hiện các nhiệm vụ cơ bản không còn đủ để trở nên nổi bật. Người ta phải **cố gắng** học hỏi các công nghệ mới và thích nghi với các điều kiện thị trường thay đổi nhanh chóng. Những người cho thấy họ có thể lãnh đạo và đổi mới là những người có khả năng đạt được các vị trí quản lý cấp cao nhất. Bằng cách làm nhiều hơn những gì được yêu cầu, công nhân chứng minh rằng họ đã sẵn sàng cho nhiều trách nhiệm hơn.\n\nHơn nữa, giao tiếp là một phần quan trọng của nơi làm việc chuyên nghiệp. Có **kỹ năng đàm phán** xuất sắc cho phép một cá nhân xử lý các xung đột nội bộ và đạt được các thỏa thuận thành công với khách hàng quốc tế. Khả năng này đặt nhân viên vào một **vị thế đàm phán** mạnh mẽ hơn nhiều trong các đợt xem xét lương hoặc các cuộc thảo luận dự án quan trọng. Nếu không có những kỹ năng liên nhân chuyên nghiệp thiết yếu này, ngay cả những công nhân tài năng nhất về mặt kỹ thuật cũng có thể thấy quá trình thăng tiến sự nghiệp của họ bị đình trệ trong nhiều năm.\n\nTóm lại, đạt được thành công chuyên môn trong thế kỷ 21 đòi hỏi sự kết hợp giữa sự tận tụy và các kỹ năng mềm. Bằng cách thể hiện một **sự cam kết mạnh mẽ** và làm chủ nghệ thuật giao tiếp, các cá nhân có thể điều hướng các sự phức tạp của nơi làm việc hiện đại. Cuối cùng, những người kết hợp làm việc chăm chỉ với trí thông minh xã hội là những người có khả năng cao nhất để đạt đến đỉnh cao trong lĩnh vực của họ.",
+        "fullEnglish": "In the modern era, the path to success in a large company has changed significantly. Many people believe that the only way to succeed is to **work your way up the ladder** through years of loyal service. However, modern employers look for more than just time spent in the office; they require a **high level of commitment** to the organization's core values and long-term goals.\n\nTo begin with, employees who wish to **make a promotion** must demonstrate their value every single day. In an **increasingly competitive** environment, simply performing basic tasks is no longer sufficient to stand out. One must **make an effort** to learn new technologies and adapt to rapidly changing market conditions. Those who show they can lead and innovate are the ones most likely to reach senior management positions. By doing more than what is required, workers prove they are ready for more responsibility.\n\nFurthermore, communication is a vital part of the professional workplace. Having excellent **negotiating skills** allows an individual to handle internal conflicts and reach successful agreements with international clients. This ability places an employee in a much stronger **negotiating position** during salary reviews or high-stakes project discussions. Without these essential interpersonal skills, even the most technically talented worker might find their career progress stalled for years.\n\nIn conclusion, achieving professional success in the 21st century requires a blend of dedication and soft skills. By showing a **strong commitment** and mastering the art of communication, individuals can navigate the complexities of the modern workplace. Ultimately, those who combine hard work with social intelligence are the most likely to reach the top of their field.",
+        "englishSentences": [
+          "In the modern era, the path to success in a large company has changed significantly.",
+          "Many people believe that the only way to succeed is to work your way up the ladder through years of loyal service.",
+          "However, modern employers look for more than just time spent in the office; they require a high level of commitment to the organization's core values and long-term goals.",
+          "To begin with, employees who wish to make a promotion must demonstrate their value every single day.",
+          "In an increasingly competitive environment, simply performing basic tasks is no longer sufficient to stand out.",
+          "One must make an effort to learn new technologies and adapt to rapidly changing market conditions.",
+          "Those who show they can lead and innovate are the ones most likely to reach senior management positions.",
+          "By doing more than what is required, workers prove they are ready for more responsibility.",
+          "Furthermore, communication is a vital part of the professional workplace.",
+          "Having excellent negotiating skills allows an individual to handle internal conflicts and reach successful agreements with international clients.",
+          "This ability places an employee in a much stronger negotiating position during salary reviews or high-stakes project discussions.",
+          "Without these essential interpersonal skills, even the most technically talented worker might find their career progress stalled for years.",
+          "In conclusion, achieving professional success in the 21st century requires a blend of dedication and soft skills.",
+          "By showing a strong commitment and mastering the art of communication, individuals can navigate the complexities of the modern workplace.",
+          "Ultimately, those who combine hard work with social intelligence are the most likely to reach the top of their field."
+        ]
+      }
+    },
+    {
+      "taskId": "task_2_fitb",
+      "taskType": "fill_in_the_blank",
+      "title": "Complete the IELTS Essay: Occupational Choices",
+      "content": {
+        "passage": "When young people are ready to [1], they often face significant pressure from family and society to pick high-status roles. Traditionally, [2] like medicine, law, or engineering have been the most popular choices for ambitious students. These roles usually require a [3] to higher education and many years of intense training before one can even begin a career.\n\nHowever, we should not overlook the importance of [4] in our modern economy. In many developed countries, there is currently a [5] for workers in [6] such as electrics, plumbing, or carpentry. Because fewer young people decide to [7] in these trades, the wages have increased significantly to attract new talent. In some specific cases, a plumber can earn more than an office worker because the [8] in the local labor market.\n\nMoreover, the nature of work is evolving with technology. While some people might [9] to physical labor, these jobs provide essential services that our society cannot function without. It is important for schools to provide better career guidance so students understand that both intellectual and physical work are equally valuable. A healthy economy needs a diverse range of skills to thrive.\n\nTo conclude, every career path has its own unique merits and challenges. Whether a person chooses a corporate desk job or a practical trade, they must [10] their daily work to be truly successful. Ultimately, job satisfaction comes from finding a role that matches one's personal skills and the actual needs of the global economy.",
+        "options": [
+          "choose an occupation",
+          "professional occupations",
+          "long-term commitment",
+          "manual occupations",
+          "high demand",
+          "skilled occupations",
+          "take up an occupation",
+          "supply outstrips demand",
+          "lack commitment",
+          "put effort into"
+        ],
+        "correctAnswers": {
+          "1": "choose an occupation",
+          "2": "professional occupations",
+          "3": "long-term commitment",
+          "4": "manual occupations",
+          "5": "high demand",
+          "6": "skilled occupations",
+          "7": "take up an occupation",
+          "8": "supply outstrips demand",
+          "9": "lack commitment",
+          "10": "put effort into"
+        }
+      }
+    },
+    {
+      "taskId": "task_2_gw",
+      "taskType": "guided_writing",
+      "title": "Topic: Professional vs. Manual Occupations",
+      "content": {
+        "prompt": "Many young people today prefer professional jobs over manual labor. Discuss both sides and give your opinion on the value of different occupations.",
+        "outlineEnglish": "Introduction: Choosing an occupation is a big decision; professional jobs are often prioritized.\n\nBody Paragraph 1: The demands and status of professional occupations.\n\nBody Paragraph 2: The high demand and value of skilled manual occupations.\n\nConclusion: All jobs require effort and commitment regardless of their nature.",
+        "vietnameseText": "Khi những người trẻ sẵn sàng để **chọn một nghề nghiệp**, họ thường đối mặt với áp lực đáng kể từ gia đình và xã hội để chọn những vai trò có địa vị cao. Theo truyền thống, các **ngành nghề chuyên môn** như y tế, luật hoặc kỹ thuật là những lựa chọn phổ biến nhất cho những sinh viên đầy tham vọng. Những vai trò này thường đòi hỏi một **sự cam kết dài hạn** đối với giáo dục đại học và nhiều năm đào tạo cường độ cao trước khi một người thậm chí có thể bắt đầu sự nghiệp.\n\nTuy nhiên, chúng ta không nên bỏ qua tầm quan trọng của các **ngành nghề lao động chân tay** trong nền kinh tế hiện đại của chúng ta. Ở nhiều quốc gia phát triển, hiện nay có một **nhu cầu cao** đối với công nhân trong các **ngành nghề đòi hỏi kỹ năng** như điện, ống nước hoặc thợ mộc. Bởi vì ít người trẻ quyết định **bắt đầu làm một nghề nghiệp** trong các ngành nghề này, mức lương đã tăng lên đáng kể để thu hút tài năng mới. Trong một số trường hợp cụ thể, một thợ sửa ống nước có thể kiếm được nhiều hơn một nhân viên văn phòng vì **cung vượt cầu** trong thị trường lao động địa phương.\n\nHơn nữa, bản chất của công việc đang phát triển cùng với công nghệ. Trong khi một số người có thể **thiếu sự cam kết** đối với lao động thể chất, những công việc này cung cấp các dịch vụ thiết yếu mà xã hội chúng ta không thể hoạt động nếu thiếu chúng. Điều quan trọng là các trường học cần cung cấp hướng dẫn nghề nghiệp tốt hơn để sinh viên hiểu rằng cả công việc trí óc và thể chất đều có giá trị ngang nhau. Một nền kinh tế lành mạnh cần một loạt các kỹ năng đa dạng để phát triển.\n\nTóm lại, mỗi con đường sự nghiệp đều có những giá trị và thách thức riêng. Dù một người chọn một công việc văn phòng trong tập đoàn hay một ngành nghề thực hành, họ phải **nỗ lực** vào công việc hàng ngày của mình để thực sự thành công. Cuối cùng, sự hài lòng trong công việc đến từ việc tìm thấy một vai trò phù hợp với kỹ năng cá nhân và nhu cầu thực tế của nền kinh tế toàn cầu.",
+        "fullEnglish": "When young people are ready to **choose an occupation**, they often face significant pressure from family and society to pick high-status roles. Traditionally, **professional occupations** like medicine, law, or engineering have been the most popular choices for ambitious students. These roles usually require a **long-term commitment** to higher education and many years of intense training before one can even begin a career.\n\nHowever, we should not overlook the importance of **manual occupations** in our modern economy. In many developed countries, there is currently a **high demand** for workers in **skilled occupations** such as electrics, plumbing, or carpentry. Because fewer young people decide to **take up an occupation** in these trades, the wages have increased significantly to attract new talent. In some specific cases, a plumber can earn more than an office worker because the **supply outstrips demand** in the local labor market.\n\nMoreover, the nature of work is evolving with technology. While some people might **lack commitment** to physical labor, these jobs provide essential services that our society cannot function without. It is important for schools to provide better career guidance so students understand that both intellectual and physical work are equally valuable. A healthy economy needs a diverse range of skills to thrive.\n\nTo conclude, every career path has its own unique merits and challenges. Whether a person chooses a corporate desk job or a practical trade, they must **put effort into** their daily work to be truly successful. Ultimately, job satisfaction comes from finding a role that matches one's personal skills and the actual needs of the global economy.",
+        "englishSentences": [
+          "When young people are ready to choose an occupation, they often face significant pressure from family and society to pick high-status roles.",
+          "Traditionally, professional occupations like medicine, law, or engineering have been the most popular choices for ambitious students.",
+          "These roles usually require a long-term commitment to higher education and many years of intense training before one can even begin a career.",
+          "However, we should not overlook the importance of manual occupations in our modern economy.",
+          "In many developed countries, there is currently a high demand for workers in skilled occupations such as electrics, plumbing, or carpentry.",
+          "Because fewer young people decide to take up an occupation in these trades, the wages have increased significantly to attract new talent.",
+          "In some specific cases, a plumber can earn more than an office worker because the supply outstrips demand in the local labor market.",
+          "Moreover, the nature of work is evolving with technology.",
+          "While some people might lack commitment to physical labor, these jobs provide essential services that our society cannot function without.",
+          "It is important for schools to provide better career guidance so students understand that both intellectual and physical work are equally valuable.",
+          "A healthy economy needs a diverse range of skills to thrive.",
+          "To conclude, every career path has its own unique merits and challenges.",
+          "Whether a person chooses a corporate desk job or a practical trade, they must put effort into their daily work to be truly successful.",
+          "Ultimately, job satisfaction comes from finding a role that matches one's personal skills and the actual needs of the global economy."
+        ]
+      }
+    },
+    {
+      "taskId": "task_3_fitb",
+      "taskType": "fill_in_the_blank",
+      "title": "Complete the IELTS Essay: Business Strategy",
+      "content": {
+        "passage": "Running a successful business in the modern age requires careful strategic planning and a clear organizational structure. One of the most common ways for a company to attract new customers is through a creative [1], which can temporarily increase revenue and brand awareness. Salespeople are often motivated to work much harder when they have the opportunity to [2] on every item they sell. This financial incentive ensures that the company can [3] during busy seasons.\n\nOn the internal side, management must be highly efficient to maintain growth. A [4] often plays a vital role in keeping accurate records and ensuring that board meetings run smoothly. When a manager wants to start a new project, they must [5] to the directors. This [6] should outline the costs, potential risks, and benefits very clearly. If the directors decide to [7], it then becomes a [8] between different departments to execute the plan successfully.\n\nFurthermore, some businesses prefer to [9] for their professional services to keep things simple and transparent for their clients. This [10] strategy helps build long-term trust, as customers know exactly what they will pay without hidden fees. However, maintaining high quality in a competitive market requires a [11] from every single member of the team.\n\nIn conclusion, a balance between aggressive sales strategies and strong internal administration is necessary for any company. By combining effective marketing with organized management, a business can remain profitable and stable even in a tough economic climate.",
+        "options": [
+          "sales promotion",
+          "make a commission",
+          "meet demand",
+          "company secretary",
+          "put forward a proposal",
+          "detailed proposal",
+          "approve a proposal",
+          "joint effort",
+          "charge a flat rate",
+          "flat-rate pricing",
+          "concerted effort"
+        ],
+        "correctAnswers": {
+          "1": "sales promotion",
+          "2": "make a commission",
+          "3": "meet demand",
+          "4": "company secretary",
+          "5": "put forward a proposal",
+          "6": "detailed proposal",
+          "7": "approve a proposal",
+          "8": "joint effort",
+          "9": "charge a flat rate",
+          "10": "flat-rate pricing",
+          "11": "concerted effort"
+        }
+      }
+    },
+    {
+      "taskId": "task_3_gw",
+      "taskType": "guided_writing",
+      "title": "Topic: Managing a Successful Business",
+      "content": {
+        "prompt": "What are the most effective ways to manage a business and increase its profitability? Use collocations related to sales, proposals, and management.",
+        "outlineEnglish": "Introduction: Business success depends on both sales strategies and internal organization.\n\nBody Paragraph 1: How sales promotions and commissions help meet customer demand.\n\nBody Paragraph 2: The administrative process of making and approving proposals.\n\nConclusion: Long-term stability requires a balance of external marketing and internal cooperation.",
+        "vietnameseText": "Điều hành một doanh nghiệp thành công trong thời đại hiện đại đòi hỏi sự lập kế hoạch chiến lược cẩn thận và một cấu trúc tổ chức rõ ràng. Một trong những cách phổ biến nhất để một công ty thu hút khách hàng mới là thông qua một chương trình **khuyến mãi bán hàng** sáng tạo, có thể tạm thời tăng doanh thu và nhận diện thương hiệu. Nhân viên bán hàng thường có động lực làm việc chăm chỉ hơn nhiều khi họ có cơ hội **kiếm được tiền hoa hồng** trên mỗi mặt hàng họ bán. Sự khuyến khích tài chính này đảm bảo rằng công ty có thể **đáp ứng nhu cầu** trong những mùa bận rộn.\n\nVề phía nội bộ, ban quản lý phải cực kỳ hiệu quả để duy trì sự tăng trưởng. Một **thư ký công ty** thường đóng vai trò quan trọng trong việc lưu giữ hồ sơ chính xác và đảm bảo rằng các cuộc họp hội đồng quản trị diễn ra suôn sẻ. Khi một người quản lý muốn bắt đầu một dự án mới, họ phải **trình bày một đề xuất** trước các giám đốc. **Đề xuất chi tiết** này nên phác thảo các chi phí, rủi ro tiềm ẩn và lợi ích một cách rất rõ ràng. Nếu các giám đốc quyết định **phê duyệt một đề xuất**, thì sau đó nó trở thành một **nỗ lực chung** giữa các bộ phận khác nhau để thực hiện kế hoạch thành công.\n\nHơn nữa, một số doanh nghiệp thích **tính một mức giá cố định** cho các dịch vụ chuyên nghiệp của họ để giữ mọi thứ đơn giản và minh bạch cho khách hàng. Chính sách **giá cố định** này giúp xây dựng lòng tin lâu dài, vì khách hàng biết chính xác họ sẽ trả những gì mà không có phí ẩn. Tuy nhiên, việc duy trì chất lượng cao trong một thị trường cạnh tranh đòi hỏi một **nỗ lực phối hợp** từ mọi thành viên trong nhóm.\n\nTóm lại, sự cân bằng giữa các chiến lược bán hàng quyết liệt và quản trị nội bộ mạnh mẽ là cần thiết cho bất kỳ công ty nào. Bằng cách kết hợp tiếp thị hiệu quả với quản lý có tổ chức, một doanh nghiệp có thể duy trì lợi nhuận và ổn định ngay cả trong một môi trường kinh tế khó khăn.",
+        "fullEnglish": "Running a successful business in the modern age requires careful strategic planning and a clear organizational structure. One of the most common ways for a company to attract new customers is through a creative **sales promotion**, which can temporarily increase revenue and brand awareness. Salespeople are often motivated to work much harder when they have the opportunity to **make a commission** on every item they sell. This financial incentive ensures that the company can **meet demand** during busy seasons.\n\nOn the internal side, management must be highly efficient to maintain growth. A **company secretary** often plays a vital role in keeping accurate records and ensuring that board meetings run smoothly. When a manager wants to start a new project, they must **put forward a proposal** to the directors. This **detailed proposal** should outline the costs, potential risks, and benefits very clearly. If the directors decide to **approve a proposal**, it then becomes a **joint effort** between different departments to execute the plan successfully.\n\nFurthermore, some businesses prefer to **charge a flat rate** for their professional services to keep things simple and transparent for their clients. This **flat-rate pricing** strategy helps build long-term trust, as customers know exactly what they will pay without hidden fees. However, maintaining high quality in a competitive market requires a **concerted effort** from every single member of the team.\n\nIn conclusion, a balance between aggressive sales strategies and strong internal administration is necessary for any company. By combining effective marketing with organized management, a business can remain profitable and stable even in a tough economic climate.",
+        "englishSentences": [
+          "Running a successful business in the modern age requires careful strategic planning and a clear organizational structure.",
+          "One of the most common ways for a company to attract new customers is through a creative sales promotion, which can temporarily increase revenue and brand awareness.",
+          "Salespeople are often motivated to work much harder when they have the opportunity to make a commission on every item they sell.",
+          "This financial incentive ensures that the company can meet demand during busy seasons.",
+          "On the internal side, management must be highly efficient to maintain growth.",
+          "A company secretary often plays a vital role in keeping accurate records and ensuring that board meetings run smoothly.",
+          "When a manager wants to start a new project, they must put forward a proposal to the directors.",
+          "This detailed proposal should outline the costs, potential risks, and benefits very clearly.",
+          "If the directors decide to approve a proposal, it then becomes a joint effort between different departments to execute the plan successfully.",
+          "Furthermore, some businesses prefer to charge a flat rate for their professional services to keep things simple and transparent for their clients.",
+          "This flat-rate pricing strategy helps build long-term trust, as customers know exactly what they will pay without hidden fees.",
+          "However, maintaining high quality in a competitive market requires a concerted effort from every single member of the team.",
+          "In conclusion, a balance between aggressive sales strategies and strong internal administration is necessary for any company.",
+          "By combining effective marketing with organized management, a business can remain profitable and stable even in a tough economic climate."
+        ]
+      }
+    }
+  ]
+}

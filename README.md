@@ -48,8 +48,9 @@ micro (ghi âm ở Speaking Review) cần **HTTPS** (domain qua Cloudflare Tunne
 
 ### Code và data tách riêng
 
-Repo git chỉ chứa code. Data (nội dung học trong `content/`, ảnh/PDF/âm thanh trong `public/`, tiến độ học trong
-`progress/`, bảng giá `config/gemini-pricing.json`) là một file nén riêng, không đưa lên GitHub. Danh sách đầy đủ ở
+Data (nội dung học trong `content/`, ảnh/PDF/âm thanh trong `public/`, tiến độ học trong `progress/`, bảng giá
+`config/gemini-pricing.json`) không nằm lẫn với code trong repo. Bản **data tối thiểu** đi cùng repo dưới dạng thư mục
+chưa nén `data-minimal/`; bản đầy đủ là một file nén riêng, không đưa lên GitHub. Danh sách đầy đủ ở
 `data-manifest.json`; `.gitignore` theo cùng danh sách. Không thuộc cả hai (tạo lại trên máy mới): `.env`, `data/`
 (tài khoản đăng nhập), `models/`, `cache/`, `node_modules/`, `dist/`, `logs/`.
 
@@ -61,14 +62,14 @@ node scripts/sync-commit.ts
 
 - Copy code sang `../english-app-commit/code/` (repo git, tạo ở lần chạy đầu; xoá ở đó file đã xoá ở đây), rồi tự
   `git add` / `commit` / `push` trong thư mục đó.
-- Đóng gói **data tối thiểu** thành `../english-app-commit/data-minimal/english-app-data-minimal-<ngày-giờ>.tar.gz`
-  (kèm `.index.json`: danh sách file và mã SHA-256). Bản này không có ảnh từ vựng và ảnh notes
+- Ghi **data tối thiểu** (chưa nén) vào `../english-app-commit/code/data-minimal/` — thêm, sửa, xoá file cho khớp data
+  hiện tại, kèm `.data-index.json` (danh sách file và mã SHA-256) — để commit cùng code. Bản này không có ảnh từ vựng và ảnh notes
   (`scripts/fetch-images.ts` tải lại từ nguồn), ảnh gốc của blog (trang dùng bản WebP trong `public/blog-images/`),
   file ghi âm, file PDF, và những file `restore` tự tạo lại: danh sách phát âm `public/pronunciation/` (tải lại bằng
   `scripts/build-pronunciation.ts`) và `content/topic-collocations/index.json` (ghép từ các file theo chủ đề bằng
-  `scripts/build-topic-index.ts`). Tải file này lên nơi lưu data (Drive…), không lên GitHub.
-- `--full-data`: đóng gói thêm bản đầy đủ (~125 MB) vào `../english-app-commit/data/`.
-- Trước khi copy, script dừng lại nếu code có file `.env`, chuỗi giống khoá API, hoặc file > 5 MB.
+  `scripts/build-topic-index.ts`).
+- `--full-data`: đóng gói thêm bản đầy đủ (~125 MB) vào `../english-app-commit/data/` (tải lên Drive…, không lên GitHub).
+- Trước khi copy, script dừng lại nếu code hoặc data tối thiểu có file `.env`, chuỗi giống khoá API, hoặc file > 5 MB.
 - `--no-data`: chỉ copy code.
 - Gắn repo GitHub, commit, push và xử lý lỗi thường gặp: xem [GITHUB-PUSH.md](GITHUB-PUSH.md).
 
@@ -79,8 +80,12 @@ node scripts/sync-commit.ts
    git clone <repo> english-app && cd english-app
    npm ci
    ```
-2. **Khôi phục data** từ file nén đã tải về (kiểm tra mã SHA-256 của từng file trước khi ghi; file đã có mà khác thì
-   dừng lại, thêm `--force` để thay — bản cũ được lưu vào `data/backup-<giờ>/`):
+2. **Khôi phục data** từ thư mục `data-minimal/` có sẵn trong repo, hoặc từ file nén bản đầy đủ đã tải về (kiểm tra
+   mã SHA-256 của từng file trước khi ghi; file đã có mà khác thì dừng lại, thêm `--force` để thay — bản cũ được lưu
+   vào `data/backup-<giờ>/`):
+   ```bash
+   node scripts/data.ts restore data-minimal --with-models
+   ```
    ```bash
    node scripts/data.ts restore ~/Downloads/english-app-data-<ngày-giờ>.tar.gz --with-models
    ```

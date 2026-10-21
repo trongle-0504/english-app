@@ -1,0 +1,722 @@
+{
+  "id": "economic-wealth-and-happiness",
+  "title": "Economic Wealth and Happiness",
+  "topic": "Economy & Happiness",
+  "taskType": "Opinion (agree/disagree)",
+  "prompt": "Some experts believe that when a country is already rich, any additional increase in economic wealth does not make its citizens any more satisfied. To what extent do you agree or disagree?",
+  "createdAt": "2026-09-29T11:59:53.542Z",
+  "sentences": [
+    {
+      "text": "Some experts argue that once a country reaches a certain level of wealth, further economic growth does not necessarily lead to greater happiness or satisfaction among its citizens.",
+      "vi": "Một số chuyên gia cho rằng khi một quốc gia đạt đến một mức độ thịnh vượng nhất định, tăng trưởng kinh tế thêm nữa không nhất thiết dẫn đến hạnh phúc hoặc sự hài lòng cao hơn cho người dân.",
+      "role": "paraphrase"
+    },
+    {
+      "text": "I largely agree with this view as material gains beyond a certain point bring diminishing returns, while non-economic factors play a greater role in well-being.",
+      "vi": "Tôi phần lớn đồng ý với quan điểm này vì những lợi ích vật chất khi vượt quá một ngưỡng nhất định sẽ đem lại hiệu quả giảm dần, trong khi các yếu tố phi kinh tế đóng vai trò lớn hơn đối với sự an lạc.",
+      "role": "position"
+    },
+    {
+      "text": "Admittedly, in the early stages of a country’s development, rising income levels are closely linked to improvements in living standards.",
+      "vi": "Phải thừa nhận rằng, ở giai đoạn đầu của sự phát triển quốc gia, mức thu nhập tăng lên có mối liên hệ chặt chẽ với việc cải thiện tiêu chuẩn sống.",
+      "role": "concession"
+    },
+    {
+      "text": "Economic growth can reduce poverty, improve healthcare and education, and provide better housing and infrastructure.",
+      "vi": "Tăng trưởng kinh tế có thể giảm nghèo, cải thiện y tế, giáo dục, cũng như cung cấp nhà ở và cơ sở hạ tầng tốt hơn.",
+      "role": "explanation"
+    },
+    {
+      "text": "These changes directly impact people’s lives, leading to increased life satisfaction.",
+      "vi": "Những thay đổi này tác động trực tiếp đến cuộc sống của người dân, dẫn đến sự hài lòng về cuộc sống tăng lên.",
+      "role": "result"
+    },
+    {
+      "text": "However, in already wealthy nations where basic needs are widely met, further economic gains tend to benefit only a small segment of the population or result in higher material gain rather than real improvements in life satisfaction.",
+      "vi": "Tuy nhiên, ở những quốc gia đã giàu có nơi các nhu cầu cơ bản được đáp ứng rộng rãi, các khoản lợi nhuận kinh tế thêm nữa có xu hướng chỉ mang lại lợi ích cho một bộ phận nhỏ dân số hoặc dẫn đến sự gia tăng vật chất hơn là những cải thiện thực sự về mức độ hài lòng.",
+      "role": "rebuttal"
+    },
+    {
+      "text": "For instance, in the United States, despite consistent GDP growth over recent decades, widened income inequality has meant that much of the economic gains go to the top 1% of earners.",
+      "vi": "Ví dụ, tại Hoa Kỳ, mặc dù GDP tăng trưởng ổn định trong những thập kỷ gần đây, khoảng cách bất bình đẳng thu nhập ngày càng rộng đồng nghĩa với việc phần lớn lợi ích kinh tế rơi vào tay 1% những người thu nhập cao nhất.",
+      "role": "example"
+    },
+    {
+      "text": "This shows that increased wealth does not necessarily translate into greater happiness for the majority.",
+      "vi": "Điều này cho thấy sự gia tăng giàu có không nhất thiết chuyển hóa thành hạnh phúc lớn hơn cho đa số người dân.",
+      "role": "result"
+    },
+    {
+      "text": "Moreover, non-economic factors become more crucial to happiness once the income threshold is reached.",
+      "vi": "Hơn nữa, các yếu tố phi kinh tế trở nên quan trọng hơn đối với hạnh phúc khi ngưỡng thu nhập đã đạt được.",
+      "role": "claim"
+    },
+    {
+      "text": "First, social connection provides emotional support and a sense of belonging that money cannot buy.",
+      "vi": "Thứ nhất, các mối quan hệ xã hội cung cấp sự hỗ trợ về mặt cảm xúc và cảm giác thuộc về nơi nào đó mà tiền bạc không thể mua được.",
+      "role": "explanation"
+    },
+    {
+      "text": "For instance, the Nordic countries, with their strong community ties and high social trust, consistently top global happiness rankings.",
+      "vi": "Chẳng hạn, các nước Bắc Âu, với mối gắn kết cộng đồng mạnh mẽ và lòng tin xã hội cao, liên tục đứng đầu bảng xếp hạng hạnh phúc toàn cầu.",
+      "role": "example"
+    },
+    {
+      "text": "Furthermore, engagement in meaningful pursuits—whether through volunteer work, creative endeavors, or lifelong learning—imbues life with a sense of purpose and psychological resilience.",
+      "vi": "Hơn nữa, việc tham gia vào các mục tiêu ý nghĩa—dù thông qua công việc tình nguyện, các nỗ lực sáng tạo hay học tập suốt đời—đều truyền tải cho cuộc sống mục đích sống và khả năng phục hồi tâm lý.",
+      "role": "explanation"
+    },
+    {
+      "text": "Retirees who participate in structured volunteer programs, for example, report levels of satisfaction that rival or exceed those of their wealthier peers still focused on material acquisition.",
+      "vi": "Ví dụ, những người nghỉ hưu tham gia vào các chương trình tình nguyện có tổ chức cho biết mức độ hài lòng của họ tương đương hoặc vượt xa những người cùng trang lứa giàu có hơn nhưng vẫn tập trung vào việc tích lũy vật chất.",
+      "role": "example"
+    },
+    {
+      "text": "In conclusion, I agree that in wealthy countries, continued economic growth does not necessarily lead to greater citizen satisfaction because beyond a certain point, non-economic factors such as mental health, social connection, and overall well-being play a far more significant role in determining happiness than further material gain.",
+      "vi": "Tóm lại, tôi đồng ý rằng ở những nước giàu, tăng trưởng kinh tế liên tục không nhất thiết dẫn đến sự hài lòng cao hơn của người dân vì vượt quá một điểm nhất định, các yếu tố phi kinh tế như sức khỏe tâm thần, kết nối xã hội và sự an lạc tổng thể đóng vai trò quan trọng hơn nhiều trong việc xác định hạnh phúc so với việc tăng thêm vật chất.",
+      "role": "summary"
+    }
+  ],
+  "paragraphs": [
+    {
+      "role": "Introduction",
+      "summary_vi": "Giới thiệu bối cảnh về sự giàu có và hạnh phúc, sau đó nêu quan điểm đồng tình rằng tiền bạc chỉ giúp ích đến một giới hạn nhất định.",
+      "outline": [
+        "Wealth threshold vs happiness",
+        "Agree with the view",
+        "Concept of diminishing returns",
+        "Importance of non-economic factors"
+      ],
+      "sentences": [
+        0,
+        1
+      ]
+    },
+    {
+      "role": "Body 1 — concession + rebuttal",
+      "summary_vi": "Thừa nhận vai trò của tiền ở các nước nghèo nhưng phản bác rằng ở các nước giàu, tăng trưởng chỉ gây ra bất bình đẳng.",
+      "outline": [
+        "Development stages: growth improves standards",
+        "Rich nations: basic needs already met",
+        "Issue of income inequality (e.g., USA)",
+        "Wealth doesn't always translate to happiness"
+      ],
+      "sentences": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "role": "Body 2 — Supporting non-economic factors",
+      "summary_vi": "Giải thích tại sao các yếu tố tinh thần và xã hội mới là chìa khóa của hạnh phúc khi đã đủ đầy vật chất.",
+      "outline": [
+        "Social connections and trust (Nordic example)",
+        "Meaningful pursuits and purpose",
+        "Psychological resilience",
+        "Volunteerism vs material acquisition"
+      ],
+      "sentences": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "role": "Conclusion",
+      "summary_vi": "Khẳng định lại rằng sức khỏe tâm thần và kết nối xã hội quan trọng hơn tăng trưởng kinh tế thuần túy đối với quốc gia giàu.",
+      "outline": [
+        "Restate agreement",
+        "Diminishing impact of wealth",
+        "Prioritizing well-being over material gain"
+      ],
+      "sentences": [
+        13
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "reach-a-certain-level-of-wealth",
+      "key": "reach a certain level of wealth",
+      "text": "reaches a certain level of wealth",
+      "kind": "collocation",
+      "meaning_vi": "đạt đến một mức độ giàu có nhất định",
+      "note_vi": "Cách diễn đạt trang trọng thay cho 'get rich'.",
+      "headword": "wealth",
+      "importance": 3,
+      "sentence": 0,
+      "start": 39,
+      "end": 72
+    },
+    {
+      "id": "reach-a-certain-level-of-wealth-2",
+      "key": "reach a certain level of wealth",
+      "text": "reaches a certain level of wealth",
+      "kind": "paraphrase",
+      "meaning_vi": "đạt đến một mức độ giàu có nhất định",
+      "source": "country is already rich",
+      "importance": 3,
+      "sentence": 0,
+      "start": 39,
+      "end": 72
+    },
+    {
+      "id": "further-economic-growth",
+      "key": "further economic growth",
+      "text": "further economic growth",
+      "kind": "collocation",
+      "meaning_vi": "tăng trưởng kinh tế thêm nữa",
+      "headword": "growth",
+      "importance": 3,
+      "sentence": 0,
+      "start": 74,
+      "end": 97
+    },
+    {
+      "id": "x-does-not-necessarily-lead-to-y",
+      "key": "X does not necessarily lead to Y",
+      "text": "does not necessarily lead to",
+      "kind": "frame",
+      "meaning_vi": "X không nhất thiết dẫn đến Y",
+      "note_vi": "Dùng để phản biện mối quan hệ nhân quả tuyệt đối.",
+      "frame": "X does not necessarily lead to Y",
+      "function": "rebuttal",
+      "importance": 3,
+      "sentence": 0,
+      "start": 98,
+      "end": 126
+    },
+    {
+      "id": "greater-happiness-or-satisfaction-among-its-citizens",
+      "key": "greater happiness or satisfaction among its citizens",
+      "text": "greater happiness or satisfaction among its citizens",
+      "kind": "paraphrase",
+      "meaning_vi": "hạnh phúc hoặc sự hài lòng cao hơn cho người dân",
+      "source": "citizens any more satisfied",
+      "importance": 3,
+      "sentence": 0,
+      "start": 127,
+      "end": 179
+    },
+    {
+      "id": "material-gains",
+      "key": "material gains",
+      "text": "material gains",
+      "kind": "collocation",
+      "meaning_vi": "những lợi ích vật chất",
+      "note_vi": "Thường dùng trong văn cảnh kinh tế và sự hài lòng.",
+      "headword": "gain",
+      "importance": 3,
+      "sentence": 1,
+      "start": 34,
+      "end": 48
+    },
+    {
+      "id": "diminishing-returns",
+      "key": "diminishing returns",
+      "text": "diminishing returns",
+      "kind": "vocabulary",
+      "meaning_vi": "hiệu quả giảm dần",
+      "note_vi": "Thuật ngữ kinh tế: khi đầu tư thêm nhưng kết quả thu về ít hơn.",
+      "headword": "return",
+      "importance": 3,
+      "sentence": 1,
+      "start": 78,
+      "end": 97
+    },
+    {
+      "id": "while",
+      "key": "while",
+      "text": "while",
+      "kind": "linking",
+      "meaning_vi": "trong khi (đối lập)",
+      "function": "contrast",
+      "importance": 2,
+      "sentence": 1,
+      "start": 99,
+      "end": 104
+    },
+    {
+      "id": "non-economic-factors",
+      "key": "non-economic factors",
+      "text": "non-economic factors",
+      "kind": "collocation",
+      "meaning_vi": "các yếu tố phi kinh tế",
+      "headword": "factor",
+      "importance": 3,
+      "sentence": 1,
+      "start": 105,
+      "end": 125
+    },
+    {
+      "id": "admittedly",
+      "key": "admittedly",
+      "text": "Admittedly",
+      "kind": "linking",
+      "meaning_vi": "phải thừa nhận rằng",
+      "function": "concession",
+      "importance": 2,
+      "sentence": 2,
+      "start": 0,
+      "end": 10
+    },
+    {
+      "id": "rising-income-levels",
+      "key": "rising income levels",
+      "text": "rising income levels",
+      "kind": "collocation",
+      "meaning_vi": "mức thu nhập đang tăng lên",
+      "headword": "income",
+      "importance": 3,
+      "sentence": 2,
+      "start": 60,
+      "end": 80
+    },
+    {
+      "id": "x-is-closely-linked-to-y",
+      "key": "X is closely linked to Y",
+      "text": "closely linked to",
+      "kind": "frame",
+      "meaning_vi": "X có mối liên hệ chặt chẽ với Y",
+      "frame": "X is closely linked to Y",
+      "function": "cause",
+      "importance": 3,
+      "sentence": 2,
+      "start": 85,
+      "end": 102
+    },
+    {
+      "id": "improvement-in-living-standards",
+      "key": "improvement in living standards",
+      "text": "improvements in living standards",
+      "kind": "collocation",
+      "meaning_vi": "sự cải thiện trong tiêu chuẩn sống",
+      "headword": "standard",
+      "importance": 3,
+      "sentence": 2,
+      "start": 103,
+      "end": 135
+    },
+    {
+      "id": "reduce-poverty",
+      "key": "reduce poverty",
+      "text": "reduce poverty",
+      "kind": "collocation",
+      "meaning_vi": "giảm nghèo",
+      "headword": "poverty",
+      "importance": 3,
+      "sentence": 3,
+      "start": 20,
+      "end": 34
+    },
+    {
+      "id": "housing-and-infrastructure",
+      "key": "housing and infrastructure",
+      "text": "housing and infrastructure",
+      "kind": "collocation",
+      "meaning_vi": "nhà ở và cơ sở hạ tầng",
+      "note_vi": "Thường đi cùng nhau khi nói về phát triển đô thị hoặc phúc lợi xã hội.",
+      "headword": "housing",
+      "importance": 3,
+      "sentence": 3,
+      "start": 89,
+      "end": 115
+    },
+    {
+      "id": "however",
+      "key": "however",
+      "text": "However",
+      "kind": "linking",
+      "meaning_vi": "tuy nhiên",
+      "function": "contrast",
+      "importance": 2,
+      "sentence": 5,
+      "start": 0,
+      "end": 7
+    },
+    {
+      "id": "basic-needs",
+      "key": "basic needs",
+      "text": "basic needs",
+      "kind": "collocation",
+      "meaning_vi": "nhu cầu cơ bản",
+      "note_vi": "Như ăn, mặc, ở.",
+      "headword": "need",
+      "importance": 2,
+      "sentence": 5,
+      "start": 42,
+      "end": 53
+    },
+    {
+      "id": "be-widely-met",
+      "key": "be widely met",
+      "text": "widely met",
+      "kind": "collocation",
+      "meaning_vi": "được đáp ứng rộng rãi",
+      "note_vi": "Thường dùng cho nhu cầu hoặc tiêu chuẩn.",
+      "headword": "meet",
+      "importance": 2,
+      "sentence": 5,
+      "start": 58,
+      "end": 68
+    },
+    {
+      "id": "further-economic-gains",
+      "key": "further economic gains",
+      "text": "further economic gains",
+      "kind": "paraphrase",
+      "meaning_vi": "các khoản lợi nhuận kinh tế thêm nữa",
+      "source": "additional increase in economic wealth",
+      "importance": 3,
+      "sentence": 5,
+      "start": 70,
+      "end": 92
+    },
+    {
+      "id": "segment-of-the-population",
+      "key": "segment of the population",
+      "text": "segment of the population",
+      "kind": "vocabulary",
+      "meaning_vi": "một bộ phận dân cư",
+      "note_vi": "Trang trọng hơn 'group of people'.",
+      "headword": "segment",
+      "importance": 2,
+      "sentence": 5,
+      "start": 122,
+      "end": 147
+    },
+    {
+      "id": "rather-than",
+      "key": "rather than",
+      "text": "rather than",
+      "kind": "linking",
+      "meaning_vi": "thay vì",
+      "function": "contrast",
+      "importance": 2,
+      "sentence": 5,
+      "start": 182,
+      "end": 193
+    },
+    {
+      "id": "for-instance",
+      "key": "for instance",
+      "text": "For instance",
+      "kind": "linking",
+      "meaning_vi": "ví dụ",
+      "function": "example",
+      "importance": 2,
+      "sentence": 6,
+      "start": 0,
+      "end": 12
+    },
+    {
+      "id": "despite",
+      "key": "despite",
+      "text": "despite",
+      "kind": "linking",
+      "meaning_vi": "bất chấp, mặc dù",
+      "function": "concession",
+      "importance": 2,
+      "sentence": 6,
+      "start": 36,
+      "end": 43
+    },
+    {
+      "id": "consistent-gdp-growth",
+      "key": "consistent GDP growth",
+      "text": "consistent GDP growth",
+      "kind": "collocation",
+      "meaning_vi": "tăng trưởng GDP ổn định",
+      "headword": "growth",
+      "importance": 3,
+      "sentence": 6,
+      "start": 44,
+      "end": 65
+    },
+    {
+      "id": "widened-income-inequality",
+      "key": "widened income inequality",
+      "text": "widened income inequality",
+      "kind": "collocation",
+      "meaning_vi": "bất bình đẳng thu nhập bị nới rộng",
+      "headword": "inequality",
+      "importance": 3,
+      "sentence": 6,
+      "start": 87,
+      "end": 112
+    },
+    {
+      "id": "translate-into",
+      "key": "translate into",
+      "text": "translate into",
+      "kind": "collocation",
+      "meaning_vi": "chuyển hóa thành",
+      "note_vi": "Dùng khi một yếu tố này dẫn đến một kết quả khác.",
+      "headword": "translate",
+      "importance": 3,
+      "sentence": 7,
+      "start": 54,
+      "end": 68
+    },
+    {
+      "id": "moreover",
+      "key": "moreover",
+      "text": "Moreover",
+      "kind": "linking",
+      "meaning_vi": "hơn nữa",
+      "function": "addition",
+      "importance": 2,
+      "sentence": 8,
+      "start": 0,
+      "end": 8
+    },
+    {
+      "id": "income-threshold",
+      "key": "income threshold",
+      "text": "income threshold",
+      "kind": "vocabulary",
+      "meaning_vi": "ngưỡng thu nhập",
+      "note_vi": "Mức giới hạn mà sau đó mọi thứ thay đổi.",
+      "headword": "threshold",
+      "importance": 3,
+      "sentence": 8,
+      "start": 73,
+      "end": 89
+    },
+    {
+      "id": "first",
+      "key": "first",
+      "text": "First",
+      "kind": "linking",
+      "meaning_vi": "thứ nhất",
+      "function": "sequence",
+      "importance": 2,
+      "sentence": 9,
+      "start": 0,
+      "end": 5
+    },
+    {
+      "id": "social-connection",
+      "key": "social connection",
+      "text": "social connection",
+      "kind": "collocation",
+      "meaning_vi": "kết nối xã hội",
+      "headword": "connection",
+      "importance": 3,
+      "sentence": 9,
+      "start": 7,
+      "end": 24
+    },
+    {
+      "id": "a-sense-of-belonging",
+      "key": "a sense of belonging",
+      "text": "a sense of belonging",
+      "kind": "collocation",
+      "meaning_vi": "cảm giác thuộc về (một nơi/nhóm nào đó)",
+      "note_vi": "Cụm từ rất hay trong chủ đề xã hội/tâm lý.",
+      "headword": "belonging",
+      "importance": 3,
+      "sentence": 9,
+      "start": 56,
+      "end": 76
+    },
+    {
+      "id": "for-instance-2",
+      "key": "for instance",
+      "text": "For instance",
+      "kind": "linking",
+      "meaning_vi": "ví dụ",
+      "function": "example",
+      "importance": 2,
+      "sentence": 10,
+      "start": 0,
+      "end": 12
+    },
+    {
+      "id": "strong-community-ties",
+      "key": "strong community ties",
+      "text": "strong community ties",
+      "kind": "collocation",
+      "meaning_vi": "mối liên kết cộng đồng mạnh mẽ",
+      "note_vi": "Đồng nghĩa với 'social cohesion'.",
+      "headword": "tie",
+      "importance": 3,
+      "sentence": 10,
+      "start": 47,
+      "end": 68
+    },
+    {
+      "id": "top-global-happiness-rankings",
+      "key": "top global happiness rankings",
+      "text": "top global happiness rankings",
+      "kind": "collocation",
+      "meaning_vi": "đứng đầu bảng xếp hạng hạnh phúc toàn cầu",
+      "note_vi": "Dùng làm ví dụ rất tốt.",
+      "headword": "ranking",
+      "importance": 2,
+      "sentence": 10,
+      "start": 105,
+      "end": 134
+    },
+    {
+      "id": "furthermore",
+      "key": "furthermore",
+      "text": "Furthermore",
+      "kind": "linking",
+      "meaning_vi": "hơn nữa",
+      "function": "addition",
+      "importance": 2,
+      "sentence": 11,
+      "start": 0,
+      "end": 11
+    },
+    {
+      "id": "meaningful-pursuit",
+      "key": "meaningful pursuit",
+      "text": "meaningful pursuits",
+      "kind": "vocabulary",
+      "meaning_vi": "những sự theo đuổi ý nghĩa",
+      "note_vi": "Như đam mê, sở thích có ích.",
+      "headword": "pursuit",
+      "importance": 2,
+      "sentence": 11,
+      "start": 27,
+      "end": 46
+    },
+    {
+      "id": "imbue-life-with-something",
+      "key": "imbue life with something",
+      "text": "imbues life with",
+      "kind": "vocabulary",
+      "meaning_vi": "làm cho cuộc sống tràn ngập (cái gì đó)",
+      "note_vi": "Từ vựng trình độ C1/C2.",
+      "headword": "imbue",
+      "importance": 2,
+      "sentence": 11,
+      "start": 120,
+      "end": 136
+    },
+    {
+      "id": "psychological-resilience",
+      "key": "psychological resilience",
+      "text": "psychological resilience",
+      "kind": "collocation",
+      "meaning_vi": "khả năng phục hồi tâm lý",
+      "note_vi": "Khả năng vượt qua khó khăn về tinh thần.",
+      "headword": "resilience",
+      "importance": 3,
+      "sentence": 11,
+      "start": 160,
+      "end": 184
+    },
+    {
+      "id": "for-example",
+      "key": "for example",
+      "text": "for example",
+      "kind": "linking",
+      "meaning_vi": "ví dụ",
+      "function": "example",
+      "importance": 2,
+      "sentence": 12,
+      "start": 59,
+      "end": 70
+    },
+    {
+      "id": "rival-or-exceed",
+      "key": "rival or exceed",
+      "text": "rival or exceed",
+      "kind": "vocabulary",
+      "meaning_vi": "ngang bằng hoặc vượt xa",
+      "headword": "rival",
+      "importance": 2,
+      "sentence": 12,
+      "start": 107,
+      "end": 122
+    },
+    {
+      "id": "material-acquisition",
+      "key": "material acquisition",
+      "text": "material acquisition",
+      "kind": "collocation",
+      "meaning_vi": "việc tích lũy vật chất",
+      "note_vi": "Trang trọng hơn 'buying things'.",
+      "headword": "acquisition",
+      "importance": 3,
+      "sentence": 12,
+      "start": 171,
+      "end": 191
+    },
+    {
+      "id": "in-conclusion",
+      "key": "in conclusion",
+      "text": "In conclusion",
+      "kind": "linking",
+      "meaning_vi": "kết luận lại",
+      "function": "conclusion",
+      "importance": 2,
+      "sentence": 13,
+      "start": 0,
+      "end": 13
+    },
+    {
+      "id": "such-as",
+      "key": "such as",
+      "text": "such as",
+      "kind": "linking",
+      "meaning_vi": "chẳng hạn như",
+      "function": "example",
+      "importance": 2,
+      "sentence": 13,
+      "start": 187,
+      "end": 194
+    },
+    {
+      "id": "play-a-far-more-significant-role-in",
+      "key": "play a far more significant role in",
+      "text": "play a far more significant role in",
+      "kind": "frame",
+      "meaning_vi": "đóng vai trò quan trọng hơn nhiều trong việc...",
+      "frame": "X plays a far more significant role in Y than Z",
+      "function": "emphasis",
+      "headword": "role",
+      "importance": 3,
+      "sentence": 13,
+      "start": 252,
+      "end": 287
+    }
+  ],
+  "critique": [
+    {
+      "sentence": 6,
+      "text": "despite consistent GDP growth over recent decades, widened income inequality has meant that much of the economic gains go to the top 1% of earners",
+      "issue_vi": "Câu hơi dài và lạm dụng nhiều danh từ, có thể làm người đọc mệt.",
+      "better": "despite consistent GDP growth, rising inequality means the top 1% capture most gains."
+    },
+    {
+      "sentence": 13,
+      "text": "determining happiness than further material gain",
+      "issue_vi": "Cụm 'further material gain' bị lặp lại ý từ các câu trước.",
+      "better": "determining happiness than continued financial accumulation."
+    }
+  ],
+  "tasks": [
+    {
+      "prompt": "Some people think that the government should focus on public health and education rather than economic growth. To what extent do you agree or disagree?",
+      "hint_vi": "Bạn có thể dùng lập luận về 'basic needs' (nhu cầu cơ bản) và 'improvements in living standards' từ bài này."
+    },
+    {
+      "prompt": "Economic growth is the only way to measure a country's success. Do you agree or disagree?",
+      "hint_vi": "Có thể sử dụng các ý về 'non-economic factors' và 'Nordic countries' làm ví dụ cho việc đo lường thành công bằng hạnh phúc thay vì tiền bạc."
+    },
+    {
+      "prompt": "In many countries, the gap between the rich and the poor is widening. What are the causes of this and what problems does it create?",
+      "hint_vi": "Sử dụng cụm 'widened income inequality' và ví dụ về 'top 1% of earners' ở Mỹ để nói về tác động tiêu cực của nó."
+    }
+  ]
+}

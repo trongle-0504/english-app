@@ -1,0 +1,619 @@
+{
+  "questions": [
+    {
+      "id": "sa_unethical_0_0",
+      "type": "short_answer",
+      "sentence": "The company was fined for ___ in its marketing campaigns.",
+      "options": [],
+      "correct_answer": "unethical behaviour",
+      "explanation": "unethical behaviour",
+      "hint": "hành vi vô đạo đức",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_unethical_1_0",
+      "type": "short_answer",
+      "sentence": "The journalist was fired for engaging in ___.",
+      "options": [],
+      "correct_answer": "unethical practices",
+      "explanation": "unethical practices",
+      "hint": "thực hành/thủ đoạn vô đạo đức",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_controversial_0_0",
+      "type": "short_answer",
+      "sentence": "The court debated ___ regarding property rights.",
+      "options": [],
+      "correct_answer": "a controversial issue",
+      "explanation": "a controversial issue",
+      "hint": "vấn đề gây tranh cãi",
+      "collocation_type": "noun phrase"
+    },
+    {
+      "id": "sa_controversial_1_0",
+      "type": "short_answer",
+      "sentence": "Teachers often try to avoid ___ like politics in the classroom.",
+      "options": [],
+      "correct_answer": "controversial topics",
+      "explanation": "a controversial topic",
+      "hint": "chủ đề gây tranh cãi",
+      "collocation_type": "noun phrase"
+    },
+    {
+      "id": "sa_controversial_2_0",
+      "type": "short_answer",
+      "sentence": "The manager's ___ to fire the star player led to widespread protests.",
+      "options": [],
+      "correct_answer": "controversial decision",
+      "explanation": "a controversial decision",
+      "hint": "quyết định gây tranh cãi",
+      "collocation_type": "noun phrase"
+    },
+    {
+      "id": "sa_controversial_3_0",
+      "type": "short_answer",
+      "sentence": "He is ___ in the world of politics due to his radical views.",
+      "options": [],
+      "correct_answer": "a controversial figure",
+      "explanation": "a controversial figure",
+      "hint": "nhân vật gây tranh cãi",
+      "collocation_type": "noun phrase"
+    },
+    {
+      "id": "sa_controversial_4_0",
+      "type": "short_answer",
+      "sentence": "The new law was ___ among the public.",
+      "options": [],
+      "correct_answer": "highly controversial",
+      "explanation": "highly controversial",
+      "hint": "cực kỳ gây tranh cãi",
+      "collocation_type": "adverb + adjective"
+    },
+    {
+      "id": "sa_epidemic_0_0",
+      "type": "short_answer",
+      "sentence": "an ___ influenza",
+      "options": [],
+      "correct_answer": "epidemic of",
+      "explanation": "epidemic of",
+      "hint": "dịch bệnh của",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_epidemic_0_1",
+      "type": "short_answer",
+      "sentence": "an ___ violence",
+      "options": [],
+      "correct_answer": "epidemic of",
+      "explanation": "epidemic of",
+      "hint": "dịch bệnh của",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_epidemic_1_0",
+      "type": "short_answer",
+      "sentence": "The problem has reached ___.",
+      "options": [],
+      "correct_answer": "epidemic proportions",
+      "explanation": "epidemic proportions",
+      "hint": "tỷ lệ/mức độ dịch bệnh",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_waterborne_0_0",
+      "type": "short_answer",
+      "sentence": "Controlling ___ requires access to clean drinking water and proper sanitation.",
+      "options": [],
+      "correct_answer": "waterborne diseases",
+      "explanation": "waterborne disease",
+      "hint": "bệnh lây qua đường nước",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_waterborne_1_0",
+      "type": "short_answer",
+      "sentence": "The port facilitates significant ___, connecting the city to international trade routes.",
+      "options": [],
+      "correct_answer": "waterborne traffic",
+      "explanation": "waterborne traffic",
+      "hint": "giao thông đường thủy",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_stimulate_0_0",
+      "type": "short_answer",
+      "sentence": "The government introduced new policies to ___.",
+      "options": [],
+      "correct_answer": "stimulate economic growth",
+      "explanation": "stimulate economic growth",
+      "hint": "kích thích tăng trưởng kinh tế",
+      "collocation_type": "V + collocation"
+    },
+    {
+      "id": "sa_stimulate_1_0",
+      "type": "short_answer",
+      "sentence": "The speaker's controversial remarks were intended to ___.",
+      "options": [],
+      "correct_answer": "stimulate discussion",
+      "explanation": "stimulate discussion",
+      "hint": "kích thích/khơi mào cuộc thảo luận",
+      "collocation_type": "V + collocation"
+    },
+    {
+      "id": "sa_stimulate_2_0",
+      "type": "short_answer",
+      "sentence": "The museum hopes the new exhibit will ___ among young visitors.",
+      "options": [],
+      "correct_answer": "stimulate interest",
+      "explanation": "stimulate interest",
+      "hint": "khơi gợi sự quan tâm",
+      "collocation_type": "V + collocation"
+    },
+    {
+      "id": "sa_allergy_0_0",
+      "type": "short_answer",
+      "sentence": "They studied 27 patients suffering from irritable bowel syndrome who believed themselves to have ___ or intolerance.",
+      "options": [],
+      "correct_answer": "food allergy",
+      "explanation": "food allergy",
+      "hint": "Dị ứng thực phẩm",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_allergy_1_0",
+      "type": "short_answer",
+      "sentence": "Too many people have undiagnosed ___, and gold is plated using cyanide so no gold, either.",
+      "options": [],
+      "correct_answer": "nickel allergies",
+      "explanation": "nickel allergy",
+      "hint": "Dị ứng kim loại niken",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_allergy_2_0",
+      "type": "short_answer",
+      "sentence": "People with allergies and other ___ and heart ailments may be more seriously affected.",
+      "options": [],
+      "correct_answer": "respiratory",
+      "explanation": "respiratory allergy",
+      "hint": "Dị ứng đường hô hấp",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_allergy_3_0",
+      "type": "short_answer",
+      "sentence": "He experienced a severe ___ to the bee sting.",
+      "options": [],
+      "correct_answer": "allergic reaction",
+      "explanation": "allergic reaction",
+      "hint": "Phản ứng dị ứng",
+      "collocation_type": "N"
+    },
+    {
+      "id": "mc_academic_0_1777697787947",
+      "type": "multiple_choice",
+      "sentence": "The doctor was suspended amid accusations of ___ behaviour.",
+      "options": [
+        {
+          "id": "a",
+          "text": "unethical"
+        },
+        {
+          "id": "b",
+          "text": "morally"
+        },
+        {
+          "id": "c",
+          "text": "honestly"
+        },
+        {
+          "id": "d",
+          "text": "ethical"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Từ 'unethical' (vô đạo đức) bổ nghĩa cho danh từ 'behaviour' (hành vi), tạo thành cụm 'unethical behaviour' (hành vi vô đạo đức), phù hợp với ngữ cảnh về sự đình chỉ của bác sĩ."
+    },
+    {
+      "id": "mc_academic_1_1777697787947",
+      "type": "multiple_choice",
+      "sentence": "He was accused of the ___ public funds.",
+      "options": [
+        {
+          "id": "a",
+          "text": "misuse"
+        },
+        {
+          "id": "b",
+          "text": "abuse"
+        },
+        {
+          "id": "c",
+          "text": "damage"
+        },
+        {
+          "id": "d",
+          "text": "theft"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Misuse of' (sự lạm dụng, sử dụng sai mục đích) là cụm từ cố định, phù hợp với việc sử dụng sai công quỹ. Các lựa chọn khác không đi với giới từ 'of' trong cấu trúc này."
+    },
+    {
+      "id": "mc_academic_2_1777697787947",
+      "type": "multiple_choice",
+      "sentence": "We’ve made one or two ___ the original design.",
+      "options": [
+        {
+          "id": "a",
+          "text": "adaptations for"
+        },
+        {
+          "id": "b",
+          "text": "modifications to"
+        },
+        {
+          "id": "c",
+          "text": "revisions of"
+        },
+        {
+          "id": "d",
+          "text": "changes in"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm từ 'modification to' (sự sửa đổi đối với) là cách diễn đạt đúng khi nói về việc thay đổi một thiết kế. Các lựa chọn khác không phù hợp với giới từ đi kèm hoặc không diễn đạt đúng ý nghĩa thay đổi cụ thể này."
+    },
+    {
+      "id": "mc_academic_3_1777697787947",
+      "type": "multiple_choice",
+      "sentence": "The review resulted in the ___ our security procedures.",
+      "options": [
+        {
+          "id": "a",
+          "text": "modification of"
+        },
+        {
+          "id": "b",
+          "text": "revision for"
+        },
+        {
+          "id": "c",
+          "text": "amendment to"
+        },
+        {
+          "id": "d",
+          "text": "change in"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm từ 'modification of' (sự sửa đổi của) được sử dụng để chỉ sự thay đổi đối với một cái gì đó, trong trường hợp này là quy trình bảo mật. Cụm 'modification in' cũng có thể dùng, nhưng 'of' phổ biến hơn khi nói về kết quả của một cuộc rà soát."
+    },
+    {
+      "id": "mc_academic_4_1777697787947",
+      "type": "multiple_choice",
+      "sentence": "The government discussed ___ of welfare reform.",
+      "options": [
+        {
+          "id": "a",
+          "text": "a sensitive matter"
+        },
+        {
+          "id": "b",
+          "text": "the controversial issue"
+        },
+        {
+          "id": "c",
+          "text": "a debatable topic"
+        },
+        {
+          "id": "d",
+          "text": "an arguable point"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm từ 'the controversial issue' (vấn đề gây tranh cãi) là cách diễn đạt chính xác và tự nhiên nhất trong ngữ cảnh này, khi chính phủ thảo luận về một vấn đề gây nhiều ý kiến trái chiều."
+    },
+    {
+      "id": "mc_academic_5_1777697787947",
+      "type": "multiple_choice",
+      "sentence": "Overcrowding and poor ___ are common problems in prisons.",
+      "options": [
+        {
+          "id": "a",
+          "text": "pollution"
+        },
+        {
+          "id": "b",
+          "text": "hygiene"
+        },
+        {
+          "id": "c",
+          "text": "sanitation"
+        },
+        {
+          "id": "d",
+          "text": "cleanliness"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm từ 'poor sanitation' (vệ sinh kém) là một cặp từ rất phổ biến và phù hợp nhất trong ngữ cảnh mô tả các vấn đề trong nhà tù. 'Hygiene' và 'cleanliness' gần nghĩa nhưng không diễn tả hết khía cạnh hệ thống quản lý vệ sinh ở nơi công cộng như 'sanitation'."
+    },
+    {
+      "id": "mc_academic_6_1777697787947",
+      "type": "multiple_choice",
+      "sentence": "An increasing number of ___ are reported each year.",
+      "options": [
+        {
+          "id": "a",
+          "text": "malaria outbreaks"
+        },
+        {
+          "id": "b",
+          "text": "malaria incidents"
+        },
+        {
+          "id": "c",
+          "text": "malaria sicknesses"
+        },
+        {
+          "id": "d",
+          "text": "malaria cases"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm từ 'malaria cases' (ca bệnh sốt rét) là cách nói chuẩn và thông dụng nhất trong y học khi thống kê số lượng người mắc bệnh. Các lựa chọn khác ít phổ biến hoặc không chính xác về mặt thuật ngữ."
+    },
+    {
+      "id": "mc_academic_7_1777697787947",
+      "type": "multiple_choice",
+      "sentence": "The crew had been busy running cargo and vehicles on a ___ Main Supply Route until just after midnight.",
+      "options": [
+        {
+          "id": "a",
+          "text": "aquatic"
+        },
+        {
+          "id": "b",
+          "text": "maritime"
+        },
+        {
+          "id": "c",
+          "text": "navigable"
+        },
+        {
+          "id": "d",
+          "text": "waterborne"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "'Waterborne' (đường thủy) mô tả một tuyến đường có thể di chuyển bằng phương tiện trên mặt nước, phù hợp với việc vận chuyển hàng hóa và phương tiện. Các từ khác có nghĩa liên quan đến nước nhưng không diễn tả chính xác loại tuyến đường này."
+    },
+    {
+      "id": "mc_academic_8_1777697787947",
+      "type": "multiple_choice",
+      "sentence": "They include a new way of controlling ___ diseases, and of administering drugs to people with chronic diseases.",
+      "options": [
+        {
+          "id": "a",
+          "text": "soil-borne"
+        },
+        {
+          "id": "b",
+          "text": "airborne"
+        },
+        {
+          "id": "c",
+          "text": "foodborne"
+        },
+        {
+          "id": "d",
+          "text": "waterborne"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm từ 'waterborne diseases' (bệnh lây truyền qua đường nước) là một thuật ngữ y tế chuẩn, phù hợp với việc kiểm soát bệnh tật. Các lựa chọn khác chỉ các phương thức lây truyền khác."
+    },
+    {
+      "id": "mc_academic_9_1777697787947",
+      "type": "multiple_choice",
+      "sentence": "The exhibition has ___ in her work.",
+      "options": [
+        {
+          "id": "a",
+          "text": "stimulated interest"
+        },
+        {
+          "id": "b",
+          "text": "aroused curiosity"
+        },
+        {
+          "id": "c",
+          "text": "generated attention"
+        },
+        {
+          "id": "d",
+          "text": "sparked discussion"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm từ 'stimulated interest' (khơi dậy sự quan tâm) là cách diễn đạt phổ biến và chính xác nhất khi nói về tác động của một triển lãm đối với công chúng. Các lựa chọn khác tuy có nét nghĩa tương đồng nhưng không hoàn toàn phù hợp bằng."
+    },
+    {
+      "id": "mc_academic_10_1777697787947",
+      "type": "multiple_choice",
+      "sentence": "Parents should give children books that ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "stimulate them"
+        },
+        {
+          "id": "b",
+          "text": "interest them"
+        },
+        {
+          "id": "c",
+          "text": "engage them"
+        },
+        {
+          "id": "d",
+          "text": "attract them"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Động từ 'stimulate' (kích thích, khuyến khích) trong cấu trúc 'stimulate sb' (kích thích ai đó) rất phù hợp để mô tả tác động của sách đối với trẻ em, khuyến khích sự phát triển tư duy. Các từ khác tuy có thể dùng được nhưng 'stimulate' mang ý nghĩa sâu sắc hơn về mặt nhận thức."
+    },
+    {
+      "id": "mc_academic_11_1777697787947",
+      "type": "multiple_choice",
+      "sentence": "International cooperation plays a ___ in tackling global climate change.",
+      "options": [
+        {
+          "id": "a",
+          "text": "crucial part"
+        },
+        {
+          "id": "b",
+          "text": "vital role"
+        },
+        {
+          "id": "c",
+          "text": "important aspect"
+        },
+        {
+          "id": "d",
+          "text": "significant function"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm từ 'play a vital role' (đóng vai trò quan trọng/thiết yếu) là một thành ngữ rất phổ biến và chính xác trong ngữ cảnh này, nhấn mạnh tầm quan trọng sống còn của hợp tác quốc tế."
+    },
+    {
+      "id": "mc_academic_12_1777697787947",
+      "type": "multiple_choice",
+      "sentence": "The patient's ___, such as blood pressure and heart rate, were closely monitored.",
+      "options": [
+        {
+          "id": "a",
+          "text": "vital signs"
+        },
+        {
+          "id": "b",
+          "text": "vital functions"
+        },
+        {
+          "id": "c",
+          "text": "vital organs"
+        },
+        {
+          "id": "d",
+          "text": "vital statistics"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm từ 'vital signs' (dấu hiệu sinh tồn) là thuật ngữ y tế chuẩn, bao gồm các chỉ số như huyết áp và nhịp tim, dùng để đánh giá tình trạng sức khỏe của bệnh nhân. Các lựa chọn khác không phù hợp với các chỉ số được liệt kê."
+    },
+    {
+      "id": "mc_academic_13_1777697787947",
+      "type": "multiple_choice",
+      "sentence": "Hay fever is really an ___ pollen and the peak time is early June.",
+      "options": [
+        {
+          "id": "a",
+          "text": "allergy toward"
+        },
+        {
+          "id": "b",
+          "text": "allergy against"
+        },
+        {
+          "id": "c",
+          "text": "allergy from"
+        },
+        {
+          "id": "d",
+          "text": "allergy to"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Giới từ 'to' đi sau 'allergy' khi chỉ nguyên nhân gây dị ứng là cách dùng chuẩn trong tiếng Anh. Cụm 'allergy to pollen' (dị ứng với phấn hoa) là cách diễn đạt chính xác."
+    },
+    {
+      "id": "mc_academic_14_1777697787947",
+      "type": "multiple_choice",
+      "sentence": "There have been great advances in the ___ of cancer.",
+      "options": [
+        {
+          "id": "a",
+          "text": "cure"
+        },
+        {
+          "id": "b",
+          "text": "management"
+        },
+        {
+          "id": "c",
+          "text": "therapy"
+        },
+        {
+          "id": "d",
+          "text": "treatment"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm từ 'treatment of cancer' (điều trị ung thư) là cách diễn đạt chuẩn và phổ biến nhất khi nói về các phương pháp y tế nhằm chữa bệnh. Mặc dù 'cure' (sự chữa khỏi) và 'therapy' (liệu pháp) có liên quan, nhưng 'treatment' bao hàm nghĩa rộng hơn và phù hợp nhất với bối cảnh 'advances' (tiến bộ)."
+    },
+    {
+      "id": "mc_academic_15_1777697794507",
+      "type": "multiple_choice",
+      "sentence": "Civil rights groups have complained about the harsh ___ of prisoners.",
+      "options": [
+        {
+          "id": "a",
+          "text": "handling"
+        },
+        {
+          "id": "b",
+          "text": "treatment"
+        },
+        {
+          "id": "c",
+          "text": "management"
+        },
+        {
+          "id": "d",
+          "text": "disposition"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Từ 'treatment' ở đây mang nghĩa là cách đối xử, sự đối đãi với ai đó. Các phương án còn lại không phù hợp về mặt ngữ nghĩa trong ngữ cảnh này."
+    },
+    {
+      "id": "mc_academic_16_1777697794507",
+      "type": "multiple_choice",
+      "sentence": "I didn't think the film gave the issue serious ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "treatment"
+        },
+        {
+          "id": "b",
+          "text": "consideration"
+        },
+        {
+          "id": "c",
+          "text": "attention"
+        },
+        {
+          "id": "d",
+          "text": "acknowledgment"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm từ 'give something treatment' mang nghĩa là xem xét, xử lý, hoặc trình bày một vấn đề theo một cách nào đó. Các lựa chọn khác không tạo thành cụm từ tự nhiên trong ngữ cảnh này."
+    }
+  ]
+}

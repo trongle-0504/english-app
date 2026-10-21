@@ -1,0 +1,1282 @@
+{
+  "id": "mutdyywr-865f60",
+  "createdAt": "2026-10-04T05:34:25.852Z",
+  "durationMs": 88062,
+  "topic": "Job",
+  "part": 1,
+  "answers": [
+    {
+      "question": "Do you get on well with your colleagues?",
+      "idea": "Có áp lực nhưng cùng nhau giải quyết: Đôi khi deadline khiến mình hơi stressed, nhưng team thường cùng nhau brainstorm và tìm solution. Niềm vui chung: Cảm giác khá exciting khi cả team thử một ý tưởng mới và cuối cùng nó actually works.",
+      "picks": [
+        {
+          "cardId": "wcolloc:effort:joint-effort",
+          "term": "joint effort",
+          "slot": "a joint effort",
+          "meaning_vi": "Nỗ lực chung, nỗ lực của cả nhóm.",
+          "origin": "Collocation of: effort",
+          "href": "/vocabulary/common/actions-processes#effort",
+          "how": "Description: mô tả cách cả team cùng giải quyết vấn đề.",
+          "example": "Solving tricky problems is always a joint effort in my team.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "vocab:demanding-job",
+          "term": "demanding job",
+          "meaning_vi": "Công việc đòi hỏi nhiều - công việc cần rất nhiều thời gian, sức lực, kỹ năng hoặc sự tập trung.",
+          "origin": "Work › Jobs & careers",
+          "href": "/vocabulary/work/jobs-careers#demanding-job",
+          "how": "Description: nói về áp lực deadline của công việc.",
+          "example": "It's quite a demanding job, so deadlines can get stressful.",
+          "inReview": true,
+          "learning": true
+        },
+        {
+          "cardId": "vocab:rewarding",
+          "term": "rewarding",
+          "meaning_vi": "Đáng giá, thỏa mãn - mang lại cảm giác hài lòng, có ý nghĩa (dù không nhất thiết được nhiều tiền).",
+          "origin": "Work › Jobs & careers",
+          "href": "/vocabulary/work/jobs-careers#rewarding",
+          "how": "Effect: cảm xúc khi ý tưởng mới thành công.",
+          "example": "It's really rewarding when a new idea actually works.",
+          "inReview": true,
+          "learning": true
+        },
+        {
+          "cardId": "vocab:sense-of-belonging",
+          "term": "sense of belonging",
+          "meaning_vi": "Cảm giác thuộc về - Cảm giác được chấp nhận, gắn bó và là một phần của một nhóm, cộng đồng hay nơi chốn.",
+          "origin": "Social issues",
+          "href": "/vocabulary/social-issues/core-words#sense-of-belonging",
+          "how": "Effect: cảm giác gắn bó với team.",
+          "example": "Working through problems together gives me a real sense of belonging.",
+          "inReview": true,
+          "learning": true
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "come up with a solution",
+          "meaning_vi": "nghĩ ra giải pháp",
+          "example": "We usually brainstorm until we come up with a solution.",
+          "verified": true,
+          "dictionary": [
+            "Longman · VERB + SOLUTION: find, come up with a, seek, look for a, provide, offer a, suggest, put forward a (✓ come up with a)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/solution"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "text": "Definitely",
+          "mark": "structure"
+        },
+        {
+          "text": ", I get on really well with them."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Deadlines sometimes "
+        },
+        {
+          "text": "stress me out",
+          "mark": "unverified",
+          "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+        },
+        {
+          "text": " a bit, but solving problems is usually a "
+        },
+        {
+          "text": "joint effort",
+          "mark": "library"
+        },
+        {
+          "text": " — we brainstorm together until we "
+        },
+        {
+          "text": "come up with a solution",
+          "mark": "extra"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "And honestly, it's",
+          "mark": "structure"
+        },
+        {
+          "text": " really "
+        },
+        {
+          "text": "rewarding",
+          "mark": "library"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "when",
+          "mark": "structure"
+        },
+        {
+          "text": " the whole team "
+        },
+        {
+          "text": "tries out a new idea",
+          "mark": "checked",
+          "note": "OZDIC · VERB + IDEA: have, come up with, dream up, hit on/upon, produce, think up, draw, get, contribute, input, moot, put forward (✓ try out)"
+        },
+        {
+          "text": " and it actually works."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "Definitely",
+              "mark": "structure"
+            },
+            {
+              "text": ", I get on really well with them."
+            }
+          ]
+        },
+        {
+          "tool": "description",
+          "segments": [
+            {
+              "text": "Deadlines sometimes "
+            },
+            {
+              "text": "stress me out",
+              "mark": "unverified",
+              "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+            },
+            {
+              "text": " a bit, but solving problems is usually a "
+            },
+            {
+              "text": "joint effort",
+              "mark": "library"
+            },
+            {
+              "text": " — we brainstorm together until we "
+            },
+            {
+              "text": "come up with a solution",
+              "mark": "extra"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "effect",
+          "segments": [
+            {
+              "text": "And honestly, it's",
+              "mark": "structure"
+            },
+            {
+              "text": " really "
+            },
+            {
+              "text": "rewarding",
+              "mark": "library"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "when",
+              "mark": "structure"
+            },
+            {
+              "text": " the whole team "
+            },
+            {
+              "text": "tries out a new idea",
+              "mark": "checked",
+              "note": "OZDIC · VERB + IDEA: have, come up with, dream up, hit on/upon, produce, think up, draw, get, contribute, input, moot, put forward (✓ try out)"
+            },
+            {
+              "text": " and it actually works."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "Definitely",
+          "text": "Definitely",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "It's Adj when SV",
+          "text": "And honestly, it's … when",
+          "tool": "effect",
+          "fromGuide": false
+        }
+      ],
+      "wording": [
+        {
+          "text": "stress me out",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "text": "tries out a new idea",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · VERB + IDEA: have, come up with, dream up, hit on/upon, produce, think up, draw, get, contribute, input, moot, put forward (✓ try out)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/idea"
+            }
+          ]
+        }
+      ],
+      "meaning": "Yes, I get on well with my colleagues. Deadlines sometimes stress me out, but the team usually brainstorms together to find a solution, and it's exciting when we try a new idea and it actually works.",
+      "polish": []
+    },
+    {
+      "question": "What was your first day like?",
+      "idea": "Ấn tượng ban đầu: Hơi nervous vì phải gặp nhiều người mới và chưa quen với môi trường làm việc. Onboarding: Được giới thiệu về team, công ty, project và những responsibilities của mình.",
+      "picks": [
+        {
+          "cardId": "colloc:starting-and-finishing:got-off-to-a-good-start",
+          "term": "got off to a good start",
+          "slot": "get off to a good start",
+          "meaning_vi": "Bắt đầu một cách thuận lợi, thành công.",
+          "origin": "Starting and finishing",
+          "href": "/collocations/starting-and-finishing#got-off-to-a-good-start",
+          "how": "Answer: nói ngày đầu bắt đầu suôn sẻ dù hồi hộp.",
+          "example": "Despite my nerves, I got off to a good start.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "wcolloc:rope:learn-the-ropes",
+          "term": "learn the ropes",
+          "slot": "learn the ropes (of + N)",
+          "meaning_vi": "học việc, nắm được cách làm",
+          "origin": "Collocation of: rope",
+          "href": "/vocabulary/sport/core-words#rope",
+          "how": "Effect: nói về việc bắt đầu học việc.",
+          "example": "The onboarding helped me learn the ropes quickly.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "vocab:responsibility",
+          "term": "responsibility",
+          "slot": "responsibility for + N/V-ing",
+          "meaning_vi": "1. nghĩa vụ - trạng thái có nghĩa vụ phải làm điều gì đó, đưa ra quyết định và có thể bị đổ lỗi nếu có điều gì đó tồi tệ xảy ra.\n2. trách nhiệm pháp lý/bị đổ lỗi - việc bị đổ lỗi cho điều gì đó tồi tệ đã xảy ra.\n3. trách nhiệm công việc/bổn phận - một điều gì đó bạn phải làm như một phần công việc hoặc bổn phận của mình.",
+          "origin": "Work › At work",
+          "href": "/vocabulary/work/at-work#responsibility",
+          "how": "Description: được giới thiệu trách nhiệm của mình.",
+          "example": "They walked me through my responsibilities on the project.",
+          "inReview": true,
+          "learning": true
+        },
+        {
+          "cardId": "colloc:texture:go-smoothly",
+          "term": "go smoothly",
+          "slot": "sth went smoothly",
+          "meaning_vi": "Diễn ra một cách thuận lợi, không gặp trở ngại.",
+          "origin": "Texture",
+          "href": "/collocations/texture#go-smoothly",
+          "how": "Effect: mọi thứ diễn ra suôn sẻ.",
+          "example": "In the end, everything went smoothly.",
+          "inReview": false,
+          "learning": false
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "working environment",
+          "meaning_vi": "môi trường làm việc",
+          "example": "I wasn't used to the working environment yet.",
+          "verified": true,
+          "dictionary": [
+            "Longman · ADJ.: the natural, the marine (✓ a working)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/environment"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "text": "If I remember correctly, it was",
+          "mark": "structure"
+        },
+        {
+          "text": " a bit nerve-racking, since I had to meet loads of new people and wasn't "
+        },
+        {
+          "text": "used to the",
+          "mark": "checked",
+          "note": "Longman có mục từ “used”"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "working environment",
+          "mark": "extra"
+        },
+        {
+          "text": " yet."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "They introduced me to the team, the company and the project, and "
+        },
+        {
+          "text": "walked me through",
+          "mark": "unverified",
+          "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+        },
+        {
+          "text": " my "
+        },
+        {
+          "text": "responsibilities",
+          "mark": "library"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "As a result,",
+          "mark": "structure"
+        },
+        {
+          "text": " I "
+        },
+        {
+          "text": "got off to a good start",
+          "mark": "library"
+        },
+        {
+          "text": " and began to "
+        },
+        {
+          "text": "learn the ropes",
+          "mark": "library"
+        },
+        {
+          "text": " fairly quickly."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "If I remember correctly, it was",
+              "mark": "structure"
+            },
+            {
+              "text": " a bit nerve-racking, since I had to meet loads of new people and wasn't "
+            },
+            {
+              "text": "used to the",
+              "mark": "checked",
+              "note": "Longman có mục từ “used”"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "working environment",
+              "mark": "extra"
+            },
+            {
+              "text": " yet."
+            }
+          ]
+        },
+        {
+          "tool": "description",
+          "segments": [
+            {
+              "text": "They introduced me to the team, the company and the project, and "
+            },
+            {
+              "text": "walked me through",
+              "mark": "unverified",
+              "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+            },
+            {
+              "text": " my "
+            },
+            {
+              "text": "responsibilities",
+              "mark": "library"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "effect",
+          "segments": [
+            {
+              "text": "As a result,",
+              "mark": "structure"
+            },
+            {
+              "text": " I "
+            },
+            {
+              "text": "got off to a good start",
+              "mark": "library"
+            },
+            {
+              "text": " and began to "
+            },
+            {
+              "text": "learn the ropes",
+              "mark": "library"
+            },
+            {
+              "text": " fairly quickly."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "If I remember correctly, it was + N",
+          "text": "If I remember correctly, it was",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "As a result, SV",
+          "text": "As a result,",
+          "tool": "effect",
+          "fromGuide": true
+        }
+      ],
+      "wording": [
+        {
+          "text": "walked me through",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "text": "used to the",
+          "verified": true,
+          "dictionary": [
+            "Longman có mục từ “used”"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/used"
+            }
+          ]
+        }
+      ],
+      "meaning": "On my first day I was a bit nervous because I had to meet lots of new people and wasn't used to the working environment; then I was introduced to the team, the company, the project and my responsibilities.",
+      "polish": []
+    },
+    {
+      "question": "What responsibilities do you have at work?",
+      "idea": "Nhận và phân tích yêu cầu: Nhận requirements từ khách hàng hoặc business team, sau đó phân tích vấn đề và xem AI có thể giải quyết đến mức nào. Prototype/demo: Làm một prototype hoặc small demo trước để kiểm tra ý tưởng và nhận feedback. Develop → improve → release: Sau khi thống nhất solution thì phát triển, cải thiện dựa trên feedback rồi đưa sản phẩm/feature vào production.",
+      "picks": [
+        {
+          "cardId": "vocab:take-responsibility",
+          "term": "take responsibility",
+          "slot": "take responsibility for + N/V-ing",
+          "meaning_vi": "Nhận trách nhiệm - Chấp nhận việc mình phải chịu trách nhiệm hoặc bị khiển trách về một việc gì đó.",
+          "origin": "Common › Actions & processes",
+          "href": "/vocabulary/common/actions-processes#take-responsibility",
+          "how": "Answer: nêu mình chịu trách nhiệm cả quy trình.",
+          "example": "I take responsibility for the whole AI pipeline.",
+          "inReview": true,
+          "learning": true
+        },
+        {
+          "cardId": "wcolloc:feedback:receive-feedback",
+          "term": "receive feedback",
+          "slot": "receive feedback on + N",
+          "meaning_vi": "Nhận phản hồi, góp ý",
+          "origin": "Collocation of: feedback",
+          "href": "/vocabulary/common/people-communication#feedback",
+          "how": "Description: làm demo để nhận phản hồi.",
+          "example": "I build a demo to receive feedback on the idea.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:starting-and-finishing:put-the-finishing-touches",
+          "term": "put the finishing touches",
+          "slot": "put the finishing touches to + N",
+          "meaning_vi": "Hoàn thiện những chi tiết cuối cùng để làm cho cái gì đó trở nên hoàn hảo.",
+          "origin": "Starting and finishing",
+          "href": "/collocations/starting-and-finishing#put-the-finishing-touches",
+          "how": "Description: hoàn thiện trước khi release.",
+          "example": "Then I put the finishing touches to the feature.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "note:proactively",
+          "term": "Proactively",
+          "slot": "proactively + V",
+          "meaning_vi": "Là trạng từ của \"proactive\", mang nghĩa **chủ động**, **đón đầu vấn đề**, hành động trước khi được yêu cầu hoặc trước khi vấn đề xảy ra.",
+          "origin": "Note · Vocabulary",
+          "href": "/notes#proactively",
+          "how": "Description: chủ động phân tích vấn đề.",
+          "example": "I proactively check how far AI can help.",
+          "inReview": false,
+          "learning": false
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "analyse requirements",
+          "meaning_vi": "phân tích yêu cầu",
+          "example": "First, I analyse the requirements from clients.",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        }
+      ],
+      "answer": [
+        {
+          "text": "As an AI engineer, "
+        },
+        {
+          "text": "I'm responsible for",
+          "mark": "checked",
+          "note": "OZDIC · PREP: for (✓ for)"
+        },
+        {
+          "text": " a feature from start to finish."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "I get requirements from clients or the business team, then analyse the problem to see how far AI can actually solve it."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "After that,",
+          "mark": "structure"
+        },
+        {
+          "text": " I build a quick prototype "
+        },
+        {
+          "text": "to",
+          "mark": "structure"
+        },
+        {
+          "text": " test the idea and "
+        },
+        {
+          "text": "receive feedback",
+          "mark": "library"
+        },
+        {
+          "text": " on it."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Once we "
+        },
+        {
+          "text": "agree on a solution",
+          "mark": "checked",
+          "note": "OZDIC · PREP: about, on/upon, with (✓ on/upon)"
+        },
+        {
+          "text": ", I develop it, refine it based on the feedback and "
+        },
+        {
+          "text": "put the finishing touches to",
+          "mark": "library"
+        },
+        {
+          "text": " it before it "
+        },
+        {
+          "text": "goes into production",
+          "mark": "checked",
+          "note": "OZDIC · VERB + PRODUCTION: be in, go into, go out of, begin, start, boost, increase, step up, cut, cut back (on), halt, stop (✓ go into)"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "As an AI engineer, "
+            },
+            {
+              "text": "I'm responsible for",
+              "mark": "checked",
+              "note": "OZDIC · PREP: for (✓ for)"
+            },
+            {
+              "text": " a feature from start to finish."
+            }
+          ]
+        },
+        {
+          "tool": "description",
+          "segments": [
+            {
+              "text": "I get requirements from clients or the business team, then analyse the problem to see how far AI can actually solve it."
+            }
+          ]
+        },
+        {
+          "tool": "description",
+          "segments": [
+            {
+              "text": "After that,",
+              "mark": "structure"
+            },
+            {
+              "text": " I build a quick prototype "
+            },
+            {
+              "text": "to",
+              "mark": "structure"
+            },
+            {
+              "text": " test the idea and "
+            },
+            {
+              "text": "receive feedback",
+              "mark": "library"
+            },
+            {
+              "text": " on it."
+            }
+          ]
+        },
+        {
+          "tool": "description",
+          "segments": [
+            {
+              "text": "Once we "
+            },
+            {
+              "text": "agree on a solution",
+              "mark": "checked",
+              "note": "OZDIC · PREP: about, on/upon, with (✓ on/upon)"
+            },
+            {
+              "text": ", I develop it, refine it based on the feedback and "
+            },
+            {
+              "text": "put the finishing touches to",
+              "mark": "library"
+            },
+            {
+              "text": " it before it "
+            },
+            {
+              "text": "goes into production",
+              "mark": "checked",
+              "note": "OZDIC · VERB + PRODUCTION: be in, go into, go out of, begin, start, boost, increase, step up, cut, cut back (on), halt, stop (✓ go into)"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "After that, S + V to V",
+          "text": "After that, … to",
+          "tool": "description",
+          "fromGuide": false
+        }
+      ],
+      "wording": [
+        {
+          "text": "agree on a solution",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · PREP: about, on/upon, with (✓ on/upon)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/agree"
+            }
+          ]
+        },
+        {
+          "text": "goes into production",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · VERB + PRODUCTION: be in, go into, go out of, begin, start, boost, increase, step up, cut, cut back (on), halt, stop (✓ go into)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/production"
+            }
+          ]
+        },
+        {
+          "text": "I'm responsible for",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · PREP: for (✓ for)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/responsible"
+            }
+          ]
+        }
+      ],
+      "meaning": "I receive requirements from clients or the business team, analyse the problem and how far AI can solve it, build a prototype or small demo to test the idea and get feedback, then develop, improve it based on feedback and release it to production.",
+      "polish": [
+        {
+          "original": "I take responsibility for",
+          "replacement": "I'm responsible for",
+          "kind": "natural",
+          "why": "\"take responsibility for\" thường mang nghĩa nhận lỗi/nhận trách nhiệm; nói về nhiệm vụ công việc dùng \"be responsible for\".",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · PREP: for (✓ for)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/responsible"
+            }
+          ]
+        },
+        {
+          "original": "improve it and",
+          "replacement": "refine it based on the feedback and",
+          "kind": "meaning",
+          "why": "Ý gốc là cải thiện dựa trên feedback; câu cũ bỏ mất chi tiết này.",
+          "verified": true,
+          "dictionary": [],
+          "sources": []
+        }
+      ]
+    },
+    {
+      "question": "If you had the chance, would you change your job?",
+      "idea": "Có, nhưng không phải vì không thích công việc: Đôi khi mình muốn thử một môi trường mới để bước ra khỏi comfort zone. Học thêm: Một công việc/môi trường mới có thể giúp mình tiếp xúc với những technologies, projects và cách làm việc khác.",
+      "picks": [
+        {
+          "cardId": "colloc:deciding-and-choosing:having-second-thoughts",
+          "term": "having second thoughts",
+          "slot": "have second thoughts about + N/V-ing",
+          "meaning_vi": "Bắt đầu nghi ngờ hoặc thay đổi ý định về một quyết định đã đưa ra.",
+          "origin": "Deciding and choosing",
+          "href": "/collocations/deciding-and-choosing#having-second-thoughts",
+          "how": "Answer: phủ định việc chán việc hiện tại.",
+          "example": "It's not that I'm having second thoughts about my job.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "wcolloc:explore:explore-options",
+          "term": "explore options",
+          "slot": "explore options for + N",
+          "meaning_vi": "Xem xét các lựa chọn",
+          "origin": "Collocation of: explore",
+          "href": "/vocabulary/tourism/core-words#explore",
+          "how": "Cause: muốn xem xét lựa chọn mới.",
+          "example": "I'd love to explore options in a new company.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "wcolloc:opportunity:job-career-opportunities",
+          "term": "job/career opportunities",
+          "meaning_vi": "cơ hội việc làm/sự nghiệp",
+          "origin": "Collocation of: opportunity",
+          "href": "/vocabulary/common/time-amount-likelihood#opportunity",
+          "how": "Effect: cơ hội nghề nghiệp mới.",
+          "example": "A new place could open up new career opportunities.",
+          "inReview": false,
+          "learning": false
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "step out of my comfort zone",
+          "meaning_vi": "bước ra khỏi vùng an toàn",
+          "example": "I want to step out of my comfort zone.",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        }
+      ],
+      "answer": [
+        {
+          "text": "I guess so",
+          "mark": "structure"
+        },
+        {
+          "text": ", but not because I'm unhappy with what I do now."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "The main reason is that",
+          "mark": "structure"
+        },
+        {
+          "text": " I sometimes want to "
+        },
+        {
+          "text": "step out of my comfort zone",
+          "mark": "unverified"
+        },
+        {
+          "text": " and try a different environment."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "A new workplace "
+        },
+        {
+          "text": "would give me the chance to",
+          "mark": "structure"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "explore different technologies",
+          "mark": "unverified",
+          "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+        },
+        {
+          "text": ", projects and "
+        },
+        {
+          "text": "ways of working",
+          "mark": "unverified",
+          "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "I guess so",
+              "mark": "structure"
+            },
+            {
+              "text": ", but not because I'm unhappy with what I do now."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "The main reason is that",
+              "mark": "structure"
+            },
+            {
+              "text": " I sometimes want to "
+            },
+            {
+              "text": "step out of my comfort zone",
+              "mark": "unverified"
+            },
+            {
+              "text": " and try a different environment."
+            }
+          ]
+        },
+        {
+          "tool": "effect",
+          "segments": [
+            {
+              "text": "A new workplace "
+            },
+            {
+              "text": "would give me the chance to",
+              "mark": "structure"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "explore different technologies",
+              "mark": "unverified",
+              "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+            },
+            {
+              "text": ", projects and "
+            },
+            {
+              "text": "ways of working",
+              "mark": "unverified",
+              "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "I guess so",
+          "text": "I guess so",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "The main reason is that SV",
+          "text": "The main reason is that",
+          "tool": "cause",
+          "fromGuide": true
+        },
+        {
+          "pattern": "give sb the chance to V",
+          "text": "would give me the chance to",
+          "tool": "effect",
+          "fromGuide": true
+        }
+      ],
+      "wording": [
+        {
+          "text": "ways of working",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "text": "explore different technologies",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        }
+      ],
+      "meaning": "Yes, but not because I dislike my job; sometimes I want to try a new environment to step out of my comfort zone, and a new job could expose me to different technologies, projects and ways of working.",
+      "polish": [
+        {
+          "original": "I'm having second thoughts about",
+          "replacement": "I'm unhappy with",
+          "kind": "meaning",
+          "why": "\"have second thoughts\" là do dự về một quyết định; ý gốc là không phải vì không thích công việc.",
+          "verified": true,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "original": "work with different technologies",
+          "replacement": "explore different technologies",
+          "kind": "natural",
+          "why": "\"work with ... ways of working\" lặp và không tự nhiên; \"explore\" hợp với cả technologies, projects và ways of working.",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        }
+      ]
+    },
+    {
+      "question": "Do you plan to continue with your job in the future?",
+      "idea": "Tiếp tục làm AI vì đây là lĩnh vực mình thực sự hứng thú. Muốn làm những dự án AI phức tạp hơn trong tương lai. Có thể thay đổi công ty hoặc môi trường làm việc, nhưng vẫn muốn theo AI.",
+      "picks": [
+        {
+          "cardId": "note:pursue",
+          "term": "pursue",
+          "slot": "pursue + N",
+          "meaning_vi": "Theo đuổi, nỗ lực đạt được điều gì đó (thường là mục tiêu dài hạn, sự nghiệp, hoặc nghiên cứu).",
+          "origin": "Note · Vocabulary",
+          "href": "/notes#pursue",
+          "how": "Answer: theo đuổi sự nghiệp AI.",
+          "example": "I definitely want to pursue a career in AI.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "vocab:commitment",
+          "term": "commitment",
+          "slot": "commitment to + N/V-ing",
+          "meaning_vi": "1. Sự cam kết hoặc sự cống hiến lâu dài đối với một mục tiêu, tổ chức hoặc hoạt động.\n2. Một nghĩa vụ hoặc trách nhiệm mà bạn phải thực hiện.",
+          "origin": "Work › At work",
+          "href": "/vocabulary/work/at-work#commitment",
+          "how": "Effect: cam kết lâu dài với AI.",
+          "example": "My commitment to AI won't change.",
+          "inReview": true,
+          "learning": true
+        },
+        {
+          "cardId": "vocab:specialize",
+          "term": "specialize",
+          "meaning_vi": "trở thành chuyên gia trong một lĩnh vực công việc, học tập hoặc kinh doanh cụ thể; dành nhiều thời gian hơn cho một lĩnh vực công việc, v.v. hơn là cho những lĩnh vực khác",
+          "origin": "Education",
+          "href": "/vocabulary/education/core-words#specialize",
+          "how": "Description: chuyên sâu về AI.",
+          "example": "I want to specialize in more complex AI systems.",
+          "inReview": true,
+          "learning": true
+        },
+        {
+          "cardId": "vocab:work-one-s-way-up",
+          "term": "work one's way up",
+          "slot": "work one's way up to + N",
+          "meaning_vi": "Thăng tiến dần dần trong công việc hoặc tổ chức.",
+          "origin": "Work › Jobs & careers",
+          "href": "/vocabulary/work/jobs-careers#work-one-s-way-up",
+          "how": "Effect: thăng tiến dần lên.",
+          "example": "I hope to work my way up to bigger projects.",
+          "inReview": true,
+          "learning": true
+        }
+      ],
+      "extras": [],
+      "answer": [
+        {
+          "text": "For sure",
+          "mark": "structure"
+        },
+        {
+          "text": " — I want to keep "
+        },
+        {
+          "text": "pursuing",
+          "mark": "library"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "a career in AI",
+          "mark": "checked",
+          "note": "OZDIC · PREP: during/throughout your ~, ~ in, ~ with (✓ ~ in)"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "This is because",
+          "mark": "structure"
+        },
+        {
+          "text": " it's a field I'm "
+        },
+        {
+          "text": "genuinely passionate about",
+          "mark": "unverified",
+          "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "I hope to",
+          "mark": "structure"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "work my way up",
+          "mark": "library"
+        },
+        {
+          "text": " to more complex AI projects, and even if I change companies, my "
+        },
+        {
+          "text": "commitment to",
+          "mark": "library"
+        },
+        {
+          "text": " AI won't change."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "For sure",
+              "mark": "structure"
+            },
+            {
+              "text": " — I want to keep "
+            },
+            {
+              "text": "pursuing",
+              "mark": "library"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "a career in AI",
+              "mark": "checked",
+              "note": "OZDIC · PREP: during/throughout your ~, ~ in, ~ with (✓ ~ in)"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "This is because",
+              "mark": "structure"
+            },
+            {
+              "text": " it's a field I'm "
+            },
+            {
+              "text": "genuinely passionate about",
+              "mark": "unverified",
+              "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "effect",
+          "segments": [
+            {
+              "text": "I hope to",
+              "mark": "structure"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "work my way up",
+              "mark": "library"
+            },
+            {
+              "text": " to more complex AI projects, and even if I change companies, my "
+            },
+            {
+              "text": "commitment to",
+              "mark": "library"
+            },
+            {
+              "text": " AI won't change."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "For sure",
+          "text": "For sure",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "This is because SV",
+          "text": "This is because",
+          "tool": "cause",
+          "fromGuide": true
+        },
+        {
+          "pattern": "hope to V",
+          "text": "I hope to",
+          "tool": "effect",
+          "fromGuide": true
+        }
+      ],
+      "wording": [
+        {
+          "text": "genuinely passionate about",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "text": "a career in AI",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · PREP: during/throughout your ~, ~ in, ~ with (✓ ~ in)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/career"
+            }
+          ]
+        }
+      ],
+      "meaning": "Yes, I'll keep working in AI because I'm genuinely passionate about it; I want to do more complex AI projects, and I may change company or environment but will stay in AI.",
+      "polish": []
+    }
+  ],
+  "candidates": 106,
+  "usage": {
+    "model": "claude-opus-5-5",
+    "input": 26035,
+    "output": 4648,
+    "thinking": 1059
+  }
+}

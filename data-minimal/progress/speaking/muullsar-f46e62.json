@@ -1,0 +1,1336 @@
+{
+  "id": "muullsar-f46e62",
+  "createdAt": "2026-10-05T01:55:53.881Z",
+  "durationMs": 109318,
+  "topic": "Family & Friends",
+  "part": 1,
+  "answers": [
+    {
+      "question": "Do you spend much time with your family?",
+      "idea": "Tôi dành khá nhiều thời gian cho các thành viên trong gia đình. Vì tôi coi gia đình là một phần cực kỳ quan trọng trong cuộc sống và muốn duy trì mối quan hệ tốt với họ. Tôi sẽ cảm thấy rất có lỗi nếu bỏ bê gia đình.",
+      "picks": [
+        {
+          "cardId": "colloc:distance-and-size:a-great-deal-of-time",
+          "term": "a great deal of time",
+          "slot": "spend a great deal of time + V-ing",
+          "meaning_vi": "Rất nhiều thời gian.",
+          "origin": "Distance and size",
+          "href": "/collocations/distance-and-size#a-great-deal-of-time",
+          "how": "Câu trả lời trực tiếp: nói mức độ thời gian dành cho gia đình.",
+          "example": "I spend a great deal of time with my family, especially at weekends.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:relationships-people-and-friendship:have-a-good-relationship-with-someone",
+          "term": "have a good relationship with someone",
+          "slot": "have a good relationship with + sb",
+          "meaning_vi": "Có mối quan hệ tốt đẹp với ai đó.",
+          "origin": "Relationships",
+          "href": "/collocations/relationships-people-and-friendship#have-a-good-relationship-with-someone",
+          "how": "Cause (want): lý do muốn duy trì quan hệ tốt.",
+          "example": "I want to keep having a good relationship with my parents.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:time-collocations:make-time-to",
+          "term": "make time to",
+          "slot": "make time to + V / for sth",
+          "meaning_vi": "Cố gắng sắp xếp thời gian để làm gì đó, ngay cả khi bận rộn.",
+          "origin": "Time",
+          "href": "/collocations/time-collocations#make-time-to",
+          "how": "Description: dù bận vẫn sắp xếp thời gian.",
+          "example": "Even when I'm busy, I make time for family dinners.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:families:close-family",
+          "term": "close family",
+          "slot": "be a very close family",
+          "meaning_vi": "Gia đình có mối quan hệ rất gắn bó, thân thiết.",
+          "origin": "Families",
+          "href": "/collocations/families#close-family",
+          "how": "Description: mô tả kiểu gia đình gắn bó.",
+          "example": "We're a very close family, so we eat together most evenings.",
+          "inReview": false,
+          "learning": false
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "feel guilty",
+          "meaning_vi": "cảm thấy có lỗi",
+          "example": "I'd feel guilty if I didn't call my mum for a week.",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · VERBS: feel (✓ feel)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/guilty"
+            }
+          ]
+        },
+        {
+          "phrase": "neglect my family",
+          "meaning_vi": "bỏ bê gia đình",
+          "example": "I'd hate to neglect my family because of work.",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        }
+      ],
+      "answer": [
+        {
+          "text": "I would say so",
+          "mark": "structure"
+        },
+        {
+          "text": " — I "
+        },
+        {
+          "text": "spend a great deal of time",
+          "mark": "library"
+        },
+        {
+          "text": " with my family, and I always "
+        },
+        {
+          "text": "make time for",
+          "mark": "library"
+        },
+        {
+          "text": " them even when I'm busy."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "This is because",
+          "mark": "structure"
+        },
+        {
+          "text": " I see family as an "
+        },
+        {
+          "text": "extremely important part",
+          "mark": "checked",
+          "note": "OZDIC · ADV: critically, crucially, enormously, especially, extremely, hugely, most, particularly, really, terribly, very, vitally (✓ extremely)"
+        },
+        {
+          "text": " of my life, and I really want to "
+        },
+        {
+          "text": "have a good relationship with",
+          "mark": "library"
+        },
+        {
+          "text": " everyone at home."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Honestly, I'd",
+          "mark": "structure"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "feel guilty",
+          "mark": "extra"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "if I",
+          "mark": "structure"
+        },
+        {
+          "text": " ever "
+        },
+        {
+          "text": "neglected my family",
+          "mark": "unverified"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "I would say so",
+              "mark": "structure"
+            },
+            {
+              "text": " — I "
+            },
+            {
+              "text": "spend a great deal of time",
+              "mark": "library"
+            },
+            {
+              "text": " with my family, and I always "
+            },
+            {
+              "text": "make time for",
+              "mark": "library"
+            },
+            {
+              "text": " them even when I'm busy."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "This is because",
+              "mark": "structure"
+            },
+            {
+              "text": " I see family as an "
+            },
+            {
+              "text": "extremely important part",
+              "mark": "checked",
+              "note": "OZDIC · ADV: critically, crucially, enormously, especially, extremely, hugely, most, particularly, really, terribly, very, vitally (✓ extremely)"
+            },
+            {
+              "text": " of my life, and I really want to "
+            },
+            {
+              "text": "have a good relationship with",
+              "mark": "library"
+            },
+            {
+              "text": " everyone at home."
+            }
+          ]
+        },
+        {
+          "tool": "effect",
+          "segments": [
+            {
+              "text": "Honestly, I'd",
+              "mark": "structure"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "feel guilty",
+              "mark": "extra"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "if I",
+              "mark": "structure"
+            },
+            {
+              "text": " ever "
+            },
+            {
+              "text": "neglected my family",
+              "mark": "unverified"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "I would say so",
+          "text": "I would say so",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "This is because SV",
+          "text": "This is because",
+          "tool": "cause",
+          "fromGuide": true
+        },
+        {
+          "pattern": "Honestly, I'd … if I SV",
+          "text": "Honestly, I'd … if I",
+          "tool": "effect",
+          "fromGuide": false
+        }
+      ],
+      "wording": [
+        {
+          "text": "extremely important part",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · ADV: critically, crucially, enormously, especially, extremely, hugely, most, particularly, really, terribly, very, vitally (✓ extremely)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/important"
+            }
+          ]
+        }
+      ],
+      "meaning": "I spend quite a lot of time with my family because I see family as an extremely important part of my life and want to keep a good relationship with them; I'd feel really guilty if I neglected them.",
+      "polish": []
+    },
+    {
+      "question": "Who are you closest to in your family?",
+      "idea": "Em trai là người tôi thân nhất trong gia đình. Hai anh em lớn lên cùng nhau, chơi cùng nhau và học cùng trường cho đến bây giờ. Vì đã đồng hành với nhau từ nhỏ nên tôi cảm thấy rất thoải mái khi chia sẻ những chuyện cá nhân với em ấy.",
+      "picks": [
+        {
+          "cardId": "colloc:distance-and-size:little-brother",
+          "term": "little brother",
+          "slot": "my little brother",
+          "meaning_vi": "Em trai.",
+          "origin": "Distance and size",
+          "href": "/collocations/distance-and-size#little-brother",
+          "how": "Câu trả lời: gọi tên người thân nhất.",
+          "example": "The person I'm closest to is my little brother.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:families:close",
+          "term": "close",
+          "slot": "be close to sb / close relatives",
+          "meaning_vi": "Thân thiết, gần gũi (về mối quan hệ).",
+          "origin": "Families",
+          "href": "/collocations/families#close",
+          "how": "Câu trả lời: be close to sb.",
+          "example": "I'm really close to my little brother.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "wcolloc:get-on-well-with:get-on-well-together",
+          "term": "get on well together",
+          "slot": "sb get on well together",
+          "meaning_vi": "hòa thuận với nhau",
+          "origin": "Collocation of: get on well with",
+          "href": "/vocabulary/family/core-words#get-on-well-with",
+          "how": "Description: hai anh em hòa thuận.",
+          "example": "We've always got on well together.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:relationships-people-and-friendship:form-develop-a-friendship",
+          "term": "form/develop a friendship",
+          "slot": "form/develop a friendship with sb",
+          "meaning_vi": "Hình thành hoặc phát triển một tình bạn.",
+          "origin": "Relationships",
+          "href": "/collocations/relationships-people-and-friendship#form-develop-a-friendship",
+          "how": "Không dùng; tham khảo cho chủ đề tình bạn.",
+          "example": "We developed a real friendship as we grew up.",
+          "inReview": false,
+          "learning": false
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "open up to",
+          "meaning_vi": "cởi mở tâm sự với ai",
+          "example": "I can open up to him about anything.",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · PREP: about, with (✓ to)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/open"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "text": "That person would be",
+          "mark": "structure"
+        },
+        {
+          "text": " my "
+        },
+        {
+          "text": "little brother",
+          "mark": "library"
+        },
+        {
+          "text": " — I'm closer to him than to anyone else."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "We grew up together, played together and have gone to the same schools right up until now, so we've always "
+        },
+        {
+          "text": "got on well together",
+          "mark": "library"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "That's why",
+          "mark": "structure"
+        },
+        {
+          "text": " I feel really comfortable "
+        },
+        {
+          "text": "sharing personal things with",
+          "mark": "checked",
+          "note": "OZDIC · PREP: among, between, in, with (✓ with)"
+        },
+        {
+          "text": " him."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "That person would be",
+              "mark": "structure"
+            },
+            {
+              "text": " my "
+            },
+            {
+              "text": "little brother",
+              "mark": "library"
+            },
+            {
+              "text": " — I'm closer to him than to anyone else."
+            }
+          ]
+        },
+        {
+          "tool": "description",
+          "segments": [
+            {
+              "text": "We grew up together, played together and have gone to the same schools right up until now, so we've always "
+            },
+            {
+              "text": "got on well together",
+              "mark": "library"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "effect",
+          "segments": [
+            {
+              "text": "That's why",
+              "mark": "structure"
+            },
+            {
+              "text": " I feel really comfortable "
+            },
+            {
+              "text": "sharing personal things with",
+              "mark": "checked",
+              "note": "OZDIC · PREP: among, between, in, with (✓ with)"
+            },
+            {
+              "text": " him."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "That person must / would be…",
+          "text": "That person would be",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "That's why SV",
+          "text": "That's why",
+          "tool": "effect",
+          "fromGuide": true
+        }
+      ],
+      "wording": [
+        {
+          "text": "sharing personal things with",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · PREP: among, between, in, with (✓ with)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/share"
+            }
+          ]
+        }
+      ],
+      "meaning": "I'm closest to my younger brother: we grew up together, played together and have gone to the same schools until now, so I feel very comfortable sharing personal things with him.",
+      "polish": [
+        {
+          "original": "I'm close to him more than anyone else",
+          "replacement": "I'm closer to him than to anyone else",
+          "kind": "natural",
+          "why": "Trật tự từ không tự nhiên; so sánh hơn phải dùng 'closer ... than'.",
+          "verified": true,
+          "dictionary": [],
+          "sources": []
+        }
+      ]
+    },
+    {
+      "question": "Do you prefer spending time with your family or friends?",
+      "idea": "Gia đình chắc chắn là lựa chọn của tôi. Đừng hiểu lầm, tôi vẫn thích dành thời gian với bạn bè vì rất vui, nhưng gia đình quan trọng hơn nhiều so với những mối quan hệ bạn bè thông thường. Tôi có thể sống mà không có một người bạn cụ thể nào, nhưng không thể sống thiếu gia đình.",
+      "picks": [
+        {
+          "cardId": "colloc:everyday-verbs-3:have-fun-a-good-time",
+          "term": "have fun / a good time",
+          "meaning_vi": "Tận hưởng bản thân, vui vẻ.",
+          "origin": "Everyday verbs 3",
+          "href": "/collocations/everyday-verbs-3#have-fun-a-good-time",
+          "how": "Câu nhượng bộ: đi chơi với bạn rất vui.",
+          "example": "I always have fun when I hang out with my friends.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:time-collocations:spend-time",
+          "term": "spend time",
+          "slot": "spend time + V-ing / with sb",
+          "meaning_vi": "Dành thời gian cho một hoạt động hoặc ở một địa điểm.",
+          "origin": "Time",
+          "href": "/collocations/time-collocations#spend-time",
+          "how": "Câu trả lời: spend time with family.",
+          "example": "I'd rather spend time with my family.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:families:immediate-family",
+          "term": "immediate family",
+          "meaning_vi": "Gia đình ruột thịt, những người có quan hệ huyết thống gần gũi nhất với bạn.",
+          "origin": "Families",
+          "href": "/collocations/families#immediate-family",
+          "how": "Cause: nhấn mạnh gia đình ruột thịt.",
+          "example": "My immediate family means everything to me.",
+          "inReview": false,
+          "learning": false
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "don't get me wrong",
+          "meaning_vi": "đừng hiểu lầm tôi",
+          "example": "Don't get me wrong, I love my friends.",
+          "verified": true,
+          "dictionary": [
+            "Longman có mục từ “get something wrong”"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/wrong"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "text": "Definitely",
+          "mark": "structure"
+        },
+        {
+          "text": " my family — I'd always rather "
+        },
+        {
+          "text": "spend time",
+          "mark": "library"
+        },
+        {
+          "text": " with them."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Don't get me wrong",
+          "mark": "extra"
+        },
+        {
+          "text": ", I still love going out with my friends because we always "
+        },
+        {
+          "text": "have fun",
+          "mark": "library"
+        },
+        {
+          "text": " together."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "The thing is,",
+          "mark": "structure"
+        },
+        {
+          "text": " my "
+        },
+        {
+          "text": "immediate family",
+          "mark": "library"
+        },
+        {
+          "text": " matters far more to me than my friends do: I could live without any particular friend, but I could never live without my family."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "Definitely",
+              "mark": "structure"
+            },
+            {
+              "text": " my family — I'd always rather "
+            },
+            {
+              "text": "spend time",
+              "mark": "library"
+            },
+            {
+              "text": " with them."
+            }
+          ]
+        },
+        {
+          "tool": "description",
+          "segments": [
+            {
+              "text": "Don't get me wrong",
+              "mark": "extra"
+            },
+            {
+              "text": ", I still love going out with my friends because we always "
+            },
+            {
+              "text": "have fun",
+              "mark": "library"
+            },
+            {
+              "text": " together."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "The thing is,",
+              "mark": "structure"
+            },
+            {
+              "text": " my "
+            },
+            {
+              "text": "immediate family",
+              "mark": "library"
+            },
+            {
+              "text": " matters far more to me than my friends do: I could live without any particular friend, but I could never live without my family."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "Definitely",
+          "text": "Definitely",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "The thing is, SV",
+          "text": "The thing is,",
+          "tool": "cause",
+          "fromGuide": false
+        }
+      ],
+      "wording": [],
+      "meaning": "Definitely family. I still enjoy time with friends because it's fun, but family matters much more than ordinary friendships; I could live without any particular friend but not without my family.",
+      "polish": [
+        {
+          "original": "matters far more than ordinary friendships",
+          "replacement": "matters far more to me than my friends do",
+          "kind": "dictionary",
+          "why": "'ordinary friendships' không có trong từ điển; diễn đạt lại vẫn giữ đúng ý và tự nhiên hơn.",
+          "verified": true,
+          "dictionary": [],
+          "sources": []
+        }
+      ]
+    },
+    {
+      "question": "Who is your best friend?",
+      "idea": "Một người bạn đại học, chúng tôi học cùng ngành. Hai người có nhiều điểm chung về chuyên môn và cách suy nghĩ, nên khá dễ nói chuyện với nhau.",
+      "picks": [
+        {
+          "cardId": "note:click-with-somebody",
+          "term": "click with somebody",
+          "slot": "click with sb",
+          "meaning_vi": "Diễn tả việc ai đó có sự kết nối, hợp nhau, hoặc cảm thấy thoải mái, dễ chịu khi tương tác với người khác. Thường dùng để nói về sự hợp nhau về tính cách, sở thích hoặc cách làm việc.",
+          "origin": "Note · Idiom",
+          "href": "/notes#click-with-somebody",
+          "how": "Effect: hai người hợp nhau ngay.",
+          "example": "We clicked with each other from the first class.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "wcolloc:get-on-well-with:get-on-really-well-with",
+          "term": "get on really well with",
+          "slot": "get on really well with + sb",
+          "meaning_vi": "rất hợp với",
+          "origin": "Collocation of: get on well with",
+          "href": "/vocabulary/family/core-words#get-on-well-with",
+          "how": "Description: rất hợp với bạn.",
+          "example": "I get on really well with her.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:relationships-people-and-friendship:close-special-friends",
+          "term": "close/special friends",
+          "slot": "be close friends with sb",
+          "meaning_vi": "Bạn bè thân thiết hoặc đặc biệt.",
+          "origin": "Relationships",
+          "href": "/collocations/relationships-people-and-friendship#close-special-friends",
+          "how": "Câu trả lời: bạn thân.",
+          "example": "We've been close friends since first year.",
+          "inReview": false,
+          "learning": false
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "have a lot in common",
+          "meaning_vi": "có nhiều điểm chung",
+          "example": "We have a lot in common.",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · PHRASES: have sth in common, hold sth in common, in common with (✓ have sth in common)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/common"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "text": "That person would be",
+          "mark": "structure"
+        },
+        {
+          "text": " a friend from university who's "
+        },
+        {
+          "text": "doing the same course",
+          "mark": "checked",
+          "note": "OZDIC · VERB + COURSE: do, take, enrol on, join, sign up for, withdraw from, teach, offer, run, complete, pass, fail (✓ do)"
+        },
+        {
+          "text": " as me."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "The main reason is that",
+          "mark": "structure"
+        },
+        {
+          "text": " we "
+        },
+        {
+          "text": "have a lot in common",
+          "mark": "extra"
+        },
+        {
+          "text": ", both in our field and in the way we think."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "As a result,",
+          "mark": "structure"
+        },
+        {
+          "text": " we really clicked, and now we're "
+        },
+        {
+          "text": "close friends",
+          "mark": "library"
+        },
+        {
+          "text": " who can talk about anything."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "That person would be",
+              "mark": "structure"
+            },
+            {
+              "text": " a friend from university who's "
+            },
+            {
+              "text": "doing the same course",
+              "mark": "checked",
+              "note": "OZDIC · VERB + COURSE: do, take, enrol on, join, sign up for, withdraw from, teach, offer, run, complete, pass, fail (✓ do)"
+            },
+            {
+              "text": " as me."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "The main reason is that",
+              "mark": "structure"
+            },
+            {
+              "text": " we "
+            },
+            {
+              "text": "have a lot in common",
+              "mark": "extra"
+            },
+            {
+              "text": ", both in our field and in the way we think."
+            }
+          ]
+        },
+        {
+          "tool": "effect",
+          "segments": [
+            {
+              "text": "As a result,",
+              "mark": "structure"
+            },
+            {
+              "text": " we really clicked, and now we're "
+            },
+            {
+              "text": "close friends",
+              "mark": "library"
+            },
+            {
+              "text": " who can talk about anything."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "That person must / would be…",
+          "text": "That person would be",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "The (main) reason is that SV",
+          "text": "The main reason is that",
+          "tool": "cause",
+          "fromGuide": true
+        },
+        {
+          "pattern": "As a result, SV",
+          "text": "As a result,",
+          "tool": "effect",
+          "fromGuide": true
+        }
+      ],
+      "wording": [
+        {
+          "text": "doing the same course",
+          "original": "doing the same major",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · VERB + COURSE: do, take, enrol on, join, sign up for, withdraw from, teach, offer, run, complete, pass, fail (✓ do)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/course"
+            }
+          ]
+        }
+      ],
+      "meaning": "My best friend is a university friend who studies the same major; we have a lot in common in our field and way of thinking, so it's easy to talk to each other.",
+      "polish": [
+        {
+          "original": "we clicked with each other straight away",
+          "replacement": "we really clicked",
+          "kind": "meaning",
+          "why": "Ý gốc không nói 'hợp nhau ngay lập tức'; 'really clicked' tự nhiên hơn và không thêm ý.",
+          "verified": true,
+          "dictionary": [],
+          "sources": []
+        }
+      ]
+    },
+    {
+      "question": "Are you still friends with people from your childhood?",
+      "idea": "Có, tôi vẫn còn một người bạn mà tôi quen từ cấp 1. Mặc dù sau này chúng tôi học khác trường và làm khác ngành, chúng tôi vẫn giữ liên lạc. Thỉnh thoảng chúng tôi đi xem phim hoặc đi ăn cùng nhau. Khi gặp nhau, chúng tôi thường kể cho nhau nghe những chuyện đã xảy ra trong tuần. Tôi thấy điều đó khá đặc biệt vì dù cuộc sống của chúng tôi đã thay đổi rất nhiều, tình bạn vẫn được duy trì.",
+      "picks": [
+        {
+          "cardId": "colloc:relationships-people-and-friendship:keep-in-contact-touch",
+          "term": "keep in contact/touch",
+          "slot": "keep in touch with + sb",
+          "meaning_vi": "Giữ liên lạc với ai đó.",
+          "origin": "Relationships",
+          "href": "/collocations/relationships-people-and-friendship#keep-in-contact-touch",
+          "how": "Description: vẫn giữ liên lạc.",
+          "example": "We've kept in touch since primary school.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:synonyms-and-confusable-words-1:old",
+          "term": "old",
+          "slot": "an old friend",
+          "meaning_vi": "Có tuổi tác cao, đã tồn tại trong một thời gian dài.",
+          "origin": "Synonyms and confusable words 1",
+          "href": "/collocations/synonyms-and-confusable-words-1#old",
+          "how": "Câu trả lời: một người bạn cũ.",
+          "example": "I still have an old friend from primary school.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:films-and-books:see-a-film-at-the-cinema",
+          "term": "see a film at the cinema",
+          "meaning_vi": "Xem một bộ phim tại rạp chiếu phim.",
+          "origin": "Films and books",
+          "href": "/collocations/films-and-books#see-a-film-at-the-cinema",
+          "how": "Description: hoạt động cùng nhau.",
+          "example": "We sometimes see a film at the cinema.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:time-collocations:as-time-goes-by",
+          "term": "as time goes by",
+          "meaning_vi": "Khi thời gian trôi qua.",
+          "origin": "Time",
+          "href": "/collocations/time-collocations#as-time-goes-by",
+          "how": "Effect: dù thời gian trôi qua.",
+          "example": "As time goes by, our friendship still lasts.",
+          "inReview": false,
+          "learning": false
+        }
+      ],
+      "extras": [],
+      "answer": [
+        {
+          "text": "Definitely",
+          "mark": "structure"
+        },
+        {
+          "text": " — I still have an "
+        },
+        {
+          "text": "old friend",
+          "mark": "library"
+        },
+        {
+          "text": " from primary school."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Even though we went to different schools and now work in different fields, we've "
+        },
+        {
+          "text": "kept in touch",
+          "mark": "library"
+        },
+        {
+          "text": ", and every now and then we go to the cinema or "
+        },
+        {
+          "text": "go for a meal",
+          "mark": "checked",
+          "note": "Longman · VERB + MEAL: have a, eat a, cook, make a, serve a, fix a, go (out) for a, take sb (out) for a (✓ go (out) for a)"
+        },
+        {
+          "text": " and tell each other about our week."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "I find it",
+          "mark": "structure"
+        },
+        {
+          "text": " quite special "
+        },
+        {
+          "text": "that",
+          "mark": "structure"
+        },
+        {
+          "text": " our friendship has lasted, even though our lives have changed so much "
+        },
+        {
+          "text": "over the years",
+          "mark": "library"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "Definitely",
+              "mark": "structure"
+            },
+            {
+              "text": " — I still have an "
+            },
+            {
+              "text": "old friend",
+              "mark": "library"
+            },
+            {
+              "text": " from primary school."
+            }
+          ]
+        },
+        {
+          "tool": "description",
+          "segments": [
+            {
+              "text": "Even though we went to different schools and now work in different fields, we've "
+            },
+            {
+              "text": "kept in touch",
+              "mark": "library"
+            },
+            {
+              "text": ", and every now and then we go to the cinema or "
+            },
+            {
+              "text": "go for a meal",
+              "mark": "checked",
+              "note": "Longman · VERB + MEAL: have a, eat a, cook, make a, serve a, fix a, go (out) for a, take sb (out) for a (✓ go (out) for a)"
+            },
+            {
+              "text": " and tell each other about our week."
+            }
+          ]
+        },
+        {
+          "tool": "effect",
+          "segments": [
+            {
+              "text": "I find it",
+              "mark": "structure"
+            },
+            {
+              "text": " quite special "
+            },
+            {
+              "text": "that",
+              "mark": "structure"
+            },
+            {
+              "text": " our friendship has lasted, even though our lives have changed so much "
+            },
+            {
+              "text": "over the years",
+              "mark": "library"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "Definitely",
+          "text": "Definitely",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "find it + Adj that SV",
+          "text": "I find it … that",
+          "tool": "effect",
+          "fromGuide": false
+        }
+      ],
+      "wording": [
+        {
+          "text": "go for a meal",
+          "original": "grab a meal",
+          "verified": true,
+          "dictionary": [
+            "Longman · VERB + MEAL: have a, eat a, cook, make a, serve a, fix a, go (out) for a, take sb (out) for a (✓ go (out) for a)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/meal"
+            }
+          ]
+        }
+      ],
+      "meaning": "Yes, I still have a friend from primary school; though we went to different schools and work in different fields, we keep in touch, sometimes see films or eat out, and catch each other up on our week. It's special that the friendship lasted despite our lives changing.",
+      "polish": [
+        {
+          "original": "as time goes by",
+          "replacement": "over the years",
+          "kind": "natural",
+          "why": "'as time goes by' không hợp với thì hiện tại hoàn thành; 'over the years' tự nhiên hơn.",
+          "verified": true,
+          "dictionary": [],
+          "sources": []
+        }
+      ]
+    },
+    {
+      "question": "Is family important in your country?",
+      "idea": "Definitely. It's one of the things that people here value a lot and prioritise in their lives, which is a good thing in my opinion. Only when you have strong families can you build a strong society.",
+      "picks": [
+        {
+          "cardId": "note:moral-values",
+          "term": "moral values",
+          "meaning_vi": "Các giá trị hoặc nguyên tắc đạo đức.",
+          "origin": "Note · Vocabulary",
+          "href": "/notes#moral-values",
+          "how": "Description: giá trị đạo đức gia đình truyền lại.",
+          "example": "Families pass down moral values to children.",
+          "inReview": true,
+          "learning": true
+        },
+        {
+          "cardId": "wcolloc:thrive:thrive-in-supportive-families",
+          "term": "thrive in supportive families",
+          "meaning_vi": "phát triển tốt trong các gia đình có sự hỗ trợ",
+          "origin": "Collocation of: thrive",
+          "href": "/vocabulary/common/change-cause-effect#thrive",
+          "how": "Cause: trẻ phát triển tốt trong gia đình hỗ trợ.",
+          "example": "Children thrive in supportive families.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:families:loving-family",
+          "term": "loving family",
+          "slot": "grow up in a loving family",
+          "meaning_vi": "Gia đình yêu thương, đầy tình cảm.",
+          "origin": "Families",
+          "href": "/collocations/families#loving-family",
+          "how": "Cause: gia đình yêu thương.",
+          "example": "Growing up in a loving family shapes good citizens.",
+          "inReview": false,
+          "learning": false
+        }
+      ],
+      "extras": [],
+      "answer": [
+        {
+          "text": "Definitely",
+          "mark": "structure"
+        },
+        {
+          "text": " — family is one of the things people here value most and prioritise in their lives."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Personally, I think",
+          "mark": "structure"
+        },
+        {
+          "text": " that's a good thing, because the family is where children learn moral values and feel supported."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Only when",
+          "mark": "structure"
+        },
+        {
+          "text": " you have strong families "
+        },
+        {
+          "text": "can",
+          "mark": "structure"
+        },
+        {
+          "text": " you "
+        },
+        {
+          "text": "build a strong society",
+          "mark": "checked",
+          "note": "OZDIC · VERB + SOCIETY: build, create, shape, permeate, pervade, fit into, polarize (✓ build)"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "Definitely",
+              "mark": "structure"
+            },
+            {
+              "text": " — family is one of the things people here value most and prioritise in their lives."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "Personally, I think",
+              "mark": "structure"
+            },
+            {
+              "text": " that's a good thing, because the family is where children learn moral values and feel supported."
+            }
+          ]
+        },
+        {
+          "tool": "effect",
+          "segments": [
+            {
+              "text": "Only when",
+              "mark": "structure"
+            },
+            {
+              "text": " you have strong families "
+            },
+            {
+              "text": "can",
+              "mark": "structure"
+            },
+            {
+              "text": " you "
+            },
+            {
+              "text": "build a strong society",
+              "mark": "checked",
+              "note": "OZDIC · VERB + SOCIETY: build, create, shape, permeate, pervade, fit into, polarize (✓ build)"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "Definitely",
+          "text": "Definitely",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "Personally, I think SV",
+          "text": "Personally, I think",
+          "tool": "cause",
+          "fromGuide": true
+        },
+        {
+          "pattern": "Only when SV can S V",
+          "text": "Only when … can",
+          "tool": "effect",
+          "fromGuide": false
+        }
+      ],
+      "wording": [
+        {
+          "text": "build a strong society",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · VERB + SOCIETY: build, create, shape, permeate, pervade, fit into, polarize (✓ build)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/society"
+            }
+          ]
+        }
+      ],
+      "meaning": "Definitely: people in Vietnam value family a lot and prioritise it, which I think is good, because only strong families can build a strong society.",
+      "polish": [
+        {
+          "original": "it's where children learn moral values and thrive in supportive families",
+          "replacement": "the family is where children learn moral values and feel supported",
+          "kind": "natural",
+          "why": "'it' không rõ chỉ cái gì; 'thrive in supportive families' lặp ý, gượng ép.",
+          "verified": true,
+          "dictionary": [],
+          "sources": []
+        }
+      ]
+    }
+  ],
+  "candidates": 121,
+  "usage": {
+    "model": "claude-opus-5-5",
+    "input": 28978,
+    "output": 6144,
+    "thinking": 1433
+  }
+}

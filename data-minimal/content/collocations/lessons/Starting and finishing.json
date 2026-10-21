@@ -1,0 +1,1560 @@
+{
+  "metadata": {
+    "lesson_id": "starting-and-finishing",
+    "topic": "Functions",
+    "chapter_title": "Starting and finishing",
+    "pdf_file": "Starting and finishing.pdf"
+  },
+  "mindmap_data": {
+    "topic": "Functions",
+    "chapter": {
+      "chapter_id": "ch_starting_finishing",
+      "title": "Starting and finishing",
+      "sessions": [
+        {
+          "session_id": "s_starting_finishing_a",
+          "title": "A Starting",
+          "description_vi": "Các cách diễn đạt liên quan đến việc bắt đầu.",
+          "value": "# Starting and finishing\n\n## A Starting\n\n**PROMISING START FOR AMBROSE**\n\nSally Ambrose, Britain’s best hope in this year’s Eurotennis tournament, **made a promising start** when she won her first match today against Sweden’s Ulla Hemvik.\n\n**EARLY START TO HOLIDAY**\n\nMany people have decided to **make an early start** to the bank holiday weekend. **Traffic was already building up** on major motorways on Thursday evening.\n\n**ABSOLUTE BEGINNERS MAKE BEST LANGUAGE LEARNERS**\n\nResearch shows that **absolute beginners** have a better chance of learning a language well than those who **start with some knowledge**.\n\n**ARTS FESTIVAL GETS OFF TO A GOOD START**\n\nThe Glasgow Arts Festival **got off to a good start** this week, attracting more than 120,000 visitors during its first three days.\n",
+          "children_nodes": [
+            {
+              "node_id": "made_a_promising_start",
+              "label": "made a promising start"
+            },
+            {
+              "node_id": "make_an_early_start",
+              "label": "make an early start"
+            },
+            {
+              "node_id": "traffic_was_already_building_up",
+              "label": "traffic was already building up"
+            },
+            {
+              "node_id": "absolute_beginners",
+              "label": "absolute beginners"
+            },
+            {
+              "node_id": "start_with_some_knowledge",
+              "label": "start with some knowledge"
+            },
+            {
+              "node_id": "got_off_to_a_good_start",
+              "label": "got off to a good start"
+            }
+          ]
+        },
+        {
+          "session_id": "s_starting_finishing_b",
+          "title": "B Finishing",
+          "description_vi": "Các cách diễn đạt liên quan đến việc kết thúc.",
+          "value": "## B Finishing\n\n**CLOSE FINISH IN SPANISH RALLY**\n\nPedro Macarro emerged the winner of today’s Spanish Grand Prix in a very **close finish**. Macarro was just 0.5 seconds ahead of Finland’s Pekka Hirvonen.\n\n**ROUX JUST WINS**\n\nClaude Roux won the championship yesterday in a **nail-biting finish**.\n\n**NEW CONSTITUTION**\n\nMinisters met in Rome today to **put the finishing touches** to a new constitution for the European Union.\n\n**NEW HEALTH CONTRACT BRINGS STRIKE TO AN END**\n\nThe doctors’ strike was finally brought to an **end yesterday** when the union and management signed an agreement over pay and working hours.\n",
+          "children_nodes": [
+            {
+              "node_id": "close_finish",
+              "label": "close finish"
+            },
+            {
+              "node_id": "nail_biting_finish",
+              "label": "nail-biting finish"
+            },
+            {
+              "node_id": "put_the_finishing_touches",
+              "label": "put the finishing touches"
+            },
+            {
+              "node_id": "end_yesterday",
+              "label": "end yesterday"
+            }
+          ]
+        },
+        {
+          "session_id": "s_starting_finishing_c",
+          "title": "C More collocations for starting and finishing",
+          "description_vi": "Các cụm từ khác liên quan đến bắt đầu và kết thúc.",
+          "value": "## C More collocations for starting and finishing\n\nThe invention of television **marked the beginning of the end** for popular radio shows.\nI studied hard for a whole month and the **end result** was that I got a grade ‘A’ in the exam.\nThe meal we had on our last evening in Istanbul was a **perfect end** to our holiday.\nIt’s two o’clock. **Let’s make a start / get started, shall we?** Then we can finish by five.\nAs my time at university **came to an end**, I knew I had to start looking for a job.\nThe meeting **drew to a close** at 5.30, after a long discussion.\nWithout any warning, he was fired from the newspaper in 2014. It was an **abrupt end** to his career in journalism.\n\n**Common mistakes**\n\nWe say that a **holiday ended**, **journey ended**, **trip ended**, **meal ended**, NOT finished.\n",
+          "children_nodes": [
+            {
+              "node_id": "marked_the_beginning_of_the_end",
+              "label": "marked the beginning of the end"
+            },
+            {
+              "node_id": "end_result",
+              "label": "end result"
+            },
+            {
+              "node_id": "perfect_end",
+              "label": "perfect end"
+            },
+            {
+              "node_id": "make_a_start",
+              "label": "make a start"
+            },
+            {
+              "node_id": "get_started",
+              "label": "get started"
+            },
+            {
+              "node_id": "came_to_an_end",
+              "label": "came to an end"
+            },
+            {
+              "node_id": "drew_to_a_close",
+              "label": "drew to a close"
+            },
+            {
+              "node_id": "abrupt_end",
+              "label": "abrupt end"
+            },
+            {
+              "node_id": "holiday_ended",
+              "label": "holiday ended"
+            },
+            {
+              "node_id": "journey_ended",
+              "label": "journey ended"
+            },
+            {
+              "node_id": "trip_ended",
+              "label": "trip ended"
+            },
+            {
+              "node_id": "meal_ended",
+              "label": "meal ended"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "section_id": "A",
+      "session_ref": "s_starting_finishing_a",
+      "title": "Starting",
+      "instruction_vi": "Đọc các tiêu đề và đoạn văn sau đây. Chú ý đến các từ in đậm.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "**PROMISING START FOR AMBROSE**\n\nSally Ambrose, Britain’s best hope in this year’s Eurotennis tournament, **made a promising start** when she won her first match today against Sweden’s Ulla Hemvik.\n",
+          "related_vocabulary_ids": [
+            "made_a_promising_start"
+          ]
+        },
+        {
+          "type": "markdown",
+          "value": "**EARLY START TO HOLIDAY**\n\nMany people have decided to **make an early start** to the bank holiday weekend. **Traffic was already building up** on major motorways on Thursday evening.\n",
+          "related_vocabulary_ids": [
+            "make_an_early_start",
+            "traffic_was_already_building_up"
+          ]
+        },
+        {
+          "type": "markdown",
+          "value": "**ABSOLUTE BEGINNERS MAKE BEST LANGUAGE LEARNERS**\n\nResearch shows that **absolute beginners** have a better chance of learning a language well than those who **start with some knowledge**.\n",
+          "related_vocabulary_ids": [
+            "absolute_beginners",
+            "start_with_some_knowledge"
+          ]
+        },
+        {
+          "type": "markdown",
+          "value": "**ARTS FESTIVAL GETS OFF TO A GOOD START**\n\nThe Glasgow Arts Festival **got off to a good start** this week, attracting more than 120,000 visitors during its first three days.\n",
+          "related_vocabulary_ids": [
+            "got_off_to_a_good_start"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "B",
+      "session_ref": "s_starting_finishing_b",
+      "title": "Finishing",
+      "instruction_vi": "Đọc các tiêu đề và đoạn văn sau đây. Chú ý đến các từ in đậm.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "**CLOSE FINISH IN SPANISH RALLY**\n\nPedro Macarro emerged the winner of today’s Spanish Grand Prix in a very **close finish**. Macarro was just 0.5 seconds ahead of Finland’s Pekka Hirvonen.\n",
+          "related_vocabulary_ids": [
+            "close_finish"
+          ]
+        },
+        {
+          "type": "markdown",
+          "value": "**ROUX JUST WINS**\n\nClaude Roux won the championship yesterday in a **nail-biting finish**.\n",
+          "related_vocabulary_ids": [
+            "nail_biting_finish"
+          ]
+        },
+        {
+          "type": "markdown",
+          "value": "**NEW CONSTITUTION**\n\nMinisters met in Rome today to **put the finishing touches** to a new constitution for the European Union.\n",
+          "related_vocabulary_ids": [
+            "put_the_finishing_touches"
+          ]
+        },
+        {
+          "type": "markdown",
+          "value": "**NEW HEALTH CONTRACT BRINGS STRIKE TO AN END**\n\nThe doctors’ strike was finally brought to an **end yesterday** when the union and management signed an agreement over pay and working hours.\n",
+          "related_vocabulary_ids": [
+            "end_yesterday"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "C",
+      "session_ref": "s_starting_finishing_c",
+      "title": "More collocations for starting and finishing",
+      "instruction_vi": "Đọc các câu sau đây. Chú ý đến các từ in đậm.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "The invention of television **marked the beginning of the end** for popular radio shows.\nI studied hard for a whole month and the **end result** was that I got a grade ‘A’ in the exam.\nThe meal we had on our last evening in Istanbul was a **perfect end** to our holiday.\nIt’s two o’clock. **Let’s make a start / get started, shall we?** Then we can finish by five.\nAs my time at university **came to an end**, I knew I had to start looking for a job.\nThe meeting **drew to a close** at 5.30, after a long discussion.\nWithout any warning, he was fired from the newspaper in 2014. It was an **abrupt end** to his career in journalism.\n",
+          "related_vocabulary_ids": [
+            "marked_the_beginning_of_the_end",
+            "end_result",
+            "perfect_end",
+            "make_a_start",
+            "get_started",
+            "came_to_an_end",
+            "drew_to_a_close",
+            "abrupt_end"
+          ]
+        },
+        {
+          "type": "note_box",
+          "value": "**Common mistakes**\n\nWe say that a **holiday ended**, **journey ended**, **trip ended**, **meal ended**, NOT finished.\n",
+          "related_vocabulary_ids": [
+            "holiday_ended",
+            "journey_ended",
+            "trip_ended",
+            "meal_ended"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary_data": {
+    "made_a_promising_start": {
+      "word": "made a promising start",
+      "pronunciation": "/meɪd ə ˈprɒmɪsɪŋ stɑːrt/",
+      "image": {
+        "type": "prompt",
+        "value": "A person starting a race with a look of determination",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/0/01/Monocot_vs_dicot_crop_Pengo.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Bắt đầu một cách thuận lợi, có triển vọng tốt.",
+          "examples": [
+            "Sally Ambrose made a promising start in the Eurotennis tournament."
+          ],
+          "grammar_patterns": [
+            "make a promising start"
+          ],
+          "usage_notes_vi": "Thường dùng để nói về sự khởi đầu của một sự kiện, một cuộc thi đấu, hoặc một dự án."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Sport",
+          "question": "How did your favourite team begin the season?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How has a new colleague settled into your workplace?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How did you find your first weeks at university?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "made a promising start",
+          "text": "The new manager made a promising start this year."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "made a promising start",
+          "source": "Sally began the tennis tournament very well.",
+          "model": "Sally made a promising start in the tennis tournament."
+        },
+        {
+          "target": "made a promising start",
+          "source": "The new teacher's first weeks were very good and suggested future success.",
+          "model": "The new teacher made a promising start."
+        }
+      ]
+    },
+    "make_an_early_start": {
+      "word": "make an early start",
+      "pronunciation": "/meɪk ən ˈɜːli stɑːrt/",
+      "image": {
+        "type": "prompt",
+        "value": "A car on a road at sunrise",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Spring_Lake%2C_New_Jersey_Beach_at_Sunrise.jpg/960px-Spring_Lake%2C_New_Jersey_Beach_at_Sunrise.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Bắt đầu làm gì đó sớm hơn bình thường, đặc biệt là vào buổi sáng hoặc trước một dịp đặc biệt.",
+          "examples": [
+            "Many people decided to make an early start to the bank holiday weekend."
+          ],
+          "grammar_patterns": [
+            "make an early start"
+          ],
+          "usage_notes_vi": "Thường dùng khi muốn tránh tắc nghẽn giao thông hoặc để có nhiều thời gian cho một hoạt động."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "How do you avoid traffic on a long journey?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What helps people get more done in a day?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Is it healthy to get up very early?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "make an early start",
+          "text": "We should make an early start tomorrow morning."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "make an early start",
+          "source": "Many people left very early to begin the holiday weekend.",
+          "model": "Many people decided to make an early start to the bank holiday weekend."
+        },
+        {
+          "target": "make an early start",
+          "source": "If we leave at dawn, we will avoid the traffic.",
+          "model": "If we make an early start, we will avoid the traffic."
+        }
+      ]
+    },
+    "traffic_was_already_building_up": {
+      "word": "traffic was already building up",
+      "pronunciation": "/ˈtræfɪk wɒz ˈɔːlrɛdi ˈbɪldɪŋ ʌp/",
+      "image": {
+        "type": "prompt",
+        "value": "A long line of cars on a highway",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/World_Class_Traffic_Jam_2_%287454479488%29.jpg/960px-World_Class_Traffic_Jam_2_%287454479488%29.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "noun+verb phrase",
+      "senses": [
+        {
+          "definition_vi": "Tình trạng giao thông bắt đầu trở nên đông đúc, xe cộ bắt đầu ùn tắc.",
+          "examples": [
+            "Traffic was already building up on major motorways on Thursday evening."
+          ],
+          "grammar_patterns": [
+            "traffic was building up"
+          ],
+          "usage_notes_vi": "Diễn tả sự gia tăng dần dần của lượng xe cộ trên đường."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What problems do people face when travelling before a public holiday?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Why do many workers leave the office early on Fridays?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "What causes air pollution in big cities?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "traffic was already building up",
+          "text": "Traffic was already building up on the main road."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "traffic was already building up",
+          "source": "By six o'clock, the roads were starting to get crowded with cars.",
+          "model": "By six o'clock, traffic was already building up."
+        },
+        {
+          "target": "traffic was already building up",
+          "source": "When we left home, the motorway was beginning to fill with cars.",
+          "model": "When we left home, traffic was already building up on the motorway."
+        }
+      ]
+    },
+    "absolute_beginners": {
+      "word": "absolute beginners",
+      "pronunciation": "/ˈæbsəluːt bɪˈɡɪnəz/",
+      "image": {
+        "type": "prompt",
+        "value": "A person looking at a language textbook with a confused expression",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Crayones_cera.jpg/960px-Crayones_cera.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Người mới bắt đầu học một cái gì đó hoàn toàn, không có kiến thức nền tảng.",
+          "examples": [
+            "Absolute beginners have a better chance of learning a language well."
+          ],
+          "grammar_patterns": [
+            "absolute beginners"
+          ],
+          "usage_notes_vi": "Nhấn mạnh sự thiếu kinh nghiệm hoặc kiến thức ban đầu."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "Is it easy for adults to learn a language from zero?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "Which sports are suitable for people who have never tried them?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "Should computer courses for older people start with the basics?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "absolute beginners",
+          "text": "This class is for absolute beginners."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "absolute beginners",
+          "source": "This course is for people who know nothing about Spanish.",
+          "model": "This course is for absolute beginners in Spanish."
+        },
+        {
+          "target": "absolute beginners",
+          "source": "The yoga class is for people who have never done yoga before.",
+          "model": "The yoga class is for absolute beginners."
+        }
+      ]
+    },
+    "start_with_some_knowledge": {
+      "word": "start with some knowledge",
+      "pronunciation": "/stɑːrt wɪð sʌm ˈnɒlɪdʒ/",
+      "image": {
+        "type": "prompt",
+        "value": "A person reading a book with a thoughtful expression",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/0/01/Monocot_vs_dicot_crop_Pengo.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+preposition+determiner+noun",
+      "senses": [
+        {
+          "definition_vi": "Bắt đầu một việc gì đó khi đã có một ít hiểu biết hoặc thông tin ban đầu.",
+          "examples": [
+            "Absolute beginners have a better chance than those who start with some knowledge."
+          ],
+          "grammar_patterns": [
+            "start with some knowledge"
+          ],
+          "usage_notes_vi": "Đối lập với 'absolute beginners', chỉ những người đã có một phần kiến thức nền."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "Is it better to begin a language course knowing nothing or knowing a little?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Do new employees learn faster if they already know a little about the job?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "Is learning to code easier if you already understand computers?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "start with some knowledge",
+          "text": "Some students start with some knowledge of English."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "start with some knowledge",
+          "source": "Some learners already know a little when they begin the course.",
+          "model": "Some learners start the course with some knowledge."
+        },
+        {
+          "target": "start with some knowledge",
+          "source": "New employees who already understand a bit about the field learn faster.",
+          "model": "New employees who start with some knowledge of the field learn faster."
+        }
+      ]
+    },
+    "got_off_to_a_good_start": {
+      "word": "got off to a good start",
+      "pronunciation": "/ɡɒt ɒf tuː ə ɡʊd stɑːrt/",
+      "image": {
+        "type": "prompt",
+        "value": "A festival opening with a crowd cheering",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+preposition+adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Bắt đầu một cách thuận lợi, thành công.",
+          "examples": [
+            "The Glasgow Arts Festival got off to a good start this week."
+          ],
+          "grammar_patterns": [
+            "get off to a good start"
+          ],
+          "usage_notes_vi": "Thường dùng để mô tả sự khởi đầu của các sự kiện, dự án, hoặc các hoạt động kéo dài."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Sport",
+          "question": "How did your favourite team begin this season?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "How was the opening of a recent festival in your city?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How did your first week in a new job go?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "got off to a good start",
+          "text": "The festival got off to a good start this week."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "got off to a good start",
+          "source": "The arts festival began successfully this week.",
+          "model": "The arts festival got off to a good start this week."
+        },
+        {
+          "target": "got off to a good start",
+          "source": "My new job began well because my colleagues were friendly.",
+          "model": "My new job got off to a good start because my colleagues were friendly."
+        }
+      ]
+    },
+    "close_finish": {
+      "word": "close finish",
+      "pronunciation": "/kləʊs ˈfɪnɪʃ/",
+      "image": {
+        "type": "prompt",
+        "value": "Two runners crossing a finish line almost at the same time",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Kết quả sít sao, khoảng cách rất nhỏ giữa người thắng và người thua.",
+          "examples": [
+            "Pedro Macarro won the Spanish Grand Prix in a very close finish."
+          ],
+          "grammar_patterns": [
+            "a close finish"
+          ],
+          "usage_notes_vi": "Thường dùng trong các cuộc thi đấu thể thao hoặc các cuộc đua."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Sport",
+          "question": "What kind of race is the most exciting to watch?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Can you describe an election where the result was very tight?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Why do people enjoy watching reality show finals?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "close finish",
+          "text": "The race had a very close finish."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "close finish",
+          "source": "He won the race, but the second driver was only just behind him.",
+          "model": "He won the race in a very close finish."
+        },
+        {
+          "target": "close finish",
+          "source": "The election ended with only a few votes between the two candidates.",
+          "model": "The election was a close finish."
+        }
+      ]
+    },
+    "nail_biting_finish": {
+      "word": "nail-biting finish",
+      "pronunciation": "/ˈneɪl baɪtɪŋ ˈfɪnɪʃ/",
+      "image": {
+        "type": "prompt",
+        "value": "A person biting their nails while watching a sports event",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Tightrope_walking.jpg/960px-Tightrope_walking.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Kết thúc đầy kịch tính, hồi hộp, khiến người xem lo lắng.",
+          "examples": [
+            "Claude Roux won the championship in a nail-biting finish."
+          ],
+          "grammar_patterns": [
+            "a nail-biting finish"
+          ],
+          "usage_notes_vi": "Diễn tả một kết quả rất khó đoán cho đến phút chót."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Sport",
+          "question": "What was the most exciting match you have ever watched?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "What makes the final episode of a TV series memorable?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Have you ever taken part in a very tense school competition?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "nail-biting finish",
+          "text": "The match had a nail-biting finish."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "nail-biting finish",
+          "source": "She won the championship at the very end in a tense and exciting way.",
+          "model": "She won the championship in a nail-biting finish."
+        },
+        {
+          "target": "nail-biting finish",
+          "source": "The quiz ended in a very tense way, with both teams level until the last question.",
+          "model": "The quiz had a nail-biting finish, with both teams level until the last question."
+        }
+      ]
+    },
+    "put_the_finishing_touches": {
+      "word": "put the finishing touches",
+      "pronunciation": "/pʊt ðə ˈfɪnɪʃɪŋ ˈtʌtʃɪz/",
+      "image": {
+        "type": "prompt",
+        "value": "A painter adding final details to a painting",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/0/04/Pound_layer_cake.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+determiner+adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Hoàn thiện những chi tiết cuối cùng để làm cho cái gì đó trở nên hoàn hảo.",
+          "examples": [
+            "Ministers met to put the finishing touches to a new constitution."
+          ],
+          "grammar_patterns": [
+            "put the finishing touches to something"
+          ],
+          "usage_notes_vi": "Ám chỉ việc hoàn thiện một công việc, một sản phẩm hoặc một kế hoạch."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What do you do just before you hand in an important project?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How do students prepare an essay before submitting it?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "What do people do just before guests arrive at their home?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "put the finishing touches",
+          "text": "She put the finishing touches to her essay."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "put the finishing touches",
+          "source": "Ministers met to complete the last small details of a new constitution.",
+          "model": "Ministers met to put the finishing touches to a new constitution."
+        },
+        {
+          "target": "put the finishing touches",
+          "source": "Before the guests arrived, we added the last few decorations to the room.",
+          "model": "Before the guests arrived, we put the finishing touches to the room."
+        }
+      ]
+    },
+    "end_yesterday": {
+      "word": "end yesterday",
+      "pronunciation": "/ɛnd ˈjɛstədeɪ/",
+      "image": {
+        "type": "prompt",
+        "value": "A calendar showing yesterday's date with a checkmark",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Kalender_Indonesia.jpg/960px-Kalender_Indonesia.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+adverb",
+      "senses": [
+        {
+          "definition_vi": "Kết thúc vào ngày hôm qua.",
+          "examples": [
+            "The doctors’ strike was brought to an end yesterday."
+          ],
+          "grammar_patterns": [
+            "come to an end yesterday",
+            "be brought to an end yesterday"
+          ],
+          "usage_notes_vi": "Chỉ một sự kiện hoặc tình huống đã kết thúc vào ngày hôm trước."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What happened with the recent strike in your city?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "When did the local festival finish this year?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Has the long dispute between the workers and the government been resolved?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "end yesterday",
+          "text": "The doctors' strike came to an end yesterday."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "end yesterday",
+          "source": "The doctors stopped their strike on the previous day.",
+          "model": "The doctors' strike was brought to an end yesterday."
+        },
+        {
+          "target": "end yesterday",
+          "source": "The festival finished the day before today after two weeks.",
+          "model": "The festival came to an end yesterday after two weeks."
+        }
+      ]
+    },
+    "marked_the_beginning_of_the_end": {
+      "word": "marked the beginning of the end",
+      "pronunciation": "/mɑːrkt ðə bɪˈɡɪnɪŋ ɒv ði ɛnd/",
+      "image": {
+        "type": "prompt",
+        "value": "A historical event that led to a decline",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Dominoes_falling.jpg/960px-Dominoes_falling.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+determiner+noun+preposition+determiner+noun",
+      "senses": [
+        {
+          "definition_vi": "Đánh dấu sự khởi đầu của quá trình dẫn đến sự kết thúc hoặc suy tàn.",
+          "examples": [
+            "The invention of television marked the beginning of the end for popular radio shows."
+          ],
+          "grammar_patterns": [
+            "mark the beginning of the end"
+          ],
+          "usage_notes_vi": "Thường dùng để chỉ một sự kiện quan trọng mà sau đó, một cái gì đó bắt đầu suy yếu và cuối cùng kết thúc."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "How did the arrival of smartphones affect older technologies?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "How did the internet change the newspaper industry?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Which events led to the decline of certain industries?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "marked the beginning of the end",
+          "text": "That defeat marked the beginning of the end for him."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "marked the beginning of the end",
+          "source": "Television started the slow decline of popular radio shows.",
+          "model": "The invention of television marked the beginning of the end for popular radio shows."
+        },
+        {
+          "target": "marked the beginning of the end",
+          "source": "The arrival of online shopping was the first step in the closing of many small shops.",
+          "model": "The arrival of online shopping marked the beginning of the end for many small shops."
+        }
+      ]
+    },
+    "end_result": {
+      "word": "end result",
+      "pronunciation": "/ɛnd rɪˈzʌlt/",
+      "image": {
+        "type": "prompt",
+        "value": "A student receiving a good grade on an exam",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/0/04/Pound_layer_cake.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Kết quả cuối cùng của một quá trình, một nỗ lực.",
+          "examples": [
+            "I studied hard and the end result was that I got a grade ‘A’."
+          ],
+          "grammar_patterns": [
+            "the end result"
+          ],
+          "usage_notes_vi": "Chỉ kết quả đạt được sau cùng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "What happens when students study consistently throughout the year?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Is the process or the outcome more important in a project?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "What will happen if we keep cutting down forests?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "end result",
+          "text": "The end result was better than we expected."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "end result",
+          "source": "I studied hard and finally I got an A.",
+          "model": "I studied hard and the end result was that I got an A."
+        },
+        {
+          "target": "end result",
+          "source": "If we continue to cut down trees, the final outcome will be floods and droughts.",
+          "model": "If we continue to cut down trees, the end result will be floods and droughts."
+        }
+      ]
+    },
+    "perfect_end": {
+      "word": "perfect end",
+      "pronunciation": "/ˈpɜːfɪkt ɛnd/",
+      "image": {
+        "type": "prompt",
+        "value": "A beautiful sunset over a beach",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Desserts.jpg/960px-Desserts.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự kết thúc lý tưởng, tuyệt vời.",
+          "examples": [
+            "The meal was a perfect end to our holiday."
+          ],
+          "grammar_patterns": [
+            "a perfect end"
+          ],
+          "usage_notes_vi": "Dùng để mô tả một kết thúc rất hài lòng và đáng nhớ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What is the best way to finish a holiday?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "What makes a dinner party memorable?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "How should a good wedding celebration finish?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "perfect end",
+          "text": "The sunset was a perfect end to the day."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "perfect end",
+          "source": "The meal was an ideal way to finish our holiday.",
+          "model": "The meal was a perfect end to our holiday."
+        },
+        {
+          "target": "perfect end",
+          "source": "The fireworks were the best possible way to close the festival.",
+          "model": "The fireworks were a perfect end to the festival."
+        }
+      ]
+    },
+    "make_a_start": {
+      "word": "make a start",
+      "pronunciation": "/meɪk ə stɑːrt/",
+      "image": {
+        "type": "prompt",
+        "value": "A person beginning to work on a task",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Erlangen_Bundesautobahn_73_Auffahrt_Luftbild-20230422-RM-165734.jpg/960px-Erlangen_Bundesautobahn_73_Auffahrt_Luftbild-20230422-RM-165734.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+determiner+noun",
+      "senses": [
+        {
+          "definition_vi": "Bắt đầu làm gì đó.",
+          "examples": [
+            "Let’s make a start, shall we?"
+          ],
+          "grammar_patterns": [
+            "make a start"
+          ],
+          "usage_notes_vi": "Một cách nói thông thường để đề nghị bắt đầu một công việc hoặc hoạt động."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What is the best way to deal with a big project?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How can students stop putting off their revision?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "How should people begin cleaning a very messy house?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "make a start",
+          "text": "Let's make a start on the cleaning now."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "make a start",
+          "source": "Let's begin, shall we?",
+          "model": "Let's make a start, shall we?"
+        },
+        {
+          "target": "make a start",
+          "source": "It is best to begin your revision early.",
+          "model": "It is best to make a start on your revision early."
+        }
+      ]
+    },
+    "get_started": {
+      "word": "get started",
+      "pronunciation": "/ɡɛt ˈstɑːrtɪd/",
+      "image": {
+        "type": "prompt",
+        "value": "A group of people ready to begin an activity",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Erlangen_Bundesautobahn_73_Auffahrt_Luftbild-20230422-RM-165734.jpg/960px-Erlangen_Bundesautobahn_73_Auffahrt_Luftbild-20230422-RM-165734.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+past participle",
+      "senses": [
+        {
+          "definition_vi": "Bắt đầu làm gì đó.",
+          "examples": [
+            "Let’s get started, shall we?"
+          ],
+          "grammar_patterns": [
+            "get started"
+          ],
+          "usage_notes_vi": "Tương tự như 'make a start', dùng để bắt đầu một hoạt động."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How do you motivate yourself to begin a difficult task?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What advice would you give a new student on the first day?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How can someone who never exercises begin a fitness routine?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "get started",
+          "text": "Let's get started on the project today."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "get started",
+          "source": "Let's begin, shall we?",
+          "model": "Let's get started, shall we?"
+        },
+        {
+          "target": "get started",
+          "source": "The hardest part of exercise is beginning.",
+          "model": "The hardest part of exercise is getting started."
+        }
+      ]
+    },
+    "came_to_an_end": {
+      "word": "came to an end",
+      "pronunciation": "/keɪm tuː ən ɛnd/",
+      "image": {
+        "type": "prompt",
+        "value": "A road sign indicating the end of a journey",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/LA2_Skultuna_kontorsljusstake.jpg/960px-LA2_Skultuna_kontorsljusstake.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+preposition+determiner+noun",
+      "senses": [
+        {
+          "definition_vi": "Kết thúc, chấm dứt.",
+          "examples": [
+            "As my time at university came to an end, I had to start looking for a job."
+          ],
+          "grammar_patterns": [
+            "come to an end"
+          ],
+          "usage_notes_vi": "Diễn tả sự kết thúc tự nhiên hoặc theo kế hoạch của một sự kiện, giai đoạn hoặc tình huống."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How did you feel when your school days finished?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "How did you feel on the last day of your best holiday?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What did you do when your first job contract finished?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "came to an end",
+          "text": "The party came to an end at midnight."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "came to an end",
+          "source": "As my time at university finished, I had to start looking for a job.",
+          "model": "As my time at university came to an end, I had to start looking for a job."
+        },
+        {
+          "target": "came to an end",
+          "source": "When the holiday was over, we felt sad to leave.",
+          "model": "When the holiday came to an end, we felt sad to leave."
+        }
+      ]
+    },
+    "drew_to_a_close": {
+      "word": "drew to a close",
+      "pronunciation": "/druː tuː ə kləʊz/",
+      "image": {
+        "type": "prompt",
+        "value": "A clock showing 5:30 PM with curtains closing",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Full_cycle_of_a_Sunset_on_the_high_plains_of_the_Mojave_Desert.jpg/960px-Full_cycle_of_a_Sunset_on_the_high_plains_of_the_Mojave_Desert.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+preposition+determiner+noun",
+      "senses": [
+        {
+          "definition_vi": "Dần dần kết thúc.",
+          "examples": [
+            "The meeting drew to a close at 5.30."
+          ],
+          "grammar_patterns": [
+            "draw to a close"
+          ],
+          "usage_notes_vi": "Thường dùng cho các sự kiện, cuộc họp, hoặc các hoạt động có thời gian kéo dài và kết thúc một cách dần dần."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How did your last meeting finish?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "What usually happens at the end of a festival in your country?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How did you feel as the school year was finishing?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "drew to a close",
+          "text": "The meeting drew to a close after lunch."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "drew to a close",
+          "source": "The meeting slowly finished at 5.30.",
+          "model": "The meeting drew to a close at 5.30."
+        },
+        {
+          "target": "drew to a close",
+          "source": "As the year gradually ended, the students prepared for their exams.",
+          "model": "As the year drew to a close, the students prepared for their exams."
+        }
+      ]
+    },
+    "abrupt_end": {
+      "word": "abrupt end",
+      "pronunciation": "/əˈbrʌpt ɛnd/",
+      "image": {
+        "type": "prompt",
+        "value": "A broken thread",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/White_Cliffs_of_Dover_02.JPG/960px-White_Cliffs_of_Dover_02.JPG"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự kết thúc đột ngột, bất ngờ.",
+          "examples": [
+            "It was an abrupt end to his career in journalism."
+          ],
+          "grammar_patterns": [
+            "an abrupt end"
+          ],
+          "usage_notes_vi": "Diễn tả một sự kết thúc không được báo trước hoặc không mong đợi."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What can suddenly stop someone's career?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Why do some TV series disappoint viewers with their final episode?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What can suddenly ruin a holiday?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "abrupt end",
+          "text": "The storm brought an abrupt end to our holiday."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "abrupt end",
+          "source": "His career in journalism finished very suddenly.",
+          "model": "It was an abrupt end to his career in journalism."
+        },
+        {
+          "target": "abrupt end",
+          "source": "The TV series stopped suddenly without explaining the story.",
+          "model": "The TV series came to an abrupt end without explaining the story."
+        }
+      ]
+    },
+    "holiday_ended": {
+      "word": "holiday ended",
+      "pronunciation": "/ˈhɒlədeɪ ˈɛndɪd/",
+      "image": {
+        "type": "prompt",
+        "value": "A suitcase being packed away after a vacation",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Beach_at_Fort_Lauderdale.jpg/960px-Beach_at_Fort_Lauderdale.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "noun+verb",
+      "senses": [
+        {
+          "definition_vi": "Kỳ nghỉ kết thúc.",
+          "examples": [
+            "Our holiday ended last week."
+          ],
+          "grammar_patterns": [
+            "holiday ended"
+          ],
+          "usage_notes_vi": "Sử dụng 'ended' thay vì 'finished' cho kỳ nghỉ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "How did you feel when your last vacation finished?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How do people feel when they return to work after a break?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What do students do when the summer break is over?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "holiday ended",
+          "text": "Our holiday ended last week, sadly."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "holiday ended",
+          "source": "Our vacation finished last week.",
+          "model": "Our holiday ended last week."
+        },
+        {
+          "target": "holiday ended",
+          "source": "When the summer break was over, I went back to work.",
+          "model": "When our holiday ended, I went back to work."
+        }
+      ]
+    },
+    "journey_ended": {
+      "word": "journey ended",
+      "pronunciation": "/ˈdʒɜːni ˈɛndɪd/",
+      "image": {
+        "type": "prompt",
+        "value": "A train arriving at its final destination",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Lower_Manhattan_Areal_April_2013b.jpg/960px-Lower_Manhattan_Areal_April_2013b.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "noun+verb",
+      "senses": [
+        {
+          "definition_vi": "Chuyến đi kết thúc.",
+          "examples": [
+            "The long journey ended when they finally reached home."
+          ],
+          "grammar_patterns": [
+            "journey ended"
+          ],
+          "usage_notes_vi": "Sử dụng 'ended' thay vì 'finished' cho một chuyến đi."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "How did you feel at the end of a long trip?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "What do families do when they arrive home after travelling?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "How do travel stories usually finish in films?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "journey ended",
+          "text": "The long journey ended when we reached home."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "journey ended",
+          "source": "The long trip finished when they finally reached home.",
+          "model": "The long journey ended when they finally reached home."
+        },
+        {
+          "target": "journey ended",
+          "source": "Our travel through the desert finished at a small village.",
+          "model": "Our journey ended at a small village in the desert."
+        }
+      ]
+    },
+    "trip_ended": {
+      "word": "trip ended",
+      "pronunciation": "/trɪp ˈɛndɪd/",
+      "image": {
+        "type": "prompt",
+        "value": "A plane landing after a flight",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Beach_at_Fort_Lauderdale.jpg/960px-Beach_at_Fort_Lauderdale.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "noun+verb",
+      "senses": [
+        {
+          "definition_vi": "Chuyến đi ngắn kết thúc.",
+          "examples": [
+            "The business trip ended on Friday."
+          ],
+          "grammar_patterns": [
+            "trip ended"
+          ],
+          "usage_notes_vi": "Sử dụng 'ended' thay vì 'finished' cho một chuyến đi."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What do you do after a business trip finishes?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "How did your last weekend away finish?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What happened at the end of a school excursion you went on?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "trip ended",
+          "text": "Our school trip ended with a visit to the museum."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "trip ended",
+          "source": "The business visit finished on Friday.",
+          "model": "The business trip ended on Friday."
+        },
+        {
+          "target": "trip ended",
+          "source": "Our short holiday in the mountains finished with a big dinner.",
+          "model": "Our trip to the mountains ended with a big dinner."
+        }
+      ]
+    },
+    "meal_ended": {
+      "word": "meal ended",
+      "pronunciation": "/miːl ˈɛndɪd/",
+      "image": {
+        "type": "prompt",
+        "value": "Empty plates on a table after a dinner",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Desserts.jpg/960px-Desserts.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "noun+verb",
+      "senses": [
+        {
+          "definition_vi": "Bữa ăn kết thúc.",
+          "examples": [
+            "The celebratory meal ended with dessert."
+          ],
+          "grammar_patterns": [
+            "meal ended"
+          ],
+          "usage_notes_vi": "Sử dụng 'ended' thay vì 'finished' cho một bữa ăn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Food",
+          "question": "How are meals traditionally finished in your country?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "What does your family do after dinner together?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "What happens at the end of a wedding banquet in your culture?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "meal ended",
+          "text": "The meal ended with fruit and green tea."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "meal ended",
+          "source": "We finished the celebratory dinner with dessert.",
+          "model": "The celebratory meal ended with dessert."
+        },
+        {
+          "target": "meal ended",
+          "source": "When dinner was over, everyone helped to wash the dishes.",
+          "model": "When the meal ended, everyone helped to wash the dishes."
+        }
+      ]
+    }
+  }
+}

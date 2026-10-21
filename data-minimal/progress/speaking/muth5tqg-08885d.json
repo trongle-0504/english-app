@@ -1,0 +1,369 @@
+{
+  "id": "muth5tqg-08885d",
+  "createdAt": "2026-10-04T07:03:44.584Z",
+  "durationMs": 46896,
+  "topic": "Home",
+  "part": 1,
+  "answers": [
+    {
+      "question": "What does your bedroom look like?",
+      "idea": "Tường sơn màu xanh lá nhìn dịu mắt, treo vài bức tranh phong cảnh và mấy tấm giấy khen hồi đi học, tôi không nỡ gỡ xuống vì nó gợi nhớ tuổi thơ",
+      "picks": [
+        {
+          "cardId": "vocab:shade",
+          "term": "shade",
+          "slot": "a shade of + colour",
+          "meaning_vi": "1. Màu sắc (sắc độ) - Mức độ đậm nhạt của một màu.\n2. Bóng râm - Chỗ mát không có ánh nắng chiếu trực tiếp.",
+          "origin": "Art",
+          "href": "/vocabulary/art/core-words#shade",
+          "how": "Câu trả lời trực tiếp: mô tả màu tường, a soft shade of green.",
+          "example": "The walls are painted a soft shade of green.",
+          "inReview": true,
+          "learning": true
+        },
+        {
+          "cardId": "wcolloc:shade:a-lighter-shade",
+          "term": "a lighter shade",
+          "slot": "a lighter shade of + colour",
+          "meaning_vi": "sắc độ nhạt hơn",
+          "origin": "Collocation of: shade",
+          "href": "/vocabulary/art/core-words#shade",
+          "how": "Description: so sánh màu tường nhạt hơn màu cũ, dịu mắt.",
+          "example": "I chose a lighter shade of green so it's easy on the eyes.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:countryside:gentle-landscape",
+          "term": "gentle landscape",
+          "meaning_vi": "Phong cảnh hiền hòa, không có gì cực đoan hoặc đe dọa.",
+          "origin": "Countryside",
+          "href": "/collocations/countryside#gentle-landscape",
+          "how": "Description: tả tranh phong cảnh treo trên tường.",
+          "example": "One painting shows a gentle landscape with rice fields.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:remembering-and-sensing:stirring-up-memories",
+          "term": "stirring up memories",
+          "slot": "stir up memories (of + N)",
+          "meaning_vi": "Gợi lại những ký ức.",
+          "origin": "Remembering and sensing",
+          "href": "/collocations/remembering-and-sensing#stirring-up-memories",
+          "how": "Cause: giải thích vì sao không nỡ gỡ giấy khen xuống.",
+          "example": "Those certificates keep stirring up memories of my childhood.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:remembering-and-sensing:memories-came-flooding-back",
+          "term": "memories came flooding back",
+          "slot": "the memories came flooding back",
+          "meaning_vi": "Nhiều ký ức ùa về.",
+          "origin": "Remembering and sensing",
+          "href": "/collocations/remembering-and-sensing#memories-came-flooding-back",
+          "how": "Effect: cảm xúc khi nhìn giấy khen, ký ức ùa về.",
+          "example": "Whenever I look at them, the memories come flooding back.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "vocab:interior",
+          "term": "interior",
+          "meaning_vi": "Thuộc về bên trong, bên trong hoặc ở trong một tòa nhà hoặc căn phòng.",
+          "origin": "Architecture",
+          "href": "/vocabulary/architecture/core-words#interior",
+          "how": "Description: nói về nội thất, tường bên trong phòng.",
+          "example": "The interior walls are all painted green.",
+          "inReview": true,
+          "learning": true
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "easy on the eye",
+          "meaning_vi": "dễ nhìn, dịu mắt",
+          "example": "The colour is really easy on the eye.",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "phrase": "can't bring myself to",
+          "meaning_vi": "không nỡ làm gì",
+          "example": "I can't bring myself to take them down.",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        }
+      ],
+      "answer": [
+        {
+          "text": "Well, "
+        },
+        {
+          "text": "the first thing you'd notice is that",
+          "mark": "structure"
+        },
+        {
+          "text": " the walls are painted a soft "
+        },
+        {
+          "text": "shade",
+          "mark": "library"
+        },
+        {
+          "text": " of green, which is really "
+        },
+        {
+          "text": "easy on the eye",
+          "mark": "unverified"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "I've "
+        },
+        {
+          "text": "hung a few paintings",
+          "mark": "checked",
+          "note": "OZDIC · VERB + PAINTING: do, take up (✓ hang)"
+        },
+        {
+          "text": " of "
+        },
+        {
+          "text": "gentle landscapes",
+          "mark": "library"
+        },
+        {
+          "text": " on them, along with some certificates I got back in my school days."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "To be honest, I",
+          "mark": "structure"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "can't bring myself to",
+          "mark": "unverified"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "take those certificates down",
+          "mark": "unverified",
+          "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "because",
+          "mark": "structure"
+        },
+        {
+          "text": " they "
+        },
+        {
+          "text": "bring back so many memories",
+          "mark": "checked",
+          "note": "Longman · VERB + MEMORY: remain, stay, stick in your, refresh, jog your, lose your, commit sth to (✓ bring back)"
+        },
+        {
+          "text": " of my childhood."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "Well, "
+            },
+            {
+              "text": "the first thing you'd notice is that",
+              "mark": "structure"
+            },
+            {
+              "text": " the walls are painted a soft "
+            },
+            {
+              "text": "shade",
+              "mark": "library"
+            },
+            {
+              "text": " of green, which is really "
+            },
+            {
+              "text": "easy on the eye",
+              "mark": "unverified"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "description",
+          "segments": [
+            {
+              "text": "I've "
+            },
+            {
+              "text": "hung a few paintings",
+              "mark": "checked",
+              "note": "OZDIC · VERB + PAINTING: do, take up (✓ hang)"
+            },
+            {
+              "text": " of "
+            },
+            {
+              "text": "gentle landscapes",
+              "mark": "library"
+            },
+            {
+              "text": " on them, along with some certificates I got back in my school days."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "To be honest, I",
+              "mark": "structure"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "can't bring myself to",
+              "mark": "unverified"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "take those certificates down",
+              "mark": "unverified",
+              "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "because",
+              "mark": "structure"
+            },
+            {
+              "text": " they "
+            },
+            {
+              "text": "bring back so many memories",
+              "mark": "checked",
+              "note": "Longman · VERB + MEMORY: remain, stay, stick in your, refresh, jog your, lose your, commit sth to (✓ bring back)"
+            },
+            {
+              "text": " of my childhood."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "the first thing you'd notice is that SV",
+          "text": "the first thing you'd notice is that",
+          "tool": "answer",
+          "fromGuide": false
+        },
+        {
+          "pattern": "To be honest, I …, because SV",
+          "text": "To be honest, I … because",
+          "tool": "cause",
+          "fromGuide": false
+        }
+      ],
+      "wording": [
+        {
+          "text": "hung a few paintings",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · VERB + PAINTING: do, take up (✓ hang)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/painting"
+            }
+          ]
+        },
+        {
+          "text": "take those certificates down",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "text": "bring back so many memories",
+          "verified": true,
+          "dictionary": [
+            "Longman · VERB + MEMORY: remain, stay, stick in your, refresh, jog your, lose your, commit sth to (✓ bring back)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/memory"
+            }
+          ]
+        }
+      ],
+      "meaning": "My bedroom walls are painted green, which is easy on the eyes; I've hung a few landscape paintings and some certificates of merit from my school days, and I can't bring myself to take them down because they remind me of my childhood.",
+      "polish": [
+        {
+          "original": "back in primary school",
+          "replacement": "back in my school days",
+          "kind": "meaning",
+          "why": "Ý gốc là 'hồi đi học' nói chung, không nói riêng cấp tiểu học.",
+          "verified": true,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "original": "keep stirring up memories",
+          "replacement": "bring back so many memories",
+          "kind": "natural",
+          "why": "'Stir up memories' thường gợi kỷ niệm buồn, đau; 'bring back memories' tự nhiên và ấm áp hơn khi nói về tuổi thơ.",
+          "verified": true,
+          "dictionary": [
+            "Longman · VERB + MEMORY: remain, stay, stick in your, refresh, jog your, lose your, commit sth to (✓ bring back)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/memory"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "candidates": 40,
+  "usage": {
+    "model": "claude-opus-5-5",
+    "input": 20616,
+    "output": 1992,
+    "thinking": 627
+  }
+}

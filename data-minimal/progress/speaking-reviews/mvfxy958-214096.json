@@ -1,0 +1,943 @@
+{
+  "id": "mvfxy958-214096",
+  "createdAt": "2026-10-20T00:24:40.679Z",
+  "durationMs": 114360,
+  "part": 3,
+  "question": "Do you think it is good for parents to give children too many prizes or rewards?",
+  "topic": "Parenting and rewards",
+  "script": "I wouldn't say so, as giving children too many rewards is not really a healthy way to raise them. While occasional treats can give a quick boost, rewards should be appropriate for a child's age and the effort they put in. If parents spoil their children with expensive gadgets, this can make them feel entitled and dependent. In the long run, this can distract them from their schoolwork and harm their academic performance. That's why parents should focus on verbal praise, which helps kids build intrinsic motivation and develop a sense of self-discipline.",
+  "audio": true,
+  "transcript": "I go sess the given the children to money rewards very healthy applied to ride them while the occasional streets can give a person for the children aid and effort they put in if the parents or the children with the expenses are given. This can make them feel pretty tired and dependent in the long run. This can attract their school work and help the academic performance. That's why the balance was focused on verbal or brands would help the carbuild multi innovations and develop senator sales disciplines.",
+  "words": [
+    {
+      "w": "I",
+      "start": 0.64,
+      "end": 0.72,
+      "conf": 0.617
+    },
+    {
+      "w": "go",
+      "start": 0.88,
+      "end": 0.96,
+      "conf": 0.302
+    },
+    {
+      "w": "sess",
+      "start": 1.2,
+      "end": 1.36,
+      "conf": 0.151
+    },
+    {
+      "w": "the",
+      "start": 3.36,
+      "end": 3.44,
+      "conf": 0.257
+    },
+    {
+      "w": "given",
+      "start": 3.52,
+      "end": 3.76,
+      "conf": 0.838
+    },
+    {
+      "w": "the",
+      "start": 3.84,
+      "end": 4,
+      "conf": 0.681
+    },
+    {
+      "w": "children",
+      "start": 4,
+      "end": 4.24,
+      "conf": 0.972
+    },
+    {
+      "w": "to",
+      "start": 4.4,
+      "end": 4.56,
+      "conf": 0.499
+    },
+    {
+      "w": "money",
+      "start": 4.64,
+      "end": 4.8,
+      "conf": 0.461
+    },
+    {
+      "w": "rewards",
+      "start": 5.12,
+      "end": 5.6,
+      "conf": 0.49
+    },
+    {
+      "w": "very",
+      "start": 6.32,
+      "end": 6.48,
+      "conf": 0.605
+    },
+    {
+      "w": "healthy",
+      "start": 6.64,
+      "end": 7.04,
+      "conf": 0.763
+    },
+    {
+      "w": "applied",
+      "start": 7.68,
+      "end": 8,
+      "conf": 0.612
+    },
+    {
+      "w": "to",
+      "start": 8.16,
+      "end": 8.32,
+      "conf": 0.894
+    },
+    {
+      "w": "ride",
+      "start": 8.4,
+      "end": 8.64,
+      "conf": 0.334
+    },
+    {
+      "w": "them",
+      "start": 8.8,
+      "end": 8.96,
+      "conf": 0.426
+    },
+    {
+      "w": "while",
+      "start": 9.52,
+      "end": 9.68,
+      "conf": 0.929
+    },
+    {
+      "w": "the",
+      "start": 9.84,
+      "end": 10,
+      "conf": 0.742
+    },
+    {
+      "w": "occasional",
+      "start": 10,
+      "end": 10.88,
+      "conf": 0.951
+    },
+    {
+      "w": "streets",
+      "start": 10.88,
+      "end": 11.28,
+      "conf": 0.813
+    },
+    {
+      "w": "can",
+      "start": 11.84,
+      "end": 12.08,
+      "conf": 0.972
+    },
+    {
+      "w": "give",
+      "start": 12.24,
+      "end": 12.4,
+      "conf": 0.482
+    },
+    {
+      "w": "a",
+      "start": 14.96,
+      "end": 15.04,
+      "conf": 0.442
+    },
+    {
+      "w": "person",
+      "start": 15.2,
+      "end": 15.28,
+      "conf": 0.227
+    },
+    {
+      "w": "for",
+      "start": 15.68,
+      "end": 15.84,
+      "conf": 0.995
+    },
+    {
+      "w": "the",
+      "start": 16,
+      "end": 16.24,
+      "conf": 0.852
+    },
+    {
+      "w": "children",
+      "start": 16.56,
+      "end": 16.8,
+      "conf": 0.699
+    },
+    {
+      "w": "aid",
+      "start": 17.12,
+      "end": 17.44,
+      "conf": 0.265
+    },
+    {
+      "w": "and",
+      "start": 17.6,
+      "end": 17.76,
+      "conf": 0.649
+    },
+    {
+      "w": "effort",
+      "start": 18.08,
+      "end": 18.4,
+      "conf": 0.872
+    },
+    {
+      "w": "they",
+      "start": 18.56,
+      "end": 18.64,
+      "conf": 0.648
+    },
+    {
+      "w": "put",
+      "start": 18.88,
+      "end": 19.12,
+      "conf": 1
+    },
+    {
+      "w": "in",
+      "start": 19.12,
+      "end": 19.2,
+      "conf": 0.546
+    },
+    {
+      "w": "if",
+      "start": 19.84,
+      "end": 20,
+      "conf": 0.826
+    },
+    {
+      "w": "the",
+      "start": 20.16,
+      "end": 20.24,
+      "conf": 0.979
+    },
+    {
+      "w": "parents",
+      "start": 20.24,
+      "end": 20.72,
+      "conf": 0.709
+    },
+    {
+      "w": "or",
+      "start": 20.8,
+      "end": 20.96,
+      "conf": 0.403
+    },
+    {
+      "w": "the",
+      "start": 21.12,
+      "end": 21.28,
+      "conf": 0.638
+    },
+    {
+      "w": "children",
+      "start": 21.28,
+      "end": 21.52,
+      "conf": 0.938
+    },
+    {
+      "w": "with",
+      "start": 21.76,
+      "end": 21.92,
+      "conf": 0.845
+    },
+    {
+      "w": "the",
+      "start": 22.08,
+      "end": 22.32,
+      "conf": 0.833
+    },
+    {
+      "w": "expenses",
+      "start": 22.56,
+      "end": 23.2,
+      "conf": 0.736
+    },
+    {
+      "w": "are",
+      "start": 23.68,
+      "end": 23.84,
+      "conf": 0.995
+    },
+    {
+      "w": "given.",
+      "start": 23.92,
+      "end": 24.24,
+      "conf": 0.374
+    },
+    {
+      "w": "This",
+      "start": 25.2,
+      "end": 25.36,
+      "conf": 0.93
+    },
+    {
+      "w": "can",
+      "start": 25.36,
+      "end": 25.52,
+      "conf": 0.994
+    },
+    {
+      "w": "make",
+      "start": 25.52,
+      "end": 25.68,
+      "conf": 0.976
+    },
+    {
+      "w": "them",
+      "start": 25.84,
+      "end": 26.08,
+      "conf": 1
+    },
+    {
+      "w": "feel",
+      "start": 26.08,
+      "end": 26.16,
+      "conf": 0.626
+    },
+    {
+      "w": "pretty",
+      "start": 26.56,
+      "end": 26.64,
+      "conf": 0.527
+    },
+    {
+      "w": "tired",
+      "start": 26.88,
+      "end": 27.2,
+      "conf": 0.642
+    },
+    {
+      "w": "and",
+      "start": 27.6,
+      "end": 27.84,
+      "conf": 0.999
+    },
+    {
+      "w": "dependent",
+      "start": 28.48,
+      "end": 29.04,
+      "conf": 0.993
+    },
+    {
+      "w": "in",
+      "start": 29.52,
+      "end": 29.68,
+      "conf": 0.996
+    },
+    {
+      "w": "the",
+      "start": 29.68,
+      "end": 29.76,
+      "conf": 0.804
+    },
+    {
+      "w": "long",
+      "start": 29.92,
+      "end": 30.08,
+      "conf": 0.999
+    },
+    {
+      "w": "run.",
+      "start": 30.16,
+      "end": 30.32,
+      "conf": 0.996
+    },
+    {
+      "w": "This",
+      "start": 31.04,
+      "end": 31.12,
+      "conf": 0.978
+    },
+    {
+      "w": "can",
+      "start": 31.2,
+      "end": 31.36,
+      "conf": 0.997
+    },
+    {
+      "w": "attract",
+      "start": 31.44,
+      "end": 31.92,
+      "conf": 0.781
+    },
+    {
+      "w": "their",
+      "start": 32,
+      "end": 32.24,
+      "conf": 0.899
+    },
+    {
+      "w": "school",
+      "start": 33.68,
+      "end": 33.84,
+      "conf": 0.966
+    },
+    {
+      "w": "work",
+      "start": 34.08,
+      "end": 34.16,
+      "conf": 0.541
+    },
+    {
+      "w": "and",
+      "start": 34.48,
+      "end": 34.64,
+      "conf": 0.872
+    },
+    {
+      "w": "help",
+      "start": 34.64,
+      "end": 34.72,
+      "conf": 0.253
+    },
+    {
+      "w": "the",
+      "start": 34.96,
+      "end": 35.12,
+      "conf": 0.921
+    },
+    {
+      "w": "academic",
+      "start": 35.12,
+      "end": 35.68,
+      "conf": 0.802
+    },
+    {
+      "w": "performance.",
+      "start": 36,
+      "end": 36.48,
+      "conf": 0.995
+    },
+    {
+      "w": "That's",
+      "start": 36.88,
+      "end": 37.2,
+      "conf": 0.882
+    },
+    {
+      "w": "why",
+      "start": 37.2,
+      "end": 37.28,
+      "conf": 0.874
+    },
+    {
+      "w": "the",
+      "start": 37.44,
+      "end": 37.6,
+      "conf": 0.993
+    },
+    {
+      "w": "balance",
+      "start": 37.6,
+      "end": 37.92,
+      "conf": 0.495
+    },
+    {
+      "w": "was",
+      "start": 38.16,
+      "end": 38.24,
+      "conf": 0.295
+    },
+    {
+      "w": "focused",
+      "start": 38.4,
+      "end": 38.88,
+      "conf": 0.762
+    },
+    {
+      "w": "on",
+      "start": 38.88,
+      "end": 39.04,
+      "conf": 1
+    },
+    {
+      "w": "verbal",
+      "start": 39.04,
+      "end": 39.6,
+      "conf": 0.916
+    },
+    {
+      "w": "or",
+      "start": 40,
+      "end": 40.16,
+      "conf": 0.611
+    },
+    {
+      "w": "brands",
+      "start": 40.16,
+      "end": 40.72,
+      "conf": 0.703
+    },
+    {
+      "w": "would",
+      "start": 41.04,
+      "end": 41.2,
+      "conf": 0.408
+    },
+    {
+      "w": "help",
+      "start": 41.28,
+      "end": 41.44,
+      "conf": 0.429
+    },
+    {
+      "w": "the",
+      "start": 41.6,
+      "end": 41.68,
+      "conf": 0.96
+    },
+    {
+      "w": "carbuild",
+      "start": 41.76,
+      "end": 42.32,
+      "conf": 0.378
+    },
+    {
+      "w": "multi",
+      "start": 43.92,
+      "end": 44.4,
+      "conf": 0.851
+    },
+    {
+      "w": "innovations",
+      "start": 44.8,
+      "end": 45.44,
+      "conf": 0.486
+    },
+    {
+      "w": "and",
+      "start": 45.6,
+      "end": 45.84,
+      "conf": 0.972
+    },
+    {
+      "w": "develop",
+      "start": 45.92,
+      "end": 46.32,
+      "conf": 0.998
+    },
+    {
+      "w": "senator",
+      "start": 46.48,
+      "end": 47.04,
+      "conf": 0.306
+    },
+    {
+      "w": "sales",
+      "start": 47.36,
+      "end": 47.68,
+      "conf": 0.479
+    },
+    {
+      "w": "disciplines.",
+      "start": 47.84,
+      "end": 48.56,
+      "conf": 0.523
+    }
+  ],
+  "sentences": [
+    "I wouldn't say so giving the children too many rewards very healthy a way to raise them while the occasional treats can give appropriate for a child's age and effort they put in if the parents spoil their children with expensive gadgets.",
+    "This can make them feel entitled and dependent in the long run.",
+    "This can distract their school work and harm the academic performance.",
+    "That's why the balance was focused on verbal or brands would help the carbuild multi innovations and develop senator sales disciplines."
+  ],
+  "heardSentences": [
+    "I go sess the given the children to money rewards very healthy applied to ride them while the occasional streets can give a person for the children aid and effort they put in if the parents or the children with the expenses are given.",
+    "This can make them feel pretty tired and dependent in the long run.",
+    "This can attract their school work and help the academic performance.",
+    "That's why the balance was focused on verbal or brands would help the carbuild multi innovations and develop senator sales disciplines."
+  ],
+  "correctedSentences": [
+    "I wouldn't say so as giving children too many rewards very healthy a way to raise them while the occasional treats should be appropriate for a child's age and effort they put in if parents spoil their children with expensive gadgets.",
+    "This can make them feel entitled and dependent in the long run.",
+    "This can distract them from their schoolwork and harm their academic performance.",
+    "That's why the balance was focused on verbal or brands would help the carbuild multi innovations and develop senator sales disciplines."
+  ],
+  "misheard": [
+    {
+      "sentence": 0,
+      "heard": "I go sess",
+      "meant": "I wouldn't say so",
+      "ipa": "/aɪ ˈwʊdnt seɪ səʊ/",
+      "tip": "Bật rõ âm đuôi /nt/ và nguyên âm đôi /əʊ/ trong “so”.",
+      "start": 0.64,
+      "end": 1.36
+    },
+    {
+      "sentence": 0,
+      "heard": "the given",
+      "meant": "giving",
+      "ipa": "/ˈɡɪvɪŋ/",
+      "tip": "Đọc rõ âm đuôi /-ɪŋ/, tránh nuốt thành âm /-n/.",
+      "start": 3.36,
+      "end": 3.76
+    },
+    {
+      "sentence": 0,
+      "heard": "to money",
+      "meant": "too many",
+      "ipa": "/tuː ˈmɛni/",
+      "tip": "Phát âm rõ nguyên âm /e/ trong “many”, tránh nhầm thành “money”.",
+      "start": 4.4,
+      "end": 4.8
+    },
+    {
+      "sentence": 0,
+      "heard": "applied to ride them",
+      "meant": "a way to raise them",
+      "ipa": "/ə weɪ tə reɪz ðəm/",
+      "tip": "Đọc rõ /reɪz/ với âm đuôi /z/, không đọc thành /raɪd/.",
+      "start": 7.68,
+      "end": 8.96
+    },
+    {
+      "sentence": 0,
+      "heard": "streets",
+      "meant": "treats",
+      "ipa": "/triːts/",
+      "tip": "Tránh thêm âm /s/ vào đầu cụm phụ âm /tr/.",
+      "start": 10.88,
+      "end": 11.28
+    },
+    {
+      "sentence": 0,
+      "heard": "a person for the children aid",
+      "meant": "appropriate for a child's age",
+      "ipa": "/əˈprəʊpriət fər ə ˈtʃaɪldz eɪdʒ/",
+      "tip": "Nhấn trọng âm hai của “appropriate” và bật đuôi /dʒ/ của “age”.",
+      "start": 14.96,
+      "end": 17.44
+    },
+    {
+      "sentence": 0,
+      "heard": "or the children",
+      "meant": "spoil their children",
+      "ipa": "/spɔɪl ðeə ˈtʃɪldrən/",
+      "tip": "Bật rõ âm đầu /sp/ và nguyên âm đôi /ɔɪ/ của “spoil”.",
+      "start": 20.8,
+      "end": 21.52
+    },
+    {
+      "sentence": 0,
+      "heard": "expenses are given",
+      "meant": "expensive gadgets",
+      "ipa": "/ɪkˈspɛnsɪv ˈɡædʒɪts/",
+      "tip": "Đọc đúng đuôi /sɪv/ của “expensive” và đuôi /dʒɪts/ của “gadgets”.",
+      "start": 22.56,
+      "end": 24.24
+    },
+    {
+      "sentence": 1,
+      "heard": "pretty tired",
+      "meant": "entitled",
+      "ipa": "/ɪnˈtaɪtld/",
+      "tip": "Nhấn trọng âm vào âm tiết hai /taɪ/ của “entitled”.",
+      "start": 26.56,
+      "end": 27.2
+    },
+    {
+      "sentence": 2,
+      "heard": "attract",
+      "meant": "distract",
+      "ipa": "/dɪˈstrækt/",
+      "tip": "Bật rõ âm đầu /d/ và cụm /str/ trong “distract”.",
+      "start": 31.44,
+      "end": 31.92
+    },
+    {
+      "sentence": 2,
+      "heard": "help",
+      "meant": "harm",
+      "ipa": "/hɑːm/",
+      "tip": "Phát âm nguyên âm dài /ɑː/ và khép môi âm /m/ của “harm”.",
+      "start": 34.64,
+      "end": 34.72
+    },
+    {
+      "sentence": 3,
+      "heard": "the balance was focused",
+      "meant": "parents should focus",
+      "ipa": "/ˈpeərənts ʃʊd ˈfəʊkəs/",
+      "tip": "Bật âm /p/ của “parents” và đọc rõ động từ khuyết thiếu “should”.",
+      "start": 37.44,
+      "end": 38.88
+    },
+    {
+      "sentence": 3,
+      "heard": "or brands",
+      "meant": "praise, which",
+      "ipa": "/preɪz wɪtʃ/",
+      "tip": "Bật rõ âm đuôi /z/ của “praise” cùng đại từ quan hệ “which”.",
+      "start": 40,
+      "end": 40.72
+    },
+    {
+      "sentence": 3,
+      "heard": "would help the carbuild multi innovations",
+      "meant": "helps kids build intrinsic motivation",
+      "ipa": "/hɛlps kɪdz bɪld ɪnˈtrɪnzɪk ˌməʊtɪˈveɪʃn/",
+      "tip": "Luyện phát âm rõ cụm “kids build” và từ “intrinsic motivation”.",
+      "start": 41.04,
+      "end": 45.44
+    },
+    {
+      "sentence": 3,
+      "heard": "senator sales disciplines",
+      "meant": "a sense of self-discipline",
+      "ipa": "/ə sɛns əv sɛlf ˈdɪsəplɪn/",
+      "tip": "Nối âm nhẹ nhàng “sense of” và nhấn đúng trọng âm “self-discipline”.",
+      "start": 46.48,
+      "end": 48.56
+    }
+  ],
+  "corrected": "I wouldn't say so as giving children too many rewards very healthy a way to raise them while the occasional treats should be appropriate for a child's age and effort they put in if parents spoil their children with expensive gadgets. This can make them feel entitled and dependent in the long run. This can distract them from their schoolwork and harm their academic performance. That's why the balance was focused on verbal or brands would help the carbuild multi innovations and develop senator sales disciplines.",
+  "fixes": [
+    {
+      "id": "f1",
+      "sentenceIndex": 0,
+      "original": "giving",
+      "replacement": "as giving",
+      "type": "grammar",
+      "severity": "error",
+      "explanation": "Cần thêm liên từ “as” hoặc “because” để kết nối hai mệnh đề hoàn chỉnh.",
+      "evidence": "grammar",
+      "dictionary": [],
+      "sources": [],
+      "word": ""
+    },
+    {
+      "id": "f2",
+      "sentenceIndex": 0,
+      "original": "the children",
+      "replacement": "children",
+      "type": "grammar",
+      "severity": "error",
+      "explanation": "Nói về trẻ em nói chung không dùng mạo từ xác định “the”.",
+      "evidence": "grammar",
+      "dictionary": [],
+      "sources": [],
+      "word": ""
+    },
+    {
+      "id": "f3",
+      "sentenceIndex": 0,
+      "original": "can give",
+      "replacement": "should be",
+      "type": "grammar",
+      "severity": "error",
+      "explanation": "Cần dùng động từ liên kết “should be” để đi với tính từ “appropriate”.",
+      "evidence": "grammar",
+      "dictionary": [],
+      "sources": [],
+      "word": ""
+    },
+    {
+      "id": "f4",
+      "sentenceIndex": 0,
+      "original": "the parents",
+      "replacement": "parents",
+      "type": "grammar",
+      "severity": "error",
+      "explanation": "Không dùng mạo từ “the” khi nói về các bậc phụ huynh nói chung.",
+      "evidence": "grammar",
+      "dictionary": [],
+      "sources": [],
+      "word": ""
+    },
+    {
+      "id": "f5",
+      "sentenceIndex": 2,
+      "original": "their school work",
+      "replacement": "them from their schoolwork",
+      "type": "collocation",
+      "severity": "error",
+      "explanation": "Cụm chuẩn là “distract someone from something” và “schoolwork” viết liền.",
+      "evidence": "collocation",
+      "dictionary": [
+        "OZDIC · PREP: (away) from (✓ (away) from)"
+      ],
+      "sources": [
+        {
+          "name": "OZDIC",
+          "url": "https://ozdic.com/word/distract"
+        }
+      ],
+      "word": "distract"
+    },
+    {
+      "id": "f6",
+      "sentenceIndex": 2,
+      "original": "the academic performance",
+      "replacement": "their academic performance",
+      "type": "grammar",
+      "severity": "improve",
+      "explanation": "Dùng tính từ sở hữu “their” giúp liên kết ý tự nhiên và cụ thể hơn “the”.",
+      "evidence": "grammar",
+      "dictionary": [],
+      "sources": [],
+      "word": ""
+    }
+  ],
+  "warnings": [
+    {
+      "phrase": "very healthy",
+      "suggestion": "isn't really a healthy",
+      "explanation": "Cần phủ định “isn't really a healthy” để phù hợp với ý phản đối phía trước. (AI đề xuất; Longman/OZDIC chưa xác nhận cách sửa nên không tự sửa.)"
+    }
+  ],
+  "fluency": {
+    "duration": 49.6,
+    "speech": 47.9,
+    "words": 89,
+    "wpm": 111,
+    "pauses": 4,
+    "longPauses": 1,
+    "longestPause": 2.6,
+    "pauseRatio": 0.16,
+    "hesitations": 4,
+    "longestHesitation": 2.6,
+    "sentencePauses": 0,
+    "fillers": [],
+    "fillerCount": 0,
+    "repeats": 0,
+    "variety": 0.77,
+    "sentences": 4,
+    "avgSentenceWords": 22.3,
+    "unclear": 27
+  },
+  "criteria": {
+    "fc": {
+      "band": 6,
+      "summary": "Tốc độ nói còn chậm ở mức 111 từ/phút và còn 4 lần ngập ngừng kéo dài giữa câu.",
+      "good": [],
+      "improve": [
+        "Tránh ngập ngừng lâu giữa câu khi chuyển ý, bạn ngập ngừng ở “while the occasional treats” → nên nói liền mạch “while occasional treats can give a quick boost”."
+      ]
+    },
+    "lr": {
+      "band": 7,
+      "summary": "Vốn từ vựng chuyên đề tốt nhưng việc kiểm soát cấu trúc kết hợp từ còn chưa thật chuẩn xác.",
+      "good": [],
+      "improve": [
+        "Sử dụng đúng giới từ đi kèm động từ, bạn nói “distract their school work” → nên nói “distract them from their schoolwork”."
+      ]
+    },
+    "gra": {
+      "band": 6.5,
+      "summary": "Cấu trúc câu phức phong phú nhưng còn lỗi thiếu liên từ, mạo từ và dùng sai động từ vị ngữ.",
+      "good": [],
+      "improve": [
+        "Chú ý dạng động từ đi cùng tính từ, bạn nói “can give appropriate” → nên nói “should be appropriate”."
+      ]
+    },
+    "pron": {
+      "band": 5.5,
+      "summary": "Ước lượng từ máy nhận diện cho thấy tỷ lệ từ nghe không rõ khá cao do nuốt âm và sai trọng âm.",
+      "good": [],
+      "improve": [
+        "Luyện nhấn đúng trọng âm từ đa âm tiết, bạn nói “entitled” bị nghe thành “pretty tired” → cần nhấn rõ /ɪnˈtaɪtld/.",
+        "Phát âm rõ phụ âm kép đầu từ, bạn nói “distract” bị nhận diện thành “attract” → cần bật rõ /dɪˈstrækt/."
+      ]
+    }
+  },
+  "overall": 6.5,
+  "comparison": {
+    "points": [
+      {
+        "title": "Proper approach to rewards",
+        "from": 0,
+        "to": 1,
+        "script": "I wouldn't say so, as giving children too many rewards is not really a healthy way to raise them. While occasional treats can give a quick boost, rewards should be appropriate for a child's age and the effort they put in.",
+        "heard": [
+          0
+        ],
+        "said": "I wouldn't say so giving the children too many rewards very healthy a way to raise them while the occasional treats can give appropriate for a child's age and effort they put in if the parents spoil their children with expensive gadgets.",
+        "scores": {
+          "idea": 100,
+          "details": 50,
+          "wording": 60
+        },
+        "match": 77,
+        "diffs": [
+          {
+            "kind": "missing",
+            "script": "a quick boost",
+            "said": "",
+            "note": "Bỏ sót chi tiết tạo động lực ngắn hạn."
+          },
+          {
+            "kind": "wrong",
+            "script": "is not really a healthy way",
+            "said": "very healthy a way",
+            "note": "Nói ngược nghĩa phủ định của kịch bản."
+          }
+        ]
+      },
+      {
+        "title": "Negative impacts of spoiling",
+        "from": 2,
+        "to": 3,
+        "script": "If parents spoil their children with expensive gadgets, this can make them feel entitled and dependent. In the long run, this can distract them from their schoolwork and harm their academic performance.",
+        "heard": [
+          0,
+          1,
+          2
+        ],
+        "said": "I wouldn't say so giving the children too many rewards very healthy a way to raise them while the occasional treats can give appropriate for a child's age and effort they put in if the parents spoil their children with expensive gadgets. This can make them feel entitled and dependent in the long run. This can distract their school work and harm the academic performance.",
+        "scores": {
+          "idea": 100,
+          "details": 100,
+          "wording": 94
+        },
+        "match": 99,
+        "diffs": [
+          {
+            "kind": "wrong",
+            "script": "distract them from their schoolwork",
+            "said": "distract their school work",
+            "note": "Thiếu giới từ from và sai cấu trúc."
+          },
+          {
+            "kind": "weaker",
+            "script": "their academic performance",
+            "said": "the academic performance",
+            "note": "Dùng the thay vì tính từ sở hữu."
+          }
+        ]
+      },
+      {
+        "title": "Focus on verbal praise",
+        "from": 4,
+        "to": 4,
+        "script": "That's why parents should focus on verbal praise, which helps kids build intrinsic motivation and develop a sense of self-discipline.",
+        "heard": [
+          3
+        ],
+        "said": "That's why the balance was focused on verbal or brands would help the carbuild multi innovations and develop senator sales disciplines.",
+        "scores": {
+          "idea": 100,
+          "details": 100,
+          "wording": 100
+        },
+        "match": 100,
+        "diffs": []
+      }
+    ],
+    "match": 90,
+    "overall": {
+      "idea": 100,
+      "details": 78,
+      "wording": 80
+    }
+  },
+  "reviewer": "gemini-3.8-flash"
+}

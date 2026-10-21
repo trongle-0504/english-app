@@ -1,0 +1,2243 @@
+{
+  "metadata": {
+    "lesson_id": "ways-of-speaking",
+    "topic": "Basic concepts",
+    "chapter_title": "Ways of speaking",
+    "pdf_file": "Ways of speaking.pdf"
+  },
+  "mindmap_data": {
+    "topic": "Basic concepts",
+    "chapter": {
+      "chapter_id": "ch_ways_of_speaking",
+      "title": "Ways of speaking",
+      "sessions": [
+        {
+          "session_id": "s_ways_of_speaking_a",
+          "title": "A Wedding speech",
+          "description_vi": "Một bài phát biểu đám cưới.",
+          "value": "# A Wedding speech\n\nWhenever I **make a speech** I always try to **get to the point** as quickly as possible. I could tell a lot of **stories** about James, my best friend since childhood, but I don’t want to embarrass him, so I won’t. Also, before the wedding, I **gave him my word** that I wouldn’t **crack any jokes**, as I’m really bad at **telling jokes**. So I’ll do no more than **wish James and Sophia luck** and hope they have a long and happy life together.",
+          "children_nodes": [
+            {
+              "node_id": "make_a_speech",
+              "label": "make a speech"
+            },
+            {
+              "node_id": "get_to_the_point",
+              "label": "get to the point"
+            },
+            {
+              "node_id": "stories",
+              "label": "stories"
+            },
+            {
+              "node_id": "gave_him_my_word",
+              "label": "gave him my word"
+            },
+            {
+              "node_id": "crack_any_jokes",
+              "label": "crack any jokes"
+            },
+            {
+              "node_id": "telling_jokes",
+              "label": "telling jokes"
+            },
+            {
+              "node_id": "wish_james_and_sophia_luck",
+              "label": "wish James and Sophia luck"
+            }
+          ]
+        },
+        {
+          "session_id": "s_ways_of_speaking_b",
+          "title": "B Business conversation",
+          "description_vi": "Một cuộc trò chuyện kinh doanh.",
+          "value": "Olivia: I wonder if I could have a **brief chat** with you about our new office assistant?\n\nDavid: Mm. Yes, I had a **quick word** with Mel yesterday; she said there have been problems.\n\nOlivia: Could we talk now? I know it’s a **delicate subject** but I don’t think we need to make it a **lengthy discussion** with everyone involved.\n\nDavid: Well, actually, I’m rather glad you **raised the subject**. Yes, let’s talk.\n\nOlivia: Well, **speaking off the record**, every time you give her instructions, she never seems to understand, and if you **challenge her directly** she just **pleads ignorance**. The other assistants are **complaining bitterly** that they end up doing her work. One of them **dropped a hint** that she might resign if nothing is done about it. I could tell by the **tone of her voice** that she was serious.\n\nDavid: Oh dear. I’ll have a **word** with her and **make it clear** that she has to improve.\n\nOlivia: Thanks, David. Anyway, let’s **change the subject**. How’s the sales plan going?\n\nDavid: Oh, not bad, but I have to **tell you the truth**, I’ve been very busy with other things lately. In fact I was going to **ask you a favour** …\n\n^1 saying something you do not want to be publicly reported\n\n^2 says she does not know about something",
+          "children_nodes": [
+            {
+              "node_id": "brief_chat",
+              "label": "brief chat"
+            },
+            {
+              "node_id": "quick_word",
+              "label": "quick word"
+            },
+            {
+              "node_id": "delicate_subject",
+              "label": "delicate subject"
+            },
+            {
+              "node_id": "lengthy_discussion",
+              "label": "lengthy discussion"
+            },
+            {
+              "node_id": "raised_the_subject",
+              "label": "raised the subject"
+            },
+            {
+              "node_id": "speaking_off_the_record",
+              "label": "speaking off the record"
+            },
+            {
+              "node_id": "challenge_her_directly",
+              "label": "challenge her directly"
+            },
+            {
+              "node_id": "pleads_ignorance",
+              "label": "pleads ignorance"
+            },
+            {
+              "node_id": "complaining_bitterly",
+              "label": "complaining bitterly"
+            },
+            {
+              "node_id": "dropped_a_hint",
+              "label": "dropped a hint"
+            },
+            {
+              "node_id": "tone_of_her_voice",
+              "label": "tone of her voice"
+            },
+            {
+              "node_id": "word",
+              "label": "word"
+            },
+            {
+              "node_id": "make_it_clear",
+              "label": "make it clear"
+            },
+            {
+              "node_id": "change_the_subject",
+              "label": "change the subject"
+            },
+            {
+              "node_id": "tell_you_the_truth",
+              "label": "tell you the truth"
+            },
+            {
+              "node_id": "ask_you_a_favour",
+              "label": "ask you a favour"
+            }
+          ]
+        },
+        {
+          "session_id": "s_ways_of_speaking_c",
+          "title": "C Advice column",
+          "description_vi": "Một chuyên mục lời khuyên.",
+          "value": "Dear Chloe,\n\nI find it difficult to **get into conversation** with new people, or to **join in a conversation** that’s already started. And even if I do talk to someone, I feel as if I’m boring them. I like meeting people and I want to be able to get to know them and not just **make polite conversation**. What can I do?\n\nSophia T.\n\nDear Chloe,\n\nA friend of mine **made an interesting observation** the other day: she said I always **address people too politely** and I **apologise too profusely** if I do something wrong. Why am I like this? Why can’t I relax and be informal?\n\nCooper M.\n\nDear Chloe,\n\nI was at a party recently and I heard my friend Margie **strike up**^1 a conversation with a handsome man sitting next to her. Then, after a while, during a **lull**^2 in the conversation, I heard her **whisper softly** to him that she was not married. She is. Why did she tell a lie? Should I have told him?\n\nMadison C.\n\n**Common mistakes**\n\nWe **speak** a (foreign) language. We don’t say ‘I can **talk** Arabic/French, etc.’",
+          "children_nodes": [
+            {
+              "node_id": "get_into_conversation",
+              "label": "get into conversation"
+            },
+            {
+              "node_id": "join_in_a_conversation",
+              "label": "join in a conversation"
+            },
+            {
+              "node_id": "make_polite_conversation",
+              "label": "make polite conversation"
+            },
+            {
+              "node_id": "made_an_interesting_observation",
+              "label": "made an interesting observation"
+            },
+            {
+              "node_id": "address_people_too_politely",
+              "label": "address people too politely"
+            },
+            {
+              "node_id": "apologise_too_profusely",
+              "label": "apologise too profusely"
+            },
+            {
+              "node_id": "strike_up",
+              "label": "strike up"
+            },
+            {
+              "node_id": "lull",
+              "label": "lull"
+            },
+            {
+              "node_id": "whisper_softly",
+              "label": "whisper softly"
+            },
+            {
+              "node_id": "speak",
+              "label": "speak"
+            },
+            {
+              "node_id": "talk",
+              "label": "talk"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "section_id": "A",
+      "session_ref": "s_ways_of_speaking_a",
+      "title": "A Wedding speech",
+      "instruction_vi": "Hãy đọc bài phát biểu đám cưới sau đây và chú ý đến các cụm từ được in đậm.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "Whenever I **make a speech** I always try to **get to the point** as quickly as possible. I could tell a lot of **stories** about James, my best friend since childhood, but I don’t want to embarrass him, so I won’t. Also, before the wedding, I **gave him my word** that I wouldn’t **crack any jokes**, as I’m really bad at **telling jokes**. So I’ll do no more than **wish James and Sophia luck** and hope they have a long and happy life together.",
+          "related_vocabulary_ids": [
+            "make_a_speech",
+            "get_to_the_point",
+            "stories",
+            "gave_him_my_word",
+            "crack_any_jokes",
+            "telling_jokes",
+            "wish_james_and_sophia_luck"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "B",
+      "session_ref": "s_ways_of_speaking_b",
+      "title": "B Business conversation",
+      "instruction_vi": "Đọc đoạn hội thoại kinh doanh sau đây và chú ý đến các cụm từ được in đậm.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "Olivia: I wonder if I could have a **brief chat** with you about our new office assistant?\n\nDavid: Mm. Yes, I had a **quick word** with Mel yesterday; she said there have been problems.\n\nOlivia: Could we talk now? I know it’s a **delicate subject** but I don’t think we need to make it a **lengthy discussion** with everyone involved.\n\nDavid: Well, actually, I’m rather glad you **raised the subject**. Yes, let’s talk.\n\nOlivia: Well, **speaking off the record**, every time you give her instructions, she never seems to understand, and if you **challenge her directly** she just **pleads ignorance**. The other assistants are **complaining bitterly** that they end up doing her work. One of them **dropped a hint** that she might resign if nothing is done about it. I could tell by the **tone of her voice** that she was serious.\n\nDavid: Oh dear. I’ll have a **word** with her and **make it clear** that she has to improve.\n\nOlivia: Thanks, David. Anyway, let’s **change the subject**. How’s the sales plan going?\n\nDavid: Oh, not bad, but I have to **tell you the truth**, I’ve been very busy with other things lately. In fact I was going to **ask you a favour** …",
+          "related_vocabulary_ids": [
+            "brief_chat",
+            "quick_word",
+            "delicate_subject",
+            "lengthy_discussion",
+            "raised_the_subject",
+            "speaking_off_the_record",
+            "challenge_her_directly",
+            "pleads_ignorance",
+            "complaining_bitterly",
+            "dropped_a_hint",
+            "tone_of_her_voice",
+            "word",
+            "make_it_clear",
+            "change_the_subject",
+            "tell_you_the_truth",
+            "ask_you_a_favour"
+          ]
+        },
+        {
+          "type": "note_box",
+          "value": "^1 saying something you do not want to be publicly reported\n\n^2 says she does not know about something",
+          "related_vocabulary_ids": [
+            "speaking_off_the_record",
+            "pleads_ignorance"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "C",
+      "session_ref": "s_ways_of_speaking_c",
+      "title": "C Advice column",
+      "instruction_vi": "Đọc các thư tư vấn sau đây và chú ý đến các cụm từ được in đậm.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "Dear Chloe,\n\nI find it difficult to **get into conversation** with new people, or to **join in a conversation** that’s already started. And even if I do talk to someone, I feel as if I’m boring them. I like meeting people and I want to be able to get to know them and not just **make polite conversation**. What can I do?\n\nSophia T.\n\nDear Chloe,\n\nA friend of mine **made an interesting observation** the other day: she said I always **address people too politely** and I **apologise too profusely** if I do something wrong. Why am I like this? Why can’t I relax and be informal?\n\nCooper M.\n\nDear Chloe,\n\nI was at a party recently and I heard my friend Margie **strike up**^1 a conversation with a handsome man sitting next to her. Then, after a while, during a **lull**^2 in the conversation, I heard her **whisper softly** to him that she was not married. She is. Why did she tell a lie? Should I have told him?\n\nMadison C.",
+          "related_vocabulary_ids": [
+            "get_into_conversation",
+            "join_in_a_conversation",
+            "make_polite_conversation",
+            "made_an_interesting_observation",
+            "address_people_too_politely",
+            "apologise_too_profusely",
+            "strike_up",
+            "lull",
+            "whisper_softly"
+          ]
+        },
+        {
+          "type": "markdown",
+          "value": "**Common mistakes**\n\nWe **speak** a (foreign) language. We don’t say ‘I can **talk** Arabic/French, etc.’",
+          "related_vocabulary_ids": [
+            "speak",
+            "talk"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary_data": {
+    "make_a_speech": {
+      "word": "make a speech",
+      "pronunciation": "/meɪk ə spiːtʃ/",
+      "image": {
+        "type": "prompt",
+        "value": "A person giving a formal speech in front of an audience.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Real-time_MRI_-_Speaking_%28English%29.ogv/250px--Real-time_MRI_-_Speaking_%28English%29.ogv.jpg"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Thực hiện một bài phát biểu trước công chúng.",
+          "examples": [
+            "I always try to make a speech that is both informative and entertaining."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường dùng trong các dịp trang trọng như đám cưới, lễ kỷ niệm, hoặc các sự kiện công ty."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What skills are needed to talk in front of a large audience?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "What happens at weddings in your country?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Should students learn to speak in public at school? Why?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "make a speech",
+          "text": "The best man has to make a speech at the wedding."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "make a speech",
+          "source": "The manager stood up to talk formally to all the staff at the party.",
+          "model": "The manager stood up to make a speech to all the staff at the party."
+        },
+        {
+          "target": "make a speech",
+          "source": "At graduation, one student is chosen to talk to the audience.",
+          "model": "At graduation, one student is chosen to make a speech."
+        }
+      ]
+    },
+    "get_to_the_point": {
+      "word": "get to the point",
+      "pronunciation": "/ɡɛt tuː ðə pɔɪnt/",
+      "image": {
+        "type": "prompt",
+        "value": "A person directly addressing the main issue without unnecessary details.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/DFRArrow.jpg/960px-DFRArrow.jpg"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+prepositional_phrase",
+      "senses": [
+        {
+          "definition_vi": "Đi thẳng vào vấn đề chính, không vòng vo.",
+          "examples": [
+            "In the interest of time, let's get to the point."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Sử dụng khi muốn nói hoặc làm điều gì đó một cách nhanh chóng và hiệu quả, tránh lan man."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What makes a business meeting efficient?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What makes a good essay or presentation?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Why do people prefer short videos to long articles nowadays?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "get to the point",
+          "text": "Please stop talking around it and get to the point."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "get to the point",
+          "source": "We don't have much time, so let's talk about the main issue directly.",
+          "model": "We don't have much time, so let's get to the point."
+        },
+        {
+          "target": "get to the point",
+          "source": "Good writers say what they mean without wasting the reader's time.",
+          "model": "Good writers get to the point without wasting the reader's time."
+        }
+      ]
+    },
+    "stories": {
+      "word": "stories",
+      "pronunciation": "/ˈstɔːriz/",
+      "image": {
+        "type": "prompt",
+        "value": "A collection of books containing narratives.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/960px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun",
+      "senses": [
+        {
+          "definition_vi": "Những câu chuyện, lời kể về các sự kiện hoặc trải nghiệm.",
+          "examples": [
+            "He told many funny stories about his childhood."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Có thể là chuyện thật hoặc hư cấu, thường dùng để giải trí hoặc minh họa cho một điểm nào đó."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "What did your grandparents tell you about when you were young?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "Why are traditional tales important in a culture?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Why do people enjoy watching films and reading novels?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "stories",
+          "text": "My grandmother told us funny stories about her childhood."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "stories",
+          "source": "He told us many funny tales about his childhood.",
+          "model": "He told us many funny stories about his childhood."
+        },
+        {
+          "target": "stories",
+          "source": "Children love hearing about the adventures of brave heroes before bed.",
+          "model": "Children love hearing stories about brave heroes before bed."
+        }
+      ]
+    },
+    "gave_him_my_word": {
+      "word": "gave him my word",
+      "pronunciation": "/ɡeɪv hɪm maɪ wɜːrd/",
+      "image": {
+        "type": "prompt",
+        "value": "A person shaking hands to confirm a promise.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Hermandad_-_friendship.jpg/960px-Hermandad_-_friendship.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+pronoun+possessive+noun",
+      "senses": [
+        {
+          "definition_vi": "Đã hứa với ai đó, đã cam kết với ai đó.",
+          "examples": [
+            "I gave him my word that I would be there on time."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Nhấn mạnh sự tin cậy và cam kết trong lời nói."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Friends",
+          "question": "Can you describe a time when you made a serious promise to a friend?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Have you ever promised a boss you would finish something on time? What happened?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "What did you promise your coach when you joined a sports team?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "gave him my word",
+          "text": "I gave him my word that I would help."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "gave him my word",
+          "source": "I promised him that I would be there on time.",
+          "model": "I gave him my word that I would be there on time."
+        },
+        {
+          "target": "gave him my word",
+          "source": "When my coach asked me to train harder, I promised him I would.",
+          "model": "When my coach asked me to train harder, I gave him my word."
+        }
+      ]
+    },
+    "crack_any_jokes": {
+      "word": "crack any jokes",
+      "pronunciation": "/kræk ˈɛni dʒoʊks/",
+      "image": {
+        "type": "prompt",
+        "value": "A person attempting to tell a joke but failing.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Auguste_clown_reading_a_book_upside-down.jpg/960px-Auguste_clown_reading_a_book_upside-down.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Kể chuyện cười, đùa cợt.",
+          "examples": [
+            "He's not very good at telling jokes, so he doesn't crack many jokes."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường dùng để chỉ hành động kể một câu chuyện cười, đôi khi mang hàm ý là không thành công hoặc không hài hước."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "Is it a good idea to be funny during a job interview?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Do strict teachers ever use humour in class?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "Are there situations in your culture where humour is not acceptable, like funerals?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "crack any jokes",
+          "text": "He was so nervous that he didn't crack any jokes."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "crack any jokes",
+          "source": "My serious teacher never told a single joke in class.",
+          "model": "My serious teacher never cracked any jokes in class."
+        },
+        {
+          "target": "crack any jokes",
+          "source": "During the interview, he didn't try to be funny at all.",
+          "model": "During the interview, he didn't crack any jokes at all."
+        }
+      ]
+    },
+    "telling_jokes": {
+      "word": "telling jokes",
+      "pronunciation": "/ˈtɛlɪŋ dʒoʊks/",
+      "image": {
+        "type": "prompt",
+        "value": "A person actively recounting a joke.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Auguste_clown_reading_a_book_upside-down.jpg/960px-Auguste_clown_reading_a_book_upside-down.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Việc kể chuyện cười.",
+          "examples": [
+            "She is known for her skill in telling jokes."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Hành động hoặc khả năng kể chuyện cười."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "Who is the funniest person in your family, and what do they do?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How can humour help people get along at work?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Why are comedians so popular on television and online?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "telling jokes",
+          "text": "My uncle is very good at telling jokes."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "telling jokes",
+          "source": "She is famous for making people laugh with funny short stories.",
+          "model": "She is famous for telling jokes."
+        },
+        {
+          "target": "telling jokes",
+          "source": "Comedians earn money by saying funny things on stage.",
+          "model": "Comedians earn money by telling jokes on stage."
+        }
+      ]
+    },
+    "wish_james_and_sophia_luck": {
+      "word": "wish James and Sophia luck",
+      "pronunciation": "/wɪʃ ˈdʒeɪmz ənd ˈsɒfiə lʌk/",
+      "image": {
+        "type": "prompt",
+        "value": "Hands clasped together in a gesture of wishing good fortune.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Horseshoe.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+proper_noun+and+proper_noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Chúc James và Sophia may mắn.",
+          "examples": [
+            "I want to take this opportunity to wish James and Sophia luck for their future together."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Một lời chúc tốt đẹp, thường dùng trong các dịp đặc biệt như đám cưới, khởi đầu mới."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "What do guests usually say to a newly married couple at a wedding?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What do you say to colleagues who are leaving to start their own business?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What would you say to two friends before their final exams?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "wish James and Sophia luck",
+          "text": "Let's all wish James and Sophia luck in their new home."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "wish James and Sophia luck",
+          "source": "I hope James and Sophia have a happy future together.",
+          "model": "I want to wish James and Sophia luck for their future together."
+        },
+        {
+          "target": "wish James and Sophia luck",
+          "source": "Before their exams, I told James and Sophia that I hoped everything would go well.",
+          "model": "Before their exams, I wished James and Sophia luck."
+        }
+      ]
+    },
+    "brief_chat": {
+      "word": "brief chat",
+      "pronunciation": "/briːf tʃæt/",
+      "image": {
+        "type": "prompt",
+        "value": "Two people having a short, informal conversation.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Arnold_Lakhovsky_Conversation.png/960px-Arnold_Lakhovsky_Conversation.png"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một cuộc trò chuyện ngắn gọn, thân mật.",
+          "examples": [
+            "Could I have a brief chat with you about the project?"
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường dùng để đề cập đến một cuộc nói chuyện không kéo dài và không quá trang trọng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How do managers keep in touch with their team members informally?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Do you often talk to your neighbours? What about?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How can students get quick help from their teachers?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "brief chat",
+          "text": "I had a brief chat with my neighbour this morning."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "brief chat",
+          "source": "Could I talk to you quickly about the project?",
+          "model": "Could I have a brief chat with you about the project?"
+        },
+        {
+          "target": "brief chat",
+          "source": "I usually talk with my neighbours for a few minutes when I see them.",
+          "model": "I usually have a brief chat with my neighbours when I see them."
+        }
+      ]
+    },
+    "quick_word": {
+      "word": "quick word",
+      "pronunciation": "/kwɪk wɜːrd/",
+      "image": {
+        "type": "prompt",
+        "value": "Two colleagues speaking briefly in an office hallway.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Arnold_Lakhovsky_Conversation.png/960px-Arnold_Lakhovsky_Conversation.png"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một cuộc nói chuyện ngắn, nhanh chóng.",
+          "examples": [
+            "I just wanted to have a quick word with you about the meeting."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Tương tự 'brief chat', dùng để chỉ một cuộc trao đổi ngắn gọn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How do employees usually raise small problems with their manager?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What should a student do if they need to ask a teacher something after class?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "How do parents deal with small problems at their children's school?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "quick word",
+          "text": "Can I have a quick word with you?"
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "quick word",
+          "source": "Could I speak to you for a moment about the meeting?",
+          "model": "Could I have a quick word with you about the meeting?"
+        },
+        {
+          "target": "quick word",
+          "source": "After class, I talked briefly with my teacher about my essay.",
+          "model": "After class, I had a quick word with my teacher about my essay."
+        }
+      ]
+    },
+    "delicate_subject": {
+      "word": "delicate subject",
+      "pronunciation": "/ˈdɛlɪkət ˈsʌbdʒɪkt/",
+      "image": {
+        "type": "prompt",
+        "value": "A fragile object representing a sensitive topic.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Egg-rmh.jpg/960px-Egg-rmh.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một chủ đề nhạy cảm, cần được xử lý cẩn thận.",
+          "examples": [
+            "We need to approach this delicate subject with sensitivity."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Dùng để chỉ những vấn đề có thể gây khó chịu, tổn thương hoặc tranh cãi nếu không được đề cập một cách khéo léo."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "What topics are difficult to discuss with older family members?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How should managers talk to staff about pay cuts?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How should doctors talk to patients about their weight?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "delicate subject",
+          "text": "Money is a delicate subject in many families."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "delicate subject",
+          "source": "Death is a sensitive topic that people find hard to talk about.",
+          "model": "Death is a delicate subject that people find hard to talk about."
+        },
+        {
+          "target": "delicate subject",
+          "source": "Doctors need to talk carefully about weight because it is a sensitive matter.",
+          "model": "Doctors need to talk carefully about weight because it is a delicate subject."
+        }
+      ]
+    },
+    "lengthy_discussion": {
+      "word": "lengthy discussion",
+      "pronunciation": "/ˈlɛŋθi dɪˈskʌʃən/",
+      "image": {
+        "type": "prompt",
+        "value": "People sitting around a table engaged in a long conversation.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sitzung_von_Wiki_Loves_Broadcast_im_Kontor_Hamburg.jpg/960px-Sitzung_von_Wiki_Loves_Broadcast_im_Kontor_Hamburg.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một cuộc thảo luận kéo dài, tốn nhiều thời gian.",
+          "examples": [
+            "The issue requires a lengthy discussion to ensure all viewpoints are considered."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Chỉ một cuộc trao đổi, bàn luận kéo dài, thường là để giải quyết một vấn đề phức tạp."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "Why do some business meetings take so long?",
+          "fits": []
+        },
+        {
+          "context": "Politics",
+          "question": "Why does it take governments a long time to pass new laws?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "How do families make big decisions, such as buying a house?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "lengthy discussion",
+          "text": "We had a lengthy discussion about the new plan."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "lengthy discussion",
+          "source": "The team talked about the problem for a very long time.",
+          "model": "The team had a lengthy discussion about the problem."
+        },
+        {
+          "target": "lengthy discussion",
+          "source": "Before buying the house, my parents discussed it for hours.",
+          "model": "Before buying the house, my parents had a lengthy discussion."
+        }
+      ]
+    },
+    "raised_the_subject": {
+      "word": "raised the subject",
+      "pronunciation": "/reɪzd ðə ˈsʌbdʒɪkt/",
+      "image": {
+        "type": "prompt",
+        "value": "A person bringing up a topic for discussion.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Arnold_Lakhovsky_Conversation.png/960px-Arnold_Lakhovsky_Conversation.png"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+determiner+noun",
+      "senses": [
+        {
+          "definition_vi": "Đề cập đến một vấn đề, bắt đầu nói về một chủ đề.",
+          "examples": [
+            "He finally raised the subject of his salary increase."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Hành động đưa ra một chủ đề để mọi người cùng bàn luận."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How should employees ask their boss for a pay rise?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "How do you start talking about difficult topics with your parents?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How can people encourage a friend to see a doctor about a problem?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "raised the subject",
+          "text": "She finally raised the subject of moving abroad."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "raised the subject",
+          "source": "He finally brought up the topic of a salary increase.",
+          "model": "He finally raised the subject of a salary increase."
+        },
+        {
+          "target": "raised the subject",
+          "source": "At dinner, I mentioned the idea of studying abroad to my parents.",
+          "model": "At dinner, I raised the subject of studying abroad with my parents."
+        }
+      ]
+    },
+    "speaking_off_the_record": {
+      "word": "speaking off the record",
+      "pronunciation": "/ˈspiːkɪŋ ˈɒf ðə ˈrɛkɔːrd/",
+      "image": {
+        "type": "prompt",
+        "value": "A person whispering something discreetly.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Shure_mikrofon_55S.jpg/960px-Shure_mikrofon_55S.jpg"
+      },
+      "part_of_speech": [
+        "adverbial phrase"
+      ],
+      "collocation_type": "verb+preposition+determiner+noun",
+      "senses": [
+        {
+          "definition_vi": "Nói điều gì đó không chính thức, không được ghi lại hoặc công khai.",
+          "examples": [
+            "Speaking off the record, I think the project is doomed."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Dùng để chia sẻ thông tin một cách riêng tư, không muốn nó được báo cáo hoặc công khai."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "How do journalists get secret information from politicians?",
+          "fits": []
+        },
+        {
+          "context": "Politics",
+          "question": "Why do officials sometimes give information without wanting to be named?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Do employees ever share honest opinions about their company privately? Why?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "speaking off the record",
+          "text": "Speaking off the record, the minister admitted the plan had failed."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "speaking off the record",
+          "source": "Unofficially, the manager told me that the project would probably fail.",
+          "model": "Speaking off the record, the manager told me that the project would probably fail."
+        },
+        {
+          "target": "speaking off the record",
+          "source": "The official told the reporter privately, on condition that he would not be quoted.",
+          "model": "The official was speaking off the record when he told the reporter."
+        }
+      ]
+    },
+    "challenge_her_directly": {
+      "word": "challenge her directly",
+      "pronunciation": "/ˈtʃælɪndʒ hɜː daɪˈrɛktli/",
+      "image": {
+        "type": "prompt",
+        "value": "A person confronting someone face-to-face.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/FrzDuellImBoisDeBoulogneDurand1874.jpg/960px-FrzDuellImBoisDeBoulogneDurand1874.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+pronoun+adverb",
+      "senses": [
+        {
+          "definition_vi": "Thách thức hoặc đối chất trực tiếp với cô ấy.",
+          "examples": [
+            "Instead of gossiping, we should challenge her directly about her behavior."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Hành động đối mặt và đặt câu hỏi hoặc yêu cầu giải thích một cách thẳng thắn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What should you do if a colleague keeps taking credit for your work?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How should a student deal with a classmate who spreads rumours?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "How should parents deal with a teenage daughter who keeps lying?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "challenge her directly",
+          "text": "Instead of gossiping, you should challenge her directly."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "challenge her directly",
+          "source": "Instead of complaining behind her back, we should question her face to face.",
+          "model": "Instead of complaining behind her back, we should challenge her directly."
+        },
+        {
+          "target": "challenge her directly",
+          "source": "If your sister is lying, talk to her openly about it and ask her to explain.",
+          "model": "If your sister is lying, you should challenge her directly."
+        }
+      ]
+    },
+    "pleads_ignorance": {
+      "word": "pleads ignorance",
+      "pronunciation": "/pliːdz ˈɪɡnərəns/",
+      "image": {
+        "type": "prompt",
+        "value": "A person shrugging their shoulders as if they don't know.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Truly_and_Bluford_Asleep_on_Middeck_-_GPN-2000-001079.jpg/960px-Truly_and_Bluford_Asleep_on_Middeck_-_GPN-2000-001079.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Biện hộ rằng mình không biết, giả vờ không biết.",
+          "examples": [
+            "When asked about the missing files, he just pleads ignorance."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Cách nói giảm nói tránh hoặc biện minh cho việc không biết hoặc không làm gì đó."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How do employees avoid blame when something goes wrong at work?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Should people be punished if they break a law they didn't know about?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What do students say when they are caught breaking school rules?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "pleads ignorance",
+          "text": "Whenever something goes wrong, he simply pleads ignorance."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "pleads ignorance",
+          "source": "When asked about the missing money, he just says he knows nothing about it.",
+          "model": "When asked about the missing money, he just pleads ignorance."
+        },
+        {
+          "target": "pleads ignorance",
+          "source": "My brother always claims he didn't know the rules when he gets caught.",
+          "model": "My brother always pleads ignorance when he gets caught."
+        }
+      ]
+    },
+    "complaining_bitterly": {
+      "word": "complaining bitterly",
+      "pronunciation": "/kəmˈpleɪnɪŋ ˈbɪtərli/",
+      "image": {
+        "type": "prompt",
+        "value": "A person expressing strong dissatisfaction with a sad expression.",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+adverb",
+      "senses": [
+        {
+          "definition_vi": "Phàn nàn một cách cay đắng, gay gắt.",
+          "examples": [
+            "The employees were complaining bitterly about the long working hours."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Diễn tả sự bất mãn sâu sắc và thể hiện ra bên ngoài một cách mạnh mẽ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How do employees react when they have to work very long hours?",
+          "fits": []
+        },
+        {
+          "context": "Transport",
+          "question": "How do people feel about the public transport in your city?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "How do people react when prices rise quickly?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "complaining bitterly",
+          "text": "The workers are complaining bitterly about their low pay."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "complaining bitterly",
+          "source": "Passengers are very angry and keep grumbling about the late trains.",
+          "model": "Passengers are complaining bitterly about the late trains."
+        },
+        {
+          "target": "complaining bitterly",
+          "source": "Many families are angrily protesting about the rising cost of food.",
+          "model": "Many families are complaining bitterly about the rising cost of food."
+        }
+      ]
+    },
+    "dropped_a_hint": {
+      "word": "dropped a hint",
+      "pronunciation": "/drɒpt ə hɪnt/",
+      "image": {
+        "type": "prompt",
+        "value": "A person subtly suggesting something.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/20160728MessageInBottleComposite.png/960px-20160728MessageInBottleComposite.png"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+indefinite_article+noun",
+      "senses": [
+        {
+          "definition_vi": "Gợi ý một cách gián tiếp, bóng gió.",
+          "examples": [
+            "She dropped a hint that she was looking for a new job."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Nói bóng gió về điều gì đó mà không nói thẳng ra, để người khác tự hiểu."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "How do children let their parents know what they want for their birthday?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How do employees show their boss they want a promotion without asking directly?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "How do people politely tell guests that it is time to leave?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "dropped a hint",
+          "text": "She dropped a hint about what she wanted for her birthday."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "dropped a hint",
+          "source": "She suggested indirectly that she was looking for a new job.",
+          "model": "She dropped a hint that she was looking for a new job."
+        },
+        {
+          "target": "dropped a hint",
+          "source": "My son mentioned the new bike several times without asking for it.",
+          "model": "My son dropped a hint about the new bike."
+        }
+      ]
+    },
+    "tone_of_her_voice": {
+      "word": "tone of her voice",
+      "pronunciation": "/toʊn ɒv hɜː vɔɪs/",
+      "image": {
+        "type": "prompt",
+        "value": "A visual representation of sound waves indicating emotion.",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "noun+preposition+possessive+noun",
+      "senses": [
+        {
+          "definition_vi": "Giọng điệu của cô ấy.",
+          "examples": [
+            "I could tell by the tone of her voice that she was upset."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Cách mà giọng nói được phát ra, thể hiện cảm xúc hoặc thái độ của người nói."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "How can you tell when a family member is upset?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How important is the way staff speak in customer service jobs?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Why do some radio presenters become very popular?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "tone of her voice",
+          "text": "I knew she was angry from the tone of her voice."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "tone of her voice",
+          "source": "I could tell from the way she spoke that she was upset.",
+          "model": "I could tell by the tone of her voice that she was upset."
+        },
+        {
+          "target": "tone of her voice",
+          "source": "Her calm way of speaking made the customers relax.",
+          "model": "The calm tone of her voice made the customers relax."
+        }
+      ]
+    },
+    "word": {
+      "word": "word",
+      "pronunciation": "/wɜːrd/",
+      "image": {
+        "type": "prompt",
+        "value": "A single unit of language.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Lion_Showing_off_His_Mouth_%2821454262492%29.jpg/960px-Lion_Showing_off_His_Mouth_%2821454262492%29.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun",
+      "senses": [
+        {
+          "definition_vi": "Lời nói, cuộc nói chuyện ngắn.",
+          "examples": [
+            "I need to have a word with you about the project."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Trong ngữ cảnh này, 'have a word' có nghĩa là nói chuyện ngắn gọn với ai đó."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What should a manager do if an employee is often late?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What should a teacher do if a student keeps disturbing the class?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "What do parents do when their child behaves badly at school?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "word",
+          "text": "Can I have a word with you after the meeting?"
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "word",
+          "source": "The manager needs to talk privately with you about the project.",
+          "model": "The manager needs to have a word with you about the project."
+        },
+        {
+          "target": "word",
+          "source": "The teacher spoke briefly with the noisy student after class.",
+          "model": "The teacher had a word with the noisy student after class."
+        }
+      ]
+    },
+    "make_it_clear": {
+      "word": "make it clear",
+      "pronunciation": "/meɪk ɪt klɪər/",
+      "image": {
+        "type": "prompt",
+        "value": "A person pointing emphatically to emphasize a statement.",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+pronoun+adjective",
+      "senses": [
+        {
+          "definition_vi": "Làm cho rõ ràng, giải thích rõ ràng.",
+          "examples": [
+            "I want to make it clear that this is not acceptable."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Dùng để nhấn mạnh hoặc giải thích một điều gì đó một cách dễ hiểu và không gây nhầm lẫn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How should managers explain new rules to their staff?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "How should parents set rules for their teenage children?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What should teachers tell students about cheating in exams?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "make it clear",
+          "text": "I want to make it clear that I disagree."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "make it clear",
+          "source": "The manager wanted to explain plainly that being late was not acceptable.",
+          "model": "The manager wanted to make it clear that being late was not acceptable."
+        },
+        {
+          "target": "make it clear",
+          "source": "Parents should tell their children clearly what behaviour is not allowed.",
+          "model": "Parents should make it clear what behaviour is not allowed."
+        }
+      ]
+    },
+    "change_the_subject": {
+      "word": "change the subject",
+      "pronunciation": "/tʃeɪndʒ ðə ˈsʌbdʒɪkt/",
+      "image": {
+        "type": "prompt",
+        "value": "A person abruptly shifting the topic of conversation.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Modern_British_LED_Traffic_Light.jpg/960px-Modern_British_LED_Traffic_Light.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+determiner+noun",
+      "senses": [
+        {
+          "definition_vi": "Đổi chủ đề câu chuyện.",
+          "examples": [
+            "The conversation was getting awkward, so I decided to change the subject."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Hành động chuyển hướng cuộc nói chuyện sang một chủ đề khác, thường là để tránh một chủ đề khó xử hoặc không mong muốn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "What do you do when a family conversation becomes uncomfortable?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How do people avoid answering difficult questions in job interviews?",
+          "fits": []
+        },
+        {
+          "context": "Politics",
+          "question": "Why do politicians often avoid answering questions directly?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "change the subject",
+          "text": "When she asked about money, he quickly changed the subject."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "change the subject",
+          "source": "The conversation became awkward, so I started talking about something else.",
+          "model": "The conversation became awkward, so I changed the subject."
+        },
+        {
+          "target": "change the subject",
+          "source": "Politicians often begin talking about a different topic when asked difficult questions.",
+          "model": "Politicians often change the subject when asked difficult questions."
+        }
+      ]
+    },
+    "tell_you_the_truth": {
+      "word": "tell you the truth",
+      "pronunciation": "/tɛl juː ðə truːθ/",
+      "image": {
+        "type": "prompt",
+        "value": "A person speaking honestly with a sincere expression.",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+pronoun+determiner+noun",
+      "senses": [
+        {
+          "definition_vi": "Nói sự thật với bạn.",
+          "examples": [
+            "To tell you the truth, I wasn't really listening."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Một cách diễn đạt để bắt đầu một câu nói thật lòng hoặc tiết lộ một điều gì đó một cách thẳng thắn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Food",
+          "question": "Do you enjoy cooking? Why or why not?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Do you watch much television these days?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Did you enjoy studying maths at school?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "tell you the truth",
+          "text": "To tell you the truth, I don't like coffee."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "tell you the truth",
+          "source": "Honestly, I wasn't really listening.",
+          "model": "To tell you the truth, I wasn't really listening."
+        },
+        {
+          "target": "tell you the truth",
+          "source": "To be honest, I've never enjoyed cooking.",
+          "model": "To tell you the truth, I've never enjoyed cooking."
+        }
+      ]
+    },
+    "ask_you_a_favour": {
+      "word": "ask you a favour",
+      "pronunciation": "/ɑːsk juː ə ˈfeɪvər/",
+      "image": {
+        "type": "prompt",
+        "value": "A person making a polite request to another.",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+pronoun+indefinite_article+noun",
+      "senses": [
+        {
+          "definition_vi": "Nhờ bạn giúp một việc.",
+          "examples": [
+            "Could I ask you a favour? I need help moving furniture."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Dùng khi muốn nhờ ai đó làm điều gì đó giúp mình."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "How do people in your family help each other?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Is it acceptable to ask colleagues for personal help?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Do you often help your neighbours? How?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "ask you a favour",
+          "text": "Could I ask you a favour this weekend?"
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "ask you a favour",
+          "source": "Can you help me with something? I need to move some furniture.",
+          "model": "Could I ask you a favour? I need to move some furniture."
+        },
+        {
+          "target": "ask you a favour",
+          "source": "Would you do something for me? Could you water my plants while I'm away?",
+          "model": "Can I ask you a favour? Could you water my plants while I'm away?"
+        }
+      ]
+    },
+    "get_into_conversation": {
+      "word": "get into conversation",
+      "pronunciation": "/ɡɛt ˈɪntuː ˌkɒnvərˈseɪʃən/",
+      "image": {
+        "type": "prompt",
+        "value": "A person hesitantly joining a group discussion.",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Bắt đầu tham gia vào một cuộc trò chuyện.",
+          "examples": [
+            "It's hard for me to get into conversation with strangers."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Diễn tả hành động bắt đầu tham gia hoặc hòa nhập vào một cuộc nói chuyện đang diễn ra hoặc với người lạ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Do you like talking to strangers when you travel?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Is it easy to make friends in a big city?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How do people make useful contacts at business events?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "get into conversation",
+          "text": "It is easy to get into conversation with people on trains."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "get into conversation",
+          "source": "It's hard for me to start talking with strangers.",
+          "model": "It's hard for me to get into conversation with strangers."
+        },
+        {
+          "target": "get into conversation",
+          "source": "At the conference, I tried to start chatting with a manager from another company.",
+          "model": "At the conference, I tried to get into conversation with a manager from another company."
+        }
+      ]
+    },
+    "join_in_a_conversation": {
+      "word": "join in a conversation",
+      "pronunciation": "/dʒɔɪn ɪn ə ˌkɒnvərˈseɪʃən/",
+      "image": {
+        "type": "prompt",
+        "value": "A person actively participating in a group discussion.",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Tham gia vào một cuộc trò chuyện.",
+          "examples": [
+            "She's very good at joining in a conversation and making everyone feel included."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Hành động tham gia tích cực vào một cuộc nói chuyện đang diễn ra."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "How do shy people feel at large social gatherings?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How can teachers encourage quiet students to speak in class?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "What difficulties do people face when they move to a country with a different language?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "join in a conversation",
+          "text": "She found it hard to join in a conversation in English."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "join in a conversation",
+          "source": "At parties, shy people often find it difficult to take part in the talking.",
+          "model": "At parties, shy people often find it difficult to join in a conversation."
+        },
+        {
+          "target": "join in a conversation",
+          "source": "It took me months before I could participate when my colleagues chatted in French.",
+          "model": "It took me months before I could join in a conversation in French."
+        }
+      ]
+    },
+    "make_polite_conversation": {
+      "word": "make polite conversation",
+      "pronunciation": "/meɪk pəˈlaɪt ˌkɒnvərˈseɪʃən/",
+      "image": {
+        "type": "prompt",
+        "value": "Two people engaging in light, friendly small talk.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Welcome_differentlangs.svg/960px-Welcome_differentlangs.svg.png"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Nói chuyện xã giao, lịch sự.",
+          "examples": [
+            "I find it difficult to make polite conversation with people I don't know well."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường dùng để chỉ những cuộc nói chuyện nhẹ nhàng, không đi sâu vào vấn đề cá nhân, chủ yếu để duy trì sự lịch sự và tạo không khí dễ chịu."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What do people talk about at business dinners with clients?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "How do you behave when you meet your partner's relatives for the first time?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Why do people talk about the weather with strangers?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "make polite conversation",
+          "text": "I tried to make polite conversation with her parents."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "make polite conversation",
+          "source": "I find it hard to chat politely with people I don't know well.",
+          "model": "I find it hard to make polite conversation with people I don't know well."
+        },
+        {
+          "target": "make polite conversation",
+          "source": "At the dinner, I had to chat politely about the weather to be friendly.",
+          "model": "At the dinner, I had to make polite conversation about the weather."
+        }
+      ]
+    },
+    "made_an_interesting_observation": {
+      "word": "made an interesting observation",
+      "pronunciation": "/meɪd ən ˈɪntrəstɪŋ ˌɒbzərˈveɪʃən/",
+      "image": {
+        "type": "prompt",
+        "value": "A person pointing out something noteworthy.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/a/ac/100inchHooker.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+indefinite_article+adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Đưa ra một nhận xét thú vị.",
+          "examples": [
+            "She made an interesting observation about the changing social trends."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Hành động đưa ra một ý kiến hoặc nhận xét có giá trị, đáng chú ý về một vấn đề nào đó."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "What makes a good contribution to a class discussion?",
+          "fits": []
+        },
+        {
+          "context": "Science",
+          "question": "How did famous scientists make their discoveries?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "What have you noticed about how people use phones in public?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "made an interesting observation",
+          "text": "My teacher made an interesting observation about the story."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "made an interesting observation",
+          "source": "She noticed and commented on something fascinating about social trends.",
+          "model": "She made an interesting observation about social trends."
+        },
+        {
+          "target": "made an interesting observation",
+          "source": "During the meeting, one student pointed out something surprising about the data.",
+          "model": "During the meeting, one student made an interesting observation about the data."
+        }
+      ]
+    },
+    "address_people_too_politely": {
+      "word": "address people too politely",
+      "pronunciation": "/əˈdrɛs ˈpiːpəl tuː pəˈlaɪtli/",
+      "image": {
+        "type": "prompt",
+        "value": "A person bowing excessively when speaking to someone.",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun+adverb",
+      "senses": [
+        {
+          "definition_vi": "Xưng hô hoặc nói chuyện với mọi người quá lịch sự.",
+          "examples": [
+            "I tend to address people too politely, even my close friends."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Cách nói chuyện hoặc xưng hô với người khác một cách quá mức lịch sự, có thể tạo cảm giác xa cách."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Culture",
+          "question": "How do people in your country speak to older people?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Is it better to be formal or informal with colleagues?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Can being too formal create distance between friends?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "address people too politely",
+          "text": "I tend to address people too politely, even friends."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "address people too politely",
+          "source": "I often speak to people in a way that is much too formal, even close friends.",
+          "model": "I often address people too politely, even close friends."
+        },
+        {
+          "target": "address people too politely",
+          "source": "Some new employees use titles like Sir and Madam too much with colleagues.",
+          "model": "Some new employees address people too politely."
+        }
+      ]
+    },
+    "apologise_too_profusely": {
+      "word": "apologise too profusely",
+      "pronunciation": "/əˈpɒlədʒaɪz tuː prəˈfjuːsli/",
+      "image": {
+        "type": "prompt",
+        "value": "A person bowing deeply and repeatedly to apologize.",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+adverb",
+      "senses": [
+        {
+          "definition_vi": "Xin lỗi quá nhiều, quá mức.",
+          "examples": [
+            "He tends to apologise too profusely for even the smallest mistakes."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Hành động xin lỗi một cách thái quá, thường là do thiếu tự tin hoặc quá nhạy cảm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Culture",
+          "question": "Do people in your country say sorry a lot? Why?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How should employees respond when they make a small mistake?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Can saying sorry too often make people seem less confident?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "apologise too profusely",
+          "text": "He tends to apologise too profusely for small mistakes."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "apologise too profusely",
+          "source": "He says sorry far too many times, even for tiny mistakes.",
+          "model": "He tends to apologise too profusely, even for tiny mistakes."
+        },
+        {
+          "target": "apologise too profusely",
+          "source": "Some customer service staff keep saying sorry again and again.",
+          "model": "Some customer service staff apologise too profusely."
+        }
+      ]
+    },
+    "strike_up": {
+      "word": "strike up",
+      "pronunciation": "/straɪk ʌp/",
+      "image": {
+        "type": "prompt",
+        "value": "Two strangers starting a conversation on a bus.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Arnold_Lakhovsky_Conversation.png/960px-Arnold_Lakhovsky_Conversation.png"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+preposition",
+      "senses": [
+        {
+          "definition_vi": "Bắt đầu một cuộc trò chuyện, mối quan hệ hoặc tình bạn.",
+          "examples": [
+            "She managed to strike up a conversation with the man next to her at the party."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường dùng để chỉ việc bắt đầu một cuộc nói chuyện hoặc mối quan hệ một cách tự nhiên, thân thiện."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Do you ever start chatting to strangers on long journeys?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "How do people make new friends after moving to a new city?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How do people build business relationships at conferences?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "strike up",
+          "text": "She managed to strike up a conversation at the party."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "strike up",
+          "source": "He started chatting with the woman sitting next to him on the train.",
+          "model": "He struck up a conversation with the woman sitting next to him on the train."
+        },
+        {
+          "target": "strike up",
+          "source": "At university, I began a friendship with a student from Japan.",
+          "model": "At university, I struck up a friendship with a student from Japan."
+        }
+      ]
+    },
+    "lull": {
+      "word": "lull",
+      "pronunciation": "/lʌl/",
+      "image": {
+        "type": "prompt",
+        "value": "A quiet moment during a lively event.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Beach_at_Fort_Lauderdale.jpg/960px-Beach_at_Fort_Lauderdale.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun",
+      "senses": [
+        {
+          "definition_vi": "Khoảng lặng, sự tạm lắng trong một hoạt động hoặc cuộc trò chuyện.",
+          "examples": [
+            "During a lull in the conversation, she whispered her secret."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Một khoảng thời gian yên tĩnh hoặc giảm hoạt động, thường là tạm thời."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "When is the quietest time of year in your job or studies?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Why do some businesses have quiet periods during the year?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "What do people do when there is an awkward silence in a conversation?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "lull",
+          "text": "There was a lull in the conversation after dinner."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "lull",
+          "source": "There was a quiet moment in the conversation, so she whispered her secret.",
+          "model": "During a lull in the conversation, she whispered her secret."
+        },
+        {
+          "target": "lull",
+          "source": "Shops usually have a quiet period in sales after the New Year.",
+          "model": "Shops usually have a lull in sales after the New Year."
+        }
+      ]
+    },
+    "whisper_softly": {
+      "word": "whisper softly",
+      "pronunciation": "/ˈwɪspər ˈsɒftli/",
+      "image": {
+        "type": "prompt",
+        "value": "A person speaking in a very quiet, gentle voice.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Human_right_ear_%28cropped%29.jpg/960px-Human_right_ear_%28cropped%29.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+adverb",
+      "senses": [
+        {
+          "definition_vi": "Thì thầm một cách nhẹ nhàng.",
+          "examples": [
+            "He leaned in to whisper softly in her ear."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Nói bằng giọng rất nhỏ và nhẹ nhàng, thường là để giữ bí mật hoặc nói điều gì đó riêng tư."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "How do parents calm their babies at night?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "How should people behave in places like libraries or temples?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How should visitors behave in a hospital ward at night?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "whisper softly",
+          "text": "She whispered softly so she would not wake the baby."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "whisper softly",
+          "source": "He leaned in and spoke very quietly in her ear.",
+          "model": "He leaned in to whisper softly in her ear."
+        },
+        {
+          "target": "whisper softly",
+          "source": "In the library, students talked in very low, gentle voices.",
+          "model": "In the library, students whispered softly."
+        }
+      ]
+    },
+    "speak": {
+      "word": "speak",
+      "pronunciation": "/spiːk/",
+      "image": {
+        "type": "prompt",
+        "value": "A person articulating words.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Lion_Showing_off_His_Mouth_%2821454262492%29.jpg/960px-Lion_Showing_off_His_Mouth_%2821454262492%29.jpg"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb",
+      "senses": [
+        {
+          "definition_vi": "Nói, phát biểu (thường là về ngôn ngữ hoặc khả năng giao tiếp).",
+          "examples": [
+            "She speaks three languages fluently."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Dùng để chỉ hành động sử dụng ngôn ngữ để giao tiếp hoặc khả năng nói một ngôn ngữ nào đó. Khác với 'talk' thường mang tính tương tác hai chiều hơn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How many languages should children learn at school?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Why are language skills important in the job market?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "How do you communicate when you travel to a foreign country?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "speak",
+          "text": "She can speak English and French very well."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "speak",
+          "source": "She can use three languages fluently.",
+          "model": "She speaks three languages fluently."
+        },
+        {
+          "target": "speak",
+          "source": "Being able to communicate in Chinese is a big advantage for job seekers.",
+          "model": "Being able to speak Chinese is a big advantage for job seekers."
+        }
+      ]
+    },
+    "talk": {
+      "word": "talk",
+      "pronunciation": "/tɔːk/",
+      "image": {
+        "type": "prompt",
+        "value": "Two people engaged in a conversation.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Arnold_Lakhovsky_Conversation.png/960px-Arnold_Lakhovsky_Conversation.png"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb",
+      "senses": [
+        {
+          "definition_vi": "Nói chuyện, trò chuyện (thường mang tính tương tác).",
+          "examples": [
+            "Let's talk about the plan later."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Dùng để chỉ hành động trao đổi thông tin, ý kiến giữa hai hoặc nhiều người. Thường dùng với giới từ 'to' hoặc 'with'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "What do you and your family usually discuss at dinner?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "How do you usually make friends with new people?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How do colleagues solve problems in your workplace?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "talk",
+          "text": "Let's talk about the plan after lunch."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "talk",
+          "source": "Let's discuss the plan later.",
+          "model": "Let's talk about the plan later."
+        },
+        {
+          "target": "talk",
+          "source": "My friends and I chat for hours on the phone.",
+          "model": "My friends and I talk for hours on the phone."
+        }
+      ]
+    }
+  }
+}

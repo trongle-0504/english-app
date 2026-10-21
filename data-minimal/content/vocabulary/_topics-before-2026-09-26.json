@@ -1,0 +1,381 @@
+{
+  "topics": [
+    {
+      "name": "IELTS-6",
+      "description_vi": "",
+      "sub_topics": [
+        {
+          "name": "Speaking",
+          "description_vi": "",
+          "words": [
+            "Compensation",
+            "Acquaintance",
+            "incentive",
+            "overlook"
+          ]
+        },
+        {
+          "name": "Listening",
+          "description_vi": "",
+          "words": [
+            "exchange"
+          ]
+        },
+        {
+          "name": "Writing",
+          "description_vi": "",
+          "words": [
+            "twilight",
+            "force",
+            "exploit",
+            "regardless"
+          ]
+        },
+        {
+          "name": "Reading",
+          "description_vi": "",
+          "words": [
+            "offensive",
+            "pessimistic",
+            "impaired",
+            "perceive",
+            "distinguish"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "IELTS-5",
+      "sub_topics": [
+        {
+          "name": "Work, Business & Organizations",
+          "words": [
+            "work one's way up",
+            "negotiate",
+            "commission",
+            "occupation",
+            "nominate",
+            "promotion",
+            "secretary",
+            "membership",
+            "commitment",
+            "manage",
+            "competitive",
+            "flat rate",
+            "proposal",
+            "effort",
+            "official",
+            "administer",
+            "contract",
+            "demand",
+            "discourage",
+            "slippery",
+            "alleviate",
+            "sustenance"
+          ]
+        },
+        {
+          "name": "Environment, Wildlife & Nature",
+          "words": [
+            "habitat",
+            "predator",
+            "prey on",
+            "adapt",
+            "reintroduce",
+            "rainfall",
+            "wreak havoc/mayhem/destruction",
+            "replenish",
+            "fume",
+            "spread",
+            "hazard"
+          ]
+        },
+        {
+          "name": "Travel, Leisure & Arts",
+          "words": [
+            "excursion",
+            "accommodation",
+            "trek",
+            "venue",
+            "premiere",
+            "exhibit",
+            "exhibition",
+            "orchestra",
+            "stunning",
+            "vibrant",
+            "cater",
+            "refurbish",
+            "interior",
+            "rent",
+            "explore",
+            "on sale",
+            "suitably",
+            "thrill",
+            "recipe",
+            "ingredient",
+            "garment"
+          ]
+        },
+        {
+          "name": "History, Culture & Society",
+          "words": [
+            "historic",
+            "empire",
+            "collapse",
+            "settler",
+            "revolution",
+            "dignitary",
+            "ceremony",
+            "anniversary",
+            "date back",
+            "pirate",
+            "setting",
+            "milestone",
+            "tradition",
+            "charity"
+          ]
+        },
+        {
+          "name": "Health, Science & Ethics",
+          "words": [
+            "epidemic",
+            "malaria",
+            "waterborne",
+            "sanitation",
+            "allergy",
+            "treatment",
+            "unethical",
+            "misuse",
+            "modification",
+            "controversial",
+            "vital",
+            "stimulate"
+          ]
+        },
+        {
+          "name": "Law, Regulation & Social Issues",
+          "words": [
+            "restriction",
+            "regulation",
+            "illegal",
+            "repeal",
+            "accuse",
+            "curb",
+            "forbid",
+            "permit",
+            "obey",
+            "disabled",
+            "parliament",
+            "aggression"
+          ]
+        },
+        {
+          "name": "Cognition & Thought",
+          "words": [
+            "realize",
+            "recognize",
+            "assume",
+            "presume",
+            "reckon",
+            "interpret",
+            "observe",
+            "concentrate",
+            "specialize",
+            "idealize",
+            "draw a blank",
+            "clue",
+            "find out"
+          ]
+        },
+        {
+          "name": "Actions & Processes",
+          "words": [
+            "develop",
+            "expand",
+            "build up",
+            "modernize",
+            "alter",
+            "work out",
+            "perform",
+            "arrange",
+            "compose",
+            "produce",
+            "gather",
+            "situate",
+            "locate",
+            "widen",
+            "embark",
+            "set out",
+            "pair up"
+          ]
+        },
+        {
+          "name": "Characteristics & Qualities",
+          "words": [
+            "precise",
+            "typical",
+            "remarkable",
+            "noticeable",
+            "definite",
+            "steady",
+            "shabby",
+            "ordinary",
+            "standard",
+            "suitable",
+            "practical",
+            "complicated",
+            "contemporary",
+            "familiar",
+            "frightening"
+          ]
+        },
+        {
+          "name": "Time & Frequency",
+          "words": [
+            "temporary",
+            "permanent",
+            "prolonged",
+            "lasting",
+            "occasional",
+            "rapidly",
+            "postpone"
+          ]
+        },
+        {
+          "name": "Quantity & Degree",
+          "words": [
+            "majority",
+            "sufficient",
+            "a great/good deal",
+            "overwhelmingly",
+            "potential",
+            "discount",
+            "absence",
+            "bounds"
+          ]
+        },
+        {
+          "name": "Communication & Social Interaction",
+          "words": [
+            "confess",
+            "enquire",
+            "appeal",
+            "feedback",
+            "encourage",
+            "donate",
+            "accompany",
+            "neighbour",
+            "neighbouring",
+            "belong",
+            "merchant"
+          ]
+        },
+        {
+          "name": "Impact & Influence",
+          "words": [
+            "impact",
+            "influence",
+            "factor",
+            "interfere with",
+            "wipe out",
+            "decline",
+            "bother",
+            "incident",
+            "breakage",
+            "circumstance"
+          ]
+        },
+        {
+          "name": "Academic Intent & Investigation",
+          "words": [
+            "intend",
+            "ambitious",
+            "opportunity",
+            "exploration",
+            "reveal",
+            "outline",
+            "prove",
+            "qualify",
+            "reserve",
+            "tailor",
+            "involved",
+            "involve",
+            "concerned",
+            "emphasis",
+            "stand out",
+            "reputation",
+            "confidence",
+            "novice"
+          ]
+        },
+        {
+          "name": "Common Vocabulary",
+          "words": [
+            "welfare",
+            "invent",
+            "budget",
+            "embark on",
+            "lively",
+            "buy up",
+            "go by",
+            "be open to the public",
+            "artwork",
+            "winding road",
+            "depressing",
+            "awareness",
+            "chore",
+            "controversial",
+            "drop out",
+            "privilege",
+            "dominate",
+            "aware",
+            "hesitant",
+            "severe",
+            "cognitive",
+            "bear",
+            "obtain",
+            "straightaway",
+            "perishables",
+            "stagnate",
+            "responsibility",
+            "fund",
+            "thrive",
+            "struggle",
+            "hinder",
+            "choice",
+            "affordable",
+            "malnutrition",
+            "poisoning",
+            "counterfeit",
+            "expense",
+            "circuit",
+            "threaten",
+            "Commission",
+            "Sufficient",
+            "portraiture",
+            "merchant"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reading",
+      "description_vi": "",
+      "sub_topics": [
+        {
+          "name": "Common",
+          "description_vi": "",
+          "words": [
+            "cultivated",
+            "staple crop",
+            "childbirth",
+            "encounter",
+            "suspicion, distaste and fear",
+            "dehydrate",
+            "ration"
+          ]
+        }
+      ]
+    }
+  ]
+}

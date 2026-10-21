@@ -1,0 +1,4632 @@
+{
+  "metadata": {
+    "lesson_id": "distance-and-size",
+    "topic": "Basic concepts",
+    "chapter_title": "Distance and size",
+    "pdf_file": "Distance and size.pdf"
+  },
+  "mindmap_data": {
+    "topic": "Basic concepts",
+    "chapter": {
+      "chapter_id": "ch_distance_size",
+      "title": "Distance and size",
+      "sessions": [
+        {
+          "session_id": "s_distance_size_a",
+          "title": "A Distance",
+          "description_vi": "Các cụm từ liên quan đến khoảng cách.",
+          "value": "# Distance and size\n\n## A Distance\n\n| collocation | example |\n| --- | --- |\n| a considerable/long/short distance from | The hotel is a **considerable distance** from the beach. *(quite a long way)* |\n| within commuting/walking distance | We have to live **within commuting distance** of my husband’s office. *(where it is possible to travel to work every day)* |\n| cover/travel *(a distance of)* > kilometres | On our cycling tour we managed to **cover (a distance of)** about 40 kilometres a day. |\n| far-off/far-flung places | Zachary is always travelling to **far-off/far-flung places**. *[distant]* |\n| at close range | I’ve never seen a member of the royal family **at such close range** before. *[so near]* |\n| neighbouring town/country/area | Many people who work here actually live in **neighbouring towns**. |",
+          "children_nodes": [
+            {
+              "node_id": "considerable_distance",
+              "label": "considerable distance"
+            },
+            {
+              "node_id": "long_distance",
+              "label": "long distance"
+            },
+            {
+              "node_id": "short_distance",
+              "label": "short distance"
+            },
+            {
+              "node_id": "within_commuting_distance",
+              "label": "within commuting distance"
+            },
+            {
+              "node_id": "within_walking_distance",
+              "label": "within walking distance"
+            },
+            {
+              "node_id": "cover_distance",
+              "label": "cover distance"
+            },
+            {
+              "node_id": "travel_distance",
+              "label": "travel distance"
+            },
+            {
+              "node_id": "far_off_places",
+              "label": "far-off places"
+            },
+            {
+              "node_id": "far_flung_places",
+              "label": "far-flung places"
+            },
+            {
+              "node_id": "at_close_range",
+              "label": "at close range"
+            },
+            {
+              "node_id": "neighbouring_town",
+              "label": "neighbouring town"
+            },
+            {
+              "node_id": "neighbouring_country",
+              "label": "neighbouring country"
+            },
+            {
+              "node_id": "neighbouring_area",
+              "label": "neighbouring area"
+            }
+          ]
+        },
+        {
+          "session_id": "s_distance_size_b",
+          "title": "B Little, small and large",
+          "description_vi": "Sự khác biệt giữa 'little', 'small' và 'large' trong các ngữ cảnh khác nhau.",
+          "value": "# Distance and size\n\n## B Little, small and large\n\nWe talk about **low prices, low wages, low levels**. *(NOT small)*\n\nWe say **small quantities, small numbers, small amounts, a small increase**. *(NOT little)*\n\nThe opposite is **large quantities, large numbers, large amounts, a large increase**.\n\nSimilarly, we talk about problems or objects being on **a large scale** or on **a small scale**:\n\nIf you are walking in the mountains you need a **large scale** map.\n\nThe UK has similar problems to the USA, but on a **smaller scale**.\n\nIn informal spoken English we often use **little** after another adjective to make it sound more friendly, e.g. **poor little Joe, dear little dog, nice little room**.\n\nLittle can also mean young, e.g. **little brother** *[informal: younger brother, NOT small brother; the opposite is big brother]*. Sometimes **little or small** suggests that something is not very important, e.g. **a little problem, I’ve got a lot of little things to do, to make someone look small, to make small talk** *[talk socially, about unimportant subjects]*.",
+          "children_nodes": [
+            {
+              "node_id": "low_prices",
+              "label": "low prices"
+            },
+            {
+              "node_id": "low_wages",
+              "label": "low wages"
+            },
+            {
+              "node_id": "low_levels",
+              "label": "low levels"
+            },
+            {
+              "node_id": "small_quantities",
+              "label": "small quantities"
+            },
+            {
+              "node_id": "small_numbers",
+              "label": "small numbers"
+            },
+            {
+              "node_id": "small_amounts",
+              "label": "small amounts"
+            },
+            {
+              "node_id": "small_increase",
+              "label": "small increase"
+            },
+            {
+              "node_id": "large_quantities",
+              "label": "large quantities"
+            },
+            {
+              "node_id": "large_numbers",
+              "label": "large numbers"
+            },
+            {
+              "node_id": "large_amounts",
+              "label": "large amounts"
+            },
+            {
+              "node_id": "large_increase",
+              "label": "large increase"
+            },
+            {
+              "node_id": "large_scale",
+              "label": "large scale"
+            },
+            {
+              "node_id": "small_scale",
+              "label": "small scale"
+            },
+            {
+              "node_id": "poor_little",
+              "label": "poor little"
+            },
+            {
+              "node_id": "dear_little",
+              "label": "dear little"
+            },
+            {
+              "node_id": "nice_little",
+              "label": "nice little"
+            },
+            {
+              "node_id": "little_brother",
+              "label": "little brother"
+            },
+            {
+              "node_id": "big_brother",
+              "label": "big brother"
+            },
+            {
+              "node_id": "little_problem",
+              "label": "little problem"
+            },
+            {
+              "node_id": "little_things",
+              "label": "little things"
+            },
+            {
+              "node_id": "make_someone_look_small",
+              "label": "make someone look small"
+            },
+            {
+              "node_id": "make_small_talk",
+              "label": "make small talk"
+            }
+          ]
+        },
+        {
+          "session_id": "s_distance_size_c",
+          "title": "C Other size collocations",
+          "description_vi": "Các cụm từ khác liên quan đến kích thước và quy mô.",
+          "value": "# Distance and size\n\n## C Other size collocations\n\nWe can talk about **fat books and slim books** as well as **fat people and slim people**. Only people *(not books)* can be **plump or skinny or painfully thin**.\n\nWe use **a great deal of** *(NOT large or big)* in contexts like this:\n\nShe should be able to help you because she has **a great deal of time / a great deal of money / a great deal of energy / a great deal of enthusiasm**.\n\n**Major and minor** often collocate with words relating to problems or points in an argument, e.g.\n\n**major/minor difference, major/minor change, major/minor effect, major/minor difficulty, major/minor point, major/minor issues, major/minor factor**.\n\n### Common mistakes\n\nTake care with the different collocations that go with **tall and high**. We talk about **tall people, tall trees, tall buildings**, but **high mountains, high prices, high interest rates, high heels, high tide, high jump**. Make a note of any collocations with **tall or high** as you notice them.",
+          "children_nodes": [
+            {
+              "node_id": "fat_books",
+              "label": "fat books"
+            },
+            {
+              "node_id": "slim_books",
+              "label": "slim books"
+            },
+            {
+              "node_id": "fat_people",
+              "label": "fat people"
+            },
+            {
+              "node_id": "slim_people",
+              "label": "slim people"
+            },
+            {
+              "node_id": "plump",
+              "label": "plump"
+            },
+            {
+              "node_id": "skinny",
+              "label": "skinny"
+            },
+            {
+              "node_id": "painfully_thin",
+              "label": "painfully thin"
+            },
+            {
+              "node_id": "a_great_deal_of_time",
+              "label": "a great deal of time"
+            },
+            {
+              "node_id": "a_great_deal_of_money",
+              "label": "a great deal of money"
+            },
+            {
+              "node_id": "a_great_deal_of_energy",
+              "label": "a great deal of energy"
+            },
+            {
+              "node_id": "a_great_deal_of_enthusiasm",
+              "label": "a great deal of enthusiasm"
+            },
+            {
+              "node_id": "major_difference",
+              "label": "major difference"
+            },
+            {
+              "node_id": "minor_difference",
+              "label": "minor difference"
+            },
+            {
+              "node_id": "major_change",
+              "label": "major change"
+            },
+            {
+              "node_id": "minor_change",
+              "label": "minor change"
+            },
+            {
+              "node_id": "major_effect",
+              "label": "major effect"
+            },
+            {
+              "node_id": "minor_effect",
+              "label": "minor effect"
+            },
+            {
+              "node_id": "major_difficulty",
+              "label": "major difficulty"
+            },
+            {
+              "node_id": "minor_difficulty",
+              "label": "minor difficulty"
+            },
+            {
+              "node_id": "major_point",
+              "label": "major point"
+            },
+            {
+              "node_id": "minor_point",
+              "label": "minor point"
+            },
+            {
+              "node_id": "major_issues",
+              "label": "major issues"
+            },
+            {
+              "node_id": "minor_issues",
+              "label": "minor issues"
+            },
+            {
+              "node_id": "major_factor",
+              "label": "major factor"
+            },
+            {
+              "node_id": "minor_factor",
+              "label": "minor factor"
+            },
+            {
+              "node_id": "tall_people",
+              "label": "tall people"
+            },
+            {
+              "node_id": "tall_trees",
+              "label": "tall trees"
+            },
+            {
+              "node_id": "tall_buildings",
+              "label": "tall buildings"
+            },
+            {
+              "node_id": "high_mountains",
+              "label": "high mountains"
+            },
+            {
+              "node_id": "high_prices",
+              "label": "high prices"
+            },
+            {
+              "node_id": "high_interest_rates",
+              "label": "high interest rates"
+            },
+            {
+              "node_id": "high_heels",
+              "label": "high heels"
+            },
+            {
+              "node_id": "high_tide",
+              "label": "high tide"
+            },
+            {
+              "node_id": "high_jump",
+              "label": "high jump"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "section_id": "A",
+      "session_ref": "s_distance_size_a",
+      "title": "A Distance",
+      "instruction_vi": "Học các cụm từ liên quan đến khoảng cách.",
+      "content_items": [
+        {
+          "type": "table",
+          "value": "| collocation | example |\n| --- | --- |\n| a considerable/long/short distance from | The hotel is a **considerable distance** from the beach. *(quite a long way)* |\n| within commuting/walking distance | We have to live **within commuting distance** of my husband’s office. *(where it is possible to travel to work every day)* |\n| cover/travel *(a distance of)* > kilometres | On our cycling tour we managed to **cover (a distance of)** about 40 kilometres a day. |\n| far-off/far-flung places | Zachary is always travelling to **far-off/far-flung places**. *[distant]* |\n| at close range | I’ve never seen a member of the royal family **at such close range** before. *[so near]* |\n| neighbouring town/country/area | Many people who work here actually live in **neighbouring towns**. |",
+          "related_vocabulary_ids": [
+            "considerable_distance",
+            "long_distance",
+            "short_distance",
+            "within_commuting_distance",
+            "within_walking_distance",
+            "cover_distance",
+            "travel_distance",
+            "far_off_places",
+            "far_flung_places",
+            "at_close_range",
+            "neighbouring_town",
+            "neighbouring_country",
+            "neighbouring_area"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "B",
+      "session_ref": "s_distance_size_b",
+      "title": "B Little, small and large",
+      "instruction_vi": "Phân biệt cách sử dụng 'little', 'small' và 'large' trong các ngữ cảnh khác nhau.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "We talk about **low prices, low wages, low levels**. *(NOT small)*\n\nWe say **small quantities, small numbers, small amounts, a small increase**. *(NOT little)*\n\nThe opposite is **large quantities, large numbers, large amounts, a large increase**.\n\nSimilarly, we talk about problems or objects being on **a large scale** or on **a small scale**:\n\nIf you are walking in the mountains you need a **large scale** map.\n\nThe UK has similar problems to the USA, but on a **smaller scale**.\n\nIn informal spoken English we often use **little** after another adjective to make it sound more friendly, e.g. **poor little Joe, dear little dog, nice little room**.\n\nLittle can also mean young, e.g. **little brother** *[informal: younger brother, NOT small brother; the opposite is big brother]*. Sometimes **little or small** suggests that something is not very important, e.g. **a little problem, I’ve got a lot of little things to do, to make someone look small, to make small talk** *[talk socially, about unimportant subjects]*.",
+          "related_vocabulary_ids": [
+            "low_prices",
+            "low_wages",
+            "low_levels",
+            "small_quantities",
+            "small_numbers",
+            "small_amounts",
+            "small_increase",
+            "large_quantities",
+            "large_numbers",
+            "large_amounts",
+            "large_increase",
+            "large_scale",
+            "small_scale",
+            "poor_little",
+            "dear_little",
+            "nice_little",
+            "little_brother",
+            "big_brother",
+            "little_problem",
+            "little_things",
+            "make_someone_look_small",
+            "make_small_talk"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "C",
+      "session_ref": "s_distance_size_c",
+      "title": "C Other size collocations",
+      "instruction_vi": "Học các cụm từ khác liên quan đến kích thước và quy mô, bao gồm cả những lỗi sai thường gặp.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "We can talk about **fat books and slim books** as well as **fat people and slim people**. Only people *(not books)* can be **plump or skinny or painfully thin**.\n\nWe use **a great deal of** *(NOT large or big)* in contexts like this:\n\nShe should be able to help you because she has **a great deal of time / a great deal of money / a great deal of energy / a great deal of enthusiasm**.\n\n**Major and minor** often collocate with words relating to problems or points in an argument, e.g.\n\n**major/minor difference, major/minor change, major/minor effect, major/minor difficulty, major/minor point, major/minor issues, major/minor factor**.\n\n### Common mistakes\n\nTake care with the different collocations that go with **tall and high**. We talk about **tall people, tall trees, tall buildings**, but **high mountains, high prices, high interest rates, high heels, high tide, high jump**. Make a note of any collocations with **tall or high** as you notice them.",
+          "related_vocabulary_ids": [
+            "fat_books",
+            "slim_books",
+            "fat_people",
+            "slim_people",
+            "plump",
+            "skinny",
+            "painfully_thin",
+            "a_great_deal_of_time",
+            "a_great_deal_of_money",
+            "a_great_deal_of_energy",
+            "a_great_deal_of_enthusiasm",
+            "major_difference",
+            "minor_difference",
+            "major_change",
+            "minor_change",
+            "major_effect",
+            "minor_effect",
+            "major_difficulty",
+            "minor_difficulty",
+            "major_point",
+            "minor_point",
+            "major_issues",
+            "minor_issues",
+            "major_factor",
+            "minor_factor",
+            "tall_people",
+            "tall_trees",
+            "tall_buildings",
+            "high_mountains",
+            "high_prices",
+            "high_interest_rates",
+            "high_heels",
+            "high_tide",
+            "high_jump"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary_data": {
+    "considerable_distance": {
+      "word": "considerable distance",
+      "pronunciation": "/kənˈsɪdərəbəl ˈdɪstəns/",
+      "image": {
+        "type": "prompt",
+        "value": "a long way",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Horizons.svg/960px-Horizons.svg.png"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một khoảng cách khá xa.",
+          "examples": [
+            "The hotel is a considerable distance from the beach."
+          ],
+          "grammar_patterns": [
+            "a considerable distance from [place]"
+          ],
+          "usage_notes_vi": "Diễn tả một khoảng cách dài, đáng kể."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "Should people be willing to travel far to get to work?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How far does food travel before it reaches supermarkets?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Is it a problem when students live far away from their school?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "considerable distance",
+          "text": "The hotel is a considerable distance from the beach."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "considerable distance",
+          "source": "Many students live quite far from their university.",
+          "model": "Many students live a considerable distance from their university."
+        },
+        {
+          "target": "considerable distance",
+          "source": "Most fruit in supermarkets travels a long way before it is sold.",
+          "model": "Most fruit in supermarkets travels a considerable distance before it is sold."
+        }
+      ]
+    },
+    "long_distance": {
+      "word": "long distance",
+      "pronunciation": "/ˌlɒŋ ˈdɪstəns/",
+      "image": {
+        "type": "prompt",
+        "value": "a long way",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Erlangen_Bundesautobahn_73_Auffahrt_Luftbild-20230422-RM-165734.jpg/960px-Erlangen_Bundesautobahn_73_Auffahrt_Luftbild-20230422-RM-165734.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một khoảng cách xa.",
+          "examples": [
+            "The hotel is a long distance from the beach."
+          ],
+          "grammar_patterns": [
+            "a long distance from [place]"
+          ],
+          "usage_notes_vi": "Tương tự 'considerable distance', diễn tả khoảng cách xa."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "Can relationships survive when couples live in different countries?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Do you prefer travelling by plane or by train for long journeys?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "Why do some people enjoy running marathons?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "long distance",
+          "text": "My father drives a long distance to work every day."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "long distance",
+          "source": "She travels very far every week to see her parents.",
+          "model": "She travels a long distance every week to see her parents."
+        },
+        {
+          "target": "long distance",
+          "source": "Many birds fly thousands of kilometres every winter.",
+          "model": "Many birds fly a long distance every winter."
+        }
+      ]
+    },
+    "short_distance": {
+      "word": "short distance",
+      "pronunciation": "/ˌʃɔːt ˈdɪstəns/",
+      "image": {
+        "type": "prompt",
+        "value": "a short way",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Nahulingo_footbridge.jpg/960px-Nahulingo_footbridge.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một khoảng cách gần.",
+          "examples": [
+            "The hotel is a short distance from the beach."
+          ],
+          "grammar_patterns": [
+            "a short distance from [place]"
+          ],
+          "usage_notes_vi": "Diễn tả một khoảng cách ngắn, gần."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Health",
+          "question": "Should people walk instead of driving for short trips?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "What makes a neighbourhood convenient to live in?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How can cities reduce car use for local journeys?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "short distance",
+          "text": "The shop is only a short distance from my house."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "short distance",
+          "source": "The station is not far from our hotel.",
+          "model": "The station is a short distance from our hotel."
+        },
+        {
+          "target": "short distance",
+          "source": "Many people drive even when they only need to go a little way.",
+          "model": "Many people drive even when they only need to travel a short distance."
+        }
+      ]
+    },
+    "within_commuting_distance": {
+      "word": "within commuting distance",
+      "pronunciation": "/wɪˈðɪn kəˈmjuːtɪŋ ˈdɪstəns/",
+      "image": {
+        "type": "prompt",
+        "value": "close enough to travel to work daily",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Peking_Radfahrer-20071021-RM-090349.jpg/960px-Peking_Radfahrer-20071021-RM-090349.jpg"
+      },
+      "part_of_speech": [
+        "prepositional phrase"
+      ],
+      "collocation_type": "preposition+adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Trong phạm vi có thể đi làm hàng ngày.",
+          "examples": [
+            "We have to live within commuting distance of my husband’s office."
+          ],
+          "grammar_patterns": [
+            "within commuting distance of [place]"
+          ],
+          "usage_notes_vi": "Chỉ khoảng cách mà một người có thể di chuyển đến nơi làm việc và trở về trong ngày."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "Should companies build offices in the countryside or in city centres?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Why do many people choose to live in small towns near big cities?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Should students live at home and travel to university every day?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "within commuting distance",
+          "text": "We bought a house within commuting distance of the city."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "within commuting distance",
+          "source": "We want to live close enough to travel to the city for work each day.",
+          "model": "We want to live within commuting distance of the city."
+        },
+        {
+          "target": "within commuting distance",
+          "source": "Many workers choose towns that are near enough to travel to the office daily.",
+          "model": "Many workers choose towns within commuting distance of the office."
+        }
+      ]
+    },
+    "within_walking_distance": {
+      "word": "within walking distance",
+      "pronunciation": "/wɪˈðɪn ˈwɔːkɪŋ ˈdɪstəns/",
+      "image": {
+        "type": "prompt",
+        "value": "close enough to walk to",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/%EB%AA%85%EB%8F%998%EA%B8%B8_%EA%B1%B0%EB%A6%AC_%282020.03%29.jpg/960px-%EB%AA%85%EB%8F%998%EA%B8%B8_%EA%B1%B0%EB%A6%AC_%282020.03%29.jpg"
+      },
+      "part_of_speech": [
+        "prepositional phrase"
+      ],
+      "collocation_type": "preposition+adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Trong phạm vi có thể đi bộ tới.",
+          "examples": [
+            "The hotel is within walking distance of the beach."
+          ],
+          "grammar_patterns": [
+            "within walking distance of [place]"
+          ],
+          "usage_notes_vi": "Chỉ khoảng cách gần, có thể đi bộ tới."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "What do you look for when choosing a place to live?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How can town planners encourage people to be more active?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "Is it important to have local shops near your home?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "within walking distance",
+          "text": "The school is within walking distance of our home."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "within walking distance",
+          "source": "The beach is close enough to go there on foot.",
+          "model": "The beach is within walking distance."
+        },
+        {
+          "target": "within walking distance",
+          "source": "Everything I need, like shops and a park, is near enough to reach on foot.",
+          "model": "Everything I need, like shops and a park, is within walking distance."
+        }
+      ]
+    },
+    "cover_distance": {
+      "word": "cover distance",
+      "pronunciation": "/ˈkʌvə ˈdɪstəns/",
+      "image": {
+        "type": "prompt",
+        "value": "travel a certain distance",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Hiking_to_the_Ice_Lakes._San_Juan_National_Forest%2C_Colorado.jpg/960px-Hiking_to_the_Ice_Lakes._San_Juan_National_Forest%2C_Colorado.jpg"
+      },
+      "part_of_speech": [
+        "verb",
+        "noun phrase"
+      ],
+      "collocation_type": "verb+noun phrase",
+      "senses": [
+        {
+          "definition_vi": "Di chuyển một khoảng cách nhất định.",
+          "examples": [
+            "On our cycling tour we managed to cover (a distance of) about 40 kilometres a day."
+          ],
+          "grammar_patterns": [
+            "cover (a distance of) [quantity]"
+          ],
+          "usage_notes_vi": "Thường dùng để nói về việc đi lại, di chuyển."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Sport",
+          "question": "How far do professional cyclists ride in a single day?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What are the advantages of touring by bike on holiday?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How have high-speed trains changed the way people travel?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "cover distance",
+          "text": "We covered a long distance on our bikes today."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "cover distance",
+          "source": "The runners travelled about forty kilometres in a single day.",
+          "model": "The runners covered a distance of about forty kilometres in a single day."
+        },
+        {
+          "target": "cover distance",
+          "source": "Modern trains can go a very long way in just a few hours.",
+          "model": "Modern trains can cover a great distance in just a few hours."
+        }
+      ]
+    },
+    "travel_distance": {
+      "word": "travel distance",
+      "pronunciation": "/ˈtrævəl ˈdɪstəns/",
+      "image": {
+        "type": "prompt",
+        "value": "travel a certain distance",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Erlangen_Bundesautobahn_73_Auffahrt_Luftbild-20230422-RM-165734.jpg/960px-Erlangen_Bundesautobahn_73_Auffahrt_Luftbild-20230422-RM-165734.jpg"
+      },
+      "part_of_speech": [
+        "verb",
+        "noun phrase"
+      ],
+      "collocation_type": "verb+noun phrase",
+      "senses": [
+        {
+          "definition_vi": "Di chuyển một khoảng cách nhất định.",
+          "examples": [
+            "On our cycling tour we managed to travel (a distance of) about 40 kilometres a day."
+          ],
+          "grammar_patterns": [
+            "travel (a distance of) [quantity]"
+          ],
+          "usage_notes_vi": "Tương tự 'cover distance', dùng để nói về việc đi lại, di chuyển."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How far are people willing to go to get to work every day?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How far does food usually go from farms to our plates?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How far should young children have to go to get to school?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "travel distance",
+          "text": "Some students travel a long distance to school."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "travel distance",
+          "source": "Many birds fly thousands of kilometres each year.",
+          "model": "Many birds travel a great distance each year."
+        },
+        {
+          "target": "travel distance",
+          "source": "Some workers go a long way to reach their office every day.",
+          "model": "Some workers travel a long distance to reach their office every day."
+        }
+      ]
+    },
+    "far_off_places": {
+      "word": "far-off places",
+      "pronunciation": "/ˌfɑːr ˈɒf ˈpleɪsɪz/",
+      "image": {
+        "type": "prompt",
+        "value": "distant locations",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Equal-Earth-Physical-No-Type_%28cropped%29.jpg/960px-Equal-Earth-Physical-No-Type_%28cropped%29.jpg"
+      },
+      "part_of_speech": [
+        "adjective phrase",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Những địa điểm ở xa.",
+          "examples": [
+            "Zachary is always travelling to far-off places."
+          ],
+          "grammar_patterns": [
+            "far-off places"
+          ],
+          "usage_notes_vi": "Diễn tả những nơi rất xa, hẻo lánh."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Why do people enjoy reading about distant countries?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "How has television changed what people know about the world?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Why is it useful for children to learn about other countries?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "far-off places",
+          "text": "As a child, I dreamed of visiting far-off places."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "far-off places",
+          "source": "She loves travelling to countries that are very far away.",
+          "model": "She loves travelling to far-off places."
+        },
+        {
+          "target": "far-off places",
+          "source": "Television allows us to see distant parts of the world.",
+          "model": "Television allows us to see far-off places."
+        }
+      ]
+    },
+    "far_flung_places": {
+      "word": "far-flung places",
+      "pronunciation": "/ˌfɑːr ˈflʌŋ ˈpleɪsɪz/",
+      "image": {
+        "type": "prompt",
+        "value": "distant and remote locations",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Hawaje-NoRedLine.jpg/960px-Hawaje-NoRedLine.jpg"
+      },
+      "part_of_speech": [
+        "adjective phrase",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Những địa điểm ở xa và hẻo lánh.",
+          "examples": [
+            "Zachary is always travelling to far-flung places."
+          ],
+          "grammar_patterns": [
+            "far-flung places"
+          ],
+          "usage_notes_vi": "Tương tự 'far-off places', nhấn mạnh sự xa xôi và hẻo lánh."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Why do some travellers prefer remote destinations to popular tourist cities?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Is it difficult to find doctors willing to work in remote areas?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How has the internet helped people who live in remote areas?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "far-flung places",
+          "text": "Cheap flights let us visit far-flung places."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "far-flung places",
+          "source": "He has worked in many remote corners of the world.",
+          "model": "He has worked in many far-flung places."
+        },
+        {
+          "target": "far-flung places",
+          "source": "The charity sends doctors to distant and isolated areas.",
+          "model": "The charity sends doctors to far-flung places."
+        }
+      ]
+    },
+    "at_close_range": {
+      "word": "at close range",
+      "pronunciation": "/æt ˌkloʊs ˈreɪndʒ/",
+      "image": {
+        "type": "prompt",
+        "value": "very near",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/M1917_ladder_sight_Bruce_Canfield.jpg/960px-M1917_ladder_sight_Bruce_Canfield.jpg"
+      },
+      "part_of_speech": [
+        "prepositional phrase"
+      ],
+      "collocation_type": "preposition+adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Ở cự ly gần.",
+          "examples": [
+            "I’ve never seen a member of the royal family at such close range before."
+          ],
+          "grammar_patterns": [
+            "at close range"
+          ],
+          "usage_notes_vi": "Diễn tả việc ở rất gần một đối tượng nào đó."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "Is it good for tourists to watch wild animals from very near on safari?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "How do people feel when they see a famous person in real life?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "Why do fans pay more for seats right next to the pitch?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "at close range",
+          "text": "I saw a lion at close range on safari."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "at close range",
+          "source": "The photographer took pictures of the bears from very near.",
+          "model": "The photographer took pictures of the bears at close range."
+        },
+        {
+          "target": "at close range",
+          "source": "Fans in the front row could see the players from just a few metres away.",
+          "model": "Fans in the front row could see the players at close range."
+        }
+      ]
+    },
+    "neighbouring_town": {
+      "word": "neighbouring town",
+      "pronunciation": "/ˈneɪbərɪŋ taʊn/",
+      "image": {
+        "type": "prompt",
+        "value": "a nearby town",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/1_Aerial_pano_san_gimignano_%282%29a.jpg/960px-1_Aerial_pano_san_gimignano_%282%29a.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Thị trấn lân cận.",
+          "examples": [
+            "Many people who work here actually live in neighbouring towns."
+          ],
+          "grammar_patterns": [
+            "neighbouring [place]"
+          ],
+          "usage_notes_vi": "Chỉ một thị trấn nằm gần hoặc kế bên."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Shopping",
+          "question": "Do people in small towns have to travel elsewhere to go shopping?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Is it common for people in your area to work in another town nearby?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Should every village have its own secondary school?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "neighbouring town",
+          "text": "My cousin works in a neighbouring town."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "neighbouring town",
+          "source": "Many villagers go shopping in the town next to theirs.",
+          "model": "Many villagers go shopping in the neighbouring town."
+        },
+        {
+          "target": "neighbouring town",
+          "source": "The nearest hospital is in the next town.",
+          "model": "The nearest hospital is in a neighbouring town."
+        }
+      ]
+    },
+    "neighbouring_country": {
+      "word": "neighbouring country",
+      "pronunciation": "/ˈneɪbərɪŋ ˈkʌntri/",
+      "image": {
+        "type": "prompt",
+        "value": "a nearby country",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Panmunjeom_DMZ.png/960px-Panmunjeom_DMZ.png"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Quốc gia lân cận.",
+          "examples": [
+            "The two neighbouring countries share a long border."
+          ],
+          "grammar_patterns": [
+            "neighbouring [place]"
+          ],
+          "usage_notes_vi": "Chỉ một quốc gia nằm gần hoặc kế bên."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Where do people from your country often go for short holidays?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Why is trade with nearby nations important?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Why do many workers move across the border for jobs?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "neighbouring country",
+          "text": "We often take holidays in a neighbouring country."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "neighbouring country",
+          "source": "Many people cross the border to work in the country next to theirs.",
+          "model": "Many people cross the border to work in a neighbouring country."
+        },
+        {
+          "target": "neighbouring country",
+          "source": "Our main trading partner is the nation right next to us.",
+          "model": "Our main trading partner is a neighbouring country."
+        }
+      ]
+    },
+    "neighbouring_area": {
+      "word": "neighbouring area",
+      "pronunciation": "/ˈneɪbərɪŋ ˈeəriə/",
+      "image": {
+        "type": "prompt",
+        "value": "a nearby area",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Hempstead%2C_Manhasset%2C_and_Little_Neck_bays.jpg/960px-Hempstead%2C_Manhasset%2C_and_Little_Neck_bays.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Khu vực lân cận.",
+          "examples": [
+            "There are several good schools in the neighbouring area."
+          ],
+          "grammar_patterns": [
+            "neighbouring [place]"
+          ],
+          "usage_notes_vi": "Chỉ một khu vực nằm gần hoặc kế bên."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "How can pollution from a factory affect places nearby?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "What happens to house prices when a new metro station opens?",
+          "fits": []
+        },
+        {
+          "context": "Crime",
+          "question": "Does sending more police to one district simply push crime elsewhere?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "neighbouring area",
+          "text": "The fire spread quickly to the neighbouring area."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "neighbouring area",
+          "source": "Smoke from the factory affects the districts nearby.",
+          "model": "Smoke from the factory affects the neighbouring area."
+        },
+        {
+          "target": "neighbouring area",
+          "source": "Many families moved to the district next door because it was cheaper.",
+          "model": "Many families moved to the neighbouring area because it was cheaper."
+        }
+      ]
+    },
+    "low_prices": {
+      "word": "low prices",
+      "pronunciation": "/ˌloʊ ˈpraɪsɪz/",
+      "image": {
+        "type": "prompt",
+        "value": "cheap prices",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Economics_of_climate_change_chapter3_discounting_curves.png/960px-Economics_of_climate_change_chapter3_discounting_curves.png"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Giá cả thấp.",
+          "examples": [
+            "The store is known for its low prices."
+          ],
+          "grammar_patterns": [
+            "low [prices/wages/levels]"
+          ],
+          "usage_notes_vi": "Dùng 'low' thay vì 'small' khi nói về giá cả, lương bổng, mức độ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Shopping",
+          "question": "Why do people like shopping at large supermarkets?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Why have budget airlines become so popular?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "What are the disadvantages of cheap clothing for society?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "low prices",
+          "text": "This market is famous for its low prices."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "low prices",
+          "source": "People shop online because things are cheap.",
+          "model": "People shop online because of the low prices."
+        },
+        {
+          "target": "low prices",
+          "source": "Budget airlines attract customers by charging very little for tickets.",
+          "model": "Budget airlines attract customers with low prices."
+        }
+      ]
+    },
+    "low_wages": {
+      "word": "low wages",
+      "pronunciation": "/loʊ ˈweɪdʒɪz/",
+      "image": {
+        "type": "prompt",
+        "value": "small amount of money paid for work",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Sweatshop-1890.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Lương thấp.",
+          "examples": [
+            "Many workers in this industry earn low wages."
+          ],
+          "grammar_patterns": [
+            "low [prices/wages/levels]"
+          ],
+          "usage_notes_vi": "Dùng 'low' thay vì 'small' khi nói về lương bổng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "Why do many young people leave jobs in restaurants and hotels?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Why do some companies move their factories to developing countries?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Why are there not enough teachers in many countries?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "low wages",
+          "text": "Many workers leave because of the low wages."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "low wages",
+          "source": "Nurses are not paid much, so many leave the profession.",
+          "model": "Nurses receive low wages, so many leave the profession."
+        },
+        {
+          "target": "low wages",
+          "source": "Factory workers earn very little money for long hours.",
+          "model": "Factory workers earn low wages for long hours."
+        }
+      ]
+    },
+    "low_levels": {
+      "word": "low levels",
+      "pronunciation": "/ˌloʊ ˈlɛvl̩z/",
+      "image": {
+        "type": "prompt",
+        "value": "small amount or degree",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Mức độ thấp.",
+          "examples": [
+            "The report showed low levels of pollution in the area."
+          ],
+          "grammar_patterns": [
+            "low [prices/wages/levels]"
+          ],
+          "usage_notes_vi": "Dùng 'low' thay vì 'small' khi nói về mức độ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "Is the air quality good in your city?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Why do some people feel tired all the time?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Why do some students show little interest in reading?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "low levels",
+          "text": "The report found low levels of pollution in the river."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "low levels",
+          "source": "There was very little pollution in the countryside.",
+          "model": "There were low levels of pollution in the countryside."
+        },
+        {
+          "target": "low levels",
+          "source": "Many teenagers do not get much exercise.",
+          "model": "Many teenagers have low levels of physical activity."
+        }
+      ]
+    },
+    "small_quantities": {
+      "word": "small quantities",
+      "pronunciation": "/smɔːl ˈkwɒntɪtiz/",
+      "image": {
+        "type": "prompt",
+        "value": "a limited amount",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Dhaniyangal.jpg/960px-Dhaniyangal.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Số lượng nhỏ.",
+          "examples": [
+            "We only need small quantities of these ingredients."
+          ],
+          "grammar_patterns": [
+            "small [quantities/numbers/amounts]"
+          ],
+          "usage_notes_vi": "Dùng 'small' khi nói về số lượng, số đếm, khối lượng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Health",
+          "question": "Is it okay to eat sweets and chocolate occasionally?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How can households reduce food waste?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "Why do some people prefer local markets to supermarkets?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "small quantities",
+          "text": "Sugar is fine if you eat it in small quantities."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "small quantities",
+          "source": "Coffee is not harmful if you only drink a little.",
+          "model": "Coffee is not harmful in small quantities."
+        },
+        {
+          "target": "small quantities",
+          "source": "Buy only a little fresh food at a time so it does not go to waste.",
+          "model": "Buy fresh food in small quantities so it does not go to waste."
+        }
+      ]
+    },
+    "small_numbers": {
+      "word": "small numbers",
+      "pronunciation": "/smɔːl ˈnʌmbərz/",
+      "image": {
+        "type": "prompt",
+        "value": "a limited count",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Strike_symbol_%2849778996432%29.jpg/960px-Strike_symbol_%2849778996432%29.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Số lượng nhỏ (đếm được).",
+          "examples": [
+            "Only small numbers of people attended the event."
+          ],
+          "grammar_patterns": [
+            "small [quantities/numbers/amounts]"
+          ],
+          "usage_notes_vi": "Dùng 'small' khi nói về số lượng, số đếm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "Are some wild animals in danger of disappearing?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Should famous sites limit how many visitors enter each day?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Are smaller classes better for students?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "small numbers",
+          "text": "These birds are found only in small numbers."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "small numbers",
+          "source": "Only a few tourists are allowed into the cave each day.",
+          "model": "Tourists are allowed into the cave only in small numbers."
+        },
+        {
+          "target": "small numbers",
+          "source": "Not many students choose to study physics at university.",
+          "model": "Only small numbers of students choose to study physics at university."
+        }
+      ]
+    },
+    "small_amounts": {
+      "word": "small amounts",
+      "pronunciation": "/smɔːl əˈmaʊnts/",
+      "image": {
+        "type": "prompt",
+        "value": "a limited quantity",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Dhaniyangal.jpg/960px-Dhaniyangal.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Khối lượng nhỏ.",
+          "examples": [
+            "Please add only small amounts of salt to the dish."
+          ],
+          "grammar_patterns": [
+            "small [quantities/numbers/amounts]"
+          ],
+          "usage_notes_vi": "Dùng 'small' khi nói về khối lượng, số lượng (không đếm được hoặc đếm được)."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Money",
+          "question": "How can young people start saving for the future?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Is drinking coffee bad for your health?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "Should children be allowed to eat sweets?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "small amounts",
+          "text": "Try to save small amounts of money every week."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "small amounts",
+          "source": "Even a little exercise every day can improve your health.",
+          "model": "Even small amounts of exercise every day can improve your health."
+        },
+        {
+          "target": "small amounts",
+          "source": "She puts a little money into her savings account each month.",
+          "model": "She puts small amounts of money into her savings account each month."
+        }
+      ]
+    },
+    "small_increase": {
+      "word": "small increase",
+      "pronunciation": "/smɔːl ɪnˈkriːs/",
+      "image": {
+        "type": "prompt",
+        "value": "a slight rise",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự gia tăng nhỏ.",
+          "examples": [
+            "There was a small increase in sales this quarter."
+          ],
+          "grammar_patterns": [
+            "a small [increase/decrease]"
+          ],
+          "usage_notes_vi": "Dùng 'small' để chỉ mức độ tăng hoặc giảm không đáng kể."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "How have prices changed in your country recently?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Do workers feel satisfied when their salary rises only slightly?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Are more people exercising nowadays than in the past?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "small increase",
+          "text": "There has been a small increase in the price of bread."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "small increase",
+          "source": "The number of tourists rose slightly last year.",
+          "model": "There was a small increase in the number of tourists last year."
+        },
+        {
+          "target": "small increase",
+          "source": "Workers received a slightly higher salary this year.",
+          "model": "Workers received a small increase in salary this year."
+        }
+      ]
+    },
+    "large_quantities": {
+      "word": "large quantities",
+      "pronunciation": "/lɑːrdʒ ˈkwɒntɪtiz/",
+      "image": {
+        "type": "prompt",
+        "value": "a big amount",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Hyundai_car_assembly_line.jpg/960px-Hyundai_car_assembly_line.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Số lượng lớn.",
+          "examples": [
+            "The factory produces large quantities of goods."
+          ],
+          "grammar_patterns": [
+            "large [quantities/numbers/amounts]"
+          ],
+          "usage_notes_vi": "Đối lập với 'small quantities', chỉ số lượng lớn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "What problems are caused by plastic packaging?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "Why is drinking a lot of sugary drinks harmful?",
+          "fits": []
+        },
+        {
+          "context": "Business",
+          "question": "Why can supermarkets sell products more cheaply than small shops?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "large quantities",
+          "text": "Restaurants buy vegetables in large quantities."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "large quantities",
+          "source": "Factories produce a huge volume of waste every day.",
+          "model": "Factories produce large quantities of waste every day."
+        },
+        {
+          "target": "large quantities",
+          "source": "Supermarkets buy a lot of goods at once so they pay less.",
+          "model": "Supermarkets buy goods in large quantities so they pay less."
+        }
+      ]
+    },
+    "large_numbers": {
+      "word": "large numbers",
+      "pronunciation": "/lɑːrdʒ ˈnʌmbərz/",
+      "image": {
+        "type": "prompt",
+        "value": "a big count",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Crowd_in_street.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Số lượng lớn (đếm được).",
+          "examples": [
+            "A large number of students participated in the competition."
+          ],
+          "grammar_patterns": [
+            "large [quantities/numbers/amounts]"
+          ],
+          "usage_notes_vi": "Đối lập với 'small numbers', chỉ số lượng lớn (đếm được)."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "How does tourism affect small historic towns?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Why are universities in big cities so crowded?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Why are so many young people leaving rural areas?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "large numbers",
+          "text": "Large numbers of tourists visit the city every summer."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "large numbers",
+          "source": "Many people attended the concert in the park.",
+          "model": "Large numbers of people attended the concert in the park."
+        },
+        {
+          "target": "large numbers",
+          "source": "A lot of students now study online.",
+          "model": "Large numbers of students now study online."
+        }
+      ]
+    },
+    "large_amounts": {
+      "word": "large amounts",
+      "pronunciation": "/lɑːrdʒ əˈmaʊnts/",
+      "image": {
+        "type": "prompt",
+        "value": "a big quantity",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Khối lượng lớn.",
+          "examples": [
+            "The project requires large amounts of funding."
+          ],
+          "grammar_patterns": [
+            "large [quantities/numbers/amounts]"
+          ],
+          "usage_notes_vi": "Đối lập với 'small amounts', chỉ khối lượng lớn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Money",
+          "question": "Why do some people spend so much on weddings?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "What are the effects of using too much water in farming?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How do technology companies use personal data?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "large amounts",
+          "text": "Farms use large amounts of water every day."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "large amounts",
+          "source": "Tech companies collect a lot of personal data.",
+          "model": "Tech companies collect large amounts of personal data."
+        },
+        {
+          "target": "large amounts",
+          "source": "Governments spend a lot of money on defence.",
+          "model": "Governments spend large amounts of money on defence."
+        }
+      ]
+    },
+    "large_increase": {
+      "word": "large increase",
+      "pronunciation": "/lɑːrdʒ ɪnˈkriːs/",
+      "image": {
+        "type": "prompt",
+        "value": "a significant rise",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Historic_world_GDP_per_capita.svg/960px-Historic_world_GDP_per_capita.svg.png"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự gia tăng lớn.",
+          "examples": [
+            "There was a large increase in the cost of living."
+          ],
+          "grammar_patterns": [
+            "a large [increase/decrease]"
+          ],
+          "usage_notes_vi": "Dùng 'large' để chỉ mức độ tăng hoặc giảm đáng kể."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "How have house prices changed in big cities over the last decade?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How has car use changed in your country?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How has the number of people working from home changed recently?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "large increase",
+          "text": "There has been a large increase in online shopping."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "large increase",
+          "source": "The number of cars on the road has risen sharply.",
+          "model": "There has been a large increase in the number of cars on the road."
+        },
+        {
+          "target": "large increase",
+          "source": "House prices have gone up a lot in recent years.",
+          "model": "There has been a large increase in house prices in recent years."
+        }
+      ]
+    },
+    "large_scale": {
+      "word": "large scale",
+      "pronunciation": "/lɑːrdʒ skeɪl/",
+      "image": {
+        "type": "prompt",
+        "value": "extensive",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/3/39/Ma%C3%9Fstabsleiste.png"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Quy mô lớn.",
+          "examples": [
+            "If you are walking in the mountains you need a large scale map."
+          ],
+          "grammar_patterns": [
+            "on a large scale",
+            "large-scale [noun]"
+          ],
+          "usage_notes_vi": "Diễn tả quy mô lớn, phạm vi rộng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Food",
+          "question": "How has farming changed in your country over the last fifty years?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "What can be done to stop the destruction of rainforests?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "What are the advantages of producing goods in huge factories?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "large scale",
+          "text": "The company produces furniture on a large scale."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "large scale",
+          "source": "The government is planting millions of trees across the whole country.",
+          "model": "The government is planting trees on a large scale across the country."
+        },
+        {
+          "target": "large scale",
+          "source": "Huge areas of forest are cut down every year.",
+          "model": "Forests are cut down on a large scale every year."
+        }
+      ]
+    },
+    "small_scale": {
+      "word": "small scale",
+      "pronunciation": "/ˌsmɔːl ˈskeɪl/",
+      "image": {
+        "type": "prompt",
+        "value": "limited in scope",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Miniature_Railway.JPG/960px-Miniature_Railway.JPG"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Quy mô nhỏ.",
+          "examples": [
+            "The UK has similar problems to the USA, but on a smaller scale."
+          ],
+          "grammar_patterns": [
+            "on a small scale",
+            "small-scale [noun]"
+          ],
+          "usage_notes_vi": "Diễn tả quy mô nhỏ, phạm vi hẹp."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Food",
+          "question": "Are local family farms better than big industrial farms?",
+          "fits": []
+        },
+        {
+          "context": "Business",
+          "question": "What are the benefits of running a small local business?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Can community projects really help the environment?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "small scale",
+          "text": "My uncle grows vegetables on a small scale."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "small scale",
+          "source": "They make cheese in limited amounts on their family farm.",
+          "model": "They make cheese on a small scale on their family farm."
+        },
+        {
+          "target": "small scale",
+          "source": "The new teaching method was first tested in only a few schools.",
+          "model": "The new teaching method was first tested on a small scale."
+        }
+      ]
+    },
+    "poor_little": {
+      "word": "poor little",
+      "pronunciation": "/ˌpʊə ˈlɪtəl/",
+      "image": {
+        "type": "prompt",
+        "value": "expressing sympathy or affection for something small",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adjective+adjective",
+      "senses": [
+        {
+          "definition_vi": "Thương thay, bé nhỏ (thường dùng để thể hiện sự trìu mến hoặc thương hại).",
+          "examples": [
+            "Oh, the poor little dog is lost!"
+          ],
+          "grammar_patterns": [
+            "poor little [noun]"
+          ],
+          "usage_notes_vi": "Cách dùng thân mật, thường đi sau một tính từ khác để làm cho lời nói nghe thân thiện hơn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "How do young children react when their pet gets lost?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How do you feel when you see animals harmed by plastic pollution?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How do parents feel when their baby is ill?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "poor little",
+          "text": "The poor little dog was cold and hungry."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "poor little",
+          "source": "The small kitten was shaking with fear, and I felt sorry for it.",
+          "model": "The poor little kitten was shaking with fear."
+        },
+        {
+          "target": "poor little",
+          "source": "I felt sorry for the small boy who lost his toy.",
+          "model": "The poor little boy lost his toy."
+        }
+      ]
+    },
+    "dear_little": {
+      "word": "dear little",
+      "pronunciation": "/ˌdɪə ˈlɪtəl/",
+      "image": {
+        "type": "prompt",
+        "value": "expressing affection for something small",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/The_newborn_baby_in_men.jpg/960px-The_newborn_baby_in_men.jpg"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adjective+adjective",
+      "senses": [
+        {
+          "definition_vi": "Thân yêu, bé nhỏ (thường dùng để thể hiện sự trìu mến).",
+          "examples": [
+            "What a dear little baby!"
+          ],
+          "grammar_patterns": [
+            "dear little [noun]"
+          ],
+          "usage_notes_vi": "Cách dùng thân mật, thường đi sau một tính từ khác để làm cho lời nói nghe thân thiện hơn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "How do grandparents usually describe their grandchildren?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "What kind of house would you like to live in when you retire?",
+          "fits": []
+        },
+        {
+          "context": "Pets",
+          "question": "Why do people love keeping small pets like rabbits?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "dear little",
+          "text": "What a dear little baby she is!"
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "dear little",
+          "source": "Their new puppy is small and very sweet.",
+          "model": "Their new puppy is a dear little thing."
+        },
+        {
+          "target": "dear little",
+          "source": "My grandmother lives in a small, lovely cottage in the village.",
+          "model": "My grandmother lives in a dear little cottage in the village."
+        }
+      ]
+    },
+    "nice_little": {
+      "word": "nice little",
+      "pronunciation": "/ˌnaɪs ˈlɪtl̩/",
+      "image": {
+        "type": "prompt",
+        "value": "pleasant and small",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/1/12/Country_cottage%2C_Inch_Island_-_geograph.org.uk_-_3951065_%28cropped%29.jpg"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adjective+adjective",
+      "senses": [
+        {
+          "definition_vi": "Nhỏ nhắn và dễ chịu.",
+          "examples": [
+            "They live in a nice little cottage by the sea."
+          ],
+          "grammar_patterns": [
+            "nice little [noun]"
+          ],
+          "usage_notes_vi": "Cách dùng thân mật, thường đi sau một tính từ khác để làm cho lời nói nghe thân thiện hơn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "What kind of home would you like to own one day?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "Where do you like to eat when you go out with friends?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What kind of place do you like to stay in on holiday?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "nice little",
+          "text": "We found a nice little café near the river."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "nice little",
+          "source": "They live in a small, pleasant cottage by the sea.",
+          "model": "They live in a nice little cottage by the sea."
+        },
+        {
+          "target": "nice little",
+          "source": "We stayed in a small but lovely hotel in the old town.",
+          "model": "We stayed in a nice little hotel in the old town."
+        }
+      ]
+    },
+    "little_brother": {
+      "word": "little brother",
+      "pronunciation": "/ˌlɪtəl ˈbrʌðər/",
+      "image": {
+        "type": "prompt",
+        "value": "younger brother",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Me_and_my_other_brother.jpg/960px-Me_and_my_other_brother.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Em trai.",
+          "examples": [
+            "My little brother is only five years old."
+          ],
+          "grammar_patterns": [
+            "little brother"
+          ],
+          "usage_notes_vi": "Trong ngữ cảnh này, 'little' có nghĩa là 'nhỏ hơn về tuổi', không phải 'bé nhỏ về kích thước'. Đối lập với 'big brother'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "Do you have any siblings, and do you get on well with them?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Did you ever help a younger family member with homework?",
+          "fits": []
+        },
+        {
+          "context": "Childhood",
+          "question": "Who did you play with most when you were a child?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "little brother",
+          "text": "My little brother loves playing football after school."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "little brother",
+          "source": "My younger brother is starting school next year.",
+          "model": "My little brother is starting school next year."
+        },
+        {
+          "target": "little brother",
+          "source": "She often looks after her brother, who is five years younger.",
+          "model": "She often looks after her little brother."
+        }
+      ]
+    },
+    "big_brother": {
+      "word": "big brother",
+      "pronunciation": "/ˌbɪɡ ˈbrʌðər/",
+      "image": {
+        "type": "prompt",
+        "value": "older brother",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Me_and_my_other_brother.jpg/960px-Me_and_my_other_brother.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Anh trai.",
+          "examples": [
+            "My big brother always looks after me."
+          ],
+          "grammar_patterns": [
+            "big brother"
+          ],
+          "usage_notes_vi": "Đối lập với 'little brother', chỉ anh trai."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "Who in your family gave you the best advice when you were growing up?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Who helped you most with your studies as a child?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "Who taught you to play your favourite sport?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "big brother",
+          "text": "My big brother taught me how to swim."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "big brother",
+          "source": "My older brother always protected me at school.",
+          "model": "My big brother always protected me at school."
+        },
+        {
+          "target": "big brother",
+          "source": "She borrows clothes from her brother, who is three years older.",
+          "model": "She borrows clothes from her big brother."
+        }
+      ]
+    },
+    "little_problem": {
+      "word": "little problem",
+      "pronunciation": "/ˈlɪtl̩ ˈprɒbləm/",
+      "image": {
+        "type": "prompt",
+        "value": "a minor issue",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Red_Ant_-_March_2025.jpg/960px-Red_Ant_-_March_2025.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Vấn đề nhỏ, không quan trọng.",
+          "examples": [
+            "Don't worry, it's just a little problem."
+          ],
+          "grammar_patterns": [
+            "a little [problem/thing]"
+          ],
+          "usage_notes_vi": "Đôi khi 'little' hoặc 'small' có thể ám chỉ điều gì đó không quan trọng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "What do you do when your computer stops working properly?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What kinds of things often go wrong on holiday?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Should employees tell their manager about every small issue at work?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "little problem",
+          "text": "Don't worry, it is just a little problem."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "little problem",
+          "source": "There is a small issue with the heating, but it is easy to fix.",
+          "model": "There is a little problem with the heating, but it is easy to fix."
+        },
+        {
+          "target": "little problem",
+          "source": "We had a minor difficulty with our booking at the hotel.",
+          "model": "We had a little problem with our booking at the hotel."
+        }
+      ]
+    },
+    "little_things": {
+      "word": "little things",
+      "pronunciation": "/ˈlɪtəl θɪŋz/",
+      "image": {
+        "type": "prompt",
+        "value": "minor tasks or items",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Pebble_Dash_%2815366562092%29.jpg/960px-Pebble_Dash_%2815366562092%29.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Những việc nhỏ nhặt, không quan trọng.",
+          "examples": [
+            "I’ve got a lot of little things to do today."
+          ],
+          "grammar_patterns": [
+            "little things"
+          ],
+          "usage_notes_vi": "Đôi khi 'little' hoặc 'small' có thể ám chỉ điều gì đó không quan trọng hoặc chỉ là những việc vụn vặt."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Relationships",
+          "question": "What makes a friendship last a long time?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "What makes people happy in everyday life?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How can managers make employees feel valued?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "little things",
+          "text": "It is the little things that make people happy."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "little things",
+          "source": "Small acts like saying thank you can make a big difference.",
+          "model": "Little things like saying thank you can make a big difference."
+        },
+        {
+          "target": "little things",
+          "source": "He gets angry about very unimportant matters.",
+          "model": "He gets angry about little things."
+        }
+      ]
+    },
+    "make_someone_look_small": {
+      "word": "make someone look small",
+      "pronunciation": "/meɪk ˈsʌmwʌn lʊk smɔːl/",
+      "image": {
+        "type": "prompt",
+        "value": "to make someone feel unimportant or embarrassed",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bullying_synonyms.png/960px-Bullying_synonyms.png"
+      },
+      "part_of_speech": [
+        "verb phrase",
+        "noun phrase"
+      ],
+      "collocation_type": "verb+pronoun+verb+adjective",
+      "senses": [
+        {
+          "definition_vi": "Làm cho ai đó cảm thấy nhỏ bé, không quan trọng hoặc bối rối.",
+          "examples": [
+            "His criticism was intended to make her look small."
+          ],
+          "grammar_patterns": [
+            "make [someone] look small"
+          ],
+          "usage_notes_vi": "Diễn tả hành động làm giảm giá trị hoặc sự tự tin của người khác."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How should managers give criticism without embarrassing staff in front of others?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Why is it wrong for teachers to criticise students in front of the class?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "Why should parents avoid criticising children in front of their friends?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "make someone look small",
+          "text": "He tried to make me look small in the meeting."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "make someone look small",
+          "source": "The manager criticised her in front of everyone to embarrass her.",
+          "model": "The manager criticised her in front of everyone to make her look small."
+        },
+        {
+          "target": "make someone look small",
+          "source": "Good teachers never embarrass students by laughing at their mistakes.",
+          "model": "Good teachers never make students look small by laughing at their mistakes."
+        }
+      ]
+    },
+    "make_small_talk": {
+      "word": "make small talk",
+      "pronunciation": "/meɪk ˈsmɔːl ˌtɔːk/",
+      "image": {
+        "type": "prompt",
+        "value": "engage in light, polite conversation",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Communication.gif"
+      },
+      "part_of_speech": [
+        "verb phrase",
+        "noun phrase"
+      ],
+      "collocation_type": "verb+adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Nói chuyện xã giao, về những chủ đề không quan trọng.",
+          "examples": [
+            "It's difficult to make small talk with strangers."
+          ],
+          "grammar_patterns": [
+            "make small talk"
+          ],
+          "usage_notes_vi": "Chỉ những cuộc trò chuyện nhẹ nhàng, thường lệ, không đi sâu vào vấn đề cá nhân hay nghiêm túc."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How do people usually start conversations at business events?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "What do people in your country talk about with strangers?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "How do you start a conversation with someone on a long train journey?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "make small talk",
+          "text": "I find it hard to make small talk at parties."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "make small talk",
+          "source": "At work events, I chat about the weather with people I do not know.",
+          "model": "At work events, I make small talk about the weather with strangers."
+        },
+        {
+          "target": "make small talk",
+          "source": "Taxi drivers often have polite, light conversations with their passengers.",
+          "model": "Taxi drivers often make small talk with their passengers."
+        }
+      ]
+    },
+    "fat_books": {
+      "word": "fat books",
+      "pronunciation": "/ˈfæt ˈbʊks/",
+      "image": {
+        "type": "prompt",
+        "value": "books with many pages",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Devil_codex_Gigas.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Sách dày.",
+          "examples": [
+            "He is reading a fat book about history."
+          ],
+          "grammar_patterns": [
+            "fat [book]"
+          ],
+          "usage_notes_vi": "Dùng 'fat' để chỉ sách có nhiều trang, dày."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Culture",
+          "question": "Are young people today less willing to read long novels?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Why do students prefer online materials to heavy textbooks?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "Have e-readers replaced printed books for travellers?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "fat books",
+          "text": "She always carries fat books in her bag."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "fat books",
+          "source": "He enjoys reading very thick novels.",
+          "model": "He enjoys reading fat books."
+        },
+        {
+          "target": "fat books",
+          "source": "Students used to carry heavy, thick textbooks to school.",
+          "model": "Students used to carry fat books to school."
+        }
+      ]
+    },
+    "slim_books": {
+      "word": "slim books",
+      "pronunciation": "/slɪm bʊks/",
+      "image": {
+        "type": "prompt",
+        "value": "books with few pages",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Relieur_JPG01.jpg/960px-Relieur_JPG01.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Sách mỏng.",
+          "examples": [
+            "She prefers reading slim books."
+          ],
+          "grammar_patterns": [
+            "slim [book]"
+          ],
+          "usage_notes_vi": "Dùng 'slim' để chỉ sách có ít trang, mỏng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "What kind of books should children start reading with?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What do you like to read on a short flight?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "Are short books becoming more popular than long novels?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "slim books",
+          "text": "I prefer slim books that I can finish quickly."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "slim books",
+          "source": "Poetry often comes in thin volumes.",
+          "model": "Poetry often comes in slim books."
+        },
+        {
+          "target": "slim books",
+          "source": "Beginners should start with short, thin books.",
+          "model": "Beginners should start with slim books."
+        }
+      ]
+    },
+    "fat_people": {
+      "word": "fat people",
+      "pronunciation": "/ˈfæt ˈpiːpl̩/",
+      "image": {
+        "type": "prompt",
+        "value": "people who are overweight",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/7/73/FatCT2008_%28cropped%29.JPG"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Người béo.",
+          "examples": [
+            "The doctor advised the fat people to lose weight."
+          ],
+          "grammar_patterns": [
+            "fat [person/people]"
+          ],
+          "usage_notes_vi": "Dùng 'fat' để chỉ người có thân hình mập mạp. Tuy nhiên, từ này có thể bị coi là thô lỗ, nên thường dùng các từ khác như 'overweight', 'plump'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Health",
+          "question": "Why are more people overweight today than in the past?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "How does the media portray overweight people?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Do overweight people face discrimination at work?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "fat people",
+          "text": "The film was criticised for making fun of fat people."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "fat people",
+          "source": "Overweight people are often treated unfairly in job interviews.",
+          "model": "Fat people are often treated unfairly in job interviews."
+        },
+        {
+          "target": "fat people",
+          "source": "Many TV shows laugh at people who are very heavy.",
+          "model": "Many TV shows laugh at fat people."
+        }
+      ]
+    },
+    "slim_people": {
+      "word": "slim people",
+      "pronunciation": "/slɪm ˈpiːpl̩/",
+      "image": {
+        "type": "prompt",
+        "value": "people who are thin in an attractive way",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Human.svg/960px-Human.svg.png"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Người mảnh mai.",
+          "examples": [
+            "She admired the slim people walking on the beach."
+          ],
+          "grammar_patterns": [
+            "slim [person/people]"
+          ],
+          "usage_notes_vi": "Dùng 'slim' để chỉ người có thân hình mảnh mai, thường mang nghĩa tích cực."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "Do fashion magazines only show very thin models?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Are thin people always healthier than others?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "Do clothes shops cater mainly for thin customers?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "slim people",
+          "text": "Slim people are not always the healthiest."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "slim people",
+          "source": "Advertisements mostly show thin, attractive people.",
+          "model": "Advertisements mostly show slim, attractive people."
+        },
+        {
+          "target": "slim people",
+          "source": "Clothes in many shops only fit people with thin bodies.",
+          "model": "Clothes in many shops only fit slim people."
+        }
+      ]
+    },
+    "plump": {
+      "word": "plump",
+      "pronunciation": "/plʌmp/",
+      "image": {
+        "type": "prompt",
+        "value": "pleasantly rounded in shape",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Sectator_azureus.jpg"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adjective",
+      "senses": [
+        {
+          "definition_vi": "Mũm mĩm, đầy đặn (thường dùng để chỉ người hoặc vật một cách dễ chịu).",
+          "examples": [
+            "She has a plump, rosy face."
+          ],
+          "grammar_patterns": [
+            "plump [person/figure]"
+          ],
+          "usage_notes_vi": "Là một cách nói nhẹ nhàng hơn 'fat', thường ám chỉ sự đầy đặn dễ thương."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "How would you describe your grandparents' appearance?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "What does a healthy baby usually look like?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "How do you choose good fresh fruit at the market?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "plump",
+          "text": "The baby has plump, rosy cheeks."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "plump",
+          "source": "My grandmother is a little round and soft.",
+          "model": "My grandmother is a little plump."
+        },
+        {
+          "target": "plump",
+          "source": "Choose cherries that are firm, round and full of juice.",
+          "model": "Choose cherries that are firm and plump."
+        }
+      ]
+    },
+    "skinny": {
+      "word": "skinny",
+      "pronunciation": "/ˈskɪni/",
+      "image": {
+        "type": "prompt",
+        "value": "very thin, often unattractively so",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Gull_-_Anorexia_Miss_A.jpg"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adjective",
+      "senses": [
+        {
+          "definition_vi": "Gầy trơ xương, rất gầy (thường mang nghĩa tiêu cực).",
+          "examples": [
+            "He was so skinny after being ill."
+          ],
+          "grammar_patterns": [
+            "skinny [person/arms/legs]"
+          ],
+          "usage_notes_vi": "Diễn tả sự gầy gò, thiếu sức sống. Khác với 'slim' thường mang nghĩa tích cực."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "Should fashion brands stop using extremely thin models?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Why do some teenagers worry so much about their weight?",
+          "fits": []
+        },
+        {
+          "context": "Childhood",
+          "question": "What did you look like as a child?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "skinny",
+          "text": "He was a skinny boy with long legs."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "skinny",
+          "source": "Many models are extremely thin.",
+          "model": "Many models are skinny."
+        },
+        {
+          "target": "skinny",
+          "source": "When I was a teenager, I was very thin and bony.",
+          "model": "When I was a teenager, I was skinny."
+        }
+      ]
+    },
+    "painfully_thin": {
+      "word": "painfully thin",
+      "pronunciation": "/ˈpeɪnfəli θɪn/",
+      "image": {
+        "type": "prompt",
+        "value": "extremely thin, to an uncomfortable degree",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Gull_-_Anorexia_Miss_A.jpg"
+      },
+      "part_of_speech": [
+        "adverb",
+        "adjective"
+      ],
+      "collocation_type": "adverb+adjective",
+      "senses": [
+        {
+          "definition_vi": "Gầy một cách đau đớn, cực kỳ gầy.",
+          "examples": [
+            "The famine left the survivors painfully thin."
+          ],
+          "grammar_patterns": [
+            "painfully thin"
+          ],
+          "usage_notes_vi": "Nhấn mạnh mức độ gầy gò đến mức đáng lo ngại hoặc không khỏe mạnh."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Health",
+          "question": "What are the dangers of extreme diets?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Do fashion magazines put pressure on young women to lose weight?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "What effects does poverty have on children in poor countries?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "painfully thin",
+          "text": "After her illness, she looked painfully thin."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "painfully thin",
+          "source": "Some models are so thin that it is worrying.",
+          "model": "Some models are painfully thin."
+        },
+        {
+          "target": "painfully thin",
+          "source": "The stray dog was extremely thin and weak.",
+          "model": "The stray dog was painfully thin and weak."
+        }
+      ]
+    },
+    "a_great_deal_of_time": {
+      "word": "a great deal of time",
+      "pronunciation": "/ə ˈɡreɪt ˌdiːl əv ˈtaɪm/",
+      "image": {
+        "type": "prompt",
+        "value": "a large amount of time",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/4/45/MontreGousset001.jpg"
+      },
+      "part_of_speech": [
+        "determiner phrase",
+        "noun"
+      ],
+      "collocation_type": "determiner phrase+noun",
+      "senses": [
+        {
+          "definition_vi": "Rất nhiều thời gian.",
+          "examples": [
+            "She should be able to help you because she has a great deal of time."
+          ],
+          "grammar_patterns": [
+            "a great deal of [uncountable noun]"
+          ],
+          "usage_notes_vi": "Dùng 'a great deal of' thay vì 'large' hoặc 'big' khi đi với danh từ không đếm được."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "How much time do teenagers spend on social media?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What does it take to learn a foreign language well?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "Why do grandparents play a big role in raising children today?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "a great deal of time",
+          "text": "Learning a language takes a great deal of time."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "a great deal of time",
+          "source": "Teenagers spend many hours on their phones every day.",
+          "model": "Teenagers spend a great deal of time on their phones every day."
+        },
+        {
+          "target": "a great deal of time",
+          "source": "Writing a good essay takes a lot of time.",
+          "model": "Writing a good essay takes a great deal of time."
+        }
+      ]
+    },
+    "a_great_deal_of_money": {
+      "word": "a great deal of money",
+      "pronunciation": "/ə ˈɡreɪt ˌdiːl əv ˈmʌni/",
+      "image": {
+        "type": "prompt",
+        "value": "a large amount of money",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Euro_coins_and_banknotes_%28cropped%29.jpg/960px-Euro_coins_and_banknotes_%28cropped%29.jpg"
+      },
+      "part_of_speech": [
+        "determiner phrase",
+        "noun"
+      ],
+      "collocation_type": "determiner phrase+noun",
+      "senses": [
+        {
+          "definition_vi": "Rất nhiều tiền.",
+          "examples": [
+            "She should be able to help you because she has a great deal of money."
+          ],
+          "grammar_patterns": [
+            "a great deal of [uncountable noun]"
+          ],
+          "usage_notes_vi": "Dùng 'a great deal of' thay vì 'large' hoặc 'big' khi đi với danh từ không đếm được."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "Should governments spend more on space exploration?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "Are top footballers paid too much?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Is a university education worth the cost?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "a great deal of money",
+          "text": "They spent a great deal of money on their wedding."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "a great deal of money",
+          "source": "Footballers earn huge amounts of money.",
+          "model": "Footballers earn a great deal of money."
+        },
+        {
+          "target": "a great deal of money",
+          "source": "Going to university costs a lot nowadays.",
+          "model": "Going to university costs a great deal of money nowadays."
+        }
+      ]
+    },
+    "a_great_deal_of_energy": {
+      "word": "a great deal of energy",
+      "pronunciation": "/ə ˌɡreɪt ˈdiːl əv ˈenərdʒi/",
+      "image": {
+        "type": "prompt",
+        "value": "a large amount of energy",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/NesjavellirPowerPlant_edit2.jpg/960px-NesjavellirPowerPlant_edit2.jpg"
+      },
+      "part_of_speech": [
+        "determiner phrase",
+        "noun"
+      ],
+      "collocation_type": "determiner phrase+noun",
+      "senses": [
+        {
+          "definition_vi": "Rất nhiều năng lượng.",
+          "examples": [
+            "She should be able to help you because she has a great deal of energy."
+          ],
+          "grammar_patterns": [
+            "a great deal of [uncountable noun]"
+          ],
+          "usage_notes_vi": "Dùng 'a great deal of' thay vì 'large' hoặc 'big' khi đi với danh từ không đếm được."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Sport",
+          "question": "What qualities do professional athletes need?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "Why is raising young children so tiring?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Why are air conditioners bad for the environment?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "a great deal of energy",
+          "text": "Looking after small children takes a great deal of energy."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "a great deal of energy",
+          "source": "Air conditioners use a lot of electricity.",
+          "model": "Air conditioners use a great deal of energy."
+        },
+        {
+          "target": "a great deal of energy",
+          "source": "Running a marathon requires a lot of strength and effort.",
+          "model": "Running a marathon requires a great deal of energy."
+        }
+      ]
+    },
+    "a_great_deal_of_enthusiasm": {
+      "word": "a great deal of enthusiasm",
+      "pronunciation": "/ə ˌɡreɪt ˈdiːl əv ɪnˈθjuːziæzəm/",
+      "image": {
+        "type": "prompt",
+        "value": "a large amount of enthusiasm",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/%D0%A3%D1%80%D0%B0%21.ogv/500px--%D0%A3%D1%80%D0%B0%21.ogv.jpg"
+      },
+      "part_of_speech": [
+        "determiner phrase",
+        "noun"
+      ],
+      "collocation_type": "determiner phrase+noun",
+      "senses": [
+        {
+          "definition_vi": "Rất nhiều sự nhiệt tình.",
+          "examples": [
+            "She should be able to help you because she has a great deal of enthusiasm."
+          ],
+          "grammar_patterns": [
+            "a great deal of [uncountable noun]"
+          ],
+          "usage_notes_vi": "Dùng 'a great deal of' thay vì 'large' hoặc 'big' khi đi với danh từ không đếm được."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "What makes a teacher inspiring?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What do employers look for in young job applicants?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "How do fans support their national team during the World Cup?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "a great deal of enthusiasm",
+          "text": "She started her new job with a great deal of enthusiasm."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "a great deal of enthusiasm",
+          "source": "The students reacted very eagerly to the new project.",
+          "model": "The students reacted to the new project with a great deal of enthusiasm."
+        },
+        {
+          "target": "a great deal of enthusiasm",
+          "source": "The fans were extremely excited when the team arrived.",
+          "model": "The fans greeted the team with a great deal of enthusiasm."
+        }
+      ]
+    },
+    "major_difference": {
+      "word": "major difference",
+      "pronunciation": "/ˈmeɪdʒər ˈdɪfrəns/",
+      "image": {
+        "type": "prompt",
+        "value": "a significant difference",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/1/15/NorthAmerica-WaterDivides.png"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự khác biệt lớn, quan trọng.",
+          "examples": [
+            "There is a major difference between their opinions."
+          ],
+          "grammar_patterns": [
+            "major/minor [difference/change/effect/difficulty/point/issue/factor]"
+          ],
+          "usage_notes_vi": "Dùng 'major' để chỉ sự khác biệt quan trọng, đáng kể."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How is studying at university different from studying at school?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How has the smartphone changed people's daily lives?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "How is life in the countryside different from life in the city?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "major difference",
+          "text": "There is a major difference between the two plans."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "major difference",
+          "source": "Life in the city is very different from life in the countryside.",
+          "model": "There is a major difference between life in the city and life in the countryside."
+        },
+        {
+          "target": "major difference",
+          "source": "Wearing a helmet greatly changes how safe cyclists are.",
+          "model": "Wearing a helmet makes a major difference to cyclists' safety."
+        }
+      ]
+    },
+    "minor_difference": {
+      "word": "minor difference",
+      "pronunciation": "/ˈmaɪnər ˈdɪfrəns/",
+      "image": {
+        "type": "prompt",
+        "value": "a small difference",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Shades_of_Gray.svg/960px-Shades_of_Gray.svg.png"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự khác biệt nhỏ, không quan trọng.",
+          "examples": [
+            "There is only a minor difference between the two versions."
+          ],
+          "grammar_patterns": [
+            "major/minor [difference/change/effect/difficulty/point/issue/factor]"
+          ],
+          "usage_notes_vi": "Dùng 'minor' để chỉ sự khác biệt không đáng kể."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Shopping",
+          "question": "Are expensive brands really better than cheaper ones?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Are online courses very different from classroom courses?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "Is British English very different from American English?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "minor difference",
+          "text": "There is only a minor difference between the two phones."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "minor difference",
+          "source": "The two versions are almost the same, apart from the colour.",
+          "model": "There is only a minor difference between the two versions: the colour."
+        },
+        {
+          "target": "minor difference",
+          "source": "British and American spelling are only slightly different.",
+          "model": "There are only minor differences between British and American spelling."
+        }
+      ]
+    },
+    "major_change": {
+      "word": "major change",
+      "pronunciation": "/ˈmeɪdʒər tʃeɪndʒ/",
+      "image": {
+        "type": "prompt",
+        "value": "a significant change",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Powerloom_weaving_in_1835.jpg/960px-Powerloom_weaving_in_1835.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự thay đổi lớn, quan trọng.",
+          "examples": [
+            "The company announced a major change in its strategy."
+          ],
+          "grammar_patterns": [
+            "major/minor [difference/change/effect/difficulty/point/issue/factor]"
+          ],
+          "usage_notes_vi": "Dùng 'major' để chỉ sự thay đổi quan trọng, có ảnh hưởng lớn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How has working from home affected office life?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How has the internet changed the way people shop?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "How have family roles changed over the last fifty years?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "major change",
+          "text": "Moving abroad was a major change in my life."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "major change",
+          "source": "Having a baby changes your life completely.",
+          "model": "Having a baby is a major change in your life."
+        },
+        {
+          "target": "major change",
+          "source": "The internet has completely transformed the way we shop.",
+          "model": "The internet has brought a major change in the way we shop."
+        }
+      ]
+    },
+    "minor_change": {
+      "word": "minor change",
+      "pronunciation": "/ˈmaɪnər tʃeɪndʒ/",
+      "image": {
+        "type": "prompt",
+        "value": "a small change",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Reserveknapper_til_Hans%27_uniform.jpg/960px-Reserveknapper_til_Hans%27_uniform.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự thay đổi nhỏ, không đáng kể.",
+          "examples": [
+            "We made a minor change to the design."
+          ],
+          "grammar_patterns": [
+            "major/minor [difference/change/effect/difficulty/point/issue/factor]"
+          ],
+          "usage_notes_vi": "Dùng 'minor' để chỉ sự thay đổi không đáng kể."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "Should companies ask staff before adjusting small office rules?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Can small adjustments to your diet improve your health?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Can small daily habits help protect the environment?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "minor change",
+          "text": "We made a minor change to the plan."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "minor change",
+          "source": "The teacher altered my essay slightly.",
+          "model": "The teacher made a minor change to my essay."
+        },
+        {
+          "target": "minor change",
+          "source": "Adjusting your diet slightly can improve your health.",
+          "model": "A minor change in your diet can improve your health."
+        }
+      ]
+    },
+    "major_effect": {
+      "word": "major effect",
+      "pronunciation": "/ˈmeɪdʒər ɪˈfɛkt/",
+      "image": {
+        "type": "prompt",
+        "value": "a significant impact",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Double_pendulum_simultaneous_realisations.ogv/960px--Double_pendulum_simultaneous_realisations.ogv.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Ảnh hưởng lớn, quan trọng.",
+          "examples": [
+            "The new law will have a major effect on the economy."
+          ],
+          "grammar_patterns": [
+            "major/minor [difference/change/effect/difficulty/point/issue/factor]"
+          ],
+          "usage_notes_vi": "Dùng 'major' để chỉ ảnh hưởng quan trọng, có tác động lớn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Health",
+          "question": "How does social media affect young people's mental health?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "What impact does tourism have on the environment?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How important are parents in a child's education?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "major effect",
+          "text": "Stress can have a major effect on your health."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "major effect",
+          "source": "Social media strongly influences young people.",
+          "model": "Social media has a major effect on young people."
+        },
+        {
+          "target": "major effect",
+          "source": "Tourism greatly affects the local environment.",
+          "model": "Tourism has a major effect on the local environment."
+        }
+      ]
+    },
+    "minor_effect": {
+      "word": "minor effect",
+      "pronunciation": "/ˈmaɪnər ɪˈfɛkt/",
+      "image": {
+        "type": "prompt",
+        "value": "a small impact",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/9/93/Ripple_effect.png"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Ảnh hưởng nhỏ, không đáng kể.",
+          "examples": [
+            "The side effects of the medication are usually minor."
+          ],
+          "grammar_patterns": [
+            "major/minor [difference/change/effect/difficulty/point/issue/factor]"
+          ],
+          "usage_notes_vi": "Dùng 'minor' để chỉ ảnh hưởng không đáng kể."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "Can one person's recycling really help the planet?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Does drinking one cup of coffee a day affect your health?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Do small tax changes influence how people spend money?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "minor effect",
+          "text": "The rain had only a minor effect on the match."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "minor effect",
+          "source": "The new law only slightly changed people's behaviour.",
+          "model": "The new law had only a minor effect on people's behaviour."
+        },
+        {
+          "target": "minor effect",
+          "source": "One cup of coffee a day hardly affects your health.",
+          "model": "One cup of coffee a day has only a minor effect on your health."
+        }
+      ]
+    },
+    "major_difficulty": {
+      "word": "major difficulty",
+      "pronunciation": "/ˌmeɪdʒər ˈdɪfɪkəlti/",
+      "image": {
+        "type": "prompt",
+        "value": "a significant problem",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Ferguson-slide.jpg/960px-Ferguson-slide.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Khó khăn lớn, quan trọng.",
+          "examples": [
+            "The main major difficulty was funding."
+          ],
+          "grammar_patterns": [
+            "major/minor [difference/change/effect/difficulty/point/issue/factor]"
+          ],
+          "usage_notes_vi": "Dùng 'major' để chỉ khó khăn lớn, cản trở đáng kể."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "What problems do international students face when studying abroad?",
+          "fits": []
+        },
+        {
+          "context": "Business",
+          "question": "What is the biggest challenge for people starting a new business?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "What problems do elderly people face in getting medical care?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "major difficulty",
+          "text": "Finding a cheap flat is a major difficulty for students."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "major difficulty",
+          "source": "The biggest problem for new students is the language.",
+          "model": "The language is a major difficulty for new students."
+        },
+        {
+          "target": "major difficulty",
+          "source": "Many older people find it very hard to use online banking.",
+          "model": "Online banking is a major difficulty for many older people."
+        }
+      ]
+    },
+    "minor_difficulty": {
+      "word": "minor difficulty",
+      "pronunciation": "/ˌmaɪnər ˈdɪfɪkʌlti/",
+      "image": {
+        "type": "prompt",
+        "value": "a small problem",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Pebble_Dash_%2815366562092%29.jpg/960px-Pebble_Dash_%2815366562092%29.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Khó khăn nhỏ, không đáng kể.",
+          "examples": [
+            "We encountered only minor difficulties during the trip."
+          ],
+          "grammar_patterns": [
+            "major/minor [difference/change/effect/difficulty/point/issue/factor]"
+          ],
+          "usage_notes_vi": "Dùng 'minor' để chỉ khó khăn nhỏ, dễ dàng vượt qua."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What small problems do travellers often face abroad?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "Do older people find it hard to use smartphones?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Is it important to report small problems to your manager?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "minor difficulty",
+          "text": "We had a minor difficulty with our tickets."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "minor difficulty",
+          "source": "There was a small problem with the hotel booking, but it was soon fixed.",
+          "model": "There was a minor difficulty with the hotel booking, but it was soon fixed."
+        },
+        {
+          "target": "minor difficulty",
+          "source": "Apart from a small issue with parking, the trip went well.",
+          "model": "Apart from a minor difficulty with parking, the trip went well."
+        }
+      ]
+    },
+    "major_point": {
+      "word": "major point",
+      "pronunciation": "/ˈmeɪdʒər pɔɪnt/",
+      "image": {
+        "type": "prompt",
+        "value": "a main argument or idea",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Điểm chính, ý chính quan trọng.",
+          "examples": [
+            "The major point of his argument was that we need more funding."
+          ],
+          "grammar_patterns": [
+            "major/minor [difference/change/effect/difficulty/point/issue/factor]"
+          ],
+          "usage_notes_vi": "Dùng 'major' để chỉ điểm cốt lõi, quan trọng nhất trong một lập luận hoặc vấn đề."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How should students write a good essay conclusion?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "How can journalists make news reports easy to understand?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What makes a business presentation effective?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "major point",
+          "text": "The speaker made three major points in her talk."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "major point",
+          "source": "The most important idea in the report is that pollution is rising.",
+          "model": "The major point of the report is that pollution is rising."
+        },
+        {
+          "target": "major point",
+          "source": "Summarise the main ideas at the end of your essay.",
+          "model": "Summarise the major points at the end of your essay."
+        }
+      ]
+    },
+    "minor_point": {
+      "word": "minor point",
+      "pronunciation": "/ˈmaɪnər pɔɪnt/",
+      "image": {
+        "type": "prompt",
+        "value": "a secondary or unimportant point",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/3/36/A_Study_in_Scarlet_Friston_01.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Điểm phụ, ý không quan trọng.",
+          "examples": [
+            "Let's focus on the major issues and leave the minor points for later."
+          ],
+          "grammar_patterns": [
+            "major/minor [difference/change/effect/difficulty/point/issue/factor]"
+          ],
+          "usage_notes_vi": "Dùng 'minor' để chỉ điểm ít quan trọng, thứ yếu."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "Should teachers correct every small mistake in students' essays?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Should meetings focus only on the main issues?",
+          "fits": []
+        },
+        {
+          "context": "Relationships",
+          "question": "Why do couples sometimes argue about unimportant things?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "minor point",
+          "text": "That is only a minor point, so let us move on."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "minor point",
+          "source": "The spelling mistake is not very important.",
+          "model": "The spelling mistake is only a minor point."
+        },
+        {
+          "target": "minor point",
+          "source": "They argued about small details instead of the main plan.",
+          "model": "They argued about minor points instead of the main plan."
+        }
+      ]
+    },
+    "major_issues": {
+      "word": "major issues",
+      "pronunciation": "/ˈmeɪdʒər ˈɪʃuːz/",
+      "image": {
+        "type": "prompt",
+        "value": "significant problems or topics",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Crossing_the_Hudson_River_on_the_George_Washington_Bridge_from_Fort_Lee%2C_New_Jersey_to_Manhattan%2C_New_York_%287237796950%29.jpg/960px-Crossing_the_Hudson_River_on_the_George_Washington_Bridge_from_Fort_Lee%2C_New_Jersey_to_Manhattan%2C_New_York_%287237796950%29.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Các vấn đề lớn, quan trọng.",
+          "examples": [
+            "We need to address the major issues facing the company."
+          ],
+          "grammar_patterns": [
+            "major/minor [difference/change/effect/difficulty/point/issue/factor]"
+          ],
+          "usage_notes_vi": "Dùng 'major' để chỉ các vấn đề quan trọng, cần được ưu tiên giải quyết."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "What are the biggest environmental problems in your country?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "What are the main problems facing big cities today?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "What are the main health problems among young people?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "major issues",
+          "text": "Traffic and pollution are major issues in big cities."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "major issues",
+          "source": "Unemployment and crime are serious problems in the area.",
+          "model": "Unemployment and crime are major issues in the area."
+        },
+        {
+          "target": "major issues",
+          "source": "Climate change is one of the most important problems today.",
+          "model": "Climate change is one of the major issues today."
+        }
+      ]
+    },
+    "minor_issues": {
+      "word": "minor issues",
+      "pronunciation": "/ˈmaɪnər ˈɪʃuːz/",
+      "image": {
+        "type": "prompt",
+        "value": "small or unimportant problems",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Các vấn đề nhỏ, không quan trọng.",
+          "examples": [
+            "Let's deal with the major issues first and then tackle the minor issues."
+          ],
+          "grammar_patterns": [
+            "major/minor [difference/change/effect/difficulty/point/issue/factor]"
+          ],
+          "usage_notes_vi": "Dùng 'minor' để chỉ các vấn đề ít quan trọng, có thể giải quyết sau."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "Do new apps usually work perfectly when they are first released?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "What should you check before renting a flat?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Should managers deal with small problems themselves?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "minor issues",
+          "text": "There are a few minor issues with the new app."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "minor issues",
+          "source": "The new building has some small problems, like a broken door.",
+          "model": "The new building has some minor issues, like a broken door."
+        },
+        {
+          "target": "minor issues",
+          "source": "Apart from a few small problems, the event was a success.",
+          "model": "Apart from a few minor issues, the event was a success."
+        }
+      ]
+    },
+    "major_factor": {
+      "word": "major factor",
+      "pronunciation": "/ˈmeɪdʒər ˈfæktər/",
+      "image": {
+        "type": "prompt",
+        "value": "a significant element",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Palanca-ejemplo.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Yếu tố chính, quan trọng.",
+          "examples": [
+            "Price is a major factor in consumer choice."
+          ],
+          "grammar_patterns": [
+            "major/minor [difference/change/effect/difficulty/point/issue/factor]"
+          ],
+          "usage_notes_vi": "Dùng 'major' để chỉ yếu tố có ảnh hưởng lớn, quyết định."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Health",
+          "question": "Why are more people becoming overweight?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What helps students succeed at university?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "What do people consider when choosing where to live?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "major factor",
+          "text": "Price is a major factor when buying a car."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "major factor",
+          "source": "Diet plays an important part in heart disease.",
+          "model": "Diet is a major factor in heart disease."
+        },
+        {
+          "target": "major factor",
+          "source": "Cost is one of the main reasons people choose a school.",
+          "model": "Cost is a major factor when people choose a school."
+        }
+      ]
+    },
+    "minor_factor": {
+      "word": "minor factor",
+      "pronunciation": "/ˈmaɪnər ˈfæktər/",
+      "image": {
+        "type": "prompt",
+        "value": "a small element",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Pareto_principle.png"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Yếu tố phụ, không quan trọng.",
+          "examples": [
+            "The color was a minor factor in her decision."
+          ],
+          "grammar_patterns": [
+            "major/minor [difference/change/effect/difficulty/point/issue/factor]"
+          ],
+          "usage_notes_vi": "Dùng 'minor' để chỉ yếu tố ít ảnh hưởng, thứ yếu."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Shopping",
+          "question": "Does packaging influence what people buy?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Is salary the only thing that matters when choosing a job?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Do genes matter more than lifestyle for good health?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "minor factor",
+          "text": "The weather was only a minor factor in our decision."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "minor factor",
+          "source": "The colour of the car was not very important to us.",
+          "model": "The colour of the car was only a minor factor for us."
+        },
+        {
+          "target": "minor factor",
+          "source": "Luck plays only a small part in success.",
+          "model": "Luck is only a minor factor in success."
+        }
+      ]
+    },
+    "tall_people": {
+      "word": "tall people",
+      "pronunciation": "/ˈtɔːl ˈpiːpl̩/",
+      "image": {
+        "type": "prompt",
+        "value": "people of great height",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Rhinegold_and_the_Valkyries_p_032.jpg/960px-Rhinegold_and_the_Valkyries_p_032.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Người cao.",
+          "examples": [
+            "The basketball team is composed of very tall people."
+          ],
+          "grammar_patterns": [
+            "tall [people/trees/buildings]"
+          ],
+          "usage_notes_vi": "Dùng 'tall' để miêu tả chiều cao của người, cây, tòa nhà."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Sport",
+          "question": "What physical qualities help basketball players?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What problems do very tall passengers have on planes?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Do taller people have advantages in job interviews?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "tall people",
+          "text": "Tall people often play basketball well."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "tall people",
+          "source": "People who are well above average height find airline seats uncomfortable.",
+          "model": "Tall people find airline seats uncomfortable."
+        },
+        {
+          "target": "tall people",
+          "source": "Studies say that people of above-average height often earn more.",
+          "model": "Studies say that tall people often earn more."
+        }
+      ]
+    },
+    "tall_trees": {
+      "word": "tall trees",
+      "pronunciation": "/tɔːl triːz/",
+      "image": {
+        "type": "prompt",
+        "value": "trees of great height",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Grizzly_Giant_Mariposa_Grove.jpg/960px-Grizzly_Giant_Mariposa_Grove.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Cây cao.",
+          "examples": [
+            "We walked through a forest of tall trees."
+          ],
+          "grammar_patterns": [
+            "tall [people/trees/buildings]"
+          ],
+          "usage_notes_vi": "Dùng 'tall' để miêu tả chiều cao của cây."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "Why are old forests so important for wildlife?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Should cities plant more trees along their streets?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What kind of natural scenery do you like?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "tall trees",
+          "text": "Tall trees grow along both sides of the road."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "tall trees",
+          "source": "The park is full of very high old trees.",
+          "model": "The park is full of tall old trees."
+        },
+        {
+          "target": "tall trees",
+          "source": "Many birds build nests at the top of the highest trees.",
+          "model": "Many birds build nests at the top of tall trees."
+        }
+      ]
+    },
+    "tall_buildings": {
+      "word": "tall buildings",
+      "pronunciation": "/ˈtɔːl ˈbɪldɪŋz/",
+      "image": {
+        "type": "prompt",
+        "value": "buildings of great height",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/2/22/HK_Bank_of_China_Tower_View.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Tòa nhà cao tầng.",
+          "examples": [
+            "The city skyline is dominated by tall buildings."
+          ],
+          "grammar_patterns": [
+            "tall [people/trees/buildings]"
+          ],
+          "usage_notes_vi": "Dùng 'tall' để miêu tả chiều cao của tòa nhà."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "Should cities build more skyscrapers to house people?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What do tourists like to see in big modern cities?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Are skyscrapers good or bad for the environment?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "tall buildings",
+          "text": "The city centre is full of tall buildings."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "tall buildings",
+          "source": "Skyscrapers block the sunlight in many streets.",
+          "model": "Tall buildings block the sunlight in many streets."
+        },
+        {
+          "target": "tall buildings",
+          "source": "Many modern cities have lots of very high towers.",
+          "model": "Many modern cities have lots of tall buildings."
+        }
+      ]
+    },
+    "high_mountains": {
+      "word": "high mountains",
+      "pronunciation": "/ˌhaɪ ˈmaʊntɪnz/",
+      "image": {
+        "type": "prompt",
+        "value": "mountains of great altitude",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Himalayas_and_allied_ranges_NASA_Landsat_showing_the_eight_thousanders%2C_annotated_with_major_rivers.jpg/960px-Himalayas_and_allied_ranges_NASA_Landsat_showing_the_eight_thousanders%2C_annotated_with_major_rivers.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Núi cao.",
+          "examples": [
+            "They climbed high mountains in the Himalayas."
+          ],
+          "grammar_patterns": [
+            "high [mountains/prices/interest rates/heels/tide/jump]"
+          ],
+          "usage_notes_vi": "Dùng 'high' để miêu tả độ cao so với mặt đất hoặc một tiêu chuẩn nhất định (ví dụ: núi, giá cả, lãi suất)."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What kind of landscape do you enjoy visiting on holiday?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "Why do people risk their lives climbing Everest?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How is climate change affecting glaciers?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "high mountains",
+          "text": "The village is surrounded by high mountains."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "high mountains",
+          "source": "The country is famous for its very tall peaks.",
+          "model": "The country is famous for its high mountains."
+        },
+        {
+          "target": "high mountains",
+          "source": "Climbers need special training to reach the top of very tall peaks.",
+          "model": "Climbers need special training to climb high mountains."
+        }
+      ]
+    },
+    "high_prices": {
+      "word": "high prices",
+      "pronunciation": "/ˌhaɪ ˈpraɪsɪz/",
+      "image": {
+        "type": "prompt",
+        "value": "expensive prices",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/World_inflation_rate_October_2025.png/960px-World_inflation_rate_October_2025.png"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Giá cả cao.",
+          "examples": [
+            "The high prices in this area are unaffordable for many."
+          ],
+          "grammar_patterns": [
+            "high [mountains/prices/interest rates/heels/tide/jump]"
+          ],
+          "usage_notes_vi": "Dùng 'high' để miêu tả giá cả cao."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Shopping",
+          "question": "Why do some people avoid shopping in city centres?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Why can many young people not afford to buy homes?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Why do some tourists avoid travelling in summer?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "high prices",
+          "text": "Many people complain about the high prices in shops."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "high prices",
+          "source": "Things are very expensive in the city centre.",
+          "model": "There are high prices in the city centre."
+        },
+        {
+          "target": "high prices",
+          "source": "Many tourists are put off by the expensive hotels.",
+          "model": "Many tourists are put off by the high prices of hotels."
+        }
+      ]
+    },
+    "high_interest_rates": {
+      "word": "high interest rates",
+      "pronunciation": "/ˌhaɪ ˈɪntrəst ˌreɪts/",
+      "image": {
+        "type": "prompt",
+        "value": "expensive rates of interest",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Payday_loan_shop_window.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Lãi suất cao.",
+          "examples": [
+            "Borrowing money is difficult with high interest rates."
+          ],
+          "grammar_patterns": [
+            "high [mountains/prices/interest rates/heels/tide/jump]"
+          ],
+          "usage_notes_vi": "Dùng 'high' để miêu tả lãi suất cao."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "Why is it difficult for young couples to buy a home?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "How do banks influence how much people spend?",
+          "fits": []
+        },
+        {
+          "context": "Business",
+          "question": "Why do small businesses struggle to borrow money?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "high interest rates",
+          "text": "High interest rates make it hard to buy a house."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "high interest rates",
+          "source": "Banks charge a lot to lend money at the moment.",
+          "model": "Banks have high interest rates at the moment."
+        },
+        {
+          "target": "high interest rates",
+          "source": "Borrowing is expensive, so people are buying fewer homes.",
+          "model": "Because of high interest rates, people are buying fewer homes."
+        }
+      ]
+    },
+    "high_heels": {
+      "word": "high heels",
+      "pronunciation": "/ˌhaɪ ˈhiːlz/",
+      "image": {
+        "type": "prompt",
+        "value": "shoes with a raised heel",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/High-heeled_shoes_on_display_in_Huangpu%2C_Shanghai_%2820180211145140%29.jpg/960px-High-heeled_shoes_on_display_in_Huangpu%2C_Shanghai_%2820180211145140%29.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Giày cao gót.",
+          "examples": [
+            "She wore high heels to the party."
+          ],
+          "grammar_patterns": [
+            "high [mountains/prices/interest rates/heels/tide/jump]"
+          ],
+          "usage_notes_vi": "Dùng 'high' để miêu tả độ cao của gót giày."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Fashion",
+          "question": "What kind of shoes do women wear to formal events?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Can fashion be bad for your health?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Should companies require women to wear certain shoes at work?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "high heels",
+          "text": "She cannot walk far in high heels."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "high heels",
+          "source": "Wearing shoes with tall, thin heels all day can hurt your feet.",
+          "model": "Wearing high heels all day can hurt your feet."
+        },
+        {
+          "target": "high heels",
+          "source": "Some companies make female staff wear shoes with tall heels.",
+          "model": "Some companies make female staff wear high heels."
+        }
+      ]
+    },
+    "high_tide": {
+      "word": "high tide",
+      "pronunciation": "/ˈhaɪ ˌtaɪd/",
+      "image": {
+        "type": "prompt",
+        "value": "the time when the sea reaches its highest level",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Tide_overview.svg/960px-Tide_overview.svg.png"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Thủy triều lên cao.",
+          "examples": [
+            "We need to be careful when it's high tide."
+          ],
+          "grammar_patterns": [
+            "high [mountains/prices/interest rates/heels/tide/jump]"
+          ],
+          "usage_notes_vi": "Dùng 'high' để miêu tả mức độ cao của thủy triều."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What should tourists know before walking along the beach?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How does climate change affect coastal towns?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "When is the best time to go surfing or fishing?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "high tide",
+          "text": "The beach disappears completely at high tide."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "high tide",
+          "source": "When the sea comes in, the water covers the road.",
+          "model": "At high tide, the water covers the road."
+        },
+        {
+          "target": "high tide",
+          "source": "Fishermen leave the harbour when the sea level is at its highest.",
+          "model": "Fishermen leave the harbour at high tide."
+        }
+      ]
+    },
+    "high_jump": {
+      "word": "high jump",
+      "pronunciation": "/ˈhaɪ ˌdʒʌmp/",
+      "image": {
+        "type": "prompt",
+        "value": "an athletic event where competitors jump over a bar",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Nicole_Forrester.JPG/960px-Nicole_Forrester.JPG"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Nhảy cao (môn thể thao).",
+          "examples": [
+            "He won the gold medal in the high jump."
+          ],
+          "grammar_patterns": [
+            "high [mountains/prices/interest rates/heels/tide/jump]"
+          ],
+          "usage_notes_vi": "Dùng 'high' để miêu tả môn nhảy cao."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Sport",
+          "question": "Which athletics events do you enjoy watching?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What sports did you do at school?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Which Olympic events get the most attention on TV?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "high jump",
+          "text": "She won a medal in the high jump."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "high jump",
+          "source": "He is the best at our school at jumping over the bar.",
+          "model": "He is the best at the high jump at our school."
+        },
+        {
+          "target": "high jump",
+          "source": "She competes in the event where athletes leap over a raised bar.",
+          "model": "She competes in the high jump."
+        }
+      ]
+    }
+  }
+}

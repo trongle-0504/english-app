@@ -1,0 +1,5 @@
+{"at":"2026-10-03T12:06:27.379Z","id":"vocab:wild-setting","mode":"collocate","rating":2,"from":"collocate","to":"collocate"}
+{"at":"2026-10-03T12:07:03.248Z","id":"vocab:marine-environment","mode":"collocate","rating":3,"from":"collocate","to":"paraphrase"}
+{"at":"2026-10-03T12:07:25.878Z","id":"vocab:institution","mode":"collocate","rating":3,"from":"collocate","to":"paraphrase"}
+{"at":"2026-10-03T12:11:50.360Z","id":"vocab:replenish","mode":"paraphrase","rating":3,"verdict":"ok","from":"collocate","to":"produce"}
+{"at":"2026-10-03T12:11:50.378Z","id":"note:punish-sb-instead-of-v-ing","mode":"paraphrase","rating":3,"verdict":"ok","from":"collocate","to":"produce"}

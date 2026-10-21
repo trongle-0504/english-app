@@ -1,0 +1,3982 @@
+[
+  {
+    "id": "topic-colloc:food-drinks:agrarian-economies",
+    "title": "agrarian economies",
+    "term": "agrarian economies",
+    "type": "Collocation",
+    "pronunciation": "/əˈɡreəriən ɪˈkɒnəmiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nền kinh tế nông nghiệp",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Many developing nations remain agrarian economies that depend heavily on crop exports for income.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:climate-and-weather-patterns",
+    "title": "climate and weather patterns",
+    "term": "climate and weather patterns",
+    "type": "Collocation",
+    "pronunciation": "/ˈklaɪmət ənd ˈweðə ˈpætənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khí hậu và các kiểu hình thời tiết",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Climate and weather patterns largely determine which crops a region can grow successfully year-round.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:diverse-and-non-seasonal-foods",
+    "title": "diverse and non-seasonal foods",
+    "term": "diverse and non-seasonal foods",
+    "type": "Collocation",
+    "pronunciation": "/daɪˈvɜːs ænd nɒnˈsiːzənəl fuːdz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "thực phẩm đa dạng và trái mùa",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Global trade has made diverse and non-seasonal foods available to consumers throughout the year.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:domestic-agriculture",
+    "title": "domestic agriculture",
+    "term": "domestic agriculture",
+    "type": "Collocation",
+    "pronunciation": "/dəˈmestɪk ˈæɡrɪkʌltʃə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nông nghiệp trong nước",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Investing in domestic agriculture can reduce a country's dependence on imported staples.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:feed-crop-requirements",
+    "title": "feed-crop requirements",
+    "term": "feed-crop requirements",
+    "type": "Collocation",
+    "pronunciation": "/fiːd krɒp rɪˈkwaɪəmənts/",
+    "part_of_speech": "noun",
+    "meaning_vi": "nhu cầu cây trồng làm thức ăn chăn nuôi",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Rising meat consumption has pushed up feed-crop requirements, putting further strain on arable land.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:homegrown-food",
+    "title": "homegrown food",
+    "term": "homegrown food",
+    "type": "Collocation",
+    "pronunciation": "/ˈhəʊmɡrəʊn fuːd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thực phẩm tự trồng trong nước",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Farmers' markets give city dwellers direct access to homegrown food.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:international-trade",
+    "title": "international trade",
+    "term": "international trade",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪntəˈnæʃənəl treɪd/",
+    "part_of_speech": "noun",
+    "meaning_vi": "thương mại quốc tế",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "International trade has enabled countries to access food products that cannot be grown locally.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:local-crops",
+    "title": "local crops",
+    "term": "local crops",
+    "type": "Collocation",
+    "pronunciation": "/ˈləʊkəl krɒps/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cây trồng địa phương",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Farmers markets give small growers a direct outlet to sell their local crops at fair prices.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:local-farming-economies",
+    "title": "local farming economies",
+    "term": "local farming economies",
+    "type": "Collocation",
+    "pronunciation": "/ˈləʊkəl ˈfɑːmɪŋ ɪˈkɒnəmiz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "nền kinh tế nông nghiệp địa phương",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Government subsidies are essential to protect local farming economies from foreign competition.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:locally-grown-produce",
+    "title": "locally grown produce",
+    "term": "locally grown produce",
+    "type": "Collocation",
+    "pronunciation": "/ˈləʊkəli ɡrəʊn ˈprɒdjuːs/",
+    "part_of_speech": "noun",
+    "meaning_vi": "nông sản trồng tại địa phương",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Choosing locally grown produce can significantly reduce a household's carbon footprint.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:marginal-cost",
+    "title": "marginal cost",
+    "term": "marginal cost",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɑː.dʒɪ.nəl kɒst/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chi phí biên",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "As output increases, the marginal cost of producing each additional bottle of soda decreases.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:mass-production-techniques",
+    "title": "mass production techniques",
+    "term": "mass production techniques",
+    "type": "Collocation",
+    "pronunciation": "/mæs prəˈdʌk.ʃən tɛkˈniːks/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kỹ thuật sản xuất hàng loạt",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Mass production techniques have made packaged snacks cheaper and more widely available.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:pesticides",
+    "title": "pesticides",
+    "term": "pesticides",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈpɛs.tɪ.saɪdz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "thuốc trừ sâu",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Overuse of pesticides can contaminate soil and water sources near farmland.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:plot",
+    "title": "plot",
+    "term": "plot",
+    "type": "Vocabulary",
+    "pronunciation": "/plɒt/",
+    "part_of_speech": "noun",
+    "meaning_vi": "mảnh đất (canh tác)",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Small farmers who own a single plot of land often struggle to compete with large agribusinesses.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:routinely-stock-tropical-fruits",
+    "title": "routinely stock tropical fruits",
+    "term": "routinely stock tropical fruits",
+    "type": "Collocation",
+    "pronunciation": "/ruːˈtiːnli stɒk ˈtrɒpɪkəl fruːts/",
+    "part_of_speech": "verb",
+    "meaning_vi": "thường xuyên tích trữ trái cây nhiệt đới",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Supermarkets in temperate countries now routinely stock tropical fruits such as mangoes and pineapples.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:soil-conditions",
+    "title": "soil conditions",
+    "term": "soil conditions",
+    "type": "Collocation",
+    "pronunciation": "/sɔɪl kənˈdɪʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "điều kiện đất đai",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Poor soil conditions in arid regions make it difficult to cultivate certain fruit varieties locally.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:traveling-vast-distances",
+    "title": "traveling vast distances",
+    "term": "traveling vast distances",
+    "type": "Collocation",
+    "pronunciation": "/ˈtrævəlɪŋ vɑːst ˈdɪstənsɪz/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "đi qua những quãng đường xa",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Fresh produce is often flown from one continent to another, traveling vast distances before reaching supermarket shelves.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:unhealthy-farming-practices",
+    "title": "unhealthy farming practices",
+    "term": "unhealthy farming practices",
+    "type": "Collocation",
+    "pronunciation": "/ʌnˈhɛl.θi ˈfɑː.mɪŋ ˈpræk.tɪ.sɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các phương pháp canh tác không lành mạnh",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Unhealthy farming practices, such as excessive pesticide use, can degrade soil quality over time.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:unprecedented-variety",
+    "title": "unprecedented variety",
+    "term": "unprecedented variety",
+    "type": "Collocation",
+    "pronunciation": "/ʌnˈpresɪdentɪd vəˈraɪəti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự đa dạng chưa từng có",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Supermarkets today offer consumers an unprecedented variety of fruits and vegetables from around the world.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:widespread-availability-of-imported-foods",
+    "title": "widespread availability of imported foods",
+    "term": "widespread availability of imported foods",
+    "type": "Collocation",
+    "pronunciation": "/ˈwaɪdspred əˌveɪləˈbɪləti əv ɪmˈpɔːtɪd fuːdz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự sẵn có rộng rãi của thực phẩm nhập khẩu",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The widespread availability of imported foods has transformed dietary habits in many urban areas.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:year-round-convenience",
+    "title": "year-round convenience",
+    "term": "year-round convenience",
+    "type": "Collocation",
+    "pronunciation": "/ˈjɪər raʊnd kənˈviːniəns/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự tiện lợi quanh năm",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Importing produce guarantees year-round convenience, even for fruits that are strictly seasonal.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:demographic-expansion",
+    "title": "demographic expansion",
+    "term": "demographic expansion",
+    "type": "Collocation",
+    "pronunciation": "/ˌdeməˈɡræfɪk ɪkˈspænʃən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự gia tăng dân số",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Rapid demographic expansion in developing regions is placing unprecedented pressure on food supplies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:food-systems",
+    "title": "food systems",
+    "term": "food systems",
+    "type": "Collocation",
+    "pronunciation": "/fuːd ˈsɪstəmz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "hệ thống lương thực",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Building resilient food systems is critical to ensuring stability in the face of climate shocks.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:global-population-surge",
+    "title": "global population surge",
+    "term": "global population surge",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡləʊbəl ˌpɒpjuˈleɪʃən sɜːdʒ/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự bùng nổ dân số toàn cầu",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The global population surge over the past century has dramatically increased demand for arable land.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:global-supply-chain",
+    "title": "global supply chain",
+    "term": "global supply chain",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡləʊbl səˈplaɪ tʃeɪn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chuỗi cung ứng toàn cầu",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Disruptions in the global supply chain caused sharp price rises for staple grains last year.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:globalization-of-food-supply-chains",
+    "title": "globalization of food supply chains",
+    "term": "globalization of food supply chains",
+    "type": "Collocation",
+    "pronunciation": "/ˌɡləʊbəlaɪˈzeɪʃən əv fuːd səˈplaɪ tʃeɪnz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "toàn cầu hóa chuỗi cung ứng thực phẩm",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The globalization of food supply chains means a single crop failure abroad can raise prices worldwide.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:import-food-from-abroad",
+    "title": "import food from abroad",
+    "term": "import food from abroad",
+    "type": "Collocation",
+    "pronunciation": "/ˈɪm.pɔːt fuːd frɒm əˈbrɔːd/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nhập khẩu thực phẩm từ nước ngoài",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Some countries continue to import food from abroad to meet domestic demand.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:imported-food",
+    "title": "imported food",
+    "term": "imported food",
+    "type": "Collocation",
+    "pronunciation": "/ɪmˈpɔːtɪd fuːd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thực phẩm nhập khẩu",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Supermarkets in the capital are increasingly stocked with imported food from overseas suppliers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:sentiment",
+    "title": "sentiment",
+    "term": "sentiment",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈsentɪmənt/",
+    "part_of_speech": "noun",
+    "meaning_vi": "quan điểm, tình cảm chung",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Public sentiment towards imported produce has shifted as shoppers grow more concerned about food miles.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:unprecedented-variety-of-international-produce",
+    "title": "unprecedented variety of international produce",
+    "term": "unprecedented variety of international produce",
+    "type": "Collocation",
+    "pronunciation": "/ʌnˈpresɪdentɪd vəˈraɪəti əv ˌɪntəˈnæʃənəl ˈprɒdjuːs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự đa dạng chưa từng có của nông sản quốc tế",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Modern supermarkets stock an unprecedented variety of international produce that was unavailable a generation ago.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:creates-intense-competition-for-local-farmers",
+    "title": "creates intense competition for local farmers",
+    "term": "creates intense competition for local farmers",
+    "type": "Collocation",
+    "pronunciation": "/kriˈeɪts ɪnˈtens ˌkɒmpəˈtɪʃən fɔːr ˈləʊkəl ˈfɑːməz/",
+    "part_of_speech": "verb",
+    "meaning_vi": "tạo ra sự cạnh tranh gay gắt cho nông dân địa phương",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The flood of cheap imports creates intense competition for local farmers, threatening their livelihoods.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:creates-significant-economic-opportunities",
+    "title": "creates significant economic opportunities",
+    "term": "creates significant economic opportunities",
+    "type": "Collocation",
+    "pronunciation": "/kriˈeɪts sɪɡˈnɪfɪkənt ˌiːkəˈnɒmɪk ˌɒpəˈtjuːnətiz/",
+    "part_of_speech": "verb",
+    "meaning_vi": "tạo ra những cơ hội kinh tế đáng kể",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Food exportation creates significant economic opportunities for rural communities in developing regions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:earn-a-higher-income",
+    "title": "earn a higher income",
+    "term": "earn a higher income",
+    "type": "Collocation",
+    "pronunciation": "/ɜːn ə ˈhaɪər ˈɪnkʌm/",
+    "part_of_speech": "verb",
+    "meaning_vi": "kiếm thu nhập cao hơn",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "By exporting cash crops, farmers in developing countries can earn a higher income.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:environmentally-and-morally-questionable",
+    "title": "environmentally and morally questionable",
+    "term": "environmentally and morally questionable",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˌvaɪ.rənˈmɛn.tə.li ənd ˈmɒr.ə.li ˈkwɛs.tʃə.nə.bl/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "đáng bị nghi ngờ về mặt môi trường và đạo đức",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Critics claim that intensive farming methods are environmentally and morally questionable.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:erosion-of-local-agricultural-economies",
+    "title": "erosion of local agricultural economies",
+    "term": "erosion of local agricultural economies",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈrəʊʒən əv ˈləʊkəl ˌæɡrɪˈkʌltʃərəl ɪˈkɒnəmiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự suy thoái của nền kinh tế nông nghiệp địa phương",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Cheap imported grain has accelerated the erosion of local agricultural economies in several developing regions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:erosion-of-local-agricultural-systems",
+    "title": "erosion of local agricultural systems",
+    "term": "erosion of local agricultural systems",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈrəʊʒən əv ˈləʊkəl ˌæɡrɪˈkʌltʃərəl ˈsɪstəmz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự xói mòn các hệ thống nông nghiệp địa phương",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Cheap imports can accelerate the erosion of local agricultural systems that communities have relied on for generations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:irrevocably-change-ecosystems-and-migration-patterns",
+    "title": "irrevocably change ecosystems and migration patterns",
+    "term": "irrevocably change ecosystems and migration patterns",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈrevəkəbli tʃeɪndʒ ˈiːkəʊsɪstəmz ənd maɪˈɡreɪʃən ˈpætənz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "làm thay đổi vĩnh viễn hệ sinh thái và các kiểu di cư",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Diverting rivers for large-scale farming can irrevocably change ecosystems and migration patterns of wildlife.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:lead-to-less-variety",
+    "title": "lead to less variety",
+    "term": "lead to less variety",
+    "type": "Collocation",
+    "pronunciation": "/liːd tuː les vəˈraɪəti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "dẫn đến sự đa dạng ít hơn",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Relying solely on domestic harvests can lead to less variety on supermarket shelves during off-season months.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:market-expansion",
+    "title": "market expansion",
+    "term": "market expansion",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɑːkɪt ɪkˈspænʃən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự mở rộng thị trường",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Market expansion into overseas territories has allowed food producers to increase their profits substantially.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:significant-economic-opportunities",
+    "title": "significant economic opportunities",
+    "term": "significant economic opportunities",
+    "type": "Collocation",
+    "pronunciation": "/sɪɡˈnɪfɪkənt ˌiːkəˈnɒmɪk ˌɒpəˈtjuːnətiz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "cơ hội kinh tế đáng kể",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The expansion of food exports creates significant economic opportunities for developing nations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:slaughter-of-animals-in-factory-farms",
+    "title": "slaughter of animals in factory farms",
+    "term": "slaughter of animals in factory farms",
+    "type": "Collocation",
+    "pronunciation": "/ˈslɔː.tər əv ˈæn.ɪ.məlz ɪn ˈfæk.tər.i fɑːmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc giết mổ động vật trong các trang trại công nghiệp",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Animal rights activists have criticised the mass slaughter of animals in factory farms.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:stimulates-the-global-economy",
+    "title": "stimulates the global economy",
+    "term": "stimulates the global economy",
+    "type": "Collocation",
+    "pronunciation": "/ˈstɪmjəleɪts ðə ˈɡləʊbəl ɪˈkɒnəmi/",
+    "part_of_speech": "verb",
+    "meaning_vi": "kích thích nền kinh tế toàn cầu",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The international food trade stimulates the global economy by creating jobs across multiple sectors.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:take-water-from-natural-reservoir",
+    "title": "take water from natural reservoir",
+    "term": "take water from natural reservoir",
+    "type": "Collocation",
+    "pronunciation": "/teɪk ˈwɔːtə frəm ˈnætʃrəl ˈrezəvwɑː/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "lấy nước từ hồ chứa tự nhiên",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Expanding irrigated farmland often forces authorities to take water from natural reservoirs nearby.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:disrupt-the-ecosystems-balance",
+    "title": "disrupt the ecosystem's balance",
+    "term": "disrupt the ecosystem's balance",
+    "type": "Collocation",
+    "pronunciation": "/dɪsˈrʌpt ði ˈiː.kəʊˌsɪs.təmz ˈbæl.əns/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "phá vỡ sự cân bằng của hệ sinh thái",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Introducing genetically modified organisms into the wild could disrupt the ecosystem's balance.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:eradication-of-pest-species",
+    "title": "eradication of pest species",
+    "term": "eradication of pest species",
+    "type": "Collocation",
+    "pronunciation": "/ɪˌræd.ɪˈkeɪ.ʃən əv pɛst ˈspiː.ʃiːz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự tiêu diệt hoàn toàn các loài sâu bệnh",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The eradication of pest species through GM crops could unintentionally harm beneficial insects.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:experience-a-loss-of-income",
+    "title": "experience a loss of income",
+    "term": "experience a loss of income",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈspɪər.i.əns ə lɒs əv ˈɪn.kʌm/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "chịu sự sụt giảm thu nhập",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Small-scale farmers may experience a loss of income when GM crops dominate the market.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:invasive-species",
+    "title": "invasive species",
+    "term": "invasive species",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈveɪ.sɪv ˈspiː.ʃiːz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "loài xâm lấn",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Invasive species can outcompete native plants and disrupt local farming ecosystems.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:yield",
+    "title": "yield",
+    "term": "yield",
+    "type": "Vocabulary",
+    "pronunciation": "/jiːld/",
+    "part_of_speech": "noun",
+    "meaning_vi": "năng suất (thu hoạch)",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Genetically modified crops often produce a higher yield than traditional varieties.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:generate-substantial-national-revenue",
+    "title": "generate substantial national revenue",
+    "term": "generate substantial national revenue",
+    "type": "Collocation",
+    "pronunciation": "/ˈdʒenəreɪt səbˈstænʃəl ˈnæʃənəl ˈrevənjuː/",
+    "part_of_speech": "verb",
+    "meaning_vi": "tạo ra nguồn thu quốc gia đáng kể",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Food exports generate substantial national revenue for many agriculture-dependent economies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:significant-environmental-and-economic-vulnerabilities",
+    "title": "significant environmental and economic vulnerabilities",
+    "term": "significant environmental and economic vulnerabilities",
+    "type": "Collocation",
+    "pronunciation": "/sɪɡˈnɪfɪkənt ɪnˌvaɪrənˈmentəl ənd ˌiːkəˈnɒmɪk ˌvʌlnərəˈbɪlətiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những lỗ hổng đáng kể về môi trường và kinh tế",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Heavy reliance on food imports exposes nations to significant environmental and economic vulnerabilities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:a-more-varied-supply-of-fresh-local-food",
+    "title": "a more varied supply of fresh local food",
+    "term": "a more varied supply of fresh local food",
+    "type": "Collocation",
+    "pronunciation": "/ə mɔː ˈveərid səˈplaɪ əv freʃ ˈləʊkəl fuːd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nguồn cung thực phẩm địa phương tươi và đa dạng hơn",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Investment in vertical farming could provide cities with a more varied supply of fresh local food.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:artificially-imitate-weather-conditions",
+    "title": "artificially imitate weather conditions",
+    "term": "artificially imitate weather conditions",
+    "type": "Collocation",
+    "pronunciation": "/ˌɑːtɪˈfɪʃəli ˈɪmɪteɪt ˈweðə kənˈdɪʃənz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "mô phỏng nhân tạo điều kiện thời tiết",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Greenhouse technology allows farmers to artificially imitate weather conditions needed for tropical crops.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:climate-smart-agriculture",
+    "title": "climate-smart agriculture",
+    "term": "climate-smart agriculture",
+    "type": "Collocation",
+    "pronunciation": "/ˈklaɪmət smɑːt ˈæɡrɪkʌltʃər/",
+    "part_of_speech": "noun",
+    "meaning_vi": "nông nghiệp thông minh thích ứng khí hậu",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Adopting climate-smart agriculture allows farmers to maintain yields despite unpredictable weather patterns.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:community-supported-agriculture-program",
+    "title": "community-supported agriculture program",
+    "term": "community-supported agriculture program",
+    "type": "Collocation",
+    "pronunciation": "/kəˈmjuːnəti səˈpɔːtɪd ˈæɡrɪkʌltʃə ˈprəʊɡræm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chương trình nông nghiệp do cộng đồng hỗ trợ",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Joining a community-supported agriculture program allows residents to receive fresh vegetables weekly.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:consume-home-grown-food",
+    "title": "consume home grown food",
+    "term": "consume home grown food",
+    "type": "Collocation",
+    "pronunciation": "/kənˈsjuːm həʊm ɡrəʊn fuːd/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tiêu thụ thực phẩm tự trồng trong nước",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Health campaigns increasingly urge families to consume home grown food rather than rely on imported alternatives.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:drought-resistant-crop-varieties",
+    "title": "drought-resistant crop varieties",
+    "term": "drought-resistant crop varieties",
+    "type": "Collocation",
+    "pronunciation": "/draʊt rɪˈzɪstənt krɒp vəˈraɪətiz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "các giống cây trồng chịu hạn",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Scientists have developed drought-resistant crop varieties that can survive in increasingly arid climates.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:growing-food-within-a-countrys-borders",
+    "title": "growing food within a country’s borders",
+    "term": "growing food within a country’s borders",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡrəʊɪŋ fuːd wɪðˈɪn ə ˈkʌntriz ˈbɔːdəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc trồng trọt thực phẩm trong phạm vi biên giới quốc gia",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Growing food within a country’s borders reduces dependence on volatile international markets.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:locally-produced-alternative",
+    "title": "locally produced alternative",
+    "term": "locally produced alternative",
+    "type": "Collocation",
+    "pronunciation": "/ˈləʊkəli prəˈdjuːst ɔːlˈtɜːnətɪv/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sản phẩm thay thế sản xuất tại địa phương",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Consumers are being encouraged to choose a locally produced alternative instead of shipped-in produce.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:precision-irrigation",
+    "title": "precision irrigation",
+    "term": "precision irrigation",
+    "type": "Collocation",
+    "pronunciation": "/prɪˈsɪʒən ˌɪrɪˈɡeɪʃən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tưới tiêu chính xác",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Precision irrigation technology enables farmers to use water far more efficiently than traditional methods.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:subsidized-by-the-government",
+    "title": "subsidized by the government",
+    "term": "subsidized by the government",
+    "type": "Collocation",
+    "pronunciation": "/ˈsʌb.sɪ.daɪzd baɪ ðə ˈɡʌv.ən.mənt/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "được chính phủ trợ cấp",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Fruit and vegetable production is often subsidized by the government to keep prices low.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:uphold-the-supply-chain",
+    "title": "uphold the supply chain",
+    "term": "uphold the supply chain",
+    "type": "Collocation",
+    "pronunciation": "/ʌpˈhəʊld ðə səˈplaɪ tʃeɪn/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "duy trì chuỗi cung ứng",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Farmers play a crucial role in helping to uphold the supply chain for the meat industry.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:vertical-agriculture-systems",
+    "title": "vertical agriculture systems",
+    "term": "vertical agriculture systems",
+    "type": "Collocation",
+    "pronunciation": "/ˈvɜːtɪkəl ˈæɡrɪkʌltʃər ˈsɪstəmz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "hệ thống nông nghiệp thẳng đứng",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Vertical agriculture systems allow crops to be grown in urban areas with minimal land use.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:to-be-resistant-to-common-pests",
+    "title": "to be resistant to common pests",
+    "term": "to be resistant to common pests",
+    "type": "Collocation",
+    "pronunciation": "/tuː biː rɪˈzɪs.tənt tuː ˈkɒm.ən pɛsts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "có khả năng kháng lại các loại sâu bệnh thông thường",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "GM crops are often engineered to be resistant to common pests, reducing the need for chemical sprays.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:withstanding-harsh-environments",
+    "title": "withstanding harsh environments",
+    "term": "withstanding harsh environments",
+    "type": "Collocation",
+    "pronunciation": "/wɪðˈstæn.dɪŋ hɑːʃ ɪnˈvaɪ.rən.mənts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "chịu đựng được môi trường khắc nghiệt",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Scientists have engineered crops capable of withstanding harsh environments such as drought.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:coordinated-international-solutions",
+    "title": "coordinated international solutions",
+    "term": "coordinated international solutions",
+    "type": "Collocation",
+    "pronunciation": "/kəʊˈɔːdɪneɪtɪd ˌɪntəˈnæʃənəl səˈluːʃənz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "các giải pháp quốc tế phối hợp",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Tackling global hunger requires coordinated international solutions rather than isolated national efforts.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:domestic-food-security",
+    "title": "domestic food security",
+    "term": "domestic food security",
+    "type": "Collocation",
+    "pronunciation": "/dəˈmestɪk fuːd sɪˈkjʊərəti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "an ninh lương thực trong nước",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Policymakers argue that boosting domestic food security should take priority over cheaper imports.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:feasible-solution",
+    "title": "feasible solution",
+    "term": "feasible solution",
+    "type": "Collocation",
+    "pronunciation": "/ˈfiː.zə.bl səˈluː.ʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "giải pháp khả thi",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Genetically modified crops are often presented as a feasible solution to global food shortages.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:stabilizes-the-supply-chain",
+    "title": "stabilizes the supply chain",
+    "term": "stabilizes the supply chain",
+    "type": "Collocation",
+    "pronunciation": "/ˈsteɪbɪlaɪzɪz ðə səˈplaɪ tʃeɪn/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "ổn định chuỗi cung ứng",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Production & Agriculture",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Diversifying suppliers across regions stabilizes the supply chain when one area suffers a poor harvest.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:consumption-of-sugar-based-drinks",
+    "title": "consumption of sugar-based drinks",
+    "term": "consumption of sugar-based drinks",
+    "type": "Collocation",
+    "pronunciation": "/kənˈsʌmp.ʃən əv ˈʃʊɡ.ə beɪst drɪŋks/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc tiêu thụ đồ uống có đường",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The consumption of sugar-based drinks has risen sharply among teenagers worldwide.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:culprit",
+    "title": "culprit",
+    "term": "culprit",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈkʌl.prɪt/",
+    "part_of_speech": "noun",
+    "meaning_vi": "thủ phạm, nguyên nhân gây ra vấn đề",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Excessive sugar intake is often the main culprit behind rising obesity rates.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:dietary-westernisation",
+    "title": "dietary westernisation",
+    "term": "dietary westernisation",
+    "type": "Collocation",
+    "pronunciation": "/ˈdaɪətəri ˌwestənaɪˈzeɪʃən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự Tây hóa chế độ ăn uống",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Dietary westernisation in Asian countries has been linked to rising rates of obesity and heart disease.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:health-conscious",
+    "title": "health-conscious",
+    "term": "health-conscious",
+    "type": "Vocabulary",
+    "pronunciation": "/hɛlθ ˈkɒn.ʃəs/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "quan tâm đến sức khỏe, có ý thức về sức khỏe",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Health-conscious consumers are increasingly choosing organic products over processed foods.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:overindulgence",
+    "title": "overindulgence",
+    "term": "overindulgence",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌəʊ.vər.ɪnˈdʌl.dʒəns/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự ăn uống/tiêu thụ quá mức",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Overindulgence in fast food is a growing concern among health experts.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:poor-dietary-choices-and-sedentary-lifestyles",
+    "title": "poor dietary choices and sedentary lifestyles",
+    "term": "poor dietary choices and sedentary lifestyles",
+    "type": "Collocation",
+    "pronunciation": "/pʊə ˈdaɪətəri ˈtʃɔɪsɪz ənd ˈsedntri ˈlaɪfstaɪlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lựa chọn ăn uống kém và lối sống ít vận động",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Rising childhood obesity is largely the result of poor dietary choices and sedentary lifestyles.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:proper-nutrition",
+    "title": "proper nutrition",
+    "term": "proper nutrition",
+    "type": "Collocation",
+    "pronunciation": "/ˈprɒpə njuːˈtrɪʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "dinh dưỡng hợp lý",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Children who receive proper nutrition at an early age tend to perform better academically.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:shifting-dietary-preferences",
+    "title": "shifting dietary preferences",
+    "term": "shifting dietary preferences",
+    "type": "Collocation",
+    "pronunciation": "/ˈʃɪftɪŋ ˈdaɪətəri ˈprefərənsɪz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự thay đổi trong sở thích ăn uống",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Shifting dietary preferences towards meat-heavy diets have increased demand for grain and water resources.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:sugary-foods",
+    "title": "sugary foods",
+    "term": "sugary foods",
+    "type": "Collocation",
+    "pronunciation": "/ˈʃʊɡəri fuːdz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thực phẩm nhiều đường",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Excessive consumption of sugary foods is strongly linked to tooth decay and weight gain.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:the-price-of-high-fat-foods",
+    "title": "the price of high-fat foods",
+    "term": "the price of high-fat foods",
+    "type": "Collocation",
+    "pronunciation": "/ðə praɪs əv haɪ fæt fuːdz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "giá của thực phẩm nhiều chất béo",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Some economists argue that raising the price of high-fat foods would discourage unhealthy eating.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:high-fat-and-carbohydrate-content",
+    "title": "high fat and carbohydrate content",
+    "term": "high fat and carbohydrate content",
+    "type": "Collocation",
+    "pronunciation": "/haɪ fæt ænd ˌkɑːbəʊˈhaɪdreɪt ˈkɒntent/",
+    "part_of_speech": "noun",
+    "meaning_vi": "hàm lượng chất béo và carbohydrate cao",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Fast food is typically characterised by a high fat and carbohydrate content, which contributes to weight gain.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:diabetes",
+    "title": "diabetes",
+    "term": "diabetes",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌdaɪ.əˈbiː.tiːz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "bệnh tiểu đường",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Doctors warn that a diet rich in refined sugar increases the risk of developing diabetes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:enhances-dietary-diversity",
+    "title": "enhances dietary diversity",
+    "term": "enhances dietary diversity",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈhɑːnsɪz ˈdaɪətəri daɪˈvɜːsəti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tăng cường sự đa dạng trong chế độ ăn",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Access to imported produce enhances dietary diversity, giving consumers a wider range of nutrients year-round.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:health-issues",
+    "title": "health issues",
+    "term": "health issues",
+    "type": "Collocation",
+    "pronunciation": "/hɛlθ ˈɪʃ.uːz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các vấn đề sức khỏe",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Poor eating habits in childhood can lead to serious health issues later in life.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:lack-of-essential-nutrients-like-vitamins-and-fiber",
+    "title": "lack of essential nutrients like vitamins and fiber",
+    "term": "lack of essential nutrients like vitamins and fiber",
+    "type": "Collocation",
+    "pronunciation": "/læk əv ɪˈsenʃəl ˈnjuːtriənts laɪk ˈvɪtəmɪnz ænd ˈfaɪbər/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự thiếu hụt các chất dinh dưỡng thiết yếu như vitamin và chất xơ",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "A diet heavy in processed snacks often results in a lack of essential nutrients like vitamins and fiber.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:lead-to-obesity-and-dental-problems",
+    "title": "lead to obesity and dental problems",
+    "term": "lead to obesity and dental problems",
+    "type": "Collocation",
+    "pronunciation": "/liːd tuː əʊˈbiː.sɪ.ti ənd ˈdɛn.tl ˈprɒb.ləmz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "dẫn đến béo phì và các vấn đề về răng miệng",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "A diet high in sugary snacks can lead to obesity and dental problems in young children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:less-affordable-for-the-average-consumer",
+    "title": "less affordable for the average consumer",
+    "term": "less affordable for the average consumer",
+    "type": "Collocation",
+    "pronunciation": "/les əˈfɔːdəbl fə ði ˈævərɪdʒ kənˈsjuːmə/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "kém phải chăng hơn đối với người tiêu dùng trung bình",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Organic vegetables remain less affordable for the average consumer than mass-produced alternatives.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:obesity-diabetes-and-cardiovascular-disease",
+    "title": "obesity, diabetes, and cardiovascular disease",
+    "term": "obesity, diabetes, and cardiovascular disease",
+    "type": "Collocation",
+    "pronunciation": "/ˌəʊbiːsɪti daɪəˈbiːtiːz ənd ˌkɑːdiəʊˈvæskjʊlə dɪˈziːz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "béo phì, tiểu đường và bệnh tim mạch",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Regularly eating deep-fried snacks has been linked to obesity, diabetes, and cardiovascular disease.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:seasonal-nutrient-deficiencies",
+    "title": "seasonal nutrient deficiencies",
+    "term": "seasonal nutrient deficiencies",
+    "type": "Collocation",
+    "pronunciation": "/ˈsiːzənəl ˈnjuːtriənt dɪˈfɪʃənsiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự thiếu hụt dinh dưỡng theo mùa",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Before global trade expanded, many communities suffered from seasonal nutrient deficiencies during winter months.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:the-dangers-of-excessive-weight-gain",
+    "title": "the dangers of excessive weight gain",
+    "term": "the dangers of excessive weight gain",
+    "type": "Collocation",
+    "pronunciation": "/ðə ˈdeɪndʒəz əv ɪkˈsesɪv weɪt ɡeɪn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những nguy hiểm của việc tăng cân quá mức",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "School programmes now teach students about the dangers of excessive weight gain from an early age.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:adverse-effects-of-fast-food",
+    "title": "adverse effects of fast food",
+    "term": "adverse effects of fast food",
+    "type": "Collocation",
+    "pronunciation": "/ˈædvɜːs ɪˈfekts əv fɑːst fuːd/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tác động tiêu cực của thức ăn nhanh",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The adverse effects of fast food on public health have prompted many governments to introduce sugar taxes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:cause-numerous-health-problems",
+    "title": "cause numerous health problems",
+    "term": "cause numerous health problems",
+    "type": "Collocation",
+    "pronunciation": "/kɔːz ˈnjuː.mər.əs hɛlθ ˈprɒb.ləmz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gây ra nhiều vấn đề sức khỏe",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Regularly eating processed meat can cause numerous health problems over time.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:detrimental-to-their-well-being",
+    "title": "detrimental to their well-being",
+    "term": "detrimental to their well-being",
+    "type": "Collocation",
+    "pronunciation": "/ˌdetrɪˈmentl tə ðeə ˈwelbiːɪŋ/",
+    "part_of_speech": "adj",
+    "meaning_vi": "có hại cho sức khỏe của họ",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Many teenagers consume fast food regularly, which is detrimental to their well-being in the long run.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:fail-to-achieve-the-desired-outcomes",
+    "title": "fail to achieve the desired outcomes",
+    "term": "fail to achieve the desired outcomes",
+    "type": "Collocation",
+    "pronunciation": "/feɪl tu əˈtʃiːv ðə dɪˈzaɪəd ˈaʊtkʌmz/",
+    "part_of_speech": "verb",
+    "meaning_vi": "không đạt được kết quả mong muốn",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Public health campaigns sometimes fail to achieve the desired outcomes because they rely solely on information rather than policy.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:addressing-these-underlying-issues",
+    "title": "addressing these underlying issues",
+    "term": "addressing these underlying issues",
+    "type": "Collocation",
+    "pronunciation": "/əˈdresɪŋ ðiːz ˌʌndəˈlaɪɪŋ ˈɪʃuːz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giải quyết những vấn đề tiềm ẩn này",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Addressing these underlying issues requires cooperation between schools, families, and policymakers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:combating-the-rising-number-of-overweight-individuals",
+    "title": "combating the rising number of overweight individuals",
+    "term": "combating the rising number of overweight individuals",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɒmbætɪŋ ðə ˈraɪzɪŋ ˈnʌmbə əv ˈəʊvəweɪt ˌɪndɪˈvɪdʒuəlz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "chống lại số lượng người thừa cân ngày càng tăng",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Public health officials are combating the rising number of overweight individuals through nationwide fitness initiatives.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:contribute-to-fostering-a-culture-of-health-and-fitness",
+    "title": "contribute to fostering a culture of health and fitness",
+    "term": "contribute to fostering a culture of health and fitness",
+    "type": "Collocation",
+    "pronunciation": "/kənˈtrɪbjuːt tə ˈfɒstərɪŋ ə ˈkʌltʃər əv helθ ənd ˈfɪtnəs/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "góp phần xây dựng văn hóa sức khỏe và thể chất",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Workplace wellness initiatives can contribute to fostering a culture of health and fitness among employees.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:curbing-obesity-rates",
+    "title": "curbing obesity rates",
+    "term": "curbing obesity rates",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɜːbɪŋ əʊˈbiːsəti reɪts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "kiềm chế tỷ lệ béo phì",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Taxing sugary drinks is one policy aimed at curbing obesity rates among teenagers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:inspire-people-to-adopt-more-active-lifestyles",
+    "title": "inspire people to adopt more active lifestyles",
+    "term": "inspire people to adopt more active lifestyles",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈspaɪə ˈpiːpl tʊ əˈdɒpt mɔːr ˈæktɪv ˈlaɪfstaɪlz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "truyền cảm hứng cho mọi người áp dụng lối sống năng động hơn",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Celebrity-led fitness campaigns can inspire people to adopt more active lifestyles.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:nutrition-education-into-school-curriculums",
+    "title": "nutrition education into school curriculums",
+    "term": "nutrition education into school curriculums",
+    "type": "Collocation",
+    "pronunciation": "/njuːˈtrɪʃn ˌedjuˈkeɪʃn ˈɪntə skuːl kəˈrɪkjʊləmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "giáo dục dinh dưỡng vào chương trình học",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Several countries have integrated nutrition education into school curriculums to fight childhood obesity.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:offering-community-workshops",
+    "title": "offering community workshops",
+    "term": "offering community workshops",
+    "type": "Collocation",
+    "pronunciation": "/ˈɒfərɪŋ kəˈmjuːnəti ˈwɜːkʃɒps/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tổ chức các buổi hội thảo cộng đồng",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Local health centres are offering community workshops on cooking nutritious meals on a budget.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:public-awareness-campaign",
+    "title": "public awareness campaign",
+    "term": "public awareness campaign",
+    "type": "Collocation",
+    "pronunciation": "/ˈpʌblɪk əˈweənəs kæmˈpeɪn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chiến dịch nâng cao nhận thức cộng đồng",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The government launched a public awareness campaign to promote balanced diets among children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:relieve-the-burden-on-healthcare-systems",
+    "title": "relieve the burden on healthcare systems",
+    "term": "relieve the burden on healthcare systems",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈliːv ðə ˈbɜː.dən ɒn ˈhɛlθ.keə ˈsɪs.təmz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giảm bớt gánh nặng cho hệ thống y tế",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Promoting healthier diets could relieve the burden on healthcare systems in the long run.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:subsidized-sports-programs",
+    "title": "subsidized sports programs",
+    "term": "subsidized sports programs",
+    "type": "Collocation",
+    "pronunciation": "/ˈsʌbsɪdaɪzd spɔːts ˈprəʊɡræmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các chương trình thể thao được trợ cấp",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Subsidized sports programs make physical activity accessible to low-income families.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:support-the-development-of-bike-lanes-pedestrian-friendly-streets",
+    "title": "support the development of bike lanes, pedestrian-friendly streets",
+    "term": "support the development of bike lanes, pedestrian-friendly streets",
+    "type": "Collocation",
+    "pronunciation": "/səˈpɔːt ðə dɪˈveləpmənt əv baɪk leɪnz pəˈdestriən ˈfrendli striːts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "hỗ trợ phát triển làn đường xe đạp, phố đi bộ thân thiện",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "City councils should support the development of bike lanes, pedestrian-friendly streets to encourage exercise.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:to-effectively-address-this-alarming-trend",
+    "title": "to effectively address this alarming trend",
+    "term": "to effectively address this alarming trend",
+    "type": "Collocation",
+    "pronunciation": "/tʊ ɪˈfektɪvli əˈdres ðɪs əˈlɑːmɪŋ trend/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giải quyết hiệu quả xu hướng đáng báo động này",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Governments must act swiftly to effectively address this alarming trend in childhood obesity.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:to-seek-healthier-and-more-cost-effective-alternatives",
+    "title": "to seek healthier and more cost-effective alternatives",
+    "term": "to seek healthier and more cost-effective alternatives",
+    "type": "Collocation",
+    "pronunciation": "/tə siːk ˈhelθiə ənd mɔː kɒst ɪˈfektɪv ɔːlˈtɜːnətɪvz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tìm kiếm các lựa chọn thay thế lành mạnh hơn và tiết kiệm chi phí hơn",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Rising grocery prices have pushed families to seek healthier and more cost-effective alternatives.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:using-public-health-campaigns-to-raise-awareness",
+    "title": "using public health campaigns to raise awareness",
+    "term": "using public health campaigns to raise awareness",
+    "type": "Collocation",
+    "pronunciation": "/ˈjuːzɪŋ ˈpʌblɪk helθ kæmˈpeɪnz tə reɪz əˈweənəs/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "sử dụng các chiến dịch y tế công cộng để nâng cao nhận thức",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The ministry is using public health campaigns to raise awareness about the risks of sugary drinks.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:mitigate-the-fast-food-consumption",
+    "title": "mitigate the fast food consumption",
+    "term": "mitigate the fast food consumption",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɪtɪɡeɪt ðə fɑːst fuːd kənˈsʌmpʃən/",
+    "part_of_speech": "verb",
+    "meaning_vi": "giảm thiểu việc tiêu thụ thức ăn nhanh",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Some argue that school programmes can mitigate the fast food consumption habits formed during adolescence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:reduce-their-fast-food-intake",
+    "title": "reduce their fast food intake",
+    "term": "reduce their fast food intake",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈdjuːs ðeə ˈfɑːst fuːd ˈɪnteɪk/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giảm lượng đồ ăn nhanh tiêu thụ",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Doctors are urging teenagers to reduce their fast food intake before health problems develop.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:warn-against-junk-food",
+    "title": "warn against junk food",
+    "term": "warn against junk food",
+    "type": "Collocation",
+    "pronunciation": "/wɔːn əˈɡenst dʒʌŋk fuːd/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cảnh báo về đồ ăn vặt",
+    "topic": "Food & Drinks",
+    "subTopic": "Diet, Nutrition & Public Health",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Nutritionists frequently warn against junk food because of its high salt and sugar content.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:a-major-employer-of-low-skilled-workers",
+    "title": "a major employer of low skilled workers",
+    "term": "a major employer of low skilled workers",
+    "type": "Collocation",
+    "pronunciation": "/ə ˈmeɪ.dʒər ɪmˈplɔɪ.ər əv ləʊ skɪld ˈwɜː.kəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "một nhà tuyển dụng lớn cho lao động phổ thông",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The fast food industry is a major employer of low skilled workers in urban areas.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:appears-to-be-proliferating",
+    "title": "appears to be proliferating",
+    "term": "appears to be proliferating",
+    "type": "Collocation",
+    "pronunciation": "/əˈpɪəz tuː biː prəˈlɪf.ə.reɪ.tɪŋ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "dường như đang gia tăng nhanh chóng",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The number of fast food outlets in small towns appears to be proliferating year by year.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:easy-availability-of-fast-food",
+    "title": "easy availability of fast food",
+    "term": "easy availability of fast food",
+    "type": "Collocation",
+    "pronunciation": "/ˈiːzi əˌveɪləˈbɪləti əv fɑːst fuːd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự sẵn có dễ dàng của đồ ăn nhanh",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The easy availability of fast food near schools has raised concerns among parents and educators.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:fast-paced-lifestyles",
+    "title": "fast-paced lifestyles",
+    "term": "fast-paced lifestyles",
+    "type": "Collocation",
+    "pronunciation": "/fɑːst peɪst ˈlaɪfstaɪlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lối sống hối hả",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "People with fast-paced lifestyles often rely on takeaway meals rather than cooking at home.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:hectic-lifestyles",
+    "title": "hectic lifestyles",
+    "term": "hectic lifestyles",
+    "type": "Collocation",
+    "pronunciation": "/ˈhektɪk ˈlaɪfstaɪlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lối sống bận rộn",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Many office workers turn to instant noodles because of their hectic lifestyles.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:increasing-ubiquity-of-fast-food",
+    "title": "increasing ubiquity of fast food",
+    "term": "increasing ubiquity of fast food",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈkriː.sɪŋ juːˈbɪk.wɪ.ti əv fɑːst fuːd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phổ biến ngày càng tăng của đồ ăn nhanh",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The increasing ubiquity of fast food outlets has changed eating habits in many countries.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:lack-of-convenient-affordable-alternatives-to-fast-food",
+    "title": "lack of convenient, affordable alternatives to fast food",
+    "term": "lack of convenient, affordable alternatives to fast food",
+    "type": "Collocation",
+    "pronunciation": "/læk əv kənˈviːniənt əˈfɔːdəbl ɔːlˈtɜːnətɪvz tə fɑːst fuːd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thiếu các lựa chọn thay thế tiện lợi, giá cả phải chăng cho đồ ăn nhanh",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "In many low-income neighbourhoods, the lack of convenient, affordable alternatives to fast food drives up obesity rates.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:customer-flow",
+    "title": "customer flow",
+    "term": "customer flow",
+    "type": "Collocation",
+    "pronunciation": "/ˈkʌs.tə.mər fləʊ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lượng khách hàng",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Restaurant owners must plan their stock according to expected customer flow each day.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:franchise",
+    "title": "franchise",
+    "term": "franchise",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈfræn.tʃaɪz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "chuỗi nhượng quyền thương mại",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Many fast food franchises have expanded rapidly across the country in recent years.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:multiple-factors",
+    "title": "multiple factors",
+    "term": "multiple factors",
+    "type": "Collocation",
+    "pronunciation": "/ˈmʌl.tɪ.pl ˈfæk.təz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nhiều yếu tố",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The success of a restaurant depends on multiple factors, including location and service quality.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:prevalence-of-restaurants-and-food-shops",
+    "title": "prevalence of restaurants and food shops",
+    "term": "prevalence of restaurants and food shops",
+    "type": "Collocation",
+    "pronunciation": "/ˈprɛv.ə.ləns əv ˈrɛs.tər.ɒnts ənd fuːd ʃɒps/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phổ biến của nhà hàng và cửa hàng thực phẩm",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The prevalence of restaurants and food shops in the city has made dining out more convenient than ever.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:attract-customers-and-appear-well-stocked",
+    "title": "attract customers and appear well-stocked",
+    "term": "attract customers and appear well-stocked",
+    "type": "Collocation",
+    "pronunciation": "/əˈtrækt ˈkʌstəməz ənd əˈpɪə welˈstɒkt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thu hút khách hàng và trông có vẻ đầy hàng",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Stores deliberately overstock shelves to attract customers and appear well-stocked at all times.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:budget-conscious-shopper",
+    "title": "budget-conscious shopper",
+    "term": "budget-conscious shopper",
+    "type": "Collocation",
+    "pronunciation": "/ˈbʌdʒɪt ˈkɒnʃəs ˈʃɒpə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "người mua sắm chú trọng ngân sách",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Discount supermarkets are designed to appeal to the budget-conscious shopper.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:consumerism",
+    "title": "consumerism",
+    "term": "consumerism",
+    "type": "Vocabulary",
+    "pronunciation": "/kənˈsjuːmərɪzəm/",
+    "part_of_speech": "noun",
+    "meaning_vi": "chủ nghĩa tiêu dùng",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Rampant consumerism encourages people to buy more food than they can realistically consume.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:demographics",
+    "title": "demographic's",
+    "term": "demographic's",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌdɛm.əˈɡræf.ɪks/",
+    "part_of_speech": "collocation",
+    "meaning_vi": "(noun (possessive)). thuộc về một nhóm nhân khẩu học",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Fast food chains often tailor their menus to a younger demographic's tastes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:mechanisms",
+    "title": "mechanisms",
+    "term": "mechanisms",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈmɛk.ə.nɪ.zəmz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "cơ chế",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "New marketing mechanisms have allowed food companies to reach wider audiences online.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:purchasing-habit",
+    "title": "purchasing habit",
+    "term": "purchasing habit",
+    "type": "Collocation",
+    "pronunciation": "/ˈpɜːtʃəsɪŋ ˈhæbɪt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thói quen mua sắm",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Advertisements on social media have significantly changed young people's purchasing habits.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:become-increasingly-prevalent",
+    "title": "become increasingly prevalent",
+    "term": "become increasingly prevalent",
+    "type": "Collocation",
+    "pronunciation": "/bɪˈkʌm ɪnˈkriː.sɪŋ.li ˈprɛv.ə.lənt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "trở nên ngày càng phổ biến",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Online grocery shopping has become increasingly prevalent since the pandemic.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:expect-a-significant-reduction",
+    "title": "expect a significant reduction",
+    "term": "expect a significant reduction",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈspɛkt ə sɪɡˈnɪf.ɪ.kənt rɪˈdʌk.ʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "dự đoán sự sụt giảm đáng kể",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Industry & Marketing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "During economic downturns, restaurant owners often expect a significant reduction in customer numbers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:cultural-food-identity",
+    "title": "cultural food identity",
+    "term": "cultural food identity",
+    "type": "Collocation",
+    "pronunciation": "/ˈkʌltʃərəl fuːd aɪˈdentəti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "bản sắc ẩm thực văn hóa",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Culture & Traditions",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The rise of global fast-food chains poses a threat to cultural food identity in many countries.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:local-agriculture-and-food-culture",
+    "title": "local agriculture and food culture",
+    "term": "local agriculture and food culture",
+    "type": "Collocation",
+    "pronunciation": "/ˈləʊkəl ˈæɡrɪkʌltʃər ænd fuːd ˈkʌltʃər/",
+    "part_of_speech": "noun",
+    "meaning_vi": "nông nghiệp và văn hóa ẩm thực địa phương",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Culture & Traditions",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "An overreliance on imports can undermine local agriculture and food culture.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:decline-in-traditional-food-practices",
+    "title": "decline in traditional food practices",
+    "term": "decline in traditional food practices",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈklaɪn ɪn trəˈdɪʃənəl fuːd ˈpræktɪsɪz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự suy giảm các tập quán ẩm thực truyền thống",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Culture & Traditions",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The dominance of imported convenience foods has led to a decline in traditional food practices.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:extreme-people",
+    "title": "Extreme people",
+    "term": "Extreme people",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈstriːm ˈpiː.pl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những người có quan điểm cực đoan",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Extreme people on both sides of the debate often ignore the nuances of food policy.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:general-public",
+    "title": "general public",
+    "term": "general public",
+    "type": "Collocation",
+    "pronunciation": "/ˈdʒɛn.rəl ˈpʌb.lɪk/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "công chúng, người dân nói chung",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Public health campaigns aim to educate the general public about balanced diets.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:makeup-conspiracies",
+    "title": "makeup conspiracies",
+    "term": "makeup conspiracies",
+    "type": "Collocation",
+    "pronunciation": "/ˈmeɪk.ʌp kənˈspɪr.ə.siz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bịa đặt ra các thuyết âm mưu",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Some online groups makeup conspiracies claiming that food regulators are hiding health risks.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:out-of-the-blue",
+    "title": "out of the blue",
+    "term": "out of the blue",
+    "type": "Collocation",
+    "pronunciation": "/aʊt əv ðə bluː/",
+    "part_of_speech": "idiom",
+    "meaning_vi": "bất ngờ, đột ngột",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The new sugar tax was introduced out of the blue, catching many manufacturers off guard.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:tobacco-and-alcohol-products",
+    "title": "tobacco and alcohol products",
+    "term": "tobacco and alcohol products",
+    "type": "Collocation",
+    "pronunciation": "/təˈbæk.əʊ ənd ˈæl.kə.hɒl ˈprɒd.ʌkts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các sản phẩm thuốc lá và rượu bia",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Governments often impose heavy taxes on tobacco and alcohol products to discourage consumption.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:oppressive",
+    "title": "oppressive",
+    "term": "oppressive",
+    "type": "Vocabulary",
+    "pronunciation": "/əˈprɛs.ɪv/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "hà khắc, áp bức",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Some critics argue that a sugar tax is an oppressive measure that unfairly targets the poor.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:an-effective-deterrent",
+    "title": "an effective deterrent",
+    "term": "an effective deterrent",
+    "type": "Collocation",
+    "pronunciation": "/ən ɪˈfektɪv dɪˈterənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "một biện pháp răn đe hiệu quả",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Higher fines for food safety violations can act as an effective deterrent for negligent restaurants.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:apply-a-sugar-tax",
+    "title": "apply a sugar-tax",
+    "term": "apply a sugar-tax",
+    "type": "Collocation",
+    "pronunciation": "/əˈplaɪ ə ˈʃʊɡ.ə tæks/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "áp dụng thuế đường",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Several countries have chosen to apply a sugar-tax to reduce soft drink consumption.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:avoid-lawsuits-for-food-poisoning",
+    "title": "avoid lawsuits for food poisoning",
+    "term": "avoid lawsuits for food poisoning",
+    "type": "Collocation",
+    "pronunciation": "/əˈvɔɪd ˈlɔː.suːts fɔː fuːd ˈpɔɪ.zən.ɪŋ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tránh các vụ kiện do ngộ độc thực phẩm",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Restaurants follow strict hygiene protocols to avoid lawsuits for food poisoning.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:expiry-date-standards",
+    "title": "expiry-date standards",
+    "term": "expiry-date standards",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈspaɪəri deɪt ˈstændədz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tiêu chuẩn về hạn sử dụng",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Clearer expiry-date standards would help consumers distinguish between food that is unsafe and food that is merely past its best.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:government-intervention",
+    "title": "government intervention",
+    "term": "government intervention",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡʌv.ən.mənt ˌɪn.təˈvɛn.ʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự can thiệp của chính phủ",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Some economists believe government intervention is necessary to curb unhealthy eating habits.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:implement-a-sugar-tax-on-all-their-products",
+    "title": "implement a sugar tax on all their products",
+    "term": "implement a sugar tax on all their products",
+    "type": "Collocation",
+    "pronunciation": "/ˈɪm.plɪ.mɛnt ə ˈʃʊɡ.ə tæks ɒn ɔːl ðeə ˈprɒd.ʌkts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "áp dụng thuế đường lên toàn bộ sản phẩm của họ",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Regulators are pressuring beverage companies to implement a sugar tax on all their products.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:implementing-a-fine",
+    "title": "implementing a fine",
+    "term": "implementing a fine",
+    "type": "Collocation",
+    "pronunciation": "/ˈɪmplɪmentɪŋ ə faɪn/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "áp dụng một khoản phạt",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Some cities have reduced food waste by implementing a fine for businesses that discard edible produce.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:levy-a-tax",
+    "title": "levy a tax",
+    "term": "levy a tax",
+    "type": "Collocation",
+    "pronunciation": "/ˈlevi ə tæks/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đánh thuế",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Several governments have chosen to levy a tax on sugary beverages to curb consumption.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:maintain-freshness-standards",
+    "title": "maintain freshness standards",
+    "term": "maintain freshness standards",
+    "type": "Collocation",
+    "pronunciation": "/meɪnˈteɪn ˈfreʃnəs ˈstændədz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "duy trì tiêu chuẩn độ tươi",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Strict regulations require restaurants to maintain freshness standards for all perishable ingredients.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:special-taxes",
+    "title": "special taxes",
+    "term": "special taxes",
+    "type": "Collocation",
+    "pronunciation": "/ˈspeʃl ˈtæksɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thuế đặc biệt",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Special taxes on sugar have been introduced in several countries to discourage unhealthy diets.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:transparent",
+    "title": "transparent",
+    "term": "transparent",
+    "type": "Vocabulary",
+    "pronunciation": "/trænsˈpær.ənt/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "minh bạch, rõ ràng",
+    "topic": "Food & Drinks",
+    "subTopic": "Food Safety & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Food companies should be more transparent about the ingredients used in their products.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:aesthetic-standard",
+    "title": "aesthetic standard",
+    "term": "aesthetic standard",
+    "type": "Collocation",
+    "pronunciation": "/iːsˈθetɪk ˈstændəd/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tiêu chuẩn thẩm mỹ",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Rigid aesthetic standards mean that perfectly edible but misshapen produce is frequently thrown away.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:ascribed",
+    "title": "ascribed",
+    "term": "ascribed",
+    "type": "Vocabulary",
+    "pronunciation": "/əˈskraɪbd/",
+    "part_of_speech": "collocation",
+    "meaning_vi": "(verb (past participle)). được quy cho, gán cho",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The sharp rise in food waste is largely ascribed to changing consumer attitudes towards leftovers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:bulk-buying-incentive",
+    "title": "bulk-buying incentive",
+    "term": "bulk-buying incentive",
+    "type": "Collocation",
+    "pronunciation": "/bʌlk ˈbaɪɪŋ ɪnˈsentɪv/",
+    "part_of_speech": "noun",
+    "meaning_vi": "ưu đãi mua số lượng lớn",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Retailers' bulk-buying incentives often encourage households to purchase more food than they can consume.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:careless-purchasing-habits",
+    "title": "careless purchasing habits",
+    "term": "careless purchasing habits",
+    "type": "Collocation",
+    "pronunciation": "/ˈkeələs ˈpɜːtʃəsɪŋ ˈhæbɪts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thói quen mua sắm bất cẩn",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Careless purchasing habits, such as buying in bulk without planning meals, contribute heavily to household waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:consumer-mindset",
+    "title": "consumer mindset",
+    "term": "consumer mindset",
+    "type": "Collocation",
+    "pronunciation": "/kənˈsjuːmər ˈmaɪndset/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tư duy của người tiêu dùng",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Changing the consumer mindset towards overbuying is crucial to tackling household food waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:devaluation",
+    "title": "devaluation",
+    "term": "devaluation",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌdiːvæljuˈeɪʃn/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự mất giá, hạ thấp giá trị",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The devaluation of food in wealthy societies has made people careless about how much they throw away.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:excess",
+    "title": "excess",
+    "term": "excess",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪkˈses/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự dư thừa",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Restaurants often prepare food in excess to avoid disappointing customers during peak hours.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:excessive-commercial-food-production",
+    "title": "excessive commercial food production",
+    "term": "excessive commercial food production",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈsesɪv kəˈmɜːʃəl fuːd prəˈdʌkʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sản xuất thực phẩm thương mại quá mức",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Excessive commercial food production often results in surplus stock that supermarkets simply throw away.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:food-consumption-rate",
+    "title": "food consumption rate",
+    "term": "food consumption rate",
+    "type": "Collocation",
+    "pronunciation": "/fuːd kənˈsʌmpʃn reɪt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tỷ lệ tiêu thụ thực phẩm",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Researchers found that household food consumption rates have risen sharply over the past decade.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:irresponsible-consumer-behaviour",
+    "title": "irresponsible consumer behaviour",
+    "term": "irresponsible consumer behaviour",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪrɪˈspɒnsəbl kənˈsjuːmə bɪˈheɪvjə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hành vi tiêu dùng thiếu trách nhiệm",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Overbuying perishable items is a clear example of irresponsible consumer behaviour that fuels waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:large-scale-restaurants",
+    "title": "Large-scale restaurants",
+    "term": "Large-scale restaurants",
+    "type": "Collocation",
+    "pronunciation": "/lɑːdʒ skeɪl ˈrɛs.tər.ɒnts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các nhà hàng quy mô lớn",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Large-scale restaurants often generate significant amounts of food waste each day.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:legitimate-reasons",
+    "title": "legitimate reasons",
+    "term": "legitimate reasons",
+    "type": "Collocation",
+    "pronunciation": "/lɪˈdʒɪt.ɪ.mət ˈriː.zənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những lý do chính đáng",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Restaurants sometimes discard food for legitimate reasons, such as hygiene regulations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:logistical-shortcoming",
+    "title": "logistical shortcoming",
+    "term": "logistical shortcoming",
+    "type": "Collocation",
+    "pronunciation": "/ləˈdʒɪstɪkəl ˈʃɔːtkʌmɪŋ/",
+    "part_of_speech": "noun",
+    "meaning_vi": "thiếu sót về hậu cần",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Poor storage facilities and other logistical shortcomings contribute significantly to food loss in developing countries.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:overabundance",
+    "title": "overabundance",
+    "term": "overabundance",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌəʊvərəˈbʌndəns/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự dư thừa quá mức",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "An overabundance of cheap processed food has made healthy eating less of a priority for many families.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:purchase-excessive-quantities",
+    "title": "purchase excessive quantities",
+    "term": "purchase excessive quantities",
+    "type": "Collocation",
+    "pronunciation": "/ˈpɜːtʃəs ɪkˈsesɪv ˈkwɒntɪtiz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "mua số lượng quá mức",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Shoppers tend to purchase excessive quantities of groceries whenever supermarkets run buy-one-get-one-free deals.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:rarity",
+    "title": "rarity",
+    "term": "rarity",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈreərəti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự hiếm có",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Unlike previous generations, food is no longer a rarity for most people in developed countries.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:supply-chain",
+    "title": "supply chain",
+    "term": "supply chain",
+    "type": "Collocation",
+    "pronunciation": "/səˈplaɪ tʃeɪn/",
+    "part_of_speech": "noun",
+    "meaning_vi": "chuỗi cung ứng",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Inefficiencies at every stage of the supply chain can result in enormous quantities of edible food being discarded.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:the-oversupply-of-food",
+    "title": "the oversupply of food",
+    "term": "the oversupply of food",
+    "type": "Collocation",
+    "pronunciation": "/ði ˌəʊvəsəˈplaɪ əv fuːd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tình trạng dư thừa thực phẩm",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The oversupply of food at large retailers frequently leads to edible produce being discarded unnecessarily.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:a-glut-of-products",
+    "title": "a glut of products",
+    "term": "a glut of products",
+    "type": "Collocation",
+    "pronunciation": "/ə ɡlʌt əv ˈprɒd.ʌkts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự dư thừa sản phẩm",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Overproduction can lead to a glut of products that eventually go to waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:carbon-intensity-per-calorie",
+    "title": "carbon intensity per calorie",
+    "term": "carbon intensity per calorie",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɑːbən ɪnˈtensəti pər ˈkæləri/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cường độ phát thải carbon trên mỗi calo",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Researchers found that air-freighted fruit has a far higher carbon intensity per calorie than seasonal local produce.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:edible-food",
+    "title": "edible food",
+    "term": "edible food",
+    "type": "Collocation",
+    "pronunciation": "/ˈedəbl fuːd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thực phẩm ăn được",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Supermarkets throw away tonnes of perfectly edible food every year simply because of packaging damage.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:environmental-repercussions",
+    "title": "environmental repercussions",
+    "term": "environmental repercussions",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˌvaɪrənˈmentəl ˌriːpəˈkʌʃənz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "hậu quả đối với môi trường",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Long-distance food transportation carries serious environmental repercussions that policymakers cannot ignore.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:food-waste",
+    "title": "food waste",
+    "term": "food waste",
+    "type": "Collocation",
+    "pronunciation": "/fuːd weɪst/",
+    "part_of_speech": "noun",
+    "meaning_vi": "lãng phí thực phẩm",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Food waste remains one of the most pressing sustainability challenges facing modern societies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:household-waste",
+    "title": "household waste",
+    "term": "household waste",
+    "type": "Collocation",
+    "pronunciation": "/ˈhaʊshəʊld weɪst/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "rác thải hộ gia đình",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Composting schemes have significantly reduced household waste in several European cities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:post-harvest-losses",
+    "title": "post-harvest losses",
+    "term": "post-harvest losses",
+    "type": "Collocation",
+    "pronunciation": "/pəʊst ˈhɑːvɪst ˈlɒsɪz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tổn thất sau thu hoạch",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "In many developing countries, post-harvest losses account for a significant proportion of total food waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:routinely-discarded",
+    "title": "routinely discarded",
+    "term": "routinely discarded",
+    "type": "Collocation",
+    "pronunciation": "/ruːˈtiːnli dɪˈskɑːdɪd/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "thường xuyên bị vứt bỏ",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Fruit that fails to meet cosmetic standards is routinely discarded before it even reaches shop shelves.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:substantial-fuel-consumption",
+    "title": "substantial fuel consumption",
+    "term": "substantial fuel consumption",
+    "type": "Collocation",
+    "pronunciation": "/səbˈstænʃəl fjuːəl kənˈsʌmpʃən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "mức tiêu thụ nhiên liệu đáng kể",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Transporting food across continents involves substantial fuel consumption, worsening greenhouse gas emissions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:the-cost-to-both-the-environment-and-to-people-is-too-great",
+    "title": "the cost to both the environment and to people is too great",
+    "term": "the cost to both the environment and to people is too great",
+    "type": "Collocation",
+    "pronunciation": "/ðə kɒst tuː bəʊθ ði ɪnˈvaɪ.rən.mənt ənd tuː ˈpiː.pl ɪz tuː ɡreɪt/",
+    "part_of_speech": "clause",
+    "meaning_vi": "cái giá phải trả cho cả môi trường lẫn con người là quá lớn",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Many environmentalists argue that the cost to both the environment and to people is too great to ignore food waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:widespread-transit-of-food",
+    "title": "widespread transit of food",
+    "term": "widespread transit of food",
+    "type": "Collocation",
+    "pronunciation": "/ˈwaɪdspred ˈtrænzɪt əv fuːd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc vận chuyển thực phẩm trên diện rộng",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The widespread transit of food across continents raises serious concerns about carbon emissions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:a-balance-between-food-supply-and-demand",
+    "title": "a balance between food supply and demand",
+    "term": "a balance between food supply and demand",
+    "type": "Collocation",
+    "pronunciation": "/ə ˈbæləns bɪˈtwiːn fuːd səˈplaɪ ənd dɪˈmɑːnd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự cân bằng giữa cung và cầu thực phẩm",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Retailers use sales data to maintain a balance between food supply and demand.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:avoid-over-preparing-food",
+    "title": "avoid over-preparing food",
+    "term": "avoid over-preparing food",
+    "type": "Collocation",
+    "pronunciation": "/əˈvɔɪd ˈəʊ.vər.prɪˌpeər.ɪŋ fuːd/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tránh chuẩn bị dư thừa thức ăn",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Restaurants can reduce waste by learning to avoid over-preparing food during quiet hours.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:cold-chain-logistics",
+    "title": "cold-chain logistics",
+    "term": "cold-chain logistics",
+    "type": "Collocation",
+    "pronunciation": "/kəʊld tʃeɪn ləˈdʒɪstɪks/",
+    "part_of_speech": "noun",
+    "meaning_vi": "hệ thống hậu cần chuỗi lạnh",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Investment in cold-chain logistics can prevent perishable goods from spoiling before they reach consumers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:commendable",
+    "title": "commendable",
+    "term": "commendable",
+    "type": "Vocabulary",
+    "pronunciation": "/kəˈmendəbl/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "đáng khen ngợi",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Donating unsold meals to shelters is a commendable practice that many restaurants have adopted.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:consumer-awareness-programme",
+    "title": "consumer awareness programme",
+    "term": "consumer awareness programme",
+    "type": "Collocation",
+    "pronunciation": "/kənˈsjuːmər əˈweənəs ˈprəʊɡræm/",
+    "part_of_speech": "noun",
+    "meaning_vi": "chương trình nâng cao nhận thức người tiêu dùng",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Launching consumer awareness programmes can help households understand the true cost of food waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:efficient-consumption",
+    "title": "efficient consumption",
+    "term": "efficient consumption",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈfɪʃənt kənˈsʌmpʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự tiêu thụ hiệu quả",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Meal planning apps encourage efficient consumption by helping users buy only what they need.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:environmental-advantage",
+    "title": "environmental advantage",
+    "term": "environmental advantage",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˌvaɪrənˈmentl ədˈvɑːntɪdʒ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lợi ích môi trường",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Buying seasonal produce offers a clear environmental advantage by cutting transport emissions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:food-bank-organization",
+    "title": "food-bank organization",
+    "term": "food-bank organization",
+    "type": "Collocation",
+    "pronunciation": "/fuːd bæŋk ˌɔːɡənaɪˈzeɪʃən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tổ chức ngân hàng thực phẩm",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Food-bank organizations play a vital role in redistributing surplus food to those in need.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:homeless-shelters-orphanages",
+    "title": "Homeless shelters, orphanages",
+    "term": "Homeless shelters, orphanages",
+    "type": "Collocation",
+    "pronunciation": "/ˈhəʊm.ləs ˈʃɛl.təz ˈɔː.fə.nɪdʒ.ɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các trung tâm bảo trợ người vô gia cư, trại trẻ mồ côi",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Surplus food from supermarkets is often donated to homeless shelters, orphanages, and other charities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:menu-planning-workshop",
+    "title": "menu-planning workshop",
+    "term": "menu-planning workshop",
+    "type": "Collocation",
+    "pronunciation": "/ˈmenjuː ˈplænɪŋ ˈwɜːkʃɒp/",
+    "part_of_speech": "noun",
+    "meaning_vi": "hội thảo lập kế hoạch thực đơn",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Community menu-planning workshops teach families how to shop more efficiently and waste less food.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:portion-control",
+    "title": "portion control",
+    "term": "portion control",
+    "type": "Collocation",
+    "pronunciation": "/ˈpɔːʃən kənˈtrəʊl/",
+    "part_of_speech": "noun",
+    "meaning_vi": "kiểm soát khẩu phần ăn",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Practising portion control at home not only benefits health but also reduces food waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:problem-solving",
+    "title": "problem-solving",
+    "term": "problem-solving",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈprɒbləm ˌsɒlvɪŋ/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự giải quyết vấn đề",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Tackling food waste calls for creative problem-solving at every stage of the supply chain.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:raise-consumers-awareness",
+    "title": "raise consumer's awareness",
+    "term": "raise consumer's awareness",
+    "type": "Collocation",
+    "pronunciation": "/reɪz kənˈsjuːməz əˈweənəs/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nâng cao nhận thức của người tiêu dùng",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Labelling schemes can raise consumer's awareness of how much food ends up in landfills.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:redirected-to-disadvantaged-groups",
+    "title": "redirected to disadvantaged groups",
+    "term": "redirected to disadvantaged groups",
+    "type": "Collocation",
+    "pronunciation": "/ˌriːdəˈrektɪd tuː ˌdɪsədˈvɑːntɪdʒd ɡruːps/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "được chuyển hướng đến các nhóm yếu thế",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Surplus supermarket food is increasingly redirected to disadvantaged groups through charity partnerships.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:redistribution",
+    "title": "redistribution",
+    "term": "redistribution",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌriːdɪstrɪˈbjuːʃn/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự phân phối lại",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "The redistribution of surplus produce to food banks helps reduce both waste and hunger.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:refrigerated-transport-network",
+    "title": "refrigerated transport network",
+    "term": "refrigerated transport network",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈfrɪdʒəreɪtɪd ˈtrænspɔːt ˈnetwɜːk/",
+    "part_of_speech": "noun",
+    "meaning_vi": "mạng lưới vận chuyển lạnh",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Expanding refrigerated transport networks would drastically reduce post-harvest spoilage in rural regions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:remedy",
+    "title": "remedy",
+    "term": "remedy",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈremədi/",
+    "part_of_speech": "verb",
+    "meaning_vi": "khắc phục, giải quyết",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Better inventory forecasting could remedy the problem of excess stock going to waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:resource-efficiency",
+    "title": "resource efficiency",
+    "term": "resource efficiency",
+    "type": "Collocation",
+    "pronunciation": "/ˈriːsɔːs ɪˈfɪʃənsi/",
+    "part_of_speech": "noun",
+    "meaning_vi": "hiệu quả sử dụng tài nguyên",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Improving resource efficiency throughout the food system is essential to feeding a growing population sustainably.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:reuse-leftovers",
+    "title": "reuse leftovers",
+    "term": "reuse leftovers",
+    "type": "Collocation",
+    "pronunciation": "/riːˈjuːz ˈleftəʊvəz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tái sử dụng thức ăn thừa",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Cooking shows now encourage viewers to reuse leftovers instead of throwing them away.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:tax-incentive",
+    "title": "tax incentive",
+    "term": "tax incentive",
+    "type": "Collocation",
+    "pronunciation": "/tæks ɪnˈsentɪv/",
+    "part_of_speech": "noun",
+    "meaning_vi": "ưu đãi thuế",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Offering tax incentives to businesses that donate surplus food could substantially cut national food waste levels.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:to-introduce-a-reasonable-quota-of-food-waste",
+    "title": "to introduce a reasonable quota of food waste",
+    "term": "to introduce a reasonable quota of food waste",
+    "type": "Collocation",
+    "pronunciation": "/tʊ ˌɪntrəˈdjuːs ə ˈriːznəbl ˈkwəʊtə əv fuːd weɪst/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đưa ra một hạn ngạch hợp lý về lãng phí thực phẩm",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Policymakers are considering plans to introduce a reasonable quota of food waste for large supermarket chains.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:food-drinks:ensure-the-best-food-conditions",
+    "title": "ensure the best food conditions",
+    "term": "ensure the best food conditions",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈʃɔː ðə best fuːd kənˈdɪʃənz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đảm bảo điều kiện thực phẩm tốt nhất",
+    "topic": "Food & Drinks",
+    "subTopic": "Sustainability & Food Waste",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Food & Drinks",
+    "examples": [
+      {
+        "en": "Some governments subsidise cold-chain storage in order to ensure the best food conditions for products travelling long distances.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  }
+]

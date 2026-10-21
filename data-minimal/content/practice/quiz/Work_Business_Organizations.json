@@ -1,0 +1,1539 @@
+{
+  "questions": [
+    {
+      "id": "sa_work one's way up_0_0",
+      "type": "short_answer",
+      "sentence": "He is determined to ___ in the company.",
+      "options": [],
+      "correct_answer": "work his way up the ladder",
+      "explanation": "work your way up the ladder",
+      "hint": "Thăng tiến trong công ty hoặc tổ chức.",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_proposal_0_0",
+      "type": "short_answer",
+      "sentence": "I'd like to ___ for a new project.",
+      "options": [],
+      "correct_answer": "make a proposal",
+      "explanation": "make a proposal",
+      "hint": "đưa ra một đề xuất",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_proposal_1_0",
+      "type": "short_answer",
+      "sentence": "They ___ for a joint research project.",
+      "options": [],
+      "correct_answer": "put forward a proposal",
+      "explanation": "put forward a proposal",
+      "hint": "trình bày, đề xuất một kế hoạch",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_proposal_2_0",
+      "type": "short_answer",
+      "sentence": "The sales staff ___.",
+      "options": [],
+      "correct_answer": "came up with a proposal",
+      "explanation": "come up with a proposal",
+      "hint": "nghĩ ra một đề xuất",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_proposal_3_0",
+      "type": "short_answer",
+      "sentence": "A committee of experts ___ for a constitution.",
+      "options": [],
+      "correct_answer": "drew up a proposal",
+      "explanation": "draw up a proposal",
+      "hint": "soạn thảo một đề xuất",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_proposal_4_0",
+      "type": "short_answer",
+      "sentence": "The committee ___.",
+      "options": [],
+      "correct_answer": "approved the proposal",
+      "explanation": "approve a proposal",
+      "hint": "phê duyệt một đề xuất",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_proposal_5_0",
+      "type": "short_answer",
+      "sentence": "The council ___.",
+      "options": [],
+      "correct_answer": "rejected the proposal",
+      "explanation": "reject a proposal",
+      "hint": "bác bỏ một đề xuất",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_proposal_6_0",
+      "type": "short_answer",
+      "sentence": "Students must submit a ___ before starting their thesis.",
+      "options": [],
+      "correct_answer": "research proposal",
+      "explanation": "research proposal",
+      "hint": "đề xuất nghiên cứu",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_proposal_7_0",
+      "type": "short_answer",
+      "sentence": "They submitted a ___ to the government.",
+      "options": [],
+      "correct_answer": "detailed proposal",
+      "explanation": "detailed proposal",
+      "hint": "đề xuất chi tiết",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_effort_0_0",
+      "type": "short_answer",
+      "sentence": "She ___ to change the subject of the conversation.",
+      "options": [],
+      "correct_answer": "made an effort",
+      "explanation": "make an effort",
+      "hint": "Cố gắng.",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_effort_1_0",
+      "type": "short_answer",
+      "sentence": "Let’s try again, only ___ it this time.",
+      "options": [],
+      "correct_answer": "put more effort into",
+      "explanation": "put effort into (doing) + sth",
+      "hint": "Nỗ lực, dồn công sức vào việc gì.",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_effort_2_0",
+      "type": "short_answer",
+      "sentence": "An automatic car ___ driving.",
+      "options": [],
+      "correct_answer": "takes the effort out of",
+      "explanation": "take the effort out of + sth",
+      "hint": "Làm cho việc gì đó trở nên dễ dàng, bớt công sức.",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_effort_3_0",
+      "type": "short_answer",
+      "sentence": "It’s a difficult place to get to, but it's ___.",
+      "options": [],
+      "correct_answer": "well worth the effort",
+      "explanation": "be worth the effort",
+      "hint": "Xứng đáng với công sức bỏ ra.",
+      "collocation_type": "phrase"
+    },
+    {
+      "id": "sa_effort_4_0",
+      "type": "short_answer",
+      "sentence": "It will take a ___ to change the culture of binge-drinking in the country.",
+      "options": [],
+      "correct_answer": "concerted effort",
+      "explanation": "concerted effort",
+      "hint": "Nỗ lực phối hợp, đồng bộ.",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_effort_5_0",
+      "type": "short_answer",
+      "sentence": "We had many fine individual performances, but the win was a real ___.",
+      "options": [],
+      "correct_answer": "team effort",
+      "explanation": "joint effort",
+      "hint": "Nỗ lực chung, nỗ lực của cả nhóm.",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_effort_6_0",
+      "type": "short_answer",
+      "sentence": "He struggled back from two sets down to win the match, showing great ___.",
+      "options": [],
+      "correct_answer": "physical and mental effort",
+      "explanation": "physical/mental effort",
+      "hint": "Nỗ lực thể chất/tinh thần.",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_effort_7_0",
+      "type": "short_answer",
+      "sentence": "Her horse jumped the fence ___.",
+      "options": [],
+      "correct_answer": "without any effort",
+      "explanation": "without effort",
+      "hint": "Một cách dễ dàng, không cần cố gắng.",
+      "collocation_type": "prepositional phrase"
+    },
+    {
+      "id": "sa_negotiate_0_0",
+      "type": "short_answer",
+      "sentence": "She has excellent ___.",
+      "options": [],
+      "correct_answer": "negotiating skills",
+      "explanation": "negotiating skills",
+      "hint": "Kỹ năng đàm phán",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_negotiate_1_0",
+      "type": "short_answer",
+      "sentence": "A strong ___ is crucial for success.",
+      "options": [],
+      "correct_answer": "negotiating position",
+      "explanation": "negotiating position",
+      "hint": "Vị thế đàm phán",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_negotiate_2_0",
+      "type": "short_answer",
+      "sentence": "The UN was asked to ___ the warring factions.",
+      "options": [],
+      "correct_answer": "negotiate between",
+      "explanation": "negotiate between A and B",
+      "hint": "Đàm phán giữa hai bên",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_official_0_0",
+      "type": "short_answer",
+      "sentence": "The prime minister was on an ___ to China.",
+      "options": [],
+      "correct_answer": "official visit",
+      "explanation": "official visit",
+      "hint": "chuyến thăm chính thức",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_official_1_0",
+      "type": "short_answer",
+      "sentence": "the royal family's ___.",
+      "options": [],
+      "correct_answer": "official duties",
+      "explanation": "official duties",
+      "hint": "nhiệm vụ chính thức",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_official_2_0",
+      "type": "short_answer",
+      "sentence": "the ambassador's ___ in London",
+      "options": [],
+      "correct_answer": "official residence",
+      "explanation": "official residence",
+      "hint": "nơi cư trú chính thức",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_official_3_0",
+      "type": "short_answer",
+      "sentence": "He spent Wednesday in Washington acting in his ___ as Senate majority leader.",
+      "options": [],
+      "correct_answer": "official capacity",
+      "explanation": "official capacity",
+      "hint": "tư cách/với tư cách chính thức",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_commission_0_0",
+      "type": "short_answer",
+      "sentence": "The main printer is ___ until tomorrow.",
+      "options": [],
+      "correct_answer": "out of commission",
+      "explanation": "out of commission",
+      "hint": "Không hoạt động, bị hỏng",
+      "collocation_type": "idiom"
+    },
+    {
+      "id": "sa_commission_1_0",
+      "type": "short_answer",
+      "sentence": "The new ship was finally ___ after extensive sea trials.",
+      "options": [],
+      "correct_answer": "in commission",
+      "explanation": "in commission",
+      "hint": "Đang hoạt động, sẵn sàng để sử dụng",
+      "collocation_type": "idiom"
+    },
+    {
+      "id": "sa_commission_2_0",
+      "type": "short_answer",
+      "sentence": "Salespeople often try to ___ by selling more products.",
+      "options": [],
+      "correct_answer": "make a commission",
+      "explanation": "make a commission",
+      "hint": "Kiếm được tiền hoa hồng",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_occupation_0_0",
+      "type": "short_answer",
+      "sentence": "People from ___ are most at risk of experiencing poverty.",
+      "options": [],
+      "correct_answer": "manual occupations",
+      "explanation": "manual occupations",
+      "hint": "Các ngành nghề lao động chân tay",
+      "collocation_type": "Adj+N"
+    },
+    {
+      "id": "sa_occupation_1_0",
+      "type": "short_answer",
+      "sentence": "He aspires to work in ___ like medicine.",
+      "options": [],
+      "correct_answer": "professional occupations",
+      "explanation": "professional occupations",
+      "hint": "Các ngành nghề chuyên môn, lao động trí óc",
+      "collocation_type": "Adj+N"
+    },
+    {
+      "id": "sa_occupation_2_0",
+      "type": "short_answer",
+      "sentence": "Plumbing requires ___ and extensive training.",
+      "options": [],
+      "correct_answer": "skilled occupations",
+      "explanation": "skilled occupations",
+      "hint": "Các ngành nghề đòi hỏi kỹ năng",
+      "collocation_type": "Adj+N"
+    },
+    {
+      "id": "sa_occupation_3_0",
+      "type": "short_answer",
+      "sentence": "It is important for young people to get guidance when they ___.",
+      "options": [],
+      "correct_answer": "choose an occupation",
+      "explanation": "choose an occupation",
+      "hint": "Chọn một nghề nghiệp",
+      "collocation_type": "V+N"
+    },
+    {
+      "id": "sa_occupation_4_0",
+      "type": "short_answer",
+      "sentence": "She decided to ___ in teaching after graduating.",
+      "options": [],
+      "correct_answer": "take up an occupation",
+      "explanation": "take up an occupation",
+      "hint": "Bắt đầu làm một nghề nghiệp",
+      "collocation_type": "V+N"
+    },
+    {
+      "id": "sa_demand_0_0",
+      "type": "short_answer",
+      "sentence": "There is a ___ for housing in urban areas.",
+      "options": [],
+      "correct_answer": "high demand",
+      "explanation": "high demand",
+      "hint": "Nhu cầu cao",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_demand_1_0",
+      "type": "short_answer",
+      "sentence": "There is always ___ for photographs of celebrities.",
+      "options": [],
+      "correct_answer": "a big demand",
+      "explanation": "a big demand",
+      "hint": "Nhu cầu lớn",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_demand_2_0",
+      "type": "short_answer",
+      "sentence": "The company is struggling to ___ for its products.",
+      "options": [],
+      "correct_answer": "meet demand",
+      "explanation": "meet demand",
+      "hint": "Đáp ứng nhu cầu",
+      "collocation_type": "V + N"
+    },
+    {
+      "id": "sa_demand_3_0",
+      "type": "short_answer",
+      "sentence": "Public funding for higher education has not ___.",
+      "options": [],
+      "correct_answer": "kept up with demand",
+      "explanation": "keep up with demand",
+      "hint": "Bắt kịp/đáp ứng kịp nhu cầu",
+      "collocation_type": "V + prepositional phrase"
+    },
+    {
+      "id": "sa_demand_4_0",
+      "type": "short_answer",
+      "sentence": "Fuel-efficient cars are now ___ worldwide.",
+      "options": [],
+      "correct_answer": "in demand",
+      "explanation": "be in demand",
+      "hint": "Được săn đón, có nhu cầu cao",
+      "collocation_type": "V + prepositional phrase"
+    },
+    {
+      "id": "sa_demand_5_0",
+      "type": "short_answer",
+      "sentence": "In some markets, ___, leading to lower prices.",
+      "options": [],
+      "correct_answer": "supply outstrips demand",
+      "explanation": "supply outstrips demand",
+      "hint": "Cung vượt cầu",
+      "collocation_type": "N + V + N"
+    },
+    {
+      "id": "sa_competitive_0_0",
+      "type": "short_answer",
+      "sentence": "Companies must adapt to a ___.",
+      "options": [],
+      "correct_answer": "competitive market",
+      "explanation": "competitive + market/industry/environment",
+      "hint": "thị trường/ngành/môi trường cạnh tranh",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_competitive_0_1",
+      "type": "short_answer",
+      "sentence": "They operate in a highly ___.",
+      "options": [],
+      "correct_answer": "competitive industry",
+      "explanation": "competitive + market/industry/environment",
+      "hint": "thị trường/ngành/môi trường cạnh tranh",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_competitive_1_0",
+      "type": "short_answer",
+      "sentence": "The job market is ___.",
+      "options": [],
+      "correct_answer": "highly competitive",
+      "explanation": "highly competitive",
+      "hint": "cực kỳ cạnh tranh",
+      "collocation_type": "Adj phrase"
+    },
+    {
+      "id": "sa_competitive_1_1",
+      "type": "short_answer",
+      "sentence": "University admissions are becoming increasingly ___.",
+      "options": [],
+      "correct_answer": "competitive",
+      "explanation": "highly competitive",
+      "hint": "cực kỳ cạnh tranh",
+      "collocation_type": "Adj phrase"
+    },
+    {
+      "id": "sa_competitive_2_0",
+      "type": "short_answer",
+      "sentence": "The global market is becoming ___.",
+      "options": [],
+      "correct_answer": "increasingly competitive",
+      "explanation": "increasingly competitive",
+      "hint": "ngày càng cạnh tranh hơn",
+      "collocation_type": "Adj phrase"
+    },
+    {
+      "id": "sa_competitive_3_0",
+      "type": "short_answer",
+      "sentence": "Children benefit from taking part in ___.",
+      "options": [],
+      "correct_answer": "competitive sports",
+      "explanation": "competitive sports/games",
+      "hint": "thể thao/trò chơi mang tính cạnh tranh",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_flat rate_0_0",
+      "type": "short_answer",
+      "sentence": "The company decided to ___ for all its services.",
+      "options": [],
+      "correct_answer": "charge a flat rate",
+      "explanation": "charge a flat rate",
+      "hint": "tính một mức giá cố định",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_flat rate_1_0",
+      "type": "short_answer",
+      "sentence": "Many subscription services use ___ to attract customers.",
+      "options": [],
+      "correct_answer": "flat-rate pricing",
+      "explanation": "flat-rate pricing",
+      "hint": "chính sách giá cố định",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_flat rate_2_0",
+      "type": "short_answer",
+      "sentence": "A ___ system is simpler to administer than a progressive one.",
+      "options": [],
+      "correct_answer": "flat-rate tax",
+      "explanation": "flat-rate tax",
+      "hint": "thuế suất cố định",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_secretary_0_0",
+      "type": "short_answer",
+      "sentence": "She was appointed as the new ___.",
+      "options": [],
+      "correct_answer": "company secretary",
+      "explanation": "company secretary",
+      "hint": "thư ký công ty",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_secretary_1_0",
+      "type": "short_answer",
+      "sentence": "He hired a ___ to manage his schedule.",
+      "options": [],
+      "correct_answer": "personal secretary",
+      "explanation": "personal secretary",
+      "hint": "thư ký riêng",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_secretary_2_0",
+      "type": "short_answer",
+      "sentence": "The minister's ___ handled all appointments.",
+      "options": [],
+      "correct_answer": "private secretary",
+      "explanation": "private secretary",
+      "hint": "thư ký riêng (thường cho người có chức vụ cao)",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_membership_0_0",
+      "type": "short_answer",
+      "sentence": "Many students ___ of academic clubs.",
+      "options": [],
+      "correct_answer": "apply for membership",
+      "explanation": "apply for membership",
+      "hint": "nộp đơn làm thành viên",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_membership_1_0",
+      "type": "short_answer",
+      "sentence": "The country was ___ of the organization.",
+      "options": [],
+      "correct_answer": "granted membership",
+      "explanation": "be granted membership",
+      "hint": "được cấp tư cách thành viên",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_membership_2_0",
+      "type": "short_answer",
+      "sentence": "Some applicants are ___ due to strict requirements.",
+      "options": [],
+      "correct_answer": "refused membership",
+      "explanation": "be refused membership",
+      "hint": "bị từ chối tư cách thành viên",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_membership_3_0",
+      "type": "short_answer",
+      "sentence": "Many young people have ___ to stay fit.",
+      "options": [],
+      "correct_answer": "gym membership",
+      "explanation": "gym/club/party membership",
+      "hint": "tư cách thành viên (phòng gym/câu lạc bộ/tổ chức)",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_membership_4_0",
+      "type": "short_answer",
+      "sentence": "The country aims to achieve ___ in the EU.",
+      "options": [],
+      "correct_answer": "full membership",
+      "explanation": "full membership",
+      "hint": "tư cách thành viên đầy đủ",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_membership_5_0",
+      "type": "short_answer",
+      "sentence": "The ___ is affordable for most students.",
+      "options": [],
+      "correct_answer": "membership fee",
+      "explanation": "membership fee",
+      "hint": "phí thành viên",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_promotion_0_0",
+      "type": "short_answer",
+      "sentence": "She was delighted to ___ after just two years at the company.",
+      "options": [],
+      "correct_answer": "make a promotion",
+      "explanation": "make a promotion",
+      "hint": "Được thăng chức",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_promotion_1_0",
+      "type": "short_answer",
+      "sentence": "Many young professionals actively ___ in their early careers.",
+      "options": [],
+      "correct_answer": "seek promotion",
+      "explanation": "seek promotion",
+      "hint": "Tìm kiếm sự thăng tiến",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_promotion_2_0",
+      "type": "short_answer",
+      "sentence": "The store is running a special ___ this weekend.",
+      "options": [],
+      "correct_answer": "sales promotion",
+      "explanation": "sales promotion",
+      "hint": "Khuyến mãi bán hàng",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_commitment_0_0",
+      "type": "short_answer",
+      "sentence": "Young people should ___ their goals.",
+      "options": [],
+      "correct_answer": "make a commitment to",
+      "explanation": "make a commitment",
+      "hint": "đưa ra một cam kết",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_commitment_1_0",
+      "type": "short_answer",
+      "sentence": "Employees need to ___ their work.",
+      "options": [],
+      "correct_answer": "demonstrate commitment to",
+      "explanation": "show/demonstrate commitment",
+      "hint": "thể hiện sự cam kết",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_commitment_2_0",
+      "type": "short_answer",
+      "sentence": "Some students ___ their studies.",
+      "options": [],
+      "correct_answer": "lack commitment to",
+      "explanation": "lack commitment",
+      "hint": "thiếu sự cam kết",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_commitment_3_0",
+      "type": "short_answer",
+      "sentence": "The government should show a ___ education.",
+      "options": [],
+      "correct_answer": "strong commitment to",
+      "explanation": "strong commitment",
+      "hint": "sự cam kết mạnh mẽ",
+      "collocation_type": "Adj"
+    },
+    {
+      "id": "sa_commitment_4_0",
+      "type": "short_answer",
+      "sentence": "Learning a language requires a ___.",
+      "options": [],
+      "correct_answer": "long-term commitment",
+      "explanation": "long-term commitment",
+      "hint": "sự cam kết dài hạn",
+      "collocation_type": "Adj"
+    },
+    {
+      "id": "sa_commitment_5_0",
+      "type": "short_answer",
+      "sentence": "There is a ___ environmental protection.",
+      "options": [],
+      "correct_answer": "lack of commitment to",
+      "explanation": "a lack of commitment",
+      "hint": "sự thiếu cam kết",
+      "collocation_type": "phrase"
+    },
+    {
+      "id": "sa_commitment_6_0",
+      "type": "short_answer",
+      "sentence": "This job requires ___.",
+      "options": [],
+      "correct_answer": "a high level of commitment",
+      "explanation": "a high level of commitment",
+      "hint": "mức độ cam kết cao",
+      "collocation_type": "phrase"
+    },
+    {
+      "id": "mc_academic_0_1777698206035",
+      "type": "multiple_choice",
+      "sentence": "The government's ___ regulation of the industry was met with skepticism.",
+      "options": [
+        {
+          "id": "a",
+          "text": "idea about"
+        },
+        {
+          "id": "b",
+          "text": "plan in"
+        },
+        {
+          "id": "c",
+          "text": "proposal for"
+        },
+        {
+          "id": "d",
+          "text": "suggestion of"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm từ 'proposal for regulation' là cách diễn đạt đúng trong tiếng Anh để chỉ một đề xuất về việc quản lý, điều chỉnh một lĩnh vực nào đó. Các lựa chọn khác không tạo thành cụm từ tự nhiên và chính xác trong ngữ cảnh này."
+    },
+    {
+      "id": "mc_academic_1_1777698206035",
+      "type": "multiple_choice",
+      "sentence": "She accepted his marriage ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "application"
+        },
+        {
+          "id": "b",
+          "text": "proposal"
+        },
+        {
+          "id": "c",
+          "text": "suggestion"
+        },
+        {
+          "id": "d",
+          "text": "offer"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm từ 'marriage proposal' là cách diễn đạt chuẩn trong tiếng Anh để chỉ lời cầu hôn. 'Proposal' ở đây đóng vai trò là danh từ, đứng sau tính từ 'marriage' để bổ nghĩa."
+    },
+    {
+      "id": "mc_academic_2_1777698206035",
+      "type": "multiple_choice",
+      "sentence": "Lou lifted the box easily, without using much ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "effort"
+        },
+        {
+          "id": "b",
+          "text": "strength"
+        },
+        {
+          "id": "c",
+          "text": "try"
+        },
+        {
+          "id": "d",
+          "text": "power"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm từ 'much effort' diễn tả một lượng lớn sự cố gắng hoặc nỗ lực. 'Effort' ở đây là danh từ không đếm được, phù hợp với từ chỉ định lượng 'much'."
+    },
+    {
+      "id": "mc_academic_3_1777698206035",
+      "type": "multiple_choice",
+      "sentence": "Please ___ to be polite.",
+      "options": [
+        {
+          "id": "a",
+          "text": "do efforts"
+        },
+        {
+          "id": "b",
+          "text": "do an effort"
+        },
+        {
+          "id": "c",
+          "text": "make an effort"
+        },
+        {
+          "id": "d",
+          "text": "make effort"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm từ 'make an effort' có nghĩa là cố gắng làm gì đó. Đây là một thành ngữ phổ biến trong tiếng Anh, đòi hỏi cả động từ 'make' và mạo từ 'an' trước danh từ 'effort'."
+    },
+    {
+      "id": "mc_academic_4_1777698206035",
+      "type": "multiple_choice",
+      "sentence": "The ___ raised over $10,000.",
+      "options": [
+        {
+          "id": "a",
+          "text": "fundraising effort"
+        },
+        {
+          "id": "b",
+          "text": "giving"
+        },
+        {
+          "id": "c",
+          "text": "donating"
+        },
+        {
+          "id": "d",
+          "text": "collection"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm từ 'fundraising effort' chỉ một nỗ lực hoặc hoạt động gây quỹ. Đây là một cụm danh từ ghép, trong đó 'fundraising' đóng vai trò như một tính từ bổ nghĩa cho danh từ 'effort'."
+    },
+    {
+      "id": "mc_academic_5_1777698206035",
+      "type": "multiple_choice",
+      "sentence": "The government will not ___ terrorists.",
+      "options": [
+        {
+          "id": "a",
+          "text": "confer with"
+        },
+        {
+          "id": "b",
+          "text": "negotiate with"
+        },
+        {
+          "id": "c",
+          "text": "bargain with"
+        },
+        {
+          "id": "d",
+          "text": "discuss with"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Động từ 'negotiate with' có nghĩa là đàm phán, thương lượng với ai đó. Trong bối cảnh chính trị và an ninh, đây là cách diễn đạt chuẩn khi nói về việc không thỏa hiệp với các nhóm khủng bố."
+    },
+    {
+      "id": "mc_academic_6_1777698206035",
+      "type": "multiple_choice",
+      "sentence": "The climbers had to ___ a steep rock face.",
+      "options": [
+        {
+          "id": "a",
+          "text": "overcome"
+        },
+        {
+          "id": "b",
+          "text": "climb over"
+        },
+        {
+          "id": "c",
+          "text": "negotiate"
+        },
+        {
+          "id": "d",
+          "text": "ascend"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Trong trường hợp này, 'negotiate' có nghĩa là vượt qua hoặc xử lý một cách khéo léo một tình huống hoặc trở ngại khó khăn, như một vách đá dốc. Nó ám chỉ sự thận trọng và kỹ năng cần thiết để vượt qua."
+    },
+    {
+      "id": "mc_academic_7_1777698206035",
+      "type": "multiple_choice",
+      "sentence": "The government released ___ on unemployment.",
+      "options": [
+        {
+          "id": "a",
+          "text": "policy"
+        },
+        {
+          "id": "b",
+          "text": "official statistics"
+        },
+        {
+          "id": "c",
+          "text": "reports"
+        },
+        {
+          "id": "d",
+          "text": "data"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm từ 'official statistics' là cách diễn đạt chuẩn để chỉ số liệu thống kê chính thức do một cơ quan nhà nước công bố. Trong trường hợp này, 'official' đóng vai trò là tính từ bổ nghĩa cho danh từ 'statistics'."
+    },
+    {
+      "id": "mc_academic_8_1777698206035",
+      "type": "multiple_choice",
+      "sentence": "___ are responsible for implementing new policies.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Public servants"
+        },
+        {
+          "id": "b",
+          "text": "Politicians"
+        },
+        {
+          "id": "c",
+          "text": "Citizens"
+        },
+        {
+          "id": "d",
+          "text": "Government officials"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm từ 'Government officials' đề cập đến những người giữ chức vụ trong chính phủ và có trách nhiệm thực thi chính sách. Đây là một thuật ngữ cụ thể và chính xác trong ngữ cảnh này."
+    },
+    {
+      "id": "mc_academic_9_1777698206035",
+      "type": "multiple_choice",
+      "sentence": "The president was on an ___ to France.",
+      "options": [
+        {
+          "id": "a",
+          "text": "official visit"
+        },
+        {
+          "id": "b",
+          "text": "expedition"
+        },
+        {
+          "id": "c",
+          "text": "journey"
+        },
+        {
+          "id": "d",
+          "text": "trip"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm từ 'official visit' chỉ một chuyến đi chính thức, thường là của các nhà lãnh đạo hoặc quan chức, với mục đích ngoại giao hoặc công vụ. 'Official' là tính từ bổ nghĩa cho danh từ 'visit'."
+    },
+    {
+      "id": "mc_academic_10_1777698206035",
+      "type": "multiple_choice",
+      "sentence": "The government set up ___ to investigate the issue.",
+      "options": [
+        {
+          "id": "a",
+          "text": "an agency"
+        },
+        {
+          "id": "b",
+          "text": "a committee"
+        },
+        {
+          "id": "c",
+          "text": "a commission"
+        },
+        {
+          "id": "d",
+          "text": "a task force"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm từ 'a commission' thường được sử dụng khi chính phủ thành lập một hội đồng hoặc ủy ban chính thức để điều tra một vấn đề cụ thể. Đây là cách diễn đạt chuẩn trong bối cảnh này."
+    },
+    {
+      "id": "mc_academic_11_1777698206035",
+      "type": "multiple_choice",
+      "sentence": "The agent earns a 10% ___ sales.",
+      "options": [
+        {
+          "id": "a",
+          "text": "commission on"
+        },
+        {
+          "id": "b",
+          "text": "payment for"
+        },
+        {
+          "id": "c",
+          "text": "fee from"
+        },
+        {
+          "id": "d",
+          "text": "reward on"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm từ 'commission on sales' chỉ phần trăm hoa hồng mà đại lý nhận được dựa trên doanh số bán hàng. Đây là thuật ngữ kinh doanh tiêu chuẩn trong tiếng Anh."
+    },
+    {
+      "id": "mc_academic_12_1777698206035",
+      "type": "multiple_choice",
+      "sentence": "She ___ a large team of employees.",
+      "options": [
+        {
+          "id": "a",
+          "text": "manages"
+        },
+        {
+          "id": "b",
+          "text": "directs"
+        },
+        {
+          "id": "c",
+          "text": "leads"
+        },
+        {
+          "id": "d",
+          "text": "handles"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Động từ 'manage' trong trường hợp này có nghĩa là điều hành, quản lý một đội ngũ nhân viên. Nó chỉ vai trò trách nhiệm và quyền hạn trong việc giám sát công việc của người khác."
+    },
+    {
+      "id": "mc_academic_13_1777698206035",
+      "type": "multiple_choice",
+      "sentence": "She ___ to finish the task on time.",
+      "options": [
+        {
+          "id": "a",
+          "text": "succeeded"
+        },
+        {
+          "id": "b",
+          "text": "managed"
+        },
+        {
+          "id": "c",
+          "text": "achieved"
+        },
+        {
+          "id": "d",
+          "text": "accomplished"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cấu trúc 'manage to do something' có nghĩa là xoay sở để làm được điều gì đó, thường là điều gì đó khó khăn hoặc đòi hỏi nỗ lực. Nó nhấn mạnh sự thành công sau khi gặp thử thách."
+    },
+    {
+      "id": "mc_academic_14_1777698206035",
+      "type": "multiple_choice",
+      "sentence": "She can't ___ on her own anymore.",
+      "options": [
+        {
+          "id": "a",
+          "text": "survive"
+        },
+        {
+          "id": "b",
+          "text": "sustain"
+        },
+        {
+          "id": "c",
+          "text": "cope"
+        },
+        {
+          "id": "d",
+          "text": "manage"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm động từ 'manage on' (hoặc 'manage with/without') có nghĩa là xoay sở để sống hoặc hoạt động với một nguồn lực nhất định (hoặc thiếu một nguồn lực nào đó). Ở đây, nó ám chỉ khả năng tự lập về tài chính hoặc sinh hoạt."
+    },
+    {
+      "id": "mc_academic_15_1777698222858",
+      "type": "multiple_choice",
+      "sentence": "Please state your name, address, and ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "occupation"
+        },
+        {
+          "id": "b",
+          "text": "employment"
+        },
+        {
+          "id": "c",
+          "text": "business"
+        },
+        {
+          "id": "d",
+          "text": "profession"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Trong ngữ cảnh này, 'occupation' là từ chính xác nhất để chỉ nghề nghiệp hoặc công việc. Các từ còn lại không hoàn toàn phù hợp với cấu trúc câu hỏi xin thông tin cá nhân."
+    },
+    {
+      "id": "mc_academic_16_1777698222858",
+      "type": "multiple_choice",
+      "sentence": "The German ___ France lasted for several years.",
+      "options": [
+        {
+          "id": "a",
+          "text": "occupation of"
+        },
+        {
+          "id": "b",
+          "text": "invasion of"
+        },
+        {
+          "id": "c",
+          "text": "control over"
+        },
+        {
+          "id": "d",
+          "text": "reign in"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Occupation of' được dùng để chỉ sự chiếm đóng, kiểm soát một vùng lãnh thổ. Câu này mô tả việc Đức chiếm đóng Pháp."
+    },
+    {
+      "id": "mc_academic_17_1777698222858",
+      "type": "multiple_choice",
+      "sentence": "She has been ___ the presidency.",
+      "options": [
+        {
+          "id": "a",
+          "text": "suggested for"
+        },
+        {
+          "id": "b",
+          "text": "elected for"
+        },
+        {
+          "id": "c",
+          "text": "proposed to"
+        },
+        {
+          "id": "d",
+          "text": "nominated for"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "'Nominated for' là cụm từ chuẩn để diễn tả việc được đề cử cho một vị trí hoặc giải thưởng. Các lựa chọn khác không diễn tả đúng ý nghĩa đề cử."
+    },
+    {
+      "id": "mc_academic_18_1777698222858",
+      "type": "multiple_choice",
+      "sentence": "Production is increasing faster than ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "need"
+        },
+        {
+          "id": "b",
+          "text": "requirement"
+        },
+        {
+          "id": "c",
+          "text": "supply"
+        },
+        {
+          "id": "d",
+          "text": "demand"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Trong kinh tế, 'demand' (cầu) thường được đặt tương quan với 'supply' (cung). Câu này nói về sự gia tăng sản xuất so với nhu cầu thị trường."
+    },
+    {
+      "id": "mc_academic_19_1777698222858",
+      "type": "multiple_choice",
+      "sentence": "Workers ___ higher wages.",
+      "options": [
+        {
+          "id": "a",
+          "text": "demanded"
+        },
+        {
+          "id": "b",
+          "text": "claimed"
+        },
+        {
+          "id": "c",
+          "text": "requested"
+        },
+        {
+          "id": "d",
+          "text": "asked for"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Demanded' thể hiện một yêu cầu mạnh mẽ, thường là trong các cuộc đàm phán hoặc đình công. Các từ 'requested' hay 'asked for' nhẹ nhàng hơn."
+    },
+    {
+      "id": "mc_academic_20_1777698222858",
+      "type": "multiple_choice",
+      "sentence": "The government is responsible for ___ the country's resources.",
+      "options": [
+        {
+          "id": "a",
+          "text": "managing"
+        },
+        {
+          "id": "b",
+          "text": "administering"
+        },
+        {
+          "id": "c",
+          "text": "operating"
+        },
+        {
+          "id": "d",
+          "text": "directing"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "'Administer' trong ngữ cảnh này có nghĩa là quản lý, điều hành, đặc biệt là các nguồn lực công hoặc tài nguyên quốc gia. Các từ khác có thể tương tự nhưng 'administer' mang tính chính thức và bao quát hơn."
+    },
+    {
+      "id": "mc_academic_21_1777698222858",
+      "type": "multiple_choice",
+      "sentence": "The teacher will ___ the test to all students.",
+      "options": [
+        {
+          "id": "a",
+          "text": "give"
+        },
+        {
+          "id": "b",
+          "text": "administer"
+        },
+        {
+          "id": "c",
+          "text": "conduct"
+        },
+        {
+          "id": "d",
+          "text": "hold"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "'Administer a test' là cách diễn đạt chính thức và phổ biến nhất trong tiếng Anh để chỉ việc coi thi hoặc thực hiện một bài kiểm tra. Các lựa chọn khác c��ng có thể dùng nhưng 'administer' là chuẩn nhất."
+    },
+    {
+      "id": "mc_academic_22_1777698222858",
+      "type": "multiple_choice",
+      "sentence": "The company operates in a highly ___ industry.",
+      "options": [
+        {
+          "id": "a",
+          "text": "competitive"
+        },
+        {
+          "id": "b",
+          "text": "competition"
+        },
+        {
+          "id": "c",
+          "text": "competitor"
+        },
+        {
+          "id": "d",
+          "text": "competing"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Competitive' là tính từ mô tả một ngành có sự cạnh tranh cao. Các lựa chọn khác là động từ, danh từ hoặc không phù hợp về mặt ngữ pháp."
+    },
+    {
+      "id": "mc_academic_23_1777698222858",
+      "type": "multiple_choice",
+      "sentence": "She is very ___ in everything she does.",
+      "options": [
+        {
+          "id": "a",
+          "text": "contested"
+        },
+        {
+          "id": "b",
+          "text": "competitive"
+        },
+        {
+          "id": "c",
+          "text": "challenging"
+        },
+        {
+          "id": "d",
+          "text": "rivalrous"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "'Competitive' ở đây mô tả tính cách của một người, ám chỉ họ có tinh thần cạnh tranh cao, luôn muốn chiến thắng. Các từ khác không phù hợp để mô tả tính cách này."
+    },
+    {
+      "id": "mc_academic_24_1777698222858",
+      "type": "multiple_choice",
+      "sentence": "Customers pay a ___ for the service.",
+      "options": [
+        {
+          "id": "a",
+          "text": "flat cost"
+        },
+        {
+          "id": "b",
+          "text": "flat price"
+        },
+        {
+          "id": "c",
+          "text": "flat charge"
+        },
+        {
+          "id": "d",
+          "text": "flat-rate fee"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "'Flat-rate fee' là một cụm từ thông dụng và chính xác để chỉ một khoản phí cố định không đổi. Mặc dù các lựa chọn khác có thể hiểu được, 'flat-rate fee' l�� cách diễn đạt chuẩn nhất."
+    },
+    {
+      "id": "mc_academic_25_1777698222858",
+      "type": "multiple_choice",
+      "sentence": "He hired a new ___ his appointments.",
+      "options": [
+        {
+          "id": "a",
+          "text": "secretary for managing"
+        },
+        {
+          "id": "b",
+          "text": "secretary to managing"
+        },
+        {
+          "id": "c",
+          "text": "secretary managing"
+        },
+        {
+          "id": "d",
+          "text": "secretary to manage"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cấu trúc 'secretary to + V' (nguyên mẫu) được dùng để chỉ vai trò hoặc nhiệm vụ của thư ký. Cấu trúc này phổ biến khi nói về việc ai đó được thuê để làm gì."
+    },
+    {
+      "id": "mc_academic_26_1777698222858",
+      "type": "multiple_choice",
+      "sentence": "The ___ announced new policies.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Secretary of State"
+        },
+        {
+          "id": "b",
+          "text": "Secretary's State"
+        },
+        {
+          "id": "c",
+          "text": "Secretary for State"
+        },
+        {
+          "id": "d",
+          "text": "State Secretary"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Secretary of State' là một chức danh chính thức trong nhiều chính phủ, tương đương với Bộ trưởng Ngoại giao. Đây là cách gọi chuẩn mực."
+    },
+    {
+      "id": "mc_academic_27_1777698222858",
+      "type": "multiple_choice",
+      "sentence": "She was elected ___ the club.",
+      "options": [
+        {
+          "id": "a",
+          "text": "secretary for"
+        },
+        {
+          "id": "b",
+          "text": "secretary to"
+        },
+        {
+          "id": "c",
+          "text": "secretary of"
+        },
+        {
+          "id": "d",
+          "text": "secretary in"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Khi nói về chức vụ trong một tổ chức, chúng ta dùng cấu trúc 'secretary of + [organization name]'. Câu này chỉ việc cô ấy được bầu làm thư ký của câu lạc bộ."
+    },
+    {
+      "id": "mc_academic_28_1777698222858",
+      "type": "multiple_choice",
+      "sentence": "She applied for ___ the organization.",
+      "options": [
+        {
+          "id": "a",
+          "text": "belonging to"
+        },
+        {
+          "id": "b",
+          "text": "member of"
+        },
+        {
+          "id": "c",
+          "text": "membership in"
+        },
+        {
+          "id": "d",
+          "text": "membership of"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cả 'membership of' và 'membership in' đều có thể dùng, nhưng 'membership of' thường được ưa chuộng hơn khi nói về việc gia nhập một tổ chức cụ thể. 'Member of' là danh từ số ít và không phù hợp ở đây."
+    },
+    {
+      "id": "mc_academic_29_1777698222858",
+      "type": "multiple_choice",
+      "sentence": "The ___ has grown rapidly.",
+      "options": [
+        {
+          "id": "a",
+          "text": "membership"
+        },
+        {
+          "id": "b",
+          "text": "member count"
+        },
+        {
+          "id": "c",
+          "text": "members"
+        },
+        {
+          "id": "d",
+          "text": "number of members"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Trong ngữ cảnh này, 'membership' (số lượng thành viên hoặc tình trạng thành viên) là danh từ phù hợp nhất để nói về sự tăng trưởng. Các lựa chọn khác có thể liên quan nhưng 'membership' bao hàm ý nghĩa chung nhất."
+    },
+    {
+      "id": "mc_academic_30_1777698230745",
+      "type": "multiple_choice",
+      "sentence": "I want a job with good prospects for ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "advancement"
+        },
+        {
+          "id": "b",
+          "text": "development"
+        },
+        {
+          "id": "c",
+          "text": "promotion"
+        },
+        {
+          "id": "d",
+          "text": "progress"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Trong ngữ cảnh này, 'promotion' là từ đúng nh���t để chỉ sự thăng tiến trong công việc. Các lựa chọn khác không phù hợp với cụm từ 'prospects for'."
+    },
+    {
+      "id": "mc_academic_31_1777698230745",
+      "type": "multiple_choice",
+      "sentence": "The ___ of renewable energy is essential.",
+      "options": [
+        {
+          "id": "a",
+          "text": "increase"
+        },
+        {
+          "id": "b",
+          "text": "promotion"
+        },
+        {
+          "id": "c",
+          "text": "advancement"
+        },
+        {
+          "id": "d",
+          "text": "encouragement"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "'Promotion' ở đây có nghĩa là sự thúc đẩy, quảng bá. Việc thúc đẩy năng lượng tái tạo là cần thiết."
+    },
+    {
+      "id": "mc_academic_32_1777698230745",
+      "type": "multiple_choice",
+      "sentence": "The team achieved ___ to the top division.",
+      "options": [
+        {
+          "id": "a",
+          "text": "promotion"
+        },
+        {
+          "id": "b",
+          "text": "elevation"
+        },
+        {
+          "id": "c",
+          "text": "advancement"
+        },
+        {
+          "id": "d",
+          "text": "development"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Promotion' được sử dụng để chỉ việc thăng hạng lên một giải đấu cao hơn. Cụm từ 'promotion to' rất phổ biến trong ngữ cảnh thể thao."
+    },
+    {
+      "id": "mc_academic_33_1777698230745",
+      "type": "multiple_choice",
+      "sentence": "She has shown great ___ to her work.",
+      "options": [
+        {
+          "id": "a",
+          "text": "commitment"
+        },
+        {
+          "id": "b",
+          "text": "dedication"
+        },
+        {
+          "id": "c",
+          "text": "allegiance"
+        },
+        {
+          "id": "d",
+          "text": "devotion"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm từ 'commitment to' diễn tả sự tận tâm, cam kết với công việc. Đây là cách diễn đạt chuẩn trong tiếng Anh."
+    },
+    {
+      "id": "mc_academic_34_1777698230745",
+      "type": "multiple_choice",
+      "sentence": "I can't go out tonight because of work ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "commitments"
+        },
+        {
+          "id": "b",
+          "text": "obligations"
+        },
+        {
+          "id": "c",
+          "text": "duties"
+        },
+        {
+          "id": "d",
+          "text": "responsibilities"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Trong trường hợp này, 'commitments' (số nhiều) dùng để chỉ những ràng buộc hoặc nghĩa vụ, thường là về công việc hoặc gia đình, khiến bạn không thể thực hiện việc khác."
+    }
+  ]
+}

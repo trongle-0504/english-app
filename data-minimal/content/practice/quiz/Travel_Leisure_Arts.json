@@ -1,0 +1,1546 @@
+{
+  "questions": [
+    {
+      "id": "sa_premiere_0_0",
+      "type": "short_answer",
+      "sentence": "Gattaca had its ___ last month at the Toronto International Film Festival.",
+      "options": [],
+      "correct_answer": "world premiere",
+      "explanation": "world premiere",
+      "hint": "Buổi ra mắt toàn cầu (lần đầu tiên trên thế giới)."
+    },
+    {
+      "id": "sa_premiere_0_1",
+      "type": "short_answer",
+      "sentence": "Riverdance, after its ___ at the Public Theatre in Dublin in 1995, has taken the world by storm.",
+      "options": [],
+      "correct_answer": "world premiere",
+      "explanation": "world premiere",
+      "hint": "Buổi ra mắt toàn cầu (lần đầu tiên trên thế giới)."
+    },
+    {
+      "id": "sa_premiere_1_0",
+      "type": "short_answer",
+      "sentence": "\"Singing in the Rain\" begins with its stars attending a ___.",
+      "options": [],
+      "correct_answer": "movie premiere",
+      "explanation": "movie premiere",
+      "hint": "Buổi ra mắt phim."
+    },
+    {
+      "id": "sa_orchestra_0_0",
+      "type": "short_answer",
+      "sentence": "My daughter joined the ___ last year.",
+      "options": [],
+      "correct_answer": "school orchestra",
+      "explanation": "school orchestra",
+      "hint": "dàn nhạc của trường",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_orchestra_1_0",
+      "type": "short_answer",
+      "sentence": "The symphony requires a ___ to perform.",
+      "options": [],
+      "correct_answer": "full orchestra",
+      "explanation": "full orchestra",
+      "hint": "dàn nhạc đầy đủ (với đầy đủ các loại nhạc cụ)",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_orchestra_2_0",
+      "type": "short_answer",
+      "sentence": "He has played in the city ___ for ten years.",
+      "options": [],
+      "correct_answer": "orchestra",
+      "explanation": "play in the orchestra",
+      "hint": "chơi trong dàn nhạc",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_orchestra_3_0",
+      "type": "short_answer",
+      "sentence": "Composers often dream of ___.",
+      "options": [],
+      "correct_answer": "writing for a famous orchestra",
+      "explanation": "write for an orchestra",
+      "hint": "viết nhạc cho dàn nhạc",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_venue_0_0",
+      "type": "short_answer",
+      "sentence": "The city is building new ___ for the upcoming Olympics.",
+      "options": [],
+      "correct_answer": "sporting venues",
+      "explanation": "sporting venue",
+      "hint": "Địa điểm thể thao",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_venue_1_0",
+      "type": "short_answer",
+      "sentence": "We need to find a suitable ___ that can accommodate 500 people.",
+      "options": [],
+      "correct_answer": "conference venue",
+      "explanation": "conference venue",
+      "hint": "Địa điểm tổ chức hội nghị",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_venue_2_0",
+      "type": "short_answer",
+      "sentence": "The stadium is a popular ___ for international artists.",
+      "options": [],
+      "correct_answer": "concert venue",
+      "explanation": "concert venue",
+      "hint": "Địa điểm hòa nhạc",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_venue_3_0",
+      "type": "short_answer",
+      "sentence": "The band plans to ___ many **venues** across the country on their upcoming tour.",
+      "options": [],
+      "correct_answer": "play",
+      "explanation": "play venues",
+      "hint": "Biểu diễn ở nhiều địa điểm khác nhau",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_venue_4_0",
+      "type": "short_answer",
+      "sentence": "This historic building has become a popular ___ weddings and banquets.",
+      "options": [],
+      "correct_answer": "venue for",
+      "explanation": "venue for",
+      "hint": "Địa điểm cho (một sự kiện)",
+      "collocation_type": "prepositional phrase"
+    },
+    {
+      "id": "sa_on sale_0_0",
+      "type": "short_answer",
+      "sentence": "Stephen King’s new novel will ___ next week.",
+      "options": [],
+      "correct_answer": "go on sale",
+      "explanation": "go on sale",
+      "hint": "Bắt đầu được bán ra thị trường.",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_on sale_0_1",
+      "type": "short_answer",
+      "sentence": "The revamped car will cost £40,268 when it ___ next January.",
+      "options": [],
+      "correct_answer": "goes on sale",
+      "explanation": "go on sale",
+      "hint": "Bắt đầu được bán ra thị trường.",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_explore_0_0",
+      "type": "short_answer",
+      "sentence": "Many young people dream of ___ before settling down.",
+      "options": [],
+      "correct_answer": "exploring the world",
+      "explanation": "explore the world",
+      "hint": "Khám phá thế giới",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_explore_1_0",
+      "type": "short_answer",
+      "sentence": "We need time ___ for the new project.",
+      "options": [],
+      "correct_answer": "to explore options",
+      "explanation": "explore options",
+      "hint": "Xem xét các lựa chọn",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_explore_2_0",
+      "type": "short_answer",
+      "sentence": "The novel ___ of love and loss.",
+      "options": [],
+      "correct_answer": "explores themes",
+      "explanation": "explore themes",
+      "hint": "Khai thác chủ đề",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_rent_0_0",
+      "type": "short_answer",
+      "sentence": "The tenant failed to ___ on time.",
+      "options": [],
+      "correct_answer": "pay the rent",
+      "explanation": "pay the rent",
+      "hint": "trả tiền thuê nhà",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_rent_0_1",
+      "type": "short_answer",
+      "sentence": "Many students struggle to ___ in big cities.",
+      "options": [],
+      "correct_answer": "pay the rent",
+      "explanation": "pay the rent",
+      "hint": "trả tiền thuê nhà",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_rent_1_0",
+      "type": "short_answer",
+      "sentence": "They complained about the ___ in the city center.",
+      "options": [],
+      "correct_answer": "high rent",
+      "explanation": "high/low/fair rent",
+      "hint": "tiền thuê cao/thấp/hợp lý",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_rent_1_1",
+      "type": "short_answer",
+      "sentence": "The government aims to provide ___ for low-income families.",
+      "options": [],
+      "correct_answer": "affordable rent",
+      "explanation": "high/low/fair rent",
+      "hint": "tiền thuê cao/thấp/hợp lý",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_excursion_0_0",
+      "type": "short_answer",
+      "sentence": "We decided to ___ to the nearby mountains.",
+      "options": [],
+      "correct_answer": "make an excursion",
+      "explanation": "make an excursion",
+      "hint": "Thực hiện một chuyến đi",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_excursion_1_0",
+      "type": "short_answer",
+      "sentence": "It was just a ___ to see the local sights.",
+      "options": [],
+      "correct_answer": "short excursion",
+      "explanation": "short excursion",
+      "hint": "Chuyến đi ngắn",
+      "collocation_type": "adj"
+    },
+    {
+      "id": "sa_accommodation_0_0",
+      "type": "short_answer",
+      "sentence": "He found some ___ near the university.",
+      "options": [],
+      "correct_answer": "rented accommodation",
+      "explanation": "rented accommodation",
+      "hint": "Chỗ ở cho thuê",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_accommodation_1_0",
+      "type": "short_answer",
+      "sentence": "The university offers a range of ___ options.",
+      "options": [],
+      "correct_answer": "student accommodation",
+      "explanation": "student accommodation",
+      "hint": "Chỗ ở cho sinh viên",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_accommodation_2_0",
+      "type": "short_answer",
+      "sentence": "The program aims to provide ___ for young offenders.",
+      "options": [],
+      "correct_answer": "secure accommodation",
+      "explanation": "secure accommodation",
+      "hint": "Chỗ ở an toàn/đảm bảo",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_accommodation_3_0",
+      "type": "short_answer",
+      "sentence": "The package includes ___.",
+      "options": [],
+      "correct_answer": "travel and hotel accommodations",
+      "explanation": "travel and hotel accommodations",
+      "hint": "Chỗ ăn ở đi lại và khách sạn",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_trek_0_0",
+      "type": "short_answer",
+      "sentence": "We reached the camp after an arduous 12-day ___.",
+      "options": [],
+      "correct_answer": "trek",
+      "explanation": "arduous trek /ˈɑːdʒuəs/",
+      "hint": "chuyến đi bộ gian khổ",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_trek_1_0",
+      "type": "short_answer",
+      "sentence": "Maria's going ___ this year.",
+      "options": [],
+      "correct_answer": "trekking in the Himalayas",
+      "explanation": "trekking in the Himalayas",
+      "hint": "đi bộ đường dài ở dãy Himalaya",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_refurbish_0_0",
+      "type": "short_answer",
+      "sentence": "There is even a school of thought that says some 1960s office blocks outside prime areas should be ___ residential accommodation.",
+      "options": [],
+      "correct_answer": "refurbished as",
+      "explanation": "refurbish as",
+      "hint": "sửa sang lại thành cái gì đó",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_interior_0_0",
+      "type": "short_answer",
+      "sentence": "As an ___, Paula Curry was a real professional.",
+      "options": [],
+      "correct_answer": "interior decorator",
+      "explanation": "interior decorator",
+      "hint": "Người trang trí nội thất",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_interior_1_0",
+      "type": "short_answer",
+      "sentence": "He is studying ___ at university.",
+      "options": [],
+      "correct_answer": "interior design",
+      "explanation": "interior design",
+      "hint": "Thiết kế nội thất",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_interior_1_1",
+      "type": "short_answer",
+      "sentence": "The company specializes in luxury ___.",
+      "options": [],
+      "correct_answer": "interior design",
+      "explanation": "interior design",
+      "hint": "Thiết kế nội thất",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_interior_2_0",
+      "type": "short_answer",
+      "sentence": "When my wife and I chose our Peugeot 405 it was for its comfort, performance and ___.",
+      "options": [],
+      "correct_answer": "interior space",
+      "explanation": "interior space",
+      "hint": "Không gian bên trong",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_cater_0_0",
+      "type": "short_answer",
+      "sentence": "The hotel can ___ up to 200 guests.",
+      "options": [],
+      "correct_answer": "cater for",
+      "explanation": "cater for + sb/+ sth",
+      "hint": "Phục vụ (thức ăn, đồ uống) cho ai đó/cái gì đó.",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_cater_0_1",
+      "type": "short_answer",
+      "sentence": "We provide a service to ___ the needs of elderly people.",
+      "options": [],
+      "correct_answer": "cater for",
+      "explanation": "cater for + sb/+ sth",
+      "hint": "Phục vụ (thức ăn, đồ uống) cho ai đó/cái gì đó.",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_cater_1_0",
+      "type": "short_answer",
+      "sentence": "They are ___ the conference dinner.",
+      "options": [],
+      "correct_answer": "catering",
+      "explanation": "cater + sth",
+      "hint": "Cung cấp (thức ăn, đồ uống) cho một sự kiện.",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_cater_1_1",
+      "type": "short_answer",
+      "sentence": "The company has been hired to ___ the annual gala.",
+      "options": [],
+      "correct_answer": "cater",
+      "explanation": "cater + sth",
+      "hint": "Cung cấp (thức ăn, đồ uống) cho một sự kiện.",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_thrill_0_0",
+      "type": "short_answer",
+      "sentence": "It was a ___ to meet my favorite actor.",
+      "options": [],
+      "correct_answer": "great thrill",
+      "explanation": "a big/great thrill",
+      "hint": "một cảm giác phấn khích lớn",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_thrill_1_0",
+      "type": "short_answer",
+      "sentence": "Skydiving is ___ for many people.",
+      "options": [],
+      "correct_answer": "a real thrill",
+      "explanation": "a real thrill",
+      "hint": "một cảm giác phấn khích thực sự",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_thrill_2_0",
+      "type": "short_answer",
+      "sentence": "Many teenagers look for ___ in big cities.",
+      "options": [],
+      "correct_answer": "cheap thrills",
+      "explanation": "cheap thrills",
+      "hint": "những niềm vui đơn giản, dễ đạt được",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_thrill_3_0",
+      "type": "short_answer",
+      "sentence": "He ___ trying new extreme sports.",
+      "options": [],
+      "correct_answer": "gets a thrill out of",
+      "explanation": "get a thrill out of (+ sth)",
+      "hint": "cảm thấy phấn khích về điều gì đó",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_thrill_4_0",
+      "type": "short_answer",
+      "sentence": "The roller coaster ride ___.",
+      "options": [],
+      "correct_answer": "gave me a thrill",
+      "explanation": "give + sb a thrill",
+      "hint": "khiến ai đó cảm thấy phấn khích",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_recipe_0_0",
+      "type": "short_answer",
+      "sentence": "She bought a ___ to learn cooking.",
+      "options": [],
+      "correct_answer": "recipe book",
+      "explanation": "recipe book",
+      "hint": "sách dạy nấu ăn",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_recipe_1_0",
+      "type": "short_answer",
+      "sentence": "The website offers many ___.",
+      "options": [],
+      "correct_answer": "vegetarian recipes",
+      "explanation": "vegetarian recipes",
+      "hint": "các công thức món chay",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_recipe_2_0",
+      "type": "short_answer",
+      "sentence": "Beginners should ___ carefully.",
+      "options": [],
+      "correct_answer": "follow a recipe",
+      "explanation": "follow a recipe",
+      "hint": "làm theo công thức",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_recipe_3_0",
+      "type": "short_answer",
+      "sentence": "She decided to ___ with her friends.",
+      "options": [],
+      "correct_answer": "share the recipe",
+      "explanation": "share a recipe",
+      "hint": "chia sẻ công thức nấu ăn",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_ingredient_0_0",
+      "type": "short_answer",
+      "sentence": "The ___ of this dish is rice.",
+      "options": [],
+      "correct_answer": "main ingredient",
+      "explanation": "main ingredient",
+      "hint": "thành phần chính",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_ingredient_1_0",
+      "type": "short_answer",
+      "sentence": "Garlic is a ___ in many Asian dishes.",
+      "options": [],
+      "correct_answer": "basic ingredient",
+      "explanation": "basic ingredient",
+      "hint": "thành phần cơ bản",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_ingredient_2_0",
+      "type": "short_answer",
+      "sentence": "Always read the ___ before buying packaged food.",
+      "options": [],
+      "correct_answer": "list of ingredients",
+      "explanation": "a list of ingredients",
+      "hint": "danh sách các thành phần",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_ingredient_3_0",
+      "type": "short_answer",
+      "sentence": "You should slowly ___ while mixing.",
+      "options": [],
+      "correct_answer": "add the ingredients",
+      "explanation": "add ingredients",
+      "hint": "thêm nguyên liệu",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_ingredient_4_0",
+      "type": "short_answer",
+      "sentence": "___ until the mixture is smooth.",
+      "options": [],
+      "correct_answer": "Combine the ingredients",
+      "explanation": "combine the ingredients",
+      "hint": "trộn các nguyên liệu",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_ingredient_5_0",
+      "type": "short_answer",
+      "sentence": "The ___ in this medicine helps reduce pain.",
+      "options": [],
+      "correct_answer": "active ingredient",
+      "explanation": "active ingredient",
+      "hint": "thành phần hoạt tính",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_exhibition_0_0",
+      "type": "short_answer",
+      "sentence": "I went to ___ last weekend.",
+      "options": [],
+      "correct_answer": "an exhibition",
+      "explanation": "go to an exhibition",
+      "hint": "đi xem một buổi triển lãm",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_exhibition_0_1",
+      "type": "short_answer",
+      "sentence": "Many people go to ___ to learn about art.",
+      "options": [],
+      "correct_answer": "an exhibition",
+      "explanation": "go to an exhibition",
+      "hint": "đi xem một buổi triển lãm",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_exhibition_1_0",
+      "type": "short_answer",
+      "sentence": "We saw ___ at the museum.",
+      "options": [],
+      "correct_answer": "an exhibition",
+      "explanation": "see an exhibition",
+      "hint": "xem một buổi triển lãm",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_exhibition_1_1",
+      "type": "short_answer",
+      "sentence": "Tourists often see ___ when visiting big cities.",
+      "options": [],
+      "correct_answer": "an exhibition",
+      "explanation": "see an exhibition",
+      "hint": "xem một buổi triển lãm",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_exhibition_2_0",
+      "type": "short_answer",
+      "sentence": "The gallery holds ___ every year.",
+      "options": [],
+      "correct_answer": "an exhibition",
+      "explanation": "hold an exhibition",
+      "hint": "tổ chức một buổi triển lãm",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_exhibition_2_1",
+      "type": "short_answer",
+      "sentence": "The university will hold ___ of student artwork.",
+      "options": [],
+      "correct_answer": "an exhibition",
+      "explanation": "hold an exhibition",
+      "hint": "tổ chức một buổi triển lãm",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_exhibition_3_0",
+      "type": "short_answer",
+      "sentence": "The museum is hosting ___ this month.",
+      "options": [],
+      "correct_answer": "a major exhibition",
+      "explanation": "a major exhibition",
+      "hint": "một triển lãm lớn, quan trọng",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_exhibition_3_1",
+      "type": "short_answer",
+      "sentence": "His paintings are featured in ___ in Paris.",
+      "options": [],
+      "correct_answer": "a major exhibition",
+      "explanation": "a major exhibition",
+      "hint": "một triển lãm lớn, quan trọng",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_garment_0_0",
+      "type": "short_answer",
+      "sentence": "The ___ plays an important role in the country's economy.",
+      "options": [],
+      "correct_answer": "garment industry",
+      "explanation": "garment industry",
+      "hint": "ngành công nghiệp may mặc",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_garment_1_0",
+      "type": "short_answer",
+      "sentence": "Many workers are employed in ___.",
+      "options": [],
+      "correct_answer": "garment factories",
+      "explanation": "garment factory",
+      "hint": "nhà máy may mặc",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_garment_2_0",
+      "type": "short_answer",
+      "sentence": "She works in the ___ of the city.",
+      "options": [],
+      "correct_answer": "garment district",
+      "explanation": "garment district",
+      "hint": "khu vực tập trung ngành may mặc",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_garment_3_0",
+      "type": "short_answer",
+      "sentence": "The store sells high-quality ___.",
+      "options": [],
+      "correct_answer": "silk garments",
+      "explanation": "silk garments",
+      "hint": "quần áo làm từ lụa",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_garment_4_0",
+      "type": "short_answer",
+      "sentence": "He wore a heavy ___ in winter.",
+      "options": [],
+      "correct_answer": "outer garment",
+      "explanation": "outer garment",
+      "hint": "quần áo mặc bên ngoài",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_garment_5_0",
+      "type": "short_answer",
+      "sentence": "The brand specializes in comfortable ___.",
+      "options": [],
+      "correct_answer": "undergarments",
+      "explanation": "undergarment",
+      "hint": "đồ lót",
+      "collocation_type": "N"
+    },
+    {
+      "id": "mc_academic_0_1777697727282",
+      "type": "multiple_choice",
+      "sentence": "The new documentary will ___ next month.",
+      "options": [
+        {
+          "id": "a",
+          "text": "have premiere"
+        },
+        {
+          "id": "b",
+          "text": "has its premiere"
+        },
+        {
+          "id": "c",
+          "text": "having its premiere"
+        },
+        {
+          "id": "d",
+          "text": "have its premiere"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm từ 'have its premiere' l�� cách diễn đạt chuẩn khi nói về buổi ra mắt của một tác phẩm. Trong câu này, 'its' ám chỉ buổi ra mắt của bộ phim tài liệu."
+    },
+    {
+      "id": "mc_academic_1_1777697727282",
+      "type": "multiple_choice",
+      "sentence": "The movie ___ on December 21, 1937.",
+      "options": [
+        {
+          "id": "a",
+          "text": "premiered"
+        },
+        {
+          "id": "b",
+          "text": "premiere"
+        },
+        {
+          "id": "c",
+          "text": "premiering"
+        },
+        {
+          "id": "d",
+          "text": "was premiered"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Động từ 'premiere' được chia ở thì quá khứ đơn 'premiered' vì hành động này đã xảy ra trong quá khứ (ngày 21 tháng 12 năm 1937)."
+    },
+    {
+      "id": "mc_academic_2_1777697727282",
+      "type": "multiple_choice",
+      "sentence": "They will be ___ their new designs at the trade fairs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "exhibit"
+        },
+        {
+          "id": "b",
+          "text": "exhibits"
+        },
+        {
+          "id": "c",
+          "text": "exhibiting"
+        },
+        {
+          "id": "d",
+          "text": "to exhibit"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cấu trúc 'will be + V-ing' (thì tương lai tiếp diễn) được sử dụng để diễn tả một hành động sẽ đang diễn ra tại một thời điểm trong tương lai. Ở đây, hành động trưng bày các thiết kế mới sẽ diễn ra tại các hội chợ thương mại."
+    },
+    {
+      "id": "mc_academic_3_1777697727283",
+      "type": "multiple_choice",
+      "sentence": "The patient ___ signs of fatigue and memory loss.",
+      "options": [
+        {
+          "id": "a",
+          "text": "exhibition"
+        },
+        {
+          "id": "b",
+          "text": "exhibiting"
+        },
+        {
+          "id": "c",
+          "text": "exhibit"
+        },
+        {
+          "id": "d",
+          "text": "exhibited"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Động từ 'exhibited' ở thì quá khứ ��ơn là phù hợp vì câu mô tả các dấu hiệu (signs) đã được thể hiện hoặc biểu lộ ở bệnh nhân trong quá khứ."
+    },
+    {
+      "id": "mc_academic_4_1777697727283",
+      "type": "multiple_choice",
+      "sentence": "She plays the flute in the school ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "orchestration"
+        },
+        {
+          "id": "b",
+          "text": "orchestras"
+        },
+        {
+          "id": "c",
+          "text": "orchestra"
+        },
+        {
+          "id": "d",
+          "text": "orchestral"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Danh từ 'orchestra' dùng để chỉ một dàn nhạc. Câu này mô tả việc cô ấy chơi sáo trong dàn nhạc của trường."
+    },
+    {
+      "id": "mc_academic_5_1777697727283",
+      "type": "multiple_choice",
+      "sentence": "We have seats in ___ for tonight's show.",
+      "options": [
+        {
+          "id": "a",
+          "text": "the orchestra"
+        },
+        {
+          "id": "b",
+          "text": "an orchestra"
+        },
+        {
+          "id": "c",
+          "text": "orchestra"
+        },
+        {
+          "id": "d",
+          "text": "the orchestral"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm từ 'the orchestra' thường dùng để chỉ khu vực ghế ngồi ở tầng trệt, ngay trước sân khấu trong nhà hát hoặc phòng hòa nhạc."
+    },
+    {
+      "id": "mc_academic_6_1777697727283",
+      "type": "multiple_choice",
+      "sentence": "The first thing to do is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "booked a venue"
+        },
+        {
+          "id": "b",
+          "text": "book venue"
+        },
+        {
+          "id": "c",
+          "text": "book a venue"
+        },
+        {
+          "id": "d",
+          "text": "booking a venue"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm động từ 'book a venue' có nghĩa là đặt một địa điểm. Đây là một hành động cần thiết đầu tiên khi lên kế hoạch cho một sự kiện."
+    },
+    {
+      "id": "mc_academic_7_1777697727283",
+      "type": "multiple_choice",
+      "sentence": "A wide range of souvenirs are ___ in the visitors' centre.",
+      "options": [
+        {
+          "id": "a",
+          "text": "on sale"
+        },
+        {
+          "id": "b",
+          "text": "sale"
+        },
+        {
+          "id": "c",
+          "text": "in sale"
+        },
+        {
+          "id": "d",
+          "text": "for sale"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm từ 'on sale' được sử dụng để chỉ các mặt hàng đang được bán, đặc biệt là trong một đợt giảm giá hoặc có sẵn để mua tại một địa điểm cụ thể."
+    },
+    {
+      "id": "mc_academic_8_1777697727283",
+      "type": "multiple_choice",
+      "sentence": "These gloves were ___ for only $9.",
+      "options": [
+        {
+          "id": "a",
+          "text": "in sale"
+        },
+        {
+          "id": "b",
+          "text": "on sale"
+        },
+        {
+          "id": "c",
+          "text": "sale"
+        },
+        {
+          "id": "d",
+          "text": "for sale"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm từ 'on sale' được dùng để diễn tả việc một món hàng đang được bán với giá ưu đãi hoặc giá thấp hơn bình thường."
+    },
+    {
+      "id": "mc_academic_9_1777697727283",
+      "type": "multiple_choice",
+      "sentence": "As soon as we arrived on the island we were eager to ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "exploration"
+        },
+        {
+          "id": "b",
+          "text": "explores"
+        },
+        {
+          "id": "c",
+          "text": "explore"
+        },
+        {
+          "id": "d",
+          "text": "exploring"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Động từ 'explore' ở dạng nguyên thể theo sau 'to' (to infinitive) là đúng ngữ pháp khi diễn tả sự mong muốn khám phá điều gì đó."
+    },
+    {
+      "id": "mc_academic_10_1777697727283",
+      "type": "multiple_choice",
+      "sentence": "We will ___ in more detail.",
+      "options": [
+        {
+          "id": "a",
+          "text": "exploring these ideas"
+        },
+        {
+          "id": "b",
+          "text": "explore idea"
+        },
+        {
+          "id": "c",
+          "text": "explore these ideas"
+        },
+        {
+          "id": "d",
+          "text": "explores these ideas"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm từ 'explore these ideas' là cách diễn đạt chính xác để nói về việc xem xét hoặc nghiên cứu các ý tưởng một cách kỹ lưỡng hơn."
+    },
+    {
+      "id": "mc_academic_11_1777697727283",
+      "type": "multiple_choice",
+      "sentence": "I earn just about enough to ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "paying rent"
+        },
+        {
+          "id": "b",
+          "text": "pays rent"
+        },
+        {
+          "id": "c",
+          "text": "pay the rent"
+        },
+        {
+          "id": "d",
+          "text": "pay rent"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm từ 'pay rent' là một thành ngữ phổ biến, chỉ hành đ��ng trả tiền thuê nhà. Nó thường được sử dụng ở dạng nguyên thể sau 'to'."
+    },
+    {
+      "id": "mc_academic_12_1777697727283",
+      "type": "multiple_choice",
+      "sentence": "Included in the tour is an ___ the Grand Canyon.",
+      "options": [
+        {
+          "id": "a",
+          "text": "excursion of"
+        },
+        {
+          "id": "b",
+          "text": "excursion for"
+        },
+        {
+          "id": "c",
+          "text": "excursions to"
+        },
+        {
+          "id": "d",
+          "text": "excursion to"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Giới từ 'to' theo sau 'excursion' là cách diễn đạt chuẩn để chỉ điểm đến của chuyến đi hoặc cuộc tham quan."
+    },
+    {
+      "id": "mc_academic_13_1777697727283",
+      "type": "multiple_choice",
+      "sentence": "It was a delightful afternoon ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "a shopping excursion"
+        },
+        {
+          "id": "b",
+          "text": "shopping excursions"
+        },
+        {
+          "id": "c",
+          "text": "shopping excursion"
+        },
+        {
+          "id": "d",
+          "text": "shopping for excursion"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Mạo từ 'a' là cần thiết trước danh từ 'shopping excursion' khi nói về một chuyến đi mua sắm cụ thể. Câu này mô tả một buổi chiều đi mua sắm thú vị."
+    },
+    {
+      "id": "mc_academic_14_1777697727283",
+      "type": "multiple_choice",
+      "sentence": "The company allowed employees to make an ___ new technologies.",
+      "options": [
+        {
+          "id": "a",
+          "text": "excursions into"
+        },
+        {
+          "id": "b",
+          "text": "excursion into"
+        },
+        {
+          "id": "c",
+          "text": "excursion on"
+        },
+        {
+          "id": "d",
+          "text": "excursion in"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm từ 'excursion into' thường được dùng để diễn tả một sự khám phá hoặc thử nghiệm vào một lĩnh vực mới, một ý tưởng m���i hoặc một hoạt động mới."
+    },
+    {
+      "id": "mc_academic_15_1777697741226",
+      "type": "multiple_choice",
+      "sentence": "The price for the holiday includes flights and ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "transportation"
+        },
+        {
+          "id": "b",
+          "text": "information"
+        },
+        {
+          "id": "c",
+          "text": "entertainment"
+        },
+        {
+          "id": "d",
+          "text": "accommodation"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Accommodation là chỗ ở, bao gồm trong giá vé kỳ nghỉ. Các lựa chọn khác không phù hợp vì chúng không phải là một phần của chi phí kỳ nghỉ."
+    },
+    {
+      "id": "mc_academic_16_1777697741226",
+      "type": "multiple_choice",
+      "sentence": "Special ___ is available for disabled guests.",
+      "options": [
+        {
+          "id": "a",
+          "text": "transportation"
+        },
+        {
+          "id": "b",
+          "text": "information"
+        },
+        {
+          "id": "c",
+          "text": "equipment"
+        },
+        {
+          "id": "d",
+          "text": "accommodation"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Accommodation là chỗ ở, và thông tin nói rằng có chỗ ở đặc biệt cho khách khuyết tật. Các lựa chọn khác không có ý nghĩa trong ngữ cảnh này."
+    },
+    {
+      "id": "mc_academic_17_1777697741226",
+      "type": "multiple_choice",
+      "sentence": "We reached the camp after an arduous 12-day ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "journey"
+        },
+        {
+          "id": "b",
+          "text": "expedition"
+        },
+        {
+          "id": "c",
+          "text": "trek"
+        },
+        {
+          "id": "d",
+          "text": "voyage"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Trek có nghĩa là một cuộc đi bộ đường dài, thường là ở vùng núi. Câu này mô tả một chuyến đi bộ dài 12 ngày, phù hợp với nghĩa của 'trek'."
+    },
+    {
+      "id": "mc_academic_18_1777697741226",
+      "type": "multiple_choice",
+      "sentence": "The Grand Hotel has been completely ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "refurbished"
+        },
+        {
+          "id": "b",
+          "text": "renovated"
+        },
+        {
+          "id": "c",
+          "text": "modernized"
+        },
+        {
+          "id": "d",
+          "text": "decorated"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Refurbished có nghĩa là tân trang, sửa chữa để làm cho cái gì đó trông mới hơn hoặc hoạt động tốt hơn. Câu này nói rằng khách sạn đ�� được làm mới hoàn toàn."
+    },
+    {
+      "id": "mc_academic_19_1777697741226",
+      "type": "multiple_choice",
+      "sentence": "The ___ walls are all painted white.",
+      "options": [
+        {
+          "id": "a",
+          "text": "interior"
+        },
+        {
+          "id": "b",
+          "text": "exterior"
+        },
+        {
+          "id": "c",
+          "text": "surrounding"
+        },
+        {
+          "id": "d",
+          "text": "exterior"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Interior có nghĩa là bên trong. Câu này nói về những bức tường bên trong của căn phòng được sơn màu trắng."
+    },
+    {
+      "id": "mc_academic_20_1777697741226",
+      "type": "multiple_choice",
+      "sentence": "Most of our work now involves ___ weddings.",
+      "options": [
+        {
+          "id": "a",
+          "text": "catering for"
+        },
+        {
+          "id": "b",
+          "text": "serving for"
+        },
+        {
+          "id": "c",
+          "text": "managing for"
+        },
+        {
+          "id": "d",
+          "text": "providing for"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm từ 'cater for' có nghĩa là cung cấp thức ăn và dịch vụ cho một sự kiện. Câu này nói rằng công việc của họ bao gồm việc phục vụ cho các đám cưới."
+    },
+    {
+      "id": "mc_academic_21_1777697741226",
+      "type": "multiple_choice",
+      "sentence": "Winning first place must have been quite a ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "joy"
+        },
+        {
+          "id": "b",
+          "text": "thrill"
+        },
+        {
+          "id": "c",
+          "text": "pleasure"
+        },
+        {
+          "id": "d",
+          "text": "excitement"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Thrill có nghĩa là cảm giác hồi hộp, phấn khích mạnh mẽ. Việc giành giải nhất chắc chắn mang lại cảm giác hồi hộp, phấn khích."
+    },
+    {
+      "id": "mc_academic_22_1777697741226",
+      "type": "multiple_choice",
+      "sentence": "This ___ 120g of butter.",
+      "options": [
+        {
+          "id": "a",
+          "text": "food needs"
+        },
+        {
+          "id": "b",
+          "text": "meal requires"
+        },
+        {
+          "id": "c",
+          "text": "dish asks for"
+        },
+        {
+          "id": "d",
+          "text": "recipe calls for"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm từ 'recipe calls for' có nghĩa là công thức yêu cầu. Câu này đang nói về một công thức nấu ăn và lượng nguyên liệu cần thiết."
+    },
+    {
+      "id": "mc_academic_23_1777697741226",
+      "type": "multiple_choice",
+      "sentence": "His plans are a ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "path to success"
+        },
+        {
+          "id": "b",
+          "text": "road to ruin"
+        },
+        {
+          "id": "c",
+          "text": "recipe for disaster"
+        },
+        {
+          "id": "d",
+          "text": "plan for failure"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm từ 'a recipe for disaster' có nghĩa là một tình huống hoặc kế hoạch chắc chắn sẽ dẫn đến thất bại hoặc tai họa. Câu này đang mô tả kế hoạch của anh ấy là một công thức dẫn đến thảm họa."
+    },
+    {
+      "id": "mc_academic_24_1777697741226",
+      "type": "multiple_choice",
+      "sentence": "All the ___ are listed on the package.",
+      "options": [
+        {
+          "id": "a",
+          "text": "ingredients for the cake"
+        },
+        {
+          "id": "b",
+          "text": "components of the dish"
+        },
+        {
+          "id": "c",
+          "text": "foods for the meal"
+        },
+        {
+          "id": "d",
+          "text": "materials for the recipe"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Ingredients là các thành phần làm nên một món ăn hoặc đồ uống. Câu này nói về các thành phần cần thiết cho chiếc bánh, được liệt kê trên bao bì."
+    },
+    {
+      "id": "mc_academic_25_1777697741226",
+      "type": "multiple_choice",
+      "sentence": "John has all the ___ a great player.",
+      "options": [
+        {
+          "id": "a",
+          "text": "parts of"
+        },
+        {
+          "id": "b",
+          "text": "elements of"
+        },
+        {
+          "id": "c",
+          "text": "qualities of"
+        },
+        {
+          "id": "d",
+          "text": "ingredients of"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Trong ngữ cảnh này, 'ingredients of' ám chỉ những yếu tố hoặc phẩm chất cần thiết để trở thành một cầu thủ xuất sắc. Câu này nói rằng John có đủ những yếu tố đó."
+    },
+    {
+      "id": "mc_academic_26_1777697741226",
+      "type": "multiple_choice",
+      "sentence": "The museum is staging ___ of Picasso's work.",
+      "options": [
+        {
+          "id": "a",
+          "text": "a show"
+        },
+        {
+          "id": "b",
+          "text": "a display"
+        },
+        {
+          "id": "c",
+          "text": "an exhibition"
+        },
+        {
+          "id": "d",
+          "text": "a presentation"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Exhibition có nghĩa là một cuộc triển lãm nghệ thuật hoặc công cộng. Câu này nói rằng bảo tàng đang tổ chức một cuộc triển lãm các tác phẩm của Picasso."
+    },
+    {
+      "id": "mc_academic_27_1777697741226",
+      "type": "multiple_choice",
+      "sentence": "She never agreed to the public ___ of her sculptures while she was still alive.",
+      "options": [
+        {
+          "id": "a",
+          "text": "exhibition"
+        },
+        {
+          "id": "b",
+          "text": "display"
+        },
+        {
+          "id": "c",
+          "text": "presentation"
+        },
+        {
+          "id": "d",
+          "text": "showing"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Exhibition of có nghĩa là việc trưng bày các tác phẩm nghệ thuật để công chúng xem. Câu này nói về việc cô ấy không đồng ý cho trưng bày công khai các tác phẩm điêu khắc của mình."
+    },
+    {
+      "id": "mc_academic_28_1777697741226",
+      "type": "multiple_choice",
+      "sentence": "He decided to ___ by shouting in the library.",
+      "options": [
+        {
+          "id": "a",
+          "text": "create a scene"
+        },
+        {
+          "id": "b",
+          "text": "draw attention to himself"
+        },
+        {
+          "id": "c",
+          "text": "show off"
+        },
+        {
+          "id": "d",
+          "text": "make an exhibition of himself"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm từ 'make an exhibition of himself' có nghĩa là hành động một cách ngu ngốc hoặc gây chú ý trước công chúng. Việc la hét trong thư viện là một hành động như vậy."
+    },
+    {
+      "id": "mc_academic_29_1777697741226",
+      "type": "multiple_choice",
+      "sentence": "You look absolutely ___!",
+      "options": [
+        {
+          "id": "a",
+          "text": "gorgeous"
+        },
+        {
+          "id": "b",
+          "text": "beautiful"
+        },
+        {
+          "id": "c",
+          "text": "amazing"
+        },
+        {
+          "id": "d",
+          "text": "stunning"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Stunning có nghĩa là vô cùng đẹp hoặc ấn tượng. Câu này dùng để khen ngợi ai đó trông rất đẹp và thu hút."
+    },
+    {
+      "id": "mc_academic_30_1777697754123",
+      "type": "multiple_choice",
+      "sentence": "He suffered a ___ in the election.",
+      "options": [
+        {
+          "id": "a",
+          "text": "resounding victory"
+        },
+        {
+          "id": "b",
+          "text": "minor setback"
+        },
+        {
+          "id": "c",
+          "text": "stunning defeat"
+        },
+        {
+          "id": "d",
+          "text": "peaceful transition"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Trong câu này, 'stunning defeat' có nghĩa là một thất bại nặng nề hoặc bất ngờ, phù hợp với ngữ cảnh của một cuộc bầu cử. Các lựa chọn khác không diễn tả được mức độ của thất bại."
+    },
+    {
+      "id": "mc_academic_31_1777697754123",
+      "type": "multiple_choice",
+      "sentence": "She has a ___ that lights up any room.",
+      "options": [
+        {
+          "id": "a",
+          "text": "quiet demeanor"
+        },
+        {
+          "id": "b",
+          "text": "somber attitude"
+        },
+        {
+          "id": "c",
+          "text": "dull disposition"
+        },
+        {
+          "id": "d",
+          "text": "vibrant personality"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "'Vibrant personality' mô tả một người có tính cách sôi nổi, đầy năng lượng và thu hút, hoàn toàn phù hợp với việc 'làm bừng sáng' căn phòng. Các tính từ khác mang nghĩa tiêu cực hoặc trung lập."
+    },
+    {
+      "id": "mc_academic_32_1777697754123",
+      "type": "multiple_choice",
+      "sentence": "The artist used ___ to create a striking painting.",
+      "options": [
+        {
+          "id": "a",
+          "text": "dull hues"
+        },
+        {
+          "id": "b",
+          "text": "vibrant colors"
+        },
+        {
+          "id": "c",
+          "text": "pale shades"
+        },
+        {
+          "id": "d",
+          "text": "muted tones"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "'Vibrant colors' có nghĩa là màu sắc rực rỡ, sống động, rất phù hợp để tạo ra một bức tranh 'striking' (ấn tượng). Các lựa chọn khác chỉ màu sắc nhạt nhòa hoặc xỉn màu, không tạo hiệu ứng mạnh."
+    },
+    {
+      "id": "mc_academic_33_1777697754123",
+      "type": "multiple_choice",
+      "sentence": "We enjoyed the ___ of the orchestra.",
+      "options": [
+        {
+          "id": "a",
+          "text": "vibrant sounds"
+        },
+        {
+          "id": "b",
+          "text": "silent melodies"
+        },
+        {
+          "id": "c",
+          "text": "muffled rhythms"
+        },
+        {
+          "id": "d",
+          "text": "faint noises"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Vibrant sounds' mô tả âm thanh mạnh mẽ, sống động và đầy sức sống, đây là đặc điểm thường thấy của một dàn nhạc giao hưởng. Các lựa chọn khác không phù hợp với bản chất âm thanh của dàn nhạc."
+    },
+    {
+      "id": "mc_academic_34_1777697754123",
+      "type": "multiple_choice",
+      "sentence": "The factory produces ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "garments for export"
+        },
+        {
+          "id": "b",
+          "text": "foodstuffs for domestic use"
+        },
+        {
+          "id": "c",
+          "text": "machinery for agriculture"
+        },
+        {
+          "id": "d",
+          "text": "raw materials for industry"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm từ 'garments for export' chỉ quần áo được sản xuất ra để bán ở nước ngoài, đây là một hoạt động sản xuất phổ biến của các nhà máy. Các lựa chọn khác không khớp với thông tin 'garment(s) for purpose/market'."
+    }
+  ]
+}

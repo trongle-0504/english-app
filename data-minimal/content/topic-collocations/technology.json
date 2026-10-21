@@ -1,0 +1,4522 @@
+[
+  {
+    "id": "topic-colloc:technology:artificial-intelligence-and-machine-learning-technologies",
+    "title": "artificial intelligence and machine learning technologies",
+    "term": "artificial intelligence and machine learning technologies",
+    "type": "Collocation",
+    "pronunciation": "/ˌɑːtɪˈfɪʃəl ɪnˈtelɪdʒəns ænd məˈʃiːn ˈlɜːnɪŋ tekˈnɒlədʒiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "công nghệ trí tuệ nhân tạo và học máy",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Banks are adopting artificial intelligence and machine learning technologies to detect fraudulent transactions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:algorithmic-promotion",
+    "title": "algorithmic promotion",
+    "term": "algorithmic promotion",
+    "type": "Collocation",
+    "pronunciation": "/ˌælɡəˈrɪðmɪk prəˈməʊʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự quảng bá thông qua thuật toán",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The algorithmic promotion of sensational content often overshadows accurate, well-researched reporting.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:design-feature",
+    "title": "design feature",
+    "term": "design feature",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈzaɪn ˈfiːtʃə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tính năng thiết kế",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Developers are under growing pressure to remove any design feature that deliberately fosters addictive behaviour.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:do-housework-manually",
+    "title": "do housework manually",
+    "term": "do housework manually",
+    "type": "Collocation",
+    "pronunciation": "/duː ˈhaʊswɜːk ˈmænjuəli/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "làm việc nhà bằng tay",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Without a washing machine, elderly residents in rural areas still have to do housework manually every day.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:ethical-dilemmas",
+    "title": "ethical dilemmas",
+    "term": "ethical dilemmas",
+    "type": "Collocation",
+    "pronunciation": "/ˈeθɪkəl dɪˈleməz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những tình huống khó xử về đạo đức",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The rise of autonomous weapons has raised serious ethical dilemmas for policymakers worldwide.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:overreliance-on-machines",
+    "title": "overreliance on machines",
+    "term": "overreliance on machines",
+    "type": "Collocation",
+    "pronunciation": "/ˌəʊvərɪˈlaɪəns ɒn məˈʃiːnz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự lệ thuộc quá mức vào máy móc",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "An overreliance on machines in the workplace could leave employees underprepared when systems fail.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:tech-dependence",
+    "title": "tech dependence",
+    "term": "tech dependence",
+    "type": "Collocation",
+    "pronunciation": "/tek dɪˈpendəns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phụ thuộc vào công nghệ",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Growing tech dependence among students has raised questions about their ability to solve problems without digital aids.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:ai-powered-applications",
+    "title": "AI-powered applications",
+    "term": "AI-powered applications",
+    "type": "Collocation",
+    "pronunciation": "/eɪ aɪ ˈpaʊəd ˌæplɪˈkeɪʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "ứng dụng chạy bằng trí tuệ nhân tạo",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "AI-powered applications now assist doctors in diagnosing diseases with remarkable accuracy.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:automating-repetitive-and-labor-intensive-tasks",
+    "title": "automating repetitive and labor-intensive tasks",
+    "term": "automating repetitive and labor-intensive tasks",
+    "type": "Collocation",
+    "pronunciation": "/ˈɔːtəmeɪtɪŋ rɪˈpetətɪv ænd ˈleɪbə ɪnˈtensɪv tɑːsks/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tự động hóa các công việc lặp đi lặp lại và tốn nhiều công sức",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "By automating repetitive and labor-intensive tasks, factories have significantly boosted their output.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:autonomous-vehicles",
+    "title": "autonomous vehicles",
+    "term": "autonomous vehicles",
+    "type": "Collocation",
+    "pronunciation": "/ɔːˈtɒnəməs ˈviːəklz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phương tiện tự hành",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Several major cities are trialling autonomous vehicles to reduce traffic congestion and accidents.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:drastically-reduce-accidents-caused-by-human-error",
+    "title": "drastically reduce accidents caused by human error",
+    "term": "drastically reduce accidents caused by human error",
+    "type": "Collocation",
+    "pronunciation": "/ˈdræstɪkli rɪˈdjuːs ˈæksɪdənts kɔːzd baɪ ˈhjuːmən ˈerə/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giảm đáng kể tai nạn do lỗi con người gây ra",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Proponents argue that self-driving cars could drastically reduce accidents caused by human error.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:household-chore",
+    "title": "household chore",
+    "term": "household chore",
+    "type": "Collocation",
+    "pronunciation": "/ˈhaʊshəʊld tʃɔː/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc nhà",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Smart appliances now handle many a household chore, from vacuuming to laundry, with minimal human input.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:human-error",
+    "title": "human error",
+    "term": "human error",
+    "type": "Collocation",
+    "pronunciation": "/ˈhjuːmən ˈerə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lỗi do con người gây ra",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Automated quality control systems in factories help to minimise human error during production.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:robotic-assistants",
+    "title": "robotic assistants",
+    "term": "robotic assistants",
+    "type": "Collocation",
+    "pronunciation": "/rəʊˈbɒtɪk əˈsɪstənts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "trợ lý robot",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Hospitals are beginning to deploy robotic assistants to help nurses with routine tasks.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:robotic-system",
+    "title": "robotic system",
+    "term": "robotic system",
+    "type": "Collocation",
+    "pronunciation": "/rəʊˈbɒtɪk ˈsɪstəm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hệ thống robot",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Hospitals are increasingly using robotic systems to perform precise and minimally invasive surgeries.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:streamline-daily-activities",
+    "title": "streamline daily activities",
+    "term": "streamline daily activities",
+    "type": "Collocation",
+    "pronunciation": "/ˈstriːmlaɪn ˈdeɪli ækˈtɪvətiz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "hợp lý hóa các hoạt động hàng ngày",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Smart appliances are designed to streamline daily activities such as cooking and cleaning.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:utilize-robotic-waitstaff",
+    "title": "utilize robotic waitstaff",
+    "term": "utilize robotic waitstaff",
+    "type": "Collocation",
+    "pronunciation": "/ˈjuːtɪlaɪz rəʊˈbɒtɪk ˈweɪtstɑːf/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "sử dụng nhân viên phục vụ robot",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Some restaurants now utilize robotic waitstaff to deliver meals and cut labour costs.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:vacuum-cleaner-robots",
+    "title": "vacuum cleaner robots",
+    "term": "vacuum cleaner robots",
+    "type": "Collocation",
+    "pronunciation": "/ˈvækjuːm ˈkliːnə ˌrəʊbɒts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "robot hút bụi",
+    "topic": "Technology",
+    "subTopic": "AI & Automation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Many busy households now rely on vacuum cleaner robots to keep their floors clean without any manual effort.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:connectivity-and-the-availability-of-information",
+    "title": "connectivity and the availability of information",
+    "term": "connectivity and the availability of information",
+    "type": "Collocation",
+    "pronunciation": "/ˌkɒnekˈtɪvəti ənd ði əˌveɪləˈbɪləti əv ˌɪnfəˈmeɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự kết nối và tính sẵn có của thông tin",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The internet's greatest achievement lies in connectivity and the availability of information to virtually anyone.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:current-events",
+    "title": "current events",
+    "term": "current events",
+    "type": "Collocation",
+    "pronunciation": "/ˈkʌrənt ɪˈvents/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các sự kiện thời sự",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Social media platforms allow users to follow current events almost as soon as they happen anywhere in the world.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:delivery-addresses",
+    "title": "delivery addresses",
+    "term": "delivery addresses",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈlɪvəri əˈdresɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "địa chỉ giao hàng",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "E-commerce websites store customers' delivery addresses to speed up future purchases.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:digital-communication",
+    "title": "digital communication",
+    "term": "digital communication",
+    "type": "Collocation",
+    "pronunciation": "/ˈdɪdʒɪtl kəˌmjuːnɪˈkeɪʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "giao tiếp kỹ thuật số",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Digital communication has largely replaced letter writing as the primary means of staying in touch.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:digital-media",
+    "title": "digital media",
+    "term": "digital media",
+    "type": "Collocation",
+    "pronunciation": "/ˈdɪdʒɪtəl ˈmiːdiə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phương tiện truyền thông kỹ thuật số",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Digital media allow readers to access breaking news within seconds of an event occurring.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:digital-platforms-for-information",
+    "title": "digital platforms for information",
+    "term": "digital platforms for information",
+    "type": "Collocation",
+    "pronunciation": "/ˈdɪdʒɪtl ˈplætfɔːmz fər ˌɪnfəˈmeɪʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nền tảng kỹ thuật số cung cấp thông tin",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Younger generations increasingly rely on digital platforms for information rather than printed newspapers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:digital-technology",
+    "title": "digital technology",
+    "term": "digital technology",
+    "type": "Collocation",
+    "pronunciation": "/ˈdɪdʒɪtəl tekˈnɒlədʒi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "công nghệ số",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Digital technology has transformed the way people access and share information around the globe.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:face-to-face-interaction",
+    "title": "face-to-face interaction",
+    "term": "face-to-face interaction",
+    "type": "Collocation",
+    "pronunciation": "/ˌfeɪs tə ˈfeɪs ˌɪntərˈækʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tương tác trực tiếp mặt đối mặt",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Despite the convenience of texting, many people still value face-to-face interaction for building trust.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:geographic-location",
+    "title": "geographic location",
+    "term": "geographic location",
+    "type": "Collocation",
+    "pronunciation": "/ˌdʒiːəˈɡræfɪk ləʊˈkeɪʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "vị trí địa lý",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Cloud-based services let employees access company files regardless of their geographic location.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:instantaneous",
+    "title": "instantaneous",
+    "term": "instantaneous",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌɪnstənˈteɪniəs/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "tức thời, ngay lập tức",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Instant messaging apps provide instantaneous responses that traditional letters never could.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:lightweight-devices",
+    "title": "lightweight devices",
+    "term": "lightweight devices",
+    "type": "Collocation",
+    "pronunciation": "/ˈlaɪtweɪt dɪˈvaɪsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thiết bị nhẹ",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Commuters increasingly prefer lightweight devices that let them read dozens of books without extra bulk.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:modern-communication-technology",
+    "title": "modern communication technology",
+    "term": "modern communication technology",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɒdən kəˌmjuːnɪˈkeɪʃn tekˈnɒlədʒi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "công nghệ truyền thông hiện đại",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Modern communication technology enables colleagues on different continents to collaborate as if they were in the same room.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:pervasive-use",
+    "title": "pervasive use",
+    "term": "pervasive use",
+    "type": "Collocation",
+    "pronunciation": "/pəˈveɪsɪv juːs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc sử dụng lan rộng, phổ biến khắp nơi",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The pervasive use of smartphones among teenagers has sparked concern among educators.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:portable-devices",
+    "title": "portable devices",
+    "term": "portable devices",
+    "type": "Collocation",
+    "pronunciation": "/ˈpɔːtəbl dɪˈvaɪsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thiết bị di động, cầm tay",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Portable devices such as smartphones and tablets allow people to work or study from virtually anywhere.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:sources-of-news-and-real-time-updates",
+    "title": "sources of news and real-time updates",
+    "term": "sources of news and real-time updates",
+    "type": "Collocation",
+    "pronunciation": "/ˈsɔːsɪz əv njuːz ənd ˈrɪəl taɪm ˈʌpdeɪts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nguồn tin tức và cập nhật theo thời gian thực",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "For many young people, social media has replaced television as the main sources of news and real-time updates.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:unfold",
+    "title": "unfold",
+    "term": "unfold",
+    "type": "Vocabulary",
+    "pronunciation": "/ʌnˈfəʊld/",
+    "part_of_speech": "verb",
+    "meaning_vi": "diễn ra, mở ra",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Live-streaming technology allows viewers to watch events unfold in real time, wherever they are.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:people-with-a-shared-interest",
+    "title": "people with a shared interest",
+    "term": "people with a shared interest",
+    "type": "Collocation",
+    "pronunciation": "/ˈpiːpl wɪð ə ʃeəd ˈɪntrəst/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những người có cùng sở thích chung",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Niche forums bring together people with a shared interest in vintage photography.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:the-increasing-prevalence-of-social-media-platforms",
+    "title": "the increasing prevalence of social media platforms",
+    "term": "the increasing prevalence of social media platforms",
+    "type": "Collocation",
+    "pronunciation": "/ði ɪnˈkriːsɪŋ ˈprevələns əv ˈsəʊʃəl ˈmiːdiə ˈplætfɔːmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phổ biến ngày càng tăng của các nền tảng mạng xã hội",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The increasing prevalence of social media platforms has reshaped how businesses advertise their products.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:user-generated-content",
+    "title": "user-generated content",
+    "term": "user-generated content",
+    "type": "Collocation",
+    "pronunciation": "/ˈjuːzə ˈdʒenəreɪtɪd ˈkɒntent/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nội dung do người dùng tạo ra",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Video-sharing platforms rely almost entirely on user-generated content to attract viewers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:genuine-emotional-connections",
+    "title": "genuine emotional connections",
+    "term": "genuine emotional connections",
+    "type": "Collocation",
+    "pronunciation": "/ˈdʒenjuɪn ɪˈməʊʃənəl kəˈnekʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kết nối cảm xúc chân thật",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Many psychologists insist that text messages cannot replace the genuine emotional connections built through in-person conversation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:lack-of-rigorous-verification",
+    "title": "lack of rigorous verification",
+    "term": "lack of rigorous verification",
+    "type": "Collocation",
+    "pronunciation": "/læk əv ˈrɪɡərəs ˌverɪfɪˈkeɪʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thiếu sự xác minh chặt chẽ",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The lack of rigorous verification on social media allows false claims to spread rapidly before they can be corrected.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:non-verbal-cues",
+    "title": "non-verbal cues",
+    "term": "non-verbal cues",
+    "type": "Collocation",
+    "pronunciation": "/nɒn ˈvɜːbəl kjuːz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tín hiệu phi ngôn ngữ",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Because video calls strip away many non-verbal cues, misunderstandings between colleagues can easily arise.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:nonverbal-cue",
+    "title": "nonverbal cue",
+    "term": "nonverbal cue",
+    "type": "Collocation",
+    "pronunciation": "/ˌnɒnˈvɜːbl kjuː/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tín hiệu phi ngôn ngữ",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Video calls capture some nonverbal cues, such as facial expressions, but still miss subtler body language.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:rapid-browsing",
+    "title": "rapid browsing",
+    "term": "rapid browsing",
+    "type": "Collocation",
+    "pronunciation": "/ˈræpɪd ˈbraʊzɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lướt web nhanh",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Rapid browsing across multiple tabs often leaves readers with only a superficial grasp of any single topic.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:a-decline-in-meaningful-interpersonal-relationships",
+    "title": "a decline in meaningful interpersonal relationships",
+    "term": "a decline in meaningful interpersonal relationships",
+    "type": "Collocation",
+    "pronunciation": "/ə dɪˈklaɪn ɪn ˈmiːnɪŋfəl ˌɪntəˈpɜːsənəl rɪˈleɪʃənʃɪps/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự suy giảm các mối quan hệ giữa người với người có ý nghĩa",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Sociologists have linked excessive screen time to a decline in meaningful interpersonal relationships among teenagers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:a-sense-of-detachment-from-others",
+    "title": "a sense of detachment from others",
+    "term": "a sense of detachment from others",
+    "type": "Collocation",
+    "pronunciation": "/ə sens əv dɪˈtætʃmənt frəm ˈʌðəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cảm giác xa cách với người khác",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Constant online communication paradoxically leaves some individuals with a sense of detachment from others.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:a-sense-of-isolation-and-superficiality-in-relationships",
+    "title": "a sense of isolation and superficiality in relationships",
+    "term": "a sense of isolation and superficiality in relationships",
+    "type": "Collocation",
+    "pronunciation": "/ə sens əv ˌaɪsəˈleɪʃən ənd ˌsuːpəfɪʃiˈæləti ɪn rɪˈleɪʃənʃɪps/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cảm giác cô lập và hời hợt trong các mối quan hệ",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Spending hours texting rather than meeting friends can foster a sense of isolation and superficiality in relationships.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:antisocial",
+    "title": "antisocial",
+    "term": "antisocial",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌæntiˈsəʊʃl/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "phi xã hội, xa lánh giao tiếp",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Parents worry that spending hours gaming online makes their children increasingly antisocial.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:antisocial-behaviors",
+    "title": "antisocial behaviors",
+    "term": "antisocial behaviors",
+    "type": "Collocation",
+    "pronunciation": "/ˌæntiˈsəʊʃl bɪˈheɪvjəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hành vi phi xã hội",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Critics argue that excessive screen time encourages antisocial behaviors among children who prefer devices to playmates.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:at-the-expense-of",
+    "title": "at the expense of",
+    "term": "at the expense of",
+    "type": "Collocation",
+    "pronunciation": "/ət ði ɪkˈspens əv/",
+    "part_of_speech": "prepositional phrase",
+    "meaning_vi": "phải trả giá bằng, đánh đổi lấy",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Users often pursue online popularity at the expense of their genuine offline friendships.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:autoplay-feature",
+    "title": "autoplay feature",
+    "term": "autoplay feature",
+    "type": "Collocation",
+    "pronunciation": "/ˈɔːtəʊpleɪ ˈfiːtʃə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tính năng tự động phát",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Streaming platforms rely on the autoplay feature to keep viewers glued to their screens for hours on end.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:curated-representations",
+    "title": "curated representations",
+    "term": "curated representations",
+    "type": "Collocation",
+    "pronunciation": "/ˈkjʊəreɪtɪd ˌreprɪzenˈteɪʃnz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những hình ảnh được chọn lọc kỹ càng",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Constantly viewing the curated representations of influencers' lives can distort teenagers' sense of reality.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:cyberbullying",
+    "title": "cyberbullying",
+    "term": "cyberbullying",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈsaɪbəˌbʊliɪŋ/",
+    "part_of_speech": "noun",
+    "meaning_vi": "bắt nạt qua mạng",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Schools have introduced digital literacy programmes to help students recognise and report cyberbullying.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:feelings-of-inadequacy",
+    "title": "feelings of inadequacy",
+    "term": "feelings of inadequacy",
+    "type": "Collocation",
+    "pronunciation": "/ˈfiːlɪŋz əv ɪnˈædɪkwəsi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cảm giác tự ti, thiếu tự tin",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Comparing themselves to others online, some teenagers develop feelings of inadequacy about their own achievements.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:genuine-social-relationship",
+    "title": "genuine social relationship",
+    "term": "genuine social relationship",
+    "type": "Collocation",
+    "pronunciation": "/ˈdʒenjuɪn ˈsəʊʃl rɪˈleɪʃnʃɪp/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mối quan hệ xã hội chân thực",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Critics claim that endless scrolling through feeds cannot replace a genuine social relationship built through real conversation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:inflated",
+    "title": "inflated",
+    "term": "inflated",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪnˈfleɪtɪd/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "bị thổi phồng, phóng đại",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Curated online profiles can give people an inflated impression of their friends' lifestyles.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:interpersonal-bonds",
+    "title": "interpersonal bonds",
+    "term": "interpersonal bonds",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪntəˈpɜːsənəl bɒndz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mối liên kết giữa các cá nhân",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Some experts fear that heavy phone use is gradually weakening interpersonal bonds within families.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:interpersonal-skill",
+    "title": "interpersonal skill",
+    "term": "interpersonal skill",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪntəˈpɜːsənl skɪl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kỹ năng giao tiếp giữa người với người",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Some educators fear that heavy reliance on messaging apps weakens children's interpersonal skills.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:low-self-esteem",
+    "title": "low self-esteem",
+    "term": "low self-esteem",
+    "type": "Collocation",
+    "pronunciation": "/ləʊ self ɪˈstiːm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lòng tự trọng thấp",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Excessive use of photo-editing filters has been linked to low self-esteem among young social media users.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:manipulating-user-opinions-and-behaviour",
+    "title": "manipulating user opinions and behaviour",
+    "term": "manipulating user opinions and behaviour",
+    "type": "Collocation",
+    "pronunciation": "/məˈnɪpjʊleɪtɪŋ ˈjuːzər əˈpɪnjənz ənd bɪˈheɪvjə/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thao túng quan điểm và hành vi người dùng",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Critics argue that algorithm-driven feeds are capable of manipulating user opinions and behaviour on a mass scale.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:meaningful-interaction",
+    "title": "meaningful interaction",
+    "term": "meaningful interaction",
+    "type": "Collocation",
+    "pronunciation": "/ˈmiːnɪŋfəl ˌɪntərˈækʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tương tác có ý nghĩa",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Critics argue that scrolling through news feeds rarely produces meaningful interaction between users.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:misinformation-spiral",
+    "title": "misinformation spiral",
+    "term": "misinformation spiral",
+    "type": "Collocation",
+    "pronunciation": "/ˌmɪsɪnfəˈmeɪʃən ˈspaɪrəl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "vòng xoáy thông tin sai lệch",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "A single fabricated headline can trigger a misinformation spiral that spreads across millions of accounts within hours.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:online-harassment",
+    "title": "online harassment",
+    "term": "online harassment",
+    "type": "Collocation",
+    "pronunciation": "/ˈɒnlaɪn ˈhærəsmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "quấy rối trực tuyến",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Stricter platform policies are needed to protect users from online harassment and abusive comments.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:reward-loop",
+    "title": "reward loop",
+    "term": "reward loop",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈwɔːd luːp/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "vòng lặp phần thưởng",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Mobile games are deliberately built around a reward loop that encourages players to keep returning for small wins.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:social-competence",
+    "title": "social competence",
+    "term": "social competence",
+    "type": "Collocation",
+    "pronunciation": "/ˈsəʊʃl ˈkɒmpɪtəns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "năng lực xã hội",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Frequent face-to-face activities, rather than screen time, are essential for developing children's social competence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:societal-polarisation",
+    "title": "societal polarisation",
+    "term": "societal polarisation",
+    "type": "Collocation",
+    "pronunciation": "/səˈsaɪətl ˌpəʊləraɪˈzeɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phân cực trong xã hội",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Echo chambers on social media are frequently blamed for deepening societal polarisation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:the-abuse-of-social-media",
+    "title": "the abuse of social media",
+    "term": "the abuse of social media",
+    "type": "Collocation",
+    "pronunciation": "/ði əˈbjuːs əv ˈsəʊʃəl ˈmiːdiə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc lạm dụng mạng xã hội",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Schools have introduced digital literacy classes to address the abuse of social media among students.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:crowd-sourced-information-network",
+    "title": "crowd-sourced information network",
+    "term": "crowd-sourced information network",
+    "type": "Collocation",
+    "pronunciation": "/kraʊd sɔːst ˌɪnfəˈmeɪʃən ˈnetwɜːk/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mạng lưới thông tin từ cộng đồng",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "During natural disasters, a crowd-sourced information network can relay warnings faster than official channels.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:flexible-leisure-planning",
+    "title": "flexible leisure planning",
+    "term": "flexible leisure planning",
+    "type": "Collocation",
+    "pronunciation": "/ˈfleksəbl ˈleʒər ˈplænɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lập kế hoạch giải trí linh hoạt",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Booking apps enable flexible leisure planning, allowing travellers to change reservations at the last minute.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:global-connectivity",
+    "title": "global connectivity",
+    "term": "global connectivity",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡləʊbəl ˌkɒnekˈtɪvəti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kết nối toàn cầu",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Global connectivity has made it possible for entrepreneurs to sell handmade goods to customers overseas.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:hyperlinked-databases",
+    "title": "hyperlinked databases",
+    "term": "hyperlinked databases",
+    "type": "Collocation",
+    "pronunciation": "/ˈhaɪpəlɪŋkt ˈdeɪtəbeɪsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cơ sở dữ liệu siêu liên kết",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Researchers can cross-reference sources far more efficiently using hyperlinked databases than paper archives.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:inclusive-network",
+    "title": "inclusive network",
+    "term": "inclusive network",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈkluːsɪv ˈnetwɜːk/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mạng lưới mang tính bao trùm, hòa nhập",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The platform was designed to build an inclusive network that welcomes users regardless of language or ability.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:information-dissemination",
+    "title": "information dissemination",
+    "term": "information dissemination",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪnfəˈmeɪʃn dɪˌsemɪˈneɪʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phổ biến, lan truyền thông tin",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The internet has revolutionised information dissemination, enabling news to spread globally within seconds.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:instant-accessibility",
+    "title": "instant accessibility",
+    "term": "instant accessibility",
+    "type": "Collocation",
+    "pronunciation": "/ˈɪnstənt əkˌsesəˈbɪləti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khả năng tiếp cận tức thì",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The instant accessibility of search engines means answers to almost any question are available within seconds.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:instant-mobile-access",
+    "title": "instant mobile access",
+    "term": "instant mobile access",
+    "type": "Collocation",
+    "pronunciation": "/ˈɪnstənt ˈməʊbaɪl ˈækses/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "truy cập di động tức thì",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Instant mobile access to news alerts keeps people informed of events as they unfold.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:internet-based-repositories",
+    "title": "internet-based repositories",
+    "term": "internet-based repositories",
+    "type": "Collocation",
+    "pronunciation": "/ˈɪntənet beɪst rɪˈpɒzɪtəriz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kho lưu trữ dựa trên internet",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Researchers increasingly rely on internet-based repositories rather than physical archives to store their data.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:live-news-feeds",
+    "title": "live news feeds",
+    "term": "live news feeds",
+    "type": "Collocation",
+    "pronunciation": "/laɪv njuːz fiːdz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bảng tin trực tiếp",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Live news feeds allow the public to follow unfolding events almost instantaneously.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:maintain-close-relationships",
+    "title": "maintain close relationships",
+    "term": "maintain close relationships",
+    "type": "Collocation",
+    "pronunciation": "/meɪnˈteɪn kləʊs rɪˈleɪʃənʃɪps/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "duy trì mối quan hệ thân thiết",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Video-calling apps allow migrant workers to maintain close relationships with their children back home.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:maintain-relationships-over-great-distances",
+    "title": "maintain relationships over great distances",
+    "term": "maintain relationships over great distances",
+    "type": "Collocation",
+    "pronunciation": "/meɪnˈteɪn rɪˈleɪʃənʃɪps ˈəʊvə ɡreɪt ˈdɪstənsɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "duy trì mối quan hệ qua những khoảng cách xa",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Expatriates increasingly rely on social media to maintain relationships over great distances.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:on-demand-convenience",
+    "title": "on-demand convenience",
+    "term": "on-demand convenience",
+    "type": "Collocation",
+    "pronunciation": "/ɒn dɪˈmɑːnd kənˈviːniəns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự tiện lợi theo yêu cầu",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Streaming services have popularised on-demand convenience, letting viewers watch whatever they like whenever they choose.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:online-banking-and-shopping",
+    "title": "online banking and shopping",
+    "term": "online banking and shopping",
+    "type": "Collocation",
+    "pronunciation": "/ˈɒnlaɪn ˈbæŋkɪŋ ənd ˈʃɒpɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "ngân hàng và mua sắm trực tuyến",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Online banking and shopping have become the norm, saving consumers considerable time and effort.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:personalize-content-and-services",
+    "title": "personalize content and services",
+    "term": "personalize content and services",
+    "type": "Collocation",
+    "pronunciation": "/ˈpɜːsənəlaɪz ˈkɒntent ənd ˈsɜːvɪsɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cá nhân hóa nội dung và dịch vụ",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Streaming platforms use viewing history to personalize content and services for each subscriber.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:real-time-access",
+    "title": "real-time access",
+    "term": "real-time access",
+    "type": "Collocation",
+    "pronunciation": "/ˈrɪəl taɪm ˈækses/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khả năng truy cập theo thời gian thực",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Financial analysts depend on real-time access to market data to make timely decisions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:real-time-conversation",
+    "title": "real-time conversation",
+    "term": "real-time conversation",
+    "type": "Collocation",
+    "pronunciation": "/ˌrɪəl ˈtaɪm ˌkɒnvəˈseɪʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cuộc trò chuyện theo thời gian thực",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Instant messaging apps make real-time conversation possible even between users on opposite sides of the globe.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:regardless-of-geographic-distance",
+    "title": "regardless of geographic distance",
+    "term": "regardless of geographic distance",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈɡɑːdləs əv ˌdʒiːəˈɡræfɪk ˈdɪstəns/",
+    "part_of_speech": "adverbial phrase",
+    "meaning_vi": "bất kể khoảng cách địa lý",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Video calling apps let families stay connected regardless of geographic distance between them.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:regardless-of-geographical-distances",
+    "title": "regardless of geographical distances",
+    "term": "regardless of geographical distances",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈɡɑːdləs əv ˌdʒiːəˈɡræfɪkəl ˈdɪstənsɪz/",
+    "part_of_speech": "adverbial phrase",
+    "meaning_vi": "bất kể khoảng cách địa lý",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Cloud-based tools let teams collaborate in real time, regardless of geographical distances.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:retrieve-information",
+    "title": "retrieve information",
+    "term": "retrieve information",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈtriːv ˌɪnfəˈmeɪʃn/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "truy xuất thông tin",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Digital archives allow historians to retrieve information far more quickly than sifting through paper records.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:seamless-digital-integration",
+    "title": "seamless digital integration",
+    "term": "seamless digital integration",
+    "type": "Collocation",
+    "pronunciation": "/ˈsiːmləs ˈdɪdʒɪtl ˌɪntɪˈɡreɪʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự tích hợp kỹ thuật số liền mạch",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Smart home devices offer seamless digital integration, letting users control lighting, heating and security from one app.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:stay-informed",
+    "title": "stay informed",
+    "term": "stay informed",
+    "type": "Collocation",
+    "pronunciation": "/steɪ ɪnˈfɔːmd/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "luôn cập nhật thông tin",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Many people check news apps every morning simply to stay informed about developments around the world.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:streamlined-daily-tasks",
+    "title": "streamlined daily tasks",
+    "term": "streamlined daily tasks",
+    "type": "Collocation",
+    "pronunciation": "/ˈstriːmlaɪnd ˈdeɪli tɑːsks/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "hợp lý hóa công việc hàng ngày",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Smartphone apps have streamlined daily tasks such as paying bills, booking appointments and ordering food.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:strengthened",
+    "title": "strengthened",
+    "term": "strengthened",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈstreŋθənd/",
+    "part_of_speech": "collocation",
+    "meaning_vi": "(verb (past participle)). được củng cố, tăng cường",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Family ties were arguably strengthened by daily video calls during long periods apart.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:strike-a-balance-between-virtual-and-physical-communication",
+    "title": "strike a balance between virtual and physical communication",
+    "term": "strike a balance between virtual and physical communication",
+    "type": "Collocation",
+    "pronunciation": "/straɪk ə ˈbæləns bɪˈtwiːn ˈvɜːtʃuəl ənd ˈfɪzɪkəl kəˌmjuːnɪˈkeɪʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cân bằng giữa giao tiếp trực tuyến và trực tiếp",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Parents are encouraged to help children strike a balance between virtual and physical communication.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:to-stay-informed-about-current-events-worldwide",
+    "title": "to stay informed about current events worldwide",
+    "term": "to stay informed about current events worldwide",
+    "type": "Collocation",
+    "pronunciation": "/tə steɪ ɪnˈfɔːmd əˈbaʊt ˈkʌrənt ɪˈvents ˌwɜːldˈwaɪd/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "luôn cập nhật các sự kiện thời sự trên toàn thế giới",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "News apps make it effortless to stay informed about current events worldwide.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:civic-mobilisation",
+    "title": "civic mobilisation",
+    "term": "civic mobilisation",
+    "type": "Collocation",
+    "pronunciation": "/ˈsɪvɪk ˌməʊbɪlaɪˈzeɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự huy động sự tham gia của người dân",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Hashtag campaigns have proven remarkably effective at civic mobilisation during environmental protests.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:emotional-bond",
+    "title": "emotional bond",
+    "term": "emotional bond",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈməʊʃənl bɒnd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mối liên kết cảm xúc",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Regular video calls help migrant workers maintain an emotional bond with family members back home.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:enriches-social-relationships",
+    "title": "enriches social relationships",
+    "term": "enriches social relationships",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈrɪtʃɪz ˈsəʊʃəl rɪˈleɪʃənʃɪps/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "làm phong phú thêm các mối quan hệ xã hội",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Sharing photos and stories online often enriches social relationships between distant relatives.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:facilitated-the-formation-of-online-communities",
+    "title": "facilitated the formation of online communities",
+    "term": "facilitated the formation of online communities",
+    "type": "Collocation",
+    "pronunciation": "/fəˈsɪlɪteɪtɪd ðə fɔːˈmeɪʃn əv ˈɒnlaɪn kəˈmjuːnətiz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tạo điều kiện hình thành các cộng đồng trực tuyến",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Forums and social networks have facilitated the formation of online communities where people share niche interests.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:fostering-social-connections",
+    "title": "fostering social connections",
+    "term": "fostering social connections",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɒstərɪŋ ˈsəʊʃəl kəˈnekʃənz/",
+    "part_of_speech": "gerund phrase",
+    "meaning_vi": "thúc đẩy các mối liên kết xã hội",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Community forums play a valuable role in fostering social connections among newcomers to a city.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:galvanise-communities",
+    "title": "galvanise communities",
+    "term": "galvanise communities",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡælvənaɪz kəˈmjuːnətiz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thúc đẩy, kích thích cộng đồng hành động",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Online petitions have the power to galvanise communities into supporting urgent humanitarian causes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:in-depth-conversations-and-debates",
+    "title": "in-depth conversations and debates",
+    "term": "in-depth conversations and debates",
+    "type": "Collocation",
+    "pronunciation": "/ɪn depθ ˌkɒnvəˈseɪʃənz ənd dɪˈbeɪts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những cuộc trò chuyện và tranh luận chuyên sâu",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Discussion boards often host in-depth conversations and debates that short posts on other platforms cannot match.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:online-interest-based-communities",
+    "title": "online interest-based communities",
+    "term": "online interest-based communities",
+    "type": "Collocation",
+    "pronunciation": "/ˈɒnlaɪn ˈɪntrəst beɪst kəˈmjuːnətiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cộng đồng trực tuyến dựa trên sở thích chung",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Online interest-based communities enable hobbyists in remote towns to exchange tips with experts worldwide.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:widen-our-social-networks",
+    "title": "widen our social networks",
+    "term": "widen our social networks",
+    "type": "Collocation",
+    "pronunciation": "/ˈwaɪdən aʊə ˈsəʊʃəl ˈnetwɜːks/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "mở rộng mạng lưới xã hội của chúng ta",
+    "topic": "Technology",
+    "subTopic": "Digital Communication & Social Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Joining online forums can widen our social networks far beyond our immediate neighbourhood.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:detailed-customer-profiles",
+    "title": "detailed customer profiles",
+    "term": "detailed customer profiles",
+    "type": "Collocation",
+    "pronunciation": "/ˈdiːteɪld ˈkʌstəmə ˈprəʊfaɪlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hồ sơ khách hàng chi tiết",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Retailers build detailed customer profiles from purchase history to predict future buying behaviour.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:necessitate",
+    "title": "necessitate",
+    "term": "necessitate",
+    "type": "Vocabulary",
+    "pronunciation": "/nɪˈsesɪteɪt/",
+    "part_of_speech": "verb",
+    "meaning_vi": "đòi hỏi, bắt buộc phải có",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The rapid growth of online banking necessitates stronger cybersecurity measures to protect users' funds.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:personal-privacy",
+    "title": "personal privacy",
+    "term": "personal privacy",
+    "type": "Collocation",
+    "pronunciation": "/ˈpɜːsənl ˈprɪvəsi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "quyền riêng tư cá nhân",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Many users willingly sacrifice personal privacy in exchange for free access to social media platforms.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:privacy-and-data-security",
+    "title": "privacy and data security",
+    "term": "privacy and data security",
+    "type": "Collocation",
+    "pronunciation": "/ˈprɪvəsi ənd ˈdeɪtə sɪˈkjʊərəti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "quyền riêng tư và bảo mật dữ liệu",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Stricter regulations are needed to safeguard privacy and data security in an increasingly connected world.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:sensitive-information",
+    "title": "sensitive information",
+    "term": "sensitive information",
+    "type": "Collocation",
+    "pronunciation": "/ˈsensətɪv ˌɪnfəˈmeɪʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thông tin nhạy cảm",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Employees should be trained to recognise phishing emails designed to extract sensitive information.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:anonymity-provided-by-the-internet",
+    "title": "anonymity provided by the internet",
+    "term": "anonymity provided by the internet",
+    "type": "Collocation",
+    "pronunciation": "/ˌænəˈnɪməti prəˈvaɪdɪd baɪ ði ˈɪntənet/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tính ẩn danh do internet mang lại",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The anonymity provided by the internet often emboldens people to post abusive comments online.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:autofill-features",
+    "title": "autofill features",
+    "term": "autofill features",
+    "type": "Collocation",
+    "pronunciation": "/ˈɔːtəʊfɪl ˈfiːtʃəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tính năng tự động điền",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Autofill features make online checkout faster but also increase the risk of exposing saved payment details.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:automate-phishing-campaigns",
+    "title": "automate phishing campaigns",
+    "term": "automate phishing campaigns",
+    "type": "Collocation",
+    "pronunciation": "/ˈɔːtəmeɪt ˈfɪʃɪŋ kæmˈpeɪnz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tự động hóa các chiến dịch lừa đảo phishing",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Hackers now use bots to automate phishing campaigns, sending millions of fraudulent emails within minutes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:be-exploited-for-malicious-purposes",
+    "title": "be exploited for malicious purposes",
+    "term": "be exploited for malicious purposes",
+    "type": "Collocation",
+    "pronunciation": "/biː ɪkˈsplɔɪtɪd fɔː məˈlɪʃəs ˈpɜːpəsɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "bị lợi dụng cho mục đích xấu",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Personal data shared on social media can easily be exploited for malicious purposes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:cyberattacks",
+    "title": "cyberattacks",
+    "term": "cyberattacks",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈsaɪbərətæks/",
+    "part_of_speech": "noun",
+    "meaning_vi": "các cuộc tấn công mạng",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Hospitals and other public services are increasingly vulnerable to cyberattacks that can paralyse critical systems.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:data-breaches",
+    "title": "data breaches",
+    "term": "data breaches",
+    "type": "Collocation",
+    "pronunciation": "/ˈdeɪtə ˈbriːtʃɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "vi phạm/rò rỉ dữ liệu",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "High-profile data breaches have eroded public trust in large technology companies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:data-harvesting",
+    "title": "data harvesting",
+    "term": "data harvesting",
+    "type": "Collocation",
+    "pronunciation": "/ˈdeɪtə ˈhɑːvɪstɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thu thập dữ liệu hàng loạt",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Aggressive data harvesting practices by social media firms have prompted calls for tighter legislation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:erode-public-trust",
+    "title": "erode public trust",
+    "term": "erode public trust",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈrəʊd ˈpʌblɪk trʌst/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "làm xói mòn lòng tin của công chúng",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Repeated data leaks have gradually eroded public trust in large technology corporations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:evade-detection-hide-evidence-and-commit-crimes",
+    "title": "evade detection, hide evidence, and commit crimes",
+    "term": "evade detection, hide evidence, and commit crimes",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈveɪd dɪˈtekʃən, haɪd ˈevɪdəns, ænd kəˈmɪt kraɪmz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "trốn tránh bị phát hiện, giấu bằng chứng và phạm tội",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Criminals increasingly use encrypted apps to evade detection, hide evidence, and commit crimes undetected.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:financial-loss",
+    "title": "financial loss",
+    "term": "financial loss",
+    "type": "Collocation",
+    "pronunciation": "/faɪˈnænʃl lɒs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tổn thất tài chính",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Small businesses that fail to secure their networks risk substantial financial loss from cybercrime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:hyper-targeted-advertising",
+    "title": "hyper-targeted advertising",
+    "term": "hyper-targeted advertising",
+    "type": "Collocation",
+    "pronunciation": "/ˈhaɪpə ˈtɑːɡɪtɪd ˈædvətaɪzɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "quảng cáo nhắm mục tiêu siêu chính xác",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Hyper-targeted advertising relies on tracking users' browsing habits across multiple websites.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:identity-theft",
+    "title": "identity theft",
+    "term": "identity theft",
+    "type": "Collocation",
+    "pronunciation": "/aɪˈdentəti θeft/",
+    "part_of_speech": "noun",
+    "meaning_vi": "đánh cắp danh tính",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Victims of identity theft often spend months trying to restore their financial records and credit standing.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:immense-stockpiling-of-personal-information",
+    "title": "immense stockpiling of personal information",
+    "term": "immense stockpiling of personal information",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈmens ˈstɒkpaɪlɪŋ əv ˈpɜːsənl ˌɪnfəˈmeɪʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc tích trữ khổng lồ thông tin cá nhân",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The immense stockpiling of personal information by tech firms has raised serious ethical concerns among regulators.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:large-scale-data-centralization",
+    "title": "large-scale data centralization",
+    "term": "large-scale data centralization",
+    "type": "Collocation",
+    "pronunciation": "/lɑːdʒ skeɪl ˈdeɪtə ˌsentrəlaɪˈzeɪʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tập trung hóa dữ liệu quy mô lớn",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Large-scale data centralization by a handful of corporations makes any security breach potentially catastrophic.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:loss-of-privacy-and-control",
+    "title": "loss of privacy and control",
+    "term": "loss of privacy and control",
+    "type": "Collocation",
+    "pronunciation": "/lɒs əv ˈprɪvəsi ənd kənˈtrəʊl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mất quyền riêng tư và kiểm soát",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Constant tracking by apps has led many users to feel a growing loss of privacy and control over their own information.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:more-sophisticated-and-complex-cybercrimes",
+    "title": "more sophisticated and complex cybercrimes",
+    "term": "more sophisticated and complex cybercrimes",
+    "type": "Collocation",
+    "pronunciation": "/mɔː səˈfɪstɪkeɪtɪd ænd ˈkɒmpleks ˈsaɪbəkraɪmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tội phạm mạng ngày càng tinh vi và phức tạp",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Security experts warn that criminals are turning to more sophisticated and complex cybercrimes each year.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:online-fraud",
+    "title": "online fraud",
+    "term": "online fraud",
+    "type": "Collocation",
+    "pronunciation": "/ˈɒnlaɪn frɔːd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lừa đảo trực tuyến",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Elderly internet users are frequently targeted by sophisticated online fraud schemes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:privacy-concerns",
+    "title": "privacy concerns",
+    "term": "privacy concerns",
+    "type": "Collocation",
+    "pronunciation": "/ˈprɪvəsi kənˈsɜːnz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lo ngại về quyền riêng tư",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The widespread collection of personal data by tech companies has raised serious privacy concerns among consumers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:privacy-violations",
+    "title": "privacy violations",
+    "term": "privacy violations",
+    "type": "Collocation",
+    "pronunciation": "/ˈprɪvəsi ˌvaɪəˈleɪʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hành vi vi phạm quyền riêng tư",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The widespread use of facial recognition cameras has sparked concerns over potential privacy violations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:significant-financial-loss",
+    "title": "significant financial loss",
+    "term": "significant financial loss",
+    "type": "Collocation",
+    "pronunciation": "/sɪɡˈnɪfɪkənt faɪˈnænʃl lɒs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tổn thất tài chính đáng kể",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "A single successful phishing scam can result in significant financial loss for an unsuspecting victim.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:undetectable-malware",
+    "title": "undetectable malware",
+    "term": "undetectable malware",
+    "type": "Collocation",
+    "pronunciation": "/ˌʌndɪˈtektəbl ˈmælweə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phần mềm độc hại khó bị phát hiện",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Cybersecurity firms are racing to counter increasingly undetectable malware designed to steal financial data.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:widespread-sharing-of-personal-data",
+    "title": "widespread sharing of personal data",
+    "term": "widespread sharing of personal data",
+    "type": "Collocation",
+    "pronunciation": "/ˈwaɪdspred ˈʃeərɪŋ əv ˈpɜːsənl ˈdeɪtə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc chia sẻ rộng rãi dữ liệu cá nhân",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The widespread sharing of personal data between apps has made online privacy almost impossible to guarantee.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:advanced-surveillance-systems",
+    "title": "advanced surveillance systems",
+    "term": "advanced surveillance systems",
+    "type": "Collocation",
+    "pronunciation": "/ədˈvɑːnst səˈveɪləns ˈsɪstəmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hệ thống giám sát tiên tiến",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Airports rely on advanced surveillance systems to monitor passenger movement around the clock.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:authenticate-payments",
+    "title": "authenticate payments",
+    "term": "authenticate payments",
+    "type": "Collocation",
+    "pronunciation": "/ɔːˈθentɪkeɪt ˈpeɪmənts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "xác thực thanh toán",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Banks now use fingerprint scanning to authenticate payments and reduce the likelihood of fraud.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:better-monitoring-of-public-spaces",
+    "title": "better monitoring of public spaces",
+    "term": "better monitoring of public spaces",
+    "type": "Collocation",
+    "pronunciation": "/ˈbetə ˈmɒnɪtərɪŋ əv ˈpʌblɪk ˈspeɪsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự giám sát không gian công cộng tốt hơn",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "City councils argue that CCTV networks allow for better monitoring of public spaces.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:compliance",
+    "title": "compliance",
+    "term": "compliance",
+    "type": "Vocabulary",
+    "pronunciation": "/kəmˈplaɪəns/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự tuân thủ",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Tech firms are required to ensure compliance with data protection laws when handling customer information.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:deter-crimes-more-effectively",
+    "title": "deter crimes more effectively",
+    "term": "deter crimes more effectively",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈtɜː kraɪmz mɔːr ɪˈfektɪvli/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "ngăn chặn tội phạm hiệu quả hơn",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Well-lit streets equipped with cameras can deter crimes more effectively than patrols alone.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:facial-recognition-software",
+    "title": "facial recognition software",
+    "term": "facial recognition software",
+    "type": "Collocation",
+    "pronunciation": "/ˈfeɪʃəl ˌrekəɡˈnɪʃən ˈsɒftweə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phần mềm nhận diện khuôn mặt",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Several airports now use facial recognition software to speed up passenger identity checks.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:given-victims-a-greater-sense-of-security",
+    "title": "given victims a greater sense of security",
+    "term": "given victims a greater sense of security",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡɪvn ˈvɪktɪmz ə ˈɡreɪtə sens əv sɪˈkjʊərəti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "mang lại cho nạn nhân cảm giác an toàn hơn",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Emergency alert apps have given victims a greater sense of security when reporting incidents.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:improved-crime-prevention-and-solving-capabilities",
+    "title": "improved crime prevention and solving capabilities",
+    "term": "improved crime prevention and solving capabilities",
+    "type": "Collocation",
+    "pronunciation": "/ɪmˈpruːvd kraɪm prɪˈvenʃən ænd ˈsɒlvɪŋ ˌkeɪpəˈbɪlətiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khả năng phòng ngừa và giải quyết tội phạm được cải thiện",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Police departments cite improved crime prevention and solving capabilities as a key benefit of new technology.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:quicker-identification-of-potential-suspects",
+    "title": "quicker identification of potential suspects",
+    "term": "quicker identification of potential suspects",
+    "type": "Collocation",
+    "pronunciation": "/ˈkwɪkə aɪˌdentɪfɪˈkeɪʃən əv pəˈtenʃəl səˈspekts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự nhận diện nghi phạm tiềm năng nhanh hơn",
+    "topic": "Technology",
+    "subTopic": "Privacy, Security & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Digital forensics tools now allow for quicker identification of potential suspects after a crime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:archival-grade-paper",
+    "title": "archival-grade paper",
+    "term": "archival-grade paper",
+    "type": "Collocation",
+    "pronunciation": "/ɑːˈkaɪvəl ɡreɪd ˈpeɪpə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "giấy chất lượng lưu trữ",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Historic manuscripts printed on archival-grade paper can survive for centuries without significant decay.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:cultural-heritage",
+    "title": "cultural heritage",
+    "term": "cultural heritage",
+    "type": "Collocation",
+    "pronunciation": "/ˈkʌltʃərəl ˈherɪtɪdʒ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "di sản văn hóa",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Preserving handwritten manuscripts is essential for safeguarding a nation's cultural heritage.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:printed-materials",
+    "title": "printed materials",
+    "term": "printed materials",
+    "type": "Collocation",
+    "pronunciation": "/ˈprɪntɪd məˈtɪəriəlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tài liệu in ấn",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Many universities still require students to consult printed materials alongside online resources.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:sustained-attention",
+    "title": "sustained attention",
+    "term": "sustained attention",
+    "type": "Collocation",
+    "pronunciation": "/səˈsteɪnd əˈtenʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự tập trung liên tục",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Printed textbooks tend to promote sustained attention better than fragmented digital content.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:akin",
+    "title": "akin",
+    "term": "akin",
+    "type": "Vocabulary",
+    "pronunciation": "/əˈkɪn/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "tương tự, giống với",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Some experts believe that compulsive phone checking is akin to a genuine behavioural addiction.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:indisputable",
+    "title": "indisputable",
+    "term": "indisputable",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌɪndɪˈspjuːtəbl/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "không thể chối cãi",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "It is indisputable that wearable devices have made it easier for people to monitor their own health.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:deep-reading-habits",
+    "title": "deep reading habits",
+    "term": "deep reading habits",
+    "type": "Collocation",
+    "pronunciation": "/diːp ˈriːdɪŋ ˈhæbɪts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thói quen đọc sâu",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Educators worry that constant screen use is eroding students' deep reading habits.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:shallow-consumption",
+    "title": "shallow consumption",
+    "term": "shallow consumption",
+    "type": "Collocation",
+    "pronunciation": "/ˈʃæləʊ kənˈsʌmpʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tiêu thụ thông tin hời hợt",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Short-form videos encourage shallow consumption of information rather than sustained, critical engagement.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:blue-light-fatigue",
+    "title": "blue-light fatigue",
+    "term": "blue-light fatigue",
+    "type": "Collocation",
+    "pronunciation": "/bluː laɪt fəˈtiːg/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự mỏi mắt do ánh sáng xanh",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Office workers who stare at monitors all day frequently complain of blue-light fatigue by evening.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:dopamine-loop",
+    "title": "dopamine loop",
+    "term": "dopamine loop",
+    "type": "Collocation",
+    "pronunciation": "/ˈdəʊpəmiːn luːp/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "vòng lặp dopamine (cơ chế gây nghiện)",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Endless notifications create a dopamine loop that makes it difficult for users to put their phones down.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:exploit-psychological-vulnerabilities",
+    "title": "exploit psychological vulnerabilities",
+    "term": "exploit psychological vulnerabilities",
+    "type": "Collocation",
+    "pronunciation": "/ˈeksplɔɪt ˌsaɪkəˈlɒdʒɪkəl ˌvʌlnərəˈbɪlətiz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "lợi dụng những điểm yếu tâm lý",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Some apps are engineered to exploit psychological vulnerabilities and keep users scrolling for longer.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:irreversible-damage",
+    "title": "irreversible damage",
+    "term": "irreversible damage",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪrɪˈvɜːsəbl ˈdæmɪdʒ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thiệt hại không thể khắc phục",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Excessive screen time in childhood can cause irreversible damage to a person's eyesight and concentration span.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:nocturnal-rest",
+    "title": "nocturnal rest",
+    "term": "nocturnal rest",
+    "type": "Collocation",
+    "pronunciation": "/nɒkˈtɜːnl rest/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "giấc ngủ ban đêm",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Scrolling through social media late at night severely undermines a person's nocturnal rest.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:screen-glare",
+    "title": "screen glare",
+    "term": "screen glare",
+    "type": "Collocation",
+    "pronunciation": "/skriːn gleə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự chói màn hình",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Reading outdoors on a tablet is often frustrating because of persistent screen glare.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:screen-time-addiction",
+    "title": "screen-time addiction",
+    "term": "screen-time addiction",
+    "type": "Collocation",
+    "pronunciation": "/skriːn taɪm əˈdɪkʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nghiện thời gian sử dụng màn hình",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Screen-time addiction among teenagers has been linked to poor sleep and reduced concentration in class.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:social-isolation",
+    "title": "social isolation",
+    "term": "social isolation",
+    "type": "Collocation",
+    "pronunciation": "/ˈsəʊʃəl ˌaɪsəˈleɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự cô lập xã hội",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Excessive reliance on virtual communication can deepen social isolation among teenagers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:bite-sized-practice-session",
+    "title": "bite-sized practice session",
+    "term": "bite-sized practice session",
+    "type": "Collocation",
+    "pronunciation": "/baɪt saɪzd ˈpræktɪs ˈseʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "buổi luyện tập ngắn gọn",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "A bite-sized practice session of just ten minutes a day can still lead to measurable progress over time.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:democratize-education",
+    "title": "democratize education",
+    "term": "democratize education",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈmɒkrətaɪz ˌedʒʊˈkeɪʃn/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "dân chủ hóa/phổ cập giáo dục",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Massive open online courses aim to democratize education by removing tuition fees and entry requirements.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:democratized-education",
+    "title": "democratized education",
+    "term": "democratized education",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈmɒkrətaɪzd ˌedʒʊˈkeɪʃn/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "giáo dục đã được phổ cập/dân chủ hóa",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Free online lecture series have democratized education by giving anyone with an internet connection access to top universities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:digital-learning-tools",
+    "title": "digital learning tools",
+    "term": "digital learning tools",
+    "type": "Collocation",
+    "pronunciation": "/ˈdɪdʒɪtl ˈlɜːnɪŋ tuːlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "công cụ học tập kỹ thuật số",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Schools that invest in digital learning tools often report higher levels of student engagement.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:digital-literacy",
+    "title": "digital literacy",
+    "term": "digital literacy",
+    "type": "Collocation",
+    "pronunciation": "/ˈdɪdʒɪtl ˈlɪtərəsi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hiểu biết về công nghệ số",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Schools should prioritise digital literacy so that students can evaluate online sources critically.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:digitisation-of-knowledge",
+    "title": "digitisation of knowledge",
+    "term": "digitisation of knowledge",
+    "type": "Collocation",
+    "pronunciation": "/ˌdɪdʒɪtaɪˈzeɪʃn əv ˈnɒlɪdʒ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "số hóa tri thức",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The digitisation of knowledge means that entire libraries can now be accessed from a single handheld device.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:dissemination-of-knowledge",
+    "title": "dissemination of knowledge",
+    "term": "dissemination of knowledge",
+    "type": "Collocation",
+    "pronunciation": "/dɪˌsemɪˈneɪʃn əv ˈnɒlɪdʒ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phổ biến tri thức",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The internet has accelerated the dissemination of knowledge across national and linguistic borders.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:learning-tool",
+    "title": "learning tool",
+    "term": "learning tool",
+    "type": "Collocation",
+    "pronunciation": "/ˈlɜːnɪŋ tuːl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "công cụ học tập",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "When used responsibly, a smartphone can serve as a valuable learning tool rather than a mere distraction.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:micro-learning",
+    "title": "micro-learning",
+    "term": "micro-learning",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈmaɪkrəʊ ˈlɜːnɪŋ/",
+    "part_of_speech": "noun",
+    "meaning_vi": "học tập theo từng phần nhỏ",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Language apps often use micro-learning, breaking lessons into short segments that fit into a busy schedule.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:remote-learning",
+    "title": "remote learning",
+    "term": "remote learning",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈməʊt ˈlɜːnɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "học từ xa",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Remote learning platforms allowed millions of students to continue their education during the pandemic.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:unparalleled-opportunities-for-personal-and-academic-growth",
+    "title": "unparalleled opportunities for personal and academic growth",
+    "term": "unparalleled opportunities for personal and academic growth",
+    "type": "Collocation",
+    "pronunciation": "/ʌnˈpærəleld ˌɒpəˈtʃuːnɪtiz fɔːr ˈpɜːsənl ənd ˌækəˈdemɪk ɡrəʊθ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những cơ hội vô song cho sự phát triển cá nhân và học thuật",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "For students in isolated communities, online courses offer unparalleled opportunities for personal and academic growth.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:empower-individuals-with-mobility-challenges",
+    "title": "empower individuals with mobility challenges",
+    "term": "empower individuals with mobility challenges",
+    "type": "Collocation",
+    "pronunciation": "/ɪmˈpaʊə ˌɪndɪˈvɪdʒuəlz wɪð məʊˈbɪləti ˈtʃælɪndʒɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "trao quyền cho những người gặp khó khăn về di chuyển",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Voice-controlled smart home systems empower individuals with mobility challenges to live more independently.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:implementation",
+    "title": "implementation",
+    "term": "implementation",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌɪmplɪmenˈteɪʃn/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự thực thi, triển khai",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The implementation of telemedicine services has made healthcare more accessible in remote regions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:innovative-medical-products",
+    "title": "innovative medical products",
+    "term": "innovative medical products",
+    "type": "Collocation",
+    "pronunciation": "/ˈɪnəvətɪv ˈmedɪkl ˈprɒdʌkts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các sản phẩm y tế sáng tạo",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Innovative medical products such as robotic prosthetics have transformed the lives of amputees.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:mindful-usage-habit",
+    "title": "mindful usage habit",
+    "term": "mindful usage habit",
+    "type": "Collocation",
+    "pronunciation": "/ˈmaɪndfʊl ˈjuːsɪdʒ ˈhæbɪt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thói quen sử dụng có ý thức",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Schools are now teaching students to develop mindful usage habits rather than banning devices outright.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:timely-intervention",
+    "title": "timely intervention",
+    "term": "timely intervention",
+    "type": "Collocation",
+    "pronunciation": "/ˈtaɪmli ˌɪntəˈvenʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự can thiệp kịp thời",
+    "topic": "Technology",
+    "subTopic": "Technology in Education & Healthcare",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Wearable devices that track heart rate can alert doctors and enable timely intervention before a condition worsens.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:attach-paramount-importance-to-career-and-wealth",
+    "title": "attach paramount importance to career and wealth",
+    "term": "attach paramount importance to career and wealth",
+    "type": "Collocation",
+    "pronunciation": "/əˈtætʃ ˈpærəmaʊnt ɪmˈpɔːtns tə kəˈrɪə ənd welθ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "coi trọng hàng đầu sự nghiệp và của cải",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "In highly competitive societies, many young professionals attach paramount importance to career and wealth over personal wellbeing.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:become-the-norm",
+    "title": "become the norm",
+    "term": "become the norm",
+    "type": "Collocation",
+    "pronunciation": "/bɪˈkʌm ðə nɔːm/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "trở thành điều bình thường, chuẩn mực",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Remote meetings have become the norm in many industries since the pandemic.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:conducts-business",
+    "title": "conducts business",
+    "term": "conducts business",
+    "type": "Collocation",
+    "pronunciation": "/kənˈdʌkts ˈbɪznɪs/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tiến hành kinh doanh",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The way society conducts business has changed radically now that most transactions take place online.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:integral",
+    "title": "integral",
+    "term": "integral",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈɪntɪɡrəl/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "thiết yếu, không thể thiếu",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Digital collaboration tools have become integral to how modern teams operate across different countries.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:technological-devices",
+    "title": "technological devices",
+    "term": "technological devices",
+    "type": "Collocation",
+    "pronunciation": "/ˌteknəˈlɒdʒɪkəl dɪˈvaɪsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thiết bị công nghệ",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Companies are increasingly providing employees with technological devices to enable remote working.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:contribute-to-the-end-aim",
+    "title": "contribute to the end aim",
+    "term": "contribute to the end aim",
+    "type": "Collocation",
+    "pronunciation": "/kənˈtrɪbjuːt tə ði end eɪm/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đóng góp vào mục tiêu cuối cùng",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Every engineer on the team was expected to contribute to the end aim of launching the satellite on schedule.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:cornerstone-of-progress",
+    "title": "cornerstone of progress",
+    "term": "cornerstone of progress",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɔːnəstəʊn əv ˈprəʊɡres/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nền tảng của sự tiến bộ",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Many economists regard innovation in renewable energy as the cornerstone of progress for future generations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:distinctive",
+    "title": "distinctive",
+    "term": "distinctive",
+    "type": "Vocabulary",
+    "pronunciation": "/dɪˈstɪŋktɪv/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "đặc trưng, riêng biệt",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Each generation of smartphones tends to introduce distinctive features that set it apart from its predecessors.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:making-them-indispensable-for",
+    "title": "making them indispensable for",
+    "term": "making them indispensable for",
+    "type": "Collocation",
+    "pronunciation": "/ˈmeɪkɪŋ ðəm ˌɪndɪˈspensəbl fɔː/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "khiến chúng trở nên không thể thiếu đối với",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Robots continue to evolve in sophistication, making them indispensable for modern manufacturing.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:scientific-endeavors",
+    "title": "scientific endeavors",
+    "term": "scientific endeavors",
+    "type": "Collocation",
+    "pronunciation": "/ˌsaɪənˈtɪfɪk ɪnˈdevəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những nỗ lực, công trình khoa học",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Governments frequently subsidise scientific endeavors that private companies consider too risky to fund alone.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:speed-and-scope",
+    "title": "speed and scope",
+    "term": "speed and scope",
+    "type": "Collocation",
+    "pronunciation": "/spiːd ənd skəʊp/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tốc độ và phạm vi",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The speed and scope of information sharing online far exceed anything possible in the print era.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:technological-advancement",
+    "title": "technological advancement",
+    "term": "technological advancement",
+    "type": "Collocation",
+    "pronunciation": "/ˌteknəˈlɒdʒɪkəl ədˈvɑːnsmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự tiến bộ công nghệ",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Rapid technological advancement has transformed medicine, transportation and communication within a single generation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:the-advent-of-different-machines",
+    "title": "the advent of different machines",
+    "term": "the advent of different machines",
+    "type": "Collocation",
+    "pronunciation": "/ði ˈædvent əv ˈdɪfrənt məˈʃiːnz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự xuất hiện của các loại máy móc khác nhau",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The advent of different machines has freed households from many time-consuming chores.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:unprecedented-growth-of-advanced-technology",
+    "title": "unprecedented growth of advanced technology",
+    "term": "unprecedented growth of advanced technology",
+    "type": "Collocation",
+    "pronunciation": "/ʌnˈpresɪdentɪd ɡrəʊθ əv ədˈvɑːnst tekˈnɒlədʒi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phát triển chưa từng có của công nghệ tiên tiến",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The unprecedented growth of advanced technology has reshaped almost every aspect of daily life.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:all-time-high",
+    "title": "all-time high",
+    "term": "all-time high",
+    "type": "Collocation",
+    "pronunciation": "/ˌɔːl taɪm ˈhaɪ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mức cao kỷ lục",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Investment in renewable energy technology has reached an all-time high as governments race to cut carbon emissions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:buried-under-layers-of-work-related-email-notifications-or-text-messages",
+    "title": "buried under layers of work-related email notifications or text messages",
+    "term": "buried under layers of work-related email notifications or text messages",
+    "type": "Collocation",
+    "pronunciation": "/ˈberid ˈʌndə ˈleɪəz əv ˈwɜːk rɪˈleɪtɪd ˈiːmeɪl ˌnəʊtɪfɪˈkeɪʃənz ɔː tekst ˈmesɪdʒɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "ngập trong hàng loạt thông báo email và tin nhắn liên quan đến công việc",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Many professionals feel buried under layers of work-related email notifications or text messages even after office hours.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:deprive-people-of-their-free-time",
+    "title": "deprive people of their free time",
+    "term": "deprive people of their free time",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈpraɪv ˈpiːpl əv ðeə friː taɪm/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tước đi thời gian rảnh của con người",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Critics argue that constant connectivity through smartphones can deprive people of their free time.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:diverting",
+    "title": "diverting",
+    "term": "diverting",
+    "type": "Vocabulary",
+    "pronunciation": "/daɪˈvɜːtɪŋ/",
+    "part_of_speech": "collocation",
+    "meaning_vi": "(verb (gerund)). chuyển hướng, làm phân tán",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Notifications constantly diverting people's attention from their tasks have become a major productivity concern.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:eliminating-traditional-roles",
+    "title": "eliminating traditional roles",
+    "term": "eliminating traditional roles",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈlɪmɪneɪtɪŋ trəˈdɪʃənəl rəʊlz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "loại bỏ các vai trò truyền thống",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The introduction of self-service kiosks is gradually eliminating traditional roles in the hospitality industry.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:job-displacement",
+    "title": "job displacement",
+    "term": "job displacement",
+    "type": "Collocation",
+    "pronunciation": "/dʒɒb dɪsˈpleɪsmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tình trạng mất việc làm do bị thay thế",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The rise of AI-driven automation has sparked fears of widespread job displacement in manufacturing sectors.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:juggle-multiple-jobs",
+    "title": "juggle multiple jobs",
+    "term": "juggle multiple jobs",
+    "type": "Collocation",
+    "pronunciation": "/ˈdʒʌɡl ˈmʌltɪpl dʒɒbz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "xoay xở nhiều công việc cùng lúc",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Freelancers who juggle multiple jobs often depend on productivity apps to manage their tight schedules.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:leaving-many-workers-redundant",
+    "title": "leaving many workers redundant",
+    "term": "leaving many workers redundant",
+    "type": "Collocation",
+    "pronunciation": "/ˈliːvɪŋ ˈmeni ˈwɜːkəz rɪˈdʌndənt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "khiến nhiều lao động trở nên dư thừa",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Automated checkout systems have spread rapidly, leaving many workers redundant in the retail sector.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:productivity-loss",
+    "title": "productivity loss",
+    "term": "productivity loss",
+    "type": "Collocation",
+    "pronunciation": "/ˌprɒdʌkˈtɪvəti lɒs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự sụt giảm năng suất",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Frequent notifications from smartphones are a major cause of productivity loss in modern workplaces.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:riddled-with",
+    "title": "riddled with",
+    "term": "riddled with",
+    "type": "Collocation",
+    "pronunciation": "/ˈrɪdld wɪð/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "đầy rẫy, tràn ngập",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Modern working life is riddled with digital distractions that constantly interrupt concentration.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:sacrifice-their-leisure-time-for-work",
+    "title": "sacrifice their leisure time for work",
+    "term": "sacrifice their leisure time for work",
+    "type": "Collocation",
+    "pronunciation": "/ˈsækrɪfaɪs ðeə ˈleʒə taɪm fɔː wɜːk/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "hy sinh thời gian rảnh cho công việc",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Remote working technology has made it easier for employees to sacrifice their leisure time for work, blurring the boundary between the two.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:stay-constantly-connected",
+    "title": "stay constantly connected",
+    "term": "stay constantly connected",
+    "type": "Collocation",
+    "pronunciation": "/steɪ ˈkɒnstəntli kəˈnektɪd/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "luôn kết nối liên tục",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Smartwatches allow employees to stay constantly connected to their inbox, even during holidays.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:necessitates-enormous-effort-time-and-money",
+    "title": "necessitates enormous effort, time, and money",
+    "term": "necessitates enormous effort, time, and money",
+    "type": "Collocation",
+    "pronunciation": "/nɪˈsesɪteɪts ɪˈnɔːməs ˈefət taɪm ənd ˈmʌni/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đòi hỏi nỗ lực, thời gian và tiền bạc rất lớn",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Developing a reliable self-driving car necessitates enormous effort, time, and money from engineering teams.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:perilous-force",
+    "title": "perilous force",
+    "term": "perilous force",
+    "type": "Collocation",
+    "pronunciation": "/ˈperələs fɔːs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thế lực nguy hiểm",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Critics warn that unregulated artificial intelligence could become a perilous force capable of destabilising economies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:sparked-several-debates",
+    "title": "sparked several debates",
+    "term": "sparked several debates",
+    "type": "Collocation",
+    "pronunciation": "/spɑːkt ˈsevrəl dɪˈbeɪts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "làm dấy lên nhiều cuộc tranh luận",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The rise of gene-editing technology has sparked several debates about its ethical limits.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:understaffed",
+    "title": "understaffed",
+    "term": "understaffed",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌʌndəˈstɑːft/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "thiếu nhân lực, thiếu nhân viên",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Public research institutes are frequently understaffed, which slows the pace of scientific innovation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:boost-productivity",
+    "title": "boost productivity",
+    "term": "boost productivity",
+    "type": "Collocation",
+    "pronunciation": "/buːst ˌprɒdʌkˈtɪvəti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tăng năng suất",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Automating data entry can boost productivity by freeing employees to focus on more creative tasks.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:facilitate-remote-work-seamlessly",
+    "title": "facilitate remote work seamlessly",
+    "term": "facilitate remote work seamlessly",
+    "type": "Collocation",
+    "pronunciation": "/fəˈsɪlɪteɪt rɪˈməʊt wɜːk ˈsiːmləsli/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tạo điều kiện làm việc từ xa một cách liền mạch",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Cloud-based software now allows companies to facilitate remote work seamlessly across different time zones.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:reduced-operational-costs",
+    "title": "reduced operational costs",
+    "term": "reduced operational costs",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈdjuːst ˌɒpəˈreɪʃənl kɒsts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "giảm chi phí vận hành",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "By automating routine processes, firms have achieved significantly reduced operational costs.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:regardless-of-their-geographical-location",
+    "title": "regardless of their geographical location",
+    "term": "regardless of their geographical location",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈɡɑːdləs əv ðeə ˌdʒiːəˈɡræfɪkl ləʊˈkeɪʃn/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "bất kể vị trí địa lý của họ",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Video conferencing allows colleagues to collaborate effectively regardless of their geographical location.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:satisfaction",
+    "title": "satisfaction",
+    "term": "satisfaction",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌsætɪsˈfækʃn/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự hài lòng",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Employees who work remotely often report higher job satisfaction thanks to flexible technology.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:yield",
+    "title": "yield",
+    "term": "yield",
+    "type": "Vocabulary",
+    "pronunciation": "/jiːld/",
+    "part_of_speech": "verb",
+    "meaning_vi": "đem lại, tạo ra kết quả",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Automating repetitive tasks can yield significant gains in workplace efficiency.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:address-societal-challenges",
+    "title": "address societal challenges",
+    "term": "address societal challenges",
+    "type": "Collocation",
+    "pronunciation": "/əˈdres səˈsaɪətl ˈtʃælɪndʒɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giải quyết các thách thức xã hội",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Governments are investing heavily in technology to address societal challenges like ageing populations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:assistance-of-advanced-technology",
+    "title": "assistance of advanced technology",
+    "term": "assistance of advanced technology",
+    "type": "Collocation",
+    "pronunciation": "/əˈsɪstəns əv ədˈvænst tekˈnɒlədʒi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự hỗ trợ của công nghệ tiên tiến",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "With the assistance of advanced technology, doctors can now diagnose diseases far more accurately than before.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:invest-in-state-of-the-art-machines",
+    "title": "invest in state-of-the-art machines",
+    "term": "invest in state-of-the-art machines",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈvest ɪn ˌsteɪt əv ði ˈɑːt məˈʃiːnz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đầu tư vào máy móc hiện đại nhất",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Large factories continue to invest in state-of-the-art machines to stay competitive in the global market.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:leverage-technology",
+    "title": "leverage technology",
+    "term": "leverage technology",
+    "type": "Collocation",
+    "pronunciation": "/ˈliːvərɪdʒ tekˈnɒlədʒi/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tận dụng công nghệ",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Small businesses increasingly leverage technology to compete with larger corporations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:oversee",
+    "title": "oversee",
+    "term": "oversee",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌəʊvəˈsiː/",
+    "part_of_speech": "verb",
+    "meaning_vi": "giám sát, quản lý",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Independent ethics boards are appointed to oversee experimental research involving artificial intelligence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:private-funding",
+    "title": "private funding",
+    "term": "private funding",
+    "type": "Collocation",
+    "pronunciation": "/ˈpraɪvət ˈfʌndɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nguồn tài trợ tư nhân",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Several breakthrough vaccines were developed thanks to private funding from pharmaceutical companies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:refine-existing-products",
+    "title": "refine existing products",
+    "term": "refine existing products",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈfaɪn ɪɡˈzɪstɪŋ ˈprɒdʌkts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cải tiến sản phẩm hiện có",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Companies analyse customer feedback to refine existing products and stay competitive in the market.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:the-implementation-of-scientific-achievements",
+    "title": "the implementation of scientific achievements",
+    "term": "the implementation of scientific achievements",
+    "type": "Collocation",
+    "pronunciation": "/ði ˌɪmplɪmenˈteɪʃən əv ˌsaɪənˈtɪfɪk əˈtʃiːvmənts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc ứng dụng các thành tựu khoa học",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Private enterprises often accelerate the implementation of scientific achievements far more quickly than public bodies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:under-the-supervision-of-government-officials",
+    "title": "under the supervision of government officials",
+    "term": "under the supervision of government officials",
+    "type": "Collocation",
+    "pronunciation": "/ˈʌndə ðə ˌsuːpəˈvɪʒən əv ˈɡʌvənmənt əˈfɪʃəlz/",
+    "part_of_speech": "prepositional phrase",
+    "meaning_vi": "dưới sự giám sát của các quan chức chính phủ",
+    "topic": "Technology",
+    "subTopic": "Innovation & Economic Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Nuclear research facilities typically operate under the supervision of government officials for safety reasons.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:generous-incomes",
+    "title": "generous incomes",
+    "term": "generous incomes",
+    "type": "Collocation",
+    "pronunciation": "/ˈdʒenərəs ˈɪnkʌmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thu nhập hậu hĩnh",
+    "topic": "Technology",
+    "subTopic": "Digital Divide & Accessibility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Employees with generous incomes are more likely to afford smart home gadgets that save time on chores.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:pressing-priorities",
+    "title": "pressing priorities",
+    "term": "pressing priorities",
+    "type": "Collocation",
+    "pronunciation": "/ˈpresɪŋ praɪˈɒrətiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những ưu tiên cấp bách",
+    "topic": "Technology",
+    "subTopic": "Digital Divide & Accessibility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "For many governments, closing the digital divide has become one of the most pressing priorities of this decade.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:reliable-electricity",
+    "title": "reliable electricity",
+    "term": "reliable electricity",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈlaɪəbl ɪˌlekˈtrɪsəti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nguồn điện ổn định",
+    "topic": "Technology",
+    "subTopic": "Digital Divide & Accessibility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Without reliable electricity, rural communities cannot fully benefit from e-learning platforms.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:deemed-exorbitant",
+    "title": "deemed exorbitant",
+    "term": "deemed exorbitant",
+    "type": "Collocation",
+    "pronunciation": "/diːmd ɪɡˈzɔːbɪtənt/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "bị coi là quá đắt đỏ",
+    "topic": "Technology",
+    "subTopic": "Digital Divide & Accessibility",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The price of the latest laptop models is often deemed exorbitant by students on a tight budget.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:economic-barriers",
+    "title": "economic barriers",
+    "term": "economic barriers",
+    "type": "Collocation",
+    "pronunciation": "/ˌiːkəˈnɒmɪk ˈbæriəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "rào cản kinh tế",
+    "topic": "Technology",
+    "subTopic": "Digital Divide & Accessibility",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Economic barriers such as the high cost of devices and broadband prevent poorer households from accessing the internet.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:economic-inequality",
+    "title": "economic inequality",
+    "term": "economic inequality",
+    "type": "Collocation",
+    "pronunciation": "/ˌiːkəˈnɒmɪk ˌɪnɪˈkwɒləti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bất bình đẳng kinh tế",
+    "topic": "Technology",
+    "subTopic": "Digital Divide & Accessibility",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Unequal access to digital skills training can deepen existing economic inequality between social groups.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:low-socioeconomic-backgrounds",
+    "title": "low socioeconomic backgrounds",
+    "term": "low socioeconomic backgrounds",
+    "type": "Collocation",
+    "pronunciation": "/ləʊ ˌsəʊsiəʊˌiːkəˈnɒmɪk ˈbækɡraʊndz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "xuất thân từ tầng lớp kinh tế xã hội thấp",
+    "topic": "Technology",
+    "subTopic": "Digital Divide & Accessibility",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Children from low socioeconomic backgrounds often have limited access to computers and reliable internet at home.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:not-equitably-distributed",
+    "title": "not equitably distributed",
+    "term": "not equitably distributed",
+    "type": "Collocation",
+    "pronunciation": "/nɒt ˈekwɪtəbli dɪˈstrɪbjuːtɪd/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "không được phân bổ công bằng",
+    "topic": "Technology",
+    "subTopic": "Digital Divide & Accessibility",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "The economic gains of digital technology are not equitably distributed, leaving many rural communities behind.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:the-digital-literacy-gap",
+    "title": "the digital literacy gap",
+    "term": "the digital literacy gap",
+    "type": "Collocation",
+    "pronunciation": "/ðə ˈdɪdʒɪtl ˈlɪtərəsi ɡæp/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khoảng cách về hiểu biết công nghệ số",
+    "topic": "Technology",
+    "subTopic": "Digital Divide & Accessibility",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Government-funded training programmes could help close the digital literacy gap between older and younger generations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:allocation",
+    "title": "allocation",
+    "term": "allocation",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌæləˈkeɪʃn/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự phân bổ",
+    "topic": "Technology",
+    "subTopic": "Digital Divide & Accessibility",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Governments must consider a fair allocation of funding for digital infrastructure in underserved communities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:bridge-geographic-divides",
+    "title": "bridge geographic divides",
+    "term": "bridge geographic divides",
+    "type": "Collocation",
+    "pronunciation": "/brɪdʒ ˌdʒiːəˈɡræfɪk dɪˈvaɪdz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thu hẹp khoảng cách địa lý",
+    "topic": "Technology",
+    "subTopic": "Digital Divide & Accessibility",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Satellite internet projects aim to bridge geographic divides by connecting isolated rural villages.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:invested-in-digital-infrastructure",
+    "title": "invested in digital infrastructure",
+    "term": "invested in digital infrastructure",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈvestɪd ɪn ˈdɪdʒɪtl ˈɪnfrəstrʌktʃə(r)/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đầu tư vào cơ sở hạ tầng số",
+    "topic": "Technology",
+    "subTopic": "Digital Divide & Accessibility",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Many rural governments have invested in digital infrastructure to close the gap between urban and rural internet access.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:technology:narrowed-the-educational-divide-between-urban-and-remote-regions",
+    "title": "narrowed the educational divide between urban and remote regions",
+    "term": "narrowed the educational divide between urban and remote regions",
+    "type": "Collocation",
+    "pronunciation": "/ˈnærəʊd ði ˌedʒʊˈkeɪʃənl dɪˈvaɪd bɪˈtwiːn ˈɜːbən ənd rɪˈməʊt ˈriːdʒənz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thu hẹp khoảng cách giáo dục giữa thành thị và vùng xa",
+    "topic": "Technology",
+    "subTopic": "Digital Divide & Accessibility",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Technology",
+    "examples": [
+      {
+        "en": "Mobile learning apps have narrowed the educational divide between urban and remote regions in many developing countries.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  }
+]

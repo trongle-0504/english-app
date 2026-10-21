@@ -1,0 +1,763 @@
+{
+  "questions": [
+    {
+      "id": "sa_predator_0_0",
+      "type": "short_answer",
+      "sentence": "Most young birds have many ___.",
+      "options": [],
+      "correct_answer": "natural predators",
+      "explanation": "natural predators",
+      "hint": "kẻ săn mồi tự nhiên",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_predator_1_0",
+      "type": "short_answer",
+      "sentence": "The police are cracking down on ___ on the internet.",
+      "options": [],
+      "correct_answer": "sexual predators",
+      "explanation": "sexual predator",
+      "hint": "kẻ săn mồi tình dục",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_habitat_0_0",
+      "type": "short_answer",
+      "sentence": "She studies gorillas in their ___.",
+      "options": [],
+      "correct_answer": "natural habitat",
+      "explanation": "natural habitat",
+      "hint": "môi trường sống tự nhiên",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_habitat_1_0",
+      "type": "short_answer",
+      "sentence": "Even in its ___, the plant is very rare.",
+      "options": [],
+      "correct_answer": "native habitat",
+      "explanation": "native habitat",
+      "hint": "môi trường sống bản địa",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_habitat_2_0",
+      "type": "short_answer",
+      "sentence": "The land next to the harbour is perhaps the most threatened ___ in Britain.",
+      "options": [],
+      "correct_answer": "wildlife habitat",
+      "explanation": "wildlife habitat",
+      "hint": "môi trường sống của động vật hoang dã",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_habitat_3_0",
+      "type": "short_answer",
+      "sentence": "Widening the road will uproot trees and ___.",
+      "options": [],
+      "correct_answer": "damage wildlife habitat",
+      "explanation": "damage/destroy a habitat",
+      "hint": "phá hủy môi trường sống",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_habitat_4_0",
+      "type": "short_answer",
+      "sentence": "These measures will ___ of endangered species such as wolves.",
+      "options": [],
+      "correct_answer": "protect the habitat",
+      "explanation": "protect a habitat",
+      "hint": "bảo vệ môi trường sống",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_habitat_5_0",
+      "type": "short_answer",
+      "sentence": "Elephants are menaced by poaching and ___.",
+      "options": [],
+      "correct_answer": "loss of habitat",
+      "explanation": "loss of habitat",
+      "hint": "sự mất môi trường sống",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_prey on_0_0",
+      "type": "short_answer",
+      "sentence": "Greedy landlords often ___.",
+      "options": [],
+      "correct_answer": "prey on the weak",
+      "explanation": "prey on the weak",
+      "hint": "săn mồi/lợi dụng kẻ yếu",
+      "collocation_type": "phrasal V"
+    },
+    {
+      "id": "sa_prey on_1_0",
+      "type": "short_answer",
+      "sentence": "The unresolved issue continued to ___.",
+      "options": [],
+      "correct_answer": "prey on her mind",
+      "explanation": "prey on + sb's mind",
+      "hint": "ám ảnh tâm trí ai đó",
+      "collocation_type": "phrasal V"
+    },
+    {
+      "id": "sa_spread_0_0",
+      "type": "short_answer",
+      "sentence": "He was accused of ___ about his colleagues.",
+      "options": [],
+      "correct_answer": "spreading rumours",
+      "explanation": "spread rumours",
+      "hint": "Tung tin đồn",
+      "collocation_type": "V + N"
+    },
+    {
+      "id": "sa_spread_1_0",
+      "type": "short_answer",
+      "sentence": "Can you help me ___ about the upcoming event?",
+      "options": [],
+      "correct_answer": "spread the word",
+      "explanation": "spread the word",
+      "hint": "Loan báo tin, truyền đi thông điệp",
+      "collocation_type": "V + N phrase"
+    },
+    {
+      "id": "sa_spread_2_0",
+      "type": "short_answer",
+      "sentence": "The protesters decided to ___ in front of the government building.",
+      "options": [],
+      "correct_answer": "spread out",
+      "explanation": "spread out",
+      "hint": "Trải ra, lan ra (về không gian)",
+      "collocation_type": "phrasal V"
+    },
+    {
+      "id": "sa_spread_3_0",
+      "type": "short_answer",
+      "sentence": "News of the celebrity's engagement ___.",
+      "options": [],
+      "correct_answer": "spread like wildfire",
+      "explanation": "spread like wildfire",
+      "hint": "Lan truyền nhanh chóng như cháy rừng",
+      "collocation_type": "idiom"
+    },
+    {
+      "id": "sa_rainfall_0_0",
+      "type": "short_answer",
+      "sentence": "The ___ for this region is 100 cm per year.",
+      "options": [],
+      "correct_answer": "average rainfall",
+      "explanation": "average rainfall",
+      "hint": "lượng mưa trung bình",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_rainfall_1_0",
+      "type": "short_answer",
+      "sentence": "___ caused flash floods in the low-lying areas.",
+      "options": [],
+      "correct_answer": "Heavy rainfall",
+      "explanation": "heavy rainfall",
+      "hint": "mưa lớn",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_rainfall_2_0",
+      "type": "short_answer",
+      "sentence": "This month, we've had ___, which is concerning for farmers.",
+      "options": [],
+      "correct_answer": "below average rainfall",
+      "explanation": "below average rainfall",
+      "hint": "lượng mưa dưới trung bình",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_rainfall_3_0",
+      "type": "short_answer",
+      "sentence": "The island's ___ can exceed 200 cm.",
+      "options": [],
+      "correct_answer": "annual rainfall",
+      "explanation": "annual rainfall",
+      "hint": "lượng mưa hàng năm",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_wreak havoc/mayhem/destruction_0_0",
+      "type": "short_answer",
+      "sentence": "The goat, being a goat, ___, and the tenant grows desperate.",
+      "options": [],
+      "correct_answer": "wreaks havoc",
+      "explanation": "wreak havoc",
+      "hint": "Gây tàn phá, gây hỗn loạn",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_wreak havoc/mayhem/destruction_0_1",
+      "type": "short_answer",
+      "sentence": "Since elk can also ___ in cropland and forestry plantations, a record 70,000 animals are being culled this hunting season.",
+      "options": [],
+      "correct_answer": "wreak havoc",
+      "explanation": "wreak havoc",
+      "hint": "Gây tàn phá, gây hỗn loạn",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_wreak havoc/mayhem/destruction_1_0",
+      "type": "short_answer",
+      "sentence": "Unassimilated, they might one day ___ in her life.",
+      "options": [],
+      "correct_answer": "wreak destruction",
+      "explanation": "wreak destruction",
+      "hint": "Gây sự hủy diệt, tàn phá",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_wreak havoc/mayhem/destruction_2_0",
+      "type": "short_answer",
+      "sentence": "Did they hire a private eye to ___ on the life of the harasser?",
+      "options": [],
+      "correct_answer": "wreak mayhem",
+      "explanation": "wreak mayhem",
+      "hint": "Gây ra sự hỗn loạn, náo loạn",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_fume_0_0",
+      "type": "short_answer",
+      "sentence": "Yeltsin ___ questions of whether the nuclear summit and surrounding meetings were tailored to his political ambitions.",
+      "options": [],
+      "correct_answer": "fumed at",
+      "explanation": "fume at",
+      "hint": "tức giận về",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_fume_1_0",
+      "type": "short_answer",
+      "sentence": "Parents ___ bus posters A COUNCIL-owned bus company has been attacked for carrying tobacco advertising on school buses.",
+      "options": [],
+      "correct_answer": "fuming over",
+      "explanation": "fume over",
+      "hint": "tức giận về",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_fume_2_0",
+      "type": "short_answer",
+      "sentence": "Not only will the situation which upsets you continue, but you will continue to do yourself harm by ___ it.",
+      "options": [],
+      "correct_answer": "fuming about",
+      "explanation": "fume about",
+      "hint": "tức giận về",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_fume_3_0",
+      "type": "short_answer",
+      "sentence": "I stood there ___ until I was noticed.",
+      "options": [],
+      "correct_answer": "fuming",
+      "explanation": "fuming",
+      "hint": "tỏa khói; đang tức giận",
+      "collocation_type": "V"
+    },
+    {
+      "id": "mc_academic_0_1777697705582",
+      "type": "multiple_choice",
+      "sentence": "They also suspect that the move against wolves is part of a wider campaign against ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "hunts"
+        },
+        {
+          "id": "b",
+          "text": "prey"
+        },
+        {
+          "id": "c",
+          "text": "fights"
+        },
+        {
+          "id": "d",
+          "text": "predators"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Trong ngữ cảnh này, 'predators' (động vật ăn thịt) là từ phù hợp nhất để chỉ các loài săn mồi. Các lựa chọn khác không liên quan trực tiếp đến việc săn bắt."
+    },
+    {
+      "id": "mc_academic_1_1777697705582",
+      "type": "multiple_choice",
+      "sentence": "Police are searching for a serial ___ who has targeted elderly residents.",
+      "options": [
+        {
+          "id": "a",
+          "text": "hunter"
+        },
+        {
+          "id": "b",
+          "text": "predator"
+        },
+        {
+          "id": "c",
+          "text": "attacker"
+        },
+        {
+          "id": "d",
+          "text": "thief"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "'Predator' ở đây ám chỉ kẻ săn mồi, thường là trong các mối quan hệ nguy hiểm hoặc tội phạm. 'Hunter', 'attacker', và 'thief' có thể mô tả hành vi nhưng không bao hàm đầy đủ ý nghĩa tiêu cực và sự nhắm mục tiêu có chủ đích như 'predator'."
+    },
+    {
+      "id": "mc_academic_2_1777697705582",
+      "type": "multiple_choice",
+      "sentence": "They want to prevent the business falling into the hands of an overseas ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "predator"
+        },
+        {
+          "id": "b"
+        },
+        {
+          "id": "c",
+          "text": "buyer"
+        },
+        {
+          "id": "d",
+          "text": "competitor"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Trong lĩnh vực kinh doanh, 'predator' thường chỉ một công ty hoặc cá nhân có ý định thâu tóm một doanh nghiệp khác một cách bất lợi hoặc thù địch. Các lựa chọn khác không mang hàm ý tiêu cực này."
+    },
+    {
+      "id": "mc_academic_3_1777697705582",
+      "type": "multiple_choice",
+      "sentence": "It's amazing how soon people can ___ to a new culture.",
+      "options": [
+        {
+          "id": "a",
+          "text": "adjust"
+        },
+        {
+          "id": "b",
+          "text": "conform"
+        },
+        {
+          "id": "c",
+          "text": "acclimate"
+        },
+        {
+          "id": "d",
+          "text": "adapt"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "'Adapt to' là cụm động từ chính xác nhất để diễn tả sự thay đổi để phù hợp với một môi trường hoặc hoàn cảnh mới. 'Adjust' và 'acclimate' cũng có nghĩa tương tự nhưng 'adapt' bao hàm sự thay đổi cả về thể chất lẫn tinh thần."
+    },
+    {
+      "id": "mc_academic_4_1777697705582",
+      "type": "multiple_choice",
+      "sentence": "These teaching methods can be ___ to suit individual student needs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "modified"
+        },
+        {
+          "id": "b",
+          "text": "altered"
+        },
+        {
+          "id": "c",
+          "text": "changed"
+        },
+        {
+          "id": "d",
+          "text": "adapted"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "'Adapted to' là cấu trúc chuẩn để nói về việc thay đổi cái gì đó cho phù hợp với mục đích hoặc nhu cầu cụ thể. Mặc dù các từ khác cũng có nghĩa tương tự, 'adapted' nhấn mạnh sự điều chỉnh để phù hợp nhất."
+    },
+    {
+      "id": "mc_academic_5_1777697705582",
+      "type": "multiple_choice",
+      "sentence": "Three of her novels have been ___ for television.",
+      "options": [
+        {
+          "id": "a",
+          "text": "adapted"
+        },
+        {
+          "id": "b",
+          "text": "filmed"
+        },
+        {
+          "id": "c",
+          "text": "produced"
+        },
+        {
+          "id": "d",
+          "text": "recorded"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Adapted for' là cụm động từ dùng để chỉ việc chuyển thể một tác phẩm từ dạng này sang dạng khác, ví dụ từ sách sang phim. Các lựa chọn khác mô tả quá trình sản xuất phim nhưng không diễn tả sự chuyển thể."
+    },
+    {
+      "id": "mc_academic_6_1777697705582",
+      "type": "multiple_choice",
+      "sentence": "We spent the day ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "watching monkeys in their natural habitat"
+        },
+        {
+          "id": "b",
+          "text": "observing primates in their native environment"
+        },
+        {
+          "id": "c",
+          "text": "looking at monkeys in their home"
+        },
+        {
+          "id": "d",
+          "text": "seeing simians in their wild setting"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Natural habitat' là cách diễn đạt phổ biến và chính xác nhất để chỉ môi trường sống tự nhiên của một loài. Các lựa chọn khác tuy có nghĩa tương tự nhưng không phải là cách dùng thông dụng nhất."
+    },
+    {
+      "id": "mc_academic_7_1777697705582",
+      "type": "multiple_choice",
+      "sentence": "Hawks ___ rodents and small birds.",
+      "options": [
+        {
+          "id": "a",
+          "text": "hunt for"
+        },
+        {
+          "id": "b",
+          "text": "prey on"
+        },
+        {
+          "id": "c",
+          "text": "seek out"
+        },
+        {
+          "id": "d",
+          "text": "feed on"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "'Prey on' là cụm động từ mô tả hành động săn bắt và ăn thịt các loài động vật khác. Đây là cách diễn đạt chuẩn trong ngữ cảnh này. 'Feed on' chỉ việc ăn, nhưng không nhất thiết là săn bắt."
+    },
+    {
+      "id": "mc_academic_8_1777697705582",
+      "type": "multiple_choice",
+      "sentence": "Scammers have been ___ inexperienced investors.",
+      "options": [
+        {
+          "id": "a",
+          "text": "exploiting"
+        },
+        {
+          "id": "b",
+          "text": "targeting"
+        },
+        {
+          "id": "c",
+          "text": "deceiving"
+        },
+        {
+          "id": "d",
+          "text": "preying on"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "'Preying on' diễn tả hành động lợi dụng điểm yếu hoặc sự cả tin c���a người khác để trục lợi, thường mang hàm ý tiêu cực và nguy hiểm. Mặc dù các từ khác cũng có thể mô tả hành vi của kẻ lừa đảo, 'preying on' nhấn mạnh sự nhắm vào những đối tượng dễ bị tổn thương."
+    },
+    {
+      "id": "mc_academic_9_1777697705582",
+      "type": "multiple_choice",
+      "sentence": "Plans to ___ trams to the city are under discussion.",
+      "options": [
+        {
+          "id": "a",
+          "text": "reintroduce"
+        },
+        {
+          "id": "b",
+          "text": "reinstate"
+        },
+        {
+          "id": "c",
+          "text": "rebuild"
+        },
+        {
+          "id": "d",
+          "text": "restore"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Reintroduce' có nghĩa là đưa trở lại một cái gì đó đã từng tồn tại hoặc được sử dụng trước đây. Trong ngữ cảnh này, việc đưa xe điện trở lại thành phố sau một thời gian ngừng sử dụng là phù hợp nhất với từ này."
+    },
+    {
+      "id": "mc_academic_10_1777697705582",
+      "type": "multiple_choice",
+      "sentence": "The centre has a fifty per cent success rate of ___ animals to the wild.",
+      "options": [
+        {
+          "id": "a",
+          "text": "reintroducing"
+        },
+        {
+          "id": "b",
+          "text": "restoring"
+        },
+        {
+          "id": "c",
+          "text": "returning"
+        },
+        {
+          "id": "d",
+          "text": "releasing"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Reintroducing animals to the wild' là cụm từ chuẩn để chỉ việc đưa những loài động vật đã tuyệt chủng hoặc bị nuôi nhốt trở lại môi trường sống tự nhiên của chúng. Các lựa chọn khác không diễn tả đầy đủ ý nghĩa này."
+    },
+    {
+      "id": "mc_academic_11_1777697705582",
+      "type": "multiple_choice",
+      "sentence": "The news had ___ and was causing great excitement.",
+      "options": [
+        {
+          "id": "a",
+          "text": "travelled"
+        },
+        {
+          "id": "b",
+          "text": "diffused"
+        },
+        {
+          "id": "c",
+          "text": "circulated"
+        },
+        {
+          "id": "d",
+          "text": "spread"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "'Spread' là động từ phù hợp nhất để mô tả sự lan truyền của tin tức. Tin tức lan ra nhanh chóng và đến với nhiều người. Các từ khác có thể mang nghĩa tương tự nhưng 'spread' là cách diễn đạt thông dụng nhất."
+    },
+    {
+      "id": "mc_academic_12_1777697705582",
+      "type": "multiple_choice",
+      "sentence": "The fire rapidly ___ to adjoining buildings.",
+      "options": [
+        {
+          "id": "a",
+          "text": "extended"
+        },
+        {
+          "id": "b",
+          "text": "advanced"
+        },
+        {
+          "id": "c",
+          "text": "moved"
+        },
+        {
+          "id": "d",
+          "text": "spread"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "'Spread to' là cụm động từ mô tả sự lan nhanh của lửa hoặc dịch bệnh sang các khu vực lân cận. Đây là cách diễn đạt chính xác và phổ biến nhất trong ngữ cảnh này."
+    },
+    {
+      "id": "mc_academic_13_1777697705582",
+      "type": "multiple_choice",
+      "sentence": "There has been below average ___ this month.",
+      "options": [
+        {
+          "id": "a",
+          "text": "rainfall"
+        },
+        {
+          "id": "b",
+          "text": "precipitation"
+        },
+        {
+          "id": "c",
+          "text": "irrigation"
+        },
+        {
+          "id": "d",
+          "text": "downpour"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Rainfall' là thuật ngữ chỉ lượng mưa rơi xuống. Cụm 'below average rainfall' mô tả tình trạng lượng mưa thấp hơn mức trung bình. Các lựa chọn khác không hoàn toàn phù hợp hoặc không mang ý nghĩa tương tự."
+    },
+    {
+      "id": "mc_academic_14_1777697705582",
+      "type": "multiple_choice",
+      "sentence": "The storm ___ trains and highways, making it unlikely thousands of investors and traders will arrive at work.",
+      "options": [
+        {
+          "id": "a",
+          "text": "wreaked havoc on"
+        },
+        {
+          "id": "b",
+          "text": "caused damage to"
+        },
+        {
+          "id": "c",
+          "text": "disrupted"
+        },
+        {
+          "id": "d",
+          "text": "destroyed"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Wreaked havoc on' là một thành ngữ mạnh mẽ, diễn tả sự tàn phá hoặc gây hỗn loạn trên quy mô lớn. Cụm từ này rất phù hợp để mô tả tác động của một cơn bão đối với hệ thống giao thông."
+    },
+    {
+      "id": "mc_academic_15_1777697717394",
+      "type": "multiple_choice",
+      "sentence": "The aim is to ___ food and water supplies.",
+      "options": [
+        {
+          "id": "a",
+          "text": "exhaust"
+        },
+        {
+          "id": "b",
+          "text": "replenish"
+        },
+        {
+          "id": "c",
+          "text": "diminish"
+        },
+        {
+          "id": "d",
+          "text": "deplete"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Replenish có nghĩa là bổ sung lại những thứ đã cạn kiệt hoặc đã được sử dụng hết, phù hợp với ngữ cảnh bổ sung nguồn cung cấp thực phẩm và nước."
+    },
+    {
+      "id": "mc_academic_16_1777697717395",
+      "type": "multiple_choice",
+      "sentence": "Polluted water sources are a ___ wildlife.",
+      "options": [
+        {
+          "id": "a",
+          "text": "hazard"
+        },
+        {
+          "id": "b",
+          "text": "threat"
+        },
+        {
+          "id": "c",
+          "text": "danger"
+        },
+        {
+          "id": "d",
+          "text": "menace"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Hazard là một mối nguy hiểm hoặc nguy cơ tiềm ẩn. Cụm 'hazard to wildlife' mô tả đúng tình trạng nước ô nhiễm gây nguy hiểm cho động vật hoang dã."
+    },
+    {
+      "id": "mc_academic_17_1777697717395",
+      "type": "multiple_choice",
+      "sentence": "the ___ of running a small farm",
+      "options": [
+        {
+          "id": "a",
+          "text": "risks"
+        },
+        {
+          "id": "b",
+          "text": "threats"
+        },
+        {
+          "id": "c",
+          "text": "hazards"
+        },
+        {
+          "id": "d",
+          "text": "dangers"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm từ 'the hazards of' thường được sử dụng để nói về những nguy hiểm hoặc rủi ro cố hữu của một hoạt động nào đó, ở đây là việc điều hành một trang trại nhỏ."
+    },
+    {
+      "id": "mc_academic_18_1777697717395",
+      "type": "multiple_choice",
+      "sentence": "She sat in the car, silently ___ what he'd said.",
+      "options": [
+        {
+          "id": "a",
+          "text": "worrying about"
+        },
+        {
+          "id": "b",
+          "text": "fuming about"
+        },
+        {
+          "id": "c",
+          "text": "complaining about"
+        },
+        {
+          "id": "d",
+          "text": "thinking about"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Fuming about có nghĩa là tức giận và thể hiện sự bực bội về điều gì đó. Ngữ cảnh cho thấy cô ấy đang rất tức giận về những gì anh ta đã nói."
+    },
+    {
+      "id": "mc_academic_19_1777697717395",
+      "type": "multiple_choice",
+      "sentence": "The car engine was ___ after the race.",
+      "options": [
+        {
+          "id": "a",
+          "text": "steaming"
+        },
+        {
+          "id": "b",
+          "text": "smoking"
+        },
+        {
+          "id": "c",
+          "text": "fuming"
+        },
+        {
+          "id": "d",
+          "text": "burning"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Fuming trong ngữ cảnh này mô tả khói bốc ra từ động cơ quá nóng, đặc biệt là sau một cuộc đua căng thẳng, cho thấy động cơ đang hoạt động quá sức và tỏa ra khói."
+    }
+  ]
+}

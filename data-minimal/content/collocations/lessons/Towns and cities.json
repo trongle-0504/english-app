@@ -1,0 +1,2101 @@
+{
+  "metadata": {
+    "lesson_id": "towns-and-cities",
+    "topic": "Travel and the environment",
+    "chapter_title": "Towns and cities",
+    "pdf_file": "Towns and cities.pdf"
+  },
+  "mindmap_data": {
+    "topic": "Travel and the environment",
+    "chapter": {
+      "chapter_id": "ch_towns_and_cities",
+      "title": "Towns and cities",
+      "sessions": [
+        {
+          "session_id": "s_towns_and_cities_a",
+          "title": "A Describing towns and cities for visitors",
+          "description_vi": "Mô tả các thị trấn và thành phố cho du khách.",
+          "value": "# Towns and cities\n\n## A Describing towns and cities for visitors\n\nLook at these extracts from a magazine article about tourist cities.\n\nThe city skyline is a wonderful mix of old and new, and the city itself has a lot of busy, narrow **cobbled streets**. The old town is a conservation area and it has a lot of **quaint** old buildings dating back to the city’s foundation in the 1500s.\n\n1 made of a regular pattern of stones\n\n2 attractive because of being unusual and especially old-fashioned\n\nDoradella Street has a lot of **upmarket** shops and rather **pricey**, sometimes **overpriced**, restaurants, but not far away is the Genasia district, where you’ll find restaurants which offer **good value** and a more **relaxed atmosphere**.\n\n3 for people with expensive tastes\n\n4 expensive, in a negative sense\n\nRoyal Avenue runs from north to south, and is lined with shops. Behind it, the streets are full of **lively bars** and **fashionable clubs**. The pavement cafés and shops of Luna Square are pleasant but very expensive.\n\nAs you drive into the city, the **tree-lined avenues** of the **residential areas** are soon replaced by the **high-rise flats** of the **inner city**. Then come the **imposing buildings** of the Parliament and government departments.\n\n5 central part of a city where poorer people live and where there are often social problems",
+          "children_nodes": [
+            {
+              "node_id": "cobbled_streets",
+              "label": "cobbled streets"
+            },
+            {
+              "node_id": "quaint",
+              "label": "quaint"
+            },
+            {
+              "node_id": "upmarket",
+              "label": "upmarket"
+            },
+            {
+              "node_id": "pricey",
+              "label": "pricey"
+            },
+            {
+              "node_id": "overpriced",
+              "label": "overpriced"
+            },
+            {
+              "node_id": "good_value",
+              "label": "good value"
+            },
+            {
+              "node_id": "relaxed_atmosphere",
+              "label": "relaxed atmosphere"
+            },
+            {
+              "node_id": "lively_bars",
+              "label": "lively bars"
+            },
+            {
+              "node_id": "fashionable_clubs",
+              "label": "fashionable clubs"
+            },
+            {
+              "node_id": "tree_lined_avenues",
+              "label": "tree-lined avenues"
+            },
+            {
+              "node_id": "residential_areas",
+              "label": "residential areas"
+            },
+            {
+              "node_id": "high_rise_flats",
+              "label": "high-rise flats"
+            },
+            {
+              "node_id": "inner_city",
+              "label": "inner city"
+            },
+            {
+              "node_id": "imposing_buildings",
+              "label": "imposing buildings"
+            }
+          ]
+        },
+        {
+          "session_id": "s_towns_and_cities_b",
+          "title": "B Towns and cities and their problems",
+          "description_vi": "Các vấn đề của thị trấn và thành phố.",
+          "value": "# Towns and cities\n\n## B Towns and cities and their problems\n\nSome of the **inner city** areas are an **urban wasteland** and are somewhat dangerous for visitors. In fact some streets have become **no-go areas**, with **high crime**. Many streets are **strewn with litter** and there are numerous **run-down buildings**. There are some **deprived areas** round the city centre with huge **social problems**. The **industrial zones** which lie on the edge of the city are grey and **polluted**.\n\nTripe is a **sprawling city** with **bumper-to-bumper traffic** all day long. The **exhaust fumes** can be a **nightmare**. The volume of traffic has increased in recent years and the **incessant roar** of trucks and buses makes the city centre an extremely **noisy place**. The comfortable **suburbs** away from the city centre contrast sharply with the poor **shanty towns** one sees on the way to the airport.\n\n5 spread over a large area (slightly negative)\n\n6 so many cars and so close that they are almost touching each other\n\n7 very loud noise which never stops\n\n8 a place from which many people travel in order to work in a bigger town or city\n\n9 very poor houses made of discarded materials (e.g. tin, cardboard, plastic, etc.)",
+          "children_nodes": [
+            {
+              "node_id": "inner_city",
+              "label": "inner city"
+            },
+            {
+              "node_id": "urban_wasteland",
+              "label": "urban wasteland"
+            },
+            {
+              "node_id": "no_go_areas",
+              "label": "no-go areas"
+            },
+            {
+              "node_id": "high_crime",
+              "label": "high crime"
+            },
+            {
+              "node_id": "strewn_with_litter",
+              "label": "strewn with litter"
+            },
+            {
+              "node_id": "run_down_buildings",
+              "label": "run-down buildings"
+            },
+            {
+              "node_id": "deprived_areas",
+              "label": "deprived areas"
+            },
+            {
+              "node_id": "social_problems",
+              "label": "social problems"
+            },
+            {
+              "node_id": "industrial_zones",
+              "label": "industrial zones"
+            },
+            {
+              "node_id": "polluted",
+              "label": "polluted"
+            },
+            {
+              "node_id": "sprawling_city",
+              "label": "sprawling city"
+            },
+            {
+              "node_id": "bumper_to_bumper_traffic",
+              "label": "bumper-to-bumper traffic"
+            },
+            {
+              "node_id": "exhaust_fumes",
+              "label": "exhaust fumes"
+            },
+            {
+              "node_id": "nightmare",
+              "label": "nightmare"
+            },
+            {
+              "node_id": "incessant_roar",
+              "label": "incessant roar"
+            },
+            {
+              "node_id": "noisy_place",
+              "label": "noisy place"
+            },
+            {
+              "node_id": "suburbs",
+              "label": "suburbs"
+            },
+            {
+              "node_id": "shanty_towns",
+              "label": "shanty towns"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "section_id": "A",
+      "session_ref": "s_towns_and_cities_a",
+      "title": "A Describing towns and cities for visitors",
+      "instruction_vi": "Nhìn vào các đoạn trích từ một bài báo tạp chí về các thành phố du lịch.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "The city skyline is a wonderful mix of old and new, and the city itself has a lot of busy, narrow **cobbled streets**. The old town is a conservation area and it has a lot of **quaint** old buildings dating back to the city’s foundation in the 1500s.\n\n1 made of a regular pattern of stones\n\n2 attractive because of being unusual and especially old-fashioned",
+          "related_vocabulary_ids": [
+            "cobbled_streets",
+            "quaint"
+          ]
+        },
+        {
+          "type": "markdown",
+          "value": "Doradella Street has a lot of **upmarket** shops and rather **pricey**, sometimes **overpriced**, restaurants, but not far away is the Genasia district, where you’ll find restaurants which offer **good value** and a more **relaxed atmosphere**.\n\n3 for people with expensive tastes\n\n4 expensive, in a negative sense",
+          "related_vocabulary_ids": [
+            "upmarket",
+            "pricey",
+            "overpriced",
+            "good_value",
+            "relaxed_atmosphere"
+          ]
+        },
+        {
+          "type": "markdown",
+          "value": "Royal Avenue runs from north to south, and is lined with shops. Behind it, the streets are full of **lively bars** and **fashionable clubs**. The pavement cafés and shops of Luna Square are pleasant but very expensive.\n\nAs you drive into the city, the **tree-lined avenues** of the **residential areas** are soon replaced by the **high-rise flats** of the **inner city**. Then come the **imposing buildings** of the Parliament and government departments.\n\n5 central part of a city where poorer people live and where there are often social problems",
+          "related_vocabulary_ids": [
+            "lively_bars",
+            "fashionable_clubs",
+            "tree_lined_avenues",
+            "residential_areas",
+            "high_rise_flats",
+            "inner_city",
+            "imposing_buildings"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "B",
+      "session_ref": "s_towns_and_cities_b",
+      "title": "B Towns and cities and their problems",
+      "instruction_vi": "Một số khu vực nội thành là vùng đất hoang tàn và khá nguy hiểm cho du khách. Trên thực tế, một số đường phố đã trở thành khu vực cấm, có tỷ lệ tội phạm cao. Nhiều đường phố rải đầy rác và có nhiều tòa nhà xuống cấp. Có một số khu vực nghèo khó quanh trung tâm thành phố với các vấn đề xã hội lớn. Các khu công nghiệp nằm ở rìa thành phố thì xám xịt và ô nhiễm.\n\nTripe là một thành phố rộng lớn với giao thông ùn tắc cả ngày. Khí thải có thể là một cơn ác mộng. Lượng giao thông đã tăng lên trong những năm gần đây và tiếng gầm rú không ngừng của xe tải và xe buus khiến trung tâm thành phố trở nên cực kỳ ồn ào. Các vùng ngoại ô thoải mái, cách xa trung tâm thành phố, trái ngược hẳn với các khu ổ chuột nghèo nàn mà người ta thấy trên đường ra sân bay.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "Some of the **inner city** areas are an **urban wasteland** and are somewhat dangerous for visitors. In fact some streets have become **no-go areas**, with **high crime**. Many streets are **strewn with litter** and there are numerous **run-down buildings**. There are some **deprived areas** round the city centre with huge **social problems**. The **industrial zones** which lie on the edge of the city are grey and **polluted**.",
+          "related_vocabulary_ids": [
+            "inner_city",
+            "urban_wasteland",
+            "no_go_areas",
+            "high_crime",
+            "strewn_with_litter",
+            "run-down_buildings",
+            "deprived_areas",
+            "social_problems",
+            "industrial_zones",
+            "polluted"
+          ]
+        },
+        {
+          "type": "markdown",
+          "value": "Tripe is a **sprawling city** with **bumper-to-bumper traffic** all day long. The **exhaust fumes** can be a **nightmare**. The volume of traffic has increased in recent years and the **incessant roar** of trucks and buses makes the city centre an extremely **noisy place**. The comfortable **suburbs** away from the city centre contrast sharply with the poor **shanty towns** one sees on the way to the airport.\n\n5 spread over a large area (slightly negative)\n\n6 so many cars and so close that they are almost touching each other\n\n7 very loud noise which never stops\n\n8 a place from which many people travel in order to work in a bigger town or city\n\n9 very poor houses made of discarded materials (e.g. tin, cardboard, plastic, etc.)",
+          "related_vocabulary_ids": [
+            "sprawling_city",
+            "bumper_to_bumper_traffic",
+            "exhaust_fumes",
+            "nightmare",
+            "incessant_roar",
+            "noisy_place",
+            "suburbs",
+            "shanty_towns"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary_data": {
+    "cobbled_streets": {
+      "word": "cobbled streets",
+      "pronunciation": "/ˈkɒb.əld striːts/",
+      "image": {
+        "type": "prompt",
+        "value": "A narrow street paved with cobblestones",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Ancient_road_surface.jpg/960px-Ancient_road_surface.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Đường phố được lát bằng đá cuội, thường hẹp và có thể gập ghềnh.",
+          "examples": [
+            "The old part of town is famous for its charming cobbled streets."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường dùng để mô tả các khu vực lịch sử hoặc nông thôn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What do tourists like about old European towns?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "Should historic streets in old towns be protected?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Would you like to live in an old part of a city?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "cobbled streets",
+          "text": "We walked along the old cobbled streets."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "cobbled streets",
+          "source": "The old town has narrow roads made of small, round stones.",
+          "model": "The old town has narrow cobbled streets."
+        },
+        {
+          "target": "cobbled streets",
+          "source": "It is hard to walk in high heels on old stone roads.",
+          "model": "It is hard to walk in high heels on cobbled streets."
+        }
+      ]
+    },
+    "quaint": {
+      "word": "quaint",
+      "pronunciation": "/kweɪnt/",
+      "image": {
+        "type": "prompt",
+        "value": "An old, charming cottage with unique architecture",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/1/12/Country_cottage%2C_Inch_Island_-_geograph.org.uk_-_3951065_%28cropped%29.jpg"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "N/A",
+      "senses": [
+        {
+          "definition_vi": "Hấp dẫn vì khác thường và đặc biệt là cổ kính.",
+          "examples": [
+            "We stayed in a quaint little cottage in the countryside."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường dùng để mô tả những thứ nhỏ, cũ kỹ, có nét quyến rũ đặc biệt, đôi khi hơi kỳ lạ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What kind of villages do tourists like to visit?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Would you prefer to live in a modern flat or an old cottage?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "Do you like small, old-fashioned shops?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "quaint",
+          "text": "We stayed in a quaint little hotel."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "quaint",
+          "source": "The village has charming old houses with unusual roofs.",
+          "model": "The village has quaint old houses."
+        },
+        {
+          "target": "quaint",
+          "source": "She loves small, charming and old-fashioned tea shops.",
+          "model": "She loves quaint tea shops."
+        }
+      ]
+    },
+    "upmarket": {
+      "word": "upmarket",
+      "pronunciation": "/ˈʌp.mɑː.kɪt/",
+      "image": {
+        "type": "prompt",
+        "value": "A luxury boutique store",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Bavaria_Cruiser_45.jpg/960px-Bavaria_Cruiser_45.jpg"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "N/A",
+      "senses": [
+        {
+          "definition_vi": "Dành cho những người có sở thích đắt tiền; cao cấp.",
+          "examples": [
+            "The area is known for its upmarket boutiques and expensive restaurants."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Đối lập với 'downmarket'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Shopping",
+          "question": "Do rich and poor people shop in different places?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Which areas of your city are most expensive?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "Do you enjoy eating in expensive restaurants?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "upmarket",
+          "text": "They live in an upmarket part of town."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "upmarket",
+          "source": "She only shops in expensive stores for rich customers.",
+          "model": "She only shops in upmarket stores."
+        },
+        {
+          "target": "upmarket",
+          "source": "The hotel is aimed at wealthy tourists with expensive tastes.",
+          "model": "The hotel is an upmarket place for wealthy tourists."
+        }
+      ]
+    },
+    "pricey": {
+      "word": "pricey",
+      "pronunciation": "/ˈpraɪ.si/",
+      "image": {
+        "type": "prompt",
+        "value": "A restaurant menu with high prices",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/RR_Phantom_V_James_Young_Sedanca_de_Ville.jpg/960px-RR_Phantom_V_James_Young_Sedanca_de_Ville.jpg"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "N/A",
+      "senses": [
+        {
+          "definition_vi": "Đắt đỏ.",
+          "examples": [
+            "It's a lovely restaurant, but it can be quite pricey."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Là một cách nói thân mật hơn 'expensive'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Food",
+          "question": "Is eating out expensive in your country?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Which cities are expensive for tourists?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Is renting a flat expensive for young people?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "pricey",
+          "text": "The food is good but a little pricey."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "pricey",
+          "source": "The hotel is lovely, but it costs quite a lot.",
+          "model": "The hotel is lovely, but it is quite pricey."
+        },
+        {
+          "target": "pricey",
+          "source": "Flats in the city centre are very expensive.",
+          "model": "Flats in the city centre are very pricey."
+        }
+      ]
+    },
+    "overpriced": {
+      "word": "overpriced",
+      "pronunciation": "/ˌəʊ.vəˈpraɪst/",
+      "image": {
+        "type": "prompt",
+        "value": "A product with a price tag that seems too high",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/b/b4/The_competitive_price_system_adapted_from_Samuelson%2C_1961.jpg"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "N/A",
+      "senses": [
+        {
+          "definition_vi": "Đắt một cách tiêu cực; giá quá cao so với giá trị.",
+          "examples": [
+            "The souvenirs in this shop are completely overpriced."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Nhấn mạnh sự không hợp lý của giá cả."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Are things in tourist areas too expensive?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "Are designer clothes worth the money?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "Do airports and stadiums charge too much for food?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "overpriced",
+          "text": "The coffee at the airport is overpriced."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "overpriced",
+          "source": "The souvenirs cost much more than they are worth.",
+          "model": "The souvenirs are overpriced."
+        },
+        {
+          "target": "overpriced",
+          "source": "Food at the stadium is far too expensive for what you get.",
+          "model": "Food at the stadium is overpriced."
+        }
+      ]
+    },
+    "good_value": {
+      "word": "good value",
+      "pronunciation": "/ɡʊd ˈvæl.juː/",
+      "image": {
+        "type": "prompt",
+        "value": "A meal deal offering a lot of food for a low price",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Left_side_of_Flying_Pigeon.jpg/960px-Left_side_of_Flying_Pigeon.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Có giá trị tốt; đáng tiền.",
+          "examples": [
+            "This restaurant offers excellent food at good value."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Chỉ sự cân bằng hợp lý giữa chất lượng và giá cả."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Shopping",
+          "question": "Where can people buy things that are worth the money?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "Are street food stalls worth the price?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Is public transport in your country cheap for what you get?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "good value",
+          "text": "This meal is good value for money."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "good value",
+          "source": "The hotel was cheap but very comfortable, so it was worth the money.",
+          "model": "The hotel was good value."
+        },
+        {
+          "target": "good value",
+          "source": "Train passes give tourists a lot for a small price.",
+          "model": "Train passes are good value for tourists."
+        }
+      ]
+    },
+    "relaxed_atmosphere": {
+      "word": "relaxed atmosphere",
+      "pronunciation": "/rɪˈlækst ˈæt.məs.fɪər/",
+      "image": {
+        "type": "prompt",
+        "value": "People sitting comfortably in a cafe, chatting",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Beach_at_Fort_Lauderdale.jpg/960px-Beach_at_Fort_Lauderdale.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Không khí thư giãn, thoải mái.",
+          "examples": [
+            "The cafe had a very relaxed atmosphere, perfect for studying."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Mô tả một môi trường không căng thẳng, dễ chịu."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Food",
+          "question": "What kind of cafes do you like to visit?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Is a calm workplace more productive?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Do you prefer busy or calm holiday places?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "relaxed atmosphere",
+          "text": "The cafe has a very relaxed atmosphere."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "relaxed atmosphere",
+          "source": "The small beach town feels calm and easy-going.",
+          "model": "The small beach town has a relaxed atmosphere."
+        },
+        {
+          "target": "relaxed atmosphere",
+          "source": "Our office feels calm and comfortable, so people work well.",
+          "model": "Our office has a relaxed atmosphere, so people work well."
+        }
+      ]
+    },
+    "lively_bars": {
+      "word": "lively bars",
+      "pronunciation": "/ˈlaɪv.li bɑːz/",
+      "image": {
+        "type": "prompt",
+        "value": "A bar with music and people dancing",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Quán bar sôi động, náo nhiệt.",
+          "examples": [
+            "The city is known for its lively bars and nightlife."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Chỉ những nơi có nhiều hoạt động, âm nhạc và không khí vui vẻ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What do young tourists look for in a city at night?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "What is nightlife like in your city?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Do busy nightspots help the local economy?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "lively bars",
+          "text": "The old town is full of lively bars."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "lively bars",
+          "source": "The street is full of busy, noisy drinking places.",
+          "model": "The street is full of lively bars."
+        },
+        {
+          "target": "lively bars",
+          "source": "Young tourists love the busy and exciting pubs near the beach.",
+          "model": "Young tourists love the lively bars near the beach."
+        }
+      ]
+    },
+    "fashionable_clubs": {
+      "word": "fashionable clubs",
+      "pronunciation": "/ˈfæʃ.ən.ə.bəl klʌbz/",
+      "image": {
+        "type": "prompt",
+        "value": "A modern nightclub with stylish decor",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Wikipedia_space_ibiza%2803%29.jpg/960px-Wikipedia_space_ibiza%2803%29.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Các câu lạc bộ/quán bar hợp thời trang, theo mốt.",
+          "examples": [
+            "She loved going to the fashionable clubs downtown."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Chỉ những nơi được ưa chuộng, theo xu hướng hiện tại."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Culture",
+          "question": "Where do young people go to dance in your city?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Do trendy nightspots attract rich visitors to a city?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Do tourists come to your city for its nightlife?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "fashionable clubs",
+          "text": "She likes to dance at fashionable clubs."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "fashionable clubs",
+          "source": "Rich young people go to trendy nightclubs downtown.",
+          "model": "Rich young people go to fashionable clubs downtown."
+        },
+        {
+          "target": "fashionable clubs",
+          "source": "The city is famous for its stylish places to dance.",
+          "model": "The city is famous for its fashionable clubs."
+        }
+      ]
+    },
+    "tree_lined_avenues": {
+      "word": "tree-lined avenues",
+      "pronunciation": "/ˈtriː.laɪnd ˌæv.ən.juːz/",
+      "image": {
+        "type": "prompt",
+        "value": "A wide road with trees planted on both sides",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Đại lộ có hàng cây hai bên đường.",
+          "examples": [
+            "The city boasts beautiful tree-lined avenues perfect for a stroll."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường gợi lên hình ảnh đẹp đẽ, thanh bình của đô thị."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "Should cities plant more trees along their roads?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What do you enjoy seeing when you walk around a new city?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Would you like to live on a quiet street with trees?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "tree-lined avenues",
+          "text": "We walked along the tree-lined avenues."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "tree-lined avenues",
+          "source": "Paris has many wide streets with trees on both sides.",
+          "model": "Paris has many tree-lined avenues."
+        },
+        {
+          "target": "tree-lined avenues",
+          "source": "People pay more to live on wide roads with trees along them.",
+          "model": "People pay more to live on tree-lined avenues."
+        }
+      ]
+    },
+    "residential_areas": {
+      "word": "residential areas",
+      "pronunciation": "/ˌrez.ɪˈden.ʃəl ˈeə.ri.əz/",
+      "image": {
+        "type": "prompt",
+        "value": "A neighborhood with houses and apartments",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Hempstead%2C_Manhasset%2C_and_Little_Neck_bays.jpg/960px-Hempstead%2C_Manhasset%2C_and_Little_Neck_bays.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Khu dân cư.",
+          "examples": [
+            "The new development will include shops and residential areas."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Phân biệt với các khu vực thương mại, công nghiệp."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "Where should new homes be built in cities?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Should factories be kept away from where people live?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Are areas where people live in your city safe at night?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "residential areas",
+          "text": "There are no shops in the residential areas."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "residential areas",
+          "source": "The new factory will be built far from where people live.",
+          "model": "The new factory will be built far from residential areas."
+        },
+        {
+          "target": "residential areas",
+          "source": "Heavy lorries should not drive through housing areas.",
+          "model": "Heavy lorries should not drive through residential areas."
+        }
+      ]
+    },
+    "high_rise_flats": {
+      "word": "high-rise flats",
+      "pronunciation": "/ˈhaɪ.raɪz flæts/",
+      "image": {
+        "type": "prompt",
+        "value": "A tall apartment building",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/2019.07.10_metro_California-housing_Blog-post_related.webp/960px-2019.07.10_metro_California-housing_Blog-post_related.webp.png"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Các căn hộ trong các tòa nhà cao tầng.",
+          "examples": [
+            "Many young professionals live in high-rise flats in the city centre."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường thấy ở các khu đô thị đông đúc."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "Do young people in your city live in tall apartment buildings?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Are tall apartment blocks good for families?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Are tall buildings a good way to save land?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "high-rise flats",
+          "text": "Many families live in high-rise flats."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "high-rise flats",
+          "source": "Many people in the city live in apartments in very tall buildings.",
+          "model": "Many people in the city live in high-rise flats."
+        },
+        {
+          "target": "high-rise flats",
+          "source": "Tall apartment blocks can save space but feel lonely.",
+          "model": "High-rise flats can save space but feel lonely."
+        }
+      ]
+    },
+    "inner_city": {
+      "word": "inner city",
+      "pronunciation": "/ˌɪn.ə ˈsɪt.i/",
+      "image": {
+        "type": "prompt",
+        "value": "The central, often older, part of a city",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sl2022.png/960px-Sl2022.png"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Phần trung tâm của một thành phố, thường là khu vực cũ kỹ, có thể có nhiều vấn đề xã hội.",
+          "examples": [
+            "The inner city has undergone significant regeneration in recent years."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Đôi khi mang hàm ý tiêu cực về sự xuống cấp hoặc nghèo đói."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "What problems do poor central areas of big cities face?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Do schools in poorer city centres get enough money?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Should governments invest in old city centres?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "inner city",
+          "text": "Many poor families live in the inner city."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "inner city",
+          "source": "The poor central areas of the city have high unemployment.",
+          "model": "The inner city has high unemployment."
+        },
+        {
+          "target": "inner city",
+          "source": "Schools in the poor central parts of the city need more money.",
+          "model": "Inner city schools need more money."
+        }
+      ]
+    },
+    "imposing_buildings": {
+      "word": "imposing buildings",
+      "pronunciation": "/ɪmˈpəʊ.zɪŋ ˈbɪl.dɪŋz/",
+      "image": {
+        "type": "prompt",
+        "value": "A large, grand government building",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/View_of_Santa_Maria_del_Fiore_in_Florence.jpg/960px-View_of_Santa_Maria_del_Fiore_in_Florence.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Các tòa nhà lớn, ấn tượng, uy nghi.",
+          "examples": [
+            "The city hall is one of the most imposing buildings in the square."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Gợi tả sự bề thế, quan trọng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Culture",
+          "question": "Which large, impressive buildings is your city famous for?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Do tourists like to visit grand old buildings?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Should new buildings look as impressive as old ones?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "imposing buildings",
+          "text": "The bank is one of the most imposing buildings."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "imposing buildings",
+          "source": "The square is surrounded by large and impressive old buildings.",
+          "model": "The square is surrounded by imposing buildings."
+        },
+        {
+          "target": "imposing buildings",
+          "source": "The government offices are in huge, grand buildings.",
+          "model": "The government offices are in imposing buildings."
+        }
+      ]
+    },
+    "urban_wasteland": {
+      "word": "urban wasteland",
+      "pronunciation": "/ˈɜː.bən ˈweɪst.lænd/",
+      "image": {
+        "type": "prompt",
+        "value": "An abandoned industrial site in a city",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Soilcontam.JPG/960px-Soilcontam.JPG"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Vùng đất hoang tàn trong đô thị, thường là khu vực công nghiệp cũ bị bỏ hoang, không còn sử dụng.",
+          "examples": [
+            "The council is trying to redevelop the urban wasteland into a park."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Mang hàm ý tiêu cực về sự bỏ hoang, suy tàn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "What can be done with empty land in cities?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Should empty city land be used for new houses?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "How do empty, neglected areas affect people living nearby?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "urban wasteland",
+          "text": "The old factory site is now urban wasteland."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "urban wasteland",
+          "source": "The empty, ruined land near the station will become a park.",
+          "model": "The urban wasteland near the station will become a park."
+        },
+        {
+          "target": "urban wasteland",
+          "source": "Children play on empty, neglected land between the buildings.",
+          "model": "Children play on urban wasteland between the buildings."
+        }
+      ]
+    },
+    "no_go_areas": {
+      "word": "no-go areas",
+      "pronunciation": "/nəʊ ˈɡəʊ ˌeə.ri.əz/",
+      "image": {
+        "type": "prompt",
+        "value": "A street with police tape indicating it's closed off",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sl2022.png/960px-Sl2022.png"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Khu vực cấm, nơi mà cảnh sát hoặc chính quyền không thể hoặc không dám vào do tình hình nguy hiểm (thường là do tội phạm hoặc xung đột).",
+          "examples": [
+            "Due to gang violence, some streets have become no-go areas for the public."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường liên quan đến vấn đề an ninh, tội phạm nghiêm trọng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Are there any dangerous areas in your city?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What advice would you give tourists about safety?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "How does crime affect house prices in some areas?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "no-go areas",
+          "text": "Some streets are no-go areas at night."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "no-go areas",
+          "source": "Some parts of the city are so dangerous that people avoid them.",
+          "model": "Some parts of the city are no-go areas."
+        },
+        {
+          "target": "no-go areas",
+          "source": "Tourists are told not to enter certain dangerous streets after dark.",
+          "model": "Tourists are told that certain streets are no-go areas after dark."
+        }
+      ]
+    },
+    "high_crime": {
+      "word": "high crime",
+      "pronunciation": "/haɪ kraɪm/",
+      "image": {
+        "type": "prompt",
+        "value": "A police car patrolling a neighborhood",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Pentonvilleiso19.jpg/960px-Pentonvilleiso19.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Tỷ lệ tội phạm cao.",
+          "examples": [
+            "The area suffers from high crime rates and lack of opportunities."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Chỉ tình trạng có nhiều hành vi phạm tội xảy ra."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Why do some areas have a lot of crime?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Would you live in a cheap area with many crimes?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "How does crime affect businesses in a city?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "high crime",
+          "text": "The area has high crime and few jobs."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "high crime",
+          "source": "The area has a lot of crime, so shops are closing.",
+          "model": "The area has high crime, so shops are closing."
+        },
+        {
+          "target": "high crime",
+          "source": "People leave neighbourhoods where many crimes happen.",
+          "model": "People leave neighbourhoods with high crime."
+        }
+      ]
+    },
+    "strewn_with_litter": {
+      "word": "strewn with litter",
+      "pronunciation": "/struːn wɪð ˈlɪt.ər/",
+      "image": {
+        "type": "prompt",
+        "value": "A park bench covered in trash",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Littering_in_Stockholm.jpg/960px-Littering_in_Stockholm.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Bị rải đầy rác.",
+          "examples": [
+            "The beach was strewn with litter after the festival."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Mô tả sự bừa bộn, mất vệ sinh do rác thải."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "How can people keep beaches and parks clean?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "What problems do big festivals cause for cities?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Are tourist areas in your country clean?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "strewn with litter",
+          "text": "The park was strewn with litter after the concert."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "strewn with litter",
+          "source": "After the festival, rubbish was everywhere on the beach.",
+          "model": "After the festival, the beach was strewn with litter."
+        },
+        {
+          "target": "strewn with litter",
+          "source": "The streets near the stadium were covered in rubbish.",
+          "model": "The streets near the stadium were strewn with litter."
+        }
+      ]
+    },
+    "run_down_buildings": {
+      "word": "run-down buildings",
+      "pronunciation": "/rʌn daʊn ˈbɪl.dɪŋz/",
+      "image": {
+        "type": "prompt",
+        "value": "An old, dilapidated house with peeling paint",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sl2022.png/960px-Sl2022.png"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Các tòa nhà cũ kỹ, xuống cấp, hư hỏng.",
+          "examples": [
+            "The neighbourhood is full of run-down buildings that need renovation."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Chỉ tình trạng tồi tàn, không được bảo trì."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "What should be done with old buildings in poor condition?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Why are some city areas in bad condition?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "How does the condition of buildings affect people's lives?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "run-down buildings",
+          "text": "The street was full of run-down buildings."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "run-down buildings",
+          "source": "The old part of the city has many buildings in very bad condition.",
+          "model": "The old part of the city has many run-down buildings."
+        },
+        {
+          "target": "run-down buildings",
+          "source": "Many families live in old, badly kept buildings.",
+          "model": "Many families live in run-down buildings."
+        }
+      ]
+    },
+    "deprived_areas": {
+      "word": "deprived areas",
+      "pronunciation": "/dɪˈpraɪvd ˈeə.ri.əz/",
+      "image": {
+        "type": "prompt",
+        "value": "A neighborhood with signs of poverty and neglect",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sl2022.png/960px-Sl2022.png"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Các khu vực nghèo khó, thiếu thốn.",
+          "examples": [
+            "The government is investing in education programs for deprived areas."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường chỉ những nơi có mức sống thấp, thiếu thốn về kinh tế và dịch vụ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How can governments help schools in poor areas?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "What problems do children in poor areas face?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Why do people in poorer areas often have worse health?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "deprived areas",
+          "text": "The charity helps children in deprived areas."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "deprived areas",
+          "source": "Schools in poor neighbourhoods often have fewer teachers.",
+          "model": "Schools in deprived areas often have fewer teachers."
+        },
+        {
+          "target": "deprived areas",
+          "source": "People in poor parts of the city often live shorter lives.",
+          "model": "People in deprived areas often live shorter lives."
+        }
+      ]
+    },
+    "social_problems": {
+      "word": "social problems",
+      "pronunciation": "/ˈsəʊ.ʃəl ˈprɒb.ləmz/",
+      "image": {
+        "type": "prompt",
+        "value": "People protesting about poverty",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sl2022.png/960px-Sl2022.png"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Các vấn đề xã hội (như nghèo đói, thất nghiệp, tội phạm, vô gia cư).",
+          "examples": [
+            "Inner cities often face complex social problems."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thuật ngữ chung chỉ các khó khăn, bất ổn trong cộng đồng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "What problems do big cities face today?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Can schools help reduce problems such as crime and poverty?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Does unemployment lead to other problems in society?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "social problems",
+          "text": "Unemployment can cause many social problems."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "social problems",
+          "source": "Poverty often leads to problems such as crime and drug use.",
+          "model": "Poverty often leads to social problems such as crime and drug use."
+        },
+        {
+          "target": "social problems",
+          "source": "The city faces difficulties like homelessness and unemployment.",
+          "model": "The city faces social problems like homelessness and unemployment."
+        }
+      ]
+    },
+    "industrial_zones": {
+      "word": "industrial zones",
+      "pronunciation": "/ɪnˈdʌs.tri.əl zəʊnz/",
+      "image": {
+        "type": "prompt",
+        "value": "Factories and warehouses in a designated area",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Wolfsburg_VW-Werk.jpg/960px-Wolfsburg_VW-Werk.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Các khu công nghiệp.",
+          "examples": [
+            "The city's industrial zones provide many jobs for the local population."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Khu vực được quy hoạch cho các hoạt động sản xuất, công nghiệp."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "Do factory areas create good jobs for local people?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Should factory areas be far from homes?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Would you live near an area full of factories?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "industrial zones",
+          "text": "The city has two large industrial zones."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "industrial zones",
+          "source": "The areas with factories provide jobs for thousands of people.",
+          "model": "The industrial zones provide jobs for thousands of people."
+        },
+        {
+          "target": "industrial zones",
+          "source": "New homes should not be built near areas full of factories.",
+          "model": "New homes should not be built near industrial zones."
+        }
+      ]
+    },
+    "polluted": {
+      "word": "polluted",
+      "pronunciation": "/pəˈluː.tɪd/",
+      "image": {
+        "type": "prompt",
+        "value": "Smog hanging over a city skyline",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Fanhe_Town_10_day_interval_contrast.png/960px-Fanhe_Town_10_day_interval_contrast.png"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "N/A",
+      "senses": [
+        {
+          "definition_vi": "Bị ô nhiễm.",
+          "examples": [
+            "The river running through the industrial zone is heavily polluted."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Chỉ tình trạng bị nhiễm các chất độc hại làm ô nhiễm môi trường."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "Why are rivers in many cities so dirty?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How does dirty air affect people in cities?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Have you visited a city with very dirty air?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "polluted",
+          "text": "The river near the factory is very polluted."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "polluted",
+          "source": "The air in the city is very dirty because of traffic.",
+          "model": "The air in the city is very polluted because of traffic."
+        },
+        {
+          "target": "polluted",
+          "source": "The lake has been made dirty by chemicals from factories.",
+          "model": "The lake has been polluted by chemicals from factories."
+        }
+      ]
+    },
+    "sprawling_city": {
+      "word": "sprawling city",
+      "pronunciation": "/ˈsprɔː.lɪŋ ˈsɪt.i/",
+      "image": {
+        "type": "prompt",
+        "value": "An aerial view of a city with houses spreading out widely",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Hempstead%2C_Manhasset%2C_and_Little_Neck_bays.jpg/960px-Hempstead%2C_Manhasset%2C_and_Little_Neck_bays.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Thành phố rộng lớn, lan ra nhiều khu vực (thường mang hàm ý tiêu cực là thiếu quy hoạch, phát triển không kiểm soát).",
+          "examples": [
+            "Los Angeles is a classic example of a sprawling city."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Diễn tả sự mở rộng về diện tích một cách thiếu trật tự."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "Do people prefer to live in compact or spread-out cities?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Why is it hard to have good public transport in huge cities?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Is it difficult to visit very large, spread-out cities?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "sprawling city",
+          "text": "Los Angeles is a sprawling city."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "sprawling city",
+          "source": "The city spreads out over a huge area with no clear centre.",
+          "model": "It is a sprawling city with no clear centre."
+        },
+        {
+          "target": "sprawling city",
+          "source": "Without a car, it is hard to get around a city that covers so much land.",
+          "model": "Without a car, it is hard to get around a sprawling city."
+        }
+      ]
+    },
+    "bumper_to_bumper_traffic": {
+      "word": "bumper-to-bumper traffic",
+      "pronunciation": "/ˈbʌm.pə.tuː ˈbʌm.pə ˈtræf.ɪk/",
+      "image": {
+        "type": "prompt",
+        "value": "A long line of cars stuck in traffic, very close together",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/World_Class_Traffic_Jam_2_%287454479488%29.jpg/960px-World_Class_Traffic_Jam_2_%287454479488%29.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "noun+preposition+noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Tình trạng giao thông ùn tắc nặng, xe cộ nối đuôi nhau sát nút.",
+          "examples": [
+            "We were stuck in bumper-to-bumper traffic for over an hour."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Mô tả sự tắc nghẽn giao thông nghiêm trọng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What is the traffic like in your city at rush hour?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How do long commutes affect workers?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Why should cities reduce car use?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "bumper-to-bumper traffic",
+          "text": "We sat in bumper-to-bumper traffic for an hour."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "bumper-to-bumper traffic",
+          "source": "The roads were full of cars that could hardly move.",
+          "model": "There was bumper-to-bumper traffic on the roads."
+        },
+        {
+          "target": "bumper-to-bumper traffic",
+          "source": "Commuters often spend hours in very heavy traffic jams.",
+          "model": "Commuters often spend hours in bumper-to-bumper traffic."
+        }
+      ]
+    },
+    "exhaust_fumes": {
+      "word": "exhaust fumes",
+      "pronunciation": "/ɪɡˈzɔːst fjuːmz/",
+      "image": {
+        "type": "prompt",
+        "value": "Smoke coming out of a car's exhaust pipe",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Crossing_the_Hudson_River_on_the_George_Washington_Bridge_from_Fort_Lee%2C_New_Jersey_to_Manhattan%2C_New_York_%287237796950%29.jpg/960px-Crossing_the_Hudson_River_on_the_George_Washington_Bridge_from_Fort_Lee%2C_New_Jersey_to_Manhattan%2C_New_York_%287237796950%29.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Khí thải (từ động cơ xe cộ).",
+          "examples": [
+            "The air quality in the city is poor due to heavy traffic and exhaust fumes."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Là một trong những nguyên nhân gây ô nhiễm không khí đô thị."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "What causes air pollution in big cities?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Why are busy roads bad for children's health?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "Will electric cars make city air cleaner?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "exhaust fumes",
+          "text": "The air smells of exhaust fumes."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "exhaust fumes",
+          "source": "The gases from cars and buses make the air dirty.",
+          "model": "Exhaust fumes from cars and buses make the air dirty."
+        },
+        {
+          "target": "exhaust fumes",
+          "source": "Children who walk next to busy roads breathe in gases from engines.",
+          "model": "Children who walk next to busy roads breathe in exhaust fumes."
+        }
+      ]
+    },
+    "nightmare": {
+      "word": "nightmare",
+      "pronunciation": "/ˈnaɪt.meər/",
+      "image": {
+        "type": "prompt",
+        "value": "A person looking stressed and overwhelmed",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/World_Class_Traffic_Jam_2_%287454479488%29.jpg/960px-World_Class_Traffic_Jam_2_%287454479488%29.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "N/A",
+      "senses": [
+        {
+          "definition_vi": "Cơn ác mộng; một trải nghiệm cực kỳ tồi tệ hoặc khó chịu.",
+          "examples": [
+            "Dealing with the bureaucracy was an absolute nightmare."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Dùng để nhấn mạnh mức độ tồi tệ của một tình huống."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What is the worst journey you have ever had?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What is the most stressful part of your job?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "Is shopping on a busy holiday weekend stressful?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "nightmare",
+          "text": "Driving in this city is a nightmare."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "nightmare",
+          "source": "Finding a parking space in the centre is extremely difficult and stressful.",
+          "model": "Finding a parking space in the centre is a nightmare."
+        },
+        {
+          "target": "nightmare",
+          "source": "The trip home was terrible because of delays.",
+          "model": "The trip home was a nightmare because of delays."
+        }
+      ]
+    },
+    "incessant_roar": {
+      "word": "incessant roar",
+      "pronunciation": "/ɪnˈses.ənt rɔːr/",
+      "image": {
+        "type": "prompt",
+        "value": "A large truck engine making a loud noise",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG/960px-Cascada_Dynjandi%2C_Vestfir%C3%B0ir%2C_Islandia%2C_2014-08-14%2C_DD_136-138_HDR.JPG"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Tiếng gầm rú không ngừng, liên hồi.",
+          "examples": [
+            "The incessant roar of traffic made it impossible to sleep."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Mô tả âm thanh lớn, kéo dài và gây khó chịu."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "What makes it hard to sleep in a city flat?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Is noise pollution a serious problem in big cities?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Can noise from machines affect workers' health?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "incessant roar",
+          "text": "The incessant roar of traffic kept me awake."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "incessant roar",
+          "source": "The loud noise of the machines never stopped all day.",
+          "model": "The incessant roar of the machines lasted all day."
+        },
+        {
+          "target": "incessant roar",
+          "source": "People near the airport hear planes making a loud noise all the time.",
+          "model": "People near the airport live with the incessant roar of planes."
+        }
+      ]
+    },
+    "noisy_place": {
+      "word": "noisy place",
+      "pronunciation": "/ˈnɔɪ.zi pleɪs/",
+      "image": {
+        "type": "prompt",
+        "value": "A busy street with loud traffic sounds",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Crossing_the_Hudson_River_on_the_George_Washington_Bridge_from_Fort_Lee%2C_New_Jersey_to_Manhattan%2C_New_York_%287237796950%29.jpg/960px-Crossing_the_Hudson_River_on_the_George_Washington_Bridge_from_Fort_Lee%2C_New_Jersey_to_Manhattan%2C_New_York_%287237796950%29.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Nơi ồn ào.",
+          "examples": [
+            "The city centre is a very noisy place, especially during rush hour."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Chỉ những địa điểm có nhiều tiếng động, gây khó chịu."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "Would you prefer to live in a quiet or a loud area?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Can students concentrate in a busy, loud classroom?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "Do you like eating in loud restaurants?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "noisy place",
+          "text": "The market is a very noisy place."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "noisy place",
+          "source": "Our street is very loud because of the traffic.",
+          "model": "Our street is a noisy place because of the traffic."
+        },
+        {
+          "target": "noisy place",
+          "source": "A school canteen is very loud at lunchtime.",
+          "model": "A school canteen is a noisy place at lunchtime."
+        }
+      ]
+    },
+    "suburbs": {
+      "word": "suburbs",
+      "pronunciation": "/ˈsʌb.ɜːbz/",
+      "image": {
+        "type": "prompt",
+        "value": "A residential area with houses and gardens outside the city center",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Hempstead%2C_Manhasset%2C_and_Little_Neck_bays.jpg/960px-Hempstead%2C_Manhasset%2C_and_Little_Neck_bays.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "N/A",
+      "senses": [
+        {
+          "definition_vi": "Khu vực ngoại ô, vùng ven đô (thường là nơi dân cư sinh sống và đi làm vào trung tâm thành phố).",
+          "examples": [
+            "They decided to move to the suburbs for a quieter life."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường đối lập với 'inner city' hoặc 'city centre'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "Do families prefer to live outside the city centre?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "How do people who live outside the city travel to work?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Are areas outside the city centre greener and healthier?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "suburbs",
+          "text": "Many families move to the suburbs."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "suburbs",
+          "source": "They live in a quiet area just outside the city.",
+          "model": "They live in the suburbs."
+        },
+        {
+          "target": "suburbs",
+          "source": "Many workers travel to the centre from areas on the edge of the city.",
+          "model": "Many workers travel to the centre from the suburbs."
+        }
+      ]
+    },
+    "shanty_towns": {
+      "word": "shanty towns",
+      "pronunciation": "/ˈʃæn.ti ˌtaʊnz/",
+      "image": {
+        "type": "prompt",
+        "value": "A slum area with makeshift housing",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sl2022.png/960px-Sl2022.png"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Các khu ổ chuột, nơi ở tạm bợ làm từ vật liệu phế thải (như tôn, bìa carton, nhựa, v.v.).",
+          "examples": [
+            "The rapid growth of the city has led to the proliferation of shanty towns on its outskirts."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường xuất hiện ở các nước đang phát triển hoặc các khu vực có vấn đề kinh tế nghiêm trọng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Why do poor areas with homemade huts grow around big cities?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "What health problems do people face in very poor housing?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "How can governments improve the lives of the urban poor?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "shanty towns",
+          "text": "Many poor families live in shanty towns."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "shanty towns",
+          "source": "Many poor people live in huts made from old metal and wood on the edge of the city.",
+          "model": "Many poor people live in shanty towns on the edge of the city."
+        },
+        {
+          "target": "shanty towns",
+          "source": "Disease spreads quickly in poor areas of homemade shelters.",
+          "model": "Disease spreads quickly in shanty towns."
+        }
+      ]
+    },
+    "run-down_buildings": {
+      "word": "run-down buildings",
+      "pronunciation": "/ˌrʌn daʊn ˈbɪldɪŋz/",
+      "image": {
+        "type": "prompt",
+        "value": "run-down buildings",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sl2022.png/960px-Sl2022.png"
+      },
+      "part_of_speech": "noun phrase",
+      "collocation_type": "descriptive",
+      "senses": [
+        {
+          "id": "run-down_buildings_1",
+          "definition": "Buildings that are in a very bad condition because they have not been looked after or repaired.",
+          "definition_vi": "Những tòa nhà trong tình trạng rất tồi tệ vì không được chăm sóc hoặc sửa chữa.",
+          "usage_notes": "Often used to describe buildings in poor or neglected areas.",
+          "usage_notes_vi": "Thường được dùng để mô tả các tòa nhà ở những khu vực nghèo nàn hoặc bị bỏ bê.",
+          "examples": [
+            {
+              "english": "The area is full of run-down buildings and empty lots."
+            }
+          ]
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "Should old buildings in bad condition be repaired or knocked down?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Why do people with little money live in older areas?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "Can old, damaged buildings become popular places again?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "run-down buildings",
+          "text": "Artists moved into the run-down buildings."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "run-down buildings",
+          "source": "The old houses were in a terrible state, so the council knocked them down.",
+          "model": "The council knocked down the run-down buildings."
+        },
+        {
+          "target": "run-down buildings",
+          "source": "Young artists turned an old, badly damaged factory into studios.",
+          "model": "Young artists turned run-down buildings into studios."
+        }
+      ]
+    }
+  }
+}

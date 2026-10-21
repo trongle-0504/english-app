@@ -2,8 +2,9 @@
 
 Code được chuẩn bị sẵn trong `../english-app-commit/code/` bằng `node scripts/sync-commit.ts` (xem README, mục
 *Code và data tách riêng*). Thư mục đó **đã là một repo git** (nhánh `main`), nên không cần clone repo GitHub về rồi
-copy đè: chỉ cần gắn repo GitHub vào làm remote và push. Data (file `.tar.gz` trong `data-minimal/` hoặc `data/`)
-không bao giờ lên GitHub; tải lên Drive riêng.
+copy đè: chỉ cần gắn repo GitHub vào làm remote và push. Data tối thiểu đi cùng code, dạng thư mục chưa nén
+`data-minimal/` trong repo (sau khi clone: `node scripts/data.ts restore data-minimal`). Bản data đầy đủ (file
+`.tar.gz` trong `../english-app-commit/data/`) không lên GitHub; tải lên Drive riêng.
 
 Mọi lệnh chạy trong terminal **WSL**.
 
@@ -65,8 +66,9 @@ cd ~/English-App/english-app-commit/code && git status
 git add -A && git commit -m "Mô tả thay đổi" && git push
 ```
 
-`sync-commit` cũng tạo file data tối thiểu mới trong `../english-app-commit/data-minimal/`; tải file mới nhất lên Drive
-khi data có thay đổi. File cũ không tự xoá.
+`sync-commit` cũng cập nhật `data-minimal/` trong repo theo data hiện tại (thêm, sửa, xoá file cho khớp), nên
+`git add -A` đưa luôn data thay đổi vào commit. `git status` không có thay đổi gì trong `data-minimal/` nghĩa là data
+không đổi.
 
 ## Khi gặp lỗi
 
@@ -75,10 +77,11 @@ khi data có thay đổi. File cũ không tự xoá.
 | `! [rejected] main -> main (fetch first)` | Repo GitHub không trống (đã tick README / license khi tạo). Chạy `git pull --rebase origin main --allow-unrelated-histories` rồi push lại. |
 | `remote origin already exists` | Đã gắn remote. Xem bằng `git remote -v`; đổi địa chỉ bằng `git remote set-url origin <url>`. |
 | `Authentication failed` / `Support for password authentication was removed` | Dùng Personal Access Token thay cho mật khẩu (mục *Đăng nhập khi push*). |
-| `sync-commit` báo *Stopped, nothing copied* | Code có file `.env`, chuỗi giống khoá API hoặc file > 5 MB. Sửa theo danh sách in ra, rồi chạy lại. |
+| `sync-commit` báo *Stopped, nothing copied* | Code hoặc data tối thiểu có file `.env`, chuỗi giống khoá API hoặc file > 5 MB. Sửa theo danh sách in ra, rồi chạy lại. |
 
 ## Trước mỗi lần push, kiểm tra nhanh
 
-- `git status` chỉ có code: không có `.env`, `data/`, `progress/`, `content/vocabulary`… (đã được `.gitignore` chặn, và
-  `sync-commit` không copy chúng).
+- `git status` chỉ có code và `data-minimal/`: không có `.env`, `data/`, hay `progress/`, `content/vocabulary`… ở thư
+  mục gốc (đã được `.gitignore` chặn, và `sync-commit` không copy chúng). Data chỉ nằm trong `data-minimal/`.
+- `data-minimal/progress/` là lịch sử học (bài nói, bài viết): đọc lướt phần thay đổi trước khi push.
 - Repo trên GitHub vẫn là **Private**.

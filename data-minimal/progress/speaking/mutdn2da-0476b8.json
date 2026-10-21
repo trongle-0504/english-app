@@ -1,0 +1,1476 @@
+{
+  "id": "mutdn2da-0476b8",
+  "createdAt": "2026-10-04T05:25:10.464Z",
+  "durationMs": 104447,
+  "topic": "Job",
+  "part": 1,
+  "answers": [
+    {
+      "question": "What is your job?",
+      "idea": "AI Engineer + lĩnh vực doanh nghiệp: Làm kỹ sư AI cho một công ty công nghệ, phát triển các giải pháp AI cho doanh nghiệp. Cảm xúc cá nhân: Công việc khá thú vị vì mình có thể nhìn thấy AI được áp dụng vào những vấn đề thực tế của doanh nghiệp.",
+      "picks": [
+        {
+          "cardId": "vocab:specialise-in",
+          "term": "specialise in",
+          "slot": "specialise in + N/V-ing",
+          "meaning_vi": "Chuyên về - Tập trung vào một lĩnh vực, sản phẩm hoặc dịch vụ cụ thể.",
+          "origin": "Business",
+          "href": "/vocabulary/business/core-words#specialise-in",
+          "how": "Answer: nói lĩnh vực chuyên môn của mình (AI cho doanh nghiệp).",
+          "example": "I specialise in building AI solutions for the business sector.",
+          "inReview": true,
+          "learning": true
+        },
+        {
+          "cardId": "vocab:rewarding",
+          "term": "rewarding",
+          "meaning_vi": "Đáng giá, thỏa mãn - mang lại cảm giác hài lòng, có ý nghĩa (dù không nhất thiết được nhiều tiền).",
+          "origin": "Work › Jobs & careers",
+          "href": "/vocabulary/work/jobs-careers#rewarding",
+          "how": "Cause: cảm xúc về công việc, thấy có ý nghĩa.",
+          "example": "Seeing my models solve real problems is really rewarding.",
+          "inReview": true,
+          "learning": true
+        },
+        {
+          "cardId": "colloc:work-jobs-career:job-satisfaction",
+          "term": "job satisfaction",
+          "meaning_vi": "sự hài lòng trong công việc.",
+          "origin": "Work",
+          "href": "/collocations/work-jobs-career#job-satisfaction",
+          "how": "Effect: nói về sự hài lòng với công việc.",
+          "example": "Working on real-world projects gives me a lot of job satisfaction.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "vocab:technical-competence",
+          "term": "technical competence",
+          "meaning_vi": "Năng lực kỹ thuật - khả năng thực hiện thành thạo các kỹ năng chuyên môn, kỹ thuật của một công việc.",
+          "origin": "Work › At work",
+          "href": "/vocabulary/work/at-work#technical-competence",
+          "how": "Description: kỹ năng kỹ thuật công việc đòi hỏi.",
+          "example": "The job requires a high level of technical competence in machine learning.",
+          "inReview": true,
+          "learning": true
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "real-world problems",
+          "meaning_vi": "vấn đề thực tế",
+          "example": "I like seeing AI solve real-world problems.",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        }
+      ],
+      "answer": [
+        {
+          "text": "I work as an AI engineer for a technology company, and I "
+        },
+        {
+          "text": "specialise in",
+          "mark": "library"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "building AI solutions",
+          "mark": "unverified",
+          "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+        },
+        {
+          "text": " for the "
+        },
+        {
+          "text": "business sector",
+          "mark": "unverified",
+          "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "What I like most about",
+          "mark": "structure"
+        },
+        {
+          "text": " it "
+        },
+        {
+          "text": "is that",
+          "mark": "structure"
+        },
+        {
+          "text": " I get to see AI "
+        },
+        {
+          "text": "applied to",
+          "mark": "checked",
+          "note": "Longman có mục từ “applied”"
+        },
+        {
+          "text": " real business problems, not just in theory."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "That's why",
+          "mark": "structure"
+        },
+        {
+          "text": " I find the job really interesting and genuinely "
+        },
+        {
+          "text": "rewarding",
+          "mark": "library"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "I work as an AI engineer for a technology company, and I "
+            },
+            {
+              "text": "specialise in",
+              "mark": "library"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "building AI solutions",
+              "mark": "unverified",
+              "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+            },
+            {
+              "text": " for the "
+            },
+            {
+              "text": "business sector",
+              "mark": "unverified",
+              "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "What I like most about",
+              "mark": "structure"
+            },
+            {
+              "text": " it "
+            },
+            {
+              "text": "is that",
+              "mark": "structure"
+            },
+            {
+              "text": " I get to see AI "
+            },
+            {
+              "text": "applied to",
+              "mark": "checked",
+              "note": "Longman có mục từ “applied”"
+            },
+            {
+              "text": " real business problems, not just in theory."
+            }
+          ]
+        },
+        {
+          "tool": "effect",
+          "segments": [
+            {
+              "text": "That's why",
+              "mark": "structure"
+            },
+            {
+              "text": " I find the job really interesting and genuinely "
+            },
+            {
+              "text": "rewarding",
+              "mark": "library"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "What I like most about N is that SV",
+          "text": "What I like most about … is that",
+          "tool": "cause",
+          "fromGuide": true
+        },
+        {
+          "pattern": "That's why SV",
+          "text": "That's why",
+          "tool": "effect",
+          "fromGuide": true
+        }
+      ],
+      "wording": [
+        {
+          "text": "building AI solutions",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "text": "business sector",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "text": "applied to",
+          "verified": true,
+          "dictionary": [
+            "Longman có mục từ “applied”"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/applied"
+            }
+          ]
+        }
+      ],
+      "meaning": "I work as an AI engineer for a technology company, developing AI solutions for the business sector. I find it interesting because I can see AI applied to real business problems.",
+      "polish": []
+    },
+    {
+      "question": "Where do you work?",
+      "idea": "Địa điểm: Làm việc tại một văn phòng ở khu vực trung tâm TP.HCM. Thuận tiện: Văn phòng chỉ cách nhà khoảng 5 km nên đi lại khá dễ dàng.",
+      "picks": [
+        {
+          "cardId": "wcolloc:stuck-in-traffic:heavy-traffic",
+          "term": "heavy traffic",
+          "meaning_vi": "giao thông đông đúc",
+          "origin": "Collocation of: stuck in traffic",
+          "href": "/vocabulary/transport/core-words#stuck-in-traffic",
+          "how": "Description: bối cảnh đi lại trong trung tâm thành phố.",
+          "example": "Even with the heavy traffic, I get to work quite quickly.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:starting-and-finishing:traffic-was-already-building-up",
+          "term": "traffic was already building up",
+          "slot": "traffic builds up (on + N)",
+          "meaning_vi": "Tình trạng giao thông bắt đầu trở nên đông đúc, xe cộ bắt đầu ùn tắc.",
+          "origin": "Starting and finishing",
+          "href": "/collocations/starting-and-finishing#traffic-was-already-building-up",
+          "how": "Description: lúc giao thông bắt đầu đông.",
+          "example": "I leave early before the traffic starts building up.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:metaphor:stream-of-visitors-traffic",
+          "term": "stream of visitors/traffic",
+          "slot": "a constant stream of visitors/traffic",
+          "meaning_vi": "Dòng người hoặc xe cộ liên tục.",
+          "origin": "Metaphor",
+          "href": "/collocations/metaphor#stream-of-visitors-traffic",
+          "how": "Description: dòng xe liên tục ở trung tâm.",
+          "example": "There's a constant stream of traffic around my office.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "vocab:relocate",
+          "term": "relocate",
+          "slot": "relocate to + place",
+          "meaning_vi": "1. Chuyển đến một nơi ở hoặc địa điểm làm việc mới.\n2. Di dời (vật gì đó) đến một vị trí mới.",
+          "origin": "Work › Jobs & careers",
+          "href": "/vocabulary/work/jobs-careers#relocate",
+          "how": "Effect: không cần chuyển nhà vì văn phòng gần.",
+          "example": "I didn't have to relocate to be closer to work.",
+          "inReview": true,
+          "learning": true
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "rush hour",
+          "meaning_vi": "giờ cao điểm",
+          "example": "The roads get packed during rush hour.",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · ADJ: rush (✓ rush)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/hour"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "text": "I work in an office right in the "
+        },
+        {
+          "text": "city centre",
+          "mark": "checked",
+          "note": "OZDIC · ADJ: city (✓ city)"
+        },
+        {
+          "text": " of Ho Chi Minh City."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "The best part about",
+          "mark": "structure"
+        },
+        {
+          "text": " it "
+        },
+        {
+          "text": "is that",
+          "mark": "structure"
+        },
+        {
+          "text": " it's only about five kilometres from my home, so getting there is pretty easy."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Even with the "
+        },
+        {
+          "text": "heavy traffic",
+          "mark": "library"
+        },
+        {
+          "text": " during "
+        },
+        {
+          "text": "rush hour",
+          "mark": "extra"
+        },
+        {
+          "text": ", I can usually "
+        },
+        {
+          "text": "get to work",
+          "mark": "checked",
+          "note": "Longman · VERB + WORK: start, look for, find, return to, go back to (✓ get to)"
+        },
+        {
+          "text": " without much trouble."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "I work in an office right in the "
+            },
+            {
+              "text": "city centre",
+              "mark": "checked",
+              "note": "OZDIC · ADJ: city (✓ city)"
+            },
+            {
+              "text": " of Ho Chi Minh City."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "The best part about",
+              "mark": "structure"
+            },
+            {
+              "text": " it "
+            },
+            {
+              "text": "is that",
+              "mark": "structure"
+            },
+            {
+              "text": " it's only about five kilometres from my home, so getting there is pretty easy."
+            }
+          ]
+        },
+        {
+          "tool": "description",
+          "segments": [
+            {
+              "text": "Even with the "
+            },
+            {
+              "text": "heavy traffic",
+              "mark": "library"
+            },
+            {
+              "text": " during "
+            },
+            {
+              "text": "rush hour",
+              "mark": "extra"
+            },
+            {
+              "text": ", I can usually "
+            },
+            {
+              "text": "get to work",
+              "mark": "checked",
+              "note": "Longman · VERB + WORK: start, look for, find, return to, go back to (✓ get to)"
+            },
+            {
+              "text": " without much trouble."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "The best part about N is that SV",
+          "text": "The best part about … is that",
+          "tool": "cause",
+          "fromGuide": true
+        }
+      ],
+      "wording": [
+        {
+          "text": "city centre",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · ADJ: city (✓ city)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/centre"
+            }
+          ]
+        },
+        {
+          "text": "get to work",
+          "verified": true,
+          "dictionary": [
+            "Longman · VERB + WORK: start, look for, find, return to, go back to (✓ get to)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/work"
+            }
+          ]
+        }
+      ],
+      "meaning": "I work in an office in the city centre of Ho Chi Minh City. It's only about 5 km from my home, so commuting is quite easy.",
+      "polish": [
+        {
+          "original": "in no time",
+          "replacement": "without much trouble",
+          "kind": "meaning",
+          "why": "\"In no time\" phóng đại khi kẹt xe giờ cao điểm; ý gốc chỉ là đi lại khá dễ dàng.",
+          "verified": true,
+          "dictionary": [],
+          "sources": []
+        }
+      ]
+    },
+    {
+      "question": "Why did you choose that job?",
+      "idea": "Muốn áp dụng thực tế: Thích những công nghệ không chỉ mang tính nghiên cứu mà còn có thể giải quyết vấn đề thực tế của doanh nghiệp. Thách thức trí tuệ: AI thường không có một solution cố định, nên công việc buộc mình phải suy nghĩ và thử nghiệm nhiều cách khác nhau.",
+      "picks": [
+        {
+          "cardId": "wcolloc:thrill:get-a-thrill-out-of-sth",
+          "term": "get a thrill out of (+ sth)",
+          "slot": "get a thrill out of + V-ing",
+          "meaning_vi": "cảm thấy phấn khích về điều gì đó",
+          "origin": "Collocation of: thrill",
+          "href": "/vocabulary/entertainment/core-words#thrill",
+          "how": "Effect: thích thú khi thử nhiều cách khác nhau.",
+          "example": "I get a thrill out of trying different approaches.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "wcolloc:cognitive:cognitive-skills",
+          "term": "cognitive skills",
+          "slot": "improve/develop cognitive skills",
+          "meaning_vi": "kỹ năng nhận thức",
+          "origin": "Collocation of: cognitive",
+          "href": "/vocabulary/health/core-words#cognitive",
+          "how": "Cause: công việc rèn luyện kỹ năng tư duy.",
+          "example": "The job really helps me develop my cognitive skills.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "note:ingenious",
+          "term": "ingenious",
+          "slot": "an ingenious way to + V",
+          "meaning_vi": "Sáng tạo, khéo léo, tài tình. Thường dùng để miêu tả một ý tưởng, giải pháp, hoặc cách làm gì đó rất thông minh và hiệu quả.",
+          "origin": "Note · Vocabulary",
+          "href": "/notes#ingenious",
+          "how": "Effect: tìm ra cách giải quyết sáng tạo.",
+          "example": "Sometimes we come up with an ingenious way to cut delivery times.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "wcolloc:practical:practical-experience",
+          "term": "practical experience",
+          "slot": "gain practical experience",
+          "meaning_vi": "kinh nghiệm thực tế",
+          "origin": "Collocation of: practical",
+          "href": "/vocabulary/common/describing-evaluating#practical",
+          "how": "Cause: muốn áp dụng kiến thức vào thực tế.",
+          "example": "I wanted to gain practical experience, not just do research.",
+          "inReview": false,
+          "learning": false
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "intellectually challenging",
+          "meaning_vi": "thử thách về trí tuệ",
+          "example": "AI work is intellectually challenging.",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · ADV: extremely, very, quite, enough, sufficiently, academically, intellectually, politically (✓ intellectually)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/challenging"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "text": "The main reason for",
+          "mark": "structure"
+        },
+        {
+          "text": " choosing this job "
+        },
+        {
+          "text": "is that",
+          "mark": "structure"
+        },
+        {
+          "text": " I like technology that doesn't just stay in research but actually "
+        },
+        {
+          "text": "solves real business problems",
+          "mark": "checked",
+          "note": "Longman · VERB + PROBLEM: have a, cause, create a, present, pose a, deal with, sort out a, tackle, address a, solve, resolve a, overcome a (✓ solve)"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "On top of that,",
+          "mark": "structure"
+        },
+        {
+          "text": " it's "
+        },
+        {
+          "text": "intellectually challenging",
+          "mark": "extra"
+        },
+        {
+          "text": ", because AI rarely has one fixed solution, so I "
+        },
+        {
+          "text": "have to",
+          "mark": "structure"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "think hard",
+          "mark": "checked",
+          "note": "Longman · ADV.: carefully, hard, deeply, seriously, clearly (✓ hard)"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "try lots of different approaches",
+          "mark": "checked",
+          "note": "Longman · VERB + APPROACH: have an, take, adopt an, use an, try an, prefer, favour an (✓ try an)"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Honestly, I",
+          "mark": "structure"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "get a thrill out of",
+          "mark": "library"
+        },
+        {
+          "text": " that process."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "The main reason for",
+              "mark": "structure"
+            },
+            {
+              "text": " choosing this job "
+            },
+            {
+              "text": "is that",
+              "mark": "structure"
+            },
+            {
+              "text": " I like technology that doesn't just stay in research but actually "
+            },
+            {
+              "text": "solves real business problems",
+              "mark": "checked",
+              "note": "Longman · VERB + PROBLEM: have a, cause, create a, present, pose a, deal with, sort out a, tackle, address a, solve, resolve a, overcome a (✓ solve)"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "On top of that,",
+              "mark": "structure"
+            },
+            {
+              "text": " it's "
+            },
+            {
+              "text": "intellectually challenging",
+              "mark": "extra"
+            },
+            {
+              "text": ", because AI rarely has one fixed solution, so I "
+            },
+            {
+              "text": "have to",
+              "mark": "structure"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "think hard",
+              "mark": "checked",
+              "note": "Longman · ADV.: carefully, hard, deeply, seriously, clearly (✓ hard)"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "try lots of different approaches",
+              "mark": "checked",
+              "note": "Longman · VERB + APPROACH: have an, take, adopt an, use an, try an, prefer, favour an (✓ try an)"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "effect",
+          "segments": [
+            {
+              "text": "Honestly, I",
+              "mark": "structure"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "get a thrill out of",
+              "mark": "library"
+            },
+            {
+              "text": " that process."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "The main reason for N is that SV",
+          "text": "The main reason for … is that",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "On top of that, SV",
+          "text": "On top of that,",
+          "tool": "cause",
+          "fromGuide": false
+        },
+        {
+          "pattern": "have to V",
+          "text": "have to",
+          "tool": "cause",
+          "fromGuide": true
+        },
+        {
+          "pattern": "Honestly, I V",
+          "text": "Honestly, I",
+          "tool": "effect",
+          "fromGuide": false
+        }
+      ],
+      "wording": [
+        {
+          "text": "solves real business problems",
+          "verified": true,
+          "dictionary": [
+            "Longman · VERB + PROBLEM: have a, cause, create a, present, pose a, deal with, sort out a, tackle, address a, solve, resolve a, overcome a (✓ solve)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/problem"
+            }
+          ]
+        },
+        {
+          "text": "think hard",
+          "verified": true,
+          "dictionary": [
+            "Longman · ADV.: carefully, hard, deeply, seriously, clearly (✓ hard)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/think"
+            }
+          ]
+        },
+        {
+          "text": "try lots of different approaches",
+          "verified": true,
+          "dictionary": [
+            "Longman · VERB + APPROACH: have an, take, adopt an, use an, try an, prefer, favour an (✓ try an)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/approach"
+            }
+          ]
+        }
+      ],
+      "meaning": "I chose this job because I like technology that solves real business problems, not just research. Also, AI rarely has a fixed solution, so the job makes me think and try many different approaches.",
+      "polish": [
+        {
+          "original": "test lots of different approaches",
+          "replacement": "try lots of different approaches",
+          "kind": "dictionary",
+          "why": "\"Test approaches\" không có trong từ điển; \"try an approach\" được liệt kê, tự nhiên và đúng nghĩa thử nghiệm.",
+          "verified": true,
+          "dictionary": [
+            "Longman · VERB + APPROACH: have an, take, adopt an, use an, try an, prefer, favour an (✓ try an)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/approach"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Is it a popular job in your country?",
+      "idea": "Chưa phổ biến bằng software engineering: AI Engineer vẫn ít phổ biến hơn Software Engineer ở Việt Nam. Đang tăng nhanh: Tuy nhiên, ngày càng nhiều sinh viên học AI/Computer Science và nhiều doanh nghiệp bắt đầu ứng dụng AI.",
+      "picks": [
+        {
+          "cardId": "wcolloc:widespread:increasingly-widespread",
+          "term": "increasingly widespread",
+          "slot": "become increasingly widespread",
+          "meaning_vi": "ngày càng lan rộng",
+          "origin": "Collocation of: widespread",
+          "href": "/vocabulary/common/describing-evaluating#widespread",
+          "how": "Effect: AI ngày càng lan rộng trong doanh nghiệp.",
+          "example": "AI is becoming increasingly widespread in Vietnamese businesses.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "wcolloc:opportunity:job-career-opportunities",
+          "term": "job/career opportunities",
+          "meaning_vi": "cơ hội việc làm/sự nghiệp",
+          "origin": "Collocation of: opportunity",
+          "href": "/vocabulary/common/time-amount-likelihood#opportunity",
+          "how": "Effect: dự đoán nhiều cơ hội việc làm hơn.",
+          "example": "There'll be more job opportunities for AI engineers.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "note:emergence-of-something",
+          "term": "emergence of something",
+          "slot": "the emergence of + N",
+          "meaning_vi": "Diễn tả **sự xuất hiện** hoặc **sự hình thành** của một cái gì đó, thường là một khái niệm, một hiện tượng, hoặc một xu hướng mới.",
+          "origin": "Note · Structure",
+          "href": "/notes#emergence-of-something",
+          "how": "Cause: sự xuất hiện của AI tạo nhu cầu.",
+          "example": "The emergence of AI tools has changed many industries.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "vocab:go-from-strength-to-strength",
+          "term": "go from strength to strength",
+          "slot": "sth has gone from strength to strength",
+          "meaning_vi": "Ngày càng phát triển mạnh - Liên tục thành công và lớn mạnh hơn theo thời gian.",
+          "origin": "Business",
+          "href": "/vocabulary/business/core-words#go-from-strength-to-strength",
+          "how": "Effect: ngành phát triển ngày càng mạnh.",
+          "example": "The AI field has gone from strength to strength recently.",
+          "inReview": true,
+          "learning": true
+        }
+      ],
+      "extras": [],
+      "answer": [
+        {
+          "text": "I wouldn't say so",
+          "mark": "structure"
+        },
+        {
+          "text": ", at least not yet."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "In Vietnam, AI engineering is still "
+        },
+        {
+          "text": "a whole lot less",
+          "mark": "structure"
+        },
+        {
+          "text": " common "
+        },
+        {
+          "text": "than",
+          "mark": "structure"
+        },
+        {
+          "text": " software engineering."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "That said,",
+          "mark": "structure"
+        },
+        {
+          "text": " more and more students are studying AI and computer science, and AI is becoming "
+        },
+        {
+          "text": "increasingly widespread",
+          "mark": "library"
+        },
+        {
+          "text": " in "
+        },
+        {
+          "text": "local businesses",
+          "mark": "checked",
+          "note": "OZDIC · ADJ: big, profitable, private, core, retail, wholesale, catering, computer, investment, etc. (✓ local)"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "That's why",
+          "mark": "structure"
+        },
+        {
+          "text": " I think there'll be far more "
+        },
+        {
+          "text": "job opportunities",
+          "mark": "library"
+        },
+        {
+          "text": " in this field soon."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "I wouldn't say so",
+              "mark": "structure"
+            },
+            {
+              "text": ", at least not yet."
+            }
+          ]
+        },
+        {
+          "tool": "description",
+          "segments": [
+            {
+              "text": "In Vietnam, AI engineering is still "
+            },
+            {
+              "text": "a whole lot less",
+              "mark": "structure"
+            },
+            {
+              "text": " common "
+            },
+            {
+              "text": "than",
+              "mark": "structure"
+            },
+            {
+              "text": " software engineering."
+            }
+          ]
+        },
+        {
+          "tool": "description",
+          "segments": [
+            {
+              "text": "That said,",
+              "mark": "structure"
+            },
+            {
+              "text": " more and more students are studying AI and computer science, and AI is becoming "
+            },
+            {
+              "text": "increasingly widespread",
+              "mark": "library"
+            },
+            {
+              "text": " in "
+            },
+            {
+              "text": "local businesses",
+              "mark": "checked",
+              "note": "OZDIC · ADJ: big, profitable, private, core, retail, wholesale, catering, computer, investment, etc. (✓ local)"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "effect",
+          "segments": [
+            {
+              "text": "That's why",
+              "mark": "structure"
+            },
+            {
+              "text": " I think there'll be far more "
+            },
+            {
+              "text": "job opportunities",
+              "mark": "library"
+            },
+            {
+              "text": " in this field soon."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "I wouldn't say so",
+          "text": "I wouldn't say so",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "is a whole lot less Adj than…",
+          "text": "a whole lot less … than",
+          "tool": "description",
+          "fromGuide": true
+        },
+        {
+          "pattern": "That said, SV",
+          "text": "That said,",
+          "tool": "description",
+          "fromGuide": false
+        },
+        {
+          "pattern": "That's why SV",
+          "text": "That's why",
+          "tool": "effect",
+          "fromGuide": true
+        }
+      ],
+      "wording": [
+        {
+          "text": "local businesses",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · ADJ: big, profitable, private, core, retail, wholesale, catering, computer, investment, etc. (✓ local)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/business"
+            }
+          ]
+        }
+      ],
+      "meaning": "AI engineering is still less popular than software engineering in Vietnam, but it's growing fast: more students study AI/computer science and more businesses are starting to use AI.",
+      "polish": []
+    },
+    {
+      "question": "Do you like your job?",
+      "idea": "Có — công việc có tính thử thách: Mỗi ngày mình phải nghĩ ra different solutions để giải quyết những bài toán mới. Giao tiếp: Mình cũng phải làm việc với business team và khách hàng, nên có nhiều cơ hội trao đổi với mọi người và cải thiện communication skills.",
+      "picks": [
+        {
+          "cardId": "vocab:demanding-job",
+          "term": "demanding job",
+          "meaning_vi": "Công việc đòi hỏi nhiều - công việc cần rất nhiều thời gian, sức lực, kỹ năng hoặc sự tập trung.",
+          "origin": "Work › Jobs & careers",
+          "href": "/vocabulary/work/jobs-careers#demanding-job",
+          "how": "Cause: công việc đòi hỏi, nhiều thử thách.",
+          "example": "It's quite a demanding job.",
+          "inReview": true,
+          "learning": true
+        },
+        {
+          "cardId": "wcolloc:opportunity:provide-create-an-opportunity",
+          "term": "provide/create an opportunity",
+          "slot": "provide opportunities for sb to V",
+          "meaning_vi": "tạo ra cơ hội",
+          "origin": "Collocation of: opportunity",
+          "href": "/vocabulary/common/time-amount-likelihood#opportunity",
+          "how": "Cause: làm việc với khách tạo cơ hội giao tiếp.",
+          "example": "Meeting clients provides opportunities for me to improve my communication.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "vocab:get-on-well-with",
+          "term": "get on well with",
+          "slot": "get on well with + sb",
+          "meaning_vi": "Hòa hợp với ai đó - Có mối quan hệ thân thiện, dễ chịu với ai.",
+          "origin": "Family",
+          "href": "/vocabulary/family/core-words#get-on-well-with",
+          "how": "Description: hòa hợp với team business.",
+          "example": "I get on well with the business team.",
+          "inReview": true,
+          "learning": true
+        },
+        {
+          "cardId": "vocab:keen",
+          "term": "keen",
+          "slot": "be keen to V / keen on + N/V-ing",
+          "meaning_vi": "1. Rất mong muốn hoặc háo hức làm điều gì đó.\n2. Nhiệt tình, say mê một hoạt động hoặc ý tưởng.\n3. Rất thích ai đó/cái gì đó.\n4. Sắc sảo, nhạy bén, tinh ý (về trí tuệ hoặc giác quan).\n5. Cạnh tranh gay gắt.\n6. Giá thấp, có tính cạnh tranh (về giá cả).\n7. Rất lạnh (về gió).\n8. Sắc bén, có cạnh hoặc mũi nhọn (về dao, kéo).",
+          "origin": "Common › Describing & evaluating",
+          "href": "/vocabulary/common/describing-evaluating#keen",
+          "how": "Effect: háo hức học hỏi thêm.",
+          "example": "I'm always keen to try new ideas.",
+          "inReview": false,
+          "learning": false
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "come up with",
+          "meaning_vi": "nghĩ ra",
+          "example": "I have to come up with new solutions every day.",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        }
+      ],
+      "answer": [
+        {
+          "text": "Definitely",
+          "mark": "structure"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "It's quite a "
+        },
+        {
+          "text": "challenging job",
+          "mark": "library"
+        },
+        {
+          "text": ", since every day I "
+        },
+        {
+          "text": "have to",
+          "mark": "structure"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "come up with",
+          "mark": "unverified"
+        },
+        {
+          "text": " different "
+        },
+        {
+          "text": "solutions to new problems",
+          "mark": "checked",
+          "note": "OZDIC · PREP: ~ for, ~ to (✓ ~ to)"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "On top of that,",
+          "mark": "structure"
+        },
+        {
+          "text": " I "
+        },
+        {
+          "text": "work closely with",
+          "mark": "checked",
+          "note": "OZDIC · ADV: hard, steadily, round the clock, full-time, part-time, efficiently, closely, collaboratively, together, alone, independently, away (✓ closely)"
+        },
+        {
+          "text": " the business team and our clients, which "
+        },
+        {
+          "text": "gives me plenty of opportunities to",
+          "mark": "checked",
+          "note": "Longman · VERB + OPPORTUNITY: have, take, use, seize, grasp an, miss, lose an, give sb, get an, provide, present, open up an (✓ give sb)"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "exchange ideas",
+          "mark": "checked",
+          "note": "Longman · VERB + IDEA: have an, get an, give sb an, come up with an, hit on an, toy with an, brainstorm, share, exchange, an ~ comes to sb (✓ exchange)"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "improve my communication skills",
+          "mark": "checked",
+          "note": "OZDIC · VERB + SKILL: have, possess, lack, need, require, take, acquire, develop, learn, pick up, demonstrate, display (✓ improve)"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "Definitely",
+              "mark": "structure"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "It's quite a "
+            },
+            {
+              "text": "challenging job",
+              "mark": "library"
+            },
+            {
+              "text": ", since every day I "
+            },
+            {
+              "text": "have to",
+              "mark": "structure"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "come up with",
+              "mark": "unverified"
+            },
+            {
+              "text": " different "
+            },
+            {
+              "text": "solutions to new problems",
+              "mark": "checked",
+              "note": "OZDIC · PREP: ~ for, ~ to (✓ ~ to)"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "On top of that,",
+              "mark": "structure"
+            },
+            {
+              "text": " I "
+            },
+            {
+              "text": "work closely with",
+              "mark": "checked",
+              "note": "OZDIC · ADV: hard, steadily, round the clock, full-time, part-time, efficiently, closely, collaboratively, together, alone, independently, away (✓ closely)"
+            },
+            {
+              "text": " the business team and our clients, which "
+            },
+            {
+              "text": "gives me plenty of opportunities to",
+              "mark": "checked",
+              "note": "Longman · VERB + OPPORTUNITY: have, take, use, seize, grasp an, miss, lose an, give sb, get an, provide, present, open up an (✓ give sb)"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "exchange ideas",
+              "mark": "checked",
+              "note": "Longman · VERB + IDEA: have an, get an, give sb an, come up with an, hit on an, toy with an, brainstorm, share, exchange, an ~ comes to sb (✓ exchange)"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "improve my communication skills",
+              "mark": "checked",
+              "note": "OZDIC · VERB + SKILL: have, possess, lack, need, require, take, acquire, develop, learn, pick up, demonstrate, display (✓ improve)"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "Definitely",
+          "text": "Definitely",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "have to V",
+          "text": "have to",
+          "tool": "cause",
+          "fromGuide": true
+        },
+        {
+          "pattern": "On top of that, SV",
+          "text": "On top of that,",
+          "tool": "cause",
+          "fromGuide": false
+        }
+      ],
+      "wording": [
+        {
+          "text": "solutions to new problems",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · PREP: ~ for, ~ to (✓ ~ to)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/solution"
+            }
+          ]
+        },
+        {
+          "text": "work closely with",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · ADV: hard, steadily, round the clock, full-time, part-time, efficiently, closely, collaboratively, together, alone, independently, away (✓ closely)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/work"
+            }
+          ]
+        },
+        {
+          "text": "exchange ideas",
+          "verified": true,
+          "dictionary": [
+            "Longman · VERB + IDEA: have an, get an, give sb an, come up with an, hit on an, toy with an, brainstorm, share, exchange, an ~ comes to sb (✓ exchange)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/idea"
+            }
+          ]
+        },
+        {
+          "text": "improve my communication skills",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · VERB + SKILL: have, possess, lack, need, require, take, acquire, develop, learn, pick up, demonstrate, display (✓ improve)",
+            "Longman · ADJ.: communication (✓ communication)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/skill"
+            },
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/skill"
+            }
+          ]
+        },
+        {
+          "text": "challenging job",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · ADJ: high-powered, top, decent, good, worthwhile, interesting, plum, cushy, dream, ideal, boring, dead-end (✓ challenging)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/job"
+            }
+          ]
+        },
+        {
+          "text": "gives me plenty of opportunities to",
+          "verified": true,
+          "dictionary": [
+            "Longman · VERB + OPPORTUNITY: have, take, use, seize, grasp an, miss, lose an, give sb, get an, provide, present, open up an (✓ give sb)",
+            "Longman · ADJ.: plenty of (✓ plenty of)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/opportunity"
+            }
+          ]
+        }
+      ],
+      "meaning": "Yes. The job is challenging: every day I have to think of different solutions to new problems. I also work with the business team and clients, so I get many chances to talk with people and improve my communication skills.",
+      "polish": [
+        {
+          "original": "demanding job",
+          "replacement": "challenging job",
+          "kind": "meaning",
+          "why": "\"Demanding\" nhấn mạnh áp lực, vất vả; ý gốc là thử thách theo nghĩa tích cực, phù hợp câu trả lời \"thích\".",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · ADJ: high-powered, top, decent, good, worthwhile, interesting, plum, cushy, dream, ideal, boring, dead-end (✓ challenging)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/job"
+            }
+          ]
+        },
+        {
+          "original": "provides opportunities for me to",
+          "replacement": "gives me plenty of opportunities to",
+          "kind": "natural",
+          "why": "\"Provides opportunities for me\" cứng, giống văn viết; \"gives me plenty of opportunities\" tự nhiên hơn khi nói.",
+          "verified": true,
+          "dictionary": [
+            "Longman · VERB + OPPORTUNITY: have, take, use, seize, grasp an, miss, lose an, give sb, get an, provide, present, open up an (✓ give sb)",
+            "Longman · ADJ.: plenty of (✓ plenty of)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/opportunity"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "candidates": 109,
+  "usage": {
+    "model": "claude-opus-5-5",
+    "input": 26435,
+    "output": 5526,
+    "thinking": 2093
+  }
+}

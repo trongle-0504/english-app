@@ -1,0 +1,1421 @@
+{
+  "id": "mvddqwgt-fffb58",
+  "createdAt": "2026-10-18T05:23:32.958Z",
+  "durationMs": 126784,
+  "topic": "PERSON",
+  "part": 3,
+  "mode": "answer",
+  "engine": "antigravity",
+  "answers": [
+    {
+      "question": "Does any job bring people a sense of pride?",
+      "idea": "Tôi hoàn toàn đồng ý rằng bất kỳ ngành nghề nào cũng có thể mang lại niềm tự hào chính đáng cho người lao động. Điều cốt lõi là công việc đó tuân thủ đúng pháp luật, xuất phát từ lao động chân chính và đem lại giá trị thiết thực cho cộng đồng. Chẳng hạn, một người quản lý dự án công nghệ có thể tự hào vì đã xây dựng nên các giải pháp phần mềm tối ưu cho sự phát triển của xã hội. Trong khi đó, những cô chú lao công hay tài xế vận tải cũng có quyền ngẩng cao đầu vì họ góp phần giữ cho đường phố luôn sạch đẹp và việc đi lại của người dân được thuận tiện. Tựu trung lại, giá trị của niềm tự hào nằm ở đạo đức nghề nghiệp và sự đóng góp cho xã hội chứ không phụ thuộc vào vị thế cao hay thấp.",
+      "ideaFormatted": {
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "label": "Quan điểm",
+            "text": "Tôi hoàn toàn đồng ý rằng bất kỳ ngành nghề nào cũng có thể mang lại niềm tự hào chính đáng cho người lao động. Điều cốt lõi là công việc đó tuân thủ đúng pháp luật, xuất phát từ lao động chân chính và đem lại giá trị thiết thực cho cộng đồng."
+          },
+          {
+            "kind": "bullet",
+            "label": "Ví dụ 1",
+            "text": "Chẳng hạn, một người quản lý dự án công nghệ có thể tự hào vì đã xây dựng nên các giải pháp phần mềm tối ưu cho sự phát triển của xã hội."
+          },
+          {
+            "kind": "bullet",
+            "label": "Ví dụ 2",
+            "text": "Trong khi đó, những cô chú lao công hay tài xế vận tải cũng có quyền ngẩng cao đầu vì họ góp phần giữ cho đường phố luôn sạch đẹp và việc đi lại của người dân được thuận tiện."
+          },
+          {
+            "kind": "paragraph",
+            "label": "Kết luận",
+            "text": "Tựu trung lại, giá trị của niềm tự hào nằm ở đạo đức nghề nghiệp và sự đóng góp cho xã hội chứ không phụ thuộc vào vị thế cao hay thấp."
+          }
+        ]
+      },
+      "picks": [
+        {
+          "cardId": "colloc:unit-liking-and-disliking:take-pride-in",
+          "term": "take pride in",
+          "slot": "take pride in + N/V-ing",
+          "meaning_vi": "Tự hào về điều gì đó.",
+          "origin": "Liking and disliking",
+          "href": "/collocations/unit-liking-and-disliking#take-pride-in",
+          "how": "Dùng trong câu trả lời trực tiếp để diễn đạt việc tự hào về công việc.",
+          "example": "Workers across all professions deserve to take pride in what they do.",
+          "inReview": true,
+          "learning": true,
+          "isTopicCollocation": false
+        },
+        {
+          "cardId": "colloc:everyday-verbs-1:make-a-contribution-to",
+          "term": "make a contribution to",
+          "slot": "make a contribution to + N",
+          "meaning_vi": "Đóng góp (tiền bạc, ý tưởng, công sức) vào một cái gì đó.",
+          "origin": "Everyday verbs 1",
+          "href": "/collocations/everyday-verbs-1#make-a-contribution-to",
+          "how": "Dùng ở câu giải thích lý do để chỉ việc đóng góp thiết thực cho cộng đồng.",
+          "example": "Every honest job helps people make a contribution to society.",
+          "inReview": true,
+          "learning": true,
+          "isTopicCollocation": false
+        },
+        {
+          "cardId": "note:work-ethic",
+          "term": "work ethic",
+          "slot": "have a strong work ethic",
+          "meaning_vi": "Đạo đức nghề nghiệp / Tinh thần làm việc. Nó không đơn thuần là “đạo đức” theo nghĩa đúng/sai, mà nói về thái độ và nguyên tắc của một người đối với việc làm, chẳng hạn:\n* chăm chỉ\n* kỷ luật\n* có trách nhiệm\n* kiên trì\n* nghiêm túc với công việc",
+          "origin": "Note · Vocabulary",
+          "href": "/notes#work-ethic",
+          "how": "Dùng ở câu kết luận để nhấn mạnh giá trị của đạo đức nghề nghiệp.",
+          "example": "True pride comes from a strong work ethic rather than a high title.",
+          "inReview": true,
+          "learning": true,
+          "isTopicCollocation": false
+        },
+        {
+          "cardId": "topic-colloc:work:economic-status",
+          "term": "economic status",
+          "meaning_vi": "địa vị kinh tế",
+          "origin": "Topic Collocations · Work",
+          "href": "/blog?topic=collocations-by-topic",
+          "how": "Dùng ở câu kết để đối chiếu với địa vị kinh tế xã hội.",
+          "example": "Pride shouldn't simply depend on someone's economic status.",
+          "inReview": false,
+          "learning": false,
+          "isTopicCollocation": true
+        },
+        {
+          "cardId": "topic-colloc:architecture:a-sense-of-pride",
+          "term": "a sense of pride",
+          "meaning_vi": "cảm giác tự hào",
+          "origin": "Topic Collocations · Architecture",
+          "href": "/blog?topic=collocations-by-topic",
+          "how": "Dùng để diễn tả cảm giác tự hào chân chính từ lao động.",
+          "example": "Doing honest work brings people a genuine sense of pride.",
+          "inReview": false,
+          "learning": false,
+          "isTopicCollocation": true
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "honest living",
+          "meaning_vi": "kiếm sống lương thiện, lao động chân chính",
+          "example": "Anyone who earns an honest living has every right to feel proud.",
+          "verified": false,
+          "dictionary": [],
+          "sources": [],
+          "natural": true
+        }
+      ],
+      "answer": [
+        {
+          "text": "Definitely",
+          "mark": "structure"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "I would say that",
+          "mark": "structure"
+        },
+        {
+          "text": " any job can give people "
+        },
+        {
+          "text": "a sense of pride",
+          "mark": "library"
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "as long as",
+          "mark": "structure"
+        },
+        {
+          "text": " it is legal and provides an "
+        },
+        {
+          "text": "honest living",
+          "mark": "natural",
+          "note": "Longman và OZDIC không liệt kê cụm này, nhưng AI đánh giá đây là cách nói tự nhiên."
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "The main reason is that",
+          "mark": "structure"
+        },
+        {
+          "text": " everyone who "
+        },
+        {
+          "text": "does their job well",
+          "mark": "natural",
+          "note": "Longman và OZDIC không liệt kê cụm này, nhưng AI đánh giá đây là cách nói tự nhiên."
+        },
+        {
+          "text": " can "
+        },
+        {
+          "text": "make a positive contribution to",
+          "mark": "library"
+        },
+        {
+          "text": " society."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "For instance",
+          "mark": "structure"
+        },
+        {
+          "text": ", a "
+        },
+        {
+          "text": "project manager",
+          "mark": "checked",
+          "note": "OZDIC · ADJ: project (✓ project)"
+        },
+        {
+          "text": " can "
+        },
+        {
+          "text": "take pride in",
+          "mark": "library"
+        },
+        {
+          "text": " delivering useful "
+        },
+        {
+          "text": "software solutions",
+          "mark": "natural",
+          "note": "Longman và OZDIC không liệt kê cụm này, nhưng AI đánh giá đây là cách nói tự nhiên."
+        },
+        {
+          "text": ", "
+        },
+        {
+          "text": "while",
+          "mark": "structure"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "street sweepers",
+          "mark": "checked",
+          "note": "OZDIC · street · STREET + NOUN: corner, map, plan, layout, network, pattern, name, number, sign, lamp, light, lighting (✓ sweeper)"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "delivery drivers",
+          "mark": "checked",
+          "note": "Longman · ADJ.: a delivery (✓ a delivery)"
+        },
+        {
+          "text": " also help "
+        },
+        {
+          "text": "keep our cities clean",
+          "mark": "checked",
+          "note": "OZDIC · clean · VERBS: be, look, seem, smell, stay, brush sth, get sth, scrape sth, scrub sth, wipe sth, leave sth, keep sth (✓ keep sth)"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "running smoothly",
+          "mark": "natural",
+          "note": "Longman và OZDIC không liệt kê cụm này, nhưng AI đánh giá đây là cách nói tự nhiên."
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "All in all",
+          "mark": "structure"
+        },
+        {
+          "text": ", the "
+        },
+        {
+          "text": "real value",
+          "mark": "checked",
+          "note": "Longman · ADJ.: high, low, the market, the monetary, cash, face, the real, the street, property, land (✓ the real)"
+        },
+        {
+          "text": " of a job comes from "
+        },
+        {
+          "text": "working hard",
+          "mark": "checked",
+          "note": "Longman · ADJ.: hard (✓ hard)"
+        },
+        {
+          "text": " and helping others, "
+        },
+        {
+          "text": "rather than",
+          "mark": "structure"
+        },
+        {
+          "text": " having a high "
+        },
+        {
+          "text": "social status",
+          "mark": "checked",
+          "note": "Longman · ADJ.: high, low, higher, superior, lower, inferior, exalted, equal, social, socioeconomic, professional (✓ social)"
+        },
+        {
+          "text": "."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "Definitely",
+              "mark": "structure"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "I would say that",
+              "mark": "structure"
+            },
+            {
+              "text": " any job can give people "
+            },
+            {
+              "text": "a sense of pride",
+              "mark": "library"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "as long as",
+              "mark": "structure"
+            },
+            {
+              "text": " it is legal and provides an "
+            },
+            {
+              "text": "honest living",
+              "mark": "natural",
+              "note": "Longman và OZDIC không liệt kê cụm này, nhưng AI đánh giá đây là cách nói tự nhiên."
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "The main reason is that",
+              "mark": "structure"
+            },
+            {
+              "text": " everyone who "
+            },
+            {
+              "text": "does their job well",
+              "mark": "natural",
+              "note": "Longman và OZDIC không liệt kê cụm này, nhưng AI đánh giá đây là cách nói tự nhiên."
+            },
+            {
+              "text": " can "
+            },
+            {
+              "text": "make a positive contribution to",
+              "mark": "library"
+            },
+            {
+              "text": " society."
+            }
+          ]
+        },
+        {
+          "tool": "example",
+          "segments": [
+            {
+              "text": "For instance",
+              "mark": "structure"
+            },
+            {
+              "text": ", a "
+            },
+            {
+              "text": "project manager",
+              "mark": "checked",
+              "note": "OZDIC · ADJ: project (✓ project)"
+            },
+            {
+              "text": " can "
+            },
+            {
+              "text": "take pride in",
+              "mark": "library"
+            },
+            {
+              "text": " delivering useful "
+            },
+            {
+              "text": "software solutions",
+              "mark": "natural",
+              "note": "Longman và OZDIC không liệt kê cụm này, nhưng AI đánh giá đây là cách nói tự nhiên."
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "while",
+              "mark": "structure"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "street sweepers",
+              "mark": "checked",
+              "note": "OZDIC · street · STREET + NOUN: corner, map, plan, layout, network, pattern, name, number, sign, lamp, light, lighting (✓ sweeper)"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "delivery drivers",
+              "mark": "checked",
+              "note": "Longman · ADJ.: a delivery (✓ a delivery)"
+            },
+            {
+              "text": " also help "
+            },
+            {
+              "text": "keep our cities clean",
+              "mark": "checked",
+              "note": "OZDIC · clean · VERBS: be, look, seem, smell, stay, brush sth, get sth, scrape sth, scrub sth, wipe sth, leave sth, keep sth (✓ keep sth)"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "running smoothly",
+              "mark": "natural",
+              "note": "Longman và OZDIC không liệt kê cụm này, nhưng AI đánh giá đây là cách nói tự nhiên."
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "conclusion",
+          "segments": [
+            {
+              "text": "All in all",
+              "mark": "structure"
+            },
+            {
+              "text": ", the "
+            },
+            {
+              "text": "real value",
+              "mark": "checked",
+              "note": "Longman · ADJ.: high, low, the market, the monetary, cash, face, the real, the street, property, land (✓ the real)"
+            },
+            {
+              "text": " of a job comes from "
+            },
+            {
+              "text": "working hard",
+              "mark": "checked",
+              "note": "Longman · ADJ.: hard (✓ hard)"
+            },
+            {
+              "text": " and helping others, "
+            },
+            {
+              "text": "rather than",
+              "mark": "structure"
+            },
+            {
+              "text": " having a high "
+            },
+            {
+              "text": "social status",
+              "mark": "checked",
+              "note": "Longman · ADJ.: high, low, higher, superior, lower, inferior, exalted, equal, social, socioeconomic, professional (✓ social)"
+            },
+            {
+              "text": "."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "Definitely",
+          "text": "Definitely",
+          "tool": "lead_in",
+          "fromGuide": true
+        },
+        {
+          "pattern": "I would say that SV",
+          "text": "I would say that",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "as long as SV",
+          "text": "as long as",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "The main reason is that SV",
+          "text": "The main reason is that",
+          "tool": "cause",
+          "fromGuide": true
+        },
+        {
+          "pattern": "For instance, SV",
+          "text": "For instance",
+          "tool": "example",
+          "fromGuide": true
+        },
+        {
+          "pattern": "while SV",
+          "text": "while",
+          "tool": "example",
+          "fromGuide": true
+        },
+        {
+          "pattern": "All in all, SV",
+          "text": "All in all",
+          "tool": "conclusion",
+          "fromGuide": true
+        },
+        {
+          "pattern": "rather than V-ing",
+          "text": "rather than",
+          "tool": "conclusion",
+          "fromGuide": true
+        }
+      ],
+      "wording": [
+        {
+          "text": "honest living",
+          "meaning_vi": "cuộc sống lương thiện / kiếm sống một cách lương thiện",
+          "verified": false,
+          "natural": true,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "text": "provides an honest living",
+          "meaning_vi": "mang lại cuộc sống lương thiện",
+          "verified": false,
+          "natural": true,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "text": "an honest living",
+          "meaning_vi": "kế sinh nhai lương thiện",
+          "verified": false,
+          "natural": true,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "text": "does their job well",
+          "meaning_vi": "làm tốt công việc của họ",
+          "verified": false,
+          "natural": true,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "text": "software solutions",
+          "meaning_vi": "các giải pháp phần mềm",
+          "verified": false,
+          "natural": true,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "text": "delivery drivers",
+          "meaning_vi": "tài xế giao hàng",
+          "verified": true,
+          "dictionary": [
+            "Longman · ADJ.: a delivery (✓ a delivery)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/driver"
+            }
+          ]
+        },
+        {
+          "text": "running smoothly",
+          "meaning_vi": "vận hành trơn tru / hoạt động suôn sẻ",
+          "verified": false,
+          "natural": true,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "text": "project manager",
+          "meaning_vi": "người quản lý dự án",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · ADJ: project (✓ project)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/manager"
+            }
+          ]
+        },
+        {
+          "text": "street sweepers",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · street · STREET + NOUN: corner, map, plan, layout, network, pattern, name, number, sign, lamp, light, lighting (✓ sweeper)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/street"
+            }
+          ]
+        },
+        {
+          "text": "keep our cities clean",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · clean · VERBS: be, look, seem, smell, stay, brush sth, get sth, scrape sth, scrub sth, wipe sth, leave sth, keep sth (✓ keep sth)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/clean"
+            }
+          ]
+        },
+        {
+          "text": "real value",
+          "meaning_vi": "giá trị thực sự",
+          "verified": true,
+          "dictionary": [
+            "Longman · ADJ.: high, low, the market, the monetary, cash, face, the real, the street, property, land (✓ the real)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/value"
+            }
+          ]
+        },
+        {
+          "text": "social status",
+          "meaning_vi": "địa vị xã hội",
+          "verified": true,
+          "dictionary": [
+            "Longman · ADJ.: high, low, higher, superior, lower, inferior, exalted, equal, social, socioeconomic, professional (✓ social)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/status"
+            }
+          ]
+        },
+        {
+          "text": "the real value",
+          "meaning_vi": "giá trị thực sự",
+          "verified": true,
+          "dictionary": [
+            "Longman · ADJ.: high, low, the market, the monetary, cash, face, the real, the street, property, land (✓ the real)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/value"
+            }
+          ]
+        },
+        {
+          "text": "working hard",
+          "meaning_vi": "làm việc chăm chỉ",
+          "verified": true,
+          "dictionary": [
+            "Longman · ADJ.: hard (✓ hard)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/work"
+            }
+          ]
+        }
+      ],
+      "coverage": {
+        "listed": 18,
+        "dropped": [],
+        "scanned": 2,
+        "retried": [],
+        "uncovered": [],
+        "fetches": 6
+      },
+      "meaning": "Any lawful job can bring legitimate pride → comes from honest work and provides practical value to society → a project manager builds software solutions while street cleaners and drivers keep cities clean and accessible → true pride stems from work ethic and social contribution, not status",
+      "polish": [
+        {
+          "original": "constitutes",
+          "replacement": "provides",
+          "kind": "natural",
+          "why": "'constitute' mang sắc thái văn bản quá trang trọng cho thi nói; dùng 'provides an honest living' tự nhiên hơn.",
+          "verified": true,
+          "dictionary": [
+            "Longman có mục từ “provide”"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/provide"
+            }
+          ]
+        },
+        {
+          "original": "relying on high economic status",
+          "replacement": "having high social status",
+          "kind": "natural",
+          "why": "'relying on high economic status' diễn đạt không tự nhiên; 'social status' sát nghĩa vị thế xã hội và cấu trúc song hành hơn.",
+          "verified": true,
+          "dictionary": [
+            "Longman · ADJ.: high, low, higher, superior, lower, inferior, exalted, equal, social, socioeconomic, professional (✓ social)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/status"
+            }
+          ]
+        }
+      ],
+      "dol": [
+        {
+          "query": "niềm tự hào chính đáng",
+          "vi": "niềm tự hào",
+          "en": "pride",
+          "alt": "dignity",
+          "pos": "noun",
+          "definitionVi": "Niềm tự hào là niềm vui thể hiện sự hài lòng và hạnh phúc với những gì bạn đạt được hoặc với những gì bạn yêu quý.",
+          "example": {
+            "vi": "Niềm tự hào của con người cũng là điểm yếu của họ.",
+            "en": "People's pride is also their weakness."
+          },
+          "note": "- niềm tự hào: Human pride is human weakness. (Niềm tự hào của con người cũng là điểm yếu của họ.) - niềm kiêu hãnh: Pride would not allow him to accept the money. (Niềm kiêu hãnh không cho phép anh ấy nhận số tiền này.) - sự kiêu ngạo: She was full of pride…",
+          "url": "https://tudien.dolenglish.vn/niem-tu-hao-tieng-anh-la-gi",
+          "match": "near"
+        },
+        {
+          "query": "niềm tự hào chính đáng",
+          "vi": "chính đáng",
+          "en": "legitimate",
+          "alt": "Valid, Justified",
+          "pos": "adj",
+          "definitionVi": "Chính đáng là hợp lý và đáng được công nhận hoặc chấp nhận.",
+          "example": {
+            "vi": "Những mối quan tâm của anh ấy là chính đáng và cần được giải quyết.",
+            "en": "Cô ấy đã nêu ra một câu hỏi chính đáng trong cuộc họp."
+          },
+          "note": "• Lawful – Hợp pháp Lawful nhấn mạnh sự tuân thủ theo luật pháp, phù hợp với các quy định pháp lý. • Valid – Hợp lệ Valid mô tả điều gì đó có giá trị hợp pháp hoặc được chấp nhận chính thức. • Justifiable – Chính đáng Justifiable mô tả điều gì đó có lý do…",
+          "url": "https://tudien.dolenglish.vn/chinh-dang-tieng-anh-la-gi-833437",
+          "match": "near"
+        },
+        {
+          "query": "niềm tự hào chính đáng",
+          "vi": "tự hào",
+          "en": "proud",
+          "alt": "fulfilled, gratified",
+          "definitionVi": "Tự hào là hài lòng, thỏa mãn và hãnh diện về cái tốt đẹp hoặc thành tích mà mình có.",
+          "example": {
+            "vi": "Cả tôi và Tom đều rất tự hào về bạn.",
+            "en": "Both Tom and I are very proud of you."
+          },
+          "url": "https://tudien.dolenglish.vn/tu-hao-tieng-anh-la-gi",
+          "match": "near"
+        },
+        {
+          "query": "tuân thủ đúng pháp luật",
+          "vi": "Tuân thủ luật pháp",
+          "en": "abide by the law",
+          "alt": "Obey, Follow",
+          "pos": "verb",
+          "definitionVi": "“Tuân thủ luật pháp” là việc làm theo các quy định của pháp luật.",
+          "example": {
+            "vi": "Công dân phải tuân thủ luật pháp.",
+            "en": "Citizens must abide by the law."
+          },
+          "url": "https://tudien.dolenglish.vn/tuan-thu-luat-phap-tieng-anh-la-gi",
+          "match": "near"
+        },
+        {
+          "query": "tuân thủ đúng pháp luật",
+          "vi": "đúng luật",
+          "en": "lawful",
+          "alt": "Legal, legitimate",
+          "pos": "adj",
+          "definitionVi": "Đúng luật là trạng thái tuân thủ đầy đủ các quy định hoặc quy tắc.",
+          "example": {
+            "vi": "Hành động của anh ấy đúng luật theo quy định của công ty.",
+            "en": "His actions were lawful under company regulations."
+          },
+          "url": "https://tudien.dolenglish.vn/dung-luat-tieng-anh-la-gi",
+          "match": "near"
+        },
+        {
+          "query": "lao động chân chính",
+          "vi": "chân chính",
+          "en": "genuine",
+          "pos": "noun",
+          "definitionVi": "Chân chính từ mô tả phẩm chất của một người nào đó, người mà chân thành và thật thà và có thể tin tưởng được. Ngoài ra chân chính còn có thể được hiểu với một thứ gì đó là đồ thật, không phải được làm giả hoặc nhái.",
+          "example": {
+            "vi": "Anh ấy đã thực hiện một nỗ lực chân chính để cải thiện tình hình.",
+            "en": "He made a genuine attempt to improve conditions."
+          },
+          "note": "Chúng ta cùng học một số tính từ thường được dùng để miêu tả đức tính tốt đẹp của một người trong tiếng Anh nhé: Tiết kiệm: thrifty Chịu khó/Chăm chỉ: hardworking Quan tâm: caring Can đảm: brave Bền bỉ: enduring Biết điều: reasonable Chân chính: genuine Chân…",
+          "url": "https://tudien.dolenglish.vn/chan-chinh-tieng-anh-la-gi",
+          "match": "near"
+        },
+        {
+          "query": "giá trị thiết thực",
+          "vi": "giá trị",
+          "en": "value",
+          "pos": "noun",
+          "definitionVi": "Giá trị là một khái niệm trừu tượng, là ý nghĩa của sự vật trên phương diện phù hợp với nhu cầu của con người.",
+          "example": {
+            "vi": "Giá trị bất động sản đã giảm kể từ khi kế hoạch xây dựng sân bay được công bố.",
+            "en": "Property values have fallen since the plans for the airport were published."
+          },
+          "note": "- Giá, giá cả (price) là số tiền phải trả để mua bất kỳ sản phẩm hoặc dịch vụ nào.",
+          "url": "https://tudien.dolenglish.vn/gia-tri-tieng-anh-la-gi",
+          "match": "near"
+        },
+        {
+          "query": "giá trị thiết thực",
+          "vi": "thiết thực",
+          "en": "practical",
+          "alt": "realistic, empirical",
+          "pos": "adj",
+          "definitionVi": "Thiết thực là hợp với yêu cầu, với những vấn đề của thực tế trước mắt.",
+          "example": {
+            "vi": "Cuốn sách này quá lý thuyết; tôi cần một hướng dẫn thiết thực.",
+            "en": "This book is too theoretical; I need a practical guide."
+          },
+          "note": "Một số từ đồng nghĩa với practical: - thực tế (realistic): Jobs are scarce at the moment, so you've got to be realistic. (Việc làm đang khan hiếm vào lúc này, vì vậy bạn phải thực tế.) - thực tiễn (empirical): There is no empirical evidence to support his…",
+          "url": "https://tudien.dolenglish.vn/thiet-thuc-tieng-anh-la-gi",
+          "match": "near"
+        },
+        {
+          "query": "giá trị thiết thực",
+          "vi": "giá trị thực tế",
+          "en": "actual value",
+          "alt": "true value",
+          "pos": "noun",
+          "definitionVi": "\"Giá trị thực tế\" là giá trị thực của tài sản hoặc dịch vụ trên thị trường.",
+          "example": {
+            "vi": "Giá trị thực tế hỗ trợ định giá tài sản chính xác.",
+            "en": "Actual values support accurate asset appraisal."
+          },
+          "url": "https://tudien.dolenglish.vn/gia-tri-thuc-te-tieng-anh-la-gi",
+          "match": "near"
+        },
+        {
+          "query": "giá trị thiết thực",
+          "vi": "chân giá trị",
+          "en": "true value",
+          "alt": "intrinsic value",
+          "definitionVi": "Chân giá trị là giá trị thực sự, không thay đổi theo thời gian hoặc hoàn cảnh.",
+          "example": {
+            "vi": "Chân giá trị của sự trung thực không thể bị đánh giá thấp.",
+            "en": "The true value of honesty cannot be overstated."
+          },
+          "url": "https://tudien.dolenglish.vn/chan-gia-tri-tieng-anh-la-gi",
+          "match": "near"
+        },
+        {
+          "query": "quản lý dự án",
+          "vi": "quản lý dự án",
+          "en": "project management",
+          "pos": "noun",
+          "definitionVi": "Quản lý dự án là việc áp dụng các kiến thức, kỹ năng, công cụ và kỹ thuật vào các hoạt động dự án nhằm đáp ứng các yêu cầu của dự án khi đặt trong các giới hạn về thời gian, chi phí và nguồn lực.",
+          "example": {
+            "vi": "Hai công ty sẽ thành lập một nhóm quản lý dự án tích hợp, chia sẻ rủi ro và phần thưởng nhưng không chia sẻ rủi ro về doanh thu hoặc quy định.",
+            "en": "The two companies will form an integrated project management team, sharing risks and rewards but not revenue or regulatory risks."
+          },
+          "note": "- Dự án (project) là một tập hợp các hoạt động có liên quan đến nhau được thực hiện trong một khoảng thời gian có hạn, với những nguồn lực đã được giới hạn; nhất là nguồn tài chính có giới hạn để đạt được những mục tiêu cụ thể, rõ ràng, làm thỏa mãn nhu cầu…",
+          "url": "https://tudien.dolenglish.vn/quan-ly-du-an-tieng-anh-la-gi",
+          "match": "exact"
+        },
+        {
+          "query": "quản lý dự án",
+          "vi": "người quản lý dự án",
+          "en": "project manager",
+          "definitionVi": "Người quản lý dự án là người lãnh đạo một dự án, người phải chịu trách nhiệm hoàn thành các mục tiêu đề ra từ khi bắt đầu đến khi thực hiện và kết thúc.",
+          "example": {
+            "vi": "Ông có 25 năm kinh nghiệm với tư cách là người quản lý dự án và nhà công nghệ kiến trúc.",
+            "en": "He has 25 years' experience as a project manager and architectural technologist."
+          },
+          "url": "https://tudien.dolenglish.vn/nguoi-quan-ly-du-an-tieng-anh-la-gi",
+          "match": "near"
+        },
+        {
+          "query": "giải pháp phần mềm",
+          "vi": "giải pháp",
+          "en": "solution",
+          "pos": "noun",
+          "definitionVi": "Giải pháp là phương pháp giải quyết vấn đề.",
+          "example": {
+            "vi": "Cắt giảm nhân sự chỉ là giải pháp tạm thời cho vấn đề.",
+            "en": "Downsizing is just a temporary solution to the problem."
+          },
+          "note": "Một số collocations với solution: - tìm kiếm giải pháp (find a solution): She can not find a solution to the problem. (Cô ấy không thể tìm kiếm giải pháp cho vấn đề.) - đưa ra giải pháp (produce a solution): They have worked hard to produce a solution which…",
+          "url": "https://tudien.dolenglish.vn/giai-phap-tieng-anh-la-gi",
+          "match": "near"
+        },
+        {
+          "query": "giải pháp phần mềm",
+          "vi": "phần mềm",
+          "en": "software",
+          "pos": "noun",
+          "definitionVi": "Phần mềm là một tập hợp các hướng dẫn cho phép phần cứng thực hiện một tập hợp các nhiệm vụ cụ thể.",
+          "example": {
+            "vi": "Công ty chúng tôi vừa mua một phần mềm kế toán mới.",
+            "en": "Our company just purchased new accounting software."
+          },
+          "note": "- Phần cứng (hardware) là các thành phần vật lý và hữu hình của hệ thống như màn hình, CPU, bàn phím và chuột. - Phần mềm (software) là một tập hợp các hướng dẫn cho phép phần cứng thực hiện một tập hợp các nhiệm vụ cụ thể.",
+          "url": "https://tudien.dolenglish.vn/phan-mem-tieng-anh-la-gi",
+          "match": "near"
+        },
+        {
+          "query": "lao công",
+          "vi": "Cô lao công",
+          "en": "janitor",
+          "alt": "Cleaner, Maintenance Worker",
+          "pos": "noun",
+          "definitionVi": "“Cô lao công” là người phụ nữ làm công việc dọn dẹp và vệ sinh tại các cơ quan hoặc công trình.",
+          "example": {
+            "vi": "Cô lao công dọn dẹp hành lang sau giờ học.",
+            "en": "The janitor cleaned the hallways after school hours."
+          },
+          "note": "• Custodian – Người trông coi và vệ sinh Custodian thường ám chỉ người chịu trách nhiệm không chỉ dọn dẹp mà còn bảo quản tài sản của cơ sở. • Cleaner – Người dọn dẹp Cleaner là cách nói chung hơn, chỉ những người làm công việc vệ sinh mà không nhấn mạnh…",
+          "url": "https://tudien.dolenglish.vn/co-lao-cong-tieng-anh-la-gi",
+          "match": "exact"
+        },
+        {
+          "query": "lao công",
+          "vi": "người dọn vệ sinh",
+          "en": "janitor",
+          "alt": "janitorial staff",
+          "pos": "noun",
+          "definitionVi": "\"Người dọn vệ sinh là người làm vệ sinh và sửa chữa các vấn đề liên quan đến vệ sinh. \"",
+          "example": {
+            "vi": "Người dọn vệ sinh của trường có chìa khóa của mọi lớp học trong tòa nhà.",
+            "en": "The school janitor had keys to every classroom in the building."
+          },
+          "note": "- housekeeper (tạp vụ): The hotel plans to have an all-male housekeepers. (Khách sạn có kế hoạch tuyển dụng một đội ngũ tạp vụ chỉ có nam giới.) - housemaid (người giúp việc), thường là nữ: The housemaid hoovers the carpet every day. (Người giúp việc trải…",
+          "url": "https://tudien.dolenglish.vn/nguoi-don-ve-sinh-tieng-anh-la-gi",
+          "match": "exact"
+        },
+        {
+          "query": "lao công",
+          "vi": "nhân viên lao công",
+          "en": "cleaner",
+          "alt": "janitor",
+          "definitionVi": "Nhân viên lao công là nhân viên đảm bảo vệ sinh cho cơ quan họ đang làm việc, ví dụ như trong các công ty, khách sạn, công sở, nhà trường, bệnh viện,...",
+          "example": {
+            "vi": "Nhân viên lao công dọn sạch thùng rác và vệ sinh phòng vệ sinh.",
+            "en": "The cleaner emptied the trash bins and sanitized the restrooms."
+          },
+          "url": "https://tudien.dolenglish.vn/nhan-vien-lao-cong-tieng-anh-la-gi",
+          "match": "near"
+        }
+      ],
+      "originalAnswer": {
+        "answer": [
+          {
+            "text": "Definitely",
+            "mark": "structure"
+          },
+          {
+            "text": ", "
+          },
+          {
+            "text": "I would say that",
+            "mark": "structure"
+          },
+          {
+            "text": " any job can give people "
+          },
+          {
+            "text": "a sense of pride",
+            "mark": "library"
+          },
+          {
+            "text": ", provided it is lawful and provides an "
+          },
+          {
+            "text": "honest living",
+            "mark": "natural",
+            "note": "Longman và OZDIC không liệt kê cụm này, nhưng AI đánh giá đây là cách nói tự nhiên."
+          },
+          {
+            "text": "."
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "The main reason is that",
+            "mark": "structure"
+          },
+          {
+            "text": " every worker who "
+          },
+          {
+            "text": "carries out their duties",
+            "mark": "checked",
+            "note": "Longman · VERB + DUTY: have a ~ to do sth, do your, fulfil your, have, owe a ~ to sb, fail in your (✓ carry out your)"
+          },
+          {
+            "text": " properly can "
+          },
+          {
+            "text": "make a contribution to",
+            "mark": "library"
+          },
+          {
+            "text": " the community."
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "For instance, while a "
+          },
+          {
+            "text": "project manager",
+            "mark": "checked",
+            "note": "OZDIC · ADJ: project (✓ project)"
+          },
+          {
+            "text": " can "
+          },
+          {
+            "text": "take pride in",
+            "mark": "library"
+          },
+          {
+            "text": " delivering useful "
+          },
+          {
+            "text": "software solutions",
+            "mark": "natural",
+            "note": "Longman và OZDIC không liệt kê cụm này, nhưng AI đánh giá đây là cách nói tự nhiên."
+          },
+          {
+            "text": ", "
+          },
+          {
+            "text": "street sweepers",
+            "mark": "checked",
+            "note": "OZDIC · street · STREET + NOUN: corner, map, plan, layout, network, pattern, name, number, sign, lamp, light, lighting (✓ sweeper)"
+          },
+          {
+            "text": " and "
+          },
+          {
+            "text": "delivery drivers",
+            "mark": "checked",
+            "note": "Longman · ADJ.: a delivery (✓ a delivery)"
+          },
+          {
+            "text": " also "
+          },
+          {
+            "text": "keep our cities clean",
+            "mark": "checked",
+            "note": "OZDIC · clean · VERBS: be, look, seem, smell, stay, brush sth, get sth, scrape sth, scrub sth, wipe sth, leave sth, keep sth (✓ keep sth)"
+          },
+          {
+            "text": " and functional every day."
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "All in all, "
+          },
+          {
+            "text": "real dignity",
+            "mark": "natural",
+            "note": "Longman và OZDIC không liệt kê cụm này, nhưng AI đánh giá đây là cách nói tự nhiên."
+          },
+          {
+            "text": " "
+          },
+          {
+            "text": "comes from",
+            "mark": "natural",
+            "note": "Longman và OZDIC không liệt kê cụm này, nhưng AI đánh giá đây là cách nói tự nhiên."
+          },
+          {
+            "text": " having a solid "
+          },
+          {
+            "text": "work ethic",
+            "mark": "library"
+          },
+          {
+            "text": " and serving others, rather than having "
+          },
+          {
+            "text": "high social status",
+            "mark": "checked",
+            "note": "Longman · ADJ.: high, low, higher, superior, lower, inferior, exalted, equal, social, socioeconomic, professional (✓ high)"
+          },
+          {
+            "text": "."
+          }
+        ],
+        "sentences": [
+          {
+            "tool": "answer",
+            "segments": [
+              {
+                "text": "Definitely",
+                "mark": "structure"
+              },
+              {
+                "text": ", "
+              },
+              {
+                "text": "I would say that",
+                "mark": "structure"
+              },
+              {
+                "text": " any job can give people "
+              },
+              {
+                "text": "a sense of pride",
+                "mark": "library"
+              },
+              {
+                "text": ", provided it is lawful and provides an "
+              },
+              {
+                "text": "honest living",
+                "mark": "natural",
+                "note": "Longman và OZDIC không liệt kê cụm này, nhưng AI đánh giá đây là cách nói tự nhiên."
+              },
+              {
+                "text": "."
+              }
+            ]
+          },
+          {
+            "tool": "cause",
+            "segments": [
+              {
+                "text": "The main reason is that",
+                "mark": "structure"
+              },
+              {
+                "text": " every worker who "
+              },
+              {
+                "text": "carries out their duties",
+                "mark": "checked",
+                "note": "Longman · VERB + DUTY: have a ~ to do sth, do your, fulfil your, have, owe a ~ to sb, fail in your (✓ carry out your)"
+              },
+              {
+                "text": " properly can "
+              },
+              {
+                "text": "make a contribution to",
+                "mark": "library"
+              },
+              {
+                "text": " the community."
+              }
+            ]
+          },
+          {
+            "tool": "example",
+            "segments": [
+              {
+                "text": "For instance, while a "
+              },
+              {
+                "text": "project manager",
+                "mark": "checked",
+                "note": "OZDIC · ADJ: project (✓ project)"
+              },
+              {
+                "text": " can "
+              },
+              {
+                "text": "take pride in",
+                "mark": "library"
+              },
+              {
+                "text": " delivering useful "
+              },
+              {
+                "text": "software solutions",
+                "mark": "natural",
+                "note": "Longman và OZDIC không liệt kê cụm này, nhưng AI đánh giá đây là cách nói tự nhiên."
+              },
+              {
+                "text": ", "
+              },
+              {
+                "text": "street sweepers",
+                "mark": "checked",
+                "note": "OZDIC · street · STREET + NOUN: corner, map, plan, layout, network, pattern, name, number, sign, lamp, light, lighting (✓ sweeper)"
+              },
+              {
+                "text": " and "
+              },
+              {
+                "text": "delivery drivers",
+                "mark": "checked",
+                "note": "Longman · ADJ.: a delivery (✓ a delivery)"
+              },
+              {
+                "text": " also "
+              },
+              {
+                "text": "keep our cities clean",
+                "mark": "checked",
+                "note": "OZDIC · clean · VERBS: be, look, seem, smell, stay, brush sth, get sth, scrape sth, scrub sth, wipe sth, leave sth, keep sth (✓ keep sth)"
+              },
+              {
+                "text": " and functional every day."
+              }
+            ]
+          },
+          {
+            "tool": "effect",
+            "segments": [
+              {
+                "text": "All in all, "
+              },
+              {
+                "text": "real dignity",
+                "mark": "natural",
+                "note": "Longman và OZDIC không liệt kê cụm này, nhưng AI đánh giá đây là cách nói tự nhiên."
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": "comes from",
+                "mark": "natural",
+                "note": "Longman và OZDIC không liệt kê cụm này, nhưng AI đánh giá đây là cách nói tự nhiên."
+              },
+              {
+                "text": " having a solid "
+              },
+              {
+                "text": "work ethic",
+                "mark": "library"
+              },
+              {
+                "text": " and serving others, rather than having "
+              },
+              {
+                "text": "high social status",
+                "mark": "checked",
+                "note": "Longman · ADJ.: high, low, higher, superior, lower, inferior, exalted, equal, social, socioeconomic, professional (✓ high)"
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        ],
+        "structures": [
+          {
+            "pattern": "Definitely",
+            "text": "Definitely",
+            "tool": "answer",
+            "fromGuide": true
+          },
+          {
+            "pattern": "I would say that SV",
+            "text": "I would say that",
+            "tool": "answer",
+            "fromGuide": true
+          },
+          {
+            "pattern": "The (main / simple) reason for N is that SV",
+            "text": "The main reason is that",
+            "tool": "cause",
+            "fromGuide": true
+          }
+        ],
+        "wording": [
+          {
+            "text": "carries out their duties",
+            "meaning_vi": "thực hiện nhiệm vụ của mình",
+            "verified": true,
+            "dictionary": [
+              "Longman · VERB + DUTY: have a ~ to do sth, do your, fulfil your, have, owe a ~ to sb, fail in your (✓ carry out your)"
+            ],
+            "sources": [
+              {
+                "name": "Longman",
+                "url": "https://www.ldoceonline.com/dictionary/duty"
+              }
+            ]
+          },
+          {
+            "text": "project manager",
+            "meaning_vi": "người quản lý dự án",
+            "verified": true,
+            "dictionary": [
+              "OZDIC · ADJ: project (✓ project)"
+            ],
+            "sources": [
+              {
+                "name": "OZDIC",
+                "url": "https://ozdic.com/word/manager"
+              }
+            ]
+          },
+          {
+            "text": "software solutions",
+            "meaning_vi": "các giải pháp phần mềm",
+            "verified": false,
+            "natural": true,
+            "dictionary": [],
+            "sources": []
+          },
+          {
+            "text": "delivery drivers",
+            "meaning_vi": "tài xế giao hàng",
+            "verified": true,
+            "dictionary": [
+              "Longman · ADJ.: a delivery (✓ a delivery)"
+            ],
+            "sources": [
+              {
+                "name": "Longman",
+                "url": "https://www.ldoceonline.com/dictionary/driver"
+              }
+            ]
+          },
+          {
+            "text": "street sweepers",
+            "verified": true,
+            "dictionary": [
+              "OZDIC · street · STREET + NOUN: corner, map, plan, layout, network, pattern, name, number, sign, lamp, light, lighting (✓ sweeper)"
+            ],
+            "sources": [
+              {
+                "name": "OZDIC",
+                "url": "https://ozdic.com/word/street"
+              }
+            ]
+          },
+          {
+            "text": "keep our cities clean",
+            "verified": true,
+            "dictionary": [
+              "OZDIC · clean · VERBS: be, look, seem, smell, stay, brush sth, get sth, scrape sth, scrub sth, wipe sth, leave sth, keep sth (✓ keep sth)"
+            ],
+            "sources": [
+              {
+                "name": "OZDIC",
+                "url": "https://ozdic.com/word/clean"
+              }
+            ]
+          },
+          {
+            "text": "real dignity",
+            "meaning_vi": "phẩm giá thực sự",
+            "verified": false,
+            "natural": true,
+            "dictionary": [],
+            "sources": []
+          },
+          {
+            "text": "comes from",
+            "meaning_vi": "xuất phát từ",
+            "verified": false,
+            "natural": true,
+            "dictionary": [],
+            "sources": []
+          },
+          {
+            "text": "high social status",
+            "meaning_vi": "địa vị xã hội cao",
+            "verified": true,
+            "dictionary": [
+              "Longman · ADJ.: high, low, higher, superior, lower, inferior, exalted, equal, social, socioeconomic, professional (✓ high)",
+              "Longman · ADJ.: high, low, higher, superior, lower, inferior, exalted, equal, social, socioeconomic, professional (✓ social)"
+            ],
+            "sources": [
+              {
+                "name": "Longman",
+                "url": "https://www.ldoceonline.com/dictionary/status"
+              }
+            ]
+          }
+        ]
+      },
+      "userEdited": "Definitely. I would say that any job can give people a sense of pride, as long as it is legal and provides an honest living. The main reason is that everyone who does their job well can make a positive contribution to society. For instance, a project manager can take pride in delivering useful software solutions, while street sweepers and delivery drivers also help keep our cities clean and running smoothly. All in all, the real value of a job comes from working hard and helping others, rather than having a high social status."
+    }
+  ],
+  "candidates": 40,
+  "usage": {
+    "model": "gemini-3.8-flash",
+    "input": 87970,
+    "output": 2798,
+    "thinking": 8178
+  }
+}

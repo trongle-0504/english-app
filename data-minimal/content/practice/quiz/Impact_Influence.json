@@ -1,0 +1,854 @@
+{
+  "questions": [
+    {
+      "id": "sa_decline_0_0",
+      "type": "short_answer",
+      "sentence": "The higher prices caused a ___ sales.",
+      "options": [],
+      "correct_answer": "sharp decline in",
+      "explanation": "sharp/steep decline",
+      "hint": "sự suy giảm mạnh, đột ngột",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_decline_1_0",
+      "type": "short_answer",
+      "sentence": "We noticed a ___ his health.",
+      "options": [],
+      "correct_answer": "rapid decline in",
+      "explanation": "rapid decline",
+      "hint": "sự suy giảm nhanh chóng",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_decline_2_0",
+      "type": "short_answer",
+      "sentence": "The last three years have seen a ___ the number of tigers in the area.",
+      "options": [],
+      "correct_answer": "dramatic decline in",
+      "explanation": "dramatic decline",
+      "hint": "sự suy giảm đáng kể, gây chú ý",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_decline_3_0",
+      "type": "short_answer",
+      "sentence": "There has been a ___ club membership.",
+      "options": [],
+      "correct_answer": "steady decline in",
+      "explanation": "gradual/steady decline",
+      "hint": "sự suy giảm từ từ/đều đặn",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_decline_4_0",
+      "type": "short_answer",
+      "sentence": "The ___ the manufacturing industry is still continuing.",
+      "options": [],
+      "correct_answer": "long-term decline in",
+      "explanation": "long-term decline",
+      "hint": "sự suy giảm dài hạn",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_decline_5_0",
+      "type": "short_answer",
+      "sentence": "This area has been severely affected by long-term ___.",
+      "options": [],
+      "correct_answer": "industrial decline",
+      "explanation": "economic/industrial decline",
+      "hint": "sự suy giảm kinh tế/công nghiệp",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_decline_6_0",
+      "type": "short_answer",
+      "sentence": "The use of chemicals has ___ water quality.",
+      "options": [],
+      "correct_answer": "led to a decline in",
+      "explanation": "lead to/cause a decline",
+      "hint": "dẫn đến/gây ra sự suy giảm",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_decline_7_0",
+      "type": "short_answer",
+      "sentence": "At the beginning of the century the cloth trade was ___.",
+      "options": [],
+      "correct_answer": "going into decline",
+      "explanation": "go into decline",
+      "hint": "trở nên suy yếu, suy tàn",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_decline_8_0",
+      "type": "short_answer",
+      "sentence": "The main aim is to ___ the world’s environment.",
+      "options": [],
+      "correct_answer": "reverse the decline of",
+      "explanation": "reverse a decline",
+      "hint": "đảo ngược sự suy giảm",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_factor_0_0",
+      "type": "short_answer",
+      "sentence": "Education is a ___ in economic development.",
+      "options": [],
+      "correct_answer": "key factor",
+      "explanation": "a major/key/crucial factor",
+      "hint": "yếu tố chính/then chốt",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_factor_1_0",
+      "type": "short_answer",
+      "sentence": "Cost is often the ___ in consumer choices.",
+      "options": [],
+      "correct_answer": "decisive factor",
+      "explanation": "a determining/decisive factor",
+      "hint": "yếu tố quyết định",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_factor_2_0",
+      "type": "short_answer",
+      "sentence": "Lack of exercise is a ___ to obesity.",
+      "options": [],
+      "correct_answer": "contributing factor",
+      "explanation": "a contributing factor",
+      "hint": "yếu tố góp phần",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_factor_3_0",
+      "type": "short_answer",
+      "sentence": "___ play an important role in shaping behavior.",
+      "options": [],
+      "correct_answer": "Social factors",
+      "explanation": "economic/social/environmental factors",
+      "hint": "các yếu tố kinh tế/xã hội/môi trường",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_factor_4_0",
+      "type": "short_answer",
+      "sentence": "Smoking is a major ___ for heart disease.",
+      "options": [],
+      "correct_answer": "risk factor",
+      "explanation": "a risk factor",
+      "hint": "yếu tố rủi ro",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_factor_5_0",
+      "type": "short_answer",
+      "sentence": "The problem is caused by a ___.",
+      "options": [],
+      "correct_answer": "combination of factors",
+      "explanation": "a combination of factors",
+      "hint": "sự kết hợp của nhiều yếu tố",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_factor_6_0",
+      "type": "short_answer",
+      "sentence": "Success often ___.",
+      "options": [],
+      "correct_answer": "depends on several factors",
+      "explanation": "depend on factors",
+      "hint": "phụ thuộc vào các yếu tố",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_factor_7_0",
+      "type": "short_answer",
+      "sentence": "Many factors ___ people's decisions.",
+      "options": [],
+      "correct_answer": "influence",
+      "explanation": "factors influence/determine + sth",
+      "hint": "các yếu tố ảnh hưởng/quyết định điều gì",
+      "collocation_type": "sentence pattern"
+    },
+    {
+      "id": "sa_factor_8_0",
+      "type": "short_answer",
+      "sentence": "Several factors are ___ climate change.",
+      "options": [],
+      "correct_answer": "responsible for",
+      "explanation": "be responsible for + sth",
+      "hint": "chịu trách nhiệm/gây ra điều gì",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_factor_9_0",
+      "type": "short_answer",
+      "sentence": "We must ___ when making decisions.",
+      "options": [],
+      "correct_answer": "take these factors into account",
+      "explanation": "take factors into account",
+      "hint": "tính đến/xem xét các yếu tố",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_influence_0_0",
+      "type": "short_answer",
+      "sentence": "The new policy aims to ___ on the local economy.",
+      "options": [],
+      "correct_answer": "make an influence",
+      "explanation": "make an influence",
+      "hint": "tạo ra ảnh hưởng",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_influence_1_0",
+      "type": "short_answer",
+      "sentence": "He was arrested for driving ___.",
+      "options": [],
+      "correct_answer": "under the influence",
+      "explanation": "under the influence",
+      "hint": "bị ảnh hưởng (thường là do rượu bia hoặc chất kích thích)",
+      "collocation_type": "prepositional phrase"
+    },
+    {
+      "id": "sa_influence_2_0",
+      "type": "short_answer",
+      "sentence": "Her parents ___ a great **influence on** her career choices.",
+      "options": [],
+      "correct_answer": "have",
+      "explanation": "have influence on",
+      "hint": "có ảnh hưởng tới",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_bother_0_0",
+      "type": "short_answer",
+      "sentence": "It's not worth ___ an umbrella—the car's just outside.",
+      "options": [],
+      "correct_answer": "bothering with",
+      "explanation": "bother with/about",
+      "hint": "bận tâm, lo lắng về (ai/cái gì); tốn công làm gì",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_bother_0_1",
+      "type": "short_answer",
+      "sentence": "He doesn’t ___ his appearance.",
+      "options": [],
+      "correct_answer": "bother much about",
+      "explanation": "bother with/about",
+      "hint": "bận tâm, lo lắng về (ai/cái gì); tốn công làm gì",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_bother_1_0",
+      "type": "short_answer",
+      "sentence": "He didn't even ___ me know he was coming.",
+      "options": [],
+      "correct_answer": "bother to let",
+      "explanation": "bother to do + sth",
+      "hint": "tốn công làm gì",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_bother_2_0",
+      "type": "short_answer",
+      "sentence": "Why ___ if you're not really interested?",
+      "options": [],
+      "correct_answer": "bother asking",
+      "explanation": "bother doing + sth",
+      "hint": "tốn công làm gì",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_bother_3_0",
+      "type": "short_answer",
+      "sentence": "___, but there's a call for you on line two.",
+      "options": [],
+      "correct_answer": "Sorry to bother you",
+      "explanation": "sorry to bother you",
+      "hint": "xin lỗi vì đã làm phiền bạn",
+      "collocation_type": "idiomatic phrase"
+    },
+    {
+      "id": "sa_wipe out_0_0",
+      "type": "short_answer",
+      "sentence": "After the marathon, I felt completely ___.",
+      "options": [],
+      "correct_answer": "wiped out",
+      "explanation": "wiped out",
+      "hint": "Kiệt sức, mệt lả",
+      "collocation_type": "Adj (past participle used as adj.)"
+    },
+    {
+      "id": "sa_interfere with_0_0",
+      "type": "short_answer",
+      "sentence": "Police are investigating claims that the suspect tried to ___ the evidence.",
+      "options": [],
+      "correct_answer": "interfere with",
+      "explanation": "interfere with evidence",
+      "hint": "Can thiệp vào bằng chứng",
+      "collocation_type": "phrasal V"
+    },
+    {
+      "id": "sa_interfere with_1_0",
+      "type": "short_answer",
+      "sentence": "It is a serious offense to ___ a witness.",
+      "options": [],
+      "correct_answer": "interfere with",
+      "explanation": "interfere with a witness",
+      "hint": "Can thiệp vào nhân chứng",
+      "collocation_type": "phrasal V"
+    },
+    {
+      "id": "sa_impact_0_0",
+      "type": "short_answer",
+      "sentence": "Technology has had a significant ___ education.",
+      "options": [],
+      "correct_answer": "impact on",
+      "explanation": "have an impact on",
+      "hint": "có tác động đến",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_impact_1_0",
+      "type": "short_answer",
+      "sentence": "Social media can ___ public opinion.",
+      "options": [],
+      "correct_answer": "make a huge impact on",
+      "explanation": "make an impact on",
+      "hint": "tạo ra tác động đến",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_impact_2_0",
+      "type": "short_answer",
+      "sentence": "Climate change has a ___ on agriculture.",
+      "options": [],
+      "correct_answer": "significant impact",
+      "explanation": "a significant/major impact",
+      "hint": "tác động lớn/quan trọng",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_impact_3_0",
+      "type": "short_answer",
+      "sentence": "Urbanization has had an ___ the environment.",
+      "options": [],
+      "correct_answer": "enormous impact on",
+      "explanation": "a huge/enormous impact",
+      "hint": "tác động rất lớn",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_impact_4_0",
+      "type": "short_answer",
+      "sentence": "Exercise has a ___ mental health.",
+      "options": [],
+      "correct_answer": "positive impact on",
+      "explanation": "a positive impact",
+      "hint": "tác động tích cực",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_impact_5_0",
+      "type": "short_answer",
+      "sentence": "Pollution has a ___ wildlife.",
+      "options": [],
+      "correct_answer": "negative impact on",
+      "explanation": "a negative/adverse impact",
+      "hint": "tác động tiêu cực",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_impact_6_0",
+      "type": "short_answer",
+      "sentence": "The invention of the internet had a ___ society.",
+      "options": [],
+      "correct_answer": "profound impact on",
+      "explanation": "a profound impact",
+      "hint": "tác động sâu sắc",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_impact_7_0",
+      "type": "short_answer",
+      "sentence": "This policy may have a ___ the economy.",
+      "options": [],
+      "correct_answer": "long-term impact on",
+      "explanation": "a long-term impact",
+      "hint": "tác động dài hạn",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_impact_8_0",
+      "type": "short_answer",
+      "sentence": "We must consider the ___ of tourism.",
+      "options": [],
+      "correct_answer": "environmental impact",
+      "explanation": "economic/environmental impact",
+      "hint": "tác động kinh tế/môi trường",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_impact_9_0",
+      "type": "short_answer",
+      "sentence": "Governments should take measures to ___ pollution.",
+      "options": [],
+      "correct_answer": "reduce the impact of",
+      "explanation": "reduce/lessen the impact of",
+      "hint": "giảm tác động của",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_incident_0_0",
+      "type": "short_answer",
+      "sentence": "The road is closed following ___ earlier today.",
+      "options": [],
+      "correct_answer": "a serious incident",
+      "explanation": "a serious/major/minor incident",
+      "hint": "một sự cố nghiêm trọng/lớn/nhỏ",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_incident_0_1",
+      "type": "short_answer",
+      "sentence": "The most recent ___ was an explosion at an oil refinery.",
+      "options": [],
+      "correct_answer": "major incident",
+      "explanation": "a serious/major/minor incident",
+      "hint": "một sự cố nghiêm trọng/lớn/nhỏ",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_incident_1_0",
+      "type": "short_answer",
+      "sentence": "There have been several ___ at football matches recently.",
+      "options": [],
+      "correct_answer": "violent incidents",
+      "explanation": "a violent/tragic/unfortunate incident",
+      "hint": "một sự cố bạo lực/bi thảm/không may",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_incident_1_1",
+      "type": "short_answer",
+      "sentence": "He left after ___ in the bar.",
+      "options": [],
+      "correct_answer": "an unfortunate incident",
+      "explanation": "a violent/tragic/unfortunate incident",
+      "hint": "một sự cố bạo lực/bi thảm/không may",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_incident_2_0",
+      "type": "short_answer",
+      "sentence": "Luckily the attack turned out to be ___.",
+      "options": [],
+      "correct_answer": "an isolated incident",
+      "explanation": "an isolated incident",
+      "hint": "một sự cố đơn lẻ, không lặp lại",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_incident_3_0",
+      "type": "short_answer",
+      "sentence": "The tragic ___ just after midnight.",
+      "options": [],
+      "correct_answer": "incident occurred",
+      "explanation": "incident occurs/happens",
+      "hint": "sự cố xảy ra",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_incident_4_0",
+      "type": "short_answer",
+      "sentence": "The police were criticized for the way in which they ___.",
+      "options": [],
+      "correct_answer": "handled the incident",
+      "explanation": "deal with/handle an incident",
+      "hint": "xử lý một sự cố",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_incident_5_0",
+      "type": "short_answer",
+      "sentence": "All those ___ were sacked.",
+      "options": [],
+      "correct_answer": "involved in the incident",
+      "explanation": "be involved in an incident",
+      "hint": "liên quan đến một sự cố",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_incident_6_0",
+      "type": "short_answer",
+      "sentence": "Police asked the victim to ___.",
+      "options": [],
+      "correct_answer": "describe the incident",
+      "explanation": "describe an incident",
+      "hint": "mô tả một sự cố",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_incident_7_0",
+      "type": "short_answer",
+      "sentence": "The plane landed ___.",
+      "options": [],
+      "correct_answer": "without incident",
+      "explanation": "without incident",
+      "hint": "không có sự cố xảy ra (suôn sẻ)",
+      "collocation_type": "phrase"
+    },
+    {
+      "id": "mc_academic_0_1777697917359",
+      "type": "multiple_choice",
+      "sentence": "There has been a ___ in the size of families.",
+      "options": [
+        {
+          "id": "a",
+          "text": "reduction"
+        },
+        {
+          "id": "b",
+          "text": "decrease"
+        },
+        {
+          "id": "c",
+          "text": "decline"
+        },
+        {
+          "id": "d",
+          "text": "shortage"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm 'decline in' dùng để diễn tả sự suy giảm v�� số lượng hoặc chất lượng của một cái gì đó. Các lựa chọn khác không đi kèm với giới từ 'in' trong ngữ cảnh này."
+    },
+    {
+      "id": "mc_academic_1_1777697917359",
+      "type": "multiple_choice",
+      "sentence": "The rise in crime is mainly due to social and economic __\n.",
+      "options": [
+        {
+          "id": "a",
+          "text": "factors"
+        },
+        {
+          "id": "b",
+          "text": "reasons"
+        },
+        {
+          "id": "c",
+          "text": "elements"
+        },
+        {
+          "id": "d",
+          "text": "causes"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm 'social and economic factors' là cách diễn đạt phổ biến và chính xác nhất trong ngữ cảnh này, chỉ các yếu tố thuộc về xã hội và kinh tế. Các từ khác không phù hợp bằng."
+    },
+    {
+      "id": "mc_academic_2_1777697917359",
+      "type": "multiple_choice",
+      "sentence": "Her writings have ___ the lives of millions.",
+      "options": [
+        {
+          "id": "a",
+          "text": "influenced"
+        },
+        {
+          "id": "b",
+          "text": "changed"
+        },
+        {
+          "id": "c",
+          "text": "impacted"
+        },
+        {
+          "id": "d",
+          "text": "affected"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Động từ 'influence' (ảnh hưởng) là phù hợp nhất để diễn tả tác động lâu dài và sâu sắc của các bài viết lên cuộc sống của mọi người. Các từ khác có thể đúng trong ngữ cảnh khác nhưng không hoàn toàn chính xác ở đây."
+    },
+    {
+      "id": "mc_academic_3_1777697917359",
+      "type": "multiple_choice",
+      "sentence": "A number of social factors ___ life expectancy.",
+      "options": [
+        {
+          "id": "a",
+          "text": "determine"
+        },
+        {
+          "id": "b",
+          "text": "control"
+        },
+        {
+          "id": "c",
+          "text": "affect"
+        },
+        {
+          "id": "d",
+          "text": "influence"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Từ 'influence' thường được sử dụng để chỉ sự tác động lên một cái gì đó một cách gián tiếp hoặc dần dần, phù hợp với việc các yếu tố xã hội ảnh hưởng đến tuổi thọ. 'Affect' cũng có thể dùng được nhưng 'influence' nhấn mạnh hơn vào sự tác động này."
+    },
+    {
+      "id": "mc_academic_4_1777697917359",
+      "type": "multiple_choice",
+      "sentence": "The Soviet Union had been forced by ___ to sign a pact with Nazi Germany.",
+      "options": [
+        {
+          "id": "a",
+          "text": "circumstances"
+        },
+        {
+          "id": "b",
+          "text": "occurrences"
+        },
+        {
+          "id": "c",
+          "text": "situations"
+        },
+        {
+          "id": "d",
+          "text": "conditions"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm 'by circumstances' là cách diễn đạt chuẩn, ám chỉ các yếu tố hoàn cảnh bên ngoài đã buộc Liên Xô phải ký kết hiệp ước. Các từ khác không tạo thành cụm từ tương tự."
+    },
+    {
+      "id": "mc_academic_5_1777697917359",
+      "type": "multiple_choice",
+      "sentence": "‘Shall I wait?’ ‘No, don't ___.’",
+      "options": [
+        {
+          "id": "a",
+          "text": "mind"
+        },
+        {
+          "id": "b",
+          "text": "worry"
+        },
+        {
+          "id": "c",
+          "text": "trouble"
+        },
+        {
+          "id": "d",
+          "text": "bother"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Trong ngữ cảnh này, 'don't bother' là cách nói thông dụng để bảo ai đó không cần phải làm phiền bản thân vì một việc gì đó không quan trọng. Các lựa chọn khác không phù hợp với cấu trúc câu này."
+    },
+    {
+      "id": "mc_academic_6_1777697917359",
+      "type": "multiple_choice",
+      "sentence": "The thing that ___ me is that he never calls.",
+      "options": [
+        {
+          "id": "a",
+          "text": "bothers"
+        },
+        {
+          "id": "b",
+          "text": "troubles"
+        },
+        {
+          "id": "c",
+          "text": "annoys"
+        },
+        {
+          "id": "d",
+          "text": "worries"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cấu trúc 'it bothers me that...' dùng để diễn tả điều gì đó gây phiền toái hoặc khó chịu cho người nói. Đây là cách dùng phổ biến và chính xác nhất trong câu."
+    },
+    {
+      "id": "mc_academic_7_1777697917359",
+      "type": "multiple_choice",
+      "sentence": "All that travelling has ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "tired her out"
+        },
+        {
+          "id": "b",
+          "text": "worn her out"
+        },
+        {
+          "id": "c",
+          "text": "wiped her out"
+        },
+        {
+          "id": "d",
+          "text": "exhausted her"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm động từ 'wipe out' trong trường hợp này có nghĩa là làm cho ai đó kiệt sức hoàn toàn. Các lựa chọn khác cũng có nghĩa tương tự nhưng 'wiped her out' là cách diễn đạt mạnh mẽ và sát nghĩa nhất với ẩn ý về sự mệt mỏi cùng cực."
+    },
+    {
+      "id": "mc_academic_8_1777697917359",
+      "type": "multiple_choice",
+      "sentence": "Whole villages were ___ by the earthquake.",
+      "options": [
+        {
+          "id": "a",
+          "text": "annihilated"
+        },
+        {
+          "id": "b",
+          "text": "eliminated"
+        },
+        {
+          "id": "c",
+          "text": "wiped out"
+        },
+        {
+          "id": "d",
+          "text": "destroyed"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm từ 'be wiped out' được dùng để chỉ sự phá hủy hoàn toàn, xóa sổ hoàn toàn, rất phù hợp với tác động của một trận động đất đối với các ngôi làng. Các từ khác có thể gần nghĩa nhưng 'wiped out' mang tính đột ngột và triệt để."
+    },
+    {
+      "id": "mc_academic_9_1777697917359",
+      "type": "multiple_choice",
+      "sentence": "He was found guilty of ___ witnesses.",
+      "options": [
+        {
+          "id": "a",
+          "text": "interfering with"
+        },
+        {
+          "id": "b",
+          "text": "hindering"
+        },
+        {
+          "id": "c",
+          "text": "obstructing"
+        },
+        {
+          "id": "d",
+          "text": "disrupting"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm từ 'interfere with witnesses' là thuật ngữ pháp lý chuẩn, chỉ hành vi cố gắng tác động hoặc cản trở lời khai của nhân chứng. Các từ khác không diễn tả chính xác hành vi này trong bối cảnh pháp lý."
+    },
+    {
+      "id": "mc_academic_10_1777697917359",
+      "type": "multiple_choice",
+      "sentence": "We need to assess the ___ climate change.",
+      "options": [
+        {
+          "id": "a",
+          "text": "repercussion on"
+        },
+        {
+          "id": "b",
+          "text": "influence on"
+        },
+        {
+          "id": "c",
+          "text": "impact on"
+        },
+        {
+          "id": "d",
+          "text": "effect on"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm từ 'impact on' là cách diễn đạt phổ biến và chính xác nhất để nói về sự tác động hoặc ảnh hưởng lên một vấn đề, đặc biệt là trong các đánh giá khoa học hoặc môi trường như biến đổi khí hậu."
+    },
+    {
+      "id": "mc_academic_11_1777697917359",
+      "type": "multiple_choice",
+      "sentence": "The force of the ___ knocked the breath out of her.",
+      "options": [
+        {
+          "id": "a",
+          "text": "collision"
+        },
+        {
+          "id": "b",
+          "text": "impact"
+        },
+        {
+          "id": "c",
+          "text": "force"
+        },
+        {
+          "id": "d",
+          "text": "shock"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Trong ngữ cảnh này, 'impact' (sự va chạm, tác động mạnh) là từ phù hợp nhất để mô tả lực gây ra hậu quả làm cô ấy mất hơi. 'Force' là từ chung chung, 'collision' và 'shock' không hoàn toàn phù hợp bằng."
+    },
+    {
+      "id": "mc_academic_12_1777697917359",
+      "type": "multiple_choice",
+      "sentence": "The ___ must be paid for by the customer.",
+      "options": [
+        {
+          "id": "a",
+          "text": "broken items"
+        },
+        {
+          "id": "b",
+          "text": "damage"
+        },
+        {
+          "id": "c",
+          "text": "breakage"
+        },
+        {
+          "id": "d",
+          "text": "damages"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Từ 'breakage' dùng để chỉ chung những vật dụng bị vỡ, hoặc chi phí bồi thường cho những hư hỏng do vỡ. Đây là danh từ phù hợp nhất trong ngữ cảnh này."
+    },
+    {
+      "id": "mc_academic_13_1777697917359",
+      "type": "multiple_choice",
+      "sentence": "Roads were sealed off because of a ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "incident"
+        },
+        {
+          "id": "b",
+          "text": "event"
+        },
+        {
+          "id": "c",
+          "text": "problem"
+        },
+        {
+          "id": "d",
+          "text": "situation"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm 'major incident' thường được dùng để chỉ một sự cố hoặc một sự việc bất thường, quan trọng, có thể gây ảnh hưởng đến công cộng và đòi hỏi phải phong tỏa đường xá. Các từ khác ít cụ thể và trang trọng hơn."
+    }
+  ]
+}

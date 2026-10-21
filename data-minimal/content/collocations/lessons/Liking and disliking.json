@@ -1,0 +1,1649 @@
+{
+  "metadata": {
+    "lesson_id": "unit-liking-and-disliking",
+    "topic": "Functions",
+    "chapter_title": "Liking and disliking",
+    "pdf_file": "Liking and disliking.pdf"
+  },
+  "mindmap_data": {
+    "topic": "Functions",
+    "chapter": {
+      "chapter_id": "ch_liking_disliking",
+      "title": "Liking and disliking",
+      "sessions": [
+        {
+          "session_id": "s_liking_disliking_a",
+          "title": "A Strong statements: nouns and adjectives",
+          "description_vi": "Các câu mạnh: danh từ và tính từ",
+          "value": "# Liking and disliking\n\n## A Strong statements: nouns and adjectives\n\n| noun | collocations |\n| --- | --- |\n| liking | I have a particular **liking** for quiet, relaxing music. She had a genuine **liking** for her cousins. |\n| love | His great **love** of nature can be seen in his paintings. Her passionate **love** of the sea inspired her to sail round the world. |\n| regard [formal] | I have always had the greatest **regard** for her. She has the highest **regard** for her teacher. |\n| enjoyment | I will never forget the sheer **enjoyment** of listening to the children singing. We get great **enjoyment** out of our little cottage in the mountains. |\n| pleasure | It’s been a great **pleasure** meeting you. I hope we meet again. It was such a huge **pleasure** to be able to relax and do nothing for a week. |\n| preference | When asked, many people expressed a clear **preference** for organic food. I’ve always had a strong **preference** for short stories rather than novels. |\n| dislike | I have an intense **dislike** of rock music that is played too loud. She took an instant **dislike** to Mr Peabody, but she did not know why. |\n| aversion¹ | He has always had a huge **aversion** to hard work of any kind. Most people have a strong **aversion** to excessive violence on TV. |\n| hatred | She had a deep **hatred** of politicians, especially corrupt ones. The deep-rooted **hatred** between the two families goes back several generations. |\n\n¹ a feeling of strong dislike or a lack of willingness to do something",
+          "children_nodes": [
+            {
+              "node_id": "liking",
+              "label": "liking"
+            },
+            {
+              "node_id": "love",
+              "label": "love"
+            },
+            {
+              "node_id": "regard",
+              "label": "regard"
+            },
+            {
+              "node_id": "enjoyment",
+              "label": "enjoyment"
+            },
+            {
+              "node_id": "pleasure",
+              "label": "pleasure"
+            },
+            {
+              "node_id": "preference",
+              "label": "preference"
+            },
+            {
+              "node_id": "dislike",
+              "label": "dislike"
+            },
+            {
+              "node_id": "aversion",
+              "label": "aversion"
+            },
+            {
+              "node_id": "hatred",
+              "label": "hatred"
+            }
+          ]
+        },
+        {
+          "session_id": "s_liking_disliking_b",
+          "title": "B Verbs and nouns",
+          "description_vi": "Động từ và danh từ",
+          "value": "# Liking and disliking\n\n## B Verbs and nouns\nThese people are talking about their favourite airlines.\n\nI think Globe Air are pretty good. You can **state your preference** for a special low fat menu, or seafood or vegetarian. They have great in-flight entertainment too – they try to **cater for tastes**. They seem to **take pride in** their service.\n\nI do a lot of long-distance flying and I **don’t relish the thought**¹ of a twelve-hour flight with no leg-room, so I usually fly with Arrow. They give you a lot of space, even in economy. And they seem to **take pleasure** in looking after you.\n\nI think most people **take offence**² if they’re just treated like a number. I **have no sympathy** for airlines that lose customers because they’re too lazy to **give a warm welcome** when they step on board. Visa Airlines are always very friendly.\n\n¹ don't like to think that it is going to happen\n\n² become upset because someone has insulted or disrespected them",
+          "children_nodes": [
+            {
+              "node_id": "state_your_preference",
+              "label": "state your preference"
+            },
+            {
+              "node_id": "cater_for_tastes",
+              "label": "cater for tastes"
+            },
+            {
+              "node_id": "take_pride_in",
+              "label": "take pride in"
+            },
+            {
+              "node_id": "relish_the_thought",
+              "label": "relish the thought"
+            },
+            {
+              "node_id": "take_pleasure",
+              "label": "take pleasure"
+            },
+            {
+              "node_id": "take_offence",
+              "label": "take offence"
+            },
+            {
+              "node_id": "have_no_sympathy",
+              "label": "have no sympathy"
+            },
+            {
+              "node_id": "give_a_warm_welcome",
+              "label": "give a warm welcome"
+            }
+          ]
+        },
+        {
+          "session_id": "s_liking_disliking_c",
+          "title": "C Other useful collocations for likes and dislikes",
+          "description_vi": "Các cụm từ hữu ích khác cho sở thích và không thích",
+          "value": "# Liking and disliking\n\n## C Other useful collocations for likes and dislikes\nI like most James Bond Films, but Goldfinger is my absolute/all-time favourite.\nI’ve always been a great lover of Mozart’s operas.\nShe’s a(n) ardent/dedicated fan of American football. [showing strong feelings]\nI’m a keen admirer of the new President. He is such a strong leader.\nMy wife’s father always filled me with admiration. He achieved so much during his life.\nIt always gives me pleasure when I see my children doing well at school.",
+          "children_nodes": [
+            {
+              "node_id": "all_time_favourite",
+              "label": "all-time favourite"
+            },
+            {
+              "node_id": "great_lover_of",
+              "label": "great lover of"
+            },
+            {
+              "node_id": "ardent_fan_of",
+              "label": "ardent fan of"
+            },
+            {
+              "node_id": "dedicated_fan_of",
+              "label": "dedicated fan of"
+            },
+            {
+              "node_id": "keen_admirer_of",
+              "label": "keen admirer of"
+            },
+            {
+              "node_id": "filled_me_with_admiration",
+              "label": "filled me with admiration"
+            },
+            {
+              "node_id": "gives_me_pleasure",
+              "label": "gives me pleasure"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "section_id": "A",
+      "session_ref": "s_liking_disliking_a",
+      "title": "Strong statements: nouns and adjectives",
+      "instruction_vi": "Sử dụng các danh từ và tính từ để diễn tả sự yêu thích hoặc không thích mạnh mẽ.",
+      "content_items": [
+        {
+          "type": "table",
+          "value": "| noun | collocations |\n| --- | --- |\n| liking | I have a particular **liking** for quiet, relaxing music. She had a genuine **liking** for her cousins. |\n| love | His great **love** of nature can be seen in his paintings. Her passionate **love** of the sea inspired her to sail round the world. |\n| regard [formal] | I have always had the greatest **regard** for her. She has the highest **regard** for her teacher. |\n| enjoyment | I will never forget the sheer **enjoyment** of listening to the children singing. We get great **enjoyment** out of our little cottage in the mountains. |\n| pleasure | It’s been a great **pleasure** meeting you. I hope we meet again. It was such a huge **pleasure** to be able to relax and do nothing for a week. |\n| preference | When asked, many people expressed a clear **preference** for organic food. I’ve always had a strong **preference** for short stories rather than novels. |\n| dislike | I have an intense **dislike** of rock music that is played too loud. She took an instant **dislike** to Mr Peabody, but she did not know why. |\n| aversion¹ | He has always had a huge **aversion** to hard work of any kind. Most people have a strong **aversion** to excessive violence on TV. |\n| hatred | She had a deep **hatred** of politicians, especially corrupt ones. The deep-rooted **hatred** between the two families goes back several generations. |\n\n¹ a feeling of strong dislike or a lack of willingness to do something",
+          "related_vocabulary_ids": [
+            "liking",
+            "love",
+            "regard",
+            "enjoyment",
+            "pleasure",
+            "preference",
+            "dislike",
+            "aversion",
+            "hatred"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "B",
+      "session_ref": "s_liking_disliking_b",
+      "title": "Verbs and nouns",
+      "instruction_vi": "Sử dụng các động từ và danh từ để diễn tả sở thích và không thích trong các tình huống cụ thể.",
+      "content_items": [
+        {
+          "type": "note_box",
+          "value": "These people are talking about their favourite airlines.\n\nI think Globe Air are pretty good. You can **state your preference** for a special low fat menu, or seafood or vegetarian. They have great in-flight entertainment too – they try to **cater for tastes**. They seem to **take pride in** their service.\n\nI do a lot of long-distance flying and I **don’t relish the thought**¹ of a twelve-hour flight with no leg-room, so I usually fly with Arrow. They give you a lot of space, even in economy. And they seem to **take pleasure** in looking after you.\n\nI think most people **take offence**² if they’re just treated like a number. I **have no sympathy** for airlines that lose customers because they’re too lazy to **give a warm welcome** when they step on board. Visa Airlines are always very friendly.\n\n¹ don't like to think that it is going to happen\n\n² become upset because someone has insulted or disrespected them",
+          "related_vocabulary_ids": [
+            "state_your_preference",
+            "cater_for_tastes",
+            "take_pride_in",
+            "relish_the_thought",
+            "take_pleasure",
+            "take_offence",
+            "have_no_sympathy",
+            "give_a_warm_welcome"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "C",
+      "session_ref": "s_liking_disliking_c",
+      "title": "Other useful collocations for likes and dislikes",
+      "instruction_vi": "Học các cụm từ hữu ích khác để diễn tả sở thích và không thích.",
+      "content_items": [
+        {
+          "type": "example_list",
+          "value": "I like most James Bond Films, but Goldfinger is my absolute/**all-time favourite**.\nI’ve always been a **great lover of** Mozart’s operas.\nShe’s a(n) **ardent fan of**/ **dedicated fan of** American football. [showing strong feelings]\nI’m a **keen admirer of** the new President. He is such a strong leader.\nMy wife’s father always **filled me with admiration**. He achieved so much during his life.\nIt always **gives me pleasure** when I see my children doing well at school.",
+          "related_vocabulary_ids": [
+            "all_time_favourite",
+            "great_lover_of",
+            "ardent_fan_of",
+            "dedicated_fan_of",
+            "keen_admirer_of",
+            "filled_me_with_admiration",
+            "gives_me_pleasure"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary_data": {
+    "liking": {
+      "word": "liking",
+      "pronunciation": "/ˈlaɪkɪŋ/",
+      "image": {
+        "type": "prompt",
+        "value": "a person showing a liking for something",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/d/df/The_usual_suspects%2C_redux_._._._Plus_one_additional_dog._%283587242113%29.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun",
+      "senses": [
+        {
+          "definition_vi": "Sự yêu thích, sự ưa chuộng.",
+          "examples": [
+            "I have a particular liking for quiet, relaxing music."
+          ],
+          "grammar_patterns": [
+            "liking for something"
+          ],
+          "usage_notes_vi": "Thường dùng để diễn tả một sự yêu thích cụ thể hoặc có tính cá nhân."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Culture",
+          "question": "What kind of music do you enjoy most?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "Is there any type of food you are especially fond of?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What kind of places do you most enjoy visiting on holiday?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "liking",
+          "text": "I have a particular liking for quiet music."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "liking",
+          "source": "I especially enjoy old black-and-white films.",
+          "model": "I have a particular liking for old black-and-white films."
+        },
+        {
+          "target": "liking",
+          "source": "My father has always enjoyed spicy food.",
+          "model": "My father has always had a liking for spicy food."
+        }
+      ]
+    },
+    "love": {
+      "word": "love",
+      "pronunciation": "/lʌv/",
+      "image": {
+        "type": "prompt",
+        "value": "a person expressing love for nature",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Wedding_hugs.jpg/960px-Wedding_hugs.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun",
+      "senses": [
+        {
+          "definition_vi": "Tình yêu, sự yêu mến sâu sắc.",
+          "examples": [
+            "His great love of nature can be seen in his paintings."
+          ],
+          "grammar_patterns": [
+            "love of something"
+          ],
+          "usage_notes_vi": "Diễn tả một tình cảm mạnh mẽ và sâu sắc."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "Why do some people choose to live in the countryside?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "How can parents encourage children to enjoy reading?",
+          "fits": []
+        },
+        {
+          "context": "Art",
+          "question": "What can we learn about artists from their paintings?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "love",
+          "text": "His great love of nature shows in his paintings."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "love",
+          "source": "He really enjoys nature, and you can see this in his paintings.",
+          "model": "His great love of nature can be seen in his paintings."
+        },
+        {
+          "target": "love",
+          "source": "She has always been very passionate about music.",
+          "model": "She has always had a great love of music."
+        }
+      ]
+    },
+    "regard": {
+      "word": "regard",
+      "pronunciation": "/rɪˈɡɑːrd/",
+      "image": {
+        "type": "prompt",
+        "value": "a person showing high regard for their teacher",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/William-Adolphe_Bouguereau_%281825-1905%29_-_Admiration_%281897%29.jpg/960px-William-Adolphe_Bouguereau_%281825-1905%29_-_Admiration_%281897%29.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun",
+      "senses": [
+        {
+          "definition_vi": "Sự kính trọng, sự quý mến (thường dùng trong văn phong trang trọng).",
+          "examples": [
+            "I have always had the greatest regard for her."
+          ],
+          "grammar_patterns": [
+            "regard for someone/something",
+            "greatest regard"
+          ],
+          "usage_notes_vi": "Mang tính trang trọng, thường dùng để diễn tả sự tôn trọng cao."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What kind of colleague or boss do you respect the most?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Which teacher from your school days do you admire most, and why?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "Which family member do you look up to the most?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "regard",
+          "text": "I have always had great regard for my teachers."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "regard",
+          "source": "I have always respected and admired her very much.",
+          "model": "I have always had the greatest regard for her."
+        },
+        {
+          "target": "regard",
+          "source": "Most staff think very highly of their manager.",
+          "model": "Most staff have a high regard for their manager."
+        }
+      ]
+    },
+    "enjoyment": {
+      "word": "enjoyment",
+      "pronunciation": "/ɪnˈdʒɔɪmənt/",
+      "image": {
+        "type": "prompt",
+        "value": "children singing with enjoyment",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/%ED%8F%AC%EC%8B%9C%EC%A6%8C%EC%8A%A4_%EC%82%B0%EB%A6%AC%EC%98%A4%EB%8C%84%EC%8A%A4%ED%83%80%EC%9E%84_2025.jpg/960px-%ED%8F%AC%EC%8B%9C%EC%A6%8C%EC%8A%A4_%EC%82%B0%EB%A6%AC%EC%98%A4%EB%8C%84%EC%8A%A4%ED%83%80%EC%9E%84_2025.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun",
+      "senses": [
+        {
+          "definition_vi": "Sự thích thú, sự hưởng thụ.",
+          "examples": [
+            "I will never forget the sheer enjoyment of listening to the children singing."
+          ],
+          "grammar_patterns": [
+            "enjoyment of something"
+          ],
+          "usage_notes_vi": "Diễn tả cảm giác vui vẻ, thích thú khi trải nghiệm điều gì đó."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Culture",
+          "question": "Why do people keep reading novels when they could watch films instead?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "Why do so many adults play amateur sports with no hope of winning prizes?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "What do parents get from watching their children perform at school events?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "enjoyment",
+          "text": "She plays the piano for sheer enjoyment."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "enjoyment",
+          "source": "I will never forget how much I enjoyed listening to the children sing.",
+          "model": "I will never forget the sheer enjoyment of listening to the children sing."
+        },
+        {
+          "target": "enjoyment",
+          "source": "Many people read simply because they find it very pleasant.",
+          "model": "Many people read purely for enjoyment."
+        }
+      ]
+    },
+    "pleasure": {
+      "word": "pleasure",
+      "pronunciation": "/ˈpleʒər/",
+      "image": {
+        "type": "prompt",
+        "value": "a person relaxing with pleasure",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/A_Smiling_boy_from_Bangladesh.jpg/960px-A_Smiling_boy_from_Bangladesh.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun",
+      "senses": [
+        {
+          "definition_vi": "Sự hài lòng, sự vui thích, niềm vui.",
+          "examples": [
+            "It’s been a great pleasure meeting you."
+          ],
+          "grammar_patterns": [
+            "great pleasure",
+            "pleasure of doing something"
+          ],
+          "usage_notes_vi": "Thường dùng trong các tình huống lịch sự hoặc để diễn tả niềm vui, sự hài lòng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How do you feel when you meet someone important in your field?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "What makes you happiest about spending time with your family?",
+          "fits": []
+        },
+        {
+          "context": "Leisure",
+          "question": "What do you enjoy most about your favourite hobby?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "pleasure",
+          "text": "It has been a great pleasure meeting you."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "pleasure",
+          "source": "I really enjoyed meeting you.",
+          "model": "It has been a great pleasure meeting you."
+        },
+        {
+          "target": "pleasure",
+          "source": "Gardening makes my grandmother very happy.",
+          "model": "Gardening gives my grandmother great pleasure."
+        }
+      ]
+    },
+    "preference": {
+      "word": "preference",
+      "pronunciation": "/ˈprefərəns/",
+      "image": {
+        "type": "prompt",
+        "value": "a person choosing between two options, showing preference",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Simple-indifference-curves.svg/960px-Simple-indifference-curves.svg.png"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun",
+      "senses": [
+        {
+          "definition_vi": "Sự ưa thích hơn, sự ưu tiên.",
+          "examples": [
+            "When asked, many people expressed a clear preference for organic food."
+          ],
+          "grammar_patterns": [
+            "preference for something"
+          ],
+          "usage_notes_vi": "Diễn tả việc chọn cái này hơn cái kia."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Food",
+          "question": "Do people in your country choose organic food over ordinary food?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "Do young people prefer shopping online or in stores?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Do tourists in your country choose package holidays or independent travel?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "preference",
+          "text": "Many people have a clear preference for organic food."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "preference",
+          "source": "Most customers said they liked the cheaper model better.",
+          "model": "Most customers expressed a clear preference for the cheaper model."
+        },
+        {
+          "target": "preference",
+          "source": "Young people tend to choose online shopping over going to stores.",
+          "model": "Young people show a strong preference for online shopping."
+        }
+      ]
+    },
+    "dislike": {
+      "word": "dislike",
+      "pronunciation": "/dɪsˈlaɪk/",
+      "image": {
+        "type": "prompt",
+        "value": "a person showing dislike for loud rock music",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Albrecht_D%C3%BCrer_-_Bildnis_eines_unbekannten_Mannes.jpg/960px-Albrecht_D%C3%BCrer_-_Bildnis_eines_unbekannten_Mannes.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun",
+      "senses": [
+        {
+          "definition_vi": "Sự không thích, sự ác cảm.",
+          "examples": [
+            "I have an intense dislike of rock music that is played too loud."
+          ],
+          "grammar_patterns": [
+            "dislike of something"
+          ],
+          "usage_notes_vi": "Diễn tả cảm giác không thích hoặc ác cảm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Culture",
+          "question": "Is there any kind of music you really cannot stand?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "Is there any food that you hated as a child?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What tasks at work or school do people commonly hate doing?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "dislike",
+          "text": "I have an intense dislike of loud music."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "dislike",
+          "source": "I really hate rock music that is played too loud.",
+          "model": "I have an intense dislike of rock music that is played too loud."
+        },
+        {
+          "target": "dislike",
+          "source": "My brother has never enjoyed crowded places.",
+          "model": "My brother has a strong dislike of crowded places."
+        }
+      ]
+    },
+    "aversion": {
+      "word": "aversion",
+      "pronunciation": "/əˈvɜːrʒn/",
+      "image": {
+        "type": "prompt",
+        "value": "a person showing aversion to hard work",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Little_Miss_Muffet_2_-_WW_Denslow_-_Project_Gutenberg_etext_18546.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun",
+      "senses": [
+        {
+          "definition_vi": "Sự ác cảm mạnh mẽ, sự ghê tởm.",
+          "examples": [
+            "He has always had a huge aversion to hard work of any kind."
+          ],
+          "grammar_patterns": [
+            "aversion to something"
+          ],
+          "usage_notes_vi": "Diễn tả sự không thích hoặc miễn cưỡng làm điều gì đó một cách mạnh mẽ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "Why are some people unwilling to do hard physical work?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Why do some people avoid going to the doctor?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "Why do some children refuse to eat vegetables?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "aversion",
+          "text": "He has a huge aversion to hard work."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "aversion",
+          "source": "He has always strongly hated hard work of any kind.",
+          "model": "He has always had a huge aversion to hard work of any kind."
+        },
+        {
+          "target": "aversion",
+          "source": "Many teenagers strongly dislike getting up early.",
+          "model": "Many teenagers have a strong aversion to getting up early."
+        }
+      ]
+    },
+    "hatred": {
+      "word": "hatred",
+      "pronunciation": "/ˈheɪtrɪd/",
+      "image": {
+        "type": "prompt",
+        "value": "a person showing deep hatred towards politicians",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/A_man_glowering%2C_expressing_hatred_or_jealousy._Engraving_by_Wellcome_V0009360.jpg/960px-A_man_glowering%2C_expressing_hatred_or_jealousy._Engraving_by_Wellcome_V0009360.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun",
+      "senses": [
+        {
+          "definition_vi": "Sự căm ghét, sự thù hận.",
+          "examples": [
+            "She had a deep hatred of politicians, especially corrupt ones."
+          ],
+          "grammar_patterns": [
+            "hatred of someone/something"
+          ],
+          "usage_notes_vi": "Diễn tả cảm xúc căm ghét sâu sắc."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Politics",
+          "question": "How do ordinary people feel about corrupt politicians?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "What causes conflict between different groups in society?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Can social media make people feel extreme anger towards others?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "hatred",
+          "text": "She had a deep hatred of corrupt politicians."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "hatred",
+          "source": "She hated corrupt politicians very strongly.",
+          "model": "She had a deep hatred of corrupt politicians."
+        },
+        {
+          "target": "hatred",
+          "source": "Years of war made the two groups hate each other deeply.",
+          "model": "Years of war created a deep hatred between the two groups."
+        }
+      ]
+    },
+    "state_your_preference": {
+      "word": "state your preference",
+      "pronunciation": "/steɪt jɔːr ˈprefərəns/",
+      "image": {
+        "type": "prompt",
+        "value": "a person filling out a form to state their preference",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Papeletareferendum2006.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Nói rõ sự ưa thích của bạn.",
+          "examples": [
+            "You can state your preference for a special low fat menu, or seafood or vegetarian."
+          ],
+          "grammar_patterns": [
+            "state your preference for something"
+          ],
+          "usage_notes_vi": "Dùng để yêu cầu hoặc thông báo về lựa chọn cá nhân."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "How can airlines make sure passengers get the meal they want?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "What should guests do if they have special dietary needs at a wedding?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How should employees tell their boss which shifts they want to work?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "state your preference",
+          "text": "Please state your preference for a window or aisle seat."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "state your preference",
+          "source": "Please tell us which menu you would like when you book.",
+          "model": "Please state your preference for a menu when you book."
+        },
+        {
+          "target": "state your preference",
+          "source": "On the form, you can say whether you want a morning or evening class.",
+          "model": "On the form, you can state your preference for a morning or evening class."
+        }
+      ]
+    },
+    "cater_for_tastes": {
+      "word": "cater for tastes",
+      "pronunciation": "/ˈkeɪtər fɔːr teɪsts/",
+      "image": {
+        "type": "prompt",
+        "value": "a restaurant menu catering for different tastes",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Swedish_buffet-Sm%C3%B6rg%C3%A5sbord-01.jpg/960px-Swedish_buffet-Sm%C3%B6rg%C3%A5sbord-01.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Đáp ứng thị hiếu/sở thích của mọi người.",
+          "examples": [
+            "They try to cater for everyone’s tastes."
+          ],
+          "grammar_patterns": [
+            "cater for someone's tastes"
+          ],
+          "usage_notes_vi": "Thường dùng trong ngành dịch vụ để chỉ việc cung cấp sản phẩm/dịch vụ phù hợp với nhiều đối tượng khách hàng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Food",
+          "question": "Why do many restaurants offer a very wide menu?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "How do TV channels try to attract all kinds of viewers?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What makes a hotel popular with different types of guests?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "cater for tastes",
+          "text": "The festival caters for all tastes."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "cater for tastes",
+          "source": "The shop tries to offer something that everyone will like.",
+          "model": "The shop tries to cater for everyone's tastes."
+        },
+        {
+          "target": "cater for tastes",
+          "source": "The menu has dishes that suit all kinds of people.",
+          "model": "The menu caters for all tastes."
+        }
+      ]
+    },
+    "take_pride_in": {
+      "word": "take pride in",
+      "pronunciation": "/teɪk praɪd ɪn/",
+      "image": {
+        "type": "prompt",
+        "value": "a craftsman taking pride in their work",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Vista_de_la_Marcha_del_orgullo_LGBT_CDMX_2019_-_53.jpg/960px-Vista_de_la_Marcha_del_orgullo_LGBT_CDMX_2019_-_53.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun+preposition",
+      "senses": [
+        {
+          "definition_vi": "Tự hào về điều gì đó.",
+          "examples": [
+            "They seem to take pride in their service."
+          ],
+          "grammar_patterns": [
+            "take pride in something"
+          ],
+          "usage_notes_vi": "Diễn tả cảm giác hài lòng và tự hào về thành tích, công việc hoặc phẩm chất của bản thân hoặc người khác."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What makes some workers do their job very carefully?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "Are people in your country proud of their traditions?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Why do some people keep their homes and gardens very tidy?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "take pride in",
+          "text": "They take pride in their excellent service."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "take pride in",
+          "source": "The staff feel very proud of the quality of their work.",
+          "model": "The staff take pride in the quality of their work."
+        },
+        {
+          "target": "take pride in",
+          "source": "Local people are proud of their beautiful old town.",
+          "model": "Local people take pride in their beautiful old town."
+        }
+      ]
+    },
+    "relish_the_thought": {
+      "word": "relish the thought",
+      "pronunciation": "/ˈrelɪʃ ðə θɔːt/",
+      "image": {
+        "type": "prompt",
+        "value": "a person looking forward to a holiday with relish",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Harrison_Fisher_-_Anticipation_1909.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Rất mong đợi, thích thú nghĩ về điều gì đó.",
+          "examples": [
+            "I don’t relish the thought of a twelve-hour flight with no leg-room."
+          ],
+          "grammar_patterns": [
+            "relish the thought of something"
+          ],
+          "usage_notes_vi": "Thường dùng với dạng phủ định để diễn tả sự không mong muốn hoặc không thích thú khi nghĩ về một điều gì đó sắp xảy ra."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "How do you feel about very long flights?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How do people usually feel about returning to work after a holiday?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How do students feel about taking exams?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "relish the thought",
+          "text": "I don't relish the thought of a long flight."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "relish the thought",
+          "source": "I am not looking forward to a twelve-hour flight.",
+          "model": "I don't relish the thought of a twelve-hour flight."
+        },
+        {
+          "target": "relish the thought",
+          "source": "Nobody is happy about the idea of working at the weekend.",
+          "model": "Nobody relishes the thought of working at the weekend."
+        }
+      ]
+    },
+    "take_pleasure": {
+      "word": "take pleasure",
+      "pronunciation": "/teɪk ˈpleʒər/",
+      "image": {
+        "type": "prompt",
+        "value": "a person taking pleasure in helping others",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/A_Smiling_boy_from_Bangladesh.jpg/960px-A_Smiling_boy_from_Bangladesh.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Thấy vui vẻ, thích thú về điều gì đó.",
+          "examples": [
+            "And they seem to take pleasure in looking after you."
+          ],
+          "grammar_patterns": [
+            "take pleasure in something/doing something"
+          ],
+          "usage_notes_vi": "Diễn tả việc tìm thấy niềm vui hoặc sự hài lòng trong một hoạt động hoặc tình huống."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "What do grandparents enjoy most about spending time with grandchildren?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Do you think people in caring jobs enjoy helping others?",
+          "fits": []
+        },
+        {
+          "context": "Leisure",
+          "question": "Why do some people enjoy gardening so much?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "take pleasure",
+          "text": "My grandmother takes pleasure in cooking for us."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "take pleasure",
+          "source": "The staff seem to enjoy looking after you.",
+          "model": "The staff seem to take pleasure in looking after you."
+        },
+        {
+          "target": "take pleasure",
+          "source": "Some children enjoy breaking the rules.",
+          "model": "Some children take pleasure in breaking the rules."
+        }
+      ]
+    },
+    "take_offence": {
+      "word": "take offence",
+      "pronunciation": "/teɪk əˈfens/",
+      "image": {
+        "type": "prompt",
+        "value": "a person looking offended",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Cảm thấy bị xúc phạm, bị coi thường.",
+          "examples": [
+            "I think most people take offence if they’re just treated like a number."
+          ],
+          "grammar_patterns": [
+            "take offence"
+          ],
+          "usage_notes_vi": "Diễn tả phản ứng khi cảm thấy bị đối xử thiếu tôn trọng hoặc bị xúc phạm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Culture",
+          "question": "What kind of jokes might upset people from other cultures?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How should managers give criticism without upsetting staff?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What should tourists avoid doing so that local people are not upset?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "take offence",
+          "text": "Please don't take offence at what I said."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "take offence",
+          "source": "Most people feel insulted if they are treated like a number.",
+          "model": "Most people take offence if they are treated like a number."
+        },
+        {
+          "target": "take offence",
+          "source": "She was upset by his rude comment about her cooking.",
+          "model": "She took offence at his rude comment about her cooking."
+        }
+      ]
+    },
+    "have_no_sympathy": {
+      "word": "have no sympathy",
+      "pronunciation": "/hæv noʊ ˈsɪmpəθi/",
+      "image": {
+        "type": "prompt",
+        "value": "a person showing no sympathy for someone",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Eduardo_Zamacois_y_Zabala_-_Regreso_al_convento.jpg/960px-Eduardo_Zamacois_y_Zabala_-_Regreso_al_convento.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+determiner+noun",
+      "senses": [
+        {
+          "definition_vi": "Không có sự đồng cảm, không thông cảm.",
+          "examples": [
+            "I have no sympathy for airlines that lose customers because they’re too lazy to give them a warm welcome when they step on board."
+          ],
+          "grammar_patterns": [
+            "have no sympathy for someone/something"
+          ],
+          "usage_notes_vi": "Diễn tả việc không cảm thông hoặc không chia sẻ cảm xúc với ai đó hoặc về một tình huống nào đó."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "How do you feel about airlines that treat passengers badly?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Do you feel sorry for criminals who end up in prison?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How do you feel about workers who are always late?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "have no sympathy",
+          "text": "I have no sympathy for people who drive drunk."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "have no sympathy",
+          "source": "I do not feel sorry at all for lazy companies that lose customers.",
+          "model": "I have no sympathy for lazy companies that lose customers."
+        },
+        {
+          "target": "have no sympathy",
+          "source": "Most people don't care about rich people who complain about taxes.",
+          "model": "Most people have no sympathy for rich people who complain about taxes."
+        }
+      ]
+    },
+    "give_a_warm_welcome": {
+      "word": "give a warm welcome",
+      "pronunciation": "/ɡɪv ə wɔːrm ˈwelkəm/",
+      "image": {
+        "type": "prompt",
+        "value": "people giving a warm welcome to a guest",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Coir_mat1.jpg/960px-Coir_mat1.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+determiner+adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Chào đón nồng nhiệt.",
+          "examples": [
+            "Visa Airlines are always very friendly."
+          ],
+          "grammar_patterns": [
+            "give someone a warm welcome"
+          ],
+          "usage_notes_vi": "Diễn tả hành động chào đón ai đó một cách thân thiện và nhiệt tình."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "How do people in your country treat foreign visitors?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How should companies treat new employees on their first day?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How can schools help new students feel at home?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "give a warm welcome",
+          "text": "The villagers always give visitors a warm welcome."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "give a warm welcome",
+          "source": "The hotel staff greeted us in a very friendly way.",
+          "model": "The hotel staff gave us a warm welcome."
+        },
+        {
+          "target": "give a warm welcome",
+          "source": "The team was very friendly to the new player when he arrived.",
+          "model": "The team gave the new player a warm welcome."
+        }
+      ]
+    },
+    "all_time_favourite": {
+      "word": "all-time favourite",
+      "pronunciation": "/ɔːl taɪm ˈfeɪvərɪt/",
+      "image": {
+        "type": "prompt",
+        "value": "a person pointing to their all-time favourite movie poster",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/National_Baseball_Hall_of_Fame_and_Museum%2C_Cooperstown%2C_NY.jpg/960px-National_Baseball_Hall_of_Fame_and_Museum%2C_Cooperstown%2C_NY.jpg"
+      },
+      "part_of_speech": [
+        "adjective phrase"
+      ],
+      "collocation_type": "adjective phrase",
+      "senses": [
+        {
+          "definition_vi": "Yêu thích nhất mọi thời đại.",
+          "examples": [
+            "Goldfinger is my absolute/all-time favourite."
+          ],
+          "grammar_patterns": [
+            "all-time favourite"
+          ],
+          "usage_notes_vi": "Dùng để nhấn mạnh rằng đó là thứ được yêu thích nhất, không có gì sánh bằng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Culture",
+          "question": "What film would you happily watch again and again?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "What dish do you enjoy more than any other?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "Who is the greatest sports player you have ever watched?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "all-time favourite",
+          "text": "This film is my all-time favourite."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "all-time favourite",
+          "source": "I love this song more than any other song.",
+          "model": "This song is my all-time favourite."
+        },
+        {
+          "target": "all-time favourite",
+          "source": "Pizza has always been the food I like best.",
+          "model": "Pizza is my all-time favourite food."
+        }
+      ]
+    },
+    "great_lover_of": {
+      "word": "great lover of",
+      "pronunciation": "/ɡreɪt ˈlʌvər ɒv/",
+      "image": {
+        "type": "prompt",
+        "value": "a person who is a great lover of classical music",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Carl_Spitzweg_-_%22The_Bookworm%22.jpg/960px-Carl_Spitzweg_-_%22The_Bookworm%22.jpg"
+      },
+      "part_of_speech": [
+        "adjective phrase"
+      ],
+      "collocation_type": "adjective+noun+preposition",
+      "senses": [
+        {
+          "definition_vi": "Người rất yêu thích cái gì đó.",
+          "examples": [
+            "I’ve always been a great lover of Mozart’s operas."
+          ],
+          "grammar_patterns": [
+            "great lover of something"
+          ],
+          "usage_notes_vi": "Diễn tả sự yêu thích mãnh liệt đối với một lĩnh vực, nghệ thuật, hoặc hoạt động nào đó."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Culture",
+          "question": "What kind of art or music do you enjoy most, and why?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Why do some people spend all their free time outdoors?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "Do you enjoy trying food from other countries?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "great lover of",
+          "text": "My uncle is a great lover of jazz."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "great lover of",
+          "source": "I have always loved Mozart's operas very much.",
+          "model": "I have always been a great lover of Mozart's operas."
+        },
+        {
+          "target": "great lover of",
+          "source": "My grandfather really loves nature.",
+          "model": "My grandfather is a great lover of nature."
+        }
+      ]
+    },
+    "ardent_fan_of": {
+      "word": "ardent fan of",
+      "pronunciation": "/ˈɑːrdnt fæn ɒv/",
+      "image": {
+        "type": "prompt",
+        "value": "an ardent fan cheering at a sports game",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Rock_en_Parque_Roca_%286796076495%29.jpg/960px-Rock_en_Parque_Roca_%286796076495%29.jpg"
+      },
+      "part_of_speech": [
+        "adjective phrase"
+      ],
+      "collocation_type": "adjective+noun+preposition",
+      "senses": [
+        {
+          "definition_vi": "Người hâm mộ cuồng nhiệt, nhiệt thành.",
+          "examples": [
+            "She’s a(n) ardent fan of American football."
+          ],
+          "grammar_patterns": [
+            "ardent fan of something"
+          ],
+          "usage_notes_vi": "Diễn tả sự ủng hộ hoặc yêu thích mạnh mẽ, đầy nhiệt huyết."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Sport",
+          "question": "Which sport do you follow most closely?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "Is there a singer or band you follow very closely?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Why do some people watch every episode of a TV series?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "ardent fan of",
+          "text": "She is an ardent fan of American football."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "ardent fan of",
+          "source": "My brother supports his football team with great passion.",
+          "model": "My brother is an ardent fan of his football team."
+        },
+        {
+          "target": "ardent fan of",
+          "source": "She loves that singer very much and goes to all his concerts.",
+          "model": "She is an ardent fan of that singer and goes to all his concerts."
+        }
+      ]
+    },
+    "dedicated_fan_of": {
+      "word": "dedicated fan of",
+      "pronunciation": "/ˈdedɪkeɪtɪd fæn ɒv/",
+      "image": {
+        "type": "prompt",
+        "value": "a dedicated fan attending every concert",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Rock_en_Parque_Roca_%286796076495%29.jpg/960px-Rock_en_Parque_Roca_%286796076495%29.jpg"
+      },
+      "part_of_speech": [
+        "adjective phrase"
+      ],
+      "collocation_type": "adjective+noun+preposition",
+      "senses": [
+        {
+          "definition_vi": "Người hâm mộ tận tâm, trung thành.",
+          "examples": [
+            "She’s a(n) dedicated fan of American football."
+          ],
+          "grammar_patterns": [
+            "dedicated fan of something"
+          ],
+          "usage_notes_vi": "Nhấn mạnh sự trung thành và cam kết lâu dài của người hâm mộ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Sport",
+          "question": "Why do some people travel abroad just to watch their team play?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "Why do some people buy every album their favourite band releases?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Why do some viewers watch the same TV show for many years?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "dedicated fan of",
+          "text": "He is a dedicated fan of the local team."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "dedicated fan of",
+          "source": "My father has supported the same team loyally for years.",
+          "model": "My father has been a dedicated fan of the same team for years."
+        },
+        {
+          "target": "dedicated fan of",
+          "source": "She has loyally read every book by this writer.",
+          "model": "She is a dedicated fan of this writer and has read every book."
+        }
+      ]
+    },
+    "keen_admirer_of": {
+      "word": "keen admirer of",
+      "pronunciation": "/kiːn ədˈmaɪərər ɒv/",
+      "image": {
+        "type": "prompt",
+        "value": "a person who is a keen admirer of a leader",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Rock_en_Parque_Roca_%286796076495%29.jpg/960px-Rock_en_Parque_Roca_%286796076495%29.jpg"
+      },
+      "part_of_speech": [
+        "adjective phrase"
+      ],
+      "collocation_type": "adjective+noun+preposition",
+      "senses": [
+        {
+          "definition_vi": "Người ngưỡng mộ nhiệt tình.",
+          "examples": [
+            "I’m a keen admirer of the new President."
+          ],
+          "grammar_patterns": [
+            "keen admirer of someone/something"
+          ],
+          "usage_notes_vi": "Diễn tả sự ngưỡng mộ mạnh mẽ và nhiệt tình đối với ai đó hoặc cái gì đó."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Politics",
+          "question": "Which public figure in your country do you respect most?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "Which artist or writer do you admire, and why?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "Which athlete do you think young people should look up to?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "keen admirer of",
+          "text": "I am a keen admirer of her paintings."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "keen admirer of",
+          "source": "I admire the new President very much.",
+          "model": "I am a keen admirer of the new President."
+        },
+        {
+          "target": "keen admirer of",
+          "source": "My teacher greatly admires classical architecture.",
+          "model": "My teacher is a keen admirer of classical architecture."
+        }
+      ]
+    },
+    "filled_me_with_admiration": {
+      "word": "filled me with admiration",
+      "pronunciation": "/fɪld miː wɪð ədˈmaɪərən/",
+      "image": {
+        "type": "prompt",
+        "value": "a person looking inspired by someone's achievements",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg/960px-Florence_Nightingale_%28H_Hering_NPG_x82368%29.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+pronoun+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Khiến tôi vô cùng ngưỡng mộ.",
+          "examples": [
+            "My wife’s father always filled me with admiration."
+          ],
+          "grammar_patterns": [
+            "fill someone with admiration"
+          ],
+          "usage_notes_vi": "Diễn tả cảm giác ngưỡng mộ sâu sắc đối với ai đó do những thành tựu hoặc phẩm chất của họ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "Who in your family do you admire most?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "Which sporting achievement has impressed you the most?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "What kind of people in your community impress you the most?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "filled me with admiration",
+          "text": "Her courage filled me with admiration."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "filled me with admiration",
+          "source": "I have always greatly admired my wife's father.",
+          "model": "My wife's father always filled me with admiration."
+        },
+        {
+          "target": "filled me with admiration",
+          "source": "I was deeply impressed by the way the nurses worked.",
+          "model": "The way the nurses worked filled me with admiration."
+        }
+      ]
+    },
+    "gives_me_pleasure": {
+      "word": "gives me pleasure",
+      "pronunciation": "/ɡɪvz miː ˈpleʒər/",
+      "image": {
+        "type": "prompt",
+        "value": "a parent watching their child succeed, feeling pleasure",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/A_Smiling_boy_from_Bangladesh.jpg/960px-A_Smiling_boy_from_Bangladesh.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+pronoun+noun",
+      "senses": [
+        {
+          "definition_vi": "Mang lại cho tôi niềm vui/sự hài lòng.",
+          "examples": [
+            "It always gives me pleasure when I see my children doing well at school."
+          ],
+          "grammar_patterns": [
+            "give someone pleasure"
+          ],
+          "usage_notes_vi": "Diễn tả việc một hành động hoặc sự kiện mang lại cảm giác vui vẻ, hài lòng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "What makes you happy as a parent or family member?",
+          "fits": []
+        },
+        {
+          "context": "Leisure",
+          "question": "What hobby makes you feel happiest?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What part of your job or studies do you enjoy most?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "gives me pleasure",
+          "text": "Cooking for my friends always gives me pleasure."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "gives me pleasure",
+          "source": "I feel happy when I see my children doing well.",
+          "model": "It gives me pleasure when I see my children doing well."
+        },
+        {
+          "target": "gives me pleasure",
+          "source": "I really enjoy helping other people.",
+          "model": "Helping other people gives me pleasure."
+        }
+      ]
+    }
+  }
+}

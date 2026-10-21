@@ -1,0 +1,2099 @@
+{
+  "metadata": {
+    "lesson_id": "deciding-and-choosing",
+    "topic": "Functions",
+    "chapter_title": "Deciding and choosing",
+    "pdf_file": "Deciding and choosing.pdf"
+  },
+  "mindmap_data": {
+    "topic": "Functions",
+    "chapter": {
+      "chapter_id": "ch_deciding-and-choosing",
+      "title": "Deciding and choosing",
+      "sessions": [
+        {
+          "session_id": "s_deciding-and-choosing_a",
+          "title": "A Decisions and judgements",
+          "description_vi": "Ghi chú các cụm từ cố định in đậm trong các email giữa các đồng nghiệp.",
+          "value": "# Deciding and choosing\n\n## A Decisions and judgements\nNote the collocations in bold in these emails between colleagues.\n\nHi Rita,\nHave you **made a decision** yet about the new job? It must be difficult. It’s such a **big decision** to have to move to London and everything. I always **put off making decisions** till the last possible moment. I bet you’re the same. I detected a **slight hesitation** in your last email. Are you **having second thoughts**? Anyway, let me know.\nPaul\n\nDear Carl,\nYou’ve probably heard that the management have **taken the decision** to close the Madrid office. There was a lot of discussion, but apparently it was a **unanimous decision** in the end. There’s always been a **degree of uncertainty** surrounding the future of the Madrid office, but let’s just hope this will now be seen as a **wise decision** by everyone.\nElizabeth\n\nDear Mary,\nAfter weeks of hesitating, it seems Matt has **arrived at a decision** about the research fund. He’s going to increase it by £10,000. I think that’s a **sensible decision** that combines generosity and **sound judgement**. But he’s also **defending his decision** to close down the San Antonio project, which is losing a lot of money. However, he’s **reserving judgement** on the Berlin project until he gets more reliable information.\nNick",
+          "children_nodes": [
+            {
+              "node_id": "make_a_decision",
+              "label": "make a decision"
+            },
+            {
+              "node_id": "big_decision",
+              "label": "big decision"
+            },
+            {
+              "node_id": "put_off_making_decisions",
+              "label": "put off making decisions"
+            },
+            {
+              "node_id": "slight_hesitation",
+              "label": "slight hesitation"
+            },
+            {
+              "node_id": "having_second_thoughts",
+              "label": "having second thoughts"
+            },
+            {
+              "node_id": "taken_the_decision",
+              "label": "taken the decision"
+            },
+            {
+              "node_id": "unanimous_decision",
+              "label": "unanimous decision"
+            },
+            {
+              "node_id": "degree_of_uncertainty",
+              "label": "degree of uncertainty"
+            },
+            {
+              "node_id": "wise_decision",
+              "label": "wise decision"
+            },
+            {
+              "node_id": "arrived_at_a_decision",
+              "label": "arrived at a decision"
+            },
+            {
+              "node_id": "sensible_decision",
+              "label": "sensible decision"
+            },
+            {
+              "node_id": "sound_judgement",
+              "label": "sound judgement"
+            },
+            {
+              "node_id": "defending_his_decision",
+              "label": "defending his decision"
+            },
+            {
+              "node_id": "reserving_judgement",
+              "label": "reserving judgement"
+            }
+          ]
+        },
+        {
+          "session_id": "s_deciding-and-choosing_b",
+          "title": "B Choices, opportunities, advice",
+          "description_vi": "Thảo luận về các lựa chọn, cơ hội và lời khuyên.",
+          "value": "# Deciding and choosing\n\n## B Choices, opportunities, advice\nTim: I’m going to have to **make a choice** soon about next year. I’ve been **given the chance** of going on a six-month expedition to South America and I’ve been offered a job in a bookshop here.\nLaura: Wow! South America! That sounds like the **opportunity of a lifetime**! How could you say no?\nTim: Well, believe it or not, I don’t have a **burning desire** to see the world, I’d **much prefer** just to stay at home. Anyway, I’m going to **consider all the options** before I decide.\nLaura: Well, I know you never **take my advice** but I would **strongly advise** you to think of the future. Overseas experience is much more useful than working in your home town. You’re lucky to **have a choice**, a lot of people stay at home because they **have no option**.\nTim: I know, I know, but it’s a **tough choice**. You wouldn’t understand.\nLaura: Well, I think you’re just **taking the soft option** if you choose the bookshop. I can’t believe you’re going to **pass up the opportunity** of a trip to South America.\nTim: Well, we all **face difficult choices** now and then.\nLaura: Difficult! You’re mad! Look, just don’t reject South America **out of hand**. Promise me you’ll think about it.\nTim: Yes, yes, I already said I’m going to **weigh up the options** and **come to a decision**.\n\n**Tip**\nHoroscopes often focus on choices and decisions in people’s lives. Read horoscopes in English and note any new collocations connected with decisions and choices.",
+          "children_nodes": [
+            {
+              "node_id": "make_a_choice",
+              "label": "make a choice"
+            },
+            {
+              "node_id": "given_the_chance",
+              "label": "given the chance"
+            },
+            {
+              "node_id": "opportunity_of_a_lifetime",
+              "label": "opportunity of a lifetime"
+            },
+            {
+              "node_id": "burning_desire",
+              "label": "burning desire"
+            },
+            {
+              "node_id": "much_prefer",
+              "label": "much prefer"
+            },
+            {
+              "node_id": "consider_all_the_options",
+              "label": "consider all the options"
+            },
+            {
+              "node_id": "take_my_advice",
+              "label": "take my advice"
+            },
+            {
+              "node_id": "strongly_advise",
+              "label": "strongly advise"
+            },
+            {
+              "node_id": "have_a_choice",
+              "label": "have a choice"
+            },
+            {
+              "node_id": "have_no_option",
+              "label": "have no option"
+            },
+            {
+              "node_id": "tough_choice",
+              "label": "tough choice"
+            },
+            {
+              "node_id": "taking_the_soft_option",
+              "label": "taking the soft option"
+            },
+            {
+              "node_id": "pass_up_the_opportunity",
+              "label": "pass up the opportunity"
+            },
+            {
+              "node_id": "face_difficult_choices",
+              "label": "face difficult choices"
+            },
+            {
+              "node_id": "out_of_hand",
+              "label": "out of hand"
+            },
+            {
+              "node_id": "weigh_up_the_options",
+              "label": "weigh up the options"
+            },
+            {
+              "node_id": "come_to_a_decision",
+              "label": "come to a decision"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "section_id": "A",
+      "session_ref": "s_deciding-and-choosing_a",
+      "title": "Decisions and judgements",
+      "instruction_vi": "Ghi chú các cụm từ cố định in đậm trong các email giữa các đồng nghiệp.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "Hi Rita,\nHave you **made a decision** yet about the new job? It must be difficult. It’s such a **big decision** to have to move to London and everything. I always **put off making decisions** till the last possible moment. I bet you’re the same. I detected a **slight hesitation** in your last email. Are you **having second thoughts**? Anyway, let me know.\nPaul\n\nDear Carl,\nYou’ve probably heard that the management have **taken the decision** to close the Madrid office. There was a lot of discussion, but apparently it was a **unanimous decision** in the end. There’s always been a **degree of uncertainty** surrounding the future of the Madrid office, but let’s just hope this will now be seen as a **wise decision** by everyone.\nElizabeth\n\nDear Mary,\nAfter weeks of hesitating, it seems Matt has **arrived at a decision** about the research fund. He’s going to increase it by £10,000. I think that’s a **sensible decision** that combines generosity and **sound judgement**. But he’s also **defending his decision** to close down the San Antonio project, which is losing a lot of money. However, he’s **reserving judgement** on the Berlin project until he gets more reliable information.\nNick",
+          "related_vocabulary_ids": [
+            "make_a_decision",
+            "big_decision",
+            "put_off_making_decisions",
+            "slight_hesitation",
+            "having_second_thoughts",
+            "taken_the_decision",
+            "unanimous_decision",
+            "degree_of_uncertainty",
+            "wise_decision",
+            "arrived_at_a_decision",
+            "sensible_decision",
+            "sound_judgement",
+            "defending_his_decision",
+            "reserving_judgement"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "B",
+      "session_ref": "s_deciding-and-choosing_b",
+      "title": "Choices, opportunities, advice",
+      "instruction_vi": "Thảo luận về các lựa chọn, cơ hội và lời khuyên.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "Tim: I’m going to have to **make a choice** soon about next year. I’ve been **given the chance** of going on a six-month expedition to South America and I’ve been offered a job in a bookshop here.\nLaura: Wow! South America! That sounds like the **opportunity of a lifetime**! How could you say no?\nTim: Well, believe it or not, I don’t have a **burning desire** to see the world, I’d **much prefer** just to stay at home. Anyway, I’m going to **consider all the options** before I decide.\nLaura: Well, I know you never **take my advice** but I would **strongly advise** you to think of the future. Overseas experience is much more useful than working in your home town. You’re lucky to **have a choice**, a lot of people stay at home because they **have no option**.\nTim: I know, I know, but it’s a **tough choice**. You wouldn’t understand.\nLaura: Well, I think you’re just **taking the soft option** if you choose the bookshop. I can’t believe you’re going to **pass up the opportunity** of a trip to South America.\nTim: Well, we all **face difficult choices** now and then.\nLaura: Difficult! You’re mad! Look, just don’t reject South America **out of hand**. Promise me you’ll think about it.\nTim: Yes, yes, I already said I’m going to **weigh up the options** and **come to a decision**.\n\n**Tip**\nHoroscopes often focus on choices and decisions in people’s lives. Read horoscopes in English and note any new collocations connected with decisions and choices.",
+          "related_vocabulary_ids": [
+            "make_a_choice",
+            "given_the_chance",
+            "opportunity_of_a_lifetime",
+            "burning_desire",
+            "much_prefer",
+            "consider_all_the_options",
+            "take_my_advice",
+            "strongly_advise",
+            "have_a_choice",
+            "have_no_option",
+            "tough_choice",
+            "taking_the_soft_option",
+            "pass_up_the_opportunity",
+            "face_difficult_choices",
+            "out_of_hand",
+            "weigh_up_the_options",
+            "come_to_a_decision"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary_data": {
+    "make_a_decision": {
+      "word": "make a decision",
+      "pronunciation": "/meɪk ə dɪˈsɪʒən/",
+      "image": {
+        "type": "prompt",
+        "value": "a person making a choice",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Đưa ra một quyết định, chọn một phương án.",
+          "examples": [
+            "Have you **made a decision** yet about the new job?"
+          ],
+          "grammar_patterns": [
+            "make a decision about something"
+          ],
+          "usage_notes_vi": "Đây là cách diễn đạt phổ biến nhất để nói về việc đưa ra một quyết định."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How do managers decide between two equally good job candidates?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "At what age should teenagers choose their own subjects at school?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "Who should decide where a family goes on holiday, parents or children?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "make a decision",
+          "text": "I need to make a decision about my new job."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "make a decision",
+          "source": "I need to decide soon which university to attend.",
+          "model": "I need to make a decision soon about which university to attend."
+        },
+        {
+          "target": "make a decision",
+          "source": "The government must decide quickly whether to build the new airport.",
+          "model": "The government must make a decision quickly about the new airport."
+        }
+      ]
+    },
+    "big_decision": {
+      "word": "big decision",
+      "pronunciation": "/bɪɡ dɪˈsɪʒən/",
+      "image": {
+        "type": "prompt",
+        "value": "a crossroads sign",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một quyết định quan trọng, có ảnh hưởng lớn.",
+          "examples": [
+            "It’s such a **big decision** to have to move to London and everything."
+          ],
+          "grammar_patterns": [
+            "a big decision to do something"
+          ],
+          "usage_notes_vi": "Nhấn mạnh tầm quan trọng và sự ảnh hưởng của quyết định."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "What are the most important choices young adults face when they leave home?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Is buying a house the most important choice people make in their lives?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How should people prepare before changing careers in their thirties?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "big decision",
+          "text": "Moving to another country is a big decision."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "big decision",
+          "source": "Choosing a university is very important and can change your whole life.",
+          "model": "Choosing a university is a big decision that can change your whole life."
+        },
+        {
+          "target": "big decision",
+          "source": "Getting married is a serious choice that people should not rush.",
+          "model": "Getting married is a big decision that people should not rush."
+        }
+      ]
+    },
+    "put_off_making_decisions": {
+      "word": "put off making decisions",
+      "pronunciation": "/pʊt ɒf ˈmeɪkɪŋ dɪˈsɪʒənz/",
+      "image": {
+        "type": "prompt",
+        "value": "a person delaying a task",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Modern_British_LED_Traffic_Light.jpg/960px-Modern_British_LED_Traffic_Light.jpg"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+gerund",
+      "senses": [
+        {
+          "definition_vi": "Trì hoãn việc đưa ra quyết định.",
+          "examples": [
+            "I always **put off making decisions** till the last possible moment."
+          ],
+          "grammar_patterns": [
+            "put off doing something"
+          ],
+          "usage_notes_vi": "Diễn tả hành động né tránh hoặc trì hoãn việc phải đưa ra lựa chọn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "Why do some managers delay important choices until the last minute?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Why do many students wait until the deadline before choosing their university course?",
+          "fits": []
+        },
+        {
+          "context": "Personality",
+          "question": "Is it a sign of weakness when a person always delays choosing until the last moment?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "put off making decisions",
+          "text": "I tend to put off making decisions until the last minute."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "put off making decisions",
+          "source": "Many people delay choosing a career because they are afraid of failure.",
+          "model": "Many people put off making decisions about their career because they are afraid of failure."
+        },
+        {
+          "target": "put off making decisions",
+          "source": "Governments often wait too long before deciding how to tackle climate change.",
+          "model": "Governments often put off making decisions about how to tackle climate change."
+        }
+      ]
+    },
+    "slight_hesitation": {
+      "word": "slight hesitation",
+      "pronunciation": "/slaɪt ˈhɛzɪtən/",
+      "image": {
+        "type": "prompt",
+        "value": "a person pausing before speaking",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự do dự, ngập ngừng nhỏ.",
+          "examples": [
+            "I detected a **slight hesitation** in your last email."
+          ],
+          "grammar_patterns": [
+            "a slight hesitation in something"
+          ],
+          "usage_notes_vi": "Chỉ một sự do dự không rõ rệt, có thể nhận thấy được."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How can an interviewer tell whether a candidate is unsure about an answer?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How can teachers tell when a student is not fully confident about an answer?",
+          "fits": []
+        },
+        {
+          "context": "Relationships",
+          "question": "How can you tell when a friend does not really want to accept your invitation?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "slight hesitation",
+          "text": "There was a slight hesitation before she said yes."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "slight hesitation",
+          "source": "He paused for a moment before agreeing to the plan.",
+          "model": "After a slight hesitation, he agreed to the plan."
+        },
+        {
+          "target": "slight hesitation",
+          "source": "She answered the question almost immediately, stopping only very briefly at first.",
+          "model": "She answered the question with only a slight hesitation."
+        }
+      ]
+    },
+    "having_second_thoughts": {
+      "word": "having second thoughts",
+      "pronunciation": "/ˈhævɪŋ ˈsɛkənd θɔːts/",
+      "image": {
+        "type": "prompt",
+        "value": "a person looking confused about a decision",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Le_Penseur_by_Rodin_%28Kunsthalle_Bielefeld%29_2014-04-10.JPG/960px-Le_Penseur_by_Rodin_%28Kunsthalle_Bielefeld%29_2014-04-10.JPG"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+idiom",
+      "senses": [
+        {
+          "definition_vi": "Bắt đầu nghi ngờ hoặc thay đổi ý định về một quyết định đã đưa ra.",
+          "examples": [
+            "Are you **having second thoughts**?"
+          ],
+          "grammar_patterns": [
+            "have second thoughts about something"
+          ],
+          "usage_notes_vi": "Diễn tả sự không chắc chắn hoặc hối tiếc về một lựa chọn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How do people sometimes feel a few weeks after accepting a new job offer?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Have you ever booked a trip and then started to doubt whether it was a good idea?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "Why do some couples start to doubt their wedding plans as the day approaches?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "having second thoughts",
+          "text": "I am having second thoughts about moving to the city."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "having second thoughts",
+          "source": "I am starting to doubt whether buying this car was a good idea.",
+          "model": "I am having second thoughts about buying this car."
+        },
+        {
+          "target": "having second thoughts",
+          "source": "Many students begin to question their choice of course after the first term.",
+          "model": "Many students are having second thoughts about their course after the first term."
+        }
+      ]
+    },
+    "taken_the_decision": {
+      "word": "taken the decision",
+      "pronunciation": "/ˈteɪkən ðə dɪˈsɪʒən/",
+      "image": {
+        "type": "prompt",
+        "value": "a gavel hitting a block",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Đã đưa ra quyết định (thường bởi một nhóm hoặc tổ chức).",
+          "examples": [
+            "You’ve probably heard that the management have **taken the decision** to close the Madrid office."
+          ],
+          "grammar_patterns": [
+            "take the decision to do something"
+          ],
+          "usage_notes_vi": "Thường dùng khi nói về các quyết định chính thức hoặc mang tính tập thể."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Business",
+          "question": "How do companies usually announce that they are closing an office?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Should governments ban plastic bags, as some countries already have?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Why have some schools chosen to ban mobile phones in classrooms?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "taken the decision",
+          "text": "The council has taken the decision to close the library."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "taken the decision",
+          "source": "The management have decided to close the factory next year.",
+          "model": "The management have taken the decision to close the factory next year."
+        },
+        {
+          "target": "taken the decision",
+          "source": "Our school has chosen to stop selling sugary drinks.",
+          "model": "Our school has taken the decision to stop selling sugary drinks."
+        }
+      ]
+    },
+    "unanimous_decision": {
+      "word": "unanimous decision",
+      "pronunciation": "/juːˈnænɪməs dɪˈsɪʒən/",
+      "image": {
+        "type": "prompt",
+        "value": "a group of people all agreeing",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Jury_box_cropped.jpg/960px-Jury_box_cropped.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Quyết định mà tất cả mọi người trong một nhóm đều đồng ý.",
+          "examples": [
+            "apparently it was a **unanimous decision** in the end."
+          ],
+          "grammar_patterns": [
+            "a unanimous decision"
+          ],
+          "usage_notes_vi": "Nhấn mạnh sự đồng thuận tuyệt đối."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How should a team decide on a plan when every member must agree?",
+          "fits": []
+        },
+        {
+          "context": "Law",
+          "question": "Is it better when every member of a jury agrees on a verdict?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "How are boxing matches decided when there is no knockout?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "unanimous decision",
+          "text": "The committee reached a unanimous decision after a long meeting."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "unanimous decision",
+          "source": "Every member of the board agreed to hire the new director.",
+          "model": "The board made a unanimous decision to hire the new director."
+        },
+        {
+          "target": "unanimous decision",
+          "source": "All the judges agreed that she should win the competition.",
+          "model": "It was a unanimous decision by the judges to give her the prize."
+        }
+      ]
+    },
+    "degree_of_uncertainty": {
+      "word": "degree of uncertainty",
+      "pronunciation": "/dɪˈɡriː əv ʌnˈsɜːtənti/",
+      "image": {
+        "type": "prompt",
+        "value": "a question mark over a map",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Normal_distribution_50%25_CI_illustration.svg/960px-Normal_distribution_50%25_CI_illustration.svg.png"
+      },
+      "part_of_speech": [
+        "noun",
+        "noun"
+      ],
+      "collocation_type": "noun+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Mức độ không chắc chắn.",
+          "examples": [
+            "There’s always been a **degree of uncertainty** surrounding the future of the Madrid office."
+          ],
+          "grammar_patterns": [
+            "a degree of uncertainty about/surrounding something"
+          ],
+          "usage_notes_vi": "Chỉ mức độ không chắc chắn, có thể nhiều hoặc ít."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "Why is it difficult for experts to predict the future of the economy?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Can scientists be sure about how much sea levels will rise this century?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How does the rise of artificial intelligence affect young people's job security?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "degree of uncertainty",
+          "text": "There is still a degree of uncertainty about the results."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "degree of uncertainty",
+          "source": "Nobody is completely sure what will happen to house prices next year.",
+          "model": "There is a degree of uncertainty about what will happen to house prices next year."
+        },
+        {
+          "target": "degree of uncertainty",
+          "source": "Doctors are not fully certain how well the new treatment works.",
+          "model": "There is still a degree of uncertainty about how well the new treatment works."
+        }
+      ]
+    },
+    "wise_decision": {
+      "word": "wise decision",
+      "pronunciation": "/waɪz dɪˈsɪʒən/",
+      "image": {
+        "type": "prompt",
+        "value": "an owl wearing a graduation cap",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Frauenberg_030.jpg/960px-Frauenberg_030.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một quyết định khôn ngoan, sáng suốt.",
+          "examples": [
+            "let’s just hope this will now be seen as a **wise decision** by everyone."
+          ],
+          "grammar_patterns": [
+            "a wise decision"
+          ],
+          "usage_notes_vi": "Ám chỉ một quyết định được đưa ra dựa trên sự suy xét kỹ lưỡng và kinh nghiệm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "Do you think taking a gap year before university is a good idea?",
+          "fits": []
+        },
+        {
+          "context": "Money",
+          "question": "Is it sensible for young people to start saving for retirement early?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Should people stop eating fast food completely?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "wise decision",
+          "text": "Saving some money every month is a wise decision."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "wise decision",
+          "source": "It was clever of her to study medicine instead of law.",
+          "model": "Studying medicine instead of law was a wise decision."
+        },
+        {
+          "target": "wise decision",
+          "source": "The city did the right thing when it built more cycle lanes.",
+          "model": "Building more cycle lanes was a wise decision by the city."
+        }
+      ]
+    },
+    "arrived_at_a_decision": {
+      "word": "arrived at a decision",
+      "pronunciation": "/əˈraɪvd æt ə dɪˈsɪʒən/",
+      "image": {
+        "type": "prompt",
+        "value": "a person reaching a destination on a map",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Đã đi đến một quyết định sau một quá trình suy nghĩ hoặc thảo luận.",
+          "examples": [
+            "it seems Matt has **arrived at a decision** about the research fund."
+          ],
+          "grammar_patterns": [
+            "arrive at a decision"
+          ],
+          "usage_notes_vi": "Diễn tả kết quả của một quá trình cân nhắc."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Business",
+          "question": "How long should a company take before choosing a new location for its office?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "How do governments decide on new laws after a long public debate?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "How do families decide together whether to move to a new city?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "arrived at a decision",
+          "text": "After a long discussion, we finally arrived at a decision."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "arrived at a decision",
+          "source": "After weeks of talks, the committee finally decided how to spend the money.",
+          "model": "After weeks of talks, the committee finally arrived at a decision on how to spend the money."
+        },
+        {
+          "target": "arrived at a decision",
+          "source": "The judges discussed the case for hours before they chose the winner.",
+          "model": "The judges discussed the case for hours before they arrived at a decision."
+        }
+      ]
+    },
+    "sensible_decision": {
+      "word": "sensible decision",
+      "pronunciation": "/ˈsɛnsəbl dɪˈsɪʒən/",
+      "image": {
+        "type": "prompt",
+        "value": "a person carefully weighing options",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một quyết định hợp lý, thực tế.",
+          "examples": [
+            "I think that’s a **sensible decision** that combines generosity and sound judgement."
+          ],
+          "grammar_patterns": [
+            "a sensible decision"
+          ],
+          "usage_notes_vi": "Chỉ một quyết định có lý, phù hợp với hoàn cảnh và mang lại kết quả tốt."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "Is it a good idea for university students to take a part-time job?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Should travellers always buy insurance before going abroad?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Is it a good idea to see a doctor even when you feel only slightly ill?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "sensible decision",
+          "text": "Taking the train instead of driving was a sensible decision."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "sensible decision",
+          "source": "It was practical of him to rent a flat before buying one.",
+          "model": "Renting a flat before buying one was a sensible decision."
+        },
+        {
+          "target": "sensible decision",
+          "source": "The school was right to close during the storm.",
+          "model": "Closing the school during the storm was a sensible decision."
+        }
+      ]
+    },
+    "sound_judgement": {
+      "word": "sound judgement",
+      "pronunciation": "/saʊnd ˈdʒʌdʒmənt/",
+      "image": {
+        "type": "prompt",
+        "value": "a scale balancing perfectly",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Khả năng đưa ra những đánh giá hoặc quyết định đúng đắn, hợp lý.",
+          "examples": [
+            "that combines generosity and **sound judgement**."
+          ],
+          "grammar_patterns": [
+            "sound judgement"
+          ],
+          "usage_notes_vi": "Khả năng phán đoán tốt, dựa trên lý trí và kinh nghiệm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What qualities make someone a good leader in a company?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "What qualities do doctors need when treating patients in emergencies?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "What makes a good newspaper editor?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "sound judgement",
+          "text": "A good manager needs sound judgement in difficult situations."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "sound judgement",
+          "source": "She is good at making sensible decisions under pressure.",
+          "model": "She shows sound judgement under pressure."
+        },
+        {
+          "target": "sound judgement",
+          "source": "Pilots must be able to make the right choices quickly in an emergency.",
+          "model": "Pilots must use sound judgement in an emergency."
+        }
+      ]
+    },
+    "defending_his_decision": {
+      "word": "defending his decision",
+      "pronunciation": "/dɪˈfɛndɪŋ hɪz dɪˈsɪʒən/",
+      "image": {
+        "type": "prompt",
+        "value": "a person protecting a plan",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/The_uncivilized_races_of_men_in_all_countries_of_the_world%3B_being_a_comprehensive_account_of_their_manners_and_customs%2C_and_of_their_physical%2C_social%2C_mental%2C_moral_and_religious_characteristics._By_%2814762645001%29.jpg/960px-thumbnail.jpg"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Bảo vệ hoặc biện minh cho quyết định của mình.",
+          "examples": [
+            "he’s also **defending his decision** to close down the San Antonio project."
+          ],
+          "grammar_patterns": [
+            "defend a decision"
+          ],
+          "usage_notes_vi": "Giải thích lý do và bảo vệ cho một quyết định, đặc biệt khi nó có thể gây tranh cãi."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Politics",
+          "question": "How do politicians react when the public criticises their choices?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "How should a football coach respond when fans criticise his team selection?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Should a manager explain his choices when his staff disagree with him?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "defending his decision",
+          "text": "The coach is defending his decision to drop the captain."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "defending his decision",
+          "source": "The minister is explaining why he chose to raise taxes, despite strong criticism.",
+          "model": "The minister is defending his decision to raise taxes, despite strong criticism."
+        },
+        {
+          "target": "defending his decision",
+          "source": "The headteacher is justifying his choice to ban phones at school.",
+          "model": "The headteacher is defending his decision to ban phones at school."
+        }
+      ]
+    },
+    "reserving_judgement": {
+      "word": "reserving judgement",
+      "pronunciation": "/rɪˈzɜːvɪŋ ˈdʒʌdʒmənt/",
+      "image": {
+        "type": "prompt",
+        "value": "a person waiting to make a final decision",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/De_Haagse_magistraat_in_1636.jpg/960px-De_Haagse_magistraat_in_1636.jpg"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Tạm thời chưa đưa ra phán quyết hoặc quyết định cuối cùng.",
+          "examples": [
+            "he’s **reserving judgement** on the Berlin project until he gets more reliable information."
+          ],
+          "grammar_patterns": [
+            "reserve judgement on something"
+          ],
+          "usage_notes_vi": "Chờ đợi thêm thông tin hoặc bằng chứng trước khi đưa ra ý kiến hoặc quyết định."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "Should people form opinions about news stories before all the facts are known?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How should a new employee react to office gossip about a colleague?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "What do you think about new technologies, like self-driving cars, that are not fully tested?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "reserving judgement",
+          "text": "I am reserving judgement until I hear both sides."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "reserving judgement",
+          "source": "I will not decide what I think about the new manager until I know her better.",
+          "model": "I am reserving judgement on the new manager until I know her better."
+        },
+        {
+          "target": "reserving judgement",
+          "source": "Many experts are waiting for more evidence before giving their opinion on the drug.",
+          "model": "Many experts are reserving judgement on the drug until there is more evidence."
+        }
+      ]
+    },
+    "make_a_choice": {
+      "word": "make a choice",
+      "pronunciation": "/meɪk ə tʃɔɪs/",
+      "image": {
+        "type": "prompt",
+        "value": "a person choosing between two paths",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Chọn một cái gì đó từ nhiều lựa chọn.",
+          "examples": [
+            "I’m going to have to **make a choice** soon about next year."
+          ],
+          "grammar_patterns": [
+            "make a choice between A and B",
+            "make a choice about something"
+          ],
+          "usage_notes_vi": "Tương tự như 'make a decision', nhưng thường nhấn mạnh vào việc lựa chọn giữa các phương án cụ thể."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Shopping",
+          "question": "Why do people find it hard to choose when there are too many products?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Should students be allowed to choose which subjects they study?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How can the government help people choose healthier food?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "make a choice",
+          "text": "You have to make a choice between the two jobs."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "make a choice",
+          "source": "Voters must decide between two very different candidates.",
+          "model": "Voters must make a choice between two very different candidates."
+        },
+        {
+          "target": "make a choice",
+          "source": "At sixteen, students have to pick either science or arts.",
+          "model": "At sixteen, students have to make a choice between science and arts."
+        }
+      ]
+    },
+    "given_the_chance": {
+      "word": "given the chance",
+      "pronunciation": "/ˈɡɪvən ðə tʃɑːns/",
+      "image": {
+        "type": "prompt",
+        "value": "a person receiving an opportunity",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ladder.webp/960px-Ladder.webp.png"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Được trao cơ hội làm điều gì đó.",
+          "examples": [
+            "I’ve been **given the chance** of going on a six-month expedition to South America."
+          ],
+          "grammar_patterns": [
+            "be given the chance to do something",
+            "be given the chance of doing something"
+          ],
+          "usage_notes_vi": "Diễn tả việc nhận được một cơ hội hoặc lời đề nghị."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "If you could live abroad for a year, where would you go?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Would you start your own business if you had the opportunity?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Would you like to learn a new language if you had the time and opportunity?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "given the chance",
+          "text": "Given the chance, I would travel around the world."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "given the chance",
+          "source": "If I had the opportunity, I would study abroad.",
+          "model": "Given the chance, I would study abroad."
+        },
+        {
+          "target": "given the chance",
+          "source": "Many young people would start their own company if they had the opportunity.",
+          "model": "Many young people would start their own company if given the chance."
+        }
+      ]
+    },
+    "opportunity_of_a_lifetime": {
+      "word": "opportunity of a lifetime",
+      "pronunciation": "/ˌɒpəˈtjuːnəti əv ə ˈlaɪftaɪm/",
+      "image": {
+        "type": "prompt",
+        "value": "a person climbing a mountain peak",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ladder.webp/960px-Ladder.webp.png"
+      },
+      "part_of_speech": [
+        "noun",
+        "preposition",
+        "noun"
+      ],
+      "collocation_type": "noun+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Cơ hội quý báu, hiếm có trong đời.",
+          "examples": [
+            "That sounds like the **opportunity of a lifetime**!"
+          ],
+          "grammar_patterns": [
+            "the opportunity of a lifetime"
+          ],
+          "usage_notes_vi": "Nhấn mạnh tính độc đáo và giá trị đặc biệt của cơ hội."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What kind of job offer would make you move abroad immediately?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "How do young athletes feel when they are selected for the Olympics?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Would you give up your job to travel into space?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "opportunity of a lifetime",
+          "text": "This job offer is the opportunity of a lifetime."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "opportunity of a lifetime",
+          "source": "Studying at Oxford was a rare chance that I could not miss.",
+          "model": "Studying at Oxford was the opportunity of a lifetime."
+        },
+        {
+          "target": "opportunity of a lifetime",
+          "source": "Meeting her favourite singer was a chance she would probably never get again.",
+          "model": "Meeting her favourite singer was the opportunity of a lifetime."
+        }
+      ]
+    },
+    "burning_desire": {
+      "word": "burning desire",
+      "pronunciation": "/ˈbɜːnɪŋ dɪˈzaɪər/",
+      "image": {
+        "type": "prompt",
+        "value": "a person with intense longing",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/3/36/Large_bonfire.jpg"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Mong muốn mãnh liệt, cháy bỏng.",
+          "examples": [
+            "I don’t have a **burning desire** to see the world."
+          ],
+          "grammar_patterns": [
+            "a burning desire to do something"
+          ],
+          "usage_notes_vi": "Diễn tả một sự khao khát rất lớn và mạnh mẽ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Business",
+          "question": "What motivates some people to start their own businesses?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "What makes some athletes train harder than everyone else?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Why do some people feel they must visit every country in the world?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "burning desire",
+          "text": "She has a burning desire to become a doctor."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "burning desire",
+          "source": "He has always wanted very strongly to travel the world.",
+          "model": "He has always had a burning desire to travel the world."
+        },
+        {
+          "target": "burning desire",
+          "source": "Many young artists want desperately to become famous.",
+          "model": "Many young artists have a burning desire to become famous."
+        }
+      ]
+    },
+    "much_prefer": {
+      "word": "much prefer",
+      "pronunciation": "/mʌtʃ prɪˈfɜːr/",
+      "image": {
+        "type": "prompt",
+        "value": "a person choosing one option over another with enthusiasm",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "adverb",
+        "verb"
+      ],
+      "collocation_type": "adverb+verb",
+      "senses": [
+        {
+          "definition_vi": "Thích cái gì đó hơn nhiều.",
+          "examples": [
+            "I’d **much prefer** just to stay at home."
+          ],
+          "grammar_patterns": [
+            "much prefer to do something",
+            "much prefer something to something else"
+          ],
+          "usage_notes_vi": "Nhấn mạnh sự yêu thích hơn hẳn so với các lựa chọn khác."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Food",
+          "question": "Do you like eating at home or in restaurants?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Do you like travelling by train or by plane?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Do students learn better online or in a classroom?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "much prefer",
+          "text": "I much prefer tea to coffee in the morning."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "much prefer",
+          "source": "I like reading books a lot more than watching films.",
+          "model": "I much prefer reading books to watching films."
+        },
+        {
+          "target": "much prefer",
+          "source": "Most older people like shopping in stores far more than shopping online.",
+          "model": "Most older people much prefer shopping in stores to shopping online."
+        }
+      ]
+    },
+    "consider_all_the_options": {
+      "word": "consider all the options",
+      "pronunciation": "/kənˈsɪdər ɔːl ðə ˈɒpʃənz/",
+      "image": {
+        "type": "prompt",
+        "value": "a person looking at a list of choices",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png"
+      },
+      "part_of_speech": [
+        "verb",
+        "noun"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Xem xét tất cả các khả năng hoặc lựa chọn có thể.",
+          "examples": [
+            "I’m going to **consider all the options** before I decide."
+          ],
+          "grammar_patterns": [
+            "consider all the options"
+          ],
+          "usage_notes_vi": "Quá trình suy nghĩ cẩn thận về mọi khả năng trước khi đưa ra quyết định."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How should teenagers choose which university to apply to?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What should people do before accepting a new job offer?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "What should young couples think about before buying their first home?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "consider all the options",
+          "text": "Before you decide, you should consider all the options."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "consider all the options",
+          "source": "Before choosing a school, parents should look at every possible choice.",
+          "model": "Before choosing a school, parents should consider all the options."
+        },
+        {
+          "target": "consider all the options",
+          "source": "The council looked carefully at every possible solution before building the bridge.",
+          "model": "The council considered all the options before building the bridge."
+        }
+      ]
+    },
+    "take_my_advice": {
+      "word": "take my advice",
+      "pronunciation": "/teɪk maɪ ədˈvaɪs/",
+      "image": {
+        "type": "prompt",
+        "value": "a person ignoring advice",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Human_right_ear_%28cropped%29.jpg/960px-Human_right_ear_%28cropped%29.jpg"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Làm theo lời khuyên của ai đó.",
+          "examples": [
+            "I know you never **take my advice** but I would strongly advise you to think of the future."
+          ],
+          "grammar_patterns": [
+            "take someone's advice"
+          ],
+          "usage_notes_vi": "Hành động làm theo lời khuyên đã được đưa ra."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Health",
+          "question": "What would you tell a friend who never gets enough sleep?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What tips would you give a tourist visiting your country for the first time?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What would you recommend to a student who is preparing for exams?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "take my advice",
+          "text": "Take my advice and leave early to avoid the traffic."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "take my advice",
+          "source": "Listen to me and do not lend him any money.",
+          "model": "Take my advice and do not lend him any money."
+        },
+        {
+          "target": "take my advice",
+          "source": "If you do what I suggest, you will book the hotel early.",
+          "model": "If you take my advice, you will book the hotel early."
+        }
+      ]
+    },
+    "strongly_advise": {
+      "word": "strongly advise",
+      "pronunciation": "/ˈstrɒŋli ədˈvaɪz/",
+      "image": {
+        "type": "prompt",
+        "value": "a person giving firm guidance",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/-01_Museo_Nazionale_dell%27Automobile_di_Torino_segnali_stradali.jpg/960px--01_Museo_Nazionale_dell%27Automobile_di_Torino_segnali_stradali.jpg"
+      },
+      "part_of_speech": [
+        "adverb",
+        "verb"
+      ],
+      "collocation_type": "adverb+verb",
+      "senses": [
+        {
+          "definition_vi": "Khuyên bảo ai đó một cách mạnh mẽ, khẩn thiết.",
+          "examples": [
+            "I would **strongly advise** you to think of the future."
+          ],
+          "grammar_patterns": [
+            "strongly advise someone to do something"
+          ],
+          "usage_notes_vi": "Đưa ra lời khuyên với sự nhấn mạnh và tin tưởng vào tính đúng đắn của nó."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Health",
+          "question": "What should people do if they suddenly feel chest pain?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What should tourists know before visiting a country with a very different culture?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How can people stay safe when using public Wi-Fi?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "strongly advise",
+          "text": "Doctors strongly advise people to stop smoking."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "strongly advise",
+          "source": "I really recommend that you get travel insurance before your trip.",
+          "model": "I strongly advise you to get travel insurance before your trip."
+        },
+        {
+          "target": "strongly advise",
+          "source": "Experts firmly recommend that children use screens for less than two hours a day.",
+          "model": "Experts strongly advise that children use screens for less than two hours a day."
+        }
+      ]
+    },
+    "have_a_choice": {
+      "word": "have a choice",
+      "pronunciation": "/hæv ə tʃɔɪs/",
+      "image": {
+        "type": "prompt",
+        "value": "a person with multiple paths to choose from",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Có quyền hoặc khả năng lựa chọn.",
+          "examples": [
+            "You’re lucky to **have a choice**."
+          ],
+          "grammar_patterns": [
+            "have a choice"
+          ],
+          "usage_notes_vi": "Diễn tả tình trạng có nhiều phương án để lựa chọn, có sự tự do quyết định."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "Should employees be allowed to decide whether they work from home?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Should children decide which secondary school they go to?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "Are customers better off when there are many brands to pick from?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "have a choice",
+          "text": "In this job you have a choice of working hours."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "have a choice",
+          "source": "Students can pick between morning and evening classes.",
+          "model": "Students have a choice between morning and evening classes."
+        },
+        {
+          "target": "have a choice",
+          "source": "People in big cities can decide between many different types of transport.",
+          "model": "People in big cities have a choice of many different types of transport."
+        }
+      ]
+    },
+    "have_no_option": {
+      "word": "have no option",
+      "pronunciation": "/hæv nəʊ ˈɒpʃən/",
+      "image": {
+        "type": "prompt",
+        "value": "a person trapped in a corner",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Hobson%27s_choice_-_you_can_go%2C_or_stay_-_J.A._Wales._LCCN91793034.jpg/960px-Hobson%27s_choice_-_you_can_go%2C_or_stay_-_J.A._Wales._LCCN91793034.jpg"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Không có lựa chọn nào khác, bị buộc phải làm điều gì đó.",
+          "examples": [
+            "a lot of people stay at home because they **have no option**."
+          ],
+          "grammar_patterns": [
+            "have no option but to do something"
+          ],
+          "usage_notes_vi": "Diễn tả tình trạng bị giới hạn, không có sự tự do lựa chọn, phải chấp nhận một tình huống hoặc hành động nhất định."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "Why do some people stay in jobs they hate?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Why do many young adults still live with their parents?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Will countries be forced to stop using coal in the future?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "have no option",
+          "text": "We have no option but to wait for the next bus."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "have no option",
+          "source": "The factory is closing, so the workers must find new jobs.",
+          "model": "The factory is closing, so the workers have no option but to find new jobs."
+        },
+        {
+          "target": "have no option",
+          "source": "Rents are so high that many young people are forced to live with their parents.",
+          "model": "Rents are so high that many young people have no option but to live with their parents."
+        }
+      ]
+    },
+    "tough_choice": {
+      "word": "tough choice",
+      "pronunciation": "/tʌf tʃɔɪs/",
+      "image": {
+        "type": "prompt",
+        "value": "a person struggling to decide",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một lựa chọn khó khăn, nan giải.",
+          "examples": [
+            "it’s a **tough choice**."
+          ],
+          "grammar_patterns": [
+            "a tough choice"
+          ],
+          "usage_notes_vi": "Chỉ một quyết định khó khăn, thường liên quan đến việc phải hy sinh hoặc đối mặt với hậu quả không mong muốn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "Is it difficult for school leavers to choose between university and work?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "Is it hard for parents to decide between a career and staying at home with children?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "How do governments decide whether to spend money on health or education?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "tough choice",
+          "text": "Choosing between the two jobs was a tough choice."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "tough choice",
+          "source": "It was very difficult for her to choose between the two universities.",
+          "model": "Choosing between the two universities was a tough choice for her."
+        },
+        {
+          "target": "tough choice",
+          "source": "Governments must decide whether to cut spending or raise taxes, which is hard.",
+          "model": "Governments face a tough choice between cutting spending and raising taxes."
+        }
+      ]
+    },
+    "taking_the_soft_option": {
+      "word": "taking the soft option",
+      "pronunciation": "/ˈteɪkɪŋ ðə sɒft ˈɒpʃən/",
+      "image": {
+        "type": "prompt",
+        "value": "a person choosing the easiest path",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Comfort_zone.jpg"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Chọn con đường dễ dàng nhất, tránh né thử thách.",
+          "examples": [
+            "you’re just **taking the soft option** if you choose the bookshop."
+          ],
+          "grammar_patterns": [
+            "take the soft option"
+          ],
+          "usage_notes_vi": "Thường mang hàm ý tiêu cực, cho rằng người đó đang né tránh khó khăn hoặc trách nhiệm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "Do some students pick easy subjects just to get high grades?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Why do some managers avoid dealing with difficult staff problems?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "Is it wrong for parents to give in to children just to avoid an argument?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "taking the soft option",
+          "text": "He is taking the soft option by staying in his old job."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "taking the soft option",
+          "source": "Instead of facing the problem, the manager chose the easiest way out.",
+          "model": "The manager was taking the soft option instead of facing the problem."
+        },
+        {
+          "target": "taking the soft option",
+          "source": "Many students choose easy courses rather than challenging themselves.",
+          "model": "Many students are taking the soft option rather than challenging themselves."
+        }
+      ]
+    },
+    "pass_up_the_opportunity": {
+      "word": "pass up the opportunity",
+      "pronunciation": "/pɑːs ʌp ðə ˌɒpəˈtjuːnəti/",
+      "image": {
+        "type": "prompt",
+        "value": "a person letting an opportunity slip away",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/L-door.png/960px-L-door.png"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Bỏ lỡ, từ chối một cơ hội.",
+          "examples": [
+            "I can’t believe you’re going to **pass up the opportunity** of a trip to South America."
+          ],
+          "grammar_patterns": [
+            "pass up an opportunity"
+          ],
+          "usage_notes_vi": "Diễn tả việc không tận dụng một cơ hội tốt có thể có."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Would you refuse a free trip abroad if it meant missing a week of work?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Why do some people turn down a promotion?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Why do some students not accept places at top universities?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "pass up the opportunity",
+          "text": "Never pass up the opportunity to learn something new."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "pass up the opportunity",
+          "source": "She refused the chance to work in New York because of her family.",
+          "model": "She passed up the opportunity to work in New York because of her family."
+        },
+        {
+          "target": "pass up the opportunity",
+          "source": "Do not miss the chance to study abroad while you are young.",
+          "model": "Do not pass up the opportunity to study abroad while you are young."
+        }
+      ]
+    },
+    "face_difficult_choices": {
+      "word": "face difficult choices",
+      "pronunciation": "/feɪs ˈdɪfɪkəlt ˈtʃɔɪsɪz/",
+      "image": {
+        "type": "prompt",
+        "value": "a person at a crossroads with challenging signs",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "verb",
+        "noun"
+      ],
+      "collocation_type": "verb+adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Đối mặt với những lựa chọn khó khăn.",
+          "examples": [
+            "Well, we all **face difficult choices** now and then."
+          ],
+          "grammar_patterns": [
+            "face difficult choices"
+          ],
+          "usage_notes_vi": "Tình huống phải đưa ra quyết định trong hoàn cảnh phức tạp hoặc không có phương án nào thực sự lý tưởng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "What problems do governments deal with during an economic crisis?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "What problems do hospitals deal with when there is not enough money?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "What challenges do people with elderly parents often deal with?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "face difficult choices",
+          "text": "Many families face difficult choices about money every month."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "face difficult choices",
+          "source": "During a crisis, governments must decide between options that are all hard.",
+          "model": "During a crisis, governments face difficult choices."
+        },
+        {
+          "target": "face difficult choices",
+          "source": "Doctors often have to make hard decisions about which patients to treat first.",
+          "model": "Doctors often face difficult choices about which patients to treat first."
+        }
+      ]
+    },
+    "out_of_hand": {
+      "word": "out of hand",
+      "pronunciation": "/aʊt əv hænd/",
+      "image": {
+        "type": "prompt",
+        "value": "a person throwing something away carelessly",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/London_Marathon_2014_-_First_aiders_%2803%29.jpg/960px-London_Marathon_2014_-_First_aiders_%2803%29.jpg"
+      },
+      "part_of_speech": [
+        "adverb"
+      ],
+      "collocation_type": "idiom",
+      "senses": [
+        {
+          "definition_vi": "Ngay lập tức, không cần suy nghĩ thêm; hoặc mất kiểm soát.",
+          "examples": [
+            "just don’t reject South America **out of hand**."
+          ],
+          "grammar_patterns": [
+            "do something out of hand"
+          ],
+          "usage_notes_vi": "Trong ngữ cảnh này, nó có nghĩa là 'ngay lập tức', 'không cần xem xét kỹ'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "How should managers respond to new ideas from junior staff?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "What can happen when a peaceful protest is not controlled properly?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How should teachers deal with a noisy class?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "out of hand",
+          "text": "The party got out of hand and the neighbours complained."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "out of hand",
+          "source": "The protest quickly became impossible to control.",
+          "model": "The protest quickly got out of hand."
+        },
+        {
+          "target": "out of hand",
+          "source": "The manager rejected my idea immediately without even thinking about it.",
+          "model": "The manager rejected my idea out of hand."
+        }
+      ]
+    },
+    "weigh_up_the_options": {
+      "word": "weigh up the options",
+      "pronunciation": "/ˈweɪ ʌp ðə ˈɒpʃənz/",
+      "image": {
+        "type": "prompt",
+        "value": "a person balancing scales with different options",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png"
+      },
+      "part_of_speech": [
+        "verb",
+        "noun"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Cân nhắc kỹ lưỡng các lựa chọn.",
+          "examples": [
+            "I’m going to **weigh up the options**."
+          ],
+          "grammar_patterns": [
+            "weigh up the options"
+          ],
+          "usage_notes_vi": "Tương tự 'consider all the options', nhấn mạnh vào việc đánh giá ưu nhược điểm của từng lựa chọn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Shopping",
+          "question": "How do people decide which smartphone to buy?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How should students choose between studying at home or abroad?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How should patients decide between different treatments?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "weigh up the options",
+          "text": "Take your time and weigh up the options carefully."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "weigh up the options",
+          "source": "Before buying a car, think carefully about each possibility.",
+          "model": "Before buying a car, weigh up the options carefully."
+        },
+        {
+          "target": "weigh up the options",
+          "source": "The company compared the advantages and disadvantages of each location.",
+          "model": "The company weighed up the options for each location."
+        }
+      ]
+    },
+    "come_to_a_decision": {
+      "word": "come to a decision",
+      "pronunciation": "/kʌm tu ə dɪˈsɪʒən/",
+      "image": {
+        "type": "prompt",
+        "value": "a person reaching a conclusion",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/960px-LampFlowchart.svg.png"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Đưa ra một quyết định cuối cùng.",
+          "examples": [
+            "and **come to a decision**."
+          ],
+          "grammar_patterns": [
+            "come to a decision"
+          ],
+          "usage_notes_vi": "Diễn tả hành động hoàn tất quá trình cân nhắc và đi đến kết luận cuối cùng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "How long should the public debate a new law before it is passed?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What should a team do when its members disagree about a plan?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "How do couples decide whether to have children?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "come to a decision",
+          "text": "We need to come to a decision by Friday."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "come to a decision",
+          "source": "The jury will need several days to decide.",
+          "model": "The jury will need several days to come to a decision."
+        },
+        {
+          "target": "come to a decision",
+          "source": "The two sides still cannot agree on what to do.",
+          "model": "The two sides still cannot come to a decision."
+        }
+      ]
+    }
+  }
+}

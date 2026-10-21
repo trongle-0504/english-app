@@ -2,16 +2,16 @@
 //   node scripts/sync-commit.ts [--out <dir>] [--no-data] [--full-data]
 // 1. Copies the code (everything data-manifest.json does not call data or leave out) to <out>/code — a git repository,
 //    created on the first run — and deletes there what was deleted here. Nothing is committed or pushed.
-// 2. Packs the data, to upload apart (scripts/data.ts): the minimal archive in <out>/data-minimal/ — no vocabulary or
-//    note pictures (node scripts/fetch-images.ts downloads them again), no blog originals, no recordings, no PDFs, none
-//    of the files restore builds again. --full-data
-//    also packs everything into <out>/data/.
-// <out> defaults to ../english-app-commit. Before copying, the code is checked for what must never reach GitHub
-// (.env files, keys, big files); any hit stops everything.
+// 2. Writes the minimal data, unpacked, to <out>/code/data-minimal/ (scripts/data.ts exportTo), to commit with the
+//    code — no vocabulary or note pictures (node scripts/fetch-images.ts downloads them again), no blog originals, no
+//    recordings, no PDFs, none of the files restore builds again. After a clone: node scripts/data.ts restore
+//    data-minimal. --full-data also packs everything into the archive <out>/data/, to keep apart (not on GitHub).
+// <out> defaults to ../english-app-commit. Before copying, the code and that data are checked for what must never
+// reach GitHub (.env files, keys, big files); any hit stops everything.
 import { spawnSync } from 'node:child_process'
 import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, rmdirSync, statSync, unlinkSync } from 'node:fs'
 import path from 'node:path'
-import { pack } from './data.ts'
+import { dataFiles, exportTo, pack } from './data.ts'
 import { listFiles, projectRoot } from './lib/data-paths.ts'
 
 const MAX_BYTES = 5 * 1024 * 1024
@@ -45,21 +45,26 @@ function check(files: string[]): string[] {
   return problems
 }
 
-/** Files under the commit copy, skipping its .git. */
+/** What the commit copy holds that is not copied code, left out when deleting what was deleted here. data-minimal is
+ *  the unpacked minimal data (exportTo keeps it in step itself). */
+const KEPT = new Set(['.git', 'data-minimal'])
+
+/** Files under the commit copy, skipping what KEPT names. */
 function existingCopy(dir: string, base = ''): string[] {
   if (!existsSync(dir)) return []
   return readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
     const rel = base ? `${base}/${e.name}` : e.name
-    if (rel === '.git') return []
+    if (KEPT.has(rel)) return []
     return e.isDirectory() ? existingCopy(path.join(dir, e.name), rel) : [rel]
   })
 }
 
-function removeEmptyDirs(dir: string): void {
+function removeEmptyDirs(dir: string, base = ''): void {
   for (const e of readdirSync(dir, { withFileTypes: true })) {
-    if (!e.isDirectory() || e.name === '.git') continue
+    const rel = base ? `${base}/${e.name}` : e.name
+    if (!e.isDirectory() || KEPT.has(rel)) continue
     const sub = path.join(dir, e.name)
-    removeEmptyDirs(sub)
+    removeEmptyDirs(sub, rel)
     if (!readdirSync(sub).length) rmdirSync(sub)
   }
 }
@@ -72,7 +77,8 @@ function sameFile(a: string, b: string): boolean {
 try {
   // Temporary files that come and go while the dev server runs (Vite's bundled config, atomic-write temps).
   const files = listFiles(projectRoot, 'code').filter((rel) => !/\.timestamp-[^/]*\.mjs$|\.tmp$/.test(rel))
-  const problems = check(files)
+  const withData = !args.includes('--no-data')
+  const problems = check(withData ? [...files, ...dataFiles(true)] : files)
   if (problems.length) {
     console.error('Stopped, nothing copied. Fix these first:')
     for (const p of problems) console.error(`  ${p}`)
@@ -106,13 +112,13 @@ try {
     if (git.status !== 0) console.error('git init failed: create the repository by hand.')
   }
 
-  if (!args.includes('--no-data')) {
-    await pack(path.join(out, 'data-minimal'), { minimal: true })
+  if (withData) {
+    await exportTo(path.join(codeDir, 'data-minimal'), { minimal: true })
     if (args.includes('--full-data')) await pack(path.join(out, 'data'))
   }
 
   console.log(`\nNext: cd ${codeDir} && git status, then git add -A && git commit … && git push.`)
-  if (!args.includes('--no-data')) console.log(`Upload the newest archive in ${path.join(out, 'data-minimal')} wherever you keep the data (not to GitHub).`)
+  if (args.includes('--full-data')) console.log(`Keep the newest archive in ${path.join(out, 'data')} wherever you keep the data (not on GitHub).`)
 } catch (error) {
   console.error((error as Error).message)
   process.exitCode = 1

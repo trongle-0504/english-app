@@ -1,0 +1,1565 @@
+{
+  "metadata": {
+    "lesson_id": "using-the-internet",
+    "topic": "Work and study",
+    "chapter_title": "Using the Internet",
+    "pdf_file": "Using the Internet .pdf"
+  },
+  "mindmap_data": {
+    "topic": "Work and study",
+    "chapter": {
+      "chapter_id": "ch_using_the_internet",
+      "title": "Using the Internet",
+      "sessions": [
+        {
+          "session_id": "s_online_research",
+          "title": "A Online research",
+          "description_vi": "Hướng dẫn cách sử dụng Internet hiệu quả cho việc nghiên cứu.",
+          "value": "# Using the Internet\n\n## A Online research\n\n**Online Research**\n\nWhat's the best way to use the Internet for your research? Here's our quick guide:\n\nA good place to start is by looking at a definition of your topic or your essay question and making a note of any keywords. Use those to do a web search and start reading through the results.\n\nYou may not find what you need first time, but there are a lot of **online resources**1 to help you search effectively. For example, many search engines have 'Hints and tips' pages which show you how to use them more efficiently and this can help you **refine your search**2.\n\nIt's important to evaluate sites **critically**3, so check who wrote the information and when.\n\nOne way to access reliable information is to **subscribe to online journals**4 to get more information on specific topics such as medicine, science etc. You can often **search by keyword in back issues**5 to find older articles that might be relevant.\n\nAnd remember, once you've found information you want to use, don't just copy and paste it into your essay! You will need to rewrite the information in your own words. Be sure you keep a record of the source so you can reference it correctly in your work.\n\n1 useful online materials\n\n2 make your search more accurate (e.g. by searching for more words or changing the settings)\n\n3 think carefully about whether something is reliable or truthful\n\n4 to pay for or ask to receive (journals) regularly\n\n5 previous editions of a magazine, newspaper or journal",
+          "children_nodes": [
+            {
+              "node_id": "online_resources",
+              "label": "online resources"
+            },
+            {
+              "node_id": "refine_your_search",
+              "label": "refine your search"
+            },
+            {
+              "node_id": "critically",
+              "label": "critically"
+            },
+            {
+              "node_id": "subscribe_to_online_journals",
+              "label": "subscribe to online journals"
+            },
+            {
+              "node_id": "search_by_keyword_in_back_issues",
+              "label": "search by keyword in back issues"
+            }
+          ]
+        },
+        {
+          "session_id": "s_problems_and_solutions",
+          "title": "B Problems and solutions",
+          "description_vi": "Các quy tắc quan trọng về bảo mật máy tính.",
+          "value": "# Using the Internet\n\n## B Problems and solutions\n\n**COMPUTER SECURITY**\n\nHere are some important 'do's and don'ts for computer security:\n\n- Make sure you install **anti-virus software**. This will protect your computer from viruses. Some anti-virus products will also help to block spam1.\n- Update your anti-virus program regularly to make sure you are always protected against the latest threats.\n- Never click on a link or open an attachment in an email if you do not know the person who sent it.\n- Only download free applications from companies that you trust. Some apps contain malware which could allow someone to **hack into**2 your computer and steal personal information such as passwords or bank details.\n- Always **back up your files**3 and any documents (such as notes and assignments) you are working on. You can upload your files to a **cloud**4 storage system or use a **memory stick**5. This means if your computer crashes and you lose your files, you will always have another copy.\n\n1 stop unwanted emails\n\n2 get into (a computer system) illegally\n\n3 make a copy of your files\n\n4 online\n\n5 a small piece of equipment you connect to a computer to store data (also called a flash drive or USB stick)",
+          "children_nodes": [
+            {
+              "node_id": "anti_virus_software",
+              "label": "anti-virus software"
+            },
+            {
+              "node_id": "hack_into",
+              "label": "hack into"
+            },
+            {
+              "node_id": "back_up_your_files",
+              "label": "back up your files"
+            },
+            {
+              "node_id": "cloud",
+              "label": "cloud"
+            },
+            {
+              "node_id": "memory_stick",
+              "label": "memory stick"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "section_id": "A",
+      "session_ref": "s_online_research",
+      "title": "Online research",
+      "instruction_vi": "Đọc nội dung và chú ý đến các từ vựng được in đậm.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "**Online Research**\n\nWhat's the best way to use the Internet for your research? Here's our quick guide:\n\nA good place to start is by looking at a definition of your topic or your essay question and making a note of any keywords. Use those to do a web search and start reading through the results.\n\nYou may not find what you need first time, but there are a lot of **online resources**1 to help you search effectively. For example, many search engines have 'Hints and tips' pages which show you how to use them more efficiently and this can help you **refine your search**2.\n\nIt's important to evaluate sites **critically**3, so check who wrote the information and when.\n\nOne way to access reliable information is to **subscribe to online journals**4 to get more information on specific topics such as medicine, science etc. You can often **search by keyword in back issues**5 to find older articles that might be relevant.\n\nAnd remember, once you've found information you want to use, don't just copy and paste it into your essay! You will need to rewrite the information in your own words. Be sure you keep a record of the source so you can reference it correctly in your work.\n\n1 useful online materials\n\n2 make your search more accurate (e.g. by searching for more words or changing the settings)\n\n3 think carefully about whether something is reliable or truthful\n\n4 to pay for or ask to receive (journals) regularly\n\n5 previous editions of a magazine, newspaper or journal",
+          "related_vocabulary_ids": [
+            "online_resources",
+            "refine_your_search",
+            "critically",
+            "subscribe_to_online_journals",
+            "search_by_keyword_in_back_issues"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "B",
+      "session_ref": "s_problems_and_solutions",
+      "title": "Problems and solutions",
+      "instruction_vi": "Đọc nội dung và chú ý đến các từ vựng được in đậm.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "**COMPUTER SECURITY**\n\nHere are some important 'do's and don'ts for computer security:\n\n- Make sure you install **anti-virus software**. This will protect your computer from viruses. Some anti-virus products will also help to block spam1.\n- Update your anti-virus program regularly to make sure you are always protected against the latest threats.\n- Never click on a link or open an attachment in an email if you do not know the person who sent it.\n- Only download free applications from companies that you trust. Some apps contain malware which could allow someone to **hack into**2 your computer and steal personal information such as passwords or bank details.\n- Always **back up your files**3 and any documents (such as notes and assignments) you are working on. You can upload your files to a **cloud**4 storage system or use a **memory stick**5. This means if your computer crashes and you lose your files, you will always have another copy.\n\n1 stop unwanted emails\n\n2 get into (a computer system) illegally\n\n3 make a copy of your files\n\n4 online\n\n5 a small piece of equipment you connect to a computer to store data (also called a flash drive or USB stick)",
+          "related_vocabulary_ids": [
+            "anti_virus_software",
+            "hack_into",
+            "back_up_your_files",
+            "cloud",
+            "memory_stick"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary_data": {
+    "item_1": {
+      "word": "Online research",
+      "pronunciation": "/ˌɒnlaɪn rɪˈsɜːtʃ/",
+      "image": {
+        "type": "prompt",
+        "value": "A person using a laptop to search for information on various web pages and digital databases.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective + noun",
+      "senses": [
+        {
+          "definition_vi": "Nghiên cứu trực tuyến; việc tìm kiếm thông tin trên Internet.",
+          "examples": [
+            "The students were asked to do some online research before writing their final reports."
+          ],
+          "grammar_patterns": "do online research",
+          "usage_notes_vi": "Thường dùng với động từ 'do' hoặc 'conduct'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How do students today prepare for writing essays or reports?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "How do people decide which product to buy before spending a lot of money?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Is it a good idea for people to look up medical information on the internet?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "Online research",
+          "text": "Students should do some online research before writing reports."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "Online research",
+          "source": "Before buying a car, I searched the internet for information about different models.",
+          "model": "Before buying a car, I did some online research into different models."
+        },
+        {
+          "target": "Online research",
+          "source": "Many patients look for information on websites before they see a doctor.",
+          "model": "Many patients do online research before they see a doctor."
+        }
+      ]
+    },
+    "item_2": {
+      "word": "place to start",
+      "pronunciation": "/pleɪs tə stɑːt/",
+      "image": {
+        "type": "prompt",
+        "value": "A bright 'Start' button or a starting line, representing the beginning of a process.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "noun + preposition + verb",
+      "senses": [
+        {
+          "definition_vi": "Nơi bắt đầu hoặc bước đầu tiên để thực hiện một công việc nào đó.",
+          "examples": [
+            "A dictionary is often a good place to start when you encounter a new technical term."
+          ],
+          "grammar_patterns": "a good place to start (for/with something)",
+          "usage_notes_vi": "Mang tính ẩn dụ, chỉ điểm khởi đầu của một dự án hoặc quá trình tìm hiểu."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How should a student begin learning a completely new subject?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What should someone do first when looking for their first job?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How can older people begin to learn about using the internet?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "place to start",
+          "text": "A dictionary is often a good place to start."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "place to start",
+          "source": "If you want to learn about history, the local museum is a good way to begin.",
+          "model": "If you want to learn about history, the local museum is a good place to start."
+        },
+        {
+          "target": "place to start",
+          "source": "For job seekers, a careers website is a useful first step.",
+          "model": "For job seekers, a careers website is a useful place to start."
+        }
+      ]
+    },
+    "item_3": {
+      "word": "making a note",
+      "pronunciation": "/ˈmeɪkɪŋ ə nəʊt/",
+      "image": {
+        "type": "prompt",
+        "value": "A hand writing keywords on a sticky note or in a notebook.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb-ing + noun",
+      "senses": [
+        {
+          "definition_vi": "Ghi chú lại thông tin quan trọng.",
+          "examples": [
+            "I recommend making a note of any useful sources you find while searching the web."
+          ],
+          "grammar_patterns": "make a note of something",
+          "usage_notes_vi": "Dùng để nhắc nhở bản thân về thông tin cần ghi nhớ sau này."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How can students remember important information from lectures?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What habits help employees stay organised at work?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How do people keep track of useful websites they find?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "making a note",
+          "text": "I am making a note of the meeting time."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "making a note",
+          "source": "I'm writing down the main points so I don't forget them.",
+          "model": "I'm making a note of the main points so I don't forget them."
+        },
+        {
+          "target": "making a note",
+          "source": "She always writes down useful websites while searching online.",
+          "model": "She is always making a note of useful websites while searching online."
+        }
+      ]
+    },
+    "item_4": {
+      "word": "do a web search",
+      "pronunciation": "/duː ə web sɜːtʃ/",
+      "image": {
+        "type": "prompt",
+        "value": "A search bar on a browser window with a cursor blinking inside.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb + noun + noun",
+      "senses": [
+        {
+          "definition_vi": "Tìm kiếm thông tin trên mạng bằng công cụ tìm kiếm.",
+          "examples": [
+            "If you don't know the definition, just do a web search for the term."
+          ],
+          "grammar_patterns": "do a web search (for something)",
+          "usage_notes_vi": "Cụm từ phổ biến để chỉ việc dùng Google, Bing, v.v. để tìm thông tin."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "What do you usually do when you need to find information quickly?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How do students find the meaning of words they don't know?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "How do people usually find places to eat when they visit a new city?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "do a web search",
+          "text": "If you don't know the answer, just do a web search."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "do a web search",
+          "source": "If you don't know the word, look it up online with a search engine.",
+          "model": "If you don't know the word, do a web search for it."
+        },
+        {
+          "target": "do a web search",
+          "source": "Before travelling, I usually look on the internet for good local restaurants.",
+          "model": "Before travelling, I usually do a web search for good local restaurants."
+        }
+      ]
+    },
+    "item_5": {
+      "word": "online resources",
+      "pronunciation": "/ˌɒnlaɪn rɪˈsɔːsɪz/",
+      "image": {
+        "type": "prompt",
+        "value": "Icons of digital books, globes, and files connected by network lines.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective + noun",
+      "senses": [
+        {
+          "definition_vi": "Các nguồn tài liệu trực tuyến (như website, thư viện số).",
+          "examples": [
+            "There are plenty of free online resources available for learning a new language."
+          ],
+          "grammar_patterns": "online resources",
+          "usage_notes_vi": "Thường dùng ở số nhiều để chỉ sự đa dạng của tài liệu trên mạng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How has the internet changed the way people learn languages?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How can employees improve their skills without attending formal courses?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Where can people find reliable information about staying healthy?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "online resources",
+          "text": "There are many free online resources for learning English."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "online resources",
+          "source": "There are lots of free websites and digital libraries for learning a language.",
+          "model": "There are lots of free online resources for learning a language."
+        },
+        {
+          "target": "online resources",
+          "source": "Workers can improve their skills using materials found on the internet.",
+          "model": "Workers can improve their skills using online resources."
+        }
+      ]
+    },
+    "item_6": {
+      "word": "hints and tips",
+      "pronunciation": "/hɪnts ənd tɪps/",
+      "image": {
+        "type": "prompt",
+        "value": "A light bulb icon next to a list of suggestions or helpful advice.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "noun + conjunction + noun",
+      "senses": [
+        {
+          "definition_vi": "Những gợi ý và mẹo vặt hữu ích.",
+          "examples": [
+            "The website provides many hints and tips on how to save energy at home."
+          ],
+          "grammar_patterns": "hints and tips (on/about something)",
+          "usage_notes_vi": "Thường xuất hiện trong các sách hướng dẫn hoặc mục hỗ trợ người dùng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "Where do people find advice on how to use new gadgets?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How can ordinary households learn to save energy at home?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "How do people learn to cook new dishes nowadays?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "hints and tips",
+          "text": "This website has useful hints and tips for saving money."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "hints and tips",
+          "source": "The website gives lots of useful advice and suggestions on saving energy.",
+          "model": "The website gives lots of useful hints and tips on saving energy."
+        },
+        {
+          "target": "hints and tips",
+          "source": "Cooking videos often share small pieces of advice for beginners.",
+          "model": "Cooking videos often share hints and tips for beginners."
+        }
+      ]
+    },
+    "item_7": {
+      "word": "refine your search",
+      "pronunciation": "/rɪˈfaɪn jɔː sɜːtʃ/",
+      "image": {
+        "type": "prompt",
+        "value": "A filter icon or advanced search options on a computer screen.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb + possessive + noun",
+      "senses": [
+        {
+          "definition_vi": "Thu hẹp hoặc làm cho kết quả tìm kiếm trở nên chính xác hơn.",
+          "examples": [
+            "You can refine your search by adding more specific keywords to the search bar."
+          ],
+          "grammar_patterns": "refine your search (by doing something)",
+          "usage_notes_vi": "Dùng khi kết quả tìm kiếm ban đầu quá rộng hoặc không liên quan."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "What should people do when a search engine gives too many results?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "How do online shoppers find exactly the product they want?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "How do people look for a flat to rent online?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "refine your search",
+          "text": "Add more keywords to refine your search."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "refine your search",
+          "source": "You can make your search more exact by adding specific keywords.",
+          "model": "You can refine your search by adding specific keywords."
+        },
+        {
+          "target": "refine your search",
+          "source": "On housing websites, you can narrow the results by choosing price and location.",
+          "model": "On housing websites, you can refine your search by choosing price and location."
+        }
+      ]
+    },
+    "item_8": {
+      "word": "evaluate critically",
+      "pronunciation": "/ɪˈvæljueɪt ˈkrɪtɪkli/",
+      "image": {
+        "type": "prompt",
+        "value": "A magnifying glass focusing on a document, symbolizing deep analysis.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb + adverb",
+      "senses": [
+        {
+          "definition_vi": "Đánh giá một cách phản biện và có chọn lọc.",
+          "examples": [
+            "It's important to evaluate critically the information you find on social media."
+          ],
+          "grammar_patterns": "evaluate something critically",
+          "usage_notes_vi": "Nhấn mạnh vào việc không tin tưởng thông tin ngay lập tức mà phải phân tích độ tin cậy."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "Why is it important to judge news stories carefully before sharing them?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What skills should universities teach students besides subject knowledge?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How can young people avoid being misled by information on social media?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "evaluate critically",
+          "text": "Students must learn to evaluate information critically."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "evaluate critically",
+          "source": "People should think carefully about whether news stories are true before believing them.",
+          "model": "People should evaluate news stories critically before believing them."
+        },
+        {
+          "target": "evaluate critically",
+          "source": "Good researchers judge their sources carefully and question what they read.",
+          "model": "Good researchers evaluate their sources critically."
+        }
+      ]
+    },
+    "item_9": {
+      "word": "subscribe to online journals",
+      "pronunciation": "/səbˈskraɪb tə ˌɒnlaɪn ˈdʒɜːnlz/",
+      "image": {
+        "type": "prompt",
+        "value": "A person clicking a 'Subscribe' button on a website for academic articles.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb + preposition + adjective + noun",
+      "senses": [
+        {
+          "definition_vi": "Đăng ký mua hoặc theo dõi các tạp chí học thuật trực tuyến.",
+          "examples": [
+            "Students can use the university library account to subscribe to online journals for free."
+          ],
+          "grammar_patterns": "subscribe to something",
+          "usage_notes_vi": "Thường đi kèm với phí đăng ký định kỳ để truy cập nội dung độc quyền."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How do university students access the latest academic research?",
+          "fits": []
+        },
+        {
+          "context": "Science",
+          "question": "How do scientists keep up with new developments in their field?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How can doctors stay up to date with medical research?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "subscribe to online journals",
+          "text": "Our library can subscribe to online journals for students."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "subscribe to online journals",
+          "source": "The university pays for access to digital academic magazines.",
+          "model": "The university subscribes to online journals."
+        },
+        {
+          "target": "subscribe to online journals",
+          "source": "Many doctors sign up for internet medical publications to keep informed.",
+          "model": "Many doctors subscribe to online journals to keep informed."
+        }
+      ]
+    },
+    "item_10": {
+      "word": "search by keyword",
+      "pronunciation": "/sɜːtʃ baɪ ˈkiːwɜːd/",
+      "image": {
+        "type": "prompt",
+        "value": "A text box with a specific word highlighted, used for finding digital files.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb + preposition + noun",
+      "senses": [
+        {
+          "definition_vi": "Tìm kiếm bằng cách sử dụng các từ khóa chính.",
+          "examples": [
+            "You can search by keyword in the library database to find relevant books quickly."
+          ],
+          "grammar_patterns": "search by keyword",
+          "usage_notes_vi": "Đây là phương pháp tìm kiếm thông dụng nhất trong kỷ nguyên số."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How can students find relevant books quickly in a large library?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "What is the fastest way to find an old email or file on your computer?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "How do people find specific products on large shopping websites?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "search by keyword",
+          "text": "You can search by keyword to find books quickly."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "search by keyword",
+          "source": "Type in the main words of the topic to find articles in the database.",
+          "model": "Search by keyword to find articles in the database."
+        },
+        {
+          "target": "search by keyword",
+          "source": "On shopping websites, I look for products by typing important terms.",
+          "model": "On shopping websites, I search by keyword to find products."
+        }
+      ]
+    },
+    "item_11": {
+      "word": "back issues",
+      "pronunciation": "/bæk ˈɪʃuːz/",
+      "image": {
+        "type": "prompt",
+        "value": "A stack of old magazines or newspapers in a library archive.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective + noun",
+      "senses": [
+        {
+          "definition_vi": "Các số báo cũ, số tạp chí đã xuất bản trước đây.",
+          "examples": [
+            "I am looking for back issues of National Geographic from the 1990s."
+          ],
+          "grammar_patterns": "back issues of a magazine/newspaper",
+          "usage_notes_vi": "Dùng để phân biệt với 'current issue' (số mới nhất)."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "Do people still read printed magazines and newspapers? Why or why not?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How can researchers find old articles from newspapers and magazines?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "Why do some people collect old comics or magazines?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "back issues",
+          "text": "The library keeps back issues of popular magazines."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "back issues",
+          "source": "I'm looking for old copies of the magazine from last year.",
+          "model": "I'm looking for back issues of the magazine from last year."
+        },
+        {
+          "target": "back issues",
+          "source": "Collectors often pay a lot for earlier editions of famous comics.",
+          "model": "Collectors often pay a lot for back issues of famous comics."
+        }
+      ]
+    },
+    "item_12": {
+      "word": "copy and paste",
+      "pronunciation": "/ˈkɒpi ənd peɪst/",
+      "image": {
+        "type": "prompt",
+        "value": "Icons of a clipboard and scissors, representing digital duplicating of text.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb + conjunction + verb",
+      "senses": [
+        {
+          "definition_vi": "Sao chép và dán (văn bản, hình ảnh, tệp tin).",
+          "examples": [
+            "Don't just copy and paste information from the web into your essay; use your own words."
+          ],
+          "grammar_patterns": "copy and paste something (into somewhere)",
+          "usage_notes_vi": "Cụm từ này có thể dùng như một động từ hoặc một danh từ (copy-paste)."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "Why do some students plagiarise when they write assignments?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "What basic computer skills should every office worker have?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How can employees save time when they produce reports?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "copy and paste",
+          "text": "Don't copy and paste text from websites into your essay."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "copy and paste",
+          "source": "Some students just take text from websites and put it straight into their essays.",
+          "model": "Some students just copy and paste text from websites into their essays."
+        },
+        {
+          "target": "copy and paste",
+          "source": "You can move the table from one document into another very quickly.",
+          "model": "You can copy and paste the table from one document into another."
+        }
+      ]
+    },
+    "item_13": {
+      "word": "keep a record of",
+      "pronunciation": "/kiːp ə ˈrekɔːd əv/",
+      "image": {
+        "type": "prompt",
+        "value": "A ledger or spreadsheet showing a history of entries or logs.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb + noun + preposition",
+      "senses": [
+        {
+          "definition_vi": "Ghi chép và lưu trữ thông tin để theo dõi về sau.",
+          "examples": [
+            "It's a good idea to keep a record of all the websites you visit for your project."
+          ],
+          "grammar_patterns": "keep a record of something",
+          "usage_notes_vi": "Thường dùng trong quản lý dữ liệu, kế toán hoặc nghiên cứu."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How can students manage the sources they use for an assignment?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "How can people manage their personal spending better?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "What can people do to monitor their fitness progress?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "keep a record of",
+          "text": "It is wise to keep a record of your spending."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "keep a record of",
+          "source": "You should write down every website you use for your project.",
+          "model": "You should keep a record of every website you use for your project."
+        },
+        {
+          "target": "keep a record of",
+          "source": "She notes all her workouts in an app to track her progress.",
+          "model": "She keeps a record of all her workouts in an app."
+        }
+      ]
+    },
+    "item_14": {
+      "word": "anti-virus software",
+      "pronunciation": "/ˌænti ˈvaɪərəs ˈsɒftweə/",
+      "image": {
+        "type": "prompt",
+        "value": "A computer screen showing a green shield, indicating protection against viruses.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective + noun",
+      "senses": [
+        {
+          "definition_vi": "Phần mềm diệt virus.",
+          "examples": [
+            "Make sure your anti-virus software is up to date to protect your computer from new threats."
+          ],
+          "grammar_patterns": "install/run anti-virus software",
+          "usage_notes_vi": "Phần mềm thiết yếu để bảo vệ dữ liệu cá nhân trên máy tính."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "How can people protect their computers from online threats?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What should companies do to protect their data from cyber attacks?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What should schools teach children about internet safety?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "anti-virus software",
+          "text": "Make sure your anti-virus software is up to date."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "anti-virus software",
+          "source": "You need a program that protects your computer from harmful files.",
+          "model": "You need anti-virus software to protect your computer from harmful files."
+        },
+        {
+          "target": "anti-virus software",
+          "source": "Every office computer should have a security program that removes viruses.",
+          "model": "Every office computer should have anti-virus software."
+        }
+      ]
+    },
+    "item_15": {
+      "word": "block spam",
+      "pronunciation": "/blɒk spæm/",
+      "image": {
+        "type": "prompt",
+        "value": "An email inbox with a red 'No' symbol over junk mail icons.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb + noun",
+      "senses": [
+        {
+          "definition_vi": "Chặn thư rác hoặc các tin nhắn không mong muốn.",
+          "examples": [
+            "Many email services use artificial intelligence to automatically block spam."
+          ],
+          "grammar_patterns": "block spam",
+          "usage_notes_vi": "Dùng trong bối cảnh quản lý hộp thư điện tử hoặc tin nhắn rác."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "How do email services protect users from unwanted messages?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What can companies do to reduce time wasted on unwanted emails?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "What can people do about receiving too many advertising emails from online shops?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "block spam",
+          "text": "My email program can block spam automatically."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "block spam",
+          "source": "Email services can stop unwanted advertising messages from reaching your inbox.",
+          "model": "Email services can block spam from reaching your inbox."
+        },
+        {
+          "target": "block spam",
+          "source": "The new filter stops junk emails before employees see them.",
+          "model": "The new filter blocks spam before employees see them."
+        }
+      ]
+    },
+    "item_16": {
+      "word": "update regularly",
+      "pronunciation": "/ˌʌpˈdeɪt ˈreɡjələli/",
+      "image": {
+        "type": "prompt",
+        "value": "A circular arrow icon indicating a software update process.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb + adverb",
+      "senses": [
+        {
+          "definition_vi": "Cập nhật thường xuyên (phần mềm, thông tin).",
+          "examples": [
+            "You should update your operating system regularly to fix security vulnerabilities."
+          ],
+          "grammar_patterns": "update something regularly",
+          "usage_notes_vi": "Một thói quen quan trọng để đảm bảo tính an toàn và hiệu suất của máy tính."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "How can people keep their phones and computers secure?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "How do news websites keep their readers interested?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How should teachers keep their course materials relevant?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "update regularly",
+          "text": "You should update your software regularly for better security."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "update regularly",
+          "source": "You should install the newest version of your apps often to fix security problems.",
+          "model": "You should update your apps regularly to fix security problems."
+        },
+        {
+          "target": "update regularly",
+          "source": "Good news websites add fresh stories many times a day.",
+          "model": "Good news websites update their content regularly."
+        }
+      ]
+    },
+    "item_17": {
+      "word": "click on a link",
+      "pronunciation": "/klɪk ɒn ə lɪŋk/",
+      "image": {
+        "type": "prompt",
+        "value": "A cursor hand icon hovering over a blue underlined word on a screen.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb + preposition + noun",
+      "senses": [
+        {
+          "definition_vi": "Nhấp chuột vào một đường liên kết dẫn đến trang web khác.",
+          "examples": [
+            "Be careful when you click on a link in an email from an unknown sender."
+          ],
+          "grammar_patterns": "click on a link",
+          "usage_notes_vi": "Hành động cơ bản khi điều hướng trên Internet."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "How do criminals trick people into giving away personal information online?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What should children learn about staying safe on the internet?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "How do online adverts encourage people to buy things?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "click on a link",
+          "text": "Never click on a link from an unknown sender."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "click on a link",
+          "source": "Be careful when you press a web address in an email from a stranger.",
+          "model": "Be careful when you click on a link in an email from a stranger."
+        },
+        {
+          "target": "click on a link",
+          "source": "Adverts try to get people to open the shop's page by pressing a button.",
+          "model": "Adverts try to get people to click on a link to the shop's page."
+        }
+      ]
+    },
+    "item_18": {
+      "word": "open an attachment",
+      "pronunciation": "/ˈəʊpən ən əˈtætʃmənt/",
+      "image": {
+        "type": "prompt",
+        "value": "A paperclip icon next to a file name in an email application.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb + noun",
+      "senses": [
+        {
+          "definition_vi": "Mở tệp đính kèm gửi kèm theo email.",
+          "examples": [
+            "I couldn't open an attachment because it was too large for my email provider."
+          ],
+          "grammar_patterns": "open an attachment",
+          "usage_notes_vi": "Cần thận trọng vì tệp đính kèm có thể chứa mã độc hại."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "What are the risks of reading emails from people you don't know?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What problems can happen when colleagues share large files by email?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How do teachers and students share homework files nowadays?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "open an attachment",
+          "text": "Do not open an attachment from a stranger."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "open an attachment",
+          "source": "I couldn't view the file that came with the email because it was too large.",
+          "model": "I couldn't open an attachment in the email because it was too large."
+        },
+        {
+          "target": "open an attachment",
+          "source": "Never look at files sent with emails from unknown people.",
+          "model": "Never open an attachment from unknown people."
+        }
+      ]
+    },
+    "item_19": {
+      "word": "download applications",
+      "pronunciation": "/ˌdaʊnˈləʊd ˌæplɪˈkeɪʃnz/",
+      "image": {
+        "type": "prompt",
+        "value": "A down arrow icon pointing to a hard drive or smartphone.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb + noun",
+      "senses": [
+        {
+          "definition_vi": "Tải xuống các ứng dụng phần mềm.",
+          "examples": [
+            "Always download applications from official app stores to avoid malware."
+          ],
+          "grammar_patterns": "download applications (from somewhere)",
+          "usage_notes_vi": "Thường dùng khi cài đặt phần mềm mới trên máy tính hoặc điện thoại."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "How can people keep their smartphones safe from viruses?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How can students use smartphones to support their learning?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How do people use their phones to stay fit and healthy?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "download applications",
+          "text": "Always download applications from the official app store."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "download applications",
+          "source": "Only get programs for your phone from official stores.",
+          "model": "Only download applications from official stores."
+        },
+        {
+          "target": "download applications",
+          "source": "Many people install fitness apps on their phones to track exercise.",
+          "model": "Many people download applications to track their exercise."
+        }
+      ]
+    },
+    "item_20": {
+      "word": "hack into your computer",
+      "pronunciation": "/hæk ˈɪntə jɔː kəmˈpjuːtə/",
+      "image": {
+        "type": "prompt",
+        "value": "A person in a hoodie sitting in front of a computer with green code on the screen.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb + preposition + possessive + noun",
+      "senses": [
+        {
+          "definition_vi": "Xâm nhập trái phép vào máy tính của bạn.",
+          "examples": [
+            "Hackers use sophisticated techniques to try and hack into your computer for sensitive data."
+          ],
+          "grammar_patterns": "hack into something",
+          "usage_notes_vi": "Dùng trong bối cảnh tội phạm mạng và bảo mật thông tin."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "What are the main dangers of using public Wi-Fi?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Why do companies spend so much money on cyber security?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Why is online crime increasing nowadays?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "hack into your computer",
+          "text": "Someone could hack into your computer through public Wi-Fi."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "hack into your computer",
+          "source": "Criminals can break into your laptop and steal your personal data.",
+          "model": "Criminals can hack into your computer and steal your personal data."
+        },
+        {
+          "target": "hack into your computer",
+          "source": "A weak password makes it easy for someone to get secret access to your PC.",
+          "model": "A weak password makes it easy for someone to hack into your computer."
+        }
+      ]
+    },
+    "item_21": {
+      "word": "back up your files",
+      "pronunciation": "/bæk ʌp jɔː faɪlz/",
+      "image": {
+        "type": "prompt",
+        "value": "A cloud icon and an external hard drive connected by arrows.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb + particle + possessive + noun",
+      "senses": [
+        {
+          "definition_vi": "Sao lưu các tệp tin của bạn để phòng trường hợp bị mất dữ liệu.",
+          "examples": [
+            "It is wise to back up your files to an external hard drive every week."
+          ],
+          "grammar_patterns": "back something up / back up something",
+          "usage_notes_vi": "Đây là bước dự phòng thiết yếu cho người dùng máy tính."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "What should people do to avoid losing important data?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What good habits should office workers have with their computers?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What advice would you give students writing a long thesis?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "back up your files",
+          "text": "It is wise to back up your files every week."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "back up your files",
+          "source": "You should make copies of your documents on an external drive every week.",
+          "model": "You should back up your files on an external drive every week."
+        },
+        {
+          "target": "back up your files",
+          "source": "Save extra copies of your work in case your laptop breaks.",
+          "model": "Back up your files in case your laptop breaks."
+        }
+      ]
+    },
+    "item_22": {
+      "word": "upload your files",
+      "pronunciation": "/ˌʌpˈləʊd jɔː faɪlz/",
+      "image": {
+        "type": "prompt",
+        "value": "An up arrow icon pointing to a cloud or a server.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb + possessive + noun",
+      "senses": [
+        {
+          "definition_vi": "Tải các tệp tin của bạn lên mạng hoặc máy chủ.",
+          "examples": [
+            "You need to upload your files to the portal before the deadline tonight."
+          ],
+          "grammar_patterns": "upload something (to somewhere)",
+          "usage_notes_vi": "Trái nghĩa với 'download'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How do students submit assignments at universities today?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How has cloud technology changed the way colleagues work together?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "What are the advantages of storing documents online?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "upload your files",
+          "text": "Please upload your files before the deadline tonight."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "upload your files",
+          "source": "You need to put your documents on the website before Friday.",
+          "model": "You need to upload your files to the website before Friday."
+        },
+        {
+          "target": "upload your files",
+          "source": "You can send your photos to the online folder so your family can see them.",
+          "model": "You can upload your files to the online folder so your family can see them."
+        }
+      ]
+    },
+    "item_23": {
+      "word": "cloud storage",
+      "pronunciation": "/klaʊd ˈstɔːrɪdʒ/",
+      "image": {
+        "type": "prompt",
+        "value": "A stylized cloud icon with several small file folders inside.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "noun + noun",
+      "senses": [
+        {
+          "definition_vi": "Lưu trữ đám mây (như Google Drive, Dropbox).",
+          "examples": [
+            "Cloud storage allows you to access your documents from any device with internet connection."
+          ],
+          "grammar_patterns": "use cloud storage",
+          "usage_notes_vi": "Thay thế cho việc lưu trữ trên ổ cứng vật lý truyền thống."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "How do people keep their photos and documents safe nowadays?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How has technology made it easier to work from home?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How do students access their study materials from different devices?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "cloud storage",
+          "text": "I keep all my photos in cloud storage."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "cloud storage",
+          "source": "Saving files on internet servers lets you open them on any device.",
+          "model": "Cloud storage lets you open your files on any device."
+        },
+        {
+          "target": "cloud storage",
+          "source": "Our company keeps its documents online rather than on office computers.",
+          "model": "Our company uses cloud storage rather than office computers."
+        }
+      ]
+    },
+    "item_24": {
+      "word": "memory stick",
+      "pronunciation": "/ˈmeməri stɪk/",
+      "image": {
+        "type": "prompt",
+        "value": "A USB flash drive on a wooden desk, used for portable storage.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "noun + noun",
+      "senses": [
+        {
+          "definition_vi": "Thẻ nhớ hoặc ổ cứng USB di động.",
+          "examples": [
+            "I saved the presentation on a memory stick so I can open it at the conference."
+          ],
+          "grammar_patterns": "save something to a memory stick",
+          "usage_notes_vi": "Trong tiếng Anh-Mỹ thường được gọi là 'flash drive' hoặc 'thumb drive'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "How did people carry files around before online storage became common?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What do you need to bring when you give a presentation in another office?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How do students usually bring their work to print at school?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "memory stick",
+          "text": "I saved my presentation on a memory stick."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "memory stick",
+          "source": "I put the presentation on a small USB drive so I could open it at the conference.",
+          "model": "I put the presentation on a memory stick so I could open it at the conference."
+        },
+        {
+          "target": "memory stick",
+          "source": "Students used to bring their homework to school on portable drives.",
+          "model": "Students used to bring their homework to school on memory sticks."
+        }
+      ]
+    },
+    "item_25": {
+      "word": "computer crashes",
+      "pronunciation": "/kəmˈpjuːtə ˈkræʃɪz/",
+      "image": {
+        "type": "prompt",
+        "value": "A computer screen with a 'Blue Screen of Death' or an error message.",
+        "link": ""
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "noun + verb",
+      "senses": [
+        {
+          "definition_vi": "Sự cố máy tính bị treo hoặc ngừng hoạt động đột ngột.",
+          "examples": [
+            "If your computer crashes frequently, it might be due to a hardware problem or a virus."
+          ],
+          "grammar_patterns": "computer crashes (due to something)",
+          "usage_notes_vi": "Dùng để chỉ hiện tượng máy tính bị lỗi hệ thống nghiêm trọng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "What are the most annoying problems people have with technology?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How can technical problems affect productivity in the workplace?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What can go wrong when students do exams on computers?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "computer crashes",
+          "text": "My computer crashes every time I open this program."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "computer crashes",
+          "source": "My laptop suddenly stops working when I open too many programs.",
+          "model": "My computer crashes when I open too many programs."
+        },
+        {
+          "target": "computer crashes",
+          "source": "If your PC suddenly freezes, you may lose your work.",
+          "model": "If your computer crashes, you may lose your work."
+        }
+      ]
+    }
+  }
+}

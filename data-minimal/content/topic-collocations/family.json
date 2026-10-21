@@ -1,0 +1,2642 @@
+[
+  {
+    "id": "topic-colloc:family:first-time-parents",
+    "title": "first-time parents",
+    "term": "first-time parents",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɜːst taɪm ˈpeərənts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cha mẹ lần đầu",
+    "topic": "Family",
+    "subTopic": "Parenting Styles & Child-Rearing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "First-time parents often struggle with basic issues such as feeding schedules and discipline.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:engage-in-risky-behavior",
+    "title": "engage in risky behavior",
+    "term": "engage in risky behavior",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈɡeɪdʒ ɪn ˈrɪski bɪˈheɪvjə/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "tham gia vào hành vi mạo hiểm",
+    "topic": "Family",
+    "subTopic": "Parenting Styles & Child-Rearing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Adolescents who lack parental supervision are more likely to engage in risky behavior such as substance abuse.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:shapes-the-future-of-individuals",
+    "title": "shapes the future of individuals",
+    "term": "shapes the future of individuals",
+    "type": "Collocation",
+    "pronunciation": "/ʃeɪps ðə ˈfjuːtʃər əv ˌɪndɪˈvɪdʒuəlz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "định hình tương lai của mỗi cá nhân",
+    "topic": "Family",
+    "subTopic": "Parenting Styles & Child-Rearing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "The way children are raised at home shapes the future of individuals far more than most people realise.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:child-neglect",
+    "title": "child neglect",
+    "term": "child neglect",
+    "type": "Collocation",
+    "pronunciation": "/tʃaɪld nɪˈɡlekt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự bỏ bê trẻ em",
+    "topic": "Family",
+    "subTopic": "Parenting Styles & Child-Rearing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Cases of child neglect could be reduced if parents received proper guidance before starting a family.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:one-size-fits-all-approach",
+    "title": "one-size-fits-all approach",
+    "term": "one-size-fits-all approach",
+    "type": "Collocation",
+    "pronunciation": "/wʌn saɪz fɪts ɔːl əˈprəʊtʃ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cách tiếp cận chung cho tất cả, thiếu linh hoạt",
+    "topic": "Family",
+    "subTopic": "Parenting Styles & Child-Rearing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "A one-size-fits-all approach to parenting education fails to account for the diverse cultural values of different families.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:parenting-education",
+    "title": "parenting education",
+    "term": "parenting education",
+    "type": "Collocation",
+    "pronunciation": "/ˈpeərəntɪŋ ˌedjʊˈkeɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "giáo dục kỹ năng làm cha mẹ",
+    "topic": "Family",
+    "subTopic": "Parenting Styles & Child-Rearing",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Parenting education can help new mothers and fathers avoid common mistakes in raising their children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:offering-parenting-courses",
+    "title": "offering parenting courses",
+    "term": "offering parenting courses",
+    "type": "Collocation",
+    "pronunciation": "/ˈɒfərɪŋ ˈpeərəntɪŋ ˈkɔːsɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cung cấp các khóa học làm cha mẹ",
+    "topic": "Family",
+    "subTopic": "Parenting Styles & Child-Rearing",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Offering parenting courses to expectant couples could significantly reduce the number of parenting mistakes made by inexperienced adults.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:discipline-strategies",
+    "title": "discipline strategies",
+    "term": "discipline strategies",
+    "type": "Collocation",
+    "pronunciation": "/ˈdɪsɪplɪn ˈstrætədʒiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chiến lược kỷ luật",
+    "topic": "Family",
+    "subTopic": "Parenting Styles & Child-Rearing",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Effective discipline strategies help children understand boundaries without damaging their self-esteem.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:practical-skills",
+    "title": "practical skills",
+    "term": "practical skills",
+    "type": "Collocation",
+    "pronunciation": "/ˈpræktɪkəl skɪlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kỹ năng thực tế",
+    "topic": "Family",
+    "subTopic": "Parenting Styles & Child-Rearing",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Parenting classes can equip new parents with practical skills for handling everyday childcare challenges.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:moral-guidance",
+    "title": "moral guidance",
+    "term": "moral guidance",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɒrəl ˈɡaɪdəns/",
+    "part_of_speech": "n",
+    "meaning_vi": "sự chỉ dẫn về đạo đức",
+    "topic": "Family",
+    "subTopic": "Parenting Styles & Child-Rearing",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Parents who provide consistent moral guidance help their children distinguish right from wrong.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:familial-bonds",
+    "title": "familial bonds",
+    "term": "familial bonds",
+    "type": "Collocation",
+    "pronunciation": "/fəˈmɪliəl bɒndz/",
+    "part_of_speech": "n",
+    "meaning_vi": "mối liên kết gia đình",
+    "topic": "Family",
+    "subTopic": "Family Relationships & Communication",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Strong familial bonds provide children with a sense of security throughout their lives.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:formative-influence",
+    "title": "formative influence",
+    "term": "formative influence",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɔːmətɪv ˈɪnfluəns/",
+    "part_of_speech": "n",
+    "meaning_vi": "ảnh hưởng hình thành nhân cách",
+    "topic": "Family",
+    "subTopic": "Family Relationships & Communication",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Parents exert a formative influence on their children's character during the early years.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:foundational-support-system",
+    "title": "foundational support system",
+    "term": "foundational support system",
+    "type": "Collocation",
+    "pronunciation": "/faʊnˈdeɪʃənl səˈpɔːt ˈsɪstəm/",
+    "part_of_speech": "n",
+    "meaning_vi": "hệ thống hỗ trợ nền tảng",
+    "topic": "Family",
+    "subTopic": "Family Relationships & Communication",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "The family acts as a foundational support system that helps children navigate difficult periods.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:parentchild-relationships",
+    "title": "parent–child relationships",
+    "term": "parent–child relationships",
+    "type": "Collocation",
+    "pronunciation": "/ˈpɛərənt tʃaɪld rɪˈleɪʃənʃɪps/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mối quan hệ cha mẹ - con cái",
+    "topic": "Family",
+    "subTopic": "Family Relationships & Communication",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Shared daily activities such as reading together can significantly strengthen parent-child relationships.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:negative-peer-influences",
+    "title": "negative peer influences",
+    "term": "negative peer influences",
+    "type": "Collocation",
+    "pronunciation": "/ˈneɡətɪv pɪə ˈɪnfluənsɪz/",
+    "part_of_speech": "n",
+    "meaning_vi": "ảnh hưởng tiêu cực từ bạn bè",
+    "topic": "Family",
+    "subTopic": "Family Relationships & Communication",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Close family supervision can shield teenagers from negative peer influences.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:reduced-communication",
+    "title": "reduced communication",
+    "term": "reduced communication",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈdjuːst kəˌmjuːnɪˈkeɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự giao tiếp bị giảm sút",
+    "topic": "Family",
+    "subTopic": "Family Relationships & Communication",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Reduced communication between busy parents and their children often leads to a gradual sense of emotional distance.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:emotional-distance",
+    "title": "emotional distance",
+    "term": "emotional distance",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈməʊʃənl ˈdɪstəns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khoảng cách về mặt cảm xúc",
+    "topic": "Family",
+    "subTopic": "Family Relationships & Communication",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Long working hours can create emotional distance between parents and children, weakening their relationship over time.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:emotional-support",
+    "title": "emotional support",
+    "term": "emotional support",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈməʊʃənl səˈpɔːt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự hỗ trợ về mặt tinh thần",
+    "topic": "Family",
+    "subTopic": "Family Relationships & Communication",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Close-knit families provide emotional support that helps individuals cope with stress and hardship.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:family-bond",
+    "title": "family bond",
+    "term": "family bond",
+    "type": "Collocation",
+    "pronunciation": "/ˈfæmɪli bɒnd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự gắn kết gia đình",
+    "topic": "Family",
+    "subTopic": "Family Relationships & Communication",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Regular gatherings, even brief ones, can help strengthen family bonds that might otherwise weaken over time.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:emotional-bonding",
+    "title": "emotional bonding",
+    "term": "emotional bonding",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈməʊʃənl ˈbɒndɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự gắn kết cảm xúc",
+    "topic": "Family",
+    "subTopic": "Family Relationships & Communication",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Bedtime storytelling is a simple yet powerful tool for emotional bonding between parents and their young children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:interactive-storytelling",
+    "title": "interactive storytelling",
+    "term": "interactive storytelling",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪntərˈæktɪv ˈstɔːrɪtɛlɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kể chuyện có tính tương tác",
+    "topic": "Family",
+    "subTopic": "Family Relationships & Communication",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Interactive storytelling encourages children to ask questions and use their imagination rather than passively absorbing information.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:a-higher-standard-of-living-and-more-supportive-upbringing",
+    "title": "a higher standard of living and more supportive upbringing",
+    "term": "a higher standard of living and more supportive upbringing",
+    "type": "Collocation",
+    "pronunciation": "/ə ˈhaɪər ˈstændəd əv ˈlɪvɪŋ ənd mɔː səˈpɔːtɪv ˈʌpˌbrɪŋɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mức sống cao hơn và sự nuôi dạy hỗ trợ hơn",
+    "topic": "Family",
+    "subTopic": "Family Relationships & Communication",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Financially secure parents can offer their children a higher standard of living and more supportive upbringing.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:enhancement-of-safety-and-communication",
+    "title": "enhancement of safety and communication",
+    "term": "enhancement of safety and communication",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈhɑːnsmənt əv ˈseɪfti ənd kəˌmjuːnɪˈkeɪʃn/",
+    "part_of_speech": "n",
+    "meaning_vi": "sự nâng cao an toàn và giao tiếp",
+    "topic": "Family",
+    "subTopic": "Family Relationships & Communication",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Mobile phones have brought about an enhancement of safety and communication between parents and children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:immediate-contact",
+    "title": "immediate contact",
+    "term": "immediate contact",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈmiːdiət ˈkɒntækt/",
+    "part_of_speech": "n",
+    "meaning_vi": "liên lạc tức thời",
+    "topic": "Family",
+    "subTopic": "Family Relationships & Communication",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Having immediate contact with their children gives working parents peace of mind.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:independent-lifestyles",
+    "title": "independent lifestyles",
+    "term": "independent lifestyles",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪndɪˈpɛndənt ˈlaɪfstaɪlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lối sống độc lập",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Rising urbanization has encouraged younger generations to pursue independent lifestyles far from their hometowns.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:developmental-milestones",
+    "title": "developmental milestones",
+    "term": "developmental milestones",
+    "type": "Collocation",
+    "pronunciation": "/dɪˌveləpˈmentəl ˈmaɪlstəʊnz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các mốc phát triển",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Tracking developmental milestones allows parents to identify potential delays in their child's growth early on.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:impulsive-decisions",
+    "title": "impulsive decisions",
+    "term": "impulsive decisions",
+    "type": "Collocation",
+    "pronunciation": "/ɪmˈpʌlsɪv dɪˈsɪʒənz/",
+    "part_of_speech": "n",
+    "meaning_vi": "những quyết định bốc đồng",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Without proper guidance, teenagers may make impulsive decisions that they later regret.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:become-overly-dependent-on-family-guidance",
+    "title": "become overly dependent on family guidance",
+    "term": "become overly dependent on family guidance",
+    "type": "Collocation",
+    "pronunciation": "/bɪˈkʌm ˈəʊvəli dɪˈpendənt ɒn ˈfæməli ˈɡaɪdəns/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "trở nên quá phụ thuộc vào sự chỉ dẫn của gia đình",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Overprotected children may become overly dependent on family guidance and struggle to cope alone at university.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:unfettered-autonomy",
+    "title": "unfettered autonomy",
+    "term": "unfettered autonomy",
+    "type": "Collocation",
+    "pronunciation": "/ʌnˈfetəd ɔːˈtɒnəmi/",
+    "part_of_speech": "n",
+    "meaning_vi": "sự tự chủ không giới hạn",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Granting children unfettered autonomy without any boundaries can expose them to unnecessary risks.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:assess-danger",
+    "title": "assess danger",
+    "term": "assess danger",
+    "type": "Collocation",
+    "pronunciation": "/əˈses ˈdeɪndʒə/",
+    "part_of_speech": "v",
+    "meaning_vi": "đánh giá mối nguy hiểm",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Young children often struggle to assess danger accurately, which is why supervision remains important.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:personal-growth",
+    "title": "personal growth",
+    "term": "personal growth",
+    "type": "Collocation",
+    "pronunciation": "/ˈpɜːsənl grəʊθ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phát triển cá nhân",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Moving away from home for university can foster personal growth, but it often comes at the cost of family closeness.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:hinder-the-development-of-independence",
+    "title": "hinder the development of independence",
+    "term": "hinder the development of independence",
+    "type": "Collocation",
+    "pronunciation": "/ˈhɪndə ðə dɪˈvɛləpmənt əv ˌɪndɪˈpɛndəns/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cản trở sự phát triển tính tự lập",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Overprotective parenting can hinder the development of independence, leaving children ill-prepared for adult responsibilities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:think-independently",
+    "title": "think independently",
+    "term": "think independently",
+    "type": "Collocation",
+    "pronunciation": "/θɪŋk ˌɪndɪˈpendəntli/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "suy nghĩ độc lập",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Children who are given room to make their own choices gradually learn to think independently.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:develop-confidence",
+    "title": "develop confidence",
+    "term": "develop confidence",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈveləp ˈkɒnfɪdəns/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "phát triển sự tự tin",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Allowing children to solve small problems on their own helps them develop confidence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:effective-problem-solving-skills",
+    "title": "effective problem-solving skills",
+    "term": "effective problem-solving skills",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈfektɪv ˈprɒbləm ˈsɒlvɪŋ skɪlz/",
+    "part_of_speech": "n",
+    "meaning_vi": "kỹ năng giải quyết vấn đề hiệu quả",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Facing everyday challenges independently equips children with effective problem-solving skills.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:social-adaptability",
+    "title": "social adaptability",
+    "term": "social adaptability",
+    "type": "Collocation",
+    "pronunciation": "/ˈsəʊʃl əˌdæptəˈbɪləti/",
+    "part_of_speech": "n",
+    "meaning_vi": "khả năng thích nghi xã hội",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Interacting with diverse peers at school enhances a child's social adaptability.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:developing-muscles-and-bones",
+    "title": "developing muscles and bones",
+    "term": "developing muscles and bones",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈveləpɪŋ ˈmʌslz ənd bəʊnz/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "phát triển cơ bắp và xương",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Team sports play a crucial role in developing muscles and bones during childhood.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:crucial-social-and-life-skills",
+    "title": "crucial social and life skills",
+    "term": "crucial social and life skills",
+    "type": "Collocation",
+    "pronunciation": "/ˈkruːʃl ˈsəʊʃl ənd laɪf skɪlz/",
+    "part_of_speech": "n",
+    "meaning_vi": "kỹ năng xã hội và kỹ năng sống quan trọng",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Participating in team sports helps children acquire crucial social and life skills such as cooperation and leadership.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:independent-action",
+    "title": "independent action",
+    "term": "independent action",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪndɪˈpendənt ˈækʃn/",
+    "part_of_speech": "n",
+    "meaning_vi": "hành động độc lập",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Encouraging independent action from a young age helps children learn to trust their own judgment.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:decision-making",
+    "title": "decision-making",
+    "term": "decision-making",
+    "type": "Vocabulary",
+    "pronunciation": "/dɪˈsɪʒn ˈmeɪkɪŋ/",
+    "part_of_speech": "n",
+    "meaning_vi": "việc ra quyết định",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Involving children in family decision-making teaches them accountability.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:instill-confidence",
+    "title": "instill confidence",
+    "term": "instill confidence",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈstɪl ˈkɒnfɪdəns/",
+    "part_of_speech": "v",
+    "meaning_vi": "nuôi dưỡng sự tự tin",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Letting children take on age-appropriate responsibilities can instill confidence in them.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:tangible-sense-of-competence",
+    "title": "tangible sense of competence",
+    "term": "tangible sense of competence",
+    "type": "Collocation",
+    "pronunciation": "/ˈtændʒəbl sens əv ˈkɒmpɪtəns/",
+    "part_of_speech": "n",
+    "meaning_vi": "cảm giác năng lực rõ rệt",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Completing tasks on their own gives children a tangible sense of competence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:self-efficacy",
+    "title": "self-efficacy",
+    "term": "self-efficacy",
+    "type": "Vocabulary",
+    "pronunciation": "/self ɪˈfɪkəsi/",
+    "part_of_speech": "n",
+    "meaning_vi": "niềm tin vào năng lực bản thân",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Children who are trusted with responsibilities tend to develop stronger self-efficacy.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:trial-and-error-experience",
+    "title": "trial-and-error experience",
+    "term": "trial-and-error experience",
+    "type": "Collocation",
+    "pronunciation": "/ˈtraɪəl ənd ˈerə ɪkˈspɪəriəns/",
+    "part_of_speech": "n",
+    "meaning_vi": "kinh nghiệm thử và sai",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Allowing children to make small mistakes provides valuable trial-and-error experience.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:critical-thinking",
+    "title": "critical thinking",
+    "term": "critical thinking",
+    "type": "Collocation",
+    "pronunciation": "/ˈkrɪtɪkl ˈθɪŋkɪŋ/",
+    "part_of_speech": "n",
+    "meaning_vi": "tư duy phản biện",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Open-ended discussions at home can sharpen a child's critical thinking.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:anticipate-outcomes",
+    "title": "anticipate outcomes",
+    "term": "anticipate outcomes",
+    "type": "Collocation",
+    "pronunciation": "/ænˈtɪsɪpeɪt ˈaʊtkʌmz/",
+    "part_of_speech": "v",
+    "meaning_vi": "dự đoán kết quả",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Managing their own allowance teaches children to anticipate outcomes before spending.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:self-regulate",
+    "title": "self-regulate",
+    "term": "self-regulate",
+    "type": "Vocabulary",
+    "pronunciation": "/self ˈreɡjuleɪt/",
+    "part_of_speech": "v",
+    "meaning_vi": "tự điều chỉnh bản thân",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Teenagers are gradually expected to self-regulate their screen time without constant reminders.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:imaginative-growth",
+    "title": "imaginative growth",
+    "term": "imaginative growth",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈmædʒɪnətɪv grəʊθ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phát triển trí tưởng tượng",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Reading aloud with children supports their imaginative growth far more effectively than screen-based entertainment.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:develop-critical-thinking-and-decision-making-skills",
+    "title": "develop critical thinking and decision-making skills",
+    "term": "develop critical thinking and decision-making skills",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈvɛləp ˈkrɪtɪkl ˈθɪŋkɪŋ ænd dɪˈsɪʒən ˈmeɪkɪŋ skɪlz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "phát triển kỹ năng tư duy phản biện và ra quyết định",
+    "topic": "Family",
+    "subTopic": "Children's Development & Independence",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Allowing children to make their own choices helps them develop critical thinking and decision-making skills from an early age.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:pursue-practical-and-secure-professions",
+    "title": "pursue practical and secure professions",
+    "term": "pursue practical and secure professions",
+    "type": "Collocation",
+    "pronunciation": "/pəˈsjuː ˈpræktɪkl ənd sɪˈkjʊə prəˈfeʃənz/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "theo đuổi những nghề nghiệp thực tế và ổn định",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Many parents encourage their children to pursue practical and secure professions rather than take risks in unpredictable creative fields.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:achieve-long-term-economic-stability",
+    "title": "achieve long-term economic stability",
+    "term": "achieve long-term economic stability",
+    "type": "Collocation",
+    "pronunciation": "/əˈtʃiːv ˌlɒŋ tɜːm ˌiːkəˈnɒmɪk stəˈbɪləti/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "đạt được sự ổn định kinh tế lâu dài",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Parents often believe that choosing a stable career path will help their children achieve long-term economic stability.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:exert-considerable-pressure",
+    "title": "exert considerable pressure",
+    "term": "exert considerable pressure",
+    "type": "Collocation",
+    "pronunciation": "/ɪɡˈzɜːt kənˈsɪdərəbl ˈpreʃə/",
+    "part_of_speech": "v",
+    "meaning_vi": "gây áp lực đáng kể",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Some parents exert considerable pressure on their children to excel academically.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:impose-high-expectations-on-their-children",
+    "title": "impose high expectations on their children",
+    "term": "impose high expectations on their children",
+    "type": "Collocation",
+    "pronunciation": "/ɪmˈpəʊz haɪ ˌɛkspɛkˈteɪʃənz ɒn ðeə ˈtʃɪldrən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "áp đặt kỳ vọng cao lên con cái",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Many Asian parents impose high expectations on their children, believing that academic success is the only path to a stable future.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:stem-from-genuine-concern-for-their-childrens-future",
+    "title": "stem from genuine concern for their children’s future",
+    "term": "stem from genuine concern for their children’s future",
+    "type": "Collocation",
+    "pronunciation": "/stɛm frɒm ˈdʒɛnjʊɪn kənˈsɜːn fɔː ðeə ˈtʃɪldrənz ˈfjuːtʃə/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "bắt nguồn từ sự lo lắng thực sự cho tương lai của con cái",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Parental pressure often stems from genuine concern for their children's future rather than a desire to control them.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:secure-promising-career-opportunities",
+    "title": "secure promising career opportunities",
+    "term": "secure promising career opportunities",
+    "type": "Collocation",
+    "pronunciation": "/sɪˈkjʊə ˈprɒmɪsɪŋ kəˈrɪə ˌɒpəˈtjuːnɪtiz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đảm bảo cơ hội nghề nghiệp đầy triển vọng",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Parents push their children to excel academically in the hope that this will secure promising career opportunities later in life.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:associate-their-own-pride-and-happiness-with-their-childrens-achievements",
+    "title": "associate their own pride and happiness with their children's achievements",
+    "term": "associate their own pride and happiness with their children's achievements",
+    "type": "Collocation",
+    "pronunciation": "/əˈsəʊʃɪeɪt ðeər əʊn praɪd ænd ˈhæpɪnəs wɪð ðeə ˈtʃɪldrənz əˈtʃiːvmənts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gắn niềm tự hào và hạnh phúc của bản thân với thành tích của con cái",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Some fathers associate their own pride and happiness with their children's achievements, which can lead to excessive academic pressure.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:set-unrealistic-goals",
+    "title": "set unrealistic goals",
+    "term": "set unrealistic goals",
+    "type": "Collocation",
+    "pronunciation": "/sɛt ˌʌnˌrɪəˈlɪstɪk gəʊlz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đặt ra mục tiêu phi thực tế",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "When parents set unrealistic goals for their children, the resulting frustration can damage the family relationship.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:excel-academically-or-professionally",
+    "title": "excel academically or professionally",
+    "term": "excel academically or professionally",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈsɛl ˌækəˈdɛmɪkli ɔː prəˈfɛʃənəli/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "xuất sắc trong học tập hoặc sự nghiệp",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Children who are constantly told to excel academically or professionally may grow up equating self-worth with achievement alone.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:hold-burdensome-expectations",
+    "title": "hold burdensome expectations",
+    "term": "hold burdensome expectations",
+    "type": "Collocation",
+    "pronunciation": "/həʊld ˈbɜːdnsəm ˌɛkspɛkˈteɪʃənz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "mang những kỳ vọng nặng nề",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Parents who hold burdensome expectations often fail to recognize the toll this takes on their children's mental health.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:place-unrelenting-pressure-on-their-children",
+    "title": "place unrelenting pressure on their children",
+    "term": "place unrelenting pressure on their children",
+    "type": "Collocation",
+    "pronunciation": "/pleɪs ˌʌnrɪˈlɛntɪŋ ˈprɛʃə ɒn ðeə ˈtʃɪldrən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gây áp lực không ngừng lên con cái",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "When parents place unrelenting pressure on their children, the family atmosphere often becomes tense and joyless.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:competitive-job-market",
+    "title": "competitive job market",
+    "term": "competitive job market",
+    "type": "Collocation",
+    "pronunciation": "/kəmˈpɛtɪtɪv dʒɒb ˈmɑːkɪt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thị trường việc làm cạnh tranh",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "The increasingly competitive job market pushes many parents to demand higher academic performance from their children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:parental-anxiety",
+    "title": "parental anxiety",
+    "term": "parental anxiety",
+    "type": "Collocation",
+    "pronunciation": "/pəˈrɛntl æŋˈzaɪəti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự lo lắng của cha mẹ",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Parental anxiety about the future often manifests as excessive academic pressure placed on children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:academic-excellence",
+    "title": "academic excellence",
+    "term": "academic excellence",
+    "type": "Collocation",
+    "pronunciation": "/ˌækəˈdɛmɪk ˈɛksələns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thành tích học tập xuất sắc",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Parents who equate academic excellence with future happiness may overlook their children's emotional needs.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:social-comparison",
+    "title": "social comparison",
+    "term": "social comparison",
+    "type": "Collocation",
+    "pronunciation": "/ˈsəʊʃəl kəmˈpærɪsən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự so sánh xã hội",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Social comparison fuelled by social media often drives parents to impose unrealistic academic targets on their children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:parental-expectation",
+    "title": "parental expectation",
+    "term": "parental expectation",
+    "type": "Collocation",
+    "pronunciation": "/pəˈrɛntl ˌɛkspɛkˈteɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kỳ vọng của cha mẹ",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Rising parental expectations can create a stressful home environment that undermines children's confidence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:exceptional-outcome",
+    "title": "exceptional outcome",
+    "term": "exceptional outcome",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈsɛpʃənl ˈaʊtkʌm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kết quả xuất sắc, vượt trội",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Believing that only exceptional outcomes guarantee success, some parents push their children into an exhausting cycle of extra classes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:place-considerable-pressure-on",
+    "title": "place considerable pressure on",
+    "term": "place considerable pressure on",
+    "type": "Collocation",
+    "pronunciation": "/pleɪs kənˈsɪdərəbl ˈprɛʃər ɒn/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gây áp lực đáng kể lên",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Many parents place considerable pressure on their children to achieve top grades, hoping this will secure a bright future.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:increasingly-competitive-societies",
+    "title": "increasingly competitive societies",
+    "term": "increasingly competitive societies",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈkriːsɪŋli kəmˈpɛtɪtɪv səˈsaɪətiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những xã hội ngày càng cạnh tranh",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "In increasingly competitive societies, parents often feel compelled to push their children harder from a young age.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:place-excessive-demands-on",
+    "title": "place excessive demands on",
+    "term": "place excessive demands on",
+    "type": "Collocation",
+    "pronunciation": "/pleɪs ɪkˈsɛsɪv dɪˈmɑːndz ɒn/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đặt ra những yêu cầu quá mức lên",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Some parents place excessive demands on their children, filling their schedules with endless extracurricular classes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:the-growing-competition-in-education-and-the-job-market",
+    "title": "the growing competition in education and the job market",
+    "term": "the growing competition in education and the job market",
+    "type": "Collocation",
+    "pronunciation": "/ðə ˈgrəʊɪŋ ˌkɒmpɪˈtɪʃən ɪn ˌɛdʒʊˈkeɪʃən ænd ðə dʒɒb ˈmɑːkɪt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự cạnh tranh ngày càng gia tăng trong giáo dục và thị trường việc làm",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "The growing competition in education and the job market has made parents more anxious about their children's academic performance.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:regarded-as-the-key-to-future-success",
+    "title": "regarded as the key to future success",
+    "term": "regarded as the key to future success",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈgɑːdɪd æz ðə kiː tuː ˈfjuːtʃə səkˈsɛs/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "được xem là chìa khóa dẫn đến thành công trong tương lai",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Because academic qualifications are regarded as the key to future success, parents often prioritize study over leisure time.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:extensive-study-time",
+    "title": "extensive study time",
+    "term": "extensive study time",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈstensɪv ˈstʌdi taɪm/",
+    "part_of_speech": "n",
+    "meaning_vi": "thời gian học tập kéo dài",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Some critics argue that schools should reduce extensive study time in favour of physical activity.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:academic-diligence",
+    "title": "academic diligence",
+    "term": "academic diligence",
+    "type": "Collocation",
+    "pronunciation": "/ˌækəˈdemɪk ˈdɪlɪdʒəns/",
+    "part_of_speech": "n",
+    "meaning_vi": "sự chăm chỉ học tập",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Parents in many cultures place great emphasis on academic diligence from an early age.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:remains-fundamental",
+    "title": "remains fundamental",
+    "term": "remains fundamental",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈmeɪnz ˌfʌndəˈmentl/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "vẫn là yếu tố nền tảng",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Despite growing interest in extracurricular activities, classroom learning remains fundamental to a child's education.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:undermine-childrens-personal-fulfillment",
+    "title": "undermine children's personal fulfillment",
+    "term": "undermine children's personal fulfillment",
+    "type": "Collocation",
+    "pronunciation": "/ˌʌndəˈmaɪn ˈtʃɪldrənz ˈpɜːsənl fʊlˈfɪlmənt/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "làm suy yếu sự thỏa mãn cá nhân của trẻ",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Forcing children into predetermined career paths can undermine their personal fulfillment in the long run.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:lose-motivation-and-enthusiasm",
+    "title": "lose motivation and enthusiasm",
+    "term": "lose motivation and enthusiasm",
+    "type": "Collocation",
+    "pronunciation": "/luːz ˌməʊtɪˈveɪʃn ənd ɪnˈθjuːziæzəm/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "mất động lực và nhiệt huyết",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Students who are pushed into subjects they dislike often lose motivation and enthusiasm for learning.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:a-motivational-force-for-children",
+    "title": "a motivational force for children",
+    "term": "a motivational force for children",
+    "type": "Collocation",
+    "pronunciation": "/ə ˌməʊtɪˈveɪʃənəl fɔːs fɔː ˈtʃɪldrən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "một động lực thúc đẩy trẻ em",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Moderate parental encouragement can act as a motivational force for children, spurring them to work harder in school.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:inflict-significant-harm-on-their-children",
+    "title": "inflict significant harm on their children",
+    "term": "inflict significant harm on their children",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈflɪkt sɪgˈnɪfɪkənt hɑːm ɒn ðeə ˈtʃɪldrən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gây tổn hại đáng kể cho con cái",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Excessive parental pressure can inflict significant harm on their children, leading to anxiety and low self-esteem.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:measurable-outcome",
+    "title": "measurable outcome",
+    "term": "measurable outcome",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɛʒərəbl ˈaʊtkʌm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kết quả có thể đo lường được",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "An excessive focus on measurable outcomes such as test scores can undermine a child's genuine love of learning.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:intrinsic-motivation",
+    "title": "intrinsic motivation",
+    "term": "intrinsic motivation",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈtrɪnzɪk ˌməʊtɪˈveɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "động lực nội tại",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Pressuring children to achieve high grades can erode their intrinsic motivation to learn for its own sake.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:natural-curiosity",
+    "title": "natural curiosity",
+    "term": "natural curiosity",
+    "type": "Collocation",
+    "pronunciation": "/ˈnætʃrəl ˌkjʊəriˈɒsəti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự tò mò tự nhiên",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "A rigid, results-oriented education system can stifle children's natural curiosity about the world around them.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:constantly-strive-for-higher-achievements",
+    "title": "constantly strive for higher achievements",
+    "term": "constantly strive for higher achievements",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɒnstəntli straɪv fɔː ˈhaɪər əˈtʃiːvmənts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "không ngừng phấn đấu để đạt thành tích cao hơn",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Children encouraged to constantly strive for higher achievements may eventually experience burnout and lose motivation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:educational-development",
+    "title": "educational development",
+    "term": "educational development",
+    "type": "Collocation",
+    "pronunciation": "/ˌedʒʊˈkeɪʃənl dɪˈveləpmənt/",
+    "part_of_speech": "n",
+    "meaning_vi": "sự phát triển giáo dục",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Constant smartphone distractions can hinder a child's educational development.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:academic-performance",
+    "title": "academic performance",
+    "term": "academic performance",
+    "type": "Collocation",
+    "pronunciation": "/ˌækəˈdemɪk pəˈfɔːməns/",
+    "part_of_speech": "n",
+    "meaning_vi": "kết quả học tập",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Regular parental support at home can noticeably improve a child's academic performance.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:detrimental-academic-consequences",
+    "title": "detrimental academic consequences",
+    "term": "detrimental academic consequences",
+    "type": "Collocation",
+    "pronunciation": "/ˌdetrɪˈmentl ˌækəˈdemɪk ˈkɒnsɪkwənsɪz/",
+    "part_of_speech": "n",
+    "meaning_vi": "hậu quả tiêu cực đối với học tập",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Cutting study hours too drastically can lead to detrimental academic consequences for students.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:lower-academic-achievement",
+    "title": "lower academic achievement",
+    "term": "lower academic achievement",
+    "type": "Collocation",
+    "pronunciation": "/ˈləʊə ˌækəˈdemɪk əˈtʃiːvmənt/",
+    "part_of_speech": "n",
+    "meaning_vi": "thành tích học tập thấp hơn",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "A lack of parental support at home is often associated with lower academic achievement.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:long-term-intellectual-development",
+    "title": "long-term intellectual development",
+    "term": "long-term intellectual development",
+    "type": "Collocation",
+    "pronunciation": "/ˌlɒŋ tɜːm ˌɪntəˈlektʃuəl dɪˈveləpmənt/",
+    "part_of_speech": "n",
+    "meaning_vi": "sự phát triển trí tuệ lâu dài",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Reducing study time too much may hinder a child's long-term intellectual development.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:compromising-the-academic-and-intellectual-foundation",
+    "title": "compromising the academic and intellectual foundation",
+    "term": "compromising the academic and intellectual foundation",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɒmprəmaɪzɪŋ ði ˌækəˈdemɪk ənd ˌɪntəˈlektʃuəl faʊnˈdeɪʃn/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "làm suy yếu nền tảng học thuật và trí tuệ",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Skipping essential subjects risks compromising the academic and intellectual foundation children need for higher education.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:reduction-in-focus",
+    "title": "reduction in focus",
+    "term": "reduction in focus",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈdʌkʃn ɪn ˈfəʊkəs/",
+    "part_of_speech": "n",
+    "meaning_vi": "sự suy giảm khả năng tập trung",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Excessive screen time can cause a noticeable reduction in focus among school-age children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:passive-viewing",
+    "title": "passive viewing",
+    "term": "passive viewing",
+    "type": "Collocation",
+    "pronunciation": "/ˈpæsɪv ˈvjuːɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc xem một cách thụ động",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Unlike passive viewing of television, active reading requires children to engage their imagination and critical thinking.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:strive-for-personal-growth-and-improvement",
+    "title": "strive for personal growth and improvement",
+    "term": "strive for personal growth and improvement",
+    "type": "Collocation",
+    "pronunciation": "/straɪv fɔː ˈpɜːsənl grəʊθ ænd ɪmˈpruːvmənt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "phấn đấu để phát triển và hoàn thiện bản thân",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Healthy parenting encourages children to strive for personal growth and improvement without fear of constant criticism.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:parental-engagement",
+    "title": "parental engagement",
+    "term": "parental engagement",
+    "type": "Collocation",
+    "pronunciation": "/pəˈrentl ɪnˈɡeɪdʒmənt/",
+    "part_of_speech": "n",
+    "meaning_vi": "sự tham gia của cha mẹ",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Higher levels of parental engagement are strongly linked to children's academic success.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:language-acquisition",
+    "title": "language acquisition",
+    "term": "language acquisition",
+    "type": "Collocation",
+    "pronunciation": "/ˈlæŋɡwɪdʒ ˌækwɪˈzɪʃn/",
+    "part_of_speech": "n",
+    "meaning_vi": "sự tiếp thu ngôn ngữ",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Reading aloud to infants significantly speeds up their language acquisition.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:collaborative-projects",
+    "title": "collaborative projects",
+    "term": "collaborative projects",
+    "type": "Collocation",
+    "pronunciation": "/kəˈlæbərətɪv ˈprɒdʒekts/",
+    "part_of_speech": "n",
+    "meaning_vi": "các dự án hợp tác",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Schools often assign collaborative projects to teach children teamwork skills they cannot learn at home.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:greater-participation-in-physical-activities",
+    "title": "greater participation in physical activities",
+    "term": "greater participation in physical activities",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡreɪtə pɑːˌtɪsɪˈpeɪʃn ɪn ˈfɪzɪkl ækˈtɪvətiz/",
+    "part_of_speech": "n",
+    "meaning_vi": "sự tham gia nhiều hơn vào các hoạt động thể chất",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Greater participation in physical activities is often recommended to balance children's academic workload.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:parental-involvement",
+    "title": "parental involvement",
+    "term": "parental involvement",
+    "type": "Collocation",
+    "pronunciation": "/pəˈrɛntl ɪnˈvɒlvmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự tham gia của cha mẹ",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Studies consistently show that parental involvement in a child's education has a lasting positive impact on academic performance.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:consistent-exposure",
+    "title": "consistent exposure",
+    "term": "consistent exposure",
+    "type": "Collocation",
+    "pronunciation": "/kənˈsɪstənt ɪkˈspəʊʒə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự tiếp xúc thường xuyên, liên tục",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Consistent exposure to books from an early age helps children develop strong reading habits later in life.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:information-access",
+    "title": "information access",
+    "term": "information access",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪnfəˈmeɪʃn ˈækses/",
+    "part_of_speech": "n",
+    "meaning_vi": "khả năng tiếp cận thông tin",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Smartphones grant children instant information access that was unavailable to previous generations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:language-learning-apps",
+    "title": "language-learning apps",
+    "term": "language-learning apps",
+    "type": "Collocation",
+    "pronunciation": "/ˈlæŋɡwɪdʒ ˈlɜːnɪŋ æps/",
+    "part_of_speech": "n",
+    "meaning_vi": "ứng dụng học ngôn ngữ",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Many children now use language-learning apps to supplement what they study at school.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:multimedia-content",
+    "title": "multimedia content",
+    "term": "multimedia content",
+    "type": "Collocation",
+    "pronunciation": "/ˌmʌltiˈmiːdiə ˈkɒntɛnt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nội dung đa phương tiện",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Multimedia content such as animated stories can capture children's attention more effectively than plain text.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:engaging-visual",
+    "title": "engaging visual",
+    "term": "engaging visual",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈgeɪdʒɪŋ ˈvɪʒuəl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hình ảnh hấp dẫn/thu hút",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Educational apps use engaging visuals to keep children interested in learning new vocabulary.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:narrated-audiobook",
+    "title": "narrated audiobook",
+    "term": "narrated audiobook",
+    "type": "Collocation",
+    "pronunciation": "/nəˈreɪtɪd ˈɔːdɪəʊbʊk/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sách nói có người kể chuyện",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Narrated audiobooks allow children to enjoy stories during car rides when parents cannot read to them directly.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:immersive-learning-experience",
+    "title": "immersive learning experience",
+    "term": "immersive learning experience",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈmɜːsɪv ˈlɜːnɪŋ ɪkˈspɪəriəns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "trải nghiệm học tập sống động, lôi cuốn",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Interactive apps can offer children an immersive learning experience that traditional textbooks struggle to match.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:scalable-solution",
+    "title": "scalable solution",
+    "term": "scalable solution",
+    "type": "Collocation",
+    "pronunciation": "/ˈskeɪləbl səˈluːʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "giải pháp có khả năng mở rộng/áp dụng linh hoạt",
+    "topic": "Family",
+    "subTopic": "Family & Education",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Online tutoring platforms have become a scalable solution for busy families seeking educational support for their children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:pursuing-higher-education",
+    "title": "pursuing higher education",
+    "term": "pursuing higher education",
+    "type": "Collocation",
+    "pronunciation": "/pəˈsjuːɪŋ ˈhaɪər ˌedjʊˈkeɪʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "theo đuổi việc học lên cao",
+    "topic": "Family",
+    "subTopic": "Family Structure & Modern Changes",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Young adults who spend years pursuing higher education often marry and have children much later in life.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:career-ambitions",
+    "title": "career ambitions",
+    "term": "career ambitions",
+    "type": "Collocation",
+    "pronunciation": "/kəˈrɪə æmˈbɪʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tham vọng nghề nghiệp",
+    "topic": "Family",
+    "subTopic": "Family Structure & Modern Changes",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Many young professionals postpone marriage because they are still focused on their career ambitions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:secured-stable-incomes",
+    "title": "secured stable incomes",
+    "term": "secured stable incomes",
+    "type": "Collocation",
+    "pronunciation": "/sɪˈkjʊəd ˈsteɪbəl ˈɪnkʌmz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đã có được thu nhập ổn định",
+    "topic": "Family",
+    "subTopic": "Family Structure & Modern Changes",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Couples who have secured stable incomes are generally better positioned to raise children comfortably.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:broader-cultural-and-technological-environment",
+    "title": "broader cultural and technological environment",
+    "term": "broader cultural and technological environment",
+    "type": "Collocation",
+    "pronunciation": "/ˈbrɔːdə ˈkʌltʃərəl ənd ˌteknəˈlɒdʒɪkl ɪnˈvaɪrənmənt/",
+    "part_of_speech": "n",
+    "meaning_vi": "môi trường văn hóa và công nghệ rộng lớn hơn",
+    "topic": "Family",
+    "subTopic": "Family Structure & Modern Changes",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "The broader cultural and technological environment now shapes children's values as much as their parents do.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:modern-social-and-economic-conditions",
+    "title": "modern social and economic conditions",
+    "term": "modern social and economic conditions",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɒdən ˈsəʊʃəl ænd ˌiːkəˈnɒmɪk kənˈdɪʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "điều kiện kinh tế - xã hội hiện đại",
+    "topic": "Family",
+    "subTopic": "Family Structure & Modern Changes",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Modern social and economic conditions have forced many young couples to live apart from their extended families.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:financial-pressures",
+    "title": "financial pressures",
+    "term": "financial pressures",
+    "type": "Collocation",
+    "pronunciation": "/faɪˈnænʃəl ˈpreʃəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "áp lực tài chính",
+    "topic": "Family",
+    "subTopic": "Family Structure & Modern Changes",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Financial pressures are one of the main reasons couples choose to have fewer children nowadays.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:delayed-parenthood",
+    "title": "delayed parenthood",
+    "term": "delayed parenthood",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈleɪd ˈpeərənthʊd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc làm cha mẹ muộn",
+    "topic": "Family",
+    "subTopic": "Family Structure & Modern Changes",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Delayed parenthood has become increasingly common as people prioritise their education and careers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:feel-financially-unprepared-for-parenthood",
+    "title": "feel financially unprepared for parenthood",
+    "term": "feel financially unprepared for parenthood",
+    "type": "Collocation",
+    "pronunciation": "/fiːl faɪˈnænʃəli ˌʌnprɪˈpeəd fɔː ˈpeərənthʊd/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cảm thấy chưa sẵn sàng về tài chính để làm cha mẹ",
+    "topic": "Family",
+    "subTopic": "Family Structure & Modern Changes",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Many couples in big cities feel financially unprepared for parenthood until well into their thirties.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:better-prepared-financially-and-emotionally",
+    "title": "better prepared financially and emotionally",
+    "term": "better prepared financially and emotionally",
+    "type": "Collocation",
+    "pronunciation": "/ˈbetə prɪˈpeəd faɪˈnænʃəli ənd ɪˈməʊʃənəli/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "chuẩn bị tốt hơn về tài chính lẫn cảm xúc",
+    "topic": "Family",
+    "subTopic": "Family Structure & Modern Changes",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Older parents tend to be better prepared financially and emotionally to cope with the demands of raising a child.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:pregnancy-complications",
+    "title": "pregnancy complications",
+    "term": "pregnancy complications",
+    "type": "Collocation",
+    "pronunciation": "/ˈpreɡnənsi ˌkɒmplɪˈkeɪʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "biến chứng thai kỳ",
+    "topic": "Family",
+    "subTopic": "Family Structure & Modern Changes",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Some critics argue that delaying childbirth increases the risk of pregnancy complications.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:government-overreach",
+    "title": "government overreach",
+    "term": "government overreach",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡʌvənmənt ˌəʊvəˈriːtʃ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự can thiệp quá mức của chính phủ",
+    "topic": "Family",
+    "subTopic": "Family Structure & Modern Changes",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Requiring every parent to attend compulsory courses could be seen as an example of government overreach into private family life.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:advances-in-modern-healthcare",
+    "title": "advances in modern healthcare",
+    "term": "advances in modern healthcare",
+    "type": "Collocation",
+    "pronunciation": "/ədˈvɑːnsɪz ɪn ˈmɒdən ˈhelθkeə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những tiến bộ trong y tế hiện đại",
+    "topic": "Family",
+    "subTopic": "Family Structure & Modern Changes",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Thanks to advances in modern healthcare, the risks associated with having children later in life have been greatly reduced.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:careful-medical-supervision",
+    "title": "careful medical supervision",
+    "term": "careful medical supervision",
+    "type": "Collocation",
+    "pronunciation": "/ˈkeəfəl ˈmedɪkəl ˌsuːpəˈvɪʒən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự giám sát y tế cẩn thận",
+    "topic": "Family",
+    "subTopic": "Family Structure & Modern Changes",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "With careful medical supervision, older mothers can now go through pregnancy far more safely than in the past.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:emotional-needs",
+    "title": "emotional needs",
+    "term": "emotional needs",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈməʊʃənəl niːdz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nhu cầu tình cảm",
+    "topic": "Family",
+    "subTopic": "Emotional Well-being & Mental Health",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Parents who ignore their children's emotional needs may unintentionally cause long-term psychological harm.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:inappropriate-content",
+    "title": "inappropriate content",
+    "term": "inappropriate content",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪnəˈprəʊpriət ˈkɒntent/",
+    "part_of_speech": "n",
+    "meaning_vi": "nội dung không phù hợp",
+    "topic": "Family",
+    "subTopic": "Emotional Well-being & Mental Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Parents worry that unsupervised internet access exposes children to inappropriate content.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:unsafe-online-interactions",
+    "title": "unsafe online interactions",
+    "term": "unsafe online interactions",
+    "type": "Collocation",
+    "pronunciation": "/ʌnˈseɪf ˈɒnlaɪn ˌɪntərˈækʃənz/",
+    "part_of_speech": "n",
+    "meaning_vi": "các tương tác trực tuyến không an toàn",
+    "topic": "Family",
+    "subTopic": "Emotional Well-being & Mental Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Without parental monitoring, children may be drawn into unsafe online interactions with strangers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:emotional-stability",
+    "title": "emotional stability",
+    "term": "emotional stability",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈməʊʃənl stəˈbɪləti/",
+    "part_of_speech": "n",
+    "meaning_vi": "sự ổn định cảm xúc",
+    "topic": "Family",
+    "subTopic": "Emotional Well-being & Mental Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "A warm home environment fosters emotional stability in young children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:emotional-well-being",
+    "title": "emotional well-being",
+    "term": "emotional well-being",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈməʊʃənl ˈwelbiːɪŋ/",
+    "part_of_speech": "n",
+    "meaning_vi": "sức khỏe tinh thần",
+    "topic": "Family",
+    "subTopic": "Emotional Well-being & Mental Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Prolonged exposure to violent online content can damage a child's emotional well-being.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:unhealthy-habits",
+    "title": "unhealthy habits",
+    "term": "unhealthy habits",
+    "type": "Collocation",
+    "pronunciation": "/ʌnˈhelθi ˈhæbɪts/",
+    "part_of_speech": "n",
+    "meaning_vi": "thói quen không lành mạnh",
+    "topic": "Family",
+    "subTopic": "Emotional Well-being & Mental Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "A lack of parental guidance can lead children to develop unhealthy habits such as excessive screen use.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:detrimental-effects-on-their-well-being",
+    "title": "detrimental effects on their well-being",
+    "term": "detrimental effects on their well-being",
+    "type": "Collocation",
+    "pronunciation": "/ˌdetrɪˈmentl ɪˈfekts ɒn ðeə ˈwelbiːɪŋ/",
+    "part_of_speech": "n",
+    "meaning_vi": "những tác động tiêu cực đến sức khỏe tinh thần",
+    "topic": "Family",
+    "subTopic": "Emotional Well-being & Mental Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Excessive academic pressure can have detrimental effects on children's well-being.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:neglect-the-childs-well-being",
+    "title": "neglect the child's well-being",
+    "term": "neglect the child's well-being",
+    "type": "Collocation",
+    "pronunciation": "/nɪˈglɛkt ðə tʃaɪldz ˈwɛlˌbiːɪŋ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "xao nhãng phúc lợi/sức khỏe tinh thần của con",
+    "topic": "Family",
+    "subTopic": "Emotional Well-being & Mental Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Focusing solely on grades, some parents neglect the child's well-being in their relentless pursuit of academic success.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:the-severe-mental-health-consequences",
+    "title": "the severe mental health consequences",
+    "term": "the severe mental health consequences",
+    "type": "Collocation",
+    "pronunciation": "/ðə sɪˈvɪə ˈmɛntl hɛlθ ˈkɒnsɪkwənsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những hậu quả nghiêm trọng đến sức khỏe tinh thần",
+    "topic": "Family",
+    "subTopic": "Emotional Well-being & Mental Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Researchers have documented the severe mental health consequences of growing up under relentless parental pressure.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:adverse-effects-on-childrens-mental-and-emotional-health",
+    "title": "adverse effects on children's mental and emotional health",
+    "term": "adverse effects on children's mental and emotional health",
+    "type": "Collocation",
+    "pronunciation": "/ˈædvɜːs ɪˈfɛkts ɒn ˈtʃɪldrənz ˈmɛntl ænd ɪˈməʊʃənl hɛlθ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những tác động tiêu cực đến sức khỏe tinh thần và cảm xúc của trẻ",
+    "topic": "Family",
+    "subTopic": "Emotional Well-being & Mental Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Excessive homework loads can have adverse effects on children's mental and emotional health, leaving them exhausted and anxious.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:emotional-stress",
+    "title": "emotional stress",
+    "term": "emotional stress",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈməʊʃənl strɛs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "căng thẳng tâm lý/cảm xúc",
+    "topic": "Family",
+    "subTopic": "Emotional Well-being & Mental Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Living far from relatives can cause considerable emotional stress, particularly during difficult periods of life.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:mental-health-issue",
+    "title": "mental health issue",
+    "term": "mental health issue",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɛntl hɛlθ ˈɪʃuː/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "vấn đề sức khỏe tâm thần",
+    "topic": "Family",
+    "subTopic": "Emotional Well-being & Mental Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Prolonged separation from family members can trigger serious mental health issues such as depression and anxiety.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:mental-health-and-personal-growth",
+    "title": "mental health and personal growth",
+    "term": "mental health and personal growth",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɛntl hɛlθ ænd ˈpɜːsənl grəʊθ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sức khỏe tinh thần và sự phát triển cá nhân",
+    "topic": "Family",
+    "subTopic": "Emotional Well-being & Mental Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Excessive parental pressure can be harmful to children's mental health and personal growth in the long run.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:damage-childrens-psychological-well-being",
+    "title": "damage children's psychological well-being",
+    "term": "damage children's psychological well-being",
+    "type": "Collocation",
+    "pronunciation": "/ˈdæmɪdʒ ˈtʃɪldrənz ˌsaɪkəˈlɒdʒɪkl ˈwɛlˌbiːɪŋ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gây tổn hại đến sức khỏe tâm lý của trẻ",
+    "topic": "Family",
+    "subTopic": "Emotional Well-being & Mental Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Constant criticism from parents can damage children's psychological well-being and erode their self-confidence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:family:associate-learning-with-fear-rather-than-curiosity",
+    "title": "associate learning with fear rather than curiosity",
+    "term": "associate learning with fear rather than curiosity",
+    "type": "Collocation",
+    "pronunciation": "/əˈsəʊʃɪeɪt ˈlɜːnɪŋ wɪð fɪər ˈrɑːðər ðæn ˌkjʊəriˈɒsəti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gắn việc học với nỗi sợ hãi thay vì sự tò mò",
+    "topic": "Family",
+    "subTopic": "Emotional Well-being & Mental Health",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Family",
+    "examples": [
+      {
+        "en": "Children who are punished for poor grades may come to associate learning with fear rather than curiosity.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  }
+]

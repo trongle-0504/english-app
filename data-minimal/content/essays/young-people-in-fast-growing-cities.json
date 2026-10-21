@@ -1,0 +1,609 @@
+{
+  "id": "young-people-in-fast-growing-cities",
+  "title": "Young People in Fast-Growing Cities",
+  "topic": "Cities & young people",
+  "taskType": "Problems & solutions",
+  "prompt": "Major cities in the world are growing fast, as well as their problems. What are the problems that young people living in those cities are facing? Suggest some solutions.",
+  "createdAt": "2026-09-30T02:04:56.696Z",
+  "sentences": [
+    {
+      "text": "It is true that the rapid growth of large cities around the world has been accompanied by many serious issues.",
+      "vi": "Đúng là sự phát triển nhanh chóng của các thành phố lớn trên thế giới đi kèm với nhiều vấn đề nghiêm trọng.",
+      "role": "paraphrase"
+    },
+    {
+      "text": "As a result, young people living in these cities are facing a number of problems, which require effective solutions.",
+      "vi": "Do đó, những người trẻ sống ở các thành phố này đang đối mặt với một số vấn đề cần có giải pháp hiệu quả.",
+      "role": "position"
+    },
+    {
+      "text": "Young people living in rapidly growing cities face several problems.",
+      "vi": "Những người trẻ sống ở các thành phố đang phát triển nhanh gặp phải một số vấn đề.",
+      "role": "claim"
+    },
+    {
+      "text": "One particularly serious problem is the extremely high cost of living, especially accommodation.",
+      "vi": "Một vấn đề đặc biệt nghiêm trọng là chi phí sinh hoạt cực kỳ cao, nhất là chỗ ở.",
+      "role": "claim"
+    },
+    {
+      "text": "As urban populations expand, demand for housing can outstrip supply, driving up property prices and rents.",
+      "vi": "Khi dân số đô thị tăng, nhu cầu nhà ở có thể vượt quá nguồn cung, đẩy giá bất động sản và giá thuê nhà lên cao.",
+      "role": "explanation"
+    },
+    {
+      "text": "Consequently, many young residents are forced either to share overcrowded accommodation or to devote a substantial proportion of their income to rent, leaving them under considerable financial strain.",
+      "vi": "Hệ quả là nhiều cư dân trẻ buộc phải ở ghép trong những chỗ ở chật chội hoặc dành một phần lớn thu nhập cho tiền thuê nhà, khiến họ chịu áp lực tài chính đáng kể.",
+      "role": "result"
+    },
+    {
+      "text": "Another negative effect is intense competition in the job market.",
+      "vi": "Một tác động tiêu cực khác là sự cạnh tranh gay gắt trên thị trường việc làm.",
+      "role": "claim"
+    },
+    {
+      "text": "Since large numbers of graduates move to major cities each year, the supply of applicants for entry-level positions can exceed the number of available vacancies.",
+      "vi": "Vì mỗi năm có rất nhiều sinh viên tốt nghiệp đổ về các thành phố lớn, số người ứng tuyển cho các vị trí mới vào nghề có thể vượt quá số chỗ trống.",
+      "role": "explanation"
+    },
+    {
+      "text": "This makes it harder for young job seekers to obtain stable, well-paid employment, potentially resulting in prolonged career uncertainty, insecure work, and significant stress.",
+      "vi": "Điều này khiến người trẻ khó có được việc làm ổn định, lương tốt, có thể dẫn đến sự bấp bênh kéo dài trong sự nghiệp, công việc không ổn định và căng thẳng đáng kể.",
+      "role": "result"
+    },
+    {
+      "text": "Despite these problems, various actions can be taken to mitigate the situation.",
+      "vi": "Bất chấp những vấn đề này, có nhiều hành động có thể thực hiện để giảm bớt tình hình.",
+      "role": "claim"
+    },
+    {
+      "text": "The first possible measure is for the government to provide targeted housing support for young people.",
+      "vi": "Biện pháp khả thi đầu tiên là chính phủ hỗ trợ nhà ở có trọng tâm cho người trẻ.",
+      "role": "claim"
+    },
+    {
+      "text": "By constructing affordable apartments and introducing reasonable limits on rental prices, authorities could increase the availability of suitable accommodation and ease pressure on household budgets, thereby enabling more young residents to live independently.",
+      "vi": "Bằng cách xây dựng các căn hộ giá phải chăng và đặt giới hạn hợp lý cho giá thuê, chính quyền có thể tăng nguồn chỗ ở phù hợp và giảm áp lực lên ngân sách gia đình, từ đó giúp nhiều cư dân trẻ có thể sống tự lập.",
+      "role": "explanation"
+    },
+    {
+      "text": "The second approach is for authorities to encourage companies to establish offices in smaller towns.",
+      "vi": "Cách tiếp cận thứ hai là chính quyền khuyến khích các công ty đặt văn phòng ở những thị trấn nhỏ hơn.",
+      "role": "claim"
+    },
+    {
+      "text": "This could be achieved through tax incentives for businesses that operate in rural or suburban areas.",
+      "vi": "Điều này có thể thực hiện thông qua các ưu đãi thuế cho doanh nghiệp hoạt động ở khu vực nông thôn hoặc ngoại ô.",
+      "role": "explanation"
+    },
+    {
+      "text": "As these organisations create professional positions outside major urban centres, young people would have more opportunities to find decent work locally, reducing the need to move into already overcrowded cities",
+      "vi": "Khi các tổ chức này tạo ra việc làm chuyên môn bên ngoài các trung tâm đô thị lớn, người trẻ sẽ có nhiều cơ hội tìm việc tốt ngay tại địa phương, giảm nhu cầu chuyển đến những thành phố vốn đã quá đông đúc.",
+      "role": "result"
+    },
+    {
+      "text": "In conclusion, although young people living in rapidly growing cities face problems such as high living costs and fierce competition for jobs, several steps can be taken to improve the situation.",
+      "vi": "Tóm lại, dù người trẻ sống ở các thành phố phát triển nhanh gặp các vấn đề như chi phí sinh hoạt cao và cạnh tranh việc làm gay gắt, vẫn có một số bước có thể thực hiện để cải thiện tình hình.",
+      "role": "summary"
+    }
+  ],
+  "paragraphs": [
+    {
+      "role": "Introduction",
+      "summary_vi": "Paraphrase đề: thành phố lớn phát triển nhanh kéo theo vấn đề cho người trẻ, cần giải pháp.",
+      "outline": [
+        "Major cities grow fast and face many issues",
+        "Young people face problems; solutions needed"
+      ],
+      "sentences": [
+        0,
+        1
+      ]
+    },
+    {
+      "role": "Body 1 — problems",
+      "summary_vi": "Hai vấn đề: chi phí nhà ở quá cao và cạnh tranh việc làm gay gắt.",
+      "outline": [
+        "Exorbitant living costs (housing & rent)",
+        "Demand outstrips supply → prices and rents soar → financial strain",
+        "Fierce job market competition",
+        "Too many graduates → few entry-level jobs → insecure work, stress"
+      ],
+      "sentences": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "role": "Body 2 — solutions",
+      "summary_vi": "Hai giải pháp: hỗ trợ nhà ở và đưa việc làm ra các thị trấn nhỏ.",
+      "outline": [
+        "Government-subsidised housing & rent caps",
+        "Affordable apartments ease household budgets",
+        "Tax incentives for companies in smaller towns",
+        "More local jobs, less migration to crowded cities"
+      ],
+      "sentences": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "role": "Conclusion",
+      "summary_vi": "Tóm tắt hai vấn đề và khẳng định có thể cải thiện.",
+      "outline": [
+        "High living costs & fierce job competition",
+        "Housing support + job decentralisation can help"
+      ],
+      "sentences": [
+        15
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "it-is-true-that",
+      "key": "it is true that",
+      "text": "It is true that",
+      "kind": "linking",
+      "meaning_vi": "đúng là",
+      "function": "concession",
+      "importance": 2,
+      "sentence": 0,
+      "start": 0,
+      "end": 15
+    },
+    {
+      "id": "the-rapid-growth-of-large-cities",
+      "key": "the rapid growth of large cities",
+      "text": "the rapid growth of large cities around the world",
+      "kind": "paraphrase",
+      "meaning_vi": "sự phát triển nhanh của các thành phố lớn",
+      "source": "Major cities in the world are growing fast",
+      "importance": 3,
+      "sentence": 0,
+      "start": 16,
+      "end": 65
+    },
+    {
+      "id": "x-has-been-accompanied-by-y",
+      "key": "X has been accompanied by Y",
+      "text": "has been accompanied by",
+      "kind": "frame",
+      "meaning_vi": "X đi kèm với Y",
+      "frame": "X has been accompanied by Y",
+      "function": "result",
+      "importance": 3,
+      "sentence": 0,
+      "start": 66,
+      "end": 89
+    },
+    {
+      "id": "as-a-result",
+      "key": "as a result",
+      "text": "As a result",
+      "kind": "linking",
+      "meaning_vi": "kết quả là",
+      "function": "result",
+      "importance": 2,
+      "sentence": 1,
+      "start": 0,
+      "end": 11
+    },
+    {
+      "id": "require-effective-solutions",
+      "key": "require effective solutions",
+      "text": "require effective solutions",
+      "kind": "paraphrase",
+      "meaning_vi": "cần có giải pháp hiệu quả",
+      "source": "Suggest some solutions",
+      "importance": 2,
+      "sentence": 1,
+      "start": 88,
+      "end": 115
+    },
+    {
+      "id": "a-high-cost-of-living",
+      "key": "a high cost of living",
+      "text": "the extremely high cost of living",
+      "kind": "collocation",
+      "meaning_vi": "chi phí sinh hoạt cao",
+      "headword": "cost",
+      "importance": 3,
+      "sentence": 3,
+      "start": 36,
+      "end": 69
+    },
+    {
+      "id": "urban-population",
+      "key": "urban population",
+      "text": "urban populations expand",
+      "kind": "collocation",
+      "meaning_vi": "dân số đô thị",
+      "headword": "population",
+      "importance": 2,
+      "sentence": 4,
+      "start": 3,
+      "end": 27
+    },
+    {
+      "id": "demand-outstrips-supply",
+      "key": "demand outstrips supply",
+      "text": "demand for housing can outstrip supply",
+      "kind": "collocation",
+      "meaning_vi": "cầu vượt cung",
+      "note_vi": "\"outstrip\" = vượt quá; cũng dùng \"exceed\".",
+      "headword": "demand",
+      "importance": 3,
+      "sentence": 4,
+      "start": 29,
+      "end": 67
+    },
+    {
+      "id": "drive-up-prices",
+      "key": "drive up prices",
+      "text": "driving up property prices and rents",
+      "kind": "collocation",
+      "meaning_vi": "đẩy giá lên cao",
+      "headword": "price",
+      "importance": 3,
+      "sentence": 4,
+      "start": 69,
+      "end": 105
+    },
+    {
+      "id": "consequently",
+      "key": "consequently",
+      "text": "Consequently",
+      "kind": "linking",
+      "meaning_vi": "do đó, kết quả là",
+      "function": "result",
+      "importance": 2,
+      "sentence": 5,
+      "start": 0,
+      "end": 12
+    },
+    {
+      "id": "overcrowded-accommodation",
+      "key": "overcrowded accommodation",
+      "text": "overcrowded accommodation",
+      "kind": "collocation",
+      "meaning_vi": "chỗ ở chật chội, quá đông người",
+      "headword": "accommodation",
+      "importance": 2,
+      "sentence": 5,
+      "start": 62,
+      "end": 87
+    },
+    {
+      "id": "a-substantial-proportion-of-sth",
+      "key": "a substantial proportion of sth",
+      "text": "a substantial proportion of their income",
+      "kind": "collocation",
+      "meaning_vi": "một phần đáng kể của…",
+      "headword": "proportion",
+      "importance": 3,
+      "sentence": 5,
+      "start": 101,
+      "end": 141
+    },
+    {
+      "id": "be-under-financial-strain",
+      "key": "be under financial strain",
+      "text": "under considerable financial strain",
+      "kind": "collocation",
+      "meaning_vi": "chịu áp lực tài chính",
+      "headword": "strain",
+      "importance": 3,
+      "sentence": 5,
+      "start": 164,
+      "end": 199
+    },
+    {
+      "id": "intense-competition-in-the-job-market",
+      "key": "intense competition in the job market",
+      "text": "intense competition in the job market",
+      "kind": "collocation",
+      "meaning_vi": "cạnh tranh gay gắt trên thị trường việc làm",
+      "headword": "competition",
+      "importance": 3,
+      "sentence": 6,
+      "start": 27,
+      "end": 64
+    },
+    {
+      "id": "entry-level-positions",
+      "key": "entry-level positions",
+      "text": "entry-level positions",
+      "kind": "collocation",
+      "meaning_vi": "vị trí mới vào nghề",
+      "headword": "position",
+      "importance": 3,
+      "sentence": 7,
+      "start": 94,
+      "end": 115
+    },
+    {
+      "id": "available-vacancies",
+      "key": "available vacancies",
+      "text": "available vacancies",
+      "kind": "collocation",
+      "meaning_vi": "chỗ trống (việc làm) còn tuyển",
+      "headword": "vacancy",
+      "importance": 2,
+      "sentence": 7,
+      "start": 141,
+      "end": 160
+    },
+    {
+      "id": "stable-well-paid-employment",
+      "key": "stable, well-paid employment",
+      "text": "stable, well-paid employment",
+      "kind": "collocation",
+      "meaning_vi": "việc làm ổn định, lương tốt",
+      "headword": "employment",
+      "importance": 3,
+      "sentence": 8,
+      "start": 53,
+      "end": 81
+    },
+    {
+      "id": "career-uncertainty",
+      "key": "career uncertainty",
+      "text": "prolonged career uncertainty",
+      "kind": "collocation",
+      "meaning_vi": "sự bấp bênh trong sự nghiệp",
+      "headword": "uncertainty",
+      "importance": 2,
+      "sentence": 8,
+      "start": 108,
+      "end": 136
+    },
+    {
+      "id": "despite",
+      "key": "despite",
+      "text": "Despite",
+      "kind": "linking",
+      "meaning_vi": "bất chấp, mặc dù",
+      "function": "concession",
+      "importance": 2,
+      "sentence": 9,
+      "start": 0,
+      "end": 7
+    },
+    {
+      "id": "mitigate-the-situation",
+      "key": "mitigate the situation",
+      "text": "mitigate the situation",
+      "kind": "collocation",
+      "meaning_vi": "làm dịu, giảm bớt tình hình",
+      "headword": "situation",
+      "importance": 3,
+      "sentence": 9,
+      "start": 56,
+      "end": 78
+    },
+    {
+      "id": "the-first-possible-measure-is-for-x-to-v",
+      "key": "The first possible measure is for X to + V",
+      "text": "The first possible measure is for the government to",
+      "kind": "frame",
+      "meaning_vi": "Biện pháp khả thi đầu tiên là X nên…",
+      "frame": "The first possible measure is for X to + V",
+      "function": "sequence",
+      "importance": 3,
+      "sentence": 10,
+      "start": 0,
+      "end": 51
+    },
+    {
+      "id": "targeted-housing-support",
+      "key": "targeted housing support",
+      "text": "targeted housing support",
+      "kind": "collocation",
+      "meaning_vi": "hỗ trợ nhà ở có trọng tâm",
+      "headword": "support",
+      "importance": 2,
+      "sentence": 10,
+      "start": 60,
+      "end": 84
+    },
+    {
+      "id": "by-v-ing-x-could-v",
+      "key": "By + V-ing, X could + V",
+      "text": "By constructing affordable apartments",
+      "kind": "frame",
+      "meaning_vi": "Bằng cách…, X có thể…",
+      "frame": "By + V-ing, X could + V",
+      "function": "method",
+      "importance": 2,
+      "sentence": 11,
+      "start": 0,
+      "end": 37
+    },
+    {
+      "id": "affordable-apartments",
+      "key": "affordable apartments",
+      "text": "affordable apartments",
+      "kind": "collocation",
+      "meaning_vi": "căn hộ giá phải chăng",
+      "headword": "apartment",
+      "importance": 3,
+      "sentence": 11,
+      "start": 16,
+      "end": 37
+    },
+    {
+      "id": "limits-on-rental-prices",
+      "key": "limits on rental prices",
+      "text": "reasonable limits on rental prices",
+      "kind": "collocation",
+      "meaning_vi": "giới hạn giá thuê nhà",
+      "note_vi": "Cách nói khác: \"rent caps\".",
+      "headword": "limit",
+      "importance": 2,
+      "sentence": 11,
+      "start": 54,
+      "end": 88
+    },
+    {
+      "id": "ease-pressure-on-household-budgets",
+      "key": "ease pressure on household budgets",
+      "text": "ease pressure on household budgets",
+      "kind": "collocation",
+      "meaning_vi": "giảm áp lực lên ngân sách gia đình",
+      "headword": "pressure",
+      "importance": 3,
+      "sentence": 11,
+      "start": 164,
+      "end": 198
+    },
+    {
+      "id": "live-independently",
+      "key": "live independently",
+      "text": "live independently",
+      "kind": "collocation",
+      "meaning_vi": "sống tự lập",
+      "headword": "independently",
+      "importance": 2,
+      "sentence": 11,
+      "start": 241,
+      "end": 259
+    },
+    {
+      "id": "this-could-be-achieved-through-n",
+      "key": "This could be achieved through + N",
+      "text": "This could be achieved through",
+      "kind": "frame",
+      "meaning_vi": "Điều này có thể thực hiện thông qua…",
+      "frame": "This could be achieved through + N",
+      "function": "method",
+      "importance": 3,
+      "sentence": 13,
+      "start": 0,
+      "end": 30
+    },
+    {
+      "id": "tax-incentives",
+      "key": "tax incentives",
+      "text": "tax incentives",
+      "kind": "collocation",
+      "meaning_vi": "ưu đãi thuế",
+      "headword": "incentive",
+      "importance": 3,
+      "sentence": 13,
+      "start": 31,
+      "end": 45
+    },
+    {
+      "id": "urban-centres",
+      "key": "urban centres",
+      "text": "urban centres",
+      "kind": "collocation",
+      "meaning_vi": "trung tâm đô thị",
+      "headword": "centre",
+      "importance": 2,
+      "sentence": 14,
+      "start": 67,
+      "end": 80
+    },
+    {
+      "id": "find-decent-work",
+      "key": "find decent work",
+      "text": "find decent work",
+      "kind": "collocation",
+      "meaning_vi": "tìm được việc làm tử tế",
+      "headword": "work",
+      "importance": 3,
+      "sentence": 14,
+      "start": 128,
+      "end": 144
+    },
+    {
+      "id": "overcrowded-cities",
+      "key": "overcrowded cities",
+      "text": "already overcrowded cities",
+      "kind": "collocation",
+      "meaning_vi": "thành phố quá đông đúc",
+      "headword": "city",
+      "importance": 2,
+      "sentence": 14,
+      "start": 185,
+      "end": 211
+    },
+    {
+      "id": "in-conclusion",
+      "key": "in conclusion",
+      "text": "In conclusion",
+      "kind": "linking",
+      "meaning_vi": "kết luận lại",
+      "function": "conclusion",
+      "importance": 2,
+      "sentence": 15,
+      "start": 0,
+      "end": 13
+    },
+    {
+      "id": "although",
+      "key": "although",
+      "text": "although",
+      "kind": "linking",
+      "meaning_vi": "mặc dù",
+      "function": "concession",
+      "importance": 2,
+      "sentence": 15,
+      "start": 15,
+      "end": 23
+    },
+    {
+      "id": "such-as",
+      "key": "such as",
+      "text": "such as",
+      "kind": "linking",
+      "meaning_vi": "chẳng hạn như",
+      "function": "example",
+      "importance": 2,
+      "sentence": 15,
+      "start": 84,
+      "end": 91
+    }
+  ],
+  "critique": [
+    {
+      "sentence": 14,
+      "text": "reducing the need to move into already overcrowded cities",
+      "issue_vi": "Câu thiếu dấu chấm kết thúc.",
+      "better": "reducing the need to move into already overcrowded cities."
+    },
+    {
+      "sentence": 1,
+      "text": "As a result",
+      "issue_vi": "Câu 2 không thực sự là kết quả của câu 1; nên dùng từ nối thể hiện sự cụ thể hoá.",
+      "better": "In particular"
+    }
+  ],
+  "tasks": [
+    {
+      "prompt": "More and more people are moving from rural areas to cities. Is this a positive or negative development?",
+      "hint_vi": "Dùng \"demand for housing can outstrip supply\", \"drive up property prices\" và \"already overcrowded cities\"."
+    },
+    {
+      "prompt": "The high cost of housing in big cities is a serious problem. What are the causes, and what can governments do to solve it?",
+      "hint_vi": "Dùng \"a substantial proportion of their income\", \"affordable apartments\" và \"ease pressure on household budgets\"."
+    },
+    {
+      "prompt": "Some people believe that companies should be encouraged to move their offices out of big cities. To what extent do you agree or disagree?",
+      "hint_vi": "Dùng \"tax incentives\", \"find decent work locally\" và \"This could be achieved through…\"."
+    }
+  ],
+  "band": "TR 7 · CC 7 · LR 7 · GR 7"
+}

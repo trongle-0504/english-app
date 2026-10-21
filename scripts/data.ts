@@ -1,7 +1,7 @@
 // The app's data (content, media, progress: see data-manifest.json) travels apart from the code, as one archive.
 //   node scripts/data.ts pack [--minimal] [--out <dir>]              → <dir>/english-app-data[-minimal]-<date>.tar.gz (+ .index.json)
-//   node scripts/data.ts restore <archive.tar.gz> [--force] [--with-models]
-// restore checks every file against the checksums packed with it and puts it at its place in this project. Files that
+//   node scripts/data.ts restore <archive.tar.gz | folder> [--force] [--with-models]
+// A folder is the unpacked form scripts/sync-commit.ts writes to the repository (data-minimal/). restore checks every file against the checksums packed with it and puts it at its place in this project. Files that
 // already exist with other content stop it, unless --force, which first copies them to data/backup-<time>/.
 // --minimal leaves out what data-manifest.json lists under minimalSkips (vocabulary and note pictures, blog originals,
 // recordings, PDFs, files built from others): a small archive. Restoring it builds the topic collocations index and
@@ -9,7 +9,7 @@
 // --with-models also downloads the speech-recognition model (Speaking Review, ~130 MB) into models/.
 // Runs in WSL/Linux (uses tar).
 import { spawnSync } from 'node:child_process'
-import { copyFileSync, createWriteStream, existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs'
+import { copyFileSync, createWriteStream, existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
 import { Readable } from 'node:stream'
@@ -29,10 +29,14 @@ function tar(args: string[]): void {
 const stamp = () => new Date().toISOString().slice(0, 16).replace('T', '-').replace(':', '')
 const mb = (bytes: number) => `${(bytes / 1024 / 1024).toFixed(1)} MB`
 
-/** Packs every data file of this project; returns the archive path. */
-export async function pack(outDir: string, { minimal = false } = {}): Promise<string> {
+/** The data files a pack or export holds (relative to the project). */
+export function dataFiles(minimal: boolean): string[] {
   const files = listFiles(projectRoot, 'data').filter((rel) => !minimal || !skippedInMinimal(rel))
   if (!files.length) throw new Error('No data files found: nothing to pack.')
+  return files
+}
+
+async function indexFiles(files: string[], minimal: boolean): Promise<DataIndex> {
   const index: DataIndex = { createdAt: new Date().toISOString(), minimal, totalBytes: 0, files: [] }
   for (const rel of files) {
     const abs = path.join(projectRoot, rel)
@@ -40,6 +44,50 @@ export async function pack(outDir: string, { minimal = false } = {}): Promise<st
     index.totalBytes += bytes
     index.files.push({ path: rel, bytes, sha256: await sha256(abs) })
   }
+  return index
+}
+
+/** Every file under `dir` (relative, forward slashes). */
+function filesUnder(dir: string, base = ''): string[] {
+  if (!existsSync(dir)) return []
+  return readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
+    const rel = base ? `${base}/${e.name}` : e.name
+    return e.isDirectory() ? filesUnder(path.join(dir, e.name), rel) : [rel]
+  })
+}
+
+/**
+ * Copies the data files unpacked into `dir`, with DATA_INDEX beside them, and deletes there what is no longer data: a
+ * folder to commit in place of an archive (restore reads it the same way). The index keeps its date while no file
+ * changes, so an unchanged export shows no diff.
+ */
+export async function exportTo(dir: string, { minimal = false } = {}): Promise<void> {
+  const files = dataFiles(minimal)
+  const index = await indexFiles(files, minimal)
+  mkdirSync(dir, { recursive: true })
+  let written = 0
+  for (const f of index.files) {
+    const to = path.join(dir, f.path)
+    if (existsSync(to) && (await sha256(to)) === f.sha256) continue
+    mkdirSync(path.dirname(to), { recursive: true })
+    copyFileSync(path.join(projectRoot, f.path), to)
+    written++
+  }
+  const keep = new Set([DATA_INDEX, ...files])
+  const stale = filesUnder(dir).filter((rel) => !keep.has(rel))
+  for (const rel of stale) rmSync(path.join(dir, rel))
+  const indexFile = path.join(dir, DATA_INDEX)
+  const old = existsSync(indexFile) ? (JSON.parse(readFileSync(indexFile, 'utf8')) as DataIndex) : null
+  if (!old || old.minimal !== minimal || JSON.stringify(old.files) !== JSON.stringify(index.files)) {
+    writeFileSync(indexFile, JSON.stringify(index, null, 2))
+  }
+  console.log(`Data → ${dir}: ${written} written, ${stale.length} removed, ${files.length} files (${mb(index.totalBytes)}).`)
+}
+
+/** Packs every data file of this project; returns the archive path. */
+export async function pack(outDir: string, { minimal = false } = {}): Promise<string> {
+  const files = dataFiles(minimal)
+  const index = await indexFiles(files, minimal)
 
   mkdirSync(outDir, { recursive: true })
   const name = `english-app-data${minimal ? '-minimal' : ''}-${stamp()}`
@@ -64,14 +112,18 @@ function safeDataPath(rel: string): boolean {
   return normal === rel && !rel.startsWith('/') && !rel.startsWith('../') && !rel.includes('/../') && kindOf(rel) === 'data'
 }
 
+/** Restores an archive made by pack, or a folder made by exportTo (such as data-minimal/ in the repository). */
 async function restore(archive: string, force: boolean): Promise<void> {
   if (!existsSync(archive)) throw new Error(`No such file: ${archive}`)
-  const work = mkdtempSync(path.join(os.tmpdir(), 'lt-restore-'))
+  const fromFolder = statSync(archive).isDirectory()
+  const work = fromFolder ? archive : mkdtempSync(path.join(os.tmpdir(), 'lt-restore-'))
   try {
-    console.log(`Unpacking ${archive}…`)
-    tar(['-xzf', archive, '-C', work])
+    if (!fromFolder) {
+      console.log(`Unpacking ${archive}…`)
+      tar(['-xzf', archive, '-C', work])
+    }
     const indexFile = path.join(work, DATA_INDEX)
-    if (!existsSync(indexFile)) throw new Error(`${DATA_INDEX} missing: not an archive made by "node scripts/data.ts pack".`)
+    if (!existsSync(indexFile)) throw new Error(`${DATA_INDEX} missing: not an archive or folder made by scripts/data.ts.`)
     const index = JSON.parse(readFileSync(indexFile, 'utf8')) as DataIndex
 
     // Everything is checked before anything is written: a damaged download changes nothing.
@@ -119,7 +171,7 @@ async function restore(archive: string, force: boolean): Promise<void> {
       console.log('Minimal archive: vocabulary and note pictures and the PDFs are not in it. Download the pictures with: node scripts/fetch-images.ts')
     }
   } finally {
-    rmSync(work, { recursive: true, force: true })
+    if (!fromFolder) rmSync(work, { recursive: true, force: true })
   }
 }
 
@@ -166,11 +218,11 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
       await pack(path.resolve(option('--out') ?? path.join(projectRoot, '..', 'english-app-commit', minimal ? 'data-minimal' : 'data')), { minimal })
     } else if (command === 'restore') {
       const archive = rest.find((a) => !a.startsWith('--'))
-      if (!archive) throw new Error('Usage: node scripts/data.ts restore <archive.tar.gz> [--force] [--with-models]')
+      if (!archive) throw new Error('Usage: node scripts/data.ts restore <archive.tar.gz | folder> [--force] [--with-models]')
       await restore(path.resolve(archive), flag('--force'))
       if (flag('--with-models')) await downloadModel()
     } else {
-      console.log('Usage:\n  node scripts/data.ts pack [--minimal] [--out <dir>]\n  node scripts/data.ts restore <archive.tar.gz> [--force] [--with-models]')
+      console.log('Usage:\n  node scripts/data.ts pack [--minimal] [--out <dir>]\n  node scripts/data.ts restore <archive.tar.gz | folder> [--force] [--with-models]')
       process.exitCode = 1
     }
   } catch (error) {

@@ -1,0 +1,1526 @@
+{
+  "id": "mutg7e8l-3930e5",
+  "createdAt": "2026-10-04T06:36:58.197Z",
+  "durationMs": 118663,
+  "topic": "Home",
+  "part": 1,
+  "answers": [
+    {
+      "question": "Where is your home?",
+      "idea": "-Nằm ở một vùng quê thanh bình tại tỉnh Tiền Giang, nép mình giữa những vườn cây ăn trái và kênh rạch mát mẻ.",
+      "picks": [
+        {
+          "cardId": "vocab:situate",
+          "term": "situate",
+          "slot": "be situated in/near + N",
+          "meaning_vi": "1. Đặt, xây dựng hoặc định vị cái gì đó ở một vị trí cụ thể.\n2. Đặt một ý tưởng, sự kiện, hoặc khái niệm vào một bối cảnh hoặc mối quan hệ cụ thể để hiểu rõ hơn.",
+          "origin": "Architecture",
+          "href": "/vocabulary/architecture/core-words#situate",
+          "how": "Dùng ở câu trả lời trực tiếp để nói vị trí ngôi nhà.",
+          "example": "My family home is situated in a small village in Tien Giang.",
+          "inReview": true,
+          "learning": true
+        },
+        {
+          "cardId": "colloc:countryside:tranquil-countryside",
+          "term": "tranquil countryside",
+          "meaning_vi": "Vùng nông thôn thanh bình, tĩnh lặng.",
+          "origin": "Countryside",
+          "href": "/collocations/countryside#tranquil-countryside",
+          "how": "Dùng ở câu Cause để tả khung cảnh thanh bình mình thích.",
+          "example": "I grew up in the tranquil countryside of the Mekong Delta.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "vocab:setting",
+          "term": "setting",
+          "slot": "in a beautiful setting",
+          "meaning_vi": "1. Nơi chốn, cảnh quan hoặc môi trường xung quanh nơi một sự việc diễn ra.\n2. Bối cảnh (thời gian và địa điểm) của một câu chuyện, bộ phim hoặc tác phẩm văn học.\n3. Các thông số kỹ thuật, cấu hình hoặc chế độ điều chỉnh trên thiết bị, máy móc.",
+          "origin": "Tourism",
+          "href": "/vocabulary/tourism/core-words#setting",
+          "how": "Dùng ở câu Cause: điều mình thích nhất là khung cảnh xung quanh.",
+          "example": "What I love most about my home is its setting.",
+          "inReview": true,
+          "learning": true
+        },
+        {
+          "cardId": "colloc:countryside:peaceful-countryside",
+          "term": "peaceful countryside",
+          "meaning_vi": "Vùng nông thôn yên bình.",
+          "origin": "Countryside",
+          "href": "/collocations/countryside#peaceful-countryside",
+          "how": "Có thể thay cho tranquil countryside trong câu Description.",
+          "example": "My village is in the peaceful countryside, far from any big city.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "vocab:stream",
+          "term": "stream",
+          "slot": "stream + N (films/music)",
+          "meaning_vi": "1. Suối - Dòng nước nhỏ, hẹp chảy tự nhiên.\n2. Phát trực tuyến - Xem hoặc nghe nhạc, phim qua Internet mà không cần tải về.",
+          "origin": "Environment › Nature & landscapes",
+          "href": "/vocabulary/environment/nature-landscapes#stream",
+          "how": "Dùng ở câu Description để tả kênh rạch, dòng nước quanh nhà.",
+          "example": "There's a little stream running right behind our house.",
+          "inReview": true,
+          "learning": true
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "fruit orchard",
+          "meaning_vi": "vườn cây ăn trái",
+          "example": "Our house is surrounded by fruit orchards.",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "phrase": "a world away from",
+          "meaning_vi": "hoàn toàn khác xa với",
+          "example": "My village feels a world away from the noise of the city.",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        }
+      ],
+      "answer": [
+        {
+          "text": "My family home "
+        },
+        {
+          "text": "is situated in",
+          "mark": "library"
+        },
+        {
+          "text": " a small village in Tien Giang province, down in the Mekong Delta."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "It's "
+        },
+        {
+          "text": "surrounded by",
+          "mark": "checked",
+          "note": "Longman có mục từ “surround”"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "fruit orchards",
+          "mark": "unverified",
+          "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+        },
+        {
+          "text": " and little canals, so "
+        },
+        {
+          "text": "the air there is always fresh",
+          "mark": "checked",
+          "note": "Longman · ADJ.: fresh, clean, warm, hot, cool, cold, crisp, clear, damp, humid, polluted, stale (✓ fresh)"
+        },
+        {
+          "text": " and cool."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "What I love most about",
+          "mark": "structure"
+        },
+        {
+          "text": " my home "
+        },
+        {
+          "text": "is",
+          "mark": "structure"
+        },
+        {
+          "text": " its "
+        },
+        {
+          "text": "setting",
+          "mark": "library"
+        },
+        {
+          "text": ", deep in the "
+        },
+        {
+          "text": "tranquil countryside",
+          "mark": "library"
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "a world away from",
+          "mark": "unverified",
+          "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+        },
+        {
+          "text": " the noise of the city."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "My family home "
+            },
+            {
+              "text": "is situated in",
+              "mark": "library"
+            },
+            {
+              "text": " a small village in Tien Giang province, down in the Mekong Delta."
+            }
+          ]
+        },
+        {
+          "tool": "description",
+          "segments": [
+            {
+              "text": "It's "
+            },
+            {
+              "text": "surrounded by",
+              "mark": "checked",
+              "note": "Longman có mục từ “surround”"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "fruit orchards",
+              "mark": "unverified",
+              "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+            },
+            {
+              "text": " and little canals, so "
+            },
+            {
+              "text": "the air there is always fresh",
+              "mark": "checked",
+              "note": "Longman · ADJ.: fresh, clean, warm, hot, cool, cold, crisp, clear, damp, humid, polluted, stale (✓ fresh)"
+            },
+            {
+              "text": " and cool."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "What I love most about",
+              "mark": "structure"
+            },
+            {
+              "text": " my home "
+            },
+            {
+              "text": "is",
+              "mark": "structure"
+            },
+            {
+              "text": " its "
+            },
+            {
+              "text": "setting",
+              "mark": "library"
+            },
+            {
+              "text": ", deep in the "
+            },
+            {
+              "text": "tranquil countryside",
+              "mark": "library"
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "a world away from",
+              "mark": "unverified",
+              "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+            },
+            {
+              "text": " the noise of the city."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "What I like most about N is N",
+          "text": "What I love most about … is",
+          "tool": "cause",
+          "fromGuide": true
+        }
+      ],
+      "wording": [
+        {
+          "text": "surrounded by",
+          "verified": true,
+          "dictionary": [
+            "Longman có mục từ “surround”"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/surround"
+            }
+          ]
+        },
+        {
+          "text": "fruit orchards",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "text": "the air there is always fresh",
+          "verified": true,
+          "dictionary": [
+            "Longman · ADJ.: fresh, clean, warm, hot, cool, cold, crisp, clear, damp, humid, polluted, stale (✓ fresh)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/air"
+            }
+          ]
+        },
+        {
+          "text": "a world away from",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        }
+      ],
+      "meaning": "My family home is in a peaceful village in Tien Giang province, surrounded by fruit orchards and cool canals.",
+      "polish": []
+    },
+    {
+      "question": "Do you live in a house or a flat?",
+      "idea": "Nhà cấp 4 truyền thống : Một ngôi nhà cấp 4 kiểu cũ xây cách đây khoảng 30 năm, mái ngói/tôn, khoảng sân rộng rợp bóng mát mang đậm nét hoài niệm.",
+      "picks": [
+        {
+          "cardId": "vocab:date-back",
+          "term": "date back",
+          "meaning_vi": "Tồn tại hoặc có nguồn gốc từ một thời điểm cụ thể trong quá khứ hoặc trong một khoảng thời gian nhất định.",
+          "origin": "History",
+          "href": "/vocabulary/history/core-words#date-back",
+          "how": "Dùng ở câu trả lời để nói tuổi của ngôi nhà.",
+          "example": "Our house dates back about thirty years.",
+          "inReview": true,
+          "learning": true
+        },
+        {
+          "cardId": "wcolloc:shade:in-the-shade",
+          "term": "in the shade",
+          "slot": "sit/stay in the shade",
+          "meaning_vi": "trong bóng râm",
+          "origin": "Collocation of: shade",
+          "href": "/vocabulary/art/core-words#shade",
+          "how": "Dùng ở câu Description để tả khoảng sân rợp bóng mát.",
+          "example": "We often sit in the shade in the front yard.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "vocab:shabby",
+          "term": "shabby",
+          "meaning_vi": "1. Cũ kỹ, sờn rách hoặc xuống cấp (thường dùng cho nhà cửa, quần áo, đồ nội thất) do sử dụng lâu ngày hoặc không được bảo trì.\n2. Hèn hạ, tồi tệ hoặc không công bằng (dùng để miêu tả hành vi hoặc cách đối xử với người khác).\n3. (Thông tục) Khá tốt, ấn tượng (thường dùng trong cụm 'not too shabby').",
+          "origin": "Common › Describing & evaluating",
+          "href": "/vocabulary/common/describing-evaluating#shabby",
+          "how": "Dùng ở câu Effect để thừa nhận nhà hơi cũ kỹ.",
+          "example": "It might look a bit shabby, but I love it.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "vocab:refurbish",
+          "term": "refurbish",
+          "slot": "have sth refurbished / be refurbished",
+          "meaning_vi": "Trang trí và sửa chữa một thứ gì đó như tòa nhà hoặc văn phòng để cải thiện diện mạo của nó.",
+          "origin": "Architecture",
+          "href": "/vocabulary/architecture/core-words#refurbish",
+          "how": "Có thể nói thêm nhà chưa từng sửa sang lại.",
+          "example": "We've never had the house refurbished.",
+          "inReview": true,
+          "learning": true
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "single-storey house",
+          "meaning_vi": "nhà một tầng (nhà cấp 4)",
+          "example": "It's a traditional single-storey house.",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · ADJ: beautiful, comfortable, delightful, elegant, fine, grand, handsome, lovely, luxurious, magnificent, posh, pretty (✓ single-storey)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/house"
+            }
+          ]
+        },
+        {
+          "phrase": "tiled roof",
+          "meaning_vi": "mái ngói",
+          "example": "The house has an old tiled roof.",
+          "verified": true,
+          "dictionary": [
+            "Longman · ADJ.: a flat, a sloping, a pitched, a tiled, a slate, a thatched, a leaky, leaking (✓ a tiled)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/roof"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "text": "Definitely",
+          "mark": "structure"
+        },
+        {
+          "text": " a house — it's a traditional "
+        },
+        {
+          "text": "single-storey house",
+          "mark": "checked",
+          "note": "OZDIC · ADJ: beautiful, comfortable, delightful, elegant, fine, grand, handsome, lovely, luxurious, magnificent, posh, pretty (✓ single-storey)"
+        },
+        {
+          "text": " that "
+        },
+        {
+          "text": "dates back",
+          "mark": "library"
+        },
+        {
+          "text": " about thirty years."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "It has a "
+        },
+        {
+          "text": "tiled roof",
+          "mark": "checked",
+          "note": "Longman · ADJ.: a flat, a sloping, a pitched, a tiled, a slate, a thatched, a leaky, leaking (✓ a tiled)"
+        },
+        {
+          "text": " and a big "
+        },
+        {
+          "text": "front yard",
+          "mark": "unverified",
+          "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+        },
+        {
+          "text": " shaded by several old trees."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "It might look a bit "
+        },
+        {
+          "text": "dated",
+          "mark": "library"
+        },
+        {
+          "text": " now, but "
+        },
+        {
+          "text": "I can't help but feel",
+          "mark": "structure"
+        },
+        {
+          "text": " nostalgic whenever I sit out there."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "Definitely",
+              "mark": "structure"
+            },
+            {
+              "text": " a house — it's a traditional "
+            },
+            {
+              "text": "single-storey house",
+              "mark": "checked",
+              "note": "OZDIC · ADJ: beautiful, comfortable, delightful, elegant, fine, grand, handsome, lovely, luxurious, magnificent, posh, pretty (✓ single-storey)"
+            },
+            {
+              "text": " that "
+            },
+            {
+              "text": "dates back",
+              "mark": "library"
+            },
+            {
+              "text": " about thirty years."
+            }
+          ]
+        },
+        {
+          "tool": "description",
+          "segments": [
+            {
+              "text": "It has a "
+            },
+            {
+              "text": "tiled roof",
+              "mark": "checked",
+              "note": "Longman · ADJ.: a flat, a sloping, a pitched, a tiled, a slate, a thatched, a leaky, leaking (✓ a tiled)"
+            },
+            {
+              "text": " and a big "
+            },
+            {
+              "text": "front yard",
+              "mark": "unverified",
+              "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+            },
+            {
+              "text": " shaded by several old trees."
+            }
+          ]
+        },
+        {
+          "tool": "effect",
+          "segments": [
+            {
+              "text": "It might look a bit "
+            },
+            {
+              "text": "dated",
+              "mark": "library"
+            },
+            {
+              "text": " now, but "
+            },
+            {
+              "text": "I can't help but feel",
+              "mark": "structure"
+            },
+            {
+              "text": " nostalgic whenever I sit out there."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "Definitely",
+          "text": "Definitely",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "can't help but feel + feeling Adj",
+          "text": "I can't help but feel",
+          "tool": "effect",
+          "fromGuide": true
+        }
+      ],
+      "wording": [
+        {
+          "text": "single-storey house",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · ADJ: beautiful, comfortable, delightful, elegant, fine, grand, handsome, lovely, luxurious, magnificent, posh, pretty (✓ single-storey)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/house"
+            }
+          ]
+        },
+        {
+          "text": "tiled roof",
+          "verified": true,
+          "dictionary": [
+            "Longman · ADJ.: a flat, a sloping, a pitched, a tiled, a slate, a thatched, a leaky, leaking (✓ a tiled)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/roof"
+            }
+          ]
+        },
+        {
+          "text": "front yard",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "text": "dated",
+          "verified": true,
+          "dictionary": [
+            "Longman có mục từ “dated”"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/dated"
+            }
+          ]
+        }
+      ],
+      "meaning": "I live in a traditional single-storey house built about 30 years ago, with a tiled/tin roof and a big shady yard that feels nostalgic.",
+      "polish": [
+        {
+          "original": "in the shade of several old trees",
+          "replacement": "shaded by several old trees",
+          "kind": "natural",
+          "why": "\"shaded by\" tự nhiên và gọn hơn khi mô tả khoảng sân rợp bóng cây.",
+          "verified": true,
+          "dictionary": [],
+          "sources": []
+        },
+        {
+          "original": "shabby",
+          "replacement": "dated",
+          "kind": "meaning",
+          "why": "Thí sinh chỉ nói nhà kiểu cũ, không nói tồi tàn; \"dated\" đúng ý hơn \"shabby\".",
+          "verified": true,
+          "dictionary": [
+            "Longman có mục từ “dated”"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/dated"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Who do you live with?",
+      "idea": "Hiện tại ở thành phố: Sống cùng em trai tại TP.HCM để hai anh em tiện hỗ trợ nhau trong công việc, sinh hoạt và tiết kiệm chi phí; mỗi tháng cùng nhau về quê thăm ba mẹ.",
+      "picks": [
+        {
+          "cardId": "colloc:distance-and-size:little-brother",
+          "term": "little brother",
+          "slot": "my little brother",
+          "meaning_vi": "Em trai.",
+          "origin": "Distance and size",
+          "href": "/collocations/distance-and-size#little-brother",
+          "how": "Dùng ở câu trả lời trực tiếp: sống cùng em trai.",
+          "example": "I live with my little brother in Saigon.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:money-collocations:save-money",
+          "term": "save money",
+          "slot": "save money (for/to V)",
+          "meaning_vi": "Giữ tiền để sử dụng trong tương lai.",
+          "origin": "Money",
+          "href": "/collocations/money-collocations#save-money",
+          "how": "Dùng ở câu Cause: ở chung để tiết kiệm tiền.",
+          "example": "Sharing a flat helps us save money.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "wcolloc:rent:high-low-fair-rent",
+          "term": "high/low/fair rent",
+          "meaning_vi": "tiền thuê cao/thấp/hợp lý",
+          "origin": "Collocation of: rent",
+          "href": "/vocabulary/lifestyle/home-daily-life#rent",
+          "how": "Có thể dùng ở câu Cause để nói giá thuê nhà cao.",
+          "example": "The high rent in the city is a big reason we share.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:families:close",
+          "term": "close",
+          "slot": "be close to sb / close relatives",
+          "meaning_vi": "Thân thiết, gần gũi (về mối quan hệ).",
+          "origin": "Families",
+          "href": "/collocations/families#close",
+          "how": "Có thể thêm ở câu Effect: hai anh em rất thân.",
+          "example": "My brother and I are really close.",
+          "inReview": false,
+          "learning": false
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "help each other out",
+          "meaning_vi": "giúp đỡ lẫn nhau",
+          "example": "My brother and I help each other out a lot.",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · ADV: out (✓ out)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/help"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "text": "At the moment",
+          "mark": "structure"
+        },
+        {
+          "text": ", I live with my "
+        },
+        {
+          "text": "little brother",
+          "mark": "library"
+        },
+        {
+          "text": " in a "
+        },
+        {
+          "text": "rented flat",
+          "mark": "checked",
+          "note": "Longman · ADJ.: small, big, spacious, cramped, poky, a one-bedroom, two-bedroom etc, a one-room, two-room etc, a ground-floor, first-floor, second-floor etc (✓ a rented)"
+        },
+        {
+          "text": " in Ho Chi Minh City."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "The main reason is that",
+          "mark": "structure"
+        },
+        {
+          "text": " we can "
+        },
+        {
+          "text": "help each other out",
+          "mark": "extra"
+        },
+        {
+          "text": " with work and daily life, and since "
+        },
+        {
+          "text": "rent is so high",
+          "mark": "checked",
+          "note": "Longman · ADJ.: high, low, exorbitant, fixed, affordable, the annual, monthly, weekly, ground, a peppercorn, back, the ~ is due (✓ high)"
+        },
+        {
+          "text": " here, sharing a place "
+        },
+        {
+          "text": "helps us",
+          "mark": "structure"
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "save money",
+          "mark": "library"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "On top of that",
+          "mark": "structure"
+        },
+        {
+          "text": ", we "
+        },
+        {
+          "text": "go back to our hometown",
+          "mark": "unverified",
+          "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+        },
+        {
+          "text": " together once a month to visit our parents."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "At the moment",
+              "mark": "structure"
+            },
+            {
+              "text": ", I live with my "
+            },
+            {
+              "text": "little brother",
+              "mark": "library"
+            },
+            {
+              "text": " in a "
+            },
+            {
+              "text": "rented flat",
+              "mark": "checked",
+              "note": "Longman · ADJ.: small, big, spacious, cramped, poky, a one-bedroom, two-bedroom etc, a one-room, two-room etc, a ground-floor, first-floor, second-floor etc (✓ a rented)"
+            },
+            {
+              "text": " in Ho Chi Minh City."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "The main reason is that",
+              "mark": "structure"
+            },
+            {
+              "text": " we can "
+            },
+            {
+              "text": "help each other out",
+              "mark": "extra"
+            },
+            {
+              "text": " with work and daily life, and since "
+            },
+            {
+              "text": "rent is so high",
+              "mark": "checked",
+              "note": "Longman · ADJ.: high, low, exorbitant, fixed, affordable, the annual, monthly, weekly, ground, a peppercorn, back, the ~ is due (✓ high)"
+            },
+            {
+              "text": " here, sharing a place "
+            },
+            {
+              "text": "helps us",
+              "mark": "structure"
+            },
+            {
+              "text": " "
+            },
+            {
+              "text": "save money",
+              "mark": "library"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "effect",
+          "segments": [
+            {
+              "text": "On top of that",
+              "mark": "structure"
+            },
+            {
+              "text": ", we "
+            },
+            {
+              "text": "go back to our hometown",
+              "mark": "unverified",
+              "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+            },
+            {
+              "text": " together once a month to visit our parents."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "At the moment, SV",
+          "text": "At the moment",
+          "tool": "answer",
+          "fromGuide": false
+        },
+        {
+          "pattern": "The main reason is that SV",
+          "text": "The main reason is that",
+          "tool": "cause",
+          "fromGuide": true
+        },
+        {
+          "pattern": "help sb V",
+          "text": "helps us",
+          "tool": "cause",
+          "fromGuide": true
+        },
+        {
+          "pattern": "On top of that, SV",
+          "text": "On top of that",
+          "tool": "effect",
+          "fromGuide": false
+        }
+      ],
+      "wording": [
+        {
+          "text": "rented flat",
+          "verified": true,
+          "dictionary": [
+            "Longman · ADJ.: small, big, spacious, cramped, poky, a one-bedroom, two-bedroom etc, a one-room, two-room etc, a ground-floor, first-floor, second-floor etc (✓ a rented)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/flat"
+            }
+          ]
+        },
+        {
+          "text": "rent is so high",
+          "verified": true,
+          "dictionary": [
+            "Longman · ADJ.: high, low, exorbitant, fixed, affordable, the annual, monthly, weekly, ground, a peppercorn, back, the ~ is due (✓ high)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/rent"
+            }
+          ]
+        },
+        {
+          "text": "go back to our hometown",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        }
+      ],
+      "meaning": "Right now I live with my younger brother in Ho Chi Minh City so we can support each other with work and daily life and save money; we go back home together every month to visit our parents.",
+      "polish": []
+    },
+    {
+      "question": "Are there many rooms in your home?",
+      "idea": "Đủ phòng cho đại gia đình : Nhà có 4–5 phòng ngủ rộng rãi, rất tiện lợi vì dịp lễ Tết con cháu của cô dì chú bác thường về chơi và ở lại qua đêm.",
+      "picks": [
+        {
+          "cardId": "colloc:families:extended",
+          "term": "extended",
+          "slot": "an extended family",
+          "meaning_vi": "Mở rộng, bao gồm nhiều thành phần hơn (trong ngữ cảnh gia đình: bao gồm cả ông bà, họ hàng).",
+          "origin": "Families",
+          "href": "/collocations/families#extended",
+          "how": "Dùng ở câu Cause để nói đại gia đình về chơi dịp Tết.",
+          "example": "My extended family often stays over during Tet.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:families:close-relatives",
+          "term": "close relatives",
+          "meaning_vi": "Họ hàng gần gũi, như cha mẹ, con cái, anh chị em ruột.",
+          "origin": "Families",
+          "href": "/collocations/families#close-relatives",
+          "how": "Có thể thay thế khi nói họ hàng thân thiết về chơi.",
+          "example": "Our close relatives come to visit every Tet.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:families:close-family",
+          "term": "close family",
+          "slot": "be a very close family",
+          "meaning_vi": "Gia đình có mối quan hệ rất gắn bó, thân thiết.",
+          "origin": "Families",
+          "href": "/collocations/families#close-family",
+          "how": "Có thể dùng ở câu Effect: gia đình gắn bó.",
+          "example": "We're a very close family, so we love getting together.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:intensifying-adverbs:large",
+          "term": "large",
+          "slot": "be ridiculously large for + N",
+          "meaning_vi": "Lớn, to.",
+          "origin": "Intensifying adverbs",
+          "href": "/collocations/intensifying-adverbs#large",
+          "how": "Có thể nói nhà khá rộng so với ba mẹ ở.",
+          "example": "The house is ridiculously large for just my parents.",
+          "inReview": false,
+          "learning": false
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "spacious bedroom",
+          "meaning_vi": "phòng ngủ rộng rãi",
+          "example": "We have four spacious bedrooms.",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · ADJ: attractive, elegant, pleasant, pretty, comfortable, cosy, big, enormous, large, spacious, cell-like, little (✓ spacious)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/bedroom"
+            }
+          ]
+        },
+        {
+          "phrase": "stay the night",
+          "meaning_vi": "ở lại qua đêm",
+          "example": "My cousins usually stay the night.",
+          "verified": true,
+          "dictionary": [
+            "Longman · VERB + NIGHT: spend a ~ somewhere, stay the, have a bad, falls, the ~ wears on (✓ stay the)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/night"
+            }
+          ]
+        }
+      ],
+      "answer": [
+        {
+          "text": "I would say so",
+          "mark": "structure"
+        },
+        {
+          "text": " — we have four or five fairly "
+        },
+        {
+          "text": "spacious bedrooms",
+          "mark": "extra"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "It's really convenient because",
+          "mark": "structure"
+        },
+        {
+          "text": " during Tet, my "
+        },
+        {
+          "text": "extended family",
+          "mark": "library"
+        },
+        {
+          "text": " often comes to visit and ends up "
+        },
+        {
+          "text": "staying the night",
+          "mark": "extra"
+        },
+        {
+          "text": "."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "As a result,",
+          "mark": "structure"
+        },
+        {
+          "text": " the house is always "
+        },
+        {
+          "text": "packed and lively",
+          "mark": "unverified",
+          "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+        },
+        {
+          "text": " over the holidays, which I absolutely love."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "I would say so",
+              "mark": "structure"
+            },
+            {
+              "text": " — we have four or five fairly "
+            },
+            {
+              "text": "spacious bedrooms",
+              "mark": "extra"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "It's really convenient because",
+              "mark": "structure"
+            },
+            {
+              "text": " during Tet, my "
+            },
+            {
+              "text": "extended family",
+              "mark": "library"
+            },
+            {
+              "text": " often comes to visit and ends up "
+            },
+            {
+              "text": "staying the night",
+              "mark": "extra"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "tool": "effect",
+          "segments": [
+            {
+              "text": "As a result,",
+              "mark": "structure"
+            },
+            {
+              "text": " the house is always "
+            },
+            {
+              "text": "packed and lively",
+              "mark": "unverified",
+              "note": "Longman và OZDIC không liệt kê cụm này: Claude tự viết."
+            },
+            {
+              "text": " over the holidays, which I absolutely love."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "I would say so",
+          "text": "I would say so",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "It's really Adj because SV",
+          "text": "It's really convenient because",
+          "tool": "cause",
+          "fromGuide": false
+        },
+        {
+          "pattern": "As a result, SV",
+          "text": "As a result,",
+          "tool": "effect",
+          "fromGuide": true
+        }
+      ],
+      "wording": [
+        {
+          "text": "packed and lively",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        }
+      ],
+      "meaning": "Our home has 4-5 spacious bedrooms, which is very convenient because during Tet my aunts' and uncles' families come and stay overnight.",
+      "polish": []
+    },
+    {
+      "question": "What is your favourite room?",
+      "idea": "Góc học tập & làm việc riêng (bám sát ý bạn): Thích nhất phòng ngủ của mình vì có bàn làm việc, giá sách ngăn nắp, ghế tựa êm ái để vừa tập trung vừa ngả lưng thư giãn, điểm xuyết vài chậu cây cảnh mini xanh mát.",
+      "picks": [
+        {
+          "cardId": "colloc:towns-and-cities:relaxed-atmosphere",
+          "term": "relaxed atmosphere",
+          "slot": "have a relaxed atmosphere",
+          "meaning_vi": "Không khí thư giãn, thoải mái.",
+          "origin": "Towns and cities",
+          "href": "/collocations/towns-and-cities#relaxed-atmosphere",
+          "how": "Dùng ở câu Cause để nói không khí thư giãn của phòng.",
+          "example": "My room has such a relaxed atmosphere.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "vocab:shade",
+          "term": "shade",
+          "slot": "a shade of + colour",
+          "meaning_vi": "1. Màu sắc (sắc độ) - Mức độ đậm nhạt của một màu.\n2. Bóng râm - Chỗ mát không có ánh nắng chiếu trực tiếp.",
+          "origin": "Art",
+          "href": "/vocabulary/art/core-words#shade",
+          "how": "Dùng ở câu Description để tả màu xanh của cây cảnh.",
+          "example": "The plants add different shades of green to the room.",
+          "inReview": true,
+          "learning": true
+        },
+        {
+          "cardId": "wcolloc:interior:interior-design",
+          "term": "interior design",
+          "meaning_vi": "Thiết kế nội thất",
+          "origin": "Collocation of: interior",
+          "href": "/vocabulary/architecture/core-words#interior",
+          "how": "Có thể nói mình tự trang trí phòng theo sở thích.",
+          "example": "I'm quite into interior design, so I decorated it myself.",
+          "inReview": false,
+          "learning": false
+        },
+        {
+          "cardId": "colloc:texture:soft-pillow",
+          "term": "soft pillow",
+          "meaning_vi": "Gối mềm, dễ lún.",
+          "origin": "Texture",
+          "href": "/collocations/texture#soft-pillow",
+          "how": "Có thể thêm chi tiết khi tả chỗ nằm thư giãn.",
+          "example": "Nothing beats lying on my bed with a soft pillow.",
+          "inReview": false,
+          "learning": false
+        }
+      ],
+      "extras": [
+        {
+          "phrase": "double as",
+          "meaning_vi": "kiêm luôn, đồng thời là",
+          "example": "My bedroom doubles as my study.",
+          "verified": true,
+          "dictionary": [
+            "Longman có mục từ “double”"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/double"
+            }
+          ]
+        },
+        {
+          "phrase": "potted plant",
+          "meaning_vi": "chậu cây cảnh",
+          "example": "I keep a few potted plants on my desk.",
+          "verified": true,
+          "dictionary": [
+            "Longman · ADJ.: rare, common, wild, garden, exotic, tropical, medicinal, a potted, pot, a house, a climbing, a trailing (✓ a potted)"
+          ],
+          "sources": [
+            {
+              "name": "Longman",
+              "url": "https://www.ldoceonline.com/dictionary/plant"
+            }
+          ]
+        },
+        {
+          "phrase": "reclining chair",
+          "meaning_vi": "ghế tựa ngả lưng",
+          "example": "I love my comfy reclining chair.",
+          "verified": false,
+          "dictionary": [],
+          "sources": []
+        }
+      ],
+      "answer": [
+        {
+          "text": "It would have to be",
+          "mark": "structure"
+        },
+        {
+          "text": " my bedroom, which "
+        },
+        {
+          "text": "doubles as",
+          "mark": "library"
+        },
+        {
+          "text": " my own little study corner."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "There's a desk, a "
+        },
+        {
+          "text": "neatly organised",
+          "mark": "checked",
+          "note": "OZDIC · ADV: extremely, highly, strongly, very, carefully, efficiently, properly, superbly, well, badly, poorly, minutely (✓ neatly)"
+        },
+        {
+          "text": " bookshelf and a comfy "
+        },
+        {
+          "text": "reclining chair",
+          "mark": "unverified"
+        },
+        {
+          "text": ", plus a few mini "
+        },
+        {
+          "text": "potted plants",
+          "mark": "extra"
+        },
+        {
+          "text": " in different "
+        },
+        {
+          "text": "shades",
+          "mark": "library"
+        },
+        {
+          "text": " of green."
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "The best part about",
+          "mark": "structure"
+        },
+        {
+          "text": " it "
+        },
+        {
+          "text": "is that",
+          "mark": "structure"
+        },
+        {
+          "text": " it has such a "
+        },
+        {
+          "text": "relaxed atmosphere",
+          "mark": "library"
+        },
+        {
+          "text": " — I can "
+        },
+        {
+          "text": "focus on work",
+          "mark": "checked",
+          "note": "OZDIC · PREP: ~ for, ~ on (✓ ~ on)"
+        },
+        {
+          "text": " and then just "
+        },
+        {
+          "text": "lean back",
+          "mark": "checked",
+          "note": "OZDIC · ADV: back (✓ back)"
+        },
+        {
+          "text": " and unwind."
+        }
+      ],
+      "sentences": [
+        {
+          "tool": "answer",
+          "segments": [
+            {
+              "text": "It would have to be",
+              "mark": "structure"
+            },
+            {
+              "text": " my bedroom, which "
+            },
+            {
+              "text": "doubles as",
+              "mark": "library"
+            },
+            {
+              "text": " my own little study corner."
+            }
+          ]
+        },
+        {
+          "tool": "description",
+          "segments": [
+            {
+              "text": "There's a desk, a "
+            },
+            {
+              "text": "neatly organised",
+              "mark": "checked",
+              "note": "OZDIC · ADV: extremely, highly, strongly, very, carefully, efficiently, properly, superbly, well, badly, poorly, minutely (✓ neatly)"
+            },
+            {
+              "text": " bookshelf and a comfy "
+            },
+            {
+              "text": "reclining chair",
+              "mark": "unverified"
+            },
+            {
+              "text": ", plus a few mini "
+            },
+            {
+              "text": "potted plants",
+              "mark": "extra"
+            },
+            {
+              "text": " in different "
+            },
+            {
+              "text": "shades",
+              "mark": "library"
+            },
+            {
+              "text": " of green."
+            }
+          ]
+        },
+        {
+          "tool": "cause",
+          "segments": [
+            {
+              "text": "The best part about",
+              "mark": "structure"
+            },
+            {
+              "text": " it "
+            },
+            {
+              "text": "is that",
+              "mark": "structure"
+            },
+            {
+              "text": " it has such a "
+            },
+            {
+              "text": "relaxed atmosphere",
+              "mark": "library"
+            },
+            {
+              "text": " — I can "
+            },
+            {
+              "text": "focus on work",
+              "mark": "checked",
+              "note": "OZDIC · PREP: ~ for, ~ on (✓ ~ on)"
+            },
+            {
+              "text": " and then just "
+            },
+            {
+              "text": "lean back",
+              "mark": "checked",
+              "note": "OZDIC · ADV: back (✓ back)"
+            },
+            {
+              "text": " and unwind."
+            }
+          ]
+        }
+      ],
+      "structures": [
+        {
+          "pattern": "It would be nothing else but N",
+          "text": "It would be nothing else but",
+          "tool": "answer",
+          "fromGuide": true
+        },
+        {
+          "pattern": "The best part about N is that SV",
+          "text": "The best part about … is that",
+          "tool": "cause",
+          "fromGuide": true
+        }
+      ],
+      "wording": [
+        {
+          "text": "neatly organised",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · ADV: extremely, highly, strongly, very, carefully, efficiently, properly, superbly, well, badly, poorly, minutely (✓ neatly)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/organized"
+            }
+          ]
+        },
+        {
+          "text": "focus on work",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · PREP: ~ for, ~ on (✓ ~ on)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/focus"
+            }
+          ]
+        },
+        {
+          "text": "lean back",
+          "verified": true,
+          "dictionary": [
+            "OZDIC · ADV: back (✓ back)"
+          ],
+          "sources": [
+            {
+              "name": "OZDIC",
+              "url": "https://ozdic.com/word/lean"
+            }
+          ]
+        }
+      ],
+      "meaning": "My favourite room is my bedroom, my own study/work corner, with a desk, a tidy bookshelf, a comfy reclining chair and a few mini potted plants, so I can both focus and lean back to relax.",
+      "polish": [
+        {
+          "original": "It would be nothing else but",
+          "replacement": "It would have to be",
+          "kind": "natural",
+          "why": "\"nothing else but\" gượng gạo; người bản xứ nói \"It would have to be\".",
+          "verified": true,
+          "dictionary": [],
+          "sources": []
+        }
+      ]
+    }
+  ],
+  "candidates": 117,
+  "usage": {
+    "model": "claude-opus-5-5",
+    "input": 25890,
+    "output": 5887,
+    "thinking": 3086
+  }
+}

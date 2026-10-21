@@ -1,0 +1,733 @@
+{
+  "id": "internet-companies-and-personal-data",
+  "title": "Internet Companies and Personal Data",
+  "topic": "Technology & privacy",
+  "taskType": "Advantages & disadvantages",
+  "prompt": "The personal information of many individuals is held by large internet companies and organizations. Do you think the advantages of this outweigh the disadvantages?",
+  "createdAt": "2026-09-30T02:04:56.699Z",
+  "sentences": [
+    {
+      "text": "It is true that large internet companies and organisations hold the personal information of many individuals.",
+      "vi": "Đúng là các công ty và tổ chức internet lớn đang nắm giữ thông tin cá nhân của nhiều người.",
+      "role": "paraphrase"
+    },
+    {
+      "text": "Although this practice has several advantages, its drawbacks may be far more significant.",
+      "vi": "Dù việc này có một số lợi ích, những bất lợi của nó có thể đáng kể hơn nhiều.",
+      "role": "position"
+    },
+    {
+      "text": "On the one hand, there can be some minor benefits of companies holding their users’ personal information.",
+      "vi": "Một mặt, việc các công ty nắm giữ thông tin cá nhân của người dùng có thể mang lại một vài lợi ích nhỏ.",
+      "role": "claim"
+    },
+    {
+      "text": "One possible advantage is that companies can personalise content and services for individual users.",
+      "vi": "Một lợi ích có thể kể đến là các công ty có thể cá nhân hoá nội dung và dịch vụ cho từng người dùng.",
+      "role": "claim"
+    },
+    {
+      "text": "By collecting and analysing browsing histories and purchase records, organisations are able to tailor their recommendations to customers’ specific preferences, which can save consumers considerable time.",
+      "vi": "Bằng cách thu thập và phân tích lịch sử duyệt web và lịch sử mua hàng, các tổ chức có thể điều chỉnh gợi ý theo sở thích cụ thể của khách hàng, giúp người tiêu dùng tiết kiệm đáng kể thời gian.",
+      "role": "explanation"
+    },
+    {
+      "text": "For example, streaming platforms use data analysis to predict which programmes subscribers are likely to watch next, thereby saving them time finding new shows while also driving viewership.",
+      "vi": "Ví dụ, các nền tảng phát trực tuyến dùng phân tích dữ liệu để dự đoán chương trình người đăng ký có thể sẽ xem tiếp theo, nhờ đó giúp họ đỡ mất thời gian tìm chương trình mới đồng thời tăng lượt xem.",
+      "role": "example"
+    },
+    {
+      "text": "Another beneficial effect is that personal information can help businesses increase their revenue.",
+      "vi": "Một tác động có lợi khác là thông tin cá nhân có thể giúp doanh nghiệp tăng doanh thu.",
+      "role": "claim"
+    },
+    {
+      "text": "By analysing data such as users’ ages, locations and shopping habits, companies can identify their potential customers and direct their marketing campaigns towards the right audience, rather than wasting money on advertisements that reach uninterested people.",
+      "vi": "Bằng cách phân tích dữ liệu như tuổi, địa điểm và thói quen mua sắm của người dùng, các công ty có thể xác định khách hàng tiềm năng và hướng chiến dịch tiếp thị đến đúng đối tượng, thay vì lãng phí tiền cho quảng cáo tiếp cận những người không quan tâm.",
+      "role": "explanation"
+    },
+    {
+      "text": "For example, an online fashion retailer can show its latest collection to users who have recently searched for similar items, which is likely to result in higher sales.",
+      "vi": "Ví dụ, một nhà bán lẻ thời trang trực tuyến có thể giới thiệu bộ sưu tập mới nhất cho những người vừa tìm kiếm các sản phẩm tương tự, điều này có khả năng mang lại doanh số cao hơn.",
+      "role": "example"
+    },
+    {
+      "text": "Nevertheless, storing personal information can have major downsides which overshadow these positive impacts.",
+      "vi": "Tuy nhiên, việc lưu trữ thông tin cá nhân có thể có những mặt trái lớn, lấn át các tác động tích cực này.",
+      "role": "claim"
+    },
+    {
+      "text": "The most obvious issue could be that large-scale data centralisation means that huge amounts of sensitive information are held by a few corporations.",
+      "vi": "Vấn đề rõ ràng nhất có lẽ là việc tập trung dữ liệu quy mô lớn khiến lượng lớn thông tin nhạy cảm nằm trong tay một vài tập đoàn.",
+      "role": "claim"
+    },
+    {
+      "text": "As a result, their databases can become attractive targets for cybercriminals, who may steal banking details and home addresses.",
+      "vi": "Do đó, cơ sở dữ liệu của họ có thể trở thành mục tiêu hấp dẫn của tội phạm mạng, những kẻ có thể đánh cắp thông tin ngân hàng và địa chỉ nhà.",
+      "role": "result"
+    },
+    {
+      "text": "Consequently, victims may spend years repairing their credit records after identity theft.",
+      "vi": "Hệ quả là nạn nhân có thể mất nhiều năm khôi phục lịch sử tín dụng sau khi bị đánh cắp danh tính.",
+      "role": "result"
+    },
+    {
+      "text": "Another drawback worth mentioning is that the use of personal data for highly targeted advertising can have significant social consequences.",
+      "vi": "Một bất lợi khác đáng nhắc đến là việc dùng dữ liệu cá nhân cho quảng cáo nhắm mục tiêu cao có thể gây ra những hậu quả xã hội đáng kể.",
+      "role": "claim"
+    },
+    {
+      "text": "Companies can analyse users’ personal information to identify psychological triggers and tailor advertisements accordingly, which can gradually shape and even distort users’ opinions.",
+      "vi": "Các công ty có thể phân tích thông tin cá nhân của người dùng để tìm ra các \"điểm kích hoạt\" tâm lý và điều chỉnh quảng cáo tương ứng, điều này có thể dần định hình và thậm chí bóp méo quan điểm của người dùng.",
+      "role": "explanation"
+    },
+    {
+      "text": "Consequently, people may become trapped in narrow ideological bubbles.",
+      "vi": "Hệ quả là mọi người có thể bị mắc kẹt trong những \"bong bóng\" tư tưởng hạn hẹp.",
+      "role": "result"
+    },
+    {
+      "text": "In conclusion, despite the potential benefits of storing personal information on a large scale, the drawbacks involved are of greater significance.",
+      "vi": "Tóm lại, bất chấp những lợi ích tiềm năng của việc lưu trữ thông tin cá nhân trên quy mô lớn, những bất lợi đi kèm quan trọng hơn.",
+      "role": "summary"
+    }
+  ],
+  "paragraphs": [
+    {
+      "role": "Introduction",
+      "summary_vi": "Paraphrase đề và nêu quan điểm: bất lợi lớn hơn lợi ích.",
+      "outline": [
+        "Big internet companies hold personal data",
+        "Some advantages, but drawbacks more significant"
+      ],
+      "sentences": [
+        0,
+        1
+      ]
+    },
+    {
+      "role": "Body 1 — advantage: personalisation",
+      "summary_vi": "Lợi ích 1: cá nhân hoá nội dung và dịch vụ.",
+      "outline": [
+        "Minor benefits of holding user data",
+        "Personalised content and services",
+        "Recommendations tailored to preferences",
+        "Streaming platforms save users time"
+      ],
+      "sentences": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "role": "Body 2 — advantage: revenue",
+      "summary_vi": "Lợi ích 2: doanh nghiệp tăng doanh thu nhờ tiếp thị đúng đối tượng.",
+      "outline": [
+        "Data helps businesses increase revenue",
+        "Target the right audience, less wasted advertising",
+        "Online fashion retailer → higher sales"
+      ],
+      "sentences": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "role": "Body 3 — drawback: cybercrime",
+      "summary_vi": "Bất lợi 1: dữ liệu tập trung là mục tiêu của tội phạm mạng.",
+      "outline": [
+        "Major downsides outweigh the benefits",
+        "Data centralised in a few corporations",
+        "Attractive targets for cybercriminals",
+        "Identity theft, years to repair credit"
+      ],
+      "sentences": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "role": "Body 4 — drawback: manipulation",
+      "summary_vi": "Bất lợi 2: quảng cáo nhắm mục tiêu có thể bóp méo quan điểm.",
+      "outline": [
+        "Highly targeted advertising",
+        "Psychological triggers shape opinions",
+        "Narrow ideological bubbles"
+      ],
+      "sentences": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "role": "Conclusion",
+      "summary_vi": "Khẳng định bất lợi quan trọng hơn lợi ích.",
+      "outline": [
+        "Potential benefits exist",
+        "Drawbacks are of greater significance"
+      ],
+      "sentences": [
+        16
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "it-is-true-that",
+      "key": "it is true that",
+      "text": "It is true that",
+      "kind": "linking",
+      "meaning_vi": "đúng là",
+      "function": "concession",
+      "importance": 2,
+      "sentence": 0,
+      "start": 0,
+      "end": 15
+    },
+    {
+      "id": "hold-the-personal-information-of-individuals",
+      "key": "hold the personal information of individuals",
+      "text": "hold the personal information of many individuals",
+      "kind": "paraphrase",
+      "meaning_vi": "nắm giữ thông tin cá nhân của nhiều người",
+      "source": "personal information of many individuals is held",
+      "importance": 3,
+      "sentence": 0,
+      "start": 59,
+      "end": 108
+    },
+    {
+      "id": "although-x-has-several-advantages-its-drawbacks-may-be-far-more-significant",
+      "key": "Although X has several advantages, its drawbacks may be far more significant.",
+      "text": "Although this practice has several advantages, its drawbacks may be far more significant",
+      "kind": "frame",
+      "meaning_vi": "Dù X có một số lợi ích, bất lợi của nó có thể đáng kể hơn nhiều.",
+      "frame": "Although X has several advantages, its drawbacks may be far more significant.",
+      "function": "position",
+      "importance": 3,
+      "sentence": 1,
+      "start": 0,
+      "end": 88
+    },
+    {
+      "id": "although",
+      "key": "although",
+      "text": "Although",
+      "kind": "linking",
+      "meaning_vi": "mặc dù",
+      "function": "concession",
+      "importance": 2,
+      "sentence": 1,
+      "start": 0,
+      "end": 8
+    },
+    {
+      "id": "on-the-one-hand",
+      "key": "on the one hand",
+      "text": "On the one hand",
+      "kind": "linking",
+      "meaning_vi": "một mặt",
+      "function": "contrast",
+      "importance": 2,
+      "sentence": 2,
+      "start": 0,
+      "end": 15
+    },
+    {
+      "id": "there-can-be-some-minor-benefits-of-n-v-ing",
+      "key": "There can be some (minor) benefits of + N / V-ing",
+      "text": "there can be some minor benefits of",
+      "kind": "frame",
+      "meaning_vi": "Việc… có thể mang lại một vài lợi ích (nhỏ)",
+      "frame": "There can be some (minor) benefits of + N / V-ing",
+      "function": "concession",
+      "importance": 2,
+      "sentence": 2,
+      "start": 17,
+      "end": 52
+    },
+    {
+      "id": "one-possible-advantage-is-that-clause",
+      "key": "One possible advantage is that + clause",
+      "text": "One possible advantage is that",
+      "kind": "frame",
+      "meaning_vi": "Một lợi ích có thể kể đến là…",
+      "frame": "One possible advantage is that + clause",
+      "function": "addition",
+      "importance": 3,
+      "sentence": 3,
+      "start": 0,
+      "end": 30
+    },
+    {
+      "id": "personalise-content",
+      "key": "personalise content",
+      "text": "personalise content and services",
+      "kind": "collocation",
+      "meaning_vi": "cá nhân hoá nội dung",
+      "headword": "content",
+      "importance": 2,
+      "sentence": 3,
+      "start": 45,
+      "end": 77
+    },
+    {
+      "id": "browsing-history",
+      "key": "browsing history",
+      "text": "browsing histories",
+      "kind": "vocabulary",
+      "meaning_vi": "lịch sử duyệt web",
+      "headword": "history",
+      "importance": 2,
+      "sentence": 4,
+      "start": 28,
+      "end": 46
+    },
+    {
+      "id": "purchase-records",
+      "key": "purchase records",
+      "text": "purchase records",
+      "kind": "collocation",
+      "meaning_vi": "lịch sử mua hàng",
+      "headword": "record",
+      "importance": 2,
+      "sentence": 4,
+      "start": 51,
+      "end": 67
+    },
+    {
+      "id": "tailor-sth-to-sb-s-preferences",
+      "key": "tailor sth to sb’s preferences",
+      "text": "tailor their recommendations to customers’ specific preferences",
+      "kind": "collocation",
+      "meaning_vi": "điều chỉnh … theo sở thích của ai",
+      "headword": "preference",
+      "importance": 3,
+      "sentence": 4,
+      "start": 95,
+      "end": 158
+    },
+    {
+      "id": "save-sb-considerable-time",
+      "key": "save sb considerable time",
+      "text": "save consumers considerable time",
+      "kind": "collocation",
+      "meaning_vi": "giúp ai tiết kiệm đáng kể thời gian",
+      "headword": "time",
+      "importance": 2,
+      "sentence": 4,
+      "start": 170,
+      "end": 202
+    },
+    {
+      "id": "for-example",
+      "key": "for example",
+      "text": "For example",
+      "kind": "linking",
+      "meaning_vi": "ví dụ",
+      "function": "example",
+      "importance": 2,
+      "sentence": 5,
+      "start": 0,
+      "end": 11
+    },
+    {
+      "id": "data-analysis",
+      "key": "data analysis",
+      "text": "data analysis",
+      "kind": "collocation",
+      "meaning_vi": "phân tích dữ liệu",
+      "headword": "analysis",
+      "importance": 2,
+      "sentence": 5,
+      "start": 37,
+      "end": 50
+    },
+    {
+      "id": "drive-viewership",
+      "key": "drive viewership",
+      "text": "driving viewership",
+      "kind": "vocabulary",
+      "meaning_vi": "thúc đẩy lượng người xem",
+      "headword": "viewership",
+      "importance": 2,
+      "sentence": 5,
+      "start": 171,
+      "end": 189
+    },
+    {
+      "id": "increase-revenue",
+      "key": "increase revenue",
+      "text": "increase their revenue",
+      "kind": "collocation",
+      "meaning_vi": "tăng doanh thu",
+      "headword": "revenue",
+      "importance": 3,
+      "sentence": 6,
+      "start": 75,
+      "end": 97
+    },
+    {
+      "id": "such-as",
+      "key": "such as",
+      "text": "such as",
+      "kind": "linking",
+      "meaning_vi": "chẳng hạn như",
+      "function": "example",
+      "importance": 2,
+      "sentence": 7,
+      "start": 18,
+      "end": 25
+    },
+    {
+      "id": "identify-potential-customers",
+      "key": "identify potential customers",
+      "text": "identify their potential customers",
+      "kind": "collocation",
+      "meaning_vi": "xác định khách hàng tiềm năng",
+      "headword": "customer",
+      "importance": 3,
+      "sentence": 7,
+      "start": 84,
+      "end": 118
+    },
+    {
+      "id": "direct-a-marketing-campaign-towards-the-right-audience",
+      "key": "direct a marketing campaign towards the right audience",
+      "text": "direct their marketing campaigns towards the right audience",
+      "kind": "collocation",
+      "meaning_vi": "hướng chiến dịch tiếp thị đến đúng đối tượng",
+      "headword": "campaign",
+      "importance": 3,
+      "sentence": 7,
+      "start": 123,
+      "end": 182
+    },
+    {
+      "id": "rather-than",
+      "key": "rather than",
+      "text": "rather than",
+      "kind": "linking",
+      "meaning_vi": "thay vì",
+      "function": "contrast",
+      "importance": 2,
+      "sentence": 7,
+      "start": 184,
+      "end": 195
+    },
+    {
+      "id": "for-example-2",
+      "key": "for example",
+      "text": "For example",
+      "kind": "linking",
+      "meaning_vi": "ví dụ",
+      "function": "example",
+      "importance": 2,
+      "sentence": 8,
+      "start": 0,
+      "end": 11
+    },
+    {
+      "id": "result-in-higher-sales",
+      "key": "result in higher sales",
+      "text": "result in higher sales",
+      "kind": "collocation",
+      "meaning_vi": "mang lại doanh số cao hơn",
+      "headword": "sale",
+      "importance": 2,
+      "sentence": 8,
+      "start": 145,
+      "end": 167
+    },
+    {
+      "id": "nevertheless",
+      "key": "nevertheless",
+      "text": "Nevertheless",
+      "kind": "linking",
+      "meaning_vi": "tuy vậy",
+      "function": "contrast",
+      "importance": 2,
+      "sentence": 9,
+      "start": 0,
+      "end": 12
+    },
+    {
+      "id": "major-downsides",
+      "key": "major downsides",
+      "text": "major downsides",
+      "kind": "collocation",
+      "meaning_vi": "mặt trái lớn",
+      "headword": "downside",
+      "importance": 2,
+      "sentence": 9,
+      "start": 52,
+      "end": 67
+    },
+    {
+      "id": "overshadow-the-positive-impacts",
+      "key": "overshadow the positive impacts",
+      "text": "overshadow these positive impacts",
+      "kind": "collocation",
+      "meaning_vi": "lấn át các tác động tích cực",
+      "headword": "impact",
+      "importance": 3,
+      "sentence": 9,
+      "start": 74,
+      "end": 107
+    },
+    {
+      "id": "the-most-obvious-issue-could-be-that-clause",
+      "key": "The most obvious issue could be that + clause",
+      "text": "The most obvious issue could be that",
+      "kind": "frame",
+      "meaning_vi": "Vấn đề rõ ràng nhất có lẽ là…",
+      "frame": "The most obvious issue could be that + clause",
+      "function": "sequence",
+      "importance": 2,
+      "sentence": 10,
+      "start": 0,
+      "end": 36
+    },
+    {
+      "id": "data-centralisation",
+      "key": "data centralisation",
+      "text": "large-scale data centralisation",
+      "kind": "vocabulary",
+      "meaning_vi": "việc tập trung dữ liệu (vào một nơi)",
+      "headword": "centralisation",
+      "importance": 2,
+      "sentence": 10,
+      "start": 37,
+      "end": 68
+    },
+    {
+      "id": "sensitive-information",
+      "key": "sensitive information",
+      "text": "sensitive information",
+      "kind": "collocation",
+      "meaning_vi": "thông tin nhạy cảm",
+      "headword": "information",
+      "importance": 3,
+      "sentence": 10,
+      "start": 96,
+      "end": 117
+    },
+    {
+      "id": "as-a-result",
+      "key": "as a result",
+      "text": "As a result",
+      "kind": "linking",
+      "meaning_vi": "kết quả là",
+      "function": "result",
+      "importance": 2,
+      "sentence": 11,
+      "start": 0,
+      "end": 11
+    },
+    {
+      "id": "an-attractive-target-for-sb",
+      "key": "an attractive target for sb",
+      "text": "attractive targets for cybercriminals",
+      "kind": "collocation",
+      "meaning_vi": "mục tiêu hấp dẫn của ai",
+      "headword": "target",
+      "importance": 3,
+      "sentence": 11,
+      "start": 40,
+      "end": 77
+    },
+    {
+      "id": "cybercriminal",
+      "key": "cybercriminal",
+      "text": "cybercriminals",
+      "kind": "vocabulary",
+      "meaning_vi": "tội phạm mạng",
+      "headword": "cybercriminal",
+      "importance": 2,
+      "sentence": 11,
+      "start": 63,
+      "end": 77
+    },
+    {
+      "id": "consequently",
+      "key": "consequently",
+      "text": "Consequently",
+      "kind": "linking",
+      "meaning_vi": "do đó, kết quả là",
+      "function": "result",
+      "importance": 2,
+      "sentence": 12,
+      "start": 0,
+      "end": 12
+    },
+    {
+      "id": "identity-theft",
+      "key": "identity theft",
+      "text": "identity theft",
+      "kind": "vocabulary",
+      "meaning_vi": "đánh cắp danh tính",
+      "headword": "theft",
+      "importance": 3,
+      "sentence": 12,
+      "start": 75,
+      "end": 89
+    },
+    {
+      "id": "another-drawback-worth-mentioning-is-that-clause",
+      "key": "Another drawback worth mentioning is that + clause",
+      "text": "Another drawback worth mentioning is that",
+      "kind": "frame",
+      "meaning_vi": "Một bất lợi khác đáng nhắc đến là…",
+      "frame": "Another drawback worth mentioning is that + clause",
+      "function": "addition",
+      "importance": 3,
+      "sentence": 13,
+      "start": 0,
+      "end": 41
+    },
+    {
+      "id": "highly-targeted-advertising",
+      "key": "highly targeted advertising",
+      "text": "highly targeted advertising",
+      "kind": "collocation",
+      "meaning_vi": "quảng cáo nhắm mục tiêu cao",
+      "headword": "advertising",
+      "importance": 3,
+      "sentence": 13,
+      "start": 71,
+      "end": 98
+    },
+    {
+      "id": "significant-social-consequences",
+      "key": "significant social consequences",
+      "text": "significant social consequences",
+      "kind": "collocation",
+      "meaning_vi": "hậu quả xã hội đáng kể",
+      "headword": "consequence",
+      "importance": 3,
+      "sentence": 13,
+      "start": 108,
+      "end": 139
+    },
+    {
+      "id": "psychological-triggers",
+      "key": "psychological triggers",
+      "text": "psychological triggers",
+      "kind": "vocabulary",
+      "meaning_vi": "\"điểm kích hoạt\" tâm lý",
+      "headword": "trigger",
+      "importance": 2,
+      "sentence": 14,
+      "start": 62,
+      "end": 84
+    },
+    {
+      "id": "distort-sb-s-opinions",
+      "key": "distort sb’s opinions",
+      "text": "distort users’ opinions",
+      "kind": "collocation",
+      "meaning_vi": "bóp méo quan điểm của ai",
+      "headword": "opinion",
+      "importance": 2,
+      "sentence": 14,
+      "start": 159,
+      "end": 182
+    },
+    {
+      "id": "consequently-2",
+      "key": "consequently",
+      "text": "Consequently",
+      "kind": "linking",
+      "meaning_vi": "do đó, kết quả là",
+      "function": "result",
+      "importance": 2,
+      "sentence": 15,
+      "start": 0,
+      "end": 12
+    },
+    {
+      "id": "be-trapped-in-an-ideological-bubble",
+      "key": "be trapped in an ideological bubble",
+      "text": "trapped in narrow ideological bubbles",
+      "kind": "vocabulary",
+      "meaning_vi": "bị mắc kẹt trong \"bong bóng\" tư tưởng",
+      "headword": "bubble",
+      "importance": 2,
+      "sentence": 15,
+      "start": 32,
+      "end": 69
+    },
+    {
+      "id": "in-conclusion",
+      "key": "in conclusion",
+      "text": "In conclusion",
+      "kind": "linking",
+      "meaning_vi": "kết luận lại",
+      "function": "conclusion",
+      "importance": 2,
+      "sentence": 16,
+      "start": 0,
+      "end": 13
+    },
+    {
+      "id": "despite",
+      "key": "despite",
+      "text": "despite",
+      "kind": "linking",
+      "meaning_vi": "bất chấp, mặc dù",
+      "function": "concession",
+      "importance": 2,
+      "sentence": 16,
+      "start": 15,
+      "end": 22
+    },
+    {
+      "id": "be-of-greater-significance",
+      "key": "be of greater significance",
+      "text": "of greater significance",
+      "kind": "vocabulary",
+      "meaning_vi": "quan trọng hơn",
+      "note_vi": "Cách nói trang trọng của \"more significant\".",
+      "headword": "significance",
+      "importance": 3,
+      "sentence": 16,
+      "start": 123,
+      "end": 146
+    }
+  ],
+  "critique": [
+    {
+      "sentence": 2,
+      "text": "there can be some minor benefits of companies holding their users’ personal information",
+      "issue_vi": "Cấu trúc \"benefits of companies holding…\" hơi rườm rà.",
+      "better": "companies holding their users’ personal information may bring some minor benefits"
+    },
+    {
+      "sentence": 5,
+      "text": "thereby saving them time finding new shows while also driving viewership",
+      "issue_vi": "Hai ý lợi ích dồn vào cuối câu làm câu dài và khó theo dõi.",
+      "better": "which saves viewers time and also increases viewership"
+    }
+  ],
+  "tasks": [
+    {
+      "prompt": "Some people think that governments should strictly control what personal data companies can collect. To what extent do you agree or disagree?",
+      "hint_vi": "Dùng \"sensitive information\", \"attractive targets for cybercriminals\" và \"identity theft\"."
+    },
+    {
+      "prompt": "More and more people shop online. Do the advantages of this outweigh the disadvantages?",
+      "hint_vi": "Dùng \"tailor recommendations to customers’ preferences\", \"save consumers considerable time\" và \"of greater significance\"."
+    },
+    {
+      "prompt": "Social media platforms show users content based on their personal data. Is this a positive or negative development?",
+      "hint_vi": "Dùng \"highly targeted advertising\", \"distort users’ opinions\" và \"trapped in narrow ideological bubbles\"."
+    }
+  ],
+  "band": "TR 7 · CC 7 · LR 7 · GR 7"
+}

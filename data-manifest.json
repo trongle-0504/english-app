@@ -1,5 +1,5 @@
 {
-  "$comment": "What is data (packed apart, never committed) and what is kept out of both. Read by scripts/sync-commit.ts and scripts/data.ts; .gitignore mirrors it. Paths are relative to the project root; a folder covers everything under it.",
+  "$comment": "What is data (packed apart, never committed) and what is kept out of both. Read by scripts/sync-commit.ts and scripts/data.ts; .gitignore mirrors it, except data-minimal (the minimal data, unpacked: committed, but never code or data itself). Paths are relative to the project root; a folder covers everything under it.",
   "data": [
     "content",
     "public/vocab-images",
@@ -26,6 +26,7 @@
     ".env",
     ".git",
     "data",
+    "data-minimal",
     "models",
     "cache",
     "node_modules",

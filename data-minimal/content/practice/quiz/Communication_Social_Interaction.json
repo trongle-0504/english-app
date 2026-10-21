@@ -1,0 +1,859 @@
+{
+  "questions": [
+    {
+      "id": "sa_accompany_0_0",
+      "type": "short_answer",
+      "sentence": "His wife ___ the trip.",
+      "options": [],
+      "correct_answer": "accompanied him on",
+      "explanation": "accompany + sb/+ sth on the trip",
+      "hint": "đi cùng ai/cái gì đó trong chuyến đi",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_accompany_1_0",
+      "type": "short_answer",
+      "sentence": "The groups are always ___.",
+      "options": [],
+      "correct_answer": "accompanied by an experienced mountain guide",
+      "explanation": "accompanied by an experienced mountain guide",
+      "hint": "đi cùng với một hướng dẫn viên núi có kinh nghiệm",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_accompany_2_0",
+      "type": "short_answer",
+      "sentence": "strong winds ___",
+      "options": [],
+      "correct_answer": "accompanied by heavy rain",
+      "explanation": "accompanied by heavy rain",
+      "hint": "đi kèm với mưa lớn",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_accompany_3_0",
+      "type": "short_answer",
+      "sentence": "The text is ___.",
+      "options": [],
+      "correct_answer": "accompanied by a series of stunning photographs",
+      "explanation": "accompanied by a series of stunning photographs",
+      "hint": "đi kèm với một loạt ảnh tuyệt đẹp",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_accompany_4_0",
+      "type": "short_answer",
+      "sentence": "The singer was ___ by her sister.",
+      "options": [],
+      "correct_answer": "accompanied on the piano",
+      "explanation": "accompanied on the piano",
+      "hint": "được đệm piano",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_confess_0_0",
+      "type": "short_answer",
+      "sentence": "He finally ___ his crime.",
+      "options": [],
+      "correct_answer": "confessed to",
+      "explanation": "confess to",
+      "hint": "thú nhận về",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_confess_1_0",
+      "type": "short_answer",
+      "sentence": "She ___ she had lied.",
+      "options": [],
+      "correct_answer": "confessed that",
+      "explanation": "confess that",
+      "hint": "thú nhận rằng",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_confess_2_0",
+      "type": "short_answer",
+      "sentence": "The worshippers went to ___.",
+      "options": [],
+      "correct_answer": "confess their sins",
+      "explanation": "confess one's sins",
+      "hint": "thú nhận tội lỗi của mình",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_merchant_0_0",
+      "type": "short_answer",
+      "sentence": "My uncle is a ___ who imports bottles from France.",
+      "options": [],
+      "correct_answer": "wine merchant",
+      "explanation": "wine merchant",
+      "hint": "Nhà buôn rượu",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_merchant_1_0",
+      "type": "short_answer",
+      "sentence": "During the winter, the ___ was always busy.",
+      "options": [],
+      "correct_answer": "coal merchant",
+      "explanation": "coal merchant",
+      "hint": "Nhà buôn than",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_merchant_2_0",
+      "type": "short_answer",
+      "sentence": "The old town was founded by a ___.",
+      "options": [],
+      "correct_answer": "wealthy merchant",
+      "explanation": "wealthy merchant",
+      "hint": "Nhà buôn giàu có",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_merchant_3_0",
+      "type": "short_answer",
+      "sentence": "He was accused of being a ___ who cheated investors.",
+      "options": [],
+      "correct_answer": "con merchant",
+      "explanation": "con merchant",
+      "hint": "Kẻ lừa đảo",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_appeal_0_0",
+      "type": "short_answer",
+      "sentence": "The organization ___ to the government for more funding.",
+      "options": [],
+      "correct_answer": "made an appeal",
+      "explanation": "make an appeal",
+      "hint": "Đưa ra lời kêu gọi",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_appeal_1_0",
+      "type": "short_answer",
+      "sentence": "The advertisement used an ___ to encourage donations.",
+      "options": [],
+      "correct_answer": "emotional appeal",
+      "explanation": "emotional appeal",
+      "hint": "Sự kêu gọi bằng tình cảm",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_appeal_2_0",
+      "type": "short_answer",
+      "sentence": "She has a certain ___ that many find irresistible.",
+      "options": [],
+      "correct_answer": "sex appeal",
+      "explanation": "sex appeal",
+      "hint": "Sức hấp dẫn giới tính",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_belong_0_0",
+      "type": "short_answer",
+      "sentence": "Are you sure these documents ___?",
+      "options": [],
+      "correct_answer": "belong together",
+      "explanation": "belong together",
+      "hint": "thuộc về nhau, đi cùng nhau",
+      "collocation_type": "intransitive V phrase"
+    },
+    {
+      "id": "sa_donate_0_0",
+      "type": "short_answer",
+      "sentence": "The organization suggests ways to help besides ___.",
+      "options": [],
+      "correct_answer": "donating money",
+      "explanation": "donate money",
+      "hint": "quyên góp tiền",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_donate_1_0",
+      "type": "short_answer",
+      "sentence": "I've been ___ regularly for a few years now.",
+      "options": [],
+      "correct_answer": "donating blood",
+      "explanation": "donate blood",
+      "hint": "hiến máu",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_donate_2_0",
+      "type": "short_answer",
+      "sentence": "He decided to ___ after his death.",
+      "options": [],
+      "correct_answer": "donate organs",
+      "explanation": "donate organs",
+      "hint": "hiến tạng",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_donate_3_0",
+      "type": "short_answer",
+      "sentence": "An auction of pieces ___ themselves.",
+      "options": [],
+      "correct_answer": "donated by the artists",
+      "explanation": "donated by the artists",
+      "hint": "được các nghệ sĩ tặng",
+      "collocation_type": "Adj"
+    },
+    {
+      "id": "sa_feedback_0_0",
+      "type": "short_answer",
+      "sentence": "It's important to ___ regularly to employees.",
+      "options": [],
+      "correct_answer": "give feedback",
+      "explanation": "give feedback",
+      "hint": "Đưa ra phản hồi, góp ý",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_feedback_0_1",
+      "type": "short_answer",
+      "sentence": "They hope the charter will let patients know their rights and ___ if the service is not working.",
+      "options": [],
+      "correct_answer": "give feedback",
+      "explanation": "give feedback",
+      "hint": "Đưa ra phản hồi, góp ý",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_feedback_1_0",
+      "type": "short_answer",
+      "sentence": "I always try to ___ constructively.",
+      "options": [],
+      "correct_answer": "receive feedback",
+      "explanation": "receive feedback",
+      "hint": "Nhận phản hồi, góp ý",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_feedback_1_1",
+      "type": "short_answer",
+      "sentence": "We value the ___ from our customers.",
+      "options": [],
+      "correct_answer": "feedback we receive",
+      "explanation": "receive feedback",
+      "hint": "Nhận phản hồi, góp ý",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_feedback_2_0",
+      "type": "short_answer",
+      "sentence": "The teacher gave the student ___ on their essay.",
+      "options": [],
+      "correct_answer": "positive feedback",
+      "explanation": "positive feedback",
+      "hint": "Phản hồi tích cực, lời khen",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_feedback_2_1",
+      "type": "short_answer",
+      "sentence": "The product received mostly ___ from early users.",
+      "options": [],
+      "correct_answer": "positive feedback",
+      "explanation": "positive feedback",
+      "hint": "Phản hồi tích cực, lời khen",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_feedback_3_0",
+      "type": "short_answer",
+      "sentence": "The manager offered ___ to help the team improve.",
+      "options": [],
+      "correct_answer": "constructive feedback",
+      "explanation": "constructive feedback",
+      "hint": "Phản hồi mang tính xây dựng, góp ý để cải thiện",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_feedback_3_1",
+      "type": "short_answer",
+      "sentence": "She asked for ___ on her presentation.",
+      "options": [],
+      "correct_answer": "constructive feedback",
+      "explanation": "constructive feedback",
+      "hint": "Phản hồi mang tính xây dựng, góp ý để cải thiện",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "mc_academic_0_1777697898643",
+      "type": "multiple_choice",
+      "sentence": "His wife ___ the trip.",
+      "options": [
+        {
+          "id": "a",
+          "text": "belonged to"
+        },
+        {
+          "id": "b",
+          "text": "accompanied him on"
+        },
+        {
+          "id": "c",
+          "text": "appealed for"
+        },
+        {
+          "id": "d",
+          "text": "confessed to"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Động từ 'accompany' có nghĩa là đi cùng ai đó. Trong câu này, 'accompanied him on the trip' có nghĩa là cô ấy đã đi cùng anh ấy trong chuyến đi."
+    },
+    {
+      "id": "mc_academic_1_1777697898643",
+      "type": "multiple_choice",
+      "sentence": "Shouts of protest ___",
+      "options": [
+        {
+          "id": "a",
+          "text": "accompanied"
+        },
+        {
+          "id": "b",
+          "text": "appealed for"
+        },
+        {
+          "id": "c",
+          "text": "confessed"
+        },
+        {
+          "id": "d",
+          "text": "belonged"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Động từ 'accompany' có nghĩa là đi kèm, xảy ra cùng lúc. Câu này diễn tả tiếng la hét phản đối đã xảy ra cùng với hoặc đi kèm với lời tuyên bố đó."
+    },
+    {
+      "id": "mc_academic_2_1777697898643",
+      "type": "multiple_choice",
+      "sentence": "The singer was ___ the piano by her sister.",
+      "options": [
+        {
+          "id": "a",
+          "text": "confessed on"
+        },
+        {
+          "id": "b",
+          "text": "accompanied on"
+        },
+        {
+          "id": "c",
+          "text": "appealed on"
+        },
+        {
+          "id": "d",
+          "text": "belonged on"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cấu trúc 'accompanied on the piano' dùng để chỉ việc ai đó chơi nhạc cụ để đệm cho người biểu diễn chính. Câu này có nghĩa là người chị đã chơi piano đệm cho ca sĩ."
+    },
+    {
+      "id": "mc_academic_3_1777697898643",
+      "type": "multiple_choice",
+      "sentence": "After hours of questioning, the suspect finally ___ to the crime.",
+      "options": [
+        {
+          "id": "a",
+          "text": "confessed"
+        },
+        {
+          "id": "b",
+          "text": "appealed"
+        },
+        {
+          "id": "c",
+          "text": "belonged"
+        },
+        {
+          "id": "d",
+          "text": "accompanied"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Động từ 'confess' đi với giới từ 'to' khi nói về việc thú nhận tội lỗi hoặc hành vi sai trái. Câu này có nghĩa là nghi phạm cuối cùng đã thú nhận tội ác."
+    },
+    {
+      "id": "mc_academic_4_1777697898643",
+      "type": "multiple_choice",
+      "sentence": "I must ___ I haven't actually read the book yet.",
+      "options": [
+        {
+          "id": "a",
+          "text": "appeal that"
+        },
+        {
+          "id": "b",
+          "text": "confess that"
+        },
+        {
+          "id": "c",
+          "text": "belong that"
+        },
+        {
+          "id": "d",
+          "text": "accompany that"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm từ 'confess that' dùng để thừa nhận một điều gì đó, thường là một điều không mong muốn hoặc có thể gây thất vọng. Câu này có nghĩa là tôi phải thừa nhận rằng tôi chưa đọc cuốn sách đó."
+    },
+    {
+      "id": "mc_academic_5_1777697898643",
+      "type": "multiple_choice",
+      "sentence": "They had ___ their sins and done their penance.",
+      "options": [
+        {
+          "id": "a",
+          "text": "appealed"
+        },
+        {
+          "id": "b",
+          "text": "belonged"
+        },
+        {
+          "id": "c",
+          "text": "confessed"
+        },
+        {
+          "id": "d",
+          "text": "accompanied"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Động từ 'confess' trong ngữ cảnh tôn giáo có nghĩa là xưng tội. Câu này diễn tả việc họ đã xưng thú tội lỗi của mình."
+    },
+    {
+      "id": "mc_academic_6_1777697898643",
+      "type": "multiple_choice",
+      "sentence": "The story is about the son of a wealthy ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "merchant"
+        },
+        {
+          "id": "b",
+          "text": "enquire"
+        },
+        {
+          "id": "c",
+          "text": "neighbour"
+        },
+        {
+          "id": "d",
+          "text": "appeal"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Từ 'merchant' có nghĩa là thương gia, người buôn bán. Câu này có nghĩa là câu chuyện kể về con trai của một thương gia giàu có."
+    },
+    {
+      "id": "mc_academic_7_1777697898643",
+      "type": "multiple_choice",
+      "sentence": "He became a successful ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "enquire"
+        },
+        {
+          "id": "b",
+          "text": "merchant"
+        },
+        {
+          "id": "c",
+          "text": "appeal"
+        },
+        {
+          "id": "d",
+          "text": "neighbour"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Từ 'merchant' chỉ một người kinh doanh, buôn bán. Câu này có nghĩa là anh ấy đã trở thành một thương nhân thành đạt."
+    },
+    {
+      "id": "mc_academic_8_1777697898643",
+      "type": "multiple_choice",
+      "sentence": "Be careful, he's a real ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "wine merchant"
+        },
+        {
+          "id": "b",
+          "text": "timber merchant"
+        },
+        {
+          "id": "c",
+          "text": "speed merchant"
+        },
+        {
+          "id": "d",
+          "text": "con merchant"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm từ 'con merchant' dùng để chỉ kẻ lừa đảo, kẻ buôn gian. Câu này là lời cảnh báo về một người không đáng tin."
+    },
+    {
+      "id": "mc_academic_9_1777697898643",
+      "type": "multiple_choice",
+      "sentence": "The charity launched a TV ___ donations to help the victims.",
+      "options": [
+        {
+          "id": "a",
+          "text": "enquire about"
+        },
+        {
+          "id": "b",
+          "text": "appeal for"
+        },
+        {
+          "id": "c",
+          "text": "belong for"
+        },
+        {
+          "id": "d",
+          "text": "accompany for"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm từ 'appeal for' có nghĩa là kêu gọi, yêu cầu sự giúp đỡ hoặc quyên góp. Câu này có nghĩa là tổ chức từ thiện đã phát động lời kêu gọi quyên góp trên truyền hình."
+    },
+    {
+      "id": "mc_academic_10_1777697898643",
+      "type": "multiple_choice",
+      "sentence": "The Beatles have never really lost their ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "confess"
+        },
+        {
+          "id": "b",
+          "text": "belong"
+        },
+        {
+          "id": "c",
+          "text": "appeal"
+        },
+        {
+          "id": "d",
+          "text": "neighbour"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Trong ngữ cảnh này, 'appeal' có nghĩa là sức hút, sự lôi cuốn. Câu này ám chỉ rằng ban nhạc The Beatles vẫn luôn có sức hút lớn đối với công chúng."
+    },
+    {
+      "id": "mc_academic_11_1777697898643",
+      "type": "multiple_choice",
+      "sentence": "Where do these plates ___?",
+      "options": [
+        {
+          "id": "a",
+          "text": "enquire"
+        },
+        {
+          "id": "b",
+          "text": "confess"
+        },
+        {
+          "id": "c",
+          "text": "appeal"
+        },
+        {
+          "id": "d",
+          "text": "belong"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Động từ 'belong' ở đây được dùng với nghĩa là 'được đặt ở đâu', 'thuộc về nơi nào'. Câu hỏi này muốn biết những chiếc đĩa này nên để ở đâu."
+    },
+    {
+      "id": "mc_academic_12_1777697898643",
+      "type": "multiple_choice",
+      "sentence": "I don't feel as if I ___ here.",
+      "options": [
+        {
+          "id": "a",
+          "text": "appeal"
+        },
+        {
+          "id": "b",
+          "text": "belong"
+        },
+        {
+          "id": "c",
+          "text": "confess"
+        },
+        {
+          "id": "d",
+          "text": "enquire"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm động từ 'belong to' có nghĩa là thuộc về, thuộc về một nhóm hoặc một nơi nào đó. Câu này diễn tả cảm giác không thuộc về nơi này."
+    },
+    {
+      "id": "mc_academic_13_1777697898643",
+      "type": "multiple_choice",
+      "sentence": "I called the garage to ___ progress on the repairs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "appeal about"
+        },
+        {
+          "id": "b",
+          "text": "confess about"
+        },
+        {
+          "id": "c",
+          "text": "belong about"
+        },
+        {
+          "id": "d",
+          "text": "enquire about"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Động từ 'enquire about' có nghĩa là hỏi về, tìm hiểu về một vấn đề gì đó. Câu này có nghĩa là tôi đã gọi cho gara để hỏi về tiến độ sửa chữa."
+    },
+    {
+      "id": "mc_academic_14_1777697898643",
+      "type": "multiple_choice",
+      "sentence": "The farm ___ the holiday village.",
+      "options": [
+        {
+          "id": "a",
+          "text": "neighbours"
+        },
+        {
+          "id": "b",
+          "text": "belongs"
+        },
+        {
+          "id": "c",
+          "text": "appeals"
+        },
+        {
+          "id": "d",
+          "text": "confesses"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Động từ 'neighbour' có nghĩa là ở ngay bên cạnh, giáp ranh với. Câu này diễn tả trang trại nằm sát hoặc giáp với khu nghỉ dưỡng."
+    },
+    {
+      "id": "mc_academic_15_1777697908975",
+      "type": "multiple_choice",
+      "sentence": "The fair attracted thousands of people from the ___ areas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "neighboring"
+        },
+        {
+          "id": "b",
+          "text": "neighborhood"
+        },
+        {
+          "id": "c",
+          "text": "neighborhoods"
+        },
+        {
+          "id": "d",
+          "text": "neighborly"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Từ 'neighboring' là một tính từ có nghĩa là 'lân cận', bổ nghĩa cho danh từ 'areas'. Các lựa chọn khác không phù hợp về mặt ngữ pháp hoặc ngữ nghĩa."
+    },
+    {
+      "id": "mc_academic_16_1777697908975",
+      "type": "multiple_choice",
+      "sentence": "He ___ thousands of pounds to charity.",
+      "options": [
+        {
+          "id": "a",
+          "text": "donator"
+        },
+        {
+          "id": "b",
+          "text": "donation"
+        },
+        {
+          "id": "c",
+          "text": "donating"
+        },
+        {
+          "id": "d",
+          "text": "donated"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Câu này cần một động từ chia ở thì quá khứ đơn để diễn tả hành động đã xảy ra. 'Donated' là dạng quá khứ của 'donate', phù hợp với ngữ cảnh."
+    },
+    {
+      "id": "mc_academic_17_1777697908975",
+      "type": "multiple_choice",
+      "sentence": "I've been ___ blood regularly for a few years now.",
+      "options": [
+        {
+          "id": "a",
+          "text": "donate"
+        },
+        {
+          "id": "b",
+          "text": "donating"
+        },
+        {
+          "id": "c",
+          "text": "donated"
+        },
+        {
+          "id": "d",
+          "text": "donation"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cấu trúc 'have been + V-ing' (hiện tại hoàn thành tiếp diễn) được dùng để diễn tả hành động bắt đầu trong quá khứ và vẫn tiếp diễn đến hiện tại. Do đó, 'donating' là lựa chọn đúng."
+    },
+    {
+      "id": "mc_academic_18_1777697908975",
+      "type": "multiple_choice",
+      "sentence": "We were greatly ___ the positive response from the public.",
+      "options": [
+        {
+          "id": "a",
+          "text": "encouraged by"
+        },
+        {
+          "id": "b",
+          "text": "encouraging by"
+        },
+        {
+          "id": "c",
+          "text": "encouraged of"
+        },
+        {
+          "id": "d",
+          "text": "encourage by"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cấu trúc 'be encouraged by' có nghĩa là 'được cổ vũ/khuyến khích bởi'. Đây là dạng bị động, phù hợp với ngữ cảnh câu khi người nói nhận được phản hồi tích cực."
+    },
+    {
+      "id": "mc_academic_19_1777697908975",
+      "type": "multiple_choice",
+      "sentence": "The government should ___ public transport to reduce carbon emissions.",
+      "options": [
+        {
+          "id": "a",
+          "text": "encourages citizens using"
+        },
+        {
+          "id": "b",
+          "text": "encourage citizens to use"
+        },
+        {
+          "id": "c",
+          "text": "encouraged citizens to use"
+        },
+        {
+          "id": "d",
+          "text": "encouraging citizens use"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cấu trúc 'encourage someone to do something' có nghĩa là 'khuyến khích ai đó làm gì'. Đây là cấu trúc chủ động và phù hợp với ngữ cảnh khi chính phủ muốn khuyến khích người dân sử dụng phương tiện công cộng."
+    },
+    {
+      "id": "mc_academic_20_1777697908975",
+      "type": "multiple_choice",
+      "sentence": "Lowering interest rates can help ___ and economic growth.",
+      "options": [
+        {
+          "id": "a",
+          "text": "encouraging investment"
+        },
+        {
+          "id": "b",
+          "text": "encouraged investment"
+        },
+        {
+          "id": "c",
+          "text": "encourage investment"
+        },
+        {
+          "id": "d",
+          "text": "encourages investment"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Động từ 'help' có thể theo sau bởi động từ nguyên mẫu không 'to' (bare infinitive) hoặc 'to infinitive'. Trong trường hợp này, 'encourage investment' là dạng hợp lý nhất để diễn tả việc khuyến khích đầu tư."
+    },
+    {
+      "id": "mc_academic_21_1777697908975",
+      "type": "multiple_choice",
+      "sentence": "How can I ___ without making someone feel discouraged?",
+      "options": [
+        {
+          "id": "a",
+          "text": "provided feedback"
+        },
+        {
+          "id": "b",
+          "text": "providing feedback"
+        },
+        {
+          "id": "c",
+          "text": "provides feedback"
+        },
+        {
+          "id": "d",
+          "text": "provide feedback"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Sau trợ động từ 'can', chúng ta cần sử dụng động từ nguyên mẫu (infinitive). 'Provide feedback' là dạng nguyên mẫu phù hợp với ngữ cảnh yêu cầu đưa ra phản hồi."
+    },
+    {
+      "id": "mc_academic_22_1777697908975",
+      "type": "multiple_choice",
+      "sentence": "The ___ between consumer demand and production helps stabilize the market.",
+      "options": [
+        {
+          "id": "a",
+          "text": "feedback loop"
+        },
+        {
+          "id": "b",
+          "text": "feedback looping"
+        },
+        {
+          "id": "c",
+          "text": "feedback loops"
+        },
+        {
+          "id": "d",
+          "text": "feedback looped"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm từ 'feedback loop' có nghĩa là 'vòng lặp phản hồi', mô tả mối quan hệ tương tác giữa hai yếu tố. Đây là thuật ngữ kinh tế phù hợp với ngữ cảnh câu."
+    }
+  ]
+}

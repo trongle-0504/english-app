@@ -1,0 +1,5002 @@
+[
+  {
+    "id": "topic-colloc:environment:carbon-emissions",
+    "title": "carbon emissions",
+    "term": "carbon emissions",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɑːbən ɪˈmɪʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lượng khí thải carbon",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Cities that invest in cycling infrastructure often see a sharp drop in carbon emissions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:emission-of-greenhouse-gases",
+    "title": "emission of greenhouse gases",
+    "term": "emission of greenhouse gases",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈmɪʃən ɒv ˈɡriːnhaʊs ˈɡæsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phát thải khí nhà kính",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Switching to renewable energy sources can drastically cut the emission of greenhouse gases from power plants.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:exacerbates-air-pollution-and-climate-change",
+    "title": "exacerbates air pollution and climate change",
+    "term": "exacerbates air pollution and climate change",
+    "type": "Collocation",
+    "pronunciation": "/ɪɡˈzæsəbeɪts eə pəˈluːʃən ənd ˈklaɪmət tʃeɪndʒ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "làm trầm trọng thêm ô nhiễm không khí và biến đổi khí hậu",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Relying heavily on coal-fired power plants exacerbates air pollution and climate change across the region.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:greenhouse-gas-emissions",
+    "title": "greenhouse gas emissions",
+    "term": "greenhouse gas emissions",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡriːnhaʊs ɡæs ɪˈmɪʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khí thải nhà kính",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The new policy sets a firm target for cutting greenhouse gas emissions by 2035.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:industrial-fossil-fuel-usage",
+    "title": "industrial fossil fuel usage",
+    "term": "industrial fossil fuel usage",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈdʌstriəl ˈfɒsəl fjuːəl ˈjuːsɪʤ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mức tiêu thụ nhiên liệu hóa thạch trong công nghiệp",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Heavy industrial fossil fuel usage remains one of the biggest obstacles to meeting global emissions targets.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:inevitable-byproduct-of-growth",
+    "title": "inevitable byproduct of growth",
+    "term": "inevitable byproduct of growth",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈnev.ɪ.tə.bəl ˈbaɪˌprɒd.ʌkt əv ɡrəʊθ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sản phẩm phụ tất yếu của tăng trưởng",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Some economists still view pollution as an inevitable byproduct of growth rather than a solvable problem.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:adversely",
+    "title": "adversely",
+    "term": "adversely",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈædvɜːsli/",
+    "part_of_speech": "adverb",
+    "meaning_vi": "một cách bất lợi, tiêu cực",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Rising sea temperatures are adversely affecting coral reefs across the Pacific.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:destroying-the-ozone-layer",
+    "title": "destroying the ozone layer",
+    "term": "destroying the ozone layer",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈstrɔɪɪŋ ði ˈəʊzəʊn ˈleɪə/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "phá hủy tầng ozon",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Scientists have long warned that certain aerosol chemicals play a significant role in destroying the ozone layer.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:on-a-global-scale",
+    "title": "on a global scale",
+    "term": "on a global scale",
+    "type": "Collocation",
+    "pronunciation": "/ɒn ə ˈɡləʊbəl skeɪl/",
+    "part_of_speech": "adverb phrase",
+    "meaning_vi": "trên quy mô toàn cầu",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Plastic pollution is now recognised as a pressing environmental problem on a global scale.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:soar",
+    "title": "soar",
+    "term": "soar",
+    "type": "Vocabulary",
+    "pronunciation": "/sɔː/",
+    "part_of_speech": "verb",
+    "meaning_vi": "tăng vọt",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Global temperatures continue to soar as greenhouse gas emissions remain unchecked.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:the-exceeding-rate-of-global-warming",
+    "title": "the exceeding rate of global warming",
+    "term": "the exceeding rate of global warming",
+    "type": "Collocation",
+    "pronunciation": "/ðə ɪkˈsiːdɪŋ reɪt əv ˈɡləʊbl ˈwɔːmɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tốc độ nóng lên toàn cầu ngày càng vượt mức",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The exceeding rate of global warming observed over the past decade has alarmed climate researchers worldwide.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:the-magnitude-of-global-environmental-challenges",
+    "title": "the magnitude of global environmental challenges",
+    "term": "the magnitude of global environmental challenges",
+    "type": "Collocation",
+    "pronunciation": "/ðə ˈmæɡ.nɪ.tjuːd əv ˈɡləʊ.bəl ɪnˌvaɪ.rənˈmen.təl ˈtʃæl.ɪn.dʒɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "quy mô của các thách thức môi trường toàn cầu",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The magnitude of global environmental challenges means that no single nation can solve them alone.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:unavoidable-consequences",
+    "title": "unavoidable consequences",
+    "term": "unavoidable consequences",
+    "type": "Collocation",
+    "pronunciation": "/ˌʌn.əˈvɔɪ.də.bəl ˈkɒn.sɪ.kwens.ɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hậu quả không thể tránh khỏi",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Rising sea levels are among the unavoidable consequences of decades of unchecked emissions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:the-frequent-occurrence-of-natural-disasters",
+    "title": "the frequent occurrence of natural disasters",
+    "term": "the frequent occurrence of natural disasters",
+    "type": "Collocation",
+    "pronunciation": "/ðə ˈfriːkwənt əˈkʌrəns əv ˈnætʃrəl dɪˈzɑːstəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự xảy ra thường xuyên của thiên tai",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The frequent occurrence of natural disasters in coastal regions has forced thousands of families to relocate inland.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:mitigate-these-effects",
+    "title": "mitigate these effects",
+    "term": "mitigate these effects",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɪt.ɪ.ɡeɪt ðiːz ɪˈfeks/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giảm thiểu những tác động này",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Reforestation projects have been launched to mitigate these effects of decades of logging.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:reducing-personal-carbon-footprints",
+    "title": "reducing personal carbon footprints",
+    "term": "reducing personal carbon footprints",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈdjuː.sɪŋ ˈpɜː.sən.əl ˈkɑː.bən ˈfʊt.prɪnts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giảm dấu chân carbon cá nhân",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Cycling to work is a simple way of reducing personal carbon footprints.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:strict-emission-controls",
+    "title": "strict emission controls",
+    "term": "strict emission controls",
+    "type": "Collocation",
+    "pronunciation": "/strɪkt ɪˈmɪʃ.ən kənˈtrəʊlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kiểm soát khí thải nghiêm ngặt",
+    "topic": "Environment",
+    "subTopic": "Climate Change & Global Warming",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Strict emission controls on factories have noticeably improved air quality in the city centre.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:demand-heavy-packaging",
+    "title": "demand heavy packaging",
+    "term": "demand heavy packaging",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈmɑːnd ˈhev.i ˈpæk.ɪ.dʒɪŋ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đòi hỏi bao bì nặng/nhiều lớp",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Some shoppers still demand heavy packaging because they associate it with product quality.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:discard-clothing-at-an-unsustainable-pace",
+    "title": "discard clothing at an unsustainable pace",
+    "term": "discard clothing at an unsustainable pace",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈskɑːd ˈkləʊðɪŋ ət ən ʌnsəˈsteɪnəbl peɪs/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "vứt bỏ quần áo với tốc độ không bền vững",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Fast fashion encourages shoppers to discard clothing at an unsustainable pace, filling landfills with textile waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:disposable-plastics",
+    "title": "disposable plastics",
+    "term": "disposable plastics",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈspəʊzəbəl ˈplæstɪks/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "đồ nhựa dùng một lần rồi bỏ",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Restaurants are being encouraged to phase out disposable plastics such as straws and cutlery.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:excessive",
+    "title": "excessive",
+    "term": "excessive",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪkˈsesɪv/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "quá mức, thái quá",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Excessive use of plastic packaging is one of the main contributors to landfill overflow.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:industrial-pollution",
+    "title": "industrial pollution",
+    "term": "industrial pollution",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈdʌstriəl pəˈluːʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "ô nhiễm công nghiệp",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Industrial pollution has left many rivers near factory zones unsafe for fishing.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:polluting-companies",
+    "title": "polluting companies",
+    "term": "polluting companies",
+    "type": "Collocation",
+    "pronunciation": "/pəˈluːtɪŋ ˈkʌmpəniz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các công ty gây ô nhiễm",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Regulators fined several polluting companies for discharging chemicals into the local river.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:proliferation-in-the-production-of-consumer-products",
+    "title": "proliferation in the production of consumer products",
+    "term": "proliferation in the production of consumer products",
+    "type": "Collocation",
+    "pronunciation": "/prəˌlɪf.əˈreɪ.ʃən ɪn ðə prəˈdʌk.ʃən əv kənˈsjuː.mər ˈprɒd.ʌkts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự gia tăng nhanh chóng trong sản xuất hàng tiêu dùng",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The proliferation in the production of consumer products has led to mountains of discarded electronics each year.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:satisfy-customer-expectations",
+    "title": "satisfy customer expectations",
+    "term": "satisfy customer expectations",
+    "type": "Collocation",
+    "pronunciation": "/ˈsæt.ɪs.faɪ ˈkʌs.tə.mər ˌek.spekˈteɪ.ʃənz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đáp ứng kỳ vọng của khách hàng",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Brands must balance sustainability goals with the need to satisfy customer expectations for durable packaging.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:single-use-plastics",
+    "title": "single-use plastics",
+    "term": "single-use plastics",
+    "type": "Collocation",
+    "pronunciation": "/ˈsɪŋɡl juːs ˈplæstɪks/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nhựa dùng một lần",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Many governments have introduced levies on single-use plastics to discourage their use.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:the-disposal-of-harmful-gases",
+    "title": "the disposal of harmful gases",
+    "term": "the disposal of harmful gases",
+    "type": "Collocation",
+    "pronunciation": "/ðə dɪˈspəʊzəl əv ˈhɑːmfʊl ˈɡæsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc thải bỏ các loại khí độc hại",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Factories on the outskirts of the city have been fined repeatedly for the disposal of harmful gases into the atmosphere.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:the-excessive-growth-of-industrial-production",
+    "title": "the excessive growth of industrial production",
+    "term": "the excessive growth of industrial production",
+    "type": "Collocation",
+    "pronunciation": "/ði ɪkˈsesɪv ɡrəʊθ ɒv ɪnˈdʌstriəl prəˈdʌkʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự tăng trưởng quá mức của sản xuất công nghiệp",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The excessive growth of industrial production in the region has put immense strain on local water supplies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:the-use-of-hazardous-dyes-and-synthetic-fibers",
+    "title": "the use of hazardous dyes and synthetic fibers",
+    "term": "the use of hazardous dyes and synthetic fibers",
+    "type": "Collocation",
+    "pronunciation": "/ðə juːs əv ˈhæzədəs daɪz ənd sɪnˈθetɪk ˈfaɪbəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc sử dụng thuốc nhuộm độc hại và sợi tổng hợp",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The use of hazardous dyes and synthetic fibers in clothing production contaminates local waterways.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:transportation-related-emissions",
+    "title": "transportation-related emissions",
+    "term": "transportation-related emissions",
+    "type": "Collocation",
+    "pronunciation": "/ˌtrænspɔːˈteɪʃən rɪˈleɪtɪd ɪˈmɪʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khí thải liên quan đến vận tải",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Many cities are investing in electric buses to cut transportation-related emissions in the coming decade.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:significant-contributors-to-pollution",
+    "title": "significant contributors to pollution",
+    "term": "significant contributors to pollution",
+    "type": "Collocation",
+    "pronunciation": "/sɪɡˈnɪfɪkənt kənˈtrɪbjʊtəz tuː pəˈluːʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những tác nhân gây ô nhiễm đáng kể",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Intensive cattle farms are among the most significant contributors to pollution in rural waterways.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:accelerate-environmental-degradation",
+    "title": "accelerate environmental degradation",
+    "term": "accelerate environmental degradation",
+    "type": "Collocation",
+    "pronunciation": "/əkˈseləreɪt ɪnˌvaɪrənˈmentl ˌdeɡrəˈdeɪʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đẩy nhanh sự suy thoái môi trường",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Overproduction in the fashion industry continues to accelerate environmental degradation worldwide.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:air-pollution",
+    "title": "air pollution",
+    "term": "air pollution",
+    "type": "Collocation",
+    "pronunciation": "/eə pəˈluːʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "ô nhiễm không khí",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Severe air pollution forced schools in the capital to close for several days last winter.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:air-quality",
+    "title": "air quality",
+    "term": "air quality",
+    "type": "Collocation",
+    "pronunciation": "/eə ˈkwɒlɪti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chất lượng không khí",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Local authorities installed sensors across the city to monitor air quality in real time.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:alarmingly-low-rates-of-waste-reprocessing",
+    "title": "alarmingly low rates of waste reprocessing",
+    "term": "alarmingly low rates of waste reprocessing",
+    "type": "Collocation",
+    "pronunciation": "/əˈlɑːmɪŋli ləʊ reɪts əv weɪst ˌriːˈprəʊsesɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tỷ lệ tái chế chất thải thấp đến mức đáng báo động",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Despite public campaigns, many cities still report alarmingly low rates of waste reprocessing.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:causing-significant-environmental-strain",
+    "title": "causing significant environmental strain",
+    "term": "causing significant environmental strain",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɔː.zɪŋ sɪɡˈnɪf.ɪ.kənt ɪnˌvaɪ.rənˈmen.təl streɪn/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gây áp lực lớn lên môi trường",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Unregulated mining has been causing significant environmental strain on the surrounding wetlands.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:compromising-environmental-health",
+    "title": "compromising environmental health",
+    "term": "compromising environmental health",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɒm.prə.maɪ.zɪŋ ɪnˌvaɪ.rənˈmen.təl helθ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "làm tổn hại sức khỏe môi trường",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Rapid industrial expansion has often come at the cost of compromising environmental health in nearby towns.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:contaminated-air",
+    "title": "contaminated air",
+    "term": "contaminated air",
+    "type": "Collocation",
+    "pronunciation": "/kənˈtæmɪneɪtɪd eə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "không khí bị ô nhiễm",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Residents living near the factory complained of headaches caused by contaminated air.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:destined-for-landfills",
+    "title": "destined for landfills",
+    "term": "destined for landfills",
+    "type": "Collocation",
+    "pronunciation": "/ˈdestɪnd fɔː ˈlændfɪlz/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "sẽ bị đưa đến bãi chôn lấp",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Without proper sorting facilities, much recyclable material is destined for landfills rather than reuse.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:environmental-erosion",
+    "title": "environmental erosion",
+    "term": "environmental erosion",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˌvaɪ.rənˈmen.təl ɪˈrəʊ.ʒən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự suy thoái môi trường",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Environmental erosion along the coastline has worsened as mangrove forests have been cleared.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:file-complaints",
+    "title": "file complaints",
+    "term": "file complaints",
+    "type": "Collocation",
+    "pronunciation": "/faɪl kəmˈpleɪnts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gửi khiếu nại",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Customers began to file complaints when the supermarket switched to thinner, flimsier bags.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:harmful-emissions",
+    "title": "harmful emissions",
+    "term": "harmful emissions",
+    "type": "Collocation",
+    "pronunciation": "/ˈhɑːmfəl ɪˈmɪʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khí thải độc hại",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Electric vehicles produce far fewer harmful emissions than traditional petrol cars.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:inadequate-infrastructure",
+    "title": "inadequate infrastructure",
+    "term": "inadequate infrastructure",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈædɪkwət ˈɪnfrəstrʌktʃə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cơ sở hạ tầng không đầy đủ",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Inadequate infrastructure for sorting recyclables discourages households from participating in green schemes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:multi-layered-materials",
+    "title": "multi-layered materials",
+    "term": "multi-layered materials",
+    "type": "Collocation",
+    "pronunciation": "/ˈmʌlti ˈleɪəd məˈtɪəriəlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "vật liệu nhiều lớp",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Multi-layered materials used in food packaging are notoriously difficult to recycle.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:operational-costs",
+    "title": "operational costs",
+    "term": "operational costs",
+    "type": "Collocation",
+    "pronunciation": "/ˌɒpəˈreɪʃənəl kɒsts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chi phí vận hành",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Switching to solar panels initially raised the factory's operational costs before savings emerged.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:sparked-significant-debate",
+    "title": "sparked significant debate",
+    "term": "sparked significant debate",
+    "type": "Collocation",
+    "pronunciation": "/spɑːkt sɪɡˈnɪf.ɪ.kənt dɪˈbeɪt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "làm dấy lên cuộc tranh luận đáng kể",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The proposal to ban single-use plastics sparked significant debate among local business owners.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:the-deterioration-of-environment",
+    "title": "The deterioration of environment",
+    "term": "The deterioration of environment",
+    "type": "Collocation",
+    "pronunciation": "/ðə dɪˌtɪəriəˈreɪʃən ɒv ɪnˈvaɪrənmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự xuống cấp của môi trường",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The deterioration of environment in coastal cities has accelerated due to unchecked industrial expansion.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:waste-sent-to-landfills",
+    "title": "waste sent to landfills",
+    "term": "waste sent to landfills",
+    "type": "Collocation",
+    "pronunciation": "/weɪst sent tuː ˈlændfɪlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chất thải được đưa đến bãi chôn lấp",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Better sorting infrastructure could dramatically cut the volume of waste sent to landfills each year.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:leads-to-environmental-degradation",
+    "title": "leads to environmental degradation",
+    "term": "leads to environmental degradation",
+    "type": "Collocation",
+    "pronunciation": "/liːdz tuː ɪnˌvaɪrənˈmentəl ˌdɛɡrəˈdeɪʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "dẫn đến sự suy thoái môi trường",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Unregulated mining in the region leads to environmental degradation that takes decades to reverse.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:a-vital-environmental-strategy",
+    "title": "a vital environmental strategy",
+    "term": "a vital environmental strategy",
+    "type": "Collocation",
+    "pronunciation": "/ə ˈvaɪtl ɪnˌvaɪrənˈmentl ˈstrætədʒi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "một chiến lược môi trường thiết yếu",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Recycling is widely regarded as a vital environmental strategy for reducing the pressure on landfills.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:accessible-facilities",
+    "title": "accessible facilities",
+    "term": "accessible facilities",
+    "type": "Collocation",
+    "pronunciation": "/əkˈsesəbl fəˈsɪlətiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cơ sở vật chất dễ tiếp cận",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Providing accessible facilities for recycling encourages far greater public participation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:air-quality-indices",
+    "title": "air quality indices",
+    "term": "air quality indices",
+    "type": "Collocation",
+    "pronunciation": "/eə ˈkwɒləti ˈɪndɪsiːz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chỉ số chất lượng không khí",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Local news now reports daily air quality indices alongside the weather forecast.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:alleviate",
+    "title": "alleviate",
+    "term": "alleviate",
+    "type": "Vocabulary",
+    "pronunciation": "/əˈliːvieɪt/",
+    "part_of_speech": "verb",
+    "meaning_vi": "làm giảm bớt, xoa dịu",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Planting urban forests can help alleviate the effects of rising city temperatures.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:alleviate-the-issue",
+    "title": "alleviate the issue",
+    "term": "alleviate the issue",
+    "type": "Collocation",
+    "pronunciation": "/əˈliːvieɪt ði ˈɪʃuː/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giảm bớt vấn đề",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Stricter recycling laws alone will not alleviate the issue of overflowing landfills.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:bear-the-responsibility",
+    "title": "bear the responsibility",
+    "term": "bear the responsibility",
+    "type": "Collocation",
+    "pronunciation": "/beər ðə rɪˌspɒn.sɪˈbɪl.ə.ti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gánh vác trách nhiệm",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Large corporations should bear the responsibility for cleaning up the pollution they generate.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:biodegradable",
+    "title": "biodegradable",
+    "term": "biodegradable",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌbaɪəʊdɪˈɡreɪdəbəl/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "có thể phân hủy sinh học",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The café switched to biodegradable cups after customers complained about plastic waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:biodegradable-materials",
+    "title": "biodegradable materials",
+    "term": "biodegradable materials",
+    "type": "Collocation",
+    "pronunciation": "/ˌbaɪ.əʊ.dɪˈɡreɪ.də.bəl məˈtɪə.ri.əlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "vật liệu có thể phân hủy sinh học",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Several food chains have switched from plastic cutlery to biodegradable materials made from cornstarch.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:dispose-of-packaging-properly",
+    "title": "dispose of packaging properly",
+    "term": "dispose of packaging properly",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈspəʊz ɒv ˈpækɪʤɪŋ ˈprɒpəli/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "xử lý bao bì đúng cách",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Schools are teaching children how to dispose of packaging properly to reduce street litter.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:eco-friendly-materials",
+    "title": "eco-friendly materials",
+    "term": "eco-friendly materials",
+    "type": "Collocation",
+    "pronunciation": "/ˈiːkəʊ ˈfrendli məˈtɪəriəlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "vật liệu thân thiện với môi trường",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The furniture brand now sources only eco-friendly materials such as bamboo and recycled wood.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:efficient-collection-services",
+    "title": "efficient collection services",
+    "term": "efficient collection services",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈfɪʃənt kəˈlekʃən ˈsɜːvɪsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "dịch vụ thu gom hiệu quả",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Efficient collection services are essential if a city hopes to raise its recycling rate significantly.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:introducing-recyclable-packaging",
+    "title": "introducing recyclable packaging",
+    "term": "introducing recyclable packaging",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪn.trəˈdjuː.sɪŋ riːˈsaɪ.klə.bəl ˈpæk.ɪ.dʒɪŋ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giới thiệu bao bì có thể tái chế",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The beverage company won praise for introducing recyclable packaging across its entire product line.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:minimalist-packaging",
+    "title": "minimalist packaging",
+    "term": "minimalist packaging",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɪn.ɪ.mə.lɪst ˈpæk.ɪ.dʒɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bao bì tối giản",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Consumers who value minimalist packaging are often willing to pay a premium for it.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:minimizing-excess-packaging",
+    "title": "minimizing excess packaging",
+    "term": "minimizing excess packaging",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɪn.ɪ.maɪ.zɪŋ ɪkˈses ˈpæk.ɪ.dʒɪŋ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giảm thiểu bao bì thừa",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Online retailers can cut waste significantly by minimizing excess packaging in every shipment.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:minimizing-packaging-waste",
+    "title": "minimizing packaging waste",
+    "term": "minimizing packaging waste",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɪnɪmaɪzɪŋ ˈpækɪʤɪŋ weɪst/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giảm thiểu rác thải bao bì",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Supermarkets are experimenting with refill stations as a way of minimizing packaging waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:more-sustainable-packaging-solutions",
+    "title": "more sustainable packaging solutions",
+    "term": "more sustainable packaging solutions",
+    "type": "Collocation",
+    "pronunciation": "/mɔː səˈsteɪnəbəl ˈpækɪʤɪŋ səˈluːʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các giải pháp bao bì bền vững hơn",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Beverage companies are under growing pressure to develop more sustainable packaging solutions for their bottles.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:national-recycling-infrastructure",
+    "title": "national recycling infrastructure",
+    "term": "national recycling infrastructure",
+    "type": "Collocation",
+    "pronunciation": "/ˈnæʃənl ˌriːˈsaɪklɪŋ ˈɪnfrəstrʌktʃə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cơ sở hạ tầng tái chế quốc gia",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Investment in national recycling infrastructure would allow far more household waste to be reprocessed.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:properly-discarding-packaging-waste",
+    "title": "properly discarding packaging waste",
+    "term": "properly discarding packaging waste",
+    "type": "Collocation",
+    "pronunciation": "/ˈprɒpəli dɪsˈkɑːdɪŋ ˈpækɪʤɪŋ weɪst/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "vứt bỏ rác bao bì đúng cách",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Public campaigns remind tourists about properly discarding packaging waste while visiting national parks.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:specialized-bins-and-collection-systems",
+    "title": "specialized bins and collection systems",
+    "term": "specialized bins and collection systems",
+    "type": "Collocation",
+    "pronunciation": "/ˈspeʃəlaɪzd bɪnz ənd kəˈlekʃən ˈsɪstəmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thùng rác chuyên dụng và hệ thống thu gom",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Installing specialized bins and collection systems in every neighbourhood would make recycling far more convenient.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:tackle-environmental-problems",
+    "title": "tackle environmental problems",
+    "term": "tackle environmental problems",
+    "type": "Collocation",
+    "pronunciation": "/ˈtækəl ɪnˌvaɪrənˈmentəl ˈprɒbləmz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giải quyết các vấn đề môi trường",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "International cooperation is essential if we are to tackle environmental problems that cross national borders.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:improving-environmental-problems",
+    "title": "improving environmental problems",
+    "term": "improving environmental problems",
+    "type": "Collocation",
+    "pronunciation": "/ɪmˈpruːvɪŋ ɪnˌvaɪrənˈmentl ˈprɒbləmz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cải thiện các vấn đề môi trường",
+    "topic": "Environment",
+    "subTopic": "Pollution & Waste Management",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Without stronger funding, improving environmental problems such as air pollution will remain a distant goal for many cities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:deforestation",
+    "title": "deforestation",
+    "term": "deforestation",
+    "type": "Vocabulary",
+    "pronunciation": "/diːˌfɒr.ɪˈsteɪ.ʃən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "nạn phá rừng",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Deforestation in the region has accelerated as farmers clear land for cattle ranching.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:fauna-and-flora-species",
+    "title": "fauna and flora species",
+    "term": "fauna and flora species",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɔːnə ænd ˈflɔːrə ˈspiːʃiːz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các loài động vật và thực vật",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The national park is home to hundreds of rare fauna and flora species found nowhere else on Earth.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:habitat-destruction-and-overexploitation",
+    "title": "habitat destruction and overexploitation",
+    "term": "habitat destruction and overexploitation",
+    "type": "Collocation",
+    "pronunciation": "/ˈhæbɪtæt dɪˈstrʌkʃən ənd ˌəʊvərˌeksplɔɪˈteɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phá hủy môi trường sống và khai thác quá mức",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Habitat destruction and overexploitation remain the two leading causes of species decline worldwide.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:industrial-development",
+    "title": "industrial development",
+    "term": "industrial development",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈdʌstriəl dɪˈveləpmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phát triển công nghiệp",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Rapid industrial development in the region has come at the cost of significant deforestation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:lucrative-timber-harvesting",
+    "title": "lucrative timber harvesting",
+    "term": "lucrative timber harvesting",
+    "type": "Collocation",
+    "pronunciation": "/ˈluːkrətɪv ˈtɪmbə ˈhɑːvɪstɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc khai thác gỗ mang lại lợi nhuận cao",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Lucrative timber harvesting has driven many companies to clear vast areas of primary rainforest.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:overhunting-and-overfishing",
+    "title": "overhunting and overfishing",
+    "term": "overhunting and overfishing",
+    "type": "Collocation",
+    "pronunciation": "/ˌəʊvəˈhʌntɪŋ ənd ˌəʊvəˈfɪʃɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự săn bắt và đánh bắt quá mức",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Overhunting and overfishing have pushed several marine species to the brink of extinction.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:urban-expansion-and-deforestation",
+    "title": "urban expansion and deforestation",
+    "term": "urban expansion and deforestation",
+    "type": "Collocation",
+    "pronunciation": "/ˈɜːbən ɪkˈspænʃən ənd ˌdiːˌfɒrɪˈsteɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự mở rộng đô thị và nạn phá rừng",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Urban expansion and deforestation have left many wild animals without a natural home.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:sustains-entire-local-economies-and-livelihoods",
+    "title": "sustains entire local economies and livelihoods",
+    "term": "sustains entire local economies and livelihoods",
+    "type": "Collocation",
+    "pronunciation": "/səˈsteɪnz ɪnˈtaɪə ˈləʊkəl ɪˈkɒnəmiz ənd ˈlaɪvlihʊdz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "duy trì toàn bộ nền kinh tế và sinh kế địa phương",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The fishing industry sustains entire local economies and livelihoods in many coastal towns.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:alarming-rate-of-animal-extinction",
+    "title": "alarming rate of animal extinction",
+    "term": "alarming rate of animal extinction",
+    "type": "Collocation",
+    "pronunciation": "/əˈlɑːmɪŋ reɪt əv ˈænɪməl ɪkˈstɪŋkʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tốc độ tuyệt chủng động vật đáng báo động",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The alarming rate of animal extinction has prompted urgent calls for stronger conservation laws.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:environmental-degradation",
+    "title": "environmental degradation",
+    "term": "environmental degradation",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˌvaɪrənˈmentəl ˌdeɡrəˈdeɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "suy thoái môi trường",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Unchecked mining activities have caused severe environmental degradation in the valley.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:extinction-of-animals",
+    "title": "extinction of animals",
+    "term": "extinction of animals",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈstɪŋkʃn əv ˈænɪmlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự tuyệt chủng của động vật",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Habitat destruction remains the leading cause behind the extinction of animals such as the Sumatran tiger.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:plummet",
+    "title": "plummet",
+    "term": "plummet",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈplʌmɪt/",
+    "part_of_speech": "verb",
+    "meaning_vi": "giảm mạnh, sụt giảm nhanh chóng",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Fish stocks in the river began to plummet once the nearby factory started discharging chemical waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:profoundly-disrupting-ecological-balance",
+    "title": "profoundly disrupting ecological balance",
+    "term": "profoundly disrupting ecological balance",
+    "type": "Collocation",
+    "pronunciation": "/prəˈfaʊndli dɪsˈrʌptɪŋ ˌiːkəˈlɒdʒɪkəl ˈbæləns/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "làm xáo trộn sâu sắc sự cân bằng sinh thái",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Overfishing is profoundly disrupting ecological balance in many of the world's oceans.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:collapse-of-local-stocks",
+    "title": "collapse of local stocks",
+    "term": "collapse of local stocks",
+    "type": "Collocation",
+    "pronunciation": "/kəˈlæps əv ˈləʊkəl stɒks/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự sụp đổ của nguồn dự trữ tại địa phương",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Unregulated fishing has caused the collapse of local stocks in several coastal regions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:complementing-local-conservation-efforts",
+    "title": "complementing local conservation efforts",
+    "term": "complementing local conservation efforts",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɒmplɪmentɪŋ ˈləʊkəl ˌkɒnsəˈveɪʃən ˈefəts/",
+    "part_of_speech": "gerund phrase",
+    "meaning_vi": "bổ sung cho các nỗ lực bảo tồn địa phương",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "International funding is complementing local conservation efforts to protect endangered species.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:ecological-preservation",
+    "title": "ecological preservation",
+    "term": "ecological preservation",
+    "type": "Collocation",
+    "pronunciation": "/ˌiːkəˈlɒdʒɪkəl ˌprezəˈveɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự bảo tồn sinh thái",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Investing in ecological preservation now will yield significant benefits for future generations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:hold-little-sway-in-environmental-conservation",
+    "title": "hold little sway in environmental conservation",
+    "term": "hold little sway in environmental conservation",
+    "type": "Collocation",
+    "pronunciation": "/həʊld ˈlɪt.əl sweɪ ɪn ɪnˌvaɪ.rənˈmen.təl ˌkɒn.səˈveɪ.ʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "có ít ảnh hưởng trong bảo tồn môi trường",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Some argue that voluntary pledges hold little sway in environmental conservation without legal enforcement.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:long-term-ecological-balance",
+    "title": "long-term ecological balance",
+    "term": "long-term ecological balance",
+    "type": "Collocation",
+    "pronunciation": "/ˌlɒŋˈtɜːm ˌiːkəˈlɒdʒɪkəl ˈbæləns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cân bằng sinh thái lâu dài",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Protecting wetlands is essential for maintaining long-term ecological balance in coastal regions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:restoration-of-ecological-equilibrium",
+    "title": "restoration of ecological equilibrium",
+    "term": "restoration of ecological equilibrium",
+    "type": "Collocation",
+    "pronunciation": "/ˌrestəˈreɪʃən əv ˌiːkəˈlɒdʒɪkəl ˌiːkwɪˈlɪbriəm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự khôi phục cân bằng sinh thái",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Reintroducing native predators can aid the restoration of ecological equilibrium in damaged ecosystems.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:safeguard-the-planets-invaluable-animal-diversity",
+    "title": "safeguard the planet's invaluable animal diversity",
+    "term": "safeguard the planet's invaluable animal diversity",
+    "type": "Collocation",
+    "pronunciation": "/ˈseɪfɡɑːd ðə ˈplænɪt ɪnˈvæljuəbl ˈænɪməl daɪˈvɜːsɪti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "bảo vệ sự đa dạng động vật vô giá của hành tinh",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Concerted global action is needed to safeguard the planet's invaluable animal diversity for future generations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:strategic-interventions",
+    "title": "strategic interventions",
+    "term": "strategic interventions",
+    "type": "Collocation",
+    "pronunciation": "/strəˈtiːdʒɪk ˌɪntəˈvenʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những can thiệp mang tính chiến lược",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Strategic interventions, such as habitat restoration, can help endangered populations recover over time.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:stricter-enforcement-against-illegal-fishing",
+    "title": "stricter enforcement against illegal fishing",
+    "term": "stricter enforcement against illegal fishing",
+    "type": "Collocation",
+    "pronunciation": "/ˈstrɪktə ɪnˈfɔːsmənt əˈɡenst ɪˈliːɡəl ˈfɪʃɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc thực thi nghiêm ngặt hơn chống đánh bắt trái phép",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Stricter enforcement against illegal fishing is crucial for protecting vulnerable marine ecosystems.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:to-rebirth",
+    "title": "to rebirth",
+    "term": "to rebirth",
+    "type": "Collocation",
+    "pronunciation": "/tuː riːˈbɜːθ/",
+    "part_of_speech": "verb",
+    "meaning_vi": "tái sinh, hồi sinh",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Conservationists hope the replanting programme will help the mangrove forest rebirth within a decade.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:wildlife-reserves",
+    "title": "wildlife reserves",
+    "term": "wildlife reserves",
+    "type": "Collocation",
+    "pronunciation": "/ˈwaɪldlaɪf rɪˈzɜːvz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khu bảo tồn động vật hoang dã",
+    "topic": "Environment",
+    "subTopic": "Biodiversity & Conservation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Expanding wildlife reserves gives threatened species a safe refuge from human encroachment.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:a-humans-basic-necessity",
+    "title": "a human's basic necessity",
+    "term": "a human's basic necessity",
+    "type": "Collocation",
+    "pronunciation": "/ə ˈhjuːmənz ˈbeɪsɪk nɪˈsesəti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nhu cầu thiết yếu của con người",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Clean drinking water is a human's basic necessity, yet millions still lack reliable access to it.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:booming-global-population",
+    "title": "booming global population",
+    "term": "booming global population",
+    "type": "Collocation",
+    "pronunciation": "/ˈbuː.mɪŋ ˈɡləʊ.bəl ˌpɒp.jʊˈleɪ.ʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "dân số toàn cầu bùng nổ",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "A booming global population is placing unprecedented pressure on food and water supplies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:fresh-water",
+    "title": "fresh water",
+    "term": "fresh water",
+    "type": "Collocation",
+    "pronunciation": "/freʃ ˈwɔːtə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nước ngọt",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Many arid countries rely almost entirely on desalination plants to secure a steady supply of fresh water.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:heavy-water-usage",
+    "title": "heavy water usage",
+    "term": "heavy water usage",
+    "type": "Collocation",
+    "pronunciation": "/ˈhevi ˈwɔːtə ˈjuːsɪdʒ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc sử dụng nước với lượng lớn",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Heavy water usage by large-scale farms has left downstream villages with dangerously low reservoir levels.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:hydrating",
+    "title": "hydrating",
+    "term": "hydrating",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈhaɪdreɪtɪŋ/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "cấp nước, giữ ẩm",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Doctors stress the hydrating benefits of drinking enough clean water every day.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:require-intensive-resource-extraction",
+    "title": "require intensive resource extraction",
+    "term": "require intensive resource extraction",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈkwaɪər ɪnˈten.sɪv ˈriː.sɔːs ɪkˈstræk.ʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đòi hỏi khai thác tài nguyên mạnh mẽ",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Producing lithium batteries can require intensive resource extraction that damages local ecosystems.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:resource-intensive-production",
+    "title": "resource-intensive production",
+    "term": "resource-intensive production",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈsɔːs ɪnˈtensɪv prəˈdʌkʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sản xuất tiêu tốn nhiều tài nguyên",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Resource-intensive production methods in textile manufacturing place enormous strain on water supplies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:cater-to-the-needs-of-extra-people",
+    "title": "cater to the needs of extra people",
+    "term": "cater to the needs of extra people",
+    "type": "Collocation",
+    "pronunciation": "/ˈkeɪtə tuː ðə niːdz ɒv ˈekstrə ˈpiːpəl/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đáp ứng nhu cầu của số dân tăng thêm",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "New satellite towns are being built to cater to the needs of extra people moving into the capital.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:housing-and-infrastructure-projects",
+    "title": "housing and infrastructure projects",
+    "term": "housing and infrastructure projects",
+    "type": "Collocation",
+    "pronunciation": "/ˈhaʊ.zɪŋ ənd ˈɪn.frə.strʌk.tʃər ˈprɒdʒ.ekts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các dự án nhà ở và cơ sở hạ tầng",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Rapid urban expansion has driven a surge in housing and infrastructure projects on the city outskirts.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:urban-expansion",
+    "title": "urban expansion",
+    "term": "urban expansion",
+    "type": "Collocation",
+    "pronunciation": "/ˈɜːbən ɪkˈspænʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mở rộng đô thị",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Unplanned urban expansion has swallowed up farmland on the outskirts of the city.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:vehicle-ownership",
+    "title": "vehicle ownership",
+    "term": "vehicle ownership",
+    "type": "Collocation",
+    "pronunciation": "/ˈviːɪkəl ˈəʊnəʃɪp/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sở hữu phương tiện cá nhân",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Rising incomes in developing nations have led to a rapid increase in vehicle ownership.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:accounts-for",
+    "title": "accounts for",
+    "term": "accounts for",
+    "type": "Collocation",
+    "pronunciation": "/əˈkaʊnts fɔː/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "chiếm (tỷ lệ), lý giải cho",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Agriculture accounts for nearly a third of the country's total water consumption.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:provides-essential-livelihoods",
+    "title": "provides essential livelihoods",
+    "term": "provides essential livelihoods",
+    "type": "Collocation",
+    "pronunciation": "/prəˈvaɪdz ɪˈsenʃəl ˈlaɪvlihʊdz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cung cấp sinh kế thiết yếu",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The agricultural sector provides essential livelihoods for millions of people in rural areas.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:a-scarce-resource",
+    "title": "a scarce resource",
+    "term": "a scarce resource",
+    "type": "Collocation",
+    "pronunciation": "/ə skeəs rɪˈsɔːs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "một nguồn tài nguyên khan hiếm",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "In many desert nations, fresh water is treated as a scarce resource and rationed carefully among citizens.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:adequate",
+    "title": "adequate",
+    "term": "adequate",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈædɪkwət/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "đầy đủ, thích đáng",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Rural communities often struggle to receive an adequate supply of clean water during the dry season.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:depletion-of-our-natural-resources",
+    "title": "depletion of our natural resources",
+    "term": "depletion of our natural resources",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈpliːʃən ɒv aʊə ˈnætʃrəl rɪˈsɔːsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự cạn kiệt tài nguyên thiên nhiên",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Overconsumption in wealthy countries is a major driver behind the depletion of our natural resources.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:direct-effect-of-overpopulation",
+    "title": "direct effect of overpopulation",
+    "term": "direct effect of overpopulation",
+    "type": "Collocation",
+    "pronunciation": "/daɪˈrekt ɪˈfekt əv ˌəʊ.və.ˌpɒp.jʊˈleɪ.ʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tác động trực tiếp của tình trạng quá tải dân số",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Water shortages in the region are widely seen as a direct effect of overpopulation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:natural-resources",
+    "title": "natural resources",
+    "term": "natural resources",
+    "type": "Collocation",
+    "pronunciation": "/ˈnætʃrəl rɪˈzɔːsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tài nguyên thiên nhiên",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Overexploitation of natural resources threatens the livelihoods of future generations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:scarce-water-supplies",
+    "title": "scarce water supplies",
+    "term": "scarce water supplies",
+    "type": "Collocation",
+    "pronunciation": "/skeəs ˈwɔːtə səˈplaɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nguồn nước khan hiếm",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Farmers in arid regions must carefully manage scarce water supplies during the dry season.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:temporary-environmental-benefits",
+    "title": "temporary environmental benefits",
+    "term": "temporary environmental benefits",
+    "type": "Collocation",
+    "pronunciation": "/ˈtemprəri ɪnˌvaɪrənˈmentəl ˈbenɪfɪts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lợi ích môi trường tạm thời",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Banning plastic bags for a single week only produces temporary environmental benefits.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:a-sustainable-and-greener-future",
+    "title": "a sustainable and greener future",
+    "term": "a sustainable and greener future",
+    "type": "Collocation",
+    "pronunciation": "/ə səˈsteɪ.nə.bəl ənd ˈɡriː.nər ˈfjuː.tʃər/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "một tương lai bền vững và xanh hơn",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Investing in clean transport today is essential for building a sustainable and greener future.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:balance-profitability-with-environmental-responsibility",
+    "title": "balance profitability with environmental responsibility",
+    "term": "balance profitability with environmental responsibility",
+    "type": "Collocation",
+    "pronunciation": "/ˈbæləns ˌprɒfɪtəˈbɪləti wɪð ɪnˌvaɪrənˈmentl rɪˌspɒnsəˈbɪləti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cân bằng giữa lợi nhuận và trách nhiệm với môi trường",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Businesses must balance profitability with environmental responsibility if they wish to remain sustainable long-term.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:circular-retail-models",
+    "title": "circular retail models",
+    "term": "circular retail models",
+    "type": "Collocation",
+    "pronunciation": "/ˈsɜːkjʊlə ˈriːteɪl ˈmɒdlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mô hình bán lẻ tuần hoàn",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Circular retail models, in which items are repaired and resold, can significantly reduce consumer waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:clean-energy",
+    "title": "clean energy",
+    "term": "clean energy",
+    "type": "Collocation",
+    "pronunciation": "/ˌkliːn ˈen.ə.dʒi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "năng lượng sạch",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The government has pledged to invest heavily in clean energy over the next decade.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:cleaner-production-methods",
+    "title": "cleaner production methods",
+    "term": "cleaner production methods",
+    "type": "Collocation",
+    "pronunciation": "/ˈkliːnə prəˈdʌkʃən ˈmeθədz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phương pháp sản xuất sạch hơn",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The steel industry has gradually shifted toward cleaner production methods to comply with new standards.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:encourage-sustainable-production",
+    "title": "encourage sustainable production",
+    "term": "encourage sustainable production",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈkʌr.ɪdʒ səˈsteɪ.nə.bəl prəˈdʌk.ʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "khuyến khích sản xuất bền vững",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Tax incentives can encourage sustainable production without placing an unfair burden on small firms.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:environmental-sustainability",
+    "title": "environmental sustainability",
+    "term": "environmental sustainability",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˌvaɪrənˈmentəl səˌsteɪnəˈbɪləti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tính bền vững về môi trường",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Balancing economic growth with environmental sustainability remains a central challenge for developing nations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:green-energy-adoption",
+    "title": "green energy adoption",
+    "term": "green energy adoption",
+    "type": "Collocation",
+    "pronunciation": "/ɡriːn ˈenədʒi əˈdɒpʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc áp dụng năng lượng xanh",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "National subsidies have sped up green energy adoption across the manufacturing sector.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:green-infrastructure",
+    "title": "green infrastructure",
+    "term": "green infrastructure",
+    "type": "Collocation",
+    "pronunciation": "/ɡriːn ˈɪnfrəstrʌktʃə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cơ sở hạ tầng xanh",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The city council approved funding for green infrastructure, including rooftop gardens and rain gardens.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:green-technology",
+    "title": "green technology",
+    "term": "green technology",
+    "type": "Collocation",
+    "pronunciation": "/ɡriːn tekˈnɒlədʒi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "công nghệ xanh",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Investment in green technology, such as solar panels and wind turbines, is reshaping the energy sector.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:guided-by-sustainability-principles",
+    "title": "guided by sustainability principles",
+    "term": "guided by sustainability principles",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡaɪdɪd baɪ səˌsteɪnəˈbɪləti ˈprɪnsəplz/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "được định hướng bởi các nguyên tắc bền vững",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Companies guided by sustainability principles are increasingly favoured by environmentally conscious consumers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:innovate-and-adopt-more-sustainable-practices",
+    "title": "innovate and adopt more sustainable practices",
+    "term": "innovate and adopt more sustainable practices",
+    "type": "Collocation",
+    "pronunciation": "/ˈɪn.ə.veɪt ənd əˈdɒpt mɔːr səˈsteɪ.nə.bəl ˈpræk.tɪs.ɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đổi mới và áp dụng các thực hành bền vững hơn",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Competition from green startups is pushing traditional manufacturers to innovate and adopt more sustainable practices.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:innovations-considered-eco-friendly",
+    "title": "innovations considered eco-friendly",
+    "term": "innovations considered eco-friendly",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪn.əˈveɪ.ʃənz kənˈsɪd.əd ˈiː.kəʊ ˈfrend.li/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những cải tiến được xem là thân thiện môi trường",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Solar-powered irrigation systems are among the innovations considered eco-friendly by agricultural experts.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:investments-in-renewable-energy",
+    "title": "investments in renewable energy",
+    "term": "investments in renewable energy",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈvest.mənts ɪn rɪˌnjuː.ə.bəl ˈen.ə.dʒi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "đầu tư vào năng lượng tái tạo",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Investments in renewable energy have allowed the region to cut its reliance on imported coal.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:renewable-energy",
+    "title": "renewable energy",
+    "term": "renewable energy",
+    "type": "Collocation",
+    "pronunciation": "/rɪˌnjuː.ə.bəl ˈen.ə.dʒi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "năng lượng tái tạo",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Countries with abundant sunshine are well placed to expand their renewable energy capacity.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:sustainable-practices",
+    "title": "sustainable practices",
+    "term": "sustainable practices",
+    "type": "Collocation",
+    "pronunciation": "/səˈsteɪ.nə.bəl ˈpræk.tɪs.ɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các thực hành bền vững",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Many hotels are now adopting sustainable practices to reduce their water and energy consumption.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:sustainable-production-practices",
+    "title": "sustainable production practices",
+    "term": "sustainable production practices",
+    "type": "Collocation",
+    "pronunciation": "/səˈsteɪnəbəl prəˈdʌkʃən ˈpræktɪsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các phương thức sản xuất bền vững",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The factory adopted sustainable production practices to reduce its reliance on non-renewable materials.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:technological-innovation",
+    "title": "technological innovation",
+    "term": "technological innovation",
+    "type": "Collocation",
+    "pronunciation": "/ˌteknəˈlɒdʒɪkəl ˌɪnəˈveɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "đổi mới công nghệ",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Technological innovation in battery storage has made renewable energy more reliable.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:transition-toward-a-circular-economy",
+    "title": "transition toward a circular economy",
+    "term": "transition toward a circular economy",
+    "type": "Collocation",
+    "pronunciation": "/trænˈzɪʃən təˈwɔːd ə ˈsɜːkjʊlə ɪˈkɒnəmi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "quá trình chuyển đổi sang nền kinh tế tuần hoàn",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Governments must accelerate the transition toward a circular economy to curb resource depletion.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:bike-lanes",
+    "title": "bike lanes",
+    "term": "bike lanes",
+    "type": "Collocation",
+    "pronunciation": "/baɪk leɪnz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "làn đường dành cho xe đạp",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "New bike lanes along the riverside have encouraged more residents to commute by bicycle.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:car-free-days",
+    "title": "car-free days",
+    "term": "car-free days",
+    "type": "Collocation",
+    "pronunciation": "/ˌkɑːˈfriː deɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "ngày không xe hơi",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The city introduced monthly car-free days to encourage residents to walk or cycle downtown.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:decreasing-the-traffic-volume",
+    "title": "decreasing the traffic volume",
+    "term": "decreasing the traffic volume",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈkriːsɪŋ ðə ˈtræfɪk ˈvɒljuːm/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "làm giảm lưu lượng giao thông",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Congestion charges have succeeded in decreasing the traffic volume in the city centre.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:electric-vehicle",
+    "title": "electric vehicle",
+    "term": "electric vehicle",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈlektrɪk ˈviːɪkəl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phương tiện chạy điện",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Government subsidies have made owning an electric vehicle more affordable for average households.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:minimizes-delivery-routes",
+    "title": "minimizes delivery routes",
+    "term": "minimizes delivery routes",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɪnɪmaɪzɪz dɪˈlɪvəri ruːts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giảm thiểu tuyến đường giao hàng",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The logistics firm redesigned its warehouse network so that it minimizes delivery routes and fuel usage.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:pedestrian-friendly-boulevards",
+    "title": "pedestrian-friendly boulevards",
+    "term": "pedestrian-friendly boulevards",
+    "type": "Collocation",
+    "pronunciation": "/pəˈdestriən ˈfrendli ˈbuːləvɑːdz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "đại lộ thân thiện với người đi bộ",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The redevelopment plan transformed the old highway into pedestrian-friendly boulevards lined with trees.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:public-transport",
+    "title": "public transport",
+    "term": "public transport",
+    "type": "Collocation",
+    "pronunciation": "/ˈpʌblɪk ˈtrænspɔːt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phương tiện giao thông công cộng",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Investing in reliable public transport encourages commuters to leave their cars at home.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:sustainable-mobility",
+    "title": "sustainable mobility",
+    "term": "sustainable mobility",
+    "type": "Collocation",
+    "pronunciation": "/səˈsteɪnəbəl məʊˈbɪləti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "giao thông bền vững",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The transport ministry launched a campaign promoting sustainable mobility through cycling and carpooling.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:urban-rail-networks",
+    "title": "urban rail networks",
+    "term": "urban rail networks",
+    "type": "Collocation",
+    "pronunciation": "/ˈɜːbən reɪl ˈnetwɜːks/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mạng lưới đường sắt đô thị",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Investment in urban rail networks has significantly cut commuter reliance on private cars.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:witness-a-surge-in-demand",
+    "title": "witness a surge in demand",
+    "term": "witness a surge in demand",
+    "type": "Collocation",
+    "pronunciation": "/ˈwɪtnəs ə sɜːʤ ɪn dɪˈmɑːnd/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "chứng kiến nhu cầu tăng vọt",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Bicycle shops have witnessed a surge in demand since the new cycle lanes opened.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:engage-in-responsible-farming-or-manufacturing",
+    "title": "engage in responsible farming or manufacturing",
+    "term": "engage in responsible farming or manufacturing",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈɡeɪdʒ ɪn rɪˈspɒnsəbəl ˈfɑːmɪŋ ɔː ˌmænjuˈfæktʃərɪŋ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tham gia vào canh tác hoặc sản xuất có trách nhiệm",
+    "topic": "Environment",
+    "subTopic": "Sustainable Development & Energy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Governments should offer subsidies to businesses that engage in responsible farming or manufacturing.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:disadvantageous",
+    "title": "disadvantageous",
+    "term": "disadvantageous",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌdɪsædvənˈteɪdʒəs/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "bất lợi, gây thiệt hại",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Charging households for every litre of water could prove disadvantageous to low-income families.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:unequal-distribution-of-water",
+    "title": "unequal distribution of water",
+    "term": "unequal distribution of water",
+    "type": "Collocation",
+    "pronunciation": "/ʌnˈiːkwəl ˌdɪstrɪˈbjuːʃn əv ˈwɔːtə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phân phối nước không đồng đều",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The unequal distribution of water between urban and rural areas has sparked public protests in several provinces.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:cross-border-environmental-issues",
+    "title": "cross-border environmental issues",
+    "term": "cross-border environmental issues",
+    "type": "Collocation",
+    "pronunciation": "/krɒs ˈbɔːdə ɪnˌvaɪrənˈmentl ˈɪʃuːz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các vấn đề môi trường xuyên biên giới",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Cross-border environmental issues such as river pollution demand cooperation between neighbouring countries.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:economic-performance",
+    "title": "economic performance",
+    "term": "economic performance",
+    "type": "Collocation",
+    "pronunciation": "/ˌiːkəˈnɒmɪk pəˈfɔːməns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hiệu quả kinh tế",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Some governments fear that strict environmental rules will weaken economic performance in the short term.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:financial-burden",
+    "title": "financial burden",
+    "term": "financial burden",
+    "type": "Collocation",
+    "pronunciation": "/faɪˈnænʃəl ˈbɜːdən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "gánh nặng tài chính",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Rising energy prices have placed an enormous financial burden on families in poorer neighbourhoods.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:fragmented-or-contradictory-policies",
+    "title": "fragmented or contradictory policies",
+    "term": "fragmented or contradictory policies",
+    "type": "Collocation",
+    "pronunciation": "/ˈfræɡməntɪd ɔː ˌkɒntrəˈdɪktəri ˈpɒləsiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các chính sách rời rạc hoặc mâu thuẫn nhau",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Fragmented or contradictory policies among neighbouring states often undermine regional efforts to cut emissions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:fruitless",
+    "title": "fruitless",
+    "term": "fruitless",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈfruːtləs/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "vô ích, không mang lại kết quả",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Critics argue that voluntary recycling campaigns alone will prove fruitless without strict government enforcement.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:global-challenges",
+    "title": "global challenges",
+    "term": "global challenges",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡləʊbəl ˈtʃælɪndʒɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thách thức toàn cầu",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Rising sea levels rank among the most pressing global challenges of this century.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:larger-scale-environmental-issues",
+    "title": "larger-scale environmental issues",
+    "term": "larger-scale environmental issues",
+    "type": "Collocation",
+    "pronunciation": "/ˈlɑː.dʒə skeɪl ɪnˌvaɪ.rənˈmen.təl ˈɪʃ.uːz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các vấn đề môi trường quy mô lớn",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Individual recycling efforts alone cannot resolve larger-scale environmental issues like ocean acidification.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:low-income-group",
+    "title": "low-income group",
+    "term": "low-income group",
+    "type": "Collocation",
+    "pronunciation": "/ˌləʊ ˈɪnkʌm ɡruːp/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nhóm người thu nhập thấp",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Any new carbon tax should include rebates to protect the low-income group from higher living costs.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:negligible-effect",
+    "title": "negligible effect",
+    "term": "negligible effect",
+    "type": "Collocation",
+    "pronunciation": "/ˈneɡlɪʤəbəl ɪˈfekt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tác động không đáng kể",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "A voluntary recycling scheme is likely to have a negligible effect without stricter enforcement.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:significant-systemic-limitations",
+    "title": "significant systemic limitations",
+    "term": "significant systemic limitations",
+    "type": "Collocation",
+    "pronunciation": "/sɪɡˈnɪfɪkənt sɪˈstemɪk ˌlɪmɪˈteɪʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những hạn chế mang tính hệ thống đáng kể",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Low recycling rates stem partly from significant systemic limitations in national waste infrastructure.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:social-inequality",
+    "title": "social inequality",
+    "term": "social inequality",
+    "type": "Collocation",
+    "pronunciation": "/ˈsəʊʃəl ˌɪnɪˈkwɒlɪti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự bất bình đẳng xã hội",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Poorly designed environmental policies can unintentionally deepen social inequality.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:the-less-fortunate",
+    "title": "the less fortunate",
+    "term": "the less fortunate",
+    "type": "Collocation",
+    "pronunciation": "/ðə les ˈfɔːtʃənət/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những người kém may mắn hơn",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Critics warn that carbon taxes often hit the less fortunate hardest while barely affecting the wealthy.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:the-rise-in-expenses",
+    "title": "the rise in expenses",
+    "term": "the rise in expenses",
+    "type": "Collocation",
+    "pronunciation": "/ðə raɪz ɪn ɪkˈspensɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự gia tăng chi phí",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Small farmers have struggled to cope with the rise in expenses caused by higher fuel prices.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:transboundary-challenges",
+    "title": "transboundary challenges",
+    "term": "transboundary challenges",
+    "type": "Collocation",
+    "pronunciation": "/trænzˈbaʊndəri ˈtʃælɪndʒɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những thách thức xuyên biên giới",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Air pollution is a classic example of transboundary challenges that no single nation can resolve alone.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:weak-regulatory-enforcement",
+    "title": "weak regulatory enforcement",
+    "term": "weak regulatory enforcement",
+    "type": "Collocation",
+    "pronunciation": "/wiːk ˈreɡjʊlətəri ɪnˈfɔːsmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thực thi quy định lỏng lẻo",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Weak regulatory enforcement allows some factories to dump untreated waste into rivers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:put-restrictions-on",
+    "title": "put restrictions on",
+    "term": "put restrictions on",
+    "type": "Collocation",
+    "pronunciation": "/pʊt rɪˈstrɪkʃnz ɒn/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đặt ra các hạn chế đối với",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "During the drought, the city council decided to put restrictions on how much water residents could use for gardening.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:apply-a-lower-tax",
+    "title": "apply a lower tax",
+    "term": "apply a lower tax",
+    "type": "Collocation",
+    "pronunciation": "/əˈplaɪ ə ˈləʊə tæks/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "áp dụng mức thuế thấp hơn",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Some economists suggest the government should apply a lower tax to plant-based food to encourage healthier diets.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:alternative-strategies",
+    "title": "alternative strategies",
+    "term": "alternative strategies",
+    "type": "Collocation",
+    "pronunciation": "/ɔːlˈtɜːnətɪv ˈstrætədʒiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các chiến lược thay thế",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Policymakers are exploring alternative strategies to taxation for curbing carbon emissions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:balancing-growth-and-sustainability",
+    "title": "balancing growth and sustainability",
+    "term": "balancing growth and sustainability",
+    "type": "Collocation",
+    "pronunciation": "/ˈbæl.ən.sɪŋ ɡrəʊθ ənd səˌsteɪ.nəˈbɪl.ə.ti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cân bằng giữa tăng trưởng và bền vững",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Balancing growth and sustainability remains one of the toughest challenges facing developing economies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:compliance-with-all-regulations",
+    "title": "compliance with all regulations",
+    "term": "compliance with all regulations",
+    "type": "Collocation",
+    "pronunciation": "/kəmˈplaɪəns wɪð ɔːl ˌreɡjʊˈleɪʃnz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự tuân thủ mọi quy định",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The factory's licence was suspended after inspectors found it lacked compliance with all regulations on wastewater treatment.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:comprehensive",
+    "title": "comprehensive",
+    "term": "comprehensive",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌkɒmprɪˈhensɪv/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "toàn diện",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Experts argue that only a comprehensive climate strategy, not isolated taxes, can deliver real change.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:comprehensive-action",
+    "title": "comprehensive action",
+    "term": "comprehensive action",
+    "type": "Collocation",
+    "pronunciation": "/ˌkɒmprɪˈhensɪv ˈækʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hành động toàn diện",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Scientists insist that comprehensive action across all sectors is needed to meet emissions targets.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:contraception-or-birth-control",
+    "title": "contraception or birth control",
+    "term": "contraception or birth control",
+    "type": "Collocation",
+    "pronunciation": "/ˌkɒntrəˈsepʃən ɔː bɜːθ kənˈtrəʊl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "biện pháp tránh thai",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The government distributed free contraception or birth control supplies to rural clinics nationwide.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:coordinated-international-framework",
+    "title": "coordinated international framework",
+    "term": "coordinated international framework",
+    "type": "Collocation",
+    "pronunciation": "/kəʊˈɔːdɪneɪtɪd ˌɪntəˈnæʃənl ˈfreɪmwɜːk/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khung hợp tác quốc tế được phối hợp",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "A coordinated international framework is vital for tackling global threats such as rising sea levels.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:curb-their-population-growth",
+    "title": "curb their population growth",
+    "term": "curb their population growth",
+    "type": "Collocation",
+    "pronunciation": "/kɜːb ðeə ˌpɒpjʊˈleɪʃən ɡrəʊθ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "kiềm chế sự gia tăng dân số",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Several Asian nations have introduced incentives to curb their population growth over the past two decades.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:decisive-government-intervention",
+    "title": "decisive government intervention",
+    "term": "decisive government intervention",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈsaɪsɪv ˈɡʌvənmənt ˌɪntəˈvenʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự can thiệp quyết liệt của chính phủ",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Decisive government intervention is needed to curb the excessive use of single-use plastics.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:decrease-birth-rates",
+    "title": "decrease birth rates",
+    "term": "decrease birth rates",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈkriːs bɜːθ reɪts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "làm giảm tỷ lệ sinh",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Better access to education for women has been shown to decrease birth rates significantly.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:deploy",
+    "title": "deploy",
+    "term": "deploy",
+    "type": "Vocabulary",
+    "pronunciation": "/dɪˈplɔɪ/",
+    "part_of_speech": "verb",
+    "meaning_vi": "triển khai, áp dụng",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Local councils plan to deploy solar-powered streetlights across the city by next year.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:discernible-effect",
+    "title": "discernible effect",
+    "term": "discernible effect",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈsɜːnəbəl ɪˈfekt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tác động rõ rệt, có thể nhận thấy",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The ban on plastic bags had a discernible effect on the amount of litter along the coastline.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:enacting-new-international-laws",
+    "title": "enacting new international laws",
+    "term": "enacting new international laws",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈnæktɪŋ njuː ˌɪntəˈnæʃnəl lɔːz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "ban hành các luật quốc tế mới",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "World leaders agreed that enacting new international laws is essential to curbing illegal deforestation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:evidence-based-policy-decisions",
+    "title": "evidence-based policy decisions",
+    "term": "evidence-based policy decisions",
+    "type": "Collocation",
+    "pronunciation": "/ˈevɪdəns beɪst ˈpɒləsi dɪˈsɪʒənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các quyết định chính sách dựa trên bằng chứng",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Evidence-based policy decisions are essential for tackling climate change effectively.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:forward-thinking-policies",
+    "title": "forward-thinking policies",
+    "term": "forward-thinking policies",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɔː.wəd ˈθɪŋ.kɪŋ ˈpɒl.ə.siz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các chính sách có tầm nhìn xa",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Forward-thinking policies on carbon pricing have helped several nations cut emissions without harming growth.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:government-intervention-in-the-form-of-sex-education",
+    "title": "government intervention in the form of sex education",
+    "term": "government intervention in the form of sex education",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡʌv.ən.mənt ˌɪn.təˈven.ʃən ɪn ðə fɔːm əv seks ˌedʒ.ʊˈkeɪ.ʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự can thiệp của chính phủ dưới hình thức giáo dục giới tính",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Some policymakers advocate government intervention in the form of sex education to help curb population growth.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:governments-proactive-policies",
+    "title": "government's proactive policies",
+    "term": "government's proactive policies",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡʌv.ən.mənts prəʊˈæk.tɪv ˈpɒl.ə.siz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các chính sách chủ động của chính phủ",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The government's proactive policies on waste sorting have made recycling almost universal in the capital.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:imposing-higher-taxes",
+    "title": "imposing higher taxes",
+    "term": "imposing higher taxes",
+    "type": "Collocation",
+    "pronunciation": "/ɪmˈpəʊzɪŋ ˈhaɪə ˈtæksɪz/",
+    "part_of_speech": "gerund phrase",
+    "meaning_vi": "áp đặt thuế cao hơn",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Some economists support imposing higher taxes on carbon-intensive industries to fund clean energy research.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:incentive",
+    "title": "incentive",
+    "term": "incentive",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪnˈsentɪv/",
+    "part_of_speech": "noun",
+    "meaning_vi": "động lực khuyến khích",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Tax breaks act as a strong incentive for homeowners to install solar panels.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:industrial-reforms",
+    "title": "industrial reforms",
+    "term": "industrial reforms",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈdʌs.tri.əl rɪˈfɔːmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cải cách công nghiệp",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Without industrial reforms, factory emissions are unlikely to fall to sustainable levels.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:international-agreement",
+    "title": "international agreement",
+    "term": "international agreement",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪntəˈnæʃnəl əˈɡriːmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hiệp định quốc tế",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Dozens of nations signed an international agreement pledging to cut carbon emissions by half within twenty years.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:international-oversight",
+    "title": "international oversight",
+    "term": "international oversight",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪntəˈnæʃənl ˈəʊvəsaɪt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự giám sát quốc tế",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Proponents of international oversight argue that global bodies can enforce environmental standards more consistently.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:large-scale-efforts",
+    "title": "large-scale efforts",
+    "term": "large-scale efforts",
+    "type": "Collocation",
+    "pronunciation": "/ˌlɑːdʒˈskeɪl ˈefəts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những nỗ lực quy mô lớn",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Only large-scale efforts coordinated across nations can meaningfully slow global deforestation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:launched-massive-campaigns",
+    "title": "launched massive campaigns",
+    "term": "launched massive campaigns",
+    "type": "Collocation",
+    "pronunciation": "/lɔːnʧt ˈmæsɪv kæmˈpeɪnz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "phát động các chiến dịch quy mô lớn",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Several NGOs launched massive campaigns to raise awareness about the dangers of overpopulation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:levies",
+    "title": "levies",
+    "term": "levies",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈleviz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "khoản thuế, phí đánh vào",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The government introduced new levies on plastic manufacturers to fund recycling programmes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:localized-environmental-action",
+    "title": "localized environmental action",
+    "term": "localized environmental action",
+    "type": "Collocation",
+    "pronunciation": "/ˈləʊkəlaɪzd ɪnˌvaɪrənˈmentl ˈækʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hành động môi trường mang tính địa phương",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Localized environmental action, tailored to specific communities, often yields faster results than broad global agreements.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:long-term-environmental-goals",
+    "title": "long-term environmental goals",
+    "term": "long-term environmental goals",
+    "type": "Collocation",
+    "pronunciation": "/ˌlɒŋˈtɜːm ɪnˌvaɪrənˈmentəl ɡəʊlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mục tiêu môi trường dài hạn",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The national plan sets out long-term environmental goals for water and air quality.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:long-term-strategies",
+    "title": "long-term strategies",
+    "term": "long-term strategies",
+    "type": "Collocation",
+    "pronunciation": "/ˌlɒŋˈtɜːm ˈstrætədʒiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các chiến lược dài hạn",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Without long-term strategies, short-term environmental campaigns rarely produce lasting change.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:measurable",
+    "title": "measurable",
+    "term": "measurable",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈmeʒərəbəl/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "có thể đo lường được",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The recycling scheme produced a measurable drop in household waste within its first year.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:measurable-improvements",
+    "title": "measurable improvements",
+    "term": "measurable improvements",
+    "type": "Collocation",
+    "pronunciation": "/ˈmeʒərəbl ɪmˈpruːvmənts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những cải thiện có thể đo lường được",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Local governments have reported measurable improvements in air quality since introducing stricter emissions rules.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:necessitate-comprehensive-policy-changes",
+    "title": "necessitate comprehensive policy changes",
+    "term": "necessitate comprehensive policy changes",
+    "type": "Collocation",
+    "pronunciation": "/nəˈses.ɪ.teɪt ˌkɒm.prɪˈhen.sɪv ˈpɒl.ə.si ˈtʃeɪn.dʒɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đòi hỏi thay đổi chính sách toàn diện",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Worsening air quality figures necessitate comprehensive policy changes rather than piecemeal fixes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:prevent-unwanted-pregnancies",
+    "title": "prevent unwanted pregnancies",
+    "term": "prevent unwanted pregnancies",
+    "type": "Collocation",
+    "pronunciation": "/prɪˈvent ʌnˈwɒntɪd ˈpreɡnənsiz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "ngăn ngừa việc mang thai ngoài ý muốn",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Comprehensive sex education helps young people prevent unwanted pregnancies and plan their families responsibly.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:propaganda",
+    "title": "propaganda",
+    "term": "propaganda",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌprɒpəˈɡændə/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tuyên truyền",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The ministry launched a nationwide propaganda campaign encouraging households to conserve electricity.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:raising-funds",
+    "title": "raising funds",
+    "term": "raising funds",
+    "type": "Collocation",
+    "pronunciation": "/ˈreɪzɪŋ fʌndz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gây quỹ",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The charity is raising funds to support reforestation projects across the flood-affected region.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:regulatory-enforcement",
+    "title": "regulatory enforcement",
+    "term": "regulatory enforcement",
+    "type": "Collocation",
+    "pronunciation": "/ˈreɡjʊlətəri ɪnˈfɔːsmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc thực thi quy định",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Stricter regulatory enforcement has significantly reduced illegal logging in the national park.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:regulatory-frameworks",
+    "title": "regulatory frameworks",
+    "term": "regulatory frameworks",
+    "type": "Collocation",
+    "pronunciation": "/ˈreɡjʊlətəri ˈfreɪmwɜːks/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khung pháp lý quản lý",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Strong regulatory frameworks compel industries to limit their carbon emissions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:regulatory-reform",
+    "title": "regulatory reform",
+    "term": "regulatory reform",
+    "type": "Collocation",
+    "pronunciation": "/ˈreɡjʊlətəri rɪˈfɔːm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cải cách quy định pháp lý",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Environmental campaigners have long called for regulatory reform to close loopholes exploited by heavy polluters.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:shared-expertise-and-resources",
+    "title": "shared expertise and resources",
+    "term": "shared expertise and resources",
+    "type": "Collocation",
+    "pronunciation": "/ʃeəd ˌekspɜːˈtiːz ənd rɪˈsɔːsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chuyên môn và nguồn lực được chia sẻ",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Shared expertise and resources among nations can accelerate the development of clean technologies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:stringent-legislative-accountability",
+    "title": "stringent legislative accountability",
+    "term": "stringent legislative accountability",
+    "type": "Collocation",
+    "pronunciation": "/ˈstrɪndʒənt ˈledʒɪslətɪv əˌkaʊntəˈbɪləti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "trách nhiệm giải trình pháp lý nghiêm ngặt",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Stringent legislative accountability would force manufacturers to reduce the packaging waste they generate.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:strong-deterrent",
+    "title": "strong deterrent",
+    "term": "strong deterrent",
+    "type": "Collocation",
+    "pronunciation": "/strɒŋ dɪˈterənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "biện pháp răn đe mạnh",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Heavy fines act as a strong deterrent against illegal dumping in protected forests.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:structural-solutions",
+    "title": "structural solutions",
+    "term": "structural solutions",
+    "type": "Collocation",
+    "pronunciation": "/ˈstrʌktʃərəl səˈluːʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "giải pháp mang tính cấu trúc",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Experts argue that structural solutions like expanding metro lines outperform temporary traffic bans.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:systemic-change",
+    "title": "systemic change",
+    "term": "systemic change",
+    "type": "Collocation",
+    "pronunciation": "/sɪˈstemɪk tʃeɪndʒ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thay đổi mang tính hệ thống",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Tackling plastic waste requires systemic change rather than isolated consumer choices.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:tax-revenue",
+    "title": "tax revenue",
+    "term": "tax revenue",
+    "type": "Collocation",
+    "pronunciation": "/tæks ˈrevənjuː/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "doanh thu thuế",
+    "topic": "Environment",
+    "subTopic": "Government Policy & International Action",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The government plans to use the additional tax revenue to subsidise public transport.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:extravagantly",
+    "title": "extravagantly",
+    "term": "extravagantly",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪkˈstrævəɡəntli/",
+    "part_of_speech": "adverb",
+    "meaning_vi": "một cách xa hoa, lãng phí",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Wealthier households often use water extravagantly, filling private pools while nearby communities face shortages.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:aggressive-branding-strategies",
+    "title": "aggressive branding strategies",
+    "term": "aggressive branding strategies",
+    "type": "Collocation",
+    "pronunciation": "/əˈɡresɪv ˈbrændɪŋ ˈstrætədʒiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chiến lược xây dựng thương hiệu mạnh mẽ, tích cực",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Aggressive branding strategies often encourage consumers to buy products they do not truly need.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:constant-consumerism",
+    "title": "constant consumerism",
+    "term": "constant consumerism",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɒnstənt kənˈsjuːmərɪzəm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chủ nghĩa tiêu dùng liên tục, không ngừng",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Constant consumerism in the fashion industry fuels excessive production and waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:consumer-behaviour",
+    "title": "consumer behaviour",
+    "term": "consumer behaviour",
+    "type": "Collocation",
+    "pronunciation": "/kənˈsjuːmə bɪˈheɪvjə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hành vi tiêu dùng",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Advertising campaigns can subtly reshape consumer behaviour towards more eco-friendly purchasing habits.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:convenience-based-consumption",
+    "title": "convenience-based consumption",
+    "term": "convenience-based consumption",
+    "type": "Collocation",
+    "pronunciation": "/kənˈviːniəns beɪst kənˈsʌmpʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tiêu dùng dựa trên sự tiện lợi",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Convenience-based consumption, such as single-use packaging, generates enormous amounts of unnecessary waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:ingrained-individual-behaviors",
+    "title": "ingrained individual behaviors",
+    "term": "ingrained individual behaviors",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈɡreɪnd ˌɪndɪˈvɪdʒuəl bɪˈheɪvjəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những hành vi cá nhân đã ăn sâu bén rễ",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Changing ingrained individual behaviors, such as excessive packaging use, requires sustained public education.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:a-profound-lack-of-public-awareness",
+    "title": "a profound lack of public awareness",
+    "term": "a profound lack of public awareness",
+    "type": "Collocation",
+    "pronunciation": "/ə prəˈfaʊnd læk əv ˈpʌblɪk əˈweənəs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự thiếu nhận thức cộng đồng sâu sắc",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "A profound lack of public awareness about sorting waste correctly undermines recycling schemes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:hold-little-significance-in-environmental-protection",
+    "title": "hold little significance in environmental protection",
+    "term": "hold little significance in environmental protection",
+    "type": "Collocation",
+    "pronunciation": "/həʊld ˈlɪt.əl sɪɡˈnɪf.ɪ.kəns ɪn ɪnˌvaɪ.rənˈmen.təl prəˈtek.ʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "có ít ý nghĩa trong bảo vệ môi trường",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Critics argue that individual recycling habits hold little significance in environmental protection compared with industrial reform.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:rendering-individual-endeavors-futile",
+    "title": "rendering individual endeavors futile",
+    "term": "rendering individual endeavors futile",
+    "type": "Collocation",
+    "pronunciation": "/ˈren.dər.ɪŋ ˌɪn.dɪˈvɪdʒ.u.əl ɪnˈdev.əz ˈfjuː.taɪl/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "khiến nỗ lực cá nhân trở nên vô ích",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Some claim that unchecked corporate pollution is rendering individual endeavors futile in the fight against climate change.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:shifting-consumer-habits",
+    "title": "shifting consumer habits",
+    "term": "shifting consumer habits",
+    "type": "Collocation",
+    "pronunciation": "/ˈʃɪftɪŋ kənˈsjuːmə ˈhæbɪts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thói quen tiêu dùng đang thay đổi",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Shifting consumer habits toward online shopping have led to a surge in packaging waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:symbolic-gestures",
+    "title": "symbolic gestures",
+    "term": "symbolic gestures",
+    "type": "Collocation",
+    "pronunciation": "/sɪmˈbɒlɪk ˈdʒestʃəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hành động mang tính biểu tượng",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Critics dismissed the tree-planting ceremony as one of many symbolic gestures lacking real impact.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:awareness-of-environmental-protection",
+    "title": "awareness of environmental protection",
+    "term": "awareness of environmental protection",
+    "type": "Collocation",
+    "pronunciation": "/əˈweə.nəs əv ɪnˌvaɪ.rənˈmen.təl prəˈtek.ʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nhận thức về bảo vệ môi trường",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "School programmes have helped raise children's awareness of environmental protection from an early age.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:green-movements",
+    "title": "green movements",
+    "term": "green movements",
+    "type": "Collocation",
+    "pronunciation": "/ɡriːn ˈmuːv.mənts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phong trào xanh",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Green movements have gained considerable political influence in many European countries.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:available-locally",
+    "title": "available locally",
+    "term": "available locally",
+    "type": "Collocation",
+    "pronunciation": "/əˈveɪləbəl ˈləʊkəli/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "sẵn có tại địa phương",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Consumers are encouraged to buy produce that is available locally rather than imported goods.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:sourcing-food-and-materials-locally",
+    "title": "sourcing food and materials locally",
+    "term": "sourcing food and materials locally",
+    "type": "Collocation",
+    "pronunciation": "/ˈsɔːsɪŋ fuːd ənd məˈtɪəriəlz ˈləʊkəli/",
+    "part_of_speech": "gerund phrase",
+    "meaning_vi": "tìm nguồn thực phẩm và nguyên liệu tại địa phương",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Sourcing food and materials locally has become a popular strategy among restaurants aiming to lower their carbon footprint.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:a-collective-effort",
+    "title": "a collective effort",
+    "term": "a collective effort",
+    "type": "Collocation",
+    "pronunciation": "/ə kəˈlektɪv ˈefət/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nỗ lực chung, sự chung tay",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Tackling plastic pollution requires a collective effort from governments, businesses and ordinary citizens alike.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:adopting-eco-friendly-practices",
+    "title": "adopting eco-friendly practices",
+    "term": "adopting eco-friendly practices",
+    "type": "Collocation",
+    "pronunciation": "/əˈdɒp.tɪŋ ˈiː.kəʊ ˈfrend.li ˈpræk.tɪs.ɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "áp dụng các thực hành thân thiện với môi trường",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "By adopting eco-friendly practices, the factory reduced its plastic waste by half within a year.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:avoiding-single-use-plastics",
+    "title": "avoiding single-use plastics",
+    "term": "avoiding single-use plastics",
+    "type": "Collocation",
+    "pronunciation": "/əˈvɔɪdɪŋ ˈsɪŋɡəl juːs ˈplæstɪks/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tránh sử dụng đồ nhựa dùng một lần",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Avoiding single-use plastics at home is one of the easiest habits anyone can adopt.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:consumer-demand",
+    "title": "consumer demand",
+    "term": "consumer demand",
+    "type": "Collocation",
+    "pronunciation": "/kənˈsjuːmə dɪˈmɑːnd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nhu cầu người tiêu dùng",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Growing consumer demand for sustainable packaging has pushed brands to abandon single-use plastic.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:daily-choices",
+    "title": "daily choices",
+    "term": "daily choices",
+    "type": "Collocation",
+    "pronunciation": "/ˈdeɪli ˈtʃɔɪsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lựa chọn hàng ngày",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Our daily choices, from diet to transport, collectively shape the planet's future.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:driving-sustainable-change",
+    "title": "driving sustainable change",
+    "term": "driving sustainable change",
+    "type": "Collocation",
+    "pronunciation": "/ˈdraɪ.vɪŋ səˈsteɪ.nə.bəl tʃeɪndʒ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thúc đẩy sự thay đổi bền vững",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Small community projects are driving sustainable change by encouraging households to compost food waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:eco-conscious-individuals",
+    "title": "eco-conscious individuals",
+    "term": "eco-conscious individuals",
+    "type": "Collocation",
+    "pronunciation": "/ˈiː.kəʊ ˈkɒn.ʃəs ˌɪn.dɪˈvɪdʒ.u.əlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những cá nhân có ý thức về môi trường",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Eco-conscious individuals are increasingly choosing public transport over private cars.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:eco-friendly-products",
+    "title": "eco-friendly products",
+    "term": "eco-friendly products",
+    "type": "Collocation",
+    "pronunciation": "/ˌiːkəʊˈfrendli ˈprɒdʌkts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sản phẩm thân thiện với môi trường",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Supermarkets are dedicating more shelf space to eco-friendly products made from recycled materials.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:environmental-responsibility",
+    "title": "environmental responsibility",
+    "term": "environmental responsibility",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˌvaɪrənˈmentəl rɪˌspɒnsəˈbɪləti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "trách nhiệm với môi trường",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Large corporations are increasingly expected to demonstrate environmental responsibility in their supply chains.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:foster-substantial-change",
+    "title": "foster substantial change",
+    "term": "foster substantial change",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɒs.tər səbˈstæn.ʃəl tʃeɪndʒ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thúc đẩy sự thay đổi đáng kể",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "International cooperation is often needed to foster substantial change in global emissions targets.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:fostering-awareness-among-citizens",
+    "title": "fostering awareness among citizens",
+    "term": "fostering awareness among citizens",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɒstərɪŋ əˈweənəs əˈmʌŋ ˈsɪtɪzənz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nâng cao nhận thức trong người dân",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Local schools are fostering awareness among citizens by running weekly workshops on waste segregation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:grassroots-initiatives",
+    "title": "grassroots initiatives",
+    "term": "grassroots initiatives",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡrɑːsruːts ɪˈnɪʃətɪvz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sáng kiến cộng đồng cơ sở",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Grassroots initiatives such as neighbourhood tree-planting days often inspire wider community action.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:individual-consciousness-raising",
+    "title": "individual consciousness-raising",
+    "term": "individual consciousness-raising",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪn.dɪˈvɪdʒ.u.əl ˈkɒn.ʃəs.nəs ˈreɪ.zɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nâng cao nhận thức cá nhân",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Documentaries about plastic pollution have played a key role in individual consciousness-raising.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:lead-the-charge",
+    "title": "lead the charge",
+    "term": "lead the charge",
+    "type": "Collocation",
+    "pronunciation": "/liːd ðə tʃɑːdʒ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "dẫn đầu, tiên phong",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Tech companies are increasingly expected to lead the charge in cutting corporate carbon emissions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:make-certain-contributions-to-this-matter",
+    "title": "make certain contributions to this matter",
+    "term": "make certain contributions to this matter",
+    "type": "Collocation",
+    "pronunciation": "/meɪk ˈsɜːtn ˌkɒntrɪˈbjuːʃənz tuː ðɪs ˈmætə/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "có những đóng góp nhất định cho vấn đề này",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Even small businesses can make certain contributions to this matter by cutting down on unnecessary packaging.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:make-mindful-choices",
+    "title": "make mindful choices",
+    "term": "make mindful choices",
+    "type": "Collocation",
+    "pronunciation": "/meɪk ˈmaɪnd.fəl ˈtʃɔɪs.ɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đưa ra những lựa chọn có ý thức",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Shoppers who make mindful choices about what they buy can significantly cut household waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:on-a-daily-basis",
+    "title": "on a daily basis",
+    "term": "on a daily basis",
+    "type": "Collocation",
+    "pronunciation": "/ɒn ə ˈdeɪli ˈbeɪsɪs/",
+    "part_of_speech": "adverb phrase",
+    "meaning_vi": "hàng ngày, trên cơ sở mỗi ngày",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Sorting recyclables on a daily basis has become second nature to most households in the neighbourhood.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:opting-for-products-with-minimal-packaging-materials",
+    "title": "opting for products with minimal packaging materials",
+    "term": "opting for products with minimal packaging materials",
+    "type": "Collocation",
+    "pronunciation": "/ˈɒptɪŋ fɔː ˈprɒdʌkts wɪð ˈmɪnɪməl ˈpækɪʤɪŋ məˈtɪəriəlz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "lựa chọn sản phẩm có ít bao bì",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Shoppers can lower their environmental footprint simply by opting for products with minimal packaging materials.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:personal-responsibility",
+    "title": "personal responsibility",
+    "term": "personal responsibility",
+    "type": "Collocation",
+    "pronunciation": "/ˈpɜːsənəl rɪˌspɒnsəˈbɪləti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "trách nhiệm cá nhân",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Schools are teaching children about personal responsibility for reducing household waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:practicing-sustainable-consumption-habits",
+    "title": "practicing sustainable consumption habits",
+    "term": "practicing sustainable consumption habits",
+    "type": "Collocation",
+    "pronunciation": "/ˈpræk.tɪ.sɪŋ səˈsteɪ.nə.bəl kənˈsʌmp.ʃən ˈhæb.ɪts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thực hành thói quen tiêu dùng bền vững",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Families who are practicing sustainable consumption habits often buy second-hand goods rather than new ones.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:promoting-eco-friendly-practices",
+    "title": "promoting eco-friendly practices",
+    "term": "promoting eco-friendly practices",
+    "type": "Collocation",
+    "pronunciation": "/prəˈməʊ.tɪŋ ˈiː.kəʊ ˈfrend.li ˈpræk.tɪs.ɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thúc đẩy các thực hành thân thiện môi trường",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The campaign focuses on promoting eco-friendly practices among young people through social media.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:public-awareness",
+    "title": "public awareness",
+    "term": "public awareness",
+    "type": "Collocation",
+    "pronunciation": "/ˈpʌblɪk əˈweənəs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nhận thức cộng đồng",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "The documentary succeeded in raising public awareness about the dangers of microplastics.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:put-pressure-on-companies-to-be-more-environmentally-responsible",
+    "title": "put pressure on companies to be more environmentally responsible",
+    "term": "put pressure on companies to be more environmentally responsible",
+    "type": "Collocation",
+    "pronunciation": "/pʊt ˈpreʃə ɒn ˈkʌmpəniz tuː biː mɔːr ɪnˌvaɪrənˈmentəli rɪˈspɒnsəbəl/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gây áp lực buộc các công ty có trách nhiệm hơn với môi trường",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Consumer boycotts can put pressure on companies to be more environmentally responsible in their supply chains.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:small-scale-actions",
+    "title": "small-scale actions",
+    "term": "small-scale actions",
+    "type": "Collocation",
+    "pronunciation": "/ˌsmɔːlˈskeɪl ˈækʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hành động quy mô nhỏ",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Critics argue that small-scale actions like recycling alone cannot reverse global warming.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:stimulus",
+    "title": "stimulus",
+    "term": "stimulus",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈstɪmjʊləs/",
+    "part_of_speech": "noun",
+    "meaning_vi": "động lực thúc đẩy",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Rising energy bills have become an unexpected stimulus for households to insulate their homes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:supporting-companies-that-prioritize-sustainability",
+    "title": "supporting companies that prioritize sustainability",
+    "term": "supporting companies that prioritize sustainability",
+    "type": "Collocation",
+    "pronunciation": "/səˈpɔːtɪŋ ˈkʌmpəniz ðæt praɪˈɒrɪtaɪz səˌsteɪnəˈbɪlɪti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "ủng hộ các công ty ưu tiên phát triển bền vững",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "By supporting companies that prioritize sustainability, consumers can push entire industries towards greener practices.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:take-the-initiative",
+    "title": "take the initiative",
+    "term": "take the initiative",
+    "type": "Collocation",
+    "pronunciation": "/teɪk ði ɪˈnɪʃ.ə.tɪv/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "chủ động thực hiện",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Some residents have taken the initiative to organise weekly clean-up drives along the riverbank.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:the-collective-impact-of-small-scale-actions",
+    "title": "the collective impact of small-scale actions",
+    "term": "the collective impact of small-scale actions",
+    "type": "Collocation",
+    "pronunciation": "/ðə kəˈlek.tɪv ˈɪm.pækt əv smɔːl skeɪl ˈæk.ʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tác động tổng hợp của các hành động nhỏ lẻ",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Researchers have shown that the collective impact of small-scale actions can rival that of major policy reforms.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:environment:zero-waste-retail-models",
+    "title": "zero-waste retail models",
+    "term": "zero-waste retail models",
+    "type": "Collocation",
+    "pronunciation": "/ˈzɪərəʊ weɪst ˈriːteɪl ˈmɒdlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mô hình bán lẻ không rác thải",
+    "topic": "Environment",
+    "subTopic": "Individual Responsibility & Awareness",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Environment",
+    "examples": [
+      {
+        "en": "Zero-waste retail models, which sell products without packaging, are gaining popularity in urban areas.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  }
+]

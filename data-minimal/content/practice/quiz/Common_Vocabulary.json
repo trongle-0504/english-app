@@ -1,0 +1,1274 @@
+{
+  "questions": [
+    {
+      "id": "sa_controversial_0_0",
+      "type": "short_answer",
+      "sentence": "The court debated ___ regarding property rights.",
+      "options": [],
+      "correct_answer": "a controversial issue",
+      "explanation": "a controversial issue",
+      "hint": "vấn đề gây tranh cãi",
+      "collocation_type": "noun phrase"
+    },
+    {
+      "id": "sa_controversial_1_0",
+      "type": "short_answer",
+      "sentence": "Teachers often try to avoid ___ like politics in the classroom.",
+      "options": [],
+      "correct_answer": "controversial topics",
+      "explanation": "a controversial topic",
+      "hint": "chủ đề gây tranh cãi",
+      "collocation_type": "noun phrase"
+    },
+    {
+      "id": "sa_controversial_2_0",
+      "type": "short_answer",
+      "sentence": "The manager's ___ to fire the star player led to widespread protests.",
+      "options": [],
+      "correct_answer": "controversial decision",
+      "explanation": "a controversial decision",
+      "hint": "quyết định gây tranh cãi",
+      "collocation_type": "noun phrase"
+    },
+    {
+      "id": "sa_controversial_3_0",
+      "type": "short_answer",
+      "sentence": "He is ___ in the world of politics due to his radical views.",
+      "options": [],
+      "correct_answer": "a controversial figure",
+      "explanation": "a controversial figure",
+      "hint": "nhân vật gây tranh cãi",
+      "collocation_type": "noun phrase"
+    },
+    {
+      "id": "sa_controversial_4_0",
+      "type": "short_answer",
+      "sentence": "The new law was ___ among the public.",
+      "options": [],
+      "correct_answer": "highly controversial",
+      "explanation": "highly controversial",
+      "hint": "cực kỳ gây tranh cãi",
+      "collocation_type": "adverb + adjective"
+    },
+    {
+      "id": "sa_welfare_0_0",
+      "type": "short_answer",
+      "sentence": "The government is considering reforms to the ___ system.",
+      "options": [],
+      "correct_answer": "welfare benefits",
+      "explanation": "welfare benefits",
+      "hint": "Trợ cấp phúc lợi xã hội",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_welfare_0_1",
+      "type": "short_answer",
+      "sentence": "Many people rely on ___ to make ends meet.",
+      "options": [],
+      "correct_answer": "welfare benefits",
+      "explanation": "welfare benefits",
+      "hint": "Trợ cấp phúc lợi xã hội",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_welfare_1_0",
+      "type": "short_answer",
+      "sentence": "Access to quality ___ is crucial for vulnerable populations.",
+      "options": [],
+      "correct_answer": "welfare services",
+      "explanation": "welfare services",
+      "hint": "Dịch vụ phúc lợi xã hội",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_welfare_1_1",
+      "type": "short_answer",
+      "sentence": "The council provides a range of ___ to support its citizens.",
+      "options": [],
+      "correct_answer": "welfare services",
+      "explanation": "welfare services",
+      "hint": "Dịch vụ phúc lợi xã hội",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_welfare_2_0",
+      "type": "short_answer",
+      "sentence": "The country is undergoing a major overhaul of its ___.",
+      "options": [],
+      "correct_answer": "welfare system",
+      "explanation": "welfare system",
+      "hint": "Hệ thống phúc lợi xã hội",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_welfare_2_1",
+      "type": "short_answer",
+      "sentence": "Critics argue that the current ___ is unsustainable.",
+      "options": [],
+      "correct_answer": "welfare system",
+      "explanation": "welfare system",
+      "hint": "Hệ thống phúc lợi xã hội",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_welfare_3_0",
+      "type": "short_answer",
+      "sentence": "He argued that it is too easy for people to stay ___.",
+      "options": [],
+      "correct_answer": "on welfare",
+      "explanation": "on welfare",
+      "hint": "Nhận trợ cấp xã hội",
+      "collocation_type": "prepositional phrase"
+    },
+    {
+      "id": "sa_welfare_3_1",
+      "type": "short_answer",
+      "sentence": "The number of people ___ has decreased significantly.",
+      "options": [],
+      "correct_answer": "on welfare",
+      "explanation": "on welfare",
+      "hint": "Nhận trợ cấp xã hội",
+      "collocation_type": "prepositional phrase"
+    },
+    {
+      "id": "sa_welfare_4_0",
+      "type": "short_answer",
+      "sentence": "The government's primary goal is to improve ___.",
+      "options": [],
+      "correct_answer": "social welfare",
+      "explanation": "social welfare",
+      "hint": "Phúc lợi xã hội",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_welfare_4_1",
+      "type": "short_answer",
+      "sentence": "Investment in ___ programs can lead to a more stable society.",
+      "options": [],
+      "correct_answer": "social welfare",
+      "explanation": "social welfare",
+      "hint": "Phúc lợi xã hội",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_invent_0_0",
+      "type": "short_answer",
+      "sentence": "Thomas Edison ___ the light bulb.",
+      "options": [],
+      "correct_answer": "invented",
+      "explanation": "invent + sth",
+      "hint": "Phát minh ra cái gì đó",
+      "collocation_type": "V + object"
+    },
+    {
+      "id": "sa_invent_1_0",
+      "type": "short_answer",
+      "sentence": "He couldn't ___ good enough to satisfy his boss.",
+      "options": [],
+      "correct_answer": "invent an excuse",
+      "explanation": "invent an excuse",
+      "hint": "Bịa ra một lời bào chữa",
+      "collocation_type": "V + N phrase"
+    },
+    {
+      "id": "sa_invent_2_0",
+      "type": "short_answer",
+      "sentence": "The child ___ to explain the broken vase.",
+      "options": [],
+      "correct_answer": "invented a story",
+      "explanation": "invent a story",
+      "hint": "Bịa ra một câu chuyện",
+      "collocation_type": "V + N phrase"
+    },
+    {
+      "id": "sa_budget_0_0",
+      "type": "short_answer",
+      "sentence": "The organization has an ___ $24 million.",
+      "options": [],
+      "correct_answer": "annual budget of",
+      "explanation": "annual budget",
+      "hint": "Ngân sách hàng năm",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_budget_1_0",
+      "type": "short_answer",
+      "sentence": "Most young people have to live within a ___.",
+      "options": [],
+      "correct_answer": "tight budget",
+      "explanation": "tight budget",
+      "hint": "Ngân sách eo hẹp, hạn hẹp",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_budget_2_0",
+      "type": "short_answer",
+      "sentence": "The film had been made on a ___.",
+      "options": [],
+      "correct_answer": "shoestring budget",
+      "explanation": "shoestring budget",
+      "hint": "Ngân sách cực kỳ eo hẹp, tối thiểu",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_budget_3_0",
+      "type": "short_answer",
+      "sentence": "Further cuts are needed in order to ___.",
+      "options": [],
+      "correct_answer": "keep within the budget",
+      "explanation": "keep within a budget",
+      "hint": "Chi tiêu trong giới hạn ngân sách cho phép",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_budget_4_0",
+      "type": "short_answer",
+      "sentence": "It's crucial for the government to focus on ___.",
+      "options": [],
+      "correct_answer": "balancing the budget",
+      "explanation": "balance the budget",
+      "hint": "Cân đối ngân sách (chi tiêu bằng hoặc ít hơn thu nhập)",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_budget_5_0",
+      "type": "short_answer",
+      "sentence": "The country is struggling with a significant ___.",
+      "options": [],
+      "correct_answer": "budget deficit",
+      "explanation": "budget deficit",
+      "hint": "Thâm hụt ngân sách",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_budget_6_0",
+      "type": "short_answer",
+      "sentence": "A large ___ was announced at the end of the fiscal year.",
+      "options": [],
+      "correct_answer": "budget surplus",
+      "explanation": "budget surplus",
+      "hint": "Thặng dư ngân sách",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_budget_7_0",
+      "type": "short_answer",
+      "sentence": "The department has suffered severe ___ this year.",
+      "options": [],
+      "correct_answer": "budget cuts",
+      "explanation": "budget cuts",
+      "hint": "Cắt giảm ngân sách",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_buy up_0_0",
+      "type": "short_answer",
+      "sentence": "Investors are ___ in the city center.",
+      "options": [],
+      "correct_answer": "buying up property",
+      "explanation": "buy up property",
+      "hint": "Mua hết bất động sản",
+      "collocation_type": "verb phrase"
+    },
+    {
+      "id": "sa_buy up_1_0",
+      "type": "short_answer",
+      "sentence": "The company is attempting to ___ to gain control.",
+      "options": [],
+      "correct_answer": "buy up shares",
+      "explanation": "buy up shares",
+      "hint": "Mua hết cổ phiếu",
+      "collocation_type": "verb phrase"
+    },
+    {
+      "id": "sa_go by_0_0",
+      "type": "short_answer",
+      "sentence": "Many years have passed since then and a lot has changed as ___.",
+      "options": [],
+      "correct_answer": "time goes by",
+      "explanation": "time goes by",
+      "hint": "thời gian trôi qua",
+      "collocation_type": "phrase"
+    },
+    {
+      "id": "sa_artwork_0_0",
+      "type": "short_answer",
+      "sentence": "Many museums display ___ to the public.",
+      "options": [],
+      "correct_answer": "original artwork",
+      "explanation": "original artwork",
+      "hint": "tác phẩm nghệ thuật gốc",
+      "collocation_type": "noun"
+    },
+    {
+      "id": "sa_artwork_1_0",
+      "type": "short_answer",
+      "sentence": "The gallery specializes in ___ from emerging artists.",
+      "options": [],
+      "correct_answer": "contemporary artwork",
+      "explanation": "contemporary artwork",
+      "hint": "tác phẩm nghệ thuật đương đại",
+      "collocation_type": "noun"
+    },
+    {
+      "id": "sa_artwork_2_0",
+      "type": "short_answer",
+      "sentence": "The exhibition featured ___ from various ethnic groups.",
+      "options": [],
+      "correct_answer": "traditional artwork",
+      "explanation": "traditional artwork",
+      "hint": "tác phẩm nghệ thuật truyền thống",
+      "collocation_type": "noun"
+    },
+    {
+      "id": "sa_winding road_0_0",
+      "type": "short_answer",
+      "sentence": "We drove down a ___ to reach the secluded cabin.",
+      "options": [],
+      "correct_answer": "narrow winding road",
+      "explanation": "narrow winding road",
+      "hint": "con đường quanh co hẹp",
+      "collocation_type": "adjective + noun phrase"
+    },
+    {
+      "id": "sa_winding road_1_0",
+      "type": "short_answer",
+      "sentence": "The ___ up the mountain was challenging to navigate.",
+      "options": [],
+      "correct_answer": "steep winding road",
+      "explanation": "steep winding road",
+      "hint": "con đường quanh co dốc",
+      "collocation_type": "adjective + noun phrase"
+    },
+    {
+      "id": "sa_depressing_0_0",
+      "type": "short_answer",
+      "sentence": "The aftermath of the war presented a ___.",
+      "options": [],
+      "correct_answer": "depressing sight",
+      "explanation": "depressing sight",
+      "hint": "cảnh tượng ảm đạm, đáng buồn",
+      "collocation_type": "adjective + noun"
+    },
+    {
+      "id": "sa_depressing_1_0",
+      "type": "short_answer",
+      "sentence": "The ___ of failing the exam loomed over him.",
+      "options": [],
+      "correct_answer": "depressing thought",
+      "explanation": "depressing thought",
+      "hint": "suy nghĩ/ý nghĩ u ám, đáng buồn",
+      "collocation_type": "adjective + noun"
+    },
+    {
+      "id": "sa_depressing_2_0",
+      "type": "short_answer",
+      "sentence": "Losing his job was a ___ for him.",
+      "options": [],
+      "correct_answer": "depressing experience",
+      "explanation": "depressing experience",
+      "hint": "trải nghiệm tồi tệ, đáng buồn",
+      "collocation_type": "adjective + noun"
+    },
+    {
+      "id": "sa_depressing_3_0",
+      "type": "short_answer",
+      "sentence": "The latest economic report makes for ___.",
+      "options": [],
+      "correct_answer": "depressing reading",
+      "explanation": "make depressing reading",
+      "hint": "tạo cảm giác chán nản khi đọc",
+      "collocation_type": "verb + adjective + noun"
+    },
+    {
+      "id": "sa_awareness_0_0",
+      "type": "short_answer",
+      "sentence": "The charity works hard to ___ of rare diseases.",
+      "options": [],
+      "correct_answer": "raise awareness",
+      "explanation": "raise awareness",
+      "hint": "Nâng cao nhận thức",
+      "collocation_type": "verb phrase"
+    },
+    {
+      "id": "sa_awareness_1_0",
+      "type": "short_answer",
+      "sentence": "The media played a crucial role in ___ of the crisis.",
+      "options": [],
+      "correct_answer": "increasing awareness",
+      "explanation": "increase awareness",
+      "hint": "Tăng cường nhận thức",
+      "collocation_type": "verb phrase"
+    },
+    {
+      "id": "sa_awareness_2_0",
+      "type": "short_answer",
+      "sentence": "The goal is to improve ___ regarding recycling programs.",
+      "options": [],
+      "correct_answer": "public awareness",
+      "explanation": "public awareness",
+      "hint": "Nhận thức của công chúng",
+      "collocation_type": "noun phrase"
+    },
+    {
+      "id": "sa_awareness_3_0",
+      "type": "short_answer",
+      "sentence": "The company invested heavily in advertising to boost ___.",
+      "options": [],
+      "correct_answer": "brand awareness",
+      "explanation": "brand awareness",
+      "hint": "Sự nhận biết về thương hiệu",
+      "collocation_type": "noun phrase"
+    },
+    {
+      "id": "sa_awareness_4_0",
+      "type": "short_answer",
+      "sentence": "The incident served to ___ of the need for better security measures.",
+      "options": [],
+      "correct_answer": "heighten awareness",
+      "explanation": "heighten awareness",
+      "hint": "Làm tăng cao nhận thức",
+      "collocation_type": "verb phrase"
+    },
+    {
+      "id": "sa_awareness_5_0",
+      "type": "short_answer",
+      "sentence": "Educational programs are vital for fostering ___ among students.",
+      "options": [],
+      "correct_answer": "environmental awareness",
+      "explanation": "environmental awareness",
+      "hint": "Nhận thức về môi trường",
+      "collocation_type": "noun phrase"
+    },
+    {
+      "id": "sa_drop out_0_0",
+      "type": "short_answer",
+      "sentence": "She ___ to pursue her artistic dreams.",
+      "options": [],
+      "correct_answer": "dropped out of college",
+      "explanation": "drop out of college",
+      "hint": "Bỏ học đại học",
+      "collocation_type": "verb phrase"
+    },
+    {
+      "id": "sa_drop out_1_0",
+      "type": "short_answer",
+      "sentence": "Many students ___ due to financial difficulties.",
+      "options": [],
+      "correct_answer": "drop out of university",
+      "explanation": "drop out of university",
+      "hint": "Bỏ học đại học",
+      "collocation_type": "verb phrase"
+    },
+    {
+      "id": "sa_drop out_2_0",
+      "type": "short_answer",
+      "sentence": "He decided to ___ and live a simpler life in the countryside.",
+      "options": [],
+      "correct_answer": "drop out of the rat race",
+      "explanation": "drop out of the rat race",
+      "hint": "Rút khỏi cuộc sống cạnh tranh, bon chen",
+      "collocation_type": "verb phrase"
+    },
+    {
+      "id": "sa_privilege_0_0",
+      "type": "short_answer",
+      "sentence": "Only senior staff members are given ___.",
+      "options": [],
+      "correct_answer": "special privileges",
+      "explanation": "special privilege",
+      "hint": "đặc quyền đặc biệt",
+      "collocation_type": "noun phrase"
+    },
+    {
+      "id": "sa_privilege_1_0",
+      "type": "short_answer",
+      "sentence": "The committee investigated the alleged ___.",
+      "options": [],
+      "correct_answer": "breach of privilege",
+      "explanation": "breach of privilege",
+      "hint": "vi phạm đặc quyền / quyền miễn trừ",
+      "collocation_type": "noun phrase"
+    },
+    {
+      "id": "sa_privilege_2_0",
+      "type": "short_answer",
+      "sentence": "He came from a background of ___.",
+      "options": [],
+      "correct_answer": "wealth and privilege",
+      "explanation": "wealth and privilege",
+      "hint": "sự giàu có và đặc quyền",
+      "collocation_type": "noun phrase"
+    },
+    {
+      "id": "sa_dominate_0_0",
+      "type": "short_answer",
+      "sentence": "Few companies can compete with their efforts to ___.",
+      "options": [],
+      "correct_answer": "dominate the market",
+      "explanation": "dominate the market",
+      "hint": "chi phối thị trường",
+      "collocation_type": "verb"
+    },
+    {
+      "id": "sa_dominate_1_0",
+      "type": "short_answer",
+      "sentence": "It's difficult to get a word in when he tries to ___.",
+      "options": [],
+      "correct_answer": "dominate the conversation",
+      "explanation": "dominate the conversation",
+      "hint": "chi phối cuộc trò chuyện",
+      "collocation_type": "verb"
+    },
+    {
+      "id": "mc_academic_0_1777697926174",
+      "type": "multiple_choice",
+      "sentence": "The government discussed ___ of welfare reform.",
+      "options": [
+        {
+          "id": "a",
+          "text": "any controversial issue"
+        },
+        {
+          "id": "b",
+          "text": "the controversial issue"
+        },
+        {
+          "id": "c",
+          "text": "some controversial issue"
+        },
+        {
+          "id": "d",
+          "text": "a controversial issue"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Phần \"the controversial issue\" được đặt trong ngữ cảnh cụ thể \"of welfare reform\", vì vậy mạo từ \"the\" là phù hợp nhất để chỉ một vấn đề đã được xác định hoặc thảo luận trước đó."
+    },
+    {
+      "id": "mc_academic_1_1777697926174",
+      "type": "multiple_choice",
+      "sentence": "Our only concern is the children’s ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "well"
+        },
+        {
+          "id": "b",
+          "text": "welfare"
+        },
+        {
+          "id": "c",
+          "text": "good"
+        },
+        {
+          "id": "d",
+          "text": "health"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Trong ngữ cảnh này, \"welfare\" có nghĩa là hạnh phúc, sức khỏe và sự an toàn, thường dùng để chỉ phúc lợi của trẻ em hoặc những người yếu thế."
+    },
+    {
+      "id": "mc_academic_2_1777697926174",
+      "type": "multiple_choice",
+      "sentence": "Annabelle stopped getting ___ when her husband landed a minimum-wage job.",
+      "options": [
+        {
+          "id": "a",
+          "text": "welfare"
+        },
+        {
+          "id": "b",
+          "text": "welfare system"
+        },
+        {
+          "id": "c",
+          "text": "welfare condition"
+        },
+        {
+          "id": "d",
+          "text": "welfare benefits"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm từ \"welfare benefits\" chỉ các khoản trợ cấp hoặc phúc lợi mà người dân nhận được từ chính phủ hoặc các tổ chức. Trong trường hợp này, Annabelle ngừng nhận các khoản trợ cấp này."
+    },
+    {
+      "id": "mc_academic_3_1777697926174",
+      "type": "multiple_choice",
+      "sentence": "Since 1985, she has quit two full-time jobs because her net pay was less than her ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "welfare check"
+        },
+        {
+          "id": "b",
+          "text": "welfare assistance"
+        },
+        {
+          "id": "c",
+          "text": "welfare money"
+        },
+        {
+          "id": "d",
+          "text": "welfare payment"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "\"Welfare check\" là một thuật ngữ cũ hơn để chỉ séc hoặc khoản thanh toán phúc lợi. Câu này ám chỉ rằng số tiền cô ấy nhận được từ việc làm không đủ so với số tiền phúc lợi mà cô ấy có thể nhận được."
+    },
+    {
+      "id": "mc_academic_4_1777697926174",
+      "type": "multiple_choice",
+      "sentence": "Who ___ the steam engine?",
+      "options": [
+        {
+          "id": "a",
+          "text": "created"
+        },
+        {
+          "id": "b",
+          "text": "built"
+        },
+        {
+          "id": "c",
+          "text": "invented"
+        },
+        {
+          "id": "d",
+          "text": "made"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "\"Invent\" có nghĩa là tạo ra hoặc thiết kế một cái gì đó chưa từng tồn tại trước đây, đặc biệt là một phát minh máy móc hoặc quy trình. Động cơ hơi nước là một phát minh."
+    },
+    {
+      "id": "mc_academic_5_1777697926174",
+      "type": "multiple_choice",
+      "sentence": "What excuse did he ___ this time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "create"
+        },
+        {
+          "id": "b",
+          "text": "invent"
+        },
+        {
+          "id": "c",
+          "text": "think up"
+        },
+        {
+          "id": "d",
+          "text": "make"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "\"Invent\" trong ngữ cảnh này có nghĩa là bịa ra hoặc tạo ra một lời giải thích không có thật. Các lựa chọn khác như \"create\" hoặc \"make\" không phù hợp để chỉ việc bịa ra một cái cớ."
+    },
+    {
+      "id": "mc_academic_6_1777697926174",
+      "type": "multiple_choice",
+      "sentence": "The organization operates on ___ $2 million.",
+      "options": [
+        {
+          "id": "a",
+          "text": "budget of"
+        },
+        {
+          "id": "b",
+          "text": "a budget for"
+        },
+        {
+          "id": "c",
+          "text": "a budget with"
+        },
+        {
+          "id": "d",
+          "text": "a budget of"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm từ chính xác để diễn tả ngân sách hoạt động của một tổ chức là \"a budget of N\", chỉ ra tổng số tiền được phân bổ hoặc chi tiêu."
+    },
+    {
+      "id": "mc_academic_7_1777697926174",
+      "type": "multiple_choice",
+      "sentence": "The government announced the annual ___ last week.",
+      "options": [
+        {
+          "id": "a",
+          "text": "budget"
+        },
+        {
+          "id": "b",
+          "text": "account"
+        },
+        {
+          "id": "c",
+          "text": "spending"
+        },
+        {
+          "id": "d",
+          "text": "finance"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "\"Budget\" là một kế hoạch chi tiêu, đặc biệt là của chính phủ hoặc một tổ chức, cho một khoảng thời gian cụ thể. Chính phủ công bố \"annual budget\" (ngân sách hàng năm) của mình."
+    },
+    {
+      "id": "mc_academic_8_1777697926174",
+      "type": "multiple_choice",
+      "sentence": "She is about to ___ a diplomatic career.",
+      "options": [
+        {
+          "id": "a",
+          "text": "embark on"
+        },
+        {
+          "id": "b",
+          "text": "embark in"
+        },
+        {
+          "id": "c",
+          "text": "embark with"
+        },
+        {
+          "id": "d",
+          "text": "embark upon"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm động từ \"embark on\" có nghĩa là bắt đầu một hành trình, một hoạt động mới hoặc một sự nghiệp. Nó thường đi kèm với danh từ chỉ sự nghiệp, dự án hoặc hành trình."
+    },
+    {
+      "id": "mc_academic_9_1777697926174",
+      "type": "multiple_choice",
+      "sentence": "She is an intelligent and ___ young woman.",
+      "options": [
+        {
+          "id": "a",
+          "text": "alive"
+        },
+        {
+          "id": "b",
+          "text": "live"
+        },
+        {
+          "id": "c",
+          "text": "lively"
+        },
+        {
+          "id": "d",
+          "text": "living"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "\"Lively\" có nghĩa là tràn đầy năng lượng, sống động và hoạt bát. Nó bổ nghĩa cho danh từ \"young woman\" theo cách tích cực, cùng với \"intelligent\"."
+    },
+    {
+      "id": "mc_academic_10_1777697926174",
+      "type": "multiple_choice",
+      "sentence": "It was a ___ debate.",
+      "options": [
+        {
+          "id": "a",
+          "text": "quick"
+        },
+        {
+          "id": "b",
+          "text": "living"
+        },
+        {
+          "id": "c",
+          "text": "lively"
+        },
+        {
+          "id": "d",
+          "text": "active"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "\"Lively\" mô tả một cuộc tranh luận sôi nổi, đầy nhiệt huyết và hấp dẫn. Nó phù hợp để diễn tả tính chất của một cuộc tranh luận."
+    },
+    {
+      "id": "mc_academic_11_1777697926174",
+      "type": "multiple_choice",
+      "sentence": "Developers are ___ all the land on the island.",
+      "options": [
+        {
+          "id": "a",
+          "text": "buying"
+        },
+        {
+          "id": "b",
+          "text": "buying up"
+        },
+        {
+          "id": "c",
+          "text": "acquiring"
+        },
+        {
+          "id": "d",
+          "text": "purchasing"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm động từ \"buy up\" có nghĩa là mua toàn bộ hoặc phần lớn một thứ gì đó, thường là để kiểm soát thị trường hoặc ngăn người khác mua. Trong trường hợp này, các nhà phát triển mua hết đất."
+    },
+    {
+      "id": "mc_academic_12_1777697926174",
+      "type": "multiple_choice",
+      "sentence": "Things will get easier as time ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "passes"
+        },
+        {
+          "id": "b",
+          "text": "goes by"
+        },
+        {
+          "id": "c",
+          "text": "moves on"
+        },
+        {
+          "id": "d",
+          "text": "elapses"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "\"Goes by\" là một thành ngữ phổ biến có nghĩa là thời gian trôi qua. Câu này có nghĩa là mọi thứ sẽ trở nên dễ dàng hơn khi thời gian trôi đi."
+    },
+    {
+      "id": "mc_academic_13_1777697926174",
+      "type": "multiple_choice",
+      "sentence": "The museum will ___ on weekends.",
+      "options": [
+        {
+          "id": "a",
+          "text": "open to the public"
+        },
+        {
+          "id": "b",
+          "text": "be open to the public"
+        },
+        {
+          "id": "c",
+          "text": "be public"
+        },
+        {
+          "id": "d",
+          "text": "be open for the public"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm từ \"be open to the public\" có nghĩa là mở cửa đón công chúng. Đây là cách diễn đạt chuẩn để nói về việc một địa điểm (như bảo tàng) có thể tiếp cận với mọi người."
+    },
+    {
+      "id": "mc_academic_14_1777697926174",
+      "type": "multiple_choice",
+      "sentence": "The committee ___ for suggestions on the new policy.",
+      "options": [
+        {
+          "id": "a",
+          "text": "is open for the public"
+        },
+        {
+          "id": "b",
+          "text": "opens to the public"
+        },
+        {
+          "id": "c",
+          "text": "is public"
+        },
+        {
+          "id": "d",
+          "text": "is open to the public"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm từ \"be open to [someone/something]\" có nghĩa là sẵn sàng lắng nghe, tiếp nhận hoặc xem xét. Trong trường hợp này, ủy ban \"sẵn sàng tiếp nhận\" các đề xuất từ công chúng."
+    },
+    {
+      "id": "mc_academic_15_1777697940364",
+      "type": "multiple_choice",
+      "sentence": "Can you let me have the finished ___ for the poster by Friday?",
+      "options": [
+        {
+          "id": "a",
+          "text": "craftsmanship"
+        },
+        {
+          "id": "b",
+          "text": "design"
+        },
+        {
+          "id": "c",
+          "text": "artwork"
+        },
+        {
+          "id": "d",
+          "text": "production"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Artwork là danh từ đếm được, phù hợp với ngữ cảnh yêu cầu bản vẽ hoặc tác phẩm nghệ thuật cuối cùng cho áp phích. Các lựa chọn khác không phù hợp về ngữ nghĩa."
+    },
+    {
+      "id": "mc_academic_16_1777697940364",
+      "type": "multiple_choice",
+      "sentence": "30 original ___ have gone missing from the museum.",
+      "options": [
+        {
+          "id": "a",
+          "text": "artworks"
+        },
+        {
+          "id": "b",
+          "text": "craftsmanship"
+        },
+        {
+          "id": "c",
+          "text": "productions"
+        },
+        {
+          "id": "d",
+          "text": "designs"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Trong ngữ cảnh này, 'artworks' (số nhiều) là từ chính xác để chỉ các tác phẩm nghệ thuật đã bị mất. Các lựa chọn khác không phù hợp."
+    },
+    {
+      "id": "mc_academic_17_1777697940364",
+      "type": "multiple_choice",
+      "sentence": "The ___ led us through the picturesque countryside.",
+      "options": [
+        {
+          "id": "a",
+          "text": "curving path"
+        },
+        {
+          "id": "b",
+          "text": "winding road"
+        },
+        {
+          "id": "c",
+          "text": "meandering lane"
+        },
+        {
+          "id": "d",
+          "text": "crooked street"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm 'winding road' mô tả con đường quanh co, uốn lượn, rất phù hợp với cảnh quan nông thôn đẹp như tranh vẽ. Các từ khác có thể diễn tả sự quanh co nhưng không phù hợp bằng 'winding road'."
+    },
+    {
+      "id": "mc_academic_18_1777697940364",
+      "type": "multiple_choice",
+      "sentence": "It was a ___, with the ruined buildings and rubble everywhere.",
+      "options": [
+        {
+          "id": "a",
+          "text": "exciting"
+        },
+        {
+          "id": "b",
+          "text": "depressing"
+        },
+        {
+          "id": "c",
+          "text": "joyful"
+        },
+        {
+          "id": "d",
+          "text": "uplifting"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cảnh tượng với các tòa nhà đổ nát và đống đổ nát gợi lên cảm giác buồn bã, chán nản. Do đó, 'depressing' là từ miêu tả phù hợp nhất."
+    },
+    {
+      "id": "mc_academic_19_1777697940364",
+      "type": "multiple_choice",
+      "sentence": "She has a strong ___ the importance of environmental protection.",
+      "options": [
+        {
+          "id": "a",
+          "text": "awareness of"
+        },
+        {
+          "id": "b",
+          "text": "knowledge about"
+        },
+        {
+          "id": "c",
+          "text": "feeling towards"
+        },
+        {
+          "id": "d",
+          "text": "understanding for"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Awareness of' là cách diễn đạt chuẩn xác khi nói về sự nhận thức về một vấn đề gì đó. Cụm này thường đi kèm với danh từ hoặc mệnh đề 'that'."
+    },
+    {
+      "id": "mc_academic_20_1777697940364",
+      "type": "multiple_choice",
+      "sentence": "The campaign aims to increase public ___ climate change.",
+      "options": [
+        {
+          "id": "a",
+          "text": "knowledge on"
+        },
+        {
+          "id": "b",
+          "text": "understanding of"
+        },
+        {
+          "id": "c",
+          "text": "concern for"
+        },
+        {
+          "id": "d",
+          "text": "awareness about"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "'Awareness about' là cấu trúc phổ biến khi đề cập đến việc nâng cao nhận thức của công chúng về một chủ đề cụ thể như biến đổi khí hậu."
+    },
+    {
+      "id": "mc_academic_21_1777697940364",
+      "type": "multiple_choice",
+      "sentence": "We share the domestic ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "jobs"
+        },
+        {
+          "id": "b",
+          "text": "tasks"
+        },
+        {
+          "id": "c",
+          "text": "chores"
+        },
+        {
+          "id": "d",
+          "text": "duties"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "'Chores' (số nhiều) là từ chỉ những công việc nhà thường ngày, mang tính lặp đi l���p lại và đôi khi là nhàm chán. Đây là cách nói tự nhiên nhất trong ngữ cảnh này."
+    },
+    {
+      "id": "mc_academic_22_1777697940364",
+      "type": "multiple_choice",
+      "sentence": "I find driving a real ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "burden"
+        },
+        {
+          "id": "b",
+          "text": "pleasure"
+        },
+        {
+          "id": "c",
+          "text": "chore"
+        },
+        {
+          "id": "d",
+          "text": "task"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Trong trường hợp này, 'chore' được dùng để diễn tả một công việc (lái xe) bị coi là nhàm chán, nặng nhọc hoặc không thú vị. Các lựa chọn khác không truyền tải được ý nghĩa này."
+    },
+    {
+      "id": "mc_academic_23_1777697940364",
+      "type": "multiple_choice",
+      "sentence": "The group gets smaller as members move away or ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "drop out"
+        },
+        {
+          "id": "b",
+          "text": "retire"
+        },
+        {
+          "id": "c",
+          "text": "quit"
+        },
+        {
+          "id": "d",
+          "text": "leave"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Drop out' ở đây mang nghĩa rời khỏi một hoạt động hoặc tổ chức, thường là một cách đột ngột hoặc không chính thức. Nó phù hợp với ngữ cảnh nhóm người tham gia."
+    },
+    {
+      "id": "mc_academic_24_1777697940364",
+      "type": "multiple_choice",
+      "sentence": "Bill ___ of college after his first year.",
+      "options": [
+        {
+          "id": "a",
+          "text": "quit"
+        },
+        {
+          "id": "b",
+          "text": "left"
+        },
+        {
+          "id": "c",
+          "text": "retired"
+        },
+        {
+          "id": "d",
+          "text": "dropped out"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cấu trúc 'drop out of' (quá khứ là 'dropped out of') được dùng để chỉ việc bỏ học, nghỉ học khỏi một trường hoặc khóa học. Đây là cách diễn đạt chính xác nhất."
+    },
+    {
+      "id": "mc_academic_25_1777697940364",
+      "type": "multiple_choice",
+      "sentence": "In the 60s, Leary urged kids to ‘Turn on, tune in, and ___.’",
+      "options": [
+        {
+          "id": "a",
+          "text": "quit"
+        },
+        {
+          "id": "b",
+          "text": "retire"
+        },
+        {
+          "id": "c",
+          "text": "leave"
+        },
+        {
+          "id": "d",
+          "text": "drop out"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Trong bối cảnh văn hóa phản kháng của thập niên 60, 'drop out' mang ý nghĩa thoát ly khỏi các chuẩn mực xã hội thông thường, nó phù hợp với lời kêu gọi này."
+    },
+    {
+      "id": "mc_academic_26_1777697940364",
+      "type": "multiple_choice",
+      "sentence": "if an Internet connection ___, it suddenly stops, usually for a short time.",
+      "options": [
+        {
+          "id": "a",
+          "text": "drops out"
+        },
+        {
+          "id": "b",
+          "text": "leaves"
+        },
+        {
+          "id": "c",
+          "text": "stops"
+        },
+        {
+          "id": "d",
+          "text": "quits"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm động từ 'drop out' khi đi với 'connection' có nghĩa là kết nối bị gián đoạn đột ngột. Đây là cách diễn đạt kỹ thuật thông dụng cho sự cố mạng."
+    },
+    {
+      "id": "mc_academic_27_1777697940364",
+      "type": "multiple_choice",
+      "sentence": "He had no ___ and was treated just like every other prisoner.",
+      "options": [
+        {
+          "id": "a",
+          "text": "personal favors"
+        },
+        {
+          "id": "b",
+          "text": "special privileges"
+        },
+        {
+          "id": "c",
+          "text": "extra advantages"
+        },
+        {
+          "id": "d",
+          "text": "unique rights"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "'Special privileges' là cụm từ chỉ những ưu đãi, đặc quyền riêng biệt dành cho một người. Ngữ cảnh cho thấy tù nhân này không có bất kỳ sự đối xử đặc biệt nào."
+    },
+    {
+      "id": "mc_academic_28_1777697940364",
+      "type": "multiple_choice",
+      "sentence": "Today, we ___ of listening to two very unusual men.",
+      "options": [
+        {
+          "id": "a",
+          "text": "have the pleasure"
+        },
+        {
+          "id": "b",
+          "text": "have the honor"
+        },
+        {
+          "id": "c",
+          "text": "have the chance"
+        },
+        {
+          "id": "d",
+          "text": "have the privilege"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm 'have the privilege of + V-ing' diễn tả sự vinh dự, đặc ân khi được làm điều gì đó. Nó phù hợp với việc lắng nghe những người đặc biệt."
+    },
+    {
+      "id": "mc_academic_29_1777697940364",
+      "type": "multiple_choice",
+      "sentence": "He tried to ___ by talking over everyone else.",
+      "options": [
+        {
+          "id": "a",
+          "text": "control the discussion"
+        },
+        {
+          "id": "b",
+          "text": "manage the dialogue"
+        },
+        {
+          "id": "c",
+          "text": "lead the talk"
+        },
+        {
+          "id": "d",
+          "text": "dominate the conversation"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "'Dominate the conversation' mô tả hành động kiểm soát hoặc chiếm lĩnh cuộc trò chuyện, thường bằng cách nói át người khác. Đây là cách diễn đạt chính xác nhất trong tình huống này."
+    }
+  ]
+}

@@ -1,0 +1,1344 @@
+{
+  "questions": [
+    {
+      "id": "sa_arrange_0_0",
+      "type": "short_answer",
+      "sentence": "We need to ___ for the trip.",
+      "options": [],
+      "correct_answer": "make arrangements",
+      "explanation": "make arrangements",
+      "hint": "sắp xếp, chuẩn bị",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_arrange_1_0",
+      "type": "short_answer",
+      "sentence": "They reached ___ about childcare.",
+      "options": [],
+      "correct_answer": "an arrangement",
+      "explanation": "make an arrangement",
+      "hint": "thỏa thuận, sắp xếp",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_arrange_2_0",
+      "type": "short_answer",
+      "sentence": "The company will ___ a new meeting.",
+      "options": [],
+      "correct_answer": "take steps to arrange",
+      "explanation": "take steps to arrange",
+      "hint": "có các bước để sắp xếp",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_work out_0_0",
+      "type": "short_answer",
+      "sentence": "We need to ___ for our holiday.",
+      "options": [],
+      "correct_answer": "make a plan",
+      "explanation": "make a plan",
+      "hint": "lập kế hoạch",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_work out_1_0",
+      "type": "short_answer",
+      "sentence": "Can you ___ how to use this machine?",
+      "options": [],
+      "correct_answer": "figure out",
+      "explanation": "figure out",
+      "hint": "tìm ra, giải quyết",
+      "collocation_type": "phrasal V"
+    },
+    {
+      "id": "sa_work out_2_0",
+      "type": "short_answer",
+      "sentence": "She ___ a brilliant idea.",
+      "options": [],
+      "correct_answer": "came up with",
+      "explanation": "come up with",
+      "hint": "đưa ra, đề xuất (ý tưởng, kế hoạch)",
+      "collocation_type": "phrasal V"
+    },
+    {
+      "id": "sa_alter_0_0",
+      "type": "short_answer",
+      "sentence": "He had to ___ his plans at the last minute.",
+      "options": [],
+      "correct_answer": "make alterations to",
+      "explanation": "make alterations to + sth",
+      "hint": "thực hiện những thay đổi đối với cái gì đó",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_alter_1_0",
+      "type": "short_answer",
+      "sentence": "Some drugs are ___.",
+      "options": [],
+      "correct_answer": "mind-altering",
+      "explanation": "mind-altering",
+      "hint": "thay đổi tâm trí, tác động đến tâm thần",
+      "collocation_type": "Adj"
+    },
+    {
+      "id": "sa_compose_0_0",
+      "type": "short_answer",
+      "sentence": "He learned to ___ at a young age.",
+      "options": [],
+      "correct_answer": "compose music",
+      "explanation": "compose music",
+      "hint": "Sáng tác nhạc",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_compose_1_0",
+      "type": "short_answer",
+      "sentence": "She carefully ___ to her landlord.",
+      "options": [],
+      "correct_answer": "composed a letter",
+      "explanation": "compose a letter",
+      "hint": "Soạn/viết một lá thư",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_compose_2_0",
+      "type": "short_answer",
+      "sentence": "After the shock, he needed a moment to ___.",
+      "options": [],
+      "correct_answer": "compose himself",
+      "explanation": "compose oneself",
+      "hint": "Lấy lại bình tĩnh",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_gather_0_0",
+      "type": "short_answer",
+      "sentence": "The whole family ___ at Ray's home.",
+      "options": [],
+      "correct_answer": "came together",
+      "explanation": "come/bring together",
+      "hint": "Tụ họp, đoàn tụ, đưa lại gần nhau",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_gather_0_1",
+      "type": "short_answer",
+      "sentence": "Let's ___ all the scattered pieces of the puzzle.",
+      "options": [],
+      "correct_answer": "bring together",
+      "explanation": "come/bring together",
+      "hint": "Tụ họp, đoàn tụ, đưa lại gần nhau",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_modernize_0_0",
+      "type": "short_answer",
+      "sentence": "The government plans to ___.",
+      "options": [],
+      "correct_answer": "modernize the railway network",
+      "explanation": "modernize + sth",
+      "hint": "hiện đại hóa cái gì đó",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_modernize_1_0",
+      "type": "short_answer",
+      "sentence": "The company announced plans to ___ over the next five years.",
+      "options": [],
+      "correct_answer": "modernize its factories",
+      "explanation": "modernize factories",
+      "hint": "hiện đại hóa nhà máy",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_modernize_2_0",
+      "type": "short_answer",
+      "sentence": "It is crucial to ___ to keep up with technological advancements.",
+      "options": [],
+      "correct_answer": "modernize the existing systems",
+      "explanation": "modernize systems",
+      "hint": "hiện đại hóa hệ thống",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_expand_0_0",
+      "type": "short_answer",
+      "sentence": "Student numbers are ___.",
+      "options": [],
+      "correct_answer": "expanding rapidly",
+      "explanation": "expand rapidly",
+      "hint": "Mở rộng nhanh chóng",
+      "collocation_type": "Adv"
+    },
+    {
+      "id": "sa_expand_1_0",
+      "type": "short_answer",
+      "sentence": "a ___ version of his earlier book",
+      "options": [],
+      "correct_answer": "greatly expanded",
+      "explanation": "greatly expanded",
+      "hint": "Mở rộng đáng kể",
+      "collocation_type": "Adv"
+    },
+    {
+      "id": "sa_expand_2_0",
+      "type": "short_answer",
+      "sentence": "They are continuing to ___ of goods and services they offer.",
+      "options": [],
+      "correct_answer": "expand the range",
+      "explanation": "expand the range",
+      "hint": "Mở rộng phạm vi",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_expand_3_0",
+      "type": "short_answer",
+      "sentence": "There are no plans to ___ the local airport.",
+      "options": [],
+      "correct_answer": "expand",
+      "explanation": "expand a programme/service",
+      "hint": "Mở rộng chương trình/dịch vụ",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_expand_4_0",
+      "type": "short_answer",
+      "sentence": "an ___ (= with more businesses starting and growing)",
+      "options": [],
+      "correct_answer": "expanding economy",
+      "explanation": "expanding economy",
+      "hint": "Nền kinh tế đang phát triển",
+      "collocation_type": "Adj"
+    },
+    {
+      "id": "sa_embark_0_0",
+      "type": "short_answer",
+      "sentence": "He decided to ___ a journey around the world.",
+      "options": [],
+      "correct_answer": "embark on",
+      "explanation": "embark on",
+      "hint": "bắt đầu, dấn thân vào",
+      "collocation_type": "phrasal V"
+    },
+    {
+      "id": "sa_embark_1_0",
+      "type": "short_answer",
+      "sentence": "They are about to ___ a new phase of their research.",
+      "options": [],
+      "correct_answer": "embark upon",
+      "explanation": "embark upon",
+      "hint": "bắt đầu, thực hiện (thường là một nhiệm vụ hoặc dự án lớn)",
+      "collocation_type": "phrasal V"
+    },
+    {
+      "id": "sa_embark_2_0",
+      "type": "short_answer",
+      "sentence": "The captain will now ___ the passengers.",
+      "options": [],
+      "correct_answer": "embark",
+      "explanation": "embark + sb/+ sth",
+      "hint": "cho ai/cái gì lên tàu/máy bay",
+      "collocation_type": "V"
+    },
+    {
+      "id": "sa_locate_0_0",
+      "type": "short_answer",
+      "sentence": "Scientists are working to ___ of the pollution.",
+      "options": [],
+      "correct_answer": "locate the source",
+      "explanation": "locate the source",
+      "hint": "xác định nguồn gốc",
+      "collocation_type": "V + N"
+    },
+    {
+      "id": "sa_locate_1_0",
+      "type": "short_answer",
+      "sentence": "The technician was able to ___ quickly.",
+      "options": [],
+      "correct_answer": "locate the fault",
+      "explanation": "locate the fault",
+      "hint": "xác định lỗi",
+      "collocation_type": "V + N"
+    },
+    {
+      "id": "sa_set out_0_0",
+      "type": "short_answer",
+      "sentence": "The explorers ___ a perilous journey into the unknown.",
+      "options": [],
+      "correct_answer": "set out on",
+      "explanation": "set out on a journey",
+      "hint": "Bắt đầu một chuyến đi",
+      "collocation_type": "phrasal V"
+    },
+    {
+      "id": "sa_set out_1_0",
+      "type": "short_answer",
+      "sentence": "He ___ prove his critics wrong.",
+      "options": [],
+      "correct_answer": "set out to",
+      "explanation": "set out to do + sth",
+      "hint": "Có ý định làm gì",
+      "collocation_type": "phrasal V"
+    },
+    {
+      "id": "sa_set out_2_0",
+      "type": "short_answer",
+      "sentence": "Please ___ the chairs in a circle.",
+      "options": [],
+      "correct_answer": "set out",
+      "explanation": "set + sth out",
+      "hint": "Sắp xếp, trình bày cái gì đó",
+      "collocation_type": "phrasal V"
+    },
+    {
+      "id": "mc_academic_0_1777697831262",
+      "type": "multiple_choice",
+      "sentence": "The committee has ___ to discuss the new policy.",
+      "options": [
+        {
+          "id": "a",
+          "text": "arranged for a meeting"
+        },
+        {
+          "id": "b",
+          "text": "arranged a meeting"
+        },
+        {
+          "id": "c",
+          "text": "arranged with a meeting"
+        },
+        {
+          "id": "d",
+          "text": "arranged to a meeting"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "C��m 'arrange a meeting' dùng để chỉ việc sắp xếp một cuộc họp. Các lựa chọn khác không phù hợp về ngữ pháp hoặc nghĩa trong ngữ cảnh này."
+    },
+    {
+      "id": "mc_academic_1_1777697831262",
+      "type": "multiple_choice",
+      "sentence": "The books on the shelves are ___ by author.",
+      "options": [
+        {
+          "id": "a",
+          "text": "arrange alphabetically"
+        },
+        {
+          "id": "b",
+          "text": "arranged alphabetically"
+        },
+        {
+          "id": "c",
+          "text": "arranging alphabetically"
+        },
+        {
+          "id": "d",
+          "text": "arranged alphabet"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cấu trúc bị động 'be arranged' + trạng từ chỉ cách thức (alphabetically) là đúng ngữ pháp. 'Arranging' là dạng chủ động, 'arrange' thiếu trợ động từ, và 'arranged alphabet' không hợp lý."
+    },
+    {
+      "id": "mc_academic_2_1777697831262",
+      "type": "multiple_choice",
+      "sentence": "Government officials are trying to ___ a way to reduce air pollution.",
+      "options": [
+        {
+          "id": "a",
+          "text": "work"
+        },
+        {
+          "id": "b",
+          "text": "work on"
+        },
+        {
+          "id": "c",
+          "text": "work in"
+        },
+        {
+          "id": "d",
+          "text": "work out"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm động từ 'work out' ở đây có nghĩa là tìm ra, giải quyết. Các lựa chọn khác không mang ý nghĩa tương tự hoặc không phù hợp trong ngữ cảnh này."
+    },
+    {
+      "id": "mc_academic_3_1777697831262",
+      "type": "multiple_choice",
+      "sentence": "The total cost of the project ___ at approximately $2 million.",
+      "options": [
+        {
+          "id": "a",
+          "text": "works"
+        },
+        {
+          "id": "b",
+          "text": "worked out"
+        },
+        {
+          "id": "c",
+          "text": "works out"
+        },
+        {
+          "id": "d",
+          "text": "work out"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm 'work out at [amount]' được dùng để chỉ một số tiền hoặc chi phí ước tính. 'Works' và 'work out' thiếu giới từ 'at', còn 'worked out' sai thì."
+    },
+    {
+      "id": "mc_academic_4_1777697831262",
+      "type": "multiple_choice",
+      "sentence": "Things don't always ___ the way we plan, but we can learn from our failures.",
+      "options": [
+        {
+          "id": "a",
+          "text": "work"
+        },
+        {
+          "id": "b",
+          "text": "work on"
+        },
+        {
+          "id": "c",
+          "text": "work out"
+        },
+        {
+          "id": "d",
+          "text": "work in"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm động từ 'work out' ở đây có nghĩa là diễn ra hoặc xảy ra theo một cách nào đó. 'Work' đứng một mình không đủ nghĩa, các lựa chọn khác không phù hợp."
+    },
+    {
+      "id": "mc_academic_5_1777697831262",
+      "type": "multiple_choice",
+      "sentence": "Many people prefer ___ at the gym rather than exercising at home.",
+      "options": [
+        {
+          "id": "a",
+          "text": "working"
+        },
+        {
+          "id": "b",
+          "text": "work out"
+        },
+        {
+          "id": "c",
+          "text": "worked out"
+        },
+        {
+          "id": "d",
+          "text": "working out"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Sau động từ 'prefer', chúng ta dùng V-ing. Cụm 'working out' ở đây có nghĩa là tập thể dục. 'Work out' là dạng nguyên thể, 'working' thiếu 'out', 'worked out' sai."
+    },
+    {
+      "id": "mc_academic_6_1777697831262",
+      "type": "multiple_choice",
+      "sentence": "Prices have not ___ significantly this year.",
+      "options": [
+        {
+          "id": "a",
+          "text": "alter"
+        },
+        {
+          "id": "b",
+          "text": "altering"
+        },
+        {
+          "id": "c",
+          "text": "altered for"
+        },
+        {
+          "id": "d",
+          "text": "altered"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Câu dùng thì hiện tại hoàn thành (have not ___), n��n động từ ở dạng quá khứ phân từ là 'altered'. 'Alter' là nguyên thể, 'altering' là V-ing, 'altered for' không phù hợp."
+    },
+    {
+      "id": "mc_academic_7_1777697831262",
+      "type": "multiple_choice",
+      "sentence": "We can have the dress ___ to fit you.",
+      "options": [
+        {
+          "id": "a",
+          "text": "altered"
+        },
+        {
+          "id": "b",
+          "text": "altering"
+        },
+        {
+          "id": "c",
+          "text": "alteration"
+        },
+        {
+          "id": "d",
+          "text": "alter"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cấu trúc 'have sth done' yêu cầu động từ ở dạng quá khứ phân từ (V3/ed). 'Altered' là quá khứ phân từ của 'alter'. Các lựa chọn khác không đúng cấu trúc."
+    },
+    {
+      "id": "mc_academic_8_1777697831262",
+      "type": "multiple_choice",
+      "sentence": "Mozart ___ his last opera shortly before he died.",
+      "options": [
+        {
+          "id": "a",
+          "text": "composing"
+        },
+        {
+          "id": "b",
+          "text": "compose"
+        },
+        {
+          "id": "c",
+          "text": "composed"
+        },
+        {
+          "id": "d",
+          "text": "composition"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Hành động xảy ra trong quá khứ và đã hoàn thành, nên dùng thì quá khứ đơn với động từ 'composed'. 'Compose' là nguyên thể, 'composing' là V-ing, 'composition' là danh từ."
+    },
+    {
+      "id": "mc_academic_9_1777697831262",
+      "type": "multiple_choice",
+      "sentence": "She ___ a letter of protest.",
+      "options": [
+        {
+          "id": "a",
+          "text": "compose"
+        },
+        {
+          "id": "b",
+          "text": "composedly"
+        },
+        {
+          "id": "c",
+          "text": "composed"
+        },
+        {
+          "id": "d",
+          "text": "composing"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Tương tự trường hợp 9, hành động đã xảy ra trong quá khứ, cần dùng thì quá khứ đơn. Động từ 'compose' ở đây có nghĩa là soạn thảo. 'Composedly' là trạng từ."
+    },
+    {
+      "id": "mc_academic_10_1777697831262",
+      "type": "multiple_choice",
+      "sentence": "Ten people ___ the committee.",
+      "options": [
+        {
+          "id": "a",
+          "text": "composes"
+        },
+        {
+          "id": "b",
+          "text": "composed"
+        },
+        {
+          "id": "c",
+          "text": "compose"
+        },
+        {
+          "id": "d",
+          "text": "are composed of"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Trong ngữ cảnh này, 'compose' có nghĩa là tạo thành, cấu thành một tổng thể. Chủ ngữ số nhiều 'Ten people' đi với động từ nguyên thể 'compose' (hoặc 'composes' nếu chủ ngữ số ít)."
+    },
+    {
+      "id": "mc_academic_11_1777697831262",
+      "type": "multiple_choice",
+      "sentence": "Emma frowned, making an effort to ___ herself.",
+      "options": [
+        {
+          "id": "a",
+          "text": "composed"
+        },
+        {
+          "id": "b",
+          "text": "compose"
+        },
+        {
+          "id": "c",
+          "text": "composing"
+        },
+        {
+          "id": "d",
+          "text": "composition"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Cụm động từ 'compose oneself' có nghĩa là giữ bình tĩnh, lấy lại bình tĩnh. Sau 'to' là động từ nguyên thể 'compose'. Các lựa chọn khác không phù hợp."
+    },
+    {
+      "id": "mc_academic_12_1777697831262",
+      "type": "multiple_choice",
+      "sentence": "Our company mainly ___ for export.",
+      "options": [
+        {
+          "id": "a",
+          "text": "producing goods"
+        },
+        {
+          "id": "b",
+          "text": "production goods"
+        },
+        {
+          "id": "c",
+          "text": "produces goods"
+        },
+        {
+          "id": "d",
+          "text": "produce goods"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Chủ ngữ 'Our company' là số ít, vì vậy động từ chia ở ngôi thứ ba số ít là 'produces'. 'Produce' là nguyên thể, 'producing' là V-ing, 'production' là danh từ."
+    },
+    {
+      "id": "mc_academic_13_1777697831262",
+      "type": "multiple_choice",
+      "sentence": "A phone call to the manager ___ the result she wanted.",
+      "options": [
+        {
+          "id": "a",
+          "text": "produce"
+        },
+        {
+          "id": "b",
+          "text": "produced"
+        },
+        {
+          "id": "c",
+          "text": "product"
+        },
+        {
+          "id": "d",
+          "text": "producing"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Câu mô tả một sự việc đã xảy ra trong quá khứ, do đó động từ 'produce' cần chia ở thì quá khứ đơn là 'produced'. 'Product' là danh từ."
+    },
+    {
+      "id": "mc_academic_14_1777697831262",
+      "type": "multiple_choice",
+      "sentence": "The region ___ over 50 per cent of the country's wheat.",
+      "options": [
+        {
+          "id": "a",
+          "text": "produces"
+        },
+        {
+          "id": "b",
+          "text": "produce"
+        },
+        {
+          "id": "c",
+          "text": "produced"
+        },
+        {
+          "id": "d",
+          "text": "producing"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Chủ ngữ 'The region' là số ít, và hành động diễn ra ở hiện tại (sự thật hiển nhiên hoặc thói quen), nên động từ chia ở ngôi thứ ba số ít thì hiện tại đơn là 'produces'. 'Produce' là nguyên thể, 'produced' là quá khứ, 'producing' là V-ing."
+    },
+    {
+      "id": "mc_academic_15_1777697842457",
+      "type": "multiple_choice",
+      "sentence": "Visiting artists will ___ their music and poetry at the local theater.",
+      "options": [
+        {
+          "id": "a",
+          "text": "modernize"
+        },
+        {
+          "id": "b",
+          "text": "develop"
+        },
+        {
+          "id": "c",
+          "text": "gather"
+        },
+        {
+          "id": "d",
+          "text": "perform"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Trong ngữ cảnh này, 'perform' có nghĩa là biểu diễn âm nhạc hoặc thơ ca. Các động từ khác không phù hợp với hành động biểu diễn nghệ thuật."
+    },
+    {
+      "id": "mc_academic_16_1777697842457",
+      "type": "multiple_choice",
+      "sentence": "A computer can ___ millions of complex tasks at once.",
+      "options": [
+        {
+          "id": "a",
+          "text": "build up"
+        },
+        {
+          "id": "b",
+          "text": "gather"
+        },
+        {
+          "id": "c",
+          "text": "perform"
+        },
+        {
+          "id": "d",
+          "text": "situate"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "'Perform' ở đây có nghĩa là thực hiện hoặc hoàn thành một nhiệm vụ. Máy tính thực hiện các tác vụ phức tạp."
+    },
+    {
+      "id": "mc_academic_17_1777697842457",
+      "type": "multiple_choice",
+      "sentence": "The company has been ___ over the past fiscal year due to the recession.",
+      "options": [
+        {
+          "id": "a",
+          "text": "gathering together"
+        },
+        {
+          "id": "b",
+          "text": "situating historically"
+        },
+        {
+          "id": "c",
+          "text": "performing poorly"
+        },
+        {
+          "id": "d",
+          "text": "developing rapidly"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "'Performing poorly' mô tả kết quả kinh doanh không tốt. Cụm từ này diễn tả tình trạng hoạt động kém hiệu quả của công ty."
+    },
+    {
+      "id": "mc_academic_18_1777697842457",
+      "type": "multiple_choice",
+      "sentence": "The new library will be ___ in the city center.",
+      "options": [
+        {
+          "id": "a",
+          "text": "modernized"
+        },
+        {
+          "id": "b",
+          "text": "gathered"
+        },
+        {
+          "id": "c",
+          "text": "expanded"
+        },
+        {
+          "id": "d",
+          "text": "situated"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "'Situatied' có nghĩa là được đặt tại hoặc có vị trí ở đâu đó. Câu này nói về vị trí của thư viện mới."
+    },
+    {
+      "id": "mc_academic_19_1777697842457",
+      "type": "multiple_choice",
+      "sentence": "It's important to ___ these economic changes within their historical context.",
+      "options": [
+        {
+          "id": "a",
+          "text": "develop"
+        },
+        {
+          "id": "b",
+          "text": "build up"
+        },
+        {
+          "id": "c",
+          "text": "gather"
+        },
+        {
+          "id": "d",
+          "text": "situate"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "'Situate' ở đây có nghĩa là đặt một cái gì đó vào một bối cảnh cụ thể, trong trường hợp này là bối cảnh lịch sử. Nó giúp hiểu rõ hơn về các thay đổi kinh tế."
+    },
+    {
+      "id": "mc_academic_20_1777697842457",
+      "type": "multiple_choice",
+      "sentence": "A crowd soon ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "expanded"
+        },
+        {
+          "id": "b",
+          "text": "gathered"
+        },
+        {
+          "id": "c",
+          "text": "modernized"
+        },
+        {
+          "id": "d",
+          "text": "performed"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "'Gathered' có nghĩa là tụ tập lại. Câu này mô tả việc đám đông tập trung lại."
+    },
+    {
+      "id": "mc_academic_21_1777697842457",
+      "type": "multiple_choice",
+      "sentence": "People slowly ___ their belongings and left the hall.",
+      "options": [
+        {
+          "id": "a",
+          "text": "gathered"
+        },
+        {
+          "id": "b",
+          "text": "performed"
+        },
+        {
+          "id": "c",
+          "text": "expanded"
+        },
+        {
+          "id": "d",
+          "text": "developed"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Gathered' ở đây có nghĩa là thu thập hoặc tập hợp lại đồ đạc. Câu này diễn tả hành động mọi người thu gom đồ đạc cá nhân."
+    },
+    {
+      "id": "mc_academic_22_1777697842457",
+      "type": "multiple_choice",
+      "sentence": "She has ___ a very successful business over the last ten years.",
+      "options": [
+        {
+          "id": "a",
+          "text": "situated"
+        },
+        {
+          "id": "b",
+          "text": "developed"
+        },
+        {
+          "id": "c",
+          "text": "gathered"
+        },
+        {
+          "id": "d",
+          "text": "built up"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "'Built up' có nghĩa là xây dựng hoặc phát triển dần dần, thường là về quy mô hoặc thành công. Câu này nói về việc xây dựng một doanh nghiệp thành công."
+    },
+    {
+      "id": "mc_academic_23_1777697842457",
+      "type": "multiple_choice",
+      "sentence": "All the pressure ___ and he had to take a month off for stress.",
+      "options": [
+        {
+          "id": "a",
+          "text": "performed"
+        },
+        {
+          "id": "b",
+          "text": "built up"
+        },
+        {
+          "id": "c",
+          "text": "expanded"
+        },
+        {
+          "id": "d",
+          "text": "developed"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "'Built up' diễn tả sự tích tụ dần dần, trong trường hợp này là áp lực. Câu này nói về việc áp lực tăng lên đến mức anh ấy phải nghỉ làm."
+    },
+    {
+      "id": "mc_academic_24_1777697842457",
+      "type": "multiple_choice",
+      "sentence": "You need to eat more protein to ___ after the illness.",
+      "options": [
+        {
+          "id": "a",
+          "text": "gather yourself"
+        },
+        {
+          "id": "b",
+          "text": "build yourself up"
+        },
+        {
+          "id": "c",
+          "text": "modernize yourself"
+        },
+        {
+          "id": "d",
+          "text": "develop yourself"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "'Build yourself up' có nghĩa là phục hồi sức khỏe và thể chất. Câu này khuyên nên ăn nhiều protein để lấy lại sức sau khi ốm."
+    },
+    {
+      "id": "mc_academic_25_1777697842457",
+      "type": "multiple_choice",
+      "sentence": "The company is investing $9 million to ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "expand its factories"
+        },
+        {
+          "id": "b",
+          "text": "modernize its factories"
+        },
+        {
+          "id": "c",
+          "text": "build up its factories"
+        },
+        {
+          "id": "d",
+          "text": "situate its factories"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "'Modernize' có nghĩa là cập nhật hoặc làm cho hiện đại hơn. Công ty đầu tư để nâng cấp và làm cho các nhà máy của mình hiện đại hơn."
+    },
+    {
+      "id": "mc_academic_26_1777697842457",
+      "type": "multiple_choice",
+      "sentence": "Unfortunately, we lack the resources to ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "modernize"
+        },
+        {
+          "id": "b",
+          "text": "gather"
+        },
+        {
+          "id": "c",
+          "text": "build up"
+        },
+        {
+          "id": "d",
+          "text": "perform"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "'Modernize' ở đây có nghĩa là làm cho cái gì đó trở nên hiện đại hoặc cập nhật. Câu này nói rằng không có đủ nguồn lực để thực hiện việc này."
+    },
+    {
+      "id": "mc_academic_27_1777697842457",
+      "type": "multiple_choice",
+      "sentence": "From birth to age 5, a child's brain ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "gathers rapidly"
+        },
+        {
+          "id": "b",
+          "text": "develops rapidly"
+        },
+        {
+          "id": "c",
+          "text": "situates rapidly"
+        },
+        {
+          "id": "d",
+          "text": "expands rapidly"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "'Develops rapidly' có nghĩa là phát triển nhanh chóng. Não bộ của trẻ em phát triển rất nhanh trong những năm đầu đời."
+    },
+    {
+      "id": "mc_academic_28_1777697842457",
+      "type": "multiple_choice",
+      "sentence": "He's ___ for management.",
+      "options": [
+        {
+          "id": "a",
+          "text": "built up a flair"
+        },
+        {
+          "id": "b",
+          "text": "performed a flair"
+        },
+        {
+          "id": "c",
+          "text": "gathered a flair"
+        },
+        {
+          "id": "d",
+          "text": "developed a real flair"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "'Developed a real flair' có nghĩa là đã phát triển một năng khiếu hoặc tài năng thực sự. Câu này nói về việc anh ấy đã bộc lộ khả năng quản lý tốt."
+    },
+    {
+      "id": "mc_academic_29_1777697842457",
+      "type": "multiple_choice",
+      "sentence": "Metals ___ when they are heated.",
+      "options": [
+        {
+          "id": "a",
+          "text": "modernize"
+        },
+        {
+          "id": "b",
+          "text": "expand"
+        },
+        {
+          "id": "c",
+          "text": "develop"
+        },
+        {
+          "id": "d",
+          "text": "gather"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "'Expand' có nghĩa là nở ra hoặc tăng kích thước. Kim loại nở ra khi bị nung nóng."
+    },
+    {
+      "id": "mc_academic_30_1777697857206",
+      "type": "multiple_choice",
+      "sentence": "The company is planning to ___ its American operations.",
+      "options": [
+        {
+          "id": "a",
+          "text": "expand"
+        },
+        {
+          "id": "b",
+          "text": "shrink"
+        },
+        {
+          "id": "c",
+          "text": "reduce"
+        },
+        {
+          "id": "d",
+          "text": "contract"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Expand có nghĩa là mở rộng, phù hợp với ngữ cảnh công ty đang lên kế hoạch mở rộng hoạt động. Các từ còn lại đều mang nghĩa trái ngược."
+    },
+    {
+      "id": "mc_academic_31_1777697857206",
+      "type": "multiple_choice",
+      "sentence": "We stood on the pier and watched as they ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "arrived"
+        },
+        {
+          "id": "b",
+          "text": "embarked"
+        },
+        {
+          "id": "c",
+          "text": "departed"
+        },
+        {
+          "id": "d",
+          "text": "landed"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Embark có nghĩa là lên (tàu, máy bay), phù hợp với ngữ cảnh khi mọi người đang ở bến tàu và xem người khác lên tàu. Các từ còn lại không phù hợp với tình huống này."
+    },
+    {
+      "id": "mc_academic_32_1777697857206",
+      "type": "multiple_choice",
+      "sentence": "She decided to ___ a new career in medicine.",
+      "options": [
+        {
+          "id": "a",
+          "text": "embark on"
+        },
+        {
+          "id": "b",
+          "text": "set down"
+        },
+        {
+          "id": "c",
+          "text": "give up"
+        },
+        {
+          "id": "d",
+          "text": "hold on"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Embark on có nghĩa là bắt đầu một hành trình hoặc công việc mới, phù hợp với ngữ cảnh cô ấy bắt đầu một sự nghiệp mới. Các phương án khác không diễn tả đúng ý nghĩa này."
+    },
+    {
+      "id": "mc_academic_33_1777697857206",
+      "type": "multiple_choice",
+      "sentence": "The mechanic ___ the fault immediately.",
+      "options": [
+        {
+          "id": "a",
+          "text": "hid"
+        },
+        {
+          "id": "b",
+          "text": "ignored"
+        },
+        {
+          "id": "c",
+          "text": "missed"
+        },
+        {
+          "id": "d",
+          "text": "located"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Locate có nghĩa là tìm ra vị trí, xác định được. Trong ngữ cảnh này, thợ máy đã tìm ra ngay lỗi hỏng. Các từ khác mang nghĩa trái ngược hoặc không phù hợp."
+    },
+    {
+      "id": "mc_academic_34_1777697857206",
+      "type": "multiple_choice",
+      "sentence": "They ___ their headquarters in Swindon.",
+      "options": [
+        {
+          "id": "a",
+          "text": "located"
+        },
+        {
+          "id": "b",
+          "text": "placed"
+        },
+        {
+          "id": "c",
+          "text": "established"
+        },
+        {
+          "id": "d",
+          "text": "moved"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Locate có nghĩa là đặt trụ sở, đặt địa điểm. Ngữ cảnh này nói về việc đặt trụ sở chính tại một địa điểm cụ thể. Các từ khác có thể gần nghĩa nhưng 'located' là phù hợp nhất để chỉ việc xác định và đặt vị trí."
+    },
+    {
+      "id": "mc_academic_35_1777697857206",
+      "type": "multiple_choice",
+      "sentence": "There are tax breaks for businesses that ___ in rural areas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "avoid"
+        },
+        {
+          "id": "b",
+          "text": "locate"
+        },
+        {
+          "id": "c",
+          "text": "leave"
+        },
+        {
+          "id": "d",
+          "text": "reject"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Locate in có nghĩa là đặt trụ sở, đặt địa điểm kinh doanh tại một nơi nào đó. Ngữ cảnh này nói về các ưu đãi thuế cho doanh nghiệp đặt tại khu vực nông thôn. Các từ khác mang nghĩa phủ định hoặc không phù hợp."
+    },
+    {
+      "id": "mc_academic_36_1777697857206",
+      "type": "multiple_choice",
+      "sentence": "They plan to ___ the road next year.",
+      "options": [
+        {
+          "id": "a",
+          "text": "widen"
+        },
+        {
+          "id": "b",
+          "text": "block"
+        },
+        {
+          "id": "c",
+          "text": "shorten"
+        },
+        {
+          "id": "d",
+          "text": "narrow"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Widen có nghĩa là làm cho rộng ra. Câu này nói về kế hoạch làm cho con đường rộng hơn. Các từ khác mang nghĩa trái ngược hoặc không phù hợp."
+    },
+    {
+      "id": "mc_academic_37_1777697857206",
+      "type": "multiple_choice",
+      "sentence": "The gap between rich and poor is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "closing"
+        },
+        {
+          "id": "b",
+          "text": "widening"
+        },
+        {
+          "id": "c",
+          "text": "narrowing"
+        },
+        {
+          "id": "d",
+          "text": "shrinking"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Widening có nghĩa là ngày càng rộng ra. Câu này mô tả khoảng cách giàu nghèo đang gia tăng. Các từ khác mang nghĩa trái ngược."
+    },
+    {
+      "id": "mc_academic_38_1777697857206",
+      "type": "multiple_choice",
+      "sentence": "They ___ early in the morning.",
+      "options": [
+        {
+          "id": "a",
+          "text": "came back"
+        },
+        {
+          "id": "b",
+          "text": "gave up"
+        },
+        {
+          "id": "c",
+          "text": "sat down"
+        },
+        {
+          "id": "d",
+          "text": "set out"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Set out có nghĩa là bắt đầu một chuyến đi. Câu này diễn tả việc họ khởi hành vào sáng sớm. Các lựa chọn khác không phù hợp với ngữ cảnh di chuyển."
+    },
+    {
+      "id": "mc_academic_39_1777697857206",
+      "type": "multiple_choice",
+      "sentence": "She ___ to become a doctor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "tried"
+        },
+        {
+          "id": "b",
+          "text": "aimed"
+        },
+        {
+          "id": "c",
+          "text": "dreamed"
+        },
+        {
+          "id": "d",
+          "text": "set out"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Set out to do sth có nghĩa là quyết tâm làm gì đó, bắt đầu với mục đích rõ ràng. Câu này diễn tả quyết tâm trở thành bác sĩ của cô ấy. Mặc dù 'tried' và 'aimed' có thể gần nghĩa, 'set out to' nhấn mạnh sự khởi đầu với mục tiêu cụ thể."
+    },
+    {
+      "id": "mc_academic_40_1777697857206",
+      "type": "multiple_choice",
+      "sentence": "The report ___ the main findings.",
+      "options": [
+        {
+          "id": "a",
+          "text": "obscures"
+        },
+        {
+          "id": "b",
+          "text": "sets out"
+        },
+        {
+          "id": "c",
+          "text": "summarizes"
+        },
+        {
+          "id": "d",
+          "text": "hides"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Set out có nghĩa là trình bày, giải thích rõ ràng. Câu này nói về việc báo cáo trình bày những phát hiện chính. 'Summarizes' cũng có thể đúng về nghĩa, nhưng 'sets out' nhấn mạnh sự trình bày chi tiết và rõ ràng các điểm chính."
+    },
+    {
+      "id": "mc_academic_41_1777697857206",
+      "type": "multiple_choice",
+      "sentence": "Julie ___ Rob for the quiz.",
+      "options": [
+        {
+          "id": "a",
+          "text": "partnered"
+        },
+        {
+          "id": "b",
+          "text": "paired up with"
+        },
+        {
+          "id": "c",
+          "text": "teamed with"
+        },
+        {
+          "id": "d",
+          "text": "joined"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Pair up with có nghĩa là kết hợp, ghép cặp với ai đó. Câu này nói về việc Julie ghép cặp với Rob cho bài trắc nghiệm. Các lựa chọn khác có thể tương tự nhưng 'paired up with' là cách diễn đạt phổ biến và chính xác nhất trong trường hợp này."
+    }
+  ]
+}

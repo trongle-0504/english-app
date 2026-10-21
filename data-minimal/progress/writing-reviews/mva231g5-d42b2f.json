@@ -1,0 +1,610 @@
+{
+ "id": "mva231g5-d42b2f",
+ "createdAt": "2026-10-15T21:33:45.365Z",
+ "durationMs": 29211,
+ "text": "Nowadays, many students in countryside can not access to good test preparation center. Because of this, they must self-study by download old exam paper on internet. This make them very tired because they must stay up late many month. However, it also help them become more independent and they can reduce financial burden for their parents.",
+ "vietnameseText": "Ngày nay nhiều học sinh ở nông thôn không có điều kiện đến các trung tâm luyện thi tốt. Vì vậy các em phải tự học bằng cách tải đề thi cũ trên mạng. Việc này khiến các em rất mệt vì phải thức khuya ôn thi nhiều tháng. Tuy nhiên nó cũng giúp các em tự lập hơn và giảm gánh nặng tài chính cho bố mẹ.",
+ "sentences": [
+  "Nowadays, many students in countryside can not access to good test preparation center.",
+  "Because of this, they must self-study by download old exam paper on internet.",
+  "This make them very tired because they must stay up late many month.",
+  "However, it also help them become more independent and they can reduce financial burden for their parents."
+ ],
+ "paragraphStarts": [],
+ "correctedSentences": [
+  "Nowadays, many students in the countryside can not access to good test preparation center.",
+  "Because of this, they must self-study by downloading past exam papers from the Internet.",
+  "This makes them very tired because they must stay up late revising for months.",
+  "However, it also helps them become more independent and they can reduce the financial burden on their parents."
+ ],
+ "corrected": "Nowadays, many students in the countryside can not access to good test preparation center. Because of this, they must self-study by downloading past exam papers from the Internet. This makes them very tired because they must stay up late revising for months. However, it also helps them become more independent and they can reduce the financial burden on their parents.",
+ "fixes": [
+  {
+   "id": "f1",
+   "sentenceIndex": 0,
+   "original": "in countryside",
+   "replacement": "in the countryside",
+   "type": "grammar",
+   "severity": "error",
+   "explanation": "Danh từ 'countryside' cần mạo từ xác định 'the' khi chỉ vùng nông thôn nói chung.",
+   "evidence": "grammar",
+   "dictionary": [],
+   "sources": [],
+   "word": ""
+  },
+  {
+   "id": "f2",
+   "sentenceIndex": 1,
+   "original": "by download old exam paper on internet",
+   "replacement": "by downloading past exam papers from the Internet",
+   "type": "grammar",
+   "severity": "error",
+   "explanation": "Sau giới từ 'by' dùng V-ing. 'Exam paper' đếm được nên dùng số nhiều, 'past papers' tự nhiên hơn 'old paper', và 'from the Internet' đúng giới từ/mạo từ.",
+   "evidence": "word",
+   "dictionary": [
+    "Longman có mục từ “download”",
+    "Longman có mục từ “past”",
+    "Longman có mục từ “paper”"
+   ],
+   "sources": [
+    {
+     "name": "Longman",
+     "url": "https://www.ldoceonline.com/dictionary/download"
+    },
+    {
+     "name": "Longman",
+     "url": "https://www.ldoceonline.com/dictionary/past"
+    },
+    {
+     "name": "Longman",
+     "url": "https://www.ldoceonline.com/dictionary/paper"
+    }
+   ],
+   "word": "download"
+  },
+  {
+   "id": "f3",
+   "sentenceIndex": 2,
+   "original": "This make",
+   "replacement": "This makes",
+   "type": "grammar",
+   "severity": "error",
+   "explanation": "Chủ ngữ ngôi thứ ba số ít 'This' đi với động từ thêm 's' ở thì hiện tại đơn.",
+   "evidence": "word",
+   "dictionary": [
+    "Longman có mục từ “make”"
+   ],
+   "sources": [
+    {
+     "name": "Longman",
+     "url": "https://www.ldoceonline.com/dictionary/make"
+    }
+   ],
+   "word": "make"
+  },
+  {
+   "id": "f4",
+   "sentenceIndex": 2,
+   "original": "stay up late many month",
+   "replacement": "stay up late revising for months",
+   "type": "naturalness",
+   "severity": "improve",
+   "explanation": "Từ 'revising' được giữ nguyên vì đúng nghĩa ôn thi trước kỳ thi theo định nghĩa Longman.",
+   "evidence": "meaning",
+   "dictionary": [
+    "Longman · revise (verb): to study facts again, in order to learn them before an examination"
+   ],
+   "sources": [
+    {
+     "name": "Longman",
+     "url": "https://www.ldoceonline.com/dictionary/revise"
+    }
+   ],
+   "word": "revise"
+  },
+  {
+   "id": "f5",
+   "sentenceIndex": 3,
+   "original": "help",
+   "replacement": "helps",
+   "type": "grammar",
+   "severity": "error",
+   "explanation": "Chủ ngữ 'it' là ngôi thứ ba số ít nên động từ 'help' cần chia 'helps'.",
+   "evidence": "word",
+   "dictionary": [
+    "Longman có mục từ “help”"
+   ],
+   "sources": [
+    {
+     "name": "Longman",
+     "url": "https://www.ldoceonline.com/dictionary/help"
+    }
+   ],
+   "word": "help"
+  },
+  {
+   "id": "f6",
+   "sentenceIndex": 3,
+   "original": "reduce financial burden for",
+   "replacement": "reduce the financial burden on",
+   "type": "collocation",
+   "severity": "improve",
+   "explanation": "Từ điển liệt kê động từ 'reduce' đi với 'burden' thay vì 'alleviate'.",
+   "evidence": "grammar",
+   "dictionary": [],
+   "sources": [],
+   "word": ""
+  }
+ ],
+ "warnings": [
+  {
+   "phrase": "can not access to good test preparation center",
+   "suggestion": "cannot afford quality test preparation centers",
+   "explanation": "'Access' là ngoại động từ không đi với 'to'. Dùng 'afford quality test preparation centers' phản ánh đúng nghĩa 'không có điều kiện đến trung tâm tốt' và số nhiều. (Claude đề xuất; Longman/OZDIC chưa xác nhận cách sửa nên không tự sửa vào bài.)",
+   "word": "center"
+  }
+ ],
+ "natural": [],
+ "upgrades": [],
+ "protected": [],
+ "recheck": [],
+ "checked": {
+  "total": 6,
+  "confirmed": 2
+ },
+ "suggestedPhrases": [
+  {
+   "cardId": "topic-colloc:work:financial-burden",
+   "term": "financial burden",
+   "meaning_vi": "gánh nặng tài chính",
+   "example": "Rising healthcare costs have become a significant financial burden for many households.",
+   "origin": "Topic Collocations · Work",
+   "href": "/blog?topic=collocations-by-topic",
+   "isTopicCollocation": true
+  },
+  {
+   "cardId": "topic-colloc:government:financial-burdens",
+   "term": "financial burdens",
+   "meaning_vi": "gánh nặng tài chính",
+   "example": "Free university tuition would remove significant financial burdens from low-income families.",
+   "origin": "Topic Collocations · Government",
+   "href": "/blog?topic=collocations-by-topic",
+   "isTopicCollocation": true
+  },
+  {
+   "cardId": "topic-colloc:social-issues:fiscal-burden",
+   "term": "fiscal burden",
+   "meaning_vi": "gánh nặng tài chính",
+   "example": "Maintaining an extensive surveillance network places a heavy fiscal burden on the government.",
+   "origin": "Topic Collocations · Social Issues",
+   "href": "/blog?topic=collocations-by-topic",
+   "isTopicCollocation": true
+  },
+  {
+   "cardId": "topic-colloc:social-issues:financial-means",
+   "term": "financial means",
+   "meaning_vi": "khả năng, điều kiện tài chính",
+   "example": "Those born into families with greater financial means often have far more opportunities to develop their talents than their less fortunate peers.",
+   "origin": "Topic Collocations · Social Issues",
+   "href": "/blog?topic=collocations-by-topic",
+   "isTopicCollocation": true
+  },
+  {
+   "cardId": "topic-pattern:general-speaking:not-because-a-but-because-b",
+   "term": "not because A but because B",
+   "meaning_vi": "không phải vì A mà vì B",
+   "example": "I remember that trip not because it was beautiful, but because everything went wrong.",
+   "origin": "IELTS Speaking Topic Place Collocation · Topic 12: Describe a place in another country where you would like to work for a short time · Part 3 Q3",
+   "href": "/blog?topic=collocations-by-topic",
+   "isTopicCollocation": true
+  },
+  {
+   "cardId": "topic-colloc:business-economics:jeopardizes-their-financial-stability",
+   "term": "jeopardizes their financial stability",
+   "meaning_vi": "đe dọa sự ổn định tài chính",
+   "example": "Taking on excessive debt to fund rapid growth often jeopardizes their financial stability in the long run.",
+   "origin": "Topic Collocations · Business & Economics",
+   "href": "/blog?topic=collocations-by-topic",
+   "isTopicCollocation": true
+  },
+  {
+   "cardId": "topic-colloc:education:financial-investment",
+   "term": "financial investment",
+   "meaning_vi": "khoản đầu tư tài chính",
+   "example": "When students make no financial investment in their own tuition, some may take their studies less seriously.",
+   "origin": "Topic Collocations · Education",
+   "href": "/blog?topic=collocations-by-topic",
+   "isTopicCollocation": true
+  },
+  {
+   "cardId": "topic-colloc:government:allocate-more-financial-resources",
+   "term": "allocate more financial resources",
+   "meaning_vi": "phân bổ thêm nguồn lực tài chính",
+   "example": "The council has pledged to allocate more financial resources to rural clinics next year.",
+   "origin": "Topic Collocations · Government",
+   "href": "/blog?topic=collocations-by-topic",
+   "isTopicCollocation": true
+  },
+  {
+   "cardId": "topic-colloc:work:ensure-financial-independence",
+   "term": "ensure financial independence",
+   "meaning_vi": "đảm bảo sự độc lập về tài chính",
+   "example": "A stable career helps young adults ensure financial independence from their parents.",
+   "origin": "Topic Collocations · Work",
+   "href": "/blog?topic=collocations-by-topic",
+   "isTopicCollocation": true
+  },
+  {
+   "cardId": "topic-colloc:social-issues:reduced-maintenance-burdens",
+   "term": "reduced maintenance burdens",
+   "meaning_vi": "gánh nặng bảo trì được giảm bớt",
+   "example": "Smaller homes come with reduced maintenance burdens, freeing up time that residents can spend with family or at work.",
+   "origin": "Topic Collocations · Social Issues",
+   "href": "/blog?topic=collocations-by-topic",
+   "isTopicCollocation": true
+  },
+  {
+   "cardId": "topic-colloc:education:financial-standing",
+   "term": "financial standing",
+   "meaning_vi": "tình trạng, khả năng tài chính",
+   "example": "Scholarships ensure that talented students can attend university regardless of their financial standing.",
+   "origin": "Topic Collocations · Education",
+   "href": "/blog?topic=collocations-by-topic",
+   "isTopicCollocation": true
+  },
+  {
+   "cardId": "topic-colloc:listening:financial-support",
+   "term": "financial support",
+   "meaning_vi": "hỗ trợ tài chính",
+   "example": "Well, they might support you financially with financial support, so they might help you with transport costs, like if you have to get a taxi to take your mother for an appointment, for example.",
+   "origin": "Topic Collocations · Listening",
+   "href": "/blog?topic=collocations-by-topic",
+   "isTopicCollocation": true
+  },
+  {
+   "cardId": "topic-colloc:science-energy:dedicate-time-and-financial-resources-to-tackling-issues",
+   "term": "dedicate time and financial resources to tackling issues",
+   "meaning_vi": "dành thời gian và nguồn lực tài chính để giải quyết vấn đề",
+   "example": "Nations must dedicate time and financial resources to tackling issues such as rising sea levels.",
+   "origin": "Topic Collocations · Science & Energy",
+   "href": "/blog?topic=collocations-by-topic",
+   "isTopicCollocation": true
+  },
+  {
+   "cardId": "topic-colloc:social-issues:financial-independence",
+   "term": "financial independence",
+   "meaning_vi": "sự độc lập về tài chính",
+   "example": "A good education is often the fastest route to financial independence in adulthood.",
+   "origin": "Topic Collocations · Social Issues",
+   "href": "/blog?topic=collocations-by-topic",
+   "isTopicCollocation": true
+  },
+  {
+   "cardId": "topic-colloc:work:alleviate-social-and-healthcare-burdens",
+   "term": "alleviate social and healthcare burdens",
+   "meaning_vi": "giảm bớt gánh nặng xã hội và y tế",
+   "example": "Limiting excessive working hours can alleviate social and healthcare burdens on the state.",
+   "origin": "Topic Collocations · Work",
+   "href": "/blog?topic=collocations-by-topic",
+   "isTopicCollocation": true
+  }
+ ],
+ "dolHints": [
+  {
+   "query": "trung tâm luyện thi",
+   "vi": "trung tâm luyện thi",
+   "en": "Test preparation center",
+   "pos": "noun",
+   "definitionVi": "“Trung tâm luyện thi” là cơ sở cung cấp khóa học chuẩn bị cho các kỳ thi.",
+   "example": {
+    "vi": "Cô ấy đã đăng ký vào trung tâm luyện thi.",
+    "en": "She enrolled in a test preparation center."
+   },
+   "url": "https://tudien.dolenglish.vn/trung-tam-luyen-thi-tieng-anh-la-gi"
+  },
+  {
+   "query": "gánh nặng tài chính",
+   "vi": "gánh nặng tài chính",
+   "en": "financial burden",
+   "pos": "noun",
+   "definitionVi": "Gánh nặng tài chính đề cập đến áp lực kinh tế hoặc căng thẳng mà một cá nhân hoặc tổ chức gặp phải do phải chịu chi phí cho một thứ gì đó.",
+   "example": {
+    "vi": "Tai nạn đã đặt một gánh nặng tài chính lên gia đình anh.",
+    "en": "The accident placed a financial burden on his family."
+   },
+   "url": "https://tudien.dolenglish.vn/ganh-nang-tai-chinh-tieng-anh-la-gi"
+  },
+  {
+   "query": "đề thi",
+   "vi": "đề thi",
+   "en": "exam question",
+   "pos": "noun",
+   "definitionVi": "Đề thi là bài thi, tập trung các câu hỏi, các vấn đề cần được giải quyết.",
+   "example": {
+    "vi": "Đề thi yêu cầu chúng em phân tích tác động của biến đổi khí hậu đến năng suất nông nghiệp.",
+    "en": "The exam question asked us to analyze the impact of climate change on agricultural productivity."
+   },
+   "url": "https://tudien.dolenglish.vn/de-thi-tieng-anh-la-gi"
+  },
+  {
+   "query": "thức khuya",
+   "vi": "thức khuya",
+   "en": "stay up late",
+   "pos": "noun",
+   "definitionVi": "Thức khuya là ngủ rất trễ, không đúng giấc.",
+   "example": {
+    "vi": "Chúng tôi đã thức khuya để xem một bộ phim.",
+    "en": "We stayed up late to watch a film."
+   },
+   "url": "https://tudien.dolenglish.vn/thuc-khuya-tieng-anh-la-gi"
+  },
+  {
+   "query": "ôn thi",
+   "vi": "ôn thi",
+   "en": "revise for exams",
+   "pos": "phrase",
+   "definitionVi": "Ôn thi là hành động ôn tập lại nội dung học để phục vụ cho một kỳ thi nào đó.",
+   "example": {
+    "vi": "Sử dụng thẻ nhớ là một trong những cách tốt nhất để ôn tập cho các kỳ thi.",
+    "en": "Using flashcards is one of the best ways to revise for exams."
+   },
+   "url": "https://tudien.dolenglish.vn/on-thi-tieng-anh-la-gi"
+  }
+ ],
+ "modelEssay": {
+  "meaning": "Paragraph: lack of financial means restricts access to test preparation centers → students self-study using past exam questions → leads to physical exhaustion from staying up late → fosters self-reliance and eases parents' financial burden",
+  "sentences": [
+   {
+    "tool": "lead_in",
+    "segments": [
+     {
+      "text": "It is true that",
+      "mark": "structure"
+     },
+     {
+      "text": " many students in "
+     },
+     {
+      "text": "rural areas",
+      "mark": "checked",
+      "note": "Longman · ADJ.: a rural, an urban, a remote, isolated, the local, the surrounding, outlying, a wooded, a mountainous, a coastal, a desert, a residential (✓ a rural)"
+     },
+     {
+      "text": " lack the "
+     },
+     {
+      "text": "financial means",
+      "mark": "library"
+     },
+     {
+      "text": " to enroll in reputable test preparation centers."
+     }
+    ]
+   },
+   {
+    "tool": "cause",
+    "segments": [
+     {
+      "text": "Because of this,",
+      "mark": "structure"
+     },
+     {
+      "text": " these learners have to "
+     },
+     {
+      "text": "study on their own",
+      "mark": "checked",
+      "note": "Longman có mục từ “study”"
+     },
+     {
+      "text": ", using past exam questions downloaded from the internet."
+     }
+    ]
+   },
+   {
+    "tool": "effect",
+    "segments": [
+     {
+      "text": "This can lead to",
+      "mark": "structure"
+     },
+     {
+      "text": " severe physical exhaustion, "
+     },
+     {
+      "text": "since",
+      "mark": "structure"
+     },
+     {
+      "text": " many of them have to "
+     },
+     {
+      "text": "stay up late",
+      "mark": "checked",
+      "note": "Longman có mục từ “stay up”"
+     },
+     {
+      "text": " revising for months."
+     }
+    ]
+   },
+   {
+    "tool": "conclusion",
+    "segments": [
+     {
+      "text": "However,",
+      "mark": "structure"
+     },
+     {
+      "text": " this rigorous process also helps them become far more independent, "
+     },
+     {
+      "text": "thereby",
+      "mark": "structure"
+     },
+     {
+      "text": " easing the "
+     },
+     {
+      "text": "financial burden",
+      "mark": "extra"
+     },
+     {
+      "text": " on their parents."
+     }
+    ]
+   }
+  ],
+  "structures": [
+   {
+    "pattern": "It is true that S + V",
+    "text": "It is true that",
+    "tool": "lead_in",
+    "fromGuide": true
+   },
+   {
+    "pattern": "Because of this, S + V",
+    "text": "Because of this",
+    "tool": "cause",
+    "fromGuide": true
+   },
+   {
+    "pattern": "lead to + N",
+    "text": "This can lead to",
+    "tool": "effect",
+    "fromGuide": true
+   },
+   {
+    "pattern": "since + clause",
+    "text": "since",
+    "tool": "cause",
+    "fromGuide": true
+   },
+   {
+    "pattern": "However, S + V",
+    "text": "However",
+    "tool": "conclusion",
+    "fromGuide": true
+   },
+   {
+    "pattern": ", thereby + V-ing",
+    "text": "thereby",
+    "tool": "effect",
+    "fromGuide": true
+   }
+  ],
+  "wording": [
+   {
+    "text": "rural areas",
+    "meaning_vi": "khu vực nông thôn",
+    "verified": true,
+    "dictionary": [
+     "Longman · ADJ.: a rural, an urban, a remote, isolated, the local, the surrounding, outlying, a wooded, a mountainous, a coastal, a desert, a residential (✓ a rural)"
+    ],
+    "sources": [
+     {
+      "name": "Longman",
+      "url": "https://www.ldoceonline.com/dictionary/area"
+     }
+    ]
+   },
+   {
+    "text": "study on their own",
+    "meaning_vi": "tự học",
+    "verified": true,
+    "dictionary": [
+     "Longman có mục từ “study”"
+    ],
+    "sources": [
+     {
+      "name": "Longman",
+      "url": "https://www.ldoceonline.com/dictionary/study"
+     }
+    ]
+   },
+   {
+    "text": "stay up late",
+    "meaning_vi": "thức khuya",
+    "verified": true,
+    "dictionary": [
+     "Longman có mục từ “stay up”"
+    ],
+    "sources": [
+     {
+      "name": "Longman",
+      "url": "https://www.ldoceonline.com/dictionary/stay"
+     }
+    ]
+   }
+  ],
+  "picks": [
+   {
+    "cardId": "topic-colloc:social-issues:financial-means",
+    "term": "financial means",
+    "meaning_vi": "khả năng, điều kiện tài chính",
+    "origin": "Topic Collocations · Social Issues",
+    "how": "Dùng để diễn tả điều kiện tài chính hạn chế của học sinh nông thôn.",
+    "example": "Many rural students lack the financial means to attend prestigious tutoring centers.",
+    "inReview": false,
+    "learning": false,
+    "isTopicCollocation": true
+   },
+   {
+    "cardId": "topic-colloc:work:financial-burden",
+    "term": "financial burden",
+    "meaning_vi": "gánh nặng tài chính",
+    "origin": "Topic Collocations · Work",
+    "how": "Dùng ở câu kết để nói về việc giảm bớt gánh nặng tài chính cho phụ huynh.",
+    "example": "Studying at home eases the financial burden on low-income families.",
+    "inReview": false,
+    "learning": false,
+    "isTopicCollocation": true
+   }
+  ],
+  "extras": [
+   {
+    "phrase": "ease the burden",
+    "meaning_vi": "giảm nhẹ gánh nặng",
+    "example": "Self-study methods help ease the burden placed on struggling families.",
+    "verified": true,
+    "dictionary": [
+     "Longman · VERB + BURDEN: bear, carry, shoulder the, place, put a ~ on sb, share the, ease, reduce, lighten the, shift the, a ~ falls on sb, lift the ~ from sb's shoulders (✓ ease)"
+    ],
+    "sources": [
+     {
+      "name": "Longman",
+      "url": "https://www.ldoceonline.com/dictionary/burden"
+     }
+    ]
+   }
+  ]
+ },
+ "usage": {
+  "model": "gemini-3.8-flash",
+  "thinkingLevel": "low",
+  "calls": [
+   {
+    "step": "writing: model essay",
+    "input": 26257,
+    "output": 995,
+    "thinking": 0
+   },
+   {
+    "step": "diagnose",
+    "input": 13371,
+    "output": 951,
+    "thinking": 0
+   },
+   {
+    "step": "retry",
+    "input": 13196,
+    "output": 342,
+    "thinking": 0
+   }
+  ],
+  "input": 52824,
+  "output": 2288,
+  "thinking": 0,
+  "total": 55112
+ }
+}

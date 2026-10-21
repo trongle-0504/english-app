@@ -1,0 +1,4322 @@
+[
+  {
+    "id": "topic-colloc:business-economics:national-success",
+    "title": "national success",
+    "term": "national success",
+    "type": "Collocation",
+    "pronunciation": "/ˈnæʃənəl səkˈses/",
+    "part_of_speech": "n",
+    "meaning_vi": "thành công của quốc gia",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Many governments equate rapid GDP growth with national success, though this narrow view often overlooks social welfare.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:unchecked-economic-growth",
+    "title": "unchecked economic growth",
+    "term": "unchecked economic growth",
+    "type": "Collocation",
+    "pronunciation": "/ʌnˈtʃekt ˌiːkəˈnɒmɪk ɡrəʊθ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tăng trưởng kinh tế không kiểm soát",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "If left unregulated, unchecked economic growth can deplete natural resources faster than they can be replenished.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:economic-development",
+    "title": "economic development",
+    "term": "economic development",
+    "type": "Collocation",
+    "pronunciation": "/ˌiːkəˈnɒmɪk dɪˈveləpmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phát triển kinh tế",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Investment in vocational training is essential to sustainable economic development in emerging nations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:infrastructure",
+    "title": "infrastructure",
+    "term": "infrastructure",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈɪnfrəˌstrʌktʃə/",
+    "part_of_speech": "noun",
+    "meaning_vi": "cơ sở hạ tầng",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Developing countries often struggle to fund the infrastructure needed to support long-term economic growth.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:at-the-bottom-of-the-economic-ladder",
+    "title": "at the bottom of the economic ladder",
+    "term": "at the bottom of the economic ladder",
+    "type": "Collocation",
+    "pronunciation": "/æt ðə ˈbɒtəm əv ði ˌiːkəˈnɒmɪk ˈlædə/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "ở tầng đáy của xã hội (về kinh tế)",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Families at the bottom of the economic ladder often lack access to quality education, perpetuating cycles of poverty.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:individuals-living-below-the-poverty-line",
+    "title": "Individuals living below the poverty line",
+    "term": "Individuals living below the poverty line",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪndɪˈvɪdʒuəlz ˈlɪvɪŋ bɪˈləʊ ðə ˈpɒvəti laɪn/",
+    "part_of_speech": "n",
+    "meaning_vi": "những người sống dưới mức nghèo khổ",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Governments should prioritize targeted assistance for individuals living below the poverty line rather than blanket subsidies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:focusing-solely-on-income-equality",
+    "title": "focusing solely on income equality",
+    "term": "focusing solely on income equality",
+    "type": "Collocation",
+    "pronunciation": "/ˈfəʊkəsɪŋ ˈsəʊlli ɒn ˈɪŋkʌm ɪˈkwɒləti/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "chỉ tập trung vào bình đẳng thu nhập",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Critics argue that focusing solely on income equality ignores other important measures of societal well-being.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:income-inequality",
+    "title": "income inequality",
+    "term": "income inequality",
+    "type": "Collocation",
+    "pronunciation": "/ˈɪnkʌm ˌɪnɪˈkwɒlɪti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bất bình đẳng thu nhập",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Progressive taxation is often proposed as a policy tool to narrow income inequality between the richest and poorest citizens.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:elite",
+    "title": "elite",
+    "term": "elite",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪˈliːt/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tầng lớp tinh hoa, giới thượng lưu",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Critics argue that economic policy is too often shaped to benefit a small elite rather than the general population.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:national-income-growth",
+    "title": "national income growth",
+    "term": "national income growth",
+    "type": "Collocation",
+    "pronunciation": "/ˈnæʃənəl ˈɪŋkʌm ɡrəʊθ/",
+    "part_of_speech": "n",
+    "meaning_vi": "tăng trưởng thu nhập quốc dân",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Sustained national income growth allows a country to invest more heavily in public infrastructure and services.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:cutting-edge-healthcare",
+    "title": "cutting-edge healthcare",
+    "term": "cutting-edge healthcare",
+    "type": "Collocation",
+    "pronunciation": "/ˌkʌtɪŋ ˈedʒ ˈhelθkeə/",
+    "part_of_speech": "n",
+    "meaning_vi": "dịch vụ y tế tiên tiến",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Wealthier economies can afford cutting-edge healthcare that significantly extends citizens' life expectancy.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:living-standards",
+    "title": "living standards",
+    "term": "living standards",
+    "type": "Collocation",
+    "pronunciation": "/ˈlɪvɪŋ ˈstændədz/",
+    "part_of_speech": "n",
+    "meaning_vi": "mức sống",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "As economies expand, living standards typically improve through better housing, healthcare, and education.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:geopolitical-influence",
+    "title": "geopolitical influence",
+    "term": "geopolitical influence",
+    "type": "Collocation",
+    "pronunciation": "/ˌdʒiːəʊpəˈlɪtɪkəl ˈɪnfluəns/",
+    "part_of_speech": "n",
+    "meaning_vi": "ảnh hưởng địa chính trị",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Economic power frequently translates into greater geopolitical influence on the world stage.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:decline-in-productivity-innovation-and-economic-growth",
+    "title": "decline in productivity, innovation, and economic growth",
+    "term": "decline in productivity, innovation, and economic growth",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈklaɪn ɪn ˌprɒdʌkˈtɪvəti ˌɪnəˈveɪʃən ənd ˌiːkəˈnɒmɪk ɡrəʊθ/",
+    "part_of_speech": "n",
+    "meaning_vi": "sự suy giảm năng suất, đổi mới và tăng trưởng kinh tế",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Heavy-handed regulation can trigger a decline in productivity, innovation, and economic growth across entire industries.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:contribute-to-a-more-prosperous-and-content-society-overall",
+    "title": "contribute to a more prosperous and content society overall",
+    "term": "contribute to a more prosperous and content society overall",
+    "type": "Collocation",
+    "pronunciation": "/kənˈtrɪbjuːt tə ə mɔː ˈprɒspərəs ənd kənˈtent səˈsaɪəti ˌəʊvərˈɔːl/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "góp phần tạo nên một xã hội thịnh vượng và mãn nguyện hơn",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Investing in public education can contribute to a more prosperous and content society overall.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:increased-prosperity-for-individuals",
+    "title": "increased prosperity for individuals",
+    "term": "increased prosperity for individuals",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈkriːst prɒˈsperəti fər ˌɪndɪˈvɪdʒuəlz/",
+    "part_of_speech": "n",
+    "meaning_vi": "sự thịnh vượng gia tăng cho cá nhân",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Rapid urban growth has brought increased prosperity for individuals but also greater social pressure to compete.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:exert-adverse-effects",
+    "title": "exert adverse effects",
+    "term": "exert adverse effects",
+    "type": "Collocation",
+    "pronunciation": "/ɪɡˈzɜːt ˈædvɜːs ɪˈfekts/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "gây ra những tác động bất lợi",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Prolonged economic downturns can exert adverse effects on mental health and family stability.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:material-gains",
+    "title": "material gains",
+    "term": "material gains",
+    "type": "Collocation",
+    "pronunciation": "/məˈtɪəriəl ɡeɪnz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lợi ích vật chất",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Beyond a certain income threshold, additional material gains contribute little to a person's overall happiness.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:life-satisfaction",
+    "title": "life satisfaction",
+    "term": "life satisfaction",
+    "type": "Collocation",
+    "pronunciation": "/laɪf ˌsætɪsˈfækʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự hài lòng với cuộc sống",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Studies consistently show that strong social relationships contribute more to life satisfaction than a higher salary.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:overall-well-being",
+    "title": "overall well-being",
+    "term": "overall well-being",
+    "type": "Collocation",
+    "pronunciation": "/ˌəʊvərˈɔːl ˈwelˌbiːɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phúc lợi tổng thể",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Policymakers are increasingly measuring overall well-being rather than GDP alone as an indicator of national progress.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:improve-their-social-and-economic-standing",
+    "title": "improve their social and economic standing",
+    "term": "improve their social and economic standing",
+    "type": "Collocation",
+    "pronunciation": "/ɪmˈpruːv ðeə ˈsəʊʃəl ənd ˌiːkəˈnɒmɪk ˈstændɪŋ/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "cải thiện vị thế xã hội và kinh tế",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Access to microfinance has helped many rural entrepreneurs improve their social and economic standing.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:straining-familial-bonds",
+    "title": "straining familial bonds",
+    "term": "straining familial bonds",
+    "type": "Collocation",
+    "pronunciation": "/ˈstreɪnɪŋ fəˈmɪliəl bɒndz/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "gây căng thẳng cho mối quan hệ gia đình",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Long working hours in modern economies are increasingly straining familial bonds.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:eroding-societal-values",
+    "title": "eroding societal values",
+    "term": "eroding societal values",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈrəʊdɪŋ səˈsaɪətəl ˈvæljuːz/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "làm xói mòn các giá trị xã hội",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Widening income inequality risks eroding societal values such as trust and solidarity.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:exacerbating-social-tensions-and-disparities",
+    "title": "exacerbating social tensions and disparities",
+    "term": "exacerbating social tensions and disparities",
+    "type": "Collocation",
+    "pronunciation": "/ɪɡˈzæsəbeɪtɪŋ ˈsəʊʃəl ˈtenʃənz ænd dɪˈspærɪtiz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "làm trầm trọng thêm căng thẳng và bất bình đẳng xã hội",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Rapid urbanisation without adequate planning risks exacerbating social tensions and disparities between rich and poor districts.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:social-connection",
+    "title": "social connection",
+    "term": "social connection",
+    "type": "Collocation",
+    "pronunciation": "/ˈsəʊʃəl kəˈnekʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự kết nối xã hội",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Governments should invest in community centres that foster social connection, particularly among elderly residents living alone.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:social-unrest",
+    "title": "social unrest",
+    "term": "social unrest",
+    "type": "Collocation",
+    "pronunciation": "/ˈsəʊʃəl ʌnˈrest/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bất ổn xã hội",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Prolonged unemployment among young graduates can trigger social unrest if left unaddressed by policymakers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:social-cohesion",
+    "title": "social cohesion",
+    "term": "social cohesion",
+    "type": "Collocation",
+    "pronunciation": "/ˈsəʊʃəl kəʊˈhiːʒən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự gắn kết xã hội",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Fair distribution of economic opportunities helps maintain social cohesion within increasingly diverse communities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:ceasing-economic-activities-altogether",
+    "title": "ceasing economic activities altogether",
+    "term": "ceasing economic activities altogether",
+    "type": "Collocation",
+    "pronunciation": "/ˈsiːsɪŋ ˌiːkəˈnɒmɪk ækˈtɪvətiz ˌɔːltəˈɡeðə/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "ngừng hoàn toàn các hoạt động kinh tế",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Ceasing economic activities altogether is neither realistic nor desirable for developing economies seeking to reduce poverty.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:boosting-the-countrys-economy",
+    "title": "boosting the country's economy",
+    "term": "boosting the country's economy",
+    "type": "Collocation",
+    "pronunciation": "/ˈbuːstɪŋ ðə ˈkʌntri z ɪˈkɒnəmi/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thúc đẩy nền kinh tế đất nước",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Attracting foreign direct investment has proven highly effective in boosting the country's economy over the past decade.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:completely-eliminate-the-income-gap",
+    "title": "completely eliminate the income gap",
+    "term": "completely eliminate the income gap",
+    "type": "Collocation",
+    "pronunciation": "/kəmˈpliːtli ɪˈlɪmɪneɪt ði ˈɪŋkʌm ɡæp/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "xóa bỏ hoàn toàn khoảng cách thu nhập",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Attempting to completely eliminate the income gap through forced redistribution often proves economically counterproductive.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:combating-societal-problems",
+    "title": "combating societal problems",
+    "term": "combating societal problems",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɒmbætɪŋ səˈsaɪətəl ˈprɒbləmz/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "giải quyết các vấn đề xã hội",
+    "topic": "Business & Economics",
+    "subTopic": "Economic Growth & Development",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Targeted economic policies have proven effective in combating societal problems such as homelessness and crime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:compelling-arguments",
+    "title": "compelling arguments",
+    "term": "compelling arguments",
+    "type": "Collocation",
+    "pronunciation": "/kəmˈpelɪŋ ˈɑːɡjumənts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những lập luận thuyết phục",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "There are compelling arguments on both sides regarding whether globalisation ultimately benefits developing economies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:domestically-produced-goods",
+    "title": "domestically produced goods",
+    "term": "domestically produced goods",
+    "type": "Collocation",
+    "pronunciation": "/dəˈmestɪkli prəˈdjuːst ɡʊdz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hàng hóa sản xuất trong nước",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Some governments impose tariffs to make domestically produced goods more competitive against imports.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:globalized-retail-standardization",
+    "title": "globalized retail standardization",
+    "term": "globalized retail standardization",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡləʊbəlaɪzd ˈriːteɪl ˌstændədaɪˈzeɪʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tiêu chuẩn hóa bán lẻ toàn cầu",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Proponents of globalized retail standardization claim it guarantees the same shopping experience in any country.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:sphere-of-influence",
+    "title": "sphere of influence",
+    "term": "sphere of influence",
+    "type": "Collocation",
+    "pronunciation": "/sfɪər əv ˈɪnfluəns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phạm vi ảnh hưởng",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Multinational corporations have expanded their sphere of influence well beyond their home markets.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:foreign-direct-investment",
+    "title": "foreign direct investment",
+    "term": "foreign direct investment",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɒrən dɪˈrekt ɪnˈvestmənt/",
+    "part_of_speech": "n",
+    "meaning_vi": "đầu tư trực tiếp nước ngoài",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Many developing countries actively court foreign direct investment to accelerate industrialization.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:cost-efficiencies",
+    "title": "cost efficiencies",
+    "term": "cost efficiencies",
+    "type": "Collocation",
+    "pronunciation": "/kɒst ɪˈfɪʃnsiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hiệu quả về chi phí",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Bulk purchasing allows large retail chains to achieve cost efficiencies that small shops simply cannot match.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:erosion-of-regional-culinary-practices",
+    "title": "erosion of regional culinary practices",
+    "term": "erosion of regional culinary practices",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈrəʊʒn əv ˈriːdʒənl ˈkʌlɪnəri ˈpræktɪsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự xói mòn các tập quán ẩm thực địa phương",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "The spread of fast-food chains has contributed to the erosion of regional culinary practices in many towns.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:fluidity-of-energy-knowledge-and-capital-markets",
+    "title": "fluidity of energy, knowledge, and capital markets",
+    "term": "fluidity of energy, knowledge, and capital markets",
+    "type": "Collocation",
+    "pronunciation": "/fluˈɪdəti əv ˈenədʒi ˈnɒlɪdʒ ənd ˈkæpɪtl ˈmɑːkɪts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tính lưu động của thị trường năng lượng, tri thức và vốn",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Economic integration has increased the fluidity of energy, knowledge, and capital markets across the continent.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:gain-economic-advantages",
+    "title": "gain economic advantages",
+    "term": "gain economic advantages",
+    "type": "Collocation",
+    "pronunciation": "/ɡeɪn ˌiːkəˈnɒmɪk ədˈvɑːntɪdʒɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đạt được lợi thế kinh tế",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Countries that join large trading blocs typically gain economic advantages such as easier access to foreign markets.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:grave-socio-cultural-costs",
+    "title": "grave socio-cultural costs",
+    "term": "grave socio-cultural costs",
+    "type": "Collocation",
+    "pronunciation": "/ɡreɪv ˌsəʊʃiəʊˈkʌltʃərəl kɒsts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những cái giá phải trả nghiêm trọng về mặt văn hóa xã hội",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Unchecked commercial expansion into heritage districts can carry grave socio-cultural costs for local communities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:homogenization-of-retail-outlets-and-products",
+    "title": "homogenization of retail outlets and products",
+    "term": "homogenization of retail outlets and products",
+    "type": "Collocation",
+    "pronunciation": "/həˌmɒdʒənaɪˈzeɪʃn əv ˈriːteɪl ˈaʊtlets ænd ˈprɒdʌkts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự đồng nhất hóa các cửa hàng bán lẻ và sản phẩm",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Critics warn that the homogenization of retail outlets and products is making high streets around the world look identical.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:impede-the-development",
+    "title": "impede the development",
+    "term": "impede the development",
+    "type": "Collocation",
+    "pronunciation": "/ɪmˈpiːd ðə dɪˈveləpmənt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cản trở sự phát triển",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Cheap imported goods can impede the development of local manufacturing sectors.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:overreliance-on-foreign-imports",
+    "title": "overreliance on foreign imports",
+    "term": "overreliance on foreign imports",
+    "type": "Collocation",
+    "pronunciation": "/ˌəʊvəriˈlaɪəns ɒn ˈfɒrən ˈɪmpɔːts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phụ thuộc quá mức vào hàng nhập khẩu",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "An overreliance on foreign imports left the country's textile industry vulnerable during the supply chain crisis.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:proliferation-of-standardized-global-products",
+    "title": "proliferation of standardized global products",
+    "term": "proliferation of standardized global products",
+    "type": "Collocation",
+    "pronunciation": "/prəˌlɪfəˈreɪʃn əv ˈstændədaɪzd ˈɡləʊbl ˈprɒdʌkts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự gia tăng nhanh chóng của các sản phẩm toàn cầu được tiêu chuẩn hóa",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "The proliferation of standardized global products has made it harder for artisans to sell their unique wares.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:symbiotic-economic-relationships",
+    "title": "symbiotic economic relationships",
+    "term": "symbiotic economic relationships",
+    "type": "Collocation",
+    "pronunciation": "/ˌsɪmbaɪˈɒtɪk ˌiːkəˈnɒmɪk rɪˈleɪʃənʃɪps/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mối quan hệ kinh tế cộng sinh",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Trade alliances often create symbiotic economic relationships in which every participating country benefits.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:advantageous-trade-links",
+    "title": "advantageous trade links",
+    "term": "advantageous trade links",
+    "type": "Collocation",
+    "pronunciation": "/ˌædvənˈteɪdʒəs treɪd lɪŋks/",
+    "part_of_speech": "n",
+    "meaning_vi": "liên kết thương mại có lợi",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Signing free trade agreements can create advantageous trade links that benefit exporters and consumers alike.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:abolition-of-border-controls",
+    "title": "abolition of border controls",
+    "term": "abolition of border controls",
+    "type": "Collocation",
+    "pronunciation": "/ˌæbəˈlɪʃən əv ˈbɔːdə kənˈtrəʊlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc bãi bỏ kiểm soát biên giới",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "The abolition of border controls between member states has significantly simplified cross-border trade in the region.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:facilitating-free-movement",
+    "title": "facilitating free movement",
+    "term": "facilitating free movement",
+    "type": "Collocation",
+    "pronunciation": "/fəˈsɪlɪteɪtɪŋ friː ˈmuːvmənt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tạo điều kiện cho sự di chuyển tự do",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Facilitating free movement of goods and labour has allowed businesses to operate far more efficiently across borders.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:foster-economic-development",
+    "title": "foster economic development",
+    "term": "foster economic development",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɒstə ˌiːkəˈnɒmɪk dɪˈveləpmənt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thúc đẩy phát triển kinh tế",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "International trade agreements can foster economic development by opening new markets for domestic producers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:significantly-facilitate-foreign-trade",
+    "title": "significantly facilitate foreign trade",
+    "term": "significantly facilitate foreign trade",
+    "type": "Collocation",
+    "pronunciation": "/sɪɡˈnɪfɪkəntli fəˈsɪlɪteɪt ˈfɒrən treɪd/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tạo điều kiện đáng kể cho thương mại quốc tế",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Modernised ports and reduced tariffs significantly facilitate foreign trade for exporting nations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:strategic-partnerships",
+    "title": "strategic partnerships",
+    "term": "strategic partnerships",
+    "type": "Collocation",
+    "pronunciation": "/strəˈtiːdʒɪk ˈpɑːtnəʃɪps/",
+    "part_of_speech": "n",
+    "meaning_vi": "quan hệ đối tác chiến lược",
+    "topic": "Business & Economics",
+    "subTopic": "Trade & Globalization",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Small nations often rely on strategic partnerships with larger economies to boost trade and technology transfer.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:excel-in-business",
+    "title": "excel in business",
+    "term": "excel in business",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈsel ɪn ˈbɪznəs/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "xuất sắc trong kinh doanh",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Strong negotiation skills often matter more than technical knowledge for those who wish to excel in business.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:facilitated-groundbreaking-ideas",
+    "title": "facilitated groundbreaking ideas",
+    "term": "facilitated groundbreaking ideas",
+    "type": "Collocation",
+    "pronunciation": "/fəˈsɪlɪteɪtɪd ˈɡraʊndbreɪkɪŋ aɪˈdɪəz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tạo điều kiện cho những ý tưởng đột phá",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "A culture of open communication has facilitated groundbreaking ideas within many successful technology start-ups.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:one-time-fees",
+    "title": "one-time fees",
+    "term": "one-time fees",
+    "type": "Collocation",
+    "pronunciation": "/wʌn taɪm fiːz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phí trả một lần",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Registering a new company usually involves one-time fees for licensing and legal documentation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:industrious-innovative-and-driven",
+    "title": "industrious, innovative, and driven",
+    "term": "industrious, innovative, and driven",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈdʌstriəs ˈɪnəveɪtɪv ənd ˈdrɪvən/",
+    "part_of_speech": "adj",
+    "meaning_vi": "chăm chỉ, sáng tạo và có động lực",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Successful entrepreneurs are typically industrious, innovative, and driven, willing to take risks others avoid.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:fiercely-competitive-market",
+    "title": "fiercely competitive market",
+    "term": "fiercely competitive market",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɪəsli kəmˈpetətɪv ˈmɑːkɪt/",
+    "part_of_speech": "n",
+    "meaning_vi": "thị trường cạnh tranh khốc liệt",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Start-ups in a fiercely competitive market must innovate constantly simply to survive.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:artisanal-crafts",
+    "title": "artisanal crafts",
+    "term": "artisanal crafts",
+    "type": "Collocation",
+    "pronunciation": "/ɑːˈtɪzənl krɑːfts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nghề thủ công truyền thống",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Tourists visiting the old quarter are drawn to shops selling artisanal crafts made by local families.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:cut-throat",
+    "title": "cut-throat",
+    "term": "cut-throat",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈkʌt θrəʊt/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "khốc liệt (cạnh tranh gay gắt)",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "The airline industry is notoriously cut-throat, with carriers slashing fares just to retain market share.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:distinctive-local-offerings",
+    "title": "distinctive local offerings",
+    "term": "distinctive local offerings",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈstɪŋktɪv ˈləʊkl ˈɒfərɪŋz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những sản phẩm hoặc dịch vụ đặc trưng của địa phương",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Independent boutiques survive by promoting distinctive local offerings that big chains cannot replicate.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:immediately-accessible",
+    "title": "immediately accessible",
+    "term": "immediately accessible",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈmiːdiətli əkˈsesəbl/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "dễ dàng tiếp cận ngay lập tức",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "A prime location near the highway means raw materials are immediately accessible to the factory.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:bring-perspectives",
+    "title": "bring perspectives",
+    "term": "bring perspectives",
+    "type": "Collocation",
+    "pronunciation": "/brɪŋ pəˈspektɪvz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "mang lại góc nhìn mới",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "A diverse workforce can bring perspectives that help a firm develop products suited to a wider range of customers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:contribute-innovation-and-dynamism",
+    "title": "contribute innovation and dynamism",
+    "term": "contribute innovation and dynamism",
+    "type": "Collocation",
+    "pronunciation": "/kənˈtrɪbjuːt ˌɪnəˈveɪʃən ənd ˈdaɪnəmɪzəm/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đóng góp sự đổi mới và năng động",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Younger staff members tend to contribute innovation and dynamism that keep a company relevant in a fast-moving market.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:critical-role-of-seasoned-leaders",
+    "title": "critical role of seasoned leaders",
+    "term": "critical role of seasoned leaders",
+    "type": "Collocation",
+    "pronunciation": "/ˈkrɪtɪkəl rəʊl əv ˈsiːznd ˈliːdəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "vai trò quan trọng của những nhà lãnh đạo dày dạn kinh nghiệm",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "During periods of economic uncertainty, the critical role of seasoned leaders becomes particularly evident.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:extensive-experience",
+    "title": "extensive experience",
+    "term": "extensive experience",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈstensɪv ɪkˈspɪəriəns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kinh nghiệm sâu rộng",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Managers with extensive experience are generally more skilled at negotiating favourable deals with suppliers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:heated-topic-of-discussion",
+    "title": "heated topic of discussion",
+    "term": "heated topic of discussion",
+    "type": "Collocation",
+    "pronunciation": "/ˈhiːtɪd ˈtɒpɪk əv dɪˈskʌʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chủ đề tranh luận sôi nổi",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Whether age or experience matters more in leadership remains a heated topic of discussion among business analysts.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:possess-certain-qualities-for-leadership",
+    "title": "possess certain qualities for leadership",
+    "term": "possess certain qualities for leadership",
+    "type": "Collocation",
+    "pronunciation": "/pəˈzes ˈsɜːtn ˈkwɒlətiz fɔː ˈliːdəʃɪp/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "sở hữu những phẩm chất lãnh đạo nhất định",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Some young graduates possess certain qualities for leadership, such as confidence and adaptability, from an early age.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:specialization",
+    "title": "specialization",
+    "term": "specialization",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌspeʃəlaɪˈzeɪʃn/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự chuyên môn hóa",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Increasing specialization within large corporations allows employees to become experts in narrow fields.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:analyze-large-quantities-of-data",
+    "title": "analyze large quantities of data",
+    "term": "analyze large quantities of data",
+    "type": "Collocation",
+    "pronunciation": "/ˈænəlaɪz lɑːdʒ ˈkwɒntətiz əv ˈdeɪtə/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "phân tích khối lượng lớn dữ liệu",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Modern software allows even small firms to analyze large quantities of data and spot emerging trends.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:financial-capability",
+    "title": "financial capability",
+    "term": "financial capability",
+    "type": "Collocation",
+    "pronunciation": "/faɪˈnænʃl ˌkeɪpəˈbɪləti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khả năng tài chính",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Many start-ups overestimate their financial capability and run out of cash within the first year.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:periodically",
+    "title": "periodically",
+    "term": "periodically",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌpɪəriˈɒdɪkli/",
+    "part_of_speech": "adverb",
+    "meaning_vi": "theo định kỳ",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "The finance team reviews the company's budget periodically to spot unnecessary spending.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:recurring-expenses",
+    "title": "recurring expenses",
+    "term": "recurring expenses",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈkɜːrɪŋ ɪkˈspensɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chi phí định kỳ, chi phí lặp lại",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Rent and utility bills are recurring expenses that every small business must budget for each month.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:accountability",
+    "title": "accountability",
+    "term": "accountability",
+    "type": "Vocabulary",
+    "pronunciation": "/əˌkaʊntəˈbɪləti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "trách nhiệm giải trình",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Publishing an annual sustainability report increases a company's accountability to shareholders and the public.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:agriculture-industry",
+    "title": "agriculture industry",
+    "term": "agriculture industry",
+    "type": "Collocation",
+    "pronunciation": "/ˈægrɪkʌltʃər ˈɪndəstri/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "ngành nông nghiệp",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "The agriculture industry is under growing pressure to adapt its practices to unpredictable weather patterns.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:cogent-arguments",
+    "title": "cogent arguments",
+    "term": "cogent arguments",
+    "type": "Collocation",
+    "pronunciation": "/ˈkəʊdʒənt ˈɑːɡjumənts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những lập luận thuyết phục, có sức nặng",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Advocates of corporate social responsibility present cogent arguments about the long-term benefits of ethical business practices.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:fossil-fuels",
+    "title": "fossil fuels",
+    "term": "fossil fuels",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɒsl fjuːəlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nhiên liệu hóa thạch",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Energy companies that rely heavily on fossil fuels are facing mounting pressure from environmental regulators.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:natural-disasters",
+    "title": "natural disasters",
+    "term": "natural disasters",
+    "type": "Collocation",
+    "pronunciation": "/ˈnætʃrəl dɪˈzɑːstəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thiên tai",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Supply chains are increasingly disrupted by natural disasters such as floods and typhoons.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:proceeds",
+    "title": "proceeds",
+    "term": "proceeds",
+    "type": "Vocabulary",
+    "pronunciation": "/prəˈsiːdz/",
+    "part_of_speech": "verb",
+    "meaning_vi": "tiếp diễn, tiến triển",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "As deforestation proceeds, timber firms are finding it harder to source raw materials sustainably.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:sustainability",
+    "title": "sustainability",
+    "term": "sustainability",
+    "type": "Vocabulary",
+    "pronunciation": "/səˌsteɪnəˈbɪləti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tính bền vững",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Consumers increasingly favour brands that place sustainability at the core of their business model.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:environmental-sustainability",
+    "title": "environmental sustainability",
+    "term": "environmental sustainability",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˌvaɪrənˈmentəl səˌsteɪnəˈbɪləti/",
+    "part_of_speech": "n",
+    "meaning_vi": "tính bền vững của môi trường",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Policymakers increasingly recognize that environmental sustainability must accompany, not follow, economic expansion.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:unchecked-economic-development",
+    "title": "unchecked economic development",
+    "term": "unchecked economic development",
+    "type": "Collocation",
+    "pronunciation": "/ʌnˈtʃekt ˌiːkəˈnɒmɪk dɪˈveləpmənt/",
+    "part_of_speech": "n",
+    "meaning_vi": "phát triển kinh tế không kiểm soát",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Unchecked economic development in many industrializing regions has left rivers and forests severely degraded.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:exponentially",
+    "title": "exponentially",
+    "term": "exponentially",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌekspəˈnenʃəli/",
+    "part_of_speech": "adverb",
+    "meaning_vi": "theo cấp số nhân, tăng vọt",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Demand for the app grew exponentially after it was featured on a popular tech blog.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:compromising-their-core-business-operations",
+    "title": "compromising their core business operations",
+    "term": "compromising their core business operations",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɒmprəmaɪzɪŋ ðeə kɔː ˈbɪznəs ˌɒpəˈreɪʃnz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gây tổn hại đến hoạt động kinh doanh cốt lõi",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "A sudden expansion overseas risks compromising their core business operations at home.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:exert-negative-effects",
+    "title": "exert negative effects",
+    "term": "exert negative effects",
+    "type": "Collocation",
+    "pronunciation": "/ɪɡˈzɜːt ˈneɡətɪv ɪˈfekts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gây ra những tác động tiêu cực",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Moving a factory far from its supplier network can exert negative effects on delivery times.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:negatively-impacts-the-businesses-survival",
+    "title": "negatively impacts the businesses' survival",
+    "term": "negatively impacts the businesses' survival",
+    "type": "Collocation",
+    "pronunciation": "/ˈneɡətɪvli ˈɪmpækts ðə ˈbɪznəsɪz səˈvaɪvl/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tác động tiêu cực đến sự tồn tại của doanh nghiệp",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "A sudden rise in rent negatively impacts the businesses' survival, especially for independent retailers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:struggle-to-allocate-funds",
+    "title": "struggle to allocate funds",
+    "term": "struggle to allocate funds",
+    "type": "Collocation",
+    "pronunciation": "/ˈstrʌɡl tu ˈæləkeɪt fʌndz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gặp khó khăn trong việc phân bổ ngân sách",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Family-run shops often struggle to allocate funds for staff training when profit margins are thin.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:the-unavailability-of-resources",
+    "title": "the unavailability of resources",
+    "term": "the unavailability of resources",
+    "type": "Collocation",
+    "pronunciation": "/ði ʌnˌəveɪləˈbɪləti əv rɪˈsɔːsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự thiếu hụt nguồn lực",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Start-ups in remote areas often struggle with the unavailability of resources such as skilled labour.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:operational-challenge",
+    "title": "operational challenge",
+    "term": "operational challenge",
+    "type": "Collocation",
+    "pronunciation": "/ˌɒpəˈreɪʃənəl ˈtʃælɪndʒ/",
+    "part_of_speech": "noun",
+    "meaning_vi": "thách thức vận hành",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Experienced managers are usually better prepared to deal with an unexpected operational challenge than their younger counterparts.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:succeed-in-managerial-positions",
+    "title": "succeed in managerial positions",
+    "term": "succeed in managerial positions",
+    "type": "Collocation",
+    "pronunciation": "/səkˈsiːd ɪn ˌmænəˈdʒɪəriəl pəˈzɪʃənz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thành công ở vị trí quản lý",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Formal training can help ambitious employees succeed in managerial positions much earlier in their careers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:excel-in-innovation",
+    "title": "excel in innovation",
+    "term": "excel in innovation",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈsel ɪn ˌɪnəˈveɪʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "xuất sắc trong đổi mới sáng tạo",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Small technology firms often excel in innovation precisely because they are not constrained by rigid bureaucracy.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:entangled-in",
+    "title": "entangled in",
+    "term": "entangled in",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈtæŋɡəld ɪn/",
+    "part_of_speech": "adj",
+    "meaning_vi": "vướng bận, mắc kẹt vào",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Employees who become entangled in office politics often lose focus on their actual responsibilities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:valuing-personal-gain",
+    "title": "valuing personal gain",
+    "term": "valuing personal gain",
+    "type": "Collocation",
+    "pronunciation": "/ˈvæljuːɪŋ ˈpɜːsənəl ɡeɪn/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "coi trọng lợi ích cá nhân",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Corporate cultures that prioritize valuing personal gain over teamwork often struggle to retain talent.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:exceptionally-high-salaries",
+    "title": "exceptionally high salaries",
+    "term": "exceptionally high salaries",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈsepʃənəli haɪ ˈsæləriz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mức lương cực kỳ cao",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Some business leaders receive exceptionally high salaries that bear little relation to their companies' actual performance.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:jeopardizes-their-financial-stability",
+    "title": "jeopardizes their financial stability",
+    "term": "jeopardizes their financial stability",
+    "type": "Collocation",
+    "pronunciation": "/ˈdʒepədaɪzɪz ðeə faɪˈnænʃl stəˈbɪləti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đe dọa sự ổn định tài chính",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Taking on excessive debt to fund rapid growth often jeopardizes their financial stability in the long run.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:pay-premiums",
+    "title": "pay premiums",
+    "term": "pay premiums",
+    "type": "Collocation",
+    "pronunciation": "/peɪ ˈpriːmiəmz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "trả mức phí cao hơn",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Companies with poor safety records are forced to pay premiums for their insurance coverage.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:boosted-their-reputation",
+    "title": "boosted their reputation",
+    "term": "boosted their reputation",
+    "type": "Collocation",
+    "pronunciation": "/ˈbuːstɪd ðeə ˌrepjuˈteɪʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nâng cao danh tiếng",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Companies that responded generously during the crisis boosted their reputation among socially conscious customers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:challenging-and-slower-progress-in-environmental-initiatives",
+    "title": "challenging and slower progress in environmental initiatives",
+    "term": "challenging and slower progress in environmental initiatives",
+    "type": "Collocation",
+    "pronunciation": "/ˈtʃælɪndʒɪŋ ənd ˈsləʊə ˈprəʊɡres ɪn ɪnˌvaɪərənˈmentl ɪˈnɪʃətɪvz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tiến trình chậm hơn và khó khăn hơn trong các sáng kiến môi trường",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Without international cooperation, there would be challenging and slower progress in environmental initiatives across the globe.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:effects-of-climate-change",
+    "title": "effects of climate change",
+    "term": "effects of climate change",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈfekts əv ˈklaɪmət tʃeɪndʒ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tác động của biến đổi khí hậu",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Insurance companies are already adjusting their premiums to reflect the effects of climate change on property risk.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:exaggeration",
+    "title": "exaggeration",
+    "term": "exaggeration",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪgˌzædʒəˈreɪʃən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự phóng đại",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "To claim that every traditional retailer will vanish within a decade is surely an exaggeration.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:exploit-natural-resources",
+    "title": "exploit natural resources",
+    "term": "exploit natural resources",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈsplɔɪt ˈnætʃrəl rɪˈsɔːsɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "khai thác tài nguyên thiên nhiên",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Mining corporations that exploit natural resources without proper regulation often cause lasting environmental damage.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:face-challenges",
+    "title": "face challenges",
+    "term": "face challenges",
+    "type": "Collocation",
+    "pronunciation": "/feɪs ˈtʃælɪndʒɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đối mặt với thách thức",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Coastal fishing businesses face challenges as rising sea temperatures reduce fish stocks.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:flourish",
+    "title": "flourish",
+    "term": "flourish",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈflʌrɪʃ/",
+    "part_of_speech": "verb",
+    "meaning_vi": "phát triển mạnh, thịnh vượng",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Companies that embrace remote work have continued to flourish even amid rising office costs.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:hardships",
+    "title": "hardships",
+    "term": "hardships",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈhɑːdʃɪps/",
+    "part_of_speech": "noun",
+    "meaning_vi": "khó khăn, gian khổ",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Small exporters endured severe hardships when international shipping costs tripled overnight.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:resource-depletion",
+    "title": "resource depletion",
+    "term": "resource depletion",
+    "type": "Collocation",
+    "pronunciation": "/ˈriːsɔːs dɪˈpliːʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự cạn kiệt tài nguyên",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Investors are now factoring resource depletion into their long-term risk assessments of mining firms.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:social-evils",
+    "title": "social evils",
+    "term": "social evils",
+    "type": "Collocation",
+    "pronunciation": "/ˈsəʊʃl ˈiːvlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tệ nạn xã hội",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Campaigners argue that businesses have a duty to help tackle social evils such as poverty and pollution.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:comes-at-a-steep-environmental-cost",
+    "title": "comes at a steep environmental cost",
+    "term": "comes at a steep environmental cost",
+    "type": "Collocation",
+    "pronunciation": "/kʌmz æt ə stiːp ɪnˌvaɪrənˈmentəl kɒst/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "phải trả giá đắt về môi trường",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Rapid industrial expansion frequently comes at a steep environmental cost that future generations must bear.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:emit-significant-amounts-of-greenhouse-gasses",
+    "title": "emit significant amounts of greenhouse gasses",
+    "term": "emit significant amounts of greenhouse gasses",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈmɪt sɪɡˈnɪfɪkənt əˈmaʊnts əv ˈɡriːnhaʊs ˈɡæsɪz/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "thải ra lượng lớn khí nhà kính",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Coal-fired power plants continue to emit significant amounts of greenhouse gasses despite global climate commitments.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:untreated-industrial-waste",
+    "title": "untreated industrial waste",
+    "term": "untreated industrial waste",
+    "type": "Collocation",
+    "pronunciation": "/ʌnˈtriːtɪd ɪnˈdʌstriəl weɪst/",
+    "part_of_speech": "n",
+    "meaning_vi": "chất thải công nghiệp chưa qua xử lý",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Factories that dump untreated industrial waste into waterways pose serious risks to public health.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:detrimental-impact-of-economic-growth",
+    "title": "detrimental impact of economic growth",
+    "term": "detrimental impact of economic growth",
+    "type": "Collocation",
+    "pronunciation": "/ˌdetrɪˈmentəl ˈɪmpækt əv ˌiːkəˈnɒmɪk ɡrəʊθ/",
+    "part_of_speech": "n",
+    "meaning_vi": "tác động bất lợi của tăng trưởng kinh tế",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Economists are increasingly studying the detrimental impact of economic growth on biodiversity and natural habitats.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:contributor-to-environmental-degradation",
+    "title": "contributor to environmental degradation",
+    "term": "contributor to environmental degradation",
+    "type": "Collocation",
+    "pronunciation": "/kənˈtrɪbjʊtə tʊ ɪnˌvaɪrənˈmentəl ˌdeɡrəˈdeɪʃən/",
+    "part_of_speech": "n",
+    "meaning_vi": "tác nhân gây suy thoái môi trường",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Fast fashion has become a major contributor to environmental degradation through textile waste and chemical runoff.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:environmental-degradation",
+    "title": "environmental degradation",
+    "term": "environmental degradation",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˌvaɪrənˈmentəl ˌdeɡrəˈdeɪʃən/",
+    "part_of_speech": "n",
+    "meaning_vi": "sự suy thoái môi trường",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Rapid deforestation for agriculture is a leading cause of environmental degradation in tropical regions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:exacts-a-heavy-toll-on",
+    "title": "exacts a heavy toll on",
+    "term": "exacts a heavy toll on",
+    "type": "Collocation",
+    "pronunciation": "/ɪɡˈzækts ə ˈhevi təʊl ɒn/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gây thiệt hại nặng nề cho",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "The relentless pursuit of profit often exacts a heavy toll on employees' mental health and work-life balance.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:sustain-the-conglomerates-growth-and-dominance",
+    "title": "sustain the conglomerate's growth and dominance",
+    "term": "sustain the conglomerate's growth and dominance",
+    "type": "Collocation",
+    "pronunciation": "/səˈsteɪn ðə kənˈɡlɒmərəts ɡrəʊθ ənd ˈdɒmɪnəns/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "duy trì sự tăng trưởng và vị thế thống trị của tập đoàn",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Continuous investment in research has helped sustain the conglomerate's growth and dominance for decades.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:anticipate-market-risks",
+    "title": "anticipate market risks",
+    "term": "anticipate market risks",
+    "type": "Collocation",
+    "pronunciation": "/ænˈtɪsɪpeɪt ˈmɑːkɪt rɪsks/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "dự đoán trước rủi ro thị trường",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Seasoned executives are often able to anticipate market risks well before they become apparent to competitors.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:bring-out-the-best-in-people",
+    "title": "bring out the best in people",
+    "term": "bring out the best in people",
+    "type": "Collocation",
+    "pronunciation": "/brɪŋ aʊt ðə best ɪn ˈpiːpl/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "khơi dậy những điều tốt nhất ở con người",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "A good manager knows how to bring out the best in people, even during stressful projects.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:demonstrate-emotional-maturity",
+    "title": "demonstrate emotional maturity",
+    "term": "demonstrate emotional maturity",
+    "type": "Collocation",
+    "pronunciation": "/ˈdemənstreɪt ɪˈməʊʃənəl məˈtʃʊərəti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thể hiện sự trưởng thành về cảm xúc",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Effective leaders must demonstrate emotional maturity when handling conflicts between employees.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:handling-high-pressure-situations",
+    "title": "handling high-pressure situations",
+    "term": "handling high-pressure situations",
+    "type": "Collocation",
+    "pronunciation": "/ˈhændlɪŋ haɪ ˈpreʃə ˌsɪtjuˈeɪʃənz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "xử lý các tình huống áp lực cao",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Years of experience give older managers a distinct advantage when it comes to handling high-pressure situations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:leveraged-his-deep-industry-knowledge",
+    "title": "leveraged his deep industry knowledge",
+    "term": "leveraged his deep industry knowledge",
+    "type": "Collocation",
+    "pronunciation": "/ˈliːvərɪdʒd hɪz diːp ˈɪndəstri ˈnɒlɪdʒ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tận dụng kiến thức chuyên sâu về ngành",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "The chief executive leveraged his deep industry knowledge to steer the firm safely through the recession.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:maintain-rational-guidance",
+    "title": "maintain rational guidance",
+    "term": "maintain rational guidance",
+    "type": "Collocation",
+    "pronunciation": "/meɪnˈteɪn ˈræʃənəl ˈɡaɪdəns/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "duy trì sự chỉ dẫn hợp lý",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "A good manager must maintain rational guidance even when the company is facing a serious financial crisis.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:make-informed-decisions",
+    "title": "make informed decisions",
+    "term": "make informed decisions",
+    "type": "Collocation",
+    "pronunciation": "/meɪk ɪnˈfɔːmd dɪˈsɪʒənz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đưa ra quyết định sáng suốt",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Access to accurate data allows executives to make informed decisions rather than relying purely on intuition.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:managing-relationships-and-communicating-with-people",
+    "title": "managing relationships and communicating with people",
+    "term": "managing relationships and communicating with people",
+    "type": "Collocation",
+    "pronunciation": "/ˈmænɪdʒɪŋ rɪˈleɪʃnʃɪps ænd kəˈmjuːnɪkeɪtɪŋ wɪð ˈpiːpl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "quản lý các mối quan hệ và giao tiếp với con người",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Effective leadership depends heavily on managing relationships and communicating with people across departments.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:preventing-strategic-mistakes",
+    "title": "preventing strategic mistakes",
+    "term": "preventing strategic mistakes",
+    "type": "Collocation",
+    "pronunciation": "/prɪˈventɪŋ strəˈtiːdʒɪk mɪˈsteɪks/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "ngăn ngừa sai lầm chiến lược",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Thorough market research plays a crucial role in preventing strategic mistakes before a product is launched.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:revamping-a-strategy",
+    "title": "revamping a strategy",
+    "term": "revamping a strategy",
+    "type": "Collocation",
+    "pronunciation": "/riːˈvæmpɪŋ ə ˈstrætədʒi/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cải tổ một chiến lược",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Revamping a strategy in response to changing customer preferences can help a business stay competitive.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:stay-one-step-ahead-of-their-opponents",
+    "title": "stay one step ahead of their opponents",
+    "term": "stay one step ahead of their opponents",
+    "type": "Collocation",
+    "pronunciation": "/steɪ wʌn step əˈhed əv ðeər əˈpəʊnənts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "luôn đi trước đối thủ một bước",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Constant innovation helps tech companies stay one step ahead of their opponents in a crowded market.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:drive-innovation",
+    "title": "drive innovation",
+    "term": "drive innovation",
+    "type": "Collocation",
+    "pronunciation": "/draɪv ˌɪnəˈveɪʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thúc đẩy đổi mới sáng tạo",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Young employees often drive innovation within a company because they are less resistant to change.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:drive-innovation-and-adapt-to-trends",
+    "title": "drive innovation and adapt to trends",
+    "term": "drive innovation and adapt to trends",
+    "type": "Collocation",
+    "pronunciation": "/draɪv ˌɪnəˈveɪʃən ənd əˈdæpt tə trendz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thúc đẩy đổi mới và thích ứng với xu hướng",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Start-ups founded by young entrepreneurs often drive innovation and adapt to trends faster than established corporations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:boosting-overall-revenue",
+    "title": "boosting overall revenue",
+    "term": "boosting overall revenue",
+    "type": "Collocation",
+    "pronunciation": "/ˈbuːstɪŋ ˌəʊvərˈɔːl ˈrevənjuː/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thúc đẩy tổng doanh thu",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Expanding into overseas markets is one of the most effective ways of boosting overall revenue.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:biodegradable-cosmetics",
+    "title": "biodegradable cosmetics",
+    "term": "biodegradable cosmetics",
+    "type": "Collocation",
+    "pronunciation": "/ˌbaɪəʊdɪˈgreɪdəbl kɒzˈmetɪks/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mỹ phẩm có thể phân hủy sinh học",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "A growing number of start-ups specialise in biodegradable cosmetics packaged in compostable containers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:collective-efforts",
+    "title": "collective efforts",
+    "term": "collective efforts",
+    "type": "Collocation",
+    "pronunciation": "/kəˈlektɪv ˈefəts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những nỗ lực tập thể",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "The collective efforts of multinational corporations are essential if global carbon emissions are to be reduced substantially.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:corporate-social-responsibility-initiatives",
+    "title": "corporate social responsibility initiatives",
+    "term": "corporate social responsibility initiatives",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɔːpərət ˈsəʊʃl rɪˌspɒnsəˈbɪləti ɪˈnɪʃətɪvz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các sáng kiến trách nhiệm xã hội doanh nghiệp",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "The bank launched several corporate social responsibility initiatives, including free financial literacy workshops for low-income families.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:enhance-their-public-image",
+    "title": "enhance their public image",
+    "term": "enhance their public image",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈhɑːns ðeə ˈpʌblɪk ˈɪmɪdʒ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nâng cao hình ảnh công chúng",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Many technology giants sponsor charitable projects to enhance their public image among consumers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:environmentally-friendly-products",
+    "title": "environmentally friendly products",
+    "term": "environmentally friendly products",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˌvaɪrənˈmentəli ˈfrendli ˈprɒdʌkts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sản phẩm thân thiện với môi trường",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Retailers that stock environmentally friendly products are attracting a loyal base of younger consumers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:feasible-initiatives",
+    "title": "feasible initiatives",
+    "term": "feasible initiatives",
+    "type": "Collocation",
+    "pronunciation": "/ˈfiːzəbl ɪˈnɪʃətɪvz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những sáng kiến khả thi",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Governments should work with businesses to design feasible initiatives that reduce environmental damage without harming profits.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:fulfill-their-corporate-social-responsibility",
+    "title": "fulfill their corporate social responsibility",
+    "term": "fulfill their corporate social responsibility",
+    "type": "Collocation",
+    "pronunciation": "/fʊlˈfɪl ðeə ˈkɔːpərət ˈsəʊʃəl rɪˌspɒnsəˈbɪləti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thực hiện trách nhiệm xã hội của doanh nghiệp",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Large corporations are increasingly expected to fulfill their corporate social responsibility by reducing waste and pollution.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:pledged-to-achieve-carbon-neutrality",
+    "title": "pledged to achieve carbon neutrality",
+    "term": "pledged to achieve carbon neutrality",
+    "type": "Collocation",
+    "pronunciation": "/pledʒd tə əˈtʃiːv ˈkɑːbən njuːˈtræləti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cam kết đạt được trung hòa carbon",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Many leading corporations have pledged to achieve carbon neutrality within the next two decades.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:portable-wooden-utensils-packs",
+    "title": "portable wooden utensils packs",
+    "term": "portable wooden utensils packs",
+    "type": "Collocation",
+    "pronunciation": "/ˈpɔːtəbl ˈwʊdn juːˈtensəlz pæks/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bộ dụng cụ gỗ tiện mang theo",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Eco-conscious travellers now carry portable wooden utensils packs instead of single-use plastic cutlery.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:reached-net-zero-emissions",
+    "title": "reached net-zero emissions",
+    "term": "reached net-zero emissions",
+    "type": "Collocation",
+    "pronunciation": "/riːtʃt net ˈzɪərəʊ ɪˈmɪʃənz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đạt được mức phát thải ròng bằng không",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "A handful of pioneering companies have already reached net-zero emissions ahead of government deadlines.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:societys-betterment",
+    "title": "society's betterment",
+    "term": "society's betterment",
+    "type": "Collocation",
+    "pronunciation": "/səˈsaɪətiz ˈbetəmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự tiến bộ, cải thiện của xã hội",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "The foundation reinvests a portion of its profits into projects aimed at society's betterment.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:undertake-such-initiatives",
+    "title": "undertake such initiatives",
+    "term": "undertake such initiatives",
+    "type": "Collocation",
+    "pronunciation": "/ˌʌndəˈteɪk sʌtʃ ɪˈnɪʃətɪvz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thực hiện những sáng kiến như vậy",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Only firms with substantial reserves are able to undertake such initiatives without risking their cash flow.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:sustainable-practices",
+    "title": "sustainable practices",
+    "term": "sustainable practices",
+    "type": "Collocation",
+    "pronunciation": "/səˈsteɪnəbəl ˈpræktɪsɪz/",
+    "part_of_speech": "n",
+    "meaning_vi": "các thực hành bền vững",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Firms that adopt sustainable practices tend to build stronger long-term reputations among environmentally conscious consumers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:pursue-economic-growth-in-an-environmentally-sustainable-manner",
+    "title": "pursue economic growth in an environmentally sustainable manner",
+    "term": "pursue economic growth in an environmentally sustainable manner",
+    "type": "Collocation",
+    "pronunciation": "/pəˈsjuː ˌiːkəˈnɒmɪk ɡrəʊθ ɪn ən ɪnˌvaɪrənˈmentəli səˈsteɪnəbəl ˈmænə/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "theo đuổi tăng trưởng kinh tế theo hướng bền vững với môi trường",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Rather than halting industrial expansion, nations should pursue economic growth in an environmentally sustainable manner.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:making-economic-activities-more-environmentally-sustainable",
+    "title": "making economic activities more environmentally sustainable",
+    "term": "making economic activities more environmentally sustainable",
+    "type": "Collocation",
+    "pronunciation": "/ˈmeɪkɪŋ ˌiːkəˈnɒmɪk ækˈtɪvətiz mɔːr ɪnˌvaɪrənˈmentəli səˈsteɪnəbəl/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "làm cho các hoạt động kinh tế bền vững hơn với môi trường",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Adopting circular production models is one practical way of making economic activities more environmentally sustainable.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:emit-minimal-pollutants",
+    "title": "emit minimal pollutants",
+    "term": "emit minimal pollutants",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈmɪt ˈmɪnɪməl pəˈluːtənts/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "thải ra rất ít chất gây ô nhiễm",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Electric vehicles emit minimal pollutants compared with traditional petrol-powered cars.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:cleaner-energy-alternatives",
+    "title": "cleaner energy alternatives",
+    "term": "cleaner energy alternatives",
+    "type": "Collocation",
+    "pronunciation": "/ˈkliːnər ˈenədʒi ɔːlˈtɜːnətɪvz/",
+    "part_of_speech": "n",
+    "meaning_vi": "các nguồn năng lượng thay thế sạch hơn",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Governments are subsidizing cleaner energy alternatives to hasten the transition away from fossil fuels.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:promoting-eco-friendly-policies-and-practices",
+    "title": "promoting eco-friendly policies and practices",
+    "term": "promoting eco-friendly policies and practices",
+    "type": "Collocation",
+    "pronunciation": "/prəˈməʊtɪŋ ˌiːkəʊˈfrendli ˈpɒləsiz ənd ˈpræktɪsɪz/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "thúc đẩy các chính sách và thực hành thân thiện với môi trường",
+    "topic": "Business & Economics",
+    "subTopic": "Corporate Management & Ethics",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Many corporations are now promoting eco-friendly policies and practices to attract environmentally minded customers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:analyse-large-quantities-of-data",
+    "title": "analyse large quantities of data",
+    "term": "analyse large quantities of data",
+    "type": "Collocation",
+    "pronunciation": "/ˈænəlaɪz lɑːdʒ ˈkwɒntətiz əv ˈdeɪtə/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "phân tích khối lượng lớn dữ liệu",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Modern recruiters look for candidates who can analyse large quantities of data to guide business decisions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:assist-in-logistics-or-administrative-tasks",
+    "title": "assist in logistics or administrative tasks",
+    "term": "assist in logistics or administrative tasks",
+    "type": "Collocation",
+    "pronunciation": "/əˈsɪst ɪn ləˈdʒɪstɪks ɔːr ədˈmɪnɪstrətɪv tɑːsks/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "hỗ trợ các công việc hậu cần hoặc hành chính",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Interns are usually hired to assist in logistics or administrative tasks during peak seasons.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:command-natural-respect-from-employees",
+    "title": "command natural respect from employees",
+    "term": "command natural respect from employees",
+    "type": "Collocation",
+    "pronunciation": "/kəˈmɑːnd ˈnætʃrəl rɪˈspekt frəm ɪmˈplɔɪiːz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nhận được sự tôn trọng tự nhiên từ nhân viên",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Managers who command natural respect from employees usually find it easier to implement organisational change.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:demonstrates-the-ability-to-think-critically",
+    "title": "demonstrates the ability to think critically",
+    "term": "demonstrates the ability to think critically",
+    "type": "Collocation",
+    "pronunciation": "/ˈdemənstreɪts ði əˈbɪləti tə θɪŋk ˈkrɪtɪkli/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thể hiện khả năng tư duy phản biện",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "A well-argued business proposal demonstrates the ability to think critically under pressure.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:mathematical-ability",
+    "title": "mathematical ability",
+    "term": "mathematical ability",
+    "type": "Collocation",
+    "pronunciation": "/ˌmæθəˈmætɪkl əˈbɪləti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khả năng toán học",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Strong mathematical ability is highly valued in roles that involve budgeting and forecasting.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:proficiency-in-maths",
+    "title": "proficiency in maths",
+    "term": "proficiency in maths",
+    "type": "Collocation",
+    "pronunciation": "/prəˈfɪʃnsi ɪn mæθs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự thành thạo về toán học",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Candidates with proficiency in maths often have an advantage when applying for finance positions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:seniority",
+    "title": "seniority",
+    "term": "seniority",
+    "type": "Vocabulary",
+    "pronunciation": "/siːniˈɒrəti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "thâm niên",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Promotions in many traditional companies are still awarded largely on the basis of seniority rather than performance.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:to-be-knowledgeable-in-maths",
+    "title": "to be knowledgeable in maths",
+    "term": "to be knowledgeable in maths",
+    "type": "Collocation",
+    "pronunciation": "/tə bi ˈnɒlɪdʒəbl ɪn mæθs/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "am hiểu về toán học",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Accountants need to be knowledgeable in maths to interpret complex financial statements accurately.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:to-be-well-versed-in-mathematics",
+    "title": "to be well versed in mathematics",
+    "term": "to be well versed in mathematics",
+    "type": "Collocation",
+    "pronunciation": "/tə bi wel vɜːst ɪn ˌmæθəˈmætɪks/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "thông thạo về toán học",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Data analysts need to be well versed in mathematics to build reliable forecasting models.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:vital-to-the-success-of",
+    "title": "vital to the success of",
+    "term": "vital to the success of",
+    "type": "Collocation",
+    "pronunciation": "/ˈvaɪtl tə ðə səkˈses əv/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "thiết yếu đối với sự thành công của",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Strong numerical skills are vital to the success of anyone working in financial planning.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:vital-to-the-success-of-an-individual",
+    "title": "vital to the success of an individual",
+    "term": "vital to the success of an individual",
+    "type": "Collocation",
+    "pronunciation": "/ˈvaɪtl tə ðə səkˈses əv ən ˌɪndɪˈvɪdʒuəl/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "thiết yếu đối với thành công của một cá nhân",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Adaptability is widely considered vital to the success of an individual in a fast-changing job market.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:engrossed-in-tasks",
+    "title": "engrossed in tasks",
+    "term": "engrossed in tasks",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈɡrəʊst ɪn tɑːsks/",
+    "part_of_speech": "adj",
+    "meaning_vi": "mải mê với công việc",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Parents who are constantly engrossed in tasks on their phones risk neglecting their children's emotional needs.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:inadequacies-of-well-trained-employees",
+    "title": "inadequacies of well-trained employees",
+    "term": "inadequacies of well-trained employees",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈædɪkwəsiz əv wel treɪnd ɪmˈplɔɪiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự thiếu hụt nhân viên được đào tạo bài bản",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Rural branches frequently face inadequacies of well-trained employees compared with their urban counterparts.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:lack-of-experience-and-maturity",
+    "title": "lack of experience and maturity",
+    "term": "lack of experience and maturity",
+    "type": "Collocation",
+    "pronunciation": "/læk əv ɪkˈspɪəriəns ənd məˈtʃʊərəti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thiếu kinh nghiệm và sự chín chắn",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Critics argue that a lack of experience and maturity can lead young managers to make impulsive business decisions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:overall-job-satisfaction",
+    "title": "overall job satisfaction",
+    "term": "overall job satisfaction",
+    "type": "Collocation",
+    "pronunciation": "/ˌəʊvərɔːl dʒɒb ˌsætɪsˈfækʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mức độ hài lòng chung với công việc",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Flexible working hours have been shown to boost overall job satisfaction among office staff.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:discourage-ambition-and-stifle-motivation",
+    "title": "discourage ambition and stifle motivation",
+    "term": "discourage ambition and stifle motivation",
+    "type": "Collocation",
+    "pronunciation": "/dɪsˈkʌrɪdʒ æmˈbɪʃən ənd ˈstaɪfəl ˌməʊtɪˈveɪʃən/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "làm nản lòng tham vọng và kìm hãm động lực",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Excessive taxation on high earners may discourage ambition and stifle motivation across the workforce.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:lose-the-incentive-to-work-hard",
+    "title": "lose the incentive to work hard",
+    "term": "lose the incentive to work hard",
+    "type": "Collocation",
+    "pronunciation": "/luːz ði ɪnˈsentɪv tə wɜːk hɑːd/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "mất động lực làm việc chăm chỉ",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "When wages fail to reflect effort, workers may lose the incentive to work hard.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:increase-their-earning-potential",
+    "title": "increase their earning potential",
+    "term": "increase their earning potential",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈkriːs ðeə ˈɜːnɪŋ pəˈtenʃəl/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "tăng tiềm năng thu nhập",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Acquiring new technical skills is one of the most reliable ways for workers to increase their earning potential.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:secure-stable-jobs-and-earn-sufficient-income",
+    "title": "secure stable jobs and earn sufficient income",
+    "term": "secure stable jobs and earn sufficient income",
+    "type": "Collocation",
+    "pronunciation": "/sɪˈkjʊə ˈsteɪbəl dʒɒbz ənd ɜːn səˈfɪʃənt ˈɪŋkʌm/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "có việc làm ổn định và thu nhập đủ sống",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Government-backed job schemes help citizens secure stable jobs and earn sufficient income to support their families.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:sacrificing-precious-time",
+    "title": "sacrificing precious time",
+    "term": "sacrificing precious time",
+    "type": "Collocation",
+    "pronunciation": "/ˈsækrɪfaɪsɪŋ ˈpreʃəs taɪm/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "hy sinh thời gian quý báu",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Ambitious professionals frequently end up sacrificing precious time with family in pursuit of career success.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:a-sense-of-purpose",
+    "title": "a sense of purpose",
+    "term": "a sense of purpose",
+    "type": "Collocation",
+    "pronunciation": "/ə sens əv ˈpɜːpəs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cảm giác có mục đích sống",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Meaningful employment gives workers a sense of purpose that no amount of financial compensation can fully replace.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:sustaining-staff-morale",
+    "title": "sustaining staff morale",
+    "term": "sustaining staff morale",
+    "type": "Collocation",
+    "pronunciation": "/səˈsteɪnɪŋ stɑːf məˈrɑːl/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "duy trì tinh thần làm việc của nhân viên",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Regular recognition schemes are essential for sustaining staff morale during periods of organisational change.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:implement-vocational-training-programs",
+    "title": "implement vocational training programs",
+    "term": "implement vocational training programs",
+    "type": "Collocation",
+    "pronunciation": "/ˈɪmplɪment vəʊˈkeɪʃənəl ˈtreɪnɪŋ ˈprəʊɡræmz/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "triển khai các chương trình đào tạo nghề",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "To address youth unemployment, the government should implement vocational training programs tailored to labour-market needs.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:career-development-initiatives",
+    "title": "career development initiatives",
+    "term": "career development initiatives",
+    "type": "Collocation",
+    "pronunciation": "/kəˈrɪə dɪˈveləpmənt ɪˈnɪʃətɪvz/",
+    "part_of_speech": "n",
+    "meaning_vi": "sáng kiến phát triển nghề nghiệp",
+    "topic": "Business & Economics",
+    "subTopic": "Employment & Labour Market",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Universities are increasingly partnering with businesses to offer career development initiatives to graduates.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:companys-image-and-market-position",
+    "title": "company's image and market position",
+    "term": "company's image and market position",
+    "type": "Collocation",
+    "pronunciation": "/ˈkʌmpəniz ˈɪmɪdʒ ənd ˈmɑːkɪt pəˈzɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hình ảnh và vị thế thị trường của công ty",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "A single product failure can seriously damage a company's image and market position within its industry.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:consumption-behaviors",
+    "title": "consumption behaviors",
+    "term": "consumption behaviors",
+    "type": "Collocation",
+    "pronunciation": "/kənˈsʌmpʃən bɪˈheɪvjəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hành vi tiêu dùng",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "The pandemic permanently altered consumption behaviors, pushing more shoppers toward online platforms.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:exceptionally",
+    "title": "exceptionally",
+    "term": "exceptionally",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪkˈsepʃənəli/",
+    "part_of_speech": "adv",
+    "meaning_vi": "đặc biệt, vô cùng",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Modern advertising campaigns can reach an exceptionally wide audience within a matter of hours.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:high-end-clothes-stores",
+    "title": "high-end clothes stores",
+    "term": "high-end clothes stores",
+    "type": "Collocation",
+    "pronunciation": "/haɪ end kləʊðz stɔːz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cửa hàng quần áo cao cấp",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "High-end clothes stores tend to cluster in wealthy districts where footfall from affluent shoppers is highest.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:own-a-one-of-a-kind-and-sought-after-product",
+    "title": "own a one-of-a-kind and sought-after product",
+    "term": "own a one-of-a-kind and sought-after product",
+    "type": "Collocation",
+    "pronunciation": "/əʊn ə ˌwʌn əv ə ˈkaɪnd ənd ˈsɔːt ˌɑːftə ˈprɒdʌkt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "sở hữu một sản phẩm độc nhất vô nhị và được săn đón",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Luxury brands thrive because they own a one-of-a-kind and sought-after product that few competitors can replicate.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:target-market",
+    "title": "target market",
+    "term": "target market",
+    "type": "Collocation",
+    "pronunciation": "/ˈtɑːgɪt ˈmɑːkɪt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thị trường mục tiêu",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Before launching the app, the developers spent months researching their target market's spending habits.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:tempting",
+    "title": "tempting",
+    "term": "tempting",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈtemptɪŋ/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "hấp dẫn, có sức cám dỗ",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "The discount looked so tempting that customers queued outside the store before it even opened.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:luxury-goods",
+    "title": "luxury goods",
+    "term": "luxury goods",
+    "type": "Collocation",
+    "pronunciation": "/ˈlʌkʃəri ɡʊdz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hàng hóa xa xỉ",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Demand for luxury goods tends to rise sharply as disposable income among the wealthy increases.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:builds-greater-brand-recognition",
+    "title": "builds greater brand recognition",
+    "term": "builds greater brand recognition",
+    "type": "Collocation",
+    "pronunciation": "/bɪldz ˈɡreɪtə brænd ˌrekəɡˈnɪʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "xây dựng mức độ nhận diện thương hiệu cao hơn",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Sponsoring major sporting events builds greater brand recognition than ordinary television commercials.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:cultivates-a-sense-of-familiarity",
+    "title": "cultivates a sense of familiarity",
+    "term": "cultivates a sense of familiarity",
+    "type": "Collocation",
+    "pronunciation": "/ˈkʌltɪveɪts ə sens əv fəˌmɪliˈærəti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tạo ra cảm giác quen thuộc",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Seeing the same coffee chain in every airport cultivates a sense of familiarity for frequent travelers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:fear-of-missing-out",
+    "title": "fear of missing out",
+    "term": "fear of missing out",
+    "type": "Collocation",
+    "pronunciation": "/fɪər əv ˈmɪsɪŋ aʊt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nỗi sợ bỏ lỡ",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Advertisers deliberately exploit consumers' fear of missing out to drive impulsive purchases during flash sales.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:is-prompted-to-buy-the-goods-out-of-curiosity",
+    "title": "is prompted to buy the goods out of curiosity",
+    "term": "is prompted to buy the goods out of curiosity",
+    "type": "Collocation",
+    "pronunciation": "/ɪz ˈprɒmptɪd tə baɪ ðə gʊdz aʊt ɒv ˌkjʊəriˈɒsəti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "bị thôi thúc mua hàng vì tò mò",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "When a limited-edition item appears in a shop window, a passer-by is often prompted to buy the goods out of curiosity.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:product-availability-and-affordability",
+    "title": "product availability and affordability",
+    "term": "product availability and affordability",
+    "type": "Collocation",
+    "pronunciation": "/ˈprɒdʌkt əˌveɪləˈbɪləti ænd əˌfɔːdəˈbɪləti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự sẵn có và khả năng chi trả của sản phẩm",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Online marketplaces have dramatically improved product availability and affordability for rural consumers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:translates-into-sustained-high-volume-sales",
+    "title": "translates into sustained, high-volume sales",
+    "term": "translates into sustained, high-volume sales",
+    "type": "Collocation",
+    "pronunciation": "/trænsˈleɪts ˈɪntuː səˈsteɪnd haɪ ˈvɒljuːm seɪlz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "chuyển hóa thành doanh số bán hàng lớn và bền vững",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Strong brand loyalty often translates into sustained, high-volume sales, even when competitors offer lower prices.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:unparalleled-audience-reach",
+    "title": "unparalleled audience reach",
+    "term": "unparalleled audience reach",
+    "type": "Collocation",
+    "pronunciation": "/ˌʌnˈpærəleld ˈɔːdiəns riːtʃ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khả năng tiếp cận khán giả vô song",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Television advertising offers companies unparalleled audience reach, allowing a single campaign to influence millions of potential customers overnight.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:extravagant-lifestyles",
+    "title": "extravagant lifestyles",
+    "term": "extravagant lifestyles",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈstrævəɡənt ˈlaɪfstaɪlz/",
+    "part_of_speech": "n",
+    "meaning_vi": "lối sống xa hoa",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Newfound wealth has led some people to adopt extravagant lifestyles that strain their long-term savings.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:rise-in-materialism",
+    "title": "rise in materialism",
+    "term": "rise in materialism",
+    "type": "Collocation",
+    "pronunciation": "/raɪz ɪn məˈtɪəriəlɪzəm/",
+    "part_of_speech": "n",
+    "meaning_vi": "sự gia tăng của chủ nghĩa vật chất",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Economic prosperity has fuelled a rise in materialism, particularly among younger urban consumers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:acquiring-material-possessions",
+    "title": "acquiring material possessions",
+    "term": "acquiring material possessions",
+    "type": "Collocation",
+    "pronunciation": "/əˈkwaɪərɪŋ məˈtɪəriəl pəˈzeʃənz/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "tích lũy của cải vật chất",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Advertising encourages people to measure their self-worth by acquiring material possessions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:self-centered",
+    "title": "self-centered",
+    "term": "self-centered",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌself ˈsentəd/",
+    "part_of_speech": "adj",
+    "meaning_vi": "vị kỷ, chỉ nghĩ đến bản thân",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "A culture that rewards individual achievement can make people more self-centered over time.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:excessive-consumerism",
+    "title": "excessive consumerism",
+    "term": "excessive consumerism",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈsesɪv kənˈsjuːmərɪzəm/",
+    "part_of_speech": "n",
+    "meaning_vi": "chủ nghĩa tiêu dùng quá mức",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Excessive consumerism drives households into debt while generating enormous amounts of waste.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:boost-their-profit",
+    "title": "boost their profit",
+    "term": "boost their profit",
+    "type": "Collocation",
+    "pronunciation": "/buːst ðeə ˈprɒfɪt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tăng lợi nhuận",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Many firms cut unnecessary overheads in order to boost their profit during economic downturns.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:carefully-orchestrated-media-coverage",
+    "title": "carefully orchestrated media coverage",
+    "term": "carefully orchestrated media coverage",
+    "type": "Collocation",
+    "pronunciation": "/ˈkeəfəli ˈɔːkɪstreɪtɪd ˈmiːdiə ˈkʌvərɪdʒ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự đưa tin trên truyền thông được dàn dựng cẩn thận",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Carefully orchestrated media coverage can transform a small start-up into a household name almost overnight.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:come-up-with-innovative-ways",
+    "title": "come up with innovative ways",
+    "term": "come up with innovative ways",
+    "type": "Collocation",
+    "pronunciation": "/kʌm ʌp wɪð ˌɪnəˈveɪtɪv weɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nghĩ ra những cách sáng tạo",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Start-up founders must constantly come up with innovative ways to stand out in a saturated market.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:consistent-quality-standards",
+    "title": "consistent quality standards",
+    "term": "consistent quality standards",
+    "type": "Collocation",
+    "pronunciation": "/kənˈsɪstənt ˈkwɒləti ˈstændədz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tiêu chuẩn chất lượng nhất quán",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "International franchises are valued by customers for maintaining consistent quality standards in every branch.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:create-powerful-incentives",
+    "title": "create powerful incentives",
+    "term": "create powerful incentives",
+    "type": "Collocation",
+    "pronunciation": "/kriˈeɪt ˈpaʊəfʊl ɪnˈsentɪvz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tạo ra những động lực mạnh mẽ",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Loyalty programmes create powerful incentives for customers to remain with the same retailer for years.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:creates-its-own-segment",
+    "title": "creates its own segment",
+    "term": "creates its own segment",
+    "type": "Collocation",
+    "pronunciation": "/kriˈeɪts ɪts əʊn ˈsegmənt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tạo ra phân khúc thị trường riêng",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "By pioneering plant-based snacks, the company creates its own segment rather than competing head-on with rivals.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:elevate-product-awareness",
+    "title": "elevate product awareness",
+    "term": "elevate product awareness",
+    "type": "Collocation",
+    "pronunciation": "/ˈelɪveɪt ˈprɒdʌkt əˈweənəs/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nâng cao nhận thức về sản phẩm",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Social media influencers are frequently hired to elevate product awareness among younger consumers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:mold-brand-desirability",
+    "title": "mold brand desirability",
+    "term": "mold brand desirability",
+    "type": "Collocation",
+    "pronunciation": "/məʊld brænd dɪˌzaɪərəˈbɪləti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "định hình sức hấp dẫn của thương hiệu",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Celebrity endorsements are frequently used to mold brand desirability among impressionable teenagers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:offer-promotions",
+    "title": "offer promotions",
+    "term": "offer promotions",
+    "type": "Collocation",
+    "pronunciation": "/ˈɒfə prəˈməʊʃənz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đưa ra các chương trình khuyến mãi",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Supermarkets regularly offer promotions on seasonal produce to clear excess stock quickly.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:shape-consumer-demand",
+    "title": "shape consumer demand",
+    "term": "shape consumer demand",
+    "type": "Collocation",
+    "pronunciation": "/ʃeɪp kənˈsjuːmə dɪˈmɑːnd/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "định hình nhu cầu tiêu dùng",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Persistent advertising can shape consumer demand to such an extent that people buy products they do not genuinely need.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:take-on-different-branding-schemes",
+    "title": "take on different branding schemes",
+    "term": "take on different branding schemes",
+    "type": "Collocation",
+    "pronunciation": "/teɪk ɒn ˈdɪfrənt ˈbrændɪŋ skiːmz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "áp dụng các chiến lược xây dựng thương hiệu khác nhau",
+    "topic": "Business & Economics",
+    "subTopic": "Consumer Behaviour & Marketing",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "As competition intensifies, retailers often take on different branding schemes to appeal to younger shoppers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:realm-of-government-and-public-institutions",
+    "title": "realm of government and public institutions",
+    "term": "realm of government and public institutions",
+    "type": "Collocation",
+    "pronunciation": "/relm əv ˈɡʌvənmənt ænd ˈpʌblɪk ˌɪnstɪˈtjuːʃnz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lĩnh vực của chính phủ và các cơ quan công",
+    "topic": "Business & Economics",
+    "subTopic": "Government Economic Policy",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Some critics argue that welfare provision should remain firmly within the realm of government and public institutions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:public-revenues",
+    "title": "public revenues",
+    "term": "public revenues",
+    "type": "Collocation",
+    "pronunciation": "/ˈpʌblɪk ˈrevənjuːz/",
+    "part_of_speech": "n",
+    "meaning_vi": "nguồn thu ngân sách nhà nước",
+    "topic": "Business & Economics",
+    "subTopic": "Government Economic Policy",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Rising public revenues from taxation enable governments to fund large-scale education reforms.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:democratic-principles",
+    "title": "democratic principles",
+    "term": "democratic principles",
+    "type": "Collocation",
+    "pronunciation": "/ˌdeməˈkrætɪk ˈprɪnsəpəlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các nguyên tắc dân chủ",
+    "topic": "Business & Economics",
+    "subTopic": "Government Economic Policy",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Allowing corporate wealth to dictate policy decisions ultimately undermines democratic principles and public accountability.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:negative-social-consequences",
+    "title": "negative social consequences",
+    "term": "negative social consequences",
+    "type": "Collocation",
+    "pronunciation": "/ˈneɡətɪv ˈsəʊʃəl ˈkɒnsɪkwənsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hậu quả tiêu cực về mặt xã hội",
+    "topic": "Business & Economics",
+    "subTopic": "Government Economic Policy",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Unregulated gambling advertising can have negative social consequences, particularly among vulnerable young people.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:foster-corruption",
+    "title": "foster corruption",
+    "term": "foster corruption",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɒstə kəˈrʌpʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nuôi dưỡng/tạo điều kiện cho tham nhũng",
+    "topic": "Business & Economics",
+    "subTopic": "Government Economic Policy",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "A lack of transparency in public procurement can foster corruption and erode citizens' trust in government.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:be-compelled-to",
+    "title": "be compelled to",
+    "term": "be compelled to",
+    "type": "Collocation",
+    "pronunciation": "/bi kəmˈpeld tuː/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "bị buộc phải",
+    "topic": "Business & Economics",
+    "subTopic": "Government Economic Policy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Manufacturers may be compelled to disclose their carbon emissions under new environmental legislation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:be-mandatory-for",
+    "title": "be mandatory for",
+    "term": "be mandatory for",
+    "type": "Collocation",
+    "pronunciation": "/biː ˈmændətəri fɔː/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "là bắt buộc đối với",
+    "topic": "Business & Economics",
+    "subTopic": "Government Economic Policy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Some campaigners believe that ethical sourcing should be mandatory for all large retailers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:enhancing-city-citizens-living-standards",
+    "title": "enhancing city citizens' living standards",
+    "term": "enhancing city citizens' living standards",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈhɑːnsɪŋ ˈsɪti ˈsɪtɪznz ˈlɪvɪŋ ˈstændədz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nâng cao mức sống của cư dân thành phố",
+    "topic": "Business & Economics",
+    "subTopic": "Government Economic Policy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Investment in public transport plays a key role in enhancing city citizens' living standards.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:lessening-income-inequality",
+    "title": "lessening income inequality",
+    "term": "lessening income inequality",
+    "type": "Collocation",
+    "pronunciation": "/ˈlesnɪŋ ˈɪnkʌm ˌɪnɪˈkwɒləti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giảm bất bình đẳng thu nhập",
+    "topic": "Business & Economics",
+    "subTopic": "Government Economic Policy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Creating jobs in rural provinces is an effective strategy for lessening income inequality between regions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:reducing-the-number-of-over-crowding-related-issues",
+    "title": "reducing the number of over-crowding related issues",
+    "term": "reducing the number of over-crowding related issues",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈdjuːsɪŋ ðə ˈnʌmbər əv ˌəʊvəˈkraʊdɪŋ rɪˈleɪtɪd ˈɪʃuːz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giảm thiểu các vấn đề liên quan đến quá tải dân số",
+    "topic": "Business & Economics",
+    "subTopic": "Government Economic Policy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Encouraging firms to open branches outside the capital is one way of reducing the number of over-crowding related issues.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:tax-reliefs-on-imports-and-exports",
+    "title": "tax reliefs on imports and exports",
+    "term": "tax reliefs on imports and exports",
+    "type": "Collocation",
+    "pronunciation": "/tæks rɪˈliːfs ɒn ˈɪmpɔːts ənd ˈekspɔːts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "ưu đãi thuế đối với hàng nhập khẩu và xuất khẩu",
+    "topic": "Business & Economics",
+    "subTopic": "Government Economic Policy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Offering tax reliefs on imports and exports can encourage smaller firms to expand into international markets.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:the-relocation-of-enterprises-to-the-suburbs",
+    "title": "the relocation of enterprises to the suburbs",
+    "term": "the relocation of enterprises to the suburbs",
+    "type": "Collocation",
+    "pronunciation": "/ðə ˌriːləʊˈkeɪʃn əv ˈentəpraɪzɪz tə ðə ˈsʌbɜːbz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc di dời doanh nghiệp ra ngoại ô",
+    "topic": "Business & Economics",
+    "subTopic": "Government Economic Policy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "The relocation of enterprises to the suburbs has eased traffic congestion in the city centre.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:equitable-welfare-policies",
+    "title": "equitable welfare policies",
+    "term": "equitable welfare policies",
+    "type": "Collocation",
+    "pronunciation": "/ˈekwɪtəbəl ˈwelfeə ˈpɒləsiz/",
+    "part_of_speech": "n",
+    "meaning_vi": "chính sách phúc lợi công bằng",
+    "topic": "Business & Economics",
+    "subTopic": "Government Economic Policy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Governments should design equitable welfare policies to ensure that economic gains benefit all social groups, not just the wealthy.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:enforce-stricter-regulations",
+    "title": "enforce stricter regulations",
+    "term": "enforce stricter regulations",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈfɔːs ˈstrɪktə ˌreɡjʊˈleɪʃənz/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "thực thi các quy định nghiêm ngặt hơn",
+    "topic": "Business & Economics",
+    "subTopic": "Government Economic Policy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Regulators should enforce stricter regulations on heavy industries to curb air and water pollution.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:impose-limits",
+    "title": "impose limits",
+    "term": "impose limits",
+    "type": "Collocation",
+    "pronunciation": "/ɪmˈpəʊz ˈlɪmɪts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "áp đặt giới hạn",
+    "topic": "Business & Economics",
+    "subTopic": "Government Economic Policy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Some economists believe governments should impose limits on executive pay to reduce excessive corporate inequality.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:business-economics:stimulating-various-sectors",
+    "title": "stimulating various sectors",
+    "term": "stimulating various sectors",
+    "type": "Collocation",
+    "pronunciation": "/ˈstɪmjəleɪtɪŋ ˈveəriəs ˈsektəz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "kích thích nhiều lĩnh vực khác nhau",
+    "topic": "Business & Economics",
+    "subTopic": "Government Economic Policy",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Business & Economics",
+    "examples": [
+      {
+        "en": "Government infrastructure spending plays a key role in stimulating various sectors, from construction to manufacturing.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  }
+]

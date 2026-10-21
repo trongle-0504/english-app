@@ -1,0 +1,2106 @@
+{
+  "metadata": {
+    "lesson_id": "global-problems",
+    "topic": "Society and institutions",
+    "chapter_title": "Global problems",
+    "pdf_file": "Global problems.pdf"
+  },
+  "mindmap_data": {
+    "topic": "Society and institutions",
+    "chapter": {
+      "chapter_id": "ch_global_problems",
+      "title": "Global problems",
+      "sessions": [
+        {
+          "session_id": "s_global_problems_a",
+          "title": "A The environment",
+          "description_vi": "Thảo luận về các vấn đề môi trường toàn cầu như biến đổi khí hậu, suy giảm tầng ozone và ô nhiễm.",
+          "value": "# Global problems\n\n## A The environment\n\nLook at these extracts from letters to an international magazine.\n\nYour article on climate change was excellent. Rising sea levels and the increase in **greenhouse gases**¹ are the result of our actions. We are disturbing the **ecological balance** everywhere, as can be seen in the decrease in **fish stocks**² in the oceans.\n\nWe must accept that we have seriously **depleted**⁵ the **ozone layer** in the last few decades by our selfish actions. Embracing **green politics** may be our best hope in the long term, but we need urgent short-term measures too.\n\nIt is clear that we must **tackle pollution** before it is too late. **Exhaust fumes** from millions of vehicles and the **burning of fossil fuels**³ are causing **irreparable**⁴ damage to our environment.\n\n¹ gases which cause the greenhouse effect, especially carbon dioxide\n\n² the number of fish\n\n³ fuels such as gas, coal and oil\n\n⁴ which cannot be repaired (also irreversible)\n\n⁵ reduced something in size or amount, especially supplies of energy, money, etc.",
+          "children_nodes": [
+            {
+              "node_id": "greenhouse_gases",
+              "label": "greenhouse gases"
+            },
+            {
+              "node_id": "ecological_balance",
+              "label": "ecological balance"
+            },
+            {
+              "node_id": "fish_stocks",
+              "label": "fish stocks"
+            },
+            {
+              "node_id": "depleted",
+              "label": "depleted"
+            },
+            {
+              "node_id": "ozone_layer",
+              "label": "ozone layer"
+            },
+            {
+              "node_id": "green_politics",
+              "label": "green politics"
+            },
+            {
+              "node_id": "tackle_pollution",
+              "label": "tackle pollution"
+            },
+            {
+              "node_id": "exhaust_fumes",
+              "label": "exhaust fumes"
+            },
+            {
+              "node_id": "burning_of_fossil_fuels",
+              "label": "burning of fossil fuels"
+            },
+            {
+              "node_id": "irreparable",
+              "label": "irreparable"
+            }
+          ]
+        },
+        {
+          "session_id": "s_global_problems_b",
+          "title": "B Poverty",
+          "description_vi": "Phân tích vấn đề nghèo đói toàn cầu, các nguyên nhân và giải pháp tiềm năng.",
+          "value": "# Global problems\n\n## B Poverty\n\nLook at this radio interview with Pascal Delrio, an international expert, talking about poverty.\n\nInterviewer: Mr Delrio, do you believe we can solve the problem of world poverty?\n\nDelrio: I am more optimistic now than before. Millions of people have succeeded in escaping poverty in the last decade, but it is also true that in some regions, more people than ever are living **below the poverty line**, and we must help these people to **lift them out of poverty**.\n\nInterviewer: But how can we achieve that?\n\nDelrio: I accept that there is no simple solution. The **widening gulf**¹ between rich and poor in some countries is often due to external forces beyond their control. Some of the most **deprived regions** have large populations living **on the margins of society**, and it is for these specific groups that we can do most.\n\nInterviewer: But poverty is not just an issue for developing countries, is it? We have thousands **sleeping rough**² every night in cities like London and New York, and street children in a lot of big cities around the world.\n\nDelrio: I agree, and I accept that children and adults who live on the streets are in **desperate need**, and that these **social conditions breed crime**. But so much depends on the **global economy**. Right now, we have a **golden opportunity** to **combat poverty**.\n\nPerhaps we cannot **eradicate**³ poverty altogether, but we can certainly **alleviate**⁴ poverty, and that is our challenge.\n\nInterviewer: Mr Delrio, thank you very much.\n\n¹ an important difference between the ideas, opinions, or situations of two groups of people\n\n² in the open, without shelter\n\n³ get rid of completely\n\n⁴ make less serious",
+          "children_nodes": [
+            {
+              "node_id": "below_the_poverty_line",
+              "label": "below the poverty line"
+            },
+            {
+              "node_id": "lift_out_of_poverty",
+              "label": "lift out of poverty"
+            },
+            {
+              "node_id": "widening_gulf",
+              "label": "widening gulf"
+            },
+            {
+              "node_id": "deprived_regions",
+              "label": "deprived regions"
+            },
+            {
+              "node_id": "on_the_margins_of_society",
+              "label": "on the margins of society"
+            },
+            {
+              "node_id": "sleeping_rough",
+              "label": "sleeping rough"
+            },
+            {
+              "node_id": "desperate_need",
+              "label": "desperate need"
+            },
+            {
+              "node_id": "social_conditions_breed_crime",
+              "label": "social conditions breed crime"
+            },
+            {
+              "node_id": "global_economy",
+              "label": "global economy"
+            },
+            {
+              "node_id": "golden_opportunity",
+              "label": "golden opportunity"
+            },
+            {
+              "node_id": "combat_poverty",
+              "label": "combat poverty"
+            },
+            {
+              "node_id": "eradicate",
+              "label": "eradicate"
+            },
+            {
+              "node_id": "alleviate",
+              "label": "alleviate"
+            }
+          ]
+        },
+        {
+          "session_id": "s_global_problems_c",
+          "title": "C Other global problems",
+          "description_vi": "Giới thiệu các vấn đề toàn cầu khác như người tị nạn, nợ nước ngoài, thiên tai và bóc lột trẻ em.",
+          "value": "# Global problems\n\n## C Other global problems\n\nThousands of people seek **political asylum** in other countries every year. Most are genuine **asylum seekers**, but some are **economic migrants** looking for a better life.\n\nHundreds of people took to the streets to **demonstrate** about **third-world debt repayments**.\n\nA terrible **earthquake** hit the region last year. The **death toll** was massive.\n\nThe **sexual exploitation of children** is a world-wide problem, as is **child labour**.",
+          "children_nodes": [
+            {
+              "node_id": "political_asylum",
+              "label": "political asylum"
+            },
+            {
+              "node_id": "asylum_seekers",
+              "label": "asylum seekers"
+            },
+            {
+              "node_id": "economic_migrants",
+              "label": "economic migrants"
+            },
+            {
+              "node_id": "demonstrate",
+              "label": "demonstrate"
+            },
+            {
+              "node_id": "third_world_debt_repayments",
+              "label": "third-world debt repayments"
+            },
+            {
+              "node_id": "earthquake",
+              "label": "earthquake"
+            },
+            {
+              "node_id": "death_toll",
+              "label": "death toll"
+            },
+            {
+              "node_id": "sexual_exploitation_of_children",
+              "label": "sexual exploitation of children"
+            },
+            {
+              "node_id": "child_labour",
+              "label": "child labour"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "section_id": "A",
+      "session_ref": "s_global_problems_a",
+      "title": "The environment",
+      "instruction_vi": "Đọc các đoạn trích từ thư gửi tạp chí quốc tế và xác định các vấn đề môi trường được đề cập.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "Look at these extracts from letters to an international magazine.\n\nYour article on climate change was excellent. Rising sea levels and the increase in **greenhouse gases**¹ are the result of our actions. We are disturbing the **ecological balance** everywhere, as can be seen in the decrease in **fish stocks**² in the oceans.\n\nWe must accept that we have seriously **depleted**⁵ the **ozone layer** in the last few decades by our selfish actions. Embracing **green politics** may be our best hope in the long term, but we need urgent short-term measures too.\n\nIt is clear that we must **tackle pollution** before it is too late. **Exhaust fumes** from millions of vehicles and the **burning of fossil fuels**³ are causing **irreparable**⁴ damage to our environment.\n\n¹ gases which cause the greenhouse effect, especially carbon dioxide\n\n² the number of fish\n\n³ fuels such as gas, coal and oil\n\n⁴ which cannot be repaired (also irreversible)\n\n⁵ reduced something in size or amount, especially supplies of energy, money, etc.",
+          "related_vocabulary_ids": [
+            "greenhouse_gases",
+            "ecological_balance",
+            "fish_stocks",
+            "depleted",
+            "ozone_layer",
+            "green_politics",
+            "tackle_pollution",
+            "exhaust_fumes",
+            "burning_of_fossil_fuels",
+            "irreparable"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "B",
+      "session_ref": "s_global_problems_b",
+      "title": "Poverty",
+      "instruction_vi": "Nghe hoặc đọc một cuộc phỏng vấn về vấn đề nghèo đói toàn cầu và các giải pháp.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "Look at this radio interview with Pascal Delrio, an international expert, talking about poverty.\n\nInterviewer: Mr Delrio, do you believe we can solve the problem of world poverty?\n\nDelrio: I am more optimistic now than before. Millions of people have succeeded in escaping poverty in the last decade, but it is also true that in some regions, more people than ever are living **below the poverty line**, and we must help these people to **lift them out of poverty**.\n\nInterviewer: But how can we achieve that?\n\nDelrio: I accept that there is no simple solution. The **widening gulf**¹ between rich and poor in some countries is often due to external forces beyond their control. Some of the most **deprived regions** have large populations living **on the margins of society**, and it is for these specific groups that we can do most.\n\nInterviewer: But poverty is not just an issue for developing countries, is it? We have thousands **sleeping rough**² every night in cities like London and New York, and street children in a lot of big cities around the world.\n\nDelrio: I agree, and I accept that children and adults who live on the streets are in **desperate need**, and that these **social conditions breed crime**. But so much depends on the **global economy**. Right now, we have a **golden opportunity** to **combat poverty**.\n\nPerhaps we cannot **eradicate**³ poverty altogether, but we can certainly **alleviate**⁴ poverty, and that is our challenge.\n\nInterviewer: Mr Delrio, thank you very much.\n\n¹ an important difference between the ideas, opinions, or situations of two groups of people\n\n² in the open, without shelter\n\n³ get rid of completely\n\n⁴ make less serious",
+          "related_vocabulary_ids": [
+            "below_the_poverty_line",
+            "lift_out_of_poverty",
+            "widening_gulf",
+            "deprived_regions",
+            "on_the_margins_of_society",
+            "sleeping_rough",
+            "desperate_need",
+            "social_conditions_breed_crime",
+            "global_economy",
+            "golden_opportunity",
+            "combat_poverty",
+            "eradicate",
+            "alleviate"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "C",
+      "session_ref": "s_global_problems_c",
+      "title": "Other global problems",
+      "instruction_vi": "Đọc về các vấn đề toàn cầu khác như người tị nạn, nợ nước ngoài, thiên tai và bóc lạm trẻ em.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "Thousands of people seek **political asylum** in other countries every year. Most are genuine **asylum seekers**, but some are **economic migrants** looking for a better life.\n\nHundreds of people took to the streets to **demonstrate** about **third-world debt repayments**.\n\nA terrible **earthquake** hit the region last year. The **death toll** was massive.\n\nThe **sexual exploitation of children** is a world-wide problem, as is **child labour**.",
+          "related_vocabulary_ids": [
+            "political_asylum",
+            "asylum_seekers",
+            "economic_migrants",
+            "demonstrate",
+            "third_world_debt_repayments",
+            "earthquake",
+            "death_toll",
+            "sexual_exploitation_of_children",
+            "child_labour"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary_data": {
+    "greenhouse_gases": {
+      "word": "greenhouse gases",
+      "pronunciation": "/ˈɡriːnhaʊs ˈɡæsɪz/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of gases trapping heat around the earth",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Fanhe_Town_10_day_interval_contrast.png/960px-Fanhe_Town_10_day_interval_contrast.png"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "compound noun",
+      "senses": [
+        {
+          "definition_vi": "Các loại khí gây ra hiệu ứng nhà kính, đặc biệt là carbon dioxide.",
+          "examples": [
+            "The increase in greenhouse gases is a major contributor to climate change."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường được sử dụng ở dạng số nhiều."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "What are the main causes of global warming?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "How does eating meat affect the environment?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Should governments tax air travel more heavily?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "greenhouse gases",
+          "text": "Cars and factories produce a lot of greenhouse gases."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "greenhouse gases",
+          "source": "Gases like carbon dioxide that trap heat in the air are warming the planet.",
+          "model": "Greenhouse gases are warming the planet."
+        },
+        {
+          "target": "greenhouse gases",
+          "source": "Cattle farming releases large amounts of gases that cause global warming.",
+          "model": "Cattle farming releases large amounts of greenhouse gases."
+        }
+      ]
+    },
+    "ecological_balance": {
+      "word": "ecological balance",
+      "pronunciation": "/ˌiːkəˈlɒdʒɪkl ˈbælən s/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of a balanced ecosystem with various plants and animals",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Blue_Linckia_Starfish.JPG/960px-Blue_Linckia_Starfish.JPG"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự cân bằng trong một hệ sinh thái, nơi các yếu tố tự nhiên tương tác và duy trì lẫn nhau.",
+          "examples": [
+            "Human activities can easily disturb the ecological balance of a region."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Đề cập đến sự ổn định và hài hòa của môi trường tự nhiên."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "Why is it dangerous to bring foreign animal species into a new habitat?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "How can mass tourism harm natural areas?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "What happens when too many fish are taken from the sea?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "ecological balance",
+          "text": "Cutting down forests can upset the ecological balance."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "ecological balance",
+          "source": "Building the dam damaged the natural relationship between plants and animals in the area.",
+          "model": "Building the dam disturbed the ecological balance of the area."
+        },
+        {
+          "target": "ecological balance",
+          "source": "Wolves help keep the numbers of different animals in the park healthy.",
+          "model": "Wolves help maintain the ecological balance in the park."
+        }
+      ]
+    },
+    "fish_stocks": {
+      "word": "fish stocks",
+      "pronunciation": "/ˈfɪʃ stɒks/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of a large school of fish in the ocean",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Stilts_fishermen_Sri_Lanka_02.jpg/960px-Stilts_fishermen_Sri_Lanka_02.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Số lượng cá trong một khu vực hoặc vùng biển nhất định.",
+          "examples": [
+            "Overfishing has led to a significant decrease in fish stocks worldwide."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường được sử dụng ở dạng số nhiều để chỉ tổng số lượng cá có sẵn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "What are the effects of overfishing on the oceans?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "Should people eat less seafood?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Why are fishing communities facing hard times?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "fish stocks",
+          "text": "Fish stocks are falling in many parts of the world."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "fish stocks",
+          "source": "The number of fish in the sea has dropped sharply.",
+          "model": "Fish stocks have dropped sharply."
+        },
+        {
+          "target": "fish stocks",
+          "source": "Fishing limits help the amount of fish in the area to recover.",
+          "model": "Fishing limits help fish stocks in the area to recover."
+        }
+      ]
+    },
+    "depleted": {
+      "word": "depleted",
+      "pronunciation": "/dɪˈpliːtɪd/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of a nearly empty fuel gauge",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Faryab-_village_dug_well.JPG/960px-Faryab-_village_dug_well.JPG"
+      },
+      "part_of_speech": [
+        "verb",
+        "adjective"
+      ],
+      "collocation_type": "verb+object",
+      "senses": [
+        {
+          "definition_vi": "Đã giảm đi đáng kể về số lượng hoặc nguồn cung, đặc biệt là năng lượng, tiền bạc, v.v.",
+          "examples": [
+            "The country's natural resources have been severely depleted over the years."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Diễn tả sự suy giảm nghiêm trọng về nguồn lực."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "What happens if we keep using natural resources at the current rate?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How does long-term stress affect your energy levels?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "What happens to a country's savings during a long crisis?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "depleted",
+          "text": "Our water supplies are badly depleted this summer."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "depleted",
+          "source": "Overfishing has greatly reduced the number of fish in the sea.",
+          "model": "Fish stocks have been severely depleted by overfishing."
+        },
+        {
+          "target": "depleted",
+          "source": "After the long war, the country's money reserves were almost gone.",
+          "model": "After the long war, the country's money reserves were depleted."
+        }
+      ]
+    },
+    "ozone_layer": {
+      "word": "ozone layer",
+      "pronunciation": "/ˈəʊzəʊn ˈleɪə/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of the ozone layer protecting the Earth from UV rays",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Top_of_Atmosphere.jpg/960px-Top_of_Atmosphere.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Lớp khí ozone trong tầng bình lưu của Trái Đất, hấp thụ phần lớn bức xạ cực tím từ Mặt Trời.",
+          "examples": [
+            "The depletion of the ozone layer is a serious environmental concern."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Là một phần quan trọng của bầu khí quyển bảo vệ sự sống trên Trái Đất."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Health",
+          "question": "Why is skin cancer becoming more common?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Which international agreements have successfully protected the environment?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How have changes to fridges and sprays helped the environment?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "ozone layer",
+          "text": "The ozone layer protects us from the sun's rays."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "ozone layer",
+          "source": "Some chemicals damaged the layer of gas high above the Earth that protects us from the sun.",
+          "model": "Some chemicals damaged the ozone layer."
+        },
+        {
+          "target": "ozone layer",
+          "source": "Scientists say the hole in the protective gas layer over Antarctica is getting smaller.",
+          "model": "Scientists say the hole in the ozone layer is getting smaller."
+        }
+      ]
+    },
+    "green_politics": {
+      "word": "green politics",
+      "pronunciation": "/ˈɡriːn ˈpɒlɪtɪks/",
+      "image": {
+        "type": "prompt",
+        "value": "symbol of a green leaf within a political icon",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/7/70/Bufo_boreas.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một hệ tư tưởng chính trị tập trung vào các vấn đề môi trường, bền vững và sinh thái.",
+          "examples": [
+            "Many young people are drawn to green politics because of its focus on environmental protection."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường liên quan đến các đảng phái và phong trào môi trường."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "Why are environmental parties becoming more popular?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Why are young people interested in environmental movements?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Can a country focus on protecting nature and still grow economically?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "green politics",
+          "text": "Many young voters are interested in green politics."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "green politics",
+          "source": "She became involved in political activity focused on protecting the environment.",
+          "model": "She became involved in green politics."
+        },
+        {
+          "target": "green politics",
+          "source": "Political ideas about protecting nature are now part of mainstream debate.",
+          "model": "Green politics is now part of mainstream debate."
+        }
+      ]
+    },
+    "tackle_pollution": {
+      "word": "tackle pollution",
+      "pronunciation": "/ˈtækəl pəˈluːʃən/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of people cleaning up a polluted river",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Fanhe_Town_10_day_interval_contrast.png/960px-Fanhe_Town_10_day_interval_contrast.png"
+      },
+      "part_of_speech": [
+        "verb",
+        "noun"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Đối mặt và cố gắng giải quyết vấn đề ô nhiễm.",
+          "examples": [
+            "Governments must take decisive action to tackle pollution from industrial waste."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Hành động chủ động để giảm thiểu hoặc loại bỏ ô nhiễm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "What can governments do about dirty air in big cities?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How can cities reduce breathing problems among residents?",
+          "fits": []
+        },
+        {
+          "context": "Transport",
+          "question": "Should cars be banned from city centres?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "tackle pollution",
+          "text": "The city has new plans to tackle pollution."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "tackle pollution",
+          "source": "The government must do more to deal with the dirty air in our cities.",
+          "model": "The government must do more to tackle pollution in our cities."
+        },
+        {
+          "target": "tackle pollution",
+          "source": "Electric buses are one way to reduce the problem of dirty air.",
+          "model": "Electric buses are one way to tackle pollution."
+        }
+      ]
+    },
+    "exhaust_fumes": {
+      "word": "exhaust fumes",
+      "pronunciation": "/ɪɡˈzɔːst fjuːmz/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of smoke coming out of a car's exhaust pipe",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Crossing_the_Hudson_River_on_the_George_Washington_Bridge_from_Fort_Lee%2C_New_Jersey_to_Manhattan%2C_New_York_%287237796950%29.jpg/960px-Crossing_the_Hudson_River_on_the_George_Washington_Bridge_from_Fort_Lee%2C_New_Jersey_to_Manhattan%2C_New_York_%287237796950%29.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Khí thải ra từ động cơ, đặc biệt là từ xe cộ.",
+          "examples": [
+            "The thick exhaust fumes from the traffic made it difficult to breathe."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Là một nguồn gây ô nhiễm không khí chính."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Health",
+          "question": "Why do so many city children suffer from asthma?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Should petrol cars be banned in the future?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Would you like to live next to a main road?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "exhaust fumes",
+          "text": "The exhaust fumes from the traffic made me cough."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "exhaust fumes",
+          "source": "The gases coming out of cars make the city air dirty.",
+          "model": "Exhaust fumes from cars make the city air dirty."
+        },
+        {
+          "target": "exhaust fumes",
+          "source": "Cyclists breathe in the smoke from buses and trucks.",
+          "model": "Cyclists breathe in exhaust fumes from buses and trucks."
+        }
+      ]
+    },
+    "burning_of_fossil_fuels": {
+      "word": "burning of fossil fuels",
+      "pronunciation": "/ˈbɜːnɪŋ ɒv ˈfɒsəl fjuːəlz/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of a power plant emitting smoke from burning fossil fuels",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Kraftwerk_Niederau%C3%9Fem_2006.jpg/960px-Kraftwerk_Niederau%C3%9Fem_2006.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Quá trình đốt cháy các nhiên liệu như gas, than đá và dầu mỏ để tạo ra năng lượng.",
+          "examples": [
+            "The burning of fossil fuels is a primary cause of global warming."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Hoạt động này giải phóng khí nhà kính vào khí quyển."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "What is the main cause of climate change?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Why is it hard for poor countries to move to clean energy?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "What causes air pollution in industrial areas?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "burning of fossil fuels",
+          "text": "The burning of fossil fuels warms the planet."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "burning of fossil fuels",
+          "source": "Using coal, oil and gas for energy is the main cause of global warming.",
+          "model": "The burning of fossil fuels is the main cause of global warming."
+        },
+        {
+          "target": "burning of fossil fuels",
+          "source": "Power stations that use coal and oil make the air dirty.",
+          "model": "The burning of fossil fuels in power stations makes the air dirty."
+        }
+      ]
+    },
+    "irreparable": {
+      "word": "irreparable",
+      "pronunciation": "/ɪˈrepərəbəl/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of a broken vase that cannot be fixed",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adjective",
+      "senses": [
+        {
+          "definition_vi": "Không thể sửa chữa hoặc phục hồi được (cũng là irreversible).",
+          "examples": [
+            "The accident caused irreparable damage to the historic building."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Nhấn mạnh tính chất không thể khắc phục của sự tổn thất."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "What will happen if we do not protect rainforests?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "What are the long-term dangers of smoking?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "Can a serious argument destroy a friendship permanently?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "irreparable",
+          "text": "The fire caused irreparable damage to the old church."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "irreparable",
+          "source": "The oil spill harmed the coastline so badly that it can never be fixed.",
+          "model": "The oil spill caused irreparable damage to the coastline."
+        },
+        {
+          "target": "irreparable",
+          "source": "The scandal hurt the company's reputation in a way that could not be repaired.",
+          "model": "The scandal did irreparable harm to the company's reputation."
+        }
+      ]
+    },
+    "below_the_poverty_line": {
+      "word": "below the poverty line",
+      "pronunciation": "/bɪˈləʊ ðə ˈpɒvəti laɪn/",
+      "image": {
+        "type": "prompt",
+        "value": "graph showing income levels below a defined poverty line",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sl2022.png/960px-Sl2022.png"
+      },
+      "part_of_speech": [
+        "adjective phrase"
+      ],
+      "collocation_type": "prepositional phrase",
+      "senses": [
+        {
+          "definition_vi": "Có mức thu nhập thấp hơn mức chuẩn nghèo được quy định.",
+          "examples": [
+            "Many families in the region are living below the poverty line."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Chỉ tình trạng thiếu thốn về tài chính."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "Why do some workers stay poor even with full-time jobs?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "What problems do very poor families face?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Why do some children leave school early to work?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "below the poverty line",
+          "text": "Many families here live below the poverty line."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "below the poverty line",
+          "source": "Many families earn less than the minimum needed for a basic life.",
+          "model": "Many families live below the poverty line."
+        },
+        {
+          "target": "below the poverty line",
+          "source": "One in five children grows up in a household that is officially poor.",
+          "model": "One in five children grows up below the poverty line."
+        }
+      ]
+    },
+    "lift_out_of_poverty": {
+      "word": "lift out of poverty",
+      "pronunciation": "/lɪft aʊt ɒv ˈpɒvəti/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of people climbing out of a pit labeled 'poverty'",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ladder.webp/960px-Ladder.webp.png"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+prepositional phrase",
+      "senses": [
+        {
+          "definition_vi": "Giúp đỡ ai đó thoát khỏi tình trạng nghèo đói.",
+          "examples": [
+            "Education and job opportunities are crucial to lift people out of poverty."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Hành động giúp cải thiện đời sống của người nghèo."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "How can a country help its poorest people improve their lives?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Why is education so important for poor families?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "Can mobile phones help poor farmers earn more?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "lift out of poverty",
+          "text": "Good jobs can lift families out of poverty."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "lift out of poverty",
+          "source": "Education helps people escape from being poor.",
+          "model": "Education helps lift people out of poverty."
+        },
+        {
+          "target": "lift out of poverty",
+          "source": "Economic growth has helped millions of people stop being poor.",
+          "model": "Economic growth has lifted millions of people out of poverty."
+        }
+      ]
+    },
+    "widening_gulf": {
+      "word": "widening gulf",
+      "pronunciation": "/ˈwaɪdnɪŋ ɡʌlf/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of a growing gap between two groups of people",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "present participle+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự gia tăng khoảng cách hoặc khác biệt lớn giữa hai nhóm người, ví dụ như người giàu và người nghèo.",
+          "examples": [
+            "The widening gulf between the rich and the poor is a major social issue."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Diễn tả sự phân hóa ngày càng lớn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "Is the difference between rich and poor growing in your country?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Why do young and old people disagree so much on many issues?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "Has technology increased inequality between cities and rural areas?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "widening gulf",
+          "text": "There is a widening gulf between rich and poor."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "widening gulf",
+          "source": "The gap between the rich and the poor is getting bigger.",
+          "model": "There is a widening gulf between the rich and the poor."
+        },
+        {
+          "target": "widening gulf",
+          "source": "The differences between city life and country life are growing.",
+          "model": "There is a widening gulf between city life and country life."
+        }
+      ]
+    },
+    "deprived_regions": {
+      "word": "deprived regions",
+      "pronunciation": "/dɪˈpraɪvd ˈriːdʒənz/",
+      "image": {
+        "type": "prompt",
+        "value": "map highlighting underdeveloped or impoverished areas",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sl2022.png/960px-Sl2022.png"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Các khu vực thiếu thốn các nguồn lực cơ bản như tài chính, giáo dục, y tế.",
+          "examples": [
+            "International aid is often directed towards the most deprived regions of the world."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Chỉ những nơi có điều kiện sống kém khăn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "Where should governments spend money to reduce inequality?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Why do some areas have fewer doctors and hospitals?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Should teachers get bonuses for working in poor areas?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "deprived regions",
+          "text": "Aid should go to the most deprived regions first."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "deprived regions",
+          "source": "International aid is often sent to the poorest parts of the world.",
+          "model": "International aid is often sent to the most deprived regions of the world."
+        },
+        {
+          "target": "deprived regions",
+          "source": "Areas with few jobs and poor services need more investment.",
+          "model": "Deprived regions need more investment."
+        }
+      ]
+    },
+    "on_the_margins_of_society": {
+      "word": "on the margins of society",
+      "pronunciation": "/ɒn ðə ˈmɑːdʒɪnz ɒv səˈsaɪəti/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of people standing outside the main group",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sl2022.png/960px-Sl2022.png"
+      },
+      "part_of_speech": [
+        "prepositional phrase"
+      ],
+      "collocation_type": "preposition+noun phrase",
+      "senses": [
+        {
+          "definition_vi": "Sống ở vị trí bên lề, không được hòa nhập hoặc có ít ảnh hưởng trong xã hội.",
+          "examples": [
+            "Homeless individuals often live on the margins of society."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Chỉ những người bị gạt ra ngoài lề xã hội."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Which groups in your country are most often ignored or excluded?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Why do homeless people find it hard to return to normal life?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Why do people with mental illness sometimes feel excluded?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "on the margins of society",
+          "text": "Many homeless people live on the margins of society."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "on the margins of society",
+          "source": "Many refugees feel excluded and ignored by the rest of the community.",
+          "model": "Many refugees live on the margins of society."
+        },
+        {
+          "target": "on the margins of society",
+          "source": "Without jobs, some young people end up feeling left out of normal life.",
+          "model": "Without jobs, some young people end up on the margins of society."
+        }
+      ]
+    },
+    "sleeping_rough": {
+      "word": "sleeping rough",
+      "pronunciation": "/ˈsliːpɪŋ rʌf/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of a homeless person sleeping on a park bench",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+adverb",
+      "senses": [
+        {
+          "definition_vi": "Ngủ ở ngoài trời, không có chỗ ở.",
+          "examples": [
+            "Thousands of people are forced to sleep rough in the city every night."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường liên quan đến tình trạng vô gia cư."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "Why is homelessness a problem in many big cities?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "How can charities help homeless people in winter?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "What health problems do homeless people often have?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "sleeping rough",
+          "text": "Many people are sleeping rough in the city centre."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "sleeping rough",
+          "source": "Thousands of people sleep outside on the streets every night.",
+          "model": "Thousands of people are sleeping rough every night."
+        },
+        {
+          "target": "sleeping rough",
+          "source": "He lost his job and had to sleep in parks and doorways.",
+          "model": "He lost his job and ended up sleeping rough."
+        }
+      ]
+    },
+    "desperate_need": {
+      "word": "desperate need",
+      "pronunciation": "/ˈdespərət niːd/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of a person looking very hungry and in need of help",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/No-nb_bldsa_6a019.jpg/960px-No-nb_bldsa_6a019.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự cần thiết cấp bách và nghiêm trọng.",
+          "examples": [
+            "Children in conflict zones are often in desperate need of food and shelter."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Nhấn mạnh mức độ khẩn cấp của sự thiếu thốn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "What should rich countries do after a natural disaster abroad?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Why do hospitals in poor countries struggle?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Why should governments build more cheap homes?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "desperate need",
+          "text": "The village is in desperate need of clean water."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "desperate need",
+          "source": "Children in war zones urgently need food and shelter.",
+          "model": "Children in war zones are in desperate need of food and shelter."
+        },
+        {
+          "target": "desperate need",
+          "source": "The hospital badly needs more nurses.",
+          "model": "The hospital is in desperate need of more nurses."
+        }
+      ]
+    },
+    "social_conditions_breed_crime": {
+      "word": "social conditions breed crime",
+      "pronunciation": "/ˈsəʊʃəl kənˈdɪʃənz briːd kraɪm/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration showing poverty and lack of opportunity leading to crime",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sl2022.png/960px-Sl2022.png"
+      },
+      "part_of_speech": [
+        "sentence"
+      ],
+      "collocation_type": "subject-verb-object",
+      "senses": [
+        {
+          "definition_vi": "Các yếu tố trong xã hội, như nghèo đói hoặc thiếu cơ hội, có thể dẫn đến sự gia tăng tội phạm.",
+          "examples": [
+            "It is often argued that poor social conditions breed crime."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Mối quan hệ nhân quả giữa hoàn cảnh xã hội và hành vi phạm tội."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Why are crime rates higher in some neighbourhoods?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Does unemployment lead to more crime?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Can better schools help reduce crime?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "social conditions breed crime",
+          "text": "Poor social conditions breed crime in many cities."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "social conditions breed crime",
+          "source": "Poverty and unemployment in a community often lead to more crime.",
+          "model": "Poor social conditions breed crime."
+        },
+        {
+          "target": "social conditions breed crime",
+          "source": "Many experts argue that bad living situations cause people to break the law.",
+          "model": "Many experts argue that poor social conditions breed crime."
+        }
+      ]
+    },
+    "global_economy": {
+      "word": "global economy",
+      "pronunciation": "/ˈɡləʊbəl ɪˈkɒnəmi/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of interconnected economies around the world",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Hubble_ultra_deep_field.jpg/960px-Hubble_ultra_deep_field.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Hệ thống kinh tế của thế giới, bao gồm tất cả các hoạt động kinh tế quốc tế.",
+          "examples": [
+            "The stability of the global economy affects trade and investment worldwide."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Đề cập đến sự vận hành và tình trạng của nền kinh tế trên phạm vi toàn cầu."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "How do events in one country affect trade worldwide?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How has the internet changed international business?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Why do young people need foreign languages for their careers?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "global economy",
+          "text": "Oil prices affect the whole global economy."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "global economy",
+          "source": "The world's economic system was badly hit by the pandemic.",
+          "model": "The global economy was badly hit by the pandemic."
+        },
+        {
+          "target": "global economy",
+          "source": "Trade wars between big countries can harm the world's markets and businesses.",
+          "model": "Trade wars between big countries can harm the global economy."
+        }
+      ]
+    },
+    "golden_opportunity": {
+      "word": "golden opportunity",
+      "pronunciation": "/ˈɡəʊldən ˌɒpəˈtjuːnəti/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of a shining golden door representing an opportunity",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Tesoro_de_Villena.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một cơ hội rất tốt, hiếm có và có giá trị.",
+          "examples": [
+            "This is a golden opportunity to make significant progress in poverty reduction."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Nhấn mạnh tính chất đặc biệt và thuận lợi của cơ hội."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "Would you accept a job abroad if it were offered to you?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Should students take part in exchange programmes?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "How important is hosting the Olympics for a country?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "golden opportunity",
+          "text": "This job is a golden opportunity for you."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "golden opportunity",
+          "source": "The scholarship is a very rare and valuable chance to study abroad.",
+          "model": "The scholarship is a golden opportunity to study abroad."
+        },
+        {
+          "target": "golden opportunity",
+          "source": "Hosting the World Cup is an excellent chance to attract tourists.",
+          "model": "Hosting the World Cup is a golden opportunity to attract tourists."
+        }
+      ]
+    },
+    "combat_poverty": {
+      "word": "combat poverty",
+      "pronunciation": "/ˈkɒmbæt ˈpɒvəti/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of people fighting against poverty",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sl2022.png/960px-Sl2022.png"
+      },
+      "part_of_speech": [
+        "verb",
+        "noun"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Chiến đấu chống lại hoặc nỗ lực giảm bớt tình trạng nghèo đói.",
+          "examples": [
+            "The government has launched new initiatives to combat poverty in rural areas."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Hành động tích cực để giải quyết vấn đề nghèo đói."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "What should governments do to help the poorest families?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How can education reduce inequality?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "What role should charities play in helping the poor?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "combat poverty",
+          "text": "The government has a new plan to combat poverty."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "combat poverty",
+          "source": "The charity works to fight against people being poor in rural areas.",
+          "model": "The charity works to combat poverty in rural areas."
+        },
+        {
+          "target": "combat poverty",
+          "source": "Free school meals are one way to reduce how many children live in need.",
+          "model": "Free school meals are one way to combat child poverty."
+        }
+      ]
+    },
+    "eradicate": {
+      "word": "eradicate",
+      "pronunciation": "/ɪˈrædɪkeɪt/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of a weed being pulled out from the roots",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Crop_Duster.jpg/960px-Crop_Duster.jpg"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb",
+      "senses": [
+        {
+          "definition_vi": "Xóa bỏ hoàn toàn, diệt trừ.",
+          "examples": [
+            "It is a long-term goal to eradicate extreme poverty worldwide."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Mang nghĩa là loại bỏ hoàn toàn một thứ gì đó, thường là tiêu cực."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Health",
+          "question": "Can serious diseases like malaria ever disappear completely?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Is it possible to end extreme poverty worldwide?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How can countries make sure every adult can read and write?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "eradicate",
+          "text": "Scientists hope to eradicate malaria one day."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "eradicate",
+          "source": "Vaccines helped to remove smallpox from the world completely.",
+          "model": "Vaccines helped to eradicate smallpox."
+        },
+        {
+          "target": "eradicate",
+          "source": "The aim is to get rid of extreme poverty completely by the end of the century.",
+          "model": "The aim is to eradicate extreme poverty by the end of the century."
+        }
+      ]
+    },
+    "alleviate": {
+      "word": "alleviate",
+      "pronunciation": "/əˈliːvieɪt/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of a bandage soothing a wound",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/The_Doctor_Luke_Fildes_crop.jpg/960px-The_Doctor_Luke_Fildes_crop.jpg"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb",
+      "senses": [
+        {
+          "definition_vi": "Làm cho bớt nghiêm trọng, giảm nhẹ.",
+          "examples": [
+            "Foreign aid can help alleviate suffering in disaster-stricken areas."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Không có nghĩa là giải quyết hoàn toàn, mà là làm giảm bớt mức độ nghiêm trọng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "How can rich countries help people after natural disasters?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "What can doctors do for patients with long-term pain?",
+          "fits": []
+        },
+        {
+          "context": "Transport",
+          "question": "How can cities reduce traffic jams?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "alleviate",
+          "text": "This medicine will help alleviate the pain."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "alleviate",
+          "source": "Foreign aid can help reduce suffering after the earthquake.",
+          "model": "Foreign aid can help alleviate suffering after the earthquake."
+        },
+        {
+          "target": "alleviate",
+          "source": "A new bridge would make the traffic problems less serious.",
+          "model": "A new bridge would alleviate the traffic problems."
+        }
+      ]
+    },
+    "political_asylum": {
+      "word": "political asylum",
+      "pronunciation": "/pəˈlɪtɪkl əˈsaɪləm/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of a person seeking protection in a foreign country",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Panmunjeom_DMZ.png/960px-Panmunjeom_DMZ.png"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự bảo vệ mà một quốc gia dành cho người nước ngoài bị đàn áp chính trị ở quê hương họ.",
+          "examples": [
+            "Thousands of people seek political asylum each year due to persecution."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Là một hình thức bảo vệ quốc tế cho người tị nạn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Why do some people leave their countries and never return?",
+          "fits": []
+        },
+        {
+          "context": "Law",
+          "question": "Should countries protect people who are in danger in their own country?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Why do some journalists have to flee their own country?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "political asylum",
+          "text": "The journalist asked for political asylum abroad."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "political asylum",
+          "source": "The writer asked another country for protection because his government wanted to arrest him.",
+          "model": "The writer sought political asylum because his government wanted to arrest him."
+        },
+        {
+          "target": "political asylum",
+          "source": "The country allowed the activist to stay and protected her from her government.",
+          "model": "The country granted the activist political asylum."
+        }
+      ]
+    },
+    "asylum_seekers": {
+      "word": "asylum seekers",
+      "pronunciation": "/əˈsaɪləm ˈsiːkəz/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of a group of people with luggage looking for safety",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Refugee_population_by_country_or_territory_of_asylum%2C_World%2C_2024_%28cropped%29.svg/960px-Refugee_population_by_country_or_territory_of_asylum%2C_World%2C_2024_%28cropped%29.svg.png"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Những người rời bỏ đất nước của họ để tìm kiếm sự bảo vệ và tị nạn ở một quốc gia khác.",
+          "examples": [
+            "The government is processing applications from asylum seekers."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Là những người đang trong quá trình xin tị nạn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "How should rich countries treat people fleeing war?",
+          "fits": []
+        },
+        {
+          "context": "Law",
+          "question": "Should people fleeing danger be allowed to work while they wait for a decision?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Where should refugees live when they first arrive in a new country?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "asylum seekers",
+          "text": "The town welcomed a group of asylum seekers."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "asylum seekers",
+          "source": "People who have fled danger and asked for protection must wait months for a decision.",
+          "model": "Asylum seekers must wait months for a decision."
+        },
+        {
+          "target": "asylum seekers",
+          "source": "Charities help people who are asking for protection in a new country.",
+          "model": "Charities help asylum seekers in a new country."
+        }
+      ]
+    },
+    "economic_migrants": {
+      "word": "economic migrants",
+      "pronunciation": "/ˌiːkəˈnɒmɪk ˈmaɪɡrənts/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of people moving to another country for better job opportunities",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Net_Migration_Rate%2C_Population_Reference_Bureau%2C_Current.svg/960px-Net_Migration_Rate%2C_Population_Reference_Bureau%2C_Current.svg.png"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Những người di cư sang một quốc gia khác chủ yếu vì lý do kinh tế, tìm kiếm việc làm hoặc cuộc sống tốt đẹp hơn.",
+          "examples": [
+            "Many economic migrants hope to find better job opportunities abroad."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Khác với người tị nạn chính trị, họ di cư vì lý do kinh tế."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "Why do many people move abroad to work?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "What are the benefits of immigration for a host country?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Which industries depend on foreign workers?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "economic migrants",
+          "text": "Many economic migrants send money home to their families."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "economic migrants",
+          "source": "Many people move to another country mainly to find better jobs and pay.",
+          "model": "Many economic migrants move abroad to find better jobs and pay."
+        },
+        {
+          "target": "economic migrants",
+          "source": "Farms in the region rely on workers who came from abroad to earn more money.",
+          "model": "Farms in the region rely on economic migrants."
+        }
+      ]
+    },
+    "demonstrate": {
+      "word": "demonstrate",
+      "pronunciation": "/ˈdemənstreɪt/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of people holding signs and marching in a protest",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Demonstration_against_Ahmadinejad_in_Rio.jpg/960px-Demonstration_against_Ahmadinejad_in_Rio.jpg"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb",
+      "senses": [
+        {
+          "definition_vi": "Tham gia vào một cuộc biểu tình công khai để bày tỏ sự phản đối hoặc ủng hộ một vấn đề.",
+          "examples": [
+            "Citizens gathered to demonstrate against the new government policy."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Hành động công khai để thể hiện quan điểm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Do young people in your country take part in public protests?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How can ordinary people pressure governments on climate change?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What can workers do if they are unhappy with their pay?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "demonstrate",
+          "text": "Students gathered to demonstrate against the new law."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "demonstrate",
+          "source": "Thousands of people marched in the streets to protest against the war.",
+          "model": "Thousands of people demonstrated against the war."
+        },
+        {
+          "target": "demonstrate",
+          "source": "Farmers protested publicly outside parliament about low prices.",
+          "model": "Farmers demonstrated outside parliament about low prices."
+        }
+      ]
+    },
+    "third_world_debt_repayments": {
+      "word": "third-world debt repayments",
+      "pronunciation": "/ˌθɜːd wɜːld det riːˈpeɪmənts/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of money being paid from a developing country to creditors",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Euro_coins_and_banknotes_%28cropped%29.jpg/960px-Euro_coins_and_banknotes_%28cropped%29.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Việc các nước đang phát triển trả nợ cho các chủ nợ quốc tế.",
+          "examples": [
+            "Activists protested against the burden of third-world debt repayments."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường đề cập đến gánh nặng tài chính của các nước nghèo."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "Why do some poor countries struggle to develop?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Should rich nations cancel what poor countries owe them?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Why do poor countries spend so little on health care?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "third-world debt repayments",
+          "text": "Third-world debt repayments leave little money for schools."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "third-world debt repayments",
+          "source": "Poor countries spend much of their income paying back money they owe to rich lenders.",
+          "model": "Poor countries spend much of their income on third-world debt repayments."
+        },
+        {
+          "target": "third-world debt repayments",
+          "source": "Activists want the payments that developing nations make on their loans to be cancelled.",
+          "model": "Activists want third-world debt repayments to be cancelled."
+        }
+      ]
+    },
+    "earthquake": {
+      "word": "earthquake",
+      "pronunciation": "/ˈɜːθkweɪk/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of ground shaking during an earthquake",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/d/db/Quake_epicenters_1963-98.png"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Sự rung chuyển đột ngột của mặt đất, gây ra bởi sự di chuyển của các mảng kiến tạo.",
+          "examples": [
+            "The earthquake caused widespread destruction in the city."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Là một hiện tượng tự nhiên có thể gây thiệt hại lớn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Which natural disasters affect your country most?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "How can buildings be made safer in dangerous regions?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Would you visit a country where the ground often shakes?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "earthquake",
+          "text": "The earthquake destroyed many houses in the city."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "earthquake",
+          "source": "The ground shook violently and many buildings fell down.",
+          "model": "A strong earthquake made many buildings fall down."
+        },
+        {
+          "target": "earthquake",
+          "source": "In Japan, houses are built to survive when the ground shakes.",
+          "model": "In Japan, houses are built to survive earthquakes."
+        }
+      ]
+    },
+    "death_toll": {
+      "word": "death toll",
+      "pronunciation": "/ˈdeθ təʊl/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of a counter showing a high number of fatalities",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Kerepesi_temet%C5%91_Budapest.jpg/960px-Kerepesi_temet%C5%91_Budapest.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Tổng số người chết trong một tai nạn, thảm họa hoặc xung đột.",
+          "examples": [
+            "The final death toll from the disaster is still being assessed."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường được sử dụng sau các sự kiện thảm khốc."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "How do news reports usually describe natural disasters?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How can countries reduce the number of people killed by disease outbreaks?",
+          "fits": []
+        },
+        {
+          "context": "Transport",
+          "question": "How can governments make roads safer?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "death toll",
+          "text": "The death toll from the storm is still rising."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "death toll",
+          "source": "The number of people killed in the flood has risen to over a hundred.",
+          "model": "The death toll from the flood has risen to over a hundred."
+        },
+        {
+          "target": "death toll",
+          "source": "Better warning systems could reduce the number of people who die in disasters.",
+          "model": "Better warning systems could reduce the death toll from disasters."
+        }
+      ]
+    },
+    "sexual_exploitation_of_children": {
+      "word": "sexual exploitation of children",
+      "pronunciation": "/ˈsekʃuəl ɪkˌsplɔɪˈteɪʃən ɒv ˈtʃɪldrən/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration symbolizing the protection of children from sexual abuse",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Poup%C3%A9e_c_1870.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Hành vi lợi dụng trẻ em cho mục đích tình dục.",
+          "examples": [
+            "The sexual exploitation of children is a grave violation of human rights."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Là một vấn đề nghiêm trọng và bất hợp pháp trên toàn cầu."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Law",
+          "question": "Which crimes should receive the harshest punishments?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "What are the dangers of the internet for young people?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Which human rights problems need urgent international action?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "sexual exploitation of children",
+          "text": "The law aims to stop the sexual exploitation of children."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "sexual exploitation of children",
+          "source": "The police are working to stop adults abusing minors for sex.",
+          "model": "The police are working to stop the sexual exploitation of children."
+        },
+        {
+          "target": "sexual exploitation of children",
+          "source": "New laws punish anyone who sexually abuses young people for money.",
+          "model": "New laws punish the sexual exploitation of children."
+        }
+      ]
+    },
+    "child_labour": {
+      "word": "child labour",
+      "pronunciation": "/ˈtʃaɪld ˈleɪbər/",
+      "image": {
+        "type": "prompt",
+        "value": "illustration of a child working in a factory",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Wolfsburg_VW-Werk.jpg/960px-Wolfsburg_VW-Werk.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Việc sử dụng lao động trẻ em, thường trong điều kiện nguy hiểm hoặc không phù hợp với lứa tuổi.",
+          "examples": [
+            "Many international organizations are working to abolish child labour."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Là một vấn đề xã hội và nhân quyền nghiêm trọng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Economy",
+          "question": "Why do some poor families send their kids to work?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "Should consumers avoid brands that use very young factory workers?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Why do some kids in poor countries never finish school?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "child labour",
+          "text": "Many countries have laws against child labour."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "child labour",
+          "source": "Many young kids work long hours in factories instead of going to school.",
+          "model": "Child labour keeps many kids out of school."
+        },
+        {
+          "target": "child labour",
+          "source": "The company was accused of using very young workers in its factories.",
+          "model": "The company was accused of using child labour in its factories."
+        }
+      ]
+    }
+  }
+}

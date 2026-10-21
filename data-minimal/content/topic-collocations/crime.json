@@ -1,0 +1,3942 @@
+[
+  {
+    "id": "topic-colloc:crime:a-natural-inclination",
+    "title": "a natural inclination",
+    "term": "a natural inclination",
+    "type": "Collocation",
+    "pronunciation": "/ə ˈnætʃrəl ˌɪnklɪˈneɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khuynh hướng tự nhiên",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Some criminologists argue that certain people have a natural inclination towards risk-taking.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:an-individuals-inherent-nature",
+    "title": "an individual's inherent nature",
+    "term": "an individual's inherent nature",
+    "type": "Collocation",
+    "pronunciation": "/ən ˌɪndɪˈvɪdʒuəlz ɪnˈhɪərənt ˈneɪtʃə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bản chất vốn có của một cá nhân",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Some psychologists believe criminal tendencies stem from an individual's inherent nature.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:an-individuals-personality-traits-and-moral-compass",
+    "title": "an individual's personality traits and moral compass",
+    "term": "an individual's personality traits and moral compass",
+    "type": "Collocation",
+    "pronunciation": "/ən ˌɪndɪˈvɪdʒuəlz ˌpɜːsəˈnæləti treɪts ənd ˈmɒrəl ˈkʌmpəs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "đặc điểm tính cách và la bàn đạo đức của một cá nhân",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "An individual's personality traits and moral compass shape how they respond to temptation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:child-rearing-techniques",
+    "title": "child-rearing techniques",
+    "term": "child-rearing techniques",
+    "type": "Collocation",
+    "pronunciation": "/tʃaɪld ˈrɪərɪŋ tekˈniːks/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phương pháp nuôi dạy con",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Ineffective child-rearing techniques can inadvertently foster resentment and rebellious behaviour in teenagers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:cogent-arguments",
+    "title": "cogent arguments",
+    "term": "cogent arguments",
+    "type": "Collocation",
+    "pronunciation": "/ˈkəʊdʒənt ˈɑːɡjumənts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lập luận thuyết phục",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Both sides of the debate present cogent arguments about the origins of criminal behaviour.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:criminality",
+    "title": "criminality",
+    "term": "criminality",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌkrɪmɪˈnælɪti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tính chất phạm tội, sự phạm tội",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Poverty and unemployment are frequently identified as key drivers of criminality in deprived urban areas.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:discrimination",
+    "title": "discrimination",
+    "term": "discrimination",
+    "type": "Vocabulary",
+    "pronunciation": "/dɪˌskrɪmɪˈneɪʃn/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự phân biệt đối xử",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Victims of discrimination often struggle to access fair legal representation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:driven-by-poverty-or-desperation",
+    "title": "driven by poverty or desperation",
+    "term": "driven by poverty or desperation",
+    "type": "Collocation",
+    "pronunciation": "/ˈdrɪvən baɪ ˈpɒvəti ɔːr ˌdespəˈreɪʃən/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "bị thúc đẩy bởi nghèo đói hoặc tuyệt vọng",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Many petty thefts are driven by poverty or desperation rather than genuine malice.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:financial-insecurity",
+    "title": "financial insecurity",
+    "term": "financial insecurity",
+    "type": "Collocation",
+    "pronunciation": "/faɪˈnænʃəl ˌɪnsɪˈkjʊərəti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bất ổn tài chính",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Financial insecurity can drive people to commit theft out of desperation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:financial-survival",
+    "title": "financial survival",
+    "term": "financial survival",
+    "type": "Collocation",
+    "pronunciation": "/faɪˈnænʃəl səˈvaɪvəl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự sinh tồn về tài chính",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "For some offenders, theft is simply a matter of financial survival.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:home-oversight",
+    "title": "home oversight",
+    "term": "home oversight",
+    "type": "Collocation",
+    "pronunciation": "/həʊm ˈəʊvəsaɪt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự giám sát tại nhà",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "A lack of home oversight during formative years can leave children vulnerable to negative peer influence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:household-rule",
+    "title": "household rule",
+    "term": "household rule",
+    "type": "Collocation",
+    "pronunciation": "/ˈhaʊshəʊld ruːl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "quy tắc trong gia đình",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Consistent household rules give children a clear sense of boundaries and expectations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:is-rooted-in",
+    "title": "is rooted in",
+    "term": "is rooted in",
+    "type": "Collocation",
+    "pronunciation": "/ɪz ˈruːtɪd ɪn/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "bắt nguồn từ, có gốc rễ từ",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Youth delinquency is often rooted in family instability.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:lean-towards",
+    "title": "lean towards",
+    "term": "lean towards",
+    "type": "Collocation",
+    "pronunciation": "/liːn təˈwɔːdz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nghiêng về, có xu hướng ủng hộ",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Most sociologists lean towards environmental explanations for crime rather than genetic ones.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:limited-opportunities",
+    "title": "limited opportunities",
+    "term": "limited opportunities",
+    "type": "Collocation",
+    "pronunciation": "/ˈlɪmɪtɪd ˌɒpəˈtjuːnətiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cơ hội hạn chế",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Limited opportunities in deprived neighbourhoods push some young people towards crime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:low-educational-attainment",
+    "title": "low educational attainment",
+    "term": "low educational attainment",
+    "type": "Collocation",
+    "pronunciation": "/ləʊ ˌɛdjʊˈkeɪʃənəl əˈteɪnmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "trình độ học vấn thấp",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Numerous studies have found a strong correlation between low educational attainment and involvement in criminal activity.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:parental-guidance",
+    "title": "parental guidance",
+    "term": "parental guidance",
+    "type": "Collocation",
+    "pronunciation": "/pəˈrentəl ˈɡaɪdəns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự hướng dẫn của cha mẹ",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "A lack of parental guidance during adolescence is strongly linked to higher rates of youth offending.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:parental-negligence",
+    "title": "parental negligence",
+    "term": "parental negligence",
+    "type": "Collocation",
+    "pronunciation": "/pəˈrentəl ˈneɡlɪdʒəns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự lơ là của cha mẹ",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Parental negligence is often identified as an underlying factor in cases of persistent juvenile misconduct.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:patterns-of-aggressive-or-antisocial-behavior",
+    "title": "patterns of aggressive or antisocial behavior",
+    "term": "patterns of aggressive or antisocial behavior",
+    "type": "Collocation",
+    "pronunciation": "/ˈpætənz əv əˈɡresɪv ɔːr ˌæntiˈsəʊʃəl bɪˈheɪvjə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các kiểu hành vi hung hăng hoặc chống đối xã hội",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Teachers are trained to recognise early patterns of aggressive or antisocial behaviour in students.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:people-of-all-social-stratas",
+    "title": "people of all social stratas",
+    "term": "people of all social stratas",
+    "type": "Collocation",
+    "pronunciation": "/ˈpiːpl əv ɔːl ˈsəʊʃəl ˈstrɑːtəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "người thuộc mọi tầng lớp xã hội",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The new welfare policy aims to benefit people of all social stratas.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:predisposed",
+    "title": "predisposed",
+    "term": "predisposed",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌpriːdɪˈspəʊzd/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "có khuynh hướng, dễ bị ảnh hưởng",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Children raised in violent households may be predisposed to aggressive behaviour later in life.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:social-inequality",
+    "title": "social inequality",
+    "term": "social inequality",
+    "type": "Collocation",
+    "pronunciation": "/ˈsəʊʃəl ˌɪnɪˈkwɒləti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bất bình đẳng xã hội",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Social inequality is frequently cited as a major driver of property crime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:towards-criminal-behavior-as-a-means-of-survival-or-escape",
+    "title": "towards criminal behavior as a means of survival or escape",
+    "term": "towards criminal behavior as a means of survival or escape",
+    "type": "Collocation",
+    "pronunciation": "/təˈwɔːdz ˈkrɪmɪnəl bɪˈheɪvjə æz ə miːnz əv səˈvaɪvəl ɔːr ɪˈskeɪp/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "hướng tới hành vi phạm tội như một cách để sinh tồn hoặc trốn thoát",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Desperate circumstances can push individuals towards criminal behaviour as a means of survival or escape.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:upbringing",
+    "title": "upbringing",
+    "term": "upbringing",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈʌpˌbrɪŋɪŋ/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự nuôi dạy",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "A troubled upbringing is frequently cited by criminologists as a key factor behind juvenile delinquency.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:impulse-control",
+    "title": "impulse control",
+    "term": "impulse control",
+    "type": "Collocation",
+    "pronunciation": "/ˈɪmpʌls kənˈtrəʊl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khả năng kiểm soát sự bốc đồng",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Programmes that teach impulse control have proven effective in reducing violent incidents among young offenders.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:maturity",
+    "title": "maturity",
+    "term": "maturity",
+    "type": "Vocabulary",
+    "pronunciation": "/məˈtʃʊərəti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự trưởng thành, chín chắn",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Juvenile courts take a young offender's lack of maturity into account when sentencing.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:moral-capacity",
+    "title": "moral capacity",
+    "term": "moral capacity",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɒrəl kəˈpæsəti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "năng lực đạo đức, khả năng nhận thức đạo đức",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Children under a certain age are believed to lack the moral capacity to fully understand their actions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:neurological-immaturity",
+    "title": "neurological immaturity",
+    "term": "neurological immaturity",
+    "type": "Collocation",
+    "pronunciation": "/ˌnjʊərəˈlɒdʒɪkəl ˌɪməˈtjʊərɪti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự chưa trưởng thành về thần kinh",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Neurological immaturity is often cited as a reason why teenage offenders should be sentenced more leniently than adults.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:parental-accountability",
+    "title": "parental accountability",
+    "term": "parental accountability",
+    "type": "Collocation",
+    "pronunciation": "/pəˈrentəl əˌkaʊntəˈbɪləti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "trách nhiệm của cha mẹ",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Some legal systems now enforce parental accountability by fining guardians whose children repeatedly break the law.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:personal-responsibility",
+    "title": "personal responsibility",
+    "term": "personal responsibility",
+    "type": "Collocation",
+    "pronunciation": "/ˈpɜːsənəl rɪˌspɒnsəˈbɪləti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "trách nhiệm cá nhân",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Holding young people accountable for their actions helps instil a sense of personal responsibility.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:prefrontal-cortex",
+    "title": "prefrontal cortex",
+    "term": "prefrontal cortex",
+    "type": "Collocation",
+    "pronunciation": "/ˌpriːˈfrʌntəl ˈkɔːtɛks/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "vỏ não trước trán",
+    "topic": "Crime",
+    "subTopic": "Causes & Root Factors of Crime",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Because the prefrontal cortex is not fully developed in teenagers, they are more prone to impulsive, risky behaviour.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:act-on-impulse",
+    "title": "act on impulse",
+    "term": "act on impulse",
+    "type": "Collocation",
+    "pronunciation": "/ækt ɒn ˈɪmpʌls/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "hành động theo bốc đồng, thiếu suy nghĩ",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Teenagers sometimes act on impulse without considering the consequences.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:underage",
+    "title": "underage",
+    "term": "underage",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌʌndərˈeɪdʒ/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "chưa đủ tuổi vị thành niên",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Selling alcohol to underage customers carries a heavy fine.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:accomplice-to-crime",
+    "title": "accomplice to crime",
+    "term": "accomplice to crime",
+    "type": "Collocation",
+    "pronunciation": "/əˈkʌmplɪs tuː kraɪm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "đồng phạm",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Someone who knowingly helps a burglar dispose of stolen goods can be prosecuted as an accomplice to crime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:commit-crimes",
+    "title": "commit crimes",
+    "term": "commit crimes",
+    "type": "Collocation",
+    "pronunciation": "/kəˈmɪt kraɪmz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "phạm tội",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Teenagers from unstable households are statistically more likely to commit crimes than their peers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:criminal-behaviour",
+    "title": "criminal behaviour",
+    "term": "criminal behaviour",
+    "type": "Collocation",
+    "pronunciation": "/ˈkrɪmɪnəl bɪˈheɪvjə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hành vi phạm tội",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Poverty and social exclusion are frequently linked to the onset of criminal behaviour in young people.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:criminal-network",
+    "title": "criminal network",
+    "term": "criminal network",
+    "type": "Collocation",
+    "pronunciation": "/ˈkrɪmɪnəl ˈnetwɜːk/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mạng lưới tội phạm",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Dismantling a criminal network often requires sustained cooperation between multiple law enforcement agencies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:felonies",
+    "title": "felonies",
+    "term": "felonies",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈfeləniz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "trọng tội",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Armed robbery and murder are both classified as serious felonies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:first-time-offenders",
+    "title": "first-time offenders",
+    "term": "first-time offenders",
+    "type": "Collocation",
+    "pronunciation": "/ˌfɜːst taɪm əˈfendəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "người phạm tội lần đầu",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Courts often show leniency towards first-time offenders.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:lawbreakers",
+    "title": "lawbreakers",
+    "term": "lawbreakers",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈlɔːbreɪkəz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "những kẻ vi phạm pháp luật",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Persistent lawbreakers are more likely to receive harsher sentences.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:minor-offenses",
+    "title": "minor offenses",
+    "term": "minor offenses",
+    "type": "Collocation",
+    "pronunciation": "/ˈmaɪnər əˈfensɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tội nhẹ, hành vi phạm pháp nhỏ",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Minor offenses such as jaywalking rarely result in imprisonment.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:misdeeds",
+    "title": "misdeeds",
+    "term": "misdeeds",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌmɪsˈdiːdz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "hành vi sai trái",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Some argue that offenders should apologise publicly for their misdeeds as part of the sentencing process.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:operate-automobiles-without-proper-licensing",
+    "title": "operate automobiles without proper licensing",
+    "term": "operate automobiles without proper licensing",
+    "type": "Collocation",
+    "pronunciation": "/ˈɒpəreɪt ˈɔːtəməʊbiːlz wɪˈðaʊt ˈprɒpə ˈlaɪsənsɪŋ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "điều khiển xe cơ giới mà không có giấy phép hợp lệ",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "It is illegal to operate automobiles without proper licensing on public roads.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:serial-offender",
+    "title": "serial offender",
+    "term": "serial offender",
+    "type": "Collocation",
+    "pronunciation": "/ˈsɪəriəl əˈfɛndə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kẻ phạm tội nhiều lần liên tiếp",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Tracking a serial offender often requires cross-referencing evidence from multiple crime scenes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:under-the-influence-of-alcohol",
+    "title": "under the influence of alcohol",
+    "term": "under the influence of alcohol",
+    "type": "Collocation",
+    "pronunciation": "/ˈʌndər ði ˈɪnfluəns əv ˈælkəhɒl/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "trong tình trạng say rượu",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Driving under the influence of alcohol is one of the leading causes of road fatalities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:unintentional",
+    "title": "unintentional",
+    "term": "unintentional",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌʌnɪnˈtenʃənl/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "không cố ý, vô ý",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The damage caused was ruled unintentional, resulting in a lighter sentence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:engage-in-dangerous-behaviours",
+    "title": "engage in dangerous behaviours",
+    "term": "engage in dangerous behaviours",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈɡeɪdʒ ɪn ˈdeɪndʒərəs bɪˈheɪvjəz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tham gia vào các hành vi nguy hiểm",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Teenagers who engage in dangerous behaviours often underestimate the legal consequences.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:grave-offence",
+    "title": "grave offence",
+    "term": "grave offence",
+    "type": "Collocation",
+    "pronunciation": "/ɡreɪv əˈfɛns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tội nghiêm trọng",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Some argue that juveniles who commit a grave offence should still face the full weight of the law.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:juvenile-delinquents",
+    "title": "juvenile delinquents",
+    "term": "juvenile delinquents",
+    "type": "Collocation",
+    "pronunciation": "/ˈdʒuːvənaɪl dɪˈlɪŋkwənts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tội phạm vị thành niên",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Special courts have been established to deal with juvenile delinquents.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:juvenile-offender",
+    "title": "juvenile offender",
+    "term": "juvenile offender",
+    "type": "Collocation",
+    "pronunciation": "/ˈdʒuːvənaɪl əˈfendə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "người phạm tội vị thành niên",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Courts increasingly favour rehabilitation over punishment when dealing with a first-time juvenile offender.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:matured-offenders",
+    "title": "matured offenders",
+    "term": "matured offenders",
+    "type": "Collocation",
+    "pronunciation": "/məˈtjʊəd əˈfendəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tội phạm đã trưởng thành (người lớn phạm tội)",
+    "topic": "Crime",
+    "subTopic": "Types of Crime & Offenders",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Unlike juveniles, matured offenders are usually tried under the full weight of the law.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:broadcasting-criminal-cases",
+    "title": "broadcasting criminal cases",
+    "term": "broadcasting criminal cases",
+    "type": "Collocation",
+    "pronunciation": "/ˈbrɔːdkɑːstɪŋ ˈkrɪmɪnəl ˈkeɪsɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "phát sóng các vụ án hình sự",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Broadcasting criminal cases live on television has sparked debate about privacy rights.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:infringement",
+    "title": "infringement",
+    "term": "infringement",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪnˈfrɪndʒmənt/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự vi phạm, xâm phạm",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Publishing a suspect's photo before trial may be considered an infringement of their privacy rights.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:trivial-cases",
+    "title": "trivial cases",
+    "term": "trivial cases",
+    "type": "Collocation",
+    "pronunciation": "/ˈtrɪviəl ˈkeɪsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những vụ việc nhỏ nhặt, không nghiêm trọng",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Courts are often overwhelmed by trivial cases that could be settled outside of trial.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:advanced-forensic-tools",
+    "title": "advanced forensic tools",
+    "term": "advanced forensic tools",
+    "type": "Collocation",
+    "pronunciation": "/ədˈvɑːnst fəˈrɛnsɪk tuːlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "công cụ pháp y tiên tiến",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Advanced forensic tools have allowed detectives to solve cold cases that were once considered unsolvable.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:ai-powered-surveillance-cameras",
+    "title": "AI-powered surveillance cameras",
+    "term": "AI-powered surveillance cameras",
+    "type": "Collocation",
+    "pronunciation": "/ˌeɪˈaɪ ˈpaʊəd səˈveɪləns ˈkæmərəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "camera giám sát tích hợp trí tuệ nhân tạo",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "AI-powered surveillance cameras can automatically flag unusual behaviour in crowded public spaces.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:cctv-cameras",
+    "title": "CCTV cameras",
+    "term": "CCTV cameras",
+    "type": "Collocation",
+    "pronunciation": "/ˌsiː siː tiː ˈviː ˈkæmərəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "camera giám sát",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "CCTV cameras installed on street corners helped identify the burglars.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:crime-fighting-technology",
+    "title": "crime-fighting technology",
+    "term": "crime-fighting technology",
+    "type": "Collocation",
+    "pronunciation": "/kraɪm ˈfaɪtɪŋ tɛkˈnɒlədʒi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "công nghệ chống tội phạm",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Governments must continually upgrade crime-fighting technology to keep pace with increasingly inventive offenders.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:cutting-edge-tool",
+    "title": "cutting-edge tool",
+    "term": "cutting-edge tool",
+    "type": "Collocation",
+    "pronunciation": "/ˈkʌtɪŋ ɛdʒ tuːl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "công cụ hiện đại nhất",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Every cutting-edge tool given to the police to fight crime seems to be matched by an equally sophisticated method criminals use to evade it.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:facial-recognition-systems",
+    "title": "facial recognition systems",
+    "term": "facial recognition systems",
+    "type": "Collocation",
+    "pronunciation": "/ˈfeɪʃəl ˌrɛkəɡˈnɪʃən ˈsɪstəmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hệ thống nhận diện khuôn mặt",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Critics claim that facial recognition systems used by police raise serious concerns about privacy.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:facial-recognition-engine",
+    "title": "facial-recognition engine",
+    "term": "facial-recognition engine",
+    "type": "Collocation",
+    "pronunciation": "/ˈfeɪʃəl rɛkəɡˈnɪʃən ˈɛndʒɪn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hệ thống/công cụ nhận diện khuôn mặt",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "A facial-recognition engine linked to CCTV networks can identify a wanted suspect within seconds.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:forensic-accountant",
+    "title": "forensic accountant",
+    "term": "forensic accountant",
+    "type": "Collocation",
+    "pronunciation": "/fəˈrɛnsɪk əˈkaʊntənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kế toán pháp y (điều tra tài chính)",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "A forensic accountant was brought in to trace the laundered funds through a maze of shell companies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:governmental-agencies",
+    "title": "governmental agencies",
+    "term": "governmental agencies",
+    "type": "Collocation",
+    "pronunciation": "/ˌɡʌvənˈmentl ˈeɪdʒənsiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các cơ quan chính phủ",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Several governmental agencies collaborate to combat organised crime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:high-tech",
+    "title": "high-tech",
+    "term": "high-tech",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌhaɪ ˈtek/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "công nghệ cao",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Police forces are increasingly relying on high-tech equipment to track suspects.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:high-tech-gears",
+    "title": "high-tech gears",
+    "term": "high-tech gears",
+    "type": "Collocation",
+    "pronunciation": "/ˌhaɪ ˈtek ɡɪəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thiết bị công nghệ cao",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Officers are now equipped with high-tech gears such as body cameras.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:in-tandem",
+    "title": "in tandem",
+    "term": "in tandem",
+    "type": "Collocation",
+    "pronunciation": "/ɪn ˈtændəm/",
+    "part_of_speech": "adv",
+    "meaning_vi": "song song, cùng lúc",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Policymakers must develop technology and legislation in tandem if they hope to keep pace with evolving cybercrime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:indelible-trail",
+    "title": "indelible trail",
+    "term": "indelible trail",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈdɛlɪbəl treɪl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "dấu vết không thể xóa bỏ",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Every digital transaction leaves an indelible trail that investigators can follow to expose financial fraud.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:law-enforcers",
+    "title": "law enforcers",
+    "term": "law enforcers",
+    "type": "Collocation",
+    "pronunciation": "/lɔː ɪnˈfɔːsəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lực lượng thực thi pháp luật",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Law enforcers rely increasingly on data analysis to predict criminal hotspots.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:memory-portraits-from-witnesses",
+    "title": "memory portraits from witnesses",
+    "term": "memory portraits from witnesses",
+    "type": "Collocation",
+    "pronunciation": "/ˈmeməri ˈpɔːtreɪts frəm ˈwɪtnəsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bản phác họa chân dung từ trí nhớ của nhân chứng",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Police used memory portraits from witnesses to create a sketch of the suspect.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:surveillance-architecture",
+    "title": "surveillance architecture",
+    "term": "surveillance architecture",
+    "type": "Collocation",
+    "pronunciation": "/səˈveɪləns ˈɑːkɪtɛktʃə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hệ thống/kiến trúc giám sát",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Cities that build extensive surveillance architecture must balance crime reduction against citizens' right to privacy.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:swift-apprehension",
+    "title": "swift apprehension",
+    "term": "swift apprehension",
+    "type": "Collocation",
+    "pronunciation": "/swɪft ˌæprɪˈhɛnʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự bắt giữ nhanh chóng",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The swift apprehension of the suspects reassured local residents that the police were taking the burglaries seriously.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:technological-advancements",
+    "title": "technological advancements",
+    "term": "technological advancements",
+    "type": "Collocation",
+    "pronunciation": "/ˌteknəˈlɒdʒɪkəl ədˈvɑːnsmənts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những tiến bộ công nghệ",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Technological advancements have transformed the way police investigate crimes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:a-set-of-social-guidelines",
+    "title": "a set of social guidelines",
+    "term": "a set of social guidelines",
+    "type": "Collocation",
+    "pronunciation": "/ə set əv ˈsəʊʃəl ˈɡaɪdlaɪnz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "một bộ quy tắc/hướng dẫn xã hội",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Schools often introduce a set of social guidelines to teach children about acceptable behaviour.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:a-solid-framework",
+    "title": "a solid framework",
+    "term": "a solid framework",
+    "type": "Collocation",
+    "pronunciation": "/ə ˈsɒlɪd ˈfreɪmwɜːk/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "một khung pháp lý/nền tảng vững chắc",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The country's constitution provides a solid framework for protecting citizens' rights.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:be-diverted-from-prosecution",
+    "title": "be diverted from prosecution",
+    "term": "be diverted from prosecution",
+    "type": "Collocation",
+    "pronunciation": "/biː daɪˈvɜːtɪd frəm ˌprɒsɪˈkjuːʃn/",
+    "part_of_speech": "collocation",
+    "meaning_vi": "(verb phrase (passive)). được chuyển hướng xử lý thay vì bị truy tố",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Young suspects may be diverted from prosecution if they complete a rehabilitation programme.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:concrete-proofs",
+    "title": "concrete proofs",
+    "term": "concrete proofs",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɒŋkriːt pruːfs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bằng chứng cụ thể, xác thực",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The prosecution needed concrete proofs before the case could proceed to trial.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:diversion",
+    "title": "diversion",
+    "term": "diversion",
+    "type": "Vocabulary",
+    "pronunciation": "/daɪˈvɜːʃn/",
+    "part_of_speech": "noun",
+    "meaning_vi": "biện pháp xử lý chuyển hướng (thay thế truy tố)",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Diversion programmes redirect young offenders away from the criminal justice system.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:efficacious-in-upholding-the-legal-system",
+    "title": "efficacious in upholding the legal system",
+    "term": "efficacious in upholding the legal system",
+    "type": "Collocation",
+    "pronunciation": "/ˌefɪˈkeɪʃəs ɪn ʌpˈhəʊldɪŋ ðə ˈliːɡl ˈsɪstəm/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "có hiệu quả trong việc duy trì hệ thống pháp luật",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Some argue that community policing is more efficacious in upholding the legal system than harsh punishment.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:food-safety",
+    "title": "food safety",
+    "term": "food safety",
+    "type": "Collocation",
+    "pronunciation": "/fuːd ˈseɪfti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "an toàn thực phẩm",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Strict food safety standards help prevent outbreaks of illness in restaurants.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:sanitary-food-storage-and-preparation",
+    "title": "sanitary food storage and preparation",
+    "term": "sanitary food storage and preparation",
+    "type": "Collocation",
+    "pronunciation": "/ˈsænɪtri fuːd ˈstɔːrɪdʒ ænd ˌprepəˈreɪʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc bảo quản và chế biến thực phẩm hợp vệ sinh",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Inspectors regularly check restaurants to ensure sanitary food storage and preparation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:societal-rules",
+    "title": "societal rules",
+    "term": "societal rules",
+    "type": "Collocation",
+    "pronunciation": "/səˈsaɪətəl ruːlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "quy tắc xã hội",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Children who grow up without clear boundaries often struggle to understand societal rules.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:the-feasibility-of-a-criminal-case",
+    "title": "the feasibility of a criminal case",
+    "term": "the feasibility of a criminal case",
+    "type": "Collocation",
+    "pronunciation": "/ðə ˌfiːzəˈbɪləti əv ə ˈkrɪmɪnəl keɪs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tính khả thi của một vụ án hình sự",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Prosecutors must assess the feasibility of a criminal case before bringing it to trial.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:to-abide-by",
+    "title": "to abide by",
+    "term": "to abide by",
+    "type": "Collocation",
+    "pronunciation": "/tə əˈbaɪd baɪ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tuân theo, tuân thủ",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "All residents are expected to abide by the local traffic regulations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:upholding-societys-stability-and-values",
+    "title": "upholding society's stability and values",
+    "term": "upholding society's stability and values",
+    "type": "Collocation",
+    "pronunciation": "/ʌpˈhəʊldɪŋ səˈsaɪətiz stəˈbɪləti ænd ˈvæljuːz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "duy trì sự ổn định và các giá trị của xã hội",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Strict law enforcement plays a vital role in upholding society's stability and values.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:bringing-justice-to-the-victims",
+    "title": "bringing justice to the victims",
+    "term": "bringing justice to the victims",
+    "type": "Collocation",
+    "pronunciation": "/ˈbrɪŋɪŋ ˈdʒʌstɪs tə ðə ˈvɪktɪmz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "mang lại công lý cho các nạn nhân",
+    "topic": "Crime",
+    "subTopic": "Law Enforcement & Justice System",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The new forensic technology has been instrumental in bringing justice to the victims of cold cases.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:societal-condemnation",
+    "title": "societal condemnation",
+    "term": "societal condemnation",
+    "type": "Collocation",
+    "pronunciation": "/səˈsaɪətəl ˌkɒndɛmˈneɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự lên án của xã hội",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Public figures convicted of fraud often face societal condemnation long after they have served their sentence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:alternative-sanction",
+    "title": "alternative sanction",
+    "term": "alternative sanction",
+    "type": "Collocation",
+    "pronunciation": "/ɔːlˈtɜːnətɪv ˈsæŋkʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hình phạt thay thế",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Courts are increasingly favouring an alternative sanction, such as community service, over short custodial sentences.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:community-service-orders",
+    "title": "community service orders",
+    "term": "community service orders",
+    "type": "Collocation",
+    "pronunciation": "/kəˈmjuːnəti ˈsɜːvɪs ˈɔːdəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lệnh lao động công ích",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Community service orders allow offenders to make amends while avoiding the damaging effects of imprisonment.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:confinement",
+    "title": "confinement",
+    "term": "confinement",
+    "type": "Vocabulary",
+    "pronunciation": "/kənˈfaɪnmənt/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự giam giữ, cầm tù",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Prolonged solitary confinement has been criticised for causing lasting psychological damage to prisoners.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:deprived-of-freedom",
+    "title": "deprived of freedom",
+    "term": "deprived of freedom",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈpraɪvd əv ˈfriːdəm/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "bị tước quyền tự do",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Being deprived of freedom for an extended period can have lasting psychological effects on inmates.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:deter-crime",
+    "title": "deter crime",
+    "term": "deter crime",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈtɜː kraɪm/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "răn đe tội phạm",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Proponents insist that harsher sentences deter crime by making the consequences of offending unmistakably clear.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:deter-criminal-behavior",
+    "title": "deter criminal behavior",
+    "term": "deter criminal behavior",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈtɜː ˈkrɪmɪnəl bɪˈheɪvjə/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "ngăn chặn/răn đe hành vi phạm tội",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Heavier fines alone rarely deter criminal behavior unless they are paired with a genuine risk of being caught.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:dissuade",
+    "title": "dissuade",
+    "term": "dissuade",
+    "type": "Vocabulary",
+    "pronunciation": "/dɪˈsweɪd/",
+    "part_of_speech": "verb",
+    "meaning_vi": "ngăn cản, can ngăn",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Harsher sentences are intended to dissuade would-be offenders from breaking the law.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:face-consequences",
+    "title": "face consequences",
+    "term": "face consequences",
+    "type": "Collocation",
+    "pronunciation": "/feɪs ˈkɒnsɪkwənsɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đối mặt với hậu quả",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Young offenders must face consequences for their actions if they are to learn from their mistakes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:held-accountable",
+    "title": "held accountable",
+    "term": "held accountable",
+    "type": "Collocation",
+    "pronunciation": "/held əˈkaʊntəbəl/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "bị quy trách nhiệm",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Parents should be held accountable when their negligence directly contributes to a child's delinquent behaviour.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:high-security-wing",
+    "title": "high-security wing",
+    "term": "high-security wing",
+    "type": "Collocation",
+    "pronunciation": "/haɪ sɪˈkjʊərɪti wɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khu giam giữ an ninh cao",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The most violent inmates are typically held in a high-security wing separate from the general prison population.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:imposing-longer-prison-sentences",
+    "title": "imposing longer prison sentences",
+    "term": "imposing longer prison sentences",
+    "type": "Collocation",
+    "pronunciation": "/ɪmˈpəʊzɪŋ ˈlɒŋɡə ˈprɪzən ˈsentənsɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "áp dụng án tù dài hơn",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Imposing longer prison sentences does not necessarily translate into lower crime rates.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:incapacitate",
+    "title": "incapacitate",
+    "term": "incapacitate",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪnˈkæpəsɪteɪt/",
+    "part_of_speech": "verb",
+    "meaning_vi": "làm mất khả năng (gây hại), giam giữ để cách ly khỏi xã hội",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Imprisonment is designed not only to punish but also to incapacitate dangerous offenders during their sentence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:inflicting-fitting-penalties-for-criminals",
+    "title": "inflicting fitting penalties for criminals",
+    "term": "inflicting fitting penalties for criminals",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈflɪktɪŋ ˈfɪtɪŋ ˈpenəltiz fə ˈkrɪmɪnəlz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "áp dụng hình phạt thích đáng cho tội phạm",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The government insists that inflicting fitting penalties for criminals is essential to maintaining public trust.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:jail-term",
+    "title": "jail term",
+    "term": "jail term",
+    "type": "Collocation",
+    "pronunciation": "/dʒeɪl tɜːm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "án tù, thời hạn ngồi tù",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The judge handed down a five-year jail term for repeated drink-driving offences.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:legal-repercussion",
+    "title": "legal repercussion",
+    "term": "legal repercussion",
+    "type": "Collocation",
+    "pronunciation": "/ˈliːɡəl ˌriːpəˈkʌʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hậu quả pháp lý",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Facing a legal repercussion at a young age can either deter or further alienate a troubled teenager.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:less-intimidating",
+    "title": "less intimidating",
+    "term": "less intimidating",
+    "type": "Collocation",
+    "pronunciation": "/les ɪnˈtɪmɪdeɪtɪŋ/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "ít đe dọa hơn",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Community sentences are widely seen as less intimidating than a lengthy prison term, yet they can still be effective.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:pardoned",
+    "title": "pardoned",
+    "term": "pardoned",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈpɑːdənd/",
+    "part_of_speech": "collocation",
+    "meaning_vi": "(verb (past participle)). được ân xá, được tha thứ",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The prisoner was pardoned by the president after serving ten years.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:penalized",
+    "title": "penalized",
+    "term": "penalized",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈpiːnəlaɪzd/",
+    "part_of_speech": "verb/adjective",
+    "meaning_vi": "bị trừng phạt",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Minor offences are often penalized with fines rather than custodial sentences.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:prison-system",
+    "title": "prison system",
+    "term": "prison system",
+    "type": "Collocation",
+    "pronunciation": "/ˈprɪzən ˈsɪstəm/",
+    "part_of_speech": "noun",
+    "meaning_vi": "hệ thống nhà tù",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Overcrowding remains one of the most pressing challenges facing the modern prison system.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:punitive-measure",
+    "title": "punitive measure",
+    "term": "punitive measure",
+    "type": "Collocation",
+    "pronunciation": "/ˈpjuːnɪtɪv ˈmɛʒə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "biện pháp trừng phạt",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Introducing a punitive measure without addressing underlying social causes rarely leads to a lasting reduction in crime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:punitive-measures",
+    "title": "punitive measures",
+    "term": "punitive measures",
+    "type": "Collocation",
+    "pronunciation": "/ˈpjuːnɪtɪv ˈmeʒəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "biện pháp trừng phạt",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Relying solely on punitive measures often fails to address the root causes of criminal behaviour.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:retributions",
+    "title": "retributions",
+    "term": "retributions",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌretrɪˈbjuːʃnz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự trừng phạt, sự báo ứng",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Harsh retributions do not always deter future offences.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:retributive-parity",
+    "title": "retributive parity",
+    "term": "retributive parity",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈtrɪbjʊtɪv pəˈrɪti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự tương xứng trong trừng phạt (công bằng báo ứng)",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Advocates of retributive parity insist that the severity of punishment should always match the severity of the crime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:sent-to-jail",
+    "title": "sent to jail",
+    "term": "sent to jail",
+    "type": "Collocation",
+    "pronunciation": "/sent tə dʒeɪl/",
+    "part_of_speech": "collocation",
+    "meaning_vi": "(verb phrase (passive)). bị tống vào tù, bị bỏ tù",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The judge ruled that the fraudster should be sent to jail for at least five years.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:severe-punishment",
+    "title": "severe punishment",
+    "term": "severe punishment",
+    "type": "Collocation",
+    "pronunciation": "/sɪˈvɪə ˈpʌnɪʃmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hình phạt nghiêm khắc",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Advocates of severe punishment argue that harsh sentences reduce reoffending rates.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:socio-economic-burden",
+    "title": "socio-economic burden",
+    "term": "socio-economic burden",
+    "type": "Collocation",
+    "pronunciation": "/ˌsəʊʃiəʊ ˌiːkəˈnɒmɪk ˈbɜːdən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "gánh nặng kinh tế-xã hội",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Long-term incarceration places a considerable socio-economic burden on both the state and the offender's family.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:spending-decades-behind-bars",
+    "title": "spending decades behind bars",
+    "term": "spending decades behind bars",
+    "type": "Collocation",
+    "pronunciation": "/ˈspendɪŋ ˈdekeɪdz bɪˈhaɪnd bɑːz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "ngồi tù hàng chục năm",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Spending decades behind bars rarely equips offenders with the skills they need to rebuild their lives.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:the-severity-of-the-penalties",
+    "title": "the severity of the penalties",
+    "term": "the severity of the penalties",
+    "type": "Collocation",
+    "pronunciation": "/ðə sɪˈverəti əv ðə ˈpenəltiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mức độ nghiêm khắc của hình phạt",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Lawmakers voted to increase the severity of the penalties for drink-driving offences.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:to-escape-retribution",
+    "title": "to escape retribution",
+    "term": "to escape retribution",
+    "type": "Collocation",
+    "pronunciation": "/tə ɪˈskeɪp ˌretrɪˈbjuːʃn/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "trốn tránh sự trừng phạt",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Some criminals flee the country in an attempt to escape retribution.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:ex-convict-label",
+    "title": "\"ex-convict\" label",
+    "term": "\"ex-convict\" label",
+    "type": "Collocation",
+    "pronunciation": "/ˈeks kənˈvɪkt ˈleɪbəl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nhãn \"cựu tù nhân\"",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The \"ex-convict\" label often makes it harder for former prisoners to find stable employment.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:an-opportunity-to-rehabilitate",
+    "title": "an opportunity to rehabilitate",
+    "term": "an opportunity to rehabilitate",
+    "type": "Collocation",
+    "pronunciation": "/ən ˌɒpəˈtjuːnəti tə ˌriːəˈbɪlɪteɪt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cơ hội để cải tạo/phục hồi nhân cách",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Vocational training gives inmates an opportunity to rehabilitate before release.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:counseling",
+    "title": "counseling",
+    "term": "counseling",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈkaʊnsəlɪŋ/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tư vấn tâm lý",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Regular counseling sessions can help young offenders address the underlying causes of their behaviour.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:education-centred-prison-system",
+    "title": "education-centred prison system",
+    "term": "education-centred prison system",
+    "type": "Collocation",
+    "pronunciation": "/ˌedjʊˈkeɪʃən ˈsentəd ˈprɪzən ˈsɪstəm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hệ thống nhà tù lấy giáo dục làm trung tâm",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Countries that adopt an education-centred prison system tend to report markedly lower reoffending rates.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:ex-offender",
+    "title": "ex-offender",
+    "term": "ex-offender",
+    "type": "Vocabulary",
+    "pronunciation": "/eks əˈfendə/",
+    "part_of_speech": "noun",
+    "meaning_vi": "người từng phạm tội",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Many employers remain reluctant to hire an ex-offender, regardless of how much they have changed.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:formal-qualifications",
+    "title": "formal qualifications",
+    "term": "formal qualifications",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɔːməl ˌkwɒlɪfɪˈkeɪʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bằng cấp chính thức",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Earning formal qualifications while incarcerated can significantly boost an offender's chances of finding work after release.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:having-a-clean-record",
+    "title": "having a clean record",
+    "term": "having a clean record",
+    "type": "Collocation",
+    "pronunciation": "/ˈhævɪŋ ə kliːn ˈrekɔːd/",
+    "part_of_speech": "collocation",
+    "meaning_vi": "(verb phrase (gerund)). có lý lịch trong sạch, chưa từng phạm tội",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Having a clean record can make it easier for former offenders to find employment.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:high-recidivism-rates",
+    "title": "high recidivism rates",
+    "term": "high recidivism rates",
+    "type": "Collocation",
+    "pronunciation": "/haɪ rɪˈsɪdɪvɪzəm reɪts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tỷ lệ tái phạm cao",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Overcrowded prisons with minimal rehabilitation support tend to produce high recidivism rates.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:job-application",
+    "title": "job application",
+    "term": "job application",
+    "type": "Collocation",
+    "pronunciation": "/dʒɒb ˌæplɪˈkeɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "đơn xin việc",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Many employers reject a job application the moment they see a criminal record.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:personalised-counselling",
+    "title": "personalised counselling",
+    "term": "personalised counselling",
+    "type": "Collocation",
+    "pronunciation": "/ˈpɜːsənəlaɪzd ˈkaʊnsəlɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tư vấn cá nhân hóa",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Personalised counselling helps offenders address the root causes of their behaviour.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:post-release-programme",
+    "title": "post-release programme",
+    "term": "post-release programme",
+    "type": "Collocation",
+    "pronunciation": "/pəʊst rɪˈliːs ˈprəʊɡræm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chương trình hậu mãn hạn tù",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "A comprehensive post-release programme can make the difference between successful reintegration and a swift return to crime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:potential-for-rehabilitation",
+    "title": "potential for rehabilitation",
+    "term": "potential for rehabilitation",
+    "type": "Collocation",
+    "pronunciation": "/pəˈtɛnʃəl fɔː rɪˌhæbɪlɪˈteɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khả năng cải tạo/phục hồi",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Judges are often asked to weigh a young offender's potential for rehabilitation before deciding on a sentence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:practical-competencies",
+    "title": "practical competencies",
+    "term": "practical competencies",
+    "type": "Collocation",
+    "pronunciation": "/ˈpræktɪkəl ˈkɒmpɪtənsiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kỹ năng thực tiễn",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Vocational courses in prison equip inmates with practical competencies that employers value highly.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:preventing-reoffending",
+    "title": "preventing reoffending",
+    "term": "preventing reoffending",
+    "type": "Collocation",
+    "pronunciation": "/prɪˈventɪŋ ˌriːəˈfendɪŋ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "ngăn ngừa tái phạm",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Investing in education has proven far more effective at preventing reoffending than punitive isolation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:prison-based-education",
+    "title": "prison-based education",
+    "term": "prison-based education",
+    "type": "Collocation",
+    "pronunciation": "/ˈprɪzən beɪst ˌɛdjʊˈkeɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "giáo dục trong tù",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Expanding prison-based education has been shown to significantly improve inmates' chances of finding stable employment after release.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:psychological-support",
+    "title": "psychological support",
+    "term": "psychological support",
+    "type": "Collocation",
+    "pronunciation": "/ˌsaɪkəˈlɒdʒɪkəl səˈpɔːt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hỗ trợ tâm lý",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Without adequate psychological support, many inmates struggle to address the root causes of their offending.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:publicprivate-partnership",
+    "title": "public–private partnership",
+    "term": "public–private partnership",
+    "type": "Collocation",
+    "pronunciation": "/ˈpʌblɪk ˈpraɪvət ˈpɑːtnəʃɪp/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "quan hệ đối tác công-tư",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "A public-private partnership was launched to fund vocational training for ex-inmates.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:re-offending-rate",
+    "title": "re-offending rate",
+    "term": "re-offending rate",
+    "type": "Collocation",
+    "pronunciation": "/riː əˈfɛndɪŋ reɪt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tỷ lệ tái phạm",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Countries that invest heavily in education within prisons tend to report a markedly lower re-offending rate.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:recidivism",
+    "title": "recidivism",
+    "term": "recidivism",
+    "type": "Vocabulary",
+    "pronunciation": "/rɪˈsɪdɪvɪzəm/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tái phạm tội",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Studies consistently show that vocational training in prison can substantially reduce recidivism among former inmates.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:recidivism-costs",
+    "title": "recidivism costs",
+    "term": "recidivism costs",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈsɪdɪvɪzəm kɒsts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chi phí tái phạm tội",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Reducing recidivism costs should be a priority for any government serious about long-term crime reduction.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:recidivists",
+    "title": "recidivists",
+    "term": "recidivists",
+    "type": "Vocabulary",
+    "pronunciation": "/rɪˈsɪdɪvɪsts/",
+    "part_of_speech": "noun",
+    "meaning_vi": "những kẻ tái phạm",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Recidivists often require more intensive rehabilitation support than first-time offenders.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:rehabilitate",
+    "title": "rehabilitate",
+    "term": "rehabilitate",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌriːəˈbɪlɪteɪt/",
+    "part_of_speech": "verb",
+    "meaning_vi": "phục hồi, cải tạo",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Prison programmes that genuinely rehabilitate offenders tend to cost less in the long run than repeated incarceration.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:rehabilitation-programme",
+    "title": "rehabilitation programme",
+    "term": "rehabilitation programme",
+    "type": "Collocation",
+    "pronunciation": "/ˌriːəˌbɪlɪˈteɪʃən ˈprəʊɡræm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chương trình cải tạo/phục hồi nhân phẩm",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "A well-funded rehabilitation programme can equip offenders with the skills needed to reintegrate into society.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:rehabilitation-programs",
+    "title": "rehabilitation programs",
+    "term": "rehabilitation programs",
+    "type": "Collocation",
+    "pronunciation": "/ˌriːəˌbɪlɪˈteɪʃən ˈprəʊɡræmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chương trình cải tạo",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Well-funded rehabilitation programs can dramatically reduce the likelihood of former inmates returning to crime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:rehabilitative-framework",
+    "title": "rehabilitative framework",
+    "term": "rehabilitative framework",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈhæbɪlɪtətɪv ˈfreɪmwɜːk/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khuôn khổ/hệ thống cải tạo",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "A rehabilitative framework focused on counselling and education is generally more effective for juvenile offenders than punitive detention.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:reintegration",
+    "title": "reintegration",
+    "term": "reintegration",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌriːɪntɪˈɡreɪʃən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự tái hòa nhập",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Without adequate support, reintegration into the workforce remains extremely difficult for former inmates.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:reintegration-into-society",
+    "title": "reintegration into society",
+    "term": "reintegration into society",
+    "type": "Collocation",
+    "pronunciation": "/ˌriːɪntɪˈɡreɪʃən ˈɪntə səˈsaɪəti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự tái hòa nhập xã hội",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Successful reintegration into society depends heavily on the support offenders receive immediately after release.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:released-convicts",
+    "title": "released convicts",
+    "term": "released convicts",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈliːst ˈkɒnvɪkts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những tù nhân được thả",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Released convicts often struggle to secure housing due to their criminal record.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:reoffence-rates",
+    "title": "reoffence rates",
+    "term": "reoffence rates",
+    "type": "Collocation",
+    "pronunciation": "/riː əˈfɛns reɪts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tỷ lệ tái phạm",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Governments that fund literacy classes in prisons often see a noticeable drop in reoffence rates within a few years.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:repeat-offence",
+    "title": "repeat offence",
+    "term": "repeat offence",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈpiːt əˈfens/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tái phạm",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Harsher penalties alone rarely stop a determined individual from committing a repeat offence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:second-chance-hiring-scheme",
+    "title": "second-chance hiring scheme",
+    "term": "second-chance hiring scheme",
+    "type": "Collocation",
+    "pronunciation": "/ˈsekənd tʃɑːns ˈhaɪərɪŋ skiːm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chương trình tuyển dụng cơ hội thứ hai",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The second-chance hiring scheme encourages companies to employ former offenders.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:societal-dividends",
+    "title": "societal dividends",
+    "term": "societal dividends",
+    "type": "Collocation",
+    "pronunciation": "/səˈsaɪətəl ˈdɪvɪdɛndz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lợi ích cho xã hội",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Investing in offender education yields long-term societal dividends by lowering both crime rates and welfare costs.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:societal-stigma",
+    "title": "societal stigma",
+    "term": "societal stigma",
+    "type": "Collocation",
+    "pronunciation": "/səˈsaɪətəl ˈstɪɡmə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự kỳ thị của xã hội",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The societal stigma attached to a criminal record often makes it harder for ex-offenders to find stable work.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:stable-employment",
+    "title": "stable employment",
+    "term": "stable employment",
+    "type": "Collocation",
+    "pronunciation": "/ˈsteɪbəl ɪmˈplɔɪmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc làm ổn định",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Access to stable employment is widely regarded as one of the strongest deterrents against reoffending.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:stable-housing",
+    "title": "Stable housing",
+    "term": "Stable housing",
+    "type": "Collocation",
+    "pronunciation": "/ˈsteɪbəl ˈhaʊzɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nhà ở ổn định",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Stable housing is one of the strongest predictors of successful reintegration.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:structured-corrective-programme",
+    "title": "structured corrective programme",
+    "term": "structured corrective programme",
+    "type": "Collocation",
+    "pronunciation": "/ˈstrʌktʃəd kəˈrektɪv ˈprəʊɡræm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chương trình cải huấn có cấu trúc",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Enrolling young offenders in a structured corrective programme can reduce the likelihood of repeat offences.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:vocational-and-academic-skills",
+    "title": "vocational and academic skills",
+    "term": "vocational and academic skills",
+    "type": "Collocation",
+    "pronunciation": "/vəʊˈkeɪʃənəl ænd ˌækəˈdɛmɪk skɪlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kỹ năng nghề nghiệp và học thuật",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Prisons that teach vocational and academic skills give offenders a genuine alternative to returning to crime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:vocational-skill",
+    "title": "vocational skill",
+    "term": "vocational skill",
+    "type": "Collocation",
+    "pronunciation": "/vəʊˈkeɪʃənəl skɪl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kỹ năng nghề nghiệp",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Teaching inmates a vocational skill before release greatly improves their chances of finding legitimate work.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:vocational-training",
+    "title": "vocational training",
+    "term": "vocational training",
+    "type": "Collocation",
+    "pronunciation": "/vəʊˈkeɪʃənəl ˈtreɪnɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "đào tạo nghề",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Offering vocational training behind bars gives prisoners a realistic chance of finding legitimate employment upon release.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:juvenile-detention-centers",
+    "title": "juvenile detention centers",
+    "term": "juvenile detention centers",
+    "type": "Collocation",
+    "pronunciation": "/ˈdʒuːvənaɪl dɪˈtenʃən ˈsentəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "trại giam vị thành niên",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Juvenile detention centers aim to correct young offenders' behaviour rather than simply punish them.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:juvenile-detention-term",
+    "title": "juvenile detention term",
+    "term": "juvenile detention term",
+    "type": "Collocation",
+    "pronunciation": "/ˈdʒuːvənaɪl dɪˈtenʃən tɜːm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thời hạn giam giữ vị thành niên",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "A juvenile detention term should be paired with structured counselling to prevent future offending.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:parental-sanction",
+    "title": "parental sanction",
+    "term": "parental sanction",
+    "type": "Collocation",
+    "pronunciation": "/pəˈrentəl ˈsæŋkʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chế tài đối với cha mẹ",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Some jurisdictions impose a parental sanction when a minor repeatedly breaks the law under their guardian's watch.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:threat-of-incarceration",
+    "title": "threat of incarceration",
+    "term": "threat of incarceration",
+    "type": "Collocation",
+    "pronunciation": "/θret əv ɪnˌkɑːsəˈreɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nguy cơ bị giam giữ",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The threat of incarceration alone is often insufficient to deter crimes committed in the heat of the moment.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:showing-the-wrongdoings-of-criminals-publicly",
+    "title": "showing the wrongdoings of criminals publicly",
+    "term": "showing the wrongdoings of criminals publicly",
+    "type": "Collocation",
+    "pronunciation": "/ˈʃəʊɪŋ ðə ˈrɒŋduːɪŋz əv ˈkrɪmɪnəlz ˈpʌblɪkli/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "công khai hành vi sai trái của tội phạm",
+    "topic": "Crime",
+    "subTopic": "Punishment & Rehabilitation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Showing the wrongdoings of criminals publicly can act as a warning to the wider community.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:unequal-technological-access",
+    "title": "unequal technological access",
+    "term": "unequal technological access",
+    "type": "Collocation",
+    "pronunciation": "/ʌnˈiːkwəl ˌtɛknəˈlɒdʒɪkəl ˈæksɛs/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "sự bất bình đẳng trong việc tiếp cận công nghệ",
+    "topic": "Crime",
+    "subTopic": "Cybercrime & Modern Threats",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Unequal technological access means that poorer communities benefit far less from modern crime-detection tools than wealthier ones.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:additive-manufacturing",
+    "title": "additive manufacturing",
+    "term": "additive manufacturing",
+    "type": "Collocation",
+    "pronunciation": "/ˈædɪtɪv ˌmænjʊˈfæktʃərɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "công nghệ in 3D / sản xuất bồi đắp",
+    "topic": "Crime",
+    "subTopic": "Cybercrime & Modern Threats",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Additive manufacturing, better known as 3D printing, has worryingly enabled criminals to produce untraceable firearms at home.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:cash-less-commerce",
+    "title": "cash-less commerce",
+    "term": "cash-less commerce",
+    "type": "Collocation",
+    "pronunciation": "/kæʃ lɛs ˈkɒmɜːs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thương mại không dùng tiền mặt",
+    "topic": "Crime",
+    "subTopic": "Cybercrime & Modern Threats",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The shift toward cash-less commerce has made financial transactions easier to trace, which in turn deters certain types of theft.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:counterfeit-luxury-goods",
+    "title": "counterfeit luxury goods",
+    "term": "counterfeit luxury goods",
+    "type": "Collocation",
+    "pronunciation": "/ˈkaʊntəfɪt ˈlʌkʃəri ɡʊdz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hàng xa xỉ giả",
+    "topic": "Crime",
+    "subTopic": "Cybercrime & Modern Threats",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Online marketplaces have made it far easier for criminal networks to sell counterfeit luxury goods to unsuspecting buyers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:cyber-crime",
+    "title": "cyber-crime",
+    "term": "cyber-crime",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈsaɪbə kraɪm/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tội phạm mạng",
+    "topic": "Crime",
+    "subTopic": "Cybercrime & Modern Threats",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Cyber-crime has become one of the fastest-growing categories of offence worldwide.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:digital-footprints",
+    "title": "digital footprints",
+    "term": "digital footprints",
+    "type": "Collocation",
+    "pronunciation": "/ˈdɪdʒɪtəl ˈfʊtprɪnts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "dấu vết kỹ thuật số",
+    "topic": "Crime",
+    "subTopic": "Cybercrime & Modern Threats",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Investigators increasingly rely on digital footprints to trace the movements of fraud suspects.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:exploiting-technological-advancements",
+    "title": "exploiting technological advancements",
+    "term": "exploiting technological advancements",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈsplɔɪtɪŋ ˌtɛknəˈlɒdʒɪkəl ədˈvɑːnsmənts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "lợi dụng các tiến bộ công nghệ",
+    "topic": "Crime",
+    "subTopic": "Cybercrime & Modern Threats",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Organised crime networks are exploiting technological advancements to launder money across borders undetected.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:high-tech-contraband",
+    "title": "high-tech contraband",
+    "term": "high-tech contraband",
+    "type": "Collocation",
+    "pronunciation": "/haɪ tɛk ˈkɒntrəbænd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hàng cấm công nghệ cao",
+    "topic": "Crime",
+    "subTopic": "Cybercrime & Modern Threats",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Customs officials are struggling to intercept high-tech contraband smuggled through increasingly sophisticated shipping routes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:information-thievery",
+    "title": "information thievery",
+    "term": "information thievery",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪnfəˈmeɪʃən ˈθiːvəri/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hành vi đánh cắp thông tin",
+    "topic": "Crime",
+    "subTopic": "Cybercrime & Modern Threats",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Information thievery has surged as more personal data is stored online.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:paved-the-way-for",
+    "title": "paved the way for",
+    "term": "paved the way for",
+    "type": "Collocation",
+    "pronunciation": "/peɪvd ðə weɪ fɔː/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "mở đường cho",
+    "topic": "Crime",
+    "subTopic": "Cybercrime & Modern Threats",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The rise of online banking has paved the way for a surge in cyber-crime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:recipient",
+    "title": "recipient",
+    "term": "recipient",
+    "type": "Vocabulary",
+    "pronunciation": "/rɪˈsɪpiənt/",
+    "part_of_speech": "noun",
+    "meaning_vi": "người nhận",
+    "topic": "Crime",
+    "subTopic": "Cybercrime & Modern Threats",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Scammers often disguise themselves as the intended recipient of a bank transfer.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:sophisticated-hacking-software",
+    "title": "sophisticated hacking software",
+    "term": "sophisticated hacking software",
+    "type": "Collocation",
+    "pronunciation": "/səˈfɪstɪkeɪtɪd ˈhækɪŋ ˈsɒftwɛə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phần mềm hack tinh vi",
+    "topic": "Crime",
+    "subTopic": "Cybercrime & Modern Threats",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Cybercriminals now use sophisticated hacking software that can bypass even robust corporate firewalls.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:spoofed-identities",
+    "title": "spoofed identities",
+    "term": "spoofed identities",
+    "type": "Collocation",
+    "pronunciation": "/spuːft aɪˈdɛntɪtiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "danh tính giả mạo",
+    "topic": "Crime",
+    "subTopic": "Cybercrime & Modern Threats",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Scammers frequently use spoofed identities to trick victims into transferring money to fraudulent accounts.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:the-persistence-of-cybercrime",
+    "title": "the persistence of cybercrime",
+    "term": "the persistence of cybercrime",
+    "type": "Collocation",
+    "pronunciation": "/ðə pəˈsɪstəns əv ˈsaɪbəkraɪm/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "sự dai dẳng/tồn tại liên tục của tội phạm mạng",
+    "topic": "Crime",
+    "subTopic": "Cybercrime & Modern Threats",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Despite billions invested in digital defences, the persistence of cybercrime continues to erode public trust in online banking systems.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:transactions",
+    "title": "transactions",
+    "term": "transactions",
+    "type": "Vocabulary",
+    "pronunciation": "/trænˈzækʃənz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "giao dịch",
+    "topic": "Crime",
+    "subTopic": "Cybercrime & Modern Threats",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Fraudsters intercept online transactions to steal customers' banking details.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:potential-offenders",
+    "title": "potential offenders",
+    "term": "potential offenders",
+    "type": "Collocation",
+    "pronunciation": "/pəˈtenʃəl əˈfendəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những kẻ có khả năng phạm tội",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Well-lit streets can discourage potential offenders from committing crimes at night.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:would-be-offenders",
+    "title": "would-be offenders",
+    "term": "would-be offenders",
+    "type": "Collocation",
+    "pronunciation": "/ˈwʊd biː əˈfendəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những kẻ có ý định phạm tội",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Visible policing can deter would-be offenders from targeting a neighbourhood.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:the-decrease-in-crime-rate",
+    "title": "the decrease in crime rate",
+    "term": "the decrease in crime rate",
+    "type": "Collocation",
+    "pronunciation": "/ðə ˈdiːkriːs ɪn kraɪm reɪt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự giảm tỷ lệ tội phạm",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Officials credited better lighting for the decrease in crime rate in the city centre.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:display-anxiety-toward-the-unsafe-society",
+    "title": "display anxiety toward the unsafe society",
+    "term": "display anxiety toward the unsafe society",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈspleɪ æŋˈzaɪəti təˈwɔːd ði ʌnˈseɪf səˈsaɪəti/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "thể hiện sự lo lắng về một xã hội thiếu an toàn",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Constant crime coverage causes many viewers to display anxiety toward the unsafe society around them.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:pro-social-attitude",
+    "title": "pro-social attitude",
+    "term": "pro-social attitude",
+    "type": "Collocation",
+    "pronunciation": "/prəʊ ˈsəʊʃəl ˈætɪtjuːd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thái độ tích cực với xã hội",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Mentoring schemes aim to foster a pro-social attitude in young people who might otherwise drift toward gang activity.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:promote-responsibility",
+    "title": "promote responsibility",
+    "term": "promote responsibility",
+    "type": "Collocation",
+    "pronunciation": "/prəˈməʊt rɪˌspɒnsəˈbɪləti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thúc đẩy tinh thần trách nhiệm",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Community service schemes are designed to promote responsibility among first-time juvenile offenders.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:collective-responsibility",
+    "title": "collective responsibility",
+    "term": "collective responsibility",
+    "type": "Collocation",
+    "pronunciation": "/kəˈlektɪv rɪˌspɒnsəˈbɪləti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "trách nhiệm tập thể",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Tackling crime effectively requires a sense of collective responsibility shared by families, schools and the state.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:community-partnership",
+    "title": "community partnership",
+    "term": "community partnership",
+    "type": "Collocation",
+    "pronunciation": "/kəˈmjuːnəti ˈpɑːtnəʃɪp/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự hợp tác với cộng đồng",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Effective crime prevention often relies on a strong community partnership between residents and local police.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:crime-prevention-initiative",
+    "title": "crime-prevention initiative",
+    "term": "crime-prevention initiative",
+    "type": "Collocation",
+    "pronunciation": "/kraɪm prɪˈvɛnʃən ɪˈnɪʃətɪv/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sáng kiến phòng chống tội phạm",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The city council launched a crime-prevention initiative that pairs at-risk youths with community mentors.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:curbing",
+    "title": "curbing",
+    "term": "curbing",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈkɜːbɪŋ/",
+    "part_of_speech": "collocation",
+    "meaning_vi": "(verb (gerund)). kiềm chế, hạn chế",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Community outreach programmes play a key role in curbing youth crime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:digital-literacy",
+    "title": "digital literacy",
+    "term": "digital literacy",
+    "type": "Collocation",
+    "pronunciation": "/ˈdɪdʒɪtəl ˈlɪtərəsi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khả năng hiểu biết và sử dụng công nghệ số",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Improving digital literacy among the elderly is essential to protecting them from online scams.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:dissuade-wrongdoings",
+    "title": "dissuade wrongdoings",
+    "term": "dissuade wrongdoings",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈsweɪd ˈrɒŋduːɪŋz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "ngăn cản/răn đe các hành vi sai trái",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Public awareness campaigns can help dissuade wrongdoings among teenagers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:enhance-public-safety",
+    "title": "enhance public safety",
+    "term": "enhance public safety",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈhɑːns ˈpʌblɪk ˈseɪfti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nâng cao an toàn công cộng",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Local governments argue that installing streetlights in dark alleys can significantly enhance public safety.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:eradicating-the-intention-of-future-offenders",
+    "title": "eradicating the intention of future offenders",
+    "term": "eradicating the intention of future offenders",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈrædɪkeɪtɪŋ ði ɪnˈtenʃən əv ˈfjuːtʃə əˈfendəz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "xóa bỏ ý định của những kẻ phạm tội trong tương lai",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Public awareness campaigns play a role in eradicating the intention of future offenders.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:had-a-positive-impact",
+    "title": "had a positive impact",
+    "term": "had a positive impact",
+    "type": "Collocation",
+    "pronunciation": "/hæd ə ˈpɒzətɪv ˈɪmpækt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "có tác động tích cực",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The new surveillance system had a positive impact on reducing street crime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:identify-suspicious-activities",
+    "title": "identify suspicious activities",
+    "term": "identify suspicious activities",
+    "type": "Collocation",
+    "pronunciation": "/aɪˈdɛntɪfaɪ səˈspɪʃəs ækˈtɪvɪtiz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "phát hiện các hoạt động khả nghi",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Neighbourhood watch volunteers are trained to identify suspicious activities and report them promptly to the police.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:instill-the-fear-of-destitution",
+    "title": "instill the fear of destitution",
+    "term": "instill the fear of destitution",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈstɪl ðə fɪər əv ˌdestɪˈtjuːʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gieo rắc nỗi sợ nghèo khó cùng cực",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Harsh sentencing is thought by some to instill the fear of destitution that keeps potential offenders in line.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:instilling-fear-of-retribution-in-potential-criminals",
+    "title": "instilling fear of retribution in potential criminals",
+    "term": "instilling fear of retribution in potential criminals",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈstɪlɪŋ fɪər əv ˌretrɪˈbjuːʃn ɪn pəˈtenʃl ˈkrɪmɪnəlz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gieo rắc nỗi sợ trừng phạt vào những tội phạm tiềm ẩn",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Deterrent sentencing works by instilling fear of retribution in potential criminals.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:powerful-deterrent",
+    "title": "powerful deterrent",
+    "term": "powerful deterrent",
+    "type": "Collocation",
+    "pronunciation": "/ˈpaʊəfəl dɪˈterənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "biện pháp răn đe mạnh mẽ",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Visible policing can act as a powerful deterrent to opportunistic theft in busy urban areas.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:prevent-criminal-activities",
+    "title": "prevent criminal activities",
+    "term": "prevent criminal activities",
+    "type": "Collocation",
+    "pronunciation": "/prɪˈvent ˈkrɪmɪnəl ækˈtɪvətiz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "ngăn chặn các hoạt động phạm tội",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Community patrols help prevent criminal activities in residential areas.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:proactive-engagement-strategies",
+    "title": "proactive engagement strategies",
+    "term": "proactive engagement strategies",
+    "type": "Collocation",
+    "pronunciation": "/prəʊˈæktɪv ɪnˈɡeɪdʒmənt ˈstrætədʒiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chiến lược can thiệp chủ động",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Schools that adopt proactive engagement strategies can identify at-risk youths before they turn to crime.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:the-restriction-of-legal-violation-scenes",
+    "title": "The restriction of legal violation scenes",
+    "term": "The restriction of legal violation scenes",
+    "type": "Collocation",
+    "pronunciation": "/ðə rɪˈstrɪkʃən əv ˈliːɡəl ˌvaɪəˈleɪʃən siːnz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự hạn chế các cảnh vi phạm pháp luật",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "The restriction of legal violation scenes on television aims to protect younger viewers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:crime:yield-more-long-term-benefits",
+    "title": "yield more long-term benefits",
+    "term": "yield more long-term benefits",
+    "type": "Collocation",
+    "pronunciation": "/jiːld mɔː ˈlɒŋ tɜːm ˈbenɪfɪts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "mang lại lợi ích lâu dài hơn",
+    "topic": "Crime",
+    "subTopic": "Prevention & Community Safety",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Crime",
+    "examples": [
+      {
+        "en": "Rehabilitative approaches tend to yield more long-term benefits for society than purely punitive ones.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  }
+]

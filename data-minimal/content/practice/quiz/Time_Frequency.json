@@ -1,0 +1,459 @@
+{
+  "questions": [
+    {
+      "id": "sa_temporary_0_0",
+      "type": "short_answer",
+      "sentence": "Many businesses rely on ___ to meet seasonal demands.",
+      "options": [],
+      "correct_answer": "temporary workers",
+      "explanation": "temporary workers",
+      "hint": "nhân viên tạm thời",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_temporary_1_0",
+      "type": "short_answer",
+      "sentence": "The refugees were provided with ___.",
+      "options": [],
+      "correct_answer": "temporary accommodation",
+      "explanation": "temporary accommodation",
+      "hint": "chỗ ở tạm thời",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_temporary_2_0",
+      "type": "short_answer",
+      "sentence": "The medicine provided ___ from his headache.",
+      "options": [],
+      "correct_answer": "temporary relief",
+      "explanation": "temporary relief",
+      "hint": "sự giảm nhẹ tạm thời",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_temporary_3_0",
+      "type": "short_answer",
+      "sentence": "This is just a ___ until a permanent solution is found.",
+      "options": [],
+      "correct_answer": "temporary measure",
+      "explanation": "temporary measure",
+      "hint": "biện pháp tạm thời",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_temporary_4_0",
+      "type": "short_answer",
+      "sentence": "The repairs were only a ___ to the problem.",
+      "options": [],
+      "correct_answer": "temporary solution",
+      "explanation": "temporary solution",
+      "hint": "giải pháp tạm thời",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_temporary_5_0",
+      "type": "short_answer",
+      "sentence": "He applied a ___ to the leaky pipe.",
+      "options": [],
+      "correct_answer": "temporary fix",
+      "explanation": "temporary fix",
+      "hint": "cách khắc phục tạm thời",
+      "collocation_type": "N"
+    },
+    {
+      "id": "sa_prolonged_0_0",
+      "type": "short_answer",
+      "sentence": "The patient's recovery from the ___ was slow but steady.",
+      "options": [],
+      "correct_answer": "prolonged illness",
+      "explanation": "prolonged illness",
+      "hint": "bệnh kéo dài",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_prolonged_1_0",
+      "type": "short_answer",
+      "sentence": "___ to the sun can cause skin damage.",
+      "options": [],
+      "correct_answer": "Prolonged exposure",
+      "explanation": "prolonged exposure",
+      "hint": "sự phơi nhiễm kéo dài",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_prolonged_2_0",
+      "type": "short_answer",
+      "sentence": "They had a ___ of negotiations before reaching an agreement.",
+      "options": [],
+      "correct_answer": "prolonged period",
+      "explanation": "prolonged period",
+      "hint": "khoảng thời gian kéo dài",
+      "collocation_type": "Adj + N"
+    },
+    {
+      "id": "sa_occasional_0_0",
+      "type": "short_answer",
+      "sentence": "He works for us ___.",
+      "options": [],
+      "correct_answer": "on an occasional basis",
+      "explanation": "on an occasional basis",
+      "hint": "một cách không thường xuyên",
+      "collocation_type": "adVial phrase"
+    },
+    {
+      "id": "sa_occasional_1_0",
+      "type": "short_answer",
+      "sentence": "He is an ___.",
+      "options": [],
+      "correct_answer": "occasional drinker",
+      "explanation": "occasional drinker",
+      "hint": "người uống rượu không thường xuyên",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_permanent_0_0",
+      "type": "short_answer",
+      "sentence": "She was unable to find a ___.",
+      "options": [],
+      "correct_answer": "permanent job",
+      "explanation": "permanent job",
+      "hint": "công việc ổn định, lâu dài",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_permanent_1_0",
+      "type": "short_answer",
+      "sentence": "The company employs a large number of ___.",
+      "options": [],
+      "correct_answer": "permanent staff",
+      "explanation": "permanent staff",
+      "hint": "nhân viên chính thức",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_permanent_2_0",
+      "type": "short_answer",
+      "sentence": "They are now living together on a ___.",
+      "options": [],
+      "correct_answer": "permanent basis",
+      "explanation": "permanent basis",
+      "hint": "trên cơ sở lâu dài",
+      "collocation_type": "adVial phrase"
+    },
+    {
+      "id": "sa_permanent_3_0",
+      "type": "short_answer",
+      "sentence": "Smoking can cause ___ to your lungs.",
+      "options": [],
+      "correct_answer": "permanent damage",
+      "explanation": "permanent damage",
+      "hint": "tổn hại vĩnh viễn",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_permanent_4_0",
+      "type": "short_answer",
+      "sentence": "They are looking for a ___.",
+      "options": [],
+      "correct_answer": "permanent home",
+      "explanation": "permanent home",
+      "hint": "nơi ở lâu dài",
+      "collocation_type": "N phrase"
+    },
+    {
+      "id": "sa_permanent_5_0",
+      "type": "short_answer",
+      "sentence": "The government plans to ___.",
+      "options": [],
+      "correct_answer": "make the policy permanent",
+      "explanation": "make + sth permanent",
+      "hint": "làm cho điều gì đó trở nên lâu dài",
+      "collocation_type": "V phrase"
+    },
+    {
+      "id": "sa_lasting_0_0",
+      "type": "short_answer",
+      "sentence": "The implementation of the rationalisation programme left a ___ on Finniston.",
+      "options": [],
+      "correct_answer": "lasting impression",
+      "explanation": "lasting impression",
+      "hint": "Ấn tượng sâu sắc, khó quên",
+      "collocation_type": "N Phrase"
+    },
+    {
+      "id": "sa_lasting_0_1",
+      "type": "short_answer",
+      "sentence": "Yet he made a greater, more ___ on her than most lovers would or could.",
+      "options": [],
+      "correct_answer": "lasting impression",
+      "explanation": "lasting impression",
+      "hint": "Ấn tượng sâu sắc, khó quên",
+      "collocation_type": "N Phrase"
+    },
+    {
+      "id": "sa_lasting_1_0",
+      "type": "short_answer",
+      "sentence": "The speech could do ___ to US--German relations.",
+      "options": [],
+      "correct_answer": "lasting damage",
+      "explanation": "lasting damage",
+      "hint": "Thiệt hại kéo dài",
+      "collocation_type": "N Phrase"
+    },
+    {
+      "id": "sa_lasting_2_0",
+      "type": "short_answer",
+      "sentence": "The committee’s decision could have a ___ on the community.",
+      "options": [],
+      "correct_answer": "lasting effect",
+      "explanation": "lasting effect",
+      "hint": "Ảnh hưởng lâu dài",
+      "collocation_type": "N Phrase"
+    },
+    {
+      "id": "sa_lasting_3_0",
+      "type": "short_answer",
+      "sentence": "Until we all give up violence, there cannot possibly be ___ in the world.",
+      "options": [],
+      "correct_answer": "lasting peace",
+      "explanation": "lasting peace",
+      "hint": "Hòa bình lâu dài",
+      "collocation_type": "N Phrase"
+    },
+    {
+      "id": "sa_lasting_3_1",
+      "type": "short_answer",
+      "sentence": "a ___ settlement",
+      "options": [],
+      "correct_answer": "lasting peace",
+      "explanation": "lasting peace",
+      "hint": "Hòa bình lâu dài",
+      "collocation_type": "N Phrase"
+    },
+    {
+      "id": "sa_rapidly_0_0",
+      "type": "short_answer",
+      "sentence": "The cost of living has ___ in recent years.",
+      "options": [],
+      "correct_answer": "increased rapidly",
+      "explanation": "increase rapidly",
+      "hint": "tăng nhanh chóng",
+      "collocation_type": "V + adV"
+    },
+    {
+      "id": "sa_rapidly_1_0",
+      "type": "short_answer",
+      "sentence": "Technology has ___.",
+      "options": [],
+      "correct_answer": "developed rapidly",
+      "explanation": "develop rapidly",
+      "hint": "phát triển nhanh chóng",
+      "collocation_type": "V + adV"
+    },
+    {
+      "id": "sa_rapidly_2_0",
+      "type": "short_answer",
+      "sentence": "The news ___ through the town.",
+      "options": [],
+      "correct_answer": "spread rapidly",
+      "explanation": "spread rapidly",
+      "hint": "lan truyền nhanh chóng",
+      "collocation_type": "V + adV"
+    },
+    {
+      "id": "sa_rapidly_3_0",
+      "type": "short_answer",
+      "sentence": "The market is ___.",
+      "options": [],
+      "correct_answer": "changing rapidly",
+      "explanation": "change rapidly",
+      "hint": "thay đổi nhanh chóng",
+      "collocation_type": "V + adV"
+    },
+    {
+      "id": "sa_rapidly_4_0",
+      "type": "short_answer",
+      "sentence": "This is a ___ industry.",
+      "options": [],
+      "correct_answer": "rapidly growing",
+      "explanation": "rapidly growing",
+      "hint": "tăng trưởng nhanh chóng",
+      "collocation_type": "adV + Adj"
+    },
+    {
+      "id": "mc_academic_0_1777697879556",
+      "type": "multiple_choice",
+      "sentence": "The company decided to hire ___ during the holiday season.",
+      "options": [
+        {
+          "id": "a",
+          "text": "lasting benefits"
+        },
+        {
+          "id": "b",
+          "text": "permanent job"
+        },
+        {
+          "id": "c",
+          "text": "occasional basis"
+        },
+        {
+          "id": "d",
+          "text": "temporary workers"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Từ 'temporary' trong câu này đóng vai trò là tính từ, bổ nghĩa cho danh từ 'workers', có nghĩa là 'tạm thời'. Các lựa chọn khác không phù hợp về mặt ngữ nghĩa hoặc ngữ pháp."
+    },
+    {
+      "id": "mc_academic_1_1777697879556",
+      "type": "multiple_choice",
+      "sentence": "She suffered from a ___ that lasted for months.",
+      "options": [
+        {
+          "id": "a",
+          "text": "rapidly growth"
+        },
+        {
+          "id": "b",
+          "text": "lasting benefits"
+        },
+        {
+          "id": "c",
+          "text": "prolonged illness"
+        },
+        {
+          "id": "d",
+          "text": "permanent damage"
+        }
+      ],
+      "correct_answer": "c",
+      "explanation": "Cụm 'prolonged illness' có nghĩa là 'bệnh kéo dài'. Từ 'prolonged' là tính từ, bổ nghĩa cho danh từ 'illness', hoàn toàn phù hợp với ngữ cảnh của câu."
+    },
+    {
+      "id": "mc_academic_2_1777697879556",
+      "type": "multiple_choice",
+      "sentence": "He works for us on an ___ basis.",
+      "options": [
+        {
+          "id": "a",
+          "text": "prolonged"
+        },
+        {
+          "id": "b",
+          "text": "temporary"
+        },
+        {
+          "id": "c",
+          "text": "permanent"
+        },
+        {
+          "id": "d",
+          "text": "occasional"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Cụm 'occasional basis' có nghĩa là 'thỉnh thoảng, không thường xuyên'. Từ 'occasional' là tính từ, bổ nghĩa cho 'basis', rất phù hợp với ý nghĩa câu."
+    },
+    {
+      "id": "mc_academic_3_1777697879556",
+      "type": "multiple_choice",
+      "sentence": "She was unable to find a ___ job.",
+      "options": [
+        {
+          "id": "a",
+          "text": "prolonged"
+        },
+        {
+          "id": "b",
+          "text": "occasional"
+        },
+        {
+          "id": "c",
+          "text": "lasting"
+        },
+        {
+          "id": "d",
+          "text": "permanent"
+        }
+      ],
+      "correct_answer": "d",
+      "explanation": "Từ 'permanent' ở đây đóng vai trò là tính từ, bổ nghĩa cho danh từ 'job', có nghĩa là 'lâu dài, vĩnh viễn'. Lựa chọn này phù hợp nhất với ngữ cảnh tìm kiếm việc làm."
+    },
+    {
+      "id": "mc_academic_4_1777697879556",
+      "type": "multiple_choice",
+      "sentence": "The game has already been ___ three times.",
+      "options": [
+        {
+          "id": "a",
+          "text": "benefited"
+        },
+        {
+          "id": "b",
+          "text": "postponed"
+        },
+        {
+          "id": "c",
+          "text": "lasting"
+        },
+        {
+          "id": "d",
+          "text": "damaged"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Từ 'postponed' là dạng quá khứ phân từ của động từ 'postpone', có nghĩa là 'hoãn lại'. Câu này diễn tả việc trận đấu đã bị hoãn lại nhiều lần."
+    },
+    {
+      "id": "mc_academic_5_1777697879556",
+      "type": "multiple_choice",
+      "sentence": "The reforms will bring ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "lasting benefits"
+        },
+        {
+          "id": "b",
+          "text": "temporary effects"
+        },
+        {
+          "id": "c",
+          "text": "occasional benefits"
+        },
+        {
+          "id": "d",
+          "text": "rapid growth"
+        }
+      ],
+      "correct_answer": "a",
+      "explanation": "Cụm 'lasting benefits' có nghĩa là 'lợi ích lâu dài'. Từ 'lasting' là tính từ, bổ nghĩa cho danh từ 'benefits', diễn tả kết quả tích cực và bền vững của các cải cách."
+    },
+    {
+      "id": "mc_academic_6_1777697879556",
+      "type": "multiple_choice",
+      "sentence": "The economy is growing ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "prolonged"
+        },
+        {
+          "id": "b",
+          "text": "rapidly"
+        },
+        {
+          "id": "c",
+          "text": "permanent"
+        },
+        {
+          "id": "d",
+          "text": "occasional"
+        }
+      ],
+      "correct_answer": "b",
+      "explanation": "Trạng từ 'rapidly' bổ nghĩa cho động từ 'growing', diễn tả tốc độ tăng trưởng nhanh chóng của nền kinh tế. Các lựa chọn khác là tính từ và không phù hợp về mặt ngữ pháp."
+    }
+  ]
+}

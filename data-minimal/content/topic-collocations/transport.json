@@ -1,0 +1,3662 @@
+[
+  {
+    "id": "topic-colloc:transport:boosting-their-productivity",
+    "title": "boosting their productivity",
+    "term": "boosting their productivity",
+    "type": "Collocation",
+    "pronunciation": "/ˈbuːstɪŋ ðeə ˌprɒdʌkˈtɪvəti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nâng cao năng suất làm việc của họ",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Employees who arrive relaxed after a comfortable commute end up boosting their productivity throughout the day.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:commutes",
+    "title": "commutes",
+    "term": "commutes",
+    "type": "Vocabulary",
+    "pronunciation": "/kəˈmjuːts/",
+    "part_of_speech": "noun",
+    "meaning_vi": "những chuyến đi lại (đi làm/học)",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Daily commutes on overcrowded trains leave many workers feeling exhausted before they even reach the office.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:commuting",
+    "title": "Commuting",
+    "term": "Commuting",
+    "type": "Vocabulary",
+    "pronunciation": "/kəˈmjuːtɪŋ/",
+    "part_of_speech": "collocation",
+    "meaning_vi": "(noun (gerund)). việc đi lại (đi làm/học hàng ngày)",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Commuting by train allows passengers to read or work instead of sitting in traffic.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:commuting-pattern",
+    "title": "commuting pattern",
+    "term": "commuting pattern",
+    "type": "Collocation",
+    "pronunciation": "/kəˈmjuːtɪŋ ˈpætən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thói quen đi lại",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The shift towards hybrid work has altered commuting patterns significantly since the pandemic.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:connectivity",
+    "title": "connectivity",
+    "term": "connectivity",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌkɒnekˈtɪvəti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "khả năng kết nối",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Improving connectivity between suburban areas and the city centre would reduce residents' dependence on cars.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:continuous-learning",
+    "title": "continuous learning",
+    "term": "continuous learning",
+    "type": "Collocation",
+    "pronunciation": "/kənˈtɪnjuəs ˈlɜːnɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "học tập liên tục",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Podcasts have turned daily commutes into opportunities for continuous learning.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:decompress-prior-to-arriving-at-work",
+    "title": "decompress prior to arriving at work",
+    "term": "decompress prior to arriving at work",
+    "type": "Collocation",
+    "pronunciation": "/ˌdiːkəmˈpres ˈpraɪər tʊ əˈraɪvɪŋ æt wɜːk/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thư giãn/giải tỏa căng thẳng trước khi đến chỗ làm",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Many commuters use their train journey to decompress prior to arriving at work, which helps them start the day with a clearer mind.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:economical-commuting-option",
+    "title": "economical commuting option",
+    "term": "economical commuting option",
+    "type": "Collocation",
+    "pronunciation": "/ˌiːkəˈnɒmɪkəl kəˈmjuːtɪŋ ˈɒpʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lựa chọn đi lại tiết kiệm",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Bike-sharing schemes offer an economical commuting option for short urban trips.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:economically-accessible",
+    "title": "economically accessible",
+    "term": "economically accessible",
+    "type": "Collocation",
+    "pronunciation": "/ˌiːkəˈnɒmɪkli əkˈsesəbl/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "dễ tiếp cận về mặt kinh tế",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Free travel passes for students make public transport economically accessible to low-income households.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:effective-public-transport-system",
+    "title": "effective public transport system",
+    "term": "effective public transport system",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈfektɪv ˈpʌblɪk ˈtrænspɔːt ˈsɪstəm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hệ thống giao thông công cộng hiệu quả",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "An effective public transport system can dramatically cut a city's carbon footprint.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:financially-sustainable-public-transport-model",
+    "title": "financially sustainable public transport model",
+    "term": "financially sustainable public transport model",
+    "type": "Collocation",
+    "pronunciation": "/faɪˈnænʃəli səˈsteɪnəbl ˈpʌblɪk ˈtrænspɔːt ˈmɒdl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mô hình giao thông công cộng bền vững về tài chính",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Singapore has developed a financially sustainable public transport model that balances fares with government support.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:greater-food-variety-and-year-round-availability",
+    "title": "greater food variety and year-round availability",
+    "term": "greater food variety and year-round availability",
+    "type": "Collocation",
+    "pronunciation": "/ˈgreɪtə fuːd vəˈraɪəti ænd ˌjɪə ˈraʊnd əˌveɪləˈbɪləti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự đa dạng thực phẩm lớn hơn và sẵn có quanh năm",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Efficient global transport networks give consumers greater food variety and year-round availability of fresh produce.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:idle-period",
+    "title": "idle period",
+    "term": "idle period",
+    "type": "Collocation",
+    "pronunciation": "/ˈaɪdl ˈpɪəriəd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khoảng thời gian rảnh rỗi, nhàn rỗi",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Commuters often use the idle period on trains to catch up on emails.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:immersive-audiobook",
+    "title": "immersive audiobook",
+    "term": "immersive audiobook",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈmɜːsɪv ˈɔːdiəʊbʊk/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sách nói sống động, cuốn hút",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "An immersive audiobook can make a tedious two-hour bus journey feel far shorter.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:listen-to-podcasts-and-music",
+    "title": "listen to podcasts and music",
+    "term": "listen to podcasts and music",
+    "type": "Collocation",
+    "pronunciation": "/ˈlɪsən tə ˈpɒdkɑːsts ænd ˈmjuːzɪk/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nghe podcast và nhạc",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Passengers on the metro often listen to podcasts and music to make their journey feel shorter and more enjoyable.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:low-income-backgrounds",
+    "title": "low-income backgrounds",
+    "term": "low-income backgrounds",
+    "type": "Collocation",
+    "pronunciation": "/ˌləʊ ˈɪnkʌm ˈbækgraʊndz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "hoàn cảnh thu nhập thấp",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Commuters from low-income backgrounds are disproportionately affected when public transport fares rise faster than wages.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:mass-transit",
+    "title": "mass transit",
+    "term": "mass transit",
+    "type": "Collocation",
+    "pronunciation": "/mæs ˈtrænzɪt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "giao thông công cộng khối lượng lớn",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Expanding mass transit is often cheaper than building new motorways.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:personal-and-domestic-duties",
+    "title": "personal and domestic duties",
+    "term": "personal and domestic duties",
+    "type": "Collocation",
+    "pronunciation": "/ˈpɜːsənl ænd dəˈmestɪk ˈdjuːtiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "công việc cá nhân và việc nhà",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Flexible transport schedules make it easier for parents to balance personal and domestic duties with their jobs.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:public-transport-systems",
+    "title": "public transport systems",
+    "term": "public transport systems",
+    "type": "Collocation",
+    "pronunciation": "/ˈpʌblɪk ˈtrænspɔːt ˈsɪstəmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hệ thống giao thông công cộng",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Reliable public transport systems give teenagers independence without the need to own a car.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:robust",
+    "title": "robust",
+    "term": "robust",
+    "type": "Vocabulary",
+    "pronunciation": "/rəʊˈbʌst/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "vững chắc, mạnh mẽ",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "A robust public transport network is essential if cities want residents to give up their cars.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:skill-acquisition",
+    "title": "skill acquisition",
+    "term": "skill acquisition",
+    "type": "Collocation",
+    "pronunciation": "/skɪl ˌækwɪˈzɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc tiếp thu kỹ năng",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Online courses accessed during commutes have accelerated skill acquisition among young professionals.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:the-general-populace",
+    "title": "the general populace",
+    "term": "the general populace",
+    "type": "Collocation",
+    "pronunciation": "/ðə ˈdʒenrəl ˈpɒpjʊləs/",
+    "part_of_speech": "noun",
+    "meaning_vi": "đại đa số dân chúng",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Affordable public transport fares directly benefit the general populace, especially those who cannot afford private vehicles.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:thought-provoking-podcast",
+    "title": "thought-provoking podcast",
+    "term": "thought-provoking podcast",
+    "type": "Collocation",
+    "pronunciation": "/θɔːt prəˈvəʊkɪŋ ˈpɒdkɑːst/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "podcast kích thích tư duy",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "She listens to a thought-provoking podcast on economics during her daily train ride.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:urged-to-utilize-public-transit",
+    "title": "urged to utilize public transit",
+    "term": "urged to utilize public transit",
+    "type": "Collocation",
+    "pronunciation": "/ɜːdʒd tuː ˈjuːtəlaɪz ˈpʌblɪk ˈtrænzɪt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "được kêu gọi sử dụng phương tiện công cộng",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Office workers are increasingly being urged to utilize public transit rather than drive alone into the city.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:well-developed-subway-system",
+    "title": "well-developed subway system",
+    "term": "well-developed subway system",
+    "type": "Collocation",
+    "pronunciation": "/wel dɪˈveləpt ˈsʌbweɪ ˈsɪstəm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hệ thống tàu điện ngầm phát triển tốt",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Tokyo's well-developed subway system allows millions of commuters to avoid road traffic altogether.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:workplace-issues",
+    "title": "workplace issues",
+    "term": "workplace issues",
+    "type": "Collocation",
+    "pronunciation": "/ˈwɜːkpleɪs ˈɪʃuːz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các vấn đề tại nơi làm việc",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Commuting by train allows employees to mentally prepare for workplace issues instead of confronting them the moment they arrive.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:burnt-out",
+    "title": "burnt out",
+    "term": "burnt out",
+    "type": "Collocation",
+    "pronunciation": "/bɜːnt aʊt/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "kiệt sức, cạn năng lượng",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Commuters stuck in gridlock every day often feel burnt out long before they even reach their desks.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:losing-out-on-sleep",
+    "title": "losing out on sleep",
+    "term": "losing out on sleep",
+    "type": "Collocation",
+    "pronunciation": "/ˈluːzɪŋ aʊt ɒn sliːp/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "mất ngủ, thiếu ngủ",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Long, unreliable commutes mean many workers end up losing out on sleep, which affects their concentration the next day.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:mental-health-problems",
+    "title": "mental health problems",
+    "term": "mental health problems",
+    "type": "Collocation",
+    "pronunciation": "/ˈmentl helθ ˈprɒbləmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các vấn đề sức khỏe tâm thần",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Long, stressful commutes have been linked to mental health problems such as anxiety and chronic fatigue.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:potential-domestic-troubles",
+    "title": "potential domestic troubles",
+    "term": "potential domestic troubles",
+    "type": "Collocation",
+    "pronunciation": "/pəˈtenʃəl dəˈmestɪk ˈtrʌblz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những rắc rối gia đình có thể xảy ra",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "A quiet bus ride gives passengers a chance to set aside potential domestic troubles before they reach the office.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:social-inequality",
+    "title": "social inequality",
+    "term": "social inequality",
+    "type": "Collocation",
+    "pronunciation": "/ˈsəʊʃl ˌɪnɪˈkwɒləti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "bất bình đẳng xã hội",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Sharp increases in public transport fares risk deepening social inequality by pricing low-income commuters out of essential services.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:time-consuming-activity",
+    "title": "time-consuming activity",
+    "term": "time-consuming activity",
+    "type": "Collocation",
+    "pronunciation": "/taɪm kənˈsjuːmɪŋ ækˈtɪvəti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hoạt động tốn thời gian",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "For many suburban residents, getting to work has become a time-consuming activity that eats into family life.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:accommodate-a-sizable-number-of-passengers",
+    "title": "accommodate a sizable number of passengers",
+    "term": "accommodate a sizable number of passengers",
+    "type": "Collocation",
+    "pronunciation": "/əˈkɒmədeɪt ə ˈsaɪzəbl ˈnʌmbər əv ˈpæsɪndʒəz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "chứa được một lượng lớn hành khách",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Double-decker buses can accommodate a sizable number of passengers during rush hour.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:park-and-ride-facilities",
+    "title": "park-and-ride facilities",
+    "term": "park-and-ride facilities",
+    "type": "Collocation",
+    "pronunciation": "/pɑːk ənd raɪd fəˈsɪlətiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cơ sở bãi đỗ xe kết hợp phương tiện công cộng",
+    "topic": "Transport",
+    "subTopic": "Public Transport Systems",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Building park-and-ride facilities on the outskirts encourages drivers to switch to buses before entering the city.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:a-persistent-issue-on-the-citys-periphery",
+    "title": "a persistent issue on the city's periphery",
+    "term": "a persistent issue on the city's periphery",
+    "type": "Collocation",
+    "pronunciation": "/ə pəˈsɪstənt ˈɪʃuː ɒn ðə ˈsɪtiz pəˈrɪfəri/",
+    "part_of_speech": "noun",
+    "meaning_vi": "một vấn đề dai dẳng ở vùng ngoại ô thành phố",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Poor road connectivity remains a persistent issue on the city's periphery, leaving suburban residents heavily dependent on private cars.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:easing-traffic-jams",
+    "title": "easing traffic jams",
+    "term": "easing traffic jams",
+    "type": "Collocation",
+    "pronunciation": "/ˈiːzɪŋ ˈtræfɪk dʒæmz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giảm bớt tắc nghẽn giao thông",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Widening the ring road played a key role in easing traffic jams during peak hours.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:excessive-migration-to-urban-centers",
+    "title": "excessive migration to urban centers",
+    "term": "excessive migration to urban centers",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈsesɪv maɪˈgreɪʃn tə ˈɜːbən ˈsentəz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "làn sóng di cư quá mức vào các trung tâm đô thị",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Excessive migration to urban centers has overwhelmed public transport systems that were never designed to serve such large populations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:monitors",
+    "title": "monitors",
+    "term": "monitors",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈmɒnɪtəz/",
+    "part_of_speech": "verb",
+    "meaning_vi": "giám sát",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The city's control centre constantly monitors traffic flow so that officers can respond quickly to accidents.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:prohibited",
+    "title": "prohibited",
+    "term": "prohibited",
+    "type": "Vocabulary",
+    "pronunciation": "/prəˈhɪbɪtɪd/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "bị cấm",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Private cars are prohibited from entering the old town between 8am and 6pm on weekdays.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:seen-the-situation-exacerbated",
+    "title": "seen the situation exacerbated",
+    "term": "seen the situation exacerbated",
+    "type": "Collocation",
+    "pronunciation": "/siːn ðə ˌsɪtʃuˈeɪʃən ɪɡˈzæsəbeɪtɪd/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "chứng kiến tình hình trở nên tồi tệ hơn",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Residents have seen the situation exacerbated by an influx of new vehicles each year.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:traffic-flow",
+    "title": "traffic flow",
+    "term": "traffic flow",
+    "type": "Collocation",
+    "pronunciation": "/ˈtræfɪk fləʊ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "luồng giao thông",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Smart traffic lights that adjust to real-time traffic flow can significantly shorten waiting times at intersections.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:cardiovascular-health",
+    "title": "cardiovascular health",
+    "term": "cardiovascular health",
+    "type": "Collocation",
+    "pronunciation": "/ˌkɑːdiəʊˈvæskjʊlə helθ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sức khỏe tim mạch",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Cycling to work several times a week has been shown to improve cardiovascular health significantly.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:preference-for-private-vehicles",
+    "title": "preference for private vehicles",
+    "term": "preference for private vehicles",
+    "type": "Collocation",
+    "pronunciation": "/ˈprefrəns fə ˈpraɪvət ˈvɪəklz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự ưu tiên sử dụng xe cá nhân",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "A strong preference for private vehicles continues to undermine efforts to promote public transport.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:behavioural-change",
+    "title": "behavioural change",
+    "term": "behavioural change",
+    "type": "Collocation",
+    "pronunciation": "/bɪˈheɪvjərəl tʃeɪndʒ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự thay đổi hành vi",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Long-term behavioural change among drivers is more likely to come from education than from fines alone.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:bicycle-related-accidents",
+    "title": "bicycle-related accidents",
+    "term": "bicycle-related accidents",
+    "type": "Collocation",
+    "pronunciation": "/ˈbaɪsɪkl rɪˈleɪtɪd ˈæksɪdənts/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tai nạn liên quan đến xe đạp",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Dedicated cycling lanes have proven effective in lowering the number of bicycle-related accidents in congested cities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:driving-etiquette",
+    "title": "driving etiquette",
+    "term": "driving etiquette",
+    "type": "Collocation",
+    "pronunciation": "/ˈdraɪvɪŋ ˈetɪket/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "quy tắc ứng xử khi lái xe",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Good driving etiquette, such as signalling early and giving way to pedestrians, helps prevent minor collisions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:excessive-speeding",
+    "title": "excessive speeding",
+    "term": "excessive speeding",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈsesɪv ˈspiːdɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phóng nhanh quá mức",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Excessive speeding on residential streets has led to a sharp rise in accidents involving children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:law-abiding-drivers",
+    "title": "law-abiding drivers",
+    "term": "law-abiding drivers",
+    "type": "Collocation",
+    "pronunciation": "/ˈlɔː əˌbaɪdɪŋ ˈdraɪvəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những tài xế tuân thủ pháp luật",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Even law-abiding drivers can be caught off guard by poorly marked junctions on unfamiliar roads.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:narrow-roads-and-sharp-curves",
+    "title": "narrow roads and sharp curves",
+    "term": "narrow roads and sharp curves",
+    "type": "Collocation",
+    "pronunciation": "/ˈnærəʊ rəʊdz ænd ʃɑːp kɜːvz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "đường hẹp và khúc cua gấp",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Narrow roads and sharp curves along the mountain pass have been the site of several serious crashes this year.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:poor-road-conditions",
+    "title": "poor road conditions",
+    "term": "poor road conditions",
+    "type": "Collocation",
+    "pronunciation": "/pɔː rəʊd kənˈdɪʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "điều kiện đường xá kém",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Poor road conditions in rural areas make it especially hazardous for motorbike riders travelling at night.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:poor-visibility-due-to-dense-mist-and-rain",
+    "title": "poor visibility due to dense mist and rain",
+    "term": "poor visibility due to dense mist and rain",
+    "type": "Collocation",
+    "pronunciation": "/pɔː ˌvɪzəˈbɪləti djuː tə dens mɪst ænd reɪn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tầm nhìn kém do sương mù dày đặc và mưa lớn",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Drivers were urged to slow down because of poor visibility due to dense mist and rain along the coastal highway.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:road-safety",
+    "title": "road safety",
+    "term": "road safety",
+    "type": "Collocation",
+    "pronunciation": "/rəʊd ˈseɪfti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "an toàn giao thông đường bộ",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Governments should prioritize road safety by investing in better signage, lighting, and pedestrian crossings.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:safety-concerns",
+    "title": "safety concerns",
+    "term": "safety concerns",
+    "type": "Collocation",
+    "pronunciation": "/ˈseɪfti kənˈsɜːnz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mối lo ngại về an toàn",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Safety concerns about cycling on busy roads deter many people from commuting by bike.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:safety-protocols",
+    "title": "safety protocols",
+    "term": "safety protocols",
+    "type": "Collocation",
+    "pronunciation": "/ˈseɪfti ˈprəʊtəkɒlz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "quy trình an toàn",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "All public transport operators should be required to follow strict safety protocols to protect passengers during emergencies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:slippery-roads-on-account-of-snowfall",
+    "title": "slippery roads on account of snowfall",
+    "term": "slippery roads on account of snowfall",
+    "type": "Collocation",
+    "pronunciation": "/ˈslɪpəri rəʊdz ɒn əˈkaʊnt əv ˈsnəʊfɔːl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "đường trơn trượt do tuyết rơi",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Several buses were cancelled because of slippery roads on account of snowfall in the northern region.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:voice-their-concerns",
+    "title": "voice their concerns",
+    "term": "voice their concerns",
+    "type": "Collocation",
+    "pronunciation": "/vɔɪs ðeə kənˈsɜːnz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "bày tỏ mối lo ngại",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Local residents voiced their concerns about the safety of the proposed cycle lane.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:hinder",
+    "title": "hinder",
+    "term": "hinder",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈhɪndə/",
+    "part_of_speech": "verb",
+    "meaning_vi": "cản trở",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Poorly timed traffic lights can hinder the smooth flow of vehicles through the city centre.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:road-congestion",
+    "title": "road congestion",
+    "term": "road congestion",
+    "type": "Collocation",
+    "pronunciation": "/rəʊd kənˈdʒestʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tắc nghẽn giao thông",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Encouraging remote work has slightly eased road congestion during the morning rush hour.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:successfully-ameliorated",
+    "title": "successfully ameliorated",
+    "term": "successfully ameliorated",
+    "type": "Collocation",
+    "pronunciation": "/səkˈsesfəli əˈmiːliəreɪtɪd/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cải thiện thành công",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Traffic congestion in the downtown area has been successfully ameliorated since the tram line opened.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:traffic-congestion",
+    "title": "traffic congestion",
+    "term": "traffic congestion",
+    "type": "Collocation",
+    "pronunciation": "/ˈtræfɪk kənˈdʒestʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tắc nghẽn giao thông",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Traffic congestion during peak hours has become a daily source of frustration for commuters.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:underlying-reason-behind-congestion",
+    "title": "underlying reason behind congestion",
+    "term": "underlying reason behind congestion",
+    "type": "Collocation",
+    "pronunciation": "/ˌʌndəˈlaɪɪŋ ˈriːzn bɪˈhaɪnd kənˈdʒestʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nguyên nhân sâu xa của tắc nghẽn",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The underlying reason behind congestion in many cities is the overwhelming reliance on private cars.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:urban-congestion",
+    "title": "urban congestion",
+    "term": "urban congestion",
+    "type": "Collocation",
+    "pronunciation": "/ˈɜːbən kənˈdʒestʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tắc nghẽn đô thị",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Urban congestion costs the national economy billions of dollars in lost productivity each year.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:discourages-them-from-relying-on-their-cars",
+    "title": "discourages them from relying on their cars",
+    "term": "discourages them from relying on their cars",
+    "type": "Collocation",
+    "pronunciation": "/dɪsˈkʌrɪdʒɪz ðəm frəm rɪˈlaɪɪŋ ɒn ðeə kɑːz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "khiến họ không muốn phụ thuộc vào ô tô riêng",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Higher parking fees in the city centre discourages residents from relying on their cars.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:eclipsed",
+    "title": "eclipsed",
+    "term": "eclipsed",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪˈklɪpst/",
+    "part_of_speech": "verb",
+    "meaning_vi": "lu mờ, bị lấn át",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "In many suburbs, the convenience of a private car has completely eclipsed the appeal of taking the bus.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:musculoskeletal-issue",
+    "title": "musculoskeletal issue",
+    "term": "musculoskeletal issue",
+    "type": "Collocation",
+    "pronunciation": "/ˌmʌskjʊləʊˈskelɪtl ˈɪʃuː/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "vấn đề cơ xương khớp",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Prolonged sitting during long commutes can contribute to musculoskeletal issues such as lower back pain.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:private-car-dependence",
+    "title": "private car dependence",
+    "term": "private car dependence",
+    "type": "Collocation",
+    "pronunciation": "/ˈpraɪvət kɑː dɪˈpendəns/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự phụ thuộc vào xe ô tô cá nhân",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Reducing private car dependence requires not only higher fuel taxes but also substantial investment in reliable public transport.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:accident-prone-curves",
+    "title": "accident prone-curves",
+    "term": "accident prone-curves",
+    "type": "Collocation",
+    "pronunciation": "/ˈæksɪdənt prəʊn kɜːvz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những khúc cua dễ xảy ra tai nạn",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The council installed warning signs and extra lighting at several accident prone-curves after a spike in collisions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:alarmingly",
+    "title": "alarmingly",
+    "term": "alarmingly",
+    "type": "Vocabulary",
+    "pronunciation": "/əˈlɑːmɪŋli/",
+    "part_of_speech": "adverb",
+    "meaning_vi": "đáng báo động",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The number of accidents involving teenage drivers has risen alarmingly over the last five years.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:drunk-driving",
+    "title": "drunk driving",
+    "term": "drunk driving",
+    "type": "Collocation",
+    "pronunciation": "/drʌŋk ˈdraɪvɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lái xe khi say rượu",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Drunk driving remains one of the leading causes of fatal accidents on motorways at night.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:perceived-risks",
+    "title": "perceived risks",
+    "term": "perceived risks",
+    "type": "Collocation",
+    "pronunciation": "/pəˈsiːvd rɪsks/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "rủi ro được cảm nhận",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Perceived risks of cycling in heavy traffic discourage many commuters from choosing this option.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:reckless-driver",
+    "title": "reckless driver",
+    "term": "reckless driver",
+    "type": "Collocation",
+    "pronunciation": "/ˈreklɪs ˈdraɪvə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tài xế liều lĩnh",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "A reckless driver who ignores red lights puts not only their own life but also pedestrians' lives at risk.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:speeding",
+    "title": "speeding",
+    "term": "speeding",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈspiːdɪŋ/",
+    "part_of_speech": "noun/gerund",
+    "meaning_vi": "việc chạy quá tốc độ cho phép",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Speeding remains one of the leading causes of fatal collisions on motorways.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:undermined-confidence",
+    "title": "undermined confidence",
+    "term": "undermined confidence",
+    "type": "Collocation",
+    "pronunciation": "/ˌʌndəˈmaɪnd ˈkɒnfɪdəns/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "làm suy giảm niềm tin",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "A series of accidents has undermined confidence in the safety of the new bike lanes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:violation-of-traffic-rules",
+    "title": "violation of traffic rules",
+    "term": "violation of traffic rules",
+    "type": "Collocation",
+    "pronunciation": "/ˌvaɪəˈleɪʃən əv ˈtræfɪk ruːlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự vi phạm luật giao thông",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "A sudden violation of traffic rules at the intersection caused a multi-car collision during rush hour.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:alleviate-certain-transportation-pressures",
+    "title": "alleviate certain transportation pressures",
+    "term": "alleviate certain transportation pressures",
+    "type": "Collocation",
+    "pronunciation": "/əˈliːvieɪt ˈsɜːtn ˌtrænspɔːˈteɪʃn ˈpreʃəz/",
+    "part_of_speech": "verb",
+    "meaning_vi": "giảm bớt một số áp lực giao thông",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Expanding the subway network could alleviate certain transportation pressures currently faced by commuters during rush hour.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:reduce-traffic-density",
+    "title": "reduce traffic density",
+    "term": "reduce traffic density",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈdjuːs ˈtræfɪk ˈdensəti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giảm mật độ giao thông",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Congestion charges have proven effective in reducing traffic density in the city centre.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:competency-test",
+    "title": "competency test",
+    "term": "competency test",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɒmpɪtənsi test/",
+    "part_of_speech": "noun",
+    "meaning_vi": "bài kiểm tra năng lực",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Requiring cyclists to pass a competency test before using public roads could theoretically reduce the number of accidents involving inexperienced riders.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:defensive-driving",
+    "title": "defensive driving",
+    "term": "defensive driving",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈfensɪv ˈdraɪvɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lái xe phòng thủ",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Courses in defensive driving teach learners to anticipate the mistakes of other road users.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:drunken-and-drowsy-driving",
+    "title": "drunken and drowsy driving",
+    "term": "drunken and drowsy driving",
+    "type": "Collocation",
+    "pronunciation": "/ˈdrʌŋkən ænd ˈdraʊzi ˈdraɪvɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lái xe khi say rượu hoặc buồn ngủ",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Public awareness campaigns aim to reduce cases of drunken and drowsy driving during the holiday season.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:proactive-education",
+    "title": "proactive education",
+    "term": "proactive education",
+    "type": "Collocation",
+    "pronunciation": "/prəʊˈæktɪv ˌedʒʊˈkeɪʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "giáo dục chủ động",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Proactive education in schools can instil safe road habits long before students are old enough to drive.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:proper-road-etiquette",
+    "title": "proper road etiquette",
+    "term": "proper road etiquette",
+    "type": "Collocation",
+    "pronunciation": "/ˈprɒpə rəʊd ˈetɪket/",
+    "part_of_speech": "noun",
+    "meaning_vi": "ứng xử đúng mực khi tham gia giao thông",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Teaching children proper road etiquette from an early age helps cultivate safer habits that last into adulthood.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:safe-riding-habits",
+    "title": "safe riding habits",
+    "term": "safe riding habits",
+    "type": "Collocation",
+    "pronunciation": "/seɪf ˈraɪdɪŋ ˈhæbɪts/",
+    "part_of_speech": "noun",
+    "meaning_vi": "thói quen lái xe an toàn",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Schools can play a vital role in instilling safe riding habits among young cyclists before they venture onto busy roads.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:strictly-punish-reckless-drivers",
+    "title": "strictly punish reckless drivers",
+    "term": "strictly punish reckless drivers",
+    "type": "Collocation",
+    "pronunciation": "/ˈstrɪktli ˈpʌnɪʃ ˈrekləs ˈdraɪvəz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "xử phạt nghiêm khắc các tài xế liều lĩnh",
+    "topic": "Transport",
+    "subTopic": "Private Vehicles & Traffic",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Authorities have introduced heavier fines to strictly punish reckless drivers and deter dangerous overtaking on highways.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:a-more-sustainable-and-efficient-mode-of-transport",
+    "title": "a more sustainable and efficient mode of transport",
+    "term": "a more sustainable and efficient mode of transport",
+    "type": "Collocation",
+    "pronunciation": "/ə mɔːr səˈsteɪnəbl ənd ɪˈfɪʃnt məʊd əv ˈtrænspɔːt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phương thức di chuyển bền vững và hiệu quả hơn",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Investing in light rail gives commuters a more sustainable and efficient mode of transport than driving alone.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:massive-consumption-of-fossil-fuels",
+    "title": "massive consumption of fossil fuels",
+    "term": "massive consumption of fossil fuels",
+    "type": "Collocation",
+    "pronunciation": "/ˈmæsɪv kənˈsʌmpʃn əv ˈfɒsl fjuːəlz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tiêu thụ nhiên liệu hóa thạch với khối lượng lớn",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The massive consumption of fossil fuels by cargo ships and aircraft remains one of the greatest obstacles to achieving global carbon neutrality.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:pressing-environmental-issues",
+    "title": "pressing environmental issues",
+    "term": "pressing environmental issues",
+    "type": "Collocation",
+    "pronunciation": "/ˈpresɪŋ ɪnˌvaɪrənˈmentl ˈɪʃuːz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "các vấn đề môi trường cấp bách",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Reducing carbon emissions from vehicles is one of the most pressing environmental issues facing policymakers today.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:profound-environmental-repercussions",
+    "title": "profound environmental repercussions",
+    "term": "profound environmental repercussions",
+    "type": "Collocation",
+    "pronunciation": "/prəˈfaʊnd ɪnˌvaɪrənˈmentl ˌriːpəˈkʌʃnz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "những hậu quả môi trường sâu sắc",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The rapid expansion of aviation has brought profound environmental repercussions that regulators can no longer afford to ignore.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:significant-contribution-to-climate-change",
+    "title": "significant contribution to climate change",
+    "term": "significant contribution to climate change",
+    "type": "Collocation",
+    "pronunciation": "/sɪgˈnɪfɪkənt ˌkɒntrɪˈbjuːʃn tə ˈklaɪmət tʃeɪndʒ/",
+    "part_of_speech": "noun",
+    "meaning_vi": "đóng góp đáng kể vào biến đổi khí hậu",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The aviation industry makes a significant contribution to climate change, despite carrying only a small fraction of global travelers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:substantial-carbon-emissions-per-passenger",
+    "title": "substantial carbon emissions per passenger",
+    "term": "substantial carbon emissions per passenger",
+    "type": "Collocation",
+    "pronunciation": "/səbˈstænʃl ˈkɑːbən ɪˈmɪʃnz pɜː ˈpæsɪndʒə/",
+    "part_of_speech": "noun",
+    "meaning_vi": "lượng khí thải carbon đáng kể tính trên mỗi hành khách",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Long-haul flights generate substantial carbon emissions per passenger, far exceeding those produced by rail or coach travel.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:traffic-related-emissions",
+    "title": "traffic-related emissions",
+    "term": "traffic-related emissions",
+    "type": "Collocation",
+    "pronunciation": "/ˈtræfɪk rɪˈleɪtɪd ɪˈmɪʃnz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "khí thải liên quan đến giao thông",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Traffic-related emissions remain the leading cause of poor air quality in many densely populated cities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:urban-air-quality",
+    "title": "urban air quality",
+    "term": "urban air quality",
+    "type": "Collocation",
+    "pronunciation": "/ˈɜːbən eə ˈkwɒləti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "chất lượng không khí đô thị",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Expanding electric bus fleets has measurably improved urban air quality in several major capitals.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:vehicle-free-days",
+    "title": "vehicle-free days",
+    "term": "vehicle-free days",
+    "type": "Collocation",
+    "pronunciation": "/ˈviːəkl friː deɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những ngày không xe cộ",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "On vehicle-free days, the city centre is transformed into a lively space filled with cyclists and street performers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:bike-sharing-programs",
+    "title": "bike-sharing programs",
+    "term": "bike-sharing programs",
+    "type": "Collocation",
+    "pronunciation": "/ˈbaɪk ʃeərɪŋ ˈprəʊɡræmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chương trình chia sẻ xe đạp",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Many European capitals have introduced bike-sharing programs to give commuters a cheap and healthy alternative to buses.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:cycle-tracks",
+    "title": "cycle tracks",
+    "term": "cycle tracks",
+    "type": "Collocation",
+    "pronunciation": "/ˈsaɪkl træks/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "làn đường dành cho xe đạp",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Protected cycle tracks separated from traffic have significantly reduced cyclist injuries.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:cycling-infrastructure",
+    "title": "cycling infrastructure",
+    "term": "cycling infrastructure",
+    "type": "Collocation",
+    "pronunciation": "/ˈsaɪklɪŋ ˌɪnfrəˈstrʌktʃə/",
+    "part_of_speech": "noun",
+    "meaning_vi": "cơ sở hạ tầng dành cho xe đạp",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Without adequate cycling infrastructure, such as protected lanes and secure parking, few commuters will feel safe abandoning their cars.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:cycling-friendly",
+    "title": "cycling-friendly",
+    "term": "cycling-friendly",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈsaɪklɪŋ ˈfrendli/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "thân thiện với người đi xe đạp",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Making a city more cycling-friendly requires not only bike lanes but also secure parking at stations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:eco-friendly-mode-of-transport",
+    "title": "eco-friendly mode of transport",
+    "term": "eco-friendly mode of transport",
+    "type": "Collocation",
+    "pronunciation": "/ˌiːkəʊ ˈfrendli məʊd əv ˈtrænspɔːt/",
+    "part_of_speech": "noun",
+    "meaning_vi": "phương tiện di chuyển thân thiện với môi trường",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Cycling is widely regarded as the most eco-friendly mode of transport available for short urban journeys.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:economic-benefits",
+    "title": "economic benefits",
+    "term": "economic benefits",
+    "type": "Collocation",
+    "pronunciation": "/ˌiːkəˈnɒmɪk ˈbenɪfɪts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lợi ích kinh tế",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Promoting cycling brings clear economic benefits, including lower healthcare costs and reduced fuel spending.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:mode-of-transport",
+    "title": "mode of transport",
+    "term": "mode of transport",
+    "type": "Collocation",
+    "pronunciation": "/məʊd əv ˈtrænspɔːt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phương thức di chuyển",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Cycling is becoming a popular mode of transport among young professionals who want to avoid traffic jams.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:pedestrian-zone",
+    "title": "pedestrian zone",
+    "term": "pedestrian zone",
+    "type": "Collocation",
+    "pronunciation": "/pəˈdestriən zəʊn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khu vực dành cho người đi bộ",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Turning the old market street into a pedestrian zone has made the area safer and far more pleasant to visit.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:transportation-purposes",
+    "title": "transportation purposes",
+    "term": "transportation purposes",
+    "type": "Collocation",
+    "pronunciation": "/ˌtrænspɔːˈteɪʃn ˈpɜːpəsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "mục đích di chuyển",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "In flat cities like Amsterdam, bicycles are widely used for everyday transportation purposes rather than just leisure.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:emitted",
+    "title": "emitted",
+    "term": "emitted",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪˈmɪtɪd/",
+    "part_of_speech": "verb",
+    "meaning_vi": "thải ra",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Harmful gases emitted by diesel engines are a major contributor to poor air quality in large cities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:environmental-degradation",
+    "title": "environmental degradation",
+    "term": "environmental degradation",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˌvaɪrənˈmentl ˌdegrəˈdeɪʃn/",
+    "part_of_speech": "noun",
+    "meaning_vi": "suy thoái môi trường",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Unrestrained growth in car ownership has accelerated environmental degradation in cities lacking sufficient green space.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:exacerbating-the-global-climate-crisis",
+    "title": "exacerbating the global climate crisis",
+    "term": "exacerbating the global climate crisis",
+    "type": "Collocation",
+    "pronunciation": "/ɪgˈzæsəbeɪtɪŋ ðə ˈgləʊbl ˈklaɪmət ˈkraɪsɪs/",
+    "part_of_speech": "verb",
+    "meaning_vi": "làm trầm trọng thêm cuộc khủng hoảng khí hậu toàn cầu",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Unchecked growth in air travel is exacerbating the global climate crisis, prompting calls for stricter emissions caps on airlines.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:pose-a-risk",
+    "title": "pose a risk",
+    "term": "pose a risk",
+    "type": "Collocation",
+    "pronunciation": "/pəʊz ə rɪsk/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gây ra rủi ro",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Fine particles from vehicle exhaust pose a risk to public health, especially for children living near busy roads.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:respiratory-health",
+    "title": "respiratory health",
+    "term": "respiratory health",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈspɪrətri helθ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sức khỏe hô hấp",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Long-term exposure to traffic fumes has a well-documented effect on the respiratory health of city dwellers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:the-environmental-toll-of-long-distance-transportation",
+    "title": "the environmental toll of long-distance transportation",
+    "term": "the environmental toll of long-distance transportation",
+    "type": "Collocation",
+    "pronunciation": "/ði ɪnˌvaɪrənˈmentl təʊl əv ˌlɒŋ ˈdɪstəns ˌtrænspɔːˈteɪʃn/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "tổn hại môi trường do vận chuyển đường dài gây ra",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The environmental toll of long-distance transportation has grown so severe that many governments are now investing heavily in low-carbon shipping alternatives.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:cycling-culture",
+    "title": "cycling culture",
+    "term": "cycling culture",
+    "type": "Collocation",
+    "pronunciation": "/ˈsaɪklɪŋ ˈkʌltʃə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "văn hóa đi xe đạp",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Decades of investment in dedicated lanes have helped the Netherlands build a strong cycling culture.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:launch-education-and-awareness-campaigns",
+    "title": "launch education and awareness campaigns",
+    "term": "launch education and awareness campaigns",
+    "type": "Collocation",
+    "pronunciation": "/lɔːntʃ ˌedʒʊˈkeɪʃn ənd əˈweənəs ˈkæmpeɪnz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "phát động các chiến dịch giáo dục và nâng cao nhận thức",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Local governments should launch education and awareness campaigns to encourage more residents to cycle to work.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:showcase-successful-examples",
+    "title": "showcase successful examples",
+    "term": "showcase successful examples",
+    "type": "Collocation",
+    "pronunciation": "/ˈʃəʊkeɪs səkˈsesfl ɪɡˈzɑːmplz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "trình bày những ví dụ thành công",
+    "topic": "Transport",
+    "subTopic": "Sustainable & Green Transport",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "City councils often showcase successful examples from Copenhagen to persuade the public that cycling infrastructure works.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:a-singular-focus-on-urban-living",
+    "title": "a singular focus on urban living",
+    "term": "a singular focus on urban living",
+    "type": "Collocation",
+    "pronunciation": "/ə ˈsɪŋgjʊlə ˈfəʊkəs ɒn ˈɜːbən ˈlɪvɪŋ/",
+    "part_of_speech": "noun",
+    "meaning_vi": "việc chỉ tập trung vào lối sống đô thị",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "A singular focus on urban living, without corresponding investment in rural transport links, risks deepening regional inequality.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:affordable-housing",
+    "title": "affordable housing",
+    "term": "affordable housing",
+    "type": "Collocation",
+    "pronunciation": "/əˈfɔːdəbl ˈhaʊzɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nhà ở giá cả phải chăng",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "New rail lines have encouraged the construction of affordable housing on the city's outskirts.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:capitalizing-on-spatial-efficiency",
+    "title": "capitalizing on spatial efficiency",
+    "term": "capitalizing on spatial efficiency",
+    "type": "Collocation",
+    "pronunciation": "/ˈkæpɪtəlaɪzɪŋ ɒn ˈspeɪʃl ɪˈfɪʃnsi/",
+    "part_of_speech": "verb",
+    "meaning_vi": "tận dụng hiệu quả về mặt không gian",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Compact city design works by capitalizing on spatial efficiency, placing homes, schools, and offices within walking distance of one another.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:consolidating-populations-in-cities",
+    "title": "consolidating populations in cities",
+    "term": "consolidating populations in cities",
+    "type": "Collocation",
+    "pronunciation": "/kənˈsɒlɪdeɪtɪŋ ˌpɒpjuˈleɪʃnz ɪn ˈsɪtiz/",
+    "part_of_speech": "verb",
+    "meaning_vi": "tập trung dân cư vào các thành phố",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Consolidating populations in cities can shorten commuting distances, but it also places enormous strain on existing transport infrastructure.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:densely-populated",
+    "title": "densely populated",
+    "term": "densely populated",
+    "type": "Collocation",
+    "pronunciation": "/ˈdensli ˈpɒpjuleɪtɪd/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "đông dân cư",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Public transport is particularly vital in densely populated cities where road space is limited.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:inadequate-infrastructure",
+    "title": "inadequate infrastructure",
+    "term": "inadequate infrastructure",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈædɪkwət ˈɪnfrəstrʌktʃə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hạ tầng không đầy đủ, thiếu thốn",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Inadequate infrastructure in rapidly growing suburbs often leads to severe traffic bottlenecks.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:infrastructure-upgrade",
+    "title": "infrastructure upgrade",
+    "term": "infrastructure upgrade",
+    "type": "Collocation",
+    "pronunciation": "/ˈɪnfrəstrʌktʃə ˈʌpɡreɪd/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nâng cấp cơ sở hạ tầng",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The planned infrastructure upgrade includes wider pavements and better lighting at dangerous junctions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:migration",
+    "title": "migration",
+    "term": "migration",
+    "type": "Vocabulary",
+    "pronunciation": "/maɪˈɡreɪʃn/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự di cư",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Rapid migration into major cities has put enormous pressure on existing road and rail infrastructure.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:proximity",
+    "title": "proximity",
+    "term": "proximity",
+    "type": "Vocabulary",
+    "pronunciation": "/prɒkˈsɪməti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự gần gũi (về khoảng cách)",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The proximity of homes to metro stations is a key factor that determines whether people choose public transport.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:social-stability",
+    "title": "social stability",
+    "term": "social stability",
+    "type": "Collocation",
+    "pronunciation": "/ˈsəʊʃəl stəˈbɪləti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "ổn định xã hội",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Affordable transport links can promote social stability by connecting disadvantaged communities to job markets.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:suburban-area",
+    "title": "suburban area",
+    "term": "suburban area",
+    "type": "Collocation",
+    "pronunciation": "/səˈbɜːbən ˈeəriə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khu vực ngoại ô",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Housing prices remain lower in suburban areas that are still poorly connected to the city centre.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:sustainable-prosperity",
+    "title": "sustainable prosperity",
+    "term": "sustainable prosperity",
+    "type": "Collocation",
+    "pronunciation": "/səˈsteɪnəbl prɒˈsperəti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự thịnh vượng bền vững",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Efficient transport networks lay the foundation for sustainable prosperity in growing cities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:telemedicine",
+    "title": "telemedicine",
+    "term": "telemedicine",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈtelɪˌmedsɪn/",
+    "part_of_speech": "noun",
+    "meaning_vi": "y tế từ xa",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Telemedicine has reduced the need for elderly patients to travel long distances for routine check-ups.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:the-proximity-of-residential-areas-to-commercial-hubs",
+    "title": "the proximity of residential areas to commercial hubs",
+    "term": "the proximity of residential areas to commercial hubs",
+    "type": "Collocation",
+    "pronunciation": "/ðə prɒkˈsɪməti əv ˌrezɪˈdenʃl ˈeəriəz tə kəˈmɜːʃl hʌbz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự gần gũi giữa khu dân cư và trung tâm thương mại",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The proximity of residential areas to commercial hubs reduces reliance on private cars and encourages walking or cycling instead.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:train-and-subway-infrastructure",
+    "title": "train and subway infrastructure",
+    "term": "train and subway infrastructure",
+    "type": "Collocation",
+    "pronunciation": "/treɪn ənd ˈsʌbweɪ ˈɪnfrəstrʌktʃə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hạ tầng tàu hỏa và tàu điện ngầm",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Heavy investment in train and subway infrastructure has cut average commute times in half.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:urban-planners",
+    "title": "urban planners",
+    "term": "urban planners",
+    "type": "Collocation",
+    "pronunciation": "/ˈɜːbən ˈplænəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nhà quy hoạch đô thị",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Urban planners are increasingly prioritising pedestrian-friendly streets over car lanes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:democratize-travel",
+    "title": "democratize travel",
+    "term": "democratize travel",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈmɒkrətaɪz ˈtrævl/",
+    "part_of_speech": "verb",
+    "meaning_vi": "phổ cập hóa việc du lịch",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Low-cost carriers have helped democratize travel, giving people from all income levels the chance to explore other countries.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:fosters-greater-cultural-understanding",
+    "title": "fosters greater cultural understanding",
+    "term": "fosters greater cultural understanding",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɒstəz ˈgreɪtə ˈkʌltʃərəl ˌʌndəˈstændɪŋ/",
+    "part_of_speech": "verb",
+    "meaning_vi": "thúc đẩy sự hiểu biết văn hóa sâu sắc hơn",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "International travel fosters greater cultural understanding by exposing people to customs and perspectives different from their own.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:global-exploration",
+    "title": "global exploration",
+    "term": "global exploration",
+    "type": "Collocation",
+    "pronunciation": "/ˈgləʊbl ˌekspləˈreɪʃn/",
+    "part_of_speech": "noun",
+    "meaning_vi": "việc khám phá thế giới",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Cheaper flights have made global exploration attainable for ordinary people who once could never have afforded to travel abroad.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:heightened-global-awareness",
+    "title": "heightened global awareness",
+    "term": "heightened global awareness",
+    "type": "Collocation",
+    "pronunciation": "/ˈhaɪtnd ˈgləʊbl əˈweənəs/",
+    "part_of_speech": "noun",
+    "meaning_vi": "nhận thức toàn cầu được nâng cao",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Frequent international travel has contributed to heightened global awareness of environmental and social issues across borders.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:international-mobility",
+    "title": "international mobility",
+    "term": "international mobility",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪntəˈnæʃnəl məʊˈbɪləti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "khả năng di chuyển quốc tế",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Budget airlines have dramatically increased international mobility, allowing millions more people to travel abroad each year.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:invigorates-tourism-related-industries",
+    "title": "invigorates tourism-related industries",
+    "term": "invigorates tourism-related industries",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈvɪgəreɪts ˈtʊərɪzəm rɪˈleɪtɪd ˈɪndəstriz/",
+    "part_of_speech": "verb",
+    "meaning_vi": "tiếp thêm sức sống cho các ngành liên quan đến du lịch",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "A surge in low-cost flights invigorates tourism-related industries, creating jobs in hospitality and local transport alike.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:exacerbating",
+    "title": "exacerbating",
+    "term": "exacerbating",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪɡˈzæsəbeɪtɪŋ/",
+    "part_of_speech": "collocation",
+    "meaning_vi": "(verb (present participle)). làm trầm trọng thêm",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The lack of new subway lines is exacerbating congestion in the city centre during rush hour.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:overburdened",
+    "title": "overburdened",
+    "term": "overburdened",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌəʊvəˈbɜːdnd/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "quá tải",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The city's overburdened bus network struggles to cope with the growing number of daily passengers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:remote-work",
+    "title": "remote work",
+    "term": "remote work",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈməʊt wɜːk/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "làm việc từ xa",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The rise of remote work has reduced peak-hour pressure on urban transport networks.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:immense-strain-on-popular-tourist-destinations",
+    "title": "immense strain on popular tourist destinations",
+    "term": "immense strain on popular tourist destinations",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈmens streɪn ɒn ˈpɒpjʊlə ˈtʊərɪst ˌdestɪˈneɪʃnz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "áp lực to lớn lên các điểm du lịch nổi tiếng",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Overtourism has placed immense strain on popular tourist destinations, damaging fragile ecosystems and local infrastructure alike.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:limited-geographical-boundaries",
+    "title": "limited geographical boundaries",
+    "term": "limited geographical boundaries",
+    "type": "Collocation",
+    "pronunciation": "/ˈlɪmɪtɪd ˌdʒiːəˈgræfɪkl ˈbaʊndriz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "ranh giới địa lý hạn chế",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Cities confined by limited geographical boundaries often struggle to expand their road networks fast enough to keep pace with population growth.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:optimize-the-use-of-public-infrastructure",
+    "title": "optimize the use of public infrastructure",
+    "term": "optimize the use of public infrastructure",
+    "type": "Collocation",
+    "pronunciation": "/ˈɒptɪmaɪz ðə juːs əv ˈpʌblɪk ˌɪnfrəˈstrʌktʃə/",
+    "part_of_speech": "verb",
+    "meaning_vi": "tối ưu hóa việc sử dụng cơ sở hạ tầng công cộng",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Dense urban planning can optimize the use of public infrastructure, ensuring that bus and rail networks operate at full capacity.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:reduce-travel-distances",
+    "title": "reduce travel distances",
+    "term": "reduce travel distances",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈdjuːs ˈtrævl ˈdɪstənsɪz/",
+    "part_of_speech": "verb",
+    "meaning_vi": "giảm khoảng cách di chuyển",
+    "topic": "Transport",
+    "subTopic": "Urban Planning & Mobility",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Building residential complexes near workplaces can significantly reduce travel distances for commuters.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:digital-infrastructure",
+    "title": "digital infrastructure",
+    "term": "digital infrastructure",
+    "type": "Collocation",
+    "pronunciation": "/ˈdɪdʒɪtl ˈɪnfrəstrʌktʃə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hạ tầng kỹ thuật số",
+    "topic": "Transport",
+    "subTopic": "Transport Technology & Innovation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Investment in digital infrastructure allows commuters to track buses and trains in real time.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:high-speed-internet",
+    "title": "high-speed internet",
+    "term": "high-speed internet",
+    "type": "Collocation",
+    "pronunciation": "/haɪ spiːd ˈɪntənet/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "internet tốc độ cao",
+    "topic": "Transport",
+    "subTopic": "Transport Technology & Innovation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "High-speed internet on trains enables passengers to work productively during their journey.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:smart-city-service",
+    "title": "smart-city service",
+    "term": "smart-city service",
+    "type": "Collocation",
+    "pronunciation": "/smɑːt ˈsɪti ˈsɜːvɪs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "dịch vụ thành phố thông minh",
+    "topic": "Transport",
+    "subTopic": "Transport Technology & Innovation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Real-time bus tracking is one of the most popular smart-city services introduced last year.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:green-innovation",
+    "title": "green innovation",
+    "term": "green innovation",
+    "type": "Collocation",
+    "pronunciation": "/griːn ˌɪnəˈveɪʃn/",
+    "part_of_speech": "noun",
+    "meaning_vi": "đổi mới sáng tạo xanh",
+    "topic": "Transport",
+    "subTopic": "Transport Technology & Innovation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Government subsidies for green innovation have accelerated the development of affordable electric vehicles.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:adopting-smart-ticketing-systems",
+    "title": "adopting smart ticketing systems",
+    "term": "adopting smart ticketing systems",
+    "type": "Collocation",
+    "pronunciation": "/əˈdɒptɪŋ smɑːt ˈtɪkɪtɪŋ ˈsɪstəmz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "áp dụng hệ thống vé thông minh",
+    "topic": "Transport",
+    "subTopic": "Transport Technology & Innovation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "By adopting smart ticketing systems, transport authorities can cut administrative costs and reduce fare evasion.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:real-time-traffic-management",
+    "title": "real-time traffic management",
+    "term": "real-time traffic management",
+    "type": "Collocation",
+    "pronunciation": "/rɪəl taɪm ˈtræfɪk ˈmænɪdʒmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "quản lý giao thông theo thời gian thực",
+    "topic": "Transport",
+    "subTopic": "Transport Technology & Innovation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Real-time traffic management systems adjust signal timings to reduce congestion during rush hour.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:driving-license",
+    "title": "driving license",
+    "term": "driving license",
+    "type": "Collocation",
+    "pronunciation": "/ˈdraɪvɪŋ ˈlaɪsns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bằng lái xe",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Applicants must pass both a written test and a practical exam before receiving a driving license.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:traffic-violation",
+    "title": "traffic violation",
+    "term": "traffic violation",
+    "type": "Collocation",
+    "pronunciation": "/ˈtræfɪk ˌvaɪəˈleɪʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "vi phạm giao thông",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Every traffic violation caught on camera is automatically recorded and linked to the driver's licence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:a-drop-in-customer-satisfaction-levels",
+    "title": "a drop in customer satisfaction levels",
+    "term": "a drop in customer satisfaction levels",
+    "type": "Collocation",
+    "pronunciation": "/ə drɒp ɪn ˈkʌstəmə ˌsætɪsˈfækʃn ˈlevlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự sụt giảm mức độ hài lòng của khách hàng",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Delayed deliveries caused by road closures resulted in a drop in customer satisfaction levels for local businesses.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:a-more-robust-and-efficient-global-market",
+    "title": "a more robust and efficient global market",
+    "term": "a more robust and efficient global market",
+    "type": "Collocation",
+    "pronunciation": "/ə mɔː rəʊˈbʌst ænd ɪˈfɪʃnt ˈgləʊbl ˈmɑːkɪt/",
+    "part_of_speech": "noun",
+    "meaning_vi": "một thị trường toàn cầu mạnh mẽ và hiệu quả hơn",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Investment in international shipping lanes has created a more robust and efficient global market for perishable goods.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:acute-food-shortages",
+    "title": "acute food shortages",
+    "term": "acute food shortages",
+    "type": "Collocation",
+    "pronunciation": "/əˈkjuːt fuːd ˈʃɔːtɪdʒɪz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tình trạng thiếu lương thực trầm trọng",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Disruptions to transportation networks during natural disasters can trigger acute food shortages in isolated regions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:as-a-means-to-balance-accounts",
+    "title": "as a means to balance accounts",
+    "term": "as a means to balance accounts",
+    "type": "Collocation",
+    "pronunciation": "/əz ə miːnz tə ˈbæləns əˈkaʊnts/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "như một cách để cân đối thu chi",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Fare increases were introduced as a means to balance accounts after years of financial losses.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:budgetary-constraints",
+    "title": "budgetary constraints",
+    "term": "budgetary constraints",
+    "type": "Collocation",
+    "pronunciation": "/ˈbʌdʒɪtəri kənˈstreɪnts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những hạn chế về ngân sách",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Budgetary constraints have forced local councils to postpone several tram expansion projects.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:economic-cost-pressures",
+    "title": "economic cost pressures",
+    "term": "economic cost pressures",
+    "type": "Collocation",
+    "pronunciation": "/ˌiːkəˈnɒmɪk kɒst ˈpreʃəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "áp lực chi phí kinh tế",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Rising fuel prices have intensified economic cost pressures on bus companies nationwide.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:economically-viable",
+    "title": "economically viable",
+    "term": "economically viable",
+    "type": "Collocation",
+    "pronunciation": "/ˌiːkəˈnɒmɪkli ˈvaɪəbl/",
+    "part_of_speech": "adj",
+    "meaning_vi": "khả thi về mặt kinh tế",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Building an extensive tram network is only economically viable in cities with sufficiently high population density.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:enhanced-operational-efficiency",
+    "title": "enhanced operational efficiency",
+    "term": "enhanced operational efficiency",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈhɑːnst ˌɒpəˈreɪʃənəl ɪˈfɪʃənsi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hiệu quả vận hành được nâng cao",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The metro authority achieved enhanced operational efficiency by streamlining maintenance schedules and staff rosters.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:escalating-the-price-of-fuel",
+    "title": "escalating the price of fuel",
+    "term": "escalating the price of fuel",
+    "type": "Collocation",
+    "pronunciation": "/ˈeskəleɪtɪŋ ðə praɪs əv ˈfjuːəl/",
+    "part_of_speech": "verb",
+    "meaning_vi": "tăng giá nhiên liệu",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Escalating the price of fuel through taxation is a common government strategy to discourage unnecessary car use.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:facilitates-economic-efficiency-through-specialization",
+    "title": "facilitates economic efficiency through specialization",
+    "term": "facilitates economic efficiency through specialization",
+    "type": "Collocation",
+    "pronunciation": "/fəˈsɪlɪteɪts ˌiːkəˈnɒmɪk ɪˈfɪʃnsi θruː ˌspeʃəlaɪˈzeɪʃn/",
+    "part_of_speech": "verb",
+    "meaning_vi": "thúc đẩy hiệu quả kinh tế thông qua chuyên môn hóa",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Modern freight transport facilitates economic efficiency through specialization, allowing each region to focus on what it produces best.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:grappling-with",
+    "title": "grappling with",
+    "term": "grappling with",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡræplɪŋ wɪð/",
+    "part_of_speech": "phrasal verb",
+    "meaning_vi": "vật lộn/đối mặt với (khó khăn)",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Many cities are grappling with the rising cost of maintaining ageing bus fleets.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:have-a-comparative-advantage",
+    "title": "have a comparative advantage",
+    "term": "have a comparative advantage",
+    "type": "Collocation",
+    "pronunciation": "/hæv ə kəmˈpærətɪv ədˈvɑːntɪdʒ/",
+    "part_of_speech": "verb",
+    "meaning_vi": "có lợi thế so sánh",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Countries that have a comparative advantage in manufacturing rely heavily on efficient port and rail infrastructure to export goods competitively.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:market-stimulus",
+    "title": "market stimulus",
+    "term": "market stimulus",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɑːkɪt ˈstɪmjʊləs/",
+    "part_of_speech": "noun",
+    "meaning_vi": "động lực kích thích thị trường",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Tax incentives for electric vehicles act as a powerful market stimulus, encouraging manufacturers to accelerate green production.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:remain-solvent",
+    "title": "remain solvent",
+    "term": "remain solvent",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈmeɪn ˈsɒlvənt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "duy trì khả năng thanh toán, không bị phá sản",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Without government subsidies, several rural rail operators would struggle to remain solvent.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:short-sighted-behaviors",
+    "title": "short-sighted behaviors",
+    "term": "short-sighted behaviors",
+    "type": "Collocation",
+    "pronunciation": "/ʃɔːt ˈsaɪtɪd bɪˈheɪvjəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những hành vi thiển cận",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Ignoring public transport funding in favour of new motorways reflects short-sighted behaviors by policymakers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:sustainable-transport-infrastructure",
+    "title": "sustainable transport infrastructure",
+    "term": "sustainable transport infrastructure",
+    "type": "Collocation",
+    "pronunciation": "/səˈsteɪnəbl ˈtrænspɔːt ˌɪnfrəˈstrʌktʃə/",
+    "part_of_speech": "noun",
+    "meaning_vi": "cơ sở hạ tầng giao thông bền vững",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Governments must channel greater funding into sustainable transport infrastructure if they hope to meet long-term climate targets.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:surplus",
+    "title": "surplus",
+    "term": "surplus",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈsɜːpləs/",
+    "part_of_speech": "noun",
+    "meaning_vi": "lượng dư thừa",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "A sudden surplus of young people without a driving licence would place extra strain on bus services.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:visible-enforcement",
+    "title": "visible enforcement",
+    "term": "visible enforcement",
+    "type": "Collocation",
+    "pronunciation": "/ˈvɪzəbl ɪnˈfɔːsmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự thực thi pháp luật rõ ràng, dễ thấy",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Visible enforcement, such as patrol officers stationed near schools, discourages drivers from speeding.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:contentious-issue",
+    "title": "contentious issue",
+    "term": "contentious issue",
+    "type": "Collocation",
+    "pronunciation": "/kənˈtenʃəs ˈɪʃuː/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "vấn đề gây tranh cãi",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Whether to prioritise roads or railways remains a contentious issue among policymakers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:diminishing-public-funding",
+    "title": "diminishing public funding",
+    "term": "diminishing public funding",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈmɪnɪʃɪŋ ˈpʌblɪk ˈfʌndɪŋ/",
+    "part_of_speech": "noun",
+    "meaning_vi": "nguồn tài trợ công đang giảm dần",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Diminishing public funding for rail networks has left many rural communities with increasingly unreliable transport options.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:do-more-harm-than-good",
+    "title": "do more harm than good",
+    "term": "do more harm than good",
+    "type": "Collocation",
+    "pronunciation": "/duː mɔːr hɑːm ðən ɡʊd/",
+    "part_of_speech": "idiom / verb phrase",
+    "meaning_vi": "lợi bất cập hại",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Banning cars entirely from the city centre without improving buses first might do more harm than good.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:domestic-supply",
+    "title": "domestic supply",
+    "term": "domestic supply",
+    "type": "Collocation",
+    "pronunciation": "/dəˈmestɪk səˈplaɪ/",
+    "part_of_speech": "noun",
+    "meaning_vi": "nguồn cung trong nước",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Restricting imports would place excessive pressure on domestic supply, particularly for goods that rely on efficient transport networks.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:holistic-approach",
+    "title": "holistic approach",
+    "term": "holistic approach",
+    "type": "Collocation",
+    "pronunciation": "/həʊˈlɪstɪk əˈprəʊtʃ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cách tiếp cận toàn diện",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Tackling congestion requires a holistic approach that combines infrastructure, pricing and public awareness.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:mounting-operational-expenditures",
+    "title": "mounting operational expenditures",
+    "term": "mounting operational expenditures",
+    "type": "Collocation",
+    "pronunciation": "/ˈmaʊntɪŋ ˌɒpəˈreɪʃənl ɪksˈpendɪtʃəz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "chi phí vận hành ngày càng tăng",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Public transport agencies are grappling with mounting operational expenditures, forcing many to raise fares or cut services.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:underdevelopment",
+    "title": "underdevelopment",
+    "term": "underdevelopment",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌʌndədɪˈveləpmənt/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tình trạng kém phát triển",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The underdevelopment of rural transport links continues to isolate remote communities from essential services.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:volatile-price-instability",
+    "title": "volatile price instability",
+    "term": "volatile price instability",
+    "type": "Collocation",
+    "pronunciation": "/ˈvɒlətaɪl praɪs ˌɪnstəˈbɪləti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự bất ổn giá cả biến động thất thường",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Rising fuel costs have caused volatile price instability across the shipping industry, ultimately raising the price of imported goods.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:harsher-punishment",
+    "title": "harsher punishment",
+    "term": "harsher punishment",
+    "type": "Collocation",
+    "pronunciation": "/ˈhɑːʃə ˈpʌnɪʃmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hình phạt nghiêm khắc hơn",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Some lawmakers argue that harsher punishment for speeding would make drivers think twice before breaking the limit.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:hazard-perception",
+    "title": "hazard perception",
+    "term": "hazard perception",
+    "type": "Collocation",
+    "pronunciation": "/ˈhæzəd pəˈsepʃn/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "nhận thức nguy hiểm",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "New drivers are required to pass a hazard perception test before they can obtain a full licence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:legal-deterrent",
+    "title": "legal deterrent",
+    "term": "legal deterrent",
+    "type": "Collocation",
+    "pronunciation": "/ˈliːɡl dɪˈterənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "biện pháp răn đe pháp lý",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Heavy fines act as a legal deterrent, discouraging motorists from using their phones while driving.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:legal-driving-age",
+    "title": "legal driving age",
+    "term": "legal driving age",
+    "type": "Collocation",
+    "pronunciation": "/ˈliːɡl ˈdraɪvɪŋ eɪdʒ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "độ tuổi hợp pháp được lái xe",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Some countries have raised the legal driving age in an attempt to reduce accidents caused by inexperienced drivers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:traffic-regulations",
+    "title": "traffic regulations",
+    "term": "traffic regulations",
+    "type": "Collocation",
+    "pronunciation": "/ˈtræfɪk ˌregjʊˈleɪʃnz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "luật lệ giao thông",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Strict enforcement of traffic regulations has been shown to significantly reduce the number of road accidents in major cities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:address-the-concerns-of-businesses",
+    "title": "address the concerns of businesses",
+    "term": "address the concerns of businesses",
+    "type": "Collocation",
+    "pronunciation": "/əˈdres ðə kənˈsɜːnz əv ˈbɪznəsɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giải quyết các mối lo ngại của doanh nghiệp",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Before banning trucks from the centre, officials must address the concerns of businesses that rely on deliveries.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:allocate-national-funding",
+    "title": "allocate national funding",
+    "term": "allocate national funding",
+    "type": "Collocation",
+    "pronunciation": "/ˈæləkeɪt ˈnæʃənəl ˈfʌndɪŋ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "phân bổ ngân sách quốc gia",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The government plans to allocate national funding to double the length of the metro network.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:directs-financial-resources-to",
+    "title": "directs financial resources to",
+    "term": "directs financial resources to",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈrekts faɪˈnænʃəl rɪˈsɔːsɪz tə/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "hướng nguồn lực tài chính vào",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "The new transport policy directs financial resources to expanding suburban rail lines.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:legislation",
+    "title": "legislation",
+    "term": "legislation",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌledʒɪsˈleɪʃn/",
+    "part_of_speech": "noun",
+    "meaning_vi": "luật pháp, đạo luật",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "New legislation requiring seatbelts in all vehicles has significantly reduced road fatalities over the past decade.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:transport:robust-public-investment",
+    "title": "robust public investment",
+    "term": "robust public investment",
+    "type": "Collocation",
+    "pronunciation": "/rəʊˈbʌst ˈpʌblɪk ɪnˈvestmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "đầu tư công mạnh mẽ",
+    "topic": "Transport",
+    "subTopic": "Policy, Funding & Regulation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Transport",
+    "examples": [
+      {
+        "en": "Robust public investment in light rail has transformed commuting patterns across the city.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  }
+]

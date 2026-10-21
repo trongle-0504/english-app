@@ -1,0 +1,2168 @@
+{
+  "metadata": {
+    "lesson_id": "travel-collocations",
+    "topic": "Travel and the environment",
+    "chapter_title": "Travel",
+    "pdf_file": "Travel.pdf"
+  },
+  "mindmap_data": {
+    "topic": "Travel and the environment",
+    "chapter": {
+      "chapter_id": "ch_travel",
+      "title": "Travel",
+      "sessions": [
+        {
+          "session_id": "s_travel_a",
+          "title": "A Travel, journey, trip",
+          "description_vi": "Tìm hiểu các cụm từ thông dụng liên quan đến du lịch, hành trình và chuyến đi.",
+          "value": "# Travel\n\n## A Travel, journey, trip\n\nLook at these emails and note the different collocations for travel, journey and trip.\n\nClara,\n\nHave you made your **travel arrangements** for the sales conference yet? If you want a good **travel agent**, I can recommend Atlas World. They specialise in **business travel**. Their number is 2587996. They’re very helpful.\n\nNoah\n\nHi Natalie,\n\nI know next week is a **business trip**, but you must do some sightseeing too. I suggest we take a **day trip** to Canamuca. It’s about two hours by car, and we can take a **boat trip** to the island and have lunch there. Looking forward to seeing you. **Safe journey**?\n\nDavid\n\nHi Mia,\n\nI’m finally here after an extremely tiring **journey**! The flight was three hours late, they lost my luggage, then there were no taxis at the airport. I hope my **return journey** is better! I’m at the Hotel Rex, room 1305, tel: 987745. Give me a call.\n\nMiles\n\nNora,\n\nI got some **travel brochures** with details of **camping trips**. Want to meet for lunch to look at them? One of them is in Chile, but it’s a long **overnight journey** from the capital to get there, so maybe we should look nearer home?\n\nLorna\n\n1 The opposite of **return journey** is **outward journey**.\n\n2 said to someone who is about to make a journey.\n",
+          "children_nodes": [
+            {
+              "node_id": "travel_arrangements",
+              "label": "travel arrangements"
+            },
+            {
+              "node_id": "travel_agent",
+              "label": "travel agent"
+            },
+            {
+              "node_id": "business_travel",
+              "label": "business travel"
+            },
+            {
+              "node_id": "business_trip",
+              "label": "business trip"
+            },
+            {
+              "node_id": "day_trip",
+              "label": "day trip"
+            },
+            {
+              "node_id": "boat_trip",
+              "label": "boat trip"
+            },
+            {
+              "node_id": "safe_journey",
+              "label": "Safe journey"
+            },
+            {
+              "node_id": "journey",
+              "label": "journey"
+            },
+            {
+              "node_id": "return_journey",
+              "label": "return journey"
+            },
+            {
+              "node_id": "travel_brochures",
+              "label": "travel brochures"
+            },
+            {
+              "node_id": "camping_trips",
+              "label": "camping trips"
+            },
+            {
+              "node_id": "overnight_journey",
+              "label": "overnight journey"
+            },
+            {
+              "node_id": "outward_journey",
+              "label": "outward journey"
+            }
+          ]
+        },
+        {
+          "session_id": "s_travel_b",
+          "title": "B Flights",
+          "description_vi": "Khám phá các cụm từ trang trọng liên quan đến việc đi máy bay.",
+          "value": "## B Flights\n\nThese collocations are all rather formal ones connected with flying:\n\nPalair offers excellent **in-flight entertainment**, with the latest films and music. The **in-flight magazine** includes maps and information about major airports.\n\n[announcement by a cabin attendant] Ladies and gentlemen, we’ll shortly be landing at Dublin Airport. Please fasten your seatbelts.\n\nThe passenger boarded the plane on time, but it was delayed **taking off** and she missed her **connecting flight** in Amsterdam.\n\n**Domestic flights** are often more expensive than **international ones**. [flights within a country]\n\nDo you normally prefer a **window seat** or an **aisle seat** when you fly?\n\nWe managed to get a **charter flight**; it was half the price of the **scheduled flight**.\n\nThe weather **en route** is fine, and we anticipate a **smooth flight** to Stockholm today.\n\n1 **flight on a plane rented for special use**\n\n2 **regular flight organised by the company which owns the plane**\n\n3 The opposite is a **bumpy flight**.\n",
+          "children_nodes": [
+            {
+              "node_id": "in_flight_entertainment",
+              "label": "in-flight entertainment"
+            },
+            {
+              "node_id": "in_flight_magazine",
+              "label": "in-flight magazine"
+            },
+            {
+              "node_id": "taking_off",
+              "label": "taking off"
+            },
+            {
+              "node_id": "connecting_flight",
+              "label": "connecting flight"
+            },
+            {
+              "node_id": "domestic_flights",
+              "label": "Domestic flights"
+            },
+            {
+              "node_id": "international_ones",
+              "label": "international ones"
+            },
+            {
+              "node_id": "window_seat",
+              "label": "window seat"
+            },
+            {
+              "node_id": "aisle_seat",
+              "label": "aisle seat"
+            },
+            {
+              "node_id": "charter_flight",
+              "label": "charter flight"
+            },
+            {
+              "node_id": "scheduled_flight",
+              "label": "scheduled flight"
+            },
+            {
+              "node_id": "en_route",
+              "label": "en route"
+            },
+            {
+              "node_id": "smooth_flight",
+              "label": "smooth flight"
+            },
+            {
+              "node_id": "bumpy_flight",
+              "label": "bumpy flight"
+            }
+          ]
+        },
+        {
+          "session_id": "s_travel_c",
+          "title": "C Accommodation",
+          "description_vi": "Học các từ vựng và cụm từ liên quan đến chỗ ở.",
+          "value": "## C Accommodation\n\nWe stayed in a small, **family-run hotel**.\n\nThe Panorama is a rather **run-down hotel** in a back street near the city centre.\n\nThe Palace is a **luxury hotel** on the main square of Porto Alegre.\n\nI can’t afford to stay in **smart hotels**. I always have to look for **budget accommodation**. [very cheap]\n\nI’d advise you to **make a reservation** before you go. The hotels near the beach are very popular and get **fully booked** during the summer.\n",
+          "children_nodes": [
+            {
+              "node_id": "family_run_hotel",
+              "label": "family-run hotel"
+            },
+            {
+              "node_id": "run_down_hotel",
+              "label": "run-down hotel"
+            },
+            {
+              "node_id": "luxury_hotel",
+              "label": "luxury hotel"
+            },
+            {
+              "node_id": "smart_hotels",
+              "label": "smart hotels"
+            },
+            {
+              "node_id": "budget_accommodation",
+              "label": "budget accommodation"
+            },
+            {
+              "node_id": "make_a_reservation",
+              "label": "make a reservation"
+            },
+            {
+              "node_id": "fully_booked",
+              "label": "fully booked"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "section_id": "A",
+      "session_ref": "s_travel_a",
+      "title": "Travel, journey, trip",
+      "instruction_vi": "Hãy xem các email sau và ghi chú các cụm từ khác nhau cho travel, journey và trip.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "Clara,\n\nHave you made your **travel arrangements** for the sales conference yet? If you want a good **travel agent**, I can recommend Atlas World. They specialise in **business travel**. Their number is 2587996. They’re very helpful.\n\nNoah\n\nHi Natalie,\n\nI know next week is a **business trip**, but you must do some sightseeing too. I suggest we take a **day trip** to Canamuca. It’s about two hours by car, and we can take a **boat trip** to the island and have lunch there. Looking forward to seeing you. **Safe journey**?\n\nDavid\n\nHi Mia,\n\nI’m finally here after an extremely tiring **journey**! The flight was three hours late, they lost my luggage, then there were no taxis at the airport. I hope my **return journey** is better! I’m at the Hotel Rex, room 1305, tel: 987745. Give me a call.\n\nMiles\n\nNora,\n\nI got some **travel brochures** with details of **camping trips**. Want to meet for lunch to look at them? One of them is in Chile, but it’s a long **overnight journey** from the capital to get there, so maybe we should look nearer home?\n\nLorna\n\n1 The opposite of **return journey** is **outward journey**.\n\n2 said to someone who is about to make a journey.\n",
+          "related_vocabulary_ids": [
+            "travel_arrangements",
+            "travel_agent",
+            "business_travel",
+            "business_trip",
+            "day_trip",
+            "boat_trip",
+            "safe_journey",
+            "journey",
+            "return_journey",
+            "travel_brochures",
+            "camping_trips",
+            "overnight_journey",
+            "outward_journey"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "B",
+      "session_ref": "s_travel_b",
+      "title": "Flights",
+      "instruction_vi": "Các cụm từ này đều khá trang trọng liên quan đến việc bay:",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "Palair offers excellent **in-flight entertainment**, with the latest films and music. The **in-flight magazine** includes maps and information about major airports.\n\n[announcement by a cabin attendant] Ladies and gentlemen, we’ll shortly be landing at Dublin Airport. Please fasten your seatbelts.\n\nThe passenger boarded the plane on time, but it was delayed **taking off** and she missed her **connecting flight** in Amsterdam.\n\n**Domestic flights** are often more expensive than **international ones**. [flights within a country]\n\nDo you normally prefer a **window seat** or an **aisle seat** when you fly?\n\nWe managed to get a **charter flight**; it was half the price of the **scheduled flight**.\n\nThe weather **en route** is fine, and we anticipate a **smooth flight** to Stockholm today.\n\n1 **flight on a plane rented for special use**\n\n2 **regular flight organised by the company which owns the plane**\n\n3 The opposite is a **bumpy flight**.\n",
+          "related_vocabulary_ids": [
+            "in_flight_entertainment",
+            "in_flight_magazine",
+            "taking_off",
+            "connecting_flight",
+            "domestic_flights",
+            "international_ones",
+            "window_seat",
+            "aisle_seat",
+            "charter_flight",
+            "scheduled_flight",
+            "en_route",
+            "smooth_flight",
+            "bumpy_flight"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "C",
+      "session_ref": "s_travel_c",
+      "title": "Accommodation",
+      "instruction_vi": "Chúng tôi đã ở trong một khách sạn nhỏ, do gia đình điều hành.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "We stayed in a small, **family-run hotel**.\n\nThe Panorama is a rather **run-down hotel** in a back street near the city centre.\n\nThe Palace is a **luxury hotel** on the main square of Porto Alegre.\n\nI can’t afford to stay in **smart hotels**. I always have to look for **budget accommodation**. [very cheap]\n\nI’d advise you to **make a reservation** before you go. The hotels near the beach are very popular and get **fully booked** during the summer.\n",
+          "related_vocabulary_ids": [
+            "family_run_hotel",
+            "run_down_hotel",
+            "luxury_hotel",
+            "smart_hotels",
+            "budget_accommodation",
+            "make_a_reservation",
+            "fully_booked"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary_data": {
+    "travel_arrangements": {
+      "word": "travel arrangements",
+      "pronunciation": "/ˈtræv.əl əˈreɪnʤ.mənts/",
+      "image": {
+        "type": "prompt",
+        "value": "booking flights and hotels",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/20180520_Away_carryon_%281%29.jpg/960px-20180520_Away_carryon_%281%29.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Việc lên kế hoạch và đặt vé cho chuyến đi, bao gồm phương tiện di chuyển, chỗ ở, v.v.",
+          "examples": [
+            "Have you made your travel arrangements for the sales conference yet?"
+          ],
+          "grammar_patterns": [
+            "make travel arrangements"
+          ],
+          "usage_notes_vi": "Thường dùng ở số nhiều."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What do companies need to organise before a business trip?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How has the internet changed the way people book trips?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "Who usually plans holidays in your family?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "travel arrangements",
+          "text": "I made all the travel arrangements online."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "travel arrangements",
+          "source": "My assistant books the flights and hotels for my trips.",
+          "model": "My assistant makes my travel arrangements."
+        },
+        {
+          "target": "travel arrangements",
+          "source": "Have you booked your tickets and hotel for the conference yet?",
+          "model": "Have you made your travel arrangements for the conference yet?"
+        }
+      ]
+    },
+    "travel_agent": {
+      "word": "travel agent",
+      "pronunciation": "/ˈtræv.əl ˈeɪ.ʤənt/",
+      "image": {
+        "type": "prompt",
+        "value": "person helping with travel bookings",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Allamanda_Voyages%2C_3_Impasse_de_la_Gait%C3%A9%2C_75014_Paris_2014.jpg/960px-Allamanda_Voyages%2C_3_Impasse_de_la_Gait%C3%A9%2C_75014_Paris_2014.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Người hoặc công ty chuyên giúp khách hàng lên kế hoạch và đặt các dịch vụ du lịch.",
+          "examples": [
+            "If you want a good travel agent, I can recommend Atlas World."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "Do people still need people who book holidays for them?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "Is it cheaper to book a holiday yourself or through a company?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Is booking holidays for other people a good career?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "travel agent",
+          "text": "The travel agent found us a cheap hotel."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "travel agent",
+          "source": "The woman at the holiday company booked our flights and hotel.",
+          "model": "The travel agent booked our flights and hotel."
+        },
+        {
+          "target": "travel agent",
+          "source": "Fewer people now use a company to plan and book their holidays.",
+          "model": "Fewer people now use a travel agent."
+        }
+      ]
+    },
+    "business_travel": {
+      "word": "business travel",
+      "pronunciation": "/ˈbɪz.nəs ˈtræv.əl/",
+      "image": {
+        "type": "prompt",
+        "value": "people traveling for work",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/United_Airlines_Boeing_777-200_Meulemans.jpg/960px-United_Airlines_Boeing_777-200_Meulemans.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Việc đi lại vì mục đích công việc, kinh doanh.",
+          "examples": [
+            "They specialise in business travel."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "Is travelling for your job tiring or exciting?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Should companies reduce flights for work purposes?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "Will online meetings replace work trips?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "business travel",
+          "text": "Online meetings have reduced business travel."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "business travel",
+          "source": "Many workers have to fly for their jobs every month.",
+          "model": "For many workers, business travel is a monthly event."
+        },
+        {
+          "target": "business travel",
+          "source": "Companies spend a lot of money on trips for work.",
+          "model": "Companies spend a lot of money on business travel."
+        }
+      ]
+    },
+    "business_trip": {
+      "word": "business trip",
+      "pronunciation": "/ˈbɪz.nəs trɪp/",
+      "image": {
+        "type": "prompt",
+        "value": "suitcase and briefcase",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Airport_infrastructure.png/960px-Airport_infrastructure.png"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một chuyến đi ngắn ngày vì mục đích công việc.",
+          "examples": [
+            "I know next week is a business trip, but you must do some sightseeing too."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "Do you enjoy travelling for work?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "How do families cope when a parent often travels for work?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "Can video calls replace short trips for work?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "business trip",
+          "text": "My father is away on a business trip."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "business trip",
+          "source": "She went to Tokyo for a week to meet clients.",
+          "model": "She went to Tokyo on a business trip to meet clients."
+        },
+        {
+          "target": "business trip",
+          "source": "He is often away from home because his job sends him to other cities.",
+          "model": "He is often away from home on a business trip."
+        }
+      ]
+    },
+    "day_trip": {
+      "word": "day trip",
+      "pronunciation": "/ˈdeɪ trɪp/",
+      "image": {
+        "type": "prompt",
+        "value": "people on a short excursion",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Beach_at_Fort_Lauderdale.jpg/960px-Beach_at_Fort_Lauderdale.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một chuyến đi ngắn trong ngày, thường là để tham quan hoặc giải trí.",
+          "examples": [
+            "I suggest we take a day trip to Canamuca."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Where would you go for a short trip from your city?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Should schools take children on short trips to museums?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "What do families do together at the weekend?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "day trip",
+          "text": "We took a day trip to the beach."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "day trip",
+          "source": "We went to the mountains in the morning and came back that evening.",
+          "model": "We took a day trip to the mountains."
+        },
+        {
+          "target": "day trip",
+          "source": "The class visited the museum for one day.",
+          "model": "The class went on a day trip to the museum."
+        }
+      ]
+    },
+    "boat_trip": {
+      "word": "boat trip",
+      "pronunciation": "/ˈboʊt trɪp/",
+      "image": {
+        "type": "prompt",
+        "value": "people on a boat tour",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Motorboat_at_Kankaria_lake.JPG/960px-Motorboat_at_Kankaria_lake.JPG"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Một chuyến đi bằng thuyền, thường là để ngắm cảnh hoặc thư giãn.",
+          "examples": [
+            "we can take a boat trip to the island and have lunch there."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What activities do tourists enjoy in coastal areas?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Is sailing to islands harmful to sea life?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "What is a good activity for families on holiday by the sea?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "boat trip",
+          "text": "We took a boat trip around the bay."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "boat trip",
+          "source": "We went on the river by boat to see the city.",
+          "model": "We took a boat trip on the river to see the city."
+        },
+        {
+          "target": "boat trip",
+          "source": "Families enjoy sailing to the islands for lunch.",
+          "model": "Families enjoy a boat trip to the islands for lunch."
+        }
+      ]
+    },
+    "safe_journey": {
+      "word": "Safe journey",
+      "pronunciation": "/seɪf ˈʤɜː.ni/",
+      "image": {
+        "type": "prompt",
+        "value": "waving goodbye",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Erlangen_Bundesautobahn_73_Auffahrt_Luftbild-20230422-RM-165734.jpg/960px-Erlangen_Bundesautobahn_73_Auffahrt_Luftbild-20230422-RM-165734.jpg"
+      },
+      "part_of_speech": [
+        "interjection"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Lời chúc tốt đẹp gửi đến ai đó sắp bắt đầu một chuyến đi.",
+          "examples": [
+            "Looking forward to seeing you. Safe journey?"
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường được nói như một câu hỏi tu từ hoặc lời chúc."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "What do people in your culture say when a relative goes on a trip?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "How do you say goodbye to friends at the airport?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "What polite phrases do people use when someone leaves?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "Safe journey",
+          "text": "Safe journey, and call us when you arrive."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "Safe journey",
+          "source": "I hope you travel without any problems. See you soon!",
+          "model": "Safe journey! See you soon!"
+        },
+        {
+          "target": "Safe journey",
+          "source": "Have a good and safe trip home, everyone.",
+          "model": "Safe journey home, everyone."
+        }
+      ]
+    },
+    "journey": {
+      "word": "journey",
+      "pronunciation": "/ˈʤɜː.ni/",
+      "image": {
+        "type": "prompt",
+        "value": "long road with mountains",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/%D0%9F%D0%BE%D0%B5%D0%B7%D0%B4_%D0%BD%D0%B0_%D1%84%D0%BE%D0%BD%D0%B5_%D0%B3%D0%BE%D1%80%D1%8B_%D0%A8%D0%B0%D1%82%D1%80%D0%B8%D1%89%D0%B5._%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C.jpg/960px-%D0%9F%D0%BE%D0%B5%D0%B7%D0%B4_%D0%BD%D0%B0_%D1%84%D0%BE%D0%BD%D0%B5_%D0%B3%D0%BE%D1%80%D1%8B_%D0%A8%D0%B0%D1%82%D1%80%D0%B8%D1%89%D0%B5._%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": null,
+      "senses": [
+        {
+          "definition_vi": "Hành trình, chuyến đi dài từ nơi này đến nơi khác.",
+          "examples": [
+            "I’m finally here after an extremely tiring journey!"
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường ám chỉ một chuyến đi dài và có thể gặp khó khăn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What is the longest trip you have ever made?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How long is your trip to work every day?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How has technology made long trips easier?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "journey",
+          "text": "The journey by train took all day."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "journey",
+          "source": "The trip from the north to the south of the country is very long.",
+          "model": "The journey from the north to the south of the country is very long."
+        },
+        {
+          "target": "journey",
+          "source": "My trip to work takes an hour by bus.",
+          "model": "My journey to work takes an hour by bus."
+        }
+      ]
+    },
+    "return_journey": {
+      "word": "return journey",
+      "pronunciation": "/rɪˈtɜːn ˈʤɜː.ni/",
+      "image": {
+        "type": "prompt",
+        "value": "arrow pointing back",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/%D0%9F%D0%BE%D0%B5%D0%B7%D0%B4_%D0%BD%D0%B0_%D1%84%D0%BE%D0%BD%D0%B5_%D0%B3%D0%BE%D1%80%D1%8B_%D0%A8%D0%B0%D1%82%D1%80%D0%B8%D1%89%D0%B5._%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C.jpg/960px-%D0%9F%D0%BE%D0%B5%D0%B7%D0%B4_%D0%BD%D0%B0_%D1%84%D0%BE%D0%BD%D0%B5_%D0%B3%D0%BE%D1%80%D1%8B_%D0%A8%D0%B0%D1%82%D1%80%D0%B8%D1%89%D0%B5._%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Chuyến đi trở về điểm xuất phát.",
+          "examples": [
+            "I hope my return journey is better!"
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Is the trip home from a holiday usually harder than the trip there?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What do you do on the way home after a work trip?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "How do children behave on the trip back from a holiday?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "return journey",
+          "text": "The return journey was much faster."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "return journey",
+          "source": "The trip back home took longer because of the traffic.",
+          "model": "The return journey took longer because of the traffic."
+        },
+        {
+          "target": "return journey",
+          "source": "Children often sleep on the way back from holiday.",
+          "model": "Children often sleep on the return journey from holiday."
+        }
+      ]
+    },
+    "travel_brochures": {
+      "word": "travel brochures",
+      "pronunciation": "/ˈtræv.əl broʊˈʃʊərz/",
+      "image": {
+        "type": "prompt",
+        "value": "folded travel pamphlets",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/b/b2/%22Pastures_For_Habersham_County%22_brochures_by_S._C._Gunnels%2C_county_agent_-_DPLA_-_61e5c0f2980eaf4b457ddd178e0fce34.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Tờ rơi quảng cáo giới thiệu về các địa điểm du lịch, tour hoặc dịch vụ lữ hành.",
+          "examples": [
+            "I got some travel brochures with details of camping trips."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường dùng ở số nhiều."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "How do people choose where to go on holiday?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Is printed advertising still useful for tourism?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Should tourist companies stop printing paper leaflets?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "travel brochures",
+          "text": "I picked up some travel brochures at the airport."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "travel brochures",
+          "source": "We read some booklets about holidays in Greece.",
+          "model": "We read some travel brochures about Greece."
+        },
+        {
+          "target": "travel brochures",
+          "source": "Many holiday companies still print booklets about their trips.",
+          "model": "Many holiday companies still print travel brochures."
+        }
+      ]
+    },
+    "camping_trips": {
+      "word": "camping trips",
+      "pronunciation": "/ˈkæmp.ɪŋ trɪps/",
+      "image": {
+        "type": "prompt",
+        "value": "tent in a forest",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Tent_camping_along_the_Sulayr_trail_in_La_Taha%2C_Sierra_Nevada_National_Park_%28DSCF5147%29.jpg/960px-Tent_camping_along_the_Sulayr_trail_in_La_Taha%2C_Sierra_Nevada_National_Park_%28DSCF5147%29.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Những chuyến đi dã ngoại, cắm trại.",
+          "examples": [
+            "with details of camping trips."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường dùng ở số nhiều."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Family",
+          "question": "Are outdoor holidays good for families?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Should schools organise trips where children sleep in tents?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Can sleeping outdoors teach people to respect nature?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "camping trips",
+          "text": "We go on camping trips every summer."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "camping trips",
+          "source": "Every summer, we sleep in tents in the mountains for a week.",
+          "model": "Every summer, we go on camping trips in the mountains."
+        },
+        {
+          "target": "camping trips",
+          "source": "Schools should organise outdoor trips where students sleep in tents.",
+          "model": "Schools should organise camping trips for students."
+        }
+      ]
+    },
+    "overnight_journey": {
+      "word": "overnight journey",
+      "pronunciation": "/ˈoʊ.vər.naɪt ˈʤɜː.ni/",
+      "image": {
+        "type": "prompt",
+        "value": "moon and stars over a road",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/%D0%9F%D0%BE%D0%B5%D0%B7%D0%B4_%D0%BD%D0%B0_%D1%84%D0%BE%D0%BD%D0%B5_%D0%B3%D0%BE%D1%80%D1%8B_%D0%A8%D0%B0%D1%82%D1%80%D0%B8%D1%89%D0%B5._%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C.jpg/960px-%D0%9F%D0%BE%D0%B5%D0%B7%D0%B4_%D0%BD%D0%B0_%D1%84%D0%BE%D0%BD%D0%B5_%D0%B3%D0%BE%D1%80%D1%8B_%D0%A8%D0%B0%D1%82%D1%80%D0%B8%D1%89%D0%B5._%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một hành trình kéo dài qua đêm.",
+          "examples": [
+            "but it’s a long overnight journey from the capital to get there"
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Do you prefer to travel by day or by night?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Do people often travel at night for work?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How does travelling at night affect people's health?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "overnight journey",
+          "text": "We took an overnight journey by train."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "overnight journey",
+          "source": "The train from the capital travels all night.",
+          "model": "It is an overnight journey by train from the capital."
+        },
+        {
+          "target": "overnight journey",
+          "source": "Many workers travel through the night to save a hotel bill.",
+          "model": "Many workers take an overnight journey to save a hotel bill."
+        }
+      ]
+    },
+    "outward_journey": {
+      "word": "outward journey",
+      "pronunciation": "/ˈaʊt.wərd ˈʤɜː.ni/",
+      "image": {
+        "type": "prompt",
+        "value": "arrow pointing away",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/%D0%9F%D0%BE%D0%B5%D0%B7%D0%B4_%D0%BD%D0%B0_%D1%84%D0%BE%D0%BD%D0%B5_%D0%B3%D0%BE%D1%80%D1%8B_%D0%A8%D0%B0%D1%82%D1%80%D0%B8%D1%89%D0%B5._%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C.jpg/960px-%D0%9F%D0%BE%D0%B5%D0%B7%D0%B4_%D0%BD%D0%B0_%D1%84%D0%BE%D0%BD%D0%B5_%D0%B3%D0%BE%D1%80%D1%8B_%D0%A8%D0%B0%D1%82%D1%80%D0%B8%D1%89%D0%B5._%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%D1%81%D0%BA%D0%B0%D1%8F_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Chuyến đi ra khỏi điểm xuất phát, đối lập với chuyến đi trở về.",
+          "examples": [
+            "The opposite of return journey is outward journey."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Do you enjoy the first part of a trip more than the trip back?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How do people prepare for the first leg of a business trip?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "How do children behave at the start of a long holiday trip?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "outward journey",
+          "text": "The outward journey was long and tiring."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "outward journey",
+          "source": "The trip there took ten hours, but the trip back was quicker.",
+          "model": "The outward journey took ten hours, but the return was quicker."
+        },
+        {
+          "target": "outward journey",
+          "source": "The children were excited during the first part of the trip.",
+          "model": "The children were excited on the outward journey."
+        }
+      ]
+    },
+    "in_flight_entertainment": {
+      "word": "in-flight entertainment",
+      "pronunciation": "/ˌɪn.flaɪt ˌen.təˈteɪn.mənt/",
+      "image": {
+        "type": "prompt",
+        "value": "screen on an airplane seat",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/United_Airlines_Boeing_777-200_Meulemans.jpg/960px-United_Airlines_Boeing_777-200_Meulemans.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Các hình thức giải trí được cung cấp trên máy bay trong suốt chuyến bay.",
+          "examples": [
+            "Palair offers excellent in-flight entertainment, with the latest films and music."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "How do you pass the time on long flights?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How has technology improved life on planes?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Do films on planes affect people's choice of airline?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "in-flight entertainment",
+          "text": "The in-flight entertainment was very good."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "in-flight entertainment",
+          "source": "The airline shows new films and music during the flight.",
+          "model": "The airline offers excellent in-flight entertainment."
+        },
+        {
+          "target": "in-flight entertainment",
+          "source": "Passengers on long flights enjoy the films and games on screens.",
+          "model": "Passengers on long flights enjoy the in-flight entertainment."
+        }
+      ]
+    },
+    "in_flight_magazine": {
+      "word": "in-flight magazine",
+      "pronunciation": "/ˌɪn.flaɪt ˈmæɡ.ə.ziːn/",
+      "image": {
+        "type": "prompt",
+        "value": "magazine on an airplane seat pocket",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Harper%27s_January.png/960px-Harper%27s_January.png"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Tạp chí được cung cấp trên máy bay, thường chứa thông tin về chuyến bay, điểm đến và các sản phẩm/dịch vụ.",
+          "examples": [
+            "The in-flight magazine includes maps and information about major airports."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What do you read on a plane?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Are magazines given to passengers on planes worth reading?",
+          "fits": []
+        },
+        {
+          "context": "Shopping",
+          "question": "Do people buy things from adverts in airline magazines?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "in-flight magazine",
+          "text": "I read the in-flight magazine on the plane."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "in-flight magazine",
+          "source": "The magazine on the plane has maps of the airports.",
+          "model": "The in-flight magazine has maps of the airports."
+        },
+        {
+          "target": "in-flight magazine",
+          "source": "I found an interesting article in the airline's magazine during the flight.",
+          "model": "I found an interesting article in the in-flight magazine."
+        }
+      ]
+    },
+    "taking_off": {
+      "word": "taking off",
+      "pronunciation": "/ˈteɪk.ɪŋ ɒf/",
+      "image": {
+        "type": "prompt",
+        "value": "airplane lifting off runway",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/United_Airlines_Boeing_777-200_Meulemans.jpg/960px-United_Airlines_Boeing_777-200_Meulemans.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+particle",
+      "senses": [
+        {
+          "definition_vi": "Hành động máy bay rời khỏi mặt đất để bắt đầu bay.",
+          "examples": [
+            "but it was delayed taking off and she missed her connecting flight in Amsterdam."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Là một phần của cụm 'take off'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Which part of a flight makes people most nervous?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "Why are planes sometimes delayed before leaving the ground?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Why do some passengers' ears hurt when planes leave the ground?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "taking off",
+          "text": "The plane was taking off when I fell asleep."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "taking off",
+          "source": "The plane was late leaving the ground, so I missed my next flight.",
+          "model": "The plane was delayed taking off, so I missed my next flight."
+        },
+        {
+          "target": "taking off",
+          "source": "My ears hurt when the plane rises from the ground.",
+          "model": "My ears hurt when the plane is taking off."
+        }
+      ]
+    },
+    "connecting_flight": {
+      "word": "connecting flight",
+      "pronunciation": "/kəˈnɛk.tɪŋ flaɪt/",
+      "image": {
+        "type": "prompt",
+        "value": "airplane icon with arrows showing transfer",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Airport_infrastructure.png/960px-Airport_infrastructure.png"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Chuyến bay tiếp theo mà hành khách cần bắt để đến điểm đến cuối cùng, thường sau khi quá cảnh.",
+          "examples": [
+            "she missed her connecting flight in Amsterdam."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What problems can happen when you have to change planes?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Do business travellers prefer direct flights?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How can apps help travellers who change planes?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "connecting flight",
+          "text": "I missed my connecting flight in Paris."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "connecting flight",
+          "source": "My first plane was late, so I missed the second plane to Rome.",
+          "model": "My first plane was late, so I missed my connecting flight to Rome."
+        },
+        {
+          "target": "connecting flight",
+          "source": "Many travellers worry about catching their next plane after a delay.",
+          "model": "Many travellers worry about catching their connecting flight after a delay."
+        }
+      ]
+    },
+    "domestic_flights": {
+      "word": "Domestic flights",
+      "pronunciation": "/dəˈmɛs.tɪk flaɪts/",
+      "image": {
+        "type": "prompt",
+        "value": "map of a country with flight paths",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/United_Airlines_Boeing_777-200_Meulemans.jpg/960px-United_Airlines_Boeing_777-200_Meulemans.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Các chuyến bay nội địa, tức là các chuyến bay trong phạm vi một quốc gia.",
+          "examples": [
+            "Domestic flights are often more expensive than international ones."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường dùng ở số nhiều."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Is it expensive to fly within your country?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Should short flights inside a country be replaced by trains?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Do cheap flights inside a country help the economy?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "Domestic flights",
+          "text": "Domestic flights are often more expensive than trains."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "Domestic flights",
+          "source": "Flights within the country are often cheaper than trains.",
+          "model": "Domestic flights are often cheaper than trains."
+        },
+        {
+          "target": "Domestic flights",
+          "source": "The government plans to ban short flights inside the country.",
+          "model": "The government plans to ban short domestic flights."
+        }
+      ]
+    },
+    "international_ones": {
+      "word": "international ones",
+      "pronunciation": "/ˌɪn.təˈnæʃ.ən.əl ˈwʌnz/",
+      "image": {
+        "type": "prompt",
+        "value": "globe with flight paths",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/United_Airlines_Boeing_777-200_Meulemans.jpg/960px-United_Airlines_Boeing_777-200_Meulemans.jpg"
+      },
+      "part_of_speech": [
+        "pronoun phrase"
+      ],
+      "collocation_type": "adjective+pronoun",
+      "senses": [
+        {
+          "definition_vi": "Các chuyến bay quốc tế, tức là các chuyến bay giữa các quốc gia.",
+          "examples": [
+            "Domestic flights are often more expensive than international ones."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Từ 'ones' thay thế cho 'flights'."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Are flights to other countries cheaper than local ones?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Do airports in your country have more local or foreign flights?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Are flights abroad worse for the environment than local flights?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "international ones",
+          "text": "Local flights cost more than international ones."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "international ones",
+          "source": "Domestic flights are often cheaper than flights to other countries.",
+          "model": "Domestic flights are often cheaper than international ones."
+        },
+        {
+          "target": "international ones",
+          "source": "Our airport has many local flights but few flights abroad.",
+          "model": "Our airport has many domestic flights but few international ones."
+        }
+      ]
+    },
+    "window_seat": {
+      "word": "window seat",
+      "pronunciation": "/ˈwɪn.doʊ siːt/",
+      "image": {
+        "type": "prompt",
+        "value": "airplane seat next to the window",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/United_Airlines_Boeing_777-200_Meulemans.jpg/960px-United_Airlines_Boeing_777-200_Meulemans.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Chỗ ngồi trên máy bay hoặc phương tiện giao thông khác nằm cạnh cửa sổ.",
+          "examples": [
+            "Do you normally prefer a window seat or an aisle seat when you fly?"
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "When you take a long flight, where do you prefer to sit, and why?",
+          "fits": []
+        },
+        {
+          "context": "Transport",
+          "question": "What do you enjoy looking at when you travel by train or bus?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "Where do young children usually want to sit on a plane or train?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "window seat",
+          "text": "I always ask for a window seat on long flights."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "window seat",
+          "source": "I like sitting next to the window on the plane so I can see the clouds.",
+          "model": "I like having a window seat on the plane so I can see the clouds."
+        },
+        {
+          "target": "window seat",
+          "source": "The child asked to sit by the window of the train to watch the countryside.",
+          "model": "The child asked for a window seat on the train to watch the countryside."
+        }
+      ]
+    },
+    "aisle_seat": {
+      "word": "aisle seat",
+      "pronunciation": "/aɪl siːt/",
+      "image": {
+        "type": "prompt",
+        "value": "airplane seat next to the aisle",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/United_Airlines_Boeing_777-200_Meulemans.jpg/960px-United_Airlines_Boeing_777-200_Meulemans.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Chỗ ngồi trên máy bay hoặc phương tiện giao thông khác nằm cạnh lối đi.",
+          "examples": [
+            "Do you normally prefer a window seat or an aisle seat when you fly?"
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "If you need to stand up often during a flight, where is the best place to sit?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How can tall people or people with back problems feel more comfortable on long flights?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How do business travellers make sure they can leave the plane quickly?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "aisle seat",
+          "text": "I booked an aisle seat so I could stretch my legs."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "aisle seat",
+          "source": "I prefer to sit next to the walkway so I can get up without disturbing anyone.",
+          "model": "I prefer an aisle seat so I can get up without disturbing anyone."
+        },
+        {
+          "target": "aisle seat",
+          "source": "My father always chooses a place beside the passage on trains because he has long legs.",
+          "model": "My father always chooses an aisle seat on trains because he has long legs."
+        }
+      ]
+    },
+    "charter_flight": {
+      "word": "charter flight",
+      "pronunciation": "/ˈʧɑː.tər flaɪt/",
+      "image": {
+        "type": "prompt",
+        "value": "private jet",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/United_Airlines_Boeing_777-200_Meulemans.jpg/960px-United_Airlines_Boeing_777-200_Meulemans.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Chuyến bay thuê riêng, không theo lịch trình cố định, thường dành cho một nhóm hoặc mục đích đặc biệt.",
+          "examples": [
+            "We managed to get a charter flight; it was half the price of the scheduled flight."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "How do large tour groups usually travel to holiday resorts abroad?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "How can travel companies offer cheaper holidays than booking flights separately?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "How do professional football teams usually travel to matches in other countries?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "charter flight",
+          "text": "The football team took a charter flight to the final."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "charter flight",
+          "source": "The tour company hired a whole plane just for its customers going to Spain.",
+          "model": "The tour company arranged a charter flight for its customers going to Spain."
+        },
+        {
+          "target": "charter flight",
+          "source": "Instead of a normal airline service, the group rented a private plane for the trip.",
+          "model": "Instead of a normal airline service, the group took a charter flight for the trip."
+        }
+      ]
+    },
+    "scheduled_flight": {
+      "word": "scheduled flight",
+      "pronunciation": "/ˈʃɛd.juːld flaɪt/",
+      "image": {
+        "type": "prompt",
+        "value": "airplane on a timetable",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/United_Airlines_Boeing_777-200_Meulemans.jpg/960px-United_Airlines_Boeing_777-200_Meulemans.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Chuyến bay theo lịch trình cố định của hãng hàng không.",
+          "examples": [
+            "it was half the price of the scheduled flight."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Do you prefer flying with regular airlines or booking special group flights? Why?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Why are regular airline tickets often more expensive than package holiday flights?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How do business people usually travel when they need to attend meetings abroad?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "scheduled flight",
+          "text": "We missed our scheduled flight because of the traffic."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "scheduled flight",
+          "source": "We took a regular airline service that leaves at the same time every day.",
+          "model": "We took a scheduled flight that leaves at the same time every day."
+        },
+        {
+          "target": "scheduled flight",
+          "source": "Business travellers usually fly with normal airline services that follow a fixed timetable.",
+          "model": "Business travellers usually take scheduled flights that follow a fixed timetable."
+        }
+      ]
+    },
+    "en_route": {
+      "word": "en route",
+      "pronunciation": "/ɑ̃ ˈruːt/",
+      "image": {
+        "type": "prompt",
+        "value": "map showing a path",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Erlangen_Bundesautobahn_73_Auffahrt_Luftbild-20230422-RM-165734.jpg/960px-Erlangen_Bundesautobahn_73_Auffahrt_Luftbild-20230422-RM-165734.jpg"
+      },
+      "part_of_speech": [
+        "adverb"
+      ],
+      "collocation_type": null,
+      "senses": [
+        {
+          "definition_vi": "Trên đường đi, trong suốt hành trình.",
+          "examples": [
+            "The weather en route is fine, and we anticipate a smooth flight to Stockholm today."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Từ mượn từ tiếng Pháp."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What do you usually do during a long journey to another city?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "How do people who commute long distances make use of their travel time?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "Where do travellers usually eat when they drive long distances?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "en route",
+          "text": "We stopped for lunch en route to the beach."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "en route",
+          "source": "On the way to the airport, we got stuck in heavy traffic.",
+          "model": "En route to the airport, we got stuck in heavy traffic."
+        },
+        {
+          "target": "en route",
+          "source": "Many commuters answer emails while they are travelling to the office.",
+          "model": "Many commuters answer emails en route to the office."
+        }
+      ]
+    },
+    "smooth_flight": {
+      "word": "smooth flight",
+      "pronunciation": "/smuːð flaɪt/",
+      "image": {
+        "type": "prompt",
+        "value": "airplane flying through clear sky",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/United_Airlines_Boeing_777-200_Meulemans.jpg/960px-United_Airlines_Boeing_777-200_Meulemans.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một chuyến bay diễn ra thuận lợi, không gặp sự cố hay thời tiết xấu.",
+          "examples": [
+            "and we anticipate a smooth flight to Stockholm today."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "How was the last flight you took, and what made it pleasant?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How has modern aircraft technology improved passengers' experience of flying?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "What helps nervous passengers feel relaxed when they fly?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "smooth flight",
+          "text": "The pilot hoped we would have a smooth flight today."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "smooth flight",
+          "source": "The journey by plane was calm and comfortable, with no shaking at all.",
+          "model": "It was a smooth flight, with no shaking at all."
+        },
+        {
+          "target": "smooth flight",
+          "source": "Good weather meant that passengers enjoyed a calm trip through the air.",
+          "model": "Good weather meant that passengers enjoyed a smooth flight."
+        }
+      ]
+    },
+    "bumpy_flight": {
+      "word": "bumpy flight",
+      "pronunciation": "/ˈbʌm.pi flaɪt/",
+      "image": {
+        "type": "prompt",
+        "value": "airplane shaking in turbulence",
+        "link": "not_found"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một chuyến bay không ổn định, có nhiều rung lắc do nhiễu động không khí.",
+          "examples": [
+            "The opposite is a bumpy flight."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Have you ever had an uncomfortable experience on a plane? What happened?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Why do some people feel sick when they travel by air?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How might more extreme weather affect air travel in the future?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "bumpy flight",
+          "text": "We had a bumpy flight because of the storm."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "bumpy flight",
+          "source": "The plane shook a lot during the journey because of strong winds.",
+          "model": "We had a bumpy flight because of strong winds."
+        },
+        {
+          "target": "bumpy flight",
+          "source": "Air travel may become less comfortable, with more shaking caused by storms.",
+          "model": "Bumpy flights may become more common because of storms."
+        }
+      ]
+    },
+    "family_run_hotel": {
+      "word": "family-run hotel",
+      "pronunciation": "/ˈfæm.ɪ.li rʌn hoʊˈtel/",
+      "image": {
+        "type": "prompt",
+        "value": "small cozy hotel with a family outside",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/King_George_Inn.JPG/960px-King_George_Inn.JPG"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Khách sạn được sở hữu và điều hành bởi một gia đình.",
+          "examples": [
+            "We stayed in a small, family-run hotel."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What kind of accommodation do you prefer when you go on holiday?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "How can tourism benefit small local businesses in rural areas?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "What are the advantages and disadvantages of working in a family business?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "family-run hotel",
+          "text": "We stayed in a small family-run hotel near the sea."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "family-run hotel",
+          "source": "We stayed in a small hotel owned and managed by a husband, his wife and their children.",
+          "model": "We stayed in a small family-run hotel."
+        },
+        {
+          "target": "family-run hotel",
+          "source": "Tourists often prefer hotels where one family owns the business and looks after guests personally.",
+          "model": "Tourists often prefer family-run hotels where guests are looked after personally."
+        }
+      ]
+    },
+    "run_down_hotel": {
+      "word": "run-down hotel",
+      "pronunciation": "/ˈrʌn daʊn hoʊˈtel/",
+      "image": {
+        "type": "prompt",
+        "value": "old neglected hotel building",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sl2022.png/960px-Sl2022.png"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Khách sạn cũ kỹ, xuống cấp, không được bảo trì tốt.",
+          "examples": [
+            "The Panorama is a rather run-down hotel in a back street near the city centre."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Have you ever stayed somewhere on holiday that was disappointing? What was it like?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Why are some old buildings in city centres left in poor condition?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "How can governments improve tourist areas that look old and neglected?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "run-down hotel",
+          "text": "The run-down hotel had broken windows and dirty carpets."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "run-down hotel",
+          "source": "The hotel was old and in bad condition, with peeling paint everywhere.",
+          "model": "It was a run-down hotel, with peeling paint everywhere."
+        },
+        {
+          "target": "run-down hotel",
+          "source": "Many cheap hotels in the old town are poorly maintained and falling apart.",
+          "model": "Many of the cheap places in the old town are run-down hotels."
+        }
+      ]
+    },
+    "luxury_hotel": {
+      "word": "luxury hotel",
+      "pronunciation": "/ˈlʌkʃ.ər.i hoʊˈtel/",
+      "image": {
+        "type": "prompt",
+        "value": "opulent hotel lobby",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Livorno_-_Hotel_Palazzo_-_2025-09-29_20-09-38_001.jpg/960px-Livorno_-_Hotel_Palazzo_-_2025-09-29_20-09-38_001.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Khách sạn sang trọng, cung cấp dịch vụ và tiện nghi cao cấp.",
+          "examples": [
+            "The Palace is a luxury hotel on the main square of Porto Alegre."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Would you rather spend money on expensive accommodation or on activities when travelling?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "How does high-end tourism benefit a country's economy?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What kinds of jobs are available in the hospitality industry?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "luxury hotel",
+          "text": "They spent their honeymoon in a luxury hotel by the sea."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "luxury hotel",
+          "source": "They stayed in a very expensive hotel with excellent service and a private pool.",
+          "model": "They stayed in a luxury hotel with a private pool."
+        },
+        {
+          "target": "luxury hotel",
+          "source": "Many staff work in five-star hotels that offer the best comfort and service.",
+          "model": "Many staff work in luxury hotels that offer the best comfort and service."
+        }
+      ]
+    },
+    "smart_hotels": {
+      "word": "smart hotels",
+      "pronunciation": "/smɑːt hoʊˈtelz/",
+      "image": {
+        "type": "prompt",
+        "value": "modern stylish hotel",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Livorno_-_Hotel_Palazzo_-_2025-09-29_20-09-38_001.jpg/960px-Livorno_-_Hotel_Palazzo_-_2025-09-29_20-09-38_001.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Khách sạn sang trọng, hiện đại và có phong cách.",
+          "examples": [
+            "I can’t afford to stay in smart hotels."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": "Thường dùng ở số nhiều."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "Do you prefer stylish, expensive accommodation or simple places when you travel? Why?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Why can many young people not afford expensive holidays nowadays?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Where do companies usually put up important clients visiting from abroad?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "smart hotels",
+          "text": "Students usually cannot afford to stay in smart hotels."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "smart hotels",
+          "source": "I can't pay for stylish, expensive hotels on my salary.",
+          "model": "I can't afford to stay in smart hotels on my salary."
+        },
+        {
+          "target": "smart hotels",
+          "source": "The company always books elegant, fashionable hotels for its foreign clients.",
+          "model": "The company always books smart hotels for its foreign clients."
+        }
+      ]
+    },
+    "budget_accommodation": {
+      "word": "budget accommodation",
+      "pronunciation": "/ˈbʌʤ.ɪt əˌkɒm.əˈdeɪ.ʃən/",
+      "image": {
+        "type": "prompt",
+        "value": "simple hostel room",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hostel_Dormitory.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Chỗ ở có giá cả phải chăng, tiết kiệm chi phí.",
+          "examples": [
+            "I always have to look for budget accommodation."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "How do young people manage to travel when they have little money?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "What problems do students face when they study in another city?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "How has the rise of cheap travel changed the tourism industry?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "budget accommodation",
+          "text": "Backpackers usually look for budget accommodation like hostels."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "budget accommodation",
+          "source": "Students often stay in cheap places like hostels when they travel.",
+          "model": "Students often stay in budget accommodation like hostels when they travel."
+        },
+        {
+          "target": "budget accommodation",
+          "source": "It is hard for students to find inexpensive rooms near the university.",
+          "model": "It is hard for students to find budget accommodation near the university."
+        }
+      ]
+    },
+    "make_a_reservation": {
+      "word": "make a reservation",
+      "pronunciation": "/meɪk ə ˌrɛz.əˈveɪ.ʃən/",
+      "image": {
+        "type": "prompt",
+        "value": "person writing on a notepad",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Livorno_-_Hotel_Palazzo_-_2025-09-29_20-09-38_001.jpg/960px-Livorno_-_Hotel_Palazzo_-_2025-09-29_20-09-38_001.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Đặt chỗ trước cho một dịch vụ, ví dụ như phòng khách sạn, bàn nhà hàng.",
+          "examples": [
+            "I’d advise you to make a reservation before you go."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What should tourists do before visiting a popular destination in high season?",
+          "fits": []
+        },
+        {
+          "context": "Food",
+          "question": "How do people in your country usually plan a meal at a busy restaurant?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "What should people do if they want to see a very popular show?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "make a reservation",
+          "text": "You should make a reservation before going to that restaurant."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "make a reservation",
+          "source": "It's better to book a table before you go to that restaurant.",
+          "model": "It's better to make a reservation before you go to that restaurant."
+        },
+        {
+          "target": "make a reservation",
+          "source": "We called the hotel in advance to book a room for two nights.",
+          "model": "We called the hotel in advance to make a reservation for two nights."
+        }
+      ]
+    },
+    "fully_booked": {
+      "word": "fully booked",
+      "pronunciation": "/ˈfʊl.i bʊkt/",
+      "image": {
+        "type": "prompt",
+        "value": "sign saying 'fully booked'",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Livorno_-_Hotel_Palazzo_-_2025-09-29_20-09-38_001.jpg/960px-Livorno_-_Hotel_Palazzo_-_2025-09-29_20-09-38_001.jpg"
+      },
+      "part_of_speech": [
+        "adjective"
+      ],
+      "collocation_type": "adverb+participle",
+      "senses": [
+        {
+          "definition_vi": "Tất cả các chỗ đã được đặt hết, không còn chỗ trống.",
+          "examples": [
+            "The hotels near the beach are very popular and get fully booked during the summer."
+          ],
+          "grammar_patterns": [],
+          "usage_notes_vi": null
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What problems might tourists face if they travel during public holidays?",
+          "fits": []
+        },
+        {
+          "context": "Culture",
+          "question": "Why do some concerts and shows sell out so quickly?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Why is it sometimes hard to see a doctor quickly in big cities?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "fully booked",
+          "text": "All the hotels near the beach were fully booked."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "fully booked",
+          "source": "There were no rooms left at any hotel in town that weekend.",
+          "model": "Every hotel in town was fully booked that weekend."
+        },
+        {
+          "target": "fully booked",
+          "source": "The popular dentist had no free appointments for the next month.",
+          "model": "The popular dentist was fully booked for the next month."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "topics": [
+    {
+      "name": "General",
+      "description_vi": "Nhom bai viet tong hop",
+      "sub_topics": []
+    },
+    {
+      "name": "Speaking Practice",
+      "description_vi": "Nhom bai viet tong hop",
+      "sub_topics": []
+    },
+    {
+      "name": "Writing Practice",
+      "description_vi": "Nhom bai viet tong hop",
+      "sub_topics": []
+    },
+    {
+      "name": "Listening Practice",
+      "description_vi": "Nhom bai viet tong hop",
+      "sub_topics": []
+    },
+    {
+      "name": "Reading Practice",
+      "description_vi": "Nhom bai viet tong hop",
+      "sub_topics": []
+    },
+    {
+      "name": "Collocations-by-Topic",
+      "description_vi": "Nhóm bài viết Collocations theo chủ đề",
+      "sub_topics": []
+    }
+  ]
+}

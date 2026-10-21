@@ -1,0 +1,30 @@
+{
+  "name": "Sổ lỗi",
+  "cards": [
+    {
+      "id": "preposition-aware-about-aware-of",
+      "term": "aware about → aware of",
+      "meaning_vi": "Tính từ 'aware' luôn đi kèm với giới từ 'of', không dùng 'about'.",
+      "examples": [
+        "For instance, many children who take an interest in nature shows on broadcast channels can learn more about wildlife, thereby eventually becoming more aware of the importance of protecting the environment."
+      ],
+      "tags": [
+        "mistake",
+        "preposition"
+      ],
+      "mistake": {
+        "sentence": "For instance, many children who have interest in shows about the natural available channels can learn more about wildlife, thereby eventually becoming more aware about the importance of protecting the environment.",
+        "wrong": "aware about",
+        "right": "aware of",
+        "fixed": "For instance, many children who take an interest in nature shows on broadcast channels can learn more about wildlife, thereby eventually becoming more aware of the importance of protecting the environment.",
+        "why": "Tính từ 'aware' luôn đi kèm với giới từ 'of', không dùng 'about'.",
+        "dictionary": []
+      },
+      "from": {
+        "kind": "writing",
+        "id": "mvbpvnl3-b4926d",
+        "title": "Writing · Mở bài: It is true that the way children spend their free…"
+      }
+    }
+  ]
+}

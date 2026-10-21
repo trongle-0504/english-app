@@ -1,0 +1,1495 @@
+{
+  "metadata": {
+    "lesson_id": "crime",
+    "topic": "Society and institutions",
+    "chapter_title": "Crime",
+    "pdf_file": "Crime.pdf"
+  },
+  "mindmap_data": {
+    "topic": "Society and institutions",
+    "chapter": {
+      "chapter_id": "ch_crime",
+      "title": "Crime",
+      "sessions": [
+        {
+          "session_id": "s_crime_a",
+          "title": "A Talking about criminals",
+          "description_vi": "Thảo luận về tội phạm và những người phạm tội.",
+          "value": "# Crime\n\n## A Talking about criminals\n\nNote the collocations in these news clips.\n\nThe Judge, Mr Newell, said that Hickey was a **hardened criminal**¹ who had committed 12 serious offences. He ordered that Hickey should serve a sentence of at least 15 years in prison.\n\nThe Justice Minister said that the men were not political prisoners but were **common criminals**³ who had committed acts of terrorism.\n\n1 someone who has committed a lot of crimes.\n3 low class criminal, negative term.\n\nThe lawyer for the prosecution, Mr Arthur Larchwood, stated that Henry Banks was already a **convicted criminal**² when he was appointed chairman of the company but that nobody knew this fact. He had a conviction for robbery dating back to 1996.\n\nThe judge said it was vital that anyone with a **criminal record**⁴ should not be able to get a job where large sums of money were placed in their care. Charles Amworth, 26, had served two years in a prison for young offenders ten years ago before working for the bank.\n\n2 someone declared officially in a court of law to be guilty of a crime.\n4 list kept by the police of someone’s previous crimes.",
+          "children_nodes": [
+            {
+              "node_id": "hardened_criminal",
+              "label": "hardened criminal"
+            },
+            {
+              "node_id": "common_criminal",
+              "label": "common criminal"
+            },
+            {
+              "node_id": "convicted_criminal",
+              "label": "convicted criminal"
+            },
+            {
+              "node_id": "criminal_record",
+              "label": "criminal record"
+            }
+          ]
+        },
+        {
+          "session_id": "s_crime_b",
+          "title": "B Politicians on crime",
+          "description_vi": "Trích dẫn các bài phát biểu của chính trị gia về vấn đề tội phạm.",
+          "value": "# Crime\n\n## B Politicians on crime\n\nPoliticians often make speeches about crime. Here are some extracts from recent ones.\n\n“In the **fight against crime** we will not just target **serious crime**, but all crime, including **street crime** and **vehicle crime**, so that the streets will be safer for everyone.”\n\n“If someone breaks into your house, steals your car, or **robs** you in the street, then of course you feel society has let you down. That’s why we’re determined to **tackle crime**.”\n\n“We are doing everything in our power to **combat crime**. The **crime rate** has come down, and that is because we have put 10,000 more police officers on the streets and focused on **juvenile crime**¹, because that is where the problem begins.”\n\n1 crime relating to young persons not yet old enough to be considered adults.\n\n“This government is doing very little to **fight crime**. We have all had some experience of the recent **crime wave** in our cities, whether it is **petty crime**² or more serious offences.”\n\n2 crime not considered serious when compared with some other crimes.\n\n“The **crime figures** are the worst since 1995. We have had a **spate of burglaries** in this part of the city, **vehicle theft**, **drug abuse** and so on, and police have reported a staggering increase in the number of acts of **mindless vandalism**. It is time the party in power did something.”\n\n3 large number of events, especially unwanted ones, happening at about the same time.\n\n> **Common mistakes**\n> \n> Don’t forget the difference between **steal** and **rob**. A person **steals** something, e.g. He **stole** a car / some money, but **robs** someone or an institution, e.g. She **robbed** an elderly person / a bank. **Steal** is often used in the passive, e.g. My car was **stolen**.",
+          "children_nodes": [
+            {
+              "node_id": "fight_against_crime",
+              "label": "fight against crime"
+            },
+            {
+              "node_id": "serious_crime",
+              "label": "serious crime"
+            },
+            {
+              "node_id": "street_crime",
+              "label": "street crime"
+            },
+            {
+              "node_id": "vehicle_crime",
+              "label": "vehicle crime"
+            },
+            {
+              "node_id": "rob",
+              "label": "rob"
+            },
+            {
+              "node_id": "tackle_crime",
+              "label": "tackle crime"
+            },
+            {
+              "node_id": "combat_crime",
+              "label": "combat crime"
+            },
+            {
+              "node_id": "crime_rate",
+              "label": "crime rate"
+            },
+            {
+              "node_id": "juvenile_crime",
+              "label": "juvenile crime"
+            },
+            {
+              "node_id": "fight_crime",
+              "label": "fight crime"
+            },
+            {
+              "node_id": "crime_wave",
+              "label": "crime wave"
+            },
+            {
+              "node_id": "petty_crime",
+              "label": "petty crime"
+            },
+            {
+              "node_id": "crime_figures",
+              "label": "crime figures"
+            },
+            {
+              "node_id": "spate_of_burglaries",
+              "label": "spate of burglaries"
+            },
+            {
+              "node_id": "vehicle_theft",
+              "label": "vehicle theft"
+            },
+            {
+              "node_id": "drug_abuse",
+              "label": "drug abuse"
+            },
+            {
+              "node_id": "mindless_vandalism",
+              "label": "mindless vandalism"
+            },
+            {
+              "node_id": "steal",
+              "label": "steal"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "section_id": "A",
+      "session_ref": "s_crime_a",
+      "title": "Talking about criminals",
+      "instruction_vi": "Ghi chú các cụm từ cố định trong các đoạn tin tức sau.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "The Judge, Mr Newell, said that Hickey was a **hardened criminal**¹ who had committed 12 serious offences. He ordered that Hickey should serve a sentence of at least 15 years in prison.\n\nThe Justice Minister said that the men were not political prisoners but were **common criminals**³ who had committed acts of terrorism.\n\n1 someone who has committed a lot of crimes.\n3 low class criminal, negative term.\n\nThe lawyer for the prosecution, Mr Arthur Larchwood, stated that Henry Banks was already a **convicted criminal**² when he was appointed chairman of the company but that nobody knew this fact. He had a conviction for robbery dating back to 1996.\n\nThe judge said it was vital that anyone with a **criminal record**⁴ should not be able to get a job where large sums of money were placed in their care. Charles Amworth, 26, had served two years in a prison for young offenders ten years ago before working for the bank.\n\n2 someone declared officially in a court of law to be guilty of a crime.\n4 list kept by the police of someone’s previous crimes.",
+          "related_vocabulary_ids": [
+            "hardened_criminal",
+            "common_criminal",
+            "convicted_criminal",
+            "criminal_record"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "B",
+      "session_ref": "s_crime_b",
+      "title": "Politicians on crime",
+      "instruction_vi": "Các chính trị gia thường có các bài phát biểu về tội phạm. Dưới đây là một số đoạn trích từ các bài phát biểu gần đây.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "“In the **fight against crime** we will not just target **serious crime**, but all crime, including **street crime** and **vehicle crime**, so that the streets will be safer for everyone.”\n\n“If someone breaks into your house, steals your car, or **robs** you in the street, then of course you feel society has let you down. That’s why we’re determined to **tackle crime**.”\n\n“We are doing everything in our power to **combat crime**. The **crime rate** has come down, and that is because we have put 10,000 more police officers on the streets and focused on **juvenile crime**¹, because that is where the problem begins.”\n\n1 crime relating to young persons not yet old enough to be considered adults.\n\n“This government is doing very little to **fight crime**. We have all had some experience of the recent **crime wave** in our cities, whether it is **petty crime**² or more serious offences.”\n\n2 crime not considered serious when compared with some other crimes.\n\n“The **crime figures** are the worst since 1995. We have had a **spate of burglaries** in this part of the city, **vehicle theft**, **drug abuse** and so on, and police have reported a staggering increase in the number of acts of **mindless vandalism**. It is time the party in power did something.”\n\n3 large number of events, especially unwanted ones, happening at about the same time.\n\n> **Common mistakes**\n> \n> Don’t forget the difference between **steal** and **rob**. A person **steals** something, e.g. He **stole** a car / some money, but **robs** someone or an institution, e.g. She **robbed** an elderly person / a bank. **Steal** is often used in the passive, e.g. My car was **stolen**.",
+          "related_vocabulary_ids": [
+            "fight_against_crime",
+            "serious_crime",
+            "street_crime",
+            "vehicle_crime",
+            "rob",
+            "tackle_crime",
+            "combat_crime",
+            "crime_rate",
+            "juvenile_crime",
+            "fight_crime",
+            "crime_wave",
+            "petty_crime",
+            "crime_figures",
+            "spate_of_burglaries",
+            "vehicle_theft",
+            "drug_abuse",
+            "mindless_vandalism",
+            "steal"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary_data": {
+    "hardened_criminal": {
+      "word": "hardened criminal",
+      "pronunciation": "/ˈhɑːrdənd ˈkrɪmɪnl/",
+      "image": {
+        "type": "prompt",
+        "value": "A person who has committed many crimes and shows no remorse.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Al_Capone_in_Florida.jpg/960px-Al_Capone_in_Florida.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một người đã phạm nhiều tội và không tỏ ra hối hận.",
+          "examples": [
+            "The judge described the defendant as a hardened criminal who had committed numerous offenses."
+          ],
+          "grammar_patterns": [
+            "hardened criminal"
+          ],
+          "usage_notes_vi": "Thường dùng để chỉ những tội phạm nguy hiểm, tái phạm nhiều lần."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Can prison change people who have committed crimes many times?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Why are films about dangerous criminals so popular?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Can education help prisoners stop reoffending?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "hardened criminal",
+          "text": "The judge called him a hardened criminal."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "hardened criminal",
+          "source": "He has committed many crimes and shows no sign of changing.",
+          "model": "He is a hardened criminal."
+        },
+        {
+          "target": "hardened criminal",
+          "source": "Young offenders can turn into people who break the law regularly without feeling guilty.",
+          "model": "Young offenders can become hardened criminals."
+        }
+      ]
+    },
+    "common_criminal": {
+      "word": "common criminal",
+      "pronunciation": "/ˈkɒmən ˈkrɪmɪnl/",
+      "image": {
+        "type": "prompt",
+        "value": "A criminal who commits ordinary crimes, not political or ideological ones.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Al_Capone_in_Florida.jpg/960px-Al_Capone_in_Florida.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Tội phạm thông thường, không phải tội phạm chính trị hay tư tưởng.",
+          "examples": [
+            "The minister insisted they were common criminals, not political dissidents."
+          ],
+          "grammar_patterns": [
+            "common criminal"
+          ],
+          "usage_notes_vi": "Thuật ngữ này mang tính tiêu cực, ám chỉ những kẻ phạm tội vì lợi ích cá nhân hoặc bản năng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Should politicians who break the law be treated like anyone else?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Do newspapers treat rich people who commit crimes differently?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Should company bosses who steal money be punished severely?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "common criminal",
+          "text": "He was treated like a common criminal."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "common criminal",
+          "source": "The minister said the protesters were ordinary lawbreakers, not political activists.",
+          "model": "The minister said the protesters were common criminals, not political activists."
+        },
+        {
+          "target": "common criminal",
+          "source": "The rich businessman was jailed like any ordinary thief.",
+          "model": "The rich businessman was jailed like a common criminal."
+        }
+      ]
+    },
+    "convicted_criminal": {
+      "word": "convicted criminal",
+      "pronunciation": "/kənˈvɪktɪd ˈkrɪmɪnl/",
+      "image": {
+        "type": "prompt",
+        "value": "A person who has been found guilty of a crime in a court of law.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Al_Capone_in_Florida.jpg/960px-Al_Capone_in_Florida.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Người đã bị kết án có tội trước tòa án.",
+          "examples": [
+            "He was a convicted criminal before he even started his business."
+          ],
+          "grammar_patterns": [
+            "convicted criminal"
+          ],
+          "usage_notes_vi": "Nhấn mạnh việc đã có phán quyết chính thức của pháp luật."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "Should employers hire people who have been in prison?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Should people who have been found guilty of crimes be allowed to vote?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Is it hard for former prisoners to find somewhere to live?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "convicted criminal",
+          "text": "It is hard for a convicted criminal to find work."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "convicted criminal",
+          "source": "He had been found guilty of a crime before he started his company.",
+          "model": "He was a convicted criminal before he started his company."
+        },
+        {
+          "target": "convicted criminal",
+          "source": "People who have been found guilty in court often struggle to rent a flat.",
+          "model": "Convicted criminals often struggle to rent a flat."
+        }
+      ]
+    },
+    "criminal_record": {
+      "word": "criminal record",
+      "pronunciation": "/ˈkrɪmɪnl ˈrɛkərd/",
+      "image": {
+        "type": "prompt",
+        "value": "An official list of a person's previous crimes.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Al_Capone_in_Florida.jpg/960px-Al_Capone_in_Florida.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Hồ sơ phạm tội, danh sách các tội phạm trước đó của một người do cảnh sát lưu giữ.",
+          "examples": [
+            "Having a criminal record can make it difficult to find employment."
+          ],
+          "grammar_patterns": [
+            "criminal record"
+          ],
+          "usage_notes_vi": "Liên quan đến lịch sử phạm tội đã được ghi nhận."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "Should companies check job applicants' backgrounds?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Should people who have committed crimes be allowed to travel abroad?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Should teachers be checked by the police before they start work?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "criminal record",
+          "text": "Having a criminal record makes finding a job harder."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "criminal record",
+          "source": "Because he was once convicted of theft, he cannot get certain jobs.",
+          "model": "Because he has a criminal record, he cannot get certain jobs."
+        },
+        {
+          "target": "criminal record",
+          "source": "Some countries refuse visas to people who have been found guilty of crimes.",
+          "model": "Some countries refuse visas to people with a criminal record."
+        }
+      ]
+    },
+    "fight_against_crime": {
+      "word": "fight against crime",
+      "pronunciation": "/faɪt əˈɡɛnst kraɪm/",
+      "image": {
+        "type": "prompt",
+        "value": "Efforts to reduce or prevent crime.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/HH_Polizeihauptmeister_MZ.jpg/960px-HH_Polizeihauptmeister_MZ.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Cuộc đấu tranh chống lại tội phạm.",
+          "examples": [
+            "The government has pledged to intensify the fight against crime."
+          ],
+          "grammar_patterns": [
+            "fight against crime"
+          ],
+          "usage_notes_vi": "Chỉ các hành động, chính sách nhằm ngăn chặn và giảm thiểu tội phạm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "How can technology help the police?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "What should governments do to make cities safer?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Can education reduce crime among young people?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "fight against crime",
+          "text": "Cameras help the police in the fight against crime."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "fight against crime",
+          "source": "The government promised to try harder to reduce crime.",
+          "model": "The government promised to step up the fight against crime."
+        },
+        {
+          "target": "fight against crime",
+          "source": "Education plays an important role in reducing law-breaking.",
+          "model": "Education plays an important role in the fight against crime."
+        }
+      ]
+    },
+    "serious_crime": {
+      "word": "serious crime",
+      "pronunciation": "/ˈsɪəriəs kraɪm/",
+      "image": {
+        "type": "prompt",
+        "value": "A crime that is considered very harmful or dangerous.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Jakub_Schikaneder_-_Murder_in_the_House.JPG/960px-Jakub_Schikaneder_-_Murder_in_the_House.JPG"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Tội phạm nghiêm trọng.",
+          "examples": [
+            "Murder and armed robbery are considered serious crimes."
+          ],
+          "grammar_patterns": [
+            "serious crime"
+          ],
+          "usage_notes_vi": "Các hành vi phạm tội gây hậu quả nặng nề, nguy hiểm cho xã hội."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Which offences should lead to long prison sentences?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Do news reports make people too afraid of violence?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "Is online fraud as harmful as other offences?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "serious crime",
+          "text": "Murder is a very serious crime."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "serious crime",
+          "source": "Armed robbery is one of the worst kinds of offence.",
+          "model": "Armed robbery is a serious crime."
+        },
+        {
+          "target": "serious crime",
+          "source": "Hacking into bank accounts is a very grave offence.",
+          "model": "Hacking into bank accounts is a serious crime."
+        }
+      ]
+    },
+    "street_crime": {
+      "word": "street crime",
+      "pronunciation": "/ˈstriːt kraɪm/",
+      "image": {
+        "type": "prompt",
+        "value": "Crime that happens in public places, like streets.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Apachesvspolicebastille.jpg/960px-Apachesvspolicebastille.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Tội phạm đường phố.",
+          "examples": [
+            "Pickpocketing and mugging are common examples of street crime."
+          ],
+          "grammar_patterns": [
+            "street crime"
+          ],
+          "usage_notes_vi": "Các loại tội phạm xảy ra ở nơi công cộng, đặc biệt là trên đường phố."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "How can tourists stay safe in big cities?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Why are some city areas more dangerous than others?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "Do security cameras make public places safer?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "street crime",
+          "text": "Street crime is a problem in many big cities."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "street crime",
+          "source": "Pickpocketing and mugging in public places are rising.",
+          "model": "Street crime is rising."
+        },
+        {
+          "target": "street crime",
+          "source": "More police on foot can reduce crimes that happen in public areas.",
+          "model": "More police on foot can reduce street crime."
+        }
+      ]
+    },
+    "vehicle_crime": {
+      "word": "vehicle crime",
+      "pronunciation": "/ˈviːəkl̩ kraɪm/",
+      "image": {
+        "type": "prompt",
+        "value": "Crimes involving vehicles, such as theft or damage.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Car_broken_window_break_in_4492.JPG/960px-Car_broken_window_break_in_4492.JPG"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Tội phạm liên quan đến phương tiện giao thông.",
+          "examples": [
+            "The police are cracking down on vehicle crime in the city center."
+          ],
+          "grammar_patterns": [
+            "vehicle crime"
+          ],
+          "usage_notes_vi": "Bao gồm các hành vi như trộm cắp xe, phá hoại xe."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "Has technology made cars harder to steal?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "What crimes are common in your city?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Is it safe to park outside where you live?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "vehicle crime",
+          "text": "Vehicle crime is common in this car park."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "vehicle crime",
+          "source": "Thefts of cars and from cars are increasing in the city centre.",
+          "model": "Vehicle crime is increasing in the city centre."
+        },
+        {
+          "target": "vehicle crime",
+          "source": "Better car alarms have reduced the number of cars stolen or broken into.",
+          "model": "Better car alarms have reduced vehicle crime."
+        }
+      ]
+    },
+    "rob": {
+      "word": "rob",
+      "pronunciation": "/rɒb/",
+      "image": {
+        "type": "prompt",
+        "value": "To steal from a person or place using force or threat.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/3/36/Bundesarchiv_Bild_102-12762%2C_Bank%C3%BCberfall.jpg"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb",
+      "senses": [
+        {
+          "definition_vi": "Cướp, trấn lột.",
+          "examples": [
+            "The bank was robbed by armed men."
+          ],
+          "grammar_patterns": [
+            "rob someone/something"
+          ],
+          "usage_notes_vi": "Hành động lấy tài sản của người khác bằng vũ lực hoặc đe dọa."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Why do some people steal from banks or shops?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What should tourists do to keep their money safe?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Why are films about bank thefts so popular?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "rob",
+          "text": "Two men tried to rob the bank yesterday."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "rob",
+          "source": "Thieves stole money from the shop last night.",
+          "model": "Thieves robbed the shop last night."
+        },
+        {
+          "target": "rob",
+          "source": "Someone used force to take my wallet on the train.",
+          "model": "Someone robbed me on the train."
+        }
+      ]
+    },
+    "tackle_crime": {
+      "word": "tackle crime",
+      "pronunciation": "/ˈtækəl kraɪm/",
+      "image": {
+        "type": "prompt",
+        "value": "To deal with or try to stop crime.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Pentonvilleiso19.jpg/960px-Pentonvilleiso19.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Đối phó, giải quyết vấn đề tội phạm.",
+          "examples": [
+            "We need a comprehensive strategy to tackle crime effectively."
+          ],
+          "grammar_patterns": [
+            "tackle crime"
+          ],
+          "usage_notes_vi": "Chỉ hành động chủ động để ngăn chặn hoặc giảm thiểu tội phạm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "What is the best way to reduce crime in cities?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Can schools help to reduce youth crime?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Does reducing poverty help reduce crime?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "tackle crime",
+          "text": "We need new ideas to tackle crime."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "tackle crime",
+          "source": "The government needs a clear plan to deal with crime.",
+          "model": "The government needs a clear plan to tackle crime."
+        },
+        {
+          "target": "tackle crime",
+          "source": "Creating jobs is one way to reduce law-breaking.",
+          "model": "Creating jobs is one way to tackle crime."
+        }
+      ]
+    },
+    "combat_crime": {
+      "word": "combat crime",
+      "pronunciation": "/ˈkɒmbæt kraɪm/",
+      "image": {
+        "type": "prompt",
+        "value": "To fight against crime.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Pentonvilleiso19.jpg/960px-Pentonvilleiso19.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Chống lại tội phạm.",
+          "examples": [
+            "The police are working hard to combat crime in the inner city."
+          ],
+          "grammar_patterns": [
+            "combat crime"
+          ],
+          "usage_notes_vi": "Tương tự 'fight crime', nhấn mạnh vào sự đối đầu và tiêu diệt tội phạm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "Can artificial intelligence help the police?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Should there be more police on the streets?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "How can neighbours work together to keep their area safe?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "combat crime",
+          "text": "The city hired more police to combat crime."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "combat crime",
+          "source": "Police are using new technology to fight against law-breaking.",
+          "model": "Police are using new technology to combat crime."
+        },
+        {
+          "target": "combat crime",
+          "source": "Residents formed a group to reduce crime in their area.",
+          "model": "Residents formed a group to combat crime in their area."
+        }
+      ]
+    },
+    "crime_rate": {
+      "word": "crime rate",
+      "pronunciation": "/ˈkraɪm reɪt/",
+      "image": {
+        "type": "prompt",
+        "value": "The number of crimes in a particular area or during a particular period.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Trend_of_Violent_Crime_from_1985_to_2022_%28United_States%29.png/960px-Trend_of_Violent_Crime_from_1985_to_2022_%28United_States%29.png"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Tỷ lệ tội phạm.",
+          "examples": [
+            "The government aims to reduce the national crime rate by 10%."
+          ],
+          "grammar_patterns": [
+            "crime rate"
+          ],
+          "usage_notes_vi": "Số liệu thống kê về mức độ phạm tội trong một khu vực hoặc thời gian nhất định."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Why are some cities safer than others?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Does unemployment cause more crime?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "What do people consider before choosing a neighbourhood?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "crime rate",
+          "text": "The crime rate in our city has fallen."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "crime rate",
+          "source": "The number of crimes in the area has gone down.",
+          "model": "The crime rate in the area has gone down."
+        },
+        {
+          "target": "crime rate",
+          "source": "Areas with more jobs usually have fewer crimes.",
+          "model": "Areas with more jobs usually have a lower crime rate."
+        }
+      ]
+    },
+    "juvenile_crime": {
+      "word": "juvenile crime",
+      "pronunciation": "/ˈdʒuːvənl̩ kraɪm/",
+      "image": {
+        "type": "prompt",
+        "value": "Crimes committed by young people.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Pentonvilleiso19.jpg/960px-Pentonvilleiso19.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Tội phạm vị thành niên.",
+          "examples": [
+            "Programs aimed at preventing juvenile crime are crucial for society."
+          ],
+          "grammar_patterns": [
+            "juvenile crime"
+          ],
+          "usage_notes_vi": "Các hành vi phạm tội của những người chưa đủ tuổi trưởng thành theo quy định pháp luật."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Education",
+          "question": "How can schools prevent teenagers from breaking the law?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "Are parents responsible when their children commit crimes?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Should young offenders be sent to prison?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "juvenile crime",
+          "text": "Sports programmes can reduce juvenile crime."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "juvenile crime",
+          "source": "Crimes committed by teenagers are increasing in some cities.",
+          "model": "Juvenile crime is increasing in some cities."
+        },
+        {
+          "target": "juvenile crime",
+          "source": "Youth clubs help to stop young people from breaking the law.",
+          "model": "Youth clubs help to prevent juvenile crime."
+        }
+      ]
+    },
+    "fight_crime": {
+      "word": "fight crime",
+      "pronunciation": "/faɪt kraɪm/",
+      "image": {
+        "type": "prompt",
+        "value": "To try to stop crime.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/HH_Polizeihauptmeister_MZ.jpg/960px-HH_Polizeihauptmeister_MZ.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Chống tội phạm.",
+          "examples": [
+            "The new chief of police promised to fight crime relentlessly."
+          ],
+          "grammar_patterns": [
+            "fight crime"
+          ],
+          "usage_notes_vi": "Hành động nhằm ngăn chặn hoặc giảm thiểu tội phạm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "How has technology changed police work?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Should ordinary citizens help the police?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Can television programmes help solve crimes?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "fight crime",
+          "text": "The police use cameras to fight crime."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "fight crime",
+          "source": "The new police chief promised to take strong action against criminals.",
+          "model": "The new police chief promised to fight crime."
+        },
+        {
+          "target": "fight crime",
+          "source": "Ordinary people can help the police deal with criminals.",
+          "model": "Ordinary people can help the police fight crime."
+        }
+      ]
+    },
+    "crime_wave": {
+      "word": "crime wave",
+      "pronunciation": "/ˈkraɪm weɪv/",
+      "image": {
+        "type": "prompt",
+        "value": "A sudden increase in the amount of crime.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Ford_Police_Interceptor_Utility_%28Youngstown_Police_Department%2C_Ohio%29%2C_front_right%2C_02-14-2026.jpg/960px-Ford_Police_Interceptor_Utility_%28Youngstown_Police_Department%2C_Ohio%29%2C_front_right%2C_02-14-2026.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Làn sóng tội phạm.",
+          "examples": [
+            "The city is experiencing a crime wave, with a sharp rise in burglaries."
+          ],
+          "grammar_patterns": [
+            "crime wave"
+          ],
+          "usage_notes_vi": "Sự gia tăng đột ngột về số lượng các vụ phạm tội."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "What can cause a sudden rise in crime?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Can an economic crisis lead to more crime?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Do newspapers exaggerate increases in crime?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "crime wave",
+          "text": "The city is suffering a crime wave."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "crime wave",
+          "source": "There has been a sudden big rise in crimes in the city.",
+          "model": "The city is experiencing a crime wave."
+        },
+        {
+          "target": "crime wave",
+          "source": "After the factory closed, burglaries and thefts suddenly increased.",
+          "model": "After the factory closed, there was a crime wave."
+        }
+      ]
+    },
+    "petty_crime": {
+      "word": "petty crime",
+      "pronunciation": "/ˈpɛti kraɪm/",
+      "image": {
+        "type": "prompt",
+        "value": "A minor crime, not considered serious.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/6/63/Paul-Charles_Chocarne-Moreau_The_Cunning_Thief.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Tội phạm vặt, tội phạm không nghiêm trọng.",
+          "examples": [
+            "Shoplifting and vandalism are often classified as petty crime."
+          ],
+          "grammar_patterns": [
+            "petty crime"
+          ],
+          "usage_notes_vi": "Các hành vi phạm tội nhỏ, ít gây hậu quả nghiêm trọng so với các tội khác."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Should people who commit small crimes go to prison?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "What problems do tourists face in big cities?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Does poverty lead people to steal?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "petty crime",
+          "text": "Petty crime is common near the train station."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "petty crime",
+          "source": "Small offences like shoplifting are common in the city centre.",
+          "model": "Petty crime like shoplifting is common in the city centre."
+        },
+        {
+          "target": "petty crime",
+          "source": "Instead of prison, people who commit minor offences could do community work.",
+          "model": "Instead of prison, people guilty of petty crime could do community work."
+        }
+      ]
+    },
+    "crime_figures": {
+      "word": "crime figures",
+      "pronunciation": "/ˈkraɪm ˈfɪɡərz/",
+      "image": {
+        "type": "prompt",
+        "value": "Statistics about the amount of crime.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Standard_Normal_Distribution-en.svg/960px-Standard_Normal_Distribution-en.svg.png"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Số liệu thống kê về tội phạm.",
+          "examples": [
+            "The latest crime figures show a worrying increase in violent offenses."
+          ],
+          "grammar_patterns": [
+            "crime figures"
+          ],
+          "usage_notes_vi": "Dữ liệu, số liệu liên quan đến các vụ phạm tội."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Is your city becoming safer or more dangerous?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Should newspapers report crime statistics?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "How does the economy affect the number of crimes?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "crime figures",
+          "text": "The latest crime figures show a small fall."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "crime figures",
+          "source": "Official statistics show that violent offences are increasing.",
+          "model": "The latest crime figures show that violent offences are increasing."
+        },
+        {
+          "target": "crime figures",
+          "source": "The government published the numbers of crimes for last year.",
+          "model": "The government published last year's crime figures."
+        }
+      ]
+    },
+    "spate_of_burglaries": {
+      "word": "spate of burglaries",
+      "pronunciation": "/speɪt əv ˈbɜːrɡləriz/",
+      "image": {
+        "type": "prompt",
+        "value": "A large number of burglaries happening in a short period.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Burglar.jpg/960px-Burglar.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Một loạt các vụ trộm cắp xảy ra liên tiếp.",
+          "examples": [
+            "There has been a spate of burglaries in the neighborhood recently."
+          ],
+          "grammar_patterns": [
+            "spate of X"
+          ],
+          "usage_notes_vi": "Chỉ một lượng lớn các sự kiện không mong muốn (ở đây là trộm cắp) xảy ra trong một khoảng thời gian ngắn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "How can people keep their homes safe?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Why do crimes sometimes happen in groups in one area?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "Do home security cameras stop thieves?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "spate of burglaries",
+          "text": "There has been a spate of burglaries recently."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "spate of burglaries",
+          "source": "Many homes in our street have been broken into in a short time.",
+          "model": "There has been a spate of burglaries in our street."
+        },
+        {
+          "target": "spate of burglaries",
+          "source": "After several houses were broken into within a week, residents bought cameras.",
+          "model": "After a spate of burglaries, residents bought cameras."
+        }
+      ]
+    },
+    "vehicle_theft": {
+      "word": "vehicle theft",
+      "pronunciation": "/ˈviːəkl̩ θɛft/",
+      "image": {
+        "type": "prompt",
+        "value": "The act of stealing a vehicle.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Grand_Theft_Auto_logo_series.svg/960px-Grand_Theft_Auto_logo_series.svg.png"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Trộm cắp phương tiện giao thông.",
+          "examples": [
+            "Vehicle theft remains a significant problem in urban areas."
+          ],
+          "grammar_patterns": [
+            "vehicle theft"
+          ],
+          "usage_notes_vi": "Hành vi lấy cắp xe ô tô, xe máy hoặc các phương tiện khác."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Technology",
+          "question": "Has new technology made cars safer from thieves?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "What crimes are common in cities?",
+          "fits": []
+        },
+        {
+          "context": "Economy",
+          "question": "Do car insurance prices depend on crime levels?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "vehicle theft",
+          "text": "Vehicle theft is a big problem here."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "vehicle theft",
+          "source": "Stealing cars is still a serious problem in cities.",
+          "model": "Vehicle theft is still a serious problem in cities."
+        },
+        {
+          "target": "vehicle theft",
+          "source": "Insurance costs more in areas where cars are often stolen.",
+          "model": "Insurance costs more in areas with high vehicle theft."
+        }
+      ]
+    },
+    "drug_abuse": {
+      "word": "drug abuse",
+      "pronunciation": "/ˈdrʌɡ əˌbjuːs/",
+      "image": {
+        "type": "prompt",
+        "value": "The use of illegal drugs or the misuse of legal drugs.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Fentanyl._2_milligrams._A_lethal_dose_in_most_people.jpg/960px-Fentanyl._2_milligrams._A_lethal_dose_in_most_people.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "noun+noun",
+      "senses": [
+        {
+          "definition_vi": "Lạm dụng ma túy/thuốc.",
+          "examples": [
+            "Drug abuse is often linked to increased crime rates."
+          ],
+          "grammar_patterns": [
+            "drug abuse"
+          ],
+          "usage_notes_vi": "Sử dụng các chất gây nghiện hoặc lạm dụng thuốc theo chỉ định."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Health",
+          "question": "How can governments reduce the use of illegal drugs?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Is there a link between illegal drugs and crime?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Should schools teach students about the dangers of drugs?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "drug abuse",
+          "text": "Drug abuse can destroy young lives and families."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "drug abuse",
+          "source": "Taking illegal drugs is often linked to crime.",
+          "model": "Drug abuse is often linked to crime."
+        },
+        {
+          "target": "drug abuse",
+          "source": "Schools should warn students about using drugs in harmful ways.",
+          "model": "Schools should warn students about drug abuse."
+        }
+      ]
+    },
+    "mindless_vandalism": {
+      "word": "mindless vandalism",
+      "pronunciation": "/ˈmaɪndlɪs ˈvændəlɪzəm/",
+      "image": {
+        "type": "prompt",
+        "value": "Destruction of property without any apparent reason or purpose.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/G-20_-_Hamburg_Schulterblatt_01.jpg/960px-G-20_-_Hamburg_Schulterblatt_01.jpg"
+      },
+      "part_of_speech": [
+        "noun"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Hành vi phá hoại vô nghĩa.",
+          "examples": [
+            "The park benches were victims of mindless vandalism last night."
+          ],
+          "grammar_patterns": [
+            "mindless vandalism"
+          ],
+          "usage_notes_vi": "Sự phá hoại tài sản công cộng hoặc tư nhân một cách vô cớ, không có mục đích rõ ràng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Society",
+          "question": "Why do some young people damage public property for no reason, and how can towns prevent it?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "What problems do residents face when bus shelters and street lights nearby are regularly smashed?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How should schools respond when students deliberately damage toilets and classrooms?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "mindless vandalism",
+          "text": "The broken windows were the result of mindless vandalism."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "mindless vandalism",
+          "source": "Someone smashed the new bus shelter for no reason at all.",
+          "model": "The new bus shelter was destroyed in an act of mindless vandalism."
+        },
+        {
+          "target": "mindless vandalism",
+          "source": "Teenagers spray-painted the school walls just for fun, causing a lot of damage.",
+          "model": "The school walls were covered in graffiti after a night of mindless vandalism."
+        }
+      ]
+    },
+    "steal": {
+      "word": "steal",
+      "pronunciation": "/stiːl/",
+      "image": {
+        "type": "prompt",
+        "value": "To take someone's property without permission.",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/USMC_shoplifting.jpg/960px-USMC_shoplifting.jpg"
+      },
+      "part_of_speech": [
+        "verb"
+      ],
+      "collocation_type": "verb",
+      "senses": [
+        {
+          "definition_vi": "Ăn cắp, lấy trộm.",
+          "examples": [
+            "He was caught trying to steal a valuable painting."
+          ],
+          "grammar_patterns": [
+            "steal something"
+          ],
+          "usage_notes_vi": "Hành động lấy tài sản của người khác một cách lén lút, không có sự cho phép."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Crime",
+          "question": "Why do some teenagers take things from shops without paying, and how should society respond?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How can people protect their personal data from hackers online?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "Is it ever acceptable for employees to take office supplies home for personal use?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "steal",
+          "text": "Someone tried to steal my bike from the station."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "steal",
+          "source": "A man took a woman's handbag on the bus without her knowing.",
+          "model": "A man managed to steal a woman's handbag on the bus."
+        },
+        {
+          "target": "steal",
+          "source": "Hackers can take your bank details if your password is weak.",
+          "model": "Hackers can steal your bank details if your password is weak."
+        }
+      ]
+    }
+  }
+}

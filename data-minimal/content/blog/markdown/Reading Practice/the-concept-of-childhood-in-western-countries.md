@@ -1,0 +1,71 @@
+# Annotated Passage
+
+The <T v="lịch sử của thời thơ ấu" p="/ˈhɪstəri əv ˈtʃaɪldhʊd/" t="academic phrase">history of childhood</T> has been a <T v="chủ đề gây tranh luận gay gắt" p="/ˌhiːtɪd ˈtɒpɪk/" t="collocation">heated topic</T> in social history since the <T v="có ảnh hưởng lớn" p="/ˈhaɪli ˌɪnfluˈenʃəl/" t="collocation">highly influential</T> book ‘Centuries of Childhood’, written by French historian Philippe Aries, emerged in 1960. He claimed that ‘childhood’ is a <T v="khái niệm được tạo ra bởi xã hội hiện đại" p="/ˈkɒnsept kriˈeɪtɪd baɪ ˈmɒdn səˈsaɪəti/" t="academic phrase">concept created by modern society</T>.
+
+Whether childhood is itself a <T v="phát minh/khái niệm mới xuất hiện gần đây" p="/ˈriːsənt ɪnˈvenʃən/" t="collocation">recent invention</T> has been one of the <T v="những vấn đề được tranh luận gay gắt nhất" p="/məʊst ɪnˈtensli dɪˈbeɪtɪd ˈɪʃuːz/" t="academic collocation">most intensely debated issues</T> in the history of childhood. Historian Philippe Aries asserted that children were regarded as <T v="người lớn thu nhỏ" p="/ˈmɪnətʃə əˈdʌlts/" t="collocation">miniature adults</T>, with all the intellect and personality that this implies, in Western Europe during the Middle Ages (up to about the end of the 15th century). After <T v="xem xét kỹ tranh và nhật ký thời trung cổ" p="/ˈskruːtənaɪzɪŋ ˌmediˈiːvəl ˈpɪktʃəz ænd ˈdaɪəriz/" t="academic phrase">scrutinising medieval pictures and diaries</T>, he concluded that there was no distinction between children and adults for they shared similar leisure activities and work; However, this does not mean children were neglected, forsaken or despised, he argued. The idea of childhood corresponds to <T v="nhận thức về bản chất đặc biệt của thời thơ ấu" p="/əˈweənəs əˈbaʊt ðə pɪˈkjuːliə ˈneɪtʃər əv ˈtʃaɪldhʊd/" t="academic phrase">awareness about the peculiar nature of childhood</T>, which distinguishes the child from adult, even the young adult. Therefore, the <T v="khái niệm về tuổi thơ" p="/ˈkɒnsept əv ˈtʃaɪldhʊd/" t="academic phrase">concept of childhood</T> is not to be confused with affection for children.
+
+Traditionally, children played a <T v="vai trò mang tính chức năng" p="/ˈfʌŋkʃənl rəʊl/" t="collocation">functional role</T> in <T v="góp phần vào thu nhập gia đình" p="/kənˈtrɪbjuːtɪŋ tuː ðə ˈfæməli ˈɪnkʌm/" t="collocation">contributing to the family income</T> in the history. Under this circumstance, children were considered to be useful. Back in the Middle Ages, children of 5 or 6 years old did <T v="công việc vặt cần thiết" p="/ˈnesəsəri tʃɔːz/" t="collocation">necessary chores</T> for their parents. During the 16th century, children of 9 or 10 years old were often encouraged or even forced to leave their family to work as servants for wealthier families or apprentices for a trade.
+
+In the 18th and 19th centuries, <T v="công nghiệp hóa tạo ra nhu cầu mới về lao động trẻ em" p="/ɪnˌdʌstriəlaɪˈzeɪʃən kriˈeɪtɪd ə njuː dɪˈmɑːnd fə tʃaɪld ˈleɪbə/" t="academic phrase">industrialisation created a new demand for child labour</T>; thus many children were forced to work for a long time in mines, workshops and factories. The issue of whether long hours of labouring would <T v="ảnh hưởng tới cơ thể đang phát triển của trẻ" p="/ˌɪntəˈfɪə wɪð ˈtʃɪldrənz ˈɡrəʊɪŋ ˈbɒdiz/" t="collocation">interfere with children’s growing bodies</T> began to perplex <T v="nhà cải cách xã hội" p="/ˈsəʊʃəl rɪˈfɔːməz/" t="noun">social reformers</T>. Some of them started to realise the <T v="tiềm năng của các nghiên cứu có hệ thống" p="/pəˈtenʃəl əv ˌsɪstəˈmætɪk ˈstʌdiz/" t="academic phrase">potential of systematic studies</T> to monitor how far these <T v="sự thiếu thốn từ sớm" p="/ˈɜːli ˌdeprɪˈveɪʃənz/" t="noun">early deprivations</T> might be influencing children’s development.
+
+The concerns of reformers gradually had some impact upon the <T v="điều kiện làm việc của trẻ em" p="/ˈwɜːkɪŋ kənˈdɪʃən əv ˈtʃɪldrən/" t="collocation">working condition of children</T>. For example, in Britain, the Factory Act of 1833 signified the <T v="sự xuất hiện của bảo vệ pháp lý" p="/ɪˈmɜːdʒəns əv ˈliːɡl prəˈtekʃən/" t="academic phrase">emergence of legal protection</T> of children from exploitation and was also associated with the <T v="sự phát triển của trường học" p="/raɪz əv skuːlz/" t="collocation">rise of schools</T> for factory children. Due partly to factory reform, the <T v="những hình thức bóc lột trẻ em tồi tệ nhất" p="/wɜːst fɔːmz əv tʃaɪld ˌeksplɔɪˈteɪʃən/" t="collocation">worst forms of child exploitation</T> were eliminated gradually. The influence of trade unions and economic changes also <T v="góp phần vào sự phát triển/thay đổi" p="/kənˈtrɪbjuːt tuː ði ˌiːvəˈluːʃən/" t="lexical pattern">contributed to the evolution</T> by leaving some forms of child labour redundant during the 19th century. Initiating children into work as ‘useful’ children was no longer a priority, and childhood was <T v="được xem là" p="/diːmd tuː biː/" t="lexical pattern">deemed to be</T> a time for play and education for all children instead of a <T v="thiểu số có đặc quyền" p="/ˈprɪvəlɪdʒd maɪˈnɒrəti/" t="collocation">privileged minority</T>. Childhood was increasingly understood as a more extended phase of <T v="sự phụ thuộc, phát triển và học tập" p="/dɪˈpendənsi dɪˈveləpmənt ænd ˈlɜːnɪŋ/" t="academic collocation">dependency, development and learning</T> with the delay of the age for starting full-time work. Even so, work continued to play a significant, if less essential, role in children’s lives in the later 19th and 20th centuries. Finally, the ‘useful child’ has become a <T v="khái niệm gây tranh cãi" p="/ˌkɒntrəˈvɜːʃəl ˈkɒnsept/" t="collocation">controversial concept</T> during the first decade of the 21st century, especially in the context of <T v="mối quan ngại toàn cầu" p="/ˈɡləʊbl kənˈsɜːn/" t="collocation">global concern</T> about large numbers of children engaged in child labour.
+
+The <T v="trường bán thời gian" p="/ˌhɑːfˈtaɪm skuːlz/" t="noun">half-time schools</T> established upon the Factory Act of 1833 allowed children to work and attend school. However, a <T v="tỷ lệ đáng kể" p="/sɪɡˈnɪfɪkənt prəˈpɔːʃən/" t="collocation">significant proportion</T> of children never attended school in the 1840s, and even if they did, they <T v="bỏ học" p="/drɒp aʊt/" t="phrasal verb">dropped out</T> by the age of 10 or 11. By the end of the 19th century in Britain, the situation changed dramatically, and schools became the <T v="cốt lõi của khái niệm" p="/kɔː tə ðə ˈkɒnsept/" t="collocation">core to the concept</T> of a ‘normal’ childhood.
+
+It is no longer a privilege for children to attend school and all children are expected to spend a <T v="phần quan trọng/đáng kể" p="/sɪɡˈnɪfɪkənt pɑːt/" t="collocation">significant part</T> of their day in a classroom. Once in school, children’s lives could be separated from domestic life and the adult world of work. In this way, school turns into an <T v="tổ chức chuyên định hình tư duy, hành vi và đạo đức" p="/ˌɪnstɪˈtjuːʃən ˈdedɪkeɪtɪd tuː ˈʃeɪpɪŋ ðə maɪndz bɪˈheɪvjə ænd ˈmɒrəlz/" t="academic phrase">institution dedicated to shaping the minds, behaviour and morals</T> of the young. Besides, education dominated the <T v="sự quản lý thời gian thức của trẻ" p="/ˈmænɪdʒmənt əv ˈtʃɪldrənz ˈweɪkɪŋ aʊəz/" t="academic phrase">management of children’s waking hours</T> through the hours spent in the classroom, homework (the growth of ‘after school’ activities), and the importance attached to <T v="sự tham gia của phụ huynh" p="/pəˈrentl ɪnˈvɒlvmənt/" t="collocation">parental involvement</T>.
+
+Industrialisation, urbanisation and <T v="giáo dục đại trà" p="/mæs ˈskuːlɪŋ/" t="noun">mass schooling</T> pose new challenges for those who are responsible for <T v="bảo vệ phúc lợi trẻ em" p="/prəˈtektɪŋ ˈtʃɪldrənz ˈwelfeə/" t="collocation">protecting children’s welfare</T>, as well as <T v="thúc đẩy việc học" p="/prəˈməʊt ˈlɜːnɪŋ/" t="lexical pattern">promoting their learning</T>. An increasing number of children are being treated as a group with <T v="nhu cầu đặc thù" p="/juːˈniːk niːdz/" t="collocation">unique needs</T>, and are organised into groups <T v="dựa trên / xét theo" p="/ɪn ðə laɪt əv/" t="lexical pattern">in the light of</T> their age. For instance, teachers need to know some information about what to expect of children in their classrooms, what kinds of instruction are appropriate for different age groups, and what is the <T v="cách tốt nhất để đánh giá sự tiến bộ của trẻ" p="/best weɪ tə əˈses ˈtʃɪldrənz ˈprəʊɡres/" t="academic phrase">best way to assess children’s progress</T>. Also, they want tools enabling them to <T v="phân loại và lựa chọn trẻ theo năng lực và tiềm năng" p="/sɔːt ænd sɪˈlekt ˈtʃɪldrən əˈkɔːdɪŋ tuː ðeər əˈbɪlətiz ænd pəˈtenʃəl/" t="academic phrase">sort and select children according to their abilities and potential</T>.
+
+# Vocabulary Table
+
+| English | Word Type | Pronunciation | Vietnamese |
+|---|---|---|---|
+| history of childhood | academic phrase | /ˈhɪstəri əv ˈtʃaɪldhʊd/ | lịch sử của thời thơ ấu |
+| heated topic | collocation | /ˌhiːtɪd ˈtɒpɪk/ | chủ đề gây tranh luận gay gắt |
+| highly influential | collocation | /ˈhaɪli ˌɪnfluˈenʃəl/ | có ảnh hưởng lớn |
+| concept created by modern society | academic phrase | /ˈkɒnsept kriˈeɪtɪd baɪ ˈmɒdn səˈsaɪəti/ | khái niệm được tạo ra bởi xã hội hiện đại |
+| recent invention | collocation | /ˈriːsənt ɪnˈvenʃən/ | phát minh/khái niệm mới xuất hiện gần đây |
+| most intensely debated issues | academic collocation | /məʊst ɪnˈtensli dɪˈbeɪtɪd ˈɪʃuːz/ | những vấn đề được tranh luận gay gắt nhất |
+| miniature adults | collocation | /ˈmɪnətʃə əˈdʌlts/ | người lớn thu nhỏ |
+| scrutinise + noun | lexical pattern | /ˈskruːtənaɪz/ | xem xét kỹ lưỡng |
+| scrutinising medieval pictures and diaries | academic phrase | /ˈskruːtənaɪzɪŋ ˌmediˈiːvəl ˈpɪktʃəz ænd ˈdaɪəriz/ | xem xét kỹ tranh và nhật ký thời trung cổ |
+| awareness about the peculiar nature of childhood | academic phrase | /əˈweənəs əˈbaʊt ðə pɪˈkjuːliə ˈneɪtʃər əv ˈtʃaɪldhʊd/ | nhận thức về bản chất đặc biệt của thời thơ ấu |
+| concept of childhood | academic phrase | /ˈkɒnsept əv ˈtʃaɪldhʊd/ | khái niệm về tuổi thơ |
+| functional role | collocation | /ˈfʌŋkʃənl rəʊl/ | vai trò mang tính chức năng |
+| contribute to + noun/V-ing | lexical pattern | /kənˈtrɪbjuːt tuː/ | góp phần vào |
+| contributing to the family income | collocation | /kənˈtrɪbjuːtɪŋ tuː ðə ˈfæməli ˈɪnkʌm/ | góp phần vào thu nhập gia đình |
+| necessary chores | collocation | /ˈnesəsəri tʃɔːz/ | công việc vặt cần thiết |
+| industrialisation | noun | /ɪnˌdʌstriəlaɪˈzeɪʃən/ | quá trình công nghiệp hóa |
+| industrialisation created a new demand for child labour | academic phrase | /ɪnˌdʌstriəlaɪˈzeɪʃən kriˈeɪtɪd ə njuː dɪˈmɑːnd fə tʃaɪld ˈleɪbə/ | công nghiệp hóa tạo ra nhu cầu mới về lao động trẻ em |
+| interfere with + noun | lexical pattern | /ˌɪntəˈfɪə wɪð/ | cản trở / ảnh hưởng đến |
+| interfere with children’s growing bodies | collocation | /ˌɪntəˈfɪə wɪð ˈtʃɪldrənz ˈɡrəʊɪŋ ˈbɒdiz/ | ảnh hưởng tới cơ thể đang phát triển của trẻ |
+| social reformers | noun | /ˈsəʊʃəl rɪˈfɔːməz/ | nhà cải cách xã hội |
+| potential of systematic studies | academic phrase | /pəˈtenʃəl əv ˌsɪstəˈmætɪk ˈstʌdiz/ | tiềm năng của các nghiên cứu có hệ thống |
+| early deprivations | noun | /ˈɜːli ˌdeprɪˈveɪʃənz/ | sự thiếu thốn từ sớm |
+| working condition of children | collocation | /ˈwɜːkɪŋ kənˈdɪʃən əv ˈtʃɪldrən/ | điều kiện làm việc của trẻ em |
+| emergence of legal protection | academic phrase | /ɪˈmɜːdʒəns əv ˈliːɡl prəˈtekʃən/ | sự xuất hiện của bảo vệ pháp lý |
+| rise of schools | collocation | /raɪz əv skuːlz/ | sự phát triển của trường học |
+| worst forms of child exploitation | collocation | /wɜːst fɔːmz əv tʃaɪld ˌeksplɔɪˈteɪʃən/ | những hình thức bóc lột trẻ em tồi tệ nhất |
+| contribute to the evolution | lexical pattern | /kənˈtrɪbjuːt tuː ði ˌiːvəˈluːʃən/ | góp phần vào sự phát triển/thay đổi |
+| deem somebody/something to be + noun/adjective | lexical pattern | /diːm/ | coi ai/cái gì là |
+| deemed to be | lexical pattern | /diːmd tuː biː/ | được xem là |
+| privileged minority | collocation | /ˈprɪvəlɪdʒd maɪˈnɒrəti/ | thiểu số có đặc quyền |
+| dependency, development and learning | academic collocation | /dɪˈpendənsi dɪˈveləpmənt ænd ˈlɜːnɪŋ/ | sự phụ thuộc, phát triển và học tập |
+| controversial concept | collocation | /ˌkɒntrəˈvɜːʃəl ˈkɒnsept/ | khái niệm gây tranh cãi |
+| global concern | collocation | /ˈɡləʊbl kənˈsɜːn/ | mối quan ngại toàn cầu |
+| half-time schools | noun | /ˌhɑːfˈtaɪm skuːlz/ | trường bán thời gian |
+| significant proportion | collocation | /sɪɡˈnɪfɪkənt prəˈpɔːʃən/ | tỷ lệ đáng kể |
+| drop out | phrasal verb | /drɒp aʊt/ | bỏ học |
+| core to the concept | collocation | /kɔː tə ðə ˈkɒnsept/ | cốt lõi của khái niệm |
+| significant part | collocation | /sɪɡˈnɪfɪkənt pɑːt/ | phần quan trọng/đáng kể |
+| institution dedicated to shaping the minds, behaviour and morals | academic phrase | /ˌɪnstɪˈtjuːʃən ˈdedɪkeɪtɪd tuː ˈʃeɪpɪŋ ðə maɪndz bɪˈheɪvjə ænd ˈmɒrəlz/ | tổ chức chuyên định hình tư duy, hành vi và đạo đức |
+| management of children’s waking hours | academic phrase | /ˈmænɪdʒmənt əv ˈtʃɪldrənz ˈweɪkɪŋ aʊəz/ | sự quản lý thời gian thức của trẻ |
+| parental involvement | collocation | /pəˈrentl ɪnˈvɒlvmənt/ | sự tham gia của phụ huynh |
+| mass schooling | noun | /mæs ˈskuːlɪŋ/ | giáo dục đại trà |
+| pose challenges | lexical pattern | /pəʊz ˈtʃælɪndʒɪz/ | đặt ra thách thức |
+| protecting children’s welfare | collocation | /prəˈtektɪŋ ˈtʃɪldrənz ˈwelfeə/ | bảo vệ phúc lợi trẻ em |
+| promote learning | lexical pattern | /prəˈməʊt ˈlɜːnɪŋ/ | thúc đẩy việc học |
+| unique needs | collocation | /juːˈniːk niːdz/ | nhu cầu đặc thù |
+| in the light of + noun | lexical pattern | /ɪn ðə laɪt əv/ | dựa trên / xét theo |
+| best way to assess children’s progress | academic phrase | /best weɪ tə əˈses ˈtʃɪldrənz ˈprəʊɡres/ | cách tốt nhất để đánh giá sự tiến bộ của trẻ |
+| sort and select children according to their abilities and potential | academic phrase | /sɔːt ænd sɪˈlekt ˈtʃɪldrən əˈkɔːdɪŋ tuː ðeər əˈbɪlətiz ænd pəˈtenʃəl/ | phân loại và lựa chọn trẻ theo năng lực và tiềm năng |

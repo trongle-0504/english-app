@@ -1,0 +1,2149 @@
+{
+  "metadata": {
+    "lesson_id": "news-collocations",
+    "topic": "Society and institutions",
+    "chapter_title": "News",
+    "pdf_file": "News.pdf"
+  },
+  "mindmap_data": {
+    "topic": "Society and institutions",
+    "chapter": {
+      "chapter_id": "ch_news",
+      "title": "News",
+      "sessions": [
+        {
+          "session_id": "s_news_a",
+          "title": "A Collocations about newspapers",
+          "description_vi": "Các cụm từ thường dùng liên quan đến báo chí.",
+          "value": "# News\n\n## A Collocations about newspapers\n\n| collocation                   | example                                                                                           |\n| ----------------------------- | ------------------------------------------------------------------------------------------------- |\n| a (news) story breaks         | The singer was out of the country when the **story** about his wife **broke**.                            |\n| news comes in                 | TV newscaster: **News** has just **come in** of an earthquake.                                            |\n| news leaks out                | Although the two stars tried to keep their relationship secret, **news** of it soon **leaked out**.       |\n| it hit the headlines          | The scandal is expected to **hit the headlines** tomorrow.                                            |\n| make headlines                | A dramatic story like that will **make headlines** world-wide.                                        |\n| front-page headline           | The scandal was the **front-page headline** in all the newspapers.                                    |\n| the latest news               | **The latest news** from the earthquake zone is more hopeful.                                         |\n| be headline/front-page news   | Any story about the Royal Family will **be headline/front-page news** in Britain.                     |\n| item of news                  | The main **item of news** today is the earthquake in Broskva City.                                    |\n| run a story (publish a story) | The Daily Times recently **ran a story** about an affair between a famous rock star and a politician. |\n| flick through the newspaper   | He **flicked through the newspaper** as he didn’t have time to read it properly.                      |",
+          "children_nodes": [
+            {
+              "node_id": "story_breaks",
+              "label": "a (news) story breaks"
+            },
+            {
+              "node_id": "news_comes_in",
+              "label": "news comes in"
+            },
+            {
+              "node_id": "news_leaks_out",
+              "label": "news leaks out"
+            },
+            {
+              "node_id": "hit_the_headlines",
+              "label": "it hit the headlines"
+            },
+            {
+              "node_id": "make_headlines",
+              "label": "make headlines"
+            },
+            {
+              "node_id": "front_page_headline",
+              "label": "front-page headline"
+            },
+            {
+              "node_id": "latest_news",
+              "label": "the latest news"
+            },
+            {
+              "node_id": "headline_news",
+              "label": "be headline/front-page news"
+            },
+            {
+              "node_id": "item_of_news",
+              "label": "item of news"
+            },
+            {
+              "node_id": "run_a_story",
+              "label": "run a story"
+            },
+            {
+              "node_id": "flick_through_newspaper",
+              "label": "flick through the newspaper"
+            }
+          ]
+        },
+        {
+          "session_id": "s_news_b",
+          "title": "B The language of news stories",
+          "description_vi": "Ngôn ngữ được sử dụng trong các bản tin.",
+          "value": "# News\n\n## B The language of news stories\n\n### MINISTER GIVES THE GO-AHEAD TO PLANS\n\nIn a surprising turn of events last night, the government agreed to plans for the development of the City. **Interested parties**¹ will hold talks throughout the week.\n\n### ANTI-SMOKING CAMPAIGN\n\nThe Minister for Health today outlined plans for a national **anti-smoking campaign**. The government intends to launch the campaign in the new year.\n\n### MINISTER QUITS\n\nThe Arts Minister has resigned after only six months in the **top job**. He has attracted attention over his **controversial decision** to **re-introduce charges** for museum entry.\n\n### TOURIST TAKEN CAPTIVE\n\nA tourist was **taken hostage** when **rebel troops** **seized control** of St Pips Airport last night. The government has **lost control** of the area. Our reporter in St Pips is **keeping a close watch** on the situation and we shall be keeping you informed as the **news develops**.\n\n### PEACE TALKS END IN FAILURE\n\n**Peace talks** between the Eastern Liberation Army and the government of Karavia **broke down** last night. **Civil war** is now likely.\n\n### LIGHTNING STRIKES\n\nA building **caught fire** when **lightning struck** a farm in Hampshire yesterday. Fortunately there was no **loss of life**.\n\n¹ people or groups who have a connection with a particular situation, event, etc.",
+          "children_nodes": [
+            {
+              "node_id": "gives_go_ahead",
+              "label": "GIVES THE GO-AHEAD"
+            },
+            {
+              "node_id": "interested_parties",
+              "label": "Interested parties"
+            },
+            {
+              "node_id": "anti_smoking_campaign",
+              "label": "ANTI-SMOKING CAMPAIGN"
+            },
+            {
+              "node_id": "minister_quits",
+              "label": "MINISTER QUITS"
+            },
+            {
+              "node_id": "top_job",
+              "label": "top job"
+            },
+            {
+              "node_id": "controversial_decision",
+              "label": "controversial decision"
+            },
+            {
+              "node_id": "re_introduce_charges",
+              "label": "re-introduce charges"
+            },
+            {
+              "node_id": "tourist_taken_captive",
+              "label": "TOURIST TAKEN CAPTIVE"
+            },
+            {
+              "node_id": "taken_hostage",
+              "label": "taken hostage"
+            },
+            {
+              "node_id": "rebel_troops",
+              "label": "rebel troops"
+            },
+            {
+              "node_id": "seized_control",
+              "label": "seized control"
+            },
+            {
+              "node_id": "lost_control",
+              "label": "lost control"
+            },
+            {
+              "node_id": "keeping_close_watch",
+              "label": "keeping a close watch"
+            },
+            {
+              "node_id": "news_develops",
+              "label": "news develops"
+            },
+            {
+              "node_id": "peace_talks",
+              "label": "Peace talks"
+            },
+            {
+              "node_id": "broke_down",
+              "label": "broke down"
+            },
+            {
+              "node_id": "civil_war",
+              "label": "Civil war"
+            },
+            {
+              "node_id": "lightning_strikes",
+              "label": "LIGHTNING STRIKES"
+            },
+            {
+              "node_id": "caught_fire",
+              "label": "caught fire"
+            },
+            {
+              "node_id": "lightning_struck",
+              "label": "lightning struck"
+            },
+            {
+              "node_id": "loss_of_life",
+              "label": "loss of life"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "section_id": "A",
+      "session_ref": "s_news_a",
+      "title": "Collocations about newspapers",
+      "instruction_vi": "Học các cụm từ sau đây và cách sử dụng chúng.",
+      "content_items": [
+        {
+          "type": "table",
+          "value": "| collocation                   | example                                                                                           |\n| ----------------------------- | ------------------------------------------------------------------------------------------------- |\n| a (news) story breaks         | The singer was out of the country when the **story** about his wife **broke**.                            |\n| news comes in                 | TV newscaster: **News** has just **come in** of an earthquake.                                            |\n| news leaks out                | Although the two stars tried to keep their relationship secret, **news** of it soon **leaked out**.       |\n| it hit the headlines          | The scandal is expected to **hit the headlines** tomorrow.                                            |\n| make headlines                | A dramatic story like that will **make headlines** world-wide.                                        |\n| front-page headline           | The scandal was the **front-page headline** in all the newspapers.                                    |\n| the latest news               | **The latest news** from the earthquake zone is more hopeful.                                         |\n| be headline/front-page news   | Any story about the Royal Family will **be headline/front-page news** in Britain.                     |\n| item of news                  | The main **item of news** today is the earthquake in Broskva City.                                    |\n| run a story (publish a story) | The Daily Times recently **ran a story** about an affair between a famous rock star and a politician. |\n| flick through the newspaper   | He **flicked through the newspaper** as he didn’t have time to read it properly.                      |",
+          "related_vocabulary_ids": [
+            "story_breaks",
+            "news_comes_in",
+            "news_leaks_out",
+            "hit_the_headlines",
+            "make_headlines",
+            "front_page_headline",
+            "latest_news",
+            "headline_news",
+            "item_of_news",
+            "run_a_story",
+            "flick_through_newspaper"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "B",
+      "session_ref": "s_news_b",
+      "title": "The language of news stories",
+      "instruction_vi": "Đọc các tiêu đề và bản tin sau đây.",
+      "content_items": [
+        {
+          "type": "markdown",
+          "value": "### MINISTER GIVES THE GO-AHEAD TO PLANS\n\nIn a surprising turn of events last night, the government agreed to plans for the development of the City. **Interested parties**¹ will hold talks throughout the week.\n\n### ANTI-SMOKING CAMPAIGN\n\nThe Minister for Health today outlined plans for a national **anti-smoking campaign**. The government intends to launch the campaign in the new year.\n\n### MINISTER QUITS\n\nThe Arts Minister has resigned after only six months in the **top job**. He has attracted attention over his **controversial decision** to **re-introduce charges** for museum entry.\n\n### TOURIST TAKEN CAPTIVE\n\nA tourist was **taken hostage** when **rebel troops** **seized control** of St Pips Airport last night. The government has **lost control** of the area. Our reporter in St Pips is **keeping a close watch** on the situation and we shall be keeping you informed as the **news develops**.\n\n### PEACE TALKS END IN FAILURE\n\n**Peace talks** between the Eastern Liberation Army and the government of Karavia **broke down** last night. **Civil war** is now likely.\n\n### LIGHTNING STRIKES\n\nA building **caught fire** when **lightning struck** a farm in Hampshire yesterday. Fortunately there was no **loss of life**.\n\n¹ people or groups who have a connection with a particular situation, event, etc.",
+          "related_vocabulary_ids": [
+            "gives_go_ahead",
+            "interested_parties",
+            "anti_smoking_campaign",
+            "minister_quits",
+            "top_job",
+            "controversial_decision",
+            "re_introduce_charges",
+            "tourist_taken_captive",
+            "taken_hostage",
+            "rebel_troops",
+            "seized_control",
+            "lost_control",
+            "keeping_close_watch",
+            "news_develops",
+            "peace_talks",
+            "broke_down",
+            "civil_war",
+            "lightning_strikes",
+            "caught_fire",
+            "lightning_struck",
+            "loss_of_life"
+          ]
+        }
+      ]
+    }
+  ],
+  "vocabulary_data": {
+    "story_breaks": {
+      "word": "story breaks",
+      "pronunciation": "/ˈstɔːri breɪks/",
+      "image": {
+        "type": "prompt",
+        "value": "a news story breaking",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Coletiva_de_Impresa_voo_447.jpg/960px-Coletiva_de_Impresa_voo_447.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "noun+verb",
+      "senses": [
+        {
+          "definition_vi": "Một câu chuyện tin tức bắt đầu được công bố hoặc lan truyền.",
+          "examples": [
+            "The singer was out of the country when the story about his wife broke."
+          ],
+          "grammar_patterns": [
+            "a (news) story breaks"
+          ],
+          "usage_notes_vi": "Thường dùng để chỉ một tin tức đột ngột hoặc quan trọng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "How quickly does news spread on social media today?",
+          "fits": []
+        },
+        {
+          "context": "Politics",
+          "question": "How do politicians usually react when a scandal becomes public?",
+          "fits": []
+        },
+        {
+          "context": "Business",
+          "question": "What happens to a company's shares when bad news about it appears?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "story breaks",
+          "text": "When a big story breaks, reporters rush to the scene."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "story breaks",
+          "source": "The singer was abroad when the news about his wife first became public.",
+          "model": "The singer was abroad when the story about his wife broke."
+        },
+        {
+          "target": "story breaks",
+          "source": "When an important piece of news first appears, journalists work through the night.",
+          "model": "When a big story breaks, journalists work through the night."
+        }
+      ]
+    },
+    "news_comes_in": {
+      "word": "news comes in",
+      "pronunciation": "/njuːz kʌmz ɪn/",
+      "image": {
+        "type": "prompt",
+        "value": "news coming in on a screen",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/CBS_News_Bulletin_1963.PNG/960px-CBS_News_Bulletin_1963.PNG"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "noun+verb",
+      "senses": [
+        {
+          "definition_vi": "Tin tức vừa mới nhận được hoặc được báo cáo.",
+          "examples": [
+            "TV newscaster: News has just come in of an earthquake."
+          ],
+          "grammar_patterns": [
+            "news comes in"
+          ],
+          "usage_notes_vi": "Diễn tả việc nhận được thông tin mới."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "How do TV channels deal with unexpected events during a live programme?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How do people find out about natural disasters today?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "How do fans follow important matches when they cannot watch them?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "news comes in",
+          "text": "News has just come in of an earthquake."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "news comes in",
+          "source": "We have just received reports of an earthquake.",
+          "model": "News has just come in of an earthquake."
+        },
+        {
+          "target": "news comes in",
+          "source": "Reports are arriving of a big fire in the city centre.",
+          "model": "News is coming in of a big fire in the city centre."
+        }
+      ]
+    },
+    "news_leaks_out": {
+      "word": "news leaks out",
+      "pronunciation": "/njuːz liːks aʊt/",
+      "image": {
+        "type": "prompt",
+        "value": "information leaking out",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Dissident_Activities_in_Indochina.svg/960px-Dissident_Activities_in_Indochina.svg.png"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "noun+verb",
+      "senses": [
+        {
+          "definition_vi": "Thông tin mật bị tiết lộ ra ngoài một cách không chính thức.",
+          "examples": [
+            "Although the two stars tried to keep their relationship secret, news of it soon leaked out."
+          ],
+          "grammar_patterns": [
+            "news leaks out"
+          ],
+          "usage_notes_vi": "Thường ám chỉ việc thông tin bị lộ ra ngoài một cách không mong muốn."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "How do journalists find out about secret celebrity relationships?",
+          "fits": []
+        },
+        {
+          "context": "Business",
+          "question": "What happens when a company's secret plans become public too early?",
+          "fits": []
+        },
+        {
+          "context": "Politics",
+          "question": "Why is it hard for governments to keep information secret?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "news leaks out",
+          "text": "News of the secret plan soon leaked out."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "news leaks out",
+          "source": "They tried to keep their relationship secret, but people soon found out.",
+          "model": "They tried to keep their relationship secret, but news of it soon leaked out."
+        },
+        {
+          "target": "news leaks out",
+          "source": "Information about the job cuts became known before the official announcement.",
+          "model": "News of the job cuts leaked out before the official announcement."
+        }
+      ]
+    },
+    "hit_the_headlines": {
+      "word": "hit the headlines",
+      "pronunciation": "/hɪt ðə ˈhedlaɪnz/",
+      "image": {
+        "type": "prompt",
+        "value": "a newspaper headline",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Watergate_complex.jpg/960px-Watergate_complex.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun phrase",
+      "senses": [
+        {
+          "definition_vi": "Trở thành tiêu đề chính trên báo chí, được nhiều người biết đến.",
+          "examples": [
+            "The scandal is expected to hit the headlines tomorrow."
+          ],
+          "grammar_patterns": [
+            "hit the headlines"
+          ],
+          "usage_notes_vi": "Diễn tả một sự kiện gây chú ý lớn và được đăng tải rộng rãi."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "What kinds of stories get the most attention in newspapers?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Why do environmental problems only get attention after a disaster?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "Why do some athletes become famous outside sport?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "hit the headlines",
+          "text": "The scandal will hit the headlines tomorrow."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "hit the headlines",
+          "source": "The scandal is expected to appear on the front pages tomorrow.",
+          "model": "The scandal is expected to hit the headlines tomorrow."
+        },
+        {
+          "target": "hit the headlines",
+          "source": "The village became famous in the news after the flood.",
+          "model": "The village hit the headlines after the flood."
+        }
+      ]
+    },
+    "make_headlines": {
+      "word": "make headlines",
+      "pronunciation": "/meɪk ˈhedlaɪnz/",
+      "image": {
+        "type": "prompt",
+        "value": "a newspaper headline",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/NYTimes-Page1-11-11-1918.jpg/960px-NYTimes-Page1-11-11-1918.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun phrase",
+      "senses": [
+        {
+          "definition_vi": "Trở thành tiêu đề chính trên báo chí.",
+          "examples": [
+            "A dramatic story like that will make headlines world-wide."
+          ],
+          "grammar_patterns": [
+            "make headlines"
+          ],
+          "usage_notes_vi": "Tương tự 'hit the headlines', nhấn mạnh việc trở thành tin tức nổi bật."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "Why do the media focus so much on bad news?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "Which new inventions have recently attracted a lot of media attention?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "Why do sports stars' private lives get so much attention?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "make headlines",
+          "text": "A dramatic story like that will make headlines."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "make headlines",
+          "source": "A dramatic story like that will be in the news around the world.",
+          "model": "A dramatic story like that will make headlines worldwide."
+        },
+        {
+          "target": "make headlines",
+          "source": "The young scientist's discovery was reported in newspapers everywhere.",
+          "model": "The young scientist's discovery made headlines everywhere."
+        }
+      ]
+    },
+    "front_page_headline": {
+      "word": "front-page headline",
+      "pronunciation": "/ˈfrʌnt peɪdʒ ˈhedlaɪn/",
+      "image": {
+        "type": "prompt",
+        "value": "a front page headline of a newspaper",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/8/82/Airfleet_ordered_to_West_Virginia_Battlefield_during_the_Blair_Mountain_fight_1921.png"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Tiêu đề chính nằm ở trang đầu của một tờ báo.",
+          "examples": [
+            "The scandal was the front-page headline in all the newspapers."
+          ],
+          "grammar_patterns": [
+            "front-page headline"
+          ],
+          "usage_notes_vi": "Chỉ tiêu đề quan trọng nhất, được ưu tiên đăng ở trang nhất."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "What kind of news appears at the top of newspapers in your country?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "How do newspapers report a big victory by the national team?",
+          "fits": []
+        },
+        {
+          "context": "Politics",
+          "question": "How do newspapers cover elections in your country?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "front-page headline",
+          "text": "The scandal was the front-page headline in every newspaper."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "front-page headline",
+          "source": "The scandal was the main story on the first page of all the newspapers.",
+          "model": "The scandal was the front-page headline in all the newspapers."
+        },
+        {
+          "target": "front-page headline",
+          "source": "The team's victory was the biggest title on the cover of every paper.",
+          "model": "The team's victory was the front-page headline in every paper."
+        }
+      ]
+    },
+    "latest_news": {
+      "word": "latest news",
+      "pronunciation": "/ˈleɪtɪst njuːz/",
+      "image": {
+        "type": "prompt",
+        "value": "latest news update",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/NYTimes-Page1-11-11-1918.jpg/960px-NYTimes-Page1-11-11-1918.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Thông tin mới nhất, cập nhật nhất.",
+          "examples": [
+            "The latest news from the earthquake zone is more hopeful."
+          ],
+          "grammar_patterns": [
+            "the latest news"
+          ],
+          "usage_notes_vi": "Dùng để chỉ những tin tức vừa mới xảy ra hoặc vừa được cập nhật."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "How do young people keep up with current events?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How do people follow information during a health crisis?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How has the internet changed how people get information?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "latest news",
+          "text": "Have you heard the latest news about the storm?"
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "latest news",
+          "source": "The most recent reports from the earthquake area are more hopeful.",
+          "model": "The latest news from the earthquake zone is more hopeful."
+        },
+        {
+          "target": "latest news",
+          "source": "I check my phone every morning for new updates.",
+          "model": "I check my phone every morning for the latest news."
+        }
+      ]
+    },
+    "headline_news": {
+      "word": "be headline/front-page news",
+      "pronunciation": "/bi ˈhedlaɪn/ˈfrʌnt peɪdʒ njuːz/",
+      "image": {
+        "type": "prompt",
+        "value": "a newspaper headline",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/NYTimes-Page1-11-11-1918.jpg/960px-NYTimes-Page1-11-11-1918.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+adjective/noun phrase",
+      "senses": [
+        {
+          "definition_vi": "Là tin tức quan trọng, xứng đáng được đăng trên trang nhất hoặc làm tiêu đề chính.",
+          "examples": [
+            "Any story about the Royal Family will be headline/front-page news in Britain."
+          ],
+          "grammar_patterns": [
+            "be headline/front-page news"
+          ],
+          "usage_notes_vi": "Diễn tả tầm quan trọng của một tin tức, đủ để trở thành tiêu điểm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "What kinds of stories get the most attention in your country?",
+          "fits": []
+        },
+        {
+          "context": "Politics",
+          "question": "How much attention does the media give to politicians' private lives?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Should climate change get more attention from newspapers?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "be headline/front-page news",
+          "text": "Any story about the royal family will be headline news."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "be headline/front-page news",
+          "source": "Any story about the royal family is always the main news in Britain.",
+          "model": "Any story about the royal family will be headline news in Britain."
+        },
+        {
+          "target": "be headline/front-page news",
+          "source": "The election results were the most important story in every paper.",
+          "model": "The election results were front-page news in every paper."
+        }
+      ]
+    },
+    "item_of_news": {
+      "word": "item of news",
+      "pronunciation": "/ˈaɪtəm ɒv njuːz/",
+      "image": {
+        "type": "prompt",
+        "value": "a news item",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/NYTimes-Page1-11-11-1918.jpg/960px-NYTimes-Page1-11-11-1918.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "noun+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Một mẩu tin, một mẩu thông tin.",
+          "examples": [
+            "The main item of news today is the earthquake in Broskva City."
+          ],
+          "grammar_patterns": [
+            "item of news"
+          ],
+          "usage_notes_vi": "Dùng để chỉ một tin tức hoặc một phần thông tin cụ thể."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "What was the most important news story in your country this week?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Should students discuss current events in class?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "How do apps decide which stories to show users?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "item of news",
+          "text": "The main item of news today is the earthquake."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "item of news",
+          "source": "The most important story today is the earthquake.",
+          "model": "The main item of news today is the earthquake."
+        },
+        {
+          "target": "item of news",
+          "source": "Every morning, the teacher shares one short news story with the class.",
+          "model": "Every morning, the teacher shares one item of news with the class."
+        }
+      ]
+    },
+    "run_a_story": {
+      "word": "run a story",
+      "pronunciation": "/rʌn ə ˈstɔːri/",
+      "image": {
+        "type": "prompt",
+        "value": "a newspaper publishing a story",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/NYTimes-Page1-11-11-1918.jpg/960px-NYTimes-Page1-11-11-1918.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Xuất bản một câu chuyện tin tức.",
+          "examples": [
+            "The Daily Times recently ran a story about an affair between a famous rock star and a politician."
+          ],
+          "grammar_patterns": [
+            "run a story"
+          ],
+          "usage_notes_vi": "Thường được sử dụng bởi các tòa soạn báo hoặc nhà xuất bản."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "How do newspapers decide what to publish?",
+          "fits": []
+        },
+        {
+          "context": "Politics",
+          "question": "Should newspapers publish stories about politicians' private lives?",
+          "fits": []
+        },
+        {
+          "context": "Business",
+          "question": "How can a newspaper article damage a company?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "run a story",
+          "text": "The local paper will run a story about the festival."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "run a story",
+          "source": "A newspaper recently published an article about a famous rock star.",
+          "model": "A newspaper recently ran a story about a famous rock star."
+        },
+        {
+          "target": "run a story",
+          "source": "The magazine decided not to print the article about the singer.",
+          "model": "The magazine decided not to run the story about the singer."
+        }
+      ]
+    },
+    "flick_through_newspaper": {
+      "word": "flick through the newspaper",
+      "pronunciation": "/flɪk ˈθruː ðə ˈnjuːzˌpeɪpər/",
+      "image": {
+        "type": "prompt",
+        "value": "someone flicking through a newspaper",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/NYTimes-Page1-11-11-1918.jpg/960px-NYTimes-Page1-11-11-1918.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+preposition+noun phrase",
+      "senses": [
+        {
+          "definition_vi": "Lướt nhanh qua tờ báo, xem qua mà không đọc kỹ.",
+          "examples": [
+            "He flicked through the newspaper as he didn’t have time to read it properly."
+          ],
+          "grammar_patterns": [
+            "flick through the newspaper"
+          ],
+          "usage_notes_vi": "Diễn tả hành động xem lướt qua, không tập trung đọc chi tiết."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "Do people still read printed newspapers in your country?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What do you do in the morning before starting work?",
+          "fits": []
+        },
+        {
+          "context": "Transport",
+          "question": "What do people do to pass the time on public transport?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "flick through the newspaper",
+          "text": "He flicked through the newspaper while eating breakfast."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "flick through the newspaper",
+          "source": "He looked quickly through the paper because he had no time to read it properly.",
+          "model": "He flicked through the newspaper as he didn't have time to read it properly."
+        },
+        {
+          "target": "flick through the newspaper",
+          "source": "On the train, I quickly turn the pages of the paper.",
+          "model": "On the train, I flick through the newspaper."
+        }
+      ]
+    },
+    "gives_go_ahead": {
+      "word": "gives the go-ahead",
+      "pronunciation": "/ɡɪvz ðə ˈɡəʊəˌhed/",
+      "image": {
+        "type": "prompt",
+        "value": "a green light signal",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Modern_British_LED_Traffic_Light.jpg/960px-Modern_British_LED_Traffic_Light.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+determiner+noun",
+      "senses": [
+        {
+          "definition_vi": "Cho phép hoặc chấp thuận một dự án, kế hoạch để bắt đầu.",
+          "examples": [
+            "The government agreed to plans for the development of the City."
+          ],
+          "grammar_patterns": [
+            "give the go-ahead"
+          ],
+          "usage_notes_vi": "Thường dùng trong ngữ cảnh chính trị, kinh doanh để chỉ sự phê duyệt."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Politics",
+          "question": "How are large building projects approved in your country?",
+          "fits": []
+        },
+        {
+          "context": "Business",
+          "question": "Who decides whether a new company project can start?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Should governments approve new airports despite environmental concerns?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "gives the go-ahead",
+          "text": "The council will give the go-ahead for the new park."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "gives the go-ahead",
+          "source": "The government agreed to plans for the new stadium.",
+          "model": "The government gave the go-ahead for the new stadium."
+        },
+        {
+          "target": "gives the go-ahead",
+          "source": "The boss finally said we could start the project.",
+          "model": "The boss finally gave us the go-ahead to start the project."
+        }
+      ]
+    },
+    "interested_parties": {
+      "word": "interested parties",
+      "pronunciation": "/ˈɪntrəstɪd ˈpɑːtiz/",
+      "image": {
+        "type": "prompt",
+        "value": "people involved in a discussion",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sitzung_von_Wiki_Loves_Broadcast_im_Kontor_Hamburg.jpg/960px-Sitzung_von_Wiki_Loves_Broadcast_im_Kontor_Hamburg.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Những người hoặc nhóm người có liên quan hoặc bị ảnh hưởng bởi một tình huống, sự kiện hoặc thỏa thuận.",
+          "examples": [
+            "Interested parties will hold talks throughout the week."
+          ],
+          "grammar_patterns": [
+            "interested parties"
+          ],
+          "usage_notes_vi": "Thuật ngữ pháp lý hoặc kinh doanh, chỉ những bên có quyền lợi hoặc trách nhiệm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Business",
+          "question": "Who should be involved when a company makes a major decision?",
+          "fits": []
+        },
+        {
+          "context": "Politics",
+          "question": "How should governments make decisions that affect many groups?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "Who should be consulted before a new dam is built?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "interested parties",
+          "text": "All interested parties will meet next week."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "interested parties",
+          "source": "Everyone involved in the deal will hold talks this week.",
+          "model": "Interested parties will hold talks this week."
+        },
+        {
+          "target": "interested parties",
+          "source": "The council invited all the people and groups affected by the plan to comment.",
+          "model": "The council invited all interested parties to comment on the plan."
+        }
+      ]
+    },
+    "anti_smoking_campaign": {
+      "word": "anti-smoking campaign",
+      "pronunciation": "/ˌænti ˈsməʊkɪŋ kæmˈpeɪn/",
+      "image": {
+        "type": "prompt",
+        "value": "anti-smoking advertisement",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Anti_Tobacco_Movement_Jakarta.jpg/960px-Anti_Tobacco_Movement_Jakarta.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một chiến dịch nhằm mục đích giảm hoặc ngăn chặn việc hút thuốc lá.",
+          "examples": [
+            "The Minister for Health today outlined plans for a national anti-smoking campaign."
+          ],
+          "grammar_patterns": [
+            "anti-smoking campaign"
+          ],
+          "usage_notes_vi": "Thường được thực hiện bởi các tổ chức y tế công cộng hoặc chính phủ."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Health",
+          "question": "What can governments do to reduce smoking?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "How can schools stop teenagers from starting to smoke?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Do health adverts on TV really change people's behaviour?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "anti-smoking campaign",
+          "text": "The government started a national anti-smoking campaign."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "anti-smoking campaign",
+          "source": "The minister announced plans to encourage people to stop smoking.",
+          "model": "The minister announced plans for a national anti-smoking campaign."
+        },
+        {
+          "target": "anti-smoking campaign",
+          "source": "The school organised activities to warn students about cigarettes.",
+          "model": "The school organised an anti-smoking campaign for students."
+        }
+      ]
+    },
+    "minister_quits": {
+      "word": "Minister quits",
+      "pronunciation": "/ˈmɪnɪstər kwɪts/",
+      "image": {
+        "type": "prompt",
+        "value": "a minister resigning",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Prime_Minister_Boris_Johnson%27s_statement_in_Downing_Street_7_July_2022.png/960px-Prime_Minister_Boris_Johnson%27s_statement_in_Downing_Street_7_July_2022.png"
+      },
+      "part_of_speech": [
+        "noun phrase",
+        "verb"
+      ],
+      "collocation_type": "noun+verb",
+      "senses": [
+        {
+          "definition_vi": "Một bộ trưởng từ chức khỏi vị trí của mình.",
+          "examples": [
+            "The Arts Minister has resigned after only six months in the top job."
+          ],
+          "grammar_patterns": [
+            "Minister quits"
+          ],
+          "usage_notes_vi": "Tiêu đề tin tức thường dùng để thông báo việc từ chức của một quan chức cấp cao."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Politics",
+          "question": "What should happen when a politician is involved in a scandal?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "How do newspapers report on politicians who leave their jobs?",
+          "fits": []
+        },
+        {
+          "context": "Society",
+          "question": "Should politicians resign when their policies fail?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "Minister quits",
+          "text": "The minister quits after a serious scandal."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "Minister quits",
+          "source": "The health minister has resigned over the scandal.",
+          "model": "Health Minister quits over scandal."
+        },
+        {
+          "target": "Minister quits",
+          "source": "The newspaper reported that the minister had resigned.",
+          "model": "The newspaper headline read: Minister quits."
+        }
+      ]
+    },
+    "top_job": {
+      "word": "top job",
+      "pronunciation": "/tɒp dʒɒb/",
+      "image": {
+        "type": "prompt",
+        "value": "a person in a high position",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Seal_of_the_President_of_the_United_States.svg/960px-Seal_of_the_President_of_the_United_States.svg.png"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một vị trí công việc có cấp bậc cao nhất hoặc rất quan trọng trong một tổ chức hoặc chính phủ.",
+          "examples": [
+            "He has resigned after only six months in the top job."
+          ],
+          "grammar_patterns": [
+            "the top job"
+          ],
+          "usage_notes_vi": "Thường ám chỉ vị trí lãnh đạo cao nhất."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Work",
+          "question": "What qualities do people need to reach the highest positions in a company?",
+          "fits": []
+        },
+        {
+          "context": "Politics",
+          "question": "Should there be age limits for the most senior political positions?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "What makes someone a good manager of a national team?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "top job",
+          "text": "She was offered the top job at the bank."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "top job",
+          "source": "He has resigned after only six months as head of the department.",
+          "model": "He has resigned after only six months in the top job."
+        },
+        {
+          "target": "top job",
+          "source": "Few women reach the most senior position in big companies.",
+          "model": "Few women get the top job in big companies."
+        }
+      ]
+    },
+    "controversial_decision": {
+      "word": "controversial decision",
+      "pronunciation": "/ˌkɒntrəˈvɜːʃəl dɪˈsɪʒən/",
+      "image": {
+        "type": "prompt",
+        "value": "a controversial decision",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Lincoln_Memorial_statue_at_night_2011.jpg/960px-Lincoln_Memorial_statue_at_night_2011.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một quyết định gây ra tranh cãi hoặc bất đồng ý kiến.",
+          "examples": [
+            "He has attracted attention over his controversial decision to re-introduce charges for museum entry."
+          ],
+          "grammar_patterns": [
+            "controversial decision"
+          ],
+          "usage_notes_vi": "Thường dẫn đến sự phản đối hoặc thảo luận sôi nổi."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Politics",
+          "question": "Which government decision has caused the most disagreement recently?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "How do fans react when a referee makes a doubtful call?",
+          "fits": []
+        },
+        {
+          "context": "Education",
+          "question": "Should schools ban mobile phones completely?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "controversial decision",
+          "text": "The referee made a controversial decision at the end."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "controversial decision",
+          "source": "His decision to bring back museum charges caused a lot of disagreement.",
+          "model": "His controversial decision to bring back museum charges attracted attention."
+        },
+        {
+          "target": "controversial decision",
+          "source": "The school's choice to cancel the trip upset many parents.",
+          "model": "The school made a controversial decision to cancel the trip."
+        }
+      ]
+    },
+    "re_introduce_charges": {
+      "word": "re-introduce charges",
+      "pronunciation": "/ˌriː ɪntrəˈdjuːs ˈtʃɑːdʒɪz/",
+      "image": {
+        "type": "prompt",
+        "value": "a sign indicating charges",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Subic%E2%80%93Clark%E2%80%93Tarlac_Expressway_Toll_Plaza_-_Tarlac_Barrier_9.jpg/960px-Subic%E2%80%93Clark%E2%80%93Tarlac_Expressway_Toll_Plaza_-_Tarlac_Barrier_9.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Áp dụng lại các khoản phí hoặc lệ phí đã từng bị bãi bỏ.",
+          "examples": [
+            "His controversial decision to re-introduce charges for museum entry."
+          ],
+          "grammar_patterns": [
+            "re-introduce charges"
+          ],
+          "usage_notes_vi": "Thường liên quan đến việc thu phí dịch vụ hoặc sử dụng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Culture",
+          "question": "Should museums be free for everyone?",
+          "fits": []
+        },
+        {
+          "context": "Transport",
+          "question": "Should cities bring back fees for driving in the city centre?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "Should hospitals bring back fees for their car parks?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "re-introduce charges",
+          "text": "The museum plans to re-introduce charges for entry."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "re-introduce charges",
+          "source": "He decided to bring back fees for museum entry.",
+          "model": "He decided to re-introduce charges for museum entry."
+        },
+        {
+          "target": "re-introduce charges",
+          "source": "The council will make people pay again for parking.",
+          "model": "The council will re-introduce charges for parking."
+        }
+      ]
+    },
+    "tourist_taken_captive": {
+      "word": "tourist taken captive",
+      "pronunciation": "/ˈtʊərɪst ˈteɪkən ˈkæptɪv/",
+      "image": {
+        "type": "prompt",
+        "value": "a captive tourist",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Pentonvilleiso19.jpg/960px-Pentonvilleiso19.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase",
+        "verb phrase"
+      ],
+      "collocation_type": "noun+verb phrase",
+      "senses": [
+        {
+          "definition_vi": "Một du khách bị bắt giữ làm con tin hoặc bị giam giữ trái pháp luật.",
+          "examples": [
+            "A tourist was taken hostage when rebel troops seized control of St Pips Airport last night."
+          ],
+          "grammar_patterns": [
+            "tourist taken captive"
+          ],
+          "usage_notes_vi": "Thường xảy ra trong các tình huống xung đột, khủng bố hoặc tội phạm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Travel",
+          "question": "What dangers do tourists face in conflict zones?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Why do kidnapping stories get so much attention?",
+          "fits": []
+        },
+        {
+          "context": "Politics",
+          "question": "How should governments respond when their citizens are kidnapped abroad?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "tourist taken captive",
+          "text": "A tourist was taken captive near the border."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "tourist taken captive",
+          "source": "Rebels kidnapped a tourist at the airport last night.",
+          "model": "A tourist was taken captive at the airport last night."
+        },
+        {
+          "target": "tourist taken captive",
+          "source": "A foreign visitor was seized and held by armed men.",
+          "model": "A tourist was taken captive by armed men."
+        }
+      ]
+    },
+    "taken_hostage": {
+      "word": "taken hostage",
+      "pronunciation": "/ˈteɪkən ˈhɒstɪdʒ/",
+      "image": {
+        "type": "prompt",
+        "value": "a person held hostage",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Hostage_exercise.jpeg/960px-Hostage_exercise.jpeg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Bị bắt giữ làm con tin, thường là để đòi tiền chuộc hoặc đạt được mục đích chính trị.",
+          "examples": [
+            "A tourist was taken hostage when rebel troops seized control of St Pips Airport last night."
+          ],
+          "grammar_patterns": [
+            "taken hostage"
+          ],
+          "usage_notes_vi": "Một hành động bạo lực, thường liên quan đến tội phạm hoặc khủng bố."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Politics",
+          "question": "How should governments deal with groups that kidnap people?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Why do governments warn citizens not to travel to certain areas?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Should the media report kidnappings while they are still happening?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "taken hostage",
+          "text": "A tourist was taken hostage at the airport."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "taken hostage",
+          "source": "Rebels seized a tourist and held him for money.",
+          "model": "A tourist was taken hostage by rebels."
+        },
+        {
+          "target": "taken hostage",
+          "source": "Several bank workers were held by robbers for hours.",
+          "model": "Several bank workers were taken hostage by robbers for hours."
+        }
+      ]
+    },
+    "rebel_troops": {
+      "word": "rebel troops",
+      "pronunciation": "/ˈrebəl truːps/",
+      "image": {
+        "type": "prompt",
+        "value": "rebel soldiers",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Contra_commandas_1987.jpg/960px-Contra_commandas_1987.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Lực lượng quân sự của một nhóm nổi dậy chống lại chính quyền hoặc lực lượng chiếm đóng.",
+          "examples": [
+            "A tourist was taken hostage when rebel troops seized control of St Pips Airport last night."
+          ],
+          "grammar_patterns": [
+            "rebel troops"
+          ],
+          "usage_notes_vi": "Thường xuất hiện trong các bản tin về xung đột vũ trang hoặc nội chiến."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Politics",
+          "question": "What happens when a government loses the support of its army?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Why is it dangerous to travel to countries in conflict?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "How do journalists report safely from war zones?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "rebel troops",
+          "text": "Rebel troops took control of the airport last night."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "rebel troops",
+          "source": "Soldiers fighting against the government seized the airport.",
+          "model": "Rebel troops seized the airport."
+        },
+        {
+          "target": "rebel troops",
+          "source": "Armed fighters opposed to the government attacked the town.",
+          "model": "Rebel troops attacked the town."
+        }
+      ]
+    },
+    "seized_control": {
+      "word": "seized control",
+      "pronunciation": "/siːzd kənˈtrəʊl/",
+      "image": {
+        "type": "prompt",
+        "value": "taking control of a place",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/b/b4/After_the_capture_of_the_Winter_Palace_26_October_1917.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Chiếm quyền kiểm soát một địa điểm hoặc một tình huống bằng vũ lực hoặc bất ngờ.",
+          "examples": [
+            "Rebel troops seized control of St Pips Airport last night."
+          ],
+          "grammar_patterns": [
+            "seized control"
+          ],
+          "usage_notes_vi": "Thường dùng trong bối cảnh quân sự, chính trị hoặc tội phạm."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Politics",
+          "question": "How do military groups take power in some countries?",
+          "fits": []
+        },
+        {
+          "context": "Business",
+          "question": "How do big companies take over smaller rivals?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "How did the winning team dominate the last big match you watched?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "seized control",
+          "text": "Rebel troops seized control of the airport."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "seized control",
+          "source": "Rebel troops took over the airport by force last night.",
+          "model": "Rebel troops seized control of the airport last night."
+        },
+        {
+          "target": "seized control",
+          "source": "The army suddenly took power in the capital.",
+          "model": "The army seized control of the capital."
+        }
+      ]
+    },
+    "lost_control": {
+      "word": "lost control",
+      "pronunciation": "/lɒst kənˈtrəʊl/",
+      "image": {
+        "type": "prompt",
+        "value": "a situation out of control",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Battle_strike_1934.jpg/960px-Battle_strike_1934.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Không còn quyền lực hoặc khả năng quản lý một khu vực, tình huống hoặc sự kiện.",
+          "examples": [
+            "The government has lost control of the area."
+          ],
+          "grammar_patterns": [
+            "lost control"
+          ],
+          "usage_notes_vi": "Diễn tả sự mất mát quyền lực hoặc khả năng quản lý."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Politics",
+          "question": "What happens when a government cannot manage protests?",
+          "fits": []
+        },
+        {
+          "context": "Transport",
+          "question": "What are the most common causes of road accidents?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How can stress affect people's behaviour?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "lost control",
+          "text": "The driver lost control of the car on the ice."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "lost control",
+          "source": "The government can no longer manage the area.",
+          "model": "The government has lost control of the area."
+        },
+        {
+          "target": "lost control",
+          "source": "He became so angry that he could not stop himself.",
+          "model": "He became so angry that he lost control."
+        }
+      ]
+    },
+    "keeping_close_watch": {
+      "word": "keeping a close watch",
+      "pronunciation": "/ˈkiːpɪŋ ə kləʊs wɒtʃ/",
+      "image": {
+        "type": "prompt",
+        "value": "someone watching closely",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Surveillance_video_cameras%2C_Gdynia.jpeg/960px-Surveillance_video_cameras%2C_Gdynia.jpeg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+determiner+adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Quan sát một tình huống một cách cẩn thận và liên tục.",
+          "examples": [
+            "Our reporter in St Pips is keeping a close watch on the situation."
+          ],
+          "grammar_patterns": [
+            "keep a close watch on"
+          ],
+          "usage_notes_vi": "Diễn tả sự theo dõi sát sao, thường trong các tình huống nhạy cảm hoặc cần thông tin."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "How do reporters follow a dangerous situation abroad?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "How should parents protect young children online?",
+          "fits": []
+        },
+        {
+          "context": "Health",
+          "question": "How do doctors look after patients after surgery?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "keeping a close watch",
+          "text": "Our reporter is keeping a close watch on the situation."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "keeping a close watch",
+          "source": "Our reporter is watching the situation very carefully.",
+          "model": "Our reporter is keeping a close watch on the situation."
+        },
+        {
+          "target": "keeping a close watch",
+          "source": "Parents should carefully monitor what their children do online.",
+          "model": "Parents should keep a close watch on what their children do online."
+        }
+      ]
+    },
+    "news_develops": {
+      "word": "news develops",
+      "pronunciation": "/njuːz dɪˈveləps/",
+      "image": {
+        "type": "prompt",
+        "value": "news developing",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/CBS_News_Bulletin_1963.PNG/960px-CBS_News_Bulletin_1963.PNG"
+      },
+      "part_of_speech": [
+        "noun phrase",
+        "verb"
+      ],
+      "collocation_type": "noun+verb",
+      "senses": [
+        {
+          "definition_vi": "Tình hình tin tức đang tiếp tục diễn biến và có thêm thông tin mới.",
+          "examples": [
+            "We shall be keeping you informed as the news develops."
+          ],
+          "grammar_patterns": [
+            "news develops"
+          ],
+          "usage_notes_vi": "Thường dùng để báo hiệu rằng câu chuyện vẫn đang tiếp diễn và sẽ có cập nhật."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Media",
+          "question": "How do TV channels cover breaking stories?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How do people stay informed during a big storm?",
+          "fits": []
+        },
+        {
+          "context": "Politics",
+          "question": "How do news websites report election night?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "news develops",
+          "text": "We will keep you informed as the news develops."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "news develops",
+          "source": "We will keep you updated as we learn more about the story.",
+          "model": "We will keep you informed as the news develops."
+        },
+        {
+          "target": "news develops",
+          "source": "The report will be updated when more information arrives.",
+          "model": "The report will be updated as the news develops."
+        }
+      ]
+    },
+    "peace_talks": {
+      "word": "Peace talks",
+      "pronunciation": "/piːs tɔːks/",
+      "image": {
+        "type": "prompt",
+        "value": "people in peace talks",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Bill_Clinton%2C_Yitzhak_Rabin%2C_Yasser_Arafat_at_the_White_House_1993-09-13.jpg/960px-Bill_Clinton%2C_Yitzhak_Rabin%2C_Yasser_Arafat_at_the_White_House_1993-09-13.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Các cuộc đàm phán chính thức được tổ chức giữa các bên đối địch nhằm đạt được một thỏa thuận hòa bình.",
+          "examples": [
+            "Peace talks between the Eastern Liberation Army and the government of Karavia broke down last night."
+          ],
+          "grammar_patterns": [
+            "Peace talks"
+          ],
+          "usage_notes_vi": "Thường diễn ra trong bối cảnh xung đột hoặc chiến tranh."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Politics",
+          "question": "How can wars between countries be ended?",
+          "fits": []
+        },
+        {
+          "context": "History",
+          "question": "What can we learn from past conflicts?",
+          "fits": []
+        },
+        {
+          "context": "Media",
+          "question": "Why do the media pay so much attention to international conflicts?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "Peace talks",
+          "text": "Both sides agreed to hold peace talks next month."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "Peace talks",
+          "source": "Negotiations to end the war broke down last night.",
+          "model": "Peace talks broke down last night."
+        },
+        {
+          "target": "Peace talks",
+          "source": "The leaders met to discuss ending the fighting.",
+          "model": "The leaders met for peace talks."
+        }
+      ]
+    },
+    "broke_down": {
+      "word": "broke down",
+      "pronunciation": "/brəʊk daʊn/",
+      "image": {
+        "type": "prompt",
+        "value": "negotiations failing",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Bridge_Alcantara.JPG/960px-Bridge_Alcantara.JPG"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+adverb",
+      "senses": [
+        {
+          "definition_vi": "Các cuộc đàm phán hoặc thỏa thuận thất bại, không đạt được kết quả.",
+          "examples": [
+            "Peace talks between the Eastern Liberation Army and the government of Karavia broke down last night."
+          ],
+          "grammar_patterns": [
+            "broke down"
+          ],
+          "usage_notes_vi": "Diễn tả sự chấm dứt hoặc thất bại của một quá trình đàm phán."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Politics",
+          "question": "Why do negotiations between countries sometimes fail?",
+          "fits": []
+        },
+        {
+          "context": "Work",
+          "question": "What happens when talks between workers and managers fail?",
+          "fits": []
+        },
+        {
+          "context": "Family",
+          "question": "What causes some marriages to end?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "broke down",
+          "text": "The talks broke down late last night."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "broke down",
+          "source": "The negotiations failed last night.",
+          "model": "The negotiations broke down last night."
+        },
+        {
+          "target": "broke down",
+          "source": "Their marriage ended after many years of arguments.",
+          "model": "Their marriage broke down after many years of arguments."
+        }
+      ]
+    },
+    "civil_war": {
+      "word": "Civil war",
+      "pronunciation": "/ˌsɪvəl ˈwɔː/",
+      "image": {
+        "type": "prompt",
+        "value": "civil war scene",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Battle_of_Gettysburg%2C_by_Currier_and_Ives.png/960px-Battle_of_Gettysburg%2C_by_Currier_and_Ives.png"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "adjective+noun",
+      "senses": [
+        {
+          "definition_vi": "Một cuộc chiến tranh xảy ra giữa các công dân của cùng một quốc gia.",
+          "examples": [
+            "Civil war is now likely."
+          ],
+          "grammar_patterns": [
+            "Civil war"
+          ],
+          "usage_notes_vi": "Tình trạng xung đột vũ trang quy mô lớn trong nội bộ một quốc gia."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "History",
+          "question": "What were the most difficult periods in your country's history?",
+          "fits": []
+        },
+        {
+          "context": "Politics",
+          "question": "What happens when different groups in one country cannot agree?",
+          "fits": []
+        },
+        {
+          "context": "Travel",
+          "question": "Why do some countries have very few tourists?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "Civil war",
+          "text": "Many families lost their homes during the civil war."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "Civil war",
+          "source": "A war between people of the same country is now likely.",
+          "model": "Civil war is now likely."
+        },
+        {
+          "target": "Civil war",
+          "source": "The country was destroyed by years of fighting between its own people.",
+          "model": "The country was destroyed by years of civil war."
+        }
+      ]
+    },
+    "lightning_strikes": {
+      "word": "Lightning strikes",
+      "pronunciation": "/ˈlaɪtnɪŋ straɪks/",
+      "image": {
+        "type": "prompt",
+        "value": "lightning striking a building",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Lightning-rod-diagram.svg/960px-Lightning-rod-diagram.svg.png"
+      },
+      "part_of_speech": [
+        "noun phrase",
+        "verb"
+      ],
+      "collocation_type": "noun+verb",
+      "senses": [
+        {
+          "definition_vi": "Hiện tượng sét đánh.",
+          "examples": [
+            "A building caught fire when lightning struck a farm in Hampshire yesterday."
+          ],
+          "grammar_patterns": [
+            "Lightning strikes"
+          ],
+          "usage_notes_vi": "Tiêu đề tin tức thường dùng để báo cáo về các sự cố do sét gây ra."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "What dangers do storms bring?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "How can buildings be protected from storms?",
+          "fits": []
+        },
+        {
+          "context": "Sport",
+          "question": "Why are outdoor matches stopped during thunderstorms?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "Lightning strikes",
+          "text": "Lightning strikes are common in summer storms."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "Lightning strikes",
+          "source": "Lightning often hits tall trees during storms.",
+          "model": "Lightning often strikes tall trees during storms."
+        },
+        {
+          "target": "Lightning strikes",
+          "source": "Golf games are stopped because of the risk of being hit by lightning.",
+          "model": "Golf games are stopped because of the risk of lightning strikes."
+        }
+      ]
+    },
+    "caught_fire": {
+      "word": "caught fire",
+      "pronunciation": "/kɔːt ˈfaɪər/",
+      "image": {
+        "type": "prompt",
+        "value": "a building on fire",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Great_Fire_London.jpg/960px-Great_Fire_London.jpg"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "verb+noun",
+      "senses": [
+        {
+          "definition_vi": "Bắt đầu cháy.",
+          "examples": [
+            "A building caught fire when lightning struck a farm in Hampshire yesterday."
+          ],
+          "grammar_patterns": [
+            "caught fire"
+          ],
+          "usage_notes_vi": "Diễn tả sự khởi phát của đám cháy."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Housing",
+          "question": "What are the most common causes of fires at home?",
+          "fits": []
+        },
+        {
+          "context": "Environment",
+          "question": "How do forest fires usually start?",
+          "fits": []
+        },
+        {
+          "context": "Technology",
+          "question": "What dangers can cheap phone chargers cause?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "caught fire",
+          "text": "The old barn caught fire last night."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "caught fire",
+          "source": "The building started burning when lightning struck it.",
+          "model": "The building caught fire when lightning struck it."
+        },
+        {
+          "target": "caught fire",
+          "source": "My phone charger began to burn while I was asleep.",
+          "model": "My phone charger caught fire while I was asleep."
+        }
+      ]
+    },
+    "lightning_struck": {
+      "word": "lightning struck",
+      "pronunciation": "/ˈlaɪtnɪŋ strʌk/",
+      "image": {
+        "type": "prompt",
+        "value": "lightning striking something",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Lightning-rod-diagram.svg/960px-Lightning-rod-diagram.svg.png"
+      },
+      "part_of_speech": [
+        "verb phrase"
+      ],
+      "collocation_type": "noun+verb",
+      "senses": [
+        {
+          "definition_vi": "Bị sét đánh.",
+          "examples": [
+            "A building caught fire when lightning struck a farm in Hampshire yesterday."
+          ],
+          "grammar_patterns": [
+            "lightning struck"
+          ],
+          "usage_notes_vi": "Diễn tả hành động sét đánh vào một đối tượng."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "What damage can a thunderstorm cause?",
+          "fits": []
+        },
+        {
+          "context": "Housing",
+          "question": "Why do tall buildings need protection from storms?",
+          "fits": []
+        },
+        {
+          "context": "History",
+          "question": "What natural disasters do people in your area still remember?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "lightning struck",
+          "text": "Lightning struck the old tree in our garden."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "lightning struck",
+          "source": "A tall tree was hit by lightning during the storm.",
+          "model": "Lightning struck a tall tree during the storm."
+        },
+        {
+          "target": "lightning struck",
+          "source": "A farm building burned after being hit by lightning.",
+          "model": "A farm building burned after lightning struck it."
+        }
+      ]
+    },
+    "loss_of_life": {
+      "word": "loss of life",
+      "pronunciation": "/lɒs ɒv laɪf/",
+      "image": {
+        "type": "prompt",
+        "value": "a symbol of death",
+        "link": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Kerepesi_temet%C5%91_Budapest.jpg/960px-Kerepesi_temet%C5%91_Budapest.jpg"
+      },
+      "part_of_speech": [
+        "noun phrase"
+      ],
+      "collocation_type": "noun+preposition+noun",
+      "senses": [
+        {
+          "definition_vi": "Cái chết của người.",
+          "examples": [
+            "Fortunately there was no loss of life."
+          ],
+          "grammar_patterns": [
+            "loss of life"
+          ],
+          "usage_notes_vi": "Một cách nói trang trọng để chỉ việc có người chết trong một tai nạn hoặc sự kiện."
+        }
+      ],
+      "use_prompts": [
+        {
+          "context": "Environment",
+          "question": "How can governments prepare for natural disasters?",
+          "fits": []
+        },
+        {
+          "context": "Transport",
+          "question": "Why are safety rules on ships and planes so strict?",
+          "fits": []
+        },
+        {
+          "context": "History",
+          "question": "Why should people remember the wars of the past?",
+          "fits": []
+        }
+      ],
+      "dictation": [
+        {
+          "target": "loss of life",
+          "text": "Fortunately, there was no loss of life in the fire."
+        }
+      ],
+      "paraphrase": [
+        {
+          "target": "loss of life",
+          "source": "Luckily, nobody died in the accident.",
+          "model": "Luckily, there was no loss of life in the accident."
+        },
+        {
+          "target": "loss of life",
+          "source": "The earthquake killed many people.",
+          "model": "The earthquake caused a great loss of life."
+        }
+      ]
+    }
+  }
+}

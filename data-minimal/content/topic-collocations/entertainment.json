@@ -1,0 +1,4362 @@
+[
+  {
+    "id": "topic-colloc:entertainment:a-screen-based-device",
+    "title": "a screen-based device",
+    "term": "a screen-based device",
+    "type": "Collocation",
+    "pronunciation": "/ə skriːn beɪst dɪˈvaɪs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thiết bị có màn hình",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "With nothing more than a screen-based device, anyone can access an enormous range of entertainment content today.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:diverse-streaming-platforms",
+    "title": "diverse streaming platforms",
+    "term": "diverse streaming platforms",
+    "type": "Collocation",
+    "pronunciation": "/daɪˈvɜːs ˈstriːmɪŋ ˈplætfɔːmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các nền tảng phát trực tuyến đa dạng",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The emergence of diverse streaming platforms has catalysed widespread adoption of online entertainment.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:shifting-consumer-habits",
+    "title": "shifting consumer habits",
+    "term": "shifting consumer habits",
+    "type": "Collocation",
+    "pronunciation": "/ˈʃɪftɪŋ kənˈsjuːmə ˈhæbɪts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự thay đổi thói quen của người tiêu dùng",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Shifting consumer habits have pushed the entertainment industry to invest heavily in streaming services.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:technological-advances",
+    "title": "technological advances",
+    "term": "technological advances",
+    "type": "Collocation",
+    "pronunciation": "/ˌteknəˈlɒdʒɪkəl ədˈvɑːnsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những tiến bộ công nghệ",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Technological advances have made it possible for fans anywhere in the world to watch a concert live from their phones.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:virtual-concert-premieres",
+    "title": "virtual concert premieres",
+    "term": "virtual concert premieres",
+    "type": "Collocation",
+    "pronunciation": "/ˈvɜːtʃuəl ˈkɒnsət ˈpremieəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các buổi ra mắt hòa nhạc trực tuyến",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Virtual concert premieres now generate as much online buzz as traditional album launches once did.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:benign-form-of-relaxation",
+    "title": "benign form of relaxation",
+    "term": "benign form of relaxation",
+    "type": "Collocation",
+    "pronunciation": "/bɪˈnaɪn fɔːm əv ˌriːlækˈseɪʃən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "hình thức thư giãn vô hại",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Many parents view video games as a benign form of relaxation rather than a genuine cause for concern.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:simulation-games",
+    "title": "simulation games",
+    "term": "simulation games",
+    "type": "Collocation",
+    "pronunciation": "/ˌsɪmjʊˈleɪʃən ɡeɪmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "trò chơi mô phỏng",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Simulation games offer children the opportunity to freely design their own virtual world, which fosters their creativity.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:strategic-games",
+    "title": "strategic games",
+    "term": "strategic games",
+    "type": "Collocation",
+    "pronunciation": "/strəˈtiːdʒɪk ɡeɪmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "trò chơi chiến thuật",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Strategic games require players to plan several moves ahead, which can sharpen logical thinking.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:cognitive-benefits",
+    "title": "cognitive benefits",
+    "term": "cognitive benefits",
+    "type": "Collocation",
+    "pronunciation": "/ˈkɒɡnətɪv ˈbɛnɪfɪts/",
+    "part_of_speech": "noun",
+    "meaning_vi": "lợi ích về nhận thức",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Puzzle-based video games are often praised for their cognitive benefits, such as improved memory.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:come-at-a-steep-cost",
+    "title": "come at a steep cost",
+    "term": "come at a steep cost",
+    "type": "Collocation",
+    "pronunciation": "/kʌm ət ə stiːp kɒst/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "phải trả giá đắt, đi kèm cái giá lớn",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The cognitive benefits of gaming often come at a steep cost to children's physical health.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:encouragement-of-aggressive-behaviour",
+    "title": "encouragement of aggressive behaviour",
+    "term": "encouragement of aggressive behaviour",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈkʌrɪdʒmənt əv əˈɡrɛsɪv bɪˈheɪvjə/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự cổ xúy hành vi hung hăng",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "One major criticism of violent video games is their encouragement of aggressive behaviour among young players.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:frequent-consumption-of-simulated-violence",
+    "title": "frequent consumption of simulated violence",
+    "term": "frequent consumption of simulated violence",
+    "type": "Collocation",
+    "pronunciation": "/ˈfriːkwənt kənˈsʌmpʃən əv ˈsɪmjʊleɪtɪd ˈvaɪələns/",
+    "part_of_speech": "noun",
+    "meaning_vi": "việc tiếp xúc thường xuyên với bạo lực mô phỏng",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Frequent consumption of simulated violence in video games has been linked to increased aggression in some studies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:immersive-and-addictive-nature-of-modern-games",
+    "title": "immersive and addictive nature of modern games",
+    "term": "immersive and addictive nature of modern games",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈmɜːsɪv ənd əˈdɪktɪv ˈneɪtʃər əv ˈmɒdən ɡeɪmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bản chất hấp dẫn và gây nghiện của các trò chơi hiện đại",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The immersive and addictive nature of modern games makes it difficult for children to set their own limits.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:lead-to-over-reliance-or-addiction",
+    "title": "lead to over-reliance or addiction",
+    "term": "lead to over-reliance or addiction",
+    "type": "Collocation",
+    "pronunciation": "/liːd tuː ˌəʊvəˈraɪəns ɔːr əˈdɪkʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "dẫn đến sự lệ thuộc quá mức hoặc nghiện",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Unrestricted access to video games can lead to over-reliance or addiction among vulnerable children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:poor-posture",
+    "title": "poor posture",
+    "term": "poor posture",
+    "type": "Collocation",
+    "pronunciation": "/pɔː ˈpɒstʃə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tư thế ngồi/đứng không tốt",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Hours spent hunched over a games console can lead to poor posture and long-term back problems.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:prolonged-exposure-to-screens",
+    "title": "prolonged exposure to screens",
+    "term": "prolonged exposure to screens",
+    "type": "Collocation",
+    "pronunciation": "/prəˈlɒŋd ɪkˈspəʊʒər tuː skriːnz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc tiếp xúc kéo dài với màn hình",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Prolonged exposure to screens has been linked to eye strain and disrupted sleep patterns in children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:reduced-attention-spans",
+    "title": "reduced attention spans",
+    "term": "reduced attention spans",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈdjuːst əˈtenʃən spænz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khả năng tập trung bị giảm sút",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Critics argue that fast-paced digital entertainment is responsible for reduced attention spans among young people.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:triggers-heightened-aggressive-thoughts",
+    "title": "triggers heightened aggressive thoughts",
+    "term": "triggers heightened aggressive thoughts",
+    "type": "Collocation",
+    "pronunciation": "/ˈtrɪɡəz ˈhaɪtnd əˈɡrɛsɪv θɔːts/",
+    "part_of_speech": "verb",
+    "meaning_vi": "kích hoạt những suy nghĩ hung hăng gia tăng",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Playing violent video games for extended periods triggers heightened aggressive thoughts in certain players.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:attention-span",
+    "title": "attention span",
+    "term": "attention span",
+    "type": "Collocation",
+    "pronunciation": "/əˈtɛnʃən spæn/",
+    "part_of_speech": "noun",
+    "meaning_vi": "khoảng thời gian tập trung chú ý",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Frequent exposure to rapidly changing video content may shorten children's attention span over time.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:distinguish-fantasy-from-reality",
+    "title": "distinguish fantasy from reality",
+    "term": "distinguish fantasy from reality",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈstɪŋɡwɪʃ ˈfæntəsi frəm riˈæləti/",
+    "part_of_speech": "verb",
+    "meaning_vi": "phân biệt giữa tưởng tượng và thực tế",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Young children often struggle to distinguish fantasy from reality when watching violent films.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:impair-their-ability",
+    "title": "impair their ability",
+    "term": "impair their ability",
+    "type": "Collocation",
+    "pronunciation": "/ɪmˈpeə ðeər əˈbɪləti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "làm suy giảm khả năng của ai đó",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Spending excessive time on screens can impair their ability to concentrate on tasks that require sustained attention.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:instill-a-sense-of-discipline",
+    "title": "instill a sense of discipline",
+    "term": "instill a sense of discipline",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈstɪl ə sens əv ˈdɪsəplɪn/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "hình thành ý thức kỷ luật",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Structured extracurricular programs can instill a sense of discipline that benefits children throughout their lives.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:socializing-with-peers",
+    "title": "socializing with peers",
+    "term": "socializing with peers",
+    "type": "Collocation",
+    "pronunciation": "/ˈsəʊʃəlaɪzɪŋ wɪð pɪəz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giao tiếp, kết bạn với bạn bè cùng trang lứa",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Children who spend hours in front of a screen have less time for socializing with peers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:weaker-impulse-control",
+    "title": "weaker impulse control",
+    "term": "weaker impulse control",
+    "type": "Collocation",
+    "pronunciation": "/ˈwiːkə ˈɪmpʌls kənˈtrəʊl/",
+    "part_of_speech": "noun",
+    "meaning_vi": "khả năng kiểm soát xung động yếu hơn",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Children generally have weaker impulse control than adults, making them more vulnerable to violent media content.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:compete-against-opponents-or-overcome-challenges",
+    "title": "compete against opponents or overcome challenges",
+    "term": "compete against opponents or overcome challenges",
+    "type": "Collocation",
+    "pronunciation": "/kəmˈpiːt əˈɡenst əˈpəʊnənts ɔːr ˌəʊvəˈkʌm ˈtʃælɪndʒɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cạnh tranh với đối thủ hoặc vượt qua thử thách",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Many video games require players to compete against opponents or overcome challenges, which builds resilience.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:enabling-the-growth-of-problem-solving-skills",
+    "title": "enabling the growth of problem solving skills",
+    "term": "enabling the growth of problem solving skills",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈneɪblɪŋ ðə ɡrəʊθ əv ˈprɒbləm ˈsɒlvɪŋ skɪlz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tạo điều kiện phát triển kỹ năng giải quyết vấn đề",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Puzzle-based video games are effective in enabling the growth of problem solving skills among young players.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:fosters-their-creativity",
+    "title": "fosters their creativity",
+    "term": "fosters their creativity",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɒstəz ðeə ˌkriːeɪˈtɪvəti/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nuôi dưỡng sự sáng tạo của trẻ",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Building elaborate structures in sandbox games fosters children's creativity in ways traditional toys sometimes cannot.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:sophisticated-hand-eye-coordination",
+    "title": "sophisticated hand-eye coordination",
+    "term": "sophisticated hand-eye coordination",
+    "type": "Collocation",
+    "pronunciation": "/səˈfɪstɪkeɪtɪd hænd aɪ kəʊˌɔːdɪˈneɪʃən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "khả năng phối hợp tay-mắt tinh vi",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Fast-paced action games can help players develop sophisticated hand-eye coordination over time.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:stimulating-specific-cognitive-abilities",
+    "title": "stimulating specific cognitive abilities",
+    "term": "stimulating specific cognitive abilities",
+    "type": "Collocation",
+    "pronunciation": "/ˈstɪmjʊleɪtɪŋ spəˈsɪfɪk ˈkɒɡnɪtɪv əˈbɪlətiz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "kích thích các khả năng nhận thức cụ thể",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "While video games are effective at stimulating specific cognitive abilities, their addictive nature often negates these benefits.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:strategic-planning",
+    "title": "strategic planning",
+    "term": "strategic planning",
+    "type": "Collocation",
+    "pronunciation": "/strəˈtiːdʒɪk ˈplænɪŋ/",
+    "part_of_speech": "noun",
+    "meaning_vi": "lập kế hoạch chiến lược",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Complex video games often require strategic planning, which can sharpen players' problem-solving abilities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:knowledge-acquisition",
+    "title": "knowledge acquisition",
+    "term": "knowledge acquisition",
+    "type": "Collocation",
+    "pronunciation": "/ˈnɒlɪdʒ ˌækwɪˈzɪʃən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự tiếp thu kiến thức",
+    "topic": "Entertainment",
+    "subTopic": "Digital Entertainment & Gaming",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Educational television programmes can support knowledge acquisition among children when used in moderation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:a-form-of-entertainment",
+    "title": "a form of entertainment",
+    "term": "a form of entertainment",
+    "type": "Collocation",
+    "pronunciation": "/ə fɔːm əv ˌentəˈteɪnmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "một hình thức giải trí",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "For many people, music is primarily a form of entertainment enjoyed during leisure time rather than a tool for social change.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:a-live-performance-in-person",
+    "title": "a live performance in person",
+    "term": "a live performance in person",
+    "type": "Collocation",
+    "pronunciation": "/ə laɪv pəˈfɔːməns ɪn ˈpɜːsən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "một buổi biểu diễn trực tiếp tham dự tận nơi",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Many people save up money specifically to experience a live performance in person at least once a year.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:a-performances-appeal",
+    "title": "a performance's appeal",
+    "term": "a performance's appeal",
+    "type": "Collocation",
+    "pronunciation": "/ə pəˈfɔːmənsɪz əˈpiːl/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sức hấp dẫn của một buổi biểu diễn",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The interaction between performer and crowd is a vital factor in a performance's appeal that a screen cannot fully capture.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:adept",
+    "title": "adept",
+    "term": "adept",
+    "type": "Vocabulary",
+    "pronunciation": "/əˈdɛpt/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "thành thạo, khéo léo",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Musicians who are adept at playing traditional instruments often spend a lifetime refining their skills.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:attending-a-live-performance",
+    "title": "attending a live performance",
+    "term": "attending a live performance",
+    "type": "Collocation",
+    "pronunciation": "/əˈtendɪŋ ə laɪv pəˈfɔːməns/",
+    "part_of_speech": "gerund phrase",
+    "meaning_vi": "việc tham dự một buổi biểu diễn trực tiếp",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Attending a live performance gives audiences a sense of connection with artists that television broadcasts simply cannot replicate.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:authenticity",
+    "title": "authenticity",
+    "term": "authenticity",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌɔːθenˈtɪsəti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tính chân thực, tính xác thực",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The authenticity of a live show is what draws millions of fans to concerts every year despite the high ticket prices.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:be-generically-classed",
+    "title": "be generically classed",
+    "term": "be generically classed",
+    "type": "Collocation",
+    "pronunciation": "/biː dʒɪˈnɛrɪkli klɑːst/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "được xếp loại chung",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Most of the functions of music can be generically classed as tools for relaxation or emotional expression.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:catalysts",
+    "title": "catalysts",
+    "term": "catalysts",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈkætəlɪsts/",
+    "part_of_speech": "noun",
+    "meaning_vi": "chất xúc tác, yếu tố thúc đẩy",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Iconic songs have often served as catalysts for major cultural and political movements around the world.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:caters",
+    "title": "caters",
+    "term": "caters",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈkeɪtəz/",
+    "part_of_speech": "verb",
+    "meaning_vi": "đáp ứng, phục vụ (nhu cầu)",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The modern music industry caters to a wide range of tastes, from classical compositions to electronic beats.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:communal-energy",
+    "title": "communal energy",
+    "term": "communal energy",
+    "type": "Collocation",
+    "pronunciation": "/kəˈmjuːnəl ˈenədʒi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "năng lượng tập thể, cảm giác cộng đồng",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The communal energy of thousands of fans singing together is one reason live shows remain irreplaceable.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:consume-music",
+    "title": "consume music",
+    "term": "consume music",
+    "type": "Collocation",
+    "pronunciation": "/kənˈsjuːm ˈmjuːzɪk/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thưởng thức/nghe nhạc (tiêu thụ âm nhạc)",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Thanks to streaming platforms, people can consume music anywhere and at any time of day.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:convenience-of-experiencing-plays",
+    "title": "convenience of experiencing plays",
+    "term": "convenience of experiencing plays",
+    "type": "Collocation",
+    "pronunciation": "/kənˈviːniəns əv ɪkˈspɪəriənsɪŋ pleɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự tiện lợi khi thưởng thức các vở kịch",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Streaming services have increased the convenience of experiencing plays without having to leave the house.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:crowd-effect",
+    "title": "crowd effect",
+    "term": "crowd effect",
+    "type": "Collocation",
+    "pronunciation": "/kraʊd ɪˈfɛkt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hiệu ứng đám đông",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Thanks to the crowd effect, concertgoers often feel more excitement than they would watching the same performance alone at home.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:delirium",
+    "title": "delirium",
+    "term": "delirium",
+    "type": "Vocabulary",
+    "pronunciation": "/dɪˈlɪriəm/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự cuồng nhiệt, phấn khích tột độ",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The crowd was thrown into delirium the moment their favourite band stepped onto the stage.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:detractors",
+    "title": "detractors",
+    "term": "detractors",
+    "type": "Vocabulary",
+    "pronunciation": "/dɪˈtræktəz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "những người phản đối, chỉ trích",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Detractors of this view insist that music serves no purpose beyond providing simple entertainment.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:dynamic",
+    "title": "dynamic",
+    "term": "dynamic",
+    "type": "Vocabulary",
+    "pronunciation": "/daɪˈnæmɪk/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "sôi động, năng động",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Live bands create a dynamic atmosphere in venues such as bars and clubs, which recorded music alone cannot replicate.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:elicits",
+    "title": "elicits",
+    "term": "elicits",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪˈlɪsɪts/",
+    "part_of_speech": "verb",
+    "meaning_vi": "khơi gợi, gợi lên (phản ứng, ý kiến)",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The question of whether music serves a deeper purpose elicits contrasting opinions among scholars and the public alike.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:engagement-records",
+    "title": "engagement records",
+    "term": "engagement records",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈɡeɪdʒmənt ˈrekɔːdz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kỷ lục về mức độ tương tác",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The livestreamed festival broke several engagement records, with millions of comments posted during a single performance.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:feel-the-atmosphere-of-the-show",
+    "title": "feel the atmosphere of the show",
+    "term": "feel the atmosphere of the show",
+    "type": "Collocation",
+    "pronunciation": "/fiːl ði ˈætməsfɪər əv ðə ʃəʊ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cảm nhận được bầu không khí của buổi biểu diễn",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Only by attending in person can audiences truly feel the atmosphere of the show, from the lighting to the crowd's energy.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:frequent-sell-out-events",
+    "title": "frequent sell-out events",
+    "term": "frequent sell-out events",
+    "type": "Collocation",
+    "pronunciation": "/ˈfriːkwənt ˈselaʊt ɪˈvents/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các sự kiện thường xuyên bán hết vé",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Popular bands continue to hold frequent sell-out events, proving that audiences still crave the experience of live music.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:humanly-engineered-creative-process",
+    "title": "humanly engineered creative process",
+    "term": "humanly engineered creative process",
+    "type": "Collocation",
+    "pronunciation": "/ˈhjuːmənli ˌɛndʒɪˈnɪəd kriˈeɪtɪv ˈprəʊsɛs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "quá trình sáng tạo do con người tạo ra",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Composing a song is a humanly engineered creative process that reflects the emotions and experiences of the artist.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:in-consummate-accord-with",
+    "title": "in consummate accord with",
+    "term": "in consummate accord with",
+    "type": "Collocation",
+    "pronunciation": "/ɪn ˈkɒnsəmət əˈkɔːd wɪð/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "hoàn toàn đồng ý với",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "I am in consummate accord with the view that classical musicians deserve greater recognition for their years of training.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:international-viewership",
+    "title": "international viewership",
+    "term": "international viewership",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪntəˈnæʃənəl ˈvjuːəʃɪp/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lượng người xem quốc tế",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The singer's virtual concert attracted unprecedented international viewership, far exceeding the capacity of any physical venue.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:live-performances",
+    "title": "live performances",
+    "term": "live performances",
+    "type": "Collocation",
+    "pronunciation": "/laɪv pəˈfɔːmənsɪz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "buổi biểu diễn trực tiếp",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The streaming of live performances online has witnessed a remarkable surge in popularity over the past decade.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:mastering-instruments",
+    "title": "mastering instruments",
+    "term": "mastering instruments",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɑːstərɪŋ ˈɪnstrəmənts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc thành thạo các loại nhạc cụ",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Mastering instruments such as the violin or piano often requires more than a decade of rigorous practice.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:masterpieces",
+    "title": "masterpieces",
+    "term": "masterpieces",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈmɑːstəpiːsɪz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "kiệt tác",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Some classical compositions are regarded as timeless masterpieces that continue to inspire musicians today.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:multifaceted",
+    "title": "multifaceted",
+    "term": "multifaceted",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌmʌltiˈfæsɪtɪd/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "đa diện, nhiều khía cạnh",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Music plays a multifaceted role in society, influencing everything from personal emotions to collective identity.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:opine",
+    "title": "opine",
+    "term": "opine",
+    "type": "Vocabulary",
+    "pronunciation": "/əʊˈpaɪn/",
+    "part_of_speech": "verb",
+    "meaning_vi": "phát biểu ý kiến, cho rằng",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Some critics opine that pop stars should not earn more than classically trained musicians who dedicate years to their craft.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:performers-mistakes",
+    "title": "performers' mistakes",
+    "term": "performers' mistakes",
+    "type": "Collocation",
+    "pronunciation": "/pəˈfɔːməz mɪˈsteɪks/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những sai sót của người biểu diễn",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Some spectators argue that performers' mistakes during a live show add a sense of authenticity that polished recordings lack.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:primary-function",
+    "title": "primary function",
+    "term": "primary function",
+    "type": "Collocation",
+    "pronunciation": "/ˈpraɪməri ˈfʌŋkʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chức năng chính",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Critics maintain that the primary function of popular music is simply to entertain listeners rather than to educate them.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:providing-insights-into",
+    "title": "providing insights into",
+    "term": "providing insights into",
+    "type": "Collocation",
+    "pronunciation": "/prəˈvaɪdɪŋ ˈɪnsaɪts ˈɪntuː/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cung cấp cái nhìn sâu sắc về",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Folk songs are valuable for providing insights into the daily struggles and traditions of past generations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:real-human-performers",
+    "title": "real human performers",
+    "term": "real human performers",
+    "type": "Collocation",
+    "pronunciation": "/rɪəl ˈhjuːmən pəˈfɔːməz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những nghệ sĩ biểu diễn bằng con người thật",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Audiences often find greater satisfaction in watching real human performers rather than digitally enhanced recordings.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:remarkable-surge",
+    "title": "remarkable surge",
+    "term": "remarkable surge",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈmɑːkəbəl sɜːdʒ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự gia tăng đáng kể",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "There has been a remarkable surge in demand for virtual concert tickets since the pandemic began.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:resort-to",
+    "title": "resort to",
+    "term": "resort to",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈzɔːt tuː/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tìm đến, dùng đến (biện pháp nào đó)",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Many employees resort to music during their commute as a way of coping with the pressures of daily life.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:selling-out-within-minutes",
+    "title": "selling out within minutes",
+    "term": "selling out within minutes",
+    "type": "Collocation",
+    "pronunciation": "/ˈselɪŋ aʊt wɪˈðɪn ˈmɪnɪts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "bán hết vé chỉ trong vài phút",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Tickets for the world tour ended up selling out within minutes, reflecting the band's enduring popularity.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:spontaneous-reactions",
+    "title": "spontaneous reactions",
+    "term": "spontaneous reactions",
+    "type": "Collocation",
+    "pronunciation": "/spɒnˈteɪniəs riˈækʃənz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những phản ứng tự nhiên, bộc phát",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The spontaneous reactions of a live crowd create an unpredictable energy that pre-recorded shows fail to convey.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:tangible-atmosphere",
+    "title": "tangible atmosphere",
+    "term": "tangible atmosphere",
+    "type": "Collocation",
+    "pronunciation": "/ˈtændʒəbəl ˈætməsfɪə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bầu không khí có thể cảm nhận rõ ràng",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Attending a concert in person offers a tangible atmosphere that no screen can fully replicate.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:the-necessity-of-experiencing-a-live-performance",
+    "title": "the necessity of experiencing a live performance",
+    "term": "the necessity of experiencing a live performance",
+    "type": "Collocation",
+    "pronunciation": "/ðə nɪˈsesəti əv ɪkˈspɪəriənsɪŋ ə laɪv pəˈfɔːməns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự cần thiết của việc trải nghiệm một buổi biểu diễn trực tiếp",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Some purists insist on the necessity of experiencing a live performance rather than watching a broadcast at home.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:the-shows-venue",
+    "title": "the show's venue",
+    "term": "the show's venue",
+    "type": "Collocation",
+    "pronunciation": "/ðə ʃəʊz ˈvɛnjuː/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "địa điểm tổ chức buổi biểu diễn",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Fans who travel to the show's venue often report a stronger emotional connection with the performers than online viewers do.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:thorough-understanding",
+    "title": "thorough understanding",
+    "term": "thorough understanding",
+    "type": "Collocation",
+    "pronunciation": "/ˈθʌrə ˌʌndəˈstændɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự am hiểu sâu sắc",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Composing classical pieces demands a thorough understanding of music theory that takes years to acquire.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:ticket-release",
+    "title": "ticket release",
+    "term": "ticket release",
+    "type": "Collocation",
+    "pronunciation": "/ˈtɪkɪt rɪˈliːs/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "đợt phát hành vé",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Fans camped outside the box office overnight ahead of the official ticket release.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:unique-and-genuine",
+    "title": "unique and genuine",
+    "term": "unique and genuine",
+    "type": "Collocation",
+    "pronunciation": "/juˈniːk ənd ˈdʒenjuɪn/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "độc đáo và chân thực",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Every live concert is unique and genuine, since no two performances are ever exactly the same.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:use",
+    "title": "use",
+    "term": "use",
+    "type": "Vocabulary",
+    "pronunciation": "/juːs/",
+    "part_of_speech": "noun",
+    "meaning_vi": "công dụng, mục đích sử dụng",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Music serves a variety of uses, from providing entertainment to helping people manage stress after a long day at work.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:curators",
+    "title": "Curators",
+    "term": "Curators",
+    "type": "Vocabulary",
+    "pronunciation": "/kjʊəˈreɪtəz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "người phụ trách quản lý và trưng bày hiện vật (bảo tàng, triển lãm)",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Curators spend years researching artefacts to ensure that museum displays are both accurate and engaging.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:exhibits",
+    "title": "exhibits",
+    "term": "exhibits",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪɡˈzɪbɪts/",
+    "part_of_speech": "noun",
+    "meaning_vi": "hiện vật, vật trưng bày",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Museums arrange their exhibits in a way that helps visitors understand historical events in context.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:irreplaceable",
+    "title": "irreplaceable",
+    "term": "irreplaceable",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌɪrɪˈpleɪsəbl/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "không thể thay thế được",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The hands-on experience of examining ancient artefacts in person is irreplaceable and cannot be matched by a website.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:a-more-polished-but-significantly-less-authentic-performance",
+    "title": "a more polished but significantly less authentic performance",
+    "term": "a more polished but significantly less authentic performance",
+    "type": "Collocation",
+    "pronunciation": "/ə mɔːr ˈpɒlɪʃt bʌt sɪɡˈnɪfɪkəntli les ɔːˈθentɪk pəˈfɔːməns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "một màn trình diễn hoàn hảo hơn nhưng kém chân thực hơn nhiều",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Televised broadcasts often deliver a more polished but significantly less authentic performance than what audiences experience in person.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:brain-functioning",
+    "title": "brain functioning",
+    "term": "brain functioning",
+    "type": "Collocation",
+    "pronunciation": "/breɪn ˈfʌŋkʃənɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "chức năng hoạt động của não bộ",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Some scientists claim that classical music can enhance brain functioning in young children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:enjoyment",
+    "title": "enjoyment",
+    "term": "enjoyment",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪnˈdʒɔɪmənt/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự vui thích, niềm vui",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Listening to music provides enjoyment that helps people relax after a stressful day at work.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:grasp-the-full-picture",
+    "title": "grasp the full picture",
+    "term": "grasp the full picture",
+    "type": "Collocation",
+    "pronunciation": "/ɡrɑːsp ðə fʊl ˈpɪktʃə/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nắm bắt toàn bộ bức tranh, hiểu rõ toàn cảnh",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Without visiting a museum in person, visitors may fail to grasp the full picture of a nation's cultural heritage.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:question",
+    "title": "question",
+    "term": "question",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈkwɛstʃən/",
+    "part_of_speech": "verb",
+    "meaning_vi": "đặt nghi vấn, hoài nghi",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Some people question the value of museums now that vast amounts of historical information are available online.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:unverifiable",
+    "title": "unverifiable",
+    "term": "unverifiable",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌʌnˈvɛrɪfaɪəbl/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "không thể kiểm chứng",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "A great deal of content posted online about historical events is unverifiable and should be treated with caution.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:analytical-thinking-and-creativity",
+    "title": "analytical thinking and creativity",
+    "term": "analytical thinking and creativity",
+    "type": "Collocation",
+    "pronunciation": "/ˌænəˈlɪtɪkəl ˈθɪŋkɪŋ ənd ˌkriːeɪˈtɪvɪti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tư duy phân tích và sáng tạo",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Passive television viewing rarely stimulates analytical thinking and creativity in the way that reading does.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:instilling",
+    "title": "instilling",
+    "term": "instilling",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪnˈstɪlɪŋ/",
+    "part_of_speech": "collocation",
+    "meaning_vi": "(verb (gerund)). gieo rắc, nuôi dưỡng (giá trị, tinh thần)",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Protest songs have historically played a role in instilling a sense of unity among people fighting for social justice.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:lessen-ones-stress-levels",
+    "title": "lessen one's stress levels",
+    "term": "lessen one's stress levels",
+    "type": "Collocation",
+    "pronunciation": "/ˈlɛsn wʌnz strɛs ˈlɛvəlz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giảm mức độ căng thẳng",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Listening to calming music before bed can lessen one's stress levels and improve the quality of sleep.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:relieve-stress-and-mental-exhaustion-at-work",
+    "title": "relieve stress and mental exhaustion at work",
+    "term": "relieve stress and mental exhaustion at work",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈliːv strɛs ænd ˈmɛntl ɪɡˈzɔːstʃən ət wɜːk/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giải tỏa căng thẳng và mệt mỏi tinh thần trong công việc",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Attending live performances at weekends helps many professionals relieve stress and mental exhaustion at work.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:stress-reduction",
+    "title": "stress reduction",
+    "term": "stress reduction",
+    "type": "Collocation",
+    "pronunciation": "/strɛs rɪˈdʌkʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự giảm căng thẳng",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "For many office workers, music offers an accessible form of stress reduction during hectic weekdays.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:carefully-curated",
+    "title": "carefully curated",
+    "term": "carefully curated",
+    "type": "Collocation",
+    "pronunciation": "/ˈkeəfəli kjʊəˈreɪtɪd/",
+    "part_of_speech": "adjective phrase",
+    "meaning_vi": "được tuyển chọn, sắp xếp kỹ lưỡng",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "A carefully curated exhibition can tell a more coherent story than scattered information found through a search engine.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:government-affiliated-website",
+    "title": "government-affiliated website",
+    "term": "government-affiliated website",
+    "type": "Collocation",
+    "pronunciation": "/ˈɡʌvənmənt əˈfɪlieɪtɪd ˈwɛbsaɪt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "trang web trực thuộc chính phủ",
+    "topic": "Entertainment",
+    "subTopic": "Traditional Arts & Performance",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Unless information comes from a government-affiliated website, its accuracy can be difficult for the public to confirm.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:a-tradition-of-upholding-rigorous-editorial-standards",
+    "title": "a tradition of upholding rigorous editorial standards",
+    "term": "a tradition of upholding rigorous editorial standards",
+    "type": "Collocation",
+    "pronunciation": "/ə trəˈdɪʃən əv ʌpˈhəʊldɪŋ ˈrɪɡərəs ˌedɪˈtɔːriəl ˈstændədz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "truyền thống duy trì các tiêu chuẩn biên tập nghiêm ngặt",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Newspapers have a tradition of upholding rigorous editorial standards, which lends their reporting greater credibility.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:an-in-depth-analysis-of-current-events",
+    "title": "an in-depth analysis of current events",
+    "term": "an in-depth analysis of current events",
+    "type": "Collocation",
+    "pronunciation": "/ən ˈɪndepθ əˈnæləsɪs əv ˈkʌrənt ɪˈvents/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "một phân tích chuyên sâu về các sự kiện thời sự",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Documentaries can offer viewers an in-depth analysis of current events that a thirty-second news clip cannot provide.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:audience-engagement",
+    "title": "audience engagement",
+    "term": "audience engagement",
+    "type": "Collocation",
+    "pronunciation": "/ˈɔːdiəns ɪnˈɡeɪdʒmənt/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự tương tác của khán giả",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Streaming platforms constantly experiment with new formats to maximise audience engagement.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:circulation",
+    "title": "circulation",
+    "term": "circulation",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌsɜːkjʊˈleɪʃən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự lưu hành, phát hành",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Stricter regulations have been proposed to limit the circulation of movies containing excessive violence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:contend",
+    "title": "contend",
+    "term": "contend",
+    "type": "Vocabulary",
+    "pronunciation": "/kənˈtɛnd/",
+    "part_of_speech": "verb",
+    "meaning_vi": "cho rằng, lập luận",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Some parents contend that the government should impose stricter age ratings on films to protect younger viewers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:cultivate-widespread-optimism",
+    "title": "cultivate widespread optimism",
+    "term": "cultivate widespread optimism",
+    "type": "Collocation",
+    "pronunciation": "/ˈkʌltɪveɪt ˈwaɪdsprɛd ˈɒptɪmɪzəm/",
+    "part_of_speech": "verb",
+    "meaning_vi": "nuôi dưỡng sự lạc quan rộng rãi",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Media coverage that highlights human achievement can cultivate widespread optimism during difficult times.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:escalate-aggression",
+    "title": "escalate aggression",
+    "term": "escalate aggression",
+    "type": "Collocation",
+    "pronunciation": "/ˈɛskəleɪt əˈɡrɛʃən/",
+    "part_of_speech": "verb",
+    "meaning_vi": "làm gia tăng sự hung hăng",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Researchers warn that prolonged exposure to violent content can escalate aggression in susceptible individuals.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:fatigued-by-relentless-negativity",
+    "title": "fatigued by relentless negativity",
+    "term": "fatigued by relentless negativity",
+    "type": "Collocation",
+    "pronunciation": "/fəˈtiːɡd baɪ rɪˈlɛntlɪs ˌnɛɡəˈtɪvɪti/",
+    "part_of_speech": "adj",
+    "meaning_vi": "mệt mỏi vì sự tiêu cực liên tục",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Many viewers report feeling fatigued by relentless negativity in daily news broadcasts.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:flexibility",
+    "title": "flexibility",
+    "term": "flexibility",
+    "type": "Vocabulary",
+    "pronunciation": "/ˌflɛksəˈbɪləti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự linh hoạt",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Watching a concert online offers viewers flexibility, since they can pause the performance or watch it at any time.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:frequent-exposure",
+    "title": "frequent exposure",
+    "term": "frequent exposure",
+    "type": "Collocation",
+    "pronunciation": "/ˈfriːkwənt ɪkˈspəʊʒə/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự tiếp xúc thường xuyên",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Frequent exposure to violent films has been linked to heightened anxiety in some viewers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:interpersonal-violence",
+    "title": "interpersonal violence",
+    "term": "interpersonal violence",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪntəˈpɜːsənəl ˈvaɪələns/",
+    "part_of_speech": "noun",
+    "meaning_vi": "bạo lực giữa các cá nhân",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "There is ongoing debate about whether violent entertainment contributes to interpersonal violence in real life.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:minimal",
+    "title": "minimal",
+    "term": "minimal",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈmɪnɪməl/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "tối thiểu",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Streaming a live show requires only minimal equipment, typically a smartphone and a stable internet connection.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:normalize-aggression",
+    "title": "normalize aggression",
+    "term": "normalize aggression",
+    "type": "Collocation",
+    "pronunciation": "/ˈnɔːməlaɪz əˈɡrɛʃən/",
+    "part_of_speech": "verb",
+    "meaning_vi": "bình thường hóa hành vi hung hăng",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Critics contend that violent films normalize aggression by portraying it as an acceptable way to resolve conflict.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:pirated",
+    "title": "pirated",
+    "term": "pirated",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈpaɪərɪtɪd/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "vi phạm bản quyền, lậu",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Children can easily stumble upon pirated movie websites that host age-inappropriate content without any restrictions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:positive-narratives",
+    "title": "positive narratives",
+    "term": "positive narratives",
+    "type": "Collocation",
+    "pronunciation": "/ˈpɒzətɪv ˈnærətɪvz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "những câu chuyện tích cực",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "News outlets that emphasise positive narratives can help restore public confidence in the media.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:psychological-stress",
+    "title": "psychological stress",
+    "term": "psychological stress",
+    "type": "Collocation",
+    "pronunciation": "/ˌsaɪkəˈlɒdʒɪkəl strɛs/",
+    "part_of_speech": "noun",
+    "meaning_vi": "căng thẳng tâm lý",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Constant exposure to distressing news can heighten psychological stress among viewers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:public-trust",
+    "title": "public trust",
+    "term": "public trust",
+    "type": "Collocation",
+    "pronunciation": "/ˈpʌblɪk trʌst/",
+    "part_of_speech": "noun",
+    "meaning_vi": "niềm tin của công chúng",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Sensationalised reporting can gradually erode public trust in mainstream media outlets.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:stress-relief",
+    "title": "stress relief",
+    "term": "stress relief",
+    "type": "Collocation",
+    "pronunciation": "/strɛs rɪˈliːf/",
+    "part_of_speech": "noun",
+    "meaning_vi": "giải tỏa căng thẳng",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Many people turn to action films for stress relief after a demanding day at work.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:sustainability-of-the-media-outlets",
+    "title": "sustainability of the media outlets",
+    "term": "sustainability of the media outlets",
+    "type": "Collocation",
+    "pronunciation": "/səˌsteɪnəˈbɪləti əv ðə ˈmiːdiə ˈaʊtlɛts/",
+    "part_of_speech": "noun",
+    "meaning_vi": "tính bền vững của các kênh truyền thông",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Relying solely on sensational headlines may ultimately threaten the long-term sustainability of the media outlets themselves.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:tantalizing",
+    "title": "tantalizing",
+    "term": "tantalizing",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈtæntəlaɪzɪŋ/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "hấp dẫn, quyến rũ, gây tò mò",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Directors often rely on tantalizing trailers filled with dramatic scenes to draw large audiences into cinemas.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:to-keep-up-with-the-fast-paced-nature-of-contemporary-news",
+    "title": "to keep up with the fast-paced nature of contemporary news",
+    "term": "to keep up with the fast-paced nature of contemporary news",
+    "type": "Collocation",
+    "pronunciation": "/tuː kiːp ʌp wɪð ðə ˈfɑːstpeɪst ˈneɪtʃər əv kənˈtempərəri njuːz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "theo kịp bản chất nhanh chóng của tin tức đương đại",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Many professionals rely on mobile news apps to keep up with the fast-paced nature of contemporary news.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:villain",
+    "title": "villain",
+    "term": "villain",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈvɪlən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "nhân vật phản diện",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Young viewers sometimes struggle to distinguish right from wrong when a villain is portrayed in a sympathetic light.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:watching-through-a-screen",
+    "title": "watching through a screen",
+    "term": "watching through a screen",
+    "type": "Collocation",
+    "pronunciation": "/ˈwɒtʃɪŋ θruː ə skriːn/",
+    "part_of_speech": "gerund phrase",
+    "meaning_vi": "việc xem qua màn hình",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Although watching through a screen is convenient, it inevitably distances viewers from the emotional intensity of a live show.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:the-appeal-of-viewing-performances-on-television",
+    "title": "the appeal of viewing performances on television",
+    "term": "the appeal of viewing performances on television",
+    "type": "Collocation",
+    "pronunciation": "/ði əˈpiːl əv ˈvjuːɪŋ pəˈfɔːmənsɪz ɒn ˈtelɪvɪʒən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sức hấp dẫn của việc xem các buổi biểu diễn trên truyền hình",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The appeal of viewing performances on television lies in its convenience and affordability compared with attending in person.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:a-gradual-desensitization-to-aggression",
+    "title": "a gradual desensitization to aggression",
+    "term": "a gradual desensitization to aggression",
+    "type": "Collocation",
+    "pronunciation": "/ə ˈɡrædjuəl diːˌsɛnsɪtaɪˈzeɪʃən tuː əˈɡrɛʃən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự chai lì cảm xúc dần dần trước bạo lực",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Psychologists warn that prolonged exposure to violent media can cause a gradual desensitization to aggression.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:actual-aggressive-behaviors",
+    "title": "actual aggressive behaviors",
+    "term": "actual aggressive behaviors",
+    "type": "Collocation",
+    "pronunciation": "/ˈæktʃuəl əˈɡrɛsɪv bɪˈheɪvjəz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "hành vi hung hăng thực tế",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Researchers debate whether violent media truly translates into actual aggressive behaviors offline.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:boost-public-morale",
+    "title": "boost public morale",
+    "term": "boost public morale",
+    "type": "Collocation",
+    "pronunciation": "/buːst ˈpʌblɪk məˈrɑːl/",
+    "part_of_speech": "verb",
+    "meaning_vi": "nâng cao tinh thần cộng đồng",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Inspirational stories broadcast during crises can boost public morale significantly.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:cutting-edge-recording-technology",
+    "title": "cutting-edge recording technology",
+    "term": "cutting-edge recording technology",
+    "type": "Collocation",
+    "pronunciation": "/ˈkʌtɪŋ edʒ rɪˈkɔːdɪŋ tekˈnɒlədʒi/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "công nghệ ghi hình tiên tiến, hiện đại",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Broadcasters now rely on cutting-edge recording technology to capture live performances with exceptional clarity and sound quality.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:diminished-empathy",
+    "title": "diminished empathy",
+    "term": "diminished empathy",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈmɪnɪʃt ˈɛmpəθi/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự suy giảm lòng đồng cảm",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Some studies suggest a correlation between heavy media violence consumption and diminished empathy.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:establish-boundaries-for-violent-content",
+    "title": "establish boundaries for violent content",
+    "term": "establish boundaries for violent content",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈstæblɪʃ ˈbaʊndriz fɔː ˈvaɪələnt ˈkɒntɛnt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thiết lập giới hạn đối với nội dung bạo lực",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Authorities should establish boundaries for violent content to shield impressionable young audiences from harmful influences.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:filtering-savage-elements",
+    "title": "filtering savage elements",
+    "term": "filtering savage elements",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɪltərɪŋ ˈsævɪdʒ ˈɛlɪmənts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "lọc bỏ các yếu tố bạo lực, tàn bạo",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Rather than banning films outright, filtering savage elements through stricter censorship could be a more balanced solution.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:handsomely",
+    "title": "handsomely",
+    "term": "handsomely",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈhænsəmli/",
+    "part_of_speech": "adverb",
+    "meaning_vi": "hậu hĩnh, đáng kể",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Streaming platforms reward the most popular performers handsomely, sometimes more than traditional record labels ever did.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:immediacy-and-a-broader-range-of-viewpoints",
+    "title": "immediacy and a broader range of viewpoints",
+    "term": "immediacy and a broader range of viewpoints",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈmiːdiəsi ənd ə ˈbrɔːdə reɪndʒ əv ˈvjuːpɔɪnts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tính tức thời và phạm vi quan điểm rộng hơn",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Online news platforms attract younger audiences by offering immediacy and a broader range of viewpoints than traditional press.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:impair-attention-and-concentration",
+    "title": "impair attention and concentration",
+    "term": "impair attention and concentration",
+    "type": "Collocation",
+    "pronunciation": "/ɪmˈpeə əˈtɛnʃən ənd ˌkɒnsənˈtreɪʃən/",
+    "part_of_speech": "verb",
+    "meaning_vi": "làm suy giảm khả năng chú ý và tập trung",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Excessive exposure to fast-paced media can impair attention and concentration in young viewers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:injustice",
+    "title": "injustice",
+    "term": "injustice",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪnˈdʒʌstɪs/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự bất công",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Banning violent films entirely would arguably inflict an injustice upon filmmakers who use such scenes for artistic purposes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:leave-a-negative-influence-on-peoples-psyche",
+    "title": "leave a negative influence on people's psyche",
+    "term": "leave a negative influence on people's psyche",
+    "type": "Collocation",
+    "pronunciation": "/liːv ə ˈnɛɡətɪv ˈɪnfluəns ɒn ˈpiːplz ˈsaɪki/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "để lại ảnh hưởng tiêu cực đến tâm lý con người",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Repeated exposure to graphic violence on screen can leave a negative influence on people's psyche, especially children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:offers-close-up-camera-angles",
+    "title": "offers close-up camera angles",
+    "term": "offers close-up camera angles",
+    "type": "Collocation",
+    "pronunciation": "/ˈɒfəz ˈkləʊs.ʌp ˈkæmərə ˈæŋ.gəlz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "mang lại các góc quay cận cảnh",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Watching a concert on television offers close-up camera angles that let viewers see performers' expressions in remarkable detail.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:provide-a-more-intimate-viewing-experience",
+    "title": "provide a more intimate viewing experience",
+    "term": "provide a more intimate viewing experience",
+    "type": "Collocation",
+    "pronunciation": "/prəˈvaɪd ə mɔːr ˈɪn.tɪ.mət ˈvjuːɪŋ ɪkˈspɪəriəns/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "mang lại trải nghiệm xem gần gũi, riêng tư hơn",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Streaming platforms provide a more intimate viewing experience, allowing audiences to enjoy performances from the comfort of their homes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:provide-significant-informative-value",
+    "title": "provide significant informative value",
+    "term": "provide significant informative value",
+    "type": "Collocation",
+    "pronunciation": "/prəˈvaɪd sɪɡˈnɪfɪkənt ɪnˈfɔːmətɪv ˈvæljuː/",
+    "part_of_speech": "verb",
+    "meaning_vi": "mang lại giá trị thông tin đáng kể",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Well-researched documentaries provide significant informative value to audiences of all ages.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:societal-cooperation",
+    "title": "societal cooperation",
+    "term": "societal cooperation",
+    "type": "Collocation",
+    "pronunciation": "/səˌsaɪəˈtəl kəʊˌɒpəˈreɪʃən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự hợp tác trong xã hội",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Media campaigns that emphasise unity can foster greater societal cooperation during emergencies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:strengthen-social-cohesion",
+    "title": "strengthen social cohesion",
+    "term": "strengthen social cohesion",
+    "type": "Collocation",
+    "pronunciation": "/ˈstrɛŋθən ˈsəʊʃəl kəʊˈhiːʒən/",
+    "part_of_speech": "verb",
+    "meaning_vi": "củng cố sự gắn kết xã hội",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Uplifting news stories can strengthen social cohesion by reminding communities of their shared values.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:technical-errors",
+    "title": "technical errors",
+    "term": "technical errors",
+    "type": "Collocation",
+    "pronunciation": "/ˈteknɪkəl ˈerəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "lỗi kỹ thuật",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Live broadcasts occasionally suffer from technical errors, which can frustrate viewers hoping for a flawless experience.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:academic-performance",
+    "title": "academic performance",
+    "term": "academic performance",
+    "type": "Collocation",
+    "pronunciation": "/ˌækəˈdemɪk pəˈfɔːməns/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kết quả học tập",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Studies suggest that too much screen time can have a negative impact on children's academic performance.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:age-inappropriate-films",
+    "title": "age-inappropriate films",
+    "term": "age-inappropriate films",
+    "type": "Collocation",
+    "pronunciation": "/eɪdʒ ˌɪnəˈprəʊpriət fɪlmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "phim không phù hợp với lứa tuổi",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Without parental supervision, children may gain access to age-inappropriate films that depict graphic violence.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:antisocial-behaviors",
+    "title": "antisocial behaviors",
+    "term": "antisocial behaviors",
+    "type": "Collocation",
+    "pronunciation": "/ˌæntiˈsəʊʃəl bɪˈheɪvjəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hành vi chống đối xã hội",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Researchers have found a possible link between exposure to violent films and antisocial behaviors among teenagers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:desensitized",
+    "title": "desensitized",
+    "term": "desensitized",
+    "type": "Vocabulary",
+    "pronunciation": "/diːˈsensɪtaɪzd/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "trở nên chai lì, mất cảm xúc trước điều gì đó",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Prolonged exposure to violent content can leave young audiences desensitized to real-world suffering.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:detrimental-effects",
+    "title": "detrimental effects",
+    "term": "detrimental effects",
+    "type": "Collocation",
+    "pronunciation": "/ˌdetrɪˈmentəl ɪˈfekts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những tác động tiêu cực, bất lợi",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Excessive screen time can have detrimental effects on children's physical and social development.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:disciplinary-interventions",
+    "title": "disciplinary interventions",
+    "term": "disciplinary interventions",
+    "type": "Collocation",
+    "pronunciation": "/ˈdɪsɪplɪnəri ˌɪntəˈvɛnʃənz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "các biện pháp can thiệp kỷ luật",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Schools have reported an increase in disciplinary interventions linked to aggressive behaviour among students.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:extracurricular-activities",
+    "title": "extracurricular activities",
+    "term": "extracurricular activities",
+    "type": "Collocation",
+    "pronunciation": "/ˌekstrəkəˈrɪkjʊlə ækˈtɪvətiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hoạt động ngoại khóa",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Schools often encourage students to take part in extracurricular activities to develop skills beyond the classroom.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:passive-viewers",
+    "title": "passive viewers",
+    "term": "passive viewers",
+    "type": "Collocation",
+    "pronunciation": "/ˈpæsɪv ˈvjuːəz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "người xem thụ động",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Rather than engaging actively with content, children often become passive viewers who absorb information without question.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:productive-and-enjoyable-free-time",
+    "title": "productive and enjoyable free time",
+    "term": "productive and enjoyable free time",
+    "type": "Collocation",
+    "pronunciation": "/prəˈdʌktɪv ənd ɪnˈdʒɔɪəbl friː taɪm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thời gian rảnh vừa hữu ích vừa vui vẻ",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "A balanced approach that combines guidance with freedom can help children enjoy productive and enjoyable free time.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:social-and-cognitive-skills",
+    "title": "social and cognitive skills",
+    "term": "social and cognitive skills",
+    "type": "Collocation",
+    "pronunciation": "/ˈsəʊʃəl ənd ˈkɒɡnətɪv skɪlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kỹ năng xã hội và nhận thức",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Well-planned activities are designed to strengthen children's social and cognitive skills from an early age.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:violent-or-aggressive-behavior",
+    "title": "violent or aggressive behavior",
+    "term": "violent or aggressive behavior",
+    "type": "Collocation",
+    "pronunciation": "/ˈvaɪələnt ɔːr əˈɡresɪv bɪˈheɪvjə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "hành vi bạo lực hoặc hung hăng",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Children who regularly watch violent or aggressive behavior on screen may come to view it as normal.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:a-judicious-combination",
+    "title": "a judicious combination",
+    "term": "a judicious combination",
+    "type": "Collocation",
+    "pronunciation": "/ə dʒuːˈdɪʃəs ˌkɒmbɪˈneɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự kết hợp khôn ngoan, hợp lý",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "A judicious combination of print, television and online sources gives readers the most balanced picture of world events.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:erosion-of-positive-social-attitudes",
+    "title": "erosion of positive social attitudes",
+    "term": "erosion of positive social attitudes",
+    "type": "Collocation",
+    "pronunciation": "/ɪˈrəʊʒən əv ˈpɒzətɪv ˈsəʊʃəl ˈætɪtjuːdz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự xói mòn thái độ xã hội tích cực",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Some sociologists blame violent entertainment for the gradual erosion of positive social attitudes in modern society.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:extensive-news-coverage",
+    "title": "extensive news coverage",
+    "term": "extensive news coverage",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈstɛnsɪv njuːz ˈkʌvərɪdʒ/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự đưa tin rộng rãi",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Extensive news coverage of a single tragic event can overwhelm audiences and heighten anxiety.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:opting-for",
+    "title": "opting for",
+    "term": "opting for",
+    "type": "Collocation",
+    "pronunciation": "/ˈɒptɪŋ fɔː/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "lựa chọn",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "An increasing number of consumers are opting for online streaming rather than travelling to a physical venue.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:real-time-updates-and-multimedia-elements",
+    "title": "real-time updates and multimedia elements",
+    "term": "real-time updates and multimedia elements",
+    "type": "Collocation",
+    "pronunciation": "/ˈrɪəltaɪm ˈʌpdeɪts ənd ˌmʌltiˈmiːdiə ˈelɪmənts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "cập nhật theo thời gian thực và các yếu tố đa phương tiện",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "By combining real-time updates and multimedia elements, digital news sites keep audiences far more engaged than print alone.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:reliable-purveyors-of-information",
+    "title": "reliable purveyors of information",
+    "term": "reliable purveyors of information",
+    "type": "Collocation",
+    "pronunciation": "/rɪˈlaɪəbəl pəˈveɪəz əv ˌɪnfəˈmeɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những đơn vị cung cấp thông tin đáng tin cậy",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Despite the rise of social media, many people still regard established newspapers as reliable purveyors of information.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:well-researched-and-balanced-reporting",
+    "title": "well-researched and balanced reporting",
+    "term": "well-researched and balanced reporting",
+    "type": "Collocation",
+    "pronunciation": "/ˌwelrɪˈsɜːtʃt ənd ˈbælənst rɪˈpɔːtɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "việc đưa tin được nghiên cứu kỹ lưỡng và cân bằng",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Consumers who value well-researched and balanced reporting tend to trust print media over sensationalist online outlets.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:acquire-broader-knowledge-and-vocabulary",
+    "title": "acquire broader knowledge and vocabulary",
+    "term": "acquire broader knowledge and vocabulary",
+    "type": "Collocation",
+    "pronunciation": "/əˈkwaɪə ˈbrɔːdə ˈnɒlɪdʒ ənd vəˈkæbjʊləri/",
+    "part_of_speech": "verb",
+    "meaning_vi": "tiếp thu kiến thức và vốn từ vựng rộng hơn",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Children who watch documentaries often acquire broader knowledge and vocabulary than their peers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:impressionable",
+    "title": "impressionable",
+    "term": "impressionable",
+    "type": "Vocabulary",
+    "pronunciation": "/ɪmˈprɛʃənəbl/",
+    "part_of_speech": "adjective",
+    "meaning_vi": "dễ bị ảnh hưởng, dễ bị tác động",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Impressionable young viewers are particularly vulnerable to the negative messages conveyed in violent films.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:parent-organized-activities",
+    "title": "parent-organized activities",
+    "term": "parent-organized activities",
+    "type": "Collocation",
+    "pronunciation": "/ˈpeərənt ˈɔːɡənaɪzd ækˈtɪvətiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các hoạt động do phụ huynh tổ chức",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Parent-organized activities such as music lessons and sports clubs can give children valuable structure and discipline.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:shaping-childrens-behavior",
+    "title": "shaping children's behavior",
+    "term": "shaping children's behavior",
+    "type": "Collocation",
+    "pronunciation": "/ˈʃeɪpɪŋ ˈtʃɪldrənz bɪˈheɪvjə/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "định hình hành vi của trẻ em",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Television plays a powerful role in shaping children's behavior, both positively and negatively.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:take-responsibility-for",
+    "title": "take responsibility for",
+    "term": "take responsibility for",
+    "type": "Collocation",
+    "pronunciation": "/teɪk rɪˌspɒnsəˈbɪləti fɔː/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "chịu trách nhiệm về",
+    "topic": "Entertainment",
+    "subTopic": "Film, TV & Media",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Allowing children to take responsibility for their own free time can help them mature into confident decision-makers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:alternative-sources",
+    "title": "alternative sources",
+    "term": "alternative sources",
+    "type": "Collocation",
+    "pronunciation": "/ɔːlˈtɜːnətɪv ˈsɔːsɪz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "các nguồn thông tin thay thế",
+    "topic": "Entertainment",
+    "subTopic": "Social Media & Online Content",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "As trust in traditional media declines, more people are turning to alternative sources for their news.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:provide-a-dynamic-and-interactive-way-to-engage-with-news",
+    "title": "provide a dynamic and interactive way to engage with news",
+    "term": "provide a dynamic and interactive way to engage with news",
+    "type": "Collocation",
+    "pronunciation": "/prəˈvaɪd ə daɪˈnæmɪk ənd ˌɪntərˈæktɪv weɪ tuː ɪnˈɡeɪdʒ wɪð njuːz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "cung cấp một cách tiếp cận tin tức năng động và tương tác",
+    "topic": "Entertainment",
+    "subTopic": "Social Media & Online Content",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Social media platforms provide a dynamic and interactive way to engage with news that appeals strongly to younger generations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:the-rapid-dissemination-of-information",
+    "title": "the rapid dissemination of information",
+    "term": "the rapid dissemination of information",
+    "type": "Collocation",
+    "pronunciation": "/ðə ˈræpɪd dɪˌsemɪˈneɪʃən əv ˌɪnfəˈmeɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phổ biến thông tin nhanh chóng",
+    "topic": "Entertainment",
+    "subTopic": "Social Media & Online Content",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The rapid dissemination of information online can be both a blessing and a curse when unverified stories go viral.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:achieve-higher-subscriptions-and-views",
+    "title": "achieve higher subscriptions and views",
+    "term": "achieve higher subscriptions and views",
+    "type": "Collocation",
+    "pronunciation": "/əˈtʃiːv ˈhaɪə səbˈskrɪpʃənz ənd vjuːz/",
+    "part_of_speech": "verb",
+    "meaning_vi": "đạt được nhiều lượt đăng ký và xem hơn",
+    "topic": "Entertainment",
+    "subTopic": "Social Media & Online Content",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Some channels resort to sensational headlines simply to achieve higher subscriptions and views.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:daily-routines",
+    "title": "daily routines",
+    "term": "daily routines",
+    "type": "Collocation",
+    "pronunciation": "/ˈdeɪli ruːˈtiːnz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các thói quen, sinh hoạt hằng ngày",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Music has become embedded in people's daily routines, accompanying activities from commuting to exercising.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:dynamic-and-collaborative-environment",
+    "title": "dynamic and collaborative environment",
+    "term": "dynamic and collaborative environment",
+    "type": "Collocation",
+    "pronunciation": "/daɪˈnæmɪk ənd kəˈlæbərətɪv ɪnˈvaɪrənmənt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "môi trường năng động và mang tính hợp tác",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Group sports create a dynamic and collaborative environment in which children learn teamwork naturally.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:promoting-physical-fitness-and-coordination",
+    "title": "promoting physical fitness and coordination",
+    "term": "promoting physical fitness and coordination",
+    "type": "Collocation",
+    "pronunciation": "/prəˈməʊtɪŋ ˈfɪzɪkəl ˈfɪtnəs ənd kəʊˌɔːdɪˈneɪʃən/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thúc đẩy thể lực và khả năng phối hợp cơ thể",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Traditional games such as tag are effective at promoting physical fitness and coordination in young children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:pursue-their-interests",
+    "title": "pursue their interests",
+    "term": "pursue their interests",
+    "type": "Collocation",
+    "pronunciation": "/pəˈsjuː ðeə ˈɪntrəsts/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "theo đuổi sở thích của mình",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Governments should fund community centres so that people from all backgrounds can pursue their interests, whether in music, sport or art.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:pursuing-hobbies",
+    "title": "pursuing hobbies",
+    "term": "pursuing hobbies",
+    "type": "Collocation",
+    "pronunciation": "/pəˈsjuːɪŋ ˈhɒbiz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "theo đuổi sở thích cá nhân",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Parents should encourage children to spend more time pursuing hobbies rather than passively watching television.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:child-led-free-time",
+    "title": "child-led free time",
+    "term": "child-led free time",
+    "type": "Collocation",
+    "pronunciation": "/tʃaɪld led friː taɪm/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "thời gian rảnh do trẻ tự quyết định",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Advocates of child-led free time believe it encourages children to explore their own interests without adult interference.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:develop-a-sense-of-independence-and-self-confidence",
+    "title": "develop a sense of independence and self-confidence",
+    "term": "develop a sense of independence and self-confidence",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈveləp ə sens əv ˌɪndɪˈpendəns ənd self ˈkɒnfɪdəns/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "phát triển tính độc lập và sự tự tin",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Unstructured play allows children to develop a sense of independence and self-confidence as they make their own decisions.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:excessive-screen-time",
+    "title": "excessive screen time",
+    "term": "excessive screen time",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈsɛsɪv skriːn taɪm/",
+    "part_of_speech": "noun",
+    "meaning_vi": "thời gian sử dụng màn hình quá nhiều",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Excessive screen time in early childhood has been associated with delayed language development.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:experience-a-more-well-rounded-development",
+    "title": "experience a more well-rounded development",
+    "term": "experience a more well-rounded development",
+    "type": "Collocation",
+    "pronunciation": "/ɪkˈspɪəriəns ə mɔː ˌwelˈraʊndɪd dɪˈveləpmənt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "trải nghiệm sự phát triển toàn diện hơn",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Children who play a mix of outdoor and educational games tend to experience a more well-rounded development.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:in-favor-of",
+    "title": "in favor of",
+    "term": "in favor of",
+    "type": "Collocation",
+    "pronunciation": "/ɪn ˈfeɪvər əv/",
+    "part_of_speech": "preposition phrase",
+    "meaning_vi": "ủng hộ, tán thành",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Those in favor of parent-organized activities believe children benefit most from adult guidance during their free time.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:interact-with-their-peers",
+    "title": "interact with their peers",
+    "term": "interact with their peers",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪntərˈækt wɪð ðeə pɪəz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tương tác với bạn bè đồng trang lứa",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Outdoor games give children a chance to interact with their peers in a natural, unstructured setting.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:overall-well-being",
+    "title": "overall well-being",
+    "term": "overall well-being",
+    "type": "Collocation",
+    "pronunciation": "/ˌəʊvərˈɔːl ˈwelbiːɪŋ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sức khỏe và tinh thần tổng thể",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "A balanced approach to entertainment is essential for children's overall well-being.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:pro-social-behavior",
+    "title": "pro-social behavior",
+    "term": "pro-social behavior",
+    "type": "Collocation",
+    "pronunciation": "/prəʊ ˈsəʊʃəl bɪˈheɪvjə/",
+    "part_of_speech": "noun",
+    "meaning_vi": "hành vi vì lợi ích xã hội",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Television programmes that model kindness can encourage pro-social behavior in young audiences.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:proponents",
+    "title": "proponents",
+    "term": "proponents",
+    "type": "Vocabulary",
+    "pronunciation": "/prəˈpəʊnənts/",
+    "part_of_speech": "noun",
+    "meaning_vi": "những người ủng hộ",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Proponents of child-led free time argue that children learn best when allowed to make their own choices.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:social-isolation",
+    "title": "social isolation",
+    "term": "social isolation",
+    "type": "Collocation",
+    "pronunciation": "/ˈsəʊʃəl ˌaɪsəˈleɪʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự cô lập xã hội",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Excessive gaming can lead to social isolation, as children withdraw from face-to-face interaction.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:supplementing-classroom-education",
+    "title": "supplementing classroom education",
+    "term": "supplementing classroom education",
+    "type": "Collocation",
+    "pronunciation": "/ˌsʌplɪˈmɛntɪŋ ˈklɑːsruːm ˌɛdʒʊˈkeɪʃən/",
+    "part_of_speech": "verb",
+    "meaning_vi": "bổ sung cho việc học ở trường",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Documentaries can play a valuable role in supplementing classroom education with real-world examples.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:unconsciously-adopt",
+    "title": "unconsciously adopt",
+    "term": "unconsciously adopt",
+    "type": "Collocation",
+    "pronunciation": "/ʌnˈkɒnʃəsli əˈdɒpt/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "vô thức tiếp nhận, bắt chước",
+    "topic": "Entertainment",
+    "subTopic": "Leisure, Sports & Recreation",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Young viewers may unconsciously adopt the attitudes and mannerisms displayed by their favourite television characters.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:a-short-lived-career",
+    "title": "a short-lived career",
+    "term": "a short-lived career",
+    "type": "Collocation",
+    "pronunciation": "/ə ʃɔːt lɪvd kəˈrɪə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự nghiệp ngắn ngủi",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Many pop idols experience a short-lived career because public taste in the entertainment industry changes so rapidly.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:achieve-international-fame",
+    "title": "achieve international fame",
+    "term": "achieve international fame",
+    "type": "Collocation",
+    "pronunciation": "/əˈtʃiːv ˌɪntəˈnæʃənəl feɪm/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "đạt được danh tiếng quốc tế",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Athletes who achieve international fame often become household names within a matter of years.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:amasses-substantial-wealth",
+    "title": "amasses substantial wealth",
+    "term": "amasses substantial wealth",
+    "type": "Collocation",
+    "pronunciation": "/əˈmæsɪz səbˈstænʃəl welθ/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "tích lũy khối tài sản khổng lồ",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "A top-tier celebrity often amasses substantial wealth within a remarkably short span of their career.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:delves-into",
+    "title": "delves into",
+    "term": "delves into",
+    "type": "Collocation",
+    "pronunciation": "/delvz ˈɪntuː/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "đi sâu tìm hiểu, phân tích kỹ",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "This essay delves into the reasons why celebrities often earn far more than professionals in other essential fields.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:derive-their-income",
+    "title": "derive their income",
+    "term": "derive their income",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈraɪv ðeər ˈɪnkʌm/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "kiếm thu nhập từ, có được thu nhập từ",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Many celebrities derive their income from multiple sources rather than relying solely on their original profession.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:diversification-of-income-streams",
+    "title": "diversification of income streams",
+    "term": "diversification of income streams",
+    "type": "Collocation",
+    "pronunciation": "/daɪˌvɜːsɪfɪˈkeɪʃən əv ˈɪnkʌm striːmz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự đa dạng hóa các nguồn thu nhập",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The diversification of income streams, from acting to product lines, explains why some celebrities earn extraordinary sums.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:look-up-to-media-and-sports-celebrities",
+    "title": "look up to media and sports celebrities",
+    "term": "look up to media and sports celebrities",
+    "type": "Collocation",
+    "pronunciation": "/lʊk ʌp tuː ˈmiːdiə ənd spɔːts sɛlɪˈbrɪtiz/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "ngưỡng mộ và noi theo những người nổi tiếng trong lĩnh vực truyền thông và thể thao",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Many young people look up to media and sports celebrities, believing that emulating their lifestyles will bring similar success.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:years-of-intensive-training-and-dedication",
+    "title": "years of intensive training and dedication",
+    "term": "years of intensive training and dedication",
+    "type": "Collocation",
+    "pronunciation": "/jɪəz əv ɪnˈtɛnsɪv ˈtreɪnɪŋ ənd ˌdɛdɪˈkeɪʃən/",
+    "part_of_speech": "noun",
+    "meaning_vi": "nhiều năm khổ luyện và tận tụy",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Behind every successful performer lie years of intensive training and dedication that the public rarely witnesses.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:to-enjoy-entertainment-performances-at-home",
+    "title": "to enjoy entertainment performances at home",
+    "term": "to enjoy entertainment performances at home",
+    "type": "Collocation",
+    "pronunciation": "/tuː ɪnˈdʒɔɪ ˌɛntəˈteɪnmənt pəˈfɔːmənsɪz ət həʊm/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "thưởng thức các buổi biểu diễn giải trí tại nhà",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Streaming services now allow audiences to enjoy entertainment performances at home without purchasing an expensive ticket.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:shaping",
+    "title": "shaping",
+    "term": "shaping",
+    "type": "Vocabulary",
+    "pronunciation": "/ˈʃeɪpɪŋ/",
+    "part_of_speech": "collocation",
+    "meaning_vi": "(verb (gerund)). định hình, hình thành",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Popular music plays a significant part in shaping the values and attitudes of younger generations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:a-primary-driver",
+    "title": "a primary driver",
+    "term": "a primary driver",
+    "type": "Collocation",
+    "pronunciation": "/ə ˈpraɪməri ˈdraɪvə/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "một động lực chính, yếu tố then chốt",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Brand partnerships remain a primary driver of the enormous wealth accumulated by modern celebrities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:commodity",
+    "title": "commodity",
+    "term": "commodity",
+    "type": "Vocabulary",
+    "pronunciation": "/kəˈmɒdəti/",
+    "part_of_speech": "noun",
+    "meaning_vi": "hàng hóa, sản phẩm thương mại",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "In today's streaming era, music has increasingly become a commodity marketed to maximize commercial profit.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:intersect-with-the-commercial-world",
+    "title": "intersect with the commercial world",
+    "term": "intersect with the commercial world",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪntəˈsekt wɪð ðə kəˈmɜːʃəl wɜːld/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "giao thoa với thế giới thương mại",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "As celebrities increasingly intersect with the commercial world, their public image becomes inseparable from marketing strategies.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:lucrative-endorsement-deals",
+    "title": "lucrative endorsement deals",
+    "term": "lucrative endorsement deals",
+    "type": "Collocation",
+    "pronunciation": "/ˈluːkrətɪv ɪnˈdɔːsmənt diːlz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các hợp đồng quảng cáo sinh lời cao",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Famous athletes frequently sign lucrative endorsement deals with major brands, dramatically boosting their overall earnings.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:sponsorship-agreements",
+    "title": "sponsorship agreements",
+    "term": "sponsorship agreements",
+    "type": "Collocation",
+    "pronunciation": "/ˈspɒnsəʃɪp əˈɡriːmənts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "các thỏa thuận tài trợ",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Sponsorship agreements with global corporations allow public figures to earn income that far exceeds their base salaries.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:cultural-fabric-of-societies",
+    "title": "cultural fabric of societies",
+    "term": "cultural fabric of societies",
+    "type": "Collocation",
+    "pronunciation": "/ˈkʌltʃərəl ˈfæbrɪk əv səˈsaɪətiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "kết cấu văn hóa của các xã hội",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Traditional music remains deeply woven into the cultural fabric of societies across the globe.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:cultural-identities",
+    "title": "cultural identities",
+    "term": "cultural identities",
+    "type": "Collocation",
+    "pronunciation": "/ˈkʌltʃərəl aɪˈdentətiz/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "bản sắc văn hóa",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Bối cảnh & Nguyên nhân",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Traditional festivals and music help preserve the cultural identities of communities in an increasingly globalized world.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:a-distorted-understanding-of-success-and-social-values",
+    "title": "a distorted understanding of success and social values",
+    "term": "a distorted understanding of success and social values",
+    "type": "Collocation",
+    "pronunciation": "/ə dɪˈstɔːtɪd ˌʌndəˈstændɪŋ əv səkˈsɛs ənd ˈsəʊʃəl ˈvæljuːz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "nhận thức lệch lạc về thành công và giá trị xã hội",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Constant exposure to glamorous celebrity lifestyles may give children a distorted understanding of success and social values.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:an-excessive-focus-on-fame-and-wealth",
+    "title": "an excessive focus on fame and wealth",
+    "term": "an excessive focus on fame and wealth",
+    "type": "Collocation",
+    "pronunciation": "/ən ɪkˈsɛsɪv ˈfəʊkəs ɒn feɪm ənd wɛlθ/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự tập trung thái quá vào danh tiếng và tiền bạc",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "An excessive focus on fame and wealth in popular media can distort young people's priorities in life.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:as-acceptable-or-even-trendy",
+    "title": "as acceptable or even trendy",
+    "term": "as acceptable or even trendy",
+    "type": "Collocation",
+    "pronunciation": "/æz əkˈsɛptəbl ɔːr ˈiːvən ˈtrɛndi/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "được xem là chấp nhận được hoặc thậm chí thời thượng",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Repeated media exposure can make reckless behaviour seem as acceptable or even trendy among young audiences.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:develop-a-strong-work-ethic",
+    "title": "develop a strong work ethic",
+    "term": "develop a strong work ethic",
+    "type": "Collocation",
+    "pronunciation": "/dɪˈvɛləp ə strɒŋ wɜːk ˈɛθɪk/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "rèn luyện tinh thần làm việc nghiêm túc",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Watching disciplined athletes can inspire young fans to develop a strong work ethic in their own lives.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:impressionable-teenagers",
+    "title": "impressionable teenagers",
+    "term": "impressionable teenagers",
+    "type": "Collocation",
+    "pronunciation": "/ɪmˈprɛʃənəbl ˈtiːneɪdʒəz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "thanh thiếu niên dễ bị tác động",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Impressionable teenagers are particularly susceptible to the lifestyles portrayed by their favourite celebrities.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:pose-serious-challenges",
+    "title": "pose serious challenges",
+    "term": "pose serious challenges",
+    "type": "Collocation",
+    "pronunciation": "/pəʊz ˈsɪəriəs ˈtʃælɪndʒɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gây ra những thách thức nghiêm trọng",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Excessive admiration for celebrity wealth can pose serious challenges to how young people define success.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:prioritize-materialistic-values",
+    "title": "prioritize materialistic values",
+    "term": "prioritize materialistic values",
+    "type": "Collocation",
+    "pronunciation": "/praɪˈɒrətaɪz məˌtɪəriəˈlɪstɪk ˈvæljuːz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "coi trọng các giá trị vật chất",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Constant exposure to celebrity lifestyles may cause young viewers to prioritize materialistic values over personal growth.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:the-disproportionate-gap",
+    "title": "the disproportionate gap",
+    "term": "the disproportionate gap",
+    "type": "Collocation",
+    "pronunciation": "/ðə ˌdɪsprəˈpɔːʃənət ɡæp/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "khoảng cách không cân xứng",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The disproportionate gap between celebrity earnings and average wages can distort young people's career aspirations.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:the-imitation-of-harmful-behaviors",
+    "title": "the imitation of harmful behaviors",
+    "term": "the imitation of harmful behaviors",
+    "type": "Collocation",
+    "pronunciation": "/ðə ˌɪmɪˈteɪʃən əv ˈhɑːmfʊl bɪˈheɪvjəz/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự bắt chước những hành vi có hại",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Critics argue that the imitation of harmful behaviors seen on screen can negatively influence impressionable viewers.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:the-income-disparity",
+    "title": "the income disparity",
+    "term": "the income disparity",
+    "type": "Collocation",
+    "pronunciation": "/ðə ˈɪnkʌm dɪˈspærəti/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự chênh lệch thu nhập",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The income disparity between famous celebrities and ordinary workers has sparked considerable public debate in recent years.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:the-lopsided-income-distribution",
+    "title": "the lopsided income distribution",
+    "term": "the lopsided income distribution",
+    "type": "Collocation",
+    "pronunciation": "/ðə ˈlɒpsaɪdɪd ˈɪnkʌm ˌdɪstrɪˈbjuːʃən/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự phân phối thu nhập mất cân đối",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "The lopsided income distribution between celebrities and other professionals raises important questions about societal values.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:desensitize-viewers",
+    "title": "desensitize viewers",
+    "term": "desensitize viewers",
+    "type": "Collocation",
+    "pronunciation": "/diːˈsɛnsɪtaɪz ˈvjuːəz/",
+    "part_of_speech": "verb",
+    "meaning_vi": "làm khán giả chai lì cảm xúc",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Repeated depictions of graphic violence may desensitize viewers to real-world suffering.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:societal-impact",
+    "title": "societal impact",
+    "term": "societal impact",
+    "type": "Collocation",
+    "pronunciation": "/səˈsaɪətəl ˈɪmpækt/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "tác động đến xã hội",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Beyond personal enjoyment, music can have a lasting societal impact by shaping public opinion on important issues.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:materialism",
+    "title": "materialism",
+    "term": "materialism",
+    "type": "Vocabulary",
+    "pronunciation": "/məˈtɪəriəlɪzəm/",
+    "part_of_speech": "noun",
+    "meaning_vi": "chủ nghĩa vật chất",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Constant exposure to advertising can foster materialism among children from a very young age.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:intellectual-growth",
+    "title": "intellectual growth",
+    "term": "intellectual growth",
+    "type": "Collocation",
+    "pronunciation": "/ˌɪntəˈlɛktjuəl ɡrəʊθ/",
+    "part_of_speech": "noun",
+    "meaning_vi": "sự phát triển trí tuệ",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Thoughtfully designed educational content can foster intellectual growth rather than hinder it.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:slow-overall-mental-development",
+    "title": "slow overall mental development",
+    "term": "slow overall mental development",
+    "type": "Collocation",
+    "pronunciation": "/sləʊ ˌəʊvərˈɔːl ˈmɛntəl dɪˈvɛləpmənt/",
+    "part_of_speech": "verb",
+    "meaning_vi": "làm chậm sự phát triển trí tuệ tổng thể",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Tác động & Hậu quả",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Some experts believe that unrestricted screen exposure may slow overall mental development in young children.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:act-as-positive-role-models",
+    "title": "act as positive role models",
+    "term": "act as positive role models",
+    "type": "Collocation",
+    "pronunciation": "/ækt æz ˈpɒzətɪv rəʊl ˈmɒdlz/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "đóng vai trò là tấm gương tích cực",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Some celebrities act as positive role models by using their platform to promote charitable causes.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:maintaining-positive-images",
+    "title": "maintaining positive images",
+    "term": "maintaining positive images",
+    "type": "Collocation",
+    "pronunciation": "/meɪnˈteɪnɪŋ ˈpɒzətɪv ˈɪmɪdʒɪz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "duy trì hình ảnh tích cực",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Celebrities face constant pressure to succeed in maintaining positive images in front of the public and the media.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:participate-in-beneficial-activities",
+    "title": "participate in beneficial activities",
+    "term": "participate in beneficial activities",
+    "type": "Collocation",
+    "pronunciation": "/pɑːˈtɪsɪpeɪt ɪn ˌbɛnɪˈfɪʃəl ækˈtɪvɪtiz/",
+    "part_of_speech": "phrase",
+    "meaning_vi": "tham gia vào các hoạt động có ích",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Inspired by their idols, many teenagers begin to participate in beneficial activities such as sports or volunteer work.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:set-good-examples",
+    "title": "set good examples",
+    "term": "set good examples",
+    "type": "Collocation",
+    "pronunciation": "/sɛt ɡʊd ɪɡˈzɑːmplz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "làm gương tốt",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "As role models, celebrities have a responsibility to set good examples for their young fans to follow.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:preserving-traditional-values",
+    "title": "preserving traditional values",
+    "term": "preserving traditional values",
+    "type": "Collocation",
+    "pronunciation": "/prɪˈzɜːvɪŋ trəˈdɪʃənl ˈvæljuːz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "gìn giữ các giá trị truyền thống",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Folk musicians contribute significantly to preserving traditional values that might otherwise be lost to modernisation.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:pursue-traditional-music",
+    "title": "pursue traditional music",
+    "term": "pursue traditional music",
+    "type": "Collocation",
+    "pronunciation": "/pəˈsjuː trəˈdɪʃənl ˈmjuːzɪk/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "theo đuổi dòng nhạc truyền thống",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Young artists who pursue traditional music play a vital role in keeping their country's cultural heritage alive.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:social-change",
+    "title": "social change",
+    "term": "social change",
+    "type": "Collocation",
+    "pronunciation": "/ˈsəʊʃəl tʃeɪndʒ/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "sự thay đổi xã hội",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Throughout history, music has been used as a powerful tool to inspire social change and challenge injustice.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:foster-creativity-and-critical-thinking-skills",
+    "title": "foster creativity and critical thinking skills",
+    "term": "foster creativity and critical thinking skills",
+    "type": "Collocation",
+    "pronunciation": "/ˈfɒstə kriˌeɪˈtɪvəti ənd ˈkrɪtɪkəl ˈθɪŋkɪŋ skɪlz/",
+    "part_of_speech": "verb phrase",
+    "meaning_vi": "nuôi dưỡng khả năng sáng tạo và tư duy phản biện",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Free, unsupervised play can foster creativity and critical thinking skills that structured lessons rarely provide.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  },
+  {
+    "id": "topic-colloc:entertainment:valuable-traits",
+    "title": "valuable traits",
+    "term": "valuable traits",
+    "type": "Collocation",
+    "pronunciation": "/ˈvæljuəbl treɪts/",
+    "part_of_speech": "noun phrase",
+    "meaning_vi": "những phẩm chất quý giá",
+    "topic": "Entertainment",
+    "subTopic": "Cultural & Social Impact",
+    "group": "Giải pháp & Hành động",
+    "origin": "Topic Collocations · Entertainment",
+    "examples": [
+      {
+        "en": "Organized activities can help children develop valuable traits such as patience, teamwork, and perseverance.",
+        "vi": ""
+      }
+    ],
+    "patterns": []
+  }
+]
