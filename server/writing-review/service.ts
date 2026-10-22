@@ -6,6 +6,7 @@ import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import type { WritingFix, WritingReviewJob, WritingReviewResult, WritingReviewSummary, WritingUsage } from '../../src/types/writingReview.ts'
 import { ApiError, type ApiContext } from '../api.ts'
+import { requestContext, userPath } from '../paths.ts'
 import { writingReviewEffort, writingReviewModelName, writingReviewModel } from './llm.ts'
 import { proofOf, rewriteReview, type IssueKind, type RewriteReport } from './rewrite.ts'
 import { creditInBackground } from '../practice/real-use.ts'
@@ -15,8 +16,9 @@ export const MIN_LENGTH = 30
 export const MAX_LENGTH = 5000
 const MAX_RUNNING = 2
 
-const dir = (ctx: ApiContext) => path.join(ctx.rootDir, 'progress', 'writing-reviews')
-const fileOf = (ctx: ApiContext, id: string) => path.join(dir(ctx), `${id}.json`)
+const dir = (ctx: ApiContext) => userPath(ctx, 'progress', 'writing-reviews')
+const fileOf = (ctx: ApiContext, id: string) => userPath(ctx, 'progress', 'writing-reviews', `${id}.json`)
+type TrackedWritingJob = WritingReviewJob & { userId?: string }
 const validId = (id: string) => /^[a-z0-9-]{6,40}$/.test(id)
 
 // Kept on globalThis: the dev server reloads server modules in-process when they change, while running jobs carry on in
@@ -136,7 +138,7 @@ export function normalizeVietnameseOutline(raw?: string): string | undefined {
 }
 
 export function startReview(ctx: ApiContext, text: string, vietnameseText?: string): WritingReviewJob {
-  if ([...jobs.values()].filter((j) => j.status === 'running').length >= MAX_RUNNING) {
+  if ([...jobs.values()].filter((j) => (j as TrackedWritingJob).userId === ctx.user.id && j.status === 'running').length >= MAX_RUNNING) {
     throw new ApiError(429, 'Another review is still running — please wait for it to finish.')
   }
   const cleanVietnamese = normalizeVietnameseOutline(vietnameseText)
@@ -148,15 +150,16 @@ export function startReview(ctx: ApiContext, text: string, vietnameseText?: stri
     step: 'diagnose',
     usage: emptyUsage(),
   }
+  ;(job as TrackedWritingJob).userId = ctx.user.id
   jobs.set(job.id, job)
-  void run(ctx, job, text, cleanVietnamese)
+  void requestContext.run({ userId: ctx.user.id, userDir: ctx.userDir }, () => run(ctx, job, text, cleanVietnamese))
   return job
 }
 
 export async function getReview(ctx: ApiContext, id: string): Promise<WritingReviewJob | null> {
   if (!validId(id)) return null
-  const live = jobs.get(id)
-  if (live) return live
+  const live = jobs.get(id) as TrackedWritingJob | undefined
+  if (live) return live.userId === ctx.user.id ? live : null
   try {
     const result = JSON.parse(await readFile(fileOf(ctx, id), 'utf8')) as WritingReviewResult
     return { id, status: 'done', startedAt: result.createdAt, usage: result.usage, result }
@@ -194,7 +197,8 @@ export async function listReviews(ctx: ApiContext, limit = 100): Promise<Writing
 export async function deleteReview(ctx: ApiContext, id: string): Promise<void> {
   if (!validId(id)) throw new ApiError(400, 'Invalid id.')
   await rm(fileOf(ctx, id), { force: true })
-  jobs.delete(id)
+  const live = jobs.get(id) as TrackedWritingJob | undefined
+  if (!live || live.userId === ctx.user.id) jobs.delete(id)
 }
 
 export async function analyzeReviewEdit(ctx: ApiContext, id: string, userEdited: string): Promise<WritingReviewResult> {

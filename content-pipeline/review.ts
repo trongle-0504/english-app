@@ -16,7 +16,7 @@ import type { Essay, EssayItem } from '../src/types/essays.ts'
 import { cardItems, essayCardId } from '../src/types/essays.ts'
 import { workPath } from '../src/types/practice.ts'
 import { boldSentence } from './essays.ts'
-import { asStringArray, contentPath, listFiles, readJson, slugify, warn, type Output } from './shared.ts'
+import { asStringArray, listFiles, readJson, slugify, warn, type Output } from './shared.ts'
 import { ALL_TOPIC_ID } from './vocabulary.ts'
 import { phraseKey } from '../src/lib/wordDrills.ts'
 
@@ -224,8 +224,10 @@ export function parseQuickCards(text: string): { name?: string; cards: ReviewCar
   return { name, cards }
 }
 
-function buildCustomDecks(root: string, cards: ReviewCard[], decks: ReviewDeck[]) {
-  const dir = contentPath(root, 'review')
+export function buildCustomCards(dir: string): ReviewIndex {
+  const cards: ReviewCard[] = []
+  const decks: ReviewDeck[] = []
+  const seen = new Set<string>()
   const files = [...listFiles(dir, '.json'), ...listFiles(dir, '.md')].filter((f) => !f.startsWith('_'))
   for (const file of files) {
     const deckId = slugify(file.replace(/\.(json|md)$/, ''))
@@ -245,17 +247,19 @@ function buildCustomDecks(root: string, cards: ReviewCard[], decks: ReviewDeck[]
     doc.cards.forEach((raw, i) => {
       const { card, problem } = normalizeCustomCard(raw, deckId, name)
       if (!card) return warn(`review: ${file} card #${i + 1}: ${problem}, skipped`)
-      if (deck.cardIds.includes(card.id)) return warn(`review: ${file} card #${i + 1} ("${card.term}") duplicates another card's id, skipped`)
+      if (deck.cardIds.includes(card.id) || seen.has(card.id)) return warn(`review: ${file} card #${i + 1} ("${card.term}") duplicates another card's id, skipped`)
+      seen.add(card.id)
       deck.cardIds.push(card.id)
       cards.push(card)
     })
     decks.push(deck)
   }
+  return { cards, decks }
 }
 
 /** Builds /data/review/index.json: every reviewable card in the common shape, grouped into decks. */
 export function buildReview(
-  root: string,
+  _root: string,
   out: Output,
   { words, lessons, notes, essays }: { words: VocabWord[]; lessons: CollocationLesson[]; notes: Note[]; essays: Essay[] },
 ): ReviewIndex {
@@ -330,8 +334,6 @@ export function buildReview(
     }
     decks.push(deck)
   }
-
-  buildCustomDecks(root, cards, decks)
 
   // Ids must be unique across sources; a clash would merge two cards' progress.
   const seen = new Set<string>()

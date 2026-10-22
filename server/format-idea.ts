@@ -9,6 +9,7 @@ import { z } from 'zod'
 import type { FormattedIdea, IdeaBlock, SpeakingResult } from '../src/types/speaking.ts'
 import type { WritingReviewResult } from '../src/types/writingReview.ts'
 import { ApiError, type ApiContext } from './api.ts'
+import { userPath } from './paths.ts'
 import type { JsonModel } from './annotate.ts'
 import { readJsonFile, writeJsonFile } from './files.ts'
 
@@ -98,10 +99,10 @@ const validId = (id: string) => /^[a-z0-9-]{6,40}$/.test(id)
  * Formats the idea of a saved Speaking answer or Writing review once and saves it with the result; a result already
  * formatted answers at once. `model` is the source page's own model.
  */
-export async function formatSavedIdea(ctx: Pick<ApiContext, 'rootDir'>, at: IdeaSource, model: JsonModel): Promise<FormattedIdea> {
+export async function formatSavedIdea(ctx: Pick<ApiContext, 'rootDir'> & { userDir?: string }, at: IdeaSource, model: JsonModel): Promise<FormattedIdea> {
   if (!validId(at.id)) throw new ApiError(400, 'Invalid id.')
   if (at.source === 'speaking') {
-    const file = path.join(ctx.rootDir, 'progress', 'speaking', `${at.id}.json`)
+    const file = ctx.userDir ? userPath(ctx, 'progress', 'speaking', `${at.id}.json`) : path.join(ctx.rootDir, 'progress', 'speaking', `${at.id}.json`)
     const result = await readJsonFile<SpeakingResult | null>(file, null)
     const answer = result?.answers?.[at.answerIndex]
     if (!answer) throw new ApiError(404, 'Answer not found.')
@@ -116,7 +117,7 @@ export async function formatSavedIdea(ctx: Pick<ApiContext, 'rootDir'>, at: Idea
     }
     return answer.ideaFormatted
   }
-  const file = path.join(ctx.rootDir, 'progress', 'writing-reviews', `${at.id}.json`)
+  const file = ctx.userDir ? userPath(ctx, 'progress', 'writing-reviews', `${at.id}.json`) : path.join(ctx.rootDir, 'progress', 'writing-reviews', `${at.id}.json`)
   const result = await readJsonFile<WritingReviewResult | null>(file, null)
   if (!result) throw new ApiError(404, 'Writing review not found.')
   if (result.vietnameseFormatted?.blocks.length) return result.vietnameseFormatted

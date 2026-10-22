@@ -1,21 +1,21 @@
 // Accounts for the login page. Run in WSL from the project folder:
-//   node scripts/user.ts create <email>          create the account (asks for the password twice)
-//   node scripts/user.ts reset-password <email>  new password; signs that account out everywhere
-//   node scripts/user.ts disable|enable <email>  block or allow logging in (disable also signs out)
+//   node scripts/user.ts create <email> [--admin]     create account (default role: learner; --admin for admin)
+//   node scripts/user.ts role <email> admin|learner   change account role
+//   node scripts/user.ts reset-password <email>       new password; signs that account out everywhere
+//   node scripts/user.ts disable|enable <email>       block or allow logging in (disable also signs out)
 //   node scripts/user.ts list
 // Passwords are typed at a hidden prompt, never passed as arguments (they would stay in the shell history).
 // DATA_DIR=<dir> writes somewhere other than data/.
 import { createInterface } from 'node:readline'
 import { MIN_PASSWORD_LENGTH } from '../server/auth/password.ts'
 import { deleteUserSessions } from '../server/auth/sessions.ts'
-import { createUser, findByEmail, listUsers, setDisabled, setPassword } from '../server/auth/users.ts'
+import { createUser, findByEmail, listUsers, setDisabled, setPassword, setRole, type UserRole } from '../server/auth/users.ts'
 
 /** Reads a line without echoing it. */
 function askHidden(question: string): Promise<string> {
   if (!process.stdin.isTTY) throw new Error('Run this in a terminal: the password is typed at a hidden prompt.')
   return new Promise((resolve) => {
     const rl = createInterface({ input: process.stdin, output: process.stdout, terminal: true })
-    // Echo nothing while the answer is typed; the question itself is written before muting.
     const output = rl as unknown as { _writeToOutput: (s: string) => void }
     process.stdout.write(question)
     output._writeToOutput = () => {}
@@ -41,14 +41,26 @@ async function existing(email: string | undefined) {
   return user
 }
 
-const [command, email] = process.argv.slice(2)
+const args = process.argv.slice(2)
+const flags = new Set(args.filter((a) => a.startsWith('--')))
+const positional = args.filter((a) => !a.startsWith('--'))
+const [command, email, third] = positional
+
 try {
   switch (command) {
     case 'create': {
-      if (!email || !email.includes('@')) throw new Error('Usage: node scripts/user.ts create <email>')
+      if (!email || !email.includes('@')) throw new Error('Usage: node scripts/user.ts create <email> [--admin]')
       if (await findByEmail(email)) throw new Error(`An account for ${email} already exists (reset-password changes its password).`)
-      const user = await createUser(email, await askNewPassword())
-      console.log(`Created ${user.email}. Log in at /login.`)
+      const role: UserRole = flags.has('--admin') ? 'admin' : 'learner'
+      const user = await createUser(email, await askNewPassword(), role)
+      console.log(`Created ${user.email} (${user.role}). Log in at /login.`)
+      break
+    }
+    case 'role': {
+      const user = await existing(email)
+      if (third !== 'admin' && third !== 'learner') throw new Error('Usage: node scripts/user.ts role <email> admin|learner')
+      await setRole(user.id, third)
+      console.log(`${user.email} role set to ${third}.`)
       break
     }
     case 'reset-password': {
@@ -68,12 +80,12 @@ try {
     }
     case 'list': {
       const users = await listUsers()
-      if (!users.length) console.log('No accounts yet: node scripts/user.ts create <email>')
+      if (!users.length) console.log('No accounts yet: node scripts/user.ts create <email> --admin')
       for (const u of users) console.log(`${u.email}  ${u.role}${u.disabled ? '  (disabled)' : ''}  since ${u.createdAt.slice(0, 10)}`)
       break
     }
     default:
-      console.log('Usage: node scripts/user.ts create|reset-password|disable|enable <email>  |  node scripts/user.ts list')
+      console.log('Usage: node scripts/user.ts create <email> [--admin]  |  role <email> admin|learner  |  reset-password|disable|enable <email>  |  list')
       process.exitCode = 1
   }
 } catch (error) {

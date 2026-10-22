@@ -1,25 +1,22 @@
-// Review progress on disk: progress/review.json (settings + card states) and progress/review-log.jsonl
-// (one line per review, append-only). Lives outside content/ so grading never triggers a content rebuild.
+// Review progress on disk: <userDir>/progress/review.json (settings + card states) and <userDir>/progress/review-log.jsonl
+// (one line per review, append-only). Isolated per user and outside content/ so grading never triggers a content rebuild.
 import { appendFile, mkdir, readFile, writeFile } from 'node:fs/promises'
-import path from 'node:path'
 import { newSchedulerCard, studyDay } from '../../src/features/review/schedule.ts'
 import { DEFAULT_REVIEW_SETTINGS, type ReviewLogEntry, type ReviewSettings, type ReviewStateDoc, type UsageLogEntry } from '../../src/types/review.ts'
 import type { ApiContext } from '../api.ts'
 import { readJsonFile, writeJsonFile } from '../files.ts'
+import { userPath, withUserLock } from '../paths.ts'
 
-const dir = (ctx: ApiContext) => path.join(ctx.rootDir, 'progress')
-const stateFile = (ctx: ApiContext) => path.join(dir(ctx), 'review.json')
-const logFile = (ctx: ApiContext) => path.join(dir(ctx), 'review-log.jsonl')
-const usageLogFile = (ctx: ApiContext) => path.join(dir(ctx), 'usage-log.jsonl')
+const dir = (ctx: ApiContext) => userPath(ctx, 'progress')
+const stateFile = (ctx: ApiContext) => userPath(ctx, 'progress', 'review.json')
+const logFile = (ctx: ApiContext) => userPath(ctx, 'progress', 'review-log.jsonl')
+const usageLogFile = (ctx: ApiContext) => userPath(ctx, 'progress', 'usage-log.jsonl')
 
 export const CARD_ID = /^(vocab|colloc|wcolloc|note|custom|essay):[a-z0-9:/_-]+$/
 
-let queue: Promise<unknown> = Promise.resolve()
-/** Serialises every read-modify-write of the progress files. */
-export function withProgress<T>(task: () => Promise<T>): Promise<T> {
-  const run = queue.then(task)
-  queue = run.catch(() => {})
-  return run
+/** Serialises every read-modify-write of a user's progress files without blocking other users. */
+export function withProgress<T>(ctx: ApiContext, task: () => Promise<T>): Promise<T> {
+  return withUserLock(ctx.user.id, 'review-progress', task)
 }
 
 export async function readState(ctx: ApiContext): Promise<ReviewStateDoc> {
@@ -59,13 +56,13 @@ export async function appendLog(ctx: ApiContext, entry: ReviewLogEntry): Promise
   await appendFile(logFile(ctx), `${JSON.stringify(entry)}\n`)
 }
 
-/** Rewrites the log without its last entry (undo). */
-/** "Luyện dùng từ" answers, kept apart from the review log (they do not touch the schedule or the review stats). */
+/** Practice answers, kept apart from the review log (they do not touch the schedule or the review stats). */
 export async function appendUsageLog(ctx: ApiContext, entry: UsageLogEntry): Promise<void> {
   await mkdir(dir(ctx), { recursive: true })
   await appendFile(usageLogFile(ctx), `${JSON.stringify(entry)}\n`)
 }
 
+/** Rewrites the log without its last entry (undo). */
 export async function dropLastLog(ctx: ApiContext, entries: ReviewLogEntry[]): Promise<void> {
   const kept = entries.slice(0, -1)
   await mkdir(dir(ctx), { recursive: true })
@@ -74,7 +71,7 @@ export async function dropLastLog(ctx: ApiContext, entries: ReviewLogEntry[]): P
 
 /** Adds cards (as new) to reviews; returns how many were not there yet. `learnToday` puts them in today's session. */
 export function addCards(ctx: ApiContext, ids: string[], { learnToday = false }: { learnToday?: boolean } = {}): Promise<number> {
-  return withProgress(async () => {
+  return withProgress(ctx, async () => {
     const state = await readState(ctx)
     const now = new Date()
     const learnDay = learnToday ? today(state.settings, now) : undefined

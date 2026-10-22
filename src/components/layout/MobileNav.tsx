@@ -3,7 +3,7 @@ import { LogOut, Menu, UserRound, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router'
 import { Button } from '@/components/ui'
-import { logout } from '@/features/auth/session'
+import { logout, useCurrentUser } from '@/features/auth/session'
 import { cn } from '@/lib/cn'
 import { AiBadge } from './Header'
 import { Logo } from './Logo'
@@ -30,6 +30,8 @@ function MobileLink({ item, active }: { item: NavItem; active: boolean }) {
 export function MobileNav() {
   const [open, setOpen] = useState(false)
   const { pathname } = useLocation()
+  const user = useCurrentUser()
+  const isAdmin = user?.role === 'admin'
   useEffect(() => setOpen(false), [pathname])
 
   const skillGroups = navGroups.filter((g) => g.items)
@@ -83,12 +85,14 @@ export function MobileNav() {
                 ))}
               </div>
             ) : null}
-            <div className="border-t border-slate-100 pt-4 dark:border-slate-800">
-              <p className="mb-1 px-3 text-[11px] font-bold tracking-[0.16em] text-slate-400 uppercase">Admin</p>
-              {adminNav.map((item) => (
-                <MobileLink key={item.to} item={item} active={current?.to === item.to} />
-              ))}
-            </div>
+            {isAdmin ? (
+              <div className="border-t border-slate-100 pt-4 dark:border-slate-800">
+                <p className="mb-1 px-3 text-[11px] font-bold tracking-[0.16em] text-slate-400 uppercase">Admin</p>
+                {adminNav.map((item) => (
+                  <MobileLink key={item.to} item={item} active={current?.to === item.to} />
+                ))}
+              </div>
+            ) : null}
             <div className="border-t border-slate-100 pt-3 dark:border-slate-800">
               <MobileLink item={{ to: '/account', label: 'Tài khoản', icon: UserRound }} active={pathname === '/account'} />
               <button

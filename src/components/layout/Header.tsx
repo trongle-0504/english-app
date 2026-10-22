@@ -2,7 +2,7 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import { ChevronDown, LogOut, Monitor, Moon, Search, Sun, UserRound } from 'lucide-react'
 import { Link, NavLink, useLocation } from 'react-router'
 import { Button } from '@/components/ui'
-import { logout } from '@/features/auth/session'
+import { logout, useCurrentUser } from '@/features/auth/session'
 import { cn } from '@/lib/cn'
 import { useTheme, type ThemePreference } from '@/lib/theme'
 import { Logo } from './Logo'
@@ -107,28 +107,39 @@ export function ThemeMenu() {
 
 function AdminMenu() {
   const { pathname } = useLocation()
+  const user = useCurrentUser()
+  const isAdmin = user?.role === 'admin'
   return (
     <DropdownMenu.Root modal={false}>
       <DropdownMenu.Trigger asChild>
-        <Button variant="ghost" size="icon" aria-label="Admin" className={cn(pathname.startsWith('/admin') && 'text-brand-600')}>
-          <AdminIcon className="size-[18px]" />
+        <Button
+          variant="ghost"
+          size="icon"
+          aria-label={isAdmin ? 'Admin' : 'Account'}
+          className={cn((pathname.startsWith('/admin') || pathname === '/account') && 'text-brand-600')}
+        >
+          {isAdmin ? <AdminIcon className="size-[18px]" /> : <UserRound className="size-[18px]" />}
         </Button>
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
         <DropdownMenu.Content align="end" sideOffset={8} className={cn(menuContentClass, 'min-w-48')}>
-          <DropdownMenu.Label className="px-3 pt-1.5 pb-1 text-[11px] font-bold tracking-[0.16em] text-slate-400 uppercase">Admin</DropdownMenu.Label>
-          {adminNav.map((item) => (
-            <DropdownMenu.Item key={item.to} asChild>
-              <Link
-                to={item.to}
-                className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm text-slate-700 outline-none data-[highlighted]:bg-slate-100 dark:text-slate-200 dark:data-[highlighted]:bg-slate-800"
-              >
-                <item.icon className="size-4 text-slate-400" />
-                {item.label}
-              </Link>
-            </DropdownMenu.Item>
-          ))}
-          <DropdownMenu.Separator className="my-1 h-px bg-slate-100 dark:bg-slate-800" />
+          {isAdmin ? (
+            <>
+              <DropdownMenu.Label className="px-3 pt-1.5 pb-1 text-[11px] font-bold tracking-[0.16em] text-slate-400 uppercase">Admin</DropdownMenu.Label>
+              {adminNav.map((item) => (
+                <DropdownMenu.Item key={item.to} asChild>
+                  <Link
+                    to={item.to}
+                    className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm text-slate-700 outline-none data-[highlighted]:bg-slate-100 dark:text-slate-200 dark:data-[highlighted]:bg-slate-800"
+                  >
+                    <item.icon className="size-4 text-slate-400" />
+                    {item.label}
+                  </Link>
+                </DropdownMenu.Item>
+              ))}
+              <DropdownMenu.Separator className="my-1 h-px bg-slate-100 dark:bg-slate-800" />
+            </>
+          ) : null}
           <DropdownMenu.Item asChild>
             <Link
               to="/account"

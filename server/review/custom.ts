@@ -1,12 +1,12 @@
 // Your own cards: content/review/<deck>.json in the shape of content/schema/review_card_schema.json.
 import { existsSync } from 'node:fs'
-import { normalizeCustomCard, parseQuickCards } from '../../content-pipeline/review.ts'
+import { buildCustomCards, normalizeCustomCard, parseQuickCards } from '../../content-pipeline/review.ts'
 import { slugify } from '../../content-pipeline/shared.ts'
-import type { ReviewCardInput, ReviewDeckFile } from '../../src/types/content.ts'
+import type { ReviewCardInput, ReviewDeckFile, ReviewIndex } from '../../src/types/content.ts'
 import { generateLogged, loadSchema } from '../admin/ai.ts'
 import { updateJsonDoc } from '../admin/store.ts'
 import { ApiError, type ApiContext } from '../api.ts'
-import { contentFile } from '../files.ts'
+import { userPath, withUserLock } from '../paths.ts'
 import { addCards } from './progress.ts'
 
 export function deckSlug(name: string): string {
@@ -16,10 +16,14 @@ export function deckSlug(name: string): string {
 }
 
 function deckFile(ctx: ApiContext, slug: string) {
-  if (existsSync(contentFile(ctx.contentDir, 'review', `${slug}.md`))) {
-    throw new ApiError(409, `Deck "${slug}" is a .md file (content/review/${slug}.md); edit that file directly.`)
+  if (existsSync(userPath(ctx, 'review', `${slug}.md`))) {
+    throw new ApiError(409, `Deck "${slug}" is a .md file; edit that file directly.`)
   }
-  return contentFile(ctx.contentDir, 'review', `${slug}.json`)
+  return userPath(ctx, 'review', `${slug}.json`)
+}
+
+export function listCustomCards(ctx: ApiContext): ReviewIndex {
+  return buildCustomCards(userPath(ctx, 'review'))
 }
 
 const cardKey = (card: ReviewCardInput) => slugify(card.id || card.term)
@@ -55,7 +59,7 @@ export async function saveCards(
   const file = deckFile(ctx, slug)
   const saved: string[] = []
   const skipped: string[] = []
-  await updateJsonDoc<ReviewDeckFile, ReviewDeckFile>(file, { name: deckName, cards: [] }, (doc) => {
+  await withUserLock(ctx.user.id, `review-deck:${slug}`, () => updateJsonDoc<ReviewDeckFile, ReviewDeckFile>(file, { name: deckName, cards: [] }, (doc) => {
     doc.cards = Array.isArray(doc.cards) ? doc.cards : []
     doc.name ||= deckName
     for (const card of cards) {
@@ -69,22 +73,21 @@ export async function saveCards(
       saved.push(`custom:${slug}:${cardKey(card)}`)
     }
     return doc
-  })
-  ctx.onContentChange()
+  }))
   await addCards(ctx, saved)
   return { deck: slug, saved, skipped }
 }
 
 export async function deleteCard(ctx: ApiContext, slug: string, key: string): Promise<void> {
-  const file = deckFile(ctx, deckSlug(slug))
+  const safeSlug = deckSlug(slug)
+  const file = deckFile(ctx, safeSlug)
   if (!existsSync(file)) throw new ApiError(404, 'Deck not found.')
-  await updateJsonDoc<ReviewDeckFile, ReviewDeckFile>(file, { cards: [] }, (doc) => {
+  await withUserLock(ctx.user.id, `review-deck:${safeSlug}`, () => updateJsonDoc<ReviewDeckFile, ReviewDeckFile>(file, { cards: [] }, (doc) => {
     const before = doc.cards.length
     doc.cards = doc.cards.filter((c) => cardKey(c) !== key)
     if (doc.cards.length === before) throw new ApiError(404, 'Card not found.')
     return doc
-  })
-  ctx.onContentChange()
+  }))
 }
 
 /* ───────────── Gemini ───────────── */

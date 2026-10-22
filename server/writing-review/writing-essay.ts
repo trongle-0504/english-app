@@ -11,6 +11,10 @@ import {
 } from '../../src/types/speaking.ts'
 import type { WritingModelEssay, WritingReviewResult } from '../../src/types/writingReview.ts'
 import { ApiError, type ApiContext } from '../api.ts'
+import { userPath } from '../paths.ts'
+
+const reviewFile = (ctx: Pick<ApiContext, 'rootDir'> & { userDir?: string }, id: string) =>
+  ctx.userDir ? userPath(ctx, 'progress', 'writing-reviews', `${id}.json`) : path.join(ctx.rootDir, 'progress', 'writing-reviews', `${id}.json`)
 import { readJsonFile, writeJsonFile } from '../files.ts'
 import { annotate, keepWritersText, plainOf, replaceInMarked, samePhrase, WordingItemSchema, type UnlistedReplacement } from '../annotate.ts'
 import { markSentence } from '../speaking/suggest.ts'
@@ -599,7 +603,7 @@ export async function analyzeUserEditedWriting(
   params: { id: string; userEdited: string },
   llm: LlmProvider,
 ): Promise<WritingReviewResult> {
-  const filePath = path.join(ctx.rootDir, 'progress', 'writing-reviews', `${params.id}.json`)
+  const filePath = reviewFile(ctx, params.id)
   const result = await readJsonFile<WritingReviewResult | null>(filePath, null)
   if (!result) throw new ApiError(404, 'Writing review not found.')
   if (!result.modelEssay) throw new ApiError(400, 'Review does not contain a model essay.')
@@ -683,7 +687,7 @@ export async function analyzeUserEditedWriting(
 }
 
 export async function resetUserEditedWriting(ctx: ApiContext, id: string): Promise<WritingReviewResult> {
-  const filePath = path.join(ctx.rootDir, 'progress', 'writing-reviews', `${id}.json`)
+  const filePath = reviewFile(ctx, id)
   const result = await readJsonFile<WritingReviewResult | null>(filePath, null)
   if (!result) throw new ApiError(404, 'Writing review not found.')
   if (!result.modelEssay) throw new ApiError(400, 'Review does not contain a model essay.')
@@ -711,8 +715,8 @@ const markedOf = (segments: AnswerSegment[]) =>
   segments.map((s) => (s.mark === 'structure' ? `{{${s.text}}}` : s.mark && !s.note ? `[[${s.text}]]` : s.text)).join('')
 
 /** Lists and looks up the shown essay's wording again, without rewriting the essay (for reviews saved with too little). */
-export async function refreshEssayWording(ctx: Pick<ApiContext, 'rootDir'>, id: string, llm: LlmProvider): Promise<WritingReviewResult> {
-  const filePath = path.join(ctx.rootDir, 'progress', 'writing-reviews', `${id}.json`)
+export async function refreshEssayWording(ctx: Pick<ApiContext, 'rootDir'> & { userDir?: string }, id: string, llm: LlmProvider): Promise<WritingReviewResult> {
+  const filePath = reviewFile(ctx, id)
   const result = await readJsonFile<WritingReviewResult | null>(filePath, null)
   if (!result) throw new ApiError(404, 'Writing review not found.')
   const essay = result.modelEssay

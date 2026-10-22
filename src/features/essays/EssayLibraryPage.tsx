@@ -5,6 +5,7 @@ import { Markdown } from '@/components/Markdown'
 import { Badge, Button, ButtonLink, Card, EmptyState, PageHeader, Progress, SearchInput, SegmentedControl, Skeleton } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import { useData } from '@/lib/data'
+import { useCurrentUser } from '@/features/auth/session'
 import { useQueryParam } from '@/lib/useQueryParam'
 import { ESSAY_ITEM_KINDS, essayCardId, type EssayIndex, type EssayItemKind, type EssaySummary, type PhraseBank } from '@/types/essays'
 import { useReviewCards, type ReviewCards } from './api'
@@ -67,6 +68,7 @@ function EssayCard({ essay, review, recommended }: { essay: EssaySummary; review
 
 function Essays({ review }: { review: ReviewCards }) {
   const { essays } = useData<EssayIndex>('essays/index.json')
+  const isAdmin = useCurrentUser()?.role === 'admin'
   const [query, setQuery] = useState('')
   const [topic, setTopic] = useState('')
   const topics = [...new Set(essays.map((e) => e.topic))].sort()
@@ -80,9 +82,11 @@ function Essays({ review }: { review: ReviewCards }) {
         title="Chưa có bài mẫu nào"
         description="Thêm bài trong Admin → Essays: dán đề và bài, AI sẽ phân tích thành bài học."
         action={
-          <ButtonLink to="/admin/essays" size="sm">
-            <Plus className="size-4" /> Thêm bài
-          </ButtonLink>
+          isAdmin ? (
+            <ButtonLink to="/admin/essays" size="sm">
+              <Plus className="size-4" /> Thêm bài
+            </ButtonLink>
+          ) : undefined
         }
       />
     )
@@ -202,6 +206,7 @@ function PhraseBankView({ review }: { review: ReviewCards }) {
 
 export default function EssayLibraryPage() {
   const review = useReviewCards()
+  const isAdmin = useCurrentUser()?.role === 'admin'
   const [tab, setTab] = useQueryParam('tab')
   const current = tab === 'phrases' ? 'phrases' : 'essays'
   return (
@@ -211,9 +216,11 @@ export default function EssayLibraryPage() {
         title="Model essays"
         description="Học từ vựng, collocation và cách viết từ bài mẫu: đọc có highlight → nhớ lại → viết lại đoạn → dùng vào đề mới. Cụm đã học được ôn trong Review."
         actions={
-          <ButtonLink to="/admin/essays" variant="ghost" size="sm">
-            <Plus className="size-4" /> Add essay
-          </ButtonLink>
+          isAdmin ? (
+            <ButtonLink to="/admin/essays" variant="ghost" size="sm">
+              <Plus className="size-4" /> Add essay
+            </ButtonLink>
+          ) : undefined
         }
       />
       <SegmentedControl

@@ -1,12 +1,22 @@
 import type { IncomingMessage, ServerResponse } from 'node:http'
+import { authenticate } from './auth/middleware.ts'
+import { publicUser, type PublicUser } from './auth/users.ts'
+import { requestContext, userRootDir } from './paths.ts'
 
-export interface ApiContext {
+export interface BaseApiContext {
   /** Absolute path of the content/ folder. */
   contentDir: string
   /** Absolute path of the project root. */
   rootDir: string
   /** Call after writing to content/ so /data is rebuilt. */
   onContentChange: () => void
+}
+
+export interface ApiContext extends BaseApiContext {
+  /** Authenticated user for the current request. */
+  user: PublicUser
+  /** Absolute path of the user's personal data directory (<dataDir>/users/<user.id>). */
+  userDir: string
 }
 
 export interface ApiRequest {
@@ -16,13 +26,12 @@ export interface ApiRequest {
   headers: IncomingMessage['headers']
   /** Parsed JSON body (undefined when the body is empty or not JSON). */
   body: unknown
-  /** Raw body bytes, for multipart uploads. */
+  /** Raw request bytes (for audio uploads). */
   rawBody: Buffer
-  /** The underlying request, for the auth routes (cookie, client IP, HTTPS). */
+  /** Underlying Node request (for streaming / abort listeners). */
   incoming: IncomingMessage
 }
 
-/** JSON, or raw bytes (`body` with its `contentType`: a recording). */
 export type ApiResult = { status?: number; json?: unknown; body?: Buffer; contentType?: string; headers?: Record<string, string> }
 export type ApiHandler = (req: ApiRequest, ctx: ApiContext) => Promise<ApiResult> | ApiResult
 
@@ -42,11 +51,13 @@ async function readBody(req: IncomingMessage): Promise<Buffer> {
   return Buffer.concat(chunks)
 }
 
+const ANONYMOUS_USER: PublicUser = { id: '_anonymous', email: '', role: 'learner' }
+
 /**
  * Connect-style middleware mounted at /api. Routes are keyed "METHOD /path" (path relative to /api).
  * Used by the Vite dev server and by server/index.ts in production.
  */
-export function createApiMiddleware(ctx: ApiContext, routes: Routes) {
+export function createApiMiddleware(baseCtx: BaseApiContext, routes: Routes) {
   return async (req: IncomingMessage, res: ServerResponse, next: () => void) => {
     const url = new URL(req.url ?? '/', 'http://localhost')
     const method = (req.method ?? 'GET').toUpperCase()
@@ -61,6 +72,11 @@ export function createApiMiddleware(ctx: ApiContext, routes: Routes) {
     }
 
     try {
+      const authed = await authenticate(req)
+      const user = authed ? publicUser(authed) : ANONYMOUS_USER
+      const userDir = authed ? userRootDir(authed.id) : ''
+      const ctx: ApiContext = { ...baseCtx, user, userDir }
+
       const rawBody = method === 'GET' ? Buffer.alloc(0) : await readBody(req)
       let body: unknown
       if (rawBody.length && String(req.headers['content-type'] ?? '').includes('application/json')) {
@@ -70,9 +86,8 @@ export function createApiMiddleware(ctx: ApiContext, routes: Routes) {
           throw new ApiError(400, 'Invalid JSON body.')
         }
       }
-      const result = await handler(
-        { method, path: url.pathname, query: url.searchParams, headers: req.headers, body, rawBody, incoming: req },
-        ctx,
+      const result = await requestContext.run({ userId: authed?.id, userDir: userDir || undefined }, () =>
+        handler({ method, path: url.pathname, query: url.searchParams, headers: req.headers, body, rawBody, incoming: req }, ctx),
       )
       for (const [name, value] of Object.entries(result.headers ?? {})) res.setHeader(name, value)
       if (result.body) {

@@ -1,14 +1,15 @@
-// Accounts (data/auth/users.json). For now there is one account, the owner's, created with `node scripts/user.ts`;
-// every account is an admin until data is split per user (PLAN-multi-user.md, Phase 2).
+// Accounts (data/auth/users.json). Supports 'admin' (full access + shared library management) and 'learner' (personal data only).
 import { randomUUID } from 'node:crypto'
 import { hashPassword } from './password.ts'
 import { readAuthFile, updateAuthFile } from './store.ts'
+
+export type UserRole = 'admin' | 'learner'
 
 export interface User {
   id: string
   email: string
   passwordHash: string
-  role: 'admin'
+  role: UserRole
   disabled?: boolean
   createdAt: string
 }
@@ -32,13 +33,22 @@ export async function findById(id: string): Promise<User | undefined> {
   return (await listUsers()).find((u) => u.id === id)
 }
 
-export async function createUser(email: string, password: string): Promise<User> {
-  const user: User = { id: randomUUID(), email: normalizeEmail(email), passwordHash: await hashPassword(password), role: 'admin', createdAt: new Date().toISOString() }
+export async function createUser(email: string, password: string, role: UserRole = 'learner'): Promise<User> {
+  const passwordHash = await hashPassword(password)
+  let created!: User
   await updateAuthFile<User[]>(FILE, [], (users) => {
-    if (users.some((u) => u.email === user.email)) throw new Error(`An account for ${user.email} already exists.`)
-    return [...users, user]
+    const normalized = normalizeEmail(email)
+    if (users.some((u) => u.email === normalized)) throw new Error(`An account for ${normalized} already exists.`)
+    created = {
+      id: randomUUID(),
+      email: normalized,
+      passwordHash,
+      role,
+      createdAt: new Date().toISOString(),
+    }
+    return [...users, created]
   })
-  return user
+  return created
 }
 
 export async function setPassword(id: string, password: string): Promise<void> {
@@ -48,4 +58,8 @@ export async function setPassword(id: string, password: string): Promise<void> {
 
 export async function setDisabled(id: string, disabled: boolean): Promise<void> {
   await updateAuthFile<User[]>(FILE, [], (users) => users.map((u) => (u.id === id ? { ...u, disabled } : u)))
+}
+
+export async function setRole(id: string, role: UserRole): Promise<void> {
+  await updateAuthFile<User[]>(FILE, [], (users) => users.map((u) => (u.id === id ? { ...u, role } : u)))
 }

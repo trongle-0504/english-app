@@ -4,11 +4,11 @@
 // optional texts must be "" when there is nothing to say. The grade itself is decided by code (ladder.ts) from the
 // verdict, so the model never chooses Again/Hard/Good/Easy.
 import { appendFile, mkdir } from 'node:fs/promises'
-import path from 'node:path'
 import type { ProduceItem, ProduceResponse, ProduceResult, ProduceVerdict } from '../../src/types/review.ts'
 import { generateLogged } from '../admin/ai.ts'
 import { isObject } from '../admin/input.ts'
 import { ApiError, type ApiContext } from '../api.ts'
+import { userPath } from '../paths.ts'
 
 const MAX_ITEMS = 5
 const VERDICTS: ProduceVerdict[] = ['ok', 'missing', 'wrong_meaning', 'wrong_collocation', 'wrong_form', 'changed_meaning']
@@ -99,9 +99,9 @@ async function logMistakes(ctx: ApiContext, list: ProduceItem[], results: Produc
       }),
     )
   if (!lines.length) return
-  const dir = path.join(ctx.rootDir, 'progress')
+  const dir = userPath(ctx, 'progress')
   await mkdir(dir, { recursive: true })
-  await appendFile(path.join(dir, 'produce-log.jsonl'), `${lines.join('\n')}\n`)
+  await appendFile(userPath(ctx, 'progress', 'produce-log.jsonl'), `${lines.join('\n')}\n`)
 }
 
 /** "1. TARGET: alleviate (giảm bớt) | REWRITE: The government should reduce poverty." + REF + SENTENCE lines. */

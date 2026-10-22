@@ -5,6 +5,7 @@
 import { appendFileSync, mkdirSync } from 'node:fs'
 import { readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
+import { requestContext } from './paths.ts'
 
 const ROOT = path.join(import.meta.dirname, '..')
 const LOG_DIR = path.join(ROOT, 'logs')
@@ -32,6 +33,8 @@ export interface UsageEntry {
   billing?: 'subscription'
   /** Provider: 'antigravity', 'claude', or 'gemini_api'. */
   provider?: UsageProvider
+  /** Authenticated user who triggered the AI call (if any). */
+  userId?: string
 }
 
 export function providerOf(e: UsageEntry): UsageProvider {
@@ -43,11 +46,23 @@ export function providerOf(e: UsageEntry): UsageProvider {
 
 /** Called by generate() for every response that carries usage metadata. Never throws. */
 export function recordUsage(entry: UsageEntry): void {
+  const store = requestContext.getStore()
+  const record: UsageEntry = store?.userId && !entry.userId ? { ...entry, userId: store.userId } : entry
   try {
     mkdirSync(LOG_DIR, { recursive: true })
-    appendFileSync(LOG, `${JSON.stringify(entry)}\n`)
+    appendFileSync(LOG, `${JSON.stringify(record)}\n`)
   } catch (error) {
     console.warn('[usage] could not write:', (error as Error).message)
+  }
+  if (store?.userDir) {
+    try {
+      const uDir = path.join(store.userDir, 'usage')
+      mkdirSync(uDir, { recursive: true })
+      const month = (record.at || new Date().toISOString()).slice(0, 7)
+      appendFileSync(path.join(uDir, `${month}.jsonl`), `${JSON.stringify(record)}\n`)
+    } catch (error) {
+      console.warn('[usage] could not write user usage:', (error as Error).message)
+    }
   }
 }
 

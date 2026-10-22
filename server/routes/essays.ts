@@ -7,8 +7,8 @@ import { checkRebuild, checkTransfer } from '../essays/practice.ts'
 
 /** Model essays: admin editing (guarded writes) and the practice endpoints under /api/essays. */
 export const essayRoutes: Record<string, ApiHandler> = {
-  'GET /admin/essays': essays.listEssays,
-  'GET /admin/essays/item': essays.getEssay,
+  'GET /admin/essays': guarded(essays.listEssays),
+  'GET /admin/essays/item': guarded(essays.getEssay),
   'POST /admin/essays/analyze': guarded(essays.analyzeAndSave),
   'PUT /admin/essays': guarded(essays.saveEssay),
   'DELETE /admin/essays': guarded(essays.deleteEssay),

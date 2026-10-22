@@ -1,3 +1,4 @@
+import { guarded } from '../admin/auth.ts'
 import { queryParam } from '../admin/input.ts'
 import { ApiError, type ApiHandler } from '../api.ts'
 import { lookupDol, lookupExtra } from '../lookup.ts'
@@ -21,5 +22,5 @@ export const lookupRoutes: Record<string, ApiHandler> = {
   'GET /dol/status': async () => ({ json: await dolStatus() }),
 
   /** Checks every part of DOL live (after a fix): a few requests. */
-  'POST /dol/check': async () => ({ json: await dolSelfCheck() }),
+  'POST /dol/check': guarded(async () => ({ json: await dolSelfCheck() })),
 }

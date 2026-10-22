@@ -1,16 +1,18 @@
-// Your Speaking results and Writing reviews (progress/speaking, progress/writing-reviews) and the review cards (the
-// content build) for server/practice/*.
+// Your Speaking results and Writing reviews (<userDir>/progress/speaking, <userDir>/progress/writing-reviews) and
+// the combined shared + custom review cards for server/practice/*.
 import { readdir, readFile } from 'node:fs/promises'
 import path from 'node:path'
 import { buildContent } from '../../content-pipeline/index.ts'
+import { buildCustomCards } from '../../content-pipeline/review.ts'
 import type { ReviewCard, ReviewIndex } from '../../src/types/content.ts'
 import { workPath } from '../../src/types/practice.ts'
 import type { TalkReviewResult } from '../../src/types/speakingReview.ts'
 import type { SpeakingResult } from '../../src/types/speaking.ts'
 import type { WritingReviewResult } from '../../src/types/writingReview.ts'
 import type { ApiContext } from '../api.ts'
+import { userPath } from '../paths.ts'
 
-export type WorkContext = Pick<ApiContext, 'rootDir' | 'contentDir'>
+export type WorkContext = Pick<ApiContext, 'rootDir' | 'contentDir' | 'user' | 'userDir'>
 
 async function readAll<T>(dir: string): Promise<T[]> {
   let names: string[] = []
@@ -31,8 +33,8 @@ async function readAll<T>(dir: string): Promise<T[]> {
   return docs.filter((d): d is NonNullable<typeof d> => d !== null) as T[]
 }
 
-export const speakingResults = (ctx: WorkContext) => readAll<SpeakingResult>(path.join(ctx.rootDir, 'progress', 'speaking'))
-export const writingReviews = (ctx: WorkContext) => readAll<WritingReviewResult>(path.join(ctx.rootDir, 'progress', 'writing-reviews'))
+export const speakingResults = (ctx: WorkContext) => readAll<SpeakingResult>(userPath(ctx, 'progress', 'speaking'))
+export const writingReviews = (ctx: WorkContext) => readAll<WritingReviewResult>(userPath(ctx, 'progress', 'writing-reviews'))
 
 export async function speakingResult(ctx: WorkContext, id: string): Promise<SpeakingResult | null> {
   return (await speakingResults(ctx)).find((r) => r.id === id) ?? null
@@ -45,19 +47,21 @@ export const workHref = workPath
 
 const excerpt = (text: string, max: number) => {
   const flat = text.replace(/\s+/g, ' ').trim()
-  return flat.length > max ? `${flat.slice(0, max).replace(/\s+\S*$/, '')}…` : flat
+  return flat.length > max ? `${flat.slice(0, max).replace(/\s+\S*$/, '')}?` : flat
 }
-export const speakingTitle = (r: SpeakingResult) => `Speaking Part ${r.part} · ${r.topic.trim()}`
-export const writingTitle = (r: WritingReviewResult) => `Writing · ${excerpt(r.text, 60)}`
-export const talkTitle = (r: TalkReviewResult) => `${r.part === 'free' ? 'Free talk' : `Part ${r.part}`} · ${excerpt(r.question || r.topic || r.transcript, 60)}`
+export const speakingTitle = (r: SpeakingResult) => `Speaking Part ${r.part} ? ${r.topic.trim()}`
+export const writingTitle = (r: WritingReviewResult) => `Writing ? ${excerpt(r.text, 60)}`
+export const talkTitle = (r: TalkReviewResult) => `${r.part === 'free' ? 'Free talk' : `Part ${r.part}`} ? ${excerpt(r.question || r.topic || r.transcript, 60)}`
 
 /** Your recorded answers (Speaking review). */
-export const talkReviews = (ctx: WorkContext) => readAll<TalkReviewResult>(path.join(ctx.rootDir, 'progress', 'speaking-reviews'))
+export const talkReviews = (ctx: WorkContext) => readAll<TalkReviewResult>(userPath(ctx, 'progress', 'speaking-reviews'))
 
-/** Every review card of the content (the same build the review pages use). */
+/** Every review card available to this user: shared library cards + the user's own custom cards. */
 export function reviewCards(ctx: WorkContext): ReviewCard[] {
   const json = buildContent(ctx.contentDir).files.get('review/index.json')
-  return (JSON.parse(json ?? '{"cards":[]}') as ReviewIndex).cards
+  const shared = (JSON.parse(json ?? '{"cards":[]}') as ReviewIndex).cards
+  const custom = buildCustomCards(userPath(ctx, 'review')).cards
+  return [...shared, ...custom]
 }
 
 /** Text of segments. */

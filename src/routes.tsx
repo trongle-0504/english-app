@@ -2,7 +2,7 @@ import type { ComponentType } from 'react'
 import { createBrowserRouter, Navigate, redirect, useParams, type LoaderFunctionArgs, type RouteObject } from 'react-router'
 import { AppShell } from '@/components/layout/AppShell'
 import { NotFound, RouteError } from '@/components/layout/RouteError'
-import { requireUser } from '@/features/auth/session'
+import { requireAdmin, requireUser } from '@/features/auth/session'
 import { prefetchData } from '@/lib/data'
 
 type PageModule = { default: ComponentType }
@@ -207,10 +207,11 @@ const routes: RouteObject[] = [
 
           { path: 'account', ...page(() => import('@/features/auth/AccountPage')) },
 
-          /* Admin (needs the local API server) */
+          /* Admin (needs the local API server + admin role) */
           {
             path: 'admin',
             ...page(() => import('@/features/admin/AdminLayout')),
+            loader: requireAdmin,
             children: [
               { index: true, element: <Navigate to="/admin/vocabulary" replace /> },
               { path: 'vocabulary', ...page(() => import('@/features/admin/VocabularyAdminPage')) },
@@ -219,6 +220,7 @@ const routes: RouteObject[] = [
               { path: 'blog', ...page(() => import('@/features/admin/BlogAdminPage')) },
               { path: 'essays', ...page(() => import('@/features/admin/EssayAdminPage')) },
               { path: 'usage', ...page(() => import('@/features/admin/UsageAdminPage')) },
+              { path: 'users', ...page(() => import('@/features/admin/UsersAdminPage')) },
             ],
           },
 

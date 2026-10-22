@@ -44,6 +44,7 @@ import {
   type SpeakingUsage,
 } from '../../src/types/speaking.ts'
 import { ApiError, type ApiContext } from '../api.ts'
+import { requestContext, userPath } from '../paths.ts'
 import { readJsonFile, writeJsonFile } from '../files.ts'
 import { readState } from '../review/progress.ts'
 import { annotate, dolProof, replaceInMarked, type JsonModel } from '../annotate.ts'
@@ -66,8 +67,9 @@ const MAX_CANDIDATES = 150
 /** A card is "being learned" until its memory is this stable (days). */
 const LEARNED_STABILITY = 21
 
-export const dir = (ctx: ApiContext) => path.join(ctx.rootDir, 'progress', 'speaking')
-export const fileOf = (ctx: ApiContext, id: string) => path.join(dir(ctx), `${id}.json`)
+export const dir = (ctx: ApiContext) => userPath(ctx, 'progress', 'speaking')
+export const fileOf = (ctx: ApiContext, id: string) => userPath(ctx, 'progress', 'speaking', `${id}.json`)
+type TrackedSpeakingJob = SpeakingJob & { userId?: string }
 export const validId = (id: string) => /^[a-z0-9-]{6,40}$/.test(id)
 
 /* ───────────── Words ───────────── */
@@ -1150,8 +1152,9 @@ export function startSuggest(ctx: ApiContext, request: SpeakingRequest): Speakin
     mode: request.mode ?? 'answer',
     engine: request.engine ?? 'claude',
   }
+  ;(job as TrackedSpeakingJob).userId = ctx.user.id
   jobs.set(job.id, job)
-  void (async () => {
+  void requestContext.run({ userId: ctx.user.id, userDir: ctx.userDir }, async () => {
     try {
       job.result = await suggest(ctx, job, request)
       job.status = 'done'
@@ -1164,14 +1167,14 @@ export function startSuggest(ctx: ApiContext, request: SpeakingRequest): Speakin
     } finally {
       setTimeout(() => jobs.delete(job.id), job.status === 'error' ? 10 * 60_000 : 60_000).unref()
     }
-  })()
+  })
   return job
 }
 
 export async function getSuggestion(ctx: ApiContext, id: string): Promise<SpeakingJob | null> {
   if (!validId(id)) return null
-  const live = jobs.get(id)
-  if (live) return live
+  const live = jobs.get(id) as TrackedSpeakingJob | undefined
+  if (live) return live.userId === ctx.user.id ? live : null
   const result = await readJsonFile<SpeakingResult | null>(fileOf(ctx, id), null)
   return result ? { id, status: 'done', startedAt: result.createdAt, result } : null
 }
@@ -1179,7 +1182,8 @@ export async function getSuggestion(ctx: ApiContext, id: string): Promise<Speaki
 export async function deleteSuggestion(ctx: ApiContext, id: string): Promise<void> {
   if (!validId(id)) throw new ApiError(400, 'Invalid id.')
   await rm(fileOf(ctx, id), { force: true })
-  jobs.delete(id)
+  const live = jobs.get(id) as TrackedSpeakingJob | undefined
+  if (!live || live.userId === ctx.user.id) jobs.delete(id)
 }
 
 export async function deleteQuestion(

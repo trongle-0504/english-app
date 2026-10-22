@@ -253,7 +253,7 @@ export async function mistakeCards(ctx: ApiContext, keys: string[]): Promise<{ i
     replace: true,
   })
   // Mistake cards are corrected, not climbed: the usage ladder is off for them.
-  await withProgress(async () => {
+  await withProgress(ctx, async () => {
     const state = await readState(ctx)
     for (const id of saved) if (state.cards[id]) state.cards[id].ladder = false
     await writeState(ctx, state)

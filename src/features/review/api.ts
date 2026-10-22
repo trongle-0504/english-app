@@ -1,5 +1,6 @@
 import type { ReviewCardInput } from '@/types/content'
 import type { ProduceItem, ProduceResponse, ProduceVerdict, ReviewHistoryEntry, ReviewSettings, ReviewStateResponse, ReviewStats, StoredCard } from '@/types/review'
+import { invalidateData } from '@/lib/data'
 import { getAdminToken } from '../admin/api'
 
 export class ReviewApiError extends Error {
@@ -44,12 +45,24 @@ export const reviewApi = {
   produce: (items: ProduceItem[]) => call<ProduceResponse>('produce', { method: 'POST', body: { items } }),
   undo: () => call<{ id: string; card: StoredCard | null }>('undo', { method: 'POST' }),
   settings: (patch: Partial<ReviewSettings>) => call<{ settings: ReviewSettings }>('settings', { method: 'PUT', body: patch }),
-  saveCard: (deck: string, card: ReviewCardInput, replace = false) =>
-    call<{ deck: string; saved: string[] }>('custom', { method: 'POST', body: { deck, card, replace } }),
-  generateCard: (deck: string, term: string, hint?: string) =>
-    call<{ deck: string; saved: string[]; card: ReviewCardInput }>('custom/generate', { method: 'POST', body: { deck, term, hint } }),
-  importCards: (deck: string, text: string, fill: boolean, replace = false) =>
-    call<{ deck: string; saved: string[]; skipped: string[] }>('custom/import', { method: 'POST', body: { deck, text, fill, replace } }),
-  deleteCard: (deck: string, card: string) =>
-    call<{ ok: true }>(`custom?${new URLSearchParams({ deck, card })}`, { method: 'DELETE' }),
+  saveCard: async (deck: string, card: ReviewCardInput, replace = false) => {
+    const res = await call<{ deck: string; saved: string[] }>('custom', { method: 'POST', body: { deck, card, replace } })
+    invalidateData('review/')
+    return res
+  },
+  generateCard: async (deck: string, term: string, hint?: string) => {
+    const res = await call<{ deck: string; saved: string[]; card: ReviewCardInput }>('custom/generate', { method: 'POST', body: { deck, term, hint } })
+    invalidateData('review/')
+    return res
+  },
+  importCards: async (deck: string, text: string, fill: boolean, replace = false) => {
+    const res = await call<{ deck: string; saved: string[]; skipped: string[] }>('custom/import', { method: 'POST', body: { deck, text, fill, replace } })
+    invalidateData('review/')
+    return res
+  },
+  deleteCard: async (deck: string, card: string) => {
+    const res = await call<{ ok: true }>(`custom?${new URLSearchParams({ deck, card })}`, { method: 'DELETE' })
+    invalidateData('review/')
+    return res
+  },
 }

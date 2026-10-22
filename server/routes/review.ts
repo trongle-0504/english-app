@@ -1,10 +1,9 @@
 import { schedule } from '../../src/features/review/schedule.ts'
 import { nextStage, stageOf, USAGE_STAGES, usageStageOf } from '../../src/features/review/ladder.ts'
 import { DEFAULT_REVIEW_SETTINGS, type BasicReviewMode, type ProduceVerdict, type ReviewMode, type ReviewSettings, type ReviewStateResponse } from '../../src/types/review.ts'
-import { guarded } from '../admin/auth.ts'
 import { jsonBody, queryParam, requiredText } from '../admin/input.ts'
 import { ApiError, type ApiHandler } from '../api.ts'
-import { generateCards, deckSlug, deleteCard, parseImport, saveCards } from '../review/custom.ts'
+import { deckSlug, deleteCard, generateCards, listCustomCards, parseImport, saveCards } from '../review/custom.ts'
 import { addCards, appendLog, appendUsageLog, CARD_ID, dropLastLog, readLog, readState, today, withProgress, writeState } from '../review/progress.ts'
 import { checkProduce } from '../review/produce.ts'
 import { computeStats } from '../review/stats.ts'
@@ -24,7 +23,7 @@ function settingsPatch(body: Record<string, unknown>): Partial<ReviewSettings> {
   const patch: Partial<ReviewSettings> = {}
   if (body.newPerDay !== undefined) {
     const n = Number(body.newPerDay)
-    if (!Number.isInteger(n) || n < 0 || n > 500) throw new ApiError(400, 'New cards per day must be 0–500.')
+    if (!Number.isInteger(n) || n < 0 || n > 500) throw new ApiError(400, 'New cards per day must be 0?500.')
     patch.newPerDay = n
   }
   if (body.autoAddFromAdmin !== undefined) patch.autoAddFromAdmin = Boolean(body.autoAddFromAdmin)
@@ -42,8 +41,11 @@ function settingsPatch(body: Record<string, unknown>): Partial<ReviewSettings> {
   return patch
 }
 
-/** Review (spaced repetition) endpoints, under /api/review. Progress writes are open; deck-file writes are guarded. */
+/** Review (spaced repetition) endpoints, under /api/review and /api/me/review-cards. All write to the logged-in user's personal directory. */
 export const reviewRoutes: Record<string, ApiHandler> = {
+  'GET /me/review-cards': async (_req, ctx) => ({ json: listCustomCards(ctx) }),
+  'GET /review/custom': async (_req, ctx) => ({ json: listCustomCards(ctx) }),
+
   'GET /review/state': async (_req, ctx) => {
     const state = await readState(ctx)
     const log = await readLog(ctx)
@@ -67,7 +69,7 @@ export const reviewRoutes: Record<string, ApiHandler> = {
 
   'POST /review/remove': async (req, ctx) => {
     const ids = idList(jsonBody(req).ids)
-    const removed = await withProgress(async () => {
+    const removed = await withProgress(ctx, async () => {
       const state = await readState(ctx)
       let count = 0
       for (const id of ids) if (state.cards[id] && delete state.cards[id]) count++
@@ -77,15 +79,11 @@ export const reviewRoutes: Record<string, ApiHandler> = {
     return { json: { removed } }
   },
 
-  /**
-   * Moves cards between "learning" and "done". Done cards keep their FSRS state but are never scheduled.
-   * Moving back makes a studied card due now (memory stability is kept), so it shows up in today's session.
-   */
   'POST /review/status': async (req, ctx) => {
     const body = jsonBody(req)
     const ids = idList(body.ids)
     const done = Boolean(body.done)
-    const changed = await withProgress(async () => {
+    const changed = await withProgress(ctx, async () => {
       const state = await readState(ctx)
       const now = new Date()
       const stamp = now.toISOString()
@@ -106,19 +104,15 @@ export const reviewRoutes: Record<string, ApiHandler> = {
     return { json: { changed } }
   },
 
-  /**
-   * { id, mode, rating, verdict? }: one answer in "Luyện dùng từ". Moves the usage stage only — the FSRS schedule and the
-   * review stats are untouched — and marks the card as practised today (once a day per card).
-   */
   'POST /review/usage': async (req, ctx) => {
     const body = jsonBody(req)
     const id = requiredText(body, 'id')
     const rating = Number(body.rating)
-    if (![1, 2, 3, 4].includes(rating)) throw new ApiError(400, '`rating` must be 1–4.')
+    if (![1, 2, 3, 4].includes(rating)) throw new ApiError(400, '`rating` must be 1?4.')
     const mode = body.mode as ReviewMode
     if (!USAGE_STAGES.includes(mode as (typeof USAGE_STAGES)[number])) throw new ApiError(400, '`mode` must be collocate, paraphrase or produce.')
     const verdict = VERDICTS.includes(body.verdict as ProduceVerdict) ? (body.verdict as ProduceVerdict) : undefined
-    const card = await withProgress(async () => {
+    const card = await withProgress(ctx, async () => {
       const state = await readState(ctx)
       const stored = state.cards[id]
       if (!stored) throw new ApiError(404, 'This card is not in your reviews.')
@@ -134,12 +128,11 @@ export const reviewRoutes: Record<string, ApiHandler> = {
     return { json: { id, card } }
   },
 
-  /** { ids, on }: switches the usage ladder on or off for these cards (off = only recognised; the stage is kept). */
   'POST /review/ladder': async (req, ctx) => {
     const body = jsonBody(req)
     const ids = idList(body.ids)
     const on = Boolean(body.on)
-    const changed = await withProgress(async () => {
+    const changed = await withProgress(ctx, async () => {
       const state = await readState(ctx)
       let count = 0
       for (const id of ids) {
@@ -159,12 +152,11 @@ export const reviewRoutes: Record<string, ApiHandler> = {
     const body = jsonBody(req)
     const id = requiredText(body, 'id')
     const rating = Number(body.rating)
-    if (![1, 2, 3, 4].includes(rating)) throw new ApiError(400, '`rating` must be 1–4.')
+    if (![1, 2, 3, 4].includes(rating)) throw new ApiError(400, '`rating` must be 1?4.')
     const mode = MODES.includes(body.mode as ReviewMode) ? (body.mode as ReviewMode) : 'recognize'
     const durationMs = Number.isFinite(Number(body.durationMs)) ? Math.max(0, Math.min(Number(body.durationMs), 3_600_000)) : undefined
-    // "Use it" sentences send the kind of mistake: it decides which stage the card drops back to.
     const verdict = VERDICTS.includes(body.verdict as ProduceVerdict) ? (body.verdict as ProduceVerdict) : undefined
-    const card = await withProgress(async () => {
+    const card = await withProgress(ctx, async () => {
       const state = await readState(ctx)
       const stored = state.cards[id]
       if (!stored) throw new ApiError(404, 'This card is not in your reviews.')
@@ -189,11 +181,10 @@ export const reviewRoutes: Record<string, ApiHandler> = {
     return { json: { id, card } }
   },
 
-  /** "Use it" sentences: Gemini checks how the target is used; the grade is suggested by code. */
   'POST /review/produce': async (req, ctx) => ({ json: await checkProduce(ctx, jsonBody(req)) }),
 
   'POST /review/undo': async (_req, ctx) => {
-    const result = await withProgress(async () => {
+    const result = await withProgress(ctx, async () => {
       const log = await readLog(ctx)
       const last = log.at(-1)
       if (!last) throw new ApiError(404, 'Nothing to undo.')
@@ -213,7 +204,7 @@ export const reviewRoutes: Record<string, ApiHandler> = {
 
   'PUT /review/settings': async (req, ctx) => {
     const patch = settingsPatch(jsonBody(req))
-    const settings = await withProgress(async () => {
+    const settings = await withProgress(ctx, async () => {
       const state = await readState(ctx)
       state.settings = { ...DEFAULT_REVIEW_SETTINGS, ...state.settings, ...patch }
       await writeState(ctx, state)
@@ -222,16 +213,16 @@ export const reviewRoutes: Record<string, ApiHandler> = {
     return { json: { settings } }
   },
 
-  /* Your own cards (content/review/<deck>.json) */
+  /* Your own cards (<userDir>/review/<deck>.json) */
 
-  'POST /review/custom': guarded(async (req, ctx) => {
+  'POST /review/custom': async (req, ctx) => {
     const body = jsonBody(req)
     const result = await saveCards(ctx, requiredText(body, 'deck', { max: 80 }), [body.card], { replace: Boolean(body.replace) })
     if (!result.saved.length) throw new ApiError(409, `"${result.skipped[0]}" is already in this deck.`)
     return { status: 201, json: result }
-  }),
+  },
 
-  'POST /review/custom/generate': guarded(async (req, ctx) => {
+  'POST /review/custom/generate': async (req, ctx) => {
     const body = jsonBody(req)
     const deck = requiredText(body, 'deck', { max: 80 })
     const term = requiredText(body, 'term', { max: 200 })
@@ -239,9 +230,9 @@ export const reviewRoutes: Record<string, ApiHandler> = {
     const result = await saveCards(ctx, deck, [card], { replace: Boolean(body.replace) })
     if (!result.saved.length) throw new ApiError(409, `"${term}" is already in this deck.`)
     return { status: 201, json: { ...result, card } }
-  }),
+  },
 
-  'POST /review/custom/import': guarded(async (req, ctx) => {
+  'POST /review/custom/import': async (req, ctx) => {
     const body = jsonBody(req)
     const deck = requiredText(body, 'deck', { max: 80 })
     let cards = parseImport(requiredText(body, 'text', { max: 200_000 }))
@@ -253,10 +244,10 @@ export const reviewRoutes: Record<string, ApiHandler> = {
       cards = cards.map((c) => filled[missing.indexOf(c)] ?? c)
     }
     return { status: 201, json: await saveCards(ctx, deck, cards, { replace: Boolean(body.replace) }) }
-  }),
+  },
 
-  'DELETE /review/custom': guarded(async (req, ctx) => {
+  'DELETE /review/custom': async (req, ctx) => {
     await deleteCard(ctx, deckSlug(queryParam(req, 'deck')), queryParam(req, 'card'))
     return { json: { ok: true } }
-  }),
+  },
 }

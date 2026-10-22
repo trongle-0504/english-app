@@ -1,4 +1,5 @@
 import type { SpeakingEngine, SpeakingPart, SpeakingQuestionInput, SpeakingRequest } from '../../src/types/speaking.ts'
+import { guarded } from '../admin/auth.ts'
 import { ApiError, type ApiHandler } from '../api.ts'
 import { antigravityAvailable } from '../llm/antigravity-cli.ts'
 import { claudeCodeAvailable } from '../llm/claude-code.ts'
@@ -108,10 +109,10 @@ export const speakingRoutes: Record<string, ApiHandler> = {
   }),
 
   /** Body `{ limit? }`: tag at most `limit` items (a trial run). */
-  'POST /speaking/sync': async (req, ctx) => {
+  'POST /speaking/sync': guarded(async (req, ctx) => {
     const limit = Number((req.body as { limit?: unknown } | undefined)?.limit)
     return { status: 202, json: { job: await startSync(ctx, { limit: Number.isFinite(limit) ? limit : undefined }) } }
-  },
+  }),
 
-  'POST /speaking/sync/stop': () => ({ json: { job: stopSync() ?? null } }),
+  'POST /speaking/sync/stop': guarded(() => ({ json: { job: stopSync() ?? null } })),
 }

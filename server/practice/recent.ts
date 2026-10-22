@@ -6,7 +6,7 @@
 //   only): a "Speaking & Writing" card (content/review/speaking-writing.json) with the phrase's dictionary check and the
 //   result it came from — or the library card, when you have added the phrase to Vocabulary / Notes.
 // Suspicious phrases (amber, not listed and judged unnatural) are left out.
-import path from 'node:path'
+import { userPath } from '../paths.ts'
 import { z } from 'zod'
 import { phraseCardId, phraseGroups, PHRASE_DECK, PHRASE_DECK_ID, sentenceWith, slugify } from '../../src/features/practice/phrase-groups.ts'
 import type { CardPhrase, ReviewCard, ReviewCardInput } from '../../src/types/content.ts'
@@ -39,7 +39,7 @@ const LIBRARY = new Set(['vocabulary', 'collocation', 'word-collocation', 'note'
  * Phrases you added to Vocabulary / Notes from here (progress/practice-aliases.json: phrase slug → library card): the
  * entry's word may differ from the phrase (Admin keeps a base form), so the link is kept rather than found again.
  */
-const aliasFile = (ctx: WorkContext) => path.join(ctx.rootDir, 'progress', 'practice-aliases.json')
+const aliasFile = (ctx: WorkContext) => userPath(ctx, 'progress', 'practice-aliases.json')
 const readAliases = (ctx: WorkContext) => readJsonFile<Record<string, string>>(aliasFile(ctx), {})
 
 /** The library card of a phrase — added from here, or written the same in the library — or undefined. */
@@ -302,7 +302,7 @@ const cardInput = (c: Collected, from: { kind: WorkKind; id: string; title: stri
  */
 async function mergeIntoLibrary(ctx: ApiContext, pairs: { phraseId: string; libraryId: string }[]): Promise<number> {
   const written = new Set(reviewCards(ctx).map((c) => c.id))
-  const merged = await withProgress(async () => {
+  const merged = await withProgress(ctx, async () => {
     const state = await readState(ctx)
     const done: string[] = []
     for (const { phraseId, libraryId } of pairs) {

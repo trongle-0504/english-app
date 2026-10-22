@@ -4,7 +4,7 @@
 // have studied count. Each text gives each card one verdict (StoredCard.uses keeps it, with your sentence); a text is
 // scanned again only when it changed (progress/practice.json).
 import { createHash } from 'node:crypto'
-import path from 'node:path'
+import { userPath } from '../paths.ts'
 import { STAGES, stageOf } from '../../src/features/review/ladder.ts'
 import type { RealUse, ReviewStateDoc, UsageStage } from '../../src/types/review.ts'
 import type { WorkKind } from '../../src/types/practice.ts'
@@ -44,7 +44,7 @@ interface Candidate {
 /** Uses kept per card (the latest). */
 const KEEP_USES = 8
 
-const registryFile = (ctx: WorkContext) => path.join(ctx.rootDir, 'progress', 'practice.json')
+const registryFile = (ctx: WorkContext) => userPath(ctx, 'progress', 'practice.json')
 interface Registry {
   version: 1
   /** Text ref → fingerprint of the text when it was scanned. */
@@ -247,7 +247,7 @@ export async function creditRealUse(ctx: ApiContext, only?: { kind: WorkKind; id
   const texts = (await allTexts(ctx, only)).filter((t) => registry.scanned[t.ref] !== t.hash)
   if (!texts.length) return []
   const added: RealUse[] = []
-  await withProgress(async () => {
+  await withProgress(ctx, async () => {
     const state = await readState(ctx)
     const cards = candidates(ctx, state)
     const now = new Date()

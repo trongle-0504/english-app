@@ -3,7 +3,7 @@ import type { LookupIndex } from '../src/types/content.ts'
 import { buildBlog } from './blog.ts'
 import { buildCollocations } from './collocations.ts'
 import { buildEssays } from './essays.ts'
-import { contentPath, readJson, warnings, type Output } from './shared.ts'
+import { warnings, type Output } from './shared.ts'
 import { buildReview } from './review.ts'
 import { buildGrammar, buildNotes, buildPractice } from './study.ts'
 import { ALL_TOPIC_ID, buildVocabulary } from './vocabulary.ts'
@@ -26,7 +26,6 @@ export function buildContent(root: string): ContentBuild {
   buildPractice(root, out)
   buildBlog(root, out)
   const essays = buildEssays(root, out)
-  out.set('grammar/history.json', readJson<Record<string, string>>(contentPath(root, 'grammar/history.json'), {}))
 
   // Word → first vocabulary lesson that contains it, so lookup results open in context.
   const wordHome = new Map<string, string>()

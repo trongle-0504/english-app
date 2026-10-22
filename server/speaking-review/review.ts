@@ -32,6 +32,7 @@ import {
 } from '../../src/types/speakingReview.ts'
 import type { WritingFix } from '../../src/types/writingReview.ts'
 import { ApiError, type ApiContext } from '../api.ts'
+import { requestContext, userPath } from '../paths.ts'
 import { readJsonFile, writeJsonFile, writeTextFile } from '../files.ts'
 import { creditInBackground } from '../practice/real-use.ts'
 import { talkReviews } from '../practice/works.ts'
@@ -53,9 +54,10 @@ import {
 import { measureFluency, UNCLEAR } from './fluency.ts'
 import { readWav, transcribe } from './stt.ts'
 
-export const dir = (ctx: Pick<ApiContext, 'rootDir'>) => path.join(ctx.rootDir, 'progress', 'speaking-reviews')
+export const dir = (ctx: Pick<ApiContext, 'rootDir'> & { userDir?: string }) => ctx.userDir ? userPath(ctx, 'progress', 'speaking-reviews') : path.join(ctx.rootDir, 'progress', 'speaking-reviews')
+type TrackedTalkJob = TalkReviewJob & { userId?: string }
 /** json: the review · wav: the recording · pending: what you asked, kept until the review is done (a failed one can be retried). */
-const fileOf = (ctx: Pick<ApiContext, 'rootDir'>, id: string, ext: 'json' | 'wav' | 'pending' = 'json') => path.join(dir(ctx), `${id}.${ext}`)
+const fileOf = (ctx: Pick<ApiContext, 'rootDir'> & { userDir?: string }, id: string, ext: 'json' | 'wav' | 'pending' = 'json') => ctx.userDir ? userPath(ctx, 'progress', 'speaking-reviews', `${id}.${ext}`) : path.join(dir(ctx), `${id}.${ext}`)
 export const validId = (id: string) => /^[a-z0-9-]{6,40}$/.test(id)
 
 // Kept on globalThis: the dev server reloads server modules in-process while running jobs carry on.
@@ -564,12 +566,13 @@ export async function startTalkReview(ctx: ApiContext, body: unknown): Promise<T
 }
 
 function launch(ctx: ApiContext, id: string, input: Input, audio: ReturnType<typeof readWav>): TalkReviewJob {
-  if ([...jobs.values()].some((j) => j.status === 'running'))
+  if ([...jobs.values()].some((j) => (j as TrackedTalkJob).userId === ctx.user.id && j.status === 'running'))
     throw new ApiError(429, 'Another review is still running — please wait for it to finish.')
   const job: TalkReviewJob = { id, status: 'running', startedAt: new Date().toISOString(), step: 'transcribe' }
+  ;(job as TrackedTalkJob).userId = ctx.user.id
   jobs.set(id, job)
   void writeJsonFile(fileOf(ctx, id, 'pending'), { ...input, at: job.startedAt } satisfies Pending).catch(() => {})
-  void run(ctx, job, input, audio)
+  void requestContext.run({ userId: ctx.user.id, userDir: ctx.userDir }, () => run(ctx, job, input, audio))
   return job
 }
 
@@ -582,7 +585,7 @@ export async function retryTalkReview(ctx: ApiContext, id: string): Promise<Talk
   return launch(ctx, id, input, readWav(await talkAudio(ctx, id)))
 }
 
-export async function talkReview(ctx: Pick<ApiContext, 'rootDir'>, id: string): Promise<TalkReviewResult | null> {
+export async function talkReview(ctx: Pick<ApiContext, 'rootDir'> & { userDir?: string }, id: string): Promise<TalkReviewResult | null> {
   if (!validId(id)) return null
   return readJsonFile<TalkReviewResult | null>(fileOf(ctx, id), null).catch(() => null)
 }
@@ -590,8 +593,8 @@ export async function talkReview(ctx: Pick<ApiContext, 'rootDir'>, id: string): 
 /** GET /api/speaking-review?id= */
 export async function getTalkReview(ctx: ApiContext, id: string): Promise<TalkReviewJob | null> {
   if (!validId(id)) return null
-  const live = jobs.get(id)
-  if (live) return live
+  const live = jobs.get(id) as TrackedTalkJob | undefined
+  if (live) return live.userId === ctx.user.id ? live : null
   const result = await talkReview(ctx, id)
   if (result) return { id, status: 'done', startedAt: result.createdAt, result }
   // A review that failed earlier (or was cut off by a restart): its recording can be reviewed again.
@@ -626,7 +629,8 @@ export async function deleteTalkReview(ctx: ApiContext, id: string): Promise<voi
   await rm(fileOf(ctx, id), { force: true })
   await rm(fileOf(ctx, id, 'wav'), { force: true })
   await rm(fileOf(ctx, id, 'pending'), { force: true })
-  jobs.delete(id)
+  const live = jobs.get(id) as TrackedTalkJob | undefined
+  if (!live || live.userId === ctx.user.id) jobs.delete(id)
 }
 
 /** GET /api/speaking-review/history */

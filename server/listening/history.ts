@@ -5,10 +5,11 @@ import { readdir, rm } from 'node:fs/promises'
 import path from 'node:path'
 import type { ListeningHistoryItem, ListeningSaved, SimplifyResult } from '../../src/types/listening.ts'
 import { ApiError, type ApiContext } from '../api.ts'
+import { userPath } from '../paths.ts'
 import { readJsonFile, writeJsonFile } from '../files.ts'
 
-const dir = (ctx: ApiContext) => path.join(ctx.rootDir, 'progress', 'listening')
-const fileOf = (ctx: ApiContext, id: string) => path.join(dir(ctx), `${id}.json`)
+const dir = (ctx: ApiContext) => userPath(ctx, 'progress', 'listening')
+const fileOf = (ctx: ApiContext, id: string) => userPath(ctx, 'progress', 'listening', `${id}.json`)
 const validId = (id: string) => /^[a-z0-9-]{6,40}$/.test(id)
 
 export async function saveSimplify(ctx: ApiContext, transcript: string, questions: string, result: SimplifyResult): Promise<ListeningSaved> {

@@ -18,6 +18,7 @@ import {
   MessageSquareQuote,
   ShieldCheck,
   SpellCheck,
+  Users,
   Volume2,
 } from 'lucide-react'
 
@@ -139,6 +140,7 @@ export const adminNav: NavItem[] = [
   { to: '/admin/blog', label: 'Blog', icon: FileText },
   { to: '/admin/essays', label: 'Essays', icon: Library },
   { to: '/admin/usage', label: 'Usage', icon: Coins },
+  { to: '/admin/users', label: 'Users', icon: Users },
 ]
 
 export const AdminIcon = Settings

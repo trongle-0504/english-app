@@ -1,12 +1,14 @@
 // The login gate, shared by the production server (server/index.ts) and the Vite dev server (vite.config.ts): /api and
 // /data need a session; the page shell, scripts, styles and images do not (the login page must load). Everything else
-// a visitor could do — read the content, run the AI tools, edit through Admin — goes through /api or /data.
+// a visitor could do ? read the content, run the AI tools, edit through Admin ? goes through /api or /data.
 import type { IncomingMessage, ServerResponse } from 'node:http'
 import { COOKIE, sessionUserId } from './sessions.ts'
 import { findById, type User } from './users.ts'
 
 /** Reachable without a session: logging in, and asking whether one is logged in. */
 const PUBLIC_API = new Set(['/api/auth/login', '/api/auth/logout', '/api/auth/me', '/api/health'])
+
+export type AuthenticatedRequest = IncomingMessage & { authUser?: User }
 
 export function readCookie(req: IncomingMessage, name: string): string {
   for (const part of String(req.headers.cookie ?? '').split(';')) {
@@ -18,9 +20,15 @@ export function readCookie(req: IncomingMessage, name: string): string {
 
 /** The logged-in user, or null (no cookie, unknown or expired session, disabled account). */
 export async function authenticate(req: IncomingMessage): Promise<User | null> {
+  const cached = (req as AuthenticatedRequest).authUser
+  if (cached) return cached.disabled ? null : cached
   const userId = await sessionUserId(readCookie(req, COOKIE))
   const user = userId ? await findById(userId) : undefined
-  return user && !user.disabled ? user : null
+  if (user && !user.disabled) {
+    ;(req as AuthenticatedRequest).authUser = user
+    return user
+  }
+  return null
 }
 
 /** Behind Cloudflare Tunnel every request comes from cloudflared on localhost: TRUST_PROXY=1 reads the visitor's IP. */
