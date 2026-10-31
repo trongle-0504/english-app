@@ -28,6 +28,7 @@ import { slugify } from '@/features/admin/utils'
 import { SpeakButton } from '@/components/SpeakButton'
 import { Badge, Button, Card, EmptyState, SearchInput } from '@/components/ui'
 import { cn } from '@/lib/cn'
+import { stopSpeaking } from '@/lib/speech'
 import { useLocalStorage } from '@/lib/storage'
 import { formatDate, matchesQuery } from '@/lib/text'
 import type { NewsItem, NewsPipelineState } from '@/types/news'
@@ -249,6 +250,11 @@ export default function NewsPage() {
   const [exporting, setExporting] = useState<'md' | 'docx' | 'pdf' | null>(null)
   const readerRef = useRef<HTMLDivElement>(null)
   const [pickedSelection, setPickedSelection] = useState<PickedSelection | null>(null)
+
+  useEffect(() => {
+    stopSpeaking()
+    return () => stopSpeaking()
+  }, [selectedId])
 
   useEffect(() => {
     let timer: ReturnType<typeof setTimeout>
@@ -846,7 +852,7 @@ export default function NewsPage() {
                     <span className="text-[11px] font-extrabold tracking-wider text-brand-700 uppercase dark:text-brand-300">
                       Executive Summary
                     </span>
-                    <SpeakButton text={selectedItem.ai.summary} className="-my-1" />
+                    <SpeakButton text={selectedItem.ai.summary} voice="" rate={1} className="-my-1" />
                   </div>
                   <p className={cn('text-justify text-slate-700 dark:text-slate-200', textSizeClass)}>{selectedItem.ai.summary}</p>
                 </div>
@@ -863,7 +869,7 @@ export default function NewsPage() {
                       <span className="text-[11px] text-slate-400">
                         Bôi đen cụm từ bất kỳ để thêm vào Admin Vocab / Note
                       </span>
-                      <SpeakButton text={selectedItem.ai.article.replace(/^#{1,4}\s+/gm, '')} className="-my-1" />
+                      <SpeakButton text={selectedItem.ai.article.replace(/^#{1,4}\s+/gm, '')} voice="" rate={1} className="-my-1" />
                     </div>
                   </div>
                   <div className={cn('space-y-3', textSizeClass)}>
@@ -916,7 +922,7 @@ export default function NewsPage() {
                             <span className="text-xs font-bold text-slate-900 dark:text-white">
                               {idx + 1}. {v.phrase}
                             </span>
-                            <SpeakButton text={v.phrase} className="-my-1 shrink-0" />
+                            <SpeakButton text={v.phrase} voice="" rate={1} className="-my-1 shrink-0" />
                           </div>
                           <p className="ipa mt-0.5 font-mono text-[11px] text-slate-500 dark:text-slate-400">{v.ipa}</p>
                         </div>

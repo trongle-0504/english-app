@@ -14,6 +14,7 @@ import { practiceRoutes } from './routes/practice.ts'
 import { reviewRoutes } from './routes/review.ts'
 import { speakingRoutes } from './routes/speaking.ts'
 import { speakingReviewRoutes } from './routes/speaking-review.ts'
+import { ttsRoutes } from './routes/tts.ts'
 import { writingReviewRoutes } from './routes/writing-review.ts'
 
 /** All API endpoints, keyed "METHOD /path" relative to /api. */
@@ -30,6 +31,7 @@ export const routes: Record<string, ApiHandler> = {
   ...writingReviewRoutes,
   ...speakingRoutes,
   ...speakingReviewRoutes,
+  ...ttsRoutes,
   ...ideaRoutes,
   ...reportRoutes,
   ...listeningRoutes,
