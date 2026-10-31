@@ -400,7 +400,7 @@ export function MockExamRoom({
   return (
     <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900">
       {/* Top Exam Header Bar (matches screenshot 2 layout) */}
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 bg-slate-50/70 px-4 py-3 sm:px-6 dark:border-slate-800 dark:bg-slate-900/90">
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 bg-slate-50/70 px-2 py-3 sm:px-6 dark:border-slate-800 dark:bg-slate-900/90">
         <div className="flex items-center gap-3">
           <span className="flex size-9 items-center justify-center rounded-xl bg-sky-600 text-white shadow-sm">
             <Mic className="size-4" />

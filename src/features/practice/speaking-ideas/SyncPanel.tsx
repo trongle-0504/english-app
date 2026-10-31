@@ -33,7 +33,7 @@ export function SyncPanel({ status, error, reload }: ReturnType<typeof useSyncSt
   const todo = toTag + status.removed + (topic?.removed ?? 0)
 
   return (
-    <Card className="space-y-3 p-4 sm:p-6">
+    <Card className="space-y-3 p-2 sm:p-6">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <h2 className="flex items-center gap-1.5 font-bold text-slate-900 dark:text-white">
           Library sync

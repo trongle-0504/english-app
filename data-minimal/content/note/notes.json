@@ -20270,5 +20270,479 @@
     "image_source": "https://pixabay.com/photos/oil-candles-burning-candles-hanukkah-7672890/",
     "image_query": "burn the midnight oil",
     "pronunciation": "/bɜːn ðə ˈmɪdnaɪt ɔɪl/"
+  },
+  {
+    "id": "traffic-jam",
+    "created_at": "2026-10-21T15:38:49.961Z",
+    "title": "traffic jam",
+    "type": "Collocation",
+    "pronunciation": "/ˈtræfɪk dʒæm/",
+    "formula": "traffic jam",
+    "image": "/note-images/traffic-jam.webp?v=mvia1psr",
+    "image_credit": "Pixabay · wal_172619",
+    "image_source": "https://pixabay.com/photos/traffic-city-traffic-jam-cars-7859033/",
+    "image_query": "cars stuck in city street traffic jam",
+    "meaning_vi": "**Kẹt xe, tắc nghẽn giao thông** — tình trạng xe cộ xếp hàng dài, không thể lưu thông hoặc di chuyển rất chậm do hệ thống giao thông bị quá tải hoặc do các sự cố khác.",
+    "usage_context": "Dùng như một danh từ đếm được (*a traffic jam*, *traffic jams*) để chỉ tình trạng ách tắc giao thông trên đường bộ. Thường đi kèm với các động từ như **cause**, **be stuck in**, **get caught in** hoặc tính từ như **terrible**, **massive**.",
+    "patterns": [],
+    "examples": [
+      {
+        "en": "The snow caused traffic jams all over the city.",
+        "vi": "Tuyết rơi đã gây ra tình trạng kẹt xe trên khắp thành phố."
+      },
+      {
+        "en": "We were stuck in a terrible traffic jam for over two hours.",
+        "vi": "Chúng tôi bị kẹt trong một vụ tắc đường khủng khiếp suốt hơn hai tiếng đồng hồ."
+      }
+    ],
+    "related_notes": [
+      "traffic congestion",
+      "gridlock",
+      "rush hour",
+      "heavy traffic",
+      "be stuck in traffic"
+    ],
+    "use_prompts": [
+      {
+        "context": "Urban Life",
+        "question": "What is the biggest transportation problem faced by people living in large cities?",
+        "fits": []
+      },
+      {
+        "context": "Environment",
+        "question": "Why do motor vehicles contribute significantly to air pollution in metropolitan areas?",
+        "fits": []
+      },
+      {
+        "context": "Work",
+        "question": "Why are many office workers frequently late for work in the morning?",
+        "fits": []
+      }
+    ],
+    "dictation": [
+      {
+        "target": "traffic jam",
+        "text": "I was late because of a huge traffic jam."
+      }
+    ],
+    "paraphrase": [
+      {
+        "target": "traffic jam",
+        "source": "A long line of stopped cars delayed commuters this morning.",
+        "model": "A severe traffic jam delayed commuters this morning."
+      },
+      {
+        "target": "traffic jam",
+        "source": "Drivers were trapped on the highway due to road congestion.",
+        "model": "Drivers were trapped on the highway in a major traffic jam."
+      }
+    ]
+  },
+  {
+    "id": "study-engineering",
+    "created_at": "2026-10-31T06:10:07.446Z",
+    "title": "study engineering",
+    "type": "Collocation",
+    "pronunciation": "/ˈstʌdi ˌendʒɪˈnɪərɪŋ/",
+    "formula": "study engineering",
+    "image": "/note-images/study-engineering.webp?v=mvw04vd9",
+    "image_credit": "Pixabay · StockSnap",
+    "image_source": "https://pixabay.com/photos/people-girls-women-students-2557396/",
+    "image_query": "student studying engineering blueprints laboratory workshop",
+    "meaning_vi": "**Học ngành kỹ thuật** (chương trình đào tạo đại học hoặc cao đẳng liên quan đến thiết kế, xây dựng và vận hành máy móc, công trình hoặc hệ thống).",
+    "usage_context": "Dùng phổ biến trong ngữ cảnh giáo dục và định hướng nghề nghiệp khi nói về việc theo học chuyên ngành kỹ thuật (như cơ khí, điện tử, xây dựng, công nghệ thông tin) tại trường cao đẳng hoặc đại học.",
+    "patterns": [],
+    "examples": [
+      {
+        "en": "He found out that he had gained admission to study engineering at a prestigious university, which made our whole family incredibly proud.",
+        "vi": "Anh ấy biết tin mình đã trúng tuyển để học ngành kỹ thuật tại một trường đại học danh tiếng, điều này khiến cả gia đình chúng tôi vô cùng tự hào."
+      },
+      {
+        "en": "More young women are being actively encouraged to study engineering and pursue careers in technology.",
+        "vi": "Ngày càng có nhiều phụ nữ trẻ được tích cực khuyến khích học ngành kỹ thuật và theo đuổi sự nghiệp trong lĩnh vực công nghệ."
+      }
+    ],
+    "related_notes": [
+      "major in engineering",
+      "pursue an engineering degree",
+      "civil engineering",
+      "mechanical engineering"
+    ],
+    "use_prompts": [
+      {
+        "context": "Education",
+        "question": "Why do many high school graduates choose technical majors instead of humanities subjects?",
+        "fits": []
+      },
+      {
+        "context": "Technology",
+        "question": "How can governments prepare the young workforce for the rise of automation and artificial intelligence?",
+        "fits": []
+      },
+      {
+        "context": "Career",
+        "question": "What academic path provides students with strong problem-solving skills and stable job prospects?",
+        "fits": []
+      }
+    ],
+    "dictation": [
+      {
+        "target": "study engineering",
+        "text": "Many students choose to study engineering at university."
+      }
+    ],
+    "paraphrase": [
+      {
+        "target": "study engineering",
+        "source": "He decided to take a degree in technical design and machinery at college.",
+        "model": "He decided to study engineering at college."
+      },
+      {
+        "target": "study engineering",
+        "source": "Her dream was to learn technical sciences at an overseas university.",
+        "model": "Her dream was to study engineering at an overseas university."
+      }
+    ]
+  },
+  {
+    "id": "incredibly-proud",
+    "created_at": "2026-10-31T06:10:19.671Z",
+    "title": "incredibly proud",
+    "type": "Collocation",
+    "pronunciation": "/ɪnˈkredəbli praʊd/",
+    "formula": "incredibly proud",
+    "image": "/note-images/incredibly-proud.webp?v=mvw054su",
+    "image_credit": "Wikipedia · Kylie Jenner",
+    "image_source": "https://en.wikipedia.org/wiki/Kylie_Jenner",
+    "image_query": "smiling parents hugging graduate daughter diploma",
+    "meaning_vi": "**Vô cùng tự hào**, hãnh diện tột cùng.",
+    "usage_context": "Dùng để nhấn mạnh mức độ tự hào rất lớn đối với thành tích, phẩm chất hoặc nỗ lực của bản thân, người thân hoặc tập thể. Thường đi với giới từ **of** (ví dụ: *incredibly proud of someone/something*), động từ nguyên mẫu có *to* (*incredibly proud to do something*), hoặc một mệnh đề bắt đầu bằng *that*.",
+    "patterns": [],
+    "examples": [
+      {
+        "en": "He found out that he had gained admission to study engineering at a prestigious university, which made our whole family incredibly proud.",
+        "vi": "Anh ấy biết tin mình đã trúng tuyển ngành kỹ thuật tại một trường đại học danh tiếng, điều này khiến cả gia đình chúng tôi vô cùng tự hào."
+      }
+    ],
+    "related_notes": [
+      "immensely proud",
+      "fiercely proud",
+      "justifiably proud",
+      "take pride in"
+    ],
+    "use_prompts": [
+      {
+        "context": "Education",
+        "question": "How do families typically celebrate a child's academic achievements?",
+        "fits": []
+      },
+      {
+        "context": "Work",
+        "question": "What motivates employees to consistently deliver high-quality results?",
+        "fits": []
+      },
+      {
+        "context": "Sports",
+        "question": "Why is winning an international medal so meaningful to athletes?",
+        "fits": []
+      }
+    ],
+    "dictation": [
+      {
+        "target": "incredibly proud",
+        "text": "Her parents were incredibly proud of her achievement."
+      }
+    ],
+    "paraphrase": [
+      {
+        "target": "incredibly proud",
+        "source": "The teacher felt extremely pleased with her students' progress.",
+        "model": "The teacher was incredibly proud of her students' progress."
+      },
+      {
+        "target": "incredibly proud",
+        "source": "Our manager was deeply satisfied when we won the major contract.",
+        "model": "Our manager was incredibly proud when we won the major contract."
+      }
+    ]
+  },
+  {
+    "id": "moderate-tuition-fee",
+    "created_at": "2026-10-31T06:10:28.550Z",
+    "title": "moderate tuition fee",
+    "type": "Collocation",
+    "pronunciation": "/ˈmɒdərət tjuːˈɪʃn fiː/",
+    "formula": "moderate tuition fee",
+    "image": "/note-images/moderate-tuition-fee.webp?v=mvw05bni",
+    "image_credit": "Pixabay · StockSnap",
+    "image_source": "https://pixabay.com/photos/people-girls-women-students-2557396/",
+    "image_query": "student paying university tuition desk reception",
+    "meaning_vi": "**Học phí vừa phải**, mức học phí hợp lý (không quá đắt đỏ, nằm trong giới hạn chi trả được).",
+    "usage_context": "Cụm từ được dùng phổ biến trong chủ đề **Giáo dục (Education)** để miêu tả mức học phí ở mức trung bình, hợp lý và không gây gánh nặng tài chính quá lớn cho sinh viên hoặc gia đình. Thường đi kèm với các danh từ chỉ trường học như *public university*, *college*, hoặc động từ như *charge*, *require*.",
+    "patterns": [],
+    "examples": [
+      {
+        "en": "The main reason for this goal was that he wanted to attend a reputable public university with a moderate tuition fee.",
+        "vi": "Lý do chính cho mục tiêu này là anh ấy muốn theo học một trường đại học công lập uy tín với mức học phí vừa phải."
+      },
+      {
+        "en": "Many international students choose community colleges because they charge a moderate tuition fee compared to private universities.",
+        "vi": "Nhiều du học sinh chọn các trường cao đẳng cộng đồng vì họ thu mức học phí vừa phải so với các trường đại học tư thục."
+      }
+    ],
+    "related_notes": [
+      "affordable tuition fee",
+      "reasonable tuition",
+      "exorbitant tuition fees",
+      "hefty fee"
+    ],
+    "use_prompts": [
+      {
+        "context": "Education",
+        "question": "Why do many students prefer studying at public colleges?",
+        "fits": []
+      },
+      {
+        "context": "Finance",
+        "question": "How can young adults avoid heavy student loan debts?",
+        "fits": []
+      },
+      {
+        "context": "Career",
+        "question": "What factors influence a person's decision when choosing vocational training?",
+        "fits": []
+      }
+    ],
+    "dictation": [
+      {
+        "target": "moderate tuition fee",
+        "text": "The college offers high quality training with a moderate tuition fee."
+      }
+    ],
+    "paraphrase": [
+      {
+        "target": "moderate tuition fee",
+        "source": "This academy attracts learners because its course prices are quite reasonable and affordable.",
+        "model": "This academy attracts learners because it charges a moderate tuition fee."
+      },
+      {
+        "target": "moderate tuition fee",
+        "source": "Students often pick local institutes to avoid paying extremely high education costs.",
+        "model": "Students often pick local institutes that require only a moderate tuition fee."
+      }
+    ]
+  },
+  {
+    "id": "fierce-competition",
+    "created_at": "2026-10-31T06:11:55.578Z",
+    "title": "fierce competition",
+    "type": "Collocation",
+    "pronunciation": "/fɪəs ˌkɒmpəˈtɪʃn/",
+    "formula": "fierce competition",
+    "image_query": "business runners race track suit finish line",
+    "meaning_vi": "**Sự cạnh tranh khốc liệt**, gay gắt.",
+    "usage_context": "Dùng để miêu tả tình trạng cạnh tranh vô cùng gay gắt giữa các cá nhân, doanh nghiệp hoặc tổ chức trong công việc, thương trường, giáo dục hoặc thể thao nhằm giành lấy lợi thế, thị phần hoặc vị trí dẫn đầu.",
+    "patterns": [],
+    "examples": [
+      {
+        "en": "The fierce competition required strong mental resilience, and he had to burn the midnight oil for months on end.",
+        "vi": "Sự cạnh tranh khốc liệt đòi hỏi sự kiên cường lớn về tinh thần, và anh ấy đã phải thức khuya miệt mài làm việc suốt nhiều tháng liền."
+      },
+      {
+        "en": "Local retailers are struggling to survive in the face of fierce competition from multinational e-commerce giants.",
+        "vi": "Các nhà bán lẻ địa phương đang chật vật tồn tại trước sự cạnh tranh khốc liệt từ các tập đoàn thương mại điện tử đa quốc gia."
+      }
+    ],
+    "related_notes": [
+      "stiff competition",
+      "intense competition",
+      "cut-throat competition",
+      "tough competition",
+      "face competition"
+    ],
+    "use_prompts": [
+      {
+        "context": "Work",
+        "question": "Why do many fresh university graduates find it difficult to secure employment nowadays?",
+        "fits": []
+      },
+      {
+        "context": "Business",
+        "question": "What challenges do small local businesses face when large corporations enter the market?",
+        "fits": []
+      },
+      {
+        "context": "Education",
+        "question": "Why do high school students experience high levels of stress during university entrance examinations?",
+        "fits": []
+      }
+    ],
+    "dictation": [
+      {
+        "target": "fierce competition",
+        "text": "Small companies face fierce competition from online platforms."
+      }
+    ],
+    "paraphrase": [
+      {
+        "target": "fierce competition",
+        "source": "Many start-ups fail because they have to fight against very strong rivals in the market.",
+        "model": "Many start-ups fail because they face fierce competition in the market."
+      },
+      {
+        "target": "fierce competition",
+        "source": "Students must study extremely hard because other applicants are competing intensely for top universities.",
+        "model": "Students must study extremely hard due to fierce competition for top universities."
+      }
+    ]
+  },
+  {
+    "id": "mental-resilience",
+    "created_at": "2026-10-31T06:12:16.632Z",
+    "title": "mental resilience",
+    "type": "Collocation",
+    "pronunciation": "/ˈmentl rɪˈzɪliəns/",
+    "formula": "mental resilience",
+    "image": "/note-images/mental-resilience.webp?v=mvw07n1r",
+    "image_credit": "Wikipedia · Mishima incident",
+    "image_source": "https://en.wikipedia.org/wiki/Mishima_incident",
+    "image_query": "exhausted determined student studying desk night",
+    "meaning_vi": "**Sức bền tinh thần**, khả năng kiên cường chịu đựng áp lực tâm lý và phục hồi nhanh chóng sau thất bại, nghịch cảnh.",
+    "usage_context": "Dùng để chỉ khả năng thích ứng và vượt qua căng thẳng, áp lực cao trong học tập, công việc hoặc thể thao đỉnh cao. Thường đi với các động từ như *build*, *develop*, *demonstrate*, *require*, hoặc tính từ như *strong*, *remarkable*.",
+    "patterns": [],
+    "examples": [
+      {
+        "en": "The fierce competition required strong mental resilience, and he had to burn the midnight oil for months on end.",
+        "vi": "Cuộc cạnh tranh khốc liệt đòi hỏi sức bền tinh thần mạnh mẽ, và anh ấy đã phải thức khuya miệt mài trong nhiều tháng liên tục."
+      },
+      {
+        "en": "Athletes need to develop mental resilience to cope with intense pressure during major international tournaments.",
+        "vi": "Các vận động viên cần rèn luyện sức bền tinh thần để đối phó với áp lực dữ dội trong các giải đấu quốc tế lớn."
+      }
+    ],
+    "related_notes": [
+      "mental toughness",
+      "psychological resilience",
+      "emotional strength",
+      "resilience"
+    ],
+    "use_prompts": [
+      {
+        "context": "Work",
+        "question": "How can employees handle high pressure and tight deadlines in fast-paced jobs?",
+        "fits": []
+      },
+      {
+        "context": "Education",
+        "question": "Why do candidates preparing for demanding examinations need psychological stamina?",
+        "fits": []
+      },
+      {
+        "context": "Sports",
+        "question": "What qualities help professional athletes bounce back after a serious defeat?",
+        "fits": []
+      }
+    ],
+    "dictation": [
+      {
+        "target": "mental resilience",
+        "text": "Developing mental resilience helps students overcome academic pressure."
+      }
+    ],
+    "paraphrase": [
+      {
+        "target": "mental resilience",
+        "source": "Athletes need psychological toughness to stay focused after losing a crucial match.",
+        "model": "Athletes need mental resilience to stay focused after losing a crucial match."
+      },
+      {
+        "target": "mental resilience",
+        "source": "High-stress jobs require employees to recover quickly from setbacks and persistent anxiety.",
+        "model": "High-stress jobs require employees to demonstrate strong mental resilience during setbacks."
+      }
+    ]
+  },
+  {
+    "id": "break-the-news",
+    "created_at": "2026-10-31T06:13:18.485Z",
+    "title": "break the news",
+    "type": "Idiom",
+    "pronunciation": "/breɪk ðə njuːz/",
+    "formula": "break the news (to somebody)",
+    "image": "/note-images/break-the-news.webp?v=mvw08yrw",
+    "image_credit": "Pixabay · mostafa_meraji",
+    "image_source": "https://pixabay.com/photos/silhouette-people-friends-dark-4939371/",
+    "image_query": "person comforting friend on sofa serious conversation",
+    "meaning_vi": "**báo tin**, **thông báo tin tức** (thường là tin quan trọng, bất ngờ hoặc tin buồn)",
+    "usage_context": "Dùng khi thông báo một thông tin quan trọng hoặc mới xảy ra cho ai đó, đặc biệt rất thường dùng khi **báo tin buồn** (*bad news*) hoặc tin tức gây chấn động cần sự tế nhị. Thường đi với giới từ **to**: *break the news to somebody*.",
+    "patterns": [
+      {
+        "pattern": "break the news to somebody",
+        "meaning_vi": "báo tin cho ai đó",
+        "examples": [
+          {
+            "en": "The doctor had to break the news to the patient's family after the surgery.",
+            "vi": "Bác sĩ đã phải báo tin cho gia đình bệnh nhân sau ca phẫu thuật."
+          }
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "en": "I still vividly remember the phone call when he broke the news to us, laughing and crying with joy, and I couldn't help but feel emotional myself.",
+        "vi": "Tôi vẫn nhớ như in cuộc điện thoại khi anh ấy báo tin cho chúng tôi, vừa cười vừa khóc trong niềm vui sướng, và chính tôi cũng không kìm được xúc động."
+      }
+    ],
+    "related_notes": [
+      "tell somebody the news",
+      "spread the news",
+      "announce",
+      "deliver the news"
+    ],
+    "use_prompts": [
+      {
+        "context": "Work",
+        "question": "How should managers inform employees about unexpected company restructuring and layoffs?",
+        "fits": [
+          "break the news to somebody"
+        ]
+      },
+      {
+        "context": "Family",
+        "question": "Why is it often difficult to share distressing personal events with close relatives?",
+        "fits": [
+          "break the news to somebody"
+        ]
+      },
+      {
+        "context": "Healthcare",
+        "question": "Should medical professionals receive specialized training on delivering critical diagnoses to patients?",
+        "fits": [
+          "break the news to somebody"
+        ]
+      }
+    ],
+    "dictation": [
+      {
+        "target": "break the news",
+        "text": "She had to break the news gently to her team."
+      },
+      {
+        "target": "break the news to somebody",
+        "text": "He broke the news to his parents yesterday evening."
+      }
+    ],
+    "paraphrase": [
+      {
+        "target": "break the news",
+        "source": "The director finally decided to disclose the unfortunate outcome to everyone.",
+        "model": "The director finally decided to break the news to everyone."
+      },
+      {
+        "target": "break the news to somebody",
+        "source": "A counsellor had to tell the students about the unexpected tragedy.",
+        "model": "A counsellor had to break the news to the students."
+      }
+    ]
   }
 ]

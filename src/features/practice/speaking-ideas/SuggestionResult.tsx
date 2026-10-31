@@ -798,7 +798,7 @@ function ModelAnswer({
         </div>
         {answer.sentences?.length ? (
           viewMode === 'paragraph' ? (
-            <div className="space-y-4 sm:space-y-5 rounded-2xl border border-slate-200/90 bg-white p-4.5 pt-5 sm:p-6 sm:pt-7 shadow-xs dark:border-slate-800 dark:bg-slate-900/90">
+            <div className="space-y-4 sm:space-y-5 rounded-2xl border border-slate-200/90 bg-white p-2 pt-3 sm:p-6 sm:pt-7 shadow-xs dark:border-slate-800 dark:bg-slate-900/90">
               {paragraphs.map((paragraph, pIdx) => (
                 <p
                   key={pIdx}
@@ -904,7 +904,7 @@ function ModelAnswer({
 
       {/* User Editing Section */}
       {isEditing ? (
-        <section className="rounded-2xl border-2 border-brand-500/80 bg-white p-4 shadow-sm dark:border-brand-500/60 dark:bg-slate-900 sm:p-5">
+        <section className="rounded-2xl border-2 border-brand-500/80 bg-white p-2 shadow-sm dark:border-brand-500/60 dark:bg-slate-900 sm:p-5">
           <div className="mb-3 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <span className="flex size-7 items-center justify-center rounded-lg bg-brand-50 text-brand-600 dark:bg-brand-950/60 dark:text-brand-300">

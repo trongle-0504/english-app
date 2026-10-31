@@ -1,7 +1,7 @@
 {
-  "createdAt": "2026-10-20T23:18:31.609Z",
+  "createdAt": "2026-10-31T08:44:30.027Z",
   "minimal": true,
-  "totalBytes": 28129219,
+  "totalBytes": 28588595,
   "files": [
     {
       "path": "config/gemini-pricing.json",
@@ -1225,8 +1225,13 @@
     },
     {
       "path": "content/note/notes.json",
-      "bytes": 790052,
-      "sha256": "d23ed9362e5eb93ea9dd9f13d118daa3cfb105326f040126648ad04b9fb575e6"
+      "bytes": 810957,
+      "sha256": "e667f8e7ac266df636eff402e15bc38fbd4cfd546df8e92a54fa162df4ffb04c"
+    },
+    {
+      "path": "content/notepad/notes.json",
+      "bytes": 79151,
+      "sha256": "8f3f0c24c0164c0695f5797b5d577d28d549c29a79d037eb011252d1f4d05979"
     },
     {
       "path": "content/practice/quiz/Academic_Intent_Investigation.json",
@@ -1450,28 +1455,68 @@
     },
     {
       "path": "content/vocabulary/topics.json",
-      "bytes": 25448,
-      "sha256": "0bdf3847f0eac350a89ca691670f1b235564d739cd01bf857f38c72f9a316a5e"
+      "bytes": 25578,
+      "sha256": "b7d6a32ce773ecf9fe3837fb967909f87b0805099866cdb76c690e6e92a1b4f2"
     },
     {
       "path": "content/vocabulary/words.json",
-      "bytes": 2846871,
-      "sha256": "8defa8cd163a61758d3e262bdd07475225f47cb4aa93de8dcd8f0b036900ed24"
+      "bytes": 2865974,
+      "sha256": "86c73879e653e97d75740d71953f963576b9dd82f6d07a27cf512d80afe498fd"
+    },
+    {
+      "path": "progress/listening/mvss5r1h-608d46.json",
+      "bytes": 31502,
+      "sha256": "567ab09fbb6573800ec4382dc9cc7b690276e76e450ec753652367eba64292fa"
+    },
+    {
+      "path": "progress/practice-aliases.json",
+      "bytes": 451,
+      "sha256": "79b8f12190f1a77ccd29d0d8dea4577074633237f7ffd1f723226e623b5586e8"
     },
     {
       "path": "progress/practice.json",
-      "bytes": 1130,
-      "sha256": "1fd4943a7b6d9047f2acafe94e0ef9f568ff17a2d9213dae5cb678a4fd5a628d"
+      "bytes": 1387,
+      "sha256": "5cc08d14937bac4cc87a6c2dfada1f0ffe5ce8c3f2287e1a16dc85913acb296f"
+    },
+    {
+      "path": "progress/produce-log.jsonl",
+      "bytes": 402,
+      "sha256": "9e18d5fecab86df881422690a99ea51678fcb4f207f9fcacf025315a56521163"
     },
     {
       "path": "progress/review-log.jsonl",
-      "bytes": 416349,
-      "sha256": "7e24169cf71b5c0bfcd8dbded9218ae1a2ed8c20fa8032b32be0d69054f14fc8"
+      "bytes": 430194,
+      "sha256": "95892efdc7c12bd30ad6b264e0f2f1e6e5442fd4c17268e14d40767eb22ec9a4"
+    },
+    {
+      "path": "progress/review.backup-before-unlearned-prune.json",
+      "bytes": 1153802,
+      "sha256": "8183dc6aa5ddd8e8756f5eb0182d176b573303cea7bd9681402d5b88fe917e06"
     },
     {
       "path": "progress/review.json",
-      "bytes": 1150919,
-      "sha256": "ed963b714d3ee8f62d4181a223e8e31fb0610e5fbedfbea323926b3510b001a3"
+      "bytes": 184589,
+      "sha256": "7abf11053e56dd2c6e6d55ab0cb1c96519e3ed39d0ed594b1d25c91983b718d3"
+    },
+    {
+      "path": "progress/speaking-reviews/mockdemo-p1q1.json",
+      "bytes": 12452,
+      "sha256": "c68f12c98d2d9d0b488907803438b5d1da00d6945490cbb9482ced290cdc9d45"
+    },
+    {
+      "path": "progress/speaking-reviews/mockdemo-p2cue.json",
+      "bytes": 27057,
+      "sha256": "9de9d59b89fba2bac7f153348d71ac2bc7ba208ea0fced73839c5f1ef05a6faa"
+    },
+    {
+      "path": "progress/speaking-reviews/mockdemo-p3q1.json",
+      "bytes": 13989,
+      "sha256": "6514f4de2b557ca2f53a5dc0b5e83e838f6e8256b7332ace490efc6a3bb1615f"
+    },
+    {
+      "path": "progress/speaking-reviews/mockdemo-p3q2.json",
+      "bytes": 11173,
+      "sha256": "051a81186f83a19c43ea70899be539a805ee9bf3e6a1a4b9315af9ed4f73c8ea"
     },
     {
       "path": "progress/speaking-reviews/mvfxckcz-6eeee2.json",
@@ -1482,6 +1527,11 @@
       "path": "progress/speaking-reviews/mvfxy958-214096.json",
       "bytes": 24541,
       "sha256": "eb52c8e3fca1d815aa7491c6677d1882084db786a6b38b3037b6d92c9d79c8a4"
+    },
+    {
+      "path": "progress/speaking-reviews/mvvxjiiq-d52e56.json",
+      "bytes": 41487,
+      "sha256": "77e372225e0274314a92967278fdfbc1b79a1f1ee2e83bb826dae39e111a3c09"
     },
     {
       "path": "progress/speaking/mutdn2da-0476b8.json",

@@ -319,7 +319,7 @@ export default function SpeakingReviewHistoryPage() {
           {scoped.length ? (
             <>
               <Summary items={scoped} />
-              <Card className="p-4 sm:p-5">
+              <Card className="p-2 sm:p-5">
                 <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
                   <h2 className="font-bold text-slate-900 dark:text-white">Your band over time</h2>
                   <span className="text-xs text-slate-500">Click a point to open that answer</span>

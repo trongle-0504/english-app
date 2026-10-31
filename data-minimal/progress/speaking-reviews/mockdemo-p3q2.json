@@ -1,0 +1,466 @@
+{
+  "id": "mockdemo-p3q2",
+  "createdAt": "2026-10-30T14:53:18.708Z",
+  "durationMs": 37104,
+  "part": 3,
+  "question": "Which form of vehicle is more popular in your country, bikes, cars or motorcycles?",
+  "topic": "Describe a car, motorbike or bicycle trip that you think would be interesting",
+  "audio": true,
+  "transcript": "Without a doubt, motorcycles dominate the roads in my country. Compared to cars, which have very high tax and expensive parking fee, a motorcycle is much more affordable for average income people. However, in recent years, more middle-class families are starting to buy cars because they want to protect their children from air pollution and heavy rain.",
+  "words": [
+    {
+      "w": "Without",
+      "start": 0.6,
+      "end": 0.99,
+      "conf": 0.94
+    },
+    {
+      "w": "a",
+      "start": 1.11,
+      "end": 1.33,
+      "conf": 0.94
+    },
+    {
+      "w": "doubt,",
+      "start": 1.44,
+      "end": 1.78,
+      "conf": 0.94
+    },
+    {
+      "w": "motorcycles",
+      "start": 2.33,
+      "end": 2.88,
+      "conf": 0.94
+    },
+    {
+      "w": "dominate",
+      "start": 3,
+      "end": 3.44,
+      "conf": 0.42
+    },
+    {
+      "w": "the",
+      "start": 3.56,
+      "end": 3.78,
+      "conf": 0.94
+    },
+    {
+      "w": "roads",
+      "start": 3.9,
+      "end": 4.17,
+      "conf": 0.94
+    },
+    {
+      "w": "in",
+      "start": 4.29,
+      "end": 4.51,
+      "conf": 0.94
+    },
+    {
+      "w": "my",
+      "start": 4.63,
+      "end": 4.85,
+      "conf": 0.94
+    },
+    {
+      "w": "country.",
+      "start": 4.97,
+      "end": 5.41,
+      "conf": 0.94
+    },
+    {
+      "w": "Compared",
+      "start": 5.96,
+      "end": 6.4,
+      "conf": 0.94
+    },
+    {
+      "w": "to",
+      "start": 6.52,
+      "end": 6.74,
+      "conf": 0.94
+    },
+    {
+      "w": "cars,",
+      "start": 6.86,
+      "end": 7.14,
+      "conf": 0.94
+    },
+    {
+      "w": "which",
+      "start": 7.69,
+      "end": 7.96,
+      "conf": 0.94
+    },
+    {
+      "w": "have",
+      "start": 8.08,
+      "end": 8.3,
+      "conf": 0.94
+    },
+    {
+      "w": "very",
+      "start": 8.42,
+      "end": 8.64,
+      "conf": 0.94
+    },
+    {
+      "w": "high",
+      "start": 8.76,
+      "end": 8.98,
+      "conf": 0.94
+    },
+    {
+      "w": "tax",
+      "start": 9.1,
+      "end": 9.32,
+      "conf": 0.94
+    },
+    {
+      "w": "and",
+      "start": 9.44,
+      "end": 9.66,
+      "conf": 0.94
+    },
+    {
+      "w": "expensive",
+      "start": 9.78,
+      "end": 10.27,
+      "conf": 0.94
+    },
+    {
+      "w": "parking",
+      "start": 10.4,
+      "end": 10.78,
+      "conf": 0.94
+    },
+    {
+      "w": "fee,",
+      "start": 10.9,
+      "end": 11.12,
+      "conf": 0.94
+    },
+    {
+      "w": "a",
+      "start": 11.67,
+      "end": 11.89,
+      "conf": 0.94
+    },
+    {
+      "w": "motorcycle",
+      "start": 12.01,
+      "end": 12.56,
+      "conf": 0.94
+    },
+    {
+      "w": "is",
+      "start": 12.68,
+      "end": 12.9,
+      "conf": 0.94
+    },
+    {
+      "w": "much",
+      "start": 13.02,
+      "end": 13.24,
+      "conf": 0.94
+    },
+    {
+      "w": "more",
+      "start": 13.36,
+      "end": 13.58,
+      "conf": 0.94
+    },
+    {
+      "w": "affordable",
+      "start": 13.7,
+      "end": 14.25,
+      "conf": 0.94
+    },
+    {
+      "w": "for",
+      "start": 14.37,
+      "end": 14.59,
+      "conf": 0.94
+    },
+    {
+      "w": "average",
+      "start": 14.71,
+      "end": 15.1,
+      "conf": 0.94
+    },
+    {
+      "w": "income",
+      "start": 15.22,
+      "end": 15.55,
+      "conf": 0.94
+    },
+    {
+      "w": "people.",
+      "start": 15.67,
+      "end": 16.05,
+      "conf": 0.94
+    },
+    {
+      "w": "However,",
+      "start": 16.6,
+      "end": 17.04,
+      "conf": 0.94
+    },
+    {
+      "w": "in",
+      "start": 17.59,
+      "end": 17.81,
+      "conf": 0.94
+    },
+    {
+      "w": "recent",
+      "start": 17.93,
+      "end": 18.26,
+      "conf": 0.94
+    },
+    {
+      "w": "years,",
+      "start": 18.38,
+      "end": 18.71,
+      "conf": 0.94
+    },
+    {
+      "w": "more",
+      "start": 19.26,
+      "end": 19.48,
+      "conf": 0.94
+    },
+    {
+      "w": "middle-class",
+      "start": 19.6,
+      "end": 20.15,
+      "conf": 0.94
+    },
+    {
+      "w": "families",
+      "start": 20.27,
+      "end": 20.71,
+      "conf": 0.94
+    },
+    {
+      "w": "are",
+      "start": 20.83,
+      "end": 21.05,
+      "conf": 0.94
+    },
+    {
+      "w": "starting",
+      "start": 21.17,
+      "end": 21.61,
+      "conf": 0.94
+    },
+    {
+      "w": "to",
+      "start": 21.73,
+      "end": 21.95,
+      "conf": 0.94
+    },
+    {
+      "w": "buy",
+      "start": 22.07,
+      "end": 22.29,
+      "conf": 0.94
+    },
+    {
+      "w": "cars",
+      "start": 22.41,
+      "end": 22.63,
+      "conf": 0.94
+    },
+    {
+      "w": "because",
+      "start": 22.75,
+      "end": 23.13,
+      "conf": 0.94
+    },
+    {
+      "w": "they",
+      "start": 23.25,
+      "end": 23.47,
+      "conf": 0.94
+    },
+    {
+      "w": "want",
+      "start": 23.59,
+      "end": 23.81,
+      "conf": 0.94
+    },
+    {
+      "w": "to",
+      "start": 23.93,
+      "end": 24.15,
+      "conf": 0.94
+    },
+    {
+      "w": "protect",
+      "start": 24.27,
+      "end": 24.66,
+      "conf": 0.94
+    },
+    {
+      "w": "their",
+      "start": 24.78,
+      "end": 25.05,
+      "conf": 0.94
+    },
+    {
+      "w": "children",
+      "start": 25.17,
+      "end": 25.61,
+      "conf": 0.94
+    },
+    {
+      "w": "from",
+      "start": 25.73,
+      "end": 25.95,
+      "conf": 0.94
+    },
+    {
+      "w": "air",
+      "start": 26.07,
+      "end": 26.29,
+      "conf": 0.94
+    },
+    {
+      "w": "pollution",
+      "start": 26.41,
+      "end": 26.91,
+      "conf": 0.94
+    },
+    {
+      "w": "and",
+      "start": 27.03,
+      "end": 27.25,
+      "conf": 0.94
+    },
+    {
+      "w": "heavy",
+      "start": 27.37,
+      "end": 27.64,
+      "conf": 0.94
+    },
+    {
+      "w": "rain.",
+      "start": 27.76,
+      "end": 28.04,
+      "conf": 0.94
+    }
+  ],
+  "sentences": [
+    "Without a doubt, motorcycles dominate the roads in my country.",
+    "Compared to cars, which have very high tax and expensive parking fee, a motorcycle is much more affordable for average income people.",
+    "However, in recent years, more middle-class families are starting to buy cars because they want to protect their children from air pollution and heavy rain."
+  ],
+  "correctedSentences": [
+    "Without a doubt, motorcycles dominate the roads in my country.",
+    "Compared to cars, which have very high taxes and expensive parking fee, a motorcycle is much more affordable for average income people.",
+    "However, in recent years, more middle-class families are starting to buy cars because they want to protect their children from air pollution and heavy rain."
+  ],
+  "corrected": "Without a doubt, motorcycles dominate the roads in my country. Compared to cars, which have very high taxes and expensive parking fee, a motorcycle is much more affordable for average income people. However, in recent years, more middle-class families are starting to buy cars because they want to protect their children from air pollution and heavy rain.",
+  "fixes": [
+    {
+      "id": "f1",
+      "sentenceIndex": 1,
+      "original": "tax",
+      "replacement": "taxes",
+      "type": "grammar",
+      "severity": "error",
+      "explanation": "Thuế áp dụng lên ô tô bao gồm nhiều loại phí nên cần dùng danh từ số nhiều “taxes”.",
+      "evidence": "word",
+      "dictionary": [
+        "Longman có mục từ “tax”"
+      ],
+      "sources": [
+        {
+          "name": "Longman",
+          "url": "https://www.ldoceonline.com/dictionary/tax"
+        }
+      ],
+      "word": "tax"
+    }
+  ],
+  "warnings": [
+    {
+      "phrase": "expensive parking fee",
+      "suggestion": "hefty parking fees",
+      "explanation": "Dùng “hefty parking fees” tự nhiên và nâng cao hơn cách diễn đạt cơ bản “expensive parking fee”. (AI đề xuất; Longman/OZDIC chưa xác nhận cách sửa nên không tự sửa.)"
+    },
+    {
+      "phrase": "average income people",
+      "suggestion": "average earners",
+      "explanation": "Cụm “average earners” tự nhiên và mang tính bản xứ hơn cách ghép từ “average income people”. (AI đề xuất; Longman/OZDIC chưa xác nhận cách sửa nên không tự sửa.)"
+    },
+    {
+      "phrase": "heavy rain",
+      "suggestion": "the elements",
+      "explanation": "Dùng “the elements” để chỉ thời tiết khắc nghiệt như mưa bão giúp câu nói linh hoạt và band cao hơn. (AI đề xuất; Longman/OZDIC chưa xác nhận cách sửa nên không tự sửa.)"
+    }
+  ],
+  "fluency": {
+    "duration": 29.4,
+    "speech": 27.4,
+    "words": 57,
+    "wpm": 125,
+    "pauses": 0,
+    "longPauses": 0,
+    "longestPause": 0.6,
+    "pauseRatio": 0,
+    "hesitations": 0,
+    "longestHesitation": 0.6,
+    "sentencePauses": 0,
+    "fillers": [],
+    "fillerCount": 0,
+    "repeats": 0,
+    "variety": 0.89,
+    "sentences": 3,
+    "avgSentenceWords": 19,
+    "unclear": 1
+  },
+  "criteria": {
+    "fc": {
+      "band": 6,
+      "summary": "Thời lượng trả lời dưới 30 giây là quá ngắn đối với câu hỏi thảo luận Part 3.",
+      "good": [],
+      "improve": [
+        "Bạn nên mở rộng thêm góc nhìn về tác động giao thông thay vì dừng lại quá sớm sau khi nêu lý do mua ô tô."
+      ]
+    },
+    "lr": {
+      "band": 6.5,
+      "summary": "Vốn từ khá chuẩn xác nhưng còn một số cách kết hợp từ mang tính chuyển ngữ trực tiếp.",
+      "good": [],
+      "improve": [
+        "Thay vì nói “average income people”, bạn nên nói “average earners” hoặc “middle-income earners” để tăng độ tự nhiên."
+      ]
+    },
+    "gra": {
+      "band": 6.5,
+      "summary": "Cấu trúc câu ghép và mệnh đề quan hệ tốt nhưng còn lỗi danh từ đếm được số ít và số nhiều.",
+      "good": [],
+      "improve": [
+        "Khi nói về các loại thuế phí chung, bạn nói “very high tax and expensive parking fee” → nói “very high taxes and steep parking fees”."
+      ]
+    },
+    "pron": {
+      "band": 6.5,
+      "summary": "Phát âm nhìn chung rõ ràng nhưng trọng âm của từ vựng nhiều âm tiết chưa thực sự chuẩn xác.",
+      "good": [],
+      "improve": [
+        "Khi phát âm “dominate”, bạn chú ý nhấn trọng âm vào âm tiết đầu tiên /ˈdɒmɪneɪt/ thay vì dàn đều các âm."
+      ]
+    }
+  },
+  "overall": 6.5,
+  "model": {
+    "topic": "Describe a car, motorbike or bicycle trip that you think would be interesting",
+    "question": "Which form of vehicle is more popular in your country, bikes, cars or motorcycles?",
+    "idea": "Motorcycles remain the dominant transport mode due to lower purchasing costs and taxes compared to cars, though middle-class families increasingly opt for cars for weather protection and safety.",
+    "part": 3
+  },
+  "reviewer": "gemini-3.8-flash"
+}

@@ -550,7 +550,7 @@ export default function SpeakingMockTestPage() {
       </div>
 
       {/* Progress Hero Banner */}
-      <Card className="flex flex-col items-start gap-4 border-slate-200/90 bg-white p-5 sm:flex-row sm:items-center dark:border-slate-800 dark:bg-slate-900">
+      <Card className="flex flex-col items-start gap-4 border-slate-200/90 bg-white p-2 sm:flex-row sm:items-center sm:p-5 dark:border-slate-800 dark:bg-slate-900">
         <div className="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500 to-indigo-600 text-white shadow-sm">
           <Mic className="size-7" />
         </div>
@@ -676,7 +676,7 @@ export default function SpeakingMockTestPage() {
                       }
                     }}
                     className={cn(
-                      'group flex cursor-pointer flex-col justify-between gap-4 rounded-2xl border bg-white p-4 shadow-2xs transition-all hover:border-slate-300 hover:shadow-sm sm:flex-row sm:items-center sm:px-5 dark:bg-slate-900',
+                      'group flex cursor-pointer flex-col justify-between gap-4 rounded-2xl border bg-white p-2 shadow-2xs transition-all hover:border-slate-300 hover:shadow-sm sm:flex-row sm:items-center sm:px-5 sm:py-4 dark:bg-slate-900',
                       isSelected
                         ? 'border-sky-500 ring-2 ring-sky-500/15 dark:border-sky-400'
                         : 'border-slate-200/80 dark:border-slate-800',
@@ -812,7 +812,7 @@ export default function SpeakingMockTestPage() {
                       }
                     }}
                     className={cn(
-                      'group flex cursor-pointer flex-col justify-between gap-4 rounded-2xl border bg-white p-4 shadow-2xs transition-all hover:border-slate-300 hover:shadow-sm sm:flex-row sm:items-center sm:px-5 dark:bg-slate-900',
+                      'group flex cursor-pointer flex-col justify-between gap-4 rounded-2xl border bg-white p-2 shadow-2xs transition-all hover:border-slate-300 hover:shadow-sm sm:flex-row sm:items-center sm:px-5 sm:py-4 dark:bg-slate-900',
                       isSelected
                         ? 'border-sky-500 ring-2 ring-sky-500/15 dark:border-sky-400'
                         : 'border-slate-200/80 dark:border-slate-800',

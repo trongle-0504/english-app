@@ -108,7 +108,7 @@ export function MockReviewAndResults({
     <div className="space-y-6">
       {/* Top Summary & Submission Control Card */}
       <Card className="overflow-hidden p-0">
-        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-100 bg-slate-50/70 px-5 py-4 sm:px-6 dark:border-slate-800 dark:bg-slate-900/60">
+        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-100 bg-slate-50/70 px-2 py-4 sm:px-6 dark:border-slate-800 dark:bg-slate-900/60">
           <div className="flex items-center gap-3.5">
             {doneEvaluations.length > 0 ? (
               <div className="flex size-12 shrink-0 flex-col items-center justify-center rounded-2xl bg-emerald-600 text-white shadow-sm">
@@ -196,7 +196,7 @@ export function MockReviewAndResults({
         ) : null}
 
         {/* Expand / Collapse all controls */}
-        <div className="flex flex-wrap items-center justify-between gap-3 px-5 py-3 text-xs text-slate-500 sm:px-6 dark:text-slate-400">
+        <div className="flex flex-wrap items-center justify-between gap-3 px-2 py-3 text-xs text-slate-500 sm:px-6 dark:text-slate-400">
           <span>
             Nhấn vào từng câu hỏi bên dưới để mở rộng hoặc thu gọn chi tiết đánh giá IELTS.
           </span>
@@ -397,10 +397,10 @@ function QuestionResultAccordion({
 
       {/* Accordion Body */}
       {expanded ? (
-        <div className="border-t border-slate-100 bg-slate-50/40 p-4 sm:p-6 dark:border-slate-800 dark:bg-slate-950/30">
+        <div className="border-t border-slate-100 bg-slate-50/40 p-2 sm:p-6 dark:border-slate-800 dark:bg-slate-950/30">
           {/* Cue card bullets if Part 2 */}
           {question.part === 2 && question.cueCardBullets && question.cueCardBullets.length > 0 ? (
-            <div className="mb-4 rounded-xl border border-slate-200/80 bg-white p-4 text-xs text-slate-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300">
+            <div className="mb-4 rounded-xl border border-slate-200/80 bg-white p-2 text-xs text-slate-600 sm:p-4 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300">
               <p className="mb-1.5 font-bold text-slate-800 dark:text-slate-200">Cue Card Prompts:</p>
               <ul className="list-disc space-y-1 pl-5">
                 {question.cueCardBullets.map((b, i) => (

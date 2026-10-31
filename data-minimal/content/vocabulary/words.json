@@ -12354,8 +12354,8 @@
       "appealing (adjective)",
       "appealingly (adverb)"
     ],
-    "image_credit": "Openverse · BY 2.0 · Dominic's pics",
-    "image_source": "https://www.flickr.com/photos/64097751@N00/5583465162",
+    "image_credit": "Pixabay · jclk8888",
+    "image_source": "https://pixabay.com/photos/hands-compassion-help-old-care-699486/",
     "image_query": "charity appeal poster help",
     "use_prompts": [
       {
@@ -27130,8 +27130,8 @@
     "synonyms": [],
     "antonyms": [],
     "word_family": [],
-    "image_credit": "Openverse · BY-NC-SA 2.0 · MyTudut",
-    "image_source": "https://www.flickr.com/photos/48450255@N08/5183268107",
+    "image_credit": "Pixabay · StartupStockPhotos",
+    "image_source": "https://pixabay.com/photos/meeting-brainstorming-business-594091/",
     "image_query": "two colleagues working together laptop",
     "use_prompts": [
       {
@@ -31307,8 +31307,8 @@
       "irresponsibly"
     ],
     "created_at": "2026-05-11T00:45:25.999Z",
-    "image_credit": "Openverse · BY-NC-SA 2.0 · Ed Yourdon",
-    "image_source": "https://www.flickr.com/photos/72098626@N00/2549225867",
+    "image_credit": "Pixabay · Pexels",
+    "image_source": "https://pixabay.com/photos/bonding-boy-children-enjoyment-1868513/",
     "image_query": "father teaching son ride bicycle",
     "use_prompts": [
       {
@@ -47499,8 +47499,8 @@
     "mnemonic_vi": "🎭 **Play** (vở kịch) + **bill** (tờ thông báo, áp phích) → tờ giấy giới thiệu vở kịch.",
     "created_at": "2026-09-26T03:58:30.000Z",
     "source": "IELTS Listening vocabulary (input-file, 2026-09-26)",
-    "image_credit": "Openverse · BY-NC-ND 2.0 · London Chow",
-    "image_source": "https://www.flickr.com/photos/53013126@N07/8556102566",
+    "image_credit": "Pixabay · juergen-polle",
+    "image_source": "https://pixabay.com/photos/chicago-usa-building-skyscraper-5347435/",
     "image_query": "theatre programme booklet",
     "use_prompts": [
       {
@@ -53438,8 +53438,8 @@
     "mnemonic_vi": "🧽 **Saturated** → như miếng bọt biển đã hút nước \"sát\" giới hạn, không hút thêm được giọt nào.",
     "created_at": "2026-09-26T03:57:46.000Z",
     "source": "IELTS Listening vocabulary (input-file, 2026-09-26)",
-    "image_credit": "Openverse · BY-SA 2.0 · Christian Collins",
-    "image_source": "https://www.flickr.com/photos/17094005@N00/34672196324",
+    "image_credit": "Pixabay · geralt",
+    "image_source": "https://pixabay.com/photos/fields-field-flooding-wetness-406153/",
     "image_query": "flooded field puddles rain",
     "use_prompts": [
       {
@@ -81993,5 +81993,482 @@
     "image_credit": "Pixabay · jarmoluk",
     "image_source": "https://pixabay.com/photos/photos-hands-hold-old-256887/",
     "created_at": "2026-10-03T13:11:59.111Z"
+  },
+  {
+    "word": "pay close attention",
+    "pronunciation": "/peɪ kloʊs əˈten.ʃən/",
+    "image": "/vocab-images/pay-close-attention.webp?v=mvvwnxpu",
+    "part_of_speech": [
+      "verb",
+      "phrase"
+    ],
+    "senses": [
+      {
+        "definition_vi": "chú ý lắng nghe kỹ - Tập trung cao độ để quan sát, lắng nghe hoặc xem xét kỹ lưỡng một sự việc hay thông tin.",
+        "examples": [
+          "Instead, he relied completely on self-study by downloading past exam papers online and **paying close attention** in class every single day.",
+          "Students are advised to **pay close attention to** the teacher's instructions during lab experiments."
+        ],
+        "patterns": [],
+        "usage_notes_vi": "**Cách dùng:**\n- Thường kết hợp với giới từ 'to' theo cấu trúc 'pay close attention to something/somebody' để diễn tả hành động hướng sự tập trung cao độ vào người hoặc sự vật cụ thể.\n- Mang sắc thái trang trọng, học thuật, rất phổ biến trong các chủ đề Giáo dục (Education) và Nơi làm việc (Work)."
+      }
+    ],
+    "collocations": [],
+    "synonyms": [
+      {
+        "word": "focus on",
+        "pronunciation": "/ˈfoʊ.kəs ɒn/",
+        "meaning_vi": "tập trung vào"
+      },
+      {
+        "word": "concentrate on",
+        "pronunciation": "/ˈkɒn.sən.treɪt ɒn/",
+        "meaning_vi": "chú tâm vào"
+      },
+      {
+        "word": "heed",
+        "pronunciation": "/hiːd/",
+        "meaning_vi": "để ý, chú ý nghe theo"
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "ignore",
+        "pronunciation": "/ɪɡˈnɔːr/",
+        "meaning_vi": "phớt lờ, không để ý"
+      },
+      {
+        "word": "overlook",
+        "pronunciation": "/ˌoʊ.vɚˈlʊk/",
+        "meaning_vi": "bỏ sót, coi nhẹ"
+      }
+    ],
+    "word_family": [
+      "attention",
+      "attentive",
+      "attentively",
+      "inattentive"
+    ],
+    "word_roots": {
+      "origin": "tiếng Latinh cổ (attendere) kết hợp với động từ pay từ gốc Latinh (pacare)",
+      "roots": [
+        {
+          "root": "pay (gốc Latinh 'pacare')",
+          "meaning_vi": "Ban đầu mang nghĩa làm dịu hoặc trao đổi, sau mở rộng nghĩa là dành (thời gian, sự chú ý) cho ai đó"
+        },
+        {
+          "root": "close (gốc Latinh 'clausus')",
+          "meaning_vi": "Gần gũi, sát sao, khép kín"
+        },
+        {
+          "root": "ad- (biến thể 'at-')",
+          "meaning_vi": "Tiền tố chỉ hướng tới (towards)"
+        },
+        {
+          "root": "tendere",
+          "meaning_vi": "Kéo căng, hướng tâm trí về phía trước"
+        }
+      ],
+      "mnemonic_vi": "Hãy nhớ: Bạn 'trả' (pay) năng lượng ở cự ly thật 'sát' (close) để hướng tâm trí (tendere) về điều đang nghe nhằm không bỏ sót chi tiết nào."
+    },
+    "use_prompts": [
+      {
+        "context": "Education",
+        "question": "How can learners make the most out of university seminars?",
+        "fits": []
+      },
+      {
+        "context": "Work",
+        "question": "Why is precision necessary when compiling financial audit reports?",
+        "fits": []
+      },
+      {
+        "context": "Health",
+        "question": "What should patients do before taking complex prescribed medication?",
+        "fits": []
+      }
+    ],
+    "dictation": [
+      {
+        "target": "pay close attention",
+        "text": "Students should pay close attention in class every single day."
+      }
+    ],
+    "paraphrase": [
+      {
+        "target": "pay close attention",
+        "source": "Pupils need to listen very carefully during every seminar.",
+        "model": "Pupils need to pay close attention during every seminar."
+      }
+    ],
+    "image_query": "student listening carefully classroom lecture",
+    "image_credit": "Pixabay · Chuotanhls",
+    "image_source": "https://pixabay.com/photos/girl-portrait-school-student-10377109/",
+    "created_at": "2026-10-31T04:32:58.512Z"
+  },
+  {
+    "word": "cut-off score",
+    "pronunciation": "/ˈkʌt ɒf skɔː(r)/",
+    "image": "/vocab-images/cut-off-score.webp?v=mvw03edg",
+    "part_of_speech": [
+      "noun"
+    ],
+    "senses": [
+      {
+        "definition_vi": "Điểm chuẩn đầu vào - Mức điểm tối thiểu thí sinh cần đạt được để trúng tuyển vào một trường học, ngành học hoặc vượt qua một kỳ thi.",
+        "examples": [
+          "If I remember correctly, it was a sweltering summer afternoon a few years ago when the university **cut-off scores** were officially released.",
+          "Candidates must achieve at least the minimum **cut-off score** to qualify for the scholarship interview."
+        ],
+        "patterns": [],
+        "usage_notes_vi": "**Cách dùng:**\n- Là một danh từ ghép thường gặp trong chủ đề Giáo dục (Education), đặc biệt là trong các bài thi IELTS Speaking và Writing khi bàn về tuyển sinh đại học.\n- Thường dùng ở dạng số ít hoặc số nhiều (\"cut-off score\" hoặc \"cut-off scores\").\n- Mang sắc thái học thuật và hành chính, chỉ ngưỡng ranh giới (ngưỡng sàn) để chọn lọc ứng viên."
+      }
+    ],
+    "collocations": [],
+    "synonyms": [
+      {
+        "word": "admission threshold",
+        "pronunciation": "/ədˈmɪʃn ˈθreʃhəʊld/",
+        "meaning_vi": "Ngưỡng điểm trúng tuyển"
+      },
+      {
+        "word": "qualifying mark",
+        "pronunciation": "/ˈkwɒlɪfaɪɪŋ mɑːk/",
+        "meaning_vi": "Điểm số đạt điều kiện"
+      },
+      {
+        "word": "minimum passing score",
+        "pronunciation": "/ˈmɪnɪməm ˈpɑːsɪŋ skɔː(r)/",
+        "meaning_vi": "Điểm số đạt tối thiểu"
+      }
+    ],
+    "antonyms": [],
+    "word_family": [
+      "cut off (verb)",
+      "score (verb/noun)"
+    ],
+    "word_roots": {
+      "origin": "tiếng Anh (kết hợp giữa cụm động từ 'cut off' và danh từ 'score' từ tiếng Bắc Âu cổ)",
+      "roots": [
+        {
+          "root": "cut off",
+          "meaning_vi": "Cắt đứt, giới hạn điểm dừng hoặc đường phân định ranh giới"
+        },
+        {
+          "root": "score",
+          "meaning_vi": "Nguồn gốc từ 'skor' (vết khắc, vạch đánh dấu ghi điểm), chỉ điểm số hoặc số lượng"
+        }
+      ],
+      "mnemonic_vi": "Hãy hình dung 'cut-off' là một nhát cắt ranh giới phân định ai đỗ ai trượt, còn 'score' là mức điểm số. Ghép lại, 'cut-off score' chính là mức điểm ranh giới để quyết định kết quả tuyển sinh."
+    },
+    "use_prompts": [
+      {
+        "context": "Education",
+        "question": "Why do top universities impose strict entry criteria on high school graduates?",
+        "fits": []
+      },
+      {
+        "context": "Social issues",
+        "question": "How can educational inequality affect students from rural areas?",
+        "fits": []
+      },
+      {
+        "context": "Work",
+        "question": "Should professional certification bodies make licensing examinations more difficult?",
+        "fits": []
+      }
+    ],
+    "dictation": [
+      {
+        "target": "cut-off score",
+        "text": "She was nervous before the cut-off score was announced."
+      }
+    ],
+    "paraphrase": [
+      {
+        "target": "cut-off score",
+        "source": "Applicants who do not achieve the minimum required mark cannot enter the academy.",
+        "model": "Applicants who do not achieve the cut-off score cannot enter the academy."
+      }
+    ],
+    "image_query": "student checking university admission exam score results",
+    "image_credit": "Pixabay · stevepb",
+    "image_source": "https://pixabay.com/photos/books-student-study-education-1012088/",
+    "created_at": "2026-10-31T06:08:58.781Z"
+  },
+  {
+    "word": "officially release",
+    "pronunciation": "/əˈfɪʃəli rɪˈliːs/",
+    "image": "/vocab-images/officially-release.webp?v=mvw03rhf",
+    "part_of_speech": [
+      "verb phrase"
+    ],
+    "senses": [
+      {
+        "definition_vi": "Chính thức công bố - Đưa ra thông tin, tài liệu, kết quả hoặc sản phẩm đến công chúng một cách công khai và có thẩm quyền.",
+        "examples": [
+          "If I remember correctly, it was a sweltering summer afternoon a few years ago when the university cut-off scores were **officially released**.",
+          "The committee will **officially release** the final report on climate change tomorrow."
+        ],
+        "patterns": [],
+        "usage_notes_vi": "**Cách dùng:**\n- Thường được dùng ở dạng bị động (*be officially released*) khi chủ ngữ là kết quả thi cử, báo cáo nghiên cứu hoặc số liệu thống kê.\n- Dùng ở thể chủ động khi chủ ngữ là cơ quan chính phủ, tổ chức hoặc ban giám khảo có thẩm quyền.\n- Mang tính trang trọng và học thuật cao, rất phù hợp trong IELTS Writing Task 1 (mô tả nguồn dữ liệu) và Task 2."
+      }
+    ],
+    "collocations": [],
+    "synonyms": [
+      {
+        "word": "formally publish",
+        "pronunciation": "/ˈfɔːrməli ˈpʌblɪʃ/",
+        "meaning_vi": "xuất bản hoặc công bố trang trọng"
+      },
+      {
+        "word": "officially announce",
+        "pronunciation": "/əˈfɪʃəli əˈnaʊns/",
+        "meaning_vi": "chính thức thông báo"
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "withhold",
+        "pronunciation": "/wɪðˈhəʊld/",
+        "meaning_vi": "giữ lại, giấu kín không công bố"
+      },
+      {
+        "word": "conceal",
+        "pronunciation": "/kənˈsiːl/",
+        "meaning_vi": "che đậy, giấu nhẹm"
+      }
+    ],
+    "word_family": [
+      "official (adj, noun)",
+      "officially (adv)",
+      "release (verb, noun)",
+      "released (adj)"
+    ],
+    "word_roots": {
+      "origin": "tiếng Latinh cổ (officium + relaxare)",
+      "roots": [
+        {
+          "root": "officially (từ Latinh 'officium')",
+          "meaning_vi": "Nghĩa vụ, chức trách hoặc thẩm quyền công cộng; hậu tố '-ly' tạo thành trạng từ chỉ sự chính thống, hợp pháp."
+        },
+        {
+          "root": "release (từ Latinh 'relaxare' qua Pháp cổ 'relaissier')",
+          "meaning_vi": "Bao gồm 're-' (ngược lại) và 'laxare' (nới lỏng), mang ý nghĩa mở ra, phóng thích hoặc đưa ra bên ngoài."
+        }
+      ],
+      "mnemonic_vi": "Hãy liên tưởng đến việc một cơ quan có thẩm quyền ('official') dỡ bỏ lệnh niêm phong ('release') để trao thông tin quan trọng tới công chúng."
+    },
+    "use_prompts": [
+      {
+        "context": "Education",
+        "question": "How should universities handle final examination results?",
+        "fits": []
+      },
+      {
+        "context": "Science",
+        "question": "Why is transparency essential when conducting medical research?",
+        "fits": []
+      },
+      {
+        "context": "Government",
+        "question": "What should authorities do during a public crisis?",
+        "fits": []
+      }
+    ],
+    "dictation": [
+      {
+        "target": "officially release",
+        "text": "The Ministry will officially release the test scores tomorrow."
+      }
+    ],
+    "paraphrase": [
+      {
+        "target": "officially release",
+        "source": "The department formally made the annual admission statistics public.",
+        "model": "The department decided to officially release the annual admission statistics."
+      }
+    ],
+    "image_query": "press conference announcement microphones podium",
+    "image_credit": "Pixabay · thekurupi",
+    "image_source": "https://pixabay.com/photos/president-obama-pressconference-bts-1788706/",
+    "created_at": "2026-10-31T06:09:15.771Z"
+  },
+  {
+    "word": "record a decline",
+    "pronunciation": "/rɪˈkɔːd ə dɪˈklaɪn/",
+    "image": "/vocab-images/record-a-decline.webp?v=mvw48xbi",
+    "part_of_speech": [
+      "verb phrase"
+    ],
+    "senses": [
+      {
+        "definition_vi": "Ghi nhận mức giảm - Trải qua hoặc thể hiện sự sụt giảm về giá trị, số lượng hoặc mức độ qua các số liệu báo cáo.",
+        "examples": [
+          "The tech company **recorded a decline** in market valuation after releasing its quarterly report.",
+          "Several manufacturing industries **recorded a decline** in exports during the global trade slowdown."
+        ],
+        "patterns": [],
+        "usage_notes_vi": "**Cách dùng:**\n- Dùng chủ yếu trong văn phong học thuật, báo chí tài chính và bài thi IELTS Writing Task 1 để diễn tả xu hướng giảm của số liệu.\n- Mang sắc thái trang trọng, khách quan khi đưa ra các thông tin từ báo cáo thống kê hoặc tài chính.\n- Thường kết hợp với các giới từ như 'in' (chỉ lĩnh vực giảm) hoặc 'of' (chỉ mức giảm cụ thể)."
+      }
+    ],
+    "collocations": [
+      {
+        "text": "record a sharp decline",
+        "pronunciation": "/rɪˈkɔːd ə ʃɑːp dɪˈklaɪn/",
+        "meaning_vi": "Ghi nhận mức giảm mạnh",
+        "type": "verb phrase",
+        "examples": [
+          "The company's shares **recorded a sharp decline** following the earnings announcement."
+        ]
+      },
+      {
+        "text": "record a steady decline",
+        "pronunciation": "/rɪˈkɔːd ə ˈstedi dɪˈklaɪn/",
+        "meaning_vi": "Ghi nhận mức giảm đều đặn",
+        "type": "verb phrase",
+        "examples": [
+          "The rural area has **recorded a steady decline** in student numbers over the past decade."
+        ]
+      },
+      {
+        "text": "record a significant decline",
+        "pronunciation": "/rɪˈkɔːd ə sɪɡˈnɪfɪkənt dɪˈklaɪn/",
+        "meaning_vi": "Ghi nhận mức giảm đáng kể",
+        "type": "verb phrase",
+        "examples": [
+          "Domestic airlines **recorded a significant decline** in passenger traffic last winter."
+        ]
+      },
+      {
+        "text": "record a slight decline",
+        "pronunciation": "/rɪˈkɔːd ə slaɪt dɪˈklaɪn/",
+        "meaning_vi": "Ghi nhận mức giảm nhẹ",
+        "type": "verb phrase",
+        "examples": [
+          "The bookstore **recorded a slight decline** in sales during the summer months."
+        ]
+      }
+    ],
+    "synonyms": [
+      {
+        "word": "see a drop",
+        "pronunciation": "/siː ə drɒp/",
+        "meaning_vi": "Chứng kiến sự sụt giảm"
+      },
+      {
+        "word": "experience a decrease",
+        "pronunciation": "/ɪkˈspɪəriəns ə ˈdiːkriːs/",
+        "meaning_vi": "Trải qua một đợt giảm"
+      },
+      {
+        "word": "register a fall",
+        "pronunciation": "/ˈredʒɪstər ə fɔːl/",
+        "meaning_vi": "Ghi nhận một sự suy giảm"
+      }
+    ],
+    "antonyms": [
+      {
+        "word": "record an increase",
+        "pronunciation": "/rɪˈkɔːd ən ˈɪnkriːs/",
+        "meaning_vi": "Ghi nhận mức tăng"
+      },
+      {
+        "word": "experience growth",
+        "pronunciation": "/ɪkˈspɪəriəns ɡrəʊθ/",
+        "meaning_vi": "Trải qua sự tăng trưởng"
+      }
+    ],
+    "word_family": [
+      "record",
+      "recorded",
+      "recording",
+      "decline",
+      "declining"
+    ],
+    "word_roots": {
+      "origin": "tiếng Latinh cổ (recordari và declinare qua tiếng Pháp cổ)",
+      "roots": [
+        {
+          "root": "re-",
+          "meaning_vi": "Tiền tố chỉ sự quay lại hoặc lặp lại ('again, back')."
+        },
+        {
+          "root": "cor / cord",
+          "meaning_vi": "Gốc từ Latinh có nghĩa là trái tim, tâm trí ('heart, mind'), ban đầu mang nghĩa ghi nhớ trong lòng trước khi chuyển sang nghĩa lập biên bản, ghi chép lại."
+        },
+        {
+          "root": "de-",
+          "meaning_vi": "Tiền tố chỉ hướng đi xuống hoặc tách rời ('down, away from')."
+        },
+        {
+          "root": "clin / clinare",
+          "meaning_vi": "Gốc từ Latinh có nghĩa là cúi, nghiêng theo một góc nghiêng ('to bend, slope')."
+        }
+      ],
+      "mnemonic_vi": "Mẹo liên tưởng: 'Record' là lập hồ sơ lưu lại thông tin trên sổ sách giấy tờ, còn 'decline' là đường dốc trượt nghiêng xuống dưới ('de-' = xuống). Kết hợp lại, 'record a decline' chính là việc các con số, chỉ số được ghi nhận đang trên đà lao dốc."
+    },
+    "use_prompts": [
+      {
+        "context": "Economics",
+        "question": "Why do some technology giants lose significant market value overnight?",
+        "fits": [
+          "record a sharp decline",
+          "record a significant decline"
+        ]
+      },
+      {
+        "context": "Environment",
+        "question": "How has intensive agriculture influenced wild bird populations across rural regions?",
+        "fits": [
+          "record a steady decline"
+        ]
+      },
+      {
+        "context": "Work",
+        "question": "What happens to workplace productivity when employees face burnout during difficult quarters?",
+        "fits": [
+          "record a slight decline"
+        ]
+      }
+    ],
+    "dictation": [
+      {
+        "target": "record a decline",
+        "text": "The tech firm may record a decline in profits this year."
+      },
+      {
+        "target": "record a sharp decline",
+        "text": "Major tech stocks record a sharp decline after the report."
+      },
+      {
+        "target": "record a steady decline",
+        "text": "Rural regions record a steady decline in young residents."
+      },
+      {
+        "target": "record a significant decline",
+        "text": "Local exporters record a significant decline in international orders."
+      },
+      {
+        "target": "record a slight decline",
+        "text": "Retail stores record a slight decline during rainy weekends."
+      }
+    ],
+    "paraphrase": [
+      {
+        "target": "record a decline",
+        "source": "Company profits dropped noticeably over the last financial quarter.",
+        "model": "Company profits recorded a decline over the last financial quarter."
+      },
+      {
+        "target": "record a sharp decline",
+        "source": "Stock prices plummeted dramatically immediately after the press release.",
+        "model": "Stock prices recorded a sharp decline immediately after the press release."
+      }
+    ],
+    "image_query": "downward trend financial chart red graph",
+    "image_credit": "Pixabay · AS_Photography",
+    "image_source": "https://pixabay.com/photos/digital-marketing-seo-google-1725340/",
+    "created_at": "2026-10-31T08:05:15.108Z"
   }
 ]

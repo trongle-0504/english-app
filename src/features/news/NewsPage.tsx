@@ -699,7 +699,7 @@ export default function NewsPage() {
         {/* Right Pane: Article Reader & IELTS Vocabulary */}
         <Card
           className={cn(
-            'flex flex-col p-3.5 sm:p-5 md:h-[calc(100dvh-8.2rem)] overflow-y-auto',
+            'flex flex-col p-2 sm:p-5 md:h-[calc(100dvh-8.2rem)] overflow-y-auto',
             !mobileShowReader && items.length > 0 && sidebarOpen && 'hidden md:flex',
           )}
         >
@@ -895,19 +895,19 @@ export default function NewsPage() {
                     </span>
                     <SpeakButton text={selectedItem.ai.summary} voice="" rate={1} className="-my-1" />
                   </div>
-                  <p className={cn('text-justify text-slate-700 dark:text-slate-200', textSizeClass)}>{selectedItem.ai.summary}</p>
+                  <p className={cn('text-left sm:text-justify text-slate-700 dark:text-slate-200', textSizeClass)}>{selectedItem.ai.summary}</p>
                 </div>
               ) : null}
 
               {/* Main Article Body: English Article */}
               {selectedItem.ai.article ? (
-                <div className="space-y-3 rounded-2xl border border-slate-200/80 bg-white p-4 shadow-2xs dark:border-slate-800 dark:bg-slate-900/50">
+                <div className="space-y-3 rounded-2xl border border-slate-200/80 bg-white p-2 sm:p-4 shadow-2xs dark:border-slate-800 dark:bg-slate-900/50">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2 dark:border-slate-800">
                     <span className="inline-flex items-center gap-1.5 text-xs font-extrabold tracking-wide text-emerald-700 uppercase dark:text-emerald-400">
                       <Languages className="size-3.5" /> English Article
                     </span>
                     <div className="flex items-center gap-2">
-                      <span className="text-[11px] text-slate-400">
+                      <span className="hidden text-[11px] text-slate-400 sm:inline">
                         Bôi đen cụm từ bất kỳ để thêm vào Admin Vocab / Note
                       </span>
                       <SpeakButton text={selectedItem.ai.article.replace(/^#{1,4}\s+/gm, '')} voice="" rate={1} className="-my-1" />
@@ -928,7 +928,7 @@ export default function NewsPage() {
                           )
                         }
                         return (
-                          <p key={idx} className="text-justify text-slate-800 dark:text-slate-100">
+                          <p key={idx} className="text-left sm:text-justify text-slate-800 dark:text-slate-100">
                             {para}
                           </p>
                         )
@@ -939,7 +939,7 @@ export default function NewsPage() {
 
               {/* IELTS Vocabulary Section */}
               {selectedItem.ai.vocabulary.length > 0 ? (
-                <div className="rounded-2xl border border-slate-200/80 bg-white p-4 shadow-2xs dark:border-slate-800 dark:bg-slate-900/50">
+                <div className="rounded-2xl border border-slate-200/80 bg-white p-2 sm:p-4 shadow-2xs dark:border-slate-800 dark:bg-slate-900/50">
                   <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
                     <div className="flex items-center gap-2">
                       <BookOpen className="size-4 text-brand-600 dark:text-brand-400" />

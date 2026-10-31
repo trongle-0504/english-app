@@ -1,0 +1,798 @@
+{
+  "id": "mvss5r1h-608d46",
+  "createdAt": "2026-10-29T00:03:33.029Z",
+  "transcript": "Now I'll take you through the different parts of the museum.\nThe area called Four Seasons is positioned partly inside and partly beyond the main gallery.\nIt shows a four-minute animated woodland scene, created especially for us by young people studying film.\nIt's a lovely piece, and adults enjoy it just as much as children do.\nOur main gallery, Town and Country, contains photographs of award-winning sheep and the people who look after them.\nFrom there, you move into Farmhouse Kitchen, whose theme is fairly obvious.\nIt houses the country's oldest collection of butter and cheese-making equipment.\nThis morning, a specialist cheesemaker is demonstrating the process, and visitors may even be able to taste the results.\nNext, there are two possible directions.\nThe staircase on the right leads to a landing overlooking the galleries.\nOn the left is a year on the farm.\nWe sometimes use that room for school visits, so it has plenty of seats and is a convenient place to rest.\nAnyone who wants a challenge can also try our memory quiz, answering questions about exhibits they've already seen.\nThe following section is Wagon Walk, with farm carts collected from almost every region of the country.\nThe differences between the areas are quite striking, and information panels beside the carts explain each one.\nBecause these vehicles are old and delicate, adults must keep children close and make sure they don't climb on them.\nAfter Wagon Walk, you may return to reception, head into the garden, or revisit the galleries, so you aren't restricted to one route.\nBeezer Magic is in the garden's far corner.\nThat section is currently being redeveloped, so it isn't open today, although honey from the museum is still available in the shop.\nThe last place is the pond, home to several kinds of wildlife.\nThere are ducklings only a few days old, as well as tiny frogs.\nThe water is shallow and surrounded by a fence, making the area safe for children.",
+  "questions": "Question 15 - 20\nWhat detail does the guide mention about each area of the museum?\n15. Four Seasons → A feature was made by students.\n16. Farmhouse Kitchen → An expert is giving a demonstration today.\n17. A Year on the Farm → Visitors can test themselves with a set of questions.\n18. Wagon Walk → Adults must supervise children closely.\n19. Bees are Magic → The area is unavailable today.\n20. The Pond → Visitors can see some recent arrivals.",
+  "result": {
+    "sections": [
+      {
+        "title_vi": "Phần 1: Khu vực Four Seasons và phòng tranh chính",
+        "link_vi": "",
+        "lines": [
+          {
+            "n": 1,
+            "relation": "start",
+            "link_vi": "Mở đầu: Hướng dẫn viên giới thiệu lộ trình tham quan các khu vực trong bảo tàng.",
+            "segments": [
+              {
+                "text": "Now ",
+                "role": "skip",
+                "q": 0,
+                "vi": ""
+              },
+              {
+                "text": "I'll take you through the different parts of the museum.",
+                "role": "core",
+                "q": 0,
+                "vi": "tôi sẽ dẫn bạn đi tham quan"
+              }
+            ]
+          },
+          {
+            "n": 2,
+            "relation": "start",
+            "link_vi": "Mở phần mới (không có từ nối): bắt đầu giới thiệu khu vực đầu tiên mang tên Four Seasons.",
+            "segments": [
+              {
+                "text": "The area called Four Seasons ",
+                "role": "anchor",
+                "q": 0,
+                "vi": "Mốc: khu Four Seasons"
+              },
+              {
+                "text": "is positioned ",
+                "role": "core",
+                "q": 0,
+                "vi": "được đặt"
+              },
+              {
+                "text": "partly inside and partly beyond the main gallery.",
+                "role": "skip",
+                "q": 0,
+                "vi": "vị trí — nghe lướt"
+              }
+            ]
+          },
+          {
+            "n": 3,
+            "relation": "continue",
+            "link_vi": "Nối ý (không có từ nối): 'It' = 'Four Seasons' [2]; mô tả đặc điểm nổi bật được làm bởi sinh viên điện ảnh.",
+            "segments": [
+              {
+                "text": "It ",
+                "role": "ref",
+                "q": 0,
+                "vi": "= khu Four Seasons [2]"
+              },
+              {
+                "text": "shows a four-minute animated woodland scene, ",
+                "role": "core",
+                "q": 0,
+                "vi": "chiếu phim hoạt hình rừng cây"
+              },
+              {
+                "text": "created especially for us ",
+                "role": "key",
+                "q": 15,
+                "vi": "do sinh viên làm"
+              },
+              {
+                "text": "by young people studying film.",
+                "role": "key",
+                "q": 15,
+                "vi": "= sinh viên làm [Q15]"
+              }
+            ]
+          },
+          {
+            "n": 4,
+            "relation": "explain",
+            "link_vi": "Giải thích (không có từ nối): 'It' = đoạn phim hoạt hình [3]; đánh giá tác phẩm phù hợp cho cả người lớn và trẻ em.",
+            "segments": [
+              {
+                "text": "It's a lovely piece, and ",
+                "role": "skip",
+                "q": 0,
+                "vi": ""
+              },
+              {
+                "text": "adults enjoy it ",
+                "role": "core",
+                "q": 0,
+                "vi": "người lớn cũng yêu thích"
+              },
+              {
+                "text": "just as much as children do.",
+                "role": "skip",
+                "q": 0,
+                "vi": "so sánh — nghe lướt"
+              }
+            ]
+          },
+          {
+            "n": 5,
+            "relation": "start",
+            "link_vi": "Mở phần mới (không có từ nối): chuyển sang khu phòng tranh chính Town and Country.",
+            "segments": [
+              {
+                "text": "Our main gallery, Town and Country, ",
+                "role": "anchor",
+                "q": 0,
+                "vi": "Mốc: phòng tranh chính"
+              },
+              {
+                "text": "contains photographs of award-winning sheep ",
+                "role": "core",
+                "q": 0,
+                "vi": "trưng bày ảnh cừu đạt giải"
+              },
+              {
+                "text": "and the people who look after them.",
+                "role": "skip",
+                "q": 0,
+                "vi": "chi tiết ảnh — nghe lướt"
+              }
+            ]
+          }
+        ],
+        "main_idea_vi": "Khu Four Seasons trình chiếu phim hoạt hình do sinh viên ngành phim thực hiện, còn phòng tranh chính trưng bày các bức ảnh về cừu.",
+        "flow_vi": "[1] Anchor (lời mở đầu) → [2] Anchor (giới thiệu Four Seasons) → [3] Idea (phim do sinh viên làm) → [4] Explain (cả trẻ em và người lớn đều thích) → [5] Anchor (phòng tranh chính)"
+      },
+      {
+        "title_vi": "Phần 2: Khu bếp trang trại Farmhouse Kitchen",
+        "link_vi": "Tiếp nối hành trình từ phòng tranh chính: dẫn người nghe bước sang khu bếp trang trại.",
+        "lines": [
+          {
+            "n": 6,
+            "relation": "time",
+            "link_vi": "Trình tự (From there): di chuyển từ phòng tranh chính [5] → khu bếp trang trại Farmhouse Kitchen [6].",
+            "segments": [
+              {
+                "text": "From there, ",
+                "role": "signpost",
+                "q": 0,
+                "vi": "Từ đó"
+              },
+              {
+                "text": "you move into ",
+                "role": "core",
+                "q": 0,
+                "vi": "bạn bước vào"
+              },
+              {
+                "text": "Farmhouse Kitchen, ",
+                "role": "anchor",
+                "q": 0,
+                "vi": "Mốc: khu Farmhouse Kitchen"
+              },
+              {
+                "text": "whose theme is fairly obvious.",
+                "role": "skip",
+                "q": 0,
+                "vi": ""
+              }
+            ]
+          },
+          {
+            "n": 7,
+            "relation": "reference",
+            "link_vi": "Tham chiếu (không có từ nối): 'It' = 'Farmhouse Kitchen' [6]; trưng bày dụng cụ làm bơ và phô mai lâu đời.",
+            "segments": [
+              {
+                "text": "It ",
+                "role": "ref",
+                "q": 0,
+                "vi": "= Farmhouse Kitchen [6]"
+              },
+              {
+                "text": "houses ",
+                "role": "core",
+                "q": 0,
+                "vi": "lưu giữ"
+              },
+              {
+                "text": "the country's oldest collection of butter and cheese-making equipment.",
+                "role": "core",
+                "q": 0,
+                "vi": "bộ sưu tập dụng cụ bơ phô mai"
+              }
+            ]
+          },
+          {
+            "n": 8,
+            "relation": "continue",
+            "link_vi": "Nối ý (không có từ nối): hoạt động đặc biệt sáng nay tại khu bếp trang trại có chuyên gia làm mẫu.",
+            "segments": [
+              {
+                "text": "This morning, ",
+                "role": "skip",
+                "q": 0,
+                "vi": ""
+              },
+              {
+                "text": "a specialist cheesemaker ",
+                "role": "key",
+                "q": 16,
+                "vi": "chuyên gia phô mai [Q16]"
+              },
+              {
+                "text": "is demonstrating the process, ",
+                "role": "key",
+                "q": 16,
+                "vi": "đang biểu diễn quy trình [Q16]"
+              },
+              {
+                "text": "and ",
+                "role": "signpost",
+                "q": 0,
+                "vi": "và"
+              },
+              {
+                "text": "visitors may even be able to taste the results.",
+                "role": "core",
+                "q": 0,
+                "vi": "khách có thể nếm thử"
+              }
+            ]
+          }
+        ],
+        "main_idea_vi": "Farmhouse Kitchen lưu giữ các dụng cụ làm bơ phô mai cổ xưa và sáng nay có chuyên gia trình diễn quy trình cho khách xem.",
+        "flow_vi": "[6] Anchor (chuyển sang Farmhouse Kitchen) → [7] Idea (bộ sưu tập dụng cụ) → [8] Expand (chuyên gia biểu diễn quy trình)"
+      },
+      {
+        "title_vi": "Phần 3: Khu A Year on the Farm và cầu thang",
+        "link_vi": "Tiếp nối hành trình: hướng dẫn hai ngả rẽ tiếp theo sau khu bếp trang trại.",
+        "lines": [
+          {
+            "n": 9,
+            "relation": "time",
+            "link_vi": "Trình tự (Next): mở ra hai hướng đi tiếp theo từ vị trí hiện tại.",
+            "segments": [
+              {
+                "text": "Next, ",
+                "role": "signpost",
+                "q": 0,
+                "vi": "Tiếp theo"
+              },
+              {
+                "text": "there are two possible directions.",
+                "role": "anchor",
+                "q": 0,
+                "vi": "Mốc: hai hướng đi"
+              }
+            ]
+          },
+          {
+            "n": 10,
+            "relation": "continue",
+            "link_vi": "Nối ý (không có từ nối): hướng thứ nhất bên tay phải dẫn lên chiếu nghỉ cầu thang.",
+            "segments": [
+              {
+                "text": "The staircase on the right ",
+                "role": "core",
+                "q": 0,
+                "vi": "cầu thang bên phải"
+              },
+              {
+                "text": "leads to a landing ",
+                "role": "core",
+                "q": 0,
+                "vi": "dẫn lên chiếu nghỉ"
+              },
+              {
+                "text": "overlooking the galleries.",
+                "role": "skip",
+                "q": 0,
+                "vi": "nhìn ra phòng tranh — nghe lướt"
+              }
+            ]
+          },
+          {
+            "n": 11,
+            "relation": "start",
+            "link_vi": "Mở phần mới (không có từ nối): hướng thứ hai bên tay trái là khu trưng bày A Year on the Farm.",
+            "segments": [
+              {
+                "text": "On the left is ",
+                "role": "core",
+                "q": 0,
+                "vi": "bên trái là"
+              },
+              {
+                "text": "a year on the farm.",
+                "role": "anchor",
+                "q": 0,
+                "vi": "Mốc: khu A Year on the Farm"
+              }
+            ]
+          },
+          {
+            "n": 12,
+            "relation": "cause_effect",
+            "link_vi": "Nhân → quả (so): phòng dùng cho học sinh tham quan → có nhiều ghế để nghỉ ngơi; 'that room' = khu [11].",
+            "segments": [
+              {
+                "text": "We sometimes use that room for school visits, ",
+                "role": "skip",
+                "q": 0,
+                "vi": "nguyên nhân — nghe lướt"
+              },
+              {
+                "text": "so ",
+                "role": "signpost",
+                "q": 0,
+                "vi": "nên"
+              },
+              {
+                "text": "it ",
+                "role": "ref",
+                "q": 0,
+                "vi": "= phòng đó [11]"
+              },
+              {
+                "text": "has plenty of seats and is a convenient place to rest.",
+                "role": "core",
+                "q": 0,
+                "vi": "nhiều chỗ ngồi để nghỉ ngơi"
+              }
+            ]
+          },
+          {
+            "n": 13,
+            "relation": "similarity",
+            "link_vi": "Bổ sung (also): du khách có thể tự kiểm tra trí nhớ bằng bộ câu hỏi đố vui về các hiện vật.",
+            "segments": [
+              {
+                "text": "Anyone who wants a challenge ",
+                "role": "skip",
+                "q": 0,
+                "vi": ""
+              },
+              {
+                "text": "can also ",
+                "role": "signpost",
+                "q": 0,
+                "vi": "cũng có thể"
+              },
+              {
+                "text": "try our memory quiz, ",
+                "role": "key",
+                "q": 17,
+                "vi": "thử bài trắc nghiệm trí nhớ"
+              },
+              {
+                "text": "answering questions about exhibits ",
+                "role": "key",
+                "q": 17,
+                "vi": "trả lời bộ câu hỏi [Q17]"
+              },
+              {
+                "text": "they've already seen.",
+                "role": "skip",
+                "q": 0,
+                "vi": "về hiện vật đã xem"
+              }
+            ]
+          }
+        ],
+        "main_idea_vi": "Lối bên trái dẫn vào khu A Year on the Farm, nơi du khách có thể nghỉ chân và thử thách bản thân với bộ câu hỏi đố vui.",
+        "flow_vi": "[9] Anchor (thông báo 2 hướng đi) → [10] Expand (hướng cầu thang bên phải) → [11] Anchor (hướng trái: A Year on the Farm) → [12] Result (nhiều ghế nghỉ) → [13] Idea (thử bài trắc nghiệm câu hỏi)"
+      },
+      {
+        "title_vi": "Phần 4: Khu xe kéo Wagon Walk",
+        "link_vi": "Tiếp nối hành trình: chuyển tiếp sang khu vực kế tiếp mang tên Wagon Walk.",
+        "lines": [
+          {
+            "n": 14,
+            "relation": "start",
+            "link_vi": "Mở phần mới (The following section): giới thiệu khu vực Wagon Walk trưng bày xe thồ từ các vùng miền.",
+            "segments": [
+              {
+                "text": "The following section is ",
+                "role": "skip",
+                "q": 0,
+                "vi": ""
+              },
+              {
+                "text": "Wagon Walk, ",
+                "role": "anchor",
+                "q": 0,
+                "vi": "Mốc: khu Wagon Walk"
+              },
+              {
+                "text": "with farm carts ",
+                "role": "core",
+                "q": 0,
+                "vi": "với các cỗ xe bò/ngựa"
+              },
+              {
+                "text": "collected from almost every region of the country.",
+                "role": "skip",
+                "q": 0,
+                "vi": "nguồn gốc — nghe lướt"
+              }
+            ]
+          },
+          {
+            "n": 15,
+            "relation": "continue",
+            "link_vi": "Nối ý (không có từ nối): điểm khác biệt giữa các cỗ xe rất nổi bật và có bảng thông tin giải thích.",
+            "segments": [
+              {
+                "text": "The differences between the areas are quite striking, and ",
+                "role": "skip",
+                "q": 0,
+                "vi": ""
+              },
+              {
+                "text": "information panels ",
+                "role": "core",
+                "q": 0,
+                "vi": "bảng thông tin"
+              },
+              {
+                "text": "beside the carts ",
+                "role": "skip",
+                "q": 0,
+                "vi": ""
+              },
+              {
+                "text": "explain each one.",
+                "role": "core",
+                "q": 0,
+                "vi": "giải thích từng cỗ xe"
+              }
+            ]
+          },
+          {
+            "n": 16,
+            "relation": "cause_effect",
+            "link_vi": "Nhân → quả (Because): hiện vật cổ và dễ hỏng → người lớn bắt buộc phải trông chừng trẻ nhỏ sát sao; nhớ kết quả.",
+            "segments": [
+              {
+                "text": "Because ",
+                "role": "signpost",
+                "q": 0,
+                "vi": "Bởi vì"
+              },
+              {
+                "text": "these vehicles are old and delicate, ",
+                "role": "skip",
+                "q": 0,
+                "vi": "xe cổ và dễ vỡ — nghe lướt"
+              },
+              {
+                "text": "adults must keep children close ",
+                "role": "key",
+                "q": 18,
+                "vi": "người lớn phải giữ sát trẻ [Q18]"
+              },
+              {
+                "text": "and ",
+                "role": "signpost",
+                "q": 0,
+                "vi": "và"
+              },
+              {
+                "text": "make sure they don't climb on them.",
+                "role": "key",
+                "q": 18,
+                "vi": "không cho trèo lên [Q18]"
+              }
+            ]
+          },
+          {
+            "n": 17,
+            "relation": "continue",
+            "link_vi": "Nối ý (After Wagon Walk): chỉ dẫn các lộ trình tự do tiếp theo sau khi xem xong khu Wagon Walk.",
+            "segments": [
+              {
+                "text": "After Wagon Walk, ",
+                "role": "skip",
+                "q": 0,
+                "vi": ""
+              },
+              {
+                "text": "you may return to reception, head into the garden, or revisit the galleries, ",
+                "role": "core",
+                "q": 0,
+                "vi": "bạn có thể quay lại sảnh hoặc vào vườn"
+              },
+              {
+                "text": "so ",
+                "role": "signpost",
+                "q": 0,
+                "vi": "nên"
+              },
+              {
+                "text": "you aren't restricted to one route.",
+                "role": "core",
+                "q": 0,
+                "vi": "không bị gò bó một lối"
+              }
+            ]
+          }
+        ],
+        "main_idea_vi": "Khu Wagon Walk trưng bày các cỗ xe cổ dễ hư hại, nên người lớn được yêu cầu phải trông chừng trẻ em thật cẩn thận.",
+        "flow_vi": "[14] Anchor (giới thiệu Wagon Walk) → [15] Explain (bảng thông tin các cỗ xe) → [16] Cause → Result (xe cổ → người lớn phải trông sát trẻ em) → [17] Expand (các lựa chọn di chuyển tiếp)"
+      },
+      {
+        "title_vi": "Phần 5: Khu vườn, Beezer Magic và ao nước",
+        "link_vi": "Mở rộng không gian ngoài trời: chuyển từ các gian trưng bày trong nhà ra vườn, khu nuôi ong và hồ nước.",
+        "lines": [
+          {
+            "n": 18,
+            "relation": "start",
+            "link_vi": "Mở phần mới (không có từ nối): giới thiệu vị trí khu vực Beezer Magic trong góc vườn.",
+            "segments": [
+              {
+                "text": "Beezer Magic ",
+                "role": "anchor",
+                "q": 0,
+                "vi": "Mốc: khu Beezer Magic"
+              },
+              {
+                "text": "is in the garden's far corner.",
+                "role": "core",
+                "q": 0,
+                "vi": "nằm ở góc xa của vườn"
+              }
+            ]
+          },
+          {
+            "n": 19,
+            "relation": "cause_effect",
+            "link_vi": "Nhân → quả (so): khu vực đang sửa chữa → hôm nay đóng cửa không tiếp khách; nhớ kết quả đóng cửa.",
+            "segments": [
+              {
+                "text": "That section ",
+                "role": "ref",
+                "q": 0,
+                "vi": "= khu Beezer Magic [18]"
+              },
+              {
+                "text": "is currently being redeveloped, ",
+                "role": "skip",
+                "q": 0,
+                "vi": "đang tu sửa — nghe lướt"
+              },
+              {
+                "text": "so ",
+                "role": "signpost",
+                "q": 0,
+                "vi": "nên"
+              },
+              {
+                "text": "it isn't open today, ",
+                "role": "key",
+                "q": 19,
+                "vi": "hôm nay không mở cửa [Q19]"
+              },
+              {
+                "text": "although ",
+                "role": "signpost",
+                "q": 0,
+                "vi": "dù"
+              },
+              {
+                "text": "honey from the museum is still available in the shop.",
+                "role": "skip",
+                "q": 0,
+                "vi": "mật ong ở cửa hàng — nghe lướt"
+              }
+            ]
+          },
+          {
+            "n": 20,
+            "relation": "start",
+            "link_vi": "Mở phần mới (The last place): giới thiệu điểm dừng chân cuối cùng là ao nước tự nhiên.",
+            "segments": [
+              {
+                "text": "The last place is the pond, ",
+                "role": "anchor",
+                "q": 0,
+                "vi": "Mốc: điểm cuối ao nước"
+              },
+              {
+                "text": "home to several kinds of wildlife.",
+                "role": "core",
+                "q": 0,
+                "vi": "nơi trú ngụ động vật hoang dã"
+              }
+            ]
+          },
+          {
+            "n": 21,
+            "relation": "example",
+            "link_vi": "Ví dụ (không có từ nối): dẫn chứng các loài vật mới sinh tại ao như vịt con vài ngày tuổi.",
+            "segments": [
+              {
+                "text": "There are ",
+                "role": "skip",
+                "q": 0,
+                "vi": ""
+              },
+              {
+                "text": "ducklings only a few days old, ",
+                "role": "key",
+                "q": 20,
+                "vi": "vịt con mới vài ngày tuổi [Q20]"
+              },
+              {
+                "text": "as well as tiny frogs.",
+                "role": "skip",
+                "q": 0,
+                "vi": "và ếch nhỏ — nghe lướt"
+              }
+            ]
+          },
+          {
+            "n": 22,
+            "relation": "continue",
+            "link_vi": "Nối ý (không có từ nối): ao nước nông và có rào chắn an toàn cho trẻ nhỏ.",
+            "segments": [
+              {
+                "text": "The water is shallow and surrounded by a fence, ",
+                "role": "skip",
+                "q": 0,
+                "vi": "nước nông và có rào"
+              },
+              {
+                "text": "making ",
+                "role": "core",
+                "q": 0,
+                "vi": "khiến cho"
+              },
+              {
+                "text": "the area safe for children.",
+                "role": "core",
+                "q": 0,
+                "vi": "khu vực an toàn cho trẻ em"
+              }
+            ]
+          }
+        ],
+        "main_idea_vi": "Khu Beezer Magic hôm nay đóng cửa do đang sửa chữa, trong khi ao nước cuối vườn có đàn vịt con mới chào đời và an toàn cho trẻ em.",
+        "flow_vi": "[18] Anchor (vị trí Beezer Magic) → [19] Cause → Result (đang sửa → đóng cửa) → [20] Anchor (điểm cuối: ao nước) → [21] Example (vịt con mới nở) → [22] Expand (rào chắn an toàn)"
+      }
+    ],
+    "flow": [
+      {
+        "step": 1,
+        "text_vi": "Four Seasons và phòng tranh chính: bắt đầu hành trình với bộ phim hoạt hình do sinh viên làm và khu triển lãm ảnh về vùng nông thôn."
+      },
+      {
+        "step": 2,
+        "text_vi": "Farmhouse Kitchen — tiếp nối từ phòng tranh: khu bếp trưng bày dụng cụ làm phô mai với chuyên gia biểu diễn trực tiếp."
+      },
+      {
+        "step": 3,
+        "text_vi": "A Year on the Farm — hướng rẽ bên trái: gian phòng có nhiều chỗ ngồi nghỉ ngơi và cung cấp bài trắc nghiệm câu hỏi thử thách trí nhớ."
+      },
+      {
+        "step": 4,
+        "text_vi": "Wagon Walk — tiếp nối lộ trình: khu trưng bày các cỗ xe cổ mộc mạc đòi hỏi người lớn phải trông chừng trẻ nhỏ cẩn thận."
+      },
+      {
+        "step": 5,
+        "text_vi": "Khu vườn, Beezer Magic và ao nước — không gian ngoài trời: khu nuôi ong tạm ngưng phục vụ, còn ao nước có vịt con mới sinh đón khách."
+      }
+    ],
+    "vocab": [
+      {
+        "phrase": "look after somebody",
+        "meaning_vi": "chăm sóc, trông nom ai đó hoặc con vật",
+        "example": "photographs of award-winning sheep and the people who look after them.",
+        "verified": true,
+        "dictionary": [
+          "Longman có mục từ “look after somebody/something”"
+        ],
+        "sources": [
+          {
+            "name": "Longman",
+            "url": "https://www.ldoceonline.com/dictionary/look"
+          }
+        ]
+      },
+      {
+        "phrase": "keep somebody close",
+        "meaning_vi": "giữ ai đó ở sát bên mình để bảo đảm an toàn",
+        "example": "adults must keep children close and make sure they don't climb on them.",
+        "verified": true,
+        "dictionary": [
+          "Longman có mục từ “stay/keep close”"
+        ],
+        "sources": [
+          {
+            "name": "Longman",
+            "url": "https://www.ldoceonline.com/dictionary/close"
+          }
+        ]
+      },
+      {
+        "phrase": "answer a question",
+        "meaning_vi": "trả lời câu hỏi",
+        "example": "answering questions about exhibits they've already seen.",
+        "verified": true,
+        "dictionary": [
+          "Longman · VERB + QUESTION: ask (sb) a, have a, pose a, put a ~ to sb, answer a, avoid, evade, dodge a, set a, rephrase a, bombard sb with, field (✓ answer a)"
+        ],
+        "sources": [
+          {
+            "name": "Longman",
+            "url": "https://www.ldoceonline.com/dictionary/question"
+          }
+        ]
+      },
+      {
+        "phrase": "be restricted to something",
+        "meaning_vi": "bị giới hạn trong phạm vi nào đó",
+        "example": "so you aren't restricted to one route.",
+        "verified": true,
+        "dictionary": [
+          "OZDIC · PREP: to (✓ to)"
+        ],
+        "sources": [
+          {
+            "name": "OZDIC",
+            "url": "https://ozdic.com/word/restricted"
+          }
+        ]
+      },
+      {
+        "phrase": "be open to somebody",
+        "meaning_vi": "mở cửa đón khách",
+        "example": "That section is currently being redeveloped, so it isn't open today",
+        "verified": true,
+        "dictionary": [
+          "Longman có mục từ “open to something”"
+        ],
+        "sources": [
+          {
+            "name": "Longman",
+            "url": "https://www.ldoceonline.com/dictionary/open"
+          }
+        ]
+      },
+      {
+        "phrase": "make sure that",
+        "meaning_vi": "đảm bảo rằng",
+        "example": "and make sure they don't climb on them.",
+        "verified": true,
+        "dictionary": [
+          "OZDIC · VERBS: make (✓ make)"
+        ],
+        "sources": [
+          {
+            "name": "OZDIC",
+            "url": "https://ozdic.com/word/sure"
+          }
+        ]
+      },
+      {
+        "phrase": "striking difference",
+        "meaning_vi": "sự khác biệt nổi bật, rõ rệt",
+        "example": "The differences between the areas are quite striking",
+        "verified": true,
+        "dictionary": [
+          "OZDIC · ADJ: big, broad, considerable, dramatic, enormous, great, huge, large, major, profound, radical, real (✓ striking)"
+        ],
+        "sources": [
+          {
+            "name": "OZDIC",
+            "url": "https://ozdic.com/word/difference"
+          }
+        ]
+      }
+    ],
+    "tips_vi": [
+      "Lắng nghe các mốc định vị không gian (On the left, Next, The following section, The last place): đây là tín hiệu chuyển sang câu hỏi kế tiếp trong bài thi bản đồ / nối thông tin.",
+      "Chú ý mệnh đề nhân - quả với 'so': thông tin kết quả phía sau liên từ 'so' thường mang trọng tâm đáp án (ví dụ 'so it isn't open today' cho câu 19 hoặc 'adults must keep children close' sau 'Because' cho câu 18).",
+      "Có thể bỏ qua các chi tiết mô tả phụ như số phút của phim hoạt hình hay các giải thích nền về bảng thông tin để dồn sự chú ý vào hành động của con người (chuyên gia biểu diễn, học sinh làm phim, trông trẻ em)."
+    ],
+    "complete": true,
+    "model": "gemini-3.8-flash",
+    "mode": "ielts",
+    "parts": 1
+  }
+}

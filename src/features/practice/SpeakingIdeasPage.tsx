@@ -380,7 +380,7 @@ export default function SpeakingIdeasPage() {
 
         {composing ? (
           <Card className="overflow-hidden p-0">
-            <div className="space-y-6 p-4 sm:p-6">
+            <div className="space-y-6 p-2 sm:p-6">
               <div className="space-y-2.5">
                 <div className="flex flex-wrap items-end justify-between gap-3">
                   <div>
@@ -449,7 +449,7 @@ export default function SpeakingIdeasPage() {
               {error ? <p className="rounded-xl bg-rose-50 px-3 py-2 text-sm text-rose-700 dark:bg-rose-950/40 dark:text-rose-300">{error}</p> : null}
             </div>
 
-            <div className="flex flex-wrap items-center justify-between gap-3 border-t border-slate-200 bg-slate-50/80 px-5 py-4 sm:px-6 dark:border-slate-800 dark:bg-slate-900/60">
+            <div className="flex flex-wrap items-center justify-between gap-3 border-t border-slate-200 bg-slate-50/80 px-2 py-4 sm:px-6 dark:border-slate-800 dark:bg-slate-900/60">
               <p className={cn('text-sm', blocked ? 'text-amber-700 dark:text-amber-400' : 'text-slate-600 dark:text-slate-400')}>
                 {blocked ?? (
                   <>

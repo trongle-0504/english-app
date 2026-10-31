@@ -187,7 +187,7 @@ function Progress({ job }: { job: TalkReviewJob }) {
 function HistoryList({ items, onOpen, onDelete }: { items: TalkHistoryItem[]; onOpen: (id: string) => void; onDelete: (id: string) => void }) {
   if (!items.length) return null
   return (
-    <Card className="p-4 sm:p-6">
+    <Card className="p-2 sm:p-6">
       <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
         <h2 className="flex items-center gap-2 font-bold text-slate-900 dark:text-white">
           <History className="size-4.5 text-brand-600" /> Your recent answers
@@ -390,7 +390,7 @@ export default function SpeakingReviewPage() {
       <div className="space-y-6">
         {composing ? (
           <Card className="overflow-hidden p-0">
-            <div className="space-y-5 p-4 sm:p-6">
+            <div className="space-y-5 p-2 sm:p-6">
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <SegmentedControl value={partValue} onChange={setPartValue} options={PARTS} />
                 {target ? (
@@ -444,7 +444,7 @@ export default function SpeakingReviewPage() {
             </div>
 
             {/* The recorder */}
-            <div className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white px-5 py-7 sm:px-6 dark:border-slate-800 dark:from-slate-900/70 dark:to-slate-900">
+            <div className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white px-2 py-7 sm:px-6 dark:border-slate-800 dark:from-slate-900/70 dark:to-slate-900">
               {recorder.state === 'ready' && recorder.take ? (
                 <div className="mx-auto flex max-w-lg flex-col items-center gap-4">
                   <p className="flex items-center gap-2 text-sm font-semibold text-slate-700 dark:text-slate-200">
@@ -501,7 +501,7 @@ export default function SpeakingReviewPage() {
                         </button>
                       ) : null}
                       {showScript && withScript ? (
-                        <p className="max-w-2xl rounded-xl bg-white p-4 text-[15px] leading-relaxed whitespace-pre-line text-slate-700 shadow-sm dark:bg-slate-950 dark:text-slate-200">
+                        <p className="max-w-2xl rounded-xl bg-white p-2 text-[15px] leading-relaxed whitespace-pre-line text-slate-700 shadow-sm sm:p-4 dark:bg-slate-950 dark:text-slate-200">
                           {script}
                         </p>
                       ) : null}

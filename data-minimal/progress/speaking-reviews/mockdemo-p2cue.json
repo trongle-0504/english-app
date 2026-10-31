@@ -1,0 +1,1207 @@
+{
+  "id": "mockdemo-p2cue",
+  "createdAt": "2026-10-30T14:51:37.558Z",
+  "durationMs": 48182,
+  "part": 2,
+  "question": "Describe a car, motorbike or bicycle trip that you think would be interesting\nYou should say:\n• Where you want to go\n• Who you want to go with\n• How easy or difficult the trip would be\n• And explain why you think using a car, motorbike or bicycle for this trip would be interesting",
+  "topic": "Describe a car, motorbike or bicycle trip that you think would be interesting",
+  "audio": true,
+  "transcript": "Today I would like to talk about a motorbike trip along the central coast of Vietnam, especially the Hai Van Pass between Da Nang and Hue city. Actually, I have dreamed about doing this trip for a long time, and I want to go there with my best friends from university. Speaking about the difficulty, I think the trip will be quite challenge because the mountain road has many sharp turns and steep hills, so we have to drive very careful. Also, the weather in central Vietnam can change quite fast with sudden rain. However, travelling by motorbike is much more interesting than sitting in a bus or a car because we can feel the fresh wind and enjoy the breathtaking scenery of the ocean and green mountains. Whenever we see a beautiful beach or local food stall, we can stop immediately to take photos and relax together. Overall, I think this journey will give us unforgettable memories and help us reduce stress after working hard.",
+  "words": [
+    {
+      "w": "Today",
+      "start": 0.6,
+      "end": 0.88,
+      "conf": 0.94
+    },
+    {
+      "w": "I",
+      "start": 1,
+      "end": 1.22,
+      "conf": 0.94
+    },
+    {
+      "w": "would",
+      "start": 1.34,
+      "end": 1.61,
+      "conf": 0.94
+    },
+    {
+      "w": "like",
+      "start": 1.73,
+      "end": 1.95,
+      "conf": 0.94
+    },
+    {
+      "w": "to",
+      "start": 2.07,
+      "end": 2.29,
+      "conf": 0.94
+    },
+    {
+      "w": "talk",
+      "start": 2.41,
+      "end": 2.63,
+      "conf": 0.94
+    },
+    {
+      "w": "about",
+      "start": 2.75,
+      "end": 3.02,
+      "conf": 0.94
+    },
+    {
+      "w": "a",
+      "start": 3.14,
+      "end": 3.37,
+      "conf": 0.94
+    },
+    {
+      "w": "motorbike",
+      "start": 3.48,
+      "end": 3.98,
+      "conf": 0.94
+    },
+    {
+      "w": "trip",
+      "start": 4.1,
+      "end": 4.32,
+      "conf": 0.94
+    },
+    {
+      "w": "along",
+      "start": 4.44,
+      "end": 4.72,
+      "conf": 0.94
+    },
+    {
+      "w": "the",
+      "start": 4.83,
+      "end": 5.05,
+      "conf": 0.94
+    },
+    {
+      "w": "central",
+      "start": 5.17,
+      "end": 5.56,
+      "conf": 0.94
+    },
+    {
+      "w": "coast",
+      "start": 5.68,
+      "end": 5.95,
+      "conf": 0.94
+    },
+    {
+      "w": "of",
+      "start": 6.07,
+      "end": 6.29,
+      "conf": 0.94
+    },
+    {
+      "w": "Vietnam,",
+      "start": 6.41,
+      "end": 6.86,
+      "conf": 0.94
+    },
+    {
+      "w": "especially",
+      "start": 7.4,
+      "end": 7.95,
+      "conf": 0.94
+    },
+    {
+      "w": "the",
+      "start": 8.07,
+      "end": 8.3,
+      "conf": 0.94
+    },
+    {
+      "w": "Hai",
+      "start": 8.41,
+      "end": 8.64,
+      "conf": 0.94
+    },
+    {
+      "w": "Van",
+      "start": 8.75,
+      "end": 8.98,
+      "conf": 0.94
+    },
+    {
+      "w": "Pass",
+      "start": 9.09,
+      "end": 9.32,
+      "conf": 0.94
+    },
+    {
+      "w": "between",
+      "start": 9.43,
+      "end": 9.82,
+      "conf": 0.94
+    },
+    {
+      "w": "Da",
+      "start": 9.94,
+      "end": 10.16,
+      "conf": 0.94
+    },
+    {
+      "w": "Nang",
+      "start": 10.28,
+      "end": 10.5,
+      "conf": 0.94
+    },
+    {
+      "w": "and",
+      "start": 10.62,
+      "end": 10.84,
+      "conf": 0.94
+    },
+    {
+      "w": "Hue",
+      "start": 10.96,
+      "end": 11.18,
+      "conf": 0.94
+    },
+    {
+      "w": "city.",
+      "start": 11.3,
+      "end": 11.58,
+      "conf": 0.94
+    },
+    {
+      "w": "Actually,",
+      "start": 12.12,
+      "end": 12.62,
+      "conf": 0.94
+    },
+    {
+      "w": "I",
+      "start": 13.17,
+      "end": 13.39,
+      "conf": 0.94
+    },
+    {
+      "w": "have",
+      "start": 13.51,
+      "end": 13.73,
+      "conf": 0.94
+    },
+    {
+      "w": "dreamed",
+      "start": 13.85,
+      "end": 14.23,
+      "conf": 0.94
+    },
+    {
+      "w": "about",
+      "start": 14.35,
+      "end": 14.63,
+      "conf": 0.94
+    },
+    {
+      "w": "doing",
+      "start": 14.75,
+      "end": 15.02,
+      "conf": 0.94
+    },
+    {
+      "w": "this",
+      "start": 15.14,
+      "end": 15.36,
+      "conf": 0.94
+    },
+    {
+      "w": "trip",
+      "start": 15.48,
+      "end": 15.7,
+      "conf": 0.94
+    },
+    {
+      "w": "for",
+      "start": 15.82,
+      "end": 16.04,
+      "conf": 0.94
+    },
+    {
+      "w": "a",
+      "start": 16.17,
+      "end": 16.38,
+      "conf": 0.94
+    },
+    {
+      "w": "long",
+      "start": 16.51,
+      "end": 16.72,
+      "conf": 0.94
+    },
+    {
+      "w": "time,",
+      "start": 16.85,
+      "end": 17.12,
+      "conf": 0.94
+    },
+    {
+      "w": "and",
+      "start": 17.67,
+      "end": 17.89,
+      "conf": 0.94
+    },
+    {
+      "w": "I",
+      "start": 18.01,
+      "end": 18.23,
+      "conf": 0.94
+    },
+    {
+      "w": "want",
+      "start": 18.35,
+      "end": 18.57,
+      "conf": 0.94
+    },
+    {
+      "w": "to",
+      "start": 18.69,
+      "end": 18.91,
+      "conf": 0.94
+    },
+    {
+      "w": "go",
+      "start": 19.03,
+      "end": 19.25,
+      "conf": 0.94
+    },
+    {
+      "w": "there",
+      "start": 19.37,
+      "end": 19.64,
+      "conf": 0.94
+    },
+    {
+      "w": "with",
+      "start": 19.76,
+      "end": 19.98,
+      "conf": 0.94
+    },
+    {
+      "w": "my",
+      "start": 20.1,
+      "end": 20.32,
+      "conf": 0.94
+    },
+    {
+      "w": "best",
+      "start": 20.44,
+      "end": 20.66,
+      "conf": 0.94
+    },
+    {
+      "w": "friends",
+      "start": 20.78,
+      "end": 21.17,
+      "conf": 0.94
+    },
+    {
+      "w": "from",
+      "start": 21.29,
+      "end": 21.51,
+      "conf": 0.94
+    },
+    {
+      "w": "university.",
+      "start": 21.63,
+      "end": 22.18,
+      "conf": 0.94
+    },
+    {
+      "w": "Speaking",
+      "start": 22.73,
+      "end": 23.17,
+      "conf": 0.94
+    },
+    {
+      "w": "about",
+      "start": 23.29,
+      "end": 23.56,
+      "conf": 0.94
+    },
+    {
+      "w": "the",
+      "start": 23.68,
+      "end": 23.9,
+      "conf": 0.94
+    },
+    {
+      "w": "difficulty,",
+      "start": 24.02,
+      "end": 24.57,
+      "conf": 0.94
+    },
+    {
+      "w": "I",
+      "start": 25.12,
+      "end": 25.34,
+      "conf": 0.94
+    },
+    {
+      "w": "think",
+      "start": 25.46,
+      "end": 25.74,
+      "conf": 0.94
+    },
+    {
+      "w": "the",
+      "start": 25.86,
+      "end": 26.08,
+      "conf": 0.94
+    },
+    {
+      "w": "trip",
+      "start": 26.2,
+      "end": 26.42,
+      "conf": 0.94
+    },
+    {
+      "w": "will",
+      "start": 26.54,
+      "end": 26.76,
+      "conf": 0.94
+    },
+    {
+      "w": "be",
+      "start": 26.88,
+      "end": 27.1,
+      "conf": 0.94
+    },
+    {
+      "w": "quite",
+      "start": 27.22,
+      "end": 27.49,
+      "conf": 0.94
+    },
+    {
+      "w": "challenge",
+      "start": 27.61,
+      "end": 28.11,
+      "conf": 0.94
+    },
+    {
+      "w": "because",
+      "start": 28.23,
+      "end": 28.61,
+      "conf": 0.94
+    },
+    {
+      "w": "the",
+      "start": 28.73,
+      "end": 28.95,
+      "conf": 0.94
+    },
+    {
+      "w": "mountain",
+      "start": 29.07,
+      "end": 29.51,
+      "conf": 0.94
+    },
+    {
+      "w": "road",
+      "start": 29.63,
+      "end": 29.85,
+      "conf": 0.94
+    },
+    {
+      "w": "has",
+      "start": 29.97,
+      "end": 30.19,
+      "conf": 0.94
+    },
+    {
+      "w": "many",
+      "start": 30.31,
+      "end": 30.53,
+      "conf": 0.94
+    },
+    {
+      "w": "sharp",
+      "start": 30.65,
+      "end": 30.93,
+      "conf": 0.94
+    },
+    {
+      "w": "turns",
+      "start": 31.05,
+      "end": 31.32,
+      "conf": 0.94
+    },
+    {
+      "w": "and",
+      "start": 31.44,
+      "end": 31.66,
+      "conf": 0.94
+    },
+    {
+      "w": "steep",
+      "start": 31.78,
+      "end": 32.06,
+      "conf": 0.94
+    },
+    {
+      "w": "hills,",
+      "start": 32.18,
+      "end": 32.51,
+      "conf": 0.94
+    },
+    {
+      "w": "so",
+      "start": 33.06,
+      "end": 33.28,
+      "conf": 0.94
+    },
+    {
+      "w": "we",
+      "start": 33.4,
+      "end": 33.62,
+      "conf": 0.94
+    },
+    {
+      "w": "have",
+      "start": 33.74,
+      "end": 33.96,
+      "conf": 0.94
+    },
+    {
+      "w": "to",
+      "start": 34.08,
+      "end": 34.3,
+      "conf": 0.94
+    },
+    {
+      "w": "drive",
+      "start": 34.42,
+      "end": 34.7,
+      "conf": 0.94
+    },
+    {
+      "w": "very",
+      "start": 34.82,
+      "end": 35.04,
+      "conf": 0.94
+    },
+    {
+      "w": "careful.",
+      "start": 35.16,
+      "end": 35.6,
+      "conf": 0.94
+    },
+    {
+      "w": "Also,",
+      "start": 36.15,
+      "end": 36.42,
+      "conf": 0.94
+    },
+    {
+      "w": "the",
+      "start": 36.97,
+      "end": 37.19,
+      "conf": 0.94
+    },
+    {
+      "w": "weather",
+      "start": 37.31,
+      "end": 37.7,
+      "conf": 0.94
+    },
+    {
+      "w": "in",
+      "start": 37.82,
+      "end": 38.04,
+      "conf": 0.94
+    },
+    {
+      "w": "central",
+      "start": 38.16,
+      "end": 38.54,
+      "conf": 0.94
+    },
+    {
+      "w": "Vietnam",
+      "start": 38.66,
+      "end": 39.05,
+      "conf": 0.94
+    },
+    {
+      "w": "can",
+      "start": 39.17,
+      "end": 39.39,
+      "conf": 0.94
+    },
+    {
+      "w": "change",
+      "start": 39.51,
+      "end": 39.84,
+      "conf": 0.94
+    },
+    {
+      "w": "quite",
+      "start": 39.96,
+      "end": 40.23,
+      "conf": 0.94
+    },
+    {
+      "w": "fast",
+      "start": 40.35,
+      "end": 40.57,
+      "conf": 0.94
+    },
+    {
+      "w": "with",
+      "start": 40.69,
+      "end": 40.91,
+      "conf": 0.94
+    },
+    {
+      "w": "sudden",
+      "start": 41.03,
+      "end": 41.36,
+      "conf": 0.94
+    },
+    {
+      "w": "rain.",
+      "start": 41.48,
+      "end": 41.76,
+      "conf": 0.94
+    },
+    {
+      "w": "However,",
+      "start": 42.31,
+      "end": 42.75,
+      "conf": 0.94
+    },
+    {
+      "w": "travelling",
+      "start": 43.3,
+      "end": 43.85,
+      "conf": 0.94
+    },
+    {
+      "w": "by",
+      "start": 43.97,
+      "end": 44.19,
+      "conf": 0.94
+    },
+    {
+      "w": "motorbike",
+      "start": 44.31,
+      "end": 44.8,
+      "conf": 0.94
+    },
+    {
+      "w": "is",
+      "start": 44.92,
+      "end": 45.14,
+      "conf": 0.94
+    },
+    {
+      "w": "much",
+      "start": 45.26,
+      "end": 45.48,
+      "conf": 0.94
+    },
+    {
+      "w": "more",
+      "start": 45.6,
+      "end": 45.82,
+      "conf": 0.94
+    },
+    {
+      "w": "interesting",
+      "start": 45.94,
+      "end": 46.49,
+      "conf": 0.94
+    },
+    {
+      "w": "than",
+      "start": 46.61,
+      "end": 46.83,
+      "conf": 0.94
+    },
+    {
+      "w": "sitting",
+      "start": 46.95,
+      "end": 47.34,
+      "conf": 0.94
+    },
+    {
+      "w": "in",
+      "start": 47.46,
+      "end": 47.68,
+      "conf": 0.94
+    },
+    {
+      "w": "a",
+      "start": 47.8,
+      "end": 48.02,
+      "conf": 0.94
+    },
+    {
+      "w": "bus",
+      "start": 48.14,
+      "end": 48.36,
+      "conf": 0.94
+    },
+    {
+      "w": "or",
+      "start": 48.48,
+      "end": 48.7,
+      "conf": 0.94
+    },
+    {
+      "w": "a",
+      "start": 48.82,
+      "end": 49.04,
+      "conf": 0.94
+    },
+    {
+      "w": "car",
+      "start": 49.16,
+      "end": 49.38,
+      "conf": 0.94
+    },
+    {
+      "w": "because",
+      "start": 49.5,
+      "end": 49.88,
+      "conf": 0.94
+    },
+    {
+      "w": "we",
+      "start": 50,
+      "end": 50.22,
+      "conf": 0.94
+    },
+    {
+      "w": "can",
+      "start": 50.34,
+      "end": 50.56,
+      "conf": 0.94
+    },
+    {
+      "w": "feel",
+      "start": 50.68,
+      "end": 50.9,
+      "conf": 0.94
+    },
+    {
+      "w": "the",
+      "start": 51.02,
+      "end": 51.24,
+      "conf": 0.94
+    },
+    {
+      "w": "fresh",
+      "start": 51.36,
+      "end": 51.64,
+      "conf": 0.94
+    },
+    {
+      "w": "wind",
+      "start": 51.76,
+      "end": 51.98,
+      "conf": 0.94
+    },
+    {
+      "w": "and",
+      "start": 52.1,
+      "end": 52.32,
+      "conf": 0.94
+    },
+    {
+      "w": "enjoy",
+      "start": 52.44,
+      "end": 52.71,
+      "conf": 0.94
+    },
+    {
+      "w": "the",
+      "start": 52.83,
+      "end": 53.05,
+      "conf": 0.94
+    },
+    {
+      "w": "breathtaking",
+      "start": 53.17,
+      "end": 53.72,
+      "conf": 0.42
+    },
+    {
+      "w": "scenery",
+      "start": 53.84,
+      "end": 54.23,
+      "conf": 0.42
+    },
+    {
+      "w": "of",
+      "start": 54.35,
+      "end": 54.57,
+      "conf": 0.94
+    },
+    {
+      "w": "the",
+      "start": 54.69,
+      "end": 54.91,
+      "conf": 0.94
+    },
+    {
+      "w": "ocean",
+      "start": 55.03,
+      "end": 55.3,
+      "conf": 0.94
+    },
+    {
+      "w": "and",
+      "start": 55.42,
+      "end": 55.64,
+      "conf": 0.94
+    },
+    {
+      "w": "green",
+      "start": 55.76,
+      "end": 56.04,
+      "conf": 0.94
+    },
+    {
+      "w": "mountains.",
+      "start": 56.16,
+      "end": 56.71,
+      "conf": 0.94
+    },
+    {
+      "w": "Whenever",
+      "start": 57.26,
+      "end": 57.7,
+      "conf": 0.94
+    },
+    {
+      "w": "we",
+      "start": 57.82,
+      "end": 58.04,
+      "conf": 0.94
+    },
+    {
+      "w": "see",
+      "start": 58.16,
+      "end": 58.38,
+      "conf": 0.94
+    },
+    {
+      "w": "a",
+      "start": 58.5,
+      "end": 58.72,
+      "conf": 0.94
+    },
+    {
+      "w": "beautiful",
+      "start": 58.84,
+      "end": 59.33,
+      "conf": 0.94
+    },
+    {
+      "w": "beach",
+      "start": 59.45,
+      "end": 59.73,
+      "conf": 0.94
+    },
+    {
+      "w": "or",
+      "start": 59.85,
+      "end": 60.07,
+      "conf": 0.94
+    },
+    {
+      "w": "local",
+      "start": 60.19,
+      "end": 60.46,
+      "conf": 0.94
+    },
+    {
+      "w": "food",
+      "start": 60.58,
+      "end": 60.8,
+      "conf": 0.94
+    },
+    {
+      "w": "stall,",
+      "start": 60.92,
+      "end": 61.25,
+      "conf": 0.94
+    },
+    {
+      "w": "we",
+      "start": 61.8,
+      "end": 62.02,
+      "conf": 0.94
+    },
+    {
+      "w": "can",
+      "start": 62.14,
+      "end": 62.36,
+      "conf": 0.94
+    },
+    {
+      "w": "stop",
+      "start": 62.48,
+      "end": 62.7,
+      "conf": 0.94
+    },
+    {
+      "w": "immediately",
+      "start": 62.82,
+      "end": 63.37,
+      "conf": 0.94
+    },
+    {
+      "w": "to",
+      "start": 63.49,
+      "end": 63.71,
+      "conf": 0.94
+    },
+    {
+      "w": "take",
+      "start": 63.83,
+      "end": 64.05,
+      "conf": 0.94
+    },
+    {
+      "w": "photos",
+      "start": 64.17,
+      "end": 64.5,
+      "conf": 0.94
+    },
+    {
+      "w": "and",
+      "start": 64.62,
+      "end": 64.84,
+      "conf": 0.94
+    },
+    {
+      "w": "relax",
+      "start": 64.96,
+      "end": 65.24,
+      "conf": 0.94
+    },
+    {
+      "w": "together.",
+      "start": 65.36,
+      "end": 65.85,
+      "conf": 0.94
+    },
+    {
+      "w": "Overall,",
+      "start": 66.4,
+      "end": 66.84,
+      "conf": 0.94
+    },
+    {
+      "w": "I",
+      "start": 67.39,
+      "end": 67.61,
+      "conf": 0.94
+    },
+    {
+      "w": "think",
+      "start": 67.73,
+      "end": 68.01,
+      "conf": 0.94
+    },
+    {
+      "w": "this",
+      "start": 68.13,
+      "end": 68.35,
+      "conf": 0.94
+    },
+    {
+      "w": "journey",
+      "start": 68.47,
+      "end": 68.85,
+      "conf": 0.94
+    },
+    {
+      "w": "will",
+      "start": 68.97,
+      "end": 69.19,
+      "conf": 0.94
+    },
+    {
+      "w": "give",
+      "start": 69.31,
+      "end": 69.53,
+      "conf": 0.94
+    },
+    {
+      "w": "us",
+      "start": 69.65,
+      "end": 69.87,
+      "conf": 0.94
+    },
+    {
+      "w": "unforgettable",
+      "start": 69.99,
+      "end": 70.54,
+      "conf": 0.94
+    },
+    {
+      "w": "memories",
+      "start": 70.66,
+      "end": 71.1,
+      "conf": 0.94
+    },
+    {
+      "w": "and",
+      "start": 71.22,
+      "end": 71.44,
+      "conf": 0.94
+    },
+    {
+      "w": "help",
+      "start": 71.56,
+      "end": 71.78,
+      "conf": 0.94
+    },
+    {
+      "w": "us",
+      "start": 71.9,
+      "end": 72.12,
+      "conf": 0.94
+    },
+    {
+      "w": "reduce",
+      "start": 72.24,
+      "end": 72.57,
+      "conf": 0.94
+    },
+    {
+      "w": "stress",
+      "start": 72.69,
+      "end": 73.02,
+      "conf": 0.94
+    },
+    {
+      "w": "after",
+      "start": 73.14,
+      "end": 73.42,
+      "conf": 0.94
+    },
+    {
+      "w": "working",
+      "start": 73.54,
+      "end": 73.92,
+      "conf": 0.94
+    },
+    {
+      "w": "hard.",
+      "start": 74.04,
+      "end": 74.32,
+      "conf": 0.94
+    }
+  ],
+  "sentences": [
+    "Today I would like to talk about a motorbike trip along the central coast of Vietnam, especially the Hai Van Pass between Da Nang and Hue city.",
+    "Actually, I have dreamed about doing this trip for a long time, and I want to go there with my best friends from university.",
+    "Speaking about the difficulty, I think the trip will be quite challenge because the mountain road has many sharp turns and steep hills, so we have to drive very careful.",
+    "Also, the weather in central Vietnam can change quite fast with sudden rain.",
+    "However, travelling by motorbike is much more interesting than sitting in a bus or a car because we can feel the fresh wind and enjoy the breathtaking scenery of the ocean and green mountains.",
+    "Whenever we see a beautiful beach or local food stall, we can stop immediately to take photos and relax together.",
+    "Overall, I think this journey will give us unforgettable memories and help us reduce stress after working hard."
+  ],
+  "correctedSentences": [
+    "Today I would like to talk about a motorbike trip along the central coast of Vietnam, especially the Hai Van Pass between Da Nang and Hue city.",
+    "Actually, I have dreamed about going on this trip for a long time, and I want to go there with my best friends from university.",
+    "Speaking about the difficulty, I think the trip will be quite challenging because the mountain road has many sharp turns and steep hills, so we have to drive very carefully.",
+    "Also, the weather in central Vietnam can change quite fast with sudden rain.",
+    "However, travelling by motorbike is much more interesting than sitting in a bus or a car because we can feel the fresh breeze and enjoy the breathtaking scenery of the ocean and green mountains.",
+    "Whenever we see a beautiful beach or local food stall, we can stop immediately to take photos and relax together.",
+    "Overall, I think this journey will give us unforgettable memories and help us reduce stress after working hard."
+  ],
+  "misheard": [
+    {
+      "sentence": 4,
+      "heard": "breathtaking",
+      "meant": "breathtaking",
+      "ipa": "/ˈbreθteɪkɪŋ/",
+      "tip": "Nhấn mạnh trọng âm ở âm tiết đầu và phát âm rõ âm vô thanh /θ/ ở giữa từ.",
+      "start": 53.17,
+      "end": 53.72
+    },
+    {
+      "sentence": 4,
+      "heard": "scenery",
+      "meant": "scenery",
+      "ipa": "/ˈsiːnəri/",
+      "tip": "Âm đầu là /s/ kết hợp nguyên âm dài /iː/, không phát âm chữ “c” thành /k/ hay /ʃ/.",
+      "start": 53.84,
+      "end": 54.23
+    }
+  ],
+  "corrected": "Today I would like to talk about a motorbike trip along the central coast of Vietnam, especially the Hai Van Pass between Da Nang and Hue city. Actually, I have dreamed about going on this trip for a long time, and I want to go there with my best friends from university. Speaking about the difficulty, I think the trip will be quite challenging because the mountain road has many sharp turns and steep hills, so we have to drive very carefully. Also, the weather in central Vietnam can change quite fast with sudden rain. However, travelling by motorbike is much more interesting than sitting in a bus or a car because we can feel the fresh breeze and enjoy the breathtaking scenery of the ocean and green mountains. Whenever we see a beautiful beach or local food stall, we can stop immediately to take photos and relax together. Overall, I think this journey will give us unforgettable memories and help us reduce stress after working hard.",
+  "fixes": [
+    {
+      "id": "f1",
+      "sentenceIndex": 1,
+      "original": "doing this trip",
+      "replacement": "going on this trip",
+      "type": "collocation",
+      "severity": "improve",
+      "explanation": "Dùng “go on a trip” hoặc “take a trip” tự nhiên hơn nhiều so với “do a trip”.",
+      "evidence": "longman",
+      "dictionary": [
+        "Longman · VERB + TRIP: go on a, take a, make a (✓ go on a)"
+      ],
+      "sources": [
+        {
+          "name": "Longman",
+          "url": "https://www.ldoceonline.com/dictionary/trip"
+        }
+      ],
+      "word": "trip"
+    },
+    {
+      "id": "f2",
+      "sentenceIndex": 2,
+      "original": "quite challenge",
+      "replacement": "quite challenging",
+      "type": "word form",
+      "severity": "error",
+      "explanation": "Sau “quite” cần tính từ “challenging” để bổ nghĩa cho chủ ngữ thay vì danh từ “challenge”.",
+      "evidence": "word",
+      "dictionary": [
+        "Longman có mục từ “challenging”"
+      ],
+      "sources": [
+        {
+          "name": "Longman",
+          "url": "https://www.ldoceonline.com/dictionary/challenging"
+        }
+      ],
+      "word": "challenging"
+    },
+    {
+      "id": "f3",
+      "sentenceIndex": 2,
+      "original": "drive very careful",
+      "replacement": "drive very carefully",
+      "type": "word form",
+      "severity": "error",
+      "explanation": "Cần trạng từ “carefully” để bổ nghĩa cho động từ “drive”.",
+      "evidence": "word",
+      "dictionary": [
+        "Longman có mục từ “carefully”"
+      ],
+      "sources": [
+        {
+          "name": "Longman",
+          "url": "https://www.ldoceonline.com/dictionary/carefully"
+        }
+      ],
+      "word": "carefully"
+    },
+    {
+      "id": "f4",
+      "sentenceIndex": 4,
+      "original": "feel the fresh wind",
+      "replacement": "feel the fresh breeze",
+      "type": "word choice",
+      "severity": "improve",
+      "explanation": "Dùng “breeze” (làn gió mát, nhẹ) tự nhiên và giàu hình ảnh hơn khi đi phượt ven biển.",
+      "evidence": "longman",
+      "dictionary": [
+        "Longman · ADJ.: a gentle, soft, mild, a light, slight, faint, a stiff, strong, a cool, a warm, a fresh, a sea (✓ a fresh)"
+      ],
+      "sources": [
+        {
+          "name": "Longman",
+          "url": "https://www.ldoceonline.com/dictionary/breeze"
+        }
+      ],
+      "word": "breeze"
+    }
+  ],
+  "warnings": [
+    {
+      "phrase": "stop immediately",
+      "suggestion": "pull over anytime",
+      "explanation": "Cụm “pull over” là phrasal verb tự nhiên dùng cho việc tấp xe vào lề đường ngắm cảnh. (AI đề xuất; Longman/OZDIC chưa xác nhận cách sửa nên không tự sửa.)"
+    },
+    {
+      "phrase": "help us reduce stress",
+      "suggestion": "help us unwind",
+      "explanation": "Động từ “unwind” mang sắc thái thư giãn, xả hơi sau chuỗi ngày làm việc tự nhiên hơn. (AI đề xuất; Longman/OZDIC chưa xác nhận cách sửa nên không tự sửa.)"
+    }
+  ],
+  "fluency": {
+    "duration": 75.7,
+    "speech": 73.7,
+    "words": 166,
+    "wpm": 135,
+    "pauses": 0,
+    "longPauses": 0,
+    "longestPause": 0.6,
+    "pauseRatio": 0,
+    "hesitations": 0,
+    "longestHesitation": 0.6,
+    "sentencePauses": 0,
+    "fillers": [],
+    "fillerCount": 0,
+    "repeats": 0,
+    "variety": 0.86,
+    "sentences": 7,
+    "avgSentenceWords": 23.7,
+    "unclear": 2
+  },
+  "criteria": {
+    "fc": {
+      "band": 6,
+      "summary": "Thời lượng nói chưa đủ 1.5 đến 2 phút cho Part 2 và còn ngắt quãng ở các liên kết ý.",
+      "good": [],
+      "improve": [
+        "Bạn nói “Also, the weather…” → nói “On top of that, the weather…” để tăng tính mạch lạc cho bài nói.",
+        "Mở rộng thêm chi tiết cụ thể về trải nghiệm tại đèo Hải Vân để kéo dài bài nói trên 90 giây."
+      ]
+    },
+    "lr": {
+      "band": 6.5,
+      "summary": "Từ vựng khá tốt về chủ đề du lịch nhưng một số cụm từ diễn đạt còn cơ bản và dịch nguyên từ tiếng Việt.",
+      "good": [],
+      "improve": [
+        "Bạn nói “feel the fresh wind” → nói “feel the ocean breeze”.",
+        "Bạn nói “stop immediately to take photos” → nói “pull over spontaneously to take photos”."
+      ]
+    },
+    "gra": {
+      "band": 6,
+      "summary": "Mắc một số lỗi sai từ loại căn bản giữa tính từ và danh từ hoặc trạng từ khi diễn đạt.",
+      "good": [],
+      "improve": [
+        "Bạn nói “will be quite challenge” → nói “will be quite challenging”.",
+        "Bạn nói “drive very careful” → nói “drive very carefully”."
+      ]
+    },
+    "pron": {
+      "band": 6.5,
+      "summary": "Phát âm rõ ràng, dễ hiểu nhưng các từ vựng nâng cao nhiều âm tiết chưa kiểm soát tốt trọng âm và phụ âm.",
+      "good": [],
+      "improve": [
+        "Bạn nói “breathtaking” → chú ý đặt trọng âm vào âm tiết đầu /ˈbreθteɪkɪŋ/ và phát âm chuẩn âm /θ/.",
+        "Bạn nói “scenery” → chú ý phát âm âm đầu /s/ nhẹ nhàng /ˈsiːnəri/, tránh nhầm lẫn phụ âm."
+      ]
+    }
+  },
+  "overall": 6.5,
+  "model": {
+    "topic": "Describe a car, motorbike or bicycle trip that you think would be interesting",
+    "question": "Describe a car, motorbike or bicycle trip that you think would be interesting\nYou should say:\n• Where you want to go\n• Who you want to go with\n• How easy or difficult the trip would be\n• And explain why you think using a car, motorbike or bicycle for this trip would be interesting",
+    "idea": "• Destination & companions: A motorbike journey along Vietnam's central coast across Hai Van Pass between Da Nang and Hue with university close friends.\n• Difficulties: Challenging mountain pass with hairpin bends and steep slopes requiring cautious driving, alongside unpredictable weather and sudden rain.\n• Why by motorbike: Experiencing the ocean breeze and dramatic coastal scenery, with total freedom to pull over for scenic spots and street food.\n• Conclusion: An unforgettable memory and an ideal way to decompress after intensive work.",
+    "part": 2
+  },
+  "reviewer": "gemini-3.8-flash"
+}

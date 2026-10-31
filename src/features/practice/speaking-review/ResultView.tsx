@@ -85,7 +85,7 @@ function Section({
   className?: string
 }) {
   return (
-    <Card className={cn('p-4 sm:p-6', className)}>
+    <Card className={cn('p-2 sm:p-6', className)}>
       <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
         <h2 className="flex items-center gap-2 text-lg font-bold text-slate-900 dark:text-white">
           <span className="flex size-8 items-center justify-center rounded-lg bg-brand-50 text-brand-600 dark:bg-brand-950/60 dark:text-brand-300">

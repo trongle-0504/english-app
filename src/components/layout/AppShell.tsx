@@ -64,7 +64,7 @@ export function AppShell() {
         Skip to content
       </a>
       <Header onOpenLookup={() => openLookup(true)} />
-      <main id="main" className="mx-auto w-full max-w-7xl flex-1 px-4 pb-20 sm:px-6">
+      <main id="main" className="mx-auto w-full max-w-7xl flex-1 px-2 pb-20 sm:px-6">
         <Suspense fallback={<PageSkeleton />}>
           <Outlet />
         </Suspense>
