@@ -1,5 +1,5 @@
 // Minimal service worker: installable PWA + offline shell. /api is never cached.
-const VERSION = 'v4'
+const VERSION = 'v5'
 const STATIC = `static-${VERSION}`
 const PAGES = `pages-${VERSION}`
 const DATA = `data-${VERSION}`

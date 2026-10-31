@@ -73,6 +73,44 @@ export default function SpeakingMockTestPage() {
 
   const abortEvaluationRef = useRef<boolean>(false)
 
+  const syncSavedAttempts = useCallback(async (attempts: Record<string, SavedMockAttempt>) => {
+    try {
+      await fetch('/api/speaking-mock/attempts', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ attempts }),
+      })
+    } catch (error) {
+      console.error('[SpeakingMockTest] Failed to sync attempts:', error)
+    }
+  }, [])
+
+  useEffect(() => {
+    let cancelled = false
+    fetch('/api/speaking-mock/attempts', { cache: 'no-store' })
+      .then(async (res) => {
+        if (!res.ok) throw new Error('Không tải được tiến độ Speaking Mock.')
+        return (await res.json()) as { attempts?: Record<string, SavedMockAttempt> }
+      })
+      .then(({ attempts: remote = {} }) => {
+        if (cancelled) return
+        const local = getSavedMockAttempts()
+        const merged = { ...remote }
+        for (const [key, attempt] of Object.entries(local)) {
+          if (!merged[key] || (attempt.updatedAt || '') > (merged[key].updatedAt || '')) merged[key] = attempt
+        }
+        if (Object.keys(merged).length > 0) {
+          localStorage.setItem('practice:speaking-mock:attempts:v1', JSON.stringify(merged))
+          void syncSavedAttempts(merged)
+        }
+        setCompletedVersion((version) => version + 1)
+      })
+      .catch((error) => console.error('[SpeakingMockTest] Failed to load synced attempts:', error))
+    return () => {
+      cancelled = true
+    }
+  }, [syncSavedAttempts])
+
   const activeCombination = useMemo(
     () => PART_COMBINATIONS.find((c) => c.id === combinationId) ?? PART_COMBINATIONS[0],
     [combinationId],
@@ -247,8 +285,9 @@ export default function SpeakingMockTestPage() {
         }
       }
       setCompletedVersion((v) => v + 1)
+      void syncSavedAttempts(getSavedMockAttempts())
     },
-    [],
+    [syncSavedAttempts],
   )
 
   // Open a previously saved attempt in Review & Results view

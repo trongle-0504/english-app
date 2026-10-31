@@ -13,6 +13,7 @@ import { notepadRoutes } from './routes/notepad.ts'
 import { practiceRoutes } from './routes/practice.ts'
 import { reviewRoutes } from './routes/review.ts'
 import { speakingRoutes } from './routes/speaking.ts'
+import { speakingMockRoutes } from './routes/speaking-mock.ts'
 import { speakingReviewRoutes } from './routes/speaking-review.ts'
 import { ttsRoutes } from './routes/tts.ts'
 import { translateRoutes } from './routes/translate.ts'
@@ -31,6 +32,7 @@ export const routes: Record<string, ApiHandler> = {
   ...newsRoutes,
   ...writingReviewRoutes,
   ...speakingRoutes,
+  ...speakingMockRoutes,
   ...speakingReviewRoutes,
   ...ttsRoutes,
   ...translateRoutes,
