@@ -337,6 +337,28 @@ export function findRelevantMockAttempt(
   return null
 }
 
+/** Find an unfinished attempt for the currently selected part combination. */
+export function findPartialMockAttempt(
+  allAttempts: Record<string, SavedMockAttempt>,
+  setId: string,
+  requiredParts: MockPartNumber[],
+): SavedMockAttempt | null {
+  if (!setId || !requiredParts.length) return null
+
+  const candidates = Object.entries(allAttempts)
+    .filter(([key]) => key === setId || key.startsWith(`${setId}__`))
+    .map(([, attempt]) => attempt)
+    .filter((attempt) => {
+      if (!attempt.session?.questions || !attempt.results) return false
+      if (!requiredParts.every((part) => attempt.session.parts.includes(part))) return false
+      const hasResult = attempt.session.questions.some((question) => Boolean(attempt.results[question.id]))
+      return hasResult && !attemptSatisfiesParts(attempt, requiredParts)
+    })
+
+  candidates.sort((a, b) => (b.updatedAt || '').localeCompare(a.updatedAt || ''))
+  return candidates[0] ?? null
+}
+
 /**
  * Determine if a set is completed for the currently required parts.
  */

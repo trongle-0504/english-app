@@ -26,6 +26,7 @@ import { MockReviewAndResults } from './speaking-mock/MockReviewAndResults'
 import {
   buildMockSessionQuestions,
   findRelevantMockAttempt,
+  findPartialMockAttempt,
   getCompletedSetIds,
   getSavedMockAttempts,
   isMockSetCompleted,
@@ -229,7 +230,9 @@ export default function SpeakingMockTestPage() {
           results: nextResults,
           durations,
         })
-        markSetIdCompleted(curSession.part1Topic.id, curSession.parts)
+        if (curSession.questions.every((question) => Boolean(nextResults[question.id]))) {
+          markSetIdCompleted(curSession.part1Topic.id, curSession.parts)
+        }
       }
       if (curSession.part23SubTopic) {
         saveMockAttempt({
@@ -239,7 +242,9 @@ export default function SpeakingMockTestPage() {
           results: nextResults,
           durations,
         })
-        markSetIdCompleted(curSession.part23SubTopic.id, curSession.parts)
+        if (curSession.questions.every((question) => Boolean(nextResults[question.id]))) {
+          markSetIdCompleted(curSession.part23SubTopic.id, curSession.parts)
+        }
       }
       setCompletedVersion((v) => v + 1)
     },
@@ -263,6 +268,26 @@ export default function SpeakingMockTestPage() {
     setExamInitialQuestionIdx(0)
     setSingleQuestionRerecord(false)
     setStage('review')
+  }, [])
+
+  const continueSavedAttempt = useCallback((attempt: SavedMockAttempt) => {
+    const restoredEvals: Record<string, MockQuestionEvaluation> = {}
+    for (const [qId, res] of Object.entries(attempt.results)) {
+      restoredEvals[qId] = {
+        questionId: qId,
+        status: 'done',
+        jobId: res.id,
+        result: res,
+      }
+    }
+    const nextIndex = attempt.session.questions.findIndex((question) => !attempt.results[question.id])
+    if (nextIndex < 0) return
+    setRecordings({})
+    setEvaluations(restoredEvals)
+    setSession(attempt.session)
+    setExamInitialQuestionIdx(nextIndex)
+    setSingleQuestionRerecord(false)
+    setStage('exam')
   }, [])
 
   // Launch a mock test session with specific or random unseen question sets
@@ -505,6 +530,15 @@ export default function SpeakingMockTestPage() {
           onSubmitAll={() => void handleEvaluateAll()}
           onEvaluateSingle={(questionId) => void evaluateOneQuestion(questionId)}
           onUpdateResult={handleUpdateResult}
+          onContinueRemaining={() => {
+            const setId = session.part1Topic?.id ?? session.part23SubTopic?.id
+            if (!setId) return
+            const attempts = getSavedMockAttempts()
+            const attempt =
+              findRelevantMockAttempt(attempts, setId, session.parts) ??
+              findPartialMockAttempt(attempts, setId, session.parts)
+            if (attempt) continueSavedAttempt(attempt)
+          }}
           onRerecordQuestion={(qIdx) => {
             setExamInitialQuestionIdx(qIdx)
             setSingleQuestionRerecord(true)
@@ -661,7 +695,9 @@ export default function SpeakingMockTestPage() {
               {filteredPart1Topics.map((item, idx) => {
                 const isSelected = selectedPart1Id === item.id
                 const isDone = isMockSetCompleted(item.id, part1RequiredParts, completedIds, savedAttempts)
-                const savedAttempt = findRelevantMockAttempt(savedAttempts, item.id, part1RequiredParts)
+                const savedAttempt =
+                  findRelevantMockAttempt(savedAttempts, item.id, part1RequiredParts) ??
+                  findPartialMockAttempt(savedAttempts, item.id, part1RequiredParts)
 
                 return (
                   <div
@@ -791,7 +827,9 @@ export default function SpeakingMockTestPage() {
               {filteredPart23SubTopics.map((item, idx) => {
                 const isSelected = selectedPart23Id === item.id
                 const isDone = isMockSetCompleted(item.id, part23RequiredParts, completedIds, savedAttempts)
-                const savedAttempt = findRelevantMockAttempt(savedAttempts, item.id, part23RequiredParts)
+                const savedAttempt =
+                  findRelevantMockAttempt(savedAttempts, item.id, part23RequiredParts) ??
+                  findPartialMockAttempt(savedAttempts, item.id, part23RequiredParts)
                 const partLabel =
                   needsPart2 && needsPart3
                     ? 'Speaking part 2 & 3'

@@ -46,6 +46,7 @@ export function MockReviewAndResults({
   onSubmitAll,
   onEvaluateSingle,
   onUpdateResult,
+  onContinueRemaining,
   onRerecordQuestion,
   onRetakeFullTest,
   onNewTest,
@@ -57,6 +58,7 @@ export function MockReviewAndResults({
   onSubmitAll: () => void
   onEvaluateSingle: (questionId: string) => void
   onUpdateResult: (questionId: string, updated: TalkReviewResult) => void
+  onContinueRemaining?: () => void
   onRerecordQuestion: (questionIndex: number) => void
   onRetakeFullTest?: () => void
   onNewTest: () => void
@@ -98,6 +100,7 @@ export function MockReviewAndResults({
   })
 
   const overallBand = roundHalfBand(doneEvaluations.map((r) => r.overall))
+  const remainingQuestions = session.questions.filter((q) => !evaluations[q.id]?.result)
 
   // Group questions by Part (1, 2, 3)
   const partsPresent = ([1, 2, 3] as MockPartNumber[]).filter((p) =>
@@ -163,7 +166,13 @@ export function MockReviewAndResults({
             {onRetakeFullTest ? (
               <Button variant="outline" onClick={onRetakeFullTest} disabled={isEvaluatingAll}>
                 <Mic className="size-4" />
-                <span>Làm lại đề này</span>
+                <span>Làm lại tất cả</span>
+              </Button>
+            ) : null}
+            {onContinueRemaining && remainingQuestions.length > 0 ? (
+              <Button onClick={onContinueRemaining} disabled={isEvaluatingAll}>
+                <Mic className="size-4" />
+                <span>Làm tiếp phần còn lại ({remainingQuestions.length})</span>
               </Button>
             ) : null}
 
