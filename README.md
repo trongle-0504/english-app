@@ -50,7 +50,7 @@ micro (ghi âm ở Speaking Review) cần **HTTPS** (domain qua Cloudflare Tunne
 
 Data (nội dung học trong `content/`, ảnh/PDF/âm thanh trong `public/`, tiến độ học trong `progress/`, bảng giá
 `config/gemini-pricing.json`) không nằm lẫn với code trong repo. Bản **data tối thiểu** đi cùng repo dưới dạng thư mục
-chưa nén `data-minimal/`; bản đầy đủ là một file nén riêng, không đưa lên GitHub. Danh sách đầy đủ ở
+chưa nén `data-minimal/` để dùng local nhưng bị `.gitignore` loại khỏi commit; bản đầy đủ là một file nén riêng, không đưa lên GitHub. Danh sách đầy đủ ở
 `data-manifest.json`; `.gitignore` theo cùng danh sách. Không thuộc cả hai (tạo lại trên máy mới): `.env`, `data/`
 (tài khoản đăng nhập), `models/`, `cache/`, `node_modules/`, `dist/`, `logs/`.
 
@@ -62,8 +62,8 @@ node scripts/sync-commit.ts
 
 - Copy code sang `../english-app-commit/code/` (repo git, tạo ở lần chạy đầu; xoá ở đó file đã xoá ở đây), rồi tự
   `git add` / `commit` / `push` trong thư mục đó.
-- Ghi **data tối thiểu** (chưa nén) vào `../english-app-commit/code/data-minimal/` — thêm, sửa, xoá file cho khớp data
-  hiện tại, kèm `.data-index.json` (danh sách file và mã SHA-256) — để commit cùng code. Bản này không có ảnh từ vựng và ảnh notes
+- Ghi **data tối thiểu** (chưa nén) vào `../english-app-commit/code/data-minimal/` để dùng local; thư mục này bị
+  `.gitignore` loại khỏi commit. Bản này không có ảnh từ vựng và ảnh notes
   (`scripts/fetch-images.ts` tải lại từ nguồn), ảnh gốc của blog (trang dùng bản WebP trong `public/blog-images/`),
   file ghi âm, file PDF, và những file `restore` tự tạo lại: danh sách phát âm `public/pronunciation/` (tải lại bằng
   `scripts/build-pronunciation.ts`) và `content/topic-collocations/index.json` (ghép từ các file theo chủ đề bằng

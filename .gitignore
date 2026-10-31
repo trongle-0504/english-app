@@ -22,6 +22,7 @@ dist
 /public/pdf/
 /public/pronunciation/
 /config/gemini-pricing.json
+/data-minimal/
 /content/*
 # …except what the code needs from content/: schemas, prompts, the example review deck.
 !/content/schema/

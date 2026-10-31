@@ -2,8 +2,7 @@
 
 Code được chuẩn bị sẵn trong `../english-app-commit/code/` bằng `node scripts/sync-commit.ts` (xem README, mục
 *Code và data tách riêng*). Thư mục đó **đã là một repo git** (nhánh `main`), nên không cần clone repo GitHub về rồi
-copy đè: chỉ cần gắn repo GitHub vào làm remote và push. Data tối thiểu đi cùng code, dạng thư mục chưa nén
-`data-minimal/` trong repo (sau khi clone: `node scripts/data.ts restore data-minimal`). Bản data đầy đủ (file
+copy đè: chỉ cần gắn repo GitHub vào làm remote và push. Data không commit trong repo code. Bản data đầy đủ (file
 `.tar.gz` trong `../english-app-commit/data/`) không lên GitHub; tải lên Drive riêng.
 
 Mọi lệnh chạy trong terminal **WSL**.
@@ -66,9 +65,8 @@ cd ~/English-App/english-app-commit/code && git status
 git add -A && git commit -m "Mô tả thay đổi" && git push
 ```
 
-`sync-commit` cũng cập nhật `data-minimal/` trong repo theo data hiện tại (thêm, sửa, xoá file cho khớp), nên
-`git add -A` đưa luôn data thay đổi vào commit. `git status` không có thay đổi gì trong `data-minimal/` nghĩa là data
-không đổi.
+`data-minimal/` bị `.gitignore` loại khỏi commit. `sync-commit` có thể cập nhật thư mục này để dùng khôi phục local,
+nhưng `git add -A` sẽ không đưa data vào commit.
 
 ## Khi gặp lỗi
 
@@ -81,7 +79,6 @@ không đổi.
 
 ## Trước mỗi lần push, kiểm tra nhanh
 
-- `git status` chỉ có code và `data-minimal/`: không có `.env`, `data/`, hay `progress/`, `content/vocabulary`… ở thư
-  mục gốc (đã được `.gitignore` chặn, và `sync-commit` không copy chúng). Data chỉ nằm trong `data-minimal/`.
-- `data-minimal/progress/` là lịch sử học (bài nói, bài viết): đọc lướt phần thay đổi trước khi push.
+- `git status` chỉ có code: không có `.env`, `data/`, `progress/`, `content/vocabulary`… ở thư mục gốc.
+- Data và lịch sử học được giữ ngoài commit code.
 - Repo trên GitHub vẫn là **Private**.
