@@ -530,22 +530,24 @@ export function Section({
 }) {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900">
-      <header className="flex flex-wrap items-center gap-3 border-b border-slate-100 px-4 py-3 sm:px-5 dark:border-slate-800">
-        <span className={cn('flex size-8 shrink-0 items-center justify-center rounded-lg', ICON_TONE[tone])}>
-          <Icon className="size-4" />
-        </span>
-        <div className="min-w-0 flex-1">
-          <h3 className="flex items-center gap-2 text-[15px] font-bold text-slate-900 dark:text-white">
-            {title}
-            {count !== undefined ? (
-              <span className="rounded-full bg-slate-100 px-2 py-px text-xs font-semibold text-slate-600 tabular-nums dark:bg-slate-800 dark:text-slate-300">
-                {count}
-              </span>
-            ) : null}
-          </h3>
-          {hint ? <p className="text-xs text-slate-500 dark:text-slate-400">{hint}</p> : null}
+      <header className="flex flex-col gap-3 border-b border-slate-100 p-4 sm:px-5 sm:py-3.5 xl:flex-row xl:items-center xl:justify-between dark:border-slate-800">
+        <div className="flex min-w-0 items-start gap-3">
+          <span className={cn('flex size-8 shrink-0 items-center justify-center rounded-lg mt-0.5', ICON_TONE[tone])}>
+            <Icon className="size-4" />
+          </span>
+          <div className="min-w-0 flex-1">
+            <h3 className="flex flex-wrap items-center gap-2 text-[15px] font-bold text-slate-900 dark:text-white">
+              {title}
+              {count !== undefined ? (
+                <span className="rounded-full bg-slate-100 px-2 py-px text-xs font-semibold text-slate-600 tabular-nums dark:bg-slate-800 dark:text-slate-300">
+                  {count}
+                </span>
+              ) : null}
+            </h3>
+            {hint ? <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">{hint}</p> : null}
+          </div>
         </div>
-        {actions}
+        {actions ? <div className="flex shrink-0 flex-wrap items-center gap-1.5 xl:justify-end">{actions}</div> : null}
       </header>
       <div className="p-4 sm:p-5">{children}</div>
     </section>
