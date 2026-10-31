@@ -141,7 +141,10 @@ export default function SpeakingMockTestPage() {
   useEffect(() => {
     const targetP23Id = 'p23-describe-an-event-activity-1-describe-a-car-motorbike-or-bicycle-trip'
     const existing = getSavedMockAttempts()
-    if (existing[targetP23Id]) return
+    if (existing[targetP23Id]) {
+      void syncSavedAttempts(existing)
+      return
+    }
     const p1Topic = dataset.part1Topics[0]
     const p23Sub = dataset.part23Categories
       .flatMap((c) => c.subTopics)
