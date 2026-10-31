@@ -146,11 +146,18 @@ export function getCompletedSetIds(): Set<string> {
   }
 }
 
-export function markSetIdCompleted(id: string): void {
+export function markSetIdCompleted(id: string, parts?: MockPartNumber[]): void {
   if (!id) return
   try {
     const set = getCompletedSetIds()
     set.add(id)
+    if (parts && parts.length > 0) {
+      const comboKey = getAttemptComboKey(parts)
+      set.add(`${id}__${comboKey}`)
+      for (const p of parts) {
+        set.add(`${id}__part${p}`)
+      }
+    }
     localStorage.setItem(COMPLETED_STORAGE_KEY, JSON.stringify([...set]))
   } catch {
     // ignore storage errors
@@ -269,10 +276,115 @@ export function getSavedMockAttempts(): Record<string, SavedMockAttempt> {
   }
 }
 
+export function getAttemptComboKey(parts: MockPartNumber[]): string {
+  const sorted = [...new Set(parts)].sort((a, b) => a - b)
+  if (sorted.length === 3 && sorted[0] === 1 && sorted[1] === 2 && sorted[2] === 3) return 'full'
+  if (sorted.length === 2 && sorted[0] === 2 && sorted[1] === 3) return 'p23'
+  if (sorted.length === 2 && sorted[0] === 1 && sorted[1] === 2) return 'p12'
+  if (sorted.length === 2 && sorted[0] === 1 && sorted[1] === 3) return 'p13'
+  if (sorted.length === 1 && sorted[0] === 1) return 'p1'
+  if (sorted.length === 1 && sorted[0] === 2) return 'p2'
+  if (sorted.length === 1 && sorted[0] === 3) return 'p3'
+  return `p${sorted.join('')}`
+}
+
+export function attemptSatisfiesParts(attempt: SavedMockAttempt, requiredParts: MockPartNumber[]): boolean {
+  if (!attempt.session?.questions || !attempt.results) return false
+  return requiredParts.every((part) =>
+    attempt.session.questions.some(
+      (q) => q.part === part && Boolean(attempt.results[q.id]),
+    ),
+  )
+}
+
+/**
+ * Find the most relevant saved attempt for a given setId and required parts.
+ * An attempt is relevant only if it has evaluated questions for EVERY part in requiredParts.
+ */
+export function findRelevantMockAttempt(
+  allAttempts: Record<string, SavedMockAttempt>,
+  setId: string,
+  requiredParts: MockPartNumber[],
+): SavedMockAttempt | null {
+  if (!setId || !requiredParts.length) return null
+
+  const comboKey = getAttemptComboKey(requiredParts)
+
+  // 1. Direct combo key check (e.g. setId__p3)
+  const directComboAttempt = allAttempts[`${setId}__${comboKey}`]
+  if (directComboAttempt && attemptSatisfiesParts(directComboAttempt, requiredParts)) {
+    return directComboAttempt
+  }
+
+  // 2. Direct setId check (legacy or latest)
+  const directAttempt = allAttempts[setId]
+  if (directAttempt && attemptSatisfiesParts(directAttempt, requiredParts)) {
+    return directAttempt
+  }
+
+  // 3. Scan all attempts matching setId prefix (e.g. from full test or combined test)
+  const prefix = `${setId}__`
+  const matchingCandidates = Object.entries(allAttempts)
+    .filter(([k]) => k === setId || k.startsWith(prefix))
+    .map(([, att]) => att)
+    .filter((att) => attemptSatisfiesParts(att, requiredParts))
+
+  if (matchingCandidates.length > 0) {
+    matchingCandidates.sort((a, b) => (b.updatedAt || '').localeCompare(a.updatedAt || ''))
+    return matchingCandidates[0]
+  }
+
+  return null
+}
+
+/**
+ * Determine if a set is completed for the currently required parts.
+ */
+export function isMockSetCompleted(
+  setId: string,
+  requiredParts: MockPartNumber[],
+  completedIds: Set<string>,
+  allAttempts: Record<string, SavedMockAttempt>,
+): boolean {
+  if (!setId || !requiredParts.length) return false
+
+  // 1. If an attempt exists with evaluated results for the required parts, it is definitely completed!
+  if (findRelevantMockAttempt(allAttempts, setId, requiredParts)) {
+    return true
+  }
+
+  // 2. Check explicit combo completion marker (e.g. setId__p3 or setId__part3)
+  const comboKey = getAttemptComboKey(requiredParts)
+  if (completedIds.has(`${setId}__${comboKey}`)) {
+    return true
+  }
+  if (requiredParts.every((p) => completedIds.has(`${setId}__part${p}`))) {
+    return true
+  }
+
+  // Note: Bare setId in completedIds is NOT sufficient on its own without matching parts in attempt,
+  // because a user completing Part 2 must not mark Part 3 as done.
+  return false
+}
+
 export function saveMockAttempt(attempt: SavedMockAttempt): void {
   if (!attempt.setId) return
   try {
     const all = getSavedMockAttempts()
+    const comboKey = getAttemptComboKey(attempt.session?.parts || [])
+
+    // If an existing legacy attempt exists without combo suffix, preserve it under its own combo key
+    const existingLegacy = all[attempt.setId]
+    if (existingLegacy && existingLegacy.session?.parts) {
+      const existingCombo = getAttemptComboKey(existingLegacy.session.parts)
+      if (existingCombo !== comboKey && !all[`${attempt.setId}__${existingCombo}`]) {
+        all[`${attempt.setId}__${existingCombo}`] = existingLegacy
+      }
+    }
+
+    // Save under composite key so different parts don't overwrite each other
+    all[`${attempt.setId}__${comboKey}`] = attempt
+    // Also save under base key
     all[attempt.setId] = attempt
     localStorage.setItem(ATTEMPTS_STORAGE_KEY, JSON.stringify(all))
   } catch {

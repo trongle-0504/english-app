@@ -25,14 +25,17 @@ import { MockExamRoom } from './speaking-mock/MockExamRoom'
 import { MockReviewAndResults } from './speaking-mock/MockReviewAndResults'
 import {
   buildMockSessionQuestions,
+  findRelevantMockAttempt,
   getCompletedSetIds,
   getSavedMockAttempts,
+  isMockSetCompleted,
   markSetIdCompleted,
   markSetIdSeen,
   PART_COMBINATIONS,
   pickUnseenRandom,
   saveMockAttempt,
   type BuiltMockSession,
+  type MockPartNumber,
   type MockQuestionEvaluation,
   type MockQuestionRecording,
   type PartCombinationId,
@@ -133,8 +136,8 @@ export default function SpeakingMockTestPage() {
           results: bundle.results,
           durations: { 'p1-q1': 22, 'p2-cue': 78, 'p3-q1': 34, 'p3-q2': 28 },
         })
-        markSetIdCompleted(p23Sub.id)
-        markSetIdCompleted(p1Topic.id)
+        markSetIdCompleted(p23Sub.id, [1, 2, 3])
+        markSetIdCompleted(p1Topic.id, [1, 2, 3])
         setCompletedVersion((v) => v + 1)
       })
       .catch(() => {})
@@ -143,37 +146,57 @@ export default function SpeakingMockTestPage() {
     }
   }, [dataset.part1Topics, dataset.part23Categories])
 
-  const totalSetsCount = dataset.part1Topics.length + allPart23SubTopics.length
+  const part1RequiredParts: MockPartNumber[] = useMemo(() => [1], [])
+  const part23RequiredParts: MockPartNumber[] = useMemo(() => {
+    const parts: MockPartNumber[] = []
+    if (needsPart2) parts.push(2)
+    if (needsPart3) parts.push(3)
+    return parts
+  }, [needsPart2, needsPart3])
+
+  const totalSetsCount = useMemo(() => {
+    let total = 0
+    if (needsPart1) total += dataset.part1Topics.length
+    if (needsPart2Or3) total += allPart23SubTopics.length
+    return total
+  }, [allPart23SubTopics.length, dataset.part1Topics.length, needsPart1, needsPart2Or3])
+
   const completedSetsCount = useMemo(() => {
     let count = 0
-    for (const p1 of dataset.part1Topics) {
-      if (completedIds.has(p1.id)) count++
+    if (needsPart1) {
+      for (const p1 of dataset.part1Topics) {
+        if (isMockSetCompleted(p1.id, part1RequiredParts, completedIds, savedAttempts)) count++
+      }
     }
-    for (const p23 of allPart23SubTopics) {
-      if (completedIds.has(p23.id)) count++
+    if (needsPart2Or3) {
+      for (const p23 of allPart23SubTopics) {
+        if (isMockSetCompleted(p23.id, part23RequiredParts, completedIds, savedAttempts)) count++
+      }
     }
     return count
-  }, [allPart23SubTopics, completedIds, dataset.part1Topics])
+  }, [allPart23SubTopics, completedIds, dataset.part1Topics, needsPart1, needsPart2Or3, part1RequiredParts, part23RequiredParts, savedAttempts])
 
   // Filtered lists for selection UI
   const filteredPart1Topics = useMemo(() => {
     const q = searchQuery.trim().toLowerCase()
     return dataset.part1Topics.filter((item) => {
-      if (statusFilter === 'done' && !completedIds.has(item.id)) return false
-      if (statusFilter === 'todo' && completedIds.has(item.id)) return false
+      const isDone = isMockSetCompleted(item.id, part1RequiredParts, completedIds, savedAttempts)
+      if (statusFilter === 'done' && !isDone) return false
+      if (statusFilter === 'todo' && isDone) return false
       if (q && !item.topic.toLowerCase().includes(q) && !item.questions.some((x) => x.toLowerCase().includes(q))) {
         return false
       }
       return true
     })
-  }, [completedIds, dataset.part1Topics, searchQuery, statusFilter])
+  }, [completedIds, dataset.part1Topics, part1RequiredParts, savedAttempts, searchQuery, statusFilter])
 
   const filteredPart23SubTopics = useMemo(() => {
     const q = searchQuery.trim().toLowerCase()
     return allPart23SubTopics.filter((item) => {
       if (categoryFilter !== 'all' && item.categoryId !== categoryFilter) return false
-      if (statusFilter === 'done' && !completedIds.has(item.id)) return false
-      if (statusFilter === 'todo' && completedIds.has(item.id)) return false
+      const isDone = isMockSetCompleted(item.id, part23RequiredParts, completedIds, savedAttempts)
+      if (statusFilter === 'done' && !isDone) return false
+      if (statusFilter === 'todo' && isDone) return false
       if (
         q &&
         !item.subTopic.toLowerCase().includes(q) &&
@@ -184,7 +207,7 @@ export default function SpeakingMockTestPage() {
       }
       return true
     })
-  }, [allPart23SubTopics, categoryFilter, completedIds, searchQuery, statusFilter])
+  }, [allPart23SubTopics, categoryFilter, completedIds, part23RequiredParts, savedAttempts, searchQuery, statusFilter])
 
   // Persist current session's evaluated results so the user can view them again after exiting
   const persistSessionAttempt = useCallback(
@@ -206,7 +229,7 @@ export default function SpeakingMockTestPage() {
           results: nextResults,
           durations,
         })
-        markSetIdCompleted(curSession.part1Topic.id)
+        markSetIdCompleted(curSession.part1Topic.id, curSession.parts)
       }
       if (curSession.part23SubTopic) {
         saveMockAttempt({
@@ -216,7 +239,7 @@ export default function SpeakingMockTestPage() {
           results: nextResults,
           durations,
         })
-        markSetIdCompleted(curSession.part23SubTopic.id)
+        markSetIdCompleted(curSession.part23SubTopic.id, curSession.parts)
       }
       setCompletedVersion((v) => v + 1)
     },
@@ -637,8 +660,8 @@ export default function SpeakingMockTestPage() {
             <div className="space-y-3">
               {filteredPart1Topics.map((item, idx) => {
                 const isSelected = selectedPart1Id === item.id
-                const isDone = completedIds.has(item.id)
-                const savedAttempt = savedAttempts[item.id]
+                const isDone = isMockSetCompleted(item.id, part1RequiredParts, completedIds, savedAttempts)
+                const savedAttempt = findRelevantMockAttempt(savedAttempts, item.id, part1RequiredParts)
 
                 return (
                   <div
@@ -767,8 +790,8 @@ export default function SpeakingMockTestPage() {
             <div className="space-y-3">
               {filteredPart23SubTopics.map((item, idx) => {
                 const isSelected = selectedPart23Id === item.id
-                const isDone = completedIds.has(item.id)
-                const savedAttempt = savedAttempts[item.id]
+                const isDone = isMockSetCompleted(item.id, part23RequiredParts, completedIds, savedAttempts)
+                const savedAttempt = findRelevantMockAttempt(savedAttempts, item.id, part23RequiredParts)
                 const partLabel =
                   needsPart2 && needsPart3
                     ? 'Speaking part 2 & 3'
@@ -782,6 +805,8 @@ export default function SpeakingMockTestPage() {
                     onClick={() => {
                       if (savedAttempt) {
                         openSavedAttempt(savedAttempt)
+                      } else if (needsPart1) {
+                        setSelectedPart23Id(isSelected ? '' : item.id)
                       } else {
                         startTestSession({ forcePart23: item })
                       }
