@@ -177,13 +177,14 @@ export default function SpeakingMockTestPage() {
         })
         markSetIdCompleted(p23Sub.id, [1, 2, 3])
         markSetIdCompleted(p1Topic.id, [1, 2, 3])
+        void syncSavedAttempts(getSavedMockAttempts())
         setCompletedVersion((v) => v + 1)
       })
       .catch(() => {})
     return () => {
       cancelled = true
     }
-  }, [dataset.part1Topics, dataset.part23Categories])
+  }, [dataset.part1Topics, dataset.part23Categories, syncSavedAttempts])
 
   const part1RequiredParts: MockPartNumber[] = useMemo(() => [1], [])
   const part23RequiredParts: MockPartNumber[] = useMemo(() => {
