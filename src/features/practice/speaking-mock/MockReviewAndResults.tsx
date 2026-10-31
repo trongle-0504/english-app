@@ -420,14 +420,14 @@ function QuestionResultAccordion({
           ) : null}
 
           {/* Audio Player + Re-record / Evaluate Controls */}
-          <div className="mb-5 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-slate-200/80 bg-white p-3.5 dark:border-slate-800 dark:bg-slate-900">
+          <div className="mb-5 flex flex-col items-stretch gap-3 rounded-xl border border-slate-200/80 bg-white p-3.5 sm:flex-row sm:items-center sm:justify-between dark:border-slate-800 dark:bg-slate-900">
             {playbackUrl ? (
-              <div className="flex min-w-0 flex-1 flex-wrap items-center gap-3">
-                <span className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-200">
+              <div className="flex min-w-0 flex-1 flex-col items-stretch gap-2 sm:flex-row sm:items-center sm:gap-3">
+                <span className="inline-flex shrink-0 items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-200">
                   <PlayCircle className="size-4 text-sky-600 dark:text-sky-400" />
                   Bản thu của bạn {durationSec ? `(${durationSec}s)` : ''}:
                 </span>
-                <audio controls src={playbackUrl} className="h-9 max-w-full flex-1" preload="metadata" />
+                <audio controls src={playbackUrl} className="h-9 w-full min-w-0 flex-1" preload="metadata" />
               </div>
             ) : (
               <p className="text-xs text-slate-500 dark:text-slate-400">
@@ -435,7 +435,7 @@ function QuestionResultAccordion({
               </p>
             )}
 
-            <div className="flex flex-wrap items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2 sm:shrink-0">
               <Button
                 variant="outline"
                 size="sm"
