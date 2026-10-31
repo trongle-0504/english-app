@@ -38,8 +38,14 @@ export const speakingMockRoutes: Record<string, ApiHandler> = {
   'PUT /speaking-mock/attempts': async (req, ctx) => {
     const user = await authenticate(req.incoming)
     if (!user) throw new ApiError(401, 'Not logged in.')
-    const attempts = attemptsBody(req.body)
-    await writeJsonFile(fileOf(ctx.rootDir, user.id), attempts)
-    return { json: { ok: true } }
+    const incoming = attemptsBody(req.body)
+    const file = fileOf(ctx.rootDir, user.id)
+    const current = await readJsonFile<StoredAttempts>(file, {})
+    const merged = { ...current }
+    for (const [key, attempt] of Object.entries(incoming)) {
+      if (!merged[key] || attempt.updatedAt >= merged[key].updatedAt) merged[key] = attempt
+    }
+    await writeJsonFile(file, merged)
+    return { json: { ok: true, attempts: merged } }
   },
 }
