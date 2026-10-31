@@ -322,7 +322,17 @@ function ModelAnswer({ result, onUpdate }: { result: TalkReviewResult; onUpdate:
 
 /* ───────────── The page ───────────── */
 
-export function ResultView({ result, onUpdate }: { result: TalkReviewResult; onUpdate: (r: TalkReviewResult) => void }) {
+export function ResultView({
+  result,
+  onUpdate,
+  hideFigures,
+  hideScriptComparison,
+}: {
+  result: TalkReviewResult
+  onUpdate: (r: TalkReviewResult) => void
+  hideFigures?: boolean
+  hideScriptComparison?: boolean
+}) {
   // One recording for the player, the words "as heard" and the misheard phrases.
   const { audio, bind } = useTalkAudio()
   const audioSrc = result.audio ? audioUrl(result.id) : undefined
@@ -361,7 +371,7 @@ export function ResultView({ result, onUpdate }: { result: TalkReviewResult; onU
         </div>
       </Card>
 
-      <FluencyFigures fluency={result.fluency} part={result.part} />
+      {!hideFigures ? <FluencyFigures fluency={result.fluency} part={result.part} /> : null}
 
       <Criteria result={result} />
 
@@ -378,7 +388,7 @@ export function ResultView({ result, onUpdate }: { result: TalkReviewResult; onU
 
       <Pronunciation result={result} audio={audioSrc ? audio : null} />
 
-      <ScriptComparison result={result} />
+      {!hideScriptComparison ? <ScriptComparison result={result} /> : null}
       <ModelAnswer result={result} onUpdate={onUpdate} />
     </div>
   )

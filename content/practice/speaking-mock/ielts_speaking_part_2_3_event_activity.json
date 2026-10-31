@@ -1,0 +1,111 @@
+[
+  {
+    "category": "Describe an event / activity",
+    "sub_topics": [
+      {
+        "id": 1,
+        "sub_topic": "Describe a car, motorbike or bicycle trip that you think would be interesting",
+        "part_2": {
+          "topic": "Describe a car, motorbike or bicycle trip that you think would be interesting",
+          "cue_card": [
+            "Where you want to go",
+            "Who you want to go with",
+            "How easy or difficult the trip would be",
+            "And explain why you think using a car, motorbike or bicycle for this trip would be interesting"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Are bicycles and motorbikes popular in your country?",
+            "Which form of vehicle is more popular in your country, bikes, cars or motorcycles?",
+            "What is the best thing about public transport in the area you live?",
+            "Do you agree that more and more people want to buy cars these days?",
+            "How do people travel today in cities and in the countryside?",
+            "Do city planners consider the needs of pedestrians enough?",
+            "What impact can an inadequate transport or transportation system have on a country?"
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "sub_topic": "Describe an event you took part in but it had some music that you didn't like",
+        "part_2": {
+          "topic": "Describe an event you took part in but it had some music that you didn't like",
+          "cue_card": [
+            "What it was",
+            "When it was",
+            "Who you went with",
+            "And explain why you didn't like its music"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What kinds of music events are popular in your country?",
+            "What do people enjoy about going to large music events?",
+            "Why might younger and older people not enjoy the same music events?",
+            "Should children have music lessons or classes at school?",
+            "Why is music often played when people are doing physical exercise?",
+            "Do you agree or disagree that playing music in shops or stores is an effective way of selling more products?"
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "sub_topic": "Describe a live sport match you have ever watched",
+        "part_2": {
+          "topic": "Describe a live sport match you have ever watched",
+          "cue_card": [
+            "What it was",
+            "When you watched it",
+            "What it was like",
+            "And explain how you felt about it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why do many people enjoy watching sports?",
+            "Do you think watching live sports is better than watching on TV? Why?",
+            "How can sports events benefit a city or a country?",
+            "Why do some people become passionate sports fans?",
+            "Do international sports events help bring people together?",
+            "Should children be encouraged to play sports regularly? Why?",
+            "What are the advantages of watching sports events online?",
+            "What kinds of sports activities are suitable for children in China?"
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "sub_topic": "Describe an occasion when you felt excited about trying an activity for the first time",
+        "part_2": {
+          "topic": "Describe an occasion when you felt excited about trying an activity for the first time",
+          "cue_card": [
+            "What activity you did",
+            "Where and when you did this",
+            "How easy or difficult it was to do",
+            "And explain what was exciting about trying this activity for the first time."
+          ]
+        },
+        "part_3": {
+          "questions": []
+        }
+      },
+      {
+        "id": 5,
+        "sub_topic": "Describe a tradition in your country",
+        "part_2": {
+          "topic": "Describe a tradition in your country",
+          "cue_card": [
+            "What it is",
+            "When it will happen",
+            "What people need to do",
+            "And explain how you feel about it"
+          ]
+        },
+        "part_3": {
+          "questions": []
+        }
+      }
+    ]
+  }
+]

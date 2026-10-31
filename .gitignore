@@ -34,3 +34,6 @@ dist
 !/content/review/
 /content/review/*
 !/content/review/_example.*
+!/content/practice/
+/content/practice/*
+!/content/practice/speaking-mock/

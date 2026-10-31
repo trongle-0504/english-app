@@ -1,0 +1,277 @@
+[
+  {
+    "category": "Describe an object",
+    "sub_topics": [
+      {
+        "id": 1,
+        "sub_topic": "Describe an app or software you often use on your phone or computer",
+        "part_2": {
+          "topic": "Describe an app or software you often use on your phone or computer",
+          "cue_card": [
+            "What it is",
+            "How long you have used it",
+            "How you use it",
+            "And explain how you feel about it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What kinds of programs or apps are popular in your country?",
+            "Why do some people not like to use programs or apps?",
+            "What are the differences between the kinds of apps and programs young people and old people use?",
+            "Is it necessary for parents to limit the time their children spend on apps or computer programs?",
+            "What are the benefits of using apps as a tool for education?"
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "sub_topic": "Describe a movie you enjoyed watching",
+        "part_2": {
+          "topic": "Describe a movie you enjoyed watching",
+          "cue_card": [
+            "Where and when you saw it",
+            "Who you saw the movie with",
+            "What the movie was about",
+            "And explain why you enjoyed watching this movie"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "In your country, what kinds of movies do people like to watch?",
+            "Do people like to watch movies at home or in the cinema?",
+            "Why don't some people enjoy watching movies?",
+            "What qualities do people need to be good actors?",
+            "Which is more important for an actor, acting skills or appearance?",
+            "Do you agree or disagree that being an actor is a difficult job?",
+            "How important are famous actors to the success of a movie?"
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "sub_topic": "Describe a piece of technology you would like to own in the future",
+        "part_2": {
+          "topic": "Describe a piece of technology you would like to own in the future",
+          "cue_card": [
+            "What it is",
+            "How you knew about it",
+            "What you would use it for",
+            "And explain why you would like to own it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What are the different types of technology that young people often use?",
+            "Do you agree or disagree that technology has a positive effect on young people's lives?",
+            "How healthy is it for young people to spend a lot of time online?",
+            "What are the differences between talking to people online and talking to them face to face?"
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "sub_topic": "Describe a TV or online programme that you enjoy watching",
+        "part_2": {
+          "topic": "Describe a TV or online programme that you enjoy watching",
+          "cue_card": [
+            "What it is about",
+            "How often you watch it",
+            "Which country the programme comes from",
+            "And explain why you enjoy watching this TV or online programme"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What types of TV or online programmes or shows are popular in your country?",
+            "Do younger and older people enjoy watching similar programmes or shows?",
+            "Why do some people spend so much time watching TV and online programmes or shows?",
+            "Do you agree or disagree that there are too many programmes/shows for people to choose from these days?",
+            "What do you think of the view that parents should choose what programmes or shows their children watch?"
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "sub_topic": "Describe a kind of food that you ate at special occasions",
+        "part_2": {
+          "topic": "Describe a kind of food that you ate at special occasions",
+          "cue_card": [
+            "What it is",
+            "What occasion it was",
+            "Why you would like to eat it",
+            "And explain how you feel about it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why is food important during special occasions in your country?",
+            "What kinds of food do people usually eat during festivals or family celebrations?",
+            "Do you think young people prefer traditional food or fast food? Why?",
+            "How have people's eating habits changed compared to the past?",
+            "Do you think eating together helps strengthen family relationships? Why?",
+            "Is it better to cook at home or eat at restaurants on special occasions?",
+            "What is special about the way this food is made?"
+          ]
+        }
+      },
+      {
+        "id": 6,
+        "sub_topic": "Describe a piece of local news that people are interested in",
+        "part_2": {
+          "topic": "Describe a piece of local news that people are interested in",
+          "cue_card": [
+            "What it was about",
+            "Where you saw/heard it",
+            "Who was involved",
+            "And explain why people were interested in it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "How do people usually get local news nowadays?",
+            "Do you think local news is more important than international news? Why?",
+            "Why are some news stories more popular than others?",
+            "Do social media affect the way people receive news?",
+            "Can news influence public opinion? How?",
+            "Do you think all news is reliable nowadays? Why or why not?",
+            "Do many people talk about local news?",
+            "Do young people or old people care more about local news?",
+            "Do people pay more attention to local news or national news?"
+          ]
+        }
+      },
+      {
+        "id": 7,
+        "sub_topic": "Describe a problem of technology you have encountered, like a computer or a cell phone",
+        "part_2": {
+          "topic": "Describe a problem of technology you have encountered, like a computer or a cell phone",
+          "cue_card": [
+            "What it was",
+            "When and where you had this problem",
+            "How the problem was solved",
+            "And explain how you felt when you had this problem"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What kinds of technological problems do people often face?",
+            "Do older people have more difficulty using technology than young people?",
+            "How has technology made people's lives easier?",
+            "Do you think people depend too much on technology nowadays?",
+            "What should people do when technology fails?",
+            "Will technology become more reliable in the future?"
+          ]
+        }
+      },
+      {
+        "id": 8,
+        "sub_topic": "Describe an interesting video you watched in social media",
+        "part_2": {
+          "topic": "Describe an interesting video you watched in social media",
+          "cue_card": [
+            "When and where you saw it",
+            "What it was about",
+            "Why you think it is interesting",
+            "And explain how you felt about it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why do people spend so much time watching videos online?",
+            "What types of videos are popular nowadays?",
+            "Do social media videos influence people's opinions?",
+            "Are online videos educational? Why or why not?",
+            "Do you think social media has more advantages than disadvantages?",
+            "Should children's use of social media be controlled?"
+          ]
+        }
+      },
+      {
+        "id": 9,
+        "sub_topic": "Describe a story you knew that involves an animal (like in a movie or a book)",
+        "part_2": {
+          "topic": "Describe a story you knew that involves an animal (like in a movie or a book)",
+          "cue_card": [
+            "What the movie or book is about",
+            "When and where you watched it",
+            "Are there any other animals in the movie or book",
+            "And explain how you felt about this movie or book"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why do children enjoy stories about animals?",
+            "What can people learn from animal stories?",
+            "Do films influence how people view animals?",
+            "Why are animals often used in stories?",
+            "Should children learn about animals at school?",
+            "Do people care more about animal welfare nowadays?"
+          ]
+        }
+      },
+      {
+        "id": 10,
+        "sub_topic": "Describe a piece of advertisement which is about a famous person",
+        "part_2": {
+          "topic": "Describe a piece of advertisement which is about a famous person",
+          "cue_card": [
+            "What the advertisement is about",
+            "When and where you saw it",
+            "What the famous person does in the advertisement",
+            "And explain how you felt about it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why do companies use celebrities in advertisements?",
+            "Do celebrity advertisements influence consumers?",
+            "Are advertisements more creative nowadays?",
+            "What makes an advertisement effective?",
+            "Do children get influenced by advertisements easily?",
+            "Should there be stricter control of advertising?"
+          ]
+        }
+      },
+      {
+        "id": 11,
+        "sub_topic": "Describe a traditional product made in your country which you like",
+        "part_2": {
+          "topic": "Describe a traditional product made in your country which you like",
+          "cue_card": [
+            "What this product is",
+            "When you first tried this product",
+            "How this product is made",
+            "And explain why you like this traditional product"
+          ]
+        },
+        "part_3": {
+          "questions": []
+        }
+      },
+      {
+        "id": 12,
+        "sub_topic": "Describe a special cake you received from others",
+        "part_2": {
+          "topic": "Describe a special cake you received from others",
+          "cue_card": [
+            "When it happened",
+            "Where it happened",
+            "Who you got the cake from",
+            "And explain why it's a special cake"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What are the differences between special food in China and other countries?",
+            "Is there any food in your country that is eaten at special times or on special occasions?",
+            "Why are some people willing to spend a lot of money on meals on special days?",
+            "Do you think it's good to communicate when eating with your family?",
+            "In your country, do people nowadays cook at home as frequently as they did in the past?",
+            "What do you think of people using their mobile phones during a meal?"
+          ]
+        }
+      }
+    ]
+  }
+]

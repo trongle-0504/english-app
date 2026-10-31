@@ -256,38 +256,46 @@ let index: LocalIndex | null = null
 let loading: Promise<LocalIndex | null> | null = null
 let downloading: Promise<void> | null = null
 
-type ListPage = { pageProps?: { pageData?: { content?: { url?: string; vnWord?: string }[]; last?: boolean } } }
-
-/**
- * The word list is not an API: the "newest words" page's Next.js data (its buildId read from the page's HTML, then a
- * JSON per page). Each step that finds nothing it knows is a structure change (DOL rebuilt or redesigned the page).
- */
-async function listBuildId(): Promise<string> {
-  const html = await (await get(`${SITE}/danh-sach-tu-moi-nhat/0`)).text()
-  const data = /<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/.exec(html)
-  let buildId: string | undefined
-  try {
-    buildId = data ? (JSON.parse(data[1]) as { buildId?: string }).buildId : undefined
-  } catch {
-    buildId = undefined
-  }
-  if (!buildId) throw new DolError('format', 'the word-list page has no __NEXT_DATA__ buildId any more (page redesigned)')
-  return buildId
+function decodeHtmlText(raw: string): string {
+  return raw
+    .replace(/<!--[\s\S]*?-->/g, '')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#x27;|&#39;/g, "'")
+    .trim()
 }
 
-async function listPage(buildId: string, page: number): Promise<{ content: { url?: string; vnWord?: string }[]; last: boolean }> {
-  const json = await jsonOf<ListPage>(await get(`${SITE}/_next/data/${buildId}/danh-sach-tu-moi-nhat/${page}.json`), 'word-list page')
-  const pageData = json.pageProps?.pageData
-  if (!pageData || !Array.isArray(pageData.content)) throw new DolError('format', `word-list page ${page}: no pageProps.pageData.content any more`)
-  if (page === 0 && !pageData.content.some((c) => c.url && c.vnWord)) throw new DolError('format', 'word-list page 0: items have no url / vnWord any more')
-  return { content: pageData.content, last: Boolean(pageData.last) }
+/**
+ * The word list is rendered by Next.js App Router on `/danh-sach-tu-moi-nhat/{page}` inside
+ * `<ol class="dictionary-word-list-content ...">`. Each page has ~1,000 `<a href="/{url}"><p>{vnWord}</p></a>` items.
+ */
+async function listPage(page: number): Promise<{ content: { url?: string; vnWord?: string }[]; last: boolean }> {
+  const html = await (await get(`${SITE}/danh-sach-tu-moi-nhat/${page}`)).text()
+  const ol = /<ol[^>]*class="[^"]*dictionary-word-list-content[^"]*"[^>]*>([\s\S]*?)<\/ol>/.exec(html)
+  if (!ol) {
+    if (page > 0 && html.includes('danh-sach-tu-moi-nhat')) return { content: [], last: true }
+    throw new DolError('format', `word-list page ${page}: no dictionary-word-list-content list any more (page redesigned)`)
+  }
+  const content: { url?: string; vnWord?: string }[] = []
+  for (const m of ol[1].matchAll(/<a[^>]+href="\/([^"#?]+)"[^>]*>\s*<p>([\s\S]*?)<\/p>\s*<\/a>/g)) {
+    const url = decodeHtmlText(m[1])
+    const vnWord = decodeHtmlText(m[2])
+    if (url && vnWord) content.push({ url, vnWord })
+  }
+  if (page === 0 && !content.length) {
+    throw new DolError('format', 'word-list page 0: items have no url / vnWord any more')
+  }
+  const pages = [...html.matchAll(/href="\/danh-sach-tu-moi-nhat\/(\d+)"/g)].map((m) => Number(m[1]))
+  const maxPage = pages.length ? Math.max(...pages) : page
+  return { content, last: !content.length || page >= maxPage }
 }
 
 async function downloadList(): Promise<void> {
-  const buildId = await listBuildId()
   const items: [string, string][] = []
   for (let page = 0; page < 300; page++) {
-    const pageData = await listPage(buildId, page)
+    const pageData = await listPage(page)
     for (const c of pageData.content) if (c.url && c.vnWord) items.push([nfc(c.vnWord), c.url])
     if (pageData.last || !pageData.content.length) break
   }
@@ -605,7 +613,7 @@ const PROBE_ENTRY = 'ho-tro-lan-nhau-tieng-anh-la-gi'
 export async function dolSelfCheck(): Promise<DolStatus> {
   if (!dolEnabled()) return dolStatus()
   try {
-    await listPage(await listBuildId(), 0)
+    await listPage(0)
     dolOk('list')
   } catch (error) {
     dolFailed('list', error)

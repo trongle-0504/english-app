@@ -1,4 +1,4 @@
-import { Headphones, Library, ListChecks, MessageSquareQuote, PenLine, ShieldCheck, Trophy, Volume2 } from 'lucide-react'
+import { AudioLines, Headphones, Library, ListChecks, MessageSquareQuote, Mic, PenLine, ShieldCheck, Trophy, Volume2 } from 'lucide-react'
 import { useDeferredValue, useState } from 'react'
 import { Badge, EmptyState, PageHeader, SearchInput, SectionTitle } from '@/components/ui'
 import { useData } from '@/lib/data'
@@ -61,6 +61,19 @@ export default function PracticeHomePage() {
           icon={MessageSquareQuote}
           title="Speaking ideas"
           description="Paste a Speaking topic and its questions: phrases from your library, example sentences and a model answer that uses them."
+        />
+        <PracticeLinkCard
+          to="/practice/speaking-review"
+          icon={AudioLines}
+          title="Speaking review"
+          description="Record your answer and get IELTS band scores across 4 criteria with Longman & OZDIC dictionary verification."
+        />
+        <PracticeLinkCard
+          to="/practice/speaking-mock"
+          prefetch="practice/speaking-mock.json"
+          icon={Mic}
+          title="Speaking mock test"
+          description="Take timed IELTS Speaking mock tests by topic (Part 1, 2, 3) with a virtual examiner and AI band evaluation."
         />
         <PracticeLinkCard
           to="/practice/dictation"

@@ -1,0 +1,367 @@
+[
+  {
+    "category": "Describe an occasion / situation",
+    "sub_topics": [
+      {
+        "id": 1,
+        "sub_topic": "Describe a time when you were not allowed to use your phone",
+        "part_2": {
+          "topic": "Describe a time when you were not allowed to use your phone",
+          "cue_card": [
+            "Where you were",
+            "Why you couldn't use it",
+            "And explain how you felt about it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "In your country, which places are not allowed people to use phones?",
+            "Do you think it is important to introduce new rules for using mobile phones?",
+            "Why do young and old people use mobile phones differently?",
+            "When should parents allow their children to have mobile phones?",
+            "Do you agree that the social rules in the past were stricter than those of today?",
+            "Is it quite prevalent that people are addicted to mobile phones?"
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "sub_topic": "Describe an occasion you remember when you saw a lot of people smiling",
+        "part_2": {
+          "topic": "Describe an occasion you remember when you saw a lot of people smiling",
+          "cue_card": [
+            "Where you were and when it happened",
+            "Who you were with",
+            "What happened",
+            "And explain why you remember this occasion when people smiled"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why do people smile?",
+            "Do children tend to smile more frequently than adults?",
+            "Why do people usually smile when taking photos?",
+            "Do elderly older people have better control over their feelings compared to young people?",
+            "When is it important for people not to show their emotions?",
+            "Do you agree or disagree that people might be motivated more by their emotions than by logical thinking?",
+            "Is it a good thing for people to be driven by emotions?"
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "sub_topic": "Describe a time you needed to use your imagination",
+        "part_2": {
+          "topic": "Describe a time you needed to use your imagination",
+          "cue_card": [
+            "What you needed to do",
+            "Why you had to use your imagination",
+            "Was it easy or difficult to do this",
+            "And explain how you felt about it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What kinds of games do children need to use imagination to play?",
+            "Is it very important for teachers to encourage children to use their imagination?",
+            "Do you think reading stories needs more imagination or watching cartoons?",
+            "What are some jobs that require a good imagination?",
+            "Do scientists need to use their imagination?"
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "sub_topic": "Describe a time you gave advice to someone",
+        "part_2": {
+          "topic": "Describe a time you gave advice to someone",
+          "cue_card": [
+            "When and who you gave the advice to",
+            "What the advice was",
+            "Why you gave it",
+            "And explain how this person felt about the advice you gave"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "When is it better to ask friends for advice rather than family?",
+            "Why do older people sometimes ask younger people for advice?",
+            "What problems can someone have when they ask lots of different people for advice?",
+            "In what situations is it important to think carefully before giving advice to someone?",
+            "What kinds of personal qualities do people need to give good advice?",
+            "Do you agree or disagree that anyone can learn how to give advice effectively?"
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "sub_topic": "Describe a time when you had to pay more than you expected for something",
+        "part_2": {
+          "topic": "Describe a time when you had to pay more than you expected for something",
+          "cue_card": [
+            "What you bought",
+            "How you felt when you saw the price",
+            "What you did about it",
+            "And explain why you think you had paid more than you expected"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What kinds of things do young people like to spend money on?",
+            "Why do some people spend money on things they don't really need?",
+            "How important is saving money for the future?",
+            "How important is it to teach children about giving money to support people in need?"
+          ]
+        }
+      },
+      {
+        "id": 6,
+        "sub_topic": "Describe a difficult decision you made that had a good result",
+        "part_2": {
+          "topic": "Describe a difficult decision you made that had a good result",
+          "cue_card": [
+            "What the decision was",
+            "Why it was difficult to make the decision",
+            "What helped you to decide",
+            "And explain why the decision you made had a good result"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why do some people find it difficult to make important decisions?",
+            "Do young people make decisions differently from older people?",
+            "Who do people usually ask for advice when making important decisions?",
+            "Do you think people should always think carefully before making decisions?",
+            "Can difficult decisions help people grow as individuals? Why?",
+            "Do you prefer making decisions alone or with other people's advice?"
+          ]
+        }
+      },
+      {
+        "id": 7,
+        "sub_topic": "Describe a time when you encouraged somebody to do something that he/she didn't want to do",
+        "part_2": {
+          "topic": "Describe a time when you encouraged somebody to do something that he/she didn't want to do",
+          "cue_card": [
+            "Who this person is",
+            "What you encouraged him/her to do",
+            "How he/she reacted",
+            "And explain when you encouraged him/her to do this"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "In what situations do parents need to encourage their children to do something?",
+            "What ways can parents use to encourage children to do things they don't want to do?",
+            "Why do children often not want to do what their parents ask?",
+            "How can employees be encouraged to work hard?",
+            "Do you agree or disagree that the most important role of a boss is to encourage employees?",
+            "Are people at work more motivated by praise or money?"
+          ]
+        }
+      },
+      {
+        "id": 8,
+        "sub_topic": "Describe a time when someone you know found a clever solution to a problem",
+        "part_2": {
+          "topic": "Describe a time when someone you know found a clever solution to a problem",
+          "cue_card": [
+            "Who the person is",
+            "What the problem was",
+            "How he/she solved it",
+            "And explain why you think this was a clever solution to the problem"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Do you think children are born clever, or do they learn to be clever?",
+            "How important are schools in helping children become more clever?",
+            "Do you agree or disagree that very clever children are usually happy?",
+            "Why may a person be very good at one thing, but not another?",
+            "Why does society need people with different types of intelligence?",
+            "Do you think people can become very good at anything if they try hard enough?"
+          ]
+        }
+      },
+      {
+        "id": 9,
+        "sub_topic": "Describe a time when you had to get up very early",
+        "part_2": {
+          "topic": "Describe a time when you had to get up very early",
+          "cue_card": [
+            "Where you were",
+            "What time you had to get up",
+            "Why you had to get up so early",
+            "And explain how you felt about getting up very early"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why do some people prefer waking up early?",
+            "Do young people and older people have different sleeping habits?",
+            "Is it healthier to wake up early? Why?",
+            "What jobs require people to wake up very early?",
+            "How can people develop good sleeping habits?",
+            "Do modern lifestyles affect people's sleep?"
+          ]
+        }
+      },
+      {
+        "id": 10,
+        "sub_topic": "Describe a time that you had to change your plan / you changed your mind",
+        "part_2": {
+          "topic": "Describe a time that you had to change your plan / you changed your mind",
+          "cue_card": [
+            "When this happened",
+            "What made you change the plan",
+            "What the new plan was",
+            "And how you felt about the change"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why do people sometimes change their plans?",
+            "Is it important to be flexible in life?",
+            "Do young people change plans more often than older people?",
+            "How do people feel when their plans suddenly change?",
+            "Can changing plans sometimes lead to better results?",
+            "How can people deal with unexpected changes?"
+          ]
+        }
+      },
+      {
+        "id": 11,
+        "sub_topic": "Describe a time you changed your opinion",
+        "part_2": {
+          "topic": "Describe a time you changed your opinion",
+          "cue_card": [
+            "When it was",
+            "What was your opinion",
+            "Why you changed your opinion",
+            "And explain how you felt about it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why do people change their opinions?",
+            "Is it easy for people to admit they were wrong?",
+            "Do older people change their opinions less often than young people?",
+            "Can other people influence our opinions? How?",
+            "Is it important to listen to different viewpoints?",
+            "Should people always stick to their own opinions?"
+          ]
+        }
+      },
+      {
+        "id": 12,
+        "sub_topic": "Describe a law of environment protection that you would like to introduce",
+        "part_2": {
+          "topic": "Describe a law of environment protection that you would like to introduce",
+          "cue_card": [
+            "What it is",
+            "How you first learned about it",
+            "Who benefits from it",
+            "And explain how you feel about this law"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why is environmental protection important?",
+            "What environmental problems are common in cities?",
+            "Should governments or individuals take more responsibility?",
+            "How can schools teach children about environmental protection?",
+            "Do you think environmental laws are effective?",
+            "Should companies be punished for pollution?"
+          ]
+        }
+      },
+      {
+        "id": 13,
+        "sub_topic": "Describe a time when you had to make an important decision",
+        "part_2": {
+          "topic": "Describe a time when you had to make an important decision",
+          "cue_card": [
+            "What decision you had to make",
+            "How you made the decision",
+            "Why this decision was important",
+            "And explain whether you think it was a right decision"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What kinds of decisions do young people usually make?",
+            "Why do some people find decision-making difficult?",
+            "Do men and women make decisions differently?",
+            "Is it better to make decisions alone or ask for advice?",
+            "Can technology help people make decisions?",
+            "How can experience improve decision-making?"
+          ]
+        }
+      },
+      {
+        "id": 14,
+        "sub_topic": "Describe a time when you had to wait for something special to happen",
+        "part_2": {
+          "topic": "Describe a time when you had to wait for something special to happen",
+          "cue_card": [
+            "What this special thing was",
+            "Why you had to wait for it",
+            "What you did while you were waiting",
+            "And explain how you felt about waiting for this special thing to happen."
+          ]
+        },
+        "part_3": {
+          "questions": []
+        }
+      },
+      {
+        "id": 15,
+        "sub_topic": "Describe an occasion when the electricity suddenly went off",
+        "part_2": {
+          "topic": "Describe an occasion when the electricity suddenly went off",
+          "cue_card": [
+            "When and where it happened",
+            "What you were doing",
+            "How long the electricity went off for",
+            "And explain how you felt when the electricity suddenly went off."
+          ]
+        },
+        "part_3": {
+          "questions": []
+        }
+      },
+      {
+        "id": 16,
+        "sub_topic": "Describe a time when something in your home broke and you tried to repair it",
+        "part_2": {
+          "topic": "Describe a time when something in your home broke and you tried to repair it",
+          "cue_card": [
+            "What thing broke",
+            "Why this thing broke",
+            "What you did to try to repair it",
+            "And explain how successful you were at trying to repair this thing"
+          ]
+        },
+        "part_3": {
+          "questions": []
+        }
+      },
+      {
+        "id": 17,
+        "sub_topic": "Describe a time when you changed a decision",
+        "part_2": {
+          "topic": "Describe a time when you changed a decision",
+          "cue_card": [
+            "What decision you made",
+            "Why you changed the decision",
+            "Is it a good result",
+            "And explain how you felt about it"
+          ]
+        },
+        "part_3": {
+          "questions": []
+        }
+      }
+    ]
+  }
+]

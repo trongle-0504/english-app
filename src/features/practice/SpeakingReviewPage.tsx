@@ -586,7 +586,7 @@ export default function SpeakingReviewPage() {
               Review the words from your recent work →
             </Link>{' '}
             <Badge tone="slate" className="ml-1">
-              corrections also go to Sổ lỗi
+              corrections also go to Mistake Log
             </Badge>
           </p>
         )}

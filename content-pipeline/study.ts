@@ -8,6 +8,9 @@ import type {
   PracticeIndex,
   QuizQuestion,
   QuizSet,
+  SpeakingMockCategory,
+  SpeakingMockDataset,
+  SpeakingMockPart1Topic,
   WritingSet,
   WritingTask,
 } from '../src/types/content.ts'
@@ -152,5 +155,80 @@ export function buildPractice(root: string, out: Output): PracticeIndex {
   }
 
   out.set('practice/index.json', index)
+  buildSpeakingMock(root, out)
   return index
+}
+
+interface RawSpeakingPart1 {
+  part?: string
+  topic?: string
+  questions?: string[]
+}
+
+interface RawSpeakingPart23Category {
+  category?: string
+  sub_topics?: {
+    id?: number
+    sub_topic?: string
+    part_2?: { topic?: string; cue_card?: string[] }
+    part_3?: { questions?: string[] }
+  }[]
+}
+
+export function buildSpeakingMock(root: string, out: Output): SpeakingMockDataset {
+  const dir = contentPath(root, 'practice/speaking-mock')
+  const part1Topics: SpeakingMockPart1Topic[] = []
+  const categoryMap = new Map<string, SpeakingMockCategory>()
+
+  for (const file of listFiles(dir, '.json')) {
+    const raw = readJson<unknown>(path.join(dir, file), [])
+    if (!Array.isArray(raw)) continue
+    for (const item of raw) {
+      if (!item || typeof item !== 'object') continue
+      if ('questions' in item && 'topic' in item && Array.isArray((item as RawSpeakingPart1).questions)) {
+        const p1 = item as RawSpeakingPart1
+        const topic = (p1.topic ?? '').trim()
+        const questions = (p1.questions ?? []).map((q) => String(q).trim()).filter(Boolean)
+        if (topic && questions.length) {
+          part1Topics.push({ id: `p1-${slugify(topic)}`, topic, questions })
+        }
+      } else if ('category' in item && 'sub_topics' in item && Array.isArray((item as RawSpeakingPart23Category).sub_topics)) {
+        const cat = item as RawSpeakingPart23Category
+        const categoryName = (cat.category ?? 'General').trim()
+        const categoryId = slugify(categoryName)
+        let group = categoryMap.get(categoryId)
+        if (!group) {
+          group = { id: categoryId, category: categoryName, subTopics: [] }
+          categoryMap.set(categoryId, group)
+        }
+        for (const sub of cat.sub_topics ?? []) {
+          const subTopic = (sub.sub_topic ?? sub.part_2?.topic ?? '').trim()
+          const cueCard = (sub.part_2?.cue_card ?? []).map((c) => String(c).trim()).filter(Boolean)
+          const questions = (sub.part_3?.questions ?? []).map((q) => String(q).trim()).filter(Boolean)
+          if (!subTopic) continue
+          const id = `p23-${categoryId}-${sub.id ?? group.subTopics.length + 1}-${slugify(subTopic).slice(0, 40)}`
+          group.subTopics.push({
+            id,
+            categoryId,
+            category: categoryName,
+            subTopic,
+            part2: {
+              topic: (sub.part_2?.topic ?? subTopic).trim(),
+              cueCard,
+            },
+            part3: {
+              questions,
+            },
+          })
+        }
+      }
+    }
+  }
+
+  const dataset: SpeakingMockDataset = {
+    part1Topics,
+    part23Categories: [...categoryMap.values()],
+  }
+  out.set('practice/speaking-mock.json', dataset)
+  return dataset
 }

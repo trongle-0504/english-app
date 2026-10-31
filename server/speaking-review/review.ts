@@ -564,7 +564,7 @@ export async function startTalkReview(ctx: ApiContext, body: unknown): Promise<T
 }
 
 function launch(ctx: ApiContext, id: string, input: Input, audio: ReturnType<typeof readWav>): TalkReviewJob {
-  if ([...jobs.values()].some((j) => j.status === 'running'))
+  if ([...jobs.values()].filter((j) => j.status === 'running').length >= 6)
     throw new ApiError(429, 'Another review is still running — please wait for it to finish.')
   const job: TalkReviewJob = { id, status: 'running', startedAt: new Date().toISOString(), step: 'transcribe' }
   jobs.set(id, job)

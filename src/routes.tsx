@@ -187,6 +187,13 @@ const routes: RouteObject[] = [
           { path: 'practice/speaking-ideas/history', ...page(() => import('@/features/practice/SpeakingHistoryPage')) },
           { path: 'practice/speaking-review', ...page(() => import('@/features/practice/SpeakingReviewPage')) },
           { path: 'practice/speaking-review/history', ...page(() => import('@/features/practice/SpeakingReviewHistoryPage')) },
+          {
+            path: 'practice/speaking-mock',
+            ...page(
+              () => import('@/features/practice/SpeakingMockTestPage'),
+              () => ['practice/speaking-mock.json'],
+            ),
+          },
           { path: 'practice/mistakes', ...page(() => import('@/features/practice/MistakesPage')) },
           {
             path: 'practice/essays',
@@ -205,6 +212,8 @@ const routes: RouteObject[] = [
           { path: 'practice-writing', element: <Navigate to="/practice/writing" replace /> },
           { path: 'practice-dictation', element: <Navigate to="/practice/dictation" replace /> },
 
+          { path: 'news', ...page(() => import('@/features/news/NewsPage')) },
+          { path: 'notepad', ...page(() => import('@/features/notepad/NotepadPage')) },
           { path: 'account', ...page(() => import('@/features/auth/AccountPage')) },
 
           /* Admin (needs the local API server) */
@@ -216,6 +225,7 @@ const routes: RouteObject[] = [
               { path: 'vocabulary', ...page(() => import('@/features/admin/VocabularyAdminPage')) },
               { path: 'grammar', ...page(() => import('@/features/admin/GrammarAdminPage')) },
               { path: 'note', ...page(() => import('@/features/admin/NoteAdminPage')) },
+              { path: 'notepad', element: <Navigate to="/notepad" replace /> },
               { path: 'blog', ...page(() => import('@/features/admin/BlogAdminPage')) },
               { path: 'essays', ...page(() => import('@/features/admin/EssayAdminPage')) },
               { path: 'usage', ...page(() => import('@/features/admin/UsageAdminPage')) },

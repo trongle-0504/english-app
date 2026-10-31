@@ -11,7 +11,7 @@ import { activeItem, AdminIcon, adminNav, isGroupActive, navGroups, type NavItem
 
 const triggerClass = (active: boolean) =>
   cn(
-    'inline-flex h-9 items-center gap-1 rounded-lg px-3 text-sm font-semibold transition-colors outline-none',
+    'inline-flex h-9 shrink-0 items-center gap-1 whitespace-nowrap rounded-lg px-3 text-sm font-semibold transition-colors outline-none',
     active
       ? 'text-brand-700 dark:text-brand-300'
       : 'text-slate-600 hover:text-slate-900 data-[state=open]:text-slate-900 dark:text-slate-300 dark:hover:text-white dark:data-[state=open]:text-white',

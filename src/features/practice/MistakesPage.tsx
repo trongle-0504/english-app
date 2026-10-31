@@ -142,7 +142,7 @@ export default function MistakesPage() {
     <>
       <PageHeader
         eyebrow="Writing · Speaking"
-        title="Sổ lỗi"
+        title="Mistake Log"
         description="Lỗi trong chính bài viết của bạn, gom từ mọi bài Writing Review (và cụm bị đánh dấu đáng ngờ trong câu trả lời bạn tự sửa). Lỗi nào lặp lại, lỗi loại gì nhiều nhất, và biến lỗi thành thẻ ôn: thẻ cho bạn xem lại câu mình từng viết để sửa cho đúng."
       />
       {error ? <p className="mb-4 text-sm text-rose-600">{error}</p> : null}

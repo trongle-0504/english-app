@@ -10,6 +10,7 @@ import {
   Library,
   Mic,
   type LucideIcon,
+  Newspaper,
   NotebookPen,
   Repeat,
   PenLine,
@@ -18,6 +19,7 @@ import {
   MessageSquareQuote,
   ShieldCheck,
   SpellCheck,
+  StickyNote,
   Volume2,
 } from 'lucide-react'
 
@@ -88,7 +90,7 @@ export const navGroups: NavGroup[] = [
       { to: '/practice/essays', label: 'Model Essays', description: 'Học từ vựng & cách viết từ bài mẫu', icon: Library },
       { to: '/practice/writing', label: 'Writing Practice', description: 'Điền chỗ trống & viết có hướng dẫn', icon: PenLine },
       { to: '/practice/writing-review', label: 'Writing Review', description: 'Sửa bài, đối chiếu Longman & OZDIC', icon: ShieldCheck, ai: true },
-      { to: '/practice/mistakes', label: 'Sổ lỗi', description: 'Lỗi hay mắc trong bài của bạn, thành thẻ ôn', icon: NotebookPen },
+      { to: '/practice/mistakes', label: 'Mistake Log', description: 'Lỗi hay mắc trong bài của bạn, thành thẻ ôn', icon: NotebookPen },
     ],
   },
   {
@@ -110,7 +112,14 @@ export const navGroups: NavGroup[] = [
         icon: AudioLines,
         ai: true,
       },
-      { to: '/practice/speaking', label: 'Read Aloud', description: 'Nghe cách phát âm câu trả lời của bạn', icon: Volume2 },
+      {
+        to: '/practice/speaking-mock',
+        label: 'Speaking Mock Test',
+        description: 'Phòng thi ảo IELTS Speaking theo chủ đề & chấm điểm AI',
+        icon: Mic,
+        ai: true,
+      },
+      { to: '/practice/speaking', label: 'Read Aloud', description: 'Nghe cách phát âm câu trả lời của bạn', icon: Volume2, exact: true },
     ],
   },
   {
@@ -128,14 +137,24 @@ export const navGroups: NavGroup[] = [
       },
     ],
   },
-  { label: 'Review', to: '/review', icon: Repeat, description: 'Ôn tập ngắt quãng & luyện dùng từ', match: ['/review'] },
-  { label: 'Blog', to: '/blog', icon: BookText, description: 'Hướng dẫn kỹ năng & bài luyện theo chủ đề', match: ['/blog'] },
+  {
+    label: 'Workspace',
+    icon: Newspaper,
+    match: [],
+    items: [
+      { to: '/news', label: 'Daily Paper', description: 'Đọc báo song ngữ VnExpress & học từ vựng IELTS hàng ngày', icon: Newspaper, ai: true },
+      { to: '/review', label: 'Review', description: 'Ôn tập ngắt quãng & luyện dùng từ', icon: Repeat },
+      { to: '/blog', label: 'Blog', description: 'Hướng dẫn kỹ năng & bài luyện theo chủ đề', icon: BookText },
+      { to: '/notepad', label: 'Notepad', description: 'Sổ tay ghi chú tự do như Notepad', icon: StickyNote },
+    ],
+  },
 ]
 
 export const adminNav: NavItem[] = [
   { to: '/admin/vocabulary', label: 'Vocabulary', icon: BookOpen },
   { to: '/admin/grammar', label: 'Grammar', icon: SpellCheck },
   { to: '/admin/note', label: 'Notes', icon: NotebookPen },
+  { to: '/notepad', label: 'Notepad', icon: StickyNote },
   { to: '/admin/blog', label: 'Blog', icon: FileText },
   { to: '/admin/essays', label: 'Essays', icon: Library },
   { to: '/admin/usage', label: 'Usage', icon: Coins },

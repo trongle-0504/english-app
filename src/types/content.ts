@@ -255,6 +255,39 @@ export interface PracticeIndex {
   writing: { id: string; title: string; taskCount: number }[]
 }
 
+/* ───────────── Speaking Mock Test ───────────── */
+
+export interface SpeakingMockPart1Topic {
+  id: string
+  topic: string
+  questions: string[]
+}
+
+export interface SpeakingMockPart23SubTopic {
+  id: string
+  categoryId: string
+  category: string
+  subTopic: string
+  part2: {
+    topic: string
+    cueCard: string[]
+  }
+  part3: {
+    questions: string[]
+  }
+}
+
+export interface SpeakingMockCategory {
+  id: string
+  category: string
+  subTopics: SpeakingMockPart23SubTopic[]
+}
+
+export interface SpeakingMockDataset {
+  part1Topics: SpeakingMockPart1Topic[]
+  part23Categories: SpeakingMockCategory[]
+}
+
 /* ───────────── Blog ───────────── */
 
 export interface BlogPostMeta {

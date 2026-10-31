@@ -8,6 +8,8 @@ import { ideaRoutes } from './routes/idea.ts'
 import { reportRoutes } from './routes/report.ts'
 import { listeningRoutes } from './routes/listening.ts'
 import { lookupRoutes } from './routes/lookup.ts'
+import { newsRoutes } from './routes/news.ts'
+import { notepadRoutes } from './routes/notepad.ts'
 import { practiceRoutes } from './routes/practice.ts'
 import { reviewRoutes } from './routes/review.ts'
 import { speakingRoutes } from './routes/speaking.ts'
@@ -23,6 +25,8 @@ export const routes: Record<string, ApiHandler> = {
   ...reviewRoutes,
   ...practiceRoutes,
   ...lookupRoutes,
+  ...notepadRoutes,
+  ...newsRoutes,
   ...writingReviewRoutes,
   ...speakingRoutes,
   ...speakingReviewRoutes,
