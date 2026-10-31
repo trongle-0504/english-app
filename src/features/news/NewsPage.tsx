@@ -87,7 +87,8 @@ function NewsSelectionMenu({
   onClose: () => void
 }) {
   const ref = useRef<HTMLDivElement>(null)
-  const [pending, setPending] = useState<'' | 'vocab' | 'note'>('')
+  const [pending, setPending] = useState<'' | 'vocab' | 'note' | 'translate'>('')
+  const [translatedText, setTranslatedText] = useState<string | null>(null)
   const [done, setDone] = useState<{ tone: 'ok' | 'error'; message: string; href?: string } | null>(null)
 
   useEffect(() => {
@@ -100,6 +101,25 @@ function NewsSelectionMenu({
       window.removeEventListener('mousedown', outside)
     }
   }, [onClose, pending])
+
+  const handleTranslate = async () => {
+    setPending('translate')
+    setDone(null)
+    try {
+      const res = await fetch('/api/translate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: selection.text, from: 'en', to: 'vi' }),
+      })
+      if (!res.ok) throw new Error('Không thể dịch đoạn này.')
+      const data = (await res.json()) as { translated?: string }
+      setTranslatedText(data.translated || 'Không có bản dịch.')
+    } catch (err) {
+      setDone({ tone: 'error', message: (err as Error).message })
+    } finally {
+      setPending('')
+    }
+  }
 
   const handleAdd = async (target: 'vocab' | 'note') => {
     setPending(target)
@@ -144,10 +164,10 @@ function NewsSelectionMenu({
     }
   }
 
-  const width = 310
+  const width = 340
   const left = Math.min(Math.max(8, selection.rect.left + selection.rect.width / 2 - width / 2), window.innerWidth - width - 8)
   const below = selection.rect.bottom + 8
-  const top = below + 180 > window.innerHeight ? Math.max(8, selection.rect.top - 185) : below
+  const top = below + 220 > window.innerHeight ? Math.max(8, selection.rect.top - 225) : below
 
   return (
     <div
@@ -168,30 +188,51 @@ function NewsSelectionMenu({
         </button>
       </div>
 
-      <p className="text-[11px] text-slate-500 dark:text-slate-400">Thêm cụm từ vừa quét vào:</p>
+      {translatedText ? (
+        <div className="rounded-xl border border-emerald-200 bg-emerald-50/70 p-2.5 text-xs text-emerald-900 dark:border-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-200">
+          <p className="font-semibold text-emerald-700 uppercase tracking-wide text-[10px] dark:text-emerald-300">Bản dịch tiếng Việt:</p>
+          <p className="mt-0.5 text-[13px] leading-relaxed select-text">{translatedText}</p>
+        </div>
+      ) : null}
 
-      <div className="grid grid-cols-2 gap-1.5">
+      <div className="flex items-center gap-1.5">
         <Button
           size="sm"
-          variant="outline"
-          loading={pending === 'vocab'}
+          variant="secondary"
+          loading={pending === 'translate'}
           disabled={Boolean(pending)}
-          onClick={() => void handleAdd('vocab')}
+          onClick={() => void handleTranslate()}
+          className="flex-1 bg-emerald-50 text-emerald-800 hover:bg-emerald-100 dark:bg-emerald-950/60 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800"
         >
-          <BookOpen className="size-3.5" /> Admin Vocab
-        </Button>
-        <Button
-          size="sm"
-          variant="outline"
-          loading={pending === 'note'}
-          disabled={Boolean(pending)}
-          onClick={() => void handleAdd('note')}
-        >
-          <NotebookPen className="size-3.5" /> Note
+          <Languages className="size-3.5" /> Dịch nghĩa
         </Button>
       </div>
 
-      {pending ? (
+      <div className="pt-1 border-t border-slate-100 dark:border-slate-800">
+        <p className="text-[11px] text-slate-500 dark:text-slate-400 mb-1.5">Thêm vào thư viện học:</p>
+        <div className="grid grid-cols-2 gap-1.5">
+          <Button
+            size="sm"
+            variant="outline"
+            loading={pending === 'vocab'}
+            disabled={Boolean(pending)}
+            onClick={() => void handleAdd('vocab')}
+          >
+            <BookOpen className="size-3.5" /> Admin Vocab
+          </Button>
+          <Button
+            size="sm"
+            variant="outline"
+            loading={pending === 'note'}
+            disabled={Boolean(pending)}
+            onClick={() => void handleAdd('note')}
+          >
+            <NotebookPen className="size-3.5" /> Note
+          </Button>
+        </div>
+      </div>
+
+      {pending === 'vocab' || pending === 'note' ? (
         <p className="text-[11px] text-slate-500">AI + Longman/OZDIC đang xử lý (15–35 giây)…</p>
       ) : null}
 
