@@ -60,9 +60,9 @@ type ViewMode = 'edit' | 'preview' | 'split'
 type FontSize = 'xs' | 'sm' | 'base'
 
 const FONT_SIZE_CLASS: Record<FontSize, string> = {
-  xs: 'text-[13px] leading-snug',
-  sm: 'text-sm leading-normal',
-  base: 'text-[15px] leading-relaxed',
+  xs: 'text-sm leading-normal',
+  sm: 'text-[15px] leading-relaxed',
+  base: 'text-[17px] leading-relaxed',
 }
 
 function sortNotes(notes: NotepadNote[]): NotepadNote[] {

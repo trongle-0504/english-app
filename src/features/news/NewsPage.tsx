@@ -39,9 +39,9 @@ type FilterTab = 'all' | 'popular' | 'done' | 'pending'
 type FontSize = 'xs' | 'sm' | 'base'
 
 const FONT_SIZE_CLASS: Record<FontSize, string> = {
-  xs: 'text-[13px] leading-snug',
-  sm: 'text-sm leading-relaxed',
-  base: 'text-[15.5px] leading-relaxed',
+  xs: 'text-sm leading-relaxed',
+  sm: 'text-[15.5px] leading-relaxed',
+  base: 'text-[17px] leading-relaxed',
 }
 
 interface PickedSelection {
@@ -895,7 +895,7 @@ export default function NewsPage() {
                     </span>
                     <SpeakButton text={selectedItem.ai.summary} voice="" rate={1} className="-my-1" />
                   </div>
-                  <p className={cn('text-left sm:text-justify text-slate-700 dark:text-slate-200', textSizeClass)}>{selectedItem.ai.summary}</p>
+                  <p className={cn('text-justify text-slate-700 dark:text-slate-200', textSizeClass)}>{selectedItem.ai.summary}</p>
                 </div>
               ) : null}
 
@@ -928,7 +928,7 @@ export default function NewsPage() {
                           )
                         }
                         return (
-                          <p key={idx} className="text-left sm:text-justify text-slate-800 dark:text-slate-100">
+                          <p key={idx} className="text-justify text-slate-800 dark:text-slate-100">
                             {para}
                           </p>
                         )
