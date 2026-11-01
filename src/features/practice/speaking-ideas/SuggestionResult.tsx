@@ -33,6 +33,7 @@ import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import { Link } from 'react-router'
 import { formatIdea, type IdeaSource } from '../idea-api'
 import { Badge, Button, type Tone } from '@/components/ui'
+import { SpeakButton } from '@/components/SpeakButton'
 import { cn } from '@/lib/cn'
 import { slugify } from '@/lib/text'
 import { loadData, onDataInvalidated } from '@/lib/data'
@@ -1028,6 +1029,7 @@ function ItemHead({
           )}
           <p className="text-xs text-slate-400">{origin}</p>
         </div>
+        <TermPronunciation term={term} />
         {isTopicCollocation ? (
           <Badge tone="slate" title="Thuộc kho cụm từ chủ đề tham khảo (chưa thêm vào Vocabulary hoặc Notes cá nhân)">
             Kho tham khảo
@@ -1091,6 +1093,31 @@ export function useLibraryLookup(): LookupIndex | null {
     }
   }, [])
   return index
+}
+
+function pronunciationFor(term: string, index: LookupIndex | null): string | undefined {
+  if (!index) return undefined
+  const wanted = term.trim().toLowerCase()
+  for (const item of index.vocabulary) {
+    if (item.word.word.trim().toLowerCase() === wanted && item.word.pronunciation) return item.word.pronunciation
+    const relation = item.word.collocations.find((c) => c.text.trim().toLowerCase() === wanted && c.pronunciation)
+    if (relation?.pronunciation) return relation.pronunciation
+  }
+  const collocation = index.collocations.find((item) => item.word.word.trim().toLowerCase() === wanted)
+  if (collocation?.word.pronunciation) return collocation.word.pronunciation
+  const note = index.notes.find((item) => item.title.trim().toLowerCase() === wanted)
+  return note?.pronunciation
+}
+
+function TermPronunciation({ term }: { term: string }) {
+  const index = useLibraryLookup()
+  const ipa = pronunciationFor(term, index)
+  return (
+    <span className="inline-flex items-center gap-1">
+      {ipa ? <span className="ipa text-xs text-slate-500 dark:text-slate-400">{ipa}</span> : null}
+      <SpeakButton text={term} className="size-7" />
+    </span>
+  )
 }
 
 export function findInLibrary(phrase: string, index: LookupIndex | null) {
@@ -1308,6 +1335,7 @@ export function WordingRow({ w, example }: { w: CheckedWording; example?: string
     <li className={ITEM}>
       <div className="flex flex-wrap items-center gap-2">
         <span className="font-bold text-slate-900 dark:text-white">{w.text}</span>
+        <TermPronunciation term={w.text} />
         {w.verified ? (
           <Badge tone="emerald" title={w.dictionary.join('\n')}>
             <ShieldCheck className="size-3" /> Longman / OZDIC
@@ -1513,6 +1541,7 @@ export function ExtraRow({ extra }: { extra: SpeakingExtra }) {
     <li className={ITEM}>
       <div className="flex flex-wrap items-center gap-2">
         <span className="font-bold text-slate-900 dark:text-white">{extra.phrase}</span>
+        <TermPronunciation term={extra.phrase} />
         {extra.verified ? (
           <Badge tone="emerald" title={extra.dictionary.join('\n')}>
             <ShieldCheck className="size-3" /> Longman / OZDIC
