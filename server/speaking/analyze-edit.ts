@@ -13,6 +13,17 @@ import { CheckSchema } from '../writing-review/rewrite.ts'
 import { defaultSpeakingEngine, speakingEffort, speakingJson } from './llm.ts'
 import { fileOf, jobs, markSentence, sentenceTool, validId } from './suggest.ts'
 
+export interface AnalyzeEditJob {
+  id: string
+  status: 'running' | 'done' | 'error'
+  startedAt: string
+  result?: SpeakingResult
+  error?: string
+  credited?: boolean
+}
+
+const editJobs = new Map<string, AnalyzeEditJob>()
+
 const AnalyzeEditSchema = z.object({
   sentences: z.array(
     z.object({
@@ -98,7 +109,7 @@ TASKS:
 ${guide || '(use direct answer followed by description, cause, effect, example)'}
 </linearthinking_guide>`
 
-export async function analyzeUserEditedAnswer(
+async function analyzeUserEditedAnswer(
   ctx: ApiContext,
   params: {
     id: string
@@ -195,6 +206,31 @@ export async function analyzeUserEditedAnswer(
   if (live) live.result = result
 
   return result
+}
+
+export function startAnalyzeEdit(ctx: ApiContext, params: Parameters<typeof analyzeUserEditedAnswer>[1]): AnalyzeEditJob {
+  const job: AnalyzeEditJob = {
+    id: `edit-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`,
+    status: 'running',
+    startedAt: new Date().toISOString(),
+  }
+  editJobs.set(job.id, job)
+  void analyzeUserEditedAnswer(ctx, params)
+    .then((result) => {
+      job.result = result
+      job.status = 'done'
+    })
+    .catch((error) => {
+      job.error = (error as Error).message
+      job.status = 'error'
+      console.error('[speaking] edit analysis', error)
+    })
+    .finally(() => setTimeout(() => editJobs.delete(job.id), 10 * 60_000).unref())
+  return job
+}
+
+export function getAnalyzeEditJob(id: string): AnalyzeEditJob | null {
+  return editJobs.get(id) ?? null
 }
 
 export async function resetUserEditedAnswer(ctx: ApiContext, id: string, answerIndex: number): Promise<SpeakingResult> {

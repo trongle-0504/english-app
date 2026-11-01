@@ -61,10 +61,14 @@ export const speakingApi = {
   saveUserEdit: (id: string, answerIndex: number, userEdited: string) =>
     request<{ result: SpeakingResult }>('/api/speaking', { method: 'PATCH', body: { id, answerIndex, userEdited } }),
   analyzeEdit: (id: string, answerIndex: number, userEdited: string, part: SpeakingPart) =>
-    request<{ result: SpeakingResult }>('/api/speaking/analyze-edit', {
+    request<{ job: { id: string } }>('/api/speaking/analyze-edit', {
       method: 'POST',
       body: { id, answerIndex, userEdited, part },
     }),
+  getAnalyzeEdit: (id: string) =>
+    request<{ job: { status: 'running' | 'done' | 'error'; result?: SpeakingResult; error?: string } }>(
+      `/api/speaking/analyze-edit?id=${encodeURIComponent(id)}`,
+    ),
   resetEdit: (id: string, answerIndex: number) =>
     request<{ result: SpeakingResult }>('/api/speaking/reset-edit', {
       method: 'POST',
