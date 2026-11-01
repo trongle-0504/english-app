@@ -9,7 +9,7 @@ import {
   startTalkReview,
   talkAudio,
 } from '../speaking-review/review.ts'
-import { modelDir, sttAvailable } from '../speaking-review/stt.ts'
+import { modelDir, readWav, sttAvailable, transcribe } from '../speaking-review/stt.ts'
 
 /** Practice → Speaking review: record an answer, get it transcribed (on this machine) and reviewed like an examiner. */
 export const speakingReviewRoutes: Record<string, ApiHandler> = {
@@ -23,6 +23,15 @@ export const speakingReviewRoutes: Record<string, ApiHandler> = {
     if (!sttAvailable(ctx.rootDir)) throw new ApiError(503, `The speech-to-text model is not in ${modelDir(ctx.rootDir)}.`)
     if (!antigravityAvailable()) throw new ApiError(503, "Antigravity CLI ('agy') is not available. Please ensure Antigravity CLI is installed.")
     return { status: 202, json: { job: await startTalkReview(ctx, req.body) } }
+  },
+
+  /** Body `{ audio }` (16 kHz mono WAV, base64) → a short transcript for pronunciation practice. */
+  'POST /speaking-review/pronunciation': async (req, ctx) => {
+    if (!sttAvailable(ctx.rootDir)) throw new ApiError(503, `The speech-to-text model is not in ${modelDir(ctx.rootDir)}.`)
+    const audio = (req.body as { audio?: unknown } | undefined)?.audio
+    if (typeof audio !== 'string' || audio.length > 12_000_000) throw new ApiError(400, 'Invalid pronunciation recording.')
+    const transcript = await transcribe(ctx.rootDir, readWav(Buffer.from(audio, 'base64')))
+    return { json: { text: transcript.text } }
   },
 
   'GET /speaking-review': async (req, ctx) => {

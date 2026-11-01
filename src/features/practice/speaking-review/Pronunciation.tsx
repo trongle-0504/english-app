@@ -2,12 +2,13 @@
 // most likely said ("multitasking smoothly") with its IPA and the sound to fix, and a button to hear exactly that
 // stretch of your recording again. Below, the other words the recognizer was unsure of. Reviews made before the AI
 // restored misheard phrases show only those unclear words.
-import { ArrowRight, ChevronDown, Play, Volume2 } from 'lucide-react'
-import { useState } from 'react'
-import { Card } from '@/components/ui'
+import { ArrowRight, Check, ChevronDown, Loader2, Mic, Play, RotateCcw, Volume2 } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { Button, Card } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import type { TalkMisheard, TalkReviewResult, TalkWord } from '@/types/speakingReview'
 import type { AudioControl } from './audio'
+import { base64Of, useRecorder } from './recorder'
 
 /** Below this the recognizer was unsure of the word (server/speaking-review/fluency.ts). */
 const UNCLEAR = 0.6
@@ -44,6 +45,60 @@ function PlayButton({ audio, start, end, label }: { audio: AudioControl | null; 
     >
       <Play className="ml-0.5 size-4" />
     </button>
+  )
+}
+
+function PronunciationPractice({ meant }: { meant: string }) {
+  const recorder = useRecorder(8)
+  const [checking, setChecking] = useState(false)
+  const [transcript, setTranscript] = useState('')
+  const [error, setError] = useState('')
+  const normalized = (text: string) => text.toLowerCase().replace(/[^a-z0-9\s']/g, ' ').replace(/\s+/g, ' ').trim()
+  const correct = transcript ? normalized(transcript).includes(normalized(meant)) : false
+
+  useEffect(() => {
+    if (recorder.state !== 'ready' || !recorder.take) return
+    let active = true
+    setChecking(true)
+    setError('')
+    void base64Of(recorder.take.wav)
+      .then(async (audio) => {
+        const response = await fetch('/api/speaking-review/pronunciation', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ audio }),
+        })
+        const body = (await response.json()) as { text?: string; error?: string }
+        if (!response.ok) throw new Error(body.error ?? 'Không kiểm tra được phát âm.')
+        if (active) setTranscript(body.text ?? '')
+      })
+      .catch((cause) => active && setError((cause as Error).message))
+      .finally(() => active && setChecking(false))
+    return () => {
+      active = false
+    }
+  }, [recorder.state, recorder.take])
+
+  return (
+    <div className="mt-2 flex flex-wrap items-center gap-2">
+      {recorder.state === 'recording' ? (
+        <Button size="sm" variant="outline" onClick={recorder.stop}>
+          <Mic className="size-3.5 text-rose-600" /> Dừng ({Math.ceil(recorder.elapsed)}s)
+        </Button>
+      ) : (
+        <Button size="sm" variant="outline" onClick={() => void recorder.start()} disabled={checking || recorder.state === 'converting'}>
+          {checking ? <Loader2 className="size-3.5 animate-spin" /> : <Mic className="size-3.5" />}
+          {checking ? 'Đang kiểm tra…' : 'Đọc lại để kiểm tra'}
+        </Button>
+      )}
+      {transcript ? (
+        <span className={cn('inline-flex items-center gap-1 text-xs font-semibold', correct ? 'text-emerald-700' : 'text-amber-700')}>
+          {correct ? <Check className="size-3.5" /> : <RotateCcw className="size-3.5" />}
+          Máy nghe: “{transcript}” — {correct ? 'có vẻ đúng' : `hãy thử lại với “${meant}”`}
+        </span>
+      ) : null}
+      {error ? <span className="text-xs text-rose-600">{error}</span> : null}
+    </div>
   )
 }
 
@@ -101,6 +156,7 @@ export function Pronunciation({ result, audio }: { result: TalkReviewResult; aud
                         {m.ipa ? <span className="font-mono text-slate-700 dark:text-slate-300">{m.ipa}</span> : null}
                         {m.tip ? <span className="text-slate-500 dark:text-slate-400">{m.tip}</span> : null}
                       </p>
+                      <PronunciationPractice meant={m.meant} />
                     </div>
                   </li>
                 ))}
