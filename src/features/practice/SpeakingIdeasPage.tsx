@@ -158,8 +158,6 @@ function Progress({ job, onCancel }: { job: SpeakingJob; onCancel?: () => void }
   const current = steps.findIndex((s) => s.id === job.step)
   const elapsed = Math.max(0, Math.round((now - Date.parse(job.startedAt)) / 1000))
   const percent = Math.round(((Math.max(0, current) + 0.5) / steps.length) * 100)
-  const isTakingLong = elapsed > 75
-
   return (
     <Card className="overflow-hidden p-0">
       <div className="flex items-center gap-3 border-b border-slate-100 px-5 py-4 dark:border-slate-800">
@@ -169,7 +167,7 @@ function Progress({ job, onCancel }: { job: SpeakingJob; onCancel?: () => void }
         <div className="flex-1">
           <h2 className="font-bold text-slate-900 dark:text-white">{job.mode === 'phrases' ? 'Đang tìm cụm từ…' : 'Đang viết gợi ý…'}</h2>
           <p className="text-xs text-slate-500">
-            {job.mode === 'phrases' ? 'Thường mất khoảng 15–30 giây.' : 'Thường mất khoảng 1 phút.'} Bạn có thể rời trang — quay lại đây sẽ thấy kết quả.
+            Quá trình có thể mất vài phút. Bạn có thể rời trang — quay lại đây sẽ thấy kết quả.
           </p>
         </div>
         <div className="flex items-center gap-2">
@@ -190,20 +188,6 @@ function Progress({ job, onCancel }: { job: SpeakingJob; onCancel?: () => void }
       <div className="h-1 bg-slate-100 dark:bg-slate-800">
         <div className="h-full bg-gradient-to-r from-brand-400 to-brand-600 transition-[width] duration-700" style={{ width: `${percent}%` }} />
       </div>
-      {isTakingLong ? (
-        <div className="border-b border-amber-200/60 bg-amber-50/70 px-5 py-2.5 text-xs text-amber-800 dark:border-amber-900/50 dark:bg-amber-950/30 dark:text-amber-300 flex items-center justify-between">
-          <span>Quá trình đang mất nhiều thời gian hơn bình thường (có thể do kết nối hoặc máy chủ vừa khởi động lại).</span>
-          {onCancel && (
-            <button
-              type="button"
-              onClick={onCancel}
-              className="ml-2 font-bold underline hover:no-underline shrink-0"
-            >
-              Thử lại ngay
-            </button>
-          )}
-        </div>
-      ) : null}
       <ol className="grid gap-2 p-4 sm:p-5 sm:grid-cols-2">
         {steps.map((step, i) => {
           const state = i < current ? 'done' : i === current ? 'active' : 'todo'
