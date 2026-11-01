@@ -11,7 +11,7 @@ import { PHRASE_GROUP_LABEL, PHRASE_GROUP_LABEL_EN, type PhraseGroup, type Recen
 import { addToLibrary, type LibraryTarget } from '../practice/library-add'
 import { practiceApi } from '../practice/practice-api'
 import { InfoTip } from './InfoTip'
-import { loadReviews, useReviewStore } from './store'
+import { loadReviews, removeFromReview, useReviewStore } from './store'
 
 /** A card of the library: Vocabulary, Collocations (lessons and inside words), Notes. */
 const isLibraryCard = (id: string) => /^(vocab|colloc|wcolloc|note):/.test(id)
@@ -89,6 +89,21 @@ export function NotInLibrary({
       setReviewRunning(false)
     }
   }
+
+  const removeSelectedFromReview = async () => {
+    const ids = [...picked].filter((id) => Boolean(review.cards[id]))
+    if (!ids.length) return
+    setReviewRunning(true)
+    try {
+      await removeFromReview(ids)
+      setPicked((current) => new Set([...current].filter((id) => !ids.includes(id))))
+      await onAdded()
+    } finally {
+      setReviewRunning(false)
+    }
+  }
+
+  const selectedReviewCount = [...picked].filter((id) => Boolean(review.cards[id])).length
 
   if (!items.length) return null
   return (
@@ -182,6 +197,11 @@ export function NotInLibrary({
               <Button size="sm" variant="outline" disabled={!picked.size} onClick={() => void addToReview()}>
                 <Plus className="size-4" /> Add to review {picked.size ? `(${picked.size})` : ''}
               </Button>
+              {selectedReviewCount ? (
+                <Button size="sm" variant="outline" disabled={reviewRunning} onClick={() => void removeSelectedFromReview()}>
+                  <X className="size-4" /> Remove from review ({selectedReviewCount})
+                </Button>
+              ) : null}
               <Button
                 size="sm"
                 disabled={!picked.size}
