@@ -27,10 +27,14 @@ export const practiceRoutes: Record<string, ApiHandler> = {
     return { json: await recentWork(ctx, daysParam(req)) }
   },
 
-  /** { days }: writes the missing cards of the period and puts all its cards in your reviews. */
-  'POST /practice/recent/cards': guarded(async (req, ctx) => ({
-    json: await createRecentCards(ctx, daysOf(jsonBody(req).days)),
-  })),
+  /** { days, phraseIds? }: writes selected missing cards of the period and puts them in reviews. */
+  'POST /practice/recent/cards': guarded(async (req, ctx) => {
+    const body = jsonBody(req)
+    const phraseIds = Array.isArray(body.phraseIds)
+      ? body.phraseIds.filter((id: unknown): id is string => typeof id === 'string').slice(0, 200)
+      : undefined
+    return { json: await createRecentCards(ctx, daysOf(body.days), phraseIds) }
+  }),
 
   /** { phrases: [{ term, group, meaning_vi?, example?, phrase? }], from: { kind, id, title } }: the "Ôn tập" button of a phrase. */
   'POST /practice/cards': guarded(async (req, ctx) => {

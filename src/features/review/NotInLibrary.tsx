@@ -20,7 +20,15 @@ const GROUP_DOT: Record<PhraseGroup, string> = { library: 'bg-brand-500', extra:
 
 type Outcome = { ok: boolean; text: string; href?: string }
 
-export function NotInLibrary({ data, onAdded }: { data: RecentResponse; onAdded: () => Promise<unknown> }) {
+export function NotInLibrary({
+  data,
+  onAdded,
+  onCreateCards,
+}: {
+  data: RecentResponse
+  onAdded: () => Promise<unknown>
+  onCreateCards: (ids: string[]) => Promise<void>
+}) {
   const review = useReviewStore()
   // Each phrase once (its first work), only those whose card is not a library card.
   const items = useMemo(() => {
@@ -32,6 +40,7 @@ export function NotInLibrary({ data, onAdded }: { data: RecentResponse; onAdded:
   const [picked, setPicked] = useState<Set<string>>(new Set())
   const [target, setTarget] = useState<LibraryTarget>('vocabulary')
   const [running, setRunning] = useState<{ at: number; total: number; term: string } | null>(null)
+  const [reviewRunning, setReviewRunning] = useState(false)
   const [outcomes, setOutcomes] = useState<Map<string, Outcome>>(new Map())
   const stop = useRef(false)
 
@@ -61,12 +70,24 @@ export function NotInLibrary({ data, onAdded }: { data: RecentResponse; onAdded:
         if (exists) await practiceApi.libraryAdded([{ term: item.term }]).catch(() => {})
         outcome = { ok: exists, text: exists ? 'Already in the library' : (e as Error).message }
       }
+
       setOutcomes((m) => new Map(m).set(item.id, outcome))
       if (outcome.ok) setPicked((p) => new Set([...p].filter((x) => x !== item.id)))
     }
     setRunning(null)
     await loadReviews(true)
     await onAdded()
+  }
+
+  const addToReview = async () => {
+    if (!picked.size) return
+    setReviewRunning(true)
+    try {
+      await onCreateCards([...picked])
+      setPicked(new Set())
+    } finally {
+      setReviewRunning(false)
+    }
   }
 
   if (!items.length) return null
@@ -151,20 +172,26 @@ export function NotInLibrary({ data, onAdded }: { data: RecentResponse; onAdded:
             ))}
           </div>
           <span className="mx-1 hidden h-6 w-px bg-slate-200 sm:block dark:bg-slate-700" aria-hidden />
-          {running ? (
-            <Button size="sm" variant="outline" onClick={() => (stop.current = true)}>
-              <X className="size-4" /> Stop after this one
+          {running || reviewRunning ? (
+            <Button size="sm" variant="outline" disabled={reviewRunning} onClick={() => (stop.current = true)}>
+              {reviewRunning ? <Loader2 className="size-4 animate-spin" /> : <X className="size-4" />}
+              {reviewRunning ? 'Adding selected cards…' : 'Stop after this one'}
             </Button>
           ) : (
-            <Button
-              size="sm"
-              disabled={!picked.size}
-              onClick={() => void run()}
-              className="shadow-md shadow-brand-600/25 disabled:bg-slate-200 disabled:text-slate-500 disabled:opacity-100 disabled:shadow-none dark:disabled:bg-slate-800 dark:disabled:text-slate-400"
-              title={picked.size ? undefined : 'Tick chọn cụm ở danh sách bên dưới trước'}
-            >
-              <Plus className="size-4" /> {picked.size ? `Add ${picked.size} ${picked.size === 1 ? 'phrase' : 'phrases'}` : 'Add phrases'}
-            </Button>
+            <>
+              <Button size="sm" variant="outline" disabled={!picked.size} onClick={() => void addToReview()}>
+                <Plus className="size-4" /> Add to review {picked.size ? `(${picked.size})` : ''}
+              </Button>
+              <Button
+                size="sm"
+                disabled={!picked.size}
+                onClick={() => void run()}
+                className="shadow-md shadow-brand-600/25 disabled:bg-slate-200 disabled:text-slate-500 disabled:opacity-100 disabled:shadow-none dark:disabled:bg-slate-800 dark:disabled:text-slate-400"
+                title={picked.size ? undefined : 'Tick chọn cụm ở danh sách bên dưới trước'}
+              >
+                <Plus className="size-4" /> {picked.size ? `Add ${picked.size} ${picked.size === 1 ? 'phrase' : 'phrases'}` : 'Add phrases'}
+              </Button>
+            </>
           )}
         </div>
       </div>

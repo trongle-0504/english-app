@@ -347,16 +347,18 @@ export async function addedToLibrary(ctx: ApiContext, items: { term: string; car
  * Writes the cards your recent work still lacks and puts every card of it in your reviews (new cards wait for a
  * session; nothing is due before you study it). POST /api/practice/recent/cards { days }.
  */
-export async function createRecentCards(ctx: ApiContext, days: number): Promise<{ created: number; added: number; merged: number }> {
+export async function createRecentCards(ctx: ApiContext, days: number, phraseIds?: string[]): Promise<{ created: number; added: number; merged: number }> {
   const cards = reviewCards(ctx)
   const exists = new Set(cards.map((c) => c.id))
   const gathered = await gather(ctx, days, cards)
+  const selected = phraseIds ? new Set(phraseIds) : null
   const toWrite = new Map<string, ReviewCardInput>()
   const pairs: { phraseId: string; libraryId: string }[] = []
   for (const { work, phrases } of gathered) {
     for (const p of phrases) {
       const own = phraseCardId(p.term)
       if (p.id !== own && exists.has(own)) pairs.push({ phraseId: own, libraryId: p.id })
+      if (selected && !selected.has(p.id)) continue
       if (exists.has(p.id) || toWrite.has(p.id) || p.id !== own) continue
       toWrite.set(p.id, cardInput(p, { kind: work.kind, id: work.id, title: work.title }))
     }
@@ -364,7 +366,11 @@ export async function createRecentCards(ctx: ApiContext, days: number): Promise<
   const inputs = [...toWrite.values()]
   await fillMeanings(inputs)
   const created = inputs.length ? (await saveCards(ctx, PHRASE_DECK, inputs)).saved.length : 0
-  const added = await addCards(ctx, [...new Set(gathered.flatMap((g) => g.phrases.map((p) => p.id)))].filter((id) => CARD_ID.test(id)))
+  const added = await addCards(
+    ctx,
+    [...new Set(gathered.flatMap((g) => g.phrases.map((p) => p.id)))]
+      .filter((id) => CARD_ID.test(id) && (!selected || selected.has(id))),
+  )
   const merged = pairs.length ? await mergeIntoLibrary(ctx, pairs) : 0
   return { created, added, merged }
 }

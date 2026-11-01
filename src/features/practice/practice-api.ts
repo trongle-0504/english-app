@@ -28,9 +28,10 @@ async function call<T>(path: string, body?: unknown): Promise<T> {
 
 export const practiceApi = {
   recent: (days: number) => call<RecentResponse>(`recent?days=${days}`),
-  createRecentCards: (days: number) =>
+  createRecentCards: (days: number, phraseIds?: string[]) =>
     call<{ created: number; added: number; merged: number }>('recent/cards', {
       days,
+      ...(phraseIds ? { phraseIds } : {}),
     }),
   phraseCards: (phrases: (PhraseCardInput & { group: PhraseGroup; phrase?: CardPhrase })[], from: { kind: WorkKind; id: string; title: string }) =>
     call<{ ids: string[] }>('cards', { phrases, from }),

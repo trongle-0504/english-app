@@ -4,7 +4,7 @@
 import { CalendarClock, Check, ExternalLink, Loader2, NotebookPen, PenLine, Play, Plus, RefreshCw, Repeat, Sparkles, Trophy, X } from 'lucide-react'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router'
-import { Badge, Button, buttonClass, Card, EmptyState } from '@/components/ui'
+import { Badge, buttonClass, Card, EmptyState } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import { useLocalStorage } from '@/lib/storage'
 import type { ReviewIndex } from '@/types/content'
@@ -75,7 +75,6 @@ export function RecentWorkTab({ index }: { index: ReviewIndex }) {
   const [days, setDays] = useLocalStorage<number>(RECENT_DAYS_KEY, DEFAULT_RECENT_DAYS)
   const [newMax] = useLocalStorage<number>(RECENT_NEW_KEY, 20)
   const { data, error, reload } = useRecentWork(days)
-  const [busy, setBusy] = useState(false)
   // The period ends now: fixed when the page opens (enough for a list of days).
   const [now] = useState(() => Date.now())
   const [message, setMessage] = useState<{
@@ -125,22 +124,19 @@ export function RecentWorkTab({ index }: { index: ReviewIndex }) {
     return list.sort((a, b) => b.at.localeCompare(a.at))
   }, [review.cards, days, now])
 
-  const createCards = async () => {
-    setBusy(true)
+  const createCards = async (phraseIds: string[]) => {
     setMessage(null)
     try {
-      const r = await practiceApi.createRecentCards(days)
+      const r = await practiceApi.createRecentCards(days, phraseIds)
       const next = await reload()
       if (next) await waitForCards(next.ids)
       await loadReviews(true)
       setMessage({
         tone: 'ok',
-        text: `Created ${r.created} new cards and added ${r.added} cards to your reviews${r.merged ? `; merged ${r.merged} duplicates into Vocabulary/Notes` : ''}.`,
+        text: `Created ${r.created} new cards and added ${r.added} selected cards to your reviews${r.merged ? `; merged ${r.merged} duplicates into Vocabulary/Notes` : ''}.`,
       })
     } catch (e) {
       setMessage({ tone: 'error', text: (e as Error).message })
-    } finally {
-      setBusy(false)
     }
   }
 
@@ -269,9 +265,7 @@ export function RecentWorkTab({ index }: { index: ReviewIndex }) {
             <p className="min-w-0 flex-1 text-sm text-amber-900 dark:text-amber-100">
               <strong>{missing} phrases</strong> have no review card yet. Create them to include them in “Review recent work”.
             </p>
-            <Button size="sm" onClick={() => void createCards()} loading={busy} className="bg-amber-500 text-white hover:bg-amber-600 dark:bg-amber-500 dark:text-slate-950">
-              Create cards
-            </Button>
+            <span className="text-xs font-semibold text-amber-800 dark:text-amber-200">Chọn cụm bên dưới rồi bấm “Add to review”.</span>
           </div>
         ) : null}
         {message ? (
@@ -282,7 +276,7 @@ export function RecentWorkTab({ index }: { index: ReviewIndex }) {
         {error ? <p className="relative mt-4 text-sm text-rose-600">{error}</p> : null}
       </Card>
 
-      {data ? <NotInLibrary data={data} onAdded={reload} /> : null}
+      {data ? <NotInLibrary data={data} onAdded={reload} onCreateCards={(ids) => createCards(ids)} /> : null}
 
       {uses.length ? (
         <Card className="p-4 sm:p-6">
