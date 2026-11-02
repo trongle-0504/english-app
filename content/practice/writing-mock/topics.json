@@ -1,0 +1,34 @@
+{
+  "types": [
+    "Agree & disagree",
+    "Discuss both views",
+    "Advantages & Disadvantages",
+    "Two-part questions",
+    "Problems-causes-solutions"
+  ],
+  "topics": [
+    "Education",
+    "Lifestyle",
+    "Work",
+    "Entertainment",
+    "Environment",
+    "Technology",
+    "Social issues",
+    "Crime",
+    "Government",
+    "Advertisement",
+    "Sport",
+    "Transport",
+    "Food & Drinks",
+    "Health",
+    "Business",
+    "Science & Energy",
+    "Tourism",
+    "Family",
+    "Architecture",
+    "History",
+    "Art",
+    "Economics",
+    "Plant & Animals"
+  ]
+}
