@@ -27,6 +27,7 @@ export default function WritingMockTestPage() {
   const [selectedId, setSelectedId] = useState<number | null>(null)
   const [idea, setIdea] = useLocalStorage('practice:writing-mock:idea', '')
   const [english, setEnglish] = useLocalStorage('practice:writing-mock:english', '')
+  const [editingIdea, setEditingIdea] = useState(false)
   const [startedAt, setStartedAt] = useState<number | null>(null)
   const [secondsLeft, setSecondsLeft] = useState(IDEA_SECONDS)
   const [job, setJob] = useState<WritingReviewJob | null>(null)
@@ -53,6 +54,7 @@ export default function WritingMockTestPage() {
       setSelectedId(item.id)
       setIdea('')
       setEnglish('')
+      setEditingIdea(false)
       setError('')
       setJob(null)
       setStage('ideas')
@@ -122,6 +124,7 @@ export default function WritingMockTestPage() {
     setSelectedId(null)
     setIdea('')
     setEnglish('')
+    setEditingIdea(false)
     setJob(null)
     setError('')
     setStartedAt(null)
@@ -210,11 +213,17 @@ export default function WritingMockTestPage() {
       <Card className="space-y-4 p-5 sm:p-6">
         {!isIdeas ? (
           <div className="space-y-2">
-            <label htmlFor="writing-mock-vietnamese-idea" className="block text-sm font-semibold">Ý tưởng tiếng Việt của bạn</label>
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <label htmlFor="writing-mock-vietnamese-idea" className="block text-sm font-semibold">Ý tưởng tiếng Việt của bạn</label>
+              <Button type="button" size="sm" variant="outline" onClick={() => setEditingIdea((value) => !value)}>
+                {editingIdea ? 'Lưu ý tưởng' : 'Sửa ý tưởng'}
+              </Button>
+            </div>
             <textarea
               id="writing-mock-vietnamese-idea"
               value={idea}
-              readOnly
+              readOnly={!editingIdea}
+              onChange={(e) => setIdea(e.target.value)}
               className="min-h-28 w-full resize-y rounded-xl border bg-slate-50 p-4 leading-relaxed text-slate-700 dark:bg-slate-800 dark:text-slate-200"
               placeholder="Bạn chưa ghi ý tưởng tiếng Việt."
               aria-label="Ý tưởng tiếng Việt dùng để chuyển sang bài viết tiếng Anh"
