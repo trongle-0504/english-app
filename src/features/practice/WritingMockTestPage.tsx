@@ -205,10 +205,11 @@ export default function WritingMockTestPage() {
   const isIdeas = stage === 'ideas'
   return (
     <div className="readable-xs mx-auto max-w-5xl pb-16">
-      <PageHeader eyebrow="Writing Mock Test" title={isIdeas ? 'Part 1 — Lập ý tưởng' : 'Part 2 — Viết bài tiếng Anh'} description={selected.prompt} />
-      <div className="mb-4 flex items-center justify-between rounded-xl border bg-white p-3 shadow-sm dark:bg-slate-900">
-        <span className="text-sm font-semibold">{isIdeas ? 'Ý tưởng tiếng Việt' : 'Bài viết tiếng Anh'}</span>
-        <span className={cn('inline-flex items-center gap-1 font-mono text-lg font-bold', secondsLeft < 60 && 'text-rose-600')}><Clock3 className="size-4" />{timerLabel(secondsLeft)}</span>
+      <PageHeader eyebrow="Writing Mock Test" title="Writing Mock Test" description={selected.prompt} />
+      <div className="mb-3 flex justify-end">
+        <span className={cn('inline-flex items-center gap-1 rounded-full border bg-white px-3 py-1.5 font-mono text-base font-bold shadow-sm dark:bg-slate-900', secondsLeft < 60 && 'border-rose-300 text-rose-600')}>
+          <Clock3 className="size-4" />{timerLabel(secondsLeft)}
+        </span>
       </div>
       <Card className="space-y-4 p-5 sm:p-6">
         {!isIdeas ? (
@@ -224,7 +225,7 @@ export default function WritingMockTestPage() {
               value={idea}
               readOnly={!editingIdea}
               onChange={(e) => setIdea(e.target.value)}
-              className="min-h-28 w-full resize-y rounded-xl border bg-slate-50 p-4 leading-relaxed text-slate-700 dark:bg-slate-800 dark:text-slate-200"
+              className="min-h-[220px] w-full resize-y rounded-xl border bg-slate-50 p-4 leading-relaxed text-slate-700 dark:bg-slate-800 dark:text-slate-200"
               placeholder="Bạn chưa ghi ý tưởng tiếng Việt."
               aria-label="Ý tưởng tiếng Việt dùng để chuyển sang bài viết tiếng Anh"
             />
