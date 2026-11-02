@@ -20,8 +20,9 @@ import {
 export const writingReviewRoutes: Record<string, ApiHandler> = {
   /** Body `{ text }` → `{ job }` (running; poll GET /writing-review?id=). */
   'POST /writing-review': (req, ctx) => {
-    const body = req.body as { text?: unknown; vietnameseText?: unknown } | undefined
+    const body = req.body as { text?: unknown; prompt?: unknown; vietnameseText?: unknown } | undefined
     const text = typeof body?.text === 'string' ? body.text.trim() : ''
+    const prompt = typeof body?.prompt === 'string' ? body.prompt.trim() : undefined
     const vietnameseText = typeof body?.vietnameseText === 'string' ? body.vietnameseText.trim() : undefined
     if (text.length < MIN_LENGTH) throw new ApiError(400, `Please paste a paragraph (at least ${MIN_LENGTH} characters).`)
     if (text.length > MAX_LENGTH) throw new ApiError(400, `Text is too long (max ${MAX_LENGTH} characters).`)
@@ -34,7 +35,7 @@ export const writingReviewRoutes: Record<string, ApiHandler> = {
           : 'Claude Code is not installed. Install it (claude.ai/install.sh) and sign in once with `claude`.',
       )
     }
-    return { status: 202, json: { job: startReview(ctx, text, vietnameseText) } }
+    return { status: 202, json: { job: startReview(ctx, text, prompt, vietnameseText) } }
   },
 
   /** `?id=` → `{ job }` (running, done with `result`, or error). */

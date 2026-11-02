@@ -1,4 +1,4 @@
-import { AudioLines, Headphones, Library, ListChecks, MessageSquareQuote, Mic, PenLine, ShieldCheck, Trophy, Volume2 } from 'lucide-react'
+import { AudioLines, Headphones, Library, ListChecks, MessageSquareQuote, Mic, PenLine, ShieldCheck, Trophy, Volume2, Timer } from 'lucide-react'
 import { useDeferredValue, useState } from 'react'
 import { Badge, EmptyState, PageHeader, SearchInput, SectionTitle } from '@/components/ui'
 import { useData } from '@/lib/data'
@@ -55,6 +55,13 @@ export default function PracticeHomePage() {
           icon={ShieldCheck}
           title="Writing review"
           description="Paste your Writing paragraph: AI fixes collocations and word choice, every fix checked against the OZDIC dictionary."
+        />
+        <PracticeLinkCard
+          to="/practice/writing-mock"
+          prefetch="practice/writing-mock/prompts.json"
+          icon={Timer}
+          title="Writing mock test"
+          description="Lập ý tưởng tiếng Việt 15 phút, viết bài tiếng Anh 40 phút, rồi gửi cả đề và ý tưởng cho AI chấm."
         />
         <PracticeLinkCard
           to="/practice/speaking-ideas"

@@ -112,6 +112,7 @@ export interface WritingReviewResult {
   id: string
   createdAt: string
   durationMs: number
+  prompt?: string
   text: string
   vietnameseText?: string
   /** The Vietnamese idea laid out for reading (spelling, punctuation, paragraphs); the ideas unchanged. */
@@ -142,6 +143,7 @@ export interface WritingReviewJob {
   id: string
   status: 'running' | 'done' | 'error'
   startedAt: string
+  prompt?: string
   vietnameseText?: string
   /** Current step while running ("lookup" = OZDIC lookups). */
   step?: string

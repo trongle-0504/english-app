@@ -182,6 +182,13 @@ const routes: RouteObject[] = [
           { path: 'practice/listening-simplify/history', ...page(() => import('@/features/practice/ListeningHistoryPage')) },
           { path: 'practice/speaking', ...page(() => import('@/features/practice/ReadAloudPage')) },
           { path: 'practice/writing-review', ...page(() => import('@/features/practice/WritingReviewPage')) },
+          {
+            path: 'practice/writing-mock',
+            ...page(
+              () => import('@/features/practice/WritingMockTestPage'),
+              () => ['practice/writing-mock/prompts.json', 'practice/writing-mock/topics.json'],
+            ),
+          },
           { path: 'practice/writing-review/history', ...page(() => import('@/features/practice/WritingReviewHistoryPage')) },
           { path: 'practice/speaking-ideas', ...page(() => import('@/features/practice/SpeakingIdeasPage')) },
           { path: 'practice/speaking-ideas/history', ...page(() => import('@/features/practice/SpeakingHistoryPage')) },

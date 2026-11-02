@@ -41,11 +41,11 @@ export const writingReviewApi = {
     request<{ items: WritingReviewSummary[]; ready: boolean; model: string; effort: string; engine?: string }>(
       `/api/writing-review/history?limit=${limit}`,
     ),
-  start: (text: string, vietnameseText?: string) =>
+  start: (text: string, vietnameseText?: string, prompt?: string) =>
     request<{ job: WritingReviewJob }>('/api/writing-review', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text, vietnameseText }),
+      body: JSON.stringify({ text, vietnameseText, prompt }),
     }),
   get: (id: string) => request<{ job: WritingReviewJob }>(`/api/writing-review?id=${encodeURIComponent(id)}`),
   remove: (id: string) => request<{ ok: true }>(`/api/writing-review?id=${encodeURIComponent(id)}`, { method: 'DELETE' }),
@@ -62,4 +62,3 @@ export const writingReviewApi = {
       body: JSON.stringify({ id }),
     }),
 }
-

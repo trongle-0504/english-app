@@ -46,6 +46,7 @@ function buildResult(
   report: RewriteReport,
   usage: WritingUsage,
   durationMs: number,
+  prompt?: string,
   vietnameseText?: string,
 ): WritingReviewResult {
   const fixes: WritingFix[] = report.fixed
@@ -65,6 +66,7 @@ function buildResult(
     id,
     createdAt,
     durationMs,
+    ...(prompt?.trim() ? { prompt: prompt.trim() } : {}),
     text,
     vietnameseText,
     ...(report.vietnameseFormatted?.blocks.length ? { vietnameseFormatted: report.vietnameseFormatted } : {}),
@@ -91,7 +93,7 @@ function buildResult(
   }
 }
 
-async function run(ctx: ApiContext, job: WritingReviewJob, text: string, vietnameseText?: string) {
+async function run(ctx: ApiContext, job: WritingReviewJob, text: string, prompt?: string, vietnameseText?: string) {
   const started = Date.now()
   // The step shown comes from rewriteReview's onStep only: call labels ("writing: model essay") are not step ids the
   // page knows.
@@ -107,11 +109,12 @@ async function run(ctx: ApiContext, job: WritingReviewJob, text: string, vietnam
   })
   try {
     const report = await rewriteReview(text, llm, {
+      prompt,
       vietnameseText,
       rootDir: ctx.rootDir,
       onStep: (step) => (job.step = step),
     })
-    job.result = buildResult(job.id, job.startedAt, text, report, job.usage, Date.now() - started, vietnameseText)
+    job.result = buildResult(job.id, job.startedAt, text, report, job.usage, Date.now() - started, prompt, vietnameseText)
     job.status = 'done'
     job.step = undefined
     await mkdir(dir(ctx), { recursive: true })
@@ -135,7 +138,7 @@ export function normalizeVietnameseOutline(raw?: string): string | undefined {
   return raw.replace(SECTION_REGEX, '\n\n').replace(LIST_REGEX, '\n\n').trim()
 }
 
-export function startReview(ctx: ApiContext, text: string, vietnameseText?: string): WritingReviewJob {
+export function startReview(ctx: ApiContext, text: string, prompt?: string, vietnameseText?: string): WritingReviewJob {
   if ([...jobs.values()].filter((j) => j.status === 'running').length >= MAX_RUNNING) {
     throw new ApiError(429, 'Another review is still running — please wait for it to finish.')
   }
@@ -144,12 +147,13 @@ export function startReview(ctx: ApiContext, text: string, vietnameseText?: stri
     id: `${Date.now().toString(36)}-${randomBytes(3).toString('hex')}`,
     status: 'running',
     startedAt: new Date().toISOString(),
+    prompt: prompt?.trim() || undefined,
     vietnameseText: cleanVietnamese,
     step: 'diagnose',
     usage: emptyUsage(),
   }
   jobs.set(job.id, job)
-  void run(ctx, job, text, cleanVietnamese)
+  void run(ctx, job, text, prompt, cleanVietnamese)
   return job
 }
 
