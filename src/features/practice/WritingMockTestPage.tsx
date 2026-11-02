@@ -133,7 +133,10 @@ export default function WritingMockTestPage() {
   if (stage === 'select') {
     return (
       <div className="mx-auto max-w-6xl pb-16">
-        <PageHeader eyebrow="Writing" title="Writing Mock Test" description="15 phút lập ý tưởng tiếng Việt + 40 phút viết bài tiếng Anh, sau đó AI chấm theo đề bài và ý tưởng của bạn." />
+        <PageHeader eyebrow="Writing" title="Writing Mock Test" />
+        <p className="mb-4 text-base text-slate-500 dark:text-slate-400 sm:-mt-3">
+          15 phút lập ý tưởng tiếng Việt + 40 phút viết bài tiếng Anh, sau đó AI chấm theo đề bài và ý tưởng của bạn.
+        </p>
         <div className="grid gap-6 lg:grid-cols-[250px_minmax(0,1fr)]">
           <aside className="space-y-4 lg:sticky lg:top-4 lg:self-start">
             <Card className="p-4">
