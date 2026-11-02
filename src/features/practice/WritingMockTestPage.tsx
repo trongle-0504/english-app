@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { CheckCircle2, Clock3, FileText, RotateCcw, Send, Shuffle } from 'lucide-react'
-import { Badge, Button, Card, PageHeader } from '@/components/ui'
+import { Badge, Button, Card, EmptyState, PageHeader, SearchInput } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import { useData } from '@/lib/data'
 import { useLocalStorage } from '@/lib/storage'
@@ -23,6 +23,7 @@ export default function WritingMockTestPage() {
   const [stage, setStage] = useState<Stage>('select')
   const [topic, setTopic] = useState('all')
   const [type, setType] = useState('all')
+  const [query, setQuery] = useState('')
   const [selectedId, setSelectedId] = useState<number | null>(null)
   const [idea, setIdea] = useLocalStorage('practice:writing-mock:idea', '')
   const [english, setEnglish] = useLocalStorage('practice:writing-mock:english', '')
@@ -34,14 +35,20 @@ export default function WritingMockTestPage() {
 
   const selected = prompts.find((item) => item.id === selectedId)
   const filtered = useMemo(
-    () => prompts.filter((item) => (topic === 'all' || item.topics.includes(topic)) && (type === 'all' || item.type === type)),
-    [prompts, topic, type],
+    () =>
+      prompts.filter(
+        (item) =>
+          (topic === 'all' || item.topics.includes(topic)) &&
+          (type === 'all' || item.type === type) &&
+          (!query.trim() || `${item.prompt} ${item.topics.join(' ')} ${item.type}`.toLowerCase().includes(query.trim().toLowerCase())),
+      ),
+    [prompts, query, topic, type],
   )
 
   const choosePrompt = useCallback(
-    (random: boolean) => {
+    (random: boolean, requested?: WritingMockPrompt) => {
       const pool = filtered.length ? filtered : prompts
-      const item = random ? pool[Math.floor(Math.random() * pool.length)] : pool[0]
+      const item = requested ?? (random ? pool[Math.floor(Math.random() * pool.length)] : pool[0])
       if (!item) return
       setSelectedId(item.id)
       setIdea('')
@@ -79,7 +86,6 @@ export default function WritingMockTestPage() {
       setError('Bài tiếng Anh cần có ít nhất 30 ký tự trước khi gửi chấm.')
       return
     }
-    submitRef.current = submit
     setError('')
     try {
       const { job: created } = await writingReviewApi.start(english.trim(), idea.trim() || undefined, selected.prompt)
@@ -89,6 +95,7 @@ export default function WritingMockTestPage() {
       setError((cause as Error).message)
     }
   }
+  submitRef.current = submit
 
   useEffect(() => {
     if (stage !== 'review' || !job || job.status !== 'running') return
@@ -122,19 +129,53 @@ export default function WritingMockTestPage() {
 
   if (stage === 'select') {
     return (
-      <div className="readable-xs mx-auto max-w-5xl pb-16">
+      <div className="mx-auto max-w-6xl pb-16">
         <PageHeader eyebrow="Writing" title="Writing Mock Test" description="15 phút lập ý tưởng tiếng Việt + 40 phút viết bài tiếng Anh, sau đó AI chấm theo đề bài và ý tưởng của bạn." />
-        <Card className="space-y-5 p-5 sm:p-6">
-          <div className="grid gap-3 sm:grid-cols-2">
-            <label className="text-sm font-semibold">Chủ đề<select className="mt-1 w-full rounded-lg border p-2.5" value={topic} onChange={(e) => setTopic(e.target.value)}><option value="all">Tất cả chủ đề</option>{topicData.topics.map((item) => <option key={item}>{item}</option>)}</select></label>
-            <label className="text-sm font-semibold">Dạng đề<select className="mt-1 w-full rounded-lg border p-2.5" value={type} onChange={(e) => setType(e.target.value)}><option value="all">Tất cả dạng đề</option>{topicData.types.map((item) => <option key={item}>{item}</option>)}</select></label>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            <Button onClick={() => choosePrompt(true)}><Shuffle className="size-4" /> Đề ngẫu nhiên</Button>
-            <Button variant="outline" onClick={() => choosePrompt(false)} disabled={!filtered.length}><FileText className="size-4" /> Chọn đề đầu tiên</Button>
-          </div>
-          <p className="text-sm text-slate-500">{filtered.length} đề phù hợp · tổng cộng {prompts.length} đề</p>
-        </Card>
+        <div className="grid gap-6 lg:grid-cols-[250px_minmax(0,1fr)]">
+          <aside className="space-y-4 lg:sticky lg:top-4 lg:self-start">
+            <Card className="p-4">
+              <h2 className="mb-3 text-lg font-bold">Tìm kiếm</h2>
+              <SearchInput value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Tìm đề bài…" className="w-full" />
+            </Card>
+            <Card className="p-4">
+              <h2 className="mb-3 text-lg font-bold">Bộ lọc</h2>
+              <label className="mb-1 block text-xs font-bold uppercase text-slate-500">Dạng đề</label>
+              <select className="mb-4 w-full rounded-lg border p-2.5 text-sm" value={type} onChange={(e) => setType(e.target.value)}>
+                <option value="all">Tất cả dạng đề</option>
+                {topicData.types.map((item) => <option key={item}>{item}</option>)}
+              </select>
+              <label className="mb-1 block text-xs font-bold uppercase text-slate-500">Chủ đề</label>
+              <select className="w-full rounded-lg border p-2.5 text-sm" value={topic} onChange={(e) => setTopic(e.target.value)}>
+                <option value="all">Tất cả chủ đề</option>
+                {topicData.topics.map((item) => <option key={item}>{item}</option>)}
+              </select>
+            </Card>
+            <Button className="w-full" onClick={() => choosePrompt(true)} disabled={!filtered.length}><Shuffle className="size-4" /> Làm đề ngẫu nhiên</Button>
+          </aside>
+          <main className="min-w-0">
+            <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+              <h2 className="text-lg font-bold">Đề bài <span className="text-sm font-normal text-slate-500">({filtered.length})</span></h2>
+              <span className="text-sm text-slate-500">Chọn một đề để vào làm bài</span>
+            </div>
+            <div className="space-y-3">
+              {filtered.map((item) => (
+                <Card key={item.id} className="p-4 transition-shadow hover:shadow-md sm:p-5">
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                    <div className="min-w-0">
+                      <div className="mb-2 flex flex-wrap gap-2">
+                        <Badge tone="violet">{item.type}</Badge>
+                        {item.topics.map((itemTopic) => <Badge key={itemTopic} tone="slate">{itemTopic}</Badge>)}
+                      </div>
+                      <p className="font-semibold leading-relaxed text-slate-900 dark:text-white">{item.prompt}</p>
+                    </div>
+                    <Button size="sm" className="self-start" onClick={() => choosePrompt(false, item)}><FileText className="size-4" /> Vào làm bài</Button>
+                  </div>
+                </Card>
+              ))}
+              {!filtered.length ? <EmptyState title="Không tìm thấy đề phù hợp" description="Hãy đổi từ khóa hoặc bộ lọc." /> : null}
+            </div>
+          </main>
+        </div>
       </div>
     )
   }
