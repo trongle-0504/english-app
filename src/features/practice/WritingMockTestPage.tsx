@@ -208,6 +208,19 @@ export default function WritingMockTestPage() {
         <span className={cn('inline-flex items-center gap-1 font-mono text-lg font-bold', secondsLeft < 60 && 'text-rose-600')}><Clock3 className="size-4" />{timerLabel(secondsLeft)}</span>
       </div>
       <Card className="space-y-4 p-5 sm:p-6">
+        {!isIdeas ? (
+          <div className="space-y-2">
+            <label htmlFor="writing-mock-vietnamese-idea" className="block text-sm font-semibold">Ý tưởng tiếng Việt của bạn</label>
+            <textarea
+              id="writing-mock-vietnamese-idea"
+              value={idea}
+              readOnly
+              className="min-h-28 w-full resize-y rounded-xl border bg-slate-50 p-4 leading-relaxed text-slate-700 dark:bg-slate-800 dark:text-slate-200"
+              placeholder="Bạn chưa ghi ý tưởng tiếng Việt."
+              aria-label="Ý tưởng tiếng Việt dùng để chuyển sang bài viết tiếng Anh"
+            />
+          </div>
+        ) : null}
         <textarea value={isIdeas ? idea : english} onChange={(e) => (isIdeas ? setIdea(e.target.value) : setEnglish(e.target.value))} className="min-h-[360px] w-full rounded-xl border p-4 leading-relaxed" placeholder={isIdeas ? 'Viết dàn ý, luận điểm và ví dụ bằng tiếng Việt…' : 'Write your IELTS Writing Task 2 essay here…'} autoFocus />
         {error ? <p className="text-sm text-rose-600">{error}</p> : null}
         <div className="flex flex-wrap justify-between gap-2">
