@@ -205,9 +205,10 @@ export default function WritingMockTestPage() {
   const isIdeas = stage === 'ideas'
   return (
     <div className="readable-xs mx-auto max-w-5xl pb-16">
-      <PageHeader eyebrow="Writing Mock Test" title="Writing Mock Test" description={selected.prompt} />
-      <div className="mb-3 flex justify-end">
-        <span className={cn('inline-flex items-center gap-1 rounded-full border bg-white px-3 py-1.5 font-mono text-base font-bold shadow-sm dark:bg-slate-900', secondsLeft < 60 && 'border-rose-300 text-rose-600')}>
+      <PageHeader eyebrow="Writing Mock Test" title="Writing Mock Test" />
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+        <p className="min-w-0 flex-1 text-base leading-relaxed text-slate-600 dark:text-slate-300">{selected.prompt}</p>
+        <span className={cn('inline-flex shrink-0 items-center gap-1 rounded-full border bg-white px-3 py-1.5 font-mono text-base font-bold shadow-sm dark:bg-slate-900', secondsLeft < 60 && 'border-rose-300 text-rose-600')}>
           <Clock3 className="size-4" />{timerLabel(secondsLeft)}
         </span>
       </div>
