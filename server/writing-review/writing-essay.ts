@@ -77,12 +77,12 @@ const WritingModelEssaySchema = z.object({
   sentences: z.array(
     z.object({
       tool: z.enum(LINEAR_TOOLS).catch('description'),
-      text: z.string().describe('One sentence. Candidate phrases wrapped in [[ ]], Linearthinking structures/frames wrapped in {{ }}.'),
+      text: z.string().describe('One sentence. Candidate phrases wrapped in [[ ]], NeuralSymbolic structures/frames wrapped in {{ }}.'),
     }),
   ).describe('The complete model essay sentences. For a full IELTS Task 2 essay, strictly target 270-320 words (prioritize around 300 words). If the input is a single paragraph, target 90-120 words.'),
   structures: z.array(
     z.object({
-      pattern: z.string().describe('As written in the Linearthinking guide, e.g. "This results in N", ", which + V", "This enables sb to V".'),
+      pattern: z.string().describe('As written in the NeuralSymbolic guide, e.g. "This results in N", ", which + V", "This enables sb to V".'),
       text: z.string().describe('ONLY the short fixed framing words of the pattern used in the sentence (1-5 words, e.g. "It is true that", "One possible issue is that", "For instance,", ", which can lead to"), NEVER the full sentence or clause.'),
       tool: z.enum(LINEAR_TOOLS).catch('description'),
       from_guide: z.boolean(),
@@ -158,11 +158,11 @@ The Vietnamese text is what the learner means (ground truth). The corrected draf
   * verdict: keep = a skilled writer would write this sentence exactly this way in an essay (frames included); fix = the idea and most of the wording are right, but some part is wrong, clumsy, wordy, vague, too spoken or too formal for an essay, or reads like a translation; rewrite = unclear, wrong or clumsy as a whole, so the idea is said again from the Vietnamese.
   * keep: the phrases of the sentence that are correct, natural, concise and precise, copied exactly — plain ones too. Plain and correct beats formal and rare: a phrase is never marked for change just because a more academic synonym exists ("use technology" is better than "utilise technological devices").
   * problems: what an examiner would mark down. Grammatical is not enough: wrong words, unnatural combinations, Vietnamese-style or word-for-word phrasing, wordy or roundabout wording ("there are many negative effects of people working from home" → "working from home has several drawbacks"; "people who live in the area of the countryside" → "people in rural areas"), vague words, weak logic, a claim the idea does not support; "" when nothing.
-- develop: at most 3 places where an idea is too thin to convince a reader and needs one more Linearthinking step (cause, effect or a concrete example) built from the learner's own idea; never a new opinion. [] when the draft is developed enough.
+- develop: at most 3 places where an idea is too thin to convince a reader and needs one more NeuralSymbolic step (cause, effect or a concrete example) built from the learner's own idea; never a new opinion. [] when the draft is developed enough.
 - picks: a library candidate only when it says exactly one of the learner's ideas and would sit naturally in that sentence. Most candidates will not fit; [] is normal.
 - dol: the refs of the DOL entries that say part of the learner's idea exactly.`
 
-const WRITING_ESSAY_SYSTEM = (guide: string) => `You are an IELTS Writing Task 2 coach writing a model essay from a Vietnamese learner's draft, following the Linearthinking® method and an examiner's plan.
+const WRITING_ESSAY_SYSTEM = (guide: string) => `You are an IELTS Writing Task 2 coach writing a model essay from a Vietnamese learner's draft, following the NeuralSymbolic® method and an examiner's plan.
 The goal is natural, accurate English that fits a written essay: the words a skilled writer would choose for this context — clear and precise, neither spoken and casual ("kids", "a lot of", "stuff") nor rare, long or formal for show. The best model essay is the learner's own essay done right: the same ideas in the same order, the learner's correct wording kept, every error fixed, every unclear or thin point said clearly.
 
 1. START FROM THE DRAFT, SENTENCE BY SENTENCE, AS THE PLAN SAYS:
@@ -170,7 +170,7 @@ The goal is natural, accurate English that fits a written essay: the words a ski
    - fix: keep the sentence and its "keep" phrases word for word; say the parts the plan's problems name the way a skilled writer would — concise, direct, idiomatic, in plain words.
    - rewrite: say the Vietnamese idea again in plain, precise English.
    - Every phrase the plan lists under "keep" appears exactly as written. Never swap a correct word for a rarer synonym (use → utilise, help → facilitate, cause → precipitate, show → manifest, a lot of → a plethora of).
-   - Keep the learner's Linearthinking frames where they fit; the guide's templates are welcome.
+   - Keep the learner's NeuralSymbolic frames where they fit; the guide's templates are welcome.
 2. MEANING: exactly the learner's ideas (the Vietnamese is the ground truth). Develop only where the plan's "develop" says, from the learner's own idea. No new opinions, numbers, or claims stronger than the learner's ("dramatically", "drastically", "substantially" when the learner said "can").
 3. LENGTH: a full essay is 270–320 words (about 300); one paragraph is 90–120 words. Reach it by developing the learner's ideas, never by padding.
 4. STYLE: one idea per sentence, stated directly. Avoid what examiners mark down as over-writing: noun stacks ("the risk of the development of lung disease" → "the risk of lung disease"), stacked adjectives or intensifiers, redundant pairs ("past history", "future plans"), two unlike things joined by "and" ("lack experience and public transport"), vague formal nouns ("vehicular mobility solutions" → "cars"), clichés ("a double-edged sword"). Contrast pairs (other topics — style only, never copy their words or content):
@@ -183,7 +183,7 @@ The goal is natural, accurate English that fits a written essay: the words a ski
 6. DICTIONARY ENTRIES (DOL), when listed: the dictionary's English for the learner's Vietnamese ideas. Where the draft says one of these ideas wrongly, prefer the entry's wording.
 7. MARKERS in "sentences":
    - Wrap each approved candidate or extra used in [[ ]] (inflected forms are fine).
-   - Wrap only the short fixed words of each Linearthinking frame (1-5 words) in {{ }}; never a clause or a whole sentence. Examples (other topics):
+   - Wrap only the short fixed words of each NeuralSymbolic frame (1-5 words) in {{ }}; never a clause or a whole sentence. Examples (other topics):
      {{It is true that}} more people now work from home…
      {{Although}} this trend has some drawbacks, the benefits…
      {{One possible issue is that}} remote workers may feel isolated…
@@ -194,15 +194,15 @@ The goal is natural, accurate English that fits a written essay: the words a ski
      {{In conclusion,}} despite these drawbacks, …
    - Everything else is plain text. Never nest or overlap [[ ]] and {{ }}.
 8. OUTPUT:
-   - sentences: the essay, one sentence each, with its Linearthinking tool ('lead_in', 'introduction', 'answer', 'description', 'cause', 'effect', 'example', 'specify', 'conclusion'). No paragraph labels.
+   - sentences: the essay, one sentence each, with its NeuralSymbolic tool ('lead_in', 'introduction', 'answer', 'description', 'cause', 'effect', 'example', 'specify', 'conclusion'). No paragraph labels.
    - picks: the approved candidates you used (by ref), with how (Vietnamese, max 20 words) and an example sentence.
    - structures: each frame used: the pattern as in the guide, its short fixed words exactly as in the essay (1-5 words), the tool, from_guide.
 
 <linearthinking_guide>
-${guide || '(Follow standard Linearthinking: Topic sentence -> Cause -> Effect -> Example -> Conclusion with linking words and This + verb patterns)'}
+${guide || '(Follow standard NeuralSymbolic: Topic sentence -> Cause -> Effect -> Example -> Conclusion with linking words and This + verb patterns)'}
 </linearthinking_guide>`
 
-const ESSAY_REVIEW_SYSTEM = `You are a strict IELTS Writing examiner and a native-speaker editor. You get a model Task 2 essay a coach wrote from a Vietnamese learner's draft, with the learner's idea (Vietnamese) and draft. In the essay, [[ ]] = suggested phrases and {{ }} = Linearthinking frames.
+const ESSAY_REVIEW_SYSTEM = `You are a strict IELTS Writing examiner and a native-speaker editor. You get a model Task 2 essay a coach wrote from a Vietnamese learner's draft, with the learner's idea (Vietnamese) and draft. In the essay, [[ ]] = suggested phrases and {{ }} = NeuralSymbolic frames.
 Edit only what an examiner would mark down:
 - meaning: wording that changes, overstates or adds to the learner's idea (compare every sentence with the Vietnamese). A shorter or more specific way to say the same idea is not a meaning change ("a part-time job" for "a job which is not full time").
 - natural: combinations or word choices an educated native writer would not use; two unlike things joined by "and".
@@ -321,7 +321,7 @@ const PlanNotesSchema = z.object({
   ),
 })
 
-const PLAN_NOTES_SYSTEM = `You check that a model essay fixed the problems an examiner noted in a Vietnamese learner's draft. In the essay, [[ ]] = suggested phrases and {{ }} = Linearthinking frames.
+const PLAN_NOTES_SYSTEM = `You check that a model essay fixed the problems an examiner noted in a Vietnamese learner's draft. In the essay, [[ ]] = suggested phrases and {{ }} = NeuralSymbolic frames.
 For EVERY note, one item: find the essay sentence that says that draft sentence's idea; resolved = true when that sentence no longer has the problem. When it still has it, give one edit: original = the shortest exact substring of that essay sentence as printed, without brackets; replacement = the fix, in natural written English that fits an essay — plain and precise, never more formal or rarer than needed; everything else in the sentence stays. why in Vietnamese (at most 25 words).`
 
 /**
@@ -525,7 +525,7 @@ const AnalyzeWritingEditSchema = z.object({
       marked_text: z
         .string()
         .describe(
-          "The writer's exact sentence without altering any words, wrapping library/topic collocations in [[ ]] and Linearthinking structures/markers in {{ }}.",
+          "The writer's exact sentence without altering any words, wrapping library/topic collocations in [[ ]] and NeuralSymbolic structures/markers in {{ }}.",
         ),
     }),
   ),
@@ -548,14 +548,14 @@ CRITICAL REQUIREMENTS:
 2. DO NOT rewrite, paraphrase, correct, improve, add, or delete ANY word or letter.
 3. Your role is strictly to:
    - Split the text into sentences
-   - Classify each sentence's Linearthinking function ('lead_in', 'introduction', 'answer', 'description', 'cause', 'effect', 'example', 'specify', 'conclusion')
-   - Mark Linearthinking structures in {{ }} and collocations/vocabulary in [[ ]]
+   - Classify each sentence's NeuralSymbolic function ('lead_in', 'introduction', 'answer', 'description', 'cause', 'effect', 'example', 'specify', 'conclusion')
+   - Mark NeuralSymbolic structures in {{ }} and collocations/vocabulary in [[ ]]
    - Extract structures and collocations for dictionary verification.
 
 TASKS:
 1. Split the candidate's text into sentences.
 2. For each sentence:
-   - Identify its Linearthinking tool:
+   - Identify its NeuralSymbolic tool:
      - lead_in: background statement, topic paraphrase
      - introduction: thesis statement, stance
      - answer: main argument, core topic sentence
@@ -565,7 +565,7 @@ TASKS:
      - example: illustration ("For example,...", "For instance,...")
      - conclusion: wrap-up sentence ("In conclusion,...", "Overall,...")
    - In "marked_text":
-     - Wrap Linearthinking structures or sentence framing markers in {{ }}.
+     - Wrap NeuralSymbolic structures or sentence framing markers in {{ }}.
        CRITICAL: In {{ }}, wrap ONLY the short fixed framing words (1 to 5 words). NEVER wrap normal sentence content, clauses, or full sentences in {{ }}!
        Examples: {{This results in}}, {{This enables}} sb {{to V}}, {{, which leads to}}, {{For instance,}}, {{Although}} ..., {{This is because}}.
      - Wrap topic collocations, library phrases, or idioms in [[ ]].
@@ -577,7 +577,7 @@ TASKS:
    - pattern: the structure frame pattern (e.g. "This results in N", ", which + V")
    - text: the exact short framing words in the candidate's sentence (1 to 5 words). NEVER the full sentence or clause!
    - tool: the Linear tool of that sentence
-   - from_guide: true if found in the standard Linearthinking guide, false if an extended frame
+   - from_guide: true if found in the standard NeuralSymbolic guide, false if an extended frame
 4. wording:
    - Identify EVERY natural collocation and verb pattern the candidate wrote outside [[ ]] and {{ }} that can be verified against a collocation dictionary (Longman / OZDIC) — about one per sentence (8-15 for a full essay), copied exactly as written:
      - Verb + noun (e.g. "pursue a career", "alleviate financial burden")
@@ -591,7 +591,7 @@ TASKS:
      - checks: array of { base, collocate, pattern }
 
 <linearthinking_guide>
-${guide || '(standard Linearthinking guide)'}
+${guide || '(standard NeuralSymbolic guide)'}
 </linearthinking_guide>`
 
 export async function analyzeUserEditedWriting(

@@ -110,7 +110,7 @@ export function pdfDefinition(doc: ReportDoc, font: string, symbols?: string): P
   symbolFont = symbols
   tables = 0
   return {
-    info: { title: doc.title, creator: 'LinearThinking' },
+    info: { title: doc.title, creator: 'NeuralSymbolic' },
     pageSize: 'A4',
     pageMargins: [48, 48, 48, 56],
     defaultStyle: { font, fontSize: 10.5, lineHeight: 1.3, color: '#0F172A' },

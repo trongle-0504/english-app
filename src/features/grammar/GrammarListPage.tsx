@@ -64,7 +64,7 @@ export default function GrammarListPage() {
 
   return (
     <>
-      <title>Grammar · LinearThinking</title>
+      <title>Grammar · NeuralSymbolic</title>
       <PageHeader
         eyebrow="Grammar"
         title="Grammar library"

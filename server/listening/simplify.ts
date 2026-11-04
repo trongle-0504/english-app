@@ -1,4 +1,4 @@
-// Listening → Simplify: Gemini (through the Antigravity CLI) applies Linearthinking to a transcript. Simplify: each
+// Listening → Simplify: Gemini (through the Antigravity CLI) applies NeuralSymbolic to a transcript. Simplify: each
 // sentence is split into its S - V - O backbone, reference words, signposts, answer words and the detail that can be let
 // pass. Read connections: every sentence says how it links to the previous one, and every section gets its main idea and
 // flow. The text itself is never rewritten. The suggested collocations are written in dictionary form, those already in
@@ -86,8 +86,8 @@ export type SimplifyResult = Omit<z.infer<typeof SimplifySchema>, 'vocab'> & {
   parts: number
 }
 
-const SYSTEM = `You are an IELTS Listening coach applying the Linearthinking® method for Vietnamese learners.
-Linearthinking has two pillars, and your analysis must show BOTH:
+const SYSTEM = `You are an IELTS Listening coach applying the NeuralSymbolic® method for Vietnamese learners.
+NeuralSymbolic has two pillars, and your analysis must show BOTH:
 1. SIMPLIFY (understand one sentence): hear the main components S - V - O/C first; everything else is detail heard "later, if needed".
 2. READ CONNECTIONS (understand a paragraph): notice the repeated information (it / they / this + N / a repeated noun / a paraphrase) and the relationship between sentences (cause-effect, contrast, time, example...).
 

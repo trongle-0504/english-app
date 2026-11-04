@@ -16,7 +16,7 @@ export default function BlogPostPage() {
 
   return (
     <div className="pt-6 sm:pt-8 xl:grid xl:grid-cols-[minmax(0,1fr)_16rem] xl:gap-10">
-      <title>{`${post.title} · Blog · LinearThinking`}</title>
+      <title>{`${post.title} · Blog · NeuralSymbolic`}</title>
       <article className="min-w-0">
         <PostHeader post={post} />
         {hasToc ? <MobileToc headings={post.headings} className="mt-4 xl:hidden" /> : null}

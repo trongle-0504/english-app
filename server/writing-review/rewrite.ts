@@ -833,7 +833,7 @@ export async function rewriteReview(
     return result.text
   })
 
-  // 2. The upgraded Linearthinking model essay starts from the corrected draft (the review's confirmed fixes), so it
+  // 2. The upgraded NeuralSymbolic model essay starts from the corrected draft (the review's confirmed fixes), so it
   // waits for the review: quality over time. Its own steps (plan, write, review, dictionary) report through onStep.
   const { writingLinearGuide, generateWritingModelEssay } = await import('./writing-essay.ts')
   const written = await generateWritingModelEssay(

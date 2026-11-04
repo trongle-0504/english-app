@@ -13,7 +13,7 @@ const CACHE_DIR = path.join(import.meta.dirname, '..', '..', 'cache', 'longman')
 const CACHE_VERSION = 2
 const MIN_GAP_MS = Number(process.env.LONGMAN_GAP_MS) || 3000
 const BLOCK_PAUSE_MS = 30 * 60_000
-const USER_AGENT = 'LinearThinking/1.0 (personal IELTS study app, local use only; cached, 1 request per 3s)'
+const USER_AGENT = 'NeuralSymbolic/1.0 (personal IELTS study app, local use only; cached, 1 request per 3s)'
 
 export const longmanEnabled = () => (process.env.LONGMAN_LOOKUP ?? 'on').toLowerCase() !== 'off'
 

@@ -169,7 +169,7 @@ export default function WritingReviewHistoryPage() {
       <PageHeader
         eyebrow="Writing Review"
         title="Lịch sử đánh giá bài viết"
-        description="Xem lại các bài viết đã phân tích, đối chiếu sửa lỗi collocations từ điển và bài viết mẫu Linearthinking."
+        description="Xem lại các bài viết đã phân tích, đối chiếu sửa lỗi collocations từ điển và bài viết mẫu NeuralSymbolic."
         actions={
           <div className="flex items-center gap-2">
             <ButtonLink to="/practice/writing-review" variant="outline" size="sm">
@@ -345,7 +345,7 @@ export default function WritingReviewHistoryPage() {
             <EmptyState
               icon={<History className="size-10" />}
               title="Chọn bài viết để xem"
-              description="Chọn một bài viết từ danh sách bên trái để xem chi tiết đối chiếu từ điển và bài viết mẫu Linearthinking."
+              description="Chọn một bài viết từ danh sách bên trái để xem chi tiết đối chiếu từ điển và bài viết mẫu NeuralSymbolic."
             />
           )}
         </div>

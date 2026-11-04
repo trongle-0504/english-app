@@ -1,4 +1,4 @@
-// A finished suggestion: one question at a time — the model answer built with the Linearthinking method (sentence by
+// A finished suggestion: one question at a time — the model answer built with the NeuralSymbolic method (sentence by
 // sentence with its Linear tool, phrases and the guide's structures marked), the structures it uses, the library
 // phrases (with where they fit, an example, and a button to add them to review), and the phrases from outside the
 // library with their Longman / OZDIC proof and buttons that add them to Vocabulary or Notes. The question bar at the bottom switches between questions.
@@ -624,7 +624,7 @@ export async function copyFormatted(
   }
 }
 
-/** The model answer: grouped by paragraphs with Linearthinking tools, plus user custom revision if edited. */
+/** The model answer: grouped by paragraphs with NeuralSymbolic tools, plus user custom revision if edited. */
 function ModelAnswer({
   answer,
   part,
@@ -728,7 +728,7 @@ function ModelAnswer({
         icon={isCustomized ? UserCheck : MessageSquareQuote}
         tone={isCustomized ? 'emerald' : 'brand'}
         title={isCustomized ? 'Bài theo ý của bạn (đã định dạng)' : 'Câu trả lời mẫu (AI)'}
-        hint={isCustomized ? 'Đã bóc tách cấu trúc Linearthinking & tra từ điển cho bài của bạn' : undefined}
+        hint={isCustomized ? 'Đã bóc tách cấu trúc NeuralSymbolic & tra từ điển cho bài của bạn' : undefined}
         actions={
           <div className="flex flex-wrap items-center gap-1.5">
             {answer.sentences?.length ? (
@@ -877,11 +877,11 @@ function ModelAnswer({
         )}
 
         <p className="mt-3 text-xs text-slate-400 dark:text-slate-500">
-          💡 Rê chuột (hoặc chạm) vào câu bất kỳ để xem chức năng Linearthinking ({tools.slice(0, 4).map((t) => TOOL[t]?.label ?? t).join(', ')}...).
+          💡 Rê chuột (hoặc chạm) vào câu bất kỳ để xem chức năng NeuralSymbolic ({tools.slice(0, 4).map((t) => TOOL[t]?.label ?? t).join(', ')}...).
         </p>
 
         <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500">
-          <span className={MARK.structure}>cấu trúc Linearthinking</span>
+          <span className={MARK.structure}>cấu trúc NeuralSymbolic</span>
           <span className={MARK.library}>cụm thư viện</span>
           <span className={MARK.extra}>cụm mới</span>
           <span className={MARK.unverified} title="Longman / OZDIC không liệt kê, và AI thấy có thể chưa tự nhiên (rê chuột vào cụm để xem lý do).">
@@ -918,7 +918,7 @@ function ModelAnswer({
             </span>
           </div>
           <p className="mb-3 text-xs text-slate-500">
-            Hệ thống sẽ giữ <strong>nguyên văn 100%</strong> các câu chữ của bạn, tự động bóc tách cấu trúc Linearthinking, tô màu các cụm collocation và đối chiếu từ điển Longman / OZDIC.
+            Hệ thống sẽ giữ <strong>nguyên văn 100%</strong> các câu chữ của bạn, tự động bóc tách cấu trúc NeuralSymbolic, tô màu các cụm collocation và đối chiếu từ điển Longman / OZDIC.
           </p>
           <textarea
             rows={part === 2 ? 8 : 5}
@@ -976,7 +976,7 @@ export function Structures({ structures }: { structures: UsedStructure[] }) {
   )
 
   return (
-    <Section icon={Workflow} tone="emerald" title="Cấu trúc Linearthinking" count={unique.length} hint="Khung câu đã dùng, để học thuộc">
+    <Section icon={Workflow} tone="emerald" title="Cấu trúc NeuralSymbolic" count={unique.length} hint="Khung câu đã dùng, để học thuộc">
       <ul className="space-y-2">
         {unique.map((x, i) => (
           <li key={i} className="flex flex-wrap items-center gap-2">

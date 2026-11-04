@@ -46,7 +46,7 @@ export interface SectionOption {
 
 /** How each mark looks in every format (the page's own colours). */
 export const MARK_STYLE: Record<MarkKind, { label: string; color: string; bold?: boolean; italic?: boolean; underline?: 'single' | 'dotted' | 'dash' }> = {
-  structure: { label: 'cấu trúc Linearthinking', color: '047857', bold: true },
+  structure: { label: 'cấu trúc NeuralSymbolic', color: '047857', bold: true },
   library: { label: 'cụm thư viện', color: '1D4ED8', bold: true, underline: 'single' },
   extra: { label: 'cụm mới', color: '7C3AED', bold: true, italic: true, underline: 'single' },
   unverified: { label: 'chưa xác nhận', color: 'C2410C', italic: true, underline: 'dash' },

@@ -15,7 +15,7 @@ import { projectRoot } from './lib/data-paths.ts'
 if (existsSync(path.join(projectRoot, '.env'))) process.loadEnvFile(path.join(projectRoot, '.env'))
 const { readJsonDoc, writeJsonDoc } = await import('../server/admin/store.ts')
 
-const UA = 'LinearThinking/1.0 (personal IELTS study app; vocabulary illustrations)'
+const UA = 'NeuralSymbolic/1.0 (personal IELTS study app; vocabulary illustrations)'
 const SETS = [
   { file: 'content/vocabulary/words.json', name: (item: Item) => String(item.word) },
   { file: 'content/note/notes.json', name: (item: Item) => String(item.title) },

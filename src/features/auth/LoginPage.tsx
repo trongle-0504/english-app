@@ -44,7 +44,7 @@ export default function LoginPage() {
 
   return (
     <main className="relative isolate flex min-h-dvh items-center justify-center px-4 py-10">
-      <title>Đăng nhập · LinearThinking</title>
+      <title>Đăng nhập · NeuralSymbolic</title>
       <LoginBackdrop />
       <div className="w-full max-w-sm">
         <div className="mb-6 flex flex-col items-center gap-3 text-center">

@@ -18,7 +18,7 @@ for (const [i, q] of lines) {
   for (const [n, c] of candidates.entries()) {
     let src = ''
     try {
-      const res = await fetch(c.thumb, { headers: { 'User-Agent': 'LinearThinking/1.0 (personal study app)' }, signal: AbortSignal.timeout(15000) })
+      const res = await fetch(c.thumb, { headers: { 'User-Agent': 'NeuralSymbolic/1.0 (personal study app)' }, signal: AbortSignal.timeout(15000) })
       src = `data:image/webp;base64,${(await sharp(Buffer.from(await res.arrayBuffer())).resize(150, 110, { fit: 'cover' }).webp({ quality: 60 }).toBuffer()).toString('base64')}`
     } catch {}
     cells.push(`<figure>${src ? `<img src="${src}">` : '<div class="x">×</div>'}<figcaption>${n} · ${c.provider}</figcaption></figure>`)

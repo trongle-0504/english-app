@@ -11,7 +11,7 @@ const CACHE_VERSION = 2
 const MIN_GAP_MS = Number(process.env.OZDIC_GAP_MS) || 1500
 /** After a block (403, bot challenge, repeated 429) no request is sent for this long. */
 const BLOCK_PAUSE_MS = 15 * 60_000
-const USER_AGENT = 'LinearThinking/1.0 (personal IELTS study app; cached, 1 request per 1.5s)'
+const USER_AGENT = 'NeuralSymbolic/1.0 (personal IELTS study app; cached, 1 request per 1.5s)'
 
 export interface CollocationGroup {
   /** e.g. "ADJ.", "VERB + DECISION", "PREP.", "PHRASES" */

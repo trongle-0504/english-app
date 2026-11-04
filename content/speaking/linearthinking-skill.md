@@ -1,6 +1,6 @@
-# Linearthinking® — IELTS Speaking answer guide
+# NeuralSymbolic® — IELTS Speaking answer guide
 
-How to build a Speaking answer with the Linearthinking method: a direct answer first, then Linear tools that expand it
+How to build a Speaking answer with the NeuralSymbolic method: a direct answer first, then Linear tools that expand it
 one clear step at a time. Patterns are written with placeholders: N = noun, V = verb, V-ing, SV = subject + verb,
 Adj = adjective.
 

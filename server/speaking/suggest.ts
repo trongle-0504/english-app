@@ -8,7 +8,7 @@
 //    25-40 per question (one shared pool, at most 150) become the candidates. Items tagged "writing" are never offered.
 //    The idea's Vietnamese terms are looked up in the DOL dictionary (Vietnamese → English) at the same time.
 // 3. suggest (Claude): restates the learner's idea in plain English, then picks among the candidates only (checked by
-//    code), writes examples and the model answer with the Linearthinking guide — plain spoken English with a few
+//    code), writes examples and the model answer with the NeuralSymbolic guide — plain spoken English with a few
 //    highlight phrases, preferring the DOL wording for the idea — and may add outside phrases.
 // 4. polish (Claude): an examiner-editor pass fixes wording that does not say exactly what the learner means, that a
 //    native speaker would not use, or that is over-written. Best effort: a failure keeps the draft.
@@ -432,7 +432,7 @@ Contrast pairs (style only — never copy their words or content into an answer)
   ✗ "Anyway, all in all, we will always take pride in his discipline and resilience, and that's all I have to say. Thank you."
   ✓ "All in all, what makes me proudest is not just his success, but also his determination and willingness to work hard for his family."`
 
-/** The Linearthinking method guide (content/speaking/linearthinking-skill.md), read on every run so edits apply at once. */
+/** The NeuralSymbolic method guide (content/speaking/linearthinking-skill.md), read on every run so edits apply at once. */
 export async function linearGuide(ctx: ApiContext): Promise<string> {
   try {
     return (await readFile(path.join(ctx.contentDir, 'speaking', 'linearthinking-skill.md'), 'utf8')).trim()
@@ -445,8 +445,8 @@ const suggestSystem = (
   part: SpeakingRequest['part'],
   guide: string,
 ) => `You coach a Vietnamese IELTS candidate aiming for band 7+ in Speaking Part ${part}.
-Model answers follow the Linearthinking method in the guide below: the direct answer first, then Linear tools that expand it, one tool per sentence.
-Priorities, in this order: 1. say exactly what the candidate means; 2. sound like a natural, educated native speaker talking; 3. the Linearthinking flow and frames; 4. using the suggested phrases. Never bend the meaning or the naturalness to fit a phrase or a frame in.
+Model answers follow the NeuralSymbolic method in the guide below: the direct answer first, then Linear tools that expand it, one tool per sentence.
+Priorities, in this order: 1. say exactly what the candidate means; 2. sound like a natural, educated native speaker talking; 3. the NeuralSymbolic flow and frames; 4. using the suggested phrases. Never bend the meaning or the naturalness to fit a phrase or a frame in.
 Be flexible, as the guide's "Be flexible" section says: let each question and the candidate's idea decide which tools to use and in what order (tools may repeat; do not give every question the same flow), use the guide's structures where they fit naturally and extend them freely with other natural spoken frames — never force a stiff one. Always keep the IELTS length for the part.
 
 ${STYLE}
@@ -494,7 +494,7 @@ const PolishSchema = z.object({
   ),
 })
 
-const POLISH_SYSTEM = `You are a strict IELTS Speaking examiner and a native-speaker editor. You get model answers a coach wrote for a Vietnamese candidate: the question, the candidate's idea (often in Vietnamese), what it means in plain English, and the answer sentence by sentence ([[ ]] = suggested phrases from the candidate's library, {{ }} = Linearthinking frames).
+const POLISH_SYSTEM = `You are a strict IELTS Speaking examiner and a native-speaker editor. You get model answers a coach wrote for a Vietnamese candidate: the question, the candidate's idea (often in Vietnamese), what it means in plain English, and the answer sentence by sentence ([[ ]] = suggested phrases from the candidate's library, {{ }} = NeuralSymbolic frames).
 Edit only what an examiner would mark down:
 - meaning: wording that does not say exactly what the candidate means, or that changes it (customers "keep track of logistics trends" when the chatbot lets them track their deliveries → "track their deliveries"); details that change or contradict the candidate's story — who did what, where, how — or that cannot be true in it (a face "lit up" seen during a phone call; "recorded lectures" when the idea says listening to teachers in class). Compare every sentence with the candidate's idea;
 - natural: wording an educated native speaker would not use — odd collocations ("make deliveries smoother" → "make the delivery process smoother"), stiff or squeezed-in phrases ("it always gives me pleasure to see" → "it's really satisfying to see"), unnatural word order or register;

@@ -21,7 +21,7 @@ export interface ImageCandidate {
   source: string
 }
 
-const UA = 'LinearThinking/1.0 (personal IELTS study app; vocabulary illustrations)'
+const UA = 'NeuralSymbolic/1.0 (personal IELTS study app; vocabulary illustrations)'
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
 
 let lastWiki = 0

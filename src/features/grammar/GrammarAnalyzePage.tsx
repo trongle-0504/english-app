@@ -109,7 +109,7 @@ export default function GrammarAnalyzePage() {
 
   return (
     <>
-      <title>Grammar Analyzer · LinearThinking</title>
+      <title>Grammar Analyzer · NeuralSymbolic</title>
       <PageHeader
         eyebrow="Grammar"
         title="Grammar Analyzer"

@@ -539,8 +539,8 @@ function WritingModelAnswer({
         title={isCustomized ? 'Bài theo ý của bạn (đã định dạng)' : 'Bài nâng cấp theo ý bạn (AI viết mới)'}
         hint={
           isCustomized
-            ? `${wordCount} từ · Đã bóc tách cấu trúc Linearthinking & tra từ điển cho bài của bạn`
-            : `${wordCount} từ · Viết lại mới hoàn toàn theo ý tiếng Việt bằng phương pháp Linearthinking (chuẩn 270–320 từ)`
+            ? `${wordCount} từ · Đã bóc tách cấu trúc NeuralSymbolic & tra từ điển cho bài của bạn`
+            : `${wordCount} từ · Viết lại mới hoàn toàn theo ý tiếng Việt bằng phương pháp NeuralSymbolic (chuẩn 270–320 từ)`
         }
         actions={
           <div className="flex flex-wrap items-center gap-1.5">
@@ -687,11 +687,11 @@ function WritingModelAnswer({
         )}
 
         <p className="mt-3 text-xs text-slate-400 dark:text-slate-500">
-          💡 Rê chuột (hoặc chạm) vào câu bất kỳ để xem chức năng Linearthinking (Lead-in, Introduction, Effect...).
+          💡 Rê chuột (hoặc chạm) vào câu bất kỳ để xem chức năng NeuralSymbolic (Lead-in, Introduction, Effect...).
         </p>
 
         <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-slate-500">
-          <span className={MARK.structure}>cấu trúc Linearthinking</span>
+          <span className={MARK.structure}>cấu trúc NeuralSymbolic</span>
           <span className={MARK.library}>cụm thư viện</span>
           <span className={MARK.extra}>cụm mới</span>
           <span className={MARK.unverified} title="Longman / OZDIC không liệt kê, và AI thấy có thể chưa tự nhiên (rê chuột vào cụm để xem lý do).">
@@ -724,7 +724,7 @@ function WritingModelAnswer({
             </span>
           </div>
           <p className="mb-3 text-xs text-slate-500">
-            Hệ thống sẽ giữ <strong>nguyên văn 100%</strong> các câu chữ của bạn, tự động bóc tách cấu trúc Linearthinking, tô màu các cụm collocation và đối chiếu từ điển Longman / OZDIC.
+            Hệ thống sẽ giữ <strong>nguyên văn 100%</strong> các câu chữ của bạn, tự động bóc tách cấu trúc NeuralSymbolic, tô màu các cụm collocation và đối chiếu từ điển Longman / OZDIC.
           </p>
           <textarea
             rows={6}

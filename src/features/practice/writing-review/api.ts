@@ -11,7 +11,7 @@ export const STEPS: { id: string; label: string }[] = [
   { id: 'dictionary', label: 'Đối chiếu Longman + OZDIC' },
   { id: 'retry', label: 'Chọn lại cách sửa theo từ điển' },
   { id: 'essay_plan', label: 'Giám khảo đọc bản nháp: giữ, sửa, viết lại từng câu' },
-  { id: 'model_essay', label: 'Viết bài nâng cấp mới (Linearthinking)' },
+  { id: 'model_essay', label: 'Viết bài nâng cấp mới (NeuralSymbolic)' },
   { id: 'essay_review', label: 'Giám khảo soát bài nâng cấp' },
   { id: 'essay_dictionary', label: 'Tra Longman + OZDIC các cụm AI tự viết' },
   { id: 'classify', label: 'Phân loại chủ đề và dạng đề bài' },

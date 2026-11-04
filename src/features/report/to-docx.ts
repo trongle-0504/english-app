@@ -98,7 +98,7 @@ export async function docxDocument(doc: ReportDoc): Promise<DocxDocument> {
   }
 
   return new d.Document({
-    creator: 'LinearThinking',
+    creator: 'NeuralSymbolic',
     title: doc.title,
     styles: { default: { document: { run: { font: FONT, size: 21 } } } },
     sections: [

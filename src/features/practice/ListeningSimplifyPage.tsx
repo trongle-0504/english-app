@@ -1,4 +1,4 @@
-// Listening → Simplify: paste a transcript (and the questions if you like) and Gemini applies Linearthinking: the
+// Listening → Simplify: paste a transcript (and the questions if you like) and Gemini applies NeuralSymbolic: the
 // backbone of every sentence, the detail you can let pass, reference words, signposts, section anchors and the words that
 // lead to the answers, plus how the sentences and sections connect. IELTS mode is for test recordings; Podcast mode for
 // natural, machine-transcribed speech. A long transcript is analysed in parts side by side. Every analysis is saved;

@@ -25,7 +25,7 @@ export const WRITING_SECTIONS: SectionOption[] = [
   { key: 'corrected', label: 'Bài đã sửa', defaultOn: false },
   { key: 'think', label: 'Think in English', defaultOn: false },
   { key: 'answer', label: 'Bài nâng cấp (giữ màu cụm, kèm chú giải)', defaultOn: true },
-  { key: 'sentences', label: 'Bảng tách câu theo chức năng Linearthinking', defaultOn: false },
+  { key: 'sentences', label: 'Bảng tách câu theo chức năng NeuralSymbolic', defaultOn: false },
   { key: 'picks', label: 'Cụm thư viện: nghĩa, cách dùng, ví dụ', defaultOn: true },
   { key: 'extras', label: 'Cụm mới', defaultOn: true },
   { key: 'wording', label: 'Collocation đã tra (chỉ cụm có trong Longman / OZDIC), kèm nghĩa', defaultOn: true },

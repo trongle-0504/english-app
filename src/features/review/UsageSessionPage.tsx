@@ -333,7 +333,7 @@ function UsageSession() {
 
   return (
     <div className="mx-auto max-w-3xl pt-6">
-      <title>{`Luyện dùng từ (${cardsLeft}) · LinearThinking`}</title>
+      <title>{`Luyện dùng từ (${cardsLeft}) · NeuralSymbolic`}</title>
       <div className="mb-4 flex items-center justify-between gap-3">
         <Link
           to={recentDays ? '/review?tab=recent' : '/review'}

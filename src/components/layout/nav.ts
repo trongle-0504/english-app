@@ -103,7 +103,7 @@ export const navGroups: NavGroup[] = [
       {
         to: '/practice/speaking-ideas',
         label: 'Speaking Ideas',
-        description: 'Cụm từ & câu trả lời mẫu theo Linearthinking',
+        description: 'Cụm từ & câu trả lời mẫu theo NeuralSymbolic',
         icon: MessageSquareQuote,
         ai: true,
       },

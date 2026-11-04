@@ -22,7 +22,7 @@ export const SPEAKING_SECTIONS: SectionOption[] = [
   { key: 'idea', label: 'Ý của bạn (AI trình bày lại)', defaultOn: true },
   { key: 'think', label: 'Think in English', defaultOn: true },
   { key: 'answer', label: 'Câu trả lời mẫu (giữ màu cụm, kèm chú giải)', defaultOn: true },
-  { key: 'sentences', label: 'Bảng tách câu theo chức năng Linearthinking', defaultOn: false },
+  { key: 'sentences', label: 'Bảng tách câu theo chức năng NeuralSymbolic', defaultOn: false },
   { key: 'picks', label: 'Cụm thư viện: nghĩa, cách dùng, ví dụ', defaultOn: true },
   { key: 'extras', label: 'Cụm mới', defaultOn: true },
   { key: 'wording', label: 'Collocation đã tra (chỉ cụm có trong Longman / OZDIC), kèm nghĩa', defaultOn: true },

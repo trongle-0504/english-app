@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="border-t border-slate-200/70 bg-white/60 dark:border-slate-800/70 dark:bg-slate-950/60">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-6 text-sm text-slate-500 sm:px-6 dark:text-slate-400">
         <p>
-          <span className="font-semibold text-slate-700 dark:text-slate-200">LinearThinking</span> · Mastery through connection
+          <span className="font-semibold text-slate-700 dark:text-slate-200">NeuralSymbolic</span> · Mastery through connection
         </p>
         <nav className="flex flex-wrap gap-x-4 sm:gap-y-1" aria-label="Footer">
           {navGroups.map((group) => (

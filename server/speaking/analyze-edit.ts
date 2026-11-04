@@ -31,7 +31,7 @@ const AnalyzeEditSchema = z.object({
       marked_text: z
         .string()
         .describe(
-          "The candidate's exact sentence without altering any words, wrapping library/topic phrases in [[ ]] and Linearthinking structures/markers in {{ }}.",
+          "The candidate's exact sentence without altering any words, wrapping library/topic phrases in [[ ]] and NeuralSymbolic structures/markers in {{ }}.",
         ),
     }),
   ),
@@ -61,14 +61,14 @@ CRITICAL REQUIREMENTS:
 2. DO NOT rewrite, paraphrase, correct, improve, add, or delete ANY word or letter.
 3. Your role is strictly to:
    - Split the text into sentences
-   - Classify each sentence's Linearthinking function
-   - Mark Linearthinking structures in {{ }} and collocations/vocabulary in [[ ]]
+   - Classify each sentence's NeuralSymbolic function
+   - Mark NeuralSymbolic structures in {{ }} and collocations/vocabulary in [[ ]]
    - Extract structures and collocations for dictionary verification.
 
 TASKS:
 1. Split the candidate's text into sentences.
 2. For each sentence:
-   - Identify its Linearthinking tool:
+   - Identify its NeuralSymbolic tool:
      - answer: direct answer to the question (usually sentence 1, unless specifying the question)
      - description: details of what / how / who / when / where
      - cause: reason, motive, positive or negative effect, opinion
@@ -77,7 +77,7 @@ TASKS:
      - specify: splits a broad question into cases ("When it comes to...", "It depends on...")
      ${part === 2 ? '- lead_in, introduction, conclusion (Part 2 framework)' : ''}
    - In "marked_text":
-     - Wrap Linearthinking structures or sentence framing markers in {{ }}.
+     - Wrap NeuralSymbolic structures or sentence framing markers in {{ }}.
        Examples: {{The main reason is that}}, {{That is why}}, {{When it comes to}}, {{allows me to}}, {{It is worth mentioning that}}, {{Not only ... but also ...}} (wrap each fixed part in {{ }}).
      - Wrap topic collocations, library phrases, or idioms in [[ ]].
        Especially look for any phrases from the candidate's suggested library picks:
@@ -89,7 +89,7 @@ TASKS:
    - pattern: the structure frame pattern (e.g. "The main reason is that SV")
    - text: the exact words in the candidate's sentence
    - tool: the Linear tool of that sentence
-   - from_guide: true if found in the standard Linearthinking guide, false if an extended spoken frame
+   - from_guide: true if found in the standard NeuralSymbolic guide, false if an extended spoken frame
 4. wording:
    - Identify natural collocations and verb patterns the candidate wrote outside [[ ]] and {{ }} that can be verified against a collocation dictionary (Longman / OZDIC):
      - Verb + noun (e.g. "pursue a career", "relieve stress")

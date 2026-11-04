@@ -1,4 +1,4 @@
-// Listening → Simplify result: the transcript split into Linearthinking roles (S - V - O backbone, reference words,
+// Listening → Simplify result: the transcript split into NeuralSymbolic roles (S - V - O backbone, reference words,
 // signposts, section anchors, answer words, skippable detail), with the Vietnamese gloss above each chunk, the link of
 // every sentence to the one before it and each section's main idea and flow. Shared by the page and its history.
 import { AlignLeft, ChevronDown, Eye, EyeOff, Languages, Lightbulb, ListOrdered, MapPin, Sparkles, Workflow } from 'lucide-react'

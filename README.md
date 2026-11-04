@@ -1,4 +1,4 @@
-# LinearThinking
+# NeuralSymbolic
 
 Website học tiếng Anh: Vocabulary, Collocations, Grammar, Notes, Blog, Practice và Admin.
 Viết lại từ `../english-app` (Next.js). Không dùng database: mọi dữ liệu nằm trong `content/` (JSON + Markdown).
@@ -135,7 +135,7 @@ Cần đủ thì khôi phục bản đầy đủ (`english-app-commit/data/`, t�
 
 ### Tự chạy khi mở máy (WSL)
 
-`%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\LinearThinking.vbs` chạy ẩn
+`%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\NeuralSymbolic.vbs` chạy ẩn
 `scripts/dev-server.sh` trong WSL mỗi lần đăng nhập Windows. Script giữ server dev ở http://localhost:5173 (tự khởi
 động lại nếu bị crash, bỏ qua nếu đã chạy). Chế độ dev tự cập nhật trang khi file trong `content/` thay đổi. Dev server
 cũng cần đăng nhập (mục *Đăng nhập*).
@@ -365,10 +365,10 @@ Mỗi lượt ~1 phút, 2 lần gọi Claude (`server/speaking/suggest.ts`):
    cộng điểm cho từ đang học trong Review (chưa ổn định) → 25–40 ứng viên mỗi câu, tối đa 150. Mục gắn nhãn `writing`
    (chỉ hợp văn viết) không bao giờ được gợi ý.
 3. **suggest**: Claude chỉ được chọn trong danh sách ứng viên (code kiểm tra id), viết cách dùng, câu ví dụ, và câu trả lời
-   mẫu **theo phương pháp Linearthinking**: prompt kèm nguyên file `content/speaking/linearthinking-skill.md` (bản sạch, không
+   mẫu **theo phương pháp NeuralSymbolic**: prompt kèm nguyên file `content/speaking/linearthinking-skill.md` (bản sạch, không
    HTML, của bài blog `General/speaking-skills.md`; sửa file này là có hiệu lực ở lần chạy sau). Câu trả lời trả về từng câu
    với Linear tool của nó (Answer / Description / Cause / Effect / Example / Specify; Part 2: Lead-in / Introduction /
-   Conclusion), cấu trúc được đánh dấu `{{ }}` (tô xanh lá) và liệt kê ở mục "Cấu trúc Linearthinking" (nhãn "mở rộng" =
+   Conclusion), cấu trúc được đánh dấu `{{ }}` (tô xanh lá) và liệt kê ở mục "Cấu trúc NeuralSymbolic" (nhãn "mở rộng" =
    Claude tự mở rộng ngoài guide). Không có flow cố định: câu hỏi và ý người học quyết định dùng tool nào, thứ tự nào (mục
    "Be flexible" trong guide); độ dài theo chuẩn IELTS (`ANSWER_WORDS`: Part 1 40–70 từ, Part 2 200–300, Part 3 80–130),
    trang hiện số từ so với chuẩn.
@@ -407,7 +407,7 @@ Khớp không dấu chỉ được nhận khi so cả dấu vẫn giống ≥ 85
 được tính là đã xác nhận (nguồn "DOL"). Trang hiện mục "Từ điển DOL (Việt → Anh)". Cache ở `cache/dol/`, ≤4 request/giây,
 lỗi mạng thì bỏ qua gợi ý (không hỏng lượt). `DOL_LOOKUP=off` tắt tra mạng. Nội dung © DOL English: chỉ dùng cá nhân.
 
-Thứ tự ưu tiên khi viết: đúng ý người học → tự nhiên → khung Linearthinking → dùng cụm gợi ý (2–4 cụm, chỉ ở chỗ tự nhiên
+Thứ tự ưu tiên khi viết: đúng ý người học → tự nhiên → khung NeuralSymbolic → dùng cụm gợi ý (2–4 cụm, chỉ ở chỗ tự nhiên
 nhất; cụm ngoài thư viện là gợi ý để học, không bắt buộc đưa vào câu). Trước khi viết, Claude diễn lại ý bằng tiếng Anh
 ("Ý chính (Think in English)", hiện trên trang). Số ứng viên: 25–40 mỗi câu hỏi (đề 1–2 câu: 40, 6+ câu: 25), dùng chung,
 tối đa 150 — đo thực tế: cụm Claude chọn nằm từ hạng 1 đến 29 (trung vị ~12) và 1/4 lấy từ danh sách của câu khác.

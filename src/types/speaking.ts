@@ -222,7 +222,7 @@ export interface SpeakingExtra {
   sources: { name: 'Longman' | 'OZDIC' | 'DOL'; url: string }[]
 }
 
-/** A piece of the model answer; `mark` = a suggested phrase, or a Linearthinking structure / marker, used there. */
+/** A piece of the model answer; `mark` = a suggested phrase, or a NeuralSymbolic structure / marker, used there. */
 export interface AnswerSegment {
   text: string
   /** checked: confirmed by Longman / OZDIC; unverified: not listed and judged suspicious (or not judged); natural: not listed but judged natural. */
@@ -280,7 +280,7 @@ export interface CheckedWording {
 }
 
 /**
- * The Linearthinking role of a sentence in the model answer (content/speaking/linearthinking-skill.md): the direct
+ * The NeuralSymbolic role of a sentence in the model answer (content/speaking/linearthinking-skill.md): the direct
  * answer, a Linear tool that expands it, or a Part 2 framework part.
  */
 export const LINEAR_TOOLS = ['answer', 'description', 'cause', 'effect', 'example', 'specify', 'lead_in', 'introduction', 'conclusion'] as const
@@ -291,7 +291,7 @@ export interface AnswerSentence {
   segments: AnswerSegment[]
 }
 
-/** A structure or marker from the Linearthinking guide used in the model answer. */
+/** A structure or marker from the NeuralSymbolic guide used in the model answer. */
 export interface UsedStructure {
   /** As written in the guide, e.g. "The best part about N is that SV". */
   pattern: string

@@ -8,7 +8,7 @@ const rootDir = path.resolve(__dirname, '..')
 const notesPath = path.join(rootDir, 'content', 'note', 'notes.json')
 const publicDir = path.join(rootDir, 'public', 'note-images')
 
-const UA = 'LinearThinking/1.0 (personal IELTS study app; vocabulary illustrations)'
+const UA = 'NeuralSymbolic/1.0 (personal IELTS study app; vocabulary illustrations)'
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
 export function slugify(value) {
