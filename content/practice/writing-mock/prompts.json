@@ -1,0 +1,870 @@
+[
+  {
+    "id": 1,
+    "prompt": "Nowadays young people are admiring media and sports stars, even though they do not set a good example. Do you think this is a positive or negative development?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Entertainment",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 2,
+    "prompt": "More and more universities are replacing face-to-face teaching with online courses. Do you think this is a positive or negative development?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Education",
+      "Technology"
+    ]
+  },
+  {
+    "id": 3,
+    "prompt": "Some countries import a large amount of food from other parts of the world. To what extent is this a positive or negative trend?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Food & Drinks",
+      "Economics"
+    ]
+  },
+  {
+    "id": 4,
+    "prompt": "The personal information of many individuals is held by large internet companies and organizations. Do you think the advantages of this outweigh the disadvantages?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Technology",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 5,
+    "prompt": "Some children nowadays take sports seriously while others play sports in their free time. Is this a positive or negative development?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Sport",
+      "Education"
+    ]
+  },
+  {
+    "id": 6,
+    "prompt": "In some cities public parks and open spaces are being changed into gardens where local residents can grow their own fruit and vegetables. Do the advantages outweigh the disadvantages?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Architecture",
+      "Food & Drinks",
+      "Environment"
+    ]
+  },
+  {
+    "id": 7,
+    "prompt": "In some countries, it is now possible for people to buy a wide variety of foods transported from all over the world. To what extent do the benefits of this development outweigh the drawbacks?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Food & Drinks",
+      "Economics"
+    ]
+  },
+  {
+    "id": 8,
+    "prompt": "Some people use social media to keep in touch with other people and new events. Do you think the advantages of this technology outweigh the disadvantages?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Technology",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 9,
+    "prompt": "An increasing number of people are changing careers during their working life. What do you think are the reasons for this? Do you think this is a positive or negative development for society?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Work",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 10,
+    "prompt": "Many young people's choice of future jobs is based on salary. Do the advantages outweigh the disadvantages?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Work",
+      "Education"
+    ]
+  },
+  {
+    "id": 11,
+    "prompt": "In some countries, it is illegal for companies to reject job applicants for their age. Is this a positive or negative development?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Work",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 12,
+    "prompt": "With the growing number of population in cities, many people are living in small homes that don't have outdoor spaces. Is this a positive or negative development?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Architecture",
+      "Lifestyle"
+    ]
+  },
+  {
+    "id": 13,
+    "prompt": "Today more people put their private information (address, telephone and plastic card numbers) online to do their daily activities (banking, shopping, socializing). Is this a positive or negative development?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Technology",
+      "Crime"
+    ]
+  },
+  {
+    "id": 14,
+    "prompt": "In many countries, some students live with their families while studying, but other students prefer to attend universities in other cities. Do the advantages of living away from home outweigh the disadvantages?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Education",
+      "Family",
+      "Lifestyle"
+    ]
+  },
+  {
+    "id": 15,
+    "prompt": "In the past, knowledge was stored in books. Today, people store knowledge on the internet. Do the advantages of this outweigh the disadvantages?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Technology",
+      "Education"
+    ]
+  },
+  {
+    "id": 16,
+    "prompt": "Films and games can be accessed at any time from mobile devices, like smartphones, tablets and laptop computers. Do the advantages of such developments outweigh the disadvantages?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Entertainment",
+      "Technology"
+    ]
+  },
+  {
+    "id": 17,
+    "prompt": "More and more measures to improve security in large urban areas have been introduced in many countries because of the increased crime. Do the benefits of these measures outweigh the drawbacks?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Crime",
+      "Government",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 18,
+    "prompt": "Some people think that we should invent a new language for international communication. Will the benefits of this outweigh the problems associated with it?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Social issues"
+    ]
+  },
+  {
+    "id": 19,
+    "prompt": "Research shows that increasing numbers of people are now living in mega-cities: cities of more than 20 million inhabitants. Is this a positive or negative development?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Architecture",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 20,
+    "prompt": "In some parts of the world, many famous people are regarded as role models and they are having an increasing influence on the young. Is this a positive or negative development?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Social issues",
+      "Entertainment"
+    ]
+  },
+  {
+    "id": 21,
+    "prompt": "In many countries, young people are leaving their homes in the countryside to live in large cities. Do the advantages outweigh the disadvantages?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Social issues",
+      "Lifestyle"
+    ]
+  },
+  {
+    "id": 22,
+    "prompt": "Organizing tours to remote places and communities is becoming more and more popular. Is it a positive or negative development for the local people and environment?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Tourism",
+      "Environment"
+    ]
+  },
+  {
+    "id": 23,
+    "prompt": "In some countries, there has been an increase in the number of parents who are choosing to educate their children themselves at home instead of sending them school. Do the advantages of home education outweigh the disadvantages?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Education",
+      "Family"
+    ]
+  },
+  {
+    "id": 24,
+    "prompt": "In the past, people stored knowledge in books. Nowadays, people store knowledge on the internet. Do the advantages of this development outweigh the disadvantages?",
+    "type": "Advantages & Disadvantages",
+    "topics": [
+      "Technology",
+      "Education"
+    ]
+  },
+  {
+    "id": 25,
+    "prompt": "In some countries, celebrities complain about the way the media publicize their private lives. Some people say that they should accept it as part of their fame. To what extent do you agree or disagree?",
+    "type": "Agree & disagree",
+    "topics": [
+      "Social issues",
+      "Entertainment"
+    ]
+  },
+  {
+    "id": 26,
+    "prompt": "Many young people do not enjoy competitive sports because they’re afraid of losing. Therefore, sports competitions should be banned. To what extent do you agree or disagree?",
+    "type": "Agree & disagree",
+    "topics": [
+      "Sport",
+      "Education"
+    ]
+  },
+  {
+    "id": 27,
+    "prompt": "Some parents try to decide their children’s future careers and personal choices because they want them to become good citizens and successful adults. However, they often ignore their children’s own opinions and interests. To what extent do you agree or disagree?",
+    "type": "Agree & disagree",
+    "topics": [
+      "Family",
+      "Education"
+    ]
+  },
+  {
+    "id": 28,
+    "prompt": "Crime rates are likely to decline due to the advancements in technology, which will help to prevent and solve crimes in an easier way. Do you agree or disagree?",
+    "type": "Agree & disagree",
+    "topics": [
+      "Crime",
+      "Technology"
+    ]
+  },
+  {
+    "id": 29,
+    "prompt": "Some groups of people have benefited from modern communications technology but some people do not benefit at all. To what extent do you agree or disagree?",
+    "type": "Agree & disagree",
+    "topics": [
+      "Technology",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 30,
+    "prompt": "The best way to solve traffic and transportation problems is to encourage people to live in cities rather than suburbs or countryside. To what extent do you agree or disagree?",
+    "type": "Agree & disagree",
+    "topics": [
+      "Transport",
+      "Architecture"
+    ]
+  },
+  {
+    "id": 31,
+    "prompt": "Some experts suggest that all cyclists should have to pass a test before being allowed to ride a bike on public roads. Agree or Disagree?",
+    "type": "Agree & disagree",
+    "topics": [
+      "Transport",
+      "Government"
+    ]
+  },
+  {
+    "id": 32,
+    "prompt": "Family is a powerful influence on a child's life, whereas it is also believed that society plays a bigger part for children's development. To what an extent do you agree or disagree?",
+    "type": "Agree & disagree",
+    "topics": [
+      "Family",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 33,
+    "prompt": "There have been many inventions in human history, such as the wheel. Some people think the most important thing is the internet. To what extent do you agree or disagree with this opinion?",
+    "type": "Agree & disagree",
+    "topics": [
+      "Technology",
+      "History"
+    ]
+  },
+  {
+    "id": 34,
+    "prompt": "The tendency of human beings to copy one another is shown in the popularity of fashions in clothes and other consumer goods. Do you agree or disagree? Give reasons for your answer and include any relevant examples from your own knowledge and experience.",
+    "type": "Agree & disagree",
+    "topics": [
+      "Advertisement",
+      "Lifestyle"
+    ]
+  },
+  {
+    "id": 35,
+    "prompt": "Solving environmental problems should be the responsibility of an international organization rather than each national government. Do you agree or disagree?",
+    "type": "Agree & disagree",
+    "topics": [
+      "Environment",
+      "Government"
+    ]
+  },
+  {
+    "id": 36,
+    "prompt": "Some people believe that everyone has a right to have access to university education and the governments should make it free for all students no matter what financial background they have. To what extent do you agree or disagree?",
+    "type": "Agree & disagree",
+    "topics": [
+      "Education",
+      "Government"
+    ]
+  },
+  {
+    "id": 37,
+    "prompt": "People think that the government should increase the cost of fuel for cars and other vehicles to solve environmental problems. To what extent do you agree or disagree?",
+    "type": "Agree & disagree",
+    "topics": [
+      "Environment",
+      "Transport",
+      "Government"
+    ]
+  },
+  {
+    "id": 38,
+    "prompt": "Some people say that the main aim of advertising is to improve sales of products that people do not really need. To what extent do you agree or disagree?",
+    "type": "Agree & disagree",
+    "topics": [
+      "Advertisement",
+      "Business"
+    ]
+  },
+  {
+    "id": 39,
+    "prompt": "Some people believe that the best way to produce a happier society is to ensure that there are only small differences between the richest and the poorest members. To what extent do you agree or disagree?",
+    "type": "Agree & disagree",
+    "topics": [
+      "Social issues",
+      "Economics"
+    ]
+  },
+  {
+    "id": 40,
+    "prompt": "Some people think history has nothing or little to tell us, but others think that studying the past history can help us better understand the present. Please discuss the two views and give your own opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "History",
+      "Education"
+    ]
+  },
+  {
+    "id": 41,
+    "prompt": "Some people think that children should start school at a very early age, but others believe that children should go to school until they are older. Discuss both views and give your opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Education",
+      "Family"
+    ]
+  },
+  {
+    "id": 42,
+    "prompt": "Some people think that a job provides not only an income but also a social life. Other people think that it is better to develop a social life with people you do not work with. Discuss both these views and give your own opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Work",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 43,
+    "prompt": "Some parents think it is a good idea to let their children use a mobile phone. Others disagree. Discuss both views and give your opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Family",
+      "Technology"
+    ]
+  },
+  {
+    "id": 44,
+    "prompt": "Some people think that it is more effective for students to study in a group while others believe that it is better for them to study alone. Discuss both views and give your own opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Education"
+    ]
+  },
+  {
+    "id": 45,
+    "prompt": "Some people say it is the government's responsibility to transport children to school, while others believe parents should transport their children to school. Discuss both views and give your opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Education",
+      "Government",
+      "Transport"
+    ]
+  },
+  {
+    "id": 46,
+    "prompt": "Some people think adults should learn practical skills by themselves, while others think they should learn with teachers in the classroom. Discuss both views and give your own opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Education",
+      "Lifestyle"
+    ]
+  },
+  {
+    "id": 47,
+    "prompt": "Some people think that governments should pay for education and health care, while others believe that it is not their responsibility. Discuss both views and give your own opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Government",
+      "Education",
+      "Health"
+    ]
+  },
+  {
+    "id": 48,
+    "prompt": "Many people think cheap air travel should be encouraged because it gives ordinary people the freedom to travel further. However, others think that this leads to environmental problems, so air travel should be more expensive in order to decrease pollution. Discuss both views and give your opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Tourism",
+      "Environment",
+      "Transport"
+    ]
+  },
+  {
+    "id": 49,
+    "prompt": "Films and computer games containing violence are popular. Some people say they have a negative effect on society and should be banned. Others say they are just harmless relaxation. Discuss both views and give your own opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Entertainment",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 50,
+    "prompt": "The government should spend money on sport facilities for training top athletes while others argue that they should spend money on sport facilities for everybody. Discuss both views and give your opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Sport",
+      "Government"
+    ]
+  },
+  {
+    "id": 51,
+    "prompt": "Some people believe that working hard and determination help them to be successful in life. Others think that there are other factors. Discuss both views and give your opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Lifestyle",
+      "Work"
+    ]
+  },
+  {
+    "id": 52,
+    "prompt": "Some people think rapid population growth in cities benefits people who live there, while others believe that it has negative impacts. Discuss both these views and give your own opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Architecture",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 53,
+    "prompt": "Some people believe that children have the freedom to make mistakes, while others argue that adults should prevent them from doing so. Discuss both views and give your own opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Family",
+      "Education"
+    ]
+  },
+  {
+    "id": 54,
+    "prompt": "Some people believe that teachers should be responsible for teaching students to distinguish right from wrong and to behave ethically. Others argue that teachers should focus solely on teaching students academic subjects. Discuss both these views and give your own opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Education",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 55,
+    "prompt": "Some people think that violent films and video games have negative effects on people and should be banned. Others think that they are just relaxation sources. Discuss both sides and give your own opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Entertainment",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 56,
+    "prompt": "Some people think that newspapers are the best way to learn about news. However, others believe that they can learn news more effectively through other media. Discuss both views and give your own opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Entertainment",
+      "Technology"
+    ]
+  },
+  {
+    "id": 57,
+    "prompt": "Some people think that Mathematics is the most important subject for school children to study, while some disagree. Discuss both views and give your own opinion.",
+    "type": "Discuss both views",
+    "topics": [
+      "Education"
+    ]
+  },
+  {
+    "id": 58,
+    "prompt": "In some countries, there is not enough recycling of waste materials (e.g. paper, glass, and cans). What are the reasons and solutions?",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Environment"
+    ]
+  },
+  {
+    "id": 59,
+    "prompt": "In many countries, the amount of household waste like food packaging is increasing. What are the causes of this problem? What measures could be taken to reduce it?",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Environment",
+      "Lifestyle"
+    ]
+  },
+  {
+    "id": 60,
+    "prompt": "Many museums and historical sites are mainly visited by tourists and not local people. Why is the case? What can be done to attract local people?",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Tourism",
+      "History"
+    ]
+  },
+  {
+    "id": 61,
+    "prompt": "Many students find it harder to study when they are at university or college than when they were at school. Why is this? What can be done to solve the problem?",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Education"
+    ]
+  },
+  {
+    "id": 62,
+    "prompt": "The increase in the production of consumer goods results in damage to the natural environment. What are the causes of this? What can be done to solve this problem?",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Environment",
+      "Economics"
+    ]
+  },
+  {
+    "id": 63,
+    "prompt": "Nowadays, not enough students choose science subjects in university in many countries. What are the reasons for this problem? What are the effects on society?",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Education",
+      "Science & Energy"
+    ]
+  },
+  {
+    "id": 64,
+    "prompt": "In many countries, people throw away a lot of food from restaurants and shops. Why do you think people waste food in this way? What can be done to reduce the amount of food thrown away?",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Food & Drinks",
+      "Environment"
+    ]
+  },
+  {
+    "id": 65,
+    "prompt": "Major cities in the world are growing fast, as well as their problems. What are the problems that young people living in those cities are facing? Suggest some solutions.",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Architecture",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 66,
+    "prompt": "Weddings are getting bigger and more expensive. What is the reason for this? Is it a positive or negative development?",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Lifestyle",
+      "Economics"
+    ]
+  },
+  {
+    "id": 67,
+    "prompt": "In the past, people lived in one place for a long time, but now they can live in many different places, what are the reasons? Is this a positive or negative development?",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Lifestyle",
+      "Social issues"
+    ],
+    "also_in_types": [
+      "Two-part questions"
+    ]
+  },
+  {
+    "id": 68,
+    "prompt": "Nowadays, more and more people decide to have children later in their life. What are the reasons? Do the advantages of this outweigh the disadvantages?",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Family",
+      "Lifestyle"
+    ]
+  },
+  {
+    "id": 69,
+    "prompt": "Fewer young people do farming work in rural areas. Why? Should young people be encouraged to do farming work?",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Work",
+      "Economics"
+    ]
+  },
+  {
+    "id": 70,
+    "prompt": "More and more people decide to eat healthy food and exercise regularly. What are the reasons for this trend? What can be done to encourage more people to eat healthier and exercise?",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Health",
+      "Food & Drinks",
+      "Lifestyle"
+    ]
+  },
+  {
+    "id": 71,
+    "prompt": "Every day, millions of tons of food are wasted all over the world. Why do you think this is happening? And how can we solve this problem?",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Food & Drinks",
+      "Environment"
+    ]
+  },
+  {
+    "id": 72,
+    "prompt": "Despite the increased access to education, a significant number of people cannot read or write. What are the disadvantages and what action should the government take?",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Education",
+      "Government"
+    ]
+  },
+  {
+    "id": 73,
+    "prompt": "In the developed world, average life expectancy is increasing. What problems will this cause for individuals and society? Suggest some measures that could be taken to reduce the impact of aging populations.",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Health",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 74,
+    "prompt": "In many countries, the number of animals and plants is declining. Why do you think it is happening? How to solve this issue?",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Plant & Animals",
+      "Environment"
+    ]
+  },
+  {
+    "id": 75,
+    "prompt": "Many museums and historical sites are mainly visited by tourists but not local people. Why is this the case and what can be done to attract more local people to visit these places?",
+    "type": "Problems-causes-solutions",
+    "topics": [
+      "Tourism",
+      "History"
+    ]
+  },
+  {
+    "id": 76,
+    "prompt": "Many people like to eat unhealthy food even though they know it's bad for them. Why is this? What is an effective way to improve people's healthy eating habits?",
+    "type": "Two-part questions",
+    "topics": [
+      "Food & Drinks",
+      "Health"
+    ]
+  },
+  {
+    "id": 77,
+    "prompt": "People still value artists in the age of advanced science and technology. What are the reasons? Are arts as important as science and technology?",
+    "type": "Two-part questions",
+    "topics": [
+      "Art",
+      "Science & Energy"
+    ]
+  },
+  {
+    "id": 78,
+    "prompt": "In today’s world of advanced science and technology, we still greatly value our artists such as musicians, painters and writers. What can the arts tell us about life that science and technology cannot?",
+    "type": "Two-part questions",
+    "topics": [
+      "Art",
+      "Science & Energy"
+    ]
+  },
+  {
+    "id": 79,
+    "prompt": "In education and employment, some people work harder than others. Why do some people work harder? Is it always a good thing to work hard?",
+    "type": "Two-part questions",
+    "topics": [
+      "Work",
+      "Education"
+    ]
+  },
+  {
+    "id": 80,
+    "prompt": "Some countries have introduced laws to limit working hours for employees. Why are these laws introduced? Do you think they are a positive or negative development?",
+    "type": "Two-part questions",
+    "topics": [
+      "Work",
+      "Government"
+    ]
+  },
+  {
+    "id": 81,
+    "prompt": "Doctors recommend that older people exercise regularly. However, many older people do not exercise enough. What could be the reason for this? What can be done to encourage them to do physical activities?",
+    "type": "Two-part questions",
+    "topics": [
+      "Health"
+    ]
+  },
+  {
+    "id": 82,
+    "prompt": "Nowadays, more and more people want to get things done instantly (services, information, tasks). Why is this? Do you think this is a positive or negative development?",
+    "type": "Two-part questions",
+    "topics": [
+      "Lifestyle",
+      "Technology"
+    ]
+  },
+  {
+    "id": 83,
+    "prompt": "An increasing number of people are choosing cosmetic surgery for changing their appearance. What can be the reasons for this? Do you think it’s a positive or negative development?",
+    "type": "Two-part questions",
+    "topics": [
+      "Health",
+      "Lifestyle"
+    ]
+  },
+  {
+    "id": 84,
+    "prompt": "In some countries, young people have become richer, healthier and live longer, but they are less happy. What are the causes? What can be done to address this situation?",
+    "type": "Two-part questions",
+    "topics": [
+      "Social issues",
+      "Health"
+    ]
+  },
+  {
+    "id": 85,
+    "prompt": "Customers are faced with an increasing number of advertisements from competing companies. To what extent do you think consumers are influenced by advertisements? What measures can be taken to protect them?",
+    "type": "Two-part questions",
+    "topics": [
+      "Advertisement",
+      "Business"
+    ]
+  },
+  {
+    "id": 86,
+    "prompt": "Many animal species are becoming extinct due to human activities on land and in sea. What are the reasons and solutions?",
+    "type": "Two-part questions",
+    "topics": [
+      "Plant & Animals",
+      "Environment"
+    ]
+  },
+  {
+    "id": 87,
+    "prompt": "Today’s food travels thousands of miles before it reaches customers. Why is this the case? Is this a positive or negative development?",
+    "type": "Two-part questions",
+    "topics": [
+      "Food & Drinks",
+      "Economics"
+    ]
+  },
+  {
+    "id": 88,
+    "prompt": "Fewer and fewer people today write by hand using a pen, pencil or brush. What are the reasons for this? Is the decline in writing by hand a positive or negative development?",
+    "type": "Two-part questions",
+    "topics": [
+      "Education",
+      "Technology"
+    ]
+  },
+  {
+    "id": 89,
+    "prompt": "Companies use a variety of methods to improve the sales of their products. What are those methods? Which is the most effective method?",
+    "type": "Two-part questions",
+    "topics": [
+      "Business",
+      "Advertisement"
+    ]
+  },
+  {
+    "id": 90,
+    "prompt": "In many countries, the cost of using public transport is rising rapidly. What are the causes of this problem? What solutions can be implemented to address it?",
+    "type": "Two-part questions",
+    "topics": [
+      "Transport",
+      "Economics"
+    ]
+  },
+  {
+    "id": 91,
+    "prompt": "Research indicates that nowadays some consumers are much less influenced by advertising than in the past. What do you think are the reasons for this? Do you think this is a positive or negative development?",
+    "type": "Two-part questions",
+    "topics": [
+      "Advertisement",
+      "Business"
+    ]
+  },
+  {
+    "id": 92,
+    "prompt": "In more and more countries, people give money on special occasions rather than personally giving gifts. Why might this be the case? Is it a positive or negative development?",
+    "type": "Two-part questions",
+    "topics": [
+      "Lifestyle",
+      "Family"
+    ]
+  },
+  {
+    "id": 93,
+    "prompt": "Many schoolchildren dislike learning maths. What are the reasons, and what are the best ways to make them enjoy maths?",
+    "type": "Two-part questions",
+    "topics": [
+      "Education"
+    ]
+  },
+  {
+    "id": 94,
+    "prompt": "In many countries, the number of animals and plants is declining. Why do you think this is happening? How can this issue be solved?",
+    "type": "Two-part questions",
+    "topics": [
+      "Plant & Animals",
+      "Environment"
+    ]
+  },
+  {
+    "id": 95,
+    "prompt": "Population in cities is growing rapidly. What are the effects of this? What solutions can you give to maintain a good quality of life in urban areas?",
+    "type": "Two-part questions",
+    "topics": [
+      "Architecture",
+      "Social issues"
+    ]
+  },
+  {
+    "id": 96,
+    "prompt": "Today more and more people want things instantly (e.g. goods, service, news). Why is this? Is it positive or negative development?",
+    "type": "Two-part questions",
+    "topics": [
+      "Lifestyle",
+      "Technology"
+    ]
+  }
+]

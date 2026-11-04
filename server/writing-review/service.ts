@@ -10,6 +10,8 @@ import { writingReviewEffort, writingReviewModelName, writingReviewModel } from 
 import { proofOf, rewriteReview, type IssueKind, type RewriteReport } from './rewrite.ts'
 import { creditInBackground } from '../practice/real-use.ts'
 import { analyzeUserEditedWriting, resetUserEditedWriting } from './writing-essay.ts'
+import { WRITING_REVIEW_TOPICS, WRITING_REVIEW_TYPES, type WritingReviewTopic, type WritingReviewType } from '../../src/features/practice/writing-review/categories.ts'
+import { z } from 'zod'
 
 export const MIN_LENGTH = 30
 export const MAX_LENGTH = 5000
@@ -46,7 +48,10 @@ function buildResult(
   report: RewriteReport,
   usage: WritingUsage,
   durationMs: number,
+  title?: string,
+  prompt?: string,
   vietnameseText?: string,
+  classification?: { topic: WritingReviewTopic; questionType: WritingReviewType },
 ): WritingReviewResult {
   const fixes: WritingFix[] = report.fixed
     .map((issue, n): WritingFix => ({
@@ -65,6 +70,9 @@ function buildResult(
     id,
     createdAt,
     durationMs,
+    ...(title?.trim() ? { title: title.trim() } : {}),
+    ...(prompt?.trim() ? { prompt: prompt.trim() } : {}),
+    ...(classification ? { topic: classification.topic, questionType: classification.questionType } : {}),
     text,
     vietnameseText,
     ...(report.vietnameseFormatted?.blocks.length ? { vietnameseFormatted: report.vietnameseFormatted } : {}),
@@ -89,9 +97,30 @@ function buildResult(
     modelEssay: report.modelEssay,
     usage,
   }
+
 }
 
-async function run(ctx: ApiContext, job: WritingReviewJob, text: string, vietnameseText?: string) {
+const ClassificationSchema = z.object({
+  topic: z.enum(WRITING_REVIEW_TOPICS),
+  questionType: z.enum(WRITING_REVIEW_TYPES),
+})
+
+export async function classifyWritingReview(
+  llm: ReturnType<typeof writingReviewModel>,
+  text: string,
+  prompt?: string,
+): Promise<{ topic: WritingReviewTopic; questionType: WritingReviewType }> {
+  const result = await llm.json({
+    label: 'classify',
+    system: 'Classify an IELTS Writing Task 2 question into exactly one topic and one question type. Use Other only when no listed label fits.',
+    prompt: `Question:\n${prompt?.trim() || '(No question supplied)'}\n\nEssay:\n${text}`,
+    schema: ClassificationSchema,
+    effort: 'low',
+  })
+  return result.value
+}
+
+async function run(ctx: ApiContext, job: WritingReviewJob, text: string, prompt?: string, vietnameseText?: string, title?: string) {
   const started = Date.now()
   // The step shown comes from rewriteReview's onStep only: call labels ("writing: model essay") are not step ids the
   // page knows.
@@ -107,11 +136,19 @@ async function run(ctx: ApiContext, job: WritingReviewJob, text: string, vietnam
   })
   try {
     const report = await rewriteReview(text, llm, {
+      prompt,
       vietnameseText,
       rootDir: ctx.rootDir,
       onStep: (step) => (job.step = step),
     })
-    job.result = buildResult(job.id, job.startedAt, text, report, job.usage, Date.now() - started, vietnameseText)
+    job.step = 'classify'
+    const classification = await classifyWritingReview(llm, text, prompt).catch((error: Error) => {
+      console.warn(`[writing-review] classification skipped: ${error.message}`)
+      return { topic: 'Other' as const, questionType: 'Other' as const }
+    })
+    job.topic = classification.topic
+    job.questionType = classification.questionType
+    job.result = buildResult(job.id, job.startedAt, text, report, job.usage, Date.now() - started, title, prompt, vietnameseText, classification)
     job.status = 'done'
     job.step = undefined
     await mkdir(dir(ctx), { recursive: true })
@@ -135,7 +172,7 @@ export function normalizeVietnameseOutline(raw?: string): string | undefined {
   return raw.replace(SECTION_REGEX, '\n\n').replace(LIST_REGEX, '\n\n').trim()
 }
 
-export function startReview(ctx: ApiContext, text: string, vietnameseText?: string): WritingReviewJob {
+export function startReview(ctx: ApiContext, text: string, prompt?: string, vietnameseText?: string, title?: string): WritingReviewJob {
   if ([...jobs.values()].filter((j) => j.status === 'running').length >= MAX_RUNNING) {
     throw new ApiError(429, 'Another review is still running — please wait for it to finish.')
   }
@@ -144,12 +181,14 @@ export function startReview(ctx: ApiContext, text: string, vietnameseText?: stri
     id: `${Date.now().toString(36)}-${randomBytes(3).toString('hex')}`,
     status: 'running',
     startedAt: new Date().toISOString(),
+    title: title?.trim() || undefined,
+    prompt: prompt?.trim() || undefined,
     vietnameseText: cleanVietnamese,
     step: 'diagnose',
     usage: emptyUsage(),
   }
   jobs.set(job.id, job)
-  void run(ctx, job, text, cleanVietnamese)
+  void run(ctx, job, text, prompt, cleanVietnamese, title)
   return job
 }
 
@@ -179,6 +218,10 @@ export async function listReviews(ctx: ApiContext, limit = 100): Promise<Writing
       items.push({
         id: r.id,
         createdAt: r.createdAt,
+        title: r.title ?? r.prompt,
+        prompt: r.prompt,
+        topic: r.topic,
+        questionType: r.questionType,
         excerpt: (r.text || '').slice(0, 140),
         vietnameseExcerpt: r.vietnameseText ? r.vietnameseText.slice(0, 140) : undefined,
         fixes: r.fixes?.length ?? 0,

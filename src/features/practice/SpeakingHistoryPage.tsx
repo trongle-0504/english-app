@@ -567,8 +567,16 @@ export default function SpeakingHistoryPage() {
                   added={review.added}
                   onAdd={review.add}
                   onAnalyzeEdit={async (edited: string) => {
-                    const { result: updated } = await speakingApi.analyzeEdit(selected!.id, selected!.index, edited, result.part)
-                    setResults((prev) => ({ ...prev, [selected!.id]: updated }))
+                    const { job: started } = await speakingApi.analyzeEdit(selected!.id, selected!.index, edited, result.part)
+                    while (true) {
+                      await new Promise((resolve) => setTimeout(resolve, 2000))
+                      const { job } = await speakingApi.getAnalyzeEdit(started.id)
+                      if (job.status === 'done' && job.result) {
+                        setResults((prev) => ({ ...prev, [selected!.id]: job.result! }))
+                        return
+                      }
+                      if (job.status === 'error') throw new Error(job.error || 'Không thể phân tích bài sửa.')
+                    }
                   }}
                   onResetEdit={async () => {
                     const { result: updated } = await speakingApi.resetEdit(selected!.id, selected!.index)

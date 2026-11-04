@@ -38,3 +38,4 @@ dist
 !/content/practice/
 /content/practice/*
 !/content/practice/speaking-mock/
+!/content/practice/writing-mock/

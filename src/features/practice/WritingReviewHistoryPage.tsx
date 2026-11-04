@@ -14,6 +14,7 @@ import { Badge, ButtonLink, Card, EmptyState, PageHeader, SearchInput } from '@/
 import { cn } from '@/lib/cn'
 import type { WritingReviewResult, WritingReviewSummary } from '@/types/writingReview'
 import { writingReviewApi } from './writing-review/api'
+import { WRITING_REVIEW_TOPICS, WRITING_REVIEW_TYPES } from './writing-review/categories'
 import { ReviewResult } from './writing-review/ReviewResult'
 import {
   dayLabel,
@@ -50,6 +51,8 @@ export default function WritingReviewHistoryPage() {
 
   const [range, setRange] = useState<Range>('all')
   const [search, setSearch] = useState('')
+  const [topic, setTopic] = useState('all')
+  const [questionType, setQuestionType] = useState('all')
   const [items, setItems] = useState<WritingReviewSummary[] | null>(null)
   const [error, setError] = useState('')
   const [selectedId, setSelectedId] = useState<string>(initialId)
@@ -137,12 +140,12 @@ export default function WritingReviewHistoryPage() {
     const q = search.trim().toLowerCase()
     return items.filter((item) => {
       if (!matchesRange(item.createdAt, range)) return false
+      if (topic !== 'all' && item.topic !== topic) return false
+      if (questionType !== 'all' && item.questionType !== questionType) return false
       if (!q) return true
-      const inExcerpt = item.excerpt.toLowerCase().includes(q)
-      const inVi = item.vietnameseExcerpt?.toLowerCase().includes(q)
-      return inExcerpt || inVi
+      return (item.title || '').toLowerCase().includes(q)
     })
-  }, [items, search, range])
+  }, [items, search, range, topic, questionType])
 
   // Group by day label
   const grouped = useMemo(() => {
@@ -187,7 +190,7 @@ export default function WritingReviewHistoryPage() {
         <div className="lg:col-span-4 xl:col-span-4 space-y-4">
           <Card className="p-3.5 space-y-3">
             <SearchInput
-              placeholder="Tìm kiếm nội dung bài hoặc ý tưởng..."
+              placeholder="Tìm theo tiêu đề..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -207,6 +210,16 @@ export default function WritingReviewHistoryPage() {
                   {r.label}
                 </button>
               ))}
+            </div>
+            <div className="grid gap-2 sm:grid-cols-2">
+              <select className="w-full rounded-lg border border-slate-200 bg-white px-2.5 py-2 text-xs dark:border-slate-700 dark:bg-slate-800" value={questionType} onChange={(e) => setQuestionType(e.target.value)}>
+                <option value="all">Tất cả dạng đề</option>
+                {WRITING_REVIEW_TYPES.map((value) => <option key={value}>{value}</option>)}
+              </select>
+              <select className="w-full rounded-lg border border-slate-200 bg-white px-2.5 py-2 text-xs dark:border-slate-700 dark:bg-slate-800" value={topic} onChange={(e) => setTopic(e.target.value)}>
+                <option value="all">Tất cả chủ đề</option>
+                {WRITING_REVIEW_TOPICS.map((value) => <option key={value}>{value}</option>)}
+              </select>
             </div>
           </Card>
 
@@ -272,16 +285,17 @@ export default function WritingReviewHistoryPage() {
                             </div>
                           </div>
 
-                          {item.vietnameseExcerpt ? (
-                            <div className="mb-1 text-xs text-amber-900/90 dark:text-amber-300/90 line-clamp-2">
-                              <span className="font-semibold text-amber-700 dark:text-amber-400 mr-1">Ý tưởng:</span>
-                              {item.vietnameseExcerpt}
+                          <p className="mb-1 text-sm font-semibold text-slate-900 dark:text-white">
+                            {item.title || 'Bài review không có tiêu đề'}
+                          </p>
+
+                          {item.topic || item.questionType ? (
+                            <div className="mb-1.5 flex flex-wrap gap-1">
+                              {item.questionType ? <Badge tone="violet" className="text-[10px] py-0 px-1.5">{item.questionType}</Badge> : null}
+                              {item.topic ? <Badge tone="slate" className="text-[10px] py-0 px-1.5">{item.topic}</Badge> : null}
                             </div>
                           ) : null}
 
-                          <p className="text-[13px] leading-snug text-slate-700 dark:text-slate-300 line-clamp-3">
-                            {item.excerpt}
-                          </p>
                         </div>
                       )
                     })}

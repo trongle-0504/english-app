@@ -20,6 +20,7 @@ import {
   ShieldCheck,
   SpellCheck,
   StickyNote,
+  Timer,
   Volume2,
 } from 'lucide-react'
 
@@ -89,6 +90,7 @@ export const navGroups: NavGroup[] = [
     items: [
       { to: '/practice/essays', label: 'Model Essays', description: 'Học từ vựng & cách viết từ bài mẫu', icon: Library },
       { to: '/practice/writing', label: 'Writing Practice', description: 'Điền chỗ trống & viết có hướng dẫn', icon: PenLine },
+      { to: '/practice/writing-mock', label: 'Writing Mock Test', description: '15 phút lập ý tưởng + 40 phút viết bài IELTS', icon: Timer, ai: true },
       { to: '/practice/writing-review', label: 'Writing Review', description: 'Sửa bài, đối chiếu Longman & OZDIC', icon: ShieldCheck, ai: true },
       { to: '/practice/mistakes', label: 'Mistake Log', description: 'Lỗi hay mắc trong bài của bạn, thành thẻ ôn', icon: NotebookPen },
     ],

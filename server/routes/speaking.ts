@@ -3,7 +3,7 @@ import { ApiError, type ApiHandler } from '../api.ts'
 import { antigravityAvailable } from '../llm/antigravity-cli.ts'
 import { claudeCodeAvailable } from '../llm/claude-code.ts'
 import { creditInBackground } from '../practice/real-use.ts'
-import { analyzeUserEditedAnswer, resetUserEditedAnswer } from '../speaking/analyze-edit.ts'
+import { getAnalyzeEditJob, resetUserEditedAnswer, startAnalyzeEdit } from '../speaking/analyze-edit.ts'
 import { antigravityModel, defaultSpeakingEngine, speakingEffort, speakingModel } from '../speaking/llm.ts'
 import { deleteQuestion, deleteSuggestion, getSuggestion, listSuggestions, MAX_QUESTIONS, startSuggest, updateAnswerUserEdit } from '../speaking/suggest.ts'
 import { startSync, stopSync, syncStatus } from '../speaking/sync.ts'
@@ -76,17 +76,25 @@ export const speakingRoutes: Record<string, ApiHandler> = {
     return { json: { result } }
   },
 
-  /** Body `{ id, answerIndex, userEdited, part }` → `{ result }`: analyzes and formats user edited answer. */
-  'POST /speaking/analyze-edit': async (req, ctx) => {
+  /** Body `{ id, answerIndex, userEdited, part }` → `{ job }`: starts analysis and formatting of a user-edited answer. */
+  'POST /speaking/analyze-edit': (req, ctx) => {
     const b = (req.body ?? {}) as { id?: unknown; answerIndex?: unknown; userEdited?: unknown; part?: unknown }
     const id = String(b.id ?? '')
     const answerIndex = Number(b.answerIndex)
     const userEdited = typeof b.userEdited === 'string' ? b.userEdited : ''
     const part = (Number(b.part) === 2 || Number(b.part) === 3 ? Number(b.part) : 1) as SpeakingPart
-    const result = await analyzeUserEditedAnswer(ctx, { id, answerIndex, userEdited, part })
-    // Review cards you used yourself in your answer.
-    creditInBackground(ctx, 'speaking', id)
-    return { json: { result } }
+    return { status: 202, json: { job: startAnalyzeEdit(ctx, { id, answerIndex, userEdited, part }) } }
+  },
+
+  'GET /speaking/analyze-edit': (req, ctx) => {
+    const id = req.query.get('id') ?? ''
+    const job = getAnalyzeEditJob(id)
+    if (!job) throw new ApiError(404, 'Edit analysis not found.')
+    if (job.status === 'done' && job.result && !job.credited) {
+      job.credited = true
+      creditInBackground(ctx, 'speaking', job.result.id)
+    }
+    return { json: { job } }
   },
 
   /** Body `{ id, answerIndex }` → `{ result }`: restores original AI answer for a question. */

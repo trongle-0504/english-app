@@ -1915,8 +1915,16 @@ export function SuggestionResult({
 
   const handleAnalyzeEdit = async (edited: string) => {
     const qIndex = Math.min(index, result.answers.length - 1)
-    const { result: updated } = await speakingApi.analyzeEdit(result.id, qIndex, edited, result.part)
-    if (onResultUpdate) onResultUpdate(updated)
+    const { job: started } = await speakingApi.analyzeEdit(result.id, qIndex, edited, result.part)
+    while (true) {
+      await new Promise((resolve) => setTimeout(resolve, 2000))
+      const { job } = await speakingApi.getAnalyzeEdit(started.id)
+      if (job.status === 'done' && job.result) {
+        onResultUpdate?.(job.result)
+        return
+      }
+      if (job.status === 'error') throw new Error(job.error || 'Không thể phân tích bài sửa.')
+    }
   }
 
   const handleResetEdit = async () => {

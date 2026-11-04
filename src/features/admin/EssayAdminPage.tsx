@@ -19,6 +19,7 @@ interface AnalyzeResponse {
   essay: Essay
   model: string
   usage?: { totalTokenCount?: number }
+  missingVocabulary?: string[]
 }
 
 export default function EssayAdminPage() {
@@ -27,6 +28,7 @@ export default function EssayAdminPage() {
   const [prompt, setPrompt] = useState('')
   const [text, setText] = useState('')
   const [title, setTitle] = useState('')
+  const [requestedVocabulary, setRequestedVocabulary] = useState('')
   const form = useAction()
   const [json, setJson] = useState('')
   const [current, setCurrent] = useState<string>()
@@ -43,7 +45,8 @@ export default function EssayAdminPage() {
 
   const analyze = () =>
     form.run('analyze', async () => {
-      const res = await adminApi<AnalyzeResponse>('essays/analyze', { method: 'POST', body: { prompt, text, title } })
+      const vocabulary = [...new Set(requestedVocabulary.split(/[\n,]/).map((item) => item.trim()).filter(Boolean))]
+      const res = await adminApi<AnalyzeResponse>('essays/analyze', { method: 'POST', body: { prompt, text, title, requestedVocabulary: vocabulary } })
       show(res.essay)
       afterWrite()
       const counts = res.essay.items.reduce<Record<string, number>>((acc, i) => ({ ...acc, [i.kind]: (acc[i.kind] ?? 0) + 1 }), {})
@@ -51,11 +54,12 @@ export default function EssayAdminPage() {
         tone: 'success',
         message: `"${res.essay.title}" saved — ${res.essay.items.length} items (${Object.entries(counts)
           .map(([k, n]) => `${n} ${k}`)
-          .join(', ')}), ${res.essay.tasks.length} new tasks · ${(res.usage?.totalTokenCount ?? 0).toLocaleString('en-US')} tokens.`,
+          .join(', ')}), ${res.essay.tasks.length} new tasks${res.missingVocabulary?.length ? ` · Not found: ${res.missingVocabulary.join(', ')}` : ''} · ${(res.usage?.totalTokenCount ?? 0).toLocaleString('en-US')} tokens.`,
       })
       setPrompt('')
       setText('')
       setTitle('')
+      setRequestedVocabulary('')
     })
 
   const load = (id: string) =>
@@ -106,6 +110,9 @@ export default function EssayAdminPage() {
             </Field>
             <Field label="Essay" htmlFor="essay-text" hint="Keep the paragraphs separated by a blank line.">
               <TextArea id="essay-text" rows={12} value={text} onChange={(e) => setText(e.target.value)} required />
+            </Field>
+            <Field label="Vocabulary/collocations to include (optional)" htmlFor="essay-requested-vocabulary" hint="One term per line or separated by commas. Leave empty to let Gemini choose as usual.">
+              <TextArea id="essay-requested-vocabulary" rows={4} value={requestedVocabulary} onChange={(e) => setRequestedVocabulary(e.target.value)} placeholder={'social mobility\nreduce poverty\na sense of belonging'} />
             </Field>
             <Field label="Title (optional)" htmlFor="essay-title">
               <TextInput id="essay-title" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Gemini picks one when empty" />

@@ -1,12 +1,13 @@
-import { Check, History, Loader2, Plus, ServerOff, ShieldCheck } from 'lucide-react'
+import { History, Plus, ServerOff, ShieldCheck } from 'lucide-react'
 import { useCallback, useEffect, useState } from 'react'
 import { Badge, Button, Card, PageHeader, SectionTitle } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import { useLocalStorage } from '@/lib/storage'
 import { useQueryParam } from '@/lib/useQueryParam'
 import type { WritingReviewJob, WritingReviewSummary } from '@/types/writingReview'
-import { MAX_LENGTH, MIN_LENGTH, OfflineError, STEPS, writingReviewApi } from './writing-review/api'
+import { MAX_LENGTH, MIN_LENGTH, OfflineError, writingReviewApi } from './writing-review/api'
 import { ReviewResult } from './writing-review/ReviewResult'
+import { WritingReviewProgress } from './writing-review/WritingReviewProgress'
 import { DolStatusBanner } from './DolStatusBanner'
 import {
   dayLabel,
@@ -17,50 +18,9 @@ import {
 
 const POLL_MS = 2000
 
-/** Live view of a running review: steps and elapsed time. */
-function Progress({ job }: { job: WritingReviewJob }) {
-  const [now, setNow] = useState(Date.now())
-  useEffect(() => {
-    const timer = setInterval(() => setNow(Date.now()), 1000)
-    return () => clearInterval(timer)
-  }, [])
-  const current = STEPS.findIndex((s) => s.id === job.step)
-  const elapsed = Math.max(0, Math.round((now - Date.parse(job.startedAt)) / 1000))
-  return (
-    <Card className="p-4 sm:p-6">
-      <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h2 className="flex items-center gap-2 font-bold text-slate-900 dark:text-white">
-          <Loader2 className="size-4 animate-spin text-brand-600" /> Đang review…{' '}
-          <span className="text-sm font-normal text-slate-500 tabular-nums">{elapsed}s</span>
-        </h2>
-      </div>
-      <ol className="mt-4 grid gap-1.5 sm:grid-cols-3">
-        {STEPS.map((step, i) => {
-          const state = i < current ? 'done' : i === current ? 'active' : 'todo'
-          return (
-            <li
-              key={step.id}
-              className={cn('flex items-center gap-2 text-sm', state === 'todo' ? 'text-slate-400' : 'text-slate-700 dark:text-slate-200')}
-            >
-              {state === 'done' ? (
-                <Check className="size-4 text-emerald-600" />
-              ) : state === 'active' ? (
-                <Loader2 className="size-4 animate-spin text-brand-600" />
-              ) : (
-                <span className="size-4 rounded-full border border-slate-300 dark:border-slate-600" />
-              )}
-              <span className={cn(state === 'active' && 'font-semibold')}>{step.label}</span>
-            </li>
-          )
-        })}
-      </ol>
-      <p className="mt-4 text-xs text-slate-500">Thường mất 1–2 phút. Bạn có thể rời trang — quay lại đây sẽ thấy kết quả.</p>
-    </Card>
-  )
-}
-
 export default function WritingReviewPage() {
   const [text, setText] = useState('')
+  const [title, setTitle] = useState('')
   const [vietnameseText, setVietnameseText] = useState('')
   const [id, setId] = useQueryParam('id')
   // The last review started here: shown again when the page opens without ?id=
@@ -130,7 +90,7 @@ export default function WritingReviewPage() {
     setError('')
     setStarting(true)
     try {
-      const { job: created } = await writingReviewApi.start(text, vietnameseText.trim() || undefined)
+      const { job: created } = await writingReviewApi.start(text, vietnameseText.trim() || undefined, undefined, title.trim() || undefined)
       setJob(created)
       setLastId(created.id)
       setId(created.id)
@@ -163,6 +123,7 @@ export default function WritingReviewPage() {
     setJob(null)
     setError('')
     setText('')
+    setTitle('')
     setVietnameseText('')
   }
   const length = text.trim().length
@@ -204,6 +165,16 @@ export default function WritingReviewPage() {
         {composing ? (
           <>
             <Card className="space-y-4 p-4 sm:p-6">
+            <label className="block">
+              <span className="mb-1.5 block text-sm font-semibold text-slate-800 dark:text-slate-100">Tiêu đề bài review</span>
+              <input
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+                maxLength={200}
+                placeholder="Ví dụ: Opinion essay về giáo dục"
+                className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-[15px] focus:border-brand-400 focus:ring-4 focus:ring-brand-500/10 focus:outline-none dark:border-slate-700 dark:bg-slate-900"
+              />
+            </label>
             <label className="block">
               <span className="mb-1.5 flex flex-wrap items-center justify-between gap-1 text-sm font-semibold text-slate-800 dark:text-slate-100">
                 <span>Ý tưởng / Đoạn văn tiếng Việt gốc (Khuyến khích)</span>
@@ -297,15 +268,8 @@ export default function WritingReviewPage() {
                         </div>
                       </div>
 
-                      {item.vietnameseExcerpt ? (
-                        <p className="mb-1.5 text-xs text-amber-900/90 dark:text-amber-300/90 line-clamp-2">
-                          <span className="font-semibold text-amber-700 dark:text-amber-400 mr-1">Ý tưởng:</span>
-                          {item.vietnameseExcerpt}
-                        </p>
-                      ) : null}
-
-                      <p className="text-[13px] leading-snug text-slate-700 dark:text-slate-300 line-clamp-3">
-                        {item.excerpt}
+                      <p className="mb-1 text-sm font-semibold text-slate-900 dark:text-white">
+                        {item.title || 'Bài review không có tiêu đề'}
                       </p>
                     </div>
 
@@ -321,7 +285,7 @@ export default function WritingReviewPage() {
           </>
         ) : null}
 
-        {job?.status === 'running' ? <Progress job={job} /> : null}
+        {job?.status === 'running' ?         <WritingReviewProgress job={job} /> : null}
         {job?.status === 'error' ? (
           <p className="rounded-xl bg-rose-50 px-4 py-3 text-sm text-rose-700 dark:bg-rose-950/40 dark:text-rose-300">Review lỗi: {job.error}</p>
         ) : null}

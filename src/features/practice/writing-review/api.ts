@@ -14,6 +14,7 @@ export const STEPS: { id: string; label: string }[] = [
   { id: 'model_essay', label: 'Viết bài nâng cấp mới (Linearthinking)' },
   { id: 'essay_review', label: 'Giám khảo soát bài nâng cấp' },
   { id: 'essay_dictionary', label: 'Tra Longman + OZDIC các cụm AI tự viết' },
+  { id: 'classify', label: 'Phân loại chủ đề và dạng đề bài' },
 ]
 
 export class OfflineError extends Error {
@@ -41,11 +42,11 @@ export const writingReviewApi = {
     request<{ items: WritingReviewSummary[]; ready: boolean; model: string; effort: string; engine?: string }>(
       `/api/writing-review/history?limit=${limit}`,
     ),
-  start: (text: string, vietnameseText?: string) =>
+  start: (text: string, vietnameseText?: string, prompt?: string, title?: string) =>
     request<{ job: WritingReviewJob }>('/api/writing-review', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text, vietnameseText }),
+      body: JSON.stringify({ text, vietnameseText, prompt, title }),
     }),
   get: (id: string) => request<{ job: WritingReviewJob }>(`/api/writing-review?id=${encodeURIComponent(id)}`),
   remove: (id: string) => request<{ ok: true }>(`/api/writing-review?id=${encodeURIComponent(id)}`, { method: 'DELETE' }),
@@ -62,4 +63,3 @@ export const writingReviewApi = {
       body: JSON.stringify({ id }),
     }),
 }
-

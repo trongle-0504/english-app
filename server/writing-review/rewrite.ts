@@ -663,10 +663,12 @@ export async function rewriteReview(
   text: string,
   llm: LlmProvider,
   {
+    prompt,
     vietnameseText,
     rootDir,
     onStep,
   }: {
+    prompt?: string
     vietnameseText?: string
     rootDir?: string
     onStep?: (step: string) => void
@@ -739,7 +741,7 @@ export async function rewriteReview(
   const { value } = await llm.json({
     label: 'diagnose',
     system: DIAGNOSE_SYSTEM,
-    prompt: `Text, one sentence per line:\n${sentences.map((s, i) => `${i + 1}. ${s}`).join('\n')}${viPrompt}${dolPrompt}${collocationsPrompt}`,
+    prompt: `${prompt?.trim() ? `IELTS Writing Task 2 question:\n"${prompt.trim()}"\n\n` : ''}Text, one sentence per line:\n${sentences.map((s, i) => `${i + 1}. ${s}`).join('\n')}${viPrompt}${dolPrompt}${collocationsPrompt}`,
     schema: DiagnoseSchema,
   })
 

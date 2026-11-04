@@ -156,7 +156,33 @@ export function buildPractice(root: string, out: Output): PracticeIndex {
 
   out.set('practice/index.json', index)
   buildSpeakingMock(root, out)
+  buildWritingMock(root, out)
   return index
+}
+
+interface WritingMockPrompt {
+  id: number
+  prompt: string
+  type: string
+  topics: string[]
+}
+
+interface WritingMockTopics {
+  types: string[]
+  topics: string[]
+}
+
+export function buildWritingMock(root: string, out: Output): void {
+  const dir = contentPath(root, 'practice/writing-mock')
+  const prompts = readJson<WritingMockPrompt[]>(path.join(dir, 'prompts.json'), []).filter(
+    (item) => Number.isInteger(item?.id) && Boolean(item.prompt?.trim()) && Boolean(item.type?.trim()) && Array.isArray(item.topics),
+  )
+  const topics = readJson<WritingMockTopics>(path.join(dir, 'topics.json'), { types: [], topics: [] })
+  out.set('practice/writing-mock/prompts.json', prompts)
+  out.set('practice/writing-mock/topics.json', {
+    types: Array.isArray(topics.types) ? topics.types.filter((item) => typeof item === 'string' && item.trim()) : [],
+    topics: Array.isArray(topics.topics) ? topics.topics.filter((item) => typeof item === 'string' && item.trim()) : [],
+  })
 }
 
 interface RawSpeakingPart1 {

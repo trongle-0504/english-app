@@ -6,7 +6,7 @@ import { ESSAY_ITEM_KINDS, type Essay, type EssayItemKind } from '../../src/type
 import { ApiError, type ApiContext, type ApiHandler } from '../api.ts'
 import { analyzeEssay, describeItem } from '../essays/analyze.ts'
 import { contentFile } from '../files.ts'
-import { isObject, jsonBody, optionalText, queryParam, requiredObject, requiredText } from './input.ts'
+import { isObject, jsonBody, optionalText, queryParam, requiredObject, requiredText, stringList } from './input.ts'
 import { readJsonDoc, writeJsonDoc } from './store.ts'
 
 const dir = (ctx: ApiContext) => contentFile(ctx.contentDir, 'essays')
@@ -68,11 +68,19 @@ export const analyzeAndSave: ApiHandler = async (req, ctx) => {
   const prompt = requiredText(body, 'prompt', { max: 2000 })
   const text = requiredText(body, 'text', { max: 12_000 })
   const title = optionalText(body, 'title', { max: 120 })
-  const { essay, model, usage } = await analyzeEssay(ctx, prompt, text, async (generated) => freeId(ctx, title || generated))
+  const requestedVocabulary = [...new Set(stringList(body.requestedVocabulary, 'requestedVocabulary').map((term) => term.replace(/\s+/g, ' ')))]
+  if (requestedVocabulary.some((term) => term.length > 160)) throw new ApiError(400, 'Each requested vocabulary item must be 160 characters or fewer.')
+  const { essay, model, usage, missingVocabulary } = await analyzeEssay(
+    ctx,
+    prompt,
+    text,
+    async (generated) => freeId(ctx, title || generated),
+    requestedVocabulary,
+  )
   if (title) essay.title = title
   await writeJsonDoc(fileOf(ctx, essay.id), essay)
   ctx.onContentChange()
-  return { status: 201, json: { essay, model, usage } }
+  return { status: 201, json: { essay, model, usage, missingVocabulary } }
 }
 
 export const saveEssay: ApiHandler = async (req, ctx) => {

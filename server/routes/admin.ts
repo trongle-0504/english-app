@@ -1,4 +1,4 @@
-import type { ApiHandler } from '../api.ts'
+import { ApiError, type ApiHandler } from '../api.ts'
 import { geminiConfigured } from '../gemini.ts'
 import { guarded, isAuthorized, tokenRequired } from '../admin/auth.ts'
 import * as blog from '../admin/blog.ts'
@@ -6,6 +6,8 @@ import * as grammar from '../admin/grammar.ts'
 import * as notes from '../admin/notes.ts'
 import * as usage from '../admin/usage.ts'
 import * as vocabulary from '../admin/vocabulary.ts'
+import { getBatch, prepareBatch, startBatchItems } from '../agent/vocabulary-batch.ts'
+import { jsonBody, requiredText } from '../admin/input.ts'
 
 /**
  * Admin editor endpoints (served under /api). Reads are open; every write goes through `guarded`,
@@ -24,6 +26,18 @@ export const adminRoutes: Record<string, ApiHandler> = {
   'PUT /admin/vocabulary/word': guarded(vocabulary.saveWord),
   'GET /admin/vocabulary/images': guarded(vocabulary.searchWordImages),
   'POST /admin/vocabulary/image': guarded(vocabulary.setWordImage),
+  'POST /admin/agent/prepare': guarded(async (req) => {
+    const body = jsonBody(req)
+    return { json: await prepareBatch(requiredText(body, 'message', { max: 30_000 })) }
+  }),
+  'POST /admin/agent/batches': guarded(async (req, ctx) => {
+    const body = jsonBody(req)
+    const destination = body.destination === 'note' || body.destination === 'vocab' ? body.destination : null
+    if (!destination || !Array.isArray(body.items)) throw new ApiError(400, 'Invalid batch.')
+    const items = body.items.filter((item): item is { term: string; context: string } => Boolean(item && typeof item.term === 'string' && typeof item.context === 'string'))
+    return { status: 202, json: { batch: startBatchItems(ctx, destination, items.slice(0, 50)) } }
+  }),
+  'GET /admin/agent/batches/item': guarded(async (req) => ({ json: { batch: getBatch(req.query.get('id') ?? '') } })),
 
   'GET /admin/grammar': grammar.listGrammar,
   'GET /admin/grammar/lesson': grammar.getLesson,

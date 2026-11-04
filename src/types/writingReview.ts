@@ -9,6 +9,7 @@ import type {
   SpeakingPick,
   UsedStructure,
 } from './speaking.ts'
+import type { WritingReviewTopic, WritingReviewType } from '../features/practice/writing-review/categories.ts'
 
 /** One change made to the essay. */
 export interface WritingFix {
@@ -111,7 +112,11 @@ export interface WritingModelEssay {
 export interface WritingReviewResult {
   id: string
   createdAt: string
+  title?: string
   durationMs: number
+  prompt?: string
+  topic?: WritingReviewTopic
+  questionType?: WritingReviewType
   text: string
   vietnameseText?: string
   /** The Vietnamese idea laid out for reading (spelling, punctuation, paragraphs); the ideas unchanged. */
@@ -142,6 +147,10 @@ export interface WritingReviewJob {
   id: string
   status: 'running' | 'done' | 'error'
   startedAt: string
+  title?: string
+  prompt?: string
+  topic?: WritingReviewTopic
+  questionType?: WritingReviewType
   vietnameseText?: string
   /** Current step while running ("lookup" = OZDIC lookups). */
   step?: string
@@ -153,6 +162,10 @@ export interface WritingReviewJob {
 export interface WritingReviewSummary {
   id: string
   createdAt: string
+  title?: string
+  prompt?: string
+  topic?: WritingReviewTopic
+  questionType?: WritingReviewType
   excerpt: string
   vietnameseExcerpt?: string
   fixes: number
