@@ -67,6 +67,11 @@ export function AgentBatchChat() {
 
   return (
     <>
+      <div className="mb-4 flex justify-end">
+        <Button variant="outline" onClick={() => setOpen(true)}>
+          <Bot className="size-4" /> Mở Batch agent
+        </Button>
+      </div>
       <Button className="fixed right-4 bottom-4 z-[60] rounded-full shadow-lg" onClick={() => setOpen(true)}>
         <Bot className="size-4" /> Batch agent
       </Button>
