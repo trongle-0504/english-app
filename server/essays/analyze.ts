@@ -219,14 +219,24 @@ export function buildEssay(raw: Raw, prompt: string, paragraphs: string[][], id:
   }
 }
 
-export async function analyzeEssay(ctx: ApiContext, prompt: string, essay: string, id: (title: string) => Promise<string>) {
+export async function analyzeEssay(
+  ctx: ApiContext,
+  prompt: string,
+  essay: string,
+  id: (title: string) => Promise<string>,
+  requestedVocabulary: string[] = [],
+) {
   const { paragraphs } = splitEssay(essay)
+  const flat = paragraphs.flat()
   if (paragraphs.flat().length < 3) throw new ApiError(400, 'The essay is too short (need at least 3 sentences).')
   let n = 0
   const numbered = paragraphs.map((p, i) => `Paragraph ${i}:\n${p.map((s) => `  [${n++}] ${s}`).join('\n')}`).join('\n\n')
+  const requested = requestedVocabulary.length
+    ? `\n\nLEARNER-REQUESTED TERMS — These terms were explicitly requested by the learner. For every term that appears in the essay, include an item for it even if it would not otherwise meet your selection criteria. Use the exact contiguous wording from the essay as "text", choose the most suitable kind, and explain it clearly. Do not invent an item for a term that does not appear:\n${requestedVocabulary.map((term) => `- ${term}`).join('\n')}`
+    : ''
   const result = await generateLogged<Raw>(ctx, `essay: ${paragraphs[0][0].slice(0, 50)}`, {
     system: SYSTEM,
-    prompt: `TASK:\n${prompt}\n\nESSAY (sentences numbered):\n${numbered}`,
+    prompt: `TASK:\n${prompt}\n\nESSAY (sentences numbered):\n${numbered}${requested}`,
     schema: SCHEMA,
     // One call per essay, done once: worth more thinking than the default "low".
     thinking: 'medium',
@@ -235,7 +245,8 @@ export async function analyzeEssay(ctx: ApiContext, prompt: string, essay: strin
   if (!result.value || typeof result.value !== 'object') throw new ApiError(502, 'Gemini did not return a JSON object.')
   const built = buildEssay(result.value, prompt, paragraphs, '')
   built.id = await id(built.title)
-  return { essay: built, model: result.model, usage: result.usage }
+  const missingVocabulary = requestedVocabulary.filter((term) => !locate(flat, 0, term))
+  return { essay: built, model: result.model, usage: result.usage, missingVocabulary }
 }
 
 /* ───────────── One item added by hand (Practice → Model essays: select a phrase → "Add to this essay") ───────────── */
