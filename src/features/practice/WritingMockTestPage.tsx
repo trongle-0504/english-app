@@ -28,6 +28,7 @@ export default function WritingMockTestPage() {
   const [stage, setStage] = useState<Stage>('select')
   const [topic, setTopic] = useState('all')
   const [type, setType] = useState('all')
+  const [completion, setCompletion] = useState<'all' | 'done' | 'todo'>('all')
   const [query, setQuery] = useState('')
   const [selectedId, setSelectedId] = useState<number | null>(null)
   const [idea, setIdea] = useLocalStorage('practice:writing-mock:idea', '')
@@ -71,9 +72,10 @@ export default function WritingMockTestPage() {
         (item) =>
           (topic === 'all' || item.topics.includes(topic)) &&
           (type === 'all' || item.type === type) &&
+          (completion === 'all' || (completion === 'done' ? historyByPrompt.has(promptKey(item.prompt)) : !historyByPrompt.has(promptKey(item.prompt)))) &&
           (!query.trim() || `${item.prompt} ${item.topics.join(' ')} ${item.type}`.toLowerCase().includes(query.trim().toLowerCase())),
       ),
-    [prompts, query, topic, type],
+    [prompts, query, topic, type, completion, historyByPrompt],
   )
 
   const choosePrompt = useCallback(
@@ -184,6 +186,12 @@ export default function WritingMockTestPage() {
               <select className="w-full rounded-lg border p-2.5 text-sm" value={topic} onChange={(e) => setTopic(e.target.value)}>
                 <option value="all">Tất cả chủ đề</option>
                 {topicData.topics.map((item) => <option key={item}>{item}</option>)}
+              </select>
+              <label className="mb-1 mt-4 block text-xs font-bold uppercase text-slate-500">Trạng thái</label>
+              <select className="w-full rounded-lg border p-2.5 text-sm" value={completion} onChange={(e) => setCompletion(e.target.value as 'all' | 'done' | 'todo')}>
+                <option value="all">Tất cả bài</option>
+                <option value="done">Đã làm</option>
+                <option value="todo">Chưa làm</option>
               </select>
             </Card>
             <Button className="w-full" onClick={() => choosePrompt(true)} disabled={!filtered.length}><Shuffle className="size-4" /> Làm đề ngẫu nhiên</Button>
