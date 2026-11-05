@@ -210,14 +210,18 @@ export default function WritingMockTestPage() {
                       <p className="font-semibold leading-relaxed text-slate-900 dark:text-white">{item.prompt}</p>
                     </div>
                     {latestAttempt ? (
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className="self-start"
-                        onClick={() => (window.location.href = `/practice/writing-review?id=${latestAttempt.id}`)}
-                      >
-                        <CheckCircle2 className="size-4" /> Xem kết quả
-                      </Button>
+                      <div className="flex flex-wrap gap-2 self-start">
+                        <Button size="sm" onClick={() => choosePrompt(false, item)}>
+                          <RotateCcw className="size-4" /> Làm lại
+                        </Button>
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          onClick={() => (window.location.href = `/practice/writing-review?id=${latestAttempt.id}`)}
+                        >
+                          <CheckCircle2 className="size-4" /> Xem kết quả
+                        </Button>
+                      </div>
                     ) : (
                       <Button size="sm" className="self-start" onClick={() => choosePrompt(false, item)}>
                         <FileText className="size-4" /> Vào làm bài
