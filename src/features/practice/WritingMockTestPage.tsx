@@ -18,6 +18,10 @@ function timerLabel(seconds: number): string {
   return `${Math.floor(safe / 60)}:${String(safe % 60).padStart(2, '0')}`
 }
 
+function promptKey(value: string): string {
+  return value.trim().replace(/\s+/g, ' ').toLocaleLowerCase()
+}
+
 export default function WritingMockTestPage() {
   const prompts = useData<WritingMockPrompt[]>('practice/writing-mock/prompts.json')
   const topicData = useData<WritingMockTopics>('practice/writing-mock/topics.json')
@@ -46,7 +50,21 @@ export default function WritingMockTestPage() {
   }, [job?.status])
 
   const selected = prompts.find((item) => item.id === selectedId)
-  const selectedHistory = selected ? historyItems.filter((item) => item.prompt?.trim() === selected.prompt.trim()) : []
+  const selectedHistory = selected
+    ? historyItems.filter((item) => [item.prompt, item.title].some((value) => value && promptKey(value) === promptKey(selected.prompt)))
+    : []
+  const historyByPrompt = useMemo(() => {
+    const map = new Map<string, WritingReviewSummary[]>()
+    for (const item of historyItems) {
+      for (const value of [item.prompt, item.title]) {
+        if (!value) continue
+        const key = promptKey(value)
+        if (!map.has(key)) map.set(key, [])
+        if (!map.get(key)!.some((existing) => existing.id === item.id)) map.get(key)!.push(item)
+      }
+    }
+    return map
+  }, [historyItems])
   const filtered = useMemo(
     () =>
       prompts.filter(
@@ -178,16 +196,36 @@ export default function WritingMockTestPage() {
             <div className="space-y-3">
               {filtered.map((item) => (
                 <Card key={item.id} className="p-4 transition-shadow hover:shadow-md sm:p-5">
+                  {(() => {
+                    const attempts = historyByPrompt.get(promptKey(item.prompt)) ?? []
+                    const latestAttempt = attempts[0]
+                    return (
                   <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                     <div className="min-w-0">
                       <div className="mb-2 flex flex-wrap gap-2">
                         <Badge tone="violet">{item.type}</Badge>
                         {item.topics.map((itemTopic) => <Badge key={itemTopic} tone="slate">{itemTopic}</Badge>)}
+                        {latestAttempt ? <Badge tone="emerald">Đã làm {attempts.length > 1 ? `${attempts.length} lần` : ''}</Badge> : null}
                       </div>
                       <p className="font-semibold leading-relaxed text-slate-900 dark:text-white">{item.prompt}</p>
                     </div>
-                    <Button size="sm" className="self-start" onClick={() => choosePrompt(false, item)}><FileText className="size-4" /> Vào làm bài</Button>
+                    {latestAttempt ? (
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="self-start"
+                        onClick={() => (window.location.href = `/practice/writing-review?id=${latestAttempt.id}`)}
+                      >
+                        <CheckCircle2 className="size-4" /> Xem kết quả
+                      </Button>
+                    ) : (
+                      <Button size="sm" className="self-start" onClick={() => choosePrompt(false, item)}>
+                        <FileText className="size-4" /> Vào làm bài
+                      </Button>
+                    )}
                   </div>
+                    )
+                  })()}
                 </Card>
               ))}
               {!filtered.length ? <EmptyState title="Không tìm thấy đề phù hợp" description="Hãy đổi từ khóa hoặc bộ lọc." /> : null}

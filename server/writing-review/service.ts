@@ -218,7 +218,7 @@ export async function listReviews(ctx: ApiContext, limit = 100): Promise<Writing
       items.push({
         id: r.id,
         createdAt: r.createdAt,
-        title: r.title ?? r.prompt,
+        title: r.title,
         prompt: r.prompt,
         topic: r.topic,
         questionType: r.questionType,

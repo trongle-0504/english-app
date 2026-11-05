@@ -12,6 +12,7 @@ import { addToLibrary, type LibraryTarget } from '../practice/library-add'
 import { practiceApi } from '../practice/practice-api'
 import { InfoTip } from './InfoTip'
 import { loadReviews, removeFromReview, useReviewStore } from './store'
+import { runWithConcurrency } from '@/lib/concurrency'
 
 /** A card of the library: Vocabulary, Collocations (lessons and inside words), Notes. */
 const isLibraryCard = (id: string) => /^(vocab|colloc|wcolloc|note):/.test(id)
@@ -19,6 +20,7 @@ const isLibraryCard = (id: string) => /^(vocab|colloc|wcolloc|note):/.test(id)
 const GROUP_DOT: Record<PhraseGroup, string> = { library: 'bg-brand-500', extra: 'bg-violet-500', wording: 'bg-slate-400' }
 
 type Outcome = { ok: boolean; text: string; href?: string }
+const LIBRARY_ADD_CONCURRENCY = 3
 
 export function NotInLibrary({
   data,
@@ -39,7 +41,7 @@ export function NotInLibrary({
   const [group, setGroup] = useState<PhraseGroup | null>(null)
   const [picked, setPicked] = useState<Set<string>>(new Set())
   const [target, setTarget] = useState<LibraryTarget>('vocabulary')
-  const [running, setRunning] = useState<{ at: number; total: number; term: string } | null>(null)
+  const [running, setRunning] = useState<{ completed: number; total: number; active: number; term: string } | null>(null)
   const [reviewRunning, setReviewRunning] = useState(false)
   const [outcomes, setOutcomes] = useState<Map<string, Outcome>>(new Map())
   const stop = useRef(false)
@@ -56,9 +58,12 @@ export function NotInLibrary({
   const run = async () => {
     const queue = items.filter((i) => picked.has(i.id) && !outcomes.get(i.id)?.ok)
     stop.current = false
-    for (const [n, item] of queue.entries()) {
-      if (stop.current) break
-      setRunning({ at: n + 1, total: queue.length, term: item.term })
+    let completed = 0
+    let active = 0
+    setRunning({ completed, total: queue.length, active, term: queue[0]?.term ?? '' })
+    await runWithConcurrency(queue, LIBRARY_ADD_CONCURRENCY, async (item) => {
+      active += 1
+      setRunning({ completed, total: queue.length, active, term: item.term })
       let outcome: Outcome
       try {
         const done = await addToLibrary(target, { phrase: item.term, meaning_vi: item.meaning_vi ?? '', example: item.example ?? item.term })
@@ -73,7 +78,10 @@ export function NotInLibrary({
 
       setOutcomes((m) => new Map(m).set(item.id, outcome))
       if (outcome.ok) setPicked((p) => new Set([...p].filter((x) => x !== item.id)))
-    }
+      completed += 1
+      active -= 1
+      setRunning({ completed, total: queue.length, active, term: item.term })
+    }, () => stop.current)
     setRunning(null)
     await loadReviews(true)
     await onAdded()
@@ -190,7 +198,7 @@ export function NotInLibrary({
           {running || reviewRunning ? (
             <Button size="sm" variant="outline" disabled={reviewRunning} onClick={() => (stop.current = true)}>
               {reviewRunning ? <Loader2 className="size-4 animate-spin" /> : <X className="size-4" />}
-              {reviewRunning ? 'Adding selected cards…' : 'Stop after this one'}
+              {reviewRunning ? 'Adding selected cards…' : 'Stop after current items'}
             </Button>
           ) : (
             <>
@@ -217,7 +225,7 @@ export function NotInLibrary({
       </div>
       {running ? (
         <p className="mt-2 flex items-center gap-2 text-sm text-slate-600 dark:text-slate-300">
-          <Loader2 className="size-4 animate-spin" /> Adding {running.at}/{running.total}: <strong>{running.term}</strong> (about 20–40 s each)
+          <Loader2 className="size-4 animate-spin" /> Adding {running.completed}/{running.total} ({running.active} running): <strong>{running.term}</strong> (up to {LIBRARY_ADD_CONCURRENCY} at once)
         </p>
       ) : null}
 

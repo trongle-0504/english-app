@@ -317,11 +317,15 @@ export default function WritingReviewHistoryPage() {
             <div className="space-y-4">
               {/* Quick Actions Header */}
               <div className="flex flex-wrap items-center justify-between gap-2 rounded-xl bg-slate-50 px-4 py-2.5 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800">
-                <div className="flex items-center gap-2 text-xs text-slate-500">
-                  <span className="font-semibold text-slate-700 dark:text-slate-200">Thời gian:</span>
-                  <span>{new Date(currentResult.createdAt).toLocaleString('vi-VN')}</span>
-                  <span>·</span>
-                  <span className="tabular-nums">{currentResult.usage.total.toLocaleString()} tokens</span>
+                <div className="min-w-0">
+                  <p className="truncate text-sm font-semibold text-slate-900 dark:text-white">
+                    {currentResult.title || 'Bài review không có tiêu đề'}
+                  </p>
+                  <div className="flex items-center gap-2 text-xs text-slate-500">
+                    <span>{new Date(currentResult.createdAt).toLocaleString('vi-VN')}</span>
+                    <span>·</span>
+                    <span className="tabular-nums">{currentResult.usage.total.toLocaleString()} tokens</span>
+                  </div>
                 </div>
                 <ButtonLink
                   to={`/practice/writing-review?id=${currentResult.id}`}
