@@ -36,7 +36,7 @@ export function Hero() {
         <div className="animate-slide-up max-w-4xl">
           <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-bold tracking-[0.2em] text-white/90 uppercase ring-1 ring-white/20 backdrop-blur-md">
             <span className="size-1.5 rounded-full bg-brand-300" aria-hidden />
-            Linear Thinking
+            NeuralSymbolic
           </p>
           {/* One line from tablet width up: the size follows the width (up to 60 px); phones may wrap. */}
           <h1 className="mt-5 text-[clamp(1.9rem,5.6vw,3.75rem)] leading-[1.05] font-extrabold tracking-tight text-white sm:whitespace-nowrap">

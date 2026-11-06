@@ -88,7 +88,7 @@ export default function GrammarLessonPage() {
 
   return (
     <article className="mx-auto max-w-4xl space-y-6 pt-4 sm:space-y-10 sm:pt-10">
-      <title>{`${lesson.title} · Grammar · NeuralSymbolic`}</title>
+      <title>NeSy</title>
 
       <header className="animate-fade-in rounded-3xl border border-brand-100 bg-gradient-to-br from-brand-50 via-white to-sky-50 p-4 sm:p-8 dark:border-brand-950 dark:from-brand-950/40 dark:via-slate-900/60 dark:to-sky-950/30">
         <Link

@@ -1,7 +1,7 @@
 {
-  "name": "NeuralSymbolic",
-  "short_name": "NeuralSymbolic",
-  "description": "Học tiếng Anh: Vocabulary, Grammar, Practice.",
+  "name": "NeSy",
+  "short_name": "NeSy",
+  "description": "NeSy",
   "id": "/",
   "start_url": "/",
   "scope": "/",
