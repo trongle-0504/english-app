@@ -5,7 +5,7 @@ import { LatestPosts } from './LatestPosts'
 export default function HomePage() {
   return (
     <>
-      <title>NeuralSymbolic · Mastery Through Connection</title>
+      <title>NeSy</title>
       <Hero />
       <FeatureGrid />
       <LatestPosts />

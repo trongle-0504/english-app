@@ -603,7 +603,7 @@ function ReviewSession() {
 
   return (
     <div className="mx-auto max-w-3xl pt-6">
-      <title>{`${practice ? 'Practice' : 'Review'} (${remaining}) · NeuralSymbolic`}</title>
+      <title>NeSy</title>
       {/* Wraps on a phone: the badges stay one line each and the timer group moves to its own right-aligned row. */}
       <div className="mb-4 flex flex-wrap items-center justify-between gap-x-3 gap-y-2 [&>span]:whitespace-nowrap">
         <Link to={home} className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-500 hover:text-slate-900 dark:hover:text-white">

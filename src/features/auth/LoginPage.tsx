@@ -44,13 +44,13 @@ export default function LoginPage() {
 
   return (
     <main className="relative isolate flex min-h-dvh items-center justify-center px-4 py-10">
-      <title>Đăng nhập · NeuralSymbolic</title>
+      <title>NeSy</title>
       <LoginBackdrop />
       <div className="w-full max-w-sm">
         <div className="mb-6 flex flex-col items-center gap-3 text-center">
           <img src="/logo.svg" alt="" width={56} height={56} className="size-14 drop-shadow-lg" />
           <h1 className="text-3xl font-extrabold tracking-tight text-white drop-shadow-[0_2px_12px_rgb(2_6_23/0.5)]">
-            Linear<span className="text-brand-300">Thinking</span>
+            Neural<span className="text-brand-300">Symbolic</span>
           </h1>
         </div>
 

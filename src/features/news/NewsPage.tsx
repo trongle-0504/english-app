@@ -509,7 +509,7 @@ export default function NewsPage() {
 
   return (
     <div className="pb-6">
-      <title>Daily Paper · Đọc báo song ngữ & Từ vựng IELTS</title>
+      <title>NeSy</title>
 
       {/* Top Header Bar */}
       <div className="mb-3 flex flex-wrap items-center justify-between gap-2">

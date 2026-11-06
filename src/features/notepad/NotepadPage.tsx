@@ -462,7 +462,7 @@ export default function NotepadPage() {
 
   return (
     <div className="pb-4">
-      <title>Notepad · Ghi chú tự do</title>
+      <title>NeSy</title>
 
       {/* Compact Top Bar so the editor gets maximum vertical space */}
       <div className="mb-3 flex flex-wrap items-center justify-between gap-2">

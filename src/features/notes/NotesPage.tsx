@@ -123,7 +123,7 @@ export default function NotesPage() {
 
   return (
     <>
-      <title>Notes & Phrases · NeuralSymbolic</title>
+      <title>NeSy</title>
       <PageHeader
         eyebrow="Vocabulary"
         title="Notes & Phrases"

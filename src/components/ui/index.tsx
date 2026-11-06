@@ -140,7 +140,7 @@ export function PageHeader({
 }) {
   return (
     <header className={cn('animate-fade-in flex flex-wrap items-end justify-between gap-3 pt-4 pb-4 sm:gap-4 sm:pt-10 sm:pb-6', className)}>
-      {typeof title === 'string' ? <title>{`${title} · NeuralSymbolic`}</title> : null}
+      {typeof title === 'string' ? <title>NeSy</title> : null}
       <div className="min-w-0 max-w-3xl">
         {eyebrow ? (
           <p className="text-xs font-bold tracking-[0.18em] text-brand-600 uppercase dark:text-brand-400">{eyebrow}</p>
