@@ -10,6 +10,7 @@ import { listeningRoutes } from './routes/listening.ts'
 import { lookupRoutes } from './routes/lookup.ts'
 import { newsRoutes } from './routes/news.ts'
 import { notepadRoutes } from './routes/notepad.ts'
+import { plannerRoutes } from './routes/planner.ts'
 import { practiceRoutes } from './routes/practice.ts'
 import { reviewRoutes } from './routes/review.ts'
 import { speakingRoutes } from './routes/speaking.ts'
@@ -40,4 +41,5 @@ export const routes: Record<string, ApiHandler> = {
   ...reportRoutes,
   ...listeningRoutes,
   ...essayRoutes,
+  ...plannerRoutes,
 }

@@ -440,6 +440,25 @@ nhãn lạ thay vì làm hỏng cả lô 50 mục. Biến môi trường (tuỳ 
 `SPEAKING_EFFORT` (mặc định `medium`), `SPEAKING_TAG_EFFORT` (Sync, mặc định `low`), `SPEAKING_REVIEW_EFFORT` (Speaking Review, mặc định `low`),
 `SPEAKING_REVIEW_SCORE_EFFORT` (bước chấm điểm/tiêu chí của Speaking Review, mặc định theo `SPEAKING_REVIEW_EFFORT`). Hiệu chuẩn điểm Speaking Review với bộ bản ghi có sẵn band chuẩn (`cache/calibration/speaking.json`): `node scripts/speaking-calibration.ts`.
 
+## Planner & thông báo (Workspace → Planner, trang chủ)
+
+Kế hoạch tuần, lịch hôm nay, sự kiện (ngày thi, lớp học, hạn nộp) và nhắc nhở. Trang chủ hiện "Hôm nay" ngay trên ảnh nền: lời chào, đếm ngược ngày thi, tiến độ tuần, tóm tắt AI buổi sáng, việc hôm nay (bấm để đánh dấu xong), việc quá hạn, sự kiện sắp tới và ô thêm nhanh. Trang `/planner` có 3 tab Ngày · Tuần · Sự kiện, lịch cố định hằng tuần, "Sao chép tuần trước" và cài đặt.
+
+Dữ liệu: `progress/planner/planner.json` (việc, sự kiện, lịch cố định, cài đặt), `push.json` (thiết bị nhận thông báo), `sent.json` (thông báo đã gửi, để không gửi trùng), `briefs/<ngày>.json` (tóm tắt buổi sáng). Khoá VAPID: `data/vapid.json` (tự tạo lần đầu nếu `.env` không có).
+
+**AI (agy):** Thêm nhanh bằng câu tự nhiên ("mai 8h tối speaking part 2 45 phút"), tóm tắt buổi sáng, "Dời lịch thông minh" cho việc quá hạn (chỉ là đề xuất, bấm Áp dụng mới đổi) và "AI lập kế hoạch tuần" (bản nháp sửa được trước khi thêm). AI hỏng hoặc bận: thêm nhanh/dời lịch/lập tuần báo lỗi để nhập tay, tóm tắt dùng mẫu không AI. Đánh giá thêm nhanh: `node scripts/planner-quickadd-eval.ts` (12 câu, cố định hôm nay = 07/11/2026).
+
+**Thông báo đẩy — điều kiện thật:**
+- Cần **HTTPS**: mở app qua `https://ailab.com.vn` (không phải `http://<IP-LAN>:5173`). Đăng ký thông báo gắn với địa chỉ đã mở.
+- **Android** (Chrome, Samsung Internet, Edge): chạy cả trên trình duyệt lẫn app đã cài, kể cả khi đóng app; có nút "Xong" / "Hoãn 1 giờ" trên thông báo. Chế độ tiết kiệm pin có thể làm trễ vài phút.
+- **iPhone/iPad (iOS 16.4+)**: chỉ chạy sau khi **Chia sẻ → Thêm vào MH chính**, mở app từ màn hình chính rồi bấm "Bật thông báo" trong app. Tab Safari không nhận được. iOS không có nút hành động trên thông báo web.
+- **Máy tính chạy app phải đang bật**: server gửi mọi thông báo. Máy ngủ hoặc WSL/tunnel tắt lúc 07:00 thì 07:00 không có gì; khi bật lại, thông báo bị lỡ được gửi bù trong khung cho phép (tóm tắt sáng đến 11:00, nhắc giờ học 2 giờ, nhắc sự kiện 2–6 giờ). Điện thoại tắt mạng thì dịch vụ push giữ thông báo 4 giờ.
+- **Dự phòng chắc chắn cho ngày thi**: "Thêm vào Lịch" tải file `.ics` có báo thức; lịch của điện thoại tự nhắc kể cả khi máy tính tắt.
+- Trong app (thẻ Hôm nay, khối quá hạn, số trên icon app) luôn hoạt động, có push hay không.
+- Giờ yên lặng (mặc định 22:30–06:30): không gửi gì; việc đến hạn trong lúc đó được gửi lúc hết giờ yên lặng nếu còn trong khung.
+
+**Biến môi trường** (`.env`, đều tuỳ chọn): `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` (mặc định `mailto:admin@ailab.com.vn`; đổi khoá thì mọi thiết bị phải bật lại thông báo), `PLANNER_ANTIGRAVITY_MODEL` (mặc định `gemini-3.8-flash`, không kèm hậu tố effort), `PLANNER_FAST_EFFORT` (mặc định `low`: thêm nhanh, tóm tắt), `PLANNER_PLAN_EFFORT` (mặc định `low`: dời lịch, lập tuần; `medium` kỹ hơn nhưng lập tuần có thể mất tới 4 phút).
+
 ## Cấu trúc code
 
 ```
