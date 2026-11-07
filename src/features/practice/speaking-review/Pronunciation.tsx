@@ -140,9 +140,9 @@ export function Pronunciation({ result, audio }: { result: TalkReviewResult; aud
                 The recognizer heard these as other words — most likely an unclear pronunciation (a noisy mic or speaking fast can do it too). Play
                 each one and compare with what you meant.
               </p>
-              <ul className="space-y-2.5">
+              <ul>
                 {misheard.map((m, i) => (
-                  <li key={i} className="flex items-start gap-3 rounded-xl border border-slate-200 p-3 dark:border-slate-800">
+                  <li key={i} className="flex items-start gap-3 border-b border-slate-100 py-3 last:border-b-0 dark:border-slate-800">
                     <PlayButton audio={audio} start={m.start} end={m.end} label={m.heard} />
                     <div className="min-w-0 flex-1">
                       <p className="text-[15px] leading-relaxed">

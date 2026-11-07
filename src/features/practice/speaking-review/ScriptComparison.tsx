@@ -165,7 +165,7 @@ function PointCard({ point, index }: { point: TalkScriptPoint; index: number }) 
   const [open, setOpen] = useState(false)
   const check = wordCheck(point.script, point.said)
   return (
-    <li className="rounded-2xl border border-slate-200 bg-white p-2 sm:p-4 dark:border-slate-800 dark:bg-slate-900">
+    <li className="border-b border-slate-100 py-3 last:border-b-0 dark:border-slate-800">
       <div className="flex items-start gap-3">
         <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-slate-100 text-xs font-bold text-slate-600 dark:bg-slate-800 dark:text-slate-300">
           {index + 1}
@@ -373,7 +373,7 @@ export function ScriptComparison({ result }: { result: TalkReviewResult }) {
             </p>
           )}
 
-          <ol className="space-y-3">
+          <ol>
             {points.map((p, i) => (
               <PointCard key={i} point={p} index={i} />
             ))}
