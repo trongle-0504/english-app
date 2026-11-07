@@ -825,8 +825,8 @@ function UpgradedTab({
             hint={isCustomized ? 'Các cụm từ hay ngoài thư viện bạn đã dùng trong bài sửa' : 'Gợi ý thêm để học, đã tra Longman / OZDIC'}
           >
             <ul className="grid gap-3 md:grid-cols-2">
-              {activeExtras.map((extra, i) => (
-                <ExtraRow key={i} extra={extra} />
+              {activeExtras.map((extra) => (
+                <ExtraRow key={extra.phrase} extra={extra} />
               ))}
             </ul>
           </Section>
@@ -858,8 +858,8 @@ function UpgradedTab({
                 <div>
                   <p className="text-xs font-semibold text-slate-600 dark:text-slate-400 mb-2">Ngoài thư viện ({unusedExtras.length})</p>
                   <ul className="grid gap-2.5 md:grid-cols-2">
-                    {unusedExtras.map((extra, i) => (
-                      <ExtraRow key={i} extra={extra} />
+                    {unusedExtras.map((extra) => (
+                      <ExtraRow key={extra.phrase} extra={extra} />
                     ))}
                   </ul>
                 </div>
