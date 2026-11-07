@@ -5,7 +5,9 @@ import { antigravityAvailable, antigravityJson } from '../llm/antigravity-cli.ts
 import {
   DEFAULT_REMINDERS,
   PLANNER_EVENT_KINDS,
+  isStudySkill,
   PLANNER_SKILLS,
+  STUDY_SKILLS,
   type PlannerBrief,
   type PlannerDoc,
   type PlannerEventKind,
@@ -93,8 +95,8 @@ const timeOf = (value: unknown): string => (isTime(value) ? (value as string) : 
 export const QUICK_ADD_SYSTEM = `You turn one short note written by an IELTS learner in Vietnamese, English or a mix into calendar items for a study planner.
 
 ITEM TYPES
-- "task": something the learner will study or practise (vocabulary, grammar, reading, listening, writing, speaking, flashcard review, mock test).
-- "event": something that happens at a set time and is not study work: the IELTS exam, a class or lesson with a teacher, a deadline, a doctor's appointment, a meeting.
+- "task": something the user will do: study or practise (vocabulary, grammar, reading, listening, writing, speaking, flashcard review, mock test), or a work or personal to-do ("gửi báo cáo cho sếp", "làm slide", "đi chợ", "trả tiền điện", "tập gym").
+- "event": something that happens at a set time with other people or at a place: the IELTS exam, a class or lesson with a teacher, a deadline, a doctor's appointment, a meeting.
 One note can hold several items ("thi thử thứ 7 và ôn từ mỗi tối" = 2 items). Never invent items that are not in the note.
 
 DATES — use only the CALENDAR table below; never compute dates yourself.
@@ -113,7 +115,8 @@ TIMES — 24-hour "HH:mm".
 
 DURATION — "45 phút", "45p", "1 tiếng", "1h30" (as a duration, not a clock time), "90 mins" → minutes. Unknown = 0.
 
-SKILL (tasks; also fill it for events that are classes) — one of: vocabulary, grammar, reading, listening, writing, speaking, review, mock, other.
+SKILL (tasks; also fill it for events that are classes) — one of: vocabulary, grammar, reading, listening, writing, speaking, review, mock, work, personal, other.
+- work = job or school work that is not IELTS practice: báo cáo, slide, email, họp, deadline dự án, code, bài tập môn khác. personal = life and health: đi chợ, dọn nhà, gym, chạy bộ, trả tiền, gọi điện cho mẹ. other = anything else.
 - "ôn thẻ / flashcard / ôn từ / review" = review. "từ vựng / collocation" = vocabulary. "thi thử / mock test / full test" = mock.
 - "task 1 / task 2 / essay / viết" = writing. "part 1/2/3 / nói" = speaking. "dictation / chép chính tả / nghe" = listening.
 
@@ -144,7 +147,7 @@ const QUICK_ADD_SCHEMA = {
           time: { type: 'string', description: 'HH:mm or ""' },
           endTime: { type: 'string', description: 'HH:mm or ""' },
           durationMin: { type: 'integer' },
-          skill: { type: 'string', enum: ['vocabulary', 'grammar', 'reading', 'listening', 'writing', 'speaking', 'review', 'mock', 'other'] },
+          skill: { type: 'string', enum: PLANNER_SKILLS },
           eventKind: { type: 'string', enum: ['exam', 'class', 'appointment', 'deadline', 'other', ''] },
           location: { type: 'string' },
           repeatWeekdays: { type: 'array', items: { type: 'integer' } },
@@ -349,7 +352,7 @@ export function ensureBrief(ctx: PlannerCtx, day: string, opts: { now?: Date; fo
 
 /* ───────────── 4.3 Smart reschedule ───────────── */
 
-export const RESCHEDULE_SYSTEM = `You reschedule overdue study tasks for an IELTS learner into the next 7 days.
+export const RESCHEDULE_SYSTEM = `You reschedule the overdue tasks of an IELTS learner (mostly study, some work or personal to-dos) into the next 7 days.
 
 INPUT: overdue tasks, the minutes already planned on each of the next 7 days, the minutes available each day (capacity), upcoming events (the exam date matters most) and today's date.
 
@@ -358,10 +361,11 @@ RULES
 2. Do not push a day over its capacity. If everything cannot fit, drop the least valuable tasks: duplicates of something already planned, review/vocabulary tasks more than 7 days late (newer review replaces them), tasks whose purpose has passed.
 3. Writing, speaking and mock tasks are the most valuable before an exam; keep them and place them on days with the most free time, earlier in the day.
 4. Nothing on the exam day or after it, except a short (≤ 30 min) light review the day before.
-5. Spread the work: at most one moved task of the same skill per day when possible. Prefer today only for short tasks (≤ 30 min) when today has room.
-6. time: keep the task's original time if it had one and that slot is free; otherwise "" (any time).
-7. reason: ≤ 80 characters, Vietnamese, concrete ("T2 còn trống 60 phút, làm trước buổi học thứ 3").
-8. summary: ≤ 160 characters, Vietnamese — what moved where and what was dropped, in one or two sentences.`
+5. Tasks with skill work, personal or other are not study: their minutes do not count against capacity, never drop them, and rules 2–4 do not apply to them; move them to the soonest sensible day, keeping their time.
+6. Spread the work: at most one moved task of the same skill per day when possible. Prefer today only for short tasks (≤ 30 min) when today has room.
+7. time: keep the task's original time if it had one and that slot is free; otherwise "" (any time).
+8. reason: ≤ 80 characters, Vietnamese, concrete ("T2 còn trống 60 phút, làm trước buổi học thứ 3").
+9. summary: ≤ 160 characters, Vietnamese — what moved where and what was dropped, in one or two sentences.`
 
 const RESCHEDULE_SCHEMA = {
   type: 'object',
@@ -418,18 +422,19 @@ export function validateReschedule(
     const task = byId.get(m.taskId as string)
     if (!task || decided.has(task.id) || !days.includes(m.date as string)) continue
     decided.add(task.id)
-    used[m.date as string] += task.durationMin ?? 30
+    used[m.date as string] += isStudySkill(task.skill) ? (task.durationMin ?? 30) : 0
     moves.push({ taskId: task.id, date: m.date as string, time: timeOf(m.time), reason: cut(m.reason, 80) })
   }
   for (const d of Array.isArray(raw.drop) ? (raw.drop as Record<string, unknown>[]) : []) {
     const task = byId.get(d.taskId as string)
-    if (!task || decided.has(task.id)) continue
+    // Work and personal tasks are never dropped by the AI; a drop falls through to the automatic move below.
+    if (!task || decided.has(task.id) || !isStudySkill(task.skill)) continue
     decided.add(task.id)
     drop.push({ taskId: task.id, reason: cut(d.reason, 80) })
   }
   for (const task of overdue) {
     if (decided.has(task.id)) continue
-    const need = task.durationMin ?? 30
+    const need = isStudySkill(task.skill) ? (task.durationMin ?? 30) : 0
     const day = days.find((d) => used[d] + need <= capacityOf(doc, d)) ?? today
     used[day] += need
     moves.push({ taskId: task.id, date: day, time: '', reason: 'Tự động: ngày còn trống' })
@@ -475,7 +480,7 @@ const WEEK_DRAFT_SCHEMA = {
           date: { type: 'string' },
           time: { type: 'string' },
           durationMin: { type: 'integer' },
-          skill: { type: 'string', enum: ['vocabulary', 'grammar', 'reading', 'listening', 'writing', 'speaking', 'review', 'mock', 'other'] },
+          skill: { type: 'string', enum: STUDY_SKILLS },
           title: { type: 'string' },
           why: { type: 'string' },
         },
@@ -546,7 +551,7 @@ export async function draftInput(ctx: PlannerCtx, doc: PlannerDoc, start: string
     latestScores: await latestScores(ctx),
     exam: exam ? { date: exam.date, daysLeft: exam.daysLeft } : null,
     focus: cut(opts.focus, 300),
-    alreadyPlanned: days.flatMap((d) => tasksForDay(doc, d).map((t) => ({ date: d, title: t.title, skill: t.skill, durationMin: t.durationMin ?? 30 }))),
+    alreadyPlanned: days.flatMap((d) => tasksForDay(doc, d).filter((t) => isStudySkill(t.skill)).map((t) => ({ date: d, title: t.title, skill: t.skill, durationMin: t.durationMin ?? 30 }))),
   }
 }
 

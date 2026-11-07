@@ -2,7 +2,7 @@ import { Plus, Trash2 } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Button } from '@/components/ui'
 import { cn } from '@/lib/cn'
-import { PLANNER_SKILLS, type PlannerRoutineItem, type PlannerSkill } from '@/types/planner'
+import { NON_STUDY_SKILLS, STUDY_SKILLS, type PlannerRoutineItem, type PlannerSkill } from '@/types/planner'
 import * as api from './api'
 import { inputClass, Sheet } from './Sheet'
 import { SKILL_DOT, SKILL_LABELS, SKILL_LINKS } from './skills'
@@ -82,10 +82,17 @@ export function RoutineSheet({ open, onOpenChange, routine, onSaved }: { open: b
                       value={x.skill}
                       onChange={(e) => patch(x.id, { skill: e.target.value as PlannerSkill, link: SKILL_LINKS[e.target.value as PlannerSkill] })}
                     >
-                      {PLANNER_SKILLS.map((s) => (
-                        <option key={s} value={s}>
-                          {SKILL_LABELS[s]}
-                        </option>
+                      {[
+                        { name: 'Học', list: STUDY_SKILLS },
+                        { name: 'Việc khác', list: NON_STUDY_SKILLS },
+                      ].map((group) => (
+                        <optgroup key={group.name} label={group.name}>
+                          {group.list.map((s) => (
+                            <option key={s} value={s}>
+                              {SKILL_LABELS[s]}
+                            </option>
+                          ))}
+                        </optgroup>
                       ))}
                     </select>
                     <span className={cn('size-2.5 rounded-full', SKILL_DOT[x.skill])} />

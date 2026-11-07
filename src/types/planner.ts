@@ -1,9 +1,17 @@
 // Study planner: weekly plan, daily schedule, events and reminders. Shared by the server and the client.
 
-/** A study area; drives the colour dot, the default link and the AI's balancing. */
-export type PlannerSkill = 'vocabulary' | 'grammar' | 'reading' | 'listening' | 'writing' | 'speaking' | 'review' | 'mock' | 'other'
+/**
+ * The kind of a task: a study area, or a non-study kind (work, personal). Drives the colour dot, the default link and
+ * the AI's balancing. Non-study tasks never count toward the study minutes of a day.
+ */
+export type PlannerSkill = 'vocabulary' | 'grammar' | 'reading' | 'listening' | 'writing' | 'speaking' | 'review' | 'mock' | 'work' | 'personal' | 'other'
 
-export const PLANNER_SKILLS: PlannerSkill[] = ['vocabulary', 'grammar', 'reading', 'listening', 'writing', 'speaking', 'review', 'mock', 'other']
+export const STUDY_SKILLS: PlannerSkill[] = ['vocabulary', 'grammar', 'reading', 'listening', 'writing', 'speaking', 'review', 'mock']
+export const NON_STUDY_SKILLS: PlannerSkill[] = ['work', 'personal', 'other']
+export const PLANNER_SKILLS: PlannerSkill[] = [...STUDY_SKILLS, ...NON_STUDY_SKILLS]
+
+/** Study work counts toward the study minutes; work, personal and other do not. */
+export const isStudySkill = (skill: PlannerSkill): boolean => STUDY_SKILLS.includes(skill)
 
 export interface PlannerTask {
   id: string

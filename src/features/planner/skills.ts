@@ -1,4 +1,4 @@
-// Labels, default links and colours of the study skills. Pure: the server imports SKILL_LINKS for a task's default link.
+// Labels, default links and colours of the task kinds (study skills, work, personal). Pure: the server imports SKILL_LINKS for a task's default link.
 import type { PlannerEventKind, PlannerSkill } from '../../types/planner.ts'
 
 export const SKILL_LABELS: Record<PlannerSkill, string> = {
@@ -10,6 +10,8 @@ export const SKILL_LABELS: Record<PlannerSkill, string> = {
   speaking: 'Speaking',
   review: 'Ôn thẻ',
   mock: 'Thi thử',
+  work: 'Công việc',
+  personal: 'Cá nhân',
   other: 'Khác',
 }
 
@@ -22,6 +24,8 @@ export const SKILL_LINKS: Record<PlannerSkill, string | undefined> = {
   speaking: '/practice/speaking-review',
   review: '/review',
   mock: '/practice/writing-mock',
+  work: undefined,
+  personal: undefined,
   other: undefined,
 }
 
@@ -35,6 +39,8 @@ export const SKILL_DOT: Record<PlannerSkill, string> = {
   speaking: 'bg-emerald-500',
   review: 'bg-brand-500',
   mock: 'bg-indigo-500',
+  work: 'bg-orange-600',
+  personal: 'bg-pink-500',
   other: 'bg-slate-400',
 }
 

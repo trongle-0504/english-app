@@ -4,8 +4,9 @@ import { Button, SegmentedControl } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import {
   DEFAULT_REMINDERS,
+  NON_STUDY_SKILLS,
   PLANNER_EVENT_KINDS,
-  PLANNER_SKILLS,
+  STUDY_SKILLS,
   type PlannerEvent,
   type PlannerEventKind,
   type PlannerSkill,
@@ -150,20 +151,31 @@ function TaskForm({ task, date, onDone }: { task?: PlannerTask; date?: string; o
           />
         </div>
       </Field>
-      <Field label="Kỹ năng">
-        <Chips
-          value={skill}
-          onChange={setSkill}
-          options={PLANNER_SKILLS.map((s) => ({
-            value: s,
-            label: (
-              <span className="inline-flex items-center gap-1.5">
-                <span className={cn('size-2 rounded-full', SKILL_DOT[s])} />
-                {SKILL_LABELS[s]}
-              </span>
-            ),
-          }))}
-        />
+      <Field label="Loại việc">
+        <div className="space-y-2">
+          {[
+            { name: 'Học', list: STUDY_SKILLS },
+            { name: 'Việc khác', list: NON_STUDY_SKILLS },
+          ].map((group) => (
+            <div key={group.name} className="flex items-start gap-2">
+              <span className="w-16 shrink-0 pt-2 text-xs text-slate-400">{group.name}</span>
+              <Chips
+                className="min-w-0 flex-1"
+                value={skill}
+                onChange={setSkill}
+                options={group.list.map((s) => ({
+                  value: s,
+                  label: (
+                    <span className="inline-flex items-center gap-1.5">
+                      <span className={cn('size-2 rounded-full', SKILL_DOT[s])} />
+                      {SKILL_LABELS[s]}
+                    </span>
+                  ),
+                }))}
+              />
+            </div>
+          ))}
+        </div>
       </Field>
       <Field label="Ghi chú">
         <textarea className={cn(inputClass, 'h-auto min-h-20 py-2')} value={notes} onChange={(e) => setNotes(e.target.value)} maxLength={1000} />

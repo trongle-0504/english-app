@@ -268,3 +268,19 @@ test('week draft: dates in range, days trimmed to their free minutes', () => {
   assert.equal(out.tasks[2].skill, 'other')
   assert.equal(out.tasks[2].durationMin, 15)
 })
+
+test('reschedule: work and personal tasks are never dropped and do not use study capacity', () => {
+  const settings = { ...DEFAULT_SETTINGS, minutesPerDay: [30, 30, 30, 30, 30, 30, 30] }
+  const d = doc({
+    settings,
+    tasks: [
+      task({ id: 'w', date: '2026-11-05', skill: 'work', durationMin: 120 }),
+      task({ id: 's', date: '2026-11-05', skill: 'writing', durationMin: 30 }),
+      task({ id: 'p', date: '2026-11-04', skill: 'personal', durationMin: 60 }),
+    ],
+  })
+  const out = validateReschedule({ moves: [], drop: [{ taskId: 'w', reason: 'x' }], summary: '' }, d, '2026-11-07')
+  assert.deepEqual(out.drop, [])
+  // Work and personal fit today (they need no study time); the writing task takes today's 30 study minutes.
+  assert.deepEqual(Object.fromEntries(out.moves.map((m) => [m.taskId, m.date])), { w: '2026-11-07', s: '2026-11-07', p: '2026-11-07' })
+})

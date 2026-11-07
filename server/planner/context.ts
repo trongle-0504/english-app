@@ -6,7 +6,7 @@ import { readJsonDoc, writeJsonDoc } from '../admin/store.ts'
 import { readLog, readState } from '../review/progress.ts'
 import { computeStats } from '../review/stats.ts'
 import { talkReviews, writingReviews } from '../practice/works.ts'
-import type { PlannerBrief, PlannerDoc, PlannerHome, PlannerTask } from '../../src/types/planner.ts'
+import { isStudySkill, type PlannerBrief, type PlannerDoc, type PlannerHome, type PlannerTask } from '../../src/types/planner.ts'
 import { addDays, daysBetween, vnDay, viWeekday, weekDays, weekStart } from '../../src/features/planner/dates.ts'
 import { eventsAhead, overdueTasks, plannerDir, readPlanner, tasksForDay, updatePlanner, type PlannerCtx } from './store.ts'
 
@@ -141,10 +141,10 @@ export async function briefFacts(ctx: PlannerCtx, doc: PlannerDoc, now = new Dat
   }
 }
 
-/** Minutes planned per day (undone tasks only count; done ones are past effort). */
+/** Study minutes planned per day: undone study tasks only (done ones are past effort; work and personal tasks are not study). */
 export function plannedMinutes(tasks: PlannerTask[], days: string[]): Record<string, number> {
   const out: Record<string, number> = Object.fromEntries(days.map((d) => [d, 0]))
-  for (const t of tasks) if (t.date in out && !t.doneAt) out[t.date] += t.durationMin ?? 30
+  for (const t of tasks) if (t.date in out && !t.doneAt && isStudySkill(t.skill)) out[t.date] += t.durationMin ?? 30
   return out
 }
 
