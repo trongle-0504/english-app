@@ -300,14 +300,22 @@ export default function WritingReviewPage() {
                       : 'Đang hoàn tất bài chấm…'}
               </span>
             </Card>
-            <ReviewResult result={job.result} onResultChange={(updated) => setJob((prev) => (prev ? { ...prev, result: updated } : null))} />
+            <ReviewResult
+              result={job.result}
+              running={job.status === 'running'}
+              onResultChange={(updated) => setJob((prev) => (prev ? { ...prev, result: updated } : null))}
+            />
           </div>
         ) : null}
         {job?.status === 'error' ? (
           <p className="rounded-xl bg-rose-50 px-4 py-3 text-sm text-rose-700 dark:bg-rose-950/40 dark:text-rose-300">Review lỗi: {job.error}</p>
         ) : null}
         {job?.status === 'done' && job.result ? (
-          <ReviewResult result={job.result} onResultChange={(updated) => setJob((prev) => (prev ? { ...prev, result: updated } : null))} />
+          <ReviewResult
+            result={job.result}
+            running={false}
+            onResultChange={(updated) => setJob((prev) => (prev ? { ...prev, result: updated } : null))}
+          />
         ) : null}
       </div>
 

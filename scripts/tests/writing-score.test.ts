@@ -1,7 +1,20 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { countWords, quoteInSentence } from '../../server/writing-review/score.ts'
+import { countWords, quoteInSentence, WRITING_SCORE_SYSTEM } from '../../server/writing-review/score.ts'
 import { overallBand } from '../../src/types/writingReview.ts'
+import { buildErrorPhrase } from '../rereview-writing.ts'
+
+test('buildErrorPhrase extracts original plus one word on each side', () => {
+  const sentence = 'To organize tests for millions of people, including children and elderly, the government would have to...'
+  assert.equal(buildErrorPhrase(sentence, 'elderly'), 'and elderly')
+  assert.equal(buildErrorPhrase('Parent certainly can share their experience', 'Parent'), 'Parent certainly')
+  assert.equal(buildErrorPhrase('Consequently, they truggle to find jobs', 'truggle'), 'they truggle to')
+})
+
+test('WRITING_SCORE_SYSTEM contains strict criteria distinction instructions', () => {
+  assert.equal(/never let grammar/i.test(WRITING_SCORE_SYSTEM), true)
+  assert.equal(WRITING_SCORE_SYSTEM.includes('never a rarer'), true)
+})
 
 test('countWords counts valid tokens and excludes Vietnamese & English paragraph labels', () => {
   const textWithLabels = `

@@ -467,11 +467,13 @@ function WritingModelAnswer({
   reviewId,
   onUpdateResult,
   pending,
+  running,
 }: {
   modelEssay: WritingModelEssay
   reviewId: string
   onUpdateResult?: (res: WritingReviewResult) => void
   pending?: ('retry' | 'modelEssay' | 'score')[]
+  running?: boolean
 }) {
   const [copied, setCopied] = useState(false)
   const [isEditing, setIsEditing] = useState(false)
@@ -601,12 +603,12 @@ function WritingModelAnswer({
               </button>
             </div>
 
-            {isCustomized && !isEditing && !pending?.length ? (
+            {isCustomized && !isEditing && !pending?.length && !running ? (
               <Button size="sm" variant="ghost" onClick={() => void handleResetToAI()} disabled={analyzing} className="text-slate-400 hover:text-rose-600">
                 <RotateCcw className="size-3.5" /> Bản gốc AI
               </Button>
             ) : null}
-            {!isEditing && !pending?.length ? (
+            {!isEditing && !pending?.length && !running ? (
               <Button size="sm" variant={isCustomized ? 'outline' : 'primary'} onClick={handleStartEdit} disabled={analyzing}>
                 <Edit3 className="size-4" /> {isCustomized ? 'Sửa bài của bạn' : 'Tùy chỉnh theo ý bạn'}
               </Button>
@@ -786,9 +788,11 @@ function WritingModelAnswer({
 
 function UpgradedTab({
   result,
+  running,
   onUpdateResult,
 }: {
   result: WritingReviewResult
+  running?: boolean
   onUpdateResult?: (res: WritingReviewResult) => void
 }) {
   const { added, add: addToReview } = useAddToReview()
@@ -806,7 +810,7 @@ function UpgradedTab({
 
     return (
       <div className="space-y-6">
-        <WritingModelAnswer modelEssay={result.modelEssay} reviewId={result.id} onUpdateResult={onUpdateResult} pending={result.pending} />
+        <WritingModelAnswer modelEssay={result.modelEssay} reviewId={result.id} onUpdateResult={onUpdateResult} pending={result.pending} running={running} />
 
         {result.modelEssay.structures?.length ? (
           <Structures structures={result.modelEssay.structures} />
@@ -1209,9 +1213,11 @@ function WritingScoreCard({
 
 export function ReviewResult({
   result: initialResult,
+  running,
   onResultChange,
 }: {
   result: WritingReviewResult
+  running?: boolean
   onResultChange?: (res: WritingReviewResult) => void
 }) {
   const [tab, setTab] = useState<Tab>('detail')
@@ -1261,7 +1267,7 @@ export function ReviewResult({
               ⏱️ {timingNote}
             </p>
           ) : <div />}
-          {!result.pending?.length ? <ExportReport kind="writing" result={result} /> : null}
+          {!result.pending?.length && !running ? <ExportReport kind="writing" result={result} /> : null}
         </div>
 
         <WritingScoreCard
@@ -1304,7 +1310,7 @@ export function ReviewResult({
         ) : tab === 'upgraded' ? (
           <>
             <h2 className="mb-2 text-lg font-bold text-slate-900 dark:text-white">Bài nâng cấp</h2>
-            <UpgradedTab result={result} onUpdateResult={handleUpdate} />
+            <UpgradedTab result={result} running={running} onUpdateResult={handleUpdate} />
           </>
         ) : tab === 'suggested' ? (
           <>
