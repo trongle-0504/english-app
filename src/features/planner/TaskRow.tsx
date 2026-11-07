@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router'
 import { cn } from '@/lib/cn'
 import type { PlannerTask } from '@/types/planner'
 import { shortDateLabel, shortWeekday, vnDay, vnTime } from './dates'
-import { SKILL_DOT, SKILL_LABELS } from './skills'
+import { SKILL_LABELS, SKILL_RING } from './skills'
 
 interface TaskRowProps {
   task: PlannerTask
@@ -22,6 +22,7 @@ export function TaskRow({ task, variant = 'full', showDate = false, onToggle, on
   const done = Boolean(task.doneAt)
   const today = vnDay()
   const snoozed = task.snoozedUntil && new Date(task.snoozedUntil).getTime() > Date.now() ? vnTime(new Date(task.snoozedUntil)) : ''
+  // The category shows as the colour of the tick circle and, in the full row, as the last word of the meta line.
   const meta = [task.time ?? 'Anytime', task.durationMin ? `${task.durationMin}′` : '', variant === 'full' ? SKILL_LABELS[task.skill] : '']
     .filter(Boolean)
     .join(' · ')
@@ -45,7 +46,7 @@ export function TaskRow({ task, variant = 'full', showDate = false, onToggle, on
         <span
           className={cn(
             'flex size-6 items-center justify-center rounded-full border-2 transition-all duration-200',
-            done ? 'scale-100 border-emerald-500 bg-emerald-500 text-white' : 'border-slate-300 dark:border-slate-600',
+            done ? 'scale-100 border-emerald-500 bg-emerald-500 text-white' : SKILL_RING[task.skill],
           )}
         >
           {done ? <Check className="animate-scale-in size-4" strokeWidth={3} /> : null}
@@ -53,11 +54,10 @@ export function TaskRow({ task, variant = 'full', showDate = false, onToggle, on
       </button>
 
       <button type="button" onClick={open} className="flex min-w-0 flex-1 items-center gap-2.5 py-1.5 text-left">
-        <span className={cn('size-2 shrink-0 rounded-full', SKILL_DOT[task.skill], done && 'opacity-40')} aria-hidden />
         <span className="min-w-0 flex-1">
           <span
             className={cn(
-              'block truncate font-medium',
+              'line-clamp-2 font-medium break-words',
               variant === 'compact' ? 'text-sm' : 'text-[15px]',
               done ? 'text-slate-400 line-through dark:text-slate-500' : 'text-slate-900 dark:text-slate-100',
             )}

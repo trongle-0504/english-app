@@ -44,8 +44,23 @@ export const SKILL_DOT: Record<PlannerSkill, string> = {
   other: 'bg-slate-400',
 }
 
+/** Border colour of a task's tick circle (border-*), matching SKILL_DOT. */
+export const SKILL_RING: Record<PlannerSkill, string> = {
+  vocabulary: 'border-amber-500',
+  grammar: 'border-violet-500',
+  reading: 'border-teal-500',
+  listening: 'border-sky-500',
+  writing: 'border-rose-500',
+  speaking: 'border-emerald-500',
+  review: 'border-brand-500',
+  mock: 'border-indigo-500',
+  work: 'border-orange-600',
+  personal: 'border-pink-500',
+  other: 'border-slate-400',
+}
+
 export const EVENT_KIND_LABELS: Record<PlannerEventKind, string> = {
-  exam: 'Thi IELTS',
+  exam: 'Exam',
   class: 'Class',
   appointment: 'Appointment',
   deadline: 'Deadline',

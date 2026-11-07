@@ -1,6 +1,6 @@
 // The home page's "today", drawn on the hero photo: date, exam countdown, week progress, the AI brief,
 // today's tasks (solid card for legibility), overdue work, next events and a quick-add bar.
-import { ArrowRight, Bell, CalendarClock, CalendarPlus, ChevronDown, Plus, Repeat, Sparkles, WifiOff } from 'lucide-react'
+import { ArrowRight, Bell, CalendarClock, CalendarPlus, ChevronDown, Repeat, Sparkles, TriangleAlert, WifiOff } from 'lucide-react'
 import { useEffect, useState, type ReactNode } from 'react'
 import { Link, useNavigate } from 'react-router'
 import { Skeleton } from '@/components/ui'
@@ -29,12 +29,12 @@ function Ring({ value, max, children }: { value: number; max: number; children: 
   const c = 2 * Math.PI * r
   const ratio = max > 0 ? Math.max(0, Math.min(1, value / max)) : 0
   return (
-    <div className="relative size-14 shrink-0">
+    <div className="relative size-12 shrink-0 sm:size-14">
       <svg viewBox="0 0 56 56" className="size-full -rotate-90" aria-hidden>
         <circle cx="28" cy="28" r={r} fill="none" strokeWidth="5" className="stroke-white/20" />
         <circle cx="28" cy="28" r={r} fill="none" strokeWidth="5" strokeLinecap="round" className="stroke-white transition-[stroke-dashoffset] duration-700" strokeDasharray={c} strokeDashoffset={c * (1 - ratio)} />
       </svg>
-      <span className="absolute inset-0 flex items-center justify-center text-sm font-extrabold text-white tabular-nums">{children}</span>
+      <span className="absolute inset-0 flex items-center justify-center text-[13px] font-extrabold sm:text-sm text-white tabular-nums">{children}</span>
     </div>
   )
 }
@@ -115,7 +115,7 @@ export function TodayPanel() {
 
   return (
     <div className="text-white">
-      {/* 1. Date, bell, + */}
+      {/* 1. Date, bell */}
       <div className="flex items-center justify-between gap-3">
         <div className="min-w-0">
           <h1 className="text-sm font-bold tracking-[0.14em] text-white/85 uppercase">{longDate(day)}</h1>
@@ -130,9 +130,6 @@ export function TodayPanel() {
             <Bell className="size-5" />
             {push && push !== 'on' && push !== 'unsupported' && push !== 'dev' ? <span className="absolute top-2.5 right-2.5 size-2 rounded-full bg-amber-400 ring-2 ring-slate-900/40" /> : null}
           </button>
-          <button type="button" aria-label="Quick add" onClick={() => setAdd({ open: true, tab: 'quick' })} className={roundGlass}>
-            <Plus className="size-5" />
-          </button>
         </div>
       </div>
 
@@ -142,27 +139,27 @@ export function TodayPanel() {
           {/* 2. Countdown + week progress */}
           <div className="grid grid-cols-2 gap-3">
             {home?.countdown ? (
-              <Link to="/planner?view=events" className={cn(glass, 'flex items-center gap-3 rounded-2xl p-3')}>
+              <Link to="/planner?view=events" className={cn(glass, 'flex items-center gap-2.5 rounded-2xl p-2.5 sm:gap-3 sm:p-3')}>
                 {/* Days left out of 30, or out of the days since the event was added when that is smaller. */}
                 <Ring value={home.countdown.daysLeft} max={Math.min(30, Math.max(1, daysBetween(home.countdown.createdAt.slice(0, 10), home.countdown.date)))}>
                   {home.countdown.daysLeft}
                 </Ring>
                 <span className="min-w-0">
                   <span className="block text-sm font-bold">{home.countdown.daysLeft === 0 ? 'Today' : `${home.countdown.daysLeft} ${home.countdown.daysLeft === 1 ? 'day' : 'days'}`}</span>
-                  <span className="block truncate text-xs text-white/75">
-                    {home.countdown.title} · {shortWeekday(home.countdown.date)} {dayMonth(home.countdown.date)}
+                  <span className="line-clamp-2 text-xs leading-snug break-words text-white/75" title={`${home.countdown.title} · ${shortWeekday(home.countdown.date)} ${dayMonth(home.countdown.date)}`}>
+                    {home.countdown.title}
                   </span>
                 </span>
               </Link>
             ) : (
-              <button type="button" onClick={() => setAdd({ open: true, tab: 'event', event: { kind: 'exam' } })} className={cn(glass, 'flex items-center gap-3 rounded-2xl p-3 text-left')}>
-                <span className="flex size-14 shrink-0 items-center justify-center rounded-full border-2 border-dashed border-white/40">
+              <button type="button" onClick={() => setAdd({ open: true, tab: 'event', event: { kind: 'exam' } })} className={cn(glass, 'flex items-center gap-2.5 rounded-2xl p-2.5 text-left sm:gap-3 sm:p-3')}>
+                <span className="flex size-12 sm:size-14 shrink-0 items-center justify-center rounded-full border-2 border-dashed border-white/40">
                   <CalendarPlus className="size-5" />
                 </span>
                 <span className="text-sm font-bold">Add exam date</span>
               </button>
             )}
-            <Link to="/planner?view=week" className={cn(glass, 'flex items-center gap-3 rounded-2xl p-3')}>
+            <Link to="/planner?view=week" className={cn(glass, 'flex items-center gap-2.5 rounded-2xl p-2.5 sm:gap-3 sm:p-3')}>
               <Ring value={home?.weekProgress.done ?? 0} max={home?.weekProgress.total ?? 0}>
                 {home?.weekProgress.total ? `${Math.round(((home.weekProgress.done ?? 0) / home.weekProgress.total) * 100)}%` : '–'}
               </Ring>
@@ -179,7 +176,7 @@ export function TodayPanel() {
           {home?.brief && (home.brief.focus || home.brief.tip || home.brief.body) ? (
             <div className={cn(glass, 'rounded-2xl p-3.5')}>
               <p className="flex items-center gap-1.5 text-xs font-bold tracking-wide text-white/80 uppercase">
-                <Sparkles className="size-3.5" /> {home.brief.headline}
+                <Sparkles className="size-3.5" /> Today’s focus
               </p>
               <div className={cn('mt-1.5 space-y-1 text-sm leading-relaxed text-white/95', !briefOpen && 'line-clamp-2')}>
                 <p>{home.brief.focus || home.brief.body}</p>
@@ -264,6 +261,8 @@ function TodayCard({
 
   return (
     <div>
+      {home.overdue.length ? <OverdueBanner home={home} onToggle={onToggle} onReschedule={onReschedule} onMoveToday={onMoveToday} /> : null}
+
       <div className="flex items-center justify-between gap-3">
         <h2 className="text-lg font-bold">Today</h2>
         {total ? (
@@ -310,27 +309,6 @@ function TodayCard({
         </p>
       )}
 
-      {home.overdue.length ? (
-        <div className="mt-3 rounded-2xl bg-amber-50 p-3 dark:bg-amber-950/40">
-          <p className="text-sm font-bold text-amber-800 dark:text-amber-300">{home.overdue.length} overdue</p>
-          <ul className="divide-y divide-amber-200/60 dark:divide-amber-900/50">
-            {home.overdue.slice(0, 5).map((t) => (
-              <li key={t.id}>
-                <TaskRow task={t} showDate onToggle={onToggle} />
-              </li>
-            ))}
-          </ul>
-          {home.overdue.length > 5 ? <p className="text-xs text-amber-700 dark:text-amber-400">and {home.overdue.length - 5} more</p> : null}
-          <div className="mt-2 flex flex-wrap gap-2">
-            <button type="button" onClick={onReschedule} className="inline-flex min-h-11 items-center gap-1.5 rounded-full bg-amber-600 px-4 text-sm font-semibold text-white">
-              <Sparkles className="size-4" /> Smart reschedule
-            </button>
-            <button type="button" onClick={onMoveToday} className="inline-flex min-h-11 items-center rounded-full border border-amber-300 px-4 text-sm font-semibold text-amber-800 dark:border-amber-800 dark:text-amber-300">
-              Move to today
-            </button>
-          </div>
-        </div>
-      ) : null}
 
       {home.events.length ? (
         <div className="mt-3 border-t border-slate-200/70 pt-3 dark:border-slate-700/70">
@@ -342,7 +320,7 @@ function TodayCard({
                   <span className={cn('flex size-8 shrink-0 items-center justify-center rounded-full', EVENT_KIND_TONE[e.kind])}>
                     <CalendarClock className="size-4" />
                   </span>
-                  <span className="min-w-0 flex-1 truncate text-sm font-medium">{e.title}</span>
+                  <span className="line-clamp-2 min-w-0 flex-1 text-sm font-medium break-words">{e.title}</span>
                   <span className={cn('shrink-0 text-xs font-semibold', e.daysLeft <= 7 ? 'text-rose-600 dark:text-rose-400' : 'text-slate-500')}>{daysLeftLabel(e.daysLeft)}</span>
                 </Link>
               </li>
@@ -354,6 +332,51 @@ function TodayCard({
       <Link to="/planner?view=week" className="mt-3 inline-flex min-h-11 items-center gap-1 text-sm font-semibold text-brand-600 dark:text-brand-400">
         View week <ArrowRight className="size-4" />
       </Link>
+    </div>
+  )
+}
+
+/** Overdue work, above today's list: one line with the actions; the tasks open on tap. */
+function OverdueBanner({
+  home,
+  onToggle,
+  onReschedule,
+  onMoveToday,
+}: {
+  home: PlannerHome
+  onToggle: ReturnType<typeof usePlannerHome>['toggle']
+  onReschedule: () => void
+  onMoveToday: () => void
+}) {
+  const [open, setOpen] = useState(false)
+  const n = home.overdue.length
+  return (
+    <div className="mb-3 rounded-2xl bg-amber-50 p-3 dark:bg-amber-950/40">
+      <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open} className="flex min-h-9 w-full items-center gap-2 text-left">
+        <TriangleAlert className="size-4 shrink-0 text-amber-600 dark:text-amber-400" />
+        <span className="flex-1 text-sm font-bold text-amber-800 dark:text-amber-300">
+          {n} overdue {n === 1 ? 'task' : 'tasks'}
+        </span>
+        <span className="text-xs font-semibold text-amber-700 dark:text-amber-400">{open ? 'Hide' : 'Show'}</span>
+        <ChevronDown className={cn('size-4 text-amber-700 transition-transform dark:text-amber-400', open && 'rotate-180')} />
+      </button>
+      {open ? (
+        <ul className="mt-1 divide-y divide-amber-200/60 dark:divide-amber-900/50">
+          {home.overdue.map((t) => (
+            <li key={t.id}>
+              <TaskRow task={t} showDate onToggle={onToggle} />
+            </li>
+          ))}
+        </ul>
+      ) : null}
+      <div className="mt-2 flex flex-wrap gap-2">
+        <button type="button" onClick={onReschedule} className="inline-flex min-h-10 items-center gap-1.5 rounded-full bg-amber-600 px-4 text-sm font-semibold text-white">
+          <Sparkles className="size-4" /> Smart reschedule
+        </button>
+        <button type="button" onClick={onMoveToday} className="inline-flex min-h-10 items-center rounded-full border border-amber-300 px-4 text-sm font-semibold text-amber-800 dark:border-amber-800 dark:text-amber-300">
+          Move to today
+        </button>
+      </div>
     </div>
   )
 }
