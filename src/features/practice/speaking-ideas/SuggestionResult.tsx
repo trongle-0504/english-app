@@ -1174,6 +1174,13 @@ export function LibraryAddButtons({
   const [justAdded, setJustAdded] = useState<{ label: string; href: string } | null>(null)
   const [message, setMessage] = useState<{ tone: 'error' | 'info'; text: string } | null>(null)
 
+  useEffect(() => {
+    setBusy(null)
+    setLocalAdded({})
+    setJustAdded(null)
+    setMessage(null)
+  }, [phrase])
+
   const activeVocab = localAdded.vocab ?? existing.vocab
   const activeNote = localAdded.note ?? existing.note
 
@@ -1295,6 +1302,13 @@ export function WordingRow({ w, example }: { w: CheckedWording; example?: string
   const [localAdded, setLocalAdded] = useState<{ vocab?: { label: string; href: string }; note?: { label: string; href: string } }>({})
   const [justAdded, setJustAdded] = useState<{ label: string; href: string } | null>(null)
   const [message, setMessage] = useState<{ tone: 'error' | 'info'; text: string } | null>(null)
+
+  useEffect(() => {
+    setBusy(null)
+    setLocalAdded({})
+    setJustAdded(null)
+    setMessage(null)
+  }, [w.text])
 
   const activeVocab = localAdded.vocab ?? existing.vocab
   const activeNote = localAdded.note ?? existing.note
@@ -1456,8 +1470,8 @@ export function Wording({
       hint="Collocation / verb pattern trong bài, đối chiếu Longman & OZDIC"
     >
       <ul className="grid gap-3 md:grid-cols-2">
-        {wording.map((w, i) => (
-          <WordingRow key={i} w={w} example={findSentenceFor(w.text)} />
+        {wording.map((w) => (
+          <WordingRow key={w.text} w={w} example={findSentenceFor(w.text)} />
         ))}
       </ul>
     </Section>
@@ -1507,6 +1521,13 @@ export function ExtraRow({ extra }: { extra: SpeakingExtra }) {
   const [localAdded, setLocalAdded] = useState<{ vocab?: { label: string; href: string }; note?: { label: string; href: string } }>({})
   const [justAdded, setJustAdded] = useState<{ label: string; href: string } | null>(null)
   const [message, setMessage] = useState<{ tone: 'error' | 'info'; text: string } | null>(null)
+
+  useEffect(() => {
+    setBusy(null)
+    setLocalAdded({})
+    setJustAdded(null)
+    setMessage(null)
+  }, [extra.phrase])
 
   const activeVocab = localAdded.vocab ?? existing.vocab
   const activeNote = localAdded.note ?? existing.note
@@ -1950,6 +1971,7 @@ export function SuggestionResult({
       </div>
       {answer ? (
         <QuestionPanel
+          key={`${result.id}-${index}`}
           answer={answer}
           part={result.part}
           number={result.answers.length > 1 ? index + 1 : undefined}
