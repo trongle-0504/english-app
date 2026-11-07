@@ -108,3 +108,58 @@ test('mapCriterionIssues: maps H ref, M ref, plain quotes, and drops quotes not 
     end: 2.1,
   })
 })
+
+test('M<k> points to k-th item in rawMisheard even when an item in the middle was unplaced', () => {
+  const rawMisheard = [
+    { n: 2, heard: 'effort dictionary', meant: 'Oxford dictionary', ipa: '/ˈɒksfəd/', tip: 'Âm /ɒks/' },
+    { n: 2, heard: 'phantom words', meant: 'ghostly words', ipa: '/ˈfæntəm/', tip: 'Không có' },
+    { n: 1, heard: 'big city', meant: 'large city', ipa: '/lɑːdʒ/', tip: 'Âm /dʒ/' },
+  ]
+  // In filtered misheard, phantom words is omitted, leaving only 2 items
+  const filteredMisheard: TalkMisheard[] = [
+    { sentence: 1, heard: 'effort dictionary', meant: 'Oxford dictionary', ipa: '/ˈɒksfəd/', tip: 'Âm /ɒks/', start: 5.4, end: 6.5 },
+    { sentence: 0, heard: 'big city', meant: 'large city', ipa: '/lɑːdʒ/', tip: 'Âm /dʒ/', start: 1.4, end: 2.1 },
+  ]
+
+  const { issues } = mapCriterionIssues(
+    [
+      // M3 should point to rawMisheard[2] ("big city" at 1.4..2.1), NOT misheard[2] (which is out of bounds)
+      { n: 1, quote: 'big city', ref: 'M3', problem: 'Phát âm chưa tự nhiên', better: '/lɑːdʒ ˈsɪti/' },
+    ],
+    sampleSentences,
+    heardSentences,
+    sampleWords,
+    [],
+    filteredMisheard,
+    rawMisheard,
+  )
+
+  assert.equal(issues.length, 1)
+  assert.equal(issues[0].start, 1.4)
+  assert.equal(issues[0].end, 2.1)
+  assert.equal(issues[0].sentence, 0)
+})
+
+test('issue without specific timing falls back to whole sentence audio range', () => {
+  // An issue in sentence 2 (index 1) whose words could not be located individually
+  // Sentence 1 in heardSentences: "There are many good jobs and effort dictionary resources."
+  // starts at "There" (2.5 s) and ends at "resources." (7.1 s)
+  const { issues } = mapCriterionIssues(
+    [
+      { n: 2, quote: 'Oxford dictionary', ref: '', problem: 'Lỗi phát âm', better: '/ˈɒksfəd/' },
+    ],
+    sampleSentences,
+    heardSentences,
+    sampleWords,
+    [],
+    [],
+    [],
+  )
+
+  assert.equal(issues.length, 1)
+  // Even if placePhrase was not provided words for this specific quote or quote is in restored text only,
+  // it gets the whole sentence audio range: start: 2.5, end: 7.1
+  assert.equal(issues[0].sentence, 1)
+  assert.equal(issues[0].start, 2.5)
+  assert.equal(issues[0].end, 7.1)
+})

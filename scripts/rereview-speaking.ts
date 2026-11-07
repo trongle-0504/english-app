@@ -41,17 +41,15 @@ for (const rawId of ids) {
     ...(saved.source ? { source: saved.source } : {}),
   }
 
-  let droppedEdits = 0
   const next = await reviewRecording({ rootDir }, input, readWav(wav), {
     id,
-    onStats: (s) => {
-      droppedEdits = s.droppedEdits
-    },
   })
   const outPath = path.join(rootDir, 'cache', 'rereview', `${id}.json`)
   await writeJsonFile(outPath, next)
 
   const t = next.timings
+  const toBand = t ? ((t.transcribe + t.ai.score) / 1000).toFixed(1) : '?'
+  const toFixes = t ? (t.total / 1000).toFixed(1) : '?'
   const aiSummary = t
     ? Object.entries(t.ai)
         .map(([k, v]) => `${k}=${Math.round(v / 100) / 10}s`)
@@ -62,6 +60,6 @@ for (const rawId of ids) {
       ? ` | match ${saved.comparison?.match ?? '-'}% → ${next.comparison?.match ?? '-'}%`
       : ''
   console.log(
-    `${id} | ${saved.overall.toFixed(1)} → ${next.overall.toFixed(1)} | ${fmtBands(saved)} → ${fmtBands(next)} | fixes ${saved.fixes.length}→${next.fixes.length} (dropped ${droppedEdits})${matchInfo} | total=${t ? (t.total / 1000).toFixed(1) : '?'}s (stt=${t ? (t.transcribe / 1000).toFixed(1) : '?'}s ai=[${aiSummary}] dict=${t ? (t.dictionary / 1000).toFixed(1) : '?'}s)`,
+    `${id} | ${saved.overall.toFixed(1)} → ${next.overall.toFixed(1)} | ${fmtBands(saved)} → ${fmtBands(next)} | fixes ${saved.fixes.length}→${next.fixes.length}${matchInfo} | toBand=${toBand}s toFixes=${toFixes}s total=${t ? (t.total / 1000).toFixed(1) : '?'}s (stt=${t ? (t.transcribe / 1000).toFixed(1) : '?'}s ai=[${aiSummary}] dict=${t ? (t.dictionary / 1000).toFixed(1) : '?'}s)`,
   )
 }

@@ -45,6 +45,7 @@ import {
   CheckSchema,
   dictionaries,
   ISSUE_KINDS,
+  locate,
   proofOf,
   SEVERITIES,
   splitSentences,
@@ -53,7 +54,6 @@ import {
   type RewriteIssue,
 } from '../writing-review/rewrite.ts'
 import { hesitationSpots, measureFluency, UNCLEAR, type HesitationSpot } from './fluency.ts'
-import { filterRestoredEdits } from './restoredSpans.ts'
 import { readWav, transcribe } from './stt.ts'
 
 export const dir = (ctx: Pick<ApiContext, 'rootDir'>) => path.join(ctx.rootDir, 'progress', 'speaking-reviews')
@@ -101,8 +101,8 @@ const ReviewSchema = z.object({
         n: z.number().int().describe('Transcript sentence number.'),
         heard: z.string().describe('The misheard words, copied exactly from the transcript sentence.'),
         meant: z.string().describe('What they most likely said.'),
-        ipa: z.string().describe('IPA (British) of what they meant.'),
-        tip: z.string().describe('Vietnamese, at most 15 words: the sound to fix.'),
+        ipa: z.string().default('').describe('IPA (British) of what they meant.'),
+        tip: z.string().default('').describe('Vietnamese, at most 15 words: the sound to fix.'),
       }),
     )
     .describe('One per restored phrase.'),
@@ -180,7 +180,7 @@ const SCORE_SYSTEM = `${INTRO}
 You also get fluency figures and the hesitation spots (H…) measured from the timing. Your job: restore what was misheard, rate the four criteria the way a trained IELTS examiner does, and point to the exact places to improve. Corrections and the script check are done by other passes.
 
 0. restored and misheard — FIRST, before anything else. The recognizer hears an unclear pronunciation as real but wrong words (“Movie Dust Moonly” for “multitasking smoothly”, “A on IPOs” for “8 or 9 points”, “effort dictionary” for “Oxford dictionary”, “can” where the meaning needs “can't”). Restore what they most likely SAID, from the question, the script (if any), the words around, the words the recognizer was unsure of, and how close the sounds are.
-- restored: for each transcript sentence that has misheard words, the sentence with ONLY those words restored. Keep everything else exactly as heard — every grammar mistake, wrong word form, wrong word choice, simple wording and filler stays: no upgrades, no fixes. When you cannot tell what they meant, leave the words as heard.
+- restored: for each transcript sentence that has misheard words, the sentence with ONLY those words restored. Keep everything else exactly as heard — every grammar mistake, wrong word form, wrong word choice, simple wording and filler stays: no upgrades, no fixes. When you cannot tell what they meant, leave the words as heard. Never restore a different form of the same word (“retired” → “retirees”, “city” → “cities”, “go” → “went”) and never add or remove an article: those are their grammar, not mishearings — leave them as heard.
 - misheard: one item per restored phrase: n, heard (copied exactly from the transcript sentence), meant, ipa of what they meant, tip (the sound or stress to fix, in Vietnamese).
 Everything below works on the RESTORED sentences (a sentence not restored stays as heard).
 
@@ -367,13 +367,43 @@ export function placeMisheard(items: GradedScore['misheard'], sentences: string[
       sentence: placed.sentence,
       heard: m.heard.trim(),
       meant: m.meant.trim(),
-      ipa: m.ipa.trim(),
-      tip: clip(m.tip.trim(), 120),
+      ipa: (m.ipa || '').trim(),
+      tip: clip((m.tip || '').trim(), 120),
       start: placed.start,
       end: placed.end,
     })
   }
   return out
+}
+
+export function sentenceAudioRange(
+  sentenceIndex: number,
+  heardSentences: string[],
+  words: TalkWord[],
+): { start: number; end: number } {
+  if (sentenceIndex < 0 || sentenceIndex >= heardSentences.length || !words.length) {
+    return { start: 0, end: 0 }
+  }
+  const starts: number[] = []
+  heardSentences.reduce((at, s) => (starts.push(at), at + s.split(/\s+/).filter(Boolean).length), 0)
+  const startWordIdx = starts[sentenceIndex]
+  const wordCount = heardSentences[sentenceIndex].split(/\s+/).filter(Boolean).length
+  if (startWordIdx === undefined || wordCount === 0 || startWordIdx >= words.length) {
+    return { start: 0, end: 0 }
+  }
+  const endWordIdx = Math.min(words.length - 1, startWordIdx + wordCount - 1)
+  return {
+    start: words[startWordIdx].start,
+    end: words[endWordIdx].end,
+  }
+}
+
+export type RawMisheardItem = {
+  n: number
+  heard: string
+  meant: string
+  ipa?: string
+  tip?: string
 }
 
 export type RawCriterionIssue = z.infer<typeof CriterionIssue>
@@ -385,6 +415,7 @@ export function mapCriterionIssues(
   words: TalkWord[],
   spots: HesitationSpot[],
   misheard: TalkMisheard[],
+  rawMisheard?: RawMisheardItem[],
 ): { issues: TalkCriterionIssue[]; dropped: number } {
   const hasQuote = (sentence: string | undefined, quote: string) => {
     if (!sentence) return false
@@ -392,6 +423,13 @@ export function mapCriterionIssues(
     return q.length > 0 && plainWords(sentence).join(' ').includes(q.join(' '))
   }
   const round2 = (n: number) => Math.round(n * 100) / 100
+
+  // Pre-place each item in rawMisheard (before any filtering) to preserve 1-based indexing for M1, M2...
+  const placedRaw = (rawMisheard ?? []).map((m) => {
+    if (!m || !m.heard?.trim()) return null
+    return placePhrase(m.heard, m.n - 1, heardSentences, words)
+  })
+
   const issues: TalkCriterionIssue[] = []
   let dropped = 0
   for (const raw of rawIssues) {
@@ -416,9 +454,18 @@ export function mapCriterionIssues(
     if (spot) {
       start = Math.max(0, round2(spot.start - 1.5))
       end = round2(spot.end + 1.5)
-    } else if (misheardItem) {
-      start = misheardItem.start
-      end = misheardItem.end
+    } else if (mMatch) {
+      const k = Number(mMatch[1])
+      if (rawMisheard && k >= 1 && k <= rawMisheard.length) {
+        const placed = placedRaw[k - 1]
+        if (placed && placed.sentence >= 0 && (placed.start > 0 || placed.end > 0)) {
+          start = placed.start
+          end = placed.end
+        }
+      } else if (misheardItem) {
+        start = misheardItem.start
+        end = misheardItem.end
+      }
     } else {
       let placed = placePhrase(quote, sentence, restoredSentences, words)
       if (placed.start === 0 && placed.end === 0) {
@@ -426,6 +473,13 @@ export function mapCriterionIssues(
       }
       start = placed.start
       end = placed.end
+    }
+
+    // Task 4: If timing not found (start = end = 0) but sentence is known, use the whole sentence's audio range
+    if (start === 0 && end === 0) {
+      const range = sentenceAudioRange(sentence, heardSentences, words)
+      start = range.start
+      end = range.end
     }
 
     if (issues.length < 4) {
@@ -638,13 +692,6 @@ export async function reviewRecording(
     ...(input.script ? [`The script they planned to say (only to help you work out misheard words):\n${input.script}`] : []),
   ].join('\n\n')
 
-  const editsPrompt = [
-    PART_RULE[input.part],
-    `Question: ${input.question || '(none given — free talk)'}`,
-    unsure,
-    `Transcript, one sentence per line (the edits refer to these numbers):\n${transcript}`,
-  ].join('\n\n')
-
   const scriptPrompt = [
     PART_RULE[input.part],
     `Question: ${input.question || '(none given — free talk)'}`,
@@ -657,7 +704,6 @@ export async function reviewRecording(
 
   const tScore = Date.now()
   let scoreMs = 0
-  let bDone = false
   const callA = speakingJson({
     label: 'speaking review: score',
     engine: 'antigravity',
@@ -667,21 +713,6 @@ export async function reviewRecording(
     prompt: scorePrompt,
   }).then((res) => {
     scoreMs = Date.now() - tScore
-    return res
-  })
-
-  const tEdits = Date.now()
-  let editsMs = 0
-  const callB = speakingJson({
-    label: 'speaking review: edits',
-    engine: 'antigravity',
-    effort,
-    system: EDITS_SYSTEM,
-    schema: EditsSchema,
-    prompt: editsPrompt,
-  }).then((res) => {
-    editsMs = Date.now() - tEdits
-    bDone = true
     return res
   })
 
@@ -701,8 +732,7 @@ export async function reviewRecording(
       })
     : null
 
-  // Prevent unhandled rejection warnings if B or C fails before A settles; Promise.all below rethrows any error.
-  callB.catch(() => {})
+  // Prevent unhandled rejection warning if C fails before A settles
   callC?.catch(() => {})
 
   const { value: a, model } = await callA
@@ -716,7 +746,7 @@ export async function reviewRecording(
   const criteria = Object.fromEntries(
     (['fc', 'lr', 'gra', 'pron'] as const).map((cid) => {
       const c = a.criteria[cid]
-      const mapped = mapCriterionIssues(c.issues, said, sentences, heard.words, spots, misheard)
+      const mapped = mapCriterionIssues(c.issues, said, sentences, heard.words, spots, misheard, a.misheard)
       droppedCriterionIssues += mapped.dropped
       return [
         cid,
@@ -771,22 +801,44 @@ export async function reviewRecording(
     reviewer: model || antigravityModel(),
     pending: ['fixes', ...(input.script ? (['comparison'] as const) : [])],
   }
-  if (bDone) opts.onStep?.('dictionary')
   opts.onPartial?.(current)
 
+  const restoredTranscript = said.map((s, i) => `${i + 1}. ${s}`).join('\n')
+  const editsPrompt = [
+    PART_RULE[input.part],
+    `Question: ${input.question || '(none given — free talk)'}`,
+    unsure,
+    `Transcript with misheard words already restored, one sentence per line (the edits refer to these numbers):\n${restoredTranscript}`,
+  ].join('\n\n')
+
+  let editsMs = 0
   let dictMs = 0
   const fixesBranch = (async () => {
-    const { value: b } = await callB
+    const tEdits = Date.now()
+    const { value: b } = await speakingJson({
+      label: 'speaking review: edits',
+      engine: 'antigravity',
+      effort,
+      system: EDITS_SYSTEM,
+      schema: EditsSchema,
+      prompt: editsPrompt,
+    })
+    editsMs = Date.now() - tEdits
     opts.onStep?.('dictionary')
     const tDict = Date.now()
-    const { kept, dropped } = filterRestoredEdits(sentences, said, b.edits)
-    if (dropped > 0) {
-      console.log(`[speaking-review] ${id} dropped ${dropped} edit(s) overlapping restored spans`)
-    }
-    opts.onStats?.({ droppedEdits: dropped })
+
+    // Edit only needs to be locatable in said[i], as in the old pipeline:
+    const validEdits = b.edits.filter((edit) => {
+      const idx = edit.sentence - 1
+      const sentence = said[idx]
+      const orig = edit.original.trim()
+      if (!sentence || !orig || orig === edit.replacement.trim()) return false
+      return locate(sentence, edit.original) >= 0
+    })
+
     const dict = dictionaries()
     const issues: RewriteIssue[] = await Promise.all(
-      kept.map(async (raw) => {
+      validEdits.map(async (raw) => {
         const issue: RewriteIssue = {
           sentenceIndex: raw.sentence - 1,
           original: raw.original,
