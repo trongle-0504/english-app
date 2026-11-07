@@ -8,6 +8,7 @@ import { createApiMiddleware } from './api.ts'
 import { gate } from './auth/middleware.ts'
 import { loadEnv } from './env.ts'
 import { startNewsScheduler } from './news/service.ts'
+import { startPlannerScheduler } from './planner/scheduler.ts'
 import { routes } from './routes.ts'
 
 const rootDir = path.resolve(import.meta.dirname, '..')
@@ -24,6 +25,7 @@ watch(contentDir, { recursive: true }, (_event, file) => {
 
 const api = createApiMiddleware({ contentDir, rootDir, onContentChange: store.invalidate }, routes)
 startNewsScheduler({ rootDir })
+startPlannerScheduler({ rootDir, contentDir })
 const data = store.middleware({ cache: 'no-cache', compress: true })
 
 const MIME: Record<string, string> = {

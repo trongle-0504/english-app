@@ -219,6 +219,7 @@ const routes: RouteObject[] = [
           { path: 'practice-writing', element: <Navigate to="/practice/writing" replace /> },
           { path: 'practice-dictation', element: <Navigate to="/practice/dictation" replace /> },
 
+          { path: 'planner', ...page(() => import('@/features/planner/PlannerPage')) },
           { path: 'news', ...page(() => import('@/features/news/NewsPage')) },
           { path: 'notepad', ...page(() => import('@/features/notepad/NotepadPage')) },
           { path: 'account', ...page(() => import('@/features/auth/AccountPage')) },

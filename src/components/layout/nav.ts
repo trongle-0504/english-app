@@ -4,6 +4,7 @@ import {
   BookText,
   Coins,
   Brain,
+  CalendarCheck,
   FileText,
   Headphones,
   Layers,
@@ -144,6 +145,7 @@ export const navGroups: NavGroup[] = [
     icon: Newspaper,
     match: [],
     items: [
+      { to: '/planner', label: 'Planner', description: 'Kế hoạch tuần, lịch hôm nay & nhắc nhở', icon: CalendarCheck, ai: true },
       { to: '/news', label: 'Daily Paper', description: 'Đọc báo song ngữ VnExpress & học từ vựng IELTS hàng ngày', icon: Newspaper, ai: true },
       { to: '/review', label: 'Review', description: 'Ôn tập ngắt quãng & luyện dùng từ', icon: Repeat },
       { to: '/blog', label: 'Blog', description: 'Hướng dẫn kỹ năng & bài luyện theo chủ đề', icon: BookText },

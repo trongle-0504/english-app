@@ -5,7 +5,7 @@ import { LatestPosts } from './LatestPosts'
 export default function HomePage() {
   return (
     <>
-      <title>NeSy</title>
+      <title>NeSy · Hôm nay</title>
       <Hero />
       <FeatureGrid />
       <LatestPosts />

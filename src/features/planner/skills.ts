@@ -1,0 +1,55 @@
+// Labels, default links and colours of the study skills. Pure: the server imports SKILL_LINKS for a task's default link.
+import type { PlannerEventKind, PlannerSkill } from '../../types/planner.ts'
+
+export const SKILL_LABELS: Record<PlannerSkill, string> = {
+  vocabulary: 'Từ vựng',
+  grammar: 'Ngữ pháp',
+  reading: 'Reading',
+  listening: 'Listening',
+  writing: 'Writing',
+  speaking: 'Speaking',
+  review: 'Ôn thẻ',
+  mock: 'Thi thử',
+  other: 'Khác',
+}
+
+export const SKILL_LINKS: Record<PlannerSkill, string | undefined> = {
+  vocabulary: '/vocabulary',
+  grammar: '/grammar',
+  reading: '/news',
+  listening: '/practice/dictation',
+  writing: '/practice/writing-review',
+  speaking: '/practice/speaking-review',
+  review: '/review',
+  mock: '/practice/writing-mock',
+  other: undefined,
+}
+
+/** Colour dot (bg-*) per skill. Full class names so Tailwind keeps them. */
+export const SKILL_DOT: Record<PlannerSkill, string> = {
+  vocabulary: 'bg-amber-500',
+  grammar: 'bg-violet-500',
+  reading: 'bg-teal-500',
+  listening: 'bg-sky-500',
+  writing: 'bg-rose-500',
+  speaking: 'bg-emerald-500',
+  review: 'bg-brand-500',
+  mock: 'bg-indigo-500',
+  other: 'bg-slate-400',
+}
+
+export const EVENT_KIND_LABELS: Record<PlannerEventKind, string> = {
+  exam: 'Thi IELTS',
+  class: 'Lớp học',
+  appointment: 'Hẹn',
+  deadline: 'Hạn nộp',
+  other: 'Khác',
+}
+
+export const EVENT_KIND_TONE: Record<PlannerEventKind, string> = {
+  exam: 'bg-rose-100 text-rose-700 dark:bg-rose-950/60 dark:text-rose-300',
+  class: 'bg-sky-100 text-sky-700 dark:bg-sky-950/60 dark:text-sky-300',
+  appointment: 'bg-violet-100 text-violet-700 dark:bg-violet-950/60 dark:text-violet-300',
+  deadline: 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300',
+  other: 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300',
+}

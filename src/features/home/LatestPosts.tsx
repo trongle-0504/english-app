@@ -27,7 +27,7 @@ function PostCards() {
 export function LatestPosts() {
   return (
     <QuietBoundary>
-      <section aria-labelledby="latest-title" className="mt-14">
+      <section aria-labelledby="latest-title" className="mt-14 hidden md:block">
         <div className="flex items-end justify-between gap-4">
           <div>
             <p className="text-xs font-bold tracking-[0.18em] text-brand-600 uppercase dark:text-brand-400">From the blog</p>
