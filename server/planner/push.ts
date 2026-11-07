@@ -69,7 +69,7 @@ export function subscribe(ctx: PlannerCtx, sub: { endpoint: string; keys: { p256
       existing.failures = 0
       if (device && device !== 'renewed') existing.device = device
     } else {
-      doc.subscriptions.push({ endpoint: sub.endpoint, keys: sub.keys, device: device || 'Thiết bị', createdAt: new Date().toISOString(), failures: 0 })
+      doc.subscriptions.push({ endpoint: sub.endpoint, keys: sub.keys, device: device || 'Device', createdAt: new Date().toISOString(), failures: 0 })
     }
   })
 }

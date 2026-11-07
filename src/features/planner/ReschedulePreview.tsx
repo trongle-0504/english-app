@@ -3,12 +3,12 @@ import { useEffect, useState } from 'react'
 import { Button, Skeleton } from '@/components/ui'
 import type { RescheduleProposal } from '@/types/planner'
 import * as api from './api'
-import { addDays, viDayMonth, viShort, vnDay } from './dates'
+import { addDays, dayMonth, shortWeekday, vnDay } from './dates'
 import { Sheet } from './Sheet'
 import { showToast } from './toast'
 
 /**
- * "Dời lịch thông minh": the AI proposes, the learner ticks the rows to keep and applies. Without AI, two plain buttons
+ * "Smart reschedule": the AI proposes, the learner ticks the rows to keep and applies. Without AI, two plain buttons
  * move everything to today or tomorrow.
  */
 export function ReschedulePreview({ open, onOpenChange, onApplied }: { open: boolean; onOpenChange: (open: boolean) => void; onApplied: () => void }) {
@@ -33,7 +33,7 @@ export function ReschedulePreview({ open, onOpenChange, onApplied }: { open: boo
   const title = (id: string) => proposal?.tasks.find((t) => t.id === id)?.title ?? id
   const from = (id: string) => {
     const task = proposal?.tasks.find((t) => t.id === id)
-    return task ? viShort(task.date) : ''
+    return task ? shortWeekday(task.date) : ''
   }
   const toggle = (id: string) =>
     setKeep((set) => {
@@ -47,7 +47,7 @@ export function ReschedulePreview({ open, onOpenChange, onApplied }: { open: boo
     setBusy(true)
     try {
       const res = await api.applyReschedule(moves, drop)
-      showToast(`Đã dời ${res.moved} việc${res.dropped ? `, bỏ ${res.dropped}` : ''}.`)
+      showToast(`Moved ${res.moved} ${res.moved === 1 ? 'task' : 'tasks'}${res.dropped ? `, dropped ${res.dropped}` : ''}.`)
       onApplied()
       onOpenChange(false)
     } catch (err) {
@@ -80,22 +80,22 @@ export function ReschedulePreview({ open, onOpenChange, onApplied }: { open: boo
       onOpenChange={onOpenChange}
       title={
         <span className="inline-flex items-center gap-2">
-          <Sparkles className="size-5 text-violet-500" /> Dời lịch thông minh
+          <Sparkles className="size-5 text-violet-500" /> Smart reschedule
         </span>
       }
       footer={
         error ? (
           <>
             <Button variant="outline" onClick={() => void moveAll(addDays(vnDay(), 1))} loading={busy}>
-              Dời sang mai
+              Move to tomorrow
             </Button>
             <Button onClick={() => void moveAll(vnDay())} loading={busy}>
-              Dời tất cả sang hôm nay
+              Move all to today
             </Button>
           </>
         ) : proposal && (proposal.moves.length || proposal.drop.length) ? (
           <Button onClick={applyProposal} loading={busy} disabled={!keep.size}>
-            Áp dụng ({keep.size})
+            Apply ({keep.size})
           </Button>
         ) : null
       }
@@ -103,7 +103,7 @@ export function ReschedulePreview({ open, onOpenChange, onApplied }: { open: boo
       {error ? <p className="text-sm text-rose-600 dark:text-rose-400">{error}</p> : null}
       {!proposal && !error ? (
         <div className="space-y-3 py-2">
-          <p className="text-sm text-slate-500">AI đang xếp lại các việc quá hạn…</p>
+          <p className="text-sm text-slate-500">AI is rearranging your overdue tasks…</p>
           <Skeleton className="h-12" />
           <Skeleton className="h-12" />
           <Skeleton className="h-12" />
@@ -120,7 +120,7 @@ export function ReschedulePreview({ open, onOpenChange, onApplied }: { open: boo
                   <span className="min-w-0 flex-1">
                     <span className="block font-medium text-slate-900 dark:text-white">{title(m.taskId)}</span>
                     <span className="mt-0.5 flex items-center gap-1 text-sm text-slate-600 dark:text-slate-300">
-                      {from(m.taskId)} <ArrowRight className="size-3.5" /> {viShort(m.date)} {viDayMonth(m.date)}
+                      {from(m.taskId)} <ArrowRight className="size-3.5" /> {shortWeekday(m.date)} {dayMonth(m.date)}
                       {m.time ? ` ${m.time}` : ''}
                     </span>
                     {m.reason ? <span className="block text-xs text-slate-500">{m.reason}</span> : null}
@@ -134,13 +134,13 @@ export function ReschedulePreview({ open, onOpenChange, onApplied }: { open: boo
                   <input type="checkbox" className="mt-1 size-5 accent-rose-600" checked={keep.has(d.taskId)} onChange={() => toggle(d.taskId)} />
                   <span className="min-w-0 flex-1">
                     <span className="block font-medium text-slate-500 line-through">{title(d.taskId)}</span>
-                    <span className="block text-xs text-rose-600 dark:text-rose-400">Bỏ · {d.reason}</span>
+                    <span className="block text-xs text-rose-600 dark:text-rose-400">Drop · {d.reason}</span>
                   </span>
                 </label>
               </li>
             ))}
           </ul>
-          {!proposal.moves.length && !proposal.drop.length ? <p className="text-sm text-slate-500">Không có việc quá hạn.</p> : null}
+          {!proposal.moves.length && !proposal.drop.length ? <p className="text-sm text-slate-500">No overdue tasks.</p> : null}
         </div>
       ) : null}
     </Sheet>

@@ -4,11 +4,11 @@ import { Skeleton } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import type { PlannerEvent, PlannerEventAhead } from '@/types/planner'
 import * as api from './api'
-import { daysLeftLabel, viDayMonth, viWeekday } from './dates'
+import { daysLeftLabel, dayMonth, viWeekday } from './dates'
 import { EVENT_KIND_LABELS, EVENT_KIND_TONE } from './skills'
 import { showToast } from './toast'
 
-/** Upcoming events with countdown chips; past ones collapsed. Each: Sửa · Thêm vào Lịch (.ics) · Xoá. */
+/** Upcoming events with countdown chips; past ones collapsed. Each: Edit · Add to Calendar (.ics) · Delete. */
 export function EventsView({ version, onChanged, onEdit }: { version: number; onChanged: () => void; onEdit: (event: PlannerEvent) => void }) {
   const [events, setEvents] = useState<PlannerEventAhead[] | null>(null)
   const load = useCallback(() => {
@@ -20,10 +20,10 @@ export function EventsView({ version, onChanged, onEdit }: { version: number; on
   useEffect(() => load(), [load, version])
 
   const remove = async (event: PlannerEvent) => {
-    if (!window.confirm(`Xoá “${event.title}”?`)) return
+    if (!window.confirm(`Delete “${event.title}”?`)) return
     try {
       await api.deleteEvent(event.id)
-      showToast('Đã xoá.')
+      showToast('Deleted.')
       load()
       onChanged()
     } catch (err) {
@@ -48,7 +48,7 @@ export function EventsView({ version, onChanged, onEdit }: { version: number; on
         <div className="min-w-0">
           <p className="font-semibold text-slate-900 dark:text-white">{e.title}</p>
           <p className="mt-0.5 text-sm text-slate-600 dark:text-slate-300">
-            {viWeekday(e.date)} {viDayMonth(e.date)}
+            {viWeekday(e.date)} {dayMonth(e.date)}
             {e.time ? ` · ${e.time}${e.endTime ? `–${e.endTime}` : ''}` : ''}
           </p>
           {e.location ? (
@@ -64,7 +64,7 @@ export function EventsView({ version, onChanged, onEdit }: { version: number; on
       </div>
       <div className="mt-2 flex flex-wrap gap-1">
         <button type="button" onClick={() => onEdit(e)} className="inline-flex min-h-10 items-center gap-1.5 rounded-full px-3 text-sm font-medium text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800">
-          <Pencil className="size-4" /> Sửa
+          <Pencil className="size-4" /> Edit
         </button>
         <a
           href={api.eventIcsUrl(e.id)}
@@ -74,10 +74,10 @@ export function EventsView({ version, onChanged, onEdit }: { version: number; on
             e.kind === 'exam' ? 'bg-brand-600 text-white dark:bg-brand-500 dark:text-slate-950' : 'text-brand-600 hover:bg-brand-50 dark:text-brand-400 dark:hover:bg-brand-950/40',
           )}
         >
-          <CalendarArrowDown className="size-4" /> Thêm vào Lịch
+          <CalendarArrowDown className="size-4" /> Add to Calendar
         </a>
         <button type="button" onClick={() => void remove(e)} className="inline-flex min-h-10 items-center gap-1.5 rounded-full px-3 text-sm font-medium text-rose-600 hover:bg-rose-50 dark:text-rose-400 dark:hover:bg-rose-950/40">
-          <Trash2 className="size-4" /> Xoá
+          <Trash2 className="size-4" /> Delete
         </button>
       </div>
     </li>
@@ -88,12 +88,12 @@ export function EventsView({ version, onChanged, onEdit }: { version: number; on
       {upcoming.length ? (
         <ul className="divide-y divide-slate-100 dark:divide-slate-800">{upcoming.map(row)}</ul>
       ) : (
-        <p className="py-8 text-center text-sm text-slate-500">Chưa có sự kiện sắp tới. Bấm + để thêm ngày thi, buổi học hoặc hạn nộp.</p>
+        <p className="py-8 text-center text-sm text-slate-500">No upcoming events. Tap + to add an exam, a class or a deadline.</p>
       )}
-      <p className="text-xs text-slate-500">“Thêm vào Lịch” tải file .ics: lịch của điện thoại sẽ tự nhắc kể cả khi máy tính chạy app đang tắt.</p>
+      <p className="text-xs text-slate-500">“Add to Calendar” downloads an .ics file, so your phone’s calendar reminds you even when the computer running the app is off.</p>
       {past.length ? (
         <details className="group border-t border-slate-100 pt-3 dark:border-slate-800">
-          <summary className="min-h-10 cursor-pointer text-sm font-semibold text-slate-500">Đã qua ({past.length})</summary>
+          <summary className="min-h-10 cursor-pointer text-sm font-semibold text-slate-500">Past ({past.length})</summary>
           <ul className="divide-y divide-slate-100 opacity-70 dark:divide-slate-800">{past.map(row)}</ul>
         </details>
       ) : null}

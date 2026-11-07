@@ -6,7 +6,7 @@ import { addDays, vnDay } from './dates'
 import { inputClass, Sheet } from './Sheet'
 import { showToast } from './toast'
 
-/** Row menu: Sửa · Hoãn 1 giờ · Dời sang mai · Dời sang ngày… · Xoá. */
+/** Row menu: Edit · Snooze 1 hour · Move to tomorrow · Move to date… · Delete. */
 export function TaskMenu({ task, onClose, onEdit, onChanged }: { task: PlannerTask | null; onClose: () => void; onEdit: (task: PlannerTask) => void; onChanged: () => void }) {
   const [pickDay, setPickDay] = useState('')
 
@@ -27,36 +27,36 @@ export function TaskMenu({ task, onClose, onEdit, onChanged }: { task: PlannerTa
     <Sheet open onOpenChange={(open) => !open && onClose()} title={task.title}>
       <div className="divide-y divide-slate-100 dark:divide-slate-800">
         <MenuItem icon={<Pencil className="size-5" />} onClick={() => onEdit(task)}>
-          Sửa
+          Edit
         </MenuItem>
         {!task.doneAt ? (
-          <MenuItem icon={<AlarmClock className="size-5" />} onClick={() => void run(() => api.snooze(task.id, 60), 'Sẽ nhắc lại sau 1 giờ.')}>
-            Hoãn 1 giờ
+          <MenuItem icon={<AlarmClock className="size-5" />} onClick={() => void run(() => api.snooze(task.id, 60), 'I’ll remind you again in 1 hour.')}>
+            Snooze 1 hour
           </MenuItem>
         ) : null}
-        <MenuItem icon={<ArrowRight className="size-5" />} onClick={() => void run(() => api.moveTask(task.id, tomorrow), 'Đã dời sang mai.')}>
-          Dời sang mai
+        <MenuItem icon={<ArrowRight className="size-5" />} onClick={() => void run(() => api.moveTask(task.id, tomorrow), 'Moved to tomorrow.')}>
+          Move to tomorrow
         </MenuItem>
         <div className="flex min-h-14 items-center gap-3 py-2">
           <CalendarDays className="size-5 shrink-0 text-slate-500" />
-          <input type="date" className={`${inputClass} flex-1`} value={pickDay} min={vnDay()} onChange={(e) => setPickDay(e.target.value)} aria-label="Dời sang ngày" />
+          <input type="date" className={`${inputClass} flex-1`} value={pickDay} min={vnDay()} onChange={(e) => setPickDay(e.target.value)} aria-label="Move to date" />
           <button
             type="button"
             disabled={!pickDay}
-            onClick={() => void run(() => api.moveTask(task.id, pickDay), 'Đã dời lịch.')}
+            onClick={() => void run(() => api.moveTask(task.id, pickDay), 'Moved.')}
             className="min-h-11 rounded-xl bg-brand-600 px-4 text-sm font-semibold text-white disabled:opacity-40"
           >
-            Dời
+            Move
           </button>
         </div>
         <MenuItem
           icon={<Trash2 className="size-5" />}
           danger
           onClick={() => {
-            if (window.confirm(`Xoá “${task.title}”?`)) void run(() => api.deleteTask(task.id), 'Đã xoá.')
+            if (window.confirm(`Delete “${task.title}”?`)) void run(() => api.deleteTask(task.id), 'Deleted.')
           }}
         >
-          Xoá
+          Delete
         </MenuItem>
       </div>
     </Sheet>

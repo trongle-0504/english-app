@@ -14,7 +14,7 @@ import {
   type QuickAddItem,
 } from '@/types/planner'
 import * as api from './api'
-import { viShort, vnDay } from './dates'
+import { shortWeekday, vnDay } from './dates'
 import { Chips, Field, inputClass, Sheet } from './Sheet'
 import { EVENT_KIND_LABELS, SKILL_DOT, SKILL_LABELS, SKILL_LINKS } from './skills'
 import { showToast } from './toast'
@@ -23,13 +23,12 @@ export type AddTab = 'quick' | 'task' | 'event'
 
 const DURATIONS = [15, 30, 45, 60, 90]
 const REMINDER_CHIPS = [
-  { value: 10080, label: '1 tuần' },
-  { value: 1440, label: '1 ngày' },
-  { value: 120, label: '2 giờ' },
-  { value: 60, label: '1 giờ' },
-  { value: 15, label: '15 phút' },
+  { value: 10080, label: '1 week' },
+  { value: 1440, label: '1 day' },
+  { value: 120, label: '2 hours' },
+  { value: 60, label: '1 hour' },
+  { value: 15, label: '15 min' },
 ]
-const EXAMPLES = ['mai 8h tối speaking part 2 45p', 'thi IELTS thứ 5 tuần sau 8h sáng ở IDP', 'ôn 30 thẻ mỗi sáng thứ 2 4 6 lúc 6h30']
 
 export function AddSheet({
   open,
@@ -63,16 +62,16 @@ export function AddSheet({
   }
 
   return (
-    <Sheet open={open} onOpenChange={onOpenChange} title={editing ? (task ? 'Sửa việc' : 'Sửa sự kiện') : 'Thêm vào kế hoạch'}>
+    <Sheet open={open} onOpenChange={onOpenChange} title={editing ? (task ? 'Edit task' : 'Edit event') : 'Add to plan'}>
       {!editing ? (
         <SegmentedControl
           className="mb-4 w-full [&>button]:flex-1 [&>button]:justify-center"
           value={tab}
           onChange={setTab}
           options={[
-            { value: 'quick', label: 'Thêm nhanh', icon: <Sparkles className="size-3.5" /> },
-            { value: 'task', label: 'Việc cần làm' },
-            { value: 'event', label: 'Sự kiện' },
+            { value: 'quick', label: 'Quick add', icon: <Sparkles className="size-3.5" /> },
+            { value: 'task', label: 'Task' },
+            { value: 'event', label: 'Event' },
           ]}
         />
       ) : null}
@@ -110,7 +109,7 @@ function TaskForm({ task, date, onDone }: { task?: PlannerTask; date?: string; o
         link: task && task.skill === skill ? (task.link ?? '') : (SKILL_LINKS[skill] ?? ''),
         notes,
       })
-      showToast(task ? 'Đã lưu.' : 'Đã thêm việc.')
+      showToast(task ? 'Saved.' : 'Task added.')
       onDone()
     } catch (err) {
       showToast((err as Error).message)
@@ -121,18 +120,18 @@ function TaskForm({ task, date, onDone }: { task?: PlannerTask; date?: string; o
 
   return (
     <div className="space-y-4">
-      <Field label="Việc cần làm">
-        <input className={inputClass} value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Writing Task 2: viết 1 bài" maxLength={120} autoFocus={!task} />
+      <Field label="Task">
+        <input className={inputClass} value={title} onChange={(e) => setTitle(e.target.value)} placeholder="What do you need to do?" maxLength={120} autoFocus={!task} />
       </Field>
       <div className="grid grid-cols-2 gap-3">
-        <Field label="Ngày">
+        <Field label="Date">
           <input type="date" className={inputClass} value={day} onChange={(e) => setDay(e.target.value)} />
         </Field>
-        <Field label="Giờ (tuỳ chọn)">
+        <Field label="Time (optional)">
           <input type="time" className={inputClass} value={time} onChange={(e) => setTime(e.target.value)} />
         </Field>
       </div>
-      <Field label="Thời lượng">
+      <Field label="Duration">
         <div className="flex flex-wrap items-center gap-1.5">
           <Chips
             value={custom ? undefined : duration}
@@ -145,17 +144,17 @@ function TaskForm({ task, date, onDone }: { task?: PlannerTask; date?: string; o
           <input
             inputMode="numeric"
             className={cn(inputClass, 'h-9 w-24 rounded-full text-sm')}
-            placeholder="phút khác"
+            placeholder="other min"
             value={custom}
             onChange={(e) => setCustom(e.target.value.replace(/\D/g, '').slice(0, 3))}
           />
         </div>
       </Field>
-      <Field label="Loại việc">
+      <Field label="Category">
         <div className="space-y-2">
           {[
-            { name: 'Học', list: STUDY_SKILLS },
-            { name: 'Việc khác', list: NON_STUDY_SKILLS },
+            { name: 'Study', list: STUDY_SKILLS },
+            { name: 'Other', list: NON_STUDY_SKILLS },
           ].map((group) => (
             <div key={group.name} className="flex items-start gap-2">
               <span className="w-16 shrink-0 pt-2 text-xs text-slate-400">{group.name}</span>
@@ -177,12 +176,12 @@ function TaskForm({ task, date, onDone }: { task?: PlannerTask; date?: string; o
           ))}
         </div>
       </Field>
-      <Field label="Ghi chú">
+      <Field label="Notes">
         <textarea className={cn(inputClass, 'h-auto min-h-20 py-2')} value={notes} onChange={(e) => setNotes(e.target.value)} maxLength={1000} />
       </Field>
       <div className="sticky bottom-0 -mx-5 flex gap-2 border-t border-slate-100 bg-white px-5 pt-3 pb-1 dark:border-slate-800 dark:bg-slate-900 justify-end">
         <Button onClick={() => void save()} loading={busy} disabled={!title.trim()}>
-          {task ? 'Lưu' : 'Thêm việc'}
+          {task ? 'Save' : 'Add task'}
         </Button>
       </div>
     </div>
@@ -214,7 +213,7 @@ function EventForm({ event, date, onDone }: { event?: Partial<PlannerEvent>; dat
     setBusy(true)
     try {
       await api.saveEvent({ ...(event?.id ? { id: event.id } : {}), title, kind, date: day, time, endTime, location, remind, countdown })
-      showToast(event?.id ? 'Đã lưu.' : 'Đã thêm sự kiện.')
+      showToast(event?.id ? 'Saved.' : 'Event added.')
       onDone()
     } catch (err) {
       showToast((err as Error).message)
@@ -225,27 +224,27 @@ function EventForm({ event, date, onDone }: { event?: Partial<PlannerEvent>; dat
 
   return (
     <div className="space-y-4">
-      <Field label="Tên sự kiện">
-        <input className={inputClass} value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Thi IELTS ở IDP" maxLength={120} autoFocus={!event?.id} />
+      <Field label="Event">
+        <input className={inputClass} value={title} onChange={(e) => setTitle(e.target.value)} placeholder="IELTS exam at IDP" maxLength={120} autoFocus={!event?.id} />
       </Field>
-      <Field label="Loại">
+      <Field label="Type">
         <Chips value={kind} onChange={pickKind} options={PLANNER_EVENT_KINDS.map((k) => ({ value: k, label: EVENT_KIND_LABELS[k] }))} />
       </Field>
-      <Field label="Ngày">
+      <Field label="Date">
         <input type="date" className={inputClass} value={day} onChange={(e) => setDay(e.target.value)} />
       </Field>
       <div className="grid grid-cols-2 gap-3">
-        <Field label="Bắt đầu">
+        <Field label="Starts">
           <input type="time" className={inputClass} value={time} onChange={(e) => setTime(e.target.value)} />
         </Field>
-        <Field label="Kết thúc">
+        <Field label="Ends">
           <input type="time" className={inputClass} value={endTime} onChange={(e) => setEndTime(e.target.value)} />
         </Field>
       </div>
-      <Field label="Địa điểm">
+      <Field label="Location">
         <input className={inputClass} value={location} onChange={(e) => setLocation(e.target.value)} maxLength={160} />
       </Field>
-      <Field label="Nhắc trước" hint={!time ? 'Sự kiện cả ngày: tính từ 08:00 sáng hôm đó.' : undefined}>
+      <Field label="Remind me" hint={!time ? 'All-day event: counted from 08:00 that day.' : undefined}>
         <div className="flex flex-wrap gap-1.5">
           {REMINDER_CHIPS.map((r) => {
             const on = remind.includes(r.value)
@@ -269,12 +268,12 @@ function EventForm({ event, date, onDone }: { event?: Partial<PlannerEvent>; dat
         </div>
       </Field>
       <label className="flex min-h-11 items-center justify-between gap-3">
-        <span className="text-sm font-medium text-slate-700 dark:text-slate-200">Hiện đếm ngược trên trang chủ</span>
+        <span className="text-sm font-medium text-slate-700 dark:text-slate-200">Show a countdown on the home page</span>
         <input type="checkbox" className="size-5 accent-brand-600" checked={countdown} onChange={(e) => setCountdown(e.target.checked)} />
       </label>
       <div className="sticky bottom-0 -mx-5 flex gap-2 border-t border-slate-100 bg-white px-5 pt-3 pb-1 dark:border-slate-800 dark:bg-slate-900 justify-end">
         <Button onClick={() => void save()} loading={busy} disabled={!title.trim()}>
-          {event?.id ? 'Lưu' : 'Thêm sự kiện'}
+          {event?.id ? 'Save' : 'Add event'}
         </Button>
       </div>
     </div>
@@ -297,7 +296,7 @@ function QuickAddForm({ onDone }: { onDone: () => void }) {
       const res = await api.quickAdd(text)
       setItems(res.items)
       setUnparsed(res.unparsed)
-      if (!res.items.length) setError('AI không tìm thấy việc nào trong ghi chú. Thử viết rõ hơn hoặc nhập tay.')
+      if (!res.items.length) setError('The AI found nothing to add. Try writing it more clearly, or add it by hand.')
     } catch (err) {
       setError((err as Error).message)
     } finally {
@@ -334,7 +333,7 @@ function QuickAddForm({ onDone }: { onDone: () => void }) {
         const { routine } = await api.getWeek(vnDay())
         await api.saveRoutine([...routine, ...routineAdds.map((r) => ({ ...r, id: '' }))])
       }
-      showToast(`Đã thêm ${items.length} mục.`)
+      showToast(`Added ${items.length} ${items.length === 1 ? 'item' : 'items'}.`)
       onDone()
     } catch (err) {
       showToast((err as Error).message)
@@ -348,7 +347,7 @@ function QuickAddForm({ onDone }: { onDone: () => void }) {
       <div className="space-y-3">
         {unparsed ? (
           <p className="rounded-xl bg-amber-50 px-3 py-2 text-sm text-amber-800 dark:bg-amber-950/40 dark:text-amber-200">
-            Chưa hiểu: “{unparsed}”
+            Not understood: “{unparsed}”
           </p>
         ) : null}
         <ul className="divide-y divide-slate-100 dark:divide-slate-800">
@@ -363,7 +362,7 @@ function QuickAddForm({ onDone }: { onDone: () => void }) {
                 <input className={cn(inputClass, 'h-10 flex-1')} value={item.title} onChange={(e) => patch(i, { title: e.target.value })} maxLength={120} />
                 <button
                   type="button"
-                  aria-label="Bỏ mục này"
+                  aria-label="Remove this item"
                   onClick={() => setItems((list) => list?.filter((_, j) => j !== i) ?? null)}
                   className="flex size-10 shrink-0 items-center justify-center rounded-full text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800"
                 >
@@ -383,17 +382,17 @@ function QuickAddForm({ onDone }: { onDone: () => void }) {
                 {item.location ? <span className="rounded-full bg-slate-100 px-2 py-1 dark:bg-slate-800">📍 {item.location}</span> : null}
                 {item.confidence === 'low' ? (
                   <span className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-2 py-1 font-semibold text-amber-800 dark:bg-amber-950/60 dark:text-amber-300">
-                    <TriangleAlert className="size-3" /> Kiểm tra lại
+                    <TriangleAlert className="size-3" /> Check this
                   </span>
                 ) : null}
               </div>
               {item.repeatDates.length ? (
                 <div className="space-y-1 pl-6 text-xs text-slate-600 dark:text-slate-300">
-                  <p>Lặp: {item.repeatDates.map(viShort).filter((d, j, a) => a.indexOf(d) === j).join(' · ')} ({item.repeatDates.length} ngày tới)</p>
+                  <p>Repeats: {item.repeatDates.map(shortWeekday).filter((d, j, a) => a.indexOf(d) === j).join(' · ')} (next {item.repeatDates.length} dates)</p>
                   {item.type === 'task' ? (
                     <label className="flex min-h-9 items-center gap-2">
                       <input type="checkbox" className="size-4 accent-brand-600" checked={Boolean(item.asRoutine)} onChange={(e) => patch(i, { asRoutine: e.target.checked })} />
-                      Lưu thành lịch cố định
+                      Save as weekly routine
                     </label>
                   ) : null}
                 </div>
@@ -403,10 +402,10 @@ function QuickAddForm({ onDone }: { onDone: () => void }) {
         </ul>
         <div className="sticky bottom-0 -mx-5 flex gap-2 border-t border-slate-100 bg-white px-5 pt-3 pb-1 dark:border-slate-800 dark:bg-slate-900 justify-between">
           <Button variant="ghost" onClick={() => setItems(null)}>
-            Sửa ghi chú
+            Edit note
           </Button>
           <Button onClick={() => void save()} loading={busy}>
-            Thêm {items.length} mục
+            Add {items.length} {items.length === 1 ? 'item' : 'items'}
           </Button>
         </div>
       </div>
@@ -421,27 +420,14 @@ function QuickAddForm({ onDone }: { onDone: () => void }) {
         value={text}
         onChange={(e) => setText(e.target.value)}
         maxLength={500}
-        placeholder='Ví dụ: "mai 8h tối luyện speaking part 2 45 phút"'
         onKeyDown={(e) => {
           if (e.key === 'Enter' && (e.metaKey || e.ctrlKey) && text.trim()) void parse()
         }}
       />
-      <div className="flex flex-wrap gap-1.5">
-        {EXAMPLES.map((ex) => (
-          <button
-            key={ex}
-            type="button"
-            onClick={() => setText(ex)}
-            className="min-h-9 rounded-full bg-slate-100 px-3 text-left text-xs text-slate-600 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-300"
-          >
-            {ex}
-          </button>
-        ))}
-      </div>
       {error ? <p className="text-sm text-rose-600 dark:text-rose-400">{error}</p> : null}
       <div className="sticky bottom-0 -mx-5 flex gap-2 border-t border-slate-100 bg-white px-5 pt-3 pb-1 dark:border-slate-800 dark:bg-slate-900 justify-end">
         <Button onClick={() => void parse()} loading={busy} disabled={!text.trim()}>
-          <Sparkles className="size-4" /> Phân tích
+          <Sparkles className="size-4" /> Add
         </Button>
       </div>
     </div>

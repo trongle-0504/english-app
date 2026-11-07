@@ -2,17 +2,17 @@
 import type { PlannerEventKind, PlannerSkill } from '../../types/planner.ts'
 
 export const SKILL_LABELS: Record<PlannerSkill, string> = {
-  vocabulary: 'Từ vựng',
-  grammar: 'Ngữ pháp',
+  vocabulary: 'Vocabulary',
+  grammar: 'Grammar',
   reading: 'Reading',
   listening: 'Listening',
   writing: 'Writing',
   speaking: 'Speaking',
-  review: 'Ôn thẻ',
-  mock: 'Thi thử',
-  work: 'Công việc',
-  personal: 'Cá nhân',
-  other: 'Khác',
+  review: 'Flashcards',
+  mock: 'Mock test',
+  work: 'Work',
+  personal: 'Personal',
+  other: 'Other',
 }
 
 export const SKILL_LINKS: Record<PlannerSkill, string | undefined> = {
@@ -46,10 +46,10 @@ export const SKILL_DOT: Record<PlannerSkill, string> = {
 
 export const EVENT_KIND_LABELS: Record<PlannerEventKind, string> = {
   exam: 'Thi IELTS',
-  class: 'Lớp học',
-  appointment: 'Hẹn',
-  deadline: 'Hạn nộp',
-  other: 'Khác',
+  class: 'Class',
+  appointment: 'Appointment',
+  deadline: 'Deadline',
+  other: 'Other',
 }
 
 export const EVENT_KIND_TONE: Record<PlannerEventKind, string> = {

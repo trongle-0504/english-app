@@ -30,12 +30,12 @@ export interface PlannerTask {
   notes?: string
   /** ISO time it was ticked. Absent = not done. */
   doneAt?: string
-  /** ISO. Reminders for this task wait until then ("Hoãn 1 giờ"). */
+  /** ISO. Reminders for this task wait until then ("Snooze 1 hour"). */
   snoozedUntil?: string
   source: 'manual' | 'routine' | 'quick-add' | 'ai-week' | 'reschedule'
   /** The routine item this was made from (so "apply routine" never duplicates). */
   routineId?: string
-  /** The date it had before the last reschedule (UI shows "dời từ T3"). */
+  /** The date it had before the last reschedule (UI shows "moved from Tue"). */
   movedFrom?: string
   createdAt: string
   updatedAt: string

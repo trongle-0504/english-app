@@ -34,7 +34,7 @@ export default function PlannerPage() {
       .catch(() => {})
   }, [version])
 
-  // ?add=1 (manifest shortcut "Thêm nhanh") opens the add sheet once.
+  // ?add=1 (manifest shortcut "Quick add") opens the add sheet once.
   useEffect(() => {
     if (addParam) {
       setAdd({ open: true, tab: 'quick' })
@@ -57,7 +57,7 @@ export default function PlannerPage() {
         </h1>
         <button
           type="button"
-          aria-label="Cài đặt"
+          aria-label="Settings"
           onClick={() => setSettingsOpen(true)}
           className="flex size-11 items-center justify-center rounded-full text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800"
         >
@@ -70,9 +70,9 @@ export default function PlannerPage() {
         value={view}
         onChange={(v) => setViewParam(v === 'day' ? '' : v)}
         options={[
-          { value: 'day', label: 'Ngày' },
-          { value: 'week', label: 'Tuần' },
-          { value: 'events', label: 'Sự kiện' },
+          { value: 'day', label: 'Day' },
+          { value: 'week', label: 'Week' },
+          { value: 'events', label: 'Events' },
         ]}
       />
 
@@ -84,7 +84,7 @@ export default function PlannerPage() {
 
       <button
         type="button"
-        aria-label="Thêm"
+        aria-label="Add"
         onClick={() => setAdd({ open: true, tab: view === 'events' ? 'event' : 'quick' })}
         className="fixed right-4 bottom-[max(1.25rem,calc(env(safe-area-inset-bottom)+0.75rem))] z-40 flex size-14 items-center justify-center rounded-full bg-brand-600 text-white shadow-xl shadow-brand-600/30 transition-transform hover:bg-brand-700 active:scale-95 dark:bg-brand-500 dark:text-slate-950"
       >

@@ -55,7 +55,7 @@ export const plannerRoutes: Record<string, ApiHandler> = {
   'GET /planner/home': async (_req, ctx) => ({ json: await buildHome(ctx) }),
 
   'GET /planner/week': async (req, ctx) => {
-    const start = weekStart(checkDay(req.query.get('start') || vnDay(), 'Tuần'))
+    const start = weekStart(checkDay(req.query.get('start') || vnDay(), 'Week'))
     const doc = await readPlanner(ctx)
     const days = weekDays(start).map((day) => ({
       day,
@@ -85,10 +85,10 @@ export const plannerRoutes: Record<string, ApiHandler> = {
 
   'POST /planner/tasks': async (req, ctx) => {
     const list = body(req).tasks
-    if (!Array.isArray(list) || !list.length || list.length > 60) throw new ApiError(400, 'Cần 1–60 việc.')
+    if (!Array.isArray(list) || !list.length || list.length > 60) throw new ApiError(400, 'Send 1–60 tasks.')
     const now = new Date().toISOString()
     const created = list.map((item) => {
-      if (!isObject(item)) throw new ApiError(400, 'Mỗi việc phải là một object.')
+      if (!isObject(item)) throw new ApiError(400, 'Each task must be an object.')
       return taskFromBody(item, now)
     })
     await updatePlanner(ctx, (doc) => void doc.tasks.push(...created))
@@ -121,7 +121,7 @@ export const plannerRoutes: Record<string, ApiHandler> = {
   'POST /planner/task/snooze': async (req, ctx) => {
     const input = body(req)
     const minutes = input.minutes
-    if (typeof minutes !== 'number' || !Number.isInteger(minutes) || minutes < 15 || minutes > 1440) throw new ApiError(400, 'Hoãn từ 15 đến 1440 phút.')
+    if (typeof minutes !== 'number' || !Number.isInteger(minutes) || minutes < 15 || minutes > 1440) throw new ApiError(400, 'Snooze for 15 to 1440 minutes.')
     const now = new Date()
     const task = await updatePlanner(ctx, (doc) => {
       const t = findTask(doc, input.id)
@@ -200,14 +200,14 @@ export const plannerRoutes: Record<string, ApiHandler> = {
   /* ── Routine & weeks ── */
   'PUT /planner/routine': async (req, ctx) => {
     const list = body(req).routine
-    if (!Array.isArray(list) || list.length > 100) throw new ApiError(400, 'Lịch cố định: tối đa 100 mục.')
+    if (!Array.isArray(list) || list.length > 100) throw new ApiError(400, 'Routine: at most 100 items.')
     const routine = list.map(routineFromBody)
     await updatePlanner(ctx, (doc) => void (doc.routine = routine))
     return { json: { routine } }
   },
 
   'POST /planner/week/apply-routine': async (req, ctx) => {
-    const start = weekStart(checkDay(body(req).start, 'Tuần'))
+    const start = weekStart(checkDay(body(req).start, 'Week'))
     const now = new Date()
     const added = await updatePlanner(ctx, (doc) => {
       const created = applyRoutineToWeek(doc.tasks, doc.routine, start, vnDay(now), now.toISOString())
@@ -219,9 +219,9 @@ export const plannerRoutes: Record<string, ApiHandler> = {
 
   'POST /planner/week/copy': async (req, ctx) => {
     const input = body(req)
-    const from = weekStart(checkDay(input.from, 'Tuần nguồn'))
-    const to = weekStart(checkDay(input.to, 'Tuần đích'))
-    if (from === to) throw new ApiError(400, 'Hai tuần phải khác nhau.')
+    const from = weekStart(checkDay(input.from, 'Source week'))
+    const to = weekStart(checkDay(input.to, 'Target week'))
+    if (from === to) throw new ApiError(400, 'Pick two different weeks.')
     const shift = Math.round((new Date(`${to}T12:00:00Z`).getTime() - new Date(`${from}T12:00:00Z`).getTime()) / 86_400_000)
     const now = new Date().toISOString()
     const added = await updatePlanner(ctx, (doc) => {
@@ -247,8 +247,8 @@ export const plannerRoutes: Record<string, ApiHandler> = {
   /* ── AI ── */
   'POST /planner/quick-add': async (req) => {
     const text = typeof body(req).text === 'string' ? (body(req).text as string).trim() : ''
-    if (!text) throw new ApiError(400, 'Nhập vài chữ để AI phân tích.')
-    if (text.length > 500) throw new ApiError(400, 'Tối đa 500 ký tự.')
+    if (!text) throw new ApiError(400, 'Type something for the AI to read.')
+    if (text.length > 500) throw new ApiError(400, 'At most 500 characters.')
     const { items, unparsed } = await quickAdd(text)
     return { json: { items, unparsed } }
   },
@@ -293,7 +293,7 @@ export const plannerRoutes: Record<string, ApiHandler> = {
 
   'POST /planner/week/draft': async (req, ctx) => {
     const input = body(req)
-    const start = weekStart(checkDay(input.start, 'Tuần'))
+    const start = weekStart(checkDay(input.start, 'Week'))
     const minutesPerDay =
       Array.isArray(input.minutesPerDay) && input.minutesPerDay.length === 7 && input.minutesPerDay.every((n) => Number.isInteger(n) && n >= 0 && n <= 720)
         ? (input.minutesPerDay as number[])
@@ -310,10 +310,10 @@ export const plannerRoutes: Record<string, ApiHandler> = {
     const input = body(req)
     const sub = input.subscription
     if (!isObject(sub) || typeof sub.endpoint !== 'string' || !/^https:\/\//.test(sub.endpoint) || !isObject(sub.keys)) {
-      throw new ApiError(400, 'Thiếu thông tin đăng ký thông báo.')
+      throw new ApiError(400, 'Missing the notification subscription.')
     }
     const keys = sub.keys as Record<string, unknown>
-    if (typeof keys.p256dh !== 'string' || typeof keys.auth !== 'string') throw new ApiError(400, 'Thiếu khoá đăng ký thông báo.')
+    if (typeof keys.p256dh !== 'string' || typeof keys.auth !== 'string') throw new ApiError(400, 'Missing the notification subscription keys.')
     const device = typeof input.device === 'string' ? input.device.slice(0, 40) : ''
     await subscribe(ctx, { endpoint: sub.endpoint, keys: { p256dh: keys.p256dh, auth: keys.auth } }, device)
     return { json: { ok: true } }
@@ -321,7 +321,7 @@ export const plannerRoutes: Record<string, ApiHandler> = {
 
   'POST /planner/push/unsubscribe': async (req, ctx) => {
     const endpoint = body(req).endpoint
-    if (typeof endpoint !== 'string') throw new ApiError(400, 'Thiếu endpoint.')
+    if (typeof endpoint !== 'string') throw new ApiError(400, 'Missing endpoint.')
     await unsubscribe(ctx, endpoint)
     return { json: { ok: true } }
   },
@@ -329,8 +329,8 @@ export const plannerRoutes: Record<string, ApiHandler> = {
   'GET /planner/push/devices': async (_req, ctx) => ({ json: { devices: await listDevices(ctx) } }),
 
   'POST /planner/push/test': async (_req, ctx) => {
-    const results = await sendToAll(ctx, { title: 'Thông báo thử ✓', body: 'Planner sẽ nhắc bạn như thế này.', tag: 'test', url: '/planner' }, { urgency: 'high' })
-    if (!results.length) throw new ApiError(400, 'Chưa có thiết bị nào bật thông báo.')
+    const results = await sendToAll(ctx, { title: 'Test notification ✓', body: 'This is how the planner will remind you.', tag: 'test', url: '/planner' }, { urgency: 'high' })
+    if (!results.length) throw new ApiError(400, 'No device has notifications turned on yet.')
     return { json: { results } }
   },
 }

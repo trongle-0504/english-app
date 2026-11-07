@@ -4,12 +4,12 @@ import { Skeleton } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import type { PlannerEvent, PlannerTask, PlannerWeek } from '@/types/planner'
 import * as api from './api'
-import { addDays, viDayMonth, viLongDate, viShort, vnDay, weekStart } from './dates'
+import { addDays, dayMonth, longDate, shortWeekday, vnDay, weekStart } from './dates'
 import { EVENT_KIND_TONE, SKILL_DOT } from './skills'
 import { TaskRow } from './TaskRow'
 import { showToast } from './toast'
 
-/** Week strip + the selected day's events, timed tasks ("Có giờ") and the rest ("Bất kỳ lúc nào"). */
+/** Week strip + the selected day's events, timed tasks ("Scheduled") and the rest ("Anytime"). */
 export function DayView({
   version,
   onChanged,
@@ -56,7 +56,7 @@ export function DayView({
   return (
     <div className="space-y-5">
       <div className="flex items-center gap-1">
-        <button type="button" aria-label="Tuần trước" onClick={() => setDay(addDays(start, -7))} className="flex size-11 shrink-0 items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">
+        <button type="button" aria-label="Previous week" onClick={() => setDay(addDays(start, -7))} className="flex size-11 shrink-0 items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">
           <ChevronLeft className="size-5" />
         </button>
         <div className="grid flex-1 grid-cols-7 gap-1">
@@ -74,7 +74,7 @@ export function DayView({
                   d === today && d !== day && 'ring-2 ring-brand-500/40',
                 )}
               >
-                <span className={cn('font-semibold', d === day ? 'text-white/80 dark:text-slate-900/70' : 'text-slate-500')}>{viShort(d)}</span>
+                <span className={cn('font-semibold', d === day ? 'text-white/80 dark:text-slate-900/70' : 'text-slate-500')}>{shortWeekday(d)}</span>
                 <span className="text-base font-bold tabular-nums">{Number(d.slice(8))}</span>
                 <span className="flex h-1.5 gap-0.5">
                   {list.slice(0, 4).map((t) => (
@@ -85,14 +85,14 @@ export function DayView({
             )
           })}
         </div>
-        <button type="button" aria-label="Tuần sau" onClick={() => setDay(addDays(start, 7))} className="flex size-11 shrink-0 items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">
+        <button type="button" aria-label="Next week" onClick={() => setDay(addDays(start, 7))} className="flex size-11 shrink-0 items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">
           <ChevronRight className="size-5" />
         </button>
       </div>
 
       <h2 className="text-lg font-bold text-slate-900 dark:text-white">
-        {day === today ? 'Hôm nay · ' : ''}
-        {viLongDate(day)}
+        {day === today ? 'Today · ' : ''}
+        {longDate(day)}
       </h2>
 
       {!week ? (
@@ -121,7 +121,7 @@ export function DayView({
 
           {timed.length ? (
             <section>
-              <h3 className="text-xs font-bold tracking-wide text-slate-500 uppercase">Có giờ</h3>
+              <h3 className="text-xs font-bold tracking-wide text-slate-500 uppercase">Scheduled</h3>
               <ul className="divide-y divide-slate-100 dark:divide-slate-800">
                 {timed.map((t) => (
                   <li key={t.id}>
@@ -134,7 +134,7 @@ export function DayView({
 
           {anytime.length ? (
             <section>
-              <h3 className="text-xs font-bold tracking-wide text-slate-500 uppercase">Bất kỳ lúc nào</h3>
+              <h3 className="text-xs font-bold tracking-wide text-slate-500 uppercase">Anytime</h3>
               <ul className="divide-y divide-slate-100 dark:divide-slate-800">
                 {anytime.map((t) => (
                   <li key={t.id}>
@@ -147,7 +147,7 @@ export function DayView({
 
           {!tasks.length && !current?.events.length ? (
             <p className="py-8 text-center text-sm text-slate-500">
-              Chưa có việc nào cho {day === today ? 'hôm nay' : viDayMonth(day)}. Bấm + để thêm.
+              Nothing planned for {day === today ? 'today' : dayMonth(day)}. Tap + to add.
             </p>
           ) : null}
         </>

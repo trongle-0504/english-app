@@ -4,12 +4,12 @@ import { Button, Skeleton } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import type { WeekDraftTask } from '@/types/planner'
 import * as api from './api'
-import { formatMinutes, viDayMonth, viShort, vnDay, weekDays } from './dates'
+import { formatMinutes, dayMonth, shortWeekday, vnDay, weekDays } from './dates'
 import { inputClass, Sheet } from './Sheet'
 import { SKILL_DOT, SKILL_LABELS, SKILL_LINKS } from './skills'
 import { showToast } from './toast'
 
-/** "AI lập kế hoạch tuần": minutes per day + focus → an editable draft → added to the week. */
+/** "Plan my week with AI": minutes per day + focus → an editable draft → added to the week. */
 export function WeekDraftSheet({
   open,
   onOpenChange,
@@ -56,7 +56,7 @@ export function WeekDraftSheet({
     setBusy(true)
     try {
       await api.createTasks(draft.tasks.map((t) => ({ title: t.title, date: t.date, time: t.time, durationMin: t.durationMin, skill: t.skill, link: SKILL_LINKS[t.skill] ?? '', notes: t.why, source: 'ai-week' })))
-      showToast(`Đã thêm ${draft.tasks.length} việc vào tuần.`)
+      showToast(`Added ${draft.tasks.length} ${draft.tasks.length === 1 ? 'task' : 'tasks'} to the week.`)
       onAdded()
       onOpenChange(false)
     } catch (err) {
@@ -74,41 +74,41 @@ export function WeekDraftSheet({
       onOpenChange={onOpenChange}
       title={
         <span className="inline-flex items-center gap-2">
-          <Sparkles className="size-5 text-violet-500" /> AI lập kế hoạch tuần
+          <Sparkles className="size-5 text-violet-500" /> Plan my week with AI
         </span>
       }
       footer={
         draft ? (
           <>
             <Button variant="ghost" onClick={() => setDraft(null)}>
-              Làm lại
+              Start over
             </Button>
             <Button onClick={() => void add()} loading={busy} disabled={!draft.tasks.length}>
-              Thêm vào tuần ({draft.tasks.length})
+              Add to week ({draft.tasks.length})
             </Button>
           </>
         ) : (
           <Button onClick={() => void generate()} loading={busy}>
-            <Sparkles className="size-4" /> Tạo bản nháp
+            <Sparkles className="size-4" /> Make a draft
           </Button>
         )
       }
     >
       {!draft ? (
         <div className="space-y-4">
-          <p className="text-sm text-slate-500">Số phút có thể học mỗi ngày (ngày đã qua được bỏ qua).</p>
+          <p className="text-sm text-slate-500">Minutes you can study each day (past days are skipped).</p>
           <ul className="divide-y divide-slate-100 dark:divide-slate-800">
             {days.map((day, i) => (
               <li key={day} className={cn('flex min-h-12 items-center justify-between gap-3', day < today && 'opacity-40')}>
                 <span className="text-sm font-medium text-slate-800 dark:text-slate-100">
-                  {viShort(day)} <span className="text-slate-400">{viDayMonth(day)}</span>
+                  {shortWeekday(day)} <span className="text-slate-400">{dayMonth(day)}</span>
                 </span>
                 <span className="flex items-center gap-1">
-                  <button type="button" aria-label="Bớt 15 phút" onClick={() => step(i, -15)} className="flex size-10 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800">
+                  <button type="button" aria-label="15 minutes less" onClick={() => step(i, -15)} className="flex size-10 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800">
                     <Minus className="size-4" />
                   </button>
-                  <span className="w-20 text-center text-sm tabular-nums">{minutes[i] ? formatMinutes(minutes[i]) : 'nghỉ'}</span>
-                  <button type="button" aria-label="Thêm 15 phút" onClick={() => step(i, 15)} className="flex size-10 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800">
+                  <span className="w-20 text-center text-sm tabular-nums">{minutes[i] ? formatMinutes(minutes[i]) : 'off'}</span>
+                  <button type="button" aria-label="15 minutes more" onClick={() => step(i, 15)} className="flex size-10 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800">
                     <Plus className="size-4" />
                   </button>
                 </span>
@@ -116,12 +116,12 @@ export function WeekDraftSheet({
             ))}
           </ul>
           <label className="block space-y-1.5">
-            <span className="text-xs font-semibold tracking-wide text-slate-500 uppercase">Trọng tâm (tuỳ chọn)</span>
-            <input className={inputClass} value={focus} onChange={(e) => setFocus(e.target.value)} placeholder="Tuần này tập trung Writing Task 2" maxLength={300} />
+            <span className="text-xs font-semibold tracking-wide text-slate-500 uppercase">Focus (optional)</span>
+            <input className={inputClass} value={focus} onChange={(e) => setFocus(e.target.value)} placeholder="This week, focus on Writing Task 2" maxLength={300} />
           </label>
           {busy ? (
             <div className="space-y-2">
-              <p className="text-sm text-slate-500">AI đang lập kế hoạch (thường dưới 1 phút)…</p>
+              <p className="text-sm text-slate-500">The AI is planning your week (usually under a minute)…</p>
               <Skeleton className="h-10" />
               <Skeleton className="h-10" />
             </div>
@@ -131,13 +131,13 @@ export function WeekDraftSheet({
       ) : (
         <div className="space-y-3">
           {draft.summary ? <p className="rounded-xl bg-violet-50 px-3 py-2 text-sm text-violet-900 dark:bg-violet-950/40 dark:text-violet-200">{draft.summary}</p> : null}
-          {!draft.tasks.length ? <p className="text-sm text-slate-500">AI không đề xuất việc nào (tuần đã kín hoặc không còn thời gian).</p> : null}
+          {!draft.tasks.length ? <p className="text-sm text-slate-500">The AI suggested nothing (the week is full or has no time left).</p> : null}
           {days
             .filter((d) => draft.tasks.some((t) => t.date === d))
             .map((day) => (
               <section key={day}>
                 <h4 className="mt-2 text-xs font-bold tracking-wide text-slate-500 uppercase">
-                  {viShort(day)} {viDayMonth(day)}
+                  {shortWeekday(day)} {dayMonth(day)}
                 </h4>
                 <ul className="divide-y divide-slate-100 dark:divide-slate-800">
                   {draft.tasks.map((t, i) =>
@@ -157,7 +157,7 @@ export function WeekDraftSheet({
                         </div>
                         <button
                           type="button"
-                          aria-label="Bỏ việc này"
+                          aria-label="Remove this task"
                           onClick={() => setDraft((d) => d && { ...d, tasks: d.tasks.filter((_, j) => j !== i) })}
                           className="flex size-10 shrink-0 items-center justify-center rounded-full text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800"
                         >

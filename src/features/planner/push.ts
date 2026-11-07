@@ -16,7 +16,7 @@ export function deviceLabel(): string {
   if (/Android/.test(ua)) return 'Android'
   if (/Windows/.test(ua)) return 'Windows'
   if (/Mac OS X/.test(ua)) return 'Mac'
-  return 'Thiết bị'
+  return 'Device'
 }
 
 /** 'off' = permission granted but this device is not subscribed (or the server forgot it, e.g. new VAPID keys). */

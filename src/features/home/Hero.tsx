@@ -27,7 +27,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/70 via-slate-950/30 to-slate-950/80 lg:bg-gradient-to-r lg:from-slate-950/80 lg:via-slate-950/45 lg:to-slate-950/20" />
       </PhotoBackdrop>
       <div className="px-3.5 pt-4 pb-3.5 sm:px-8 sm:pt-8 sm:pb-8 lg:px-12">
-        <QuietBoundary fallback={<p className="text-sm text-white/80">Không tải được lịch hôm nay.</p>}>
+        <QuietBoundary fallback={<p className="text-sm text-white/80">Could not load today’s plan.</p>}>
           <TodayPanel />
         </QuietBoundary>
       </div>

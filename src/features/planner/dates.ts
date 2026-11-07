@@ -71,39 +71,45 @@ const VI_LONG = ['Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu
 const VI_SHORT = ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN']
 const EN_LONG = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
+const EN_SHORT = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+const EN_MONTH = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+/** Vietnamese names: only for the AI's calendar table, since notes say "thứ 2", "CN". The UI is in English. */
 export const viWeekday = (day: string) => VI_LONG[isoWeekday(day) - 1]
 export const viShort = (day: string) => VI_SHORT[isoWeekday(day) - 1]
+
 export const enWeekday = (day: string) => EN_LONG[isoWeekday(day) - 1]
+/** "Mon". */
+export const shortWeekday = (day: string) => EN_SHORT[isoWeekday(day) - 1]
 
-/** "Thứ Bảy, 7 tháng 11". */
-export function viLongDate(day: string): string {
-  const [, m, d] = day.split('-').map(Number)
-  return `${viWeekday(day)}, ${d} tháng ${m}`
+/** "Saturday, Nov 7". */
+export function longDate(day: string): string {
+  return `${enWeekday(day)}, ${dayMonth(day)}`
 }
 
-/** "7/11". */
-export function viDayMonth(day: string): string {
+/** "Nov 7". */
+export function dayMonth(day: string): string {
   const [, m, d] = day.split('-').map(Number)
-  return `${d}/${m}`
+  return `${EN_MONTH[m - 1]} ${d}`
 }
 
-/** A date chip relative to today: "T4" within the last/next 6 days, else "4/11". */
+/** A date chip relative to today: "Wed" within the last/next 6 days, else "Nov 4". */
 export function shortDateLabel(day: string, today: string): string {
-  return Math.abs(daysBetween(day, today)) <= 6 ? viShort(day) : viDayMonth(day)
+  return Math.abs(daysBetween(day, today)) <= 6 ? shortWeekday(day) : dayMonth(day)
 }
 
-/** "2 giờ 15 phút", "45 phút", "1 giờ". */
+/** "2h 15m", "45 min", "1h". */
 export function formatMinutes(total: number): string {
   const h = Math.floor(total / 60)
   const m = total % 60
-  if (!h) return `${m} phút`
-  return m ? `${h} giờ ${m} phút` : `${h} giờ`
+  if (!h) return `${m} min`
+  return m ? `${h}h ${m}m` : `${h}h`
 }
 
-/** "hôm nay", "ngày mai", "còn 5 ngày", "3 ngày trước". */
+/** "today", "tomorrow", "in 5 days", "3 days ago". */
 export function daysLeftLabel(daysLeft: number): string {
-  if (daysLeft === 0) return 'hôm nay'
-  if (daysLeft === 1) return 'ngày mai'
-  if (daysLeft > 0) return `còn ${daysLeft} ngày`
-  return `${-daysLeft} ngày trước`
+  if (daysLeft === 0) return 'today'
+  if (daysLeft === 1) return 'tomorrow'
+  if (daysLeft > 0) return `in ${daysLeft} days`
+  return daysLeft === -1 ? 'yesterday' : `${-daysLeft} days ago`
 }

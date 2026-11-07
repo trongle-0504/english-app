@@ -8,9 +8,9 @@ import { inputClass, Sheet } from './Sheet'
 import { SKILL_DOT, SKILL_LABELS, SKILL_LINKS } from './skills'
 import { showToast } from './toast'
 
-const WEEKDAYS = ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN']
+const WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 
-/** The weekly routine: fixed slots per weekday, applied to a week with "Áp dụng lịch cố định". */
+/** The weekly routine: fixed slots per weekday, applied to a week with "Apply routine". */
 export function RoutineSheet({ open, onOpenChange, routine, onSaved }: { open: boolean; onOpenChange: (open: boolean) => void; routine: PlannerRoutineItem[]; onSaved: () => void }) {
   const [items, setItems] = useState(routine)
   const [busy, setBusy] = useState(false)
@@ -26,7 +26,7 @@ export function RoutineSheet({ open, onOpenChange, routine, onSaved }: { open: b
     setBusy(true)
     try {
       await api.saveRoutine(items.filter((x) => x.title.trim()).map((x) => ({ ...x, id: x.id.startsWith('new-') ? '' : x.id })))
-      showToast('Đã lưu lịch cố định.')
+      showToast('Routine saved.')
       onSaved()
       onOpenChange(false)
     } catch (err) {
@@ -40,11 +40,11 @@ export function RoutineSheet({ open, onOpenChange, routine, onSaved }: { open: b
     <Sheet
       open={open}
       onOpenChange={onOpenChange}
-      title="Lịch cố định"
-      description="Các buổi lặp lại mỗi tuần. Bấm “Áp dụng lịch cố định” ở tuần để tạo việc."
+      title="Weekly routine"
+      description="Sessions that repeat every week. Tap “Apply routine” in a week to create the tasks."
       footer={
         <Button onClick={() => void save()} loading={busy}>
-          Lưu
+          Save
         </Button>
       }
     >
@@ -57,14 +57,14 @@ export function RoutineSheet({ open, onOpenChange, routine, onSaved }: { open: b
               <div className="flex items-center justify-between">
                 <h4 className="text-sm font-bold text-slate-800 dark:text-slate-100">{label}</h4>
                 <button type="button" onClick={() => add(weekday)} className="inline-flex min-h-10 items-center gap-1 rounded-full px-3 text-sm font-semibold text-brand-600 hover:bg-brand-50 dark:text-brand-400 dark:hover:bg-brand-950/40">
-                  <Plus className="size-4" /> Thêm
+                  <Plus className="size-4" /> Add
                 </button>
               </div>
               {list.map((x) => (
                 <div key={x.id} className="mt-2 space-y-2">
                   <div className="flex gap-2">
-                    <input className={cn(inputClass, 'h-10 flex-1 text-sm')} value={x.title} placeholder="Ôn thẻ 20 phút" onChange={(e) => patch(x.id, { title: e.target.value })} maxLength={120} />
-                    <button type="button" aria-label="Xoá" onClick={() => setItems((all) => all.filter((y) => y.id !== x.id))} className="flex size-10 shrink-0 items-center justify-center rounded-full text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">
+                    <input className={cn(inputClass, 'h-10 flex-1 text-sm')} value={x.title} placeholder="Flashcard review" onChange={(e) => patch(x.id, { title: e.target.value })} maxLength={120} />
+                    <button type="button" aria-label="Delete" onClick={() => setItems((all) => all.filter((y) => y.id !== x.id))} className="flex size-10 shrink-0 items-center justify-center rounded-full text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800">
                       <Trash2 className="size-4" />
                     </button>
                   </div>
@@ -74,7 +74,7 @@ export function RoutineSheet({ open, onOpenChange, routine, onSaved }: { open: b
                       inputMode="numeric"
                       className={cn(inputClass, 'h-9 w-20 text-sm')}
                       value={x.durationMin ?? ''}
-                      placeholder="phút"
+                      placeholder="min"
                       onChange={(e) => patch(x.id, { durationMin: Number(e.target.value.replace(/\D/g, '').slice(0, 3)) || undefined })}
                     />
                     <select
@@ -83,8 +83,8 @@ export function RoutineSheet({ open, onOpenChange, routine, onSaved }: { open: b
                       onChange={(e) => patch(x.id, { skill: e.target.value as PlannerSkill, link: SKILL_LINKS[e.target.value as PlannerSkill] })}
                     >
                       {[
-                        { name: 'Học', list: STUDY_SKILLS },
-                        { name: 'Việc khác', list: NON_STUDY_SKILLS },
+                        { name: 'Study', list: STUDY_SKILLS },
+                        { name: 'Other', list: NON_STUDY_SKILLS },
                       ].map((group) => (
                         <optgroup key={group.name} label={group.name}>
                           {group.list.map((s) => (

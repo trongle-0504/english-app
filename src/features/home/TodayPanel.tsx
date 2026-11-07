@@ -8,7 +8,7 @@ import { cn } from '@/lib/cn'
 import type { PlannerEvent, PlannerHome } from '@/types/planner'
 import { AddSheet, type AddTab } from '@/features/planner/AddSheet'
 import * as api from '@/features/planner/api'
-import { daysBetween, daysLeftLabel, formatMinutes, viDayMonth, viLongDate, viShort, vnDay, weekStart } from '@/features/planner/dates'
+import { daysBetween, daysLeftLabel, formatMinutes, dayMonth, longDate, shortWeekday, vnDay, weekStart } from '@/features/planner/dates'
 import { EnablePushCard } from '@/features/planner/EnablePushCard'
 import { pushState, type PushState } from '@/features/planner/push'
 import { ReschedulePreview } from '@/features/planner/ReschedulePreview'
@@ -92,7 +92,7 @@ export function TodayPanel() {
     if (!home?.overdue.length) return
     try {
       const res = await api.applyReschedule(home.overdue.map((t) => ({ taskId: t.id, date: home.day, time: t.time ?? '' })), [])
-      showToast(`Đã dời ${res.moved} việc sang hôm nay.`)
+      showToast(`Moved ${res.moved} ${res.moved === 1 ? 'task' : 'tasks'} to today.`)
       void reload()
     } catch (err) {
       showToast((err as Error).message)
@@ -103,7 +103,7 @@ export function TodayPanel() {
     try {
       const added = await api.applyRoutine(weekStart(vnDay()))
       if (added) {
-        showToast(`Đã thêm ${added} việc từ lịch cố định.`)
+        showToast(`Added ${added} ${added === 1 ? 'task' : 'tasks'} from your routine.`)
         void reload()
       } else navigate('/planner?view=week')
     } catch (err) {
@@ -118,19 +118,19 @@ export function TodayPanel() {
       {/* 1. Date, bell, + */}
       <div className="flex items-center justify-between gap-3">
         <div className="min-w-0">
-          <h1 className="text-sm font-bold tracking-[0.14em] text-white/85 uppercase">{viLongDate(day)}</h1>
+          <h1 className="text-sm font-bold tracking-[0.14em] text-white/85 uppercase">{longDate(day)}</h1>
           {offline ? (
             <p className="mt-1 inline-flex items-center gap-1 rounded-full bg-amber-500/25 px-2 py-0.5 text-xs font-semibold text-amber-100">
-              <WifiOff className="size-3" /> Ngoại tuyến
+              <WifiOff className="size-3" /> Offline
             </p>
           ) : null}
         </div>
         <div className="flex shrink-0 gap-2">
-          <button type="button" aria-label="Thông báo" onClick={() => setPushOpen(true)} className={roundGlass}>
+          <button type="button" aria-label="Notifications" onClick={() => setPushOpen(true)} className={roundGlass}>
             <Bell className="size-5" />
             {push && push !== 'on' && push !== 'unsupported' && push !== 'dev' ? <span className="absolute top-2.5 right-2.5 size-2 rounded-full bg-amber-400 ring-2 ring-slate-900/40" /> : null}
           </button>
-          <button type="button" aria-label="Thêm nhanh" onClick={() => setAdd({ open: true, tab: 'quick' })} className={roundGlass}>
+          <button type="button" aria-label="Quick add" onClick={() => setAdd({ open: true, tab: 'quick' })} className={roundGlass}>
             <Plus className="size-5" />
           </button>
         </div>
@@ -148,9 +148,9 @@ export function TodayPanel() {
                   {home.countdown.daysLeft}
                 </Ring>
                 <span className="min-w-0">
-                  <span className="block text-sm font-bold">{home.countdown.daysLeft === 0 ? 'Hôm nay' : `${home.countdown.daysLeft} ngày`}</span>
+                  <span className="block text-sm font-bold">{home.countdown.daysLeft === 0 ? 'Today' : `${home.countdown.daysLeft} ${home.countdown.daysLeft === 1 ? 'day' : 'days'}`}</span>
                   <span className="block truncate text-xs text-white/75">
-                    {home.countdown.title} · {viShort(home.countdown.date)} {viDayMonth(home.countdown.date)}
+                    {home.countdown.title} · {shortWeekday(home.countdown.date)} {dayMonth(home.countdown.date)}
                   </span>
                 </span>
               </Link>
@@ -159,7 +159,7 @@ export function TodayPanel() {
                 <span className="flex size-14 shrink-0 items-center justify-center rounded-full border-2 border-dashed border-white/40">
                   <CalendarPlus className="size-5" />
                 </span>
-                <span className="text-sm font-bold">Thêm ngày thi</span>
+                <span className="text-sm font-bold">Add exam date</span>
               </button>
             )}
             <Link to="/planner?view=week" className={cn(glass, 'flex items-center gap-3 rounded-2xl p-3')}>
@@ -168,9 +168,9 @@ export function TodayPanel() {
               </Ring>
               <span className="min-w-0">
                 <span className="block text-sm font-bold tabular-nums">
-                  {home?.weekProgress.done ?? 0}/{home?.weekProgress.total ?? 0} việc
+                  {home?.weekProgress.done ?? 0}/{home?.weekProgress.total ?? 0} tasks
                 </span>
-                <span className="block text-xs text-white/75">tuần này</span>
+                <span className="block text-xs text-white/75">this week</span>
               </span>
             </Link>
           </div>
@@ -186,13 +186,13 @@ export function TodayPanel() {
                 {home.brief.tip ? <p className="text-white/80">💡 {home.brief.tip}</p> : null}
               </div>
               <button type="button" onClick={() => setBriefOpen((o) => !o)} className="mt-1 inline-flex min-h-8 items-center gap-1 text-xs font-semibold text-white/80">
-                {briefOpen ? 'Thu gọn' : 'Xem thêm'} <ChevronDown className={cn('size-3.5 transition-transform', briefOpen && 'rotate-180')} />
+                {briefOpen ? 'Less' : 'More'} <ChevronDown className={cn('size-3.5 transition-transform', briefOpen && 'rotate-180')} />
               </button>
             </div>
           ) : home && !offline ? (
             <button type="button" onClick={() => void makeBrief()} disabled={briefBusy} className={cn(glass, 'flex min-h-12 w-full items-center gap-2 rounded-2xl px-3.5 text-left text-sm font-semibold')}>
               <Sparkles className={cn('size-4', briefBusy && 'animate-pulse')} />
-              {briefBusy ? 'Đang tạo tóm tắt hôm nay…' : 'Tạo tóm tắt hôm nay'}
+              {briefBusy ? 'Writing today’s brief…' : 'Get today’s brief'}
             </button>
           ) : null}
         </div>
@@ -207,7 +207,7 @@ export function TodayPanel() {
               <Skeleton className="h-12" />
             </div>
           ) : !home ? (
-            <p className="text-sm text-slate-600 dark:text-slate-300">{error || 'Không tải được lịch hôm nay.'}</p>
+            <p className="text-sm text-slate-600 dark:text-slate-300">{error || 'Could not load today’s plan.'}</p>
           ) : (
             <TodayCard
               home={home}
@@ -228,13 +228,13 @@ export function TodayPanel() {
         className={cn(glass, 'mt-3 flex min-h-12 w-full items-center gap-2 rounded-full px-4 text-left text-sm text-white/80 transition hover:bg-white/20')}
       >
         <Sparkles className="size-4 shrink-0" />
-        <span className="truncate">Thêm nhanh: “mai 8h tối speaking 45p”…</span>
+        <span className="truncate">Quick add…</span>
       </button>
 
       <AddSheet open={add.open} onOpenChange={(open) => setAdd((a) => ({ ...a, open }))} tab={add.tab} event={add.event} onSaved={() => void reload()} />
       <ReschedulePreview open={rescheduleOpen} onOpenChange={setRescheduleOpen} onApplied={() => void reload()} />
       {home ? <WeekDraftSheet open={draftOpen} onOpenChange={setDraftOpen} start={weekStart(home.day)} minutesPerDay={home.settings.minutesPerDay} onAdded={() => void reload()} /> : null}
-      <Sheet open={pushOpen} onOpenChange={setPushOpen} title="Thông báo">
+      <Sheet open={pushOpen} onOpenChange={setPushOpen} title="Notifications">
         <EnablePushCard onChange={setPush} />
       </Sheet>
       <Toaster />
@@ -265,11 +265,11 @@ function TodayCard({
   return (
     <div>
       <div className="flex items-center justify-between gap-3">
-        <h2 className="text-lg font-bold">Hôm nay</h2>
+        <h2 className="text-lg font-bold">Today</h2>
         {total ? (
           <span className="text-xs font-semibold text-slate-500 tabular-nums">
             {done}/{total}
-            {minutesLeft ? ` · còn ${formatMinutes(minutesLeft)}` : ''}
+            {minutesLeft ? ` · ${formatMinutes(minutesLeft)} left` : ''}
           </span>
         ) : null}
       </div>
@@ -281,13 +281,13 @@ function TodayCard({
 
       {emptyWeek ? (
         <div className="py-4 text-center">
-          <p className="font-semibold">Tuần này chưa có kế hoạch</p>
+          <p className="font-semibold">No plan for this week yet</p>
           <div className="mt-3 flex flex-wrap justify-center gap-2">
             <button type="button" onClick={onDraft} className="inline-flex min-h-11 items-center gap-1.5 rounded-full bg-violet-600 px-4 text-sm font-semibold text-white">
-              <Sparkles className="size-4" /> AI lập kế hoạch tuần
+              <Sparkles className="size-4" /> Plan my week with AI
             </button>
             <button type="button" onClick={onRoutine} className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-slate-300 px-4 text-sm font-semibold dark:border-slate-600">
-              <Repeat className="size-4" /> Dùng lịch cố định
+              <Repeat className="size-4" /> Use my routine
             </button>
           </div>
         </div>
@@ -301,10 +301,10 @@ function TodayCard({
         </ul>
       ) : (
         <p className="py-3 text-sm text-slate-500">
-          Hôm nay chưa có việc nào{home.review.due ? ` — có ${home.review.due} thẻ cần ôn.` : '.'}
+          Nothing planned for today{home.review.due ? ` — ${home.review.due} cards are due.` : '.'}
           {home.review.due ? (
             <Link to="/review" className="ml-1 font-semibold text-brand-600 dark:text-brand-400">
-              Ôn ngay
+              Review now
             </Link>
           ) : null}
         </p>
@@ -312,7 +312,7 @@ function TodayCard({
 
       {home.overdue.length ? (
         <div className="mt-3 rounded-2xl bg-amber-50 p-3 dark:bg-amber-950/40">
-          <p className="text-sm font-bold text-amber-800 dark:text-amber-300">{home.overdue.length} việc quá hạn</p>
+          <p className="text-sm font-bold text-amber-800 dark:text-amber-300">{home.overdue.length} overdue</p>
           <ul className="divide-y divide-amber-200/60 dark:divide-amber-900/50">
             {home.overdue.slice(0, 5).map((t) => (
               <li key={t.id}>
@@ -320,13 +320,13 @@ function TodayCard({
               </li>
             ))}
           </ul>
-          {home.overdue.length > 5 ? <p className="text-xs text-amber-700 dark:text-amber-400">và {home.overdue.length - 5} việc khác</p> : null}
+          {home.overdue.length > 5 ? <p className="text-xs text-amber-700 dark:text-amber-400">and {home.overdue.length - 5} more</p> : null}
           <div className="mt-2 flex flex-wrap gap-2">
             <button type="button" onClick={onReschedule} className="inline-flex min-h-11 items-center gap-1.5 rounded-full bg-amber-600 px-4 text-sm font-semibold text-white">
-              <Sparkles className="size-4" /> Dời lịch thông minh
+              <Sparkles className="size-4" /> Smart reschedule
             </button>
             <button type="button" onClick={onMoveToday} className="inline-flex min-h-11 items-center rounded-full border border-amber-300 px-4 text-sm font-semibold text-amber-800 dark:border-amber-800 dark:text-amber-300">
-              Sang hôm nay
+              Move to today
             </button>
           </div>
         </div>
@@ -334,7 +334,7 @@ function TodayCard({
 
       {home.events.length ? (
         <div className="mt-3 border-t border-slate-200/70 pt-3 dark:border-slate-700/70">
-          <p className="text-xs font-bold tracking-wide text-slate-500 uppercase">Sắp tới</p>
+          <p className="text-xs font-bold tracking-wide text-slate-500 uppercase">Upcoming</p>
           <ul className="mt-1">
             {home.events.slice(0, 3).map((e) => (
               <li key={e.id}>
@@ -352,7 +352,7 @@ function TodayCard({
       ) : null}
 
       <Link to="/planner?view=week" className="mt-3 inline-flex min-h-11 items-center gap-1 text-sm font-semibold text-brand-600 dark:text-brand-400">
-        Xem lịch tuần <ArrowRight className="size-4" />
+        View week <ArrowRight className="size-4" />
       </Link>
     </div>
   )

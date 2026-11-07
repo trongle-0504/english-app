@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { addDays, isoWeekday, vnDay, vnTime, weekStart } from '../../src/features/planner/dates.ts'
+import { addDays, daysLeftLabel, formatMinutes, isoWeekday, longDate, shortDateLabel, vnDay, vnTime, weekStart } from '../../src/features/planner/dates.ts'
 import { DEFAULT_SETTINGS, type PlannerDoc, type PlannerEvent, type PlannerTask } from '../../src/types/planner.ts'
 import { calendarTable, validateBrief, validateQuickAdd, validateReschedule, validateWeekDraft, type DraftWeekInput } from '../../server/planner/ai.ts'
 import { autoTickReview } from '../../server/planner/context.ts'
@@ -231,14 +231,14 @@ test('reschedule: unknown ids and out-of-range dates dropped, forgotten tasks pl
     '2026-11-07',
   )
   assert.deepEqual(out.moves.map((m) => [m.taskId, m.date]), [['o1', '2026-11-09'], ['o2', '2026-11-07']])
-  assert.equal(out.moves[1].reason, 'Tự động: ngày còn trống')
+  assert.equal(out.moves[1].reason, 'Auto: first day with room')
   assert.deepEqual(out.drop.map((x) => x.taskId), ['o3'])
 })
 
 test('week draft: dates in range, days trimmed to their free minutes', () => {
   const input: DraftWeekInput = {
     week: [
-      { date: '2026-11-07', weekday: 'Thứ Bảy', availableMinutes: 60, plannedMinutes: 20, reviewDue: 0 },
+      { date: '2026-11-07', weekday: 'Saturday', availableMinutes: 60, plannedMinutes: 20, reviewDue: 0 },
       { date: '2026-11-08', weekday: 'Chủ Nhật', availableMinutes: 200, plannedMinutes: 0, reviewDue: 0 },
     ],
     targetBand: null,
@@ -283,4 +283,13 @@ test('reschedule: work and personal tasks are never dropped and do not use study
   assert.deepEqual(out.drop, [])
   // Work and personal fit today (they need no study time); the writing task takes today's 30 study minutes.
   assert.deepEqual(Object.fromEntries(out.moves.map((m) => [m.taskId, m.date])), { w: '2026-11-07', s: '2026-11-07', p: '2026-11-07' })
+})
+
+test('date labels are English', () => {
+  assert.equal(longDate('2026-11-08'), 'Sunday, Nov 8')
+  assert.equal(shortDateLabel('2026-11-05', '2026-11-08'), 'Thu')
+  assert.equal(shortDateLabel('2026-10-20', '2026-11-08'), 'Oct 20')
+  assert.equal(formatMinutes(135), '2h 15m')
+  assert.equal(formatMinutes(45), '45 min')
+  assert.equal(daysLeftLabel(3), 'in 3 days')
 })

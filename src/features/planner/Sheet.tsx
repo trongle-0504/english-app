@@ -43,7 +43,7 @@ export function Sheet({
             </div>
             <Dialog.Close
               className="-mr-2 flex size-11 shrink-0 items-center justify-center rounded-full text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800"
-              aria-label="Đóng"
+              aria-label="Close"
             >
               <X className="size-5" />
             </Dialog.Close>

@@ -2,7 +2,7 @@ import { Check, ChevronRight, MoreHorizontal } from 'lucide-react'
 import { useNavigate } from 'react-router'
 import { cn } from '@/lib/cn'
 import type { PlannerTask } from '@/types/planner'
-import { shortDateLabel, viShort, vnDay, vnTime } from './dates'
+import { shortDateLabel, shortWeekday, vnDay, vnTime } from './dates'
 import { SKILL_DOT, SKILL_LABELS } from './skills'
 
 interface TaskRowProps {
@@ -22,7 +22,7 @@ export function TaskRow({ task, variant = 'full', showDate = false, onToggle, on
   const done = Boolean(task.doneAt)
   const today = vnDay()
   const snoozed = task.snoozedUntil && new Date(task.snoozedUntil).getTime() > Date.now() ? vnTime(new Date(task.snoozedUntil)) : ''
-  const meta = [task.time ?? 'Bất kỳ lúc nào', task.durationMin ? `${task.durationMin}′` : '', variant === 'full' ? SKILL_LABELS[task.skill] : '']
+  const meta = [task.time ?? 'Anytime', task.durationMin ? `${task.durationMin}′` : '', variant === 'full' ? SKILL_LABELS[task.skill] : '']
     .filter(Boolean)
     .join(' · ')
 
@@ -38,7 +38,7 @@ export function TaskRow({ task, variant = 'full', showDate = false, onToggle, on
         type="button"
         role="checkbox"
         aria-checked={done}
-        aria-label={done ? `Bỏ đánh dấu: ${task.title}` : `Đánh dấu xong: ${task.title}`}
+        aria-label={done ? `Mark not done: ${task.title}` : `Mark done: ${task.title}`}
         onClick={() => onToggle(task, !done)}
         className="-ml-2.5 flex size-11 shrink-0 items-center justify-center rounded-full"
       >
@@ -71,8 +71,8 @@ export function TaskRow({ task, variant = 'full', showDate = false, onToggle, on
               </span>
             ) : null}
             <span>{meta}</span>
-            {task.movedFrom ? <span className="rounded bg-slate-100 px-1.5 py-px dark:bg-slate-800">dời từ {viShort(task.movedFrom)}</span> : null}
-            {snoozed ? <span className="text-brand-600 dark:text-brand-400">đã hoãn tới {snoozed}</span> : null}
+            {task.movedFrom ? <span className="rounded bg-slate-100 px-1.5 py-px dark:bg-slate-800">moved from {shortWeekday(task.movedFrom)}</span> : null}
+            {snoozed ? <span className="text-brand-600 dark:text-brand-400">snoozed until {snoozed}</span> : null}
           </span>
         </span>
         {task.link && !onMenu ? <ChevronRight className="size-4 shrink-0 text-slate-400" aria-hidden /> : null}
@@ -82,7 +82,7 @@ export function TaskRow({ task, variant = 'full', showDate = false, onToggle, on
         <button
           type="button"
           onClick={() => onMenu(task)}
-          aria-label={`Tuỳ chọn: ${task.title}`}
+          aria-label={`Options: ${task.title}`}
           className="-mr-2 flex size-11 shrink-0 items-center justify-center rounded-full text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800"
         >
           <MoreHorizontal className="size-5" />

@@ -78,7 +78,7 @@ export function usePlannerHome() {
   const toggle = useCallback(
     async (task: PlannerTask, done: boolean) => {
       if (offline) {
-        toast('Đang ngoại tuyến — chưa đánh dấu được.')
+        toast('You are offline — could not mark it.')
         return
       }
       const patch = (t: PlannerTask) => (t.id === task.id ? { ...t, doneAt: done ? new Date().toISOString() : undefined } : t)
@@ -89,7 +89,7 @@ export function usePlannerHome() {
         void reload()
       } catch (err) {
         setHome(before)
-        toast((err as Error).message || 'Không lưu được.')
+        toast((err as Error).message || 'Could not save.')
       }
     },
     [home, offline, reload, toast],

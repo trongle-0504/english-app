@@ -108,15 +108,15 @@ export function badgeCount(doc: PlannerDoc, day: string): number {
 }
 
 function taskPayload(task: PlannerTask, badge: number): PushPayload {
-  const bits = [task.durationMin ? `${task.durationMin} phút` : '', SKILL_LABELS[task.skill]].filter(Boolean)
+  const bits = [task.durationMin ? `${task.durationMin} min` : '', SKILL_LABELS[task.skill]].filter(Boolean)
   return {
-    title: `Đến giờ: ${task.title}`,
+    title: `Time for: ${task.title}`,
     body: bits.join(' · '),
     tag: `task-${task.id}`,
     url: task.link || '/planner',
     actions: [
-      { action: 'done', title: 'Xong' },
-      { action: 'snooze', title: 'Hoãn 1 giờ' },
+      { action: 'done', title: 'Done' },
+      { action: 'snooze', title: 'Snooze 1 hour' },
     ],
     taskId: task.id,
     badge,
@@ -124,9 +124,9 @@ function taskPayload(task: PlannerTask, badge: number): PushPayload {
 }
 
 function whenLabel(minutes: number): string {
-  if (minutes >= 1440 && minutes % 1440 === 0) return minutes === 1440 ? 'ngày mai' : `còn ${minutes / 1440} ngày`
-  if (minutes >= 60) return `${Math.round(minutes / 60)} giờ nữa`
-  return minutes ? `${minutes} phút nữa` : 'bắt đầu'
+  if (minutes >= 1440 && minutes % 1440 === 0) return minutes === 1440 ? 'tomorrow' : `in ${minutes / 1440} days`
+  if (minutes >= 60) return `in ${Math.round(minutes / 60)} ${Math.round(minutes / 60) === 1 ? 'hour' : 'hours'}`
+  return minutes ? `in ${minutes} min` : 'starting now'
 }
 
 async function payloadFor(ctx: PlannerCtx, doc: PlannerDoc, due: Due, now: Date): Promise<{ payload: PushPayload; opts: SendOptions } | null> {
@@ -146,7 +146,7 @@ async function payloadFor(ctx: PlannerCtx, doc: PlannerDoc, due: Due, now: Date)
     const list = [...undone, ...late]
     if (!list.length) return null
     return {
-      payload: { title: `Còn ${list.length} việc chưa xong`, body: list.slice(0, 3).map((t) => t.title).join(' · '), tag: 'digest', url: '/planner?view=day', badge },
+      payload: { title: `${list.length} ${list.length === 1 ? 'task' : 'tasks'} still to do`, body: list.slice(0, 3).map((t) => t.title).join(' · '), tag: 'digest', url: '/planner?view=day', badge },
       opts: { topic: 'digest' },
     }
   }

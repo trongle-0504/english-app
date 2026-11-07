@@ -7,7 +7,7 @@ import { readLog, readState } from '../review/progress.ts'
 import { computeStats } from '../review/stats.ts'
 import { talkReviews, writingReviews } from '../practice/works.ts'
 import { isStudySkill, type PlannerBrief, type PlannerDoc, type PlannerHome, type PlannerTask } from '../../src/types/planner.ts'
-import { addDays, daysBetween, vnDay, viWeekday, weekDays, weekStart } from '../../src/features/planner/dates.ts'
+import { addDays, daysBetween, enWeekday, vnDay, weekDays, weekStart } from '../../src/features/planner/dates.ts'
 import { eventsAhead, overdueTasks, plannerDir, readPlanner, tasksForDay, updatePlanner, type PlannerCtx } from './store.ts'
 
 export interface ReviewSummary {
@@ -128,7 +128,7 @@ export async function briefFacts(ctx: PlannerCtx, doc: PlannerDoc, now = new Dat
   const review = await reviewSummary(ctx, now)
   const yesterday = doc.tasks.filter((t) => t.date === addDays(today, -1))
   return {
-    today: `${today} (${viWeekday(today)})`,
+    today: `${today} (${enWeekday(today)})`,
     tasksToday: tasksForDay(doc, today)
       .filter((t) => !t.doneAt)
       .map((t) => ({ id: t.id, title: t.title, time: t.time ?? '', durationMin: t.durationMin ?? 0, skill: t.skill })),

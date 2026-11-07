@@ -15,7 +15,7 @@ import type {
 
 export class OfflineError extends Error {
   constructor() {
-    super('Không kết nối được máy chủ (đang ngoại tuyến?).')
+    super('Could not reach the server (are you offline?).')
     this.name = 'OfflineError'
   }
 }
@@ -32,7 +32,7 @@ async function request<T>(url: string, init?: RequestInit & { json?: unknown }):
   }
   if (!res.headers.get('content-type')?.includes('json')) throw new OfflineError()
   const json = (await res.json()) as T & { error?: string }
-  if (!res.ok) throw new Error(json.error ?? `Lỗi ${res.status}.`)
+  if (!res.ok) throw new Error(json.error ?? `Error ${res.status}.`)
   return json
 }
 

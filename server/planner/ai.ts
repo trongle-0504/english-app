@@ -41,7 +41,7 @@ const FAST_EFFORT = () => process.env.PLANNER_FAST_EFFORT || 'low' // quick add,
 // Low by the user's decision: at medium the week draft thought ~32k tokens and took 4 minutes.
 const PLAN_EFFORT = () => process.env.PLANNER_PLAN_EFFORT || 'low' // reschedule, week draft
 
-const BUSY = 'AI đang bận — thử lại hoặc nhập tay'
+const BUSY = 'The AI is busy — try again or add it by hand'
 
 const WEEK_LABELS: Record<number, string> = { [-1]: 'tuần trước', 0: 'tuần này', 1: 'tuần sau', 2: '2 tuần nữa', 3: '3 tuần nữa' }
 
@@ -238,20 +238,20 @@ export async function quickAdd(text: string, opts: { now?: Date } = {}): Promise
 
 /* ───────────── 4.2 Morning brief ───────────── */
 
-export const BRIEF_SYSTEM = `You write the morning brief of an IELTS study planner app, in Vietnamese, for one learner. It appears as a phone notification and as a card on the home screen. Style: calm, warm and concise, like the daily summary of a premium phone assistant — no hype, no exclamation chains, at most one emoji in the whole brief (optional).
+export const BRIEF_SYSTEM = `You write the morning brief of an IELTS study planner app, in English, for one learner (a Vietnamese learner of English: plain, natural English). It appears as a phone notification and as a card on the home screen. Style: calm, warm and concise, like the daily summary of a premium phone assistant — no hype, no exclamation chains, at most one emoji in the whole brief (optional).
 
 Use ONLY the facts in the JSON. Never invent tasks, numbers, dates or scores. If a list is empty, do not mention it.
 
 Write:
-- headline (≤ 60 characters): the notification title. Lead with what matters most today: an exam within 14 days ("Còn 5 ngày đến IELTS"), else the number of tasks ("Hôm nay: 4 việc · 2 giờ 15 phút"), else a rest-day note.
+- headline (≤ 60 characters): the notification title. Lead with what matters most today: an exam within 14 days ("5 days to IELTS"), else the number of tasks ("Today: 4 tasks · 2h 15m"), else a rest-day note.
 - body (≤ 140 characters): the notification text — the first 2–3 tasks in the suggested order, with their time if they have one.
 - greeting (≤ 80 characters): one friendly line for the top of the card, mentioning the streak if it is ≥ 3 days.
 - focus (≤ 160 characters): the ONE thing to protect today and why, tied to the exam date, the weakest recent score versus the target band, or the overdue work.
-- tip (≤ 140 characters): one concrete IELTS micro-tip tied to one of today's tasks (e.g. for a Writing Task 2 task: "Viết dàn ý 5 phút trước khi viết — mỗi đoạn thân bài 1 ý chính + 1 ví dụ."). Not generic motivation.
+- tip (≤ 140 characters): one concrete IELTS micro-tip tied to one of today's tasks (e.g. for a Writing Task 2 task: "Spend 5 minutes on an outline first — one main idea and one example per body paragraph."). Not generic motivation.
 - order: ids of tasksToday in the order you suggest doing them — timed tasks keep their time order; put demanding skills (writing, speaking, mock) earlier in the day than review/vocabulary when untimed. Every id from tasksToday exactly once.
 - tone: "celebrate" if yesterday was fully done and there is no overdue work, "push" if the exam is ≤ 7 days away or overdue ≥ 3, else "calm".
 
-If there are overdue tasks, say how many in focus or body, gently, and suggest "Dời lịch thông minh" (the app's reschedule button). If there are no tasks today, the brief suggests the review cards due (if any) or rest.`
+If there are overdue tasks, say how many in focus or body, gently, and suggest "Smart reschedule" (the app's reschedule button). If there are no tasks today, the brief suggests the review cards due (if any) or rest.`
 
 const BRIEF_SCHEMA = {
   type: 'object',
@@ -273,17 +273,17 @@ export function templateBrief(facts: BriefFacts, day: string, now = new Date()):
   const total = tasks.reduce((sum, t) => sum + (t.durationMin || 0), 0)
   const exam = facts.events.find((e) => e.kind === 'exam' && e.daysLeft <= 14)
   const headline = exam
-    ? `Còn ${exam.daysLeft} ngày đến ${exam.title}`
+    ? `${exam.daysLeft} ${exam.daysLeft === 1 ? 'day' : 'days'} to ${exam.title}`
     : tasks.length
-      ? `Hôm nay: ${tasks.length} việc${total ? ` · ${formatMinutes(total)}` : ''}`
-      : 'Hôm nay chưa có kế hoạch'
+      ? `Today: ${tasks.length} ${tasks.length === 1 ? 'task' : 'tasks'}${total ? ` · ${formatMinutes(total)}` : ''}`
+      : 'Nothing planned today'
   const first = tasks.slice(0, 3).map((t) => (t.time ? `${t.time} ${t.title}` : t.title))
-  if (facts.overdue.length) first.push(`${facts.overdue.length} việc quá hạn`)
+  if (facts.overdue.length) first.push(`${facts.overdue.length} overdue`)
   return {
     day,
     headline: cut(headline, 60),
-    body: cut(first.join(' · ') || (facts.review.due ? `${facts.review.due} thẻ cần ôn hôm nay` : 'Nghỉ ngơi hoặc ôn nhẹ vài thẻ.'), 140),
-    greeting: 'Chào buổi sáng',
+    body: cut(first.join(' · ') || (facts.review.due ? `${facts.review.due} cards due today` : 'Rest, or review a few cards.'), 140),
+    greeting: 'Good morning',
     focus: '',
     tip: '',
     order: tasks.map((t) => t.id),
@@ -303,7 +303,7 @@ export function validateBrief(raw: Record<string, unknown>, facts: BriefFacts, d
     day,
     headline: cut(raw.headline, 60) || templateBrief(facts, day, now).headline,
     body: cut(raw.body, 140),
-    greeting: cut(raw.greeting, 80) || 'Chào buổi sáng',
+    greeting: cut(raw.greeting, 80) || 'Good morning',
     focus: cut(raw.focus, 160),
     tip: cut(raw.tip, 140),
     order,
@@ -364,8 +364,8 @@ RULES
 5. Tasks with skill work, personal or other are not study: their minutes do not count against capacity, never drop them, and rules 2–4 do not apply to them; move them to the soonest sensible day, keeping their time.
 6. Spread the work: at most one moved task of the same skill per day when possible. Prefer today only for short tasks (≤ 30 min) when today has room.
 7. time: keep the task's original time if it had one and that slot is free; otherwise "" (any time).
-8. reason: ≤ 80 characters, Vietnamese, concrete ("T2 còn trống 60 phút, làm trước buổi học thứ 3").
-9. summary: ≤ 160 characters, Vietnamese — what moved where and what was dropped, in one or two sentences.`
+8. reason: ≤ 80 characters, English, concrete ("Monday has 60 free minutes, before Tuesday's class").
+9. summary: ≤ 160 characters, English — what moved where and what was dropped, in one or two sentences.`
 
 const RESCHEDULE_SCHEMA = {
   type: 'object',
@@ -437,7 +437,7 @@ export function validateReschedule(
     const need = isStudySkill(task.skill) ? (task.durationMin ?? 30) : 0
     const day = days.find((d) => used[d] + need <= capacityOf(doc, d)) ?? today
     used[day] += need
-    moves.push({ taskId: task.id, date: day, time: '', reason: 'Tự động: ngày còn trống' })
+    moves.push({ taskId: task.id, date: day, time: '', reason: 'Auto: first day with room' })
   }
   return { moves, drop, summary: cut(raw.summary, 160) }
 }
@@ -446,7 +446,7 @@ export async function proposeReschedule(ctx: PlannerCtx, now = new Date()): Prom
   const doc = await readPlanner(ctx)
   const today = vnDay(now)
   const { overdue, input } = rescheduleInput(doc, today)
-  if (!overdue.length) return { moves: [], drop: [], summary: 'Không có việc quá hạn.', tasks: [], raw: null, ms: 0 }
+  if (!overdue.length) return { moves: [], drop: [], summary: 'No overdue tasks.', tasks: [], raw: null, ms: 0 }
   const prompt = `CALENDAR:\n${calendarTable(today)}\n\nINPUT:\n${JSON.stringify(input, null, 2)}`
   const { value, ms } = await callAi<Record<string, unknown>>('planner-reschedule', RESCHEDULE_SYSTEM, prompt, RESCHEDULE_SCHEMA, PLAN_EFFORT())
   return { ...validateReschedule(value ?? {}, doc, today), tasks: overdue, raw: value, ms }
@@ -460,14 +460,14 @@ INPUT: the 7 dates of the week (CALENDAR), minutes available per date, target ba
 
 RULES
 1. Total minutes per date ≤ the minutes available minus what is already planned. A date with 0 available gets nothing.
-2. If flashcards are due on a date, add one review task first that day: title "Ôn thẻ (~N thẻ)", skill review, 10–20 min (≈ 1 min per 3 cards, min 10, max 30).
+2. If flashcards are due on a date, add one review task first that day: title "Flashcard review (~N cards)", skill review, 10–20 min (≈ 1 min per 3 cards, min 10, max 30).
 3. Balance toward the weaker skill: if one of Writing/Speaking is ≥ 0.5 below the target, give it about twice the time of the other productive skill. Unknown bands → balance evenly.
 4. If the exam is ≤ 42 days away, include one full mock test (skill mock, 150–180 min) on the date with the most time, and nothing heavy the day after it.
 5. If the exam falls inside the week: the last 2 days before it only light review and one speaking warm-up; nothing on the exam day.
-6. Tasks are concrete and doable in one sitting: "Writing Task 2: dàn ý + viết 1 bài (đề về môi trường) rồi chấm", "Speaking Part 2: 3 đề, ghi âm & chấm", "Listening: Cambridge 18 Test 1, chép chính tả Section 3". Titles ≤ 70 characters, Vietnamese with English IELTS terms.
+6. Tasks are concrete and doable in one sitting: "Writing Task 2: outline + write 1 essay (environment topic), then get it scored", "Speaking Part 2: 3 cue cards, record & score", "Listening: Cambridge 18 Test 1, dictation of Section 3". Titles ≤ 70 characters, in English.
 7. Each task 15–90 minutes (mock up to 180). time: "" unless the learner's focus note asks for times.
 8. Follow the focus note when it is reasonable.
-9. why: ≤ 80 characters, Vietnamese, why this task is here. summary: ≤ 200 characters, Vietnamese, the shape of the week.`
+9. why: ≤ 80 characters, English, why this task is here. summary: ≤ 200 characters, English, the shape of the week.`
 
 const WEEK_DRAFT_SCHEMA = {
   type: 'object',
@@ -542,7 +542,7 @@ export async function draftInput(ctx: PlannerCtx, doc: PlannerDoc, start: string
   return {
     week: days.map((date) => ({
       date,
-      weekday: viWeekday(date),
+      weekday: enWeekday(date),
       availableMinutes: opts.minutesPerDay?.[isoWeekday(date) - 1] ?? capacityOf(doc, date),
       plannedMinutes: planned[date],
       reviewDue: dueOn(date),
@@ -564,7 +564,7 @@ export async function draftWeek(
   const today = vnDay(now)
   const doc = await readPlanner(ctx)
   const input = await draftInput(ctx, doc, start, opts)
-  if (!input.week.length) throw new ApiError(400, 'Tuần này đã qua.')
+  if (!input.week.length) throw new ApiError(400, 'This week is already over.')
   const prompt = `CALENDAR:\n${calendarTable(today)}\n\nINPUT:\n${JSON.stringify(input, null, 2)}`
   const { value, ms } = await callAi<Record<string, unknown>>('planner-week-draft', WEEK_DRAFT_SYSTEM, prompt, WEEK_DRAFT_SCHEMA, PLAN_EFFORT())
   return { ...validateWeekDraft(value ?? {}, input, today), raw: value, ms, input }

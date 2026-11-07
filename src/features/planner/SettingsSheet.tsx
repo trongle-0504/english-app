@@ -6,7 +6,7 @@ import { EnablePushCard } from './EnablePushCard'
 import { inputClass, Sheet } from './Sheet'
 import { showToast } from './toast'
 
-const WEEKDAYS = ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN']
+const WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 const BANDS = [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9]
 
 export function SettingsSheet({ open, onOpenChange, settings, onSaved }: { open: boolean; onOpenChange: (open: boolean) => void; settings: PlannerSettings; onSaved: (s: PlannerSettings) => void }) {
@@ -27,7 +27,7 @@ export function SettingsSheet({ open, onOpenChange, settings, onSaved }: { open:
     try {
       const saved = await api.saveSettings({ ...draft, targetBand: draft.targetBand ?? null })
       onSaved(saved)
-      showToast('Đã lưu cài đặt.')
+      showToast('Settings saved.')
       onOpenChange(false)
     } catch (err) {
       showToast((err as Error).message)
@@ -40,10 +40,10 @@ export function SettingsSheet({ open, onOpenChange, settings, onSaved }: { open:
     <Sheet
       open={open}
       onOpenChange={onOpenChange}
-      title="Cài đặt Planner"
+      title="Planner settings"
       footer={
         <Button onClick={() => void save()} loading={busy}>
-          Lưu
+          Save
         </Button>
       }
     >
@@ -51,12 +51,12 @@ export function SettingsSheet({ open, onOpenChange, settings, onSaved }: { open:
         <EnablePushCard onChange={() => void api.pushDevices().then(setDevices).catch(() => {})} />
         {devices.length ? (
           <div className="text-sm">
-            <p className="mb-1 text-xs font-semibold tracking-wide text-slate-500 uppercase">Thiết bị nhận thông báo</p>
+            <p className="mb-1 text-xs font-semibold tracking-wide text-slate-500 uppercase">Devices getting notifications</p>
             <ul className="divide-y divide-slate-100 dark:divide-slate-800">
               {devices.map((d) => (
                 <li key={d.endpointTail} className="flex justify-between py-2">
                   <span>{d.device}</span>
-                  <span className="text-xs text-slate-500">{d.lastOkAt ? `gửi được lần cuối ${new Date(d.lastOkAt).toLocaleString('vi-VN')}` : 'chưa gửi lần nào'}</span>
+                  <span className="text-xs text-slate-500">{d.lastOkAt ? `last delivered ${new Date(d.lastOkAt).toLocaleString('en-GB')}` : 'nothing delivered yet'}</span>
                 </li>
               ))}
             </ul>
@@ -64,28 +64,28 @@ export function SettingsSheet({ open, onOpenChange, settings, onSaved }: { open:
         ) : null}
 
         <div className="grid grid-cols-2 gap-3">
-          <TimeField label="Tóm tắt buổi sáng" value={draft.morningTime} onChange={(v) => set('morningTime', v)} />
-          <TimeField label="Tổng kết buổi tối" value={draft.eveningTime} onChange={(v) => set('eveningTime', v)} />
-          <TimeField label="Yên lặng từ" value={draft.quietStart} onChange={(v) => set('quietStart', v)} />
-          <TimeField label="đến" value={draft.quietEnd} onChange={(v) => set('quietEnd', v)} />
+          <TimeField label="Morning brief" value={draft.morningTime} onChange={(v) => set('morningTime', v)} />
+          <TimeField label="Evening wrap-up" value={draft.eveningTime} onChange={(v) => set('eveningTime', v)} />
+          <TimeField label="Quiet from" value={draft.quietStart} onChange={(v) => set('quietStart', v)} />
+          <TimeField label="until" value={draft.quietEnd} onChange={(v) => set('quietEnd', v)} />
         </div>
 
         <div className="divide-y divide-slate-100 dark:divide-slate-800">
           <Toggle checked={draft.taskReminders} onChange={(v) => set('taskReminders', v)}>
-            Nhắc theo giờ của từng việc
+            Remind me at each task’s time
           </Toggle>
           <Toggle checked={draft.overdueDigest} onChange={(v) => set('overdueDigest', v)}>
-            Tổng kết buổi tối (việc chưa xong)
+            Evening wrap-up (unfinished tasks)
           </Toggle>
           <Toggle checked={draft.aiBrief} onChange={(v) => set('aiBrief', v)}>
-            Tóm tắt buổi sáng bằng AI
+            AI morning brief
           </Toggle>
         </div>
 
         <label className="block space-y-1.5">
-          <span className="text-xs font-semibold tracking-wide text-slate-500 uppercase">Band mục tiêu</span>
+          <span className="text-xs font-semibold tracking-wide text-slate-500 uppercase">Target band</span>
           <select className={inputClass} value={draft.targetBand ?? ''} onChange={(e) => set('targetBand', e.target.value ? Number(e.target.value) : undefined)}>
-            <option value="">Chưa đặt</option>
+            <option value="">Not set</option>
             {BANDS.map((b) => (
               <option key={b} value={b}>
                 {b.toFixed(1)}
@@ -95,7 +95,7 @@ export function SettingsSheet({ open, onOpenChange, settings, onSaved }: { open:
         </label>
 
         <div>
-          <p className="mb-2 text-xs font-semibold tracking-wide text-slate-500 uppercase">Số phút học mỗi ngày (cho AI)</p>
+          <p className="mb-2 text-xs font-semibold tracking-wide text-slate-500 uppercase">Study minutes per day (for the AI)</p>
           <div className="grid grid-cols-7 gap-1.5">
             {WEEKDAYS.map((label, i) => (
               <label key={label} className="space-y-1 text-center">
