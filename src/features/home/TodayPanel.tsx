@@ -1,6 +1,6 @@
 // The home page's "today", drawn on the hero photo: date, exam countdown, week progress, the AI brief,
 // today's tasks (solid card for legibility), overdue work, next events and a quick-add bar.
-import { ArrowRight, Bell, CalendarClock, CalendarPlus, ChevronDown, Repeat, Sparkles, TriangleAlert, WifiOff } from 'lucide-react'
+import { ArrowRight, Bell, CalendarClock, CalendarPlus, Check, ChevronDown, Play, Repeat, Sparkles, TriangleAlert, WifiOff } from 'lucide-react'
 import { useEffect, useState, type ReactNode } from 'react'
 import { Link, useNavigate } from 'react-router'
 import { Skeleton } from '@/components/ui'
@@ -75,6 +75,22 @@ export function TodayPanel() {
       .catch(() => {})
       .finally(() => setBriefBusy(false))
   }, [home, offline, reload])
+
+  // Stale brief (the plan or the part of the day changed): rewrite it quietly after the changes settle. The old card
+  // stays until the new one arrives.
+  const briefStale = Boolean(home?.briefStale && home.settings.aiBrief && !offline)
+  useEffect(() => {
+    if (!briefStale) return
+    const timer = setTimeout(() => {
+      setBriefBusy(true)
+      api
+        .generateBrief(false, true)
+        .then(() => reload())
+        .catch(() => {})
+        .finally(() => setBriefBusy(false))
+    }, 8000)
+    return () => clearTimeout(timer)
+  }, [briefStale, home?.brief?.stateKey, reload])
 
   const makeBrief = async () => {
     setBriefBusy(true)
@@ -172,20 +188,9 @@ export function TodayPanel() {
             </Link>
           </div>
 
-          {/* 3. AI brief */}
+          {/* 3. AI brief: the focus line, the tip on expand, one action for the focus task. */}
           {home?.brief && (home.brief.focus || home.brief.tip || home.brief.body) ? (
-            <div className={cn(glass, 'rounded-2xl p-3.5')}>
-              <p className="flex items-center gap-1.5 text-xs font-bold tracking-wide text-white/80 uppercase">
-                <Sparkles className="size-3.5" /> Today’s focus
-              </p>
-              <div className={cn('mt-1.5 space-y-1 text-sm leading-relaxed text-white/95', !briefOpen && 'line-clamp-2')}>
-                <p>{home.brief.focus || home.brief.body}</p>
-                {home.brief.tip ? <p className="text-white/80">💡 {home.brief.tip}</p> : null}
-              </div>
-              <button type="button" onClick={() => setBriefOpen((o) => !o)} className="mt-1 inline-flex min-h-8 items-center gap-1 text-xs font-semibold text-white/80">
-                {briefOpen ? 'Less' : 'More'} <ChevronDown className={cn('size-3.5 transition-transform', briefOpen && 'rotate-180')} />
-              </button>
-            </div>
+            <BriefCard home={home} open={briefOpen} onOpenChange={setBriefOpen} busy={briefBusy} onToggle={toggle} />
           ) : home && !offline ? (
             <button type="button" onClick={() => void makeBrief()} disabled={briefBusy} className={cn(glass, 'flex min-h-12 w-full items-center gap-2 rounded-2xl px-3.5 text-left text-sm font-semibold')}>
               <Sparkles className={cn('size-4', briefBusy && 'animate-pulse')} />
@@ -383,6 +388,53 @@ function OverdueBanner({
           All to today
         </button>
       </div>
+    </div>
+  )
+}
+
+/** The AI card: "Today’s focus", the focus line (tip when expanded), and Start (study task) or Done (other task). */
+function BriefCard({
+  home,
+  open,
+  onOpenChange,
+  busy,
+  onToggle,
+}: {
+  home: PlannerHome
+  open: boolean
+  onOpenChange: (open: boolean) => void
+  busy: boolean
+  onToggle: ReturnType<typeof usePlannerHome>['toggle']
+}) {
+  const brief = home.brief!
+  const task = home.tasks.find((t) => t.id === brief.focusTaskId && !t.doneAt)
+  const hasMore = Boolean(brief.tip)
+  const action = 'inline-flex min-h-8 items-center gap-1 rounded-full bg-white/90 px-3 text-xs font-bold text-slate-900 transition hover:bg-white'
+  return (
+    <div className={cn(glass, 'rounded-2xl p-3.5')}>
+      <p className="flex items-center gap-1.5 text-xs font-bold tracking-wide text-white/80 uppercase">
+        <Sparkles className={cn('size-3.5', busy && 'animate-pulse')} /> Today’s focus
+      </p>
+      <p className="mt-1.5 text-sm leading-relaxed text-white/95">{brief.focus || brief.body}</p>
+      {open && brief.tip ? <p className="mt-1 text-sm leading-relaxed text-white/80">💡 {brief.tip}</p> : null}
+      {task || hasMore ? (
+        <div className="mt-2 flex items-center gap-2">
+          {task?.link ? (
+            <Link to={task.link} className={action}>
+              <Play className="size-3.5 fill-current" /> Start
+            </Link>
+          ) : task ? (
+            <button type="button" onClick={() => onToggle(task, true)} className={action}>
+              <Check className="size-3.5" strokeWidth={3} /> Done
+            </button>
+          ) : null}
+          {hasMore ? (
+            <button type="button" onClick={() => onOpenChange(!open)} className="ml-auto inline-flex min-h-8 items-center gap-1 text-xs font-semibold text-white/80">
+              {open ? 'Less' : 'Tip'} <ChevronDown className={cn('size-3.5 transition-transform', open && 'rotate-180')} />
+            </button>
+          ) : null}
+        </div>
+      ) : null}
     </div>
   )
 }

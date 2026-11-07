@@ -7,7 +7,7 @@ import { readLog, readState } from '../review/progress.ts'
 import { computeStats } from '../review/stats.ts'
 import { talkReviews, writingReviews } from '../practice/works.ts'
 import { isStudySkill, type PlannerBrief, type PlannerDoc, type PlannerHome, type PlannerTask } from '../../src/types/planner.ts'
-import { addDays, daysBetween, enWeekday, vnDay, weekDays, weekStart } from '../../src/features/planner/dates.ts'
+import { addDays, daysBetween, enWeekday, vnDay, vnTime, weekDays, weekStart } from '../../src/features/planner/dates.ts'
 import { eventsAhead, overdueTasks, plannerDir, readPlanner, tasksForDay, updatePlanner, type PlannerCtx } from './store.ts'
 
 export interface ReviewSummary {
@@ -96,6 +96,7 @@ export async function buildHome(ctx: PlannerCtx, now = new Date()): Promise<Plan
   const doc = await applyAutoTick(ctx, await readPlanner(ctx), review, now)
   const events = eventsAhead(doc, today, 30)
   const countdown = eventsAhead(doc, today, 365).find((e) => e.countdown) ?? null
+  const brief = await readBrief(ctx, today).catch(() => null)
   return {
     day: today,
     now: now.toISOString(),
@@ -104,7 +105,8 @@ export async function buildHome(ctx: PlannerCtx, now = new Date()): Promise<Plan
     events: events.slice(0, 5),
     countdown,
     review: { due: review.due, streak: review.streak, reviewedToday: review.reviewedToday },
-    brief: await readBrief(ctx, today).catch(() => null),
+    brief,
+    briefStale: Boolean(brief && brief.stateKey !== briefStateKey(doc, now)),
     weekProgress: weekProgress(doc, today),
     settings: doc.settings,
   }
@@ -114,7 +116,13 @@ export async function buildHome(ctx: PlannerCtx, now = new Date()): Promise<Plan
 
 export interface BriefFacts {
   today: string
+  /** VN wall clock, HH:mm, and the part of the day it falls in. */
+  now: string
+  partOfDay: PartOfDay
+  /** Open tasks of today (the ones still to do). */
   tasksToday: { id: string; title: string; time: string; durationMin: number; skill: string }[]
+  /** Tasks of today already ticked. */
+  doneToday: { title: string; skill: string }[]
   overdue: { id: string; title: string; daysLate: number; skill: string }[]
   events: { title: string; kind: string; date: string; time: string; daysLeft: number }[]
   review: { due: number; streak: number }
@@ -123,15 +131,44 @@ export interface BriefFacts {
   targetBand: number | null
 }
 
+export type PartOfDay = 'morning' | 'afternoon' | 'evening'
+
+/** Before 12:00 morning, before 17:00 afternoon, then evening. */
+export function partOfDay(time: string): PartOfDay {
+  return time < '12:00' ? 'morning' : time < '17:00' ? 'afternoon' : 'evening'
+}
+
+/**
+ * What the brief depends on: the part of the day, today's open tasks (with their times) and the overdue ones. Ticking,
+ * adding, moving or retiming a task, or crossing 12:00 / 17:00, changes the key. Pure (tested).
+ */
+export function briefStateKey(doc: PlannerDoc, now = new Date()): string {
+  const today = vnDay(now)
+  const open = tasksForDay(doc, today)
+    .filter((t) => !t.doneAt)
+    .map((t) => `${t.id}@${t.time ?? ''}`)
+    .sort()
+  const late = overdueTasks(doc, today)
+    .map((t) => t.id)
+    .sort()
+  return `${partOfDay(vnTime(now))}|${open.join(',')}|${late.join(',')}`
+}
+
 export async function briefFacts(ctx: PlannerCtx, doc: PlannerDoc, now = new Date()): Promise<BriefFacts> {
   const today = vnDay(now)
   const review = await reviewSummary(ctx, now)
   const yesterday = doc.tasks.filter((t) => t.date === addDays(today, -1))
+  const time = vnTime(now)
   return {
     today: `${today} (${enWeekday(today)})`,
+    now: time,
+    partOfDay: partOfDay(time),
     tasksToday: tasksForDay(doc, today)
       .filter((t) => !t.doneAt)
       .map((t) => ({ id: t.id, title: t.title, time: t.time ?? '', durationMin: t.durationMin ?? 0, skill: t.skill })),
+    doneToday: tasksForDay(doc, today)
+      .filter((t) => t.doneAt)
+      .map((t) => ({ title: t.title, skill: t.skill })),
     overdue: overdueTasks(doc, today).map((t) => ({ id: t.id, title: t.title, daysLate: daysBetween(t.date, today), skill: t.skill })),
     events: eventsAhead(doc, today, 14).map((e) => ({ title: e.title, kind: e.kind, date: e.date, time: e.time ?? '', daysLeft: e.daysLeft })),
     review: { due: review.due, streak: review.streak },

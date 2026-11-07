@@ -33,7 +33,7 @@ import {
   weekStart,
 } from '../../src/features/planner/dates.ts'
 import { SKILL_LINKS } from '../../src/features/planner/skills.ts'
-import { briefFacts, capacityOf, latestScores, plannedMinutes, readBrief, reviewSummary, saveBrief, type BriefFacts } from './context.ts'
+import { briefFacts, briefStateKey, capacityOf, latestScores, plannedMinutes, readBrief, reviewSummary, saveBrief, type BriefFacts } from './context.ts'
 import { eventsAhead, overdueTasks, readPlanner, tasksForDay, type PlannerCtx } from './store.ts'
 
 const MODEL = () => process.env.PLANNER_ANTIGRAVITY_MODEL || 'gemini-3.8-flash' // no effort suffix
@@ -238,7 +238,9 @@ export async function quickAdd(text: string, opts: { now?: Date } = {}): Promise
 
 /* ───────────── 4.2 Morning brief ───────────── */
 
-export const BRIEF_SYSTEM = `You write the morning brief of an IELTS study planner app, in English, for one learner (a Vietnamese learner of English: plain, natural English). It appears as a phone notification and as a card on the home screen. Style: calm, warm and concise, like the daily summary of a premium phone assistant — no hype, no exclamation chains, at most one emoji in the whole brief (optional).
+export const BRIEF_SYSTEM = `You write today's brief of an IELTS study planner app, in English, for one learner (a Vietnamese learner of English: plain, natural English). It is written in the morning (phone notification + a small card on the home screen) and rewritten during the day when the plan changes or the part of the day changes, so it must fit the moment given by "now" and "partOfDay".
+
+The card is small: the focus line is what the learner reads; the tip shows only when they expand the card. Keep both short and specific. Style: calm, warm and concise, like the daily summary of a premium phone assistant — no hype, no exclamation chains, at most one emoji in the whole brief (optional).
 
 Use ONLY the facts in the JSON. Never invent tasks, numbers, dates or scores. If a list is empty, do not mention it.
 
@@ -246,8 +248,9 @@ Write:
 - headline (≤ 60 characters): the notification title. Lead with what matters most today: an exam within 14 days ("5 days to IELTS"), else the number of tasks ("Today: 4 tasks · 2h 15m"), else a rest-day note.
 - body (≤ 140 characters): the notification text — the first 2–3 tasks in the suggested order, with their time if they have one.
 - greeting (≤ 80 characters): one friendly line for the top of the card, mentioning the streak if it is ≥ 3 days.
-- focus (≤ 160 characters): the ONE thing to protect today and why, tied to the exam date, the weakest recent score versus the target band, or the overdue work.
-- tip (≤ 140 characters): one concrete IELTS micro-tip tied to one of today's tasks (e.g. for a Writing Task 2 task: "Spend 5 minutes on an outline first — one main idea and one example per body paragraph."). Not generic motivation.
+- focus (≤ 160 characters): the ONE thing to do next and why, tied to the exam date, the weakest recent score versus the target band, or the overdue work. Write it for "now": never present a time that has already passed as still ahead ("at 19:00" when now is 21:10); a timed task whose time has passed is simply still open. Morning: what to protect today. Afternoon: what to get done before evening. Evening: the one thing still worth doing tonight, or — if tasksToday is empty — a short note on what was done (doneToday) and rest or a few review cards.
+- focusTaskId: the id from tasksToday that the focus is about, or "" when the focus is not one of them (overdue work, rest, review cards).
+- tip (≤ 140 characters): one concrete IELTS micro-tip tied to the focus task (or another study task in tasksToday); "" when no study task is open (e.g. for a Writing Task 2 task: "Spend 5 minutes on an outline first — one main idea and one example per body paragraph."). Not generic motivation.
 - order: ids of tasksToday in the order you suggest doing them — timed tasks keep their time order; put demanding skills (writing, speaking, mock) earlier in the day than review/vocabulary when untimed. Every id from tasksToday exactly once.
 - tone: "celebrate" if yesterday was fully done and there is no overdue work, "push" if the exam is ≤ 7 days away or overdue ≥ 3, else "calm".
 
@@ -260,11 +263,12 @@ const BRIEF_SCHEMA = {
     body: { type: 'string' },
     greeting: { type: 'string' },
     focus: { type: 'string' },
+    focusTaskId: { type: 'string' },
     tip: { type: 'string' },
     order: { type: 'array', items: { type: 'string' } },
     tone: { type: 'string', enum: ['calm', 'push', 'celebrate'] },
   },
-  required: ['headline', 'body', 'greeting', 'focus', 'tip', 'order', 'tone'],
+  required: ['headline', 'body', 'greeting', 'focus', 'focusTaskId', 'tip', 'order', 'tone'],
 }
 
 /** No AI: the brief from the facts alone. */
@@ -288,6 +292,8 @@ export function templateBrief(facts: BriefFacts, day: string, now = new Date()):
     tip: '',
     order: tasks.map((t) => t.id),
     tone: 'calm',
+    // The next open task: the first timed one not yet passed, else the first open one.
+    focusTaskId: (tasks.find((t) => t.time && t.time >= facts.now) ?? tasks[0])?.id ?? '',
     source: 'template',
     createdAt: now.toISOString(),
   }
@@ -308,6 +314,7 @@ export function validateBrief(raw: Record<string, unknown>, facts: BriefFacts, d
     tip: cut(raw.tip, 140),
     order,
     tone,
+    focusTaskId: ids.includes(raw.focusTaskId as string) ? (raw.focusTaskId as string) : '',
     source: 'ai',
     createdAt: now.toISOString(),
   }
@@ -316,7 +323,8 @@ export function validateBrief(raw: Record<string, unknown>, facts: BriefFacts, d
 export async function generateBrief(ctx: PlannerCtx, day: string, now = new Date()): Promise<{ brief: PlannerBrief; raw?: unknown; ms?: number }> {
   const doc = await readPlanner(ctx)
   const facts = await briefFacts(ctx, doc, now)
-  if (!doc.settings.aiBrief || !antigravityAvailable()) return { brief: templateBrief(facts, day, now) }
+  const stateKey = briefStateKey(doc, now)
+  if (!doc.settings.aiBrief || !antigravityAvailable()) return { brief: { ...templateBrief(facts, day, now), stateKey } }
   try {
     // Capped at 90 s: after that the template is saved and sent.
     const timeout = new Promise<never>((_, reject) => setTimeout(() => reject(new Error('timed out after 90 s')), 90_000).unref?.())
@@ -324,23 +332,34 @@ export async function generateBrief(ctx: PlannerCtx, day: string, now = new Date
       callAi<Record<string, unknown>>('planner-brief', BRIEF_SYSTEM, `FACTS:\n${JSON.stringify(facts, null, 2)}`, BRIEF_SCHEMA, FAST_EFFORT()),
       timeout,
     ])
-    return { brief: validateBrief(value ?? {}, facts, day, now), raw: value, ms }
+    return { brief: { ...validateBrief(value ?? {}, facts, day, now), stateKey }, raw: value, ms }
   } catch (error) {
     console.warn('[planner] brief fell back to the template:', (error as Error).message)
-    return { brief: templateBrief(facts, day, now) }
+    return { brief: { ...templateBrief(facts, day, now), stateKey } }
   }
 }
 
 const inFlight = new Map<string, Promise<PlannerBrief>>()
 
-/** Today's brief: the cached one unless `force`; one generation at a time per day. */
-export function ensureBrief(ctx: PlannerCtx, day: string, opts: { now?: Date; force?: boolean } = {}): Promise<PlannerBrief> {
+/** A stale brief is rewritten at most this often, so ticking tasks in a row does not call the AI each time. */
+const REFRESH_GAP_MS = 3 * 60_000
+
+/**
+ * Today's brief: the cached one unless `force`, or unless `refresh` and the plan moved on since it was written (see
+ * briefStateKey) and it is older than REFRESH_GAP_MS. One generation at a time per day.
+ */
+export function ensureBrief(ctx: PlannerCtx, day: string, opts: { now?: Date; force?: boolean; refresh?: boolean } = {}): Promise<PlannerBrief> {
   const running = inFlight.get(day)
   if (running) return running
   const job = (async () => {
     if (!opts.force) {
       const cached = await readBrief(ctx, day).catch(() => null)
-      if (cached) return cached
+      if (cached && !opts.refresh) return cached
+      if (cached) {
+        const now = opts.now ?? new Date()
+        const fresh = cached.stateKey === briefStateKey(await readPlanner(ctx), now)
+        if (fresh || now.getTime() - Date.parse(cached.createdAt) < REFRESH_GAP_MS) return cached
+      }
     }
     const { brief } = await generateBrief(ctx, day, opts.now)
     await saveBrief(ctx, brief)

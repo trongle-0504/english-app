@@ -138,6 +138,8 @@ export interface PlannerHome {
   review: { due: number; streak: number; reviewedToday: number }
   /** Today's cached brief, null if not generated yet. */
   brief: PlannerBrief | null
+  /** The brief was written for another part of the day or another set of open tasks: refresh it in the background. */
+  briefStale: boolean
   /** Tasks of the current Mon–Sun week. */
   weekProgress: { done: number; total: number }
   settings: PlannerSettings
@@ -152,6 +154,10 @@ export interface PlannerBrief {
   tip: string
   order: string[]
   tone: 'calm' | 'push' | 'celebrate'
+  /** The open task of today the focus is about ("" = none): the card's Start / Done button. */
+  focusTaskId?: string
+  /** briefStateKey() when it was written; a different key now means the brief is stale. */
+  stateKey?: string
   /** 'ai' or 'template' (AI off/failed). */
   source: 'ai' | 'template'
   createdAt: string

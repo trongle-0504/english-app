@@ -58,7 +58,8 @@ export const copyWeek = async (from: string, to: string) => (await post<{ added:
 /** targetBand: null clears it. */
 export const saveSettings = async (patch: Partial<Omit<PlannerSettings, 'targetBand'>> & { targetBand?: number | null }) => (await put<{ settings: PlannerSettings }>('/settings', patch)).settings
 export const quickAdd = (text: string) => post<{ items: QuickAddItem[]; unparsed: string }>('/quick-add', { text })
-export const generateBrief = async (force = false) => (await post<{ brief: PlannerBrief }>('/brief', { force })).brief
+/** force: always rewrite. refresh: rewrite only if the plan moved on since the cached one (the server decides). */
+export const generateBrief = async (force = false, refresh = false) => (await post<{ brief: PlannerBrief }>('/brief', { force, refresh })).brief
 export const proposeReschedule = () => post<RescheduleProposal>('/reschedule')
 export const applyReschedule = (moves: { taskId: string; date: string; time?: string }[], drop: string[]) =>
   post<{ moved: number; dropped: number }>('/reschedule/apply', { moves, drop })

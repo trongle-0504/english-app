@@ -255,7 +255,8 @@ export const plannerRoutes: Record<string, ApiHandler> = {
 
   'POST /planner/brief': async (req, ctx) => {
     const force = isObject(req.body) && req.body.force === true
-    return { json: { brief: await ensureBrief(ctx, vnDay(), { force }) } }
+    const refresh = isObject(req.body) && req.body.refresh === true
+    return { json: { brief: await ensureBrief(ctx, vnDay(), { force, refresh }) } }
   },
 
   'POST /planner/reschedule': async (_req, ctx) => {

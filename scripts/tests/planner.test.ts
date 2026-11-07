@@ -3,7 +3,7 @@ import test from 'node:test'
 import { addDays, daysLeftLabel, formatMinutes, isoWeekday, longDate, shortDateLabel, vnDay, vnTime, weekStart } from '../../src/features/planner/dates.ts'
 import { DEFAULT_SETTINGS, type PlannerDoc, type PlannerEvent, type PlannerTask } from '../../src/types/planner.ts'
 import { calendarTable, validateBrief, validateQuickAdd, validateReschedule, validateWeekDraft, type DraftWeekInput } from '../../server/planner/ai.ts'
-import { autoTickReview } from '../../server/planner/context.ts'
+import { autoTickReview, briefStateKey, partOfDay } from '../../server/planner/context.ts'
 import { eventToIcs, icsEscape } from '../../server/planner/ics.ts'
 import { dueNotifications, inQuietHours } from '../../server/planner/scheduler.ts'
 import { overdueTasks } from '../../server/planner/store.ts'
@@ -194,7 +194,10 @@ test('quick add: out-of-range dates, repeats, reminders and links', () => {
 
 test('brief: fields cut, order fixed to known ids', () => {
   const facts = {
-    today: '2026-11-07 (Thứ Bảy)',
+    today: '2026-11-07 (Saturday)',
+    now: '07:00',
+    partOfDay: 'morning' as const,
+    doneToday: [],
     tasksToday: [
       { id: 'a', title: 'A', time: '', durationMin: 30, skill: 'writing' },
       { id: 'b', title: 'B', time: '', durationMin: 30, skill: 'review' },
@@ -292,4 +295,35 @@ test('date labels are English', () => {
   assert.equal(formatMinutes(135), '2h 15m')
   assert.equal(formatMinutes(45), '45 min')
   assert.equal(daysLeftLabel(3), 'in 3 days')
+})
+
+test('brief state key: changes with ticks, new tasks, retiming, overdue and the part of the day', () => {
+  const at = (hm: string) => new Date(`2026-11-07T${hm}:00+07:00`)
+  const base = doc({ tasks: [task({ id: 'a', time: '19:00' }), task({ id: 'b' })] })
+  const key = briefStateKey(base, at('08:00'))
+  assert.equal(briefStateKey(base, at('11:59')), key)
+  assert.notEqual(briefStateKey(base, at('12:00')), key)
+  assert.notEqual(briefStateKey(doc({ tasks: [task({ id: 'a', time: '19:00', doneAt: NOW }), task({ id: 'b' })] }), at('08:00')), key)
+  assert.notEqual(briefStateKey(doc({ tasks: [task({ id: 'a', time: '20:00' }), task({ id: 'b' })] }), at('08:00')), key)
+  assert.notEqual(briefStateKey(doc({ tasks: [...base.tasks, task({ id: 'c' })] }), at('08:00')), key)
+  assert.notEqual(briefStateKey(doc({ tasks: [...base.tasks, task({ id: 'o', date: '2026-11-05' })] }), at('08:00')), key)
+  assert.deepEqual(['06:00', '12:00', '16:59', '17:00'].map(partOfDay), ['morning', 'afternoon', 'afternoon', 'evening'])
+})
+
+test('brief: focusTaskId must be an open task of today', () => {
+  const facts = {
+    today: '2026-11-07 (Saturday)',
+    now: '15:00',
+    partOfDay: 'afternoon' as const,
+    doneToday: [],
+    tasksToday: [{ id: 'a', title: 'A', time: '19:00', durationMin: 30, skill: 'writing' }],
+    overdue: [],
+    events: [],
+    review: { due: 0, streak: 0 },
+    yesterday: { done: 0, total: 0 },
+    latestScores: { writingBand: null, speakingBand: null },
+    targetBand: null,
+  }
+  assert.equal(validateBrief({ focus: 'f', focusTaskId: 'a' }, facts, '2026-11-07').focusTaskId, 'a')
+  assert.equal(validateBrief({ focus: 'f', focusTaskId: 'ghost' }, facts, '2026-11-07').focusTaskId, '')
 })
