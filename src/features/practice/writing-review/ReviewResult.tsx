@@ -37,6 +37,7 @@ import { BandRing, bandTone } from '../BandScore'
 import {
   DolHints,
   ExtraRow,
+  FlatSections,
   IdeaPanel,
   LibraryAddButtons,
   MARK,
@@ -653,7 +654,7 @@ function WritingModelAnswer({
         </div>
 
         {viewMode === 'paragraph' ? (
-          <div className="space-y-4 sm:space-y-5 rounded-2xl border border-slate-200/90 bg-white p-4.5 pt-5 sm:p-6 sm:pt-7 shadow-xs dark:border-slate-800 dark:bg-slate-900/90">
+          <div className="space-y-4 pt-2 sm:space-y-5">
             {paragraphs.map((paragraph, pIdx) => (
               <p
                 key={pIdx}
@@ -711,7 +712,7 @@ function WritingModelAnswer({
             ))}
           </div>
         ) : (
-          <ol className="divide-y divide-slate-100 rounded-xl bg-slate-50/80 px-4 dark:divide-slate-800 dark:bg-slate-800/40">
+          <ol className="divide-y divide-slate-100 dark:divide-slate-800">
             {modelEssay.sentences.map((sentence, i) => (
               <li key={i} className="flex items-baseline gap-3 py-3">
                 <Badge tone={TOOL[sentence.tool]?.tone ?? 'slate'} className="w-[6.5rem] shrink-0 justify-center">
@@ -750,7 +751,7 @@ function WritingModelAnswer({
 
       {/* User Editing Section */}
       {isEditing ? (
-        <section className="rounded-2xl border-2 border-brand-500/80 bg-white p-4 shadow-sm dark:border-brand-500/60 dark:bg-slate-900 sm:p-5">
+        <section className="border-t-2 border-brand-500/80 pt-4 dark:border-brand-500/60">
           <div className="mb-3 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <span className="flex size-7 items-center justify-center rounded-lg bg-brand-50 text-brand-600 dark:bg-brand-950/60 dark:text-brand-300">
@@ -818,6 +819,7 @@ function UpgradedTab({
     } = phraseGroups({ ...result.modelEssay, picks: result.modelEssay.picks || [], extras: result.modelEssay.extras || [] })
 
     return (
+      <FlatSections.Provider value={true}>
       <div className="space-y-6">
         <WritingModelAnswer modelEssay={result.modelEssay} reviewId={result.id} onUpdateResult={onUpdateResult} pending={result.pending} running={running} />
 
@@ -874,7 +876,7 @@ function UpgradedTab({
         ) : null}
 
         {isCustomized && (unusedPicks.length > 0 || unusedExtras.length > 0) ? (
-          <details className="group rounded-xl border border-dashed border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/30 p-4 transition">
+          <details className="group border-t border-slate-200 pt-4 dark:border-slate-800">
             <summary className="cursor-pointer text-xs font-medium text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 select-none flex items-center justify-between">
               <span>Gợi ý AI ban đầu chưa dùng trong bài sửa ({unusedPicks.length + unusedExtras.length})</span>
               <span className="text-[11px] text-slate-400 group-open:rotate-180 transition-transform">▼</span>
@@ -909,15 +911,16 @@ function UpgradedTab({
           </details>
         ) : null}
       </div>
+      </FlatSections.Provider>
     )
   }
 
   if (result.pending?.includes('modelEssay')) {
     return (
-      <Card className="flex flex-col items-center justify-center gap-3 p-8 text-center text-sm text-slate-500 dark:text-slate-400">
-        <Loader2 className="size-5 animate-spin text-brand-600 dark:text-brand-400" />
+      <div className="flex items-center gap-2 py-6 text-sm text-slate-500 dark:text-slate-400">
+        <Loader2 className="size-4 animate-spin text-brand-600 dark:text-brand-400" />
         <span>Đang viết bài mẫu theo phương pháp NeuralSymbolic…</span>
-      </Card>
+      </div>
     )
   }
 

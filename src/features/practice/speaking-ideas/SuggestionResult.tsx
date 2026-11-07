@@ -30,7 +30,7 @@ import {
   Workflow,
   type LucideIcon,
 } from 'lucide-react'
-import { useEffect, useMemo, useState, type ReactNode } from 'react'
+import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 import { Link } from 'react-router'
 import { formatIdea, type IdeaSource } from '../idea-api'
 import { Badge, Button, ButtonLink, type Tone } from '@/components/ui'
@@ -433,6 +433,16 @@ export const ICON_TONE: Record<string, string> = {
 }
 
 /** One part of a result: a titled card with an icon, a count and optional actions. */
+/**
+ * Inside a provider set to true, every Section (also the ones Structures and Wording render) drops its card frame:
+ * a divider line on top, content full width, phrase cards as plain rows. Writing review's "Bài nâng cấp" tab uses it.
+ */
+export const FlatSections = createContext(false)
+
+/** Phrase cards (ITEM) become plain rows separated by a line. */
+const FLAT_ITEMS =
+  '[&_li.rounded-xl]:rounded-none [&_li.rounded-xl]:border-0 [&_li.rounded-xl]:border-b [&_li.rounded-xl]:border-slate-100 [&_li.rounded-xl]:bg-transparent [&_li.rounded-xl]:px-0 dark:[&_li.rounded-xl]:border-slate-800'
+
 export function Section({
   icon: Icon,
   tone = 'brand',
@@ -450,9 +460,21 @@ export function Section({
   actions?: ReactNode
   children: ReactNode
 }) {
+  const flat = useContext(FlatSections)
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900">
-      <header className="flex flex-col gap-3 border-b border-slate-100 p-4 sm:px-5 sm:py-3.5 xl:flex-row xl:items-center xl:justify-between dark:border-slate-800">
+    <section
+      className={
+        flat
+          ? 'border-t border-slate-200 pt-5 dark:border-slate-800'
+          : 'rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900'
+      }
+    >
+      <header
+        className={cn(
+          'flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between',
+          flat ? 'mb-3' : 'border-b border-slate-100 p-4 sm:px-5 sm:py-3.5 dark:border-slate-800',
+        )}
+      >
         <div className="flex min-w-0 items-start gap-3">
           <span className={cn('flex size-8 shrink-0 items-center justify-center rounded-lg mt-0.5', ICON_TONE[tone])}>
             <Icon className="size-4" />
@@ -471,7 +493,7 @@ export function Section({
         </div>
         {actions ? <div className="flex shrink-0 flex-wrap items-center gap-1.5 xl:justify-end">{actions}</div> : null}
       </header>
-      <div className="p-4 sm:p-5">{children}</div>
+      <div className={flat ? FLAT_ITEMS : 'p-4 sm:p-5'}>{children}</div>
     </section>
   )
 }
