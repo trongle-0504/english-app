@@ -197,6 +197,7 @@ export function TodayPanel() {
               {briefBusy ? 'Writing today’s brief…' : 'Get today’s brief'}
             </button>
           ) : null}
+          <QuickAddBar onClick={() => setAdd({ open: true, tab: 'quick' })} className="hidden lg:flex" />
         </div>
 
         {/* 4–6. Solid card: today, overdue, events */}
@@ -223,15 +224,8 @@ export function TodayPanel() {
         </div>
       </div>
 
-      {/* 7. Quick add bar */}
-      <button
-        type="button"
-        onClick={() => setAdd({ open: true, tab: 'quick' })}
-        className={cn(glass, 'mt-3 flex min-h-12 w-full items-center gap-2 rounded-full px-4 text-left text-sm text-white/80 transition hover:bg-white/20')}
-      >
-        <Sparkles className="size-4 shrink-0" />
-        <span className="truncate">Quick add…</span>
-      </button>
+      {/* 7. Quick add bar: at the bottom on phones and tablets; from lg up it sits under the brief instead. */}
+      <QuickAddBar onClick={() => setAdd({ open: true, tab: 'quick' })} className="mt-3 lg:hidden" />
 
       <AddSheet open={add.open} onOpenChange={(open) => setAdd((a) => ({ ...a, open }))} tab={add.tab} event={add.event} onSaved={() => void reload()} />
       <ReschedulePreview open={rescheduleOpen} onOpenChange={setRescheduleOpen} onApplied={() => void reload()} />
@@ -436,5 +430,18 @@ function BriefCard({
         </div>
       ) : null}
     </div>
+  )
+}
+
+function QuickAddBar({ onClick, className }: { onClick: () => void; className?: string }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={cn(glass, 'flex min-h-12 w-full items-center gap-2 rounded-full px-4 text-left text-sm text-white/80 transition hover:bg-white/20', className)}
+    >
+      <Sparkles className="size-4 shrink-0" />
+      <span className="truncate">Quick add…</span>
+    </button>
   )
 }
