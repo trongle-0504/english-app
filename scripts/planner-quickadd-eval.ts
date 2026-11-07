@@ -24,6 +24,11 @@ interface Expect {
   noTime?: boolean
 }
 
+/** A week plan: every item's date, sorted (the note lists several weekdays). */
+interface WeekExpect {
+  dates: string[]
+}
+
 const CASES: { note: string; expect: Expect }[] = [
   { note: 'mai 8h tối luyện speaking part 2 45 phút', expect: { type: 'task', date: '2026-11-08', time: '20:00', durationMin: 45, skill: 'speaking' } },
   { note: 'thi IELTS thứ 5 tuần sau 8h sáng ở IDP', expect: { type: 'event', eventKind: 'exam', date: '2026-11-12', time: '08:00', location: /IDP/i } },
@@ -37,6 +42,20 @@ const CASES: { note: string; expect: Expect }[] = [
   { note: 'Speaking lesson with Ms. Lan next Tuesday 7pm', expect: { type: 'event', eventKind: 'class', date: '2026-11-10', time: '19:00' } },
   { note: 'đi khám răng thứ 4 lúc 9h', expect: { type: 'event', eventKind: 'appointment', date: '2026-11-11', time: '09:00' } },
   { note: 'grammar câu điều kiện 30 phút, tối mai', expect: { type: 'task', skill: 'grammar', date: '2026-11-08', time: '20:00', durationMin: 30 } },
+]
+
+// Week plans: all listed weekdays in one Mon–Sun week, never split. `now` is the VN day the note is typed.
+const WEEK_CASES: { note: string; now: string; expect: WeekExpect }[] = [
+  // Saturday: Sat and Sun are not before today → this week.
+  { note: 'Thứ 7: writing task 2 1 tiếng\nCN: speaking part 2 30p', now: '2026-11-07', expect: { dates: ['2026-11-07', '2026-11-08'] } },
+  // Saturday: Monday is before today → next week.
+  { note: 'Thứ 2: ôn thẻ 15p\nThứ 4: listening 45p\nThứ 7: mock test', now: '2026-11-07', expect: { dates: ['2026-11-09', '2026-11-11', '2026-11-14'] } },
+  // Monday: the plan starts today → this week, Monday included.
+  { note: 'Thứ 2: 7h tối writing task 2\nThứ 3: listening 45p\nThứ 5: grammar 30p\nCN: đi chợ', now: '2026-11-09', expect: { dates: ['2026-11-09', '2026-11-10', '2026-11-12', '2026-11-15'] } },
+  // Wednesday: Monday has passed → next week.
+  { note: 'Thứ 2: reading 40p\nThứ 5: speaking 30p', now: '2026-11-11', expect: { dates: ['2026-11-16', '2026-11-19'] } },
+  // A week word wins.
+  { note: 'tuần sau: Thứ 6 mock test, CN nghỉ đọc sách 30p', now: '2026-11-09', expect: { dates: ['2026-11-20', '2026-11-22'] } },
 ]
 
 function check(item: QuickAddItem | undefined, e: Expect): string[] {
@@ -84,5 +103,17 @@ for (const [n, { note, expect }] of CASES.entries()) {
     console.log(`${String(n + 1).padStart(2)} FAIL | ${note} → error: ${(error as Error).message}`)
   }
 }
+for (const [n, { note, now, expect }] of WEEK_CASES.entries()) {
+  try {
+    const { items, ms } = await quickAdd(note, { now: new Date(`${now}T10:00:00+07:00`) })
+    times.push(ms)
+    const got = items.map((i) => i.date).sort()
+    const ok = got.join(',') === expect.dates.join(',')
+    if (ok) pass++
+    console.log(`W${n + 1} ${ok ? 'PASS' : 'FAIL'} | ${ms} ms | today ${now} | ${note.replaceAll('\n', ' / ')} → ${got.join(', ')}${ok ? '' : ` | expected ${expect.dates.join(', ')}`}`)
+  } catch (error) {
+    console.log(`W${n + 1} FAIL | ${note} → error: ${(error as Error).message}`)
+  }
+}
 const sorted = [...times].sort((a, b) => a - b)
-console.log(`\n${pass}/${CASES.length} pass · ms per call: min ${sorted[0]} · median ${sorted[Math.floor(sorted.length / 2)]} · max ${sorted.at(-1)}`)
+console.log(`\n${pass}/${CASES.length + WEEK_CASES.length} pass · ms per call: min ${sorted[0]} · median ${sorted[Math.floor(sorted.length / 2)]} · max ${sorted.at(-1)}`)

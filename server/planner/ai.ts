@@ -104,6 +104,7 @@ DATES — use only the CALENDAR table below; never compute dates yourself.
 - "thứ 2…thứ 7, chủ nhật / CN / Monday…Sunday" without a week word = the NEXT such day after today (if today is that weekday, use today only when the note says "nay", e.g. "tối thứ 7 này").
 - "tuần sau / next week" + weekday = that weekday in the row marked "tuần sau". "tuần này / this week" + weekday = that weekday in the current week.
 - "cuối tuần / weekend" = the coming Saturday (today if today is Saturday or Sunday).
+- WEEK PLAN: when the note lists several weekdays as a plan ("Thứ 2: … Thứ 3: … CN: …", "Mon … Wed … Fri …") with no week word, ALL of them go in ONE Monday–Sunday week of the CALENDAR, never split across two weeks. That week is the current week ("tuần này") if none of the listed weekdays is before today's weekday (today itself counts as still ahead); otherwise it is next week ("tuần sau"). Example: today Monday, "Thứ 2 … Thứ 4 … CN …" = this week's Monday (today), Wednesday and Sunday. Today Wednesday, "Thứ 2 … Thứ 5 …" = next week's Monday and Thursday. A week word in the note ("tuần sau: Thứ 2 …") overrides this. So no date of a week plan is ever before today.
 - A date like "15/11" or "15-11" is day/month in the current year (next year if it is already past).
 - No date words at all = today.
 
