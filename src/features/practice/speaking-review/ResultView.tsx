@@ -229,9 +229,9 @@ function Corrections({ result }: { result: TalkReviewResult }) {
   if (!result.fixes.length && !result.warnings.length)
     return <p className="text-sm text-slate-600 dark:text-slate-400">Không có lỗi nào cần sửa trong những gì bạn nói.</p>
   return (
-    <div className="space-y-3">
+    <div>
       {result.fixes.map((f) => (
-        <div key={f.id} className="rounded-xl border border-slate-200 p-3.5 dark:border-slate-800">
+        <div key={f.id} className="border-b border-slate-100 py-3 last:border-b-0 dark:border-slate-800">
           <div className="mb-1.5 flex flex-wrap items-center gap-2">
             <Badge tone={FIX_TONE[f.type] ?? 'slate'}>{f.type}</Badge>
             <Badge tone={f.severity === 'improve' ? 'emerald' : 'rose'}>{f.severity === 'improve' ? 'upgrade' : 'error'}</Badge>

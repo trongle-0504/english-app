@@ -241,7 +241,7 @@ export function MockReviewAndResults({
         return (
           <section key={partNum} className="space-y-3">
             {/* Part Section Header */}
-            <div className="flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-slate-200 bg-white px-5 py-3.5 shadow-2xs dark:border-slate-800 dark:bg-slate-900">
+            <div className="flex flex-wrap items-center justify-between gap-2 border-b-2 border-slate-200 pb-3 dark:border-slate-700">
               <div className="flex items-center gap-3">
                 <span className="inline-flex items-center justify-center rounded-xl bg-sky-600 px-3 py-1 text-xs font-extrabold tracking-wider text-white uppercase">
                   Part {partNum}
@@ -330,7 +330,7 @@ function QuestionResultAccordion({
   const durationSec = recording?.durationSeconds ?? (result?.fluency?.duration ? Math.round(result.fluency.duration) : undefined)
 
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs transition dark:border-slate-800 dark:bg-slate-900">
+    <div className="border-b border-slate-100 dark:border-slate-800">
       {/* Accordion Header */}
       <div
         role="button"
@@ -342,7 +342,7 @@ function QuestionResultAccordion({
             onToggle()
           }
         }}
-        className="flex cursor-pointer flex-wrap items-center justify-between gap-3 px-5 py-4 transition hover:bg-slate-50/80 dark:hover:bg-slate-800/50"
+        className="flex cursor-pointer flex-wrap items-center justify-between gap-3 py-3.5 transition hover:bg-slate-50/80 dark:hover:bg-slate-800/50"
       >
         <div className="flex min-w-0 flex-1 items-start gap-3">
           <span
@@ -406,10 +406,10 @@ function QuestionResultAccordion({
 
       {/* Accordion Body */}
       {expanded ? (
-        <div className="border-t border-slate-100 bg-slate-50/40 p-2 sm:p-6 dark:border-slate-800 dark:bg-slate-950/30">
+        <div className="pb-5">
           {/* Cue card bullets if Part 2 */}
           {question.part === 2 && question.cueCardBullets && question.cueCardBullets.length > 0 ? (
-            <div className="mb-4 rounded-xl border border-slate-200/80 bg-white p-2 text-xs text-slate-600 sm:p-4 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300">
+            <div className="mb-4 text-xs text-slate-600 dark:text-slate-300">
               <p className="mb-1.5 font-bold text-slate-800 dark:text-slate-200">Cue Card Prompts:</p>
               <ul className="list-disc space-y-1 pl-5">
                 {question.cueCardBullets.map((b, i) => (
@@ -420,7 +420,7 @@ function QuestionResultAccordion({
           ) : null}
 
           {/* Audio Player + Re-record / Evaluate Controls */}
-          <div className="mb-5 flex flex-col items-stretch gap-3 rounded-xl border border-slate-200/80 bg-white p-3.5 sm:flex-row sm:items-center sm:justify-between dark:border-slate-800 dark:bg-slate-900">
+          <div className="mb-5 flex flex-col items-stretch gap-3 border-b border-slate-100 pb-4 sm:flex-row sm:items-center sm:justify-between dark:border-slate-800">
             {playbackUrl ? (
               <div className="flex min-w-0 flex-1 flex-col items-stretch gap-2 sm:flex-row sm:items-center sm:gap-3">
                 <span className="inline-flex shrink-0 items-center gap-1.5 text-xs font-bold text-slate-700 dark:text-slate-200">

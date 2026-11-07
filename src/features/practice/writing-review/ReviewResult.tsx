@@ -962,7 +962,7 @@ function VocabularyTab({ result }: { result: WritingReviewResult }) {
   return (
     <ul className="grid gap-3 sm:grid-cols-2">
       {items.map((fix) => (
-        <li key={fix.id} className="space-y-2 rounded-xl border border-slate-200/80 p-3.5 dark:border-slate-800">
+        <li key={fix.id} className="space-y-2 border-b border-slate-100 py-3 last:border-b-0 dark:border-slate-800">
           <div>
             <p className="font-semibold text-slate-900 dark:text-white">{fix.replacement}</p>
             <p className="text-xs text-slate-500">
@@ -999,7 +999,7 @@ function SuggestedPhrasesTab({ phrases }: { phrases?: WritingSuggestedPhrase[] }
       </p>
       <ul className="grid gap-3 sm:grid-cols-2">
         {phrases.map((item) => (
-          <li key={item.cardId || item.term} className="space-y-2 rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+          <li key={item.cardId || item.term} className="space-y-2 border-b border-slate-100 py-3 last:border-b-0 dark:border-slate-800">
             <div className="flex items-start justify-between gap-2">
               <span className="font-bold text-slate-900 dark:text-white">{item.term}</span>
               <Badge tone="slate">Kho tham khảo</Badge>

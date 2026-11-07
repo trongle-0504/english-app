@@ -434,14 +434,10 @@ export const ICON_TONE: Record<string, string> = {
 
 /** One part of a result: a titled card with an icon, a count and optional actions. */
 /**
- * Inside a provider set to true, every Section (also the ones Structures and Wording render) drops its card frame:
- * a divider line on top, content full width, phrase cards as plain rows. Writing review's "Bài nâng cấp" tab uses it.
+ * Sections are flat by default (a divider line on top, content full width) so phones show more; a provider set to false
+ * brings back the card frame.
  */
-export const FlatSections = createContext(false)
-
-/** Phrase cards (ITEM) become plain rows separated by a line. */
-const FLAT_ITEMS =
-  '[&_li.rounded-xl]:rounded-none [&_li.rounded-xl]:border-0 [&_li.rounded-xl]:border-b [&_li.rounded-xl]:border-slate-100 [&_li.rounded-xl]:bg-transparent [&_li.rounded-xl]:px-0 dark:[&_li.rounded-xl]:border-slate-800'
+export const FlatSections = createContext(true)
 
 export function Section({
   icon: Icon,
@@ -493,14 +489,13 @@ export function Section({
         </div>
         {actions ? <div className="flex shrink-0 flex-wrap items-center gap-1.5 xl:justify-end">{actions}</div> : null}
       </header>
-      <div className={flat ? FLAT_ITEMS : 'p-4 sm:p-5'}>{children}</div>
+      <div className={flat ? undefined : 'p-4 sm:p-5'}>{children}</div>
     </section>
   )
 }
 
 /** A phrase as a small card (library items, outside phrases, idea vocabulary). */
-export const ITEM =
-  'space-y-1.5 rounded-xl border border-slate-200 bg-white p-3.5 transition-colors hover:border-slate-300 dark:border-slate-700 dark:bg-slate-900 dark:hover:border-slate-600'
+export const ITEM = 'space-y-1.5 border-b border-slate-100 py-3 last:border-b-0 dark:border-slate-800'
 export const QUOTE = 'border-l-2 border-brand-300 pl-3 text-[15px] text-slate-800 italic dark:border-brand-700 dark:text-slate-100'
 export const SLOT = 'rounded-md bg-slate-100 px-1.5 py-0.5 font-mono text-xs text-slate-700 dark:bg-slate-800 dark:text-slate-300'
 
@@ -740,7 +735,7 @@ function ModelAnswer({
         </div>
         {answer.sentences?.length ? (
           viewMode === 'paragraph' ? (
-            <div className="space-y-4 sm:space-y-5 rounded-2xl border border-slate-200/90 bg-white p-2 pt-3 sm:p-6 sm:pt-7 shadow-xs dark:border-slate-800 dark:bg-slate-900/90">
+            <div className="space-y-4 pt-2 sm:space-y-5">
               {paragraphs.map((paragraph, pIdx) => (
                 <p
                   key={pIdx}
@@ -846,7 +841,7 @@ function ModelAnswer({
 
       {/* User Editing Section */}
       {isEditing ? (
-        <section className="rounded-2xl border-2 border-brand-500/80 bg-white p-2 shadow-sm dark:border-brand-500/60 dark:bg-slate-900 sm:p-5">
+        <section className="border-t-2 border-brand-500/80 pt-4 dark:border-brand-500/60">
           <div className="mb-3 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <span className="flex size-7 items-center justify-center rounded-lg bg-brand-50 text-brand-600 dark:bg-brand-950/60 dark:text-brand-300">
@@ -1426,7 +1421,7 @@ export function DolHints({ hints }: { hints: DolHint[] }) {
     <Section icon={BookOpen} tone="sky" title="Từ điển DOL (Việt → Anh)" count={hints.length} hint="Cách nói tiếng Anh của các ý tiếng Việt, AI được dặn ưu tiên">
       <ul className="grid gap-3 md:grid-cols-2">
         {hints.map((h) => (
-          <li key={h.url} className="rounded-xl border border-slate-200 px-3.5 py-2.5 text-sm dark:border-slate-800">
+          <li key={h.url} className="border-b border-slate-100 py-3 last:border-b-0 dark:border-slate-800 text-sm">
             <div className="flex items-start justify-between gap-2">
               <p className="min-w-0">
                 <span className="text-slate-500 dark:text-slate-400">{h.query}</span>
@@ -1839,7 +1834,7 @@ function AnswerView({
       ) : null}
       {answer.dol?.length ? <DolHints hints={answer.dol} /> : null}
       {isCustomized && (unusedPicks.length > 0 || unusedExtras.length > 0) ? (
-        <details className="group rounded-xl border border-dashed border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/30 p-4 transition">
+        <details className="group border-t border-slate-200 pt-4 dark:border-slate-800">
           <summary className="cursor-pointer text-xs font-medium text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 select-none flex items-center justify-between">
             <span>Gợi ý AI ban đầu chưa dùng trong bài sửa ({unusedPicks.length + unusedExtras.length})</span>
             <span className="text-[11px] text-slate-400 group-open:rotate-180 transition-transform">▼</span>
