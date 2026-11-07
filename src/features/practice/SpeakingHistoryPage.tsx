@@ -1,14 +1,19 @@
 // Practice → Speaking ideas → History: every saved suggestion, grouped by day and filtered by date. The questions are
 // listed on the left; the chosen one's model answer and full analysis fill the wide panel on the right.
-import { ArrowLeft, CalendarDays, History, Layers, Loader2, Search, Trash2 } from 'lucide-react'
-import { useEffect, useMemo, useState } from 'react'
+import { ArrowLeft, CalendarDays, History, Layers, Loader2, Mic, Search, Trash2 } from 'lucide-react'
+import { useEffect, useMemo, useRef, useState } from 'react'
+import { useSearchParams } from 'react-router'
 import { Badge, ButtonLink, Card, EmptyState, PageHeader } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import { ExportReport } from '@/features/report/ExportReport'
 import type { SpeakingHistoryItem, SpeakingPart, SpeakingResult } from '@/types/speaking'
+import type { TalkHistoryItem } from '@/types/speakingReview'
 import { speakingApi } from './speaking-ideas/api'
 import { QuestionPanel } from './speaking-ideas/SuggestionResult'
+import { groupByTopic } from './speaking-ideas/topicGroups'
 import { useAddToReview } from './speaking-ideas/useAddToReview'
+import { talkApi } from './speaking-review/api'
+import { practiceKey, practiceStats } from './speaking-review/practiceStats'
 
 type Range = 'all' | 'today' | '7d' | '30d' | 'day'
 
@@ -93,35 +98,33 @@ function DeleteButton({
   )
 }
 
-interface MergedQuestion {
-  id: string
-  index: number
-  question: string
-  createdAt: string
-  isDuplicate?: boolean
-}
-
-interface TopicGroup {
-  topicKey: string
-  topic: string
-  part: SpeakingPart
-  sessions: SpeakingHistoryItem[]
-  questions: MergedQuestion[]
-  latestCreatedAt: string
-}
-
-const normalize = (s: string) => s.trim().toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ')
-
 export default function SpeakingHistoryPage() {
+  const [searchParams] = useSearchParams()
+  const deepId = searchParams.get('id') || null
+  const rawDeepQ = searchParams.get('q')
+  const deepQ = rawDeepQ !== null && /^\d+$/.test(rawDeepQ) ? Number(rawDeepQ) : 0
+  const deepLinkHandled = useRef(false)
+
   const [range, setRange] = useState<Range>('all')
   const [day, setDay] = useState('')
   const [partFilter, setPartFilter] = useState<'all' | '1' | '2' | '3'>('all')
   const [search, setSearch] = useState('')
   const [items, setItems] = useState<SpeakingHistoryItem[] | null>(null)
+  const [talkItems, setTalkItems] = useState<TalkHistoryItem[]>([])
   const [error, setError] = useState('')
-  const [selected, setSelected] = useState<{ id: string; index: number } | null>(null)
+  const [selected, setSelected] = useState<{ id: string; index: number } | null>(() =>
+    deepId ? { id: deepId, index: deepQ } : null,
+  )
   const [results, setResults] = useState<Record<string, SpeakingResult>>({})
   const review = useAddToReview()
+  const stats = useMemo(() => practiceStats(talkItems), [talkItems])
+
+  useEffect(() => {
+    talkApi
+      .history()
+      .then((r) => setTalkItems(r.items))
+      .catch(() => {})
+  }, [])
 
   // The list for the chosen dates; the newest question is opened when nothing (still listed) is chosen.
   useEffect(() => {
@@ -129,6 +132,22 @@ export default function SpeakingHistoryPage() {
     speakingApi.history(bounds(range, day)).then(
       ({ items: next }) => {
         if (!active) return
+        if (!deepLinkHandled.current && deepId) {
+          if (!next.some((i) => i.id === deepId) && range !== 'all') {
+            setRange('all')
+            setDay('')
+            return
+          }
+          deepLinkHandled.current = true
+          setItems(next)
+          setError('')
+          if (next.some((i) => i.id === deepId)) {
+            const targetItem = next.find((i) => i.id === deepId)!
+            const clampedIdx = Math.min(deepQ, Math.max(0, targetItem.questions.length - 1))
+            setSelected({ id: deepId, index: clampedIdx })
+            return
+          }
+        }
         setItems(next)
         setError('')
         setSelected((current) => (current && next.some((i) => i.id === current.id) ? current : next[0] ? { id: next[0].id, index: 0 } : null))
@@ -138,7 +157,7 @@ export default function SpeakingHistoryPage() {
     return () => {
       active = false
     }
-  }, [range, day])
+  }, [range, day, deepId, deepQ])
 
   // The chosen suggestion's full result (kept once loaded).
   const selectedId = selected?.id
@@ -251,74 +270,8 @@ export default function SpeakingHistoryPage() {
   // Group by (topic name + part), deduplicate duplicate questions, and apply search & filters
   const topicGroups = useMemo(() => {
     if (!items) return []
-
-    // 1. Filter by Part
-    let filtered = items
-    if (partFilter !== 'all') {
-      const p = Number(partFilter) as SpeakingPart
-      filtered = filtered.filter((i) => i.part === p)
-    }
-
-    // 2. Filter by search query (topic or question text)
-    const q = search.trim().toLowerCase()
-    if (q) {
-      filtered = filtered.filter((i) =>
-        i.topic.toLowerCase().includes(q) || i.questions.some((qt) => qt.toLowerCase().includes(q))
-      )
-    }
-
-    // 3. Group by topic key: normalized topic + Part (e.g. "hometown|1")
-    const map = new Map<string, TopicGroup>()
-    for (const item of filtered) {
-      const key = `${normalize(item.topic)}|${item.part}`
-      let group = map.get(key)
-      if (!group) {
-        group = {
-          topicKey: key,
-          topic: item.topic,
-          part: item.part,
-          sessions: [],
-          questions: [],
-          latestCreatedAt: item.createdAt,
-        }
-        map.set(key, group)
-      }
-      group.sessions.push(item)
-      if (item.createdAt > group.latestCreatedAt) {
-        group.latestCreatedAt = item.createdAt
-        group.topic = item.topic
-      }
-    }
-
-    // 4. Flatten and deduplicate questions within each topic group
-    const groups = [...map.values()]
-    for (const group of groups) {
-      // Sort sessions descending by date (newest first)
-      group.sessions.sort((a, b) => b.createdAt.localeCompare(a.createdAt))
-
-      const seenNorm = new Set<string>()
-      const dedupedQuestions: MergedQuestion[] = []
-
-      // In descending order: the newest answer is kept as primary
-      for (const sess of group.sessions) {
-        sess.questions.forEach((qt, idx) => {
-          const normQ = normalize(qt)
-          const isDup = seenNorm.has(normQ)
-          seenNorm.add(normQ)
-          dedupedQuestions.push({
-            id: sess.id,
-            index: idx,
-            question: qt,
-            createdAt: sess.createdAt,
-            isDuplicate: isDup,
-          })
-        })
-      }
-      group.questions = dedupedQuestions
-    }
-
-    // Sort topics by newest update first
-    return groups.sort((a, b) => b.latestCreatedAt.localeCompare(a.latestCreatedAt))
+    const part: SpeakingPart | 'all' = partFilter === 'all' ? 'all' : (Number(partFilter) as SpeakingPart)
+    return groupByTopic(items, { part, search })
   }, [items, partFilter, search])
 
   // Automatically select the first available question if none is currently selected or if current selection is filtered out
@@ -507,6 +460,7 @@ export default function SpeakingHistoryPage() {
                   <ol className="space-y-1">
                     {group.questions.map((qItem, qIdx) => {
                       const isActive = selected?.id === qItem.id && selected?.index === qItem.index
+                      const stat = stats.get(practiceKey(qItem.id, qItem.question))
                       return (
                         <li key={`${qItem.id}-${qItem.index}`} className="group/item flex items-start gap-1">
                           <button
@@ -531,10 +485,22 @@ export default function SpeakingHistoryPage() {
                             </span>
                             <div className="min-w-0 flex-1">
                               <span className="line-clamp-2 whitespace-pre-line">{qItem.question}</span>
-                              {qItem.isDuplicate ? (
-                                <span className="inline-block mt-0.5 rounded bg-amber-50 px-1.5 py-px text-[10px] font-medium text-amber-700 dark:bg-amber-950/50 dark:text-amber-300">
-                                  Hỏi lại lúc {timeLabel(qItem.createdAt)} {new Date(qItem.createdAt).toLocaleDateString('vi-VN', { day: 'numeric', month: 'numeric' })}
-                                </span>
+                              {qItem.isDuplicate || stat ? (
+                                <div className="mt-0.5 flex flex-wrap items-center gap-1">
+                                  {qItem.isDuplicate ? (
+                                    <span className="inline-block rounded bg-amber-50 px-1.5 py-px text-[10px] font-medium text-amber-700 dark:bg-amber-950/50 dark:text-amber-300">
+                                      Hỏi lại lúc {timeLabel(qItem.createdAt)} {new Date(qItem.createdAt).toLocaleDateString('vi-VN', { day: 'numeric', month: 'numeric' })}
+                                    </span>
+                                  ) : null}
+                                  {stat ? (
+                                    <span
+                                      className="inline-flex items-center gap-0.5 rounded bg-emerald-50 px-1.5 py-px text-[10px] font-semibold text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300"
+                                      title={`Đã luyện ${stat.count} lần trong Speaking review (best ${stat.best.toFixed(1)})`}
+                                    >
+                                      <Mic className="size-2.5" /> {stat.count}× · {stat.best.toFixed(1)}
+                                    </span>
+                                  ) : null}
+                                </div>
                               ) : null}
                             </div>
                           </button>
@@ -561,9 +527,12 @@ export default function SpeakingHistoryPage() {
                   {result.topic} · {new Date(result.createdAt).toLocaleString('vi-VN')} · câu {selected!.index + 1}/{result.answers.length}
                 </p>
                 <QuestionPanel
+                  key={`${selected!.id}-${selected!.index}`}
                   answer={answer}
                   part={result.part}
                   number={selected!.index + 1}
+                  resultId={selected!.id}
+                  answerIndex={selected!.index}
                   added={review.added}
                   onAdd={review.add}
                   onAnalyzeEdit={async (edited: string) => {

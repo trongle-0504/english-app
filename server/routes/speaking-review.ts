@@ -18,7 +18,7 @@ export const speakingReviewRoutes: Record<string, ApiHandler> = {
     json: { stt: sttAvailable(ctx.rootDir), reviewer: antigravityAvailable(), modelDir: modelDir(ctx.rootDir) },
   }),
 
-  /** Body `{ part, question?, topic?, script?, audio }` (audio: 16 kHz mono WAV, base64) → `{ job }` (poll GET ?id=). */
+  /** Body `{ part, question?, topic?, script?, source?, audio }` (audio: 16 kHz mono WAV, base64) → `{ job }` (poll GET ?id=). */
   'POST /speaking-review': async (req, ctx) => {
     if (!sttAvailable(ctx.rootDir)) throw new ApiError(503, `The speech-to-text model is not in ${modelDir(ctx.rootDir)}.`)
     if (!antigravityAvailable()) throw new ApiError(503, "Antigravity CLI ('agy') is not available. Please ensure Antigravity CLI is installed.")

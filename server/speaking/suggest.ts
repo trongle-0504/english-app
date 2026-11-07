@@ -1245,6 +1245,7 @@ export async function listSuggestions(ctx: ApiContext, { from, to }: { from?: st
       mode: result.mode ?? 'answer',
       engine: result.engine ?? 'claude',
       questions: result.answers.map((a) => a.question),
+      answered: result.answers.map((a) => a.answer.length > 0 || Boolean(a.sentences?.length)),
     })
   }
   return items.sort((a, b) => b.createdAt.localeCompare(a.createdAt))

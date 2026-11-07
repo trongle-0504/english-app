@@ -28,6 +28,7 @@ import {
   type TalkReviewResult,
   type TalkMisheard,
   type TalkScriptPoint,
+  type TalkSource,
   type TalkWord,
 } from '../../src/types/speakingReview.ts'
 import type { WritingFix } from '../../src/types/writingReview.ts'
@@ -36,7 +37,7 @@ import { readJsonFile, writeJsonFile, writeTextFile } from '../files.ts'
 import { creditInBackground } from '../practice/real-use.ts'
 import { talkReviews } from '../practice/works.ts'
 import { antigravityModel, speakingEffort, speakingJson } from '../speaking/llm.ts'
-import { startSuggest } from '../speaking/suggest.ts'
+import { MAX_QUESTIONS, startSuggest } from '../speaking/suggest.ts'
 import {
   applyEdits,
   CheckSchema,
@@ -380,6 +381,18 @@ interface Input {
   question: string
   topic: string
   script: string
+  source?: TalkSource
+}
+
+export function parseSource(raw: unknown): TalkSource | undefined {
+  if (!raw || typeof raw !== 'object') return undefined
+  const s = raw as Record<string, unknown>
+  if (typeof s.suggestionId !== 'string' || !validId(s.suggestionId)) return undefined
+  if (typeof s.answerIndex !== 'number' || !Number.isInteger(s.answerIndex) || s.answerIndex < 0 || s.answerIndex >= MAX_QUESTIONS) return undefined
+  const question = text(s.question, 1500)
+  if (!question) return undefined
+  if (typeof s.withModel !== 'boolean') return undefined
+  return { suggestionId: s.suggestionId, answerIndex: s.answerIndex, question, withModel: s.withModel }
 }
 
 /** What a review was asked (`<id>.pending`), with the error when it failed. */
@@ -502,6 +515,7 @@ async function run(ctx: ApiContext, job: TalkReviewJob, input: Input, audio: Ret
       question,
       ...(topic ? { topic } : {}),
       ...(input.script ? { script: input.script } : {}),
+      ...(input.source ? { source: input.source } : {}),
       audio: true,
       transcript: heard.text,
       words: heard.words,
@@ -557,7 +571,14 @@ export async function startTalkReview(ctx: ApiContext, body: unknown): Promise<T
   const seconds = audio.samples.length / audio.sampleRate
   if (seconds < 2) throw new ApiError(400, 'The recording is too short.')
   if (seconds > TALK_MAX_SECONDS + 5) throw new ApiError(400, `Recordings can be at most ${TALK_MAX_SECONDS / 60} minutes.`)
-  const input: Input = { part, question: text(b.question, 1500), topic: text(b.topic, 80), script: text(b.script, 6000) }
+  const source = parseSource(b.source)
+  const input: Input = {
+    part,
+    question: text(b.question, 1500),
+    topic: text(b.topic, 80),
+    script: text(b.script, 6000),
+    ...(source ? { source } : {}),
+  }
   const id = `${Date.now().toString(36)}-${randomBytes(3).toString('hex')}`
   await writeTextFile(fileOf(ctx, id, 'wav'), wav)
   return launch(ctx, id, input, audio)
@@ -653,6 +674,9 @@ export async function listTalkReviews(ctx: ApiContext): Promise<TalkHistoryItem[
         unclearPct: f.words ? Math.round((f.unclear / f.words) * 100) : 0,
         fixes: r.fixes.length,
         script: Boolean(r.script),
+        ...(r.source
+          ? { source: { suggestionId: r.source.suggestionId, answerIndex: r.source.answerIndex, question: r.source.question } }
+          : {}),
       }
     })
     .sort((a, b) => b.createdAt.localeCompare(a.createdAt))

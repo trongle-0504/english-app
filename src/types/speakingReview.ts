@@ -201,6 +201,7 @@ export interface TalkReviewResult {
   question: string
   topic?: string
   script?: string
+  source?: TalkSource
   /** The recording is kept (GET /api/speaking-review/audio?id=). */
   audio: boolean
   transcript: string
@@ -247,12 +248,24 @@ export interface TalkReviewJob {
   result?: TalkReviewResult
 }
 
+/** Where the question came from: a Speaking ideas suggestion and the answer's place in it (when picked there). */
+export interface TalkSource {
+  suggestionId: string
+  /** Index in the suggestion's answers when picked (questions deleted later shift it: match `question` too). */
+  answerIndex: number
+  /** The question as it was in Speaking ideas. */
+  question: string
+  /** Whether a model answer was sent as the script. */
+  withModel: boolean
+}
+
 /** POST /api/speaking-review */
 export interface TalkReviewRequest {
   part: TalkPart
   question?: string
   topic?: string
   script?: string
+  source?: TalkSource
   /** 16 kHz mono 16-bit WAV, base64. */
   audio: string
 }
@@ -277,6 +290,7 @@ export interface TalkHistoryItem {
   unclearPct: number
   fixes: number
   script: boolean
+  source?: Pick<TalkSource, 'suggestionId' | 'answerIndex' | 'question'>
 }
 
 /** IELTS rounding of the four criteria: to the nearest half band, .25 going up to .5 and .75 up to the next band. */

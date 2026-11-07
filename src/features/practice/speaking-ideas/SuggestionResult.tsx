@@ -20,6 +20,7 @@ import {
   List,
   Loader2,
   MessageSquareQuote,
+  Mic,
   RotateCcw,
   ShieldCheck,
   Sparkles,
@@ -32,7 +33,7 @@ import {
 import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import { Link } from 'react-router'
 import { formatIdea, type IdeaSource } from '../idea-api'
-import { Badge, Button, type Tone } from '@/components/ui'
+import { Badge, Button, ButtonLink, type Tone } from '@/components/ui'
 import { SpeakButton } from '@/components/SpeakButton'
 import { cn } from '@/lib/cn'
 import { slugify } from '@/lib/text'
@@ -44,7 +45,6 @@ import {
   ANSWER_WORDS,
   SPEAKING_FUNCTIONS,
   type AnswerSegment,
-  type AnswerSentence,
   type CheckedWording,
   type DolHint,
   type FormattedIdea,
@@ -175,87 +175,8 @@ export const TOOL_CONFIG: Record<
   },
 }
 
-export interface ParagraphSentence {
-  index: number
-  sentence: AnswerSentence
-}
-
-export function groupSentencesByParagraphs(
-  sentences: AnswerSentence[],
-  userEdited?: string,
-  part: SpeakingPart = 1,
-): ParagraphSentence[][] {
-  if (userEdited && userEdited.includes('\n')) {
-    const rawParas = userEdited
-      .split(/\n\s*\n+/)
-      .map((p) => p.trim().toLowerCase())
-      .filter(Boolean)
-    if (rawParas.length > 1) {
-      const result: ParagraphSentence[][] = rawParas.map(() => [])
-      let paraIdx = 0
-      sentences.forEach((s, idx) => {
-        const text = s.segments
-          .map((g) => g.text)
-          .join('')
-          .trim()
-          .toLowerCase()
-        const snippet = text.slice(0, Math.min(30, text.length))
-        for (let p = paraIdx; p < rawParas.length; p++) {
-          if (rawParas[p].includes(snippet)) {
-            paraIdx = p
-            break
-          }
-        }
-        result[paraIdx].push({ index: idx, sentence: s })
-      })
-      const nonEmpty = result.filter((p) => p.length > 0)
-      if (nonEmpty.length > 1) return nonEmpty
-    }
-  }
-
-  // Part 1 is short (3-4 sentences) -> always 1 unified paragraph
-  if (part === 1) {
-    return [sentences.map((s, index) => ({ index, sentence: s }))]
-  }
-
-  // Part 3 is typically 4-6 sentences -> keep in 1 paragraph unless explicit conclusion
-  if (part === 3 && sentences.length <= 4) {
-    return [sentences.map((s, index) => ({ index, sentence: s }))]
-  }
-
-  // Auto-detect paragraphs for Part 2 (and longer Part 3)
-  const paragraphs: ParagraphSentence[][] = []
-  let current: ParagraphSentence[] = []
-
-  sentences.forEach((s, i) => {
-    const text = s.segments
-      .map((g) => g.text)
-      .join('')
-      .trim()
-    const isFirst = i === 0
-
-    const isConclusion =
-      s.tool === 'conclusion' ||
-      /^(in conclusion|to conclude|to sum up|all in all|overall|in summary|looking back|to wrap up)\b/i.test(text)
-
-    const isBodyTransition =
-      /^(on the one hand|on the other hand|firstly|first and foremost|to begin with|first off|as for|when it comes to|speaking of|in addition|furthermore|moreover|what is more|another thing is|turning to|nevertheless|however|conversely|in contrast|secondly|eventually|at that time|during that period|after that|nowadays)\b/i.test(
-        text,
-      )
-
-    const isNewBody = i > 1 && (s.tool === 'lead_in' || (s.tool === 'introduction' && i > 2) || isBodyTransition)
-
-    if (!isFirst && (isConclusion || (isNewBody && current.length >= 2))) {
-      if (current.length) paragraphs.push(current)
-      current = [{ index: i, sentence: s }]
-    } else {
-      current.push({ index: i, sentence: s })
-    }
-  })
-
-  if (current.length) paragraphs.push(current)
-  return paragraphs
-}
+import { groupSentencesByParagraphs, modelAnswerText, type ParagraphSentence } from './answerText.ts'
+export { groupSentencesByParagraphs, type ParagraphSentence }
 
 /** A model answer's segments, marked; `hideNatural` shows the grey "natural" phrases as plain text. */
 export function Segments({ segments, hideNatural = false }: { segments: AnswerSegment[]; hideNatural?: boolean }) {
@@ -654,12 +575,10 @@ function ModelAnswer({
     [answer.sentences, answer.userEdited, part],
   )
 
-  const formattedParagraphText = useMemo(() => {
-    if (!paragraphs.length) return plain
-    return paragraphs
-      .map((p) => p.map((item) => item.sentence.segments.map((seg) => seg.text).join('')).join(' '))
-      .join('\n\n')
-  }, [paragraphs, plain])
+  const formattedParagraphText = useMemo(
+    () => modelAnswerText(answer, part),
+    [answer, part],
+  )
 
   useEffect(() => {
     setIsEditing(false)
@@ -1787,16 +1706,28 @@ export function QuestionPanel({
   return (
     <div className="space-y-5">
       <header className="space-y-3">
-        <div className="flex items-start gap-3">
-          {number ? (
-            <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-brand-600 text-base font-bold text-white shadow-sm shadow-brand-600/30 dark:bg-brand-500">
-              {number}
-            </span>
-          ) : null}
-          <div className="min-w-0">
-            <p className="text-xs font-bold tracking-[0.16em] text-brand-600 uppercase dark:text-brand-400">Part {part}</p>
-            <h2 className="text-xl font-bold whitespace-pre-line text-slate-900 sm:text-2xl dark:text-white">{answer.question}</h2>
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div className="flex min-w-0 flex-1 items-start gap-3">
+            {number ? (
+              <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-brand-600 text-base font-bold text-white shadow-sm shadow-brand-600/30 dark:bg-brand-500">
+                {number}
+              </span>
+            ) : null}
+            <div className="min-w-0">
+              <p className="text-xs font-bold tracking-[0.16em] text-brand-600 uppercase dark:text-brand-400">Part {part}</p>
+              <h2 className="text-xl font-bold whitespace-pre-line text-slate-900 sm:text-2xl dark:text-white">{answer.question}</h2>
+            </div>
           </div>
+          {resultId ? (
+            <ButtonLink
+              to={`/practice/speaking-review?from=${encodeURIComponent(resultId)}&q=${answerIndex}`}
+              size="sm"
+              variant="outline"
+              className="shrink-0"
+            >
+              <Mic className="size-3.5 text-brand-600 dark:text-brand-400" /> Practice speaking
+            </ButtonLink>
+          ) : null}
         </div>
         {answer.idea ? (
           <IdeaPanel

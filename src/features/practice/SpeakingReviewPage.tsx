@@ -3,7 +3,9 @@
 // and reviewed like an examiner: the four criteria with estimated bands, corrections, your script against what you said,
 // or — with no script — a model answer that Speaking ideas writes from your own ideas, when you ask for it.
 import {
+  BookOpen,
   Check,
+  ChevronRight,
   FileAudio,
   History,
   Loader2,
@@ -18,12 +20,13 @@ import {
   Trash2,
   Upload,
 } from 'lucide-react'
-import { useCallback, useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { Link, useSearchParams } from 'react-router'
 import { Badge, Button, ButtonLink, Card, PageHeader, SegmentedControl } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import { useLocalStorage } from '@/lib/storage'
 import { useQueryParam } from '@/lib/useQueryParam'
+import type { SpeakingHistoryItem } from '@/types/speaking'
 import {
   TALK_MAX_SECONDS,
   TALK_STEPS,
@@ -33,11 +36,20 @@ import {
   type TalkPart,
   type TalkReviewJob,
 } from '@/types/speakingReview'
+import { speakingApi } from './speaking-ideas/api'
+import { groupByTopic, normalize } from './speaking-ideas/topicGroups'
 import { OfflineError, talkApi, type TalkStatus } from './speaking-review/api'
+import { IdeasPicker } from './speaking-review/IdeasPicker'
+import { LinkedQuestion } from './speaking-review/LinkedQuestion'
 import { base64Of, useRecorder } from './speaking-review/recorder'
 import { ResultView } from './speaking-review/ResultView'
+import { useLinkedQuestion } from './speaking-review/useLinkedQuestion'
 
 const POLL_MS = 1500
+const SOURCES: { value: 'manual' | 'ideas'; label: string }[] = [
+  { value: 'manual', label: 'New question' },
+  { value: 'ideas', label: 'From Speaking ideas' },
+]
 const PARTS: { value: string; label: string }[] = [
   { value: '1', label: 'Part 1' },
   { value: '2', label: 'Part 2' },
@@ -205,8 +217,11 @@ function HistoryList({ items, onOpen, onDelete }: { items: TalkHistoryItem[]; on
                 <span className="text-sm leading-none font-extrabold tabular-nums">{item.overall.toFixed(1)}</span>
               </span>
               <span className="min-w-0 flex-1">
-                <span className="block truncate font-semibold text-slate-900 group-hover:text-brand-700 dark:text-white dark:group-hover:text-brand-300">
-                  {item.question || 'Free talk'}
+                <span className="flex items-center gap-2">
+                  <span className="truncate font-semibold text-slate-900 group-hover:text-brand-700 dark:text-white dark:group-hover:text-brand-300">
+                    {item.question || 'Free talk'}
+                  </span>
+                  {item.source ? <Badge tone="indigo">Ideas</Badge> : null}
                 </span>
                 <span className="text-xs text-slate-500">
                   {talkPartLabel(item.part)} · {clock(item.duration)} · {item.words} words ·{' '}
@@ -231,10 +246,12 @@ function HistoryList({ items, onOpen, onDelete }: { items: TalkHistoryItem[]; on
 
 export default function SpeakingReviewPage() {
   const [partValue, setPartValue] = useLocalStorage('practice:speaking-review-part', '1')
+  const [source, setSource] = useLocalStorage<'manual' | 'ideas'>('practice:speaking-review-source', 'manual')
   // The question and script start empty on every visit (only the part is remembered); they stay while you are on the page.
   const [question, setQuestion] = useState('')
   const [withScript, setWithScript] = useState(false)
   const [script, setScript] = useState('')
+  const [uncheckedKey, setUncheckedKey] = useState<string | null>(null)
   // What earlier versions of this page saved in the browser.
   useEffect(() => {
     try {
@@ -245,9 +262,61 @@ export default function SpeakingReviewPage() {
   }, [])
   const [showScript, setShowScript] = useState(false)
   const [id, setId] = useQueryParam('id')
+  const [searchParams, setSearchParams] = useSearchParams()
+  const from = searchParams.get('from') || null
+  const rawQ = searchParams.get('q')
+  const q = rawQ !== null && /^\d+$/.test(rawQ) ? Number(rawQ) : null
+
+  const setLink = useCallback(
+    (next: { from?: string; q?: number; clearId?: boolean } | null) => {
+      setSearchParams(
+        (prev) => {
+          const p = new URLSearchParams(prev)
+          if (next?.clearId) p.delete('id')
+          if (!next || !next.from) {
+            p.delete('from')
+            p.delete('q')
+          } else {
+            p.set('from', next.from)
+            if (next.q !== undefined) p.set('q', String(next.q))
+            else p.delete('q')
+          }
+          return p
+        },
+        { replace: true, preventScrollReset: true },
+      )
+    },
+    [setSearchParams],
+  )
+
+  // `from` present in the URL forces `source = 'ideas'`.
+  const activeSource: 'manual' | 'ideas' = from ? 'ideas' : source
+  useEffect(() => {
+    if (from && source !== 'ideas') setSource('ideas')
+  }, [from, source, setSource])
+
+  const [expectedQuestion, setExpectedQuestion] = useState<string | undefined>(undefined)
+
+  const handleIndexShift = useCallback(
+    (newIndex: number) => {
+      if (from) setLink({ from, q: newIndex })
+    },
+    [from, setLink],
+  )
+  const linked = useLinkedQuestion(from, q, expectedQuestion, handleIndexShift)
+
+  // Default `compareWithModel` back to true whenever the picked question changes.
+  const linkedKey = `${from ?? ''}:${q ?? ''}`
+  const compareWithModel = uncheckedKey !== linkedKey
+  const setCompareWithModel = useCallback(
+    (checked: boolean) => setUncheckedKey(checked ? null : linkedKey),
+    [linkedKey],
+  )
+
   const [loaded, setJob] = useState<TalkReviewJob | null>(null)
   const [status, setStatus] = useState<TalkStatus | null>(null)
   const [history, setHistory] = useState<TalkHistoryItem[]>([])
+  const [speakingItems, setSpeakingItems] = useState<SpeakingHistoryItem[] | null>(null)
   const [error, setError] = useState('')
   const [sending, setSending] = useState(false)
   const [retrying, setRetrying] = useState(false)
@@ -256,8 +325,22 @@ export default function SpeakingReviewPage() {
   const [offline, setOffline] = useState(false)
   const recorder = useRecorder(TALK_MAX_SECONDS)
   const fileInput = useRef<HTMLInputElement>(null)
-  const part = partOf(partValue)
-  const target = TALK_TARGET[part]
+
+  const manualPart = partOf(partValue)
+  const effectivePart: TalkPart =
+    activeSource === 'ideas' && linked.result ? linked.result.part : manualPart
+  const displayedPartValue =
+    activeSource === 'ideas' && linked.result ? String(linked.result.part) : partValue
+  const target = TALK_TARGET[effectivePart]
+
+  const effectiveScript =
+    activeSource === 'ideas'
+      ? linked.status === 'ready' && compareWithModel
+        ? linked.script.trim()
+        : ''
+      : withScript
+        ? script.trim()
+        : ''
 
   const loadHistory = useCallback(() => {
     talkApi
@@ -272,6 +355,42 @@ export default function SpeakingReviewPage() {
       .catch((err) => err instanceof OfflineError && setOffline(true))
     loadHistory()
   }, [loadHistory])
+
+  // Load Speaking ideas history when in `ideas` mode or when viewing a result linked to Speaking ideas.
+  const needsSpeakingHistory = activeSource === 'ideas' || Boolean(loaded?.result?.source)
+  useEffect(() => {
+    if (!needsSpeakingHistory || speakingItems !== null) return
+    speakingApi
+      .history()
+      .then((r) => setSpeakingItems(r.items))
+      .catch(() => setSpeakingItems([]))
+  }, [needsSpeakingHistory, speakingItems])
+
+  const allGroups = useMemo(() => (speakingItems ? groupByTopic(speakingItems) : []), [speakingItems])
+
+  // Find Prev / Next question within the same topic group for a given (suggestionId, answerIndex, question).
+  const neighborsOf = useCallback(
+    (suggestionId: string, answerIndex: number, questionText?: string) => {
+      const group = allGroups.find((g) => g.sessions.some((s) => s.id === suggestionId))
+      if (!group) return { prev: null, next: null }
+      const unique = group.questions.filter((item) => !item.isDuplicate)
+      let pos = unique.findIndex((item) => item.id === suggestionId && item.index === answerIndex)
+      if (pos < 0 && questionText) {
+        const norm = normalize(questionText)
+        pos = unique.findIndex((item) => normalize(item.question) === norm)
+      }
+      if (pos < 0) return { prev: null, next: null }
+      const prev = pos > 0 ? { id: unique[pos - 1]!.id, index: unique[pos - 1]!.index } : null
+      const next = pos + 1 < unique.length ? { id: unique[pos + 1]!.id, index: unique[pos + 1]!.index } : null
+      return { prev, next }
+    },
+    [allGroups],
+  )
+
+  const composeNeighbors = useMemo(() => {
+    if (!from || linked.status !== 'ready' || !linked.answer) return { prev: null, next: null }
+    return neighborsOf(from, linked.index, linked.answer.question)
+  }, [from, linked.status, linked.index, linked.answer, neighborsOf])
 
   // Follow the review on screen: poll while it runs.
   useEffect(() => {
@@ -303,12 +422,29 @@ export default function SpeakingReviewPage() {
     setError('')
     setSending(true)
     try {
-      const { job: created } = await talkApi.start({
-        part,
-        question: question.trim(),
-        script: withScript ? script.trim() : '',
-        audio: await base64Of(recorder.take.wav),
-      })
+      const audio = await base64Of(recorder.take.wav)
+      const body =
+        activeSource === 'ideas' && linked.status === 'ready' && from && linked.result && linked.answer
+          ? {
+              part: linked.result.part,
+              question: linked.answer.question,
+              topic: linked.result.topic,
+              script: compareWithModel ? linked.script : '',
+              source: {
+                suggestionId: from,
+                answerIndex: linked.index,
+                question: linked.answer.question,
+                withModel: compareWithModel && Boolean(linked.script),
+              },
+              audio,
+            }
+          : {
+              part: manualPart,
+              question: question.trim(),
+              script: withScript ? script.trim() : '',
+              audio,
+            }
+      const { job: created } = await talkApi.start(body)
       setJob(created)
       setId(created.id)
       recorder.reset()
@@ -349,6 +485,22 @@ export default function SpeakingReviewPage() {
   const job = id && loaded?.id === id ? loaded : null
   const recording = recorder.state === 'recording'
   const notReady = status && !status.stt ? 'stt' : status && !status.reviewer ? 'reviewer' : null
+  const waitingForQuestion = activeSource === 'ideas' && linked.status !== 'ready'
+
+  const reviewSource = job?.status === 'done' ? job.result?.source : undefined
+  const resolvedReviewIndex = useMemo(() => {
+    if (!reviewSource) return 0
+    const sess = speakingItems?.find((s) => s.id === reviewSource.suggestionId)
+    if (!sess) return reviewSource.answerIndex
+    const atIdx = sess.questions[reviewSource.answerIndex]
+    if (atIdx && normalize(atIdx) === normalize(reviewSource.question)) return reviewSource.answerIndex
+    const found = sess.questions.findIndex((qt) => normalize(qt) === normalize(reviewSource.question))
+    return found >= 0 ? found : reviewSource.answerIndex
+  }, [reviewSource, speakingItems])
+  const reviewNext = useMemo(() => {
+    if (!reviewSource) return null
+    return neighborsOf(reviewSource.suggestionId, resolvedReviewIndex, reviewSource.question).next
+  }, [reviewSource, resolvedReviewIndex, neighborsOf])
 
   return (
     <div className="mx-auto max-w-4xl">
@@ -392,60 +544,120 @@ export default function SpeakingReviewPage() {
           <Card className="overflow-hidden p-0">
             <div className="space-y-5 p-2 sm:p-6">
               <div className="flex flex-wrap items-center justify-between gap-3">
-                <SegmentedControl value={partValue} onChange={setPartValue} options={PARTS} />
-                {target ? (
-                  <span className="text-sm text-slate-500 dark:text-slate-400" title="Độ dài câu trả lời giám khảo mong đợi">
-                    Answer length: <span className="font-semibold text-slate-700 dark:text-slate-200">{target.label}</span>
-                  </span>
-                ) : null}
-              </div>
-
-              <div className="space-y-1.5">
-                <label htmlFor="talk-question" className="text-[15px] font-bold text-slate-900 dark:text-white">
-                  {part === 2 ? 'Cue card' : part === 'free' ? 'Topic' : 'Question'} <span className="font-normal text-slate-400">(optional)</span>
-                </label>
-                <textarea
-                  id="talk-question"
-                  rows={part === 2 ? 5 : 2}
-                  value={question}
-                  onChange={(e) => setQuestion(e.target.value)}
-                  placeholder={QUESTION_PLACEHOLDER[partValue]}
-                  className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-[15px] leading-relaxed text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15 focus:outline-none dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100"
+                <SegmentedControl
+                  value={activeSource}
+                  onChange={(next) => {
+                    setSource(next)
+                    if (next === 'manual') setLink(null)
+                  }}
+                  options={SOURCES}
+                  size="sm"
                 />
+                <div className="flex flex-wrap items-center gap-3">
+                  <SegmentedControl
+                    value={displayedPartValue}
+                    onChange={setPartValue}
+                    options={PARTS}
+                    disabled={activeSource === 'ideas'}
+                    title={activeSource === 'ideas' ? 'Part theo câu hỏi trong Speaking ideas' : undefined}
+                  />
+                  {target ? (
+                    <span className="text-sm text-slate-500 dark:text-slate-400" title="Độ dài câu trả lời giám khảo mong đợi">
+                      Answer length: <span className="font-semibold text-slate-700 dark:text-slate-200">{target.label}</span>
+                    </span>
+                  ) : null}
+                </div>
               </div>
 
-              <div className="space-y-2.5">
-                <label className="flex cursor-pointer items-start gap-3">
-                  <input
-                    type="checkbox"
-                    checked={withScript}
-                    onChange={(e) => setWithScript(e.target.checked)}
-                    className="mt-1 size-4 rounded border-slate-300 accent-brand-600"
-                  />
-                  <span>
-                    <span className="block text-[15px] font-bold text-slate-900 dark:text-white">I have a script I plan to say</span>
-                    <span className="text-sm text-slate-600 dark:text-slate-400">
-                      {withScript
-                        ? 'Bài nói sẽ được so với script: ý đã nói, ý bỏ sót, chỗ script diễn đạt hay hơn.'
-                        : 'Không có script: AI lấy ý từ chính những gì bạn nói; bấm “Write a model answer” trong kết quả nếu muốn Speaking ideas viết bài mẫu.'}
-                    </span>
-                  </span>
-                </label>
-                {withScript ? (
-                  <textarea
-                    rows={6}
-                    value={script}
-                    onChange={(e) => setScript(e.target.value)}
-                    placeholder="Paste or type the answer you prepared…"
-                    className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-[15px] leading-relaxed text-slate-900 placeholder:text-slate-400 focus:border-brand-500 focus:bg-white focus:ring-4 focus:ring-brand-500/15 focus:outline-none dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100"
-                  />
-                ) : null}
-              </div>
+              {activeSource === 'manual' ? (
+                <>
+                  <div className="space-y-1.5">
+                    <label htmlFor="talk-question" className="text-[15px] font-bold text-slate-900 dark:text-white">
+                      {manualPart === 2 ? 'Cue card' : manualPart === 'free' ? 'Topic' : 'Question'}{' '}
+                      <span className="font-normal text-slate-400">(optional)</span>
+                    </label>
+                    <textarea
+                      id="talk-question"
+                      rows={manualPart === 2 ? 5 : 2}
+                      value={question}
+                      onChange={(e) => setQuestion(e.target.value)}
+                      placeholder={QUESTION_PLACEHOLDER[partValue]}
+                      className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-[15px] leading-relaxed text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15 focus:outline-none dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100"
+                    />
+                  </div>
+
+                  <div className="space-y-2.5">
+                    <label className="flex cursor-pointer items-start gap-3">
+                      <input
+                        type="checkbox"
+                        checked={withScript}
+                        onChange={(e) => setWithScript(e.target.checked)}
+                        className="mt-1 size-4 rounded border-slate-300 accent-brand-600"
+                      />
+                      <span>
+                        <span className="block text-[15px] font-bold text-slate-900 dark:text-white">I have a script I plan to say</span>
+                        <span className="text-sm text-slate-600 dark:text-slate-400">
+                          {withScript
+                            ? 'Bài nói sẽ được so với script: ý đã nói, ý bỏ sót, chỗ script diễn đạt hay hơn.'
+                            : 'Không có script: AI lấy ý từ chính những gì bạn nói; bấm “Write a model answer” trong kết quả nếu muốn Speaking ideas viết bài mẫu.'}
+                        </span>
+                      </span>
+                    </label>
+                    {withScript ? (
+                      <textarea
+                        rows={6}
+                        value={script}
+                        onChange={(e) => setScript(e.target.value)}
+                        placeholder="Paste or type the answer you prepared…"
+                        className="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-[15px] leading-relaxed text-slate-900 placeholder:text-slate-400 focus:border-brand-500 focus:bg-white focus:ring-4 focus:ring-brand-500/15 focus:outline-none dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100"
+                      />
+                    ) : null}
+                  </div>
+                </>
+              ) : q === null ? (
+                <IdeasPicker
+                  speakingItems={speakingItems}
+                  talkHistory={history}
+                  defaultPart={partValue}
+                  initialResultId={from}
+                  onPick={(sid, idx) => {
+                    setExpectedQuestion(undefined)
+                    setLink({ from: sid, q: idx })
+                  }}
+                />
+              ) : (
+                <LinkedQuestion
+                  linked={linked}
+                  compareWithModel={compareWithModel}
+                  onToggleCompare={setCompareWithModel}
+                  onChangeQuestion={() => {
+                    setExpectedQuestion(undefined)
+                    setLink(from ? { from } : null)
+                  }}
+                  prevQuestion={composeNeighbors.prev}
+                  nextQuestion={composeNeighbors.next}
+                  onNavigateQuestion={(t) => {
+                    setExpectedQuestion(undefined)
+                    setLink({ from: t.id, q: t.index })
+                  }}
+                  onCopyToManual={(copiedQuestion, copiedScript) => {
+                    setQuestion(copiedQuestion)
+                    setScript(copiedScript)
+                    setWithScript(Boolean(copiedScript))
+                    setSource('manual')
+                    setLink(null)
+                  }}
+                />
+              )}
             </div>
 
             {/* The recorder */}
             <div className="border-t border-slate-200 bg-gradient-to-b from-slate-50 to-white px-2 py-7 sm:px-6 dark:border-slate-800 dark:from-slate-900/70 dark:to-slate-900">
-              {recorder.state === 'ready' && recorder.take ? (
+              {waitingForQuestion ? (
+                <p className="text-center text-sm font-medium text-slate-500 dark:text-slate-400">
+                  Chọn một câu hỏi để bắt đầu
+                </p>
+              ) : recorder.state === 'ready' && recorder.take ? (
                 <div className="mx-auto flex max-w-lg flex-col items-center gap-4">
                   <p className="flex items-center gap-2 text-sm font-semibold text-slate-700 dark:text-slate-200">
                     <FileAudio className="size-4 text-brand-600" /> Your answer · {clock(recorder.take.seconds)}
@@ -462,7 +674,7 @@ export default function SpeakingReviewPage() {
                 </div>
               ) : (
                 <div className="flex flex-col items-center gap-4">
-                  {part === 2 && !recording ? <PrepTimer /> : null}
+                  {effectivePart === 2 && !recording ? <PrepTimer /> : null}
                   <button
                     type="button"
                     onClick={() => (recording ? recorder.stop() : void recorder.start())}
@@ -490,8 +702,8 @@ export default function SpeakingReviewPage() {
                         <span className="text-3xl font-extrabold text-slate-900 tabular-nums dark:text-white">{clock(recorder.elapsed)}</span>
                         <LevelMeter level={recorder.level} />
                       </div>
-                      <TimeBar elapsed={recorder.elapsed} part={part} />
-                      {withScript && script.trim() ? (
+                      <TimeBar elapsed={recorder.elapsed} part={effectivePart} />
+                      {effectiveScript ? (
                         <button
                           type="button"
                           onClick={() => setShowScript((v) => !v)}
@@ -500,9 +712,9 @@ export default function SpeakingReviewPage() {
                           <ScrollText className="size-4" /> {showScript ? 'Hide my script' : 'Show my script'}
                         </button>
                       ) : null}
-                      {showScript && withScript ? (
+                      {showScript && effectiveScript ? (
                         <p className="max-w-2xl rounded-xl bg-white p-2 text-[15px] leading-relaxed whitespace-pre-line text-slate-700 shadow-sm sm:p-4 dark:bg-slate-950 dark:text-slate-200">
-                          {script}
+                          {effectiveScript}
                         </p>
                       ) : null}
                     </>
@@ -575,7 +787,54 @@ export default function SpeakingReviewPage() {
           </Card>
         ) : null}
         {job?.status === 'done' && job.result ? (
-          <ResultView result={job.result} onUpdate={(result) => setJob((prev) => (prev ? { ...prev, result } : prev))} />
+          <div className="space-y-4">
+            {reviewSource ? (
+              <Card className="flex flex-wrap items-center justify-between gap-3 px-4 py-3">
+                <div className="min-w-0">
+                  <p className="truncate text-xs font-bold tracking-wide text-brand-700 uppercase dark:text-brand-300">
+                    From Speaking ideas · {job.result.topic || 'Speaking ideas'}
+                  </p>
+                </div>
+                <div className="flex flex-wrap items-center gap-2">
+                  <ButtonLink
+                    to={`/practice/speaking-ideas/history?id=${encodeURIComponent(reviewSource.suggestionId)}&q=${resolvedReviewIndex}`}
+                    variant="outline"
+                    size="sm"
+                  >
+                    <BookOpen className="size-3.5" /> Open model answer
+                  </ButtonLink>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    onClick={() => {
+                      setSource('ideas')
+                      setExpectedQuestion(reviewSource.question)
+                      setJob(null)
+                      setError('')
+                      setLink({ from: reviewSource.suggestionId, q: resolvedReviewIndex, clearId: true })
+                    }}
+                  >
+                    <RotateCcw className="size-3.5" /> Practice again
+                  </Button>
+                  {reviewNext ? (
+                    <Button
+                      size="sm"
+                      onClick={() => {
+                        setSource('ideas')
+                        setExpectedQuestion(undefined)
+                        setJob(null)
+                        setError('')
+                        setLink({ from: reviewNext.id, q: reviewNext.index, clearId: true })
+                      }}
+                    >
+                      Next question in topic <ChevronRight className="size-3.5" />
+                    </Button>
+                  ) : null}
+                </div>
+              </Card>
+            ) : null}
+            <ResultView result={job.result} onUpdate={(result) => setJob((prev) => (prev ? { ...prev, result } : prev))} />
+          </div>
         ) : null}
 
         {composing ? (
