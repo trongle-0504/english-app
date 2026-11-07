@@ -3,6 +3,7 @@ import {
   AlignLeft,
   BookOpen,
   Check,
+  ChevronDown,
   Copy,
   Edit3,
   ExternalLink,
@@ -32,7 +33,7 @@ import {
   type WritingScore,
   type WritingSuggestedPhrase,
 } from '@/types/writingReview'
-import { BandRing, bandBadgeTone, bandTone } from '../BandScore'
+import { BandRing, bandTone } from '../BandScore'
 import {
   DolHints,
   ExtraRow,
@@ -1047,10 +1048,10 @@ function WritingScoreCard({
 }) {
   if (pending?.includes('score')) {
     return (
-      <Card className="mb-6 flex items-center justify-center gap-3 border-brand-200 bg-brand-50/50 p-6 text-sm font-medium text-brand-900 dark:border-brand-800/60 dark:bg-brand-950/30 dark:text-brand-200">
-        <Loader2 className="size-5 animate-spin text-brand-600 dark:text-brand-400" />
-        <span>Đang ước lượng band điểm IELTS Writing Task 2…</span>
-      </Card>
+      <div className="mb-6 flex items-center gap-2 rounded-xl bg-brand-50/60 px-4 py-3 text-sm font-medium text-brand-900 dark:bg-brand-950/30 dark:text-brand-200">
+        <Loader2 className="size-4 animate-spin text-brand-600 dark:text-brand-400" />
+        <span>Đang ước lượng band IELTS Task 2…</span>
+      </div>
     )
   }
 
@@ -1072,148 +1073,112 @@ function WritingScoreCard({
 
   if (!score) return null
 
+  // Flat and compact: one header row, then one collapsible row per criterion (details only on demand), so a phone shows
+  // the bands and the four summaries in a single screen.
   return (
-    <section className="mb-8 space-y-5 rounded-2xl border border-slate-200 bg-slate-50/70 p-4 dark:border-slate-800 dark:bg-slate-900/40 sm:p-6">
-      {/* Top row: Overall band + 4 criteria + word count */}
-      <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex items-center gap-4 sm:gap-5">
-          <BandRing band={score.overall} />
-          <div>
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="text-lg font-bold text-slate-900 dark:text-white sm:text-2xl">
-                IELTS Task 2 Estimate
-              </span>
-              <span className={cn('rounded-full px-2.5 py-0.5 text-xs font-semibold', bandBadgeTone(score.overall))}>
-                Band {score.overall.toFixed(1)}
-              </span>
-            </div>
-            <p className="mt-1 text-xs text-slate-500">
-              {score.words} words
-              {score.words < 250 ? (
-                <span className="ml-1.5 font-medium text-amber-600 dark:text-amber-400">
-                  (dưới 250 từ — Task 2 khuyến nghị ≥ 250 từ)
-                </span>
-              ) : null}
-            </p>
-            {!score.questionGiven ? (
-              <p className="mt-0.5 text-xs text-amber-700 dark:text-amber-300">
-                Không có đề bài — TR được ước lượng theo đề AI suy ra.
-              </p>
+    <section className="mb-8 border-b border-slate-100 pb-6 dark:border-slate-800">
+      <div className="flex items-center gap-3 sm:gap-5">
+        <BandRing band={score.overall} size="sm" />
+        <div className="min-w-0 flex-1">
+          <p className="text-sm font-bold text-slate-900 dark:text-white sm:text-base">Ước lượng band IELTS Task 2</p>
+          <p className="text-xs text-slate-500">
+            {score.words} từ
+            {score.words < 250 ? (
+              <span className="font-medium text-amber-600 dark:text-amber-400"> · dưới 250 từ</span>
             ) : null}
-          </div>
-        </div>
-
-        {/* 4 criteria quick overview in a row */}
-        <div className="grid grid-cols-4 gap-1.5 sm:gap-3">
-          {WRITING_CRITERIA.map((c) => {
-            const crit = score.criteria[c.id]
-            return (
-              <div
-                key={c.id}
-                className="flex flex-col items-center justify-center rounded-xl border border-slate-200 bg-white p-2 text-center shadow-xs dark:border-slate-800 dark:bg-slate-900"
-              >
-                <span className="text-[11px] font-bold text-slate-500">{c.short}</span>
-                <span className={cn('text-base font-extrabold tabular-nums sm:text-xl', bandTone(crit?.band ?? 0))}>
-                  {crit?.band ?? '—'}
+            {!score.questionGiven ? (
+              <span className="text-amber-700 dark:text-amber-300"> · không có đề, TR theo đề AI suy ra</span>
+            ) : null}
+          </p>
+          <div className="mt-2 flex flex-wrap gap-1.5">
+            {WRITING_CRITERIA.map((c) => {
+              const band = score.criteria[c.id]?.band
+              return (
+                <span
+                  key={c.id}
+                  title={c.label}
+                  className="inline-flex items-baseline gap-1 rounded-md bg-slate-100 px-2 py-0.5 text-xs dark:bg-slate-800"
+                >
+                  <span className="font-semibold text-slate-500">{c.short}</span>
+                  <span className={cn('font-extrabold tabular-nums', bandTone(band ?? 0))}>{band ?? '—'}</span>
                 </span>
-              </div>
-            )
-          })}
+              )
+            })}
+          </div>
         </div>
       </div>
 
-      {/* 4 Criterion Detail Cards: 2x2 desktop, 1 col mobile */}
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+      <div className="mt-4 divide-y divide-slate-100 dark:divide-slate-800">
         {WRITING_CRITERIA.map((c) => {
           const crit = score.criteria[c.id]
           if (!crit) return null
           return (
-            <Card key={c.id} className="flex flex-col justify-between p-4 sm:p-5">
-              <div>
-                <div className="flex items-start justify-between gap-2">
-                  <div>
-                    <div className="flex items-center gap-1.5">
-                      <span className="font-bold text-slate-900 dark:text-white">{c.label}</span>
-                      <span className="text-xs text-slate-400">({c.short})</span>
-                    </div>
-                    <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">{c.hint}</p>
-                  </div>
-                  <div className="flex flex-col items-end shrink-0">
-                    <span className={cn('text-2xl font-extrabold tabular-nums', bandTone(crit.band))}>
-                      {crit.band}
-                    </span>
-                    <span className="text-[10px] font-semibold uppercase text-slate-400">Band</span>
-                  </div>
-                </div>
+            <details key={c.id} className="group py-2.5">
+              <summary className="flex cursor-pointer list-none items-start gap-3 [&::-webkit-details-marker]:hidden">
+                <span
+                  className={cn(
+                    'mt-0.5 w-7 shrink-0 text-center text-lg leading-6 font-extrabold tabular-nums',
+                    bandTone(crit.band),
+                  )}
+                >
+                  {crit.band}
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-sm font-semibold text-slate-900 dark:text-white" title={c.hint}>
+                    {c.label} <span className="font-normal text-slate-400">· {c.short}</span>
+                  </span>
+                  <span className="block text-sm text-slate-600 dark:text-slate-300">{crit.summary}</span>
+                </span>
+                <ChevronDown className="mt-1 size-4 shrink-0 text-slate-400 transition-transform group-open:rotate-180" />
+              </summary>
 
-                <p className="mt-3 text-sm font-medium text-slate-700 dark:text-slate-300">
-                  {crit.summary}
-                </p>
-
+              <div className="mt-2 space-y-2.5 pl-10 text-xs">
                 {crit.strengths?.length ? (
-                  <div className="mt-3">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400">
-                      Điểm tốt
-                    </span>
-                    <ul className="mt-1 space-y-1 text-xs text-slate-600 dark:text-slate-300">
-                      {crit.strengths.map((s, i) => (
-                        <li key={i} className="flex items-start gap-1.5">
-                          <Check className="size-3.5 shrink-0 text-emerald-600 dark:text-emerald-400 mt-0.5" />
-                          <span>{s}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  <ul className="space-y-0.5 text-slate-600 dark:text-slate-300">
+                    {crit.strengths.map((s, i) => (
+                      <li key={i} className="flex items-start gap-1.5">
+                        <Check className="mt-0.5 size-3.5 shrink-0 text-emerald-600 dark:text-emerald-400" />
+                        <span>{s}</span>
+                      </li>
+                    ))}
+                  </ul>
                 ) : null}
 
                 {crit.issues?.length ? (
-                  <div className="mt-3">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-rose-700 dark:text-rose-400">
-                      Cần cải thiện ({crit.issues.length})
-                    </span>
-                    <ul className="mt-1.5 space-y-2 text-xs">
-                      {crit.issues.map((iss, i) => (
-                        <li
-                          key={i}
+                  <ul className="space-y-2">
+                    {crit.issues.map((iss, i) => (
+                      <li key={i}>
+                        <button
+                          type="button"
                           onClick={() => onScrollToSentence(iss.sentence)}
-                          className="group cursor-pointer rounded-lg border border-slate-200 bg-white p-2.5 transition-colors hover:border-brand-300 hover:bg-brand-50/40 dark:border-slate-800 dark:bg-slate-900/60 dark:hover:border-brand-700"
+                          className="w-full border-l-2 border-rose-200 pl-2.5 text-left hover:border-brand-400 dark:border-rose-900 dark:hover:border-brand-600"
                         >
-                          <div className="flex items-center gap-1.5">
-                            <span className="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[11px] text-slate-700 group-hover:bg-brand-100 dark:bg-slate-800 dark:text-slate-300 dark:group-hover:bg-brand-950">
-                              Câu {iss.sentence + 1}
-                            </span>
-                            <span className="font-semibold text-slate-800 dark:text-slate-200">“{iss.quote}”</span>
-                          </div>
-                          <p className="mt-1 text-slate-600 dark:text-slate-400">{iss.problem}</p>
-                          <p className="mt-0.5 text-brand-600 dark:text-brand-400">
+                          <span className="text-slate-400">Câu {iss.sentence + 1} · </span>
+                          <span className="font-semibold text-slate-800 dark:text-slate-200">“{iss.quote}”</span>
+                          <span className="block text-slate-600 dark:text-slate-400">{iss.problem}</span>
+                          <span className="block text-brand-600 dark:text-brand-400">
                             → <span className="font-semibold">{iss.better}</span>
-                          </p>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : null}
-              </div>
-
-              {crit.gaps?.length ? (
-                <details className="mt-3 border-t border-slate-100 pt-2 text-xs text-slate-500 dark:border-slate-800">
-                  <summary className="cursor-pointer font-medium hover:text-slate-800 dark:hover:text-slate-200">
-                    Để lên band tiếp theo
-                  </summary>
-                  <ul className="mt-1.5 list-disc pl-4 space-y-0.5">
-                    {crit.gaps.map((g, i) => (
-                      <li key={i}>{g}</li>
+                          </span>
+                        </button>
+                      </li>
                     ))}
                   </ul>
-                </details>
-              ) : null}
-            </Card>
+                ) : null}
+
+                {crit.gaps?.length ? (
+                  <p className="text-slate-500">
+                    <span className="font-medium">Để lên band tiếp theo: </span>
+                    {crit.gaps.join(' · ')}
+                  </p>
+                ) : null}
+              </div>
+            </details>
           )
         })}
       </div>
 
-      <p className="text-[11px] text-slate-400 dark:text-slate-500 text-right">
-        * Ước lượng theo band descriptors công khai của IELTS, không phải điểm chính thức.
+      <p className="mt-2 text-[11px] text-slate-400 dark:text-slate-500">
+        Ước lượng theo band descriptors công khai của IELTS, không phải điểm chính thức. Bấm từng tiêu chí để xem chi tiết.
       </p>
     </section>
   )
