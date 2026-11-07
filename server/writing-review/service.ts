@@ -6,7 +6,6 @@ import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import type {
   WritingFix,
-  WritingModelEssay,
   WritingReviewJob,
   WritingReviewResult,
   WritingReviewSummary,
@@ -26,7 +25,9 @@ import {
   type PreparedReview,
 } from './rewrite.ts'
 import { creditInBackground } from '../practice/real-use.ts'
-import { analyzeUserEditedWriting, resetUserEditedWriting } from './writing-essay.ts'
+import { analyzeUserEditedWriting, resetUserEditedWriting, type EssayReviewEdit, type generateWritingModelEssay } from './writing-essay.ts'
+
+type WrittenEssay = Awaited<ReturnType<typeof generateWritingModelEssay>>
 import { chosenHints } from './dol.ts'
 import { countWords, MIN_WORDS_FOR_SCORING, scoreEssay } from './score.ts'
 import { WRITING_REVIEW_TOPICS, WRITING_REVIEW_TYPES, type WritingReviewTopic, type WritingReviewType } from '../../src/features/practice/writing-review/categories.ts'
@@ -144,9 +145,9 @@ export async function classifyWritingReview(
 
 export function attachEssay(
   result: WritingReviewResult,
-  written: any,
+  written: WrittenEssay | undefined,
   prepared: PreparedReview,
-  onReviewEdits?: (edits: any[]) => void,
+  onReviewEdits?: (edits: EssayReviewEdit[]) => void,
 ): void {
   if (!written) return
   const { dolRefs, unlistedFixes, reviewEdits, plan: _plan, ...modelEssay } = written
@@ -157,7 +158,7 @@ export function attachEssay(
     console.info(`[writing-review] not in Longman / OZDIC: "${fix.original}" → "${fix.replacement}" (${fix.source})`)
   }
   onReviewEdits?.(reviewEdits ?? [])
-  result.modelEssay = modelEssay as WritingModelEssay
+  result.modelEssay = modelEssay
   result.dolHints = chosenHints(prepared.dolHints, dolRefs)
 }
 
@@ -175,7 +176,7 @@ export interface ReviewWritingOpts {
   onPartial?: (result: WritingReviewResult) => void
   onUsage?: (usage: WritingUsage) => void
   onCall?: (call: { step: string; input: number; output: number; thinking: number; ms?: number }) => void
-  onReviewEdits?: (edits: any[]) => void
+  onReviewEdits?: (edits: EssayReviewEdit[]) => void
 }
 
 /** Runs the full writing review pipeline (score lane, corrections lane, essay lane) without writing job files. */
@@ -262,7 +263,7 @@ export async function reviewWriting(
 
   let hasPartial = false
   let essayDone = false
-  let writtenEssay: any = null
+  let writtenEssay: WrittenEssay | undefined
 
   // 2. Parallel lanes: Corrections lane & Model Essay lane
   const correctionsLane = (async () => {
@@ -453,10 +454,10 @@ async function run(ctx: ApiContext, job: WritingReviewJob, text: string, prompt?
     job.usage = result.usage
     job.topic = result.topic
     job.questionType = result.questionType
+    await mkdir(dir(ctx), { recursive: true })
+    await writeFile(fileOf(ctx, job.id), JSON.stringify(result, null, 1))
     job.status = 'done'
     job.step = undefined
-    await mkdir(dir(ctx), { recursive: true })
-    await writeFile(fileOf(ctx, job.id), JSON.stringify(job.result, null, 1))
     console.log(`[writing-review] ${job.id} timings: total=${result.timings?.total}ms, firstResult=${result.timings?.firstResult ?? 0}ms`)
     creditInBackground(ctx, 'writing', job.id)
   } catch (error) {

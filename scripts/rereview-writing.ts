@@ -1,9 +1,12 @@
 // Re-runs the writing review pipeline on saved reviews in progress/writing-reviews/ without overwriting them.
 // Usage: node scripts/rereview-writing.ts <id> [<id>...] [--runs N] [--compare] [--copied-errors]
+import { existsSync } from 'node:fs'
 import path from 'node:path'
 import { loadEnv } from '../server/env.ts'
 import { readJsonFile, writeJsonFile } from '../server/files.ts'
+import { findCopiedErrors } from '../server/writing-review/copied-errors.ts'
 import { reviewWriting } from '../server/writing-review/service.ts'
+import type { EssayReviewEdit } from '../server/writing-review/writing-essay.ts'
 import type { WritingReviewResult } from '../src/types/writingReview.ts'
 
 const rootDir = path.resolve(import.meta.dirname, '..')
@@ -15,30 +18,6 @@ function essayToPlainText(sentences?: { segments?: { text: string }[] }[]): stri
     .map((s) => (s.segments ? s.segments.map((g) => g.text).join('') : ''))
     .join(' ')
     .trim()
-}
-
-function escapeRegex(str: string): string {
-  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-}
-
-export function buildErrorPhrase(draftSentence: string, original: string): string {
-  const orig = original.trim()
-  if (!orig) return ''
-  const idx = draftSentence.toLowerCase().indexOf(orig.toLowerCase())
-  if (idx < 0) return orig
-
-  const beforeText = draftSentence.slice(0, idx).trimEnd()
-  const afterText = draftSentence.slice(idx + orig.length).trimStart()
-
-  const beforeTokens = beforeText.split(/\s+/).filter(Boolean)
-  const rawBefore = beforeTokens[beforeTokens.length - 1] ?? ''
-  const cleanBefore = rawBefore.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, '')
-
-  const afterTokens = afterText.split(/\s+/).filter(Boolean)
-  const rawAfter = afterTokens[0] ?? ''
-  const cleanAfter = rawAfter.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, '')
-
-  return [cleanBefore, orig, cleanAfter].filter(Boolean).join(' ')
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(import.meta.filename)) {
@@ -62,8 +41,15 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(import.met
   }
 
   for (const rawId of ids) {
-    const id = rawId.replace(/\.json$/, '')
-    const jsonPath = path.join(rootDir, 'progress', 'writing-reviews', `${id}.json`)
+    let id = rawId.replace(/\.json$/, '')
+    let jsonPath = path.join(rootDir, 'progress', 'writing-reviews', `${id}.json`)
+    if (rawId.endsWith('.json')) {
+      const candidate = path.isAbsolute(rawId) ? rawId : path.resolve(rootDir, rawId)
+      if (existsSync(candidate)) {
+        jsonPath = candidate
+        id = path.basename(rawId, '.json')
+      }
+    }
     const saved = await readJsonFile<WritingReviewResult | null>(jsonPath, null)
     if (!saved) {
       console.error(`${id} | missing ${jsonPath}`)
@@ -78,7 +64,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(import.met
     for (let r = 1; r <= runs; r++) {
       const started = Date.now()
       const callDetails: { label: string; ms: number; thinking: number }[] = []
-      const reviewEditsList: any[] = []
+      const reviewEditsList: EssayReviewEdit[] = []
 
       const next = await reviewWriting(
         { rootDir },
@@ -130,19 +116,8 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(import.met
       }
 
       if (copiedErrors) {
-        const copied: { phrase: string; sentence: string }[] = []
         const essaySentences = next.modelEssay?.sentences?.map((s) => s.segments.map((seg) => seg.text).join('')) ?? []
-        for (const fix of next.fixes || []) {
-          const draftSentence = next.sentences[fix.sentenceIndex] || ''
-          const phrase = buildErrorPhrase(draftSentence, fix.original)
-          if (!phrase || !/\p{L}/u.test(phrase)) continue
-          const pattern = new RegExp(`(?<=^|[^\\p{L}\\p{N}])${escapeRegex(phrase)}(?=[^\\p{L}\\p{N}]|$)`, 'iu')
-          for (const es of essaySentences) {
-            if (pattern.test(es)) {
-              copied.push({ phrase, sentence: es })
-            }
-          }
-        }
+        const copied = findCopiedErrors(next.sentences, next.fixes ?? [], essaySentences)
         console.log(`  copied-errors: ${copied.length}${copied.length ? ` (${copied.map((c) => c.phrase).join(', ')})` : ' (none)'}`)
         for (const c of copied) {
           console.log(`    [copied-error] "${c.phrase}" in essay sentence: "${c.sentence}"`)

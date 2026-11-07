@@ -32,9 +32,9 @@ export const writingReviewModelName = () => {
 export const writingReviewEngineAvailable = () =>
   defaultWritingReviewEngine() === 'antigravity' ? antigravityAvailable() : claudeCodeAvailable()
 
-/** Effort for diagnose call (low · medium · high · xhigh · max). Default is from env or 'medium'. */
+/** Effort for diagnose and every writing-review call that passes no effort of its own: WRITING_REVIEW_EFFORT, default low. */
 export const writingReviewEffort = (): ClaudeEffort =>
-  (['low', 'medium', 'high', 'xhigh', 'max'] as const).find((l) => l === process.env.WRITING_REVIEW_EFFORT) ?? 'medium'
+  (['low', 'medium', 'high', 'xhigh', 'max'] as const).find((l) => l === process.env.WRITING_REVIEW_EFFORT) ?? 'low'
 
 /** Effort for checking calls (retry, plan notes, essay review, wording): WRITING_CHECK_EFFORT, default low. */
 export const writingCheckEffort = (): ClaudeEffort =>

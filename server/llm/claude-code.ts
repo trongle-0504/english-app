@@ -153,6 +153,7 @@ export async function claudeJson(request: ClaudeJsonRequest): Promise<ClaudeJson
     ms,
     billing: 'subscription',
     provider: 'claude',
+    ...(request.effort ? { effort: request.effort } : {}),
     ...(usable ? {} : { failed: true }),
   })
   // Not signed in, plan limit reached, schema not met…: Claude Code's own message.
