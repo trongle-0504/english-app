@@ -63,7 +63,7 @@ export function AddSheet({
   }
 
   return (
-    <Sheet open={open} onOpenChange={onOpenChange} title={editing ? (task ? 'Sửa việc học' : 'Sửa sự kiện') : 'Thêm vào kế hoạch'}>
+    <Sheet open={open} onOpenChange={onOpenChange} title={editing ? (task ? 'Sửa việc' : 'Sửa sự kiện') : 'Thêm vào kế hoạch'}>
       {!editing ? (
         <SegmentedControl
           className="mb-4 w-full [&>button]:flex-1 [&>button]:justify-center"
@@ -71,7 +71,7 @@ export function AddSheet({
           onChange={setTab}
           options={[
             { value: 'quick', label: 'Thêm nhanh', icon: <Sparkles className="size-3.5" /> },
-            { value: 'task', label: 'Việc học' },
+            { value: 'task', label: 'Việc cần làm' },
             { value: 'event', label: 'Sự kiện' },
           ]}
         />
@@ -110,7 +110,7 @@ function TaskForm({ task, date, onDone }: { task?: PlannerTask; date?: string; o
         link: task && task.skill === skill ? (task.link ?? '') : (SKILL_LINKS[skill] ?? ''),
         notes,
       })
-      showToast(task ? 'Đã lưu.' : 'Đã thêm việc học.')
+      showToast(task ? 'Đã lưu.' : 'Đã thêm việc.')
       onDone()
     } catch (err) {
       showToast((err as Error).message)
