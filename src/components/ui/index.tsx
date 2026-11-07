@@ -207,24 +207,33 @@ export function SegmentedControl<T extends string>({
   options,
   className,
   size = 'md',
+  disabled = false,
+  title,
 }: {
   value: T
   onChange: (value: T) => void
   options: { value: T; label: ReactNode; icon?: ReactNode }[]
   className?: string
   size?: 'sm' | 'md'
+  disabled?: boolean
+  title?: string
 }) {
   return (
-    <div role="radiogroup" className={cn('inline-flex rounded-xl bg-slate-100 p-1 dark:bg-slate-800/80', className)}>
+    <div
+      role="radiogroup"
+      title={title}
+      className={cn('inline-flex rounded-xl bg-slate-100 p-1 dark:bg-slate-800/80', disabled && 'opacity-60', className)}
+    >
       {options.map((option) => (
         <button
           key={option.value}
           type="button"
           role="radio"
+          disabled={disabled}
           aria-checked={value === option.value}
-          onClick={() => onChange(option.value)}
+          onClick={() => !disabled && onChange(option.value)}
           className={cn(
-            'relative inline-flex items-center gap-1.5 rounded-lg font-semibold whitespace-nowrap hit-area transition-all',
+            'relative inline-flex items-center gap-1.5 rounded-lg font-semibold whitespace-nowrap hit-area transition-all disabled:cursor-not-allowed',
             size === 'sm' ? 'px-2.5 py-1 text-xs' : 'px-3.5 py-1.5 text-sm',
             value === option.value
               ? 'bg-white text-slate-900 shadow-sm dark:bg-slate-700 dark:text-white'

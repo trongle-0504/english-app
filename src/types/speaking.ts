@@ -409,6 +409,8 @@ export interface SpeakingHistoryItem {
   mode?: SpeakingMode
   engine?: SpeakingEngine
   questions: string[]
+  /** Same order as `questions`: whether that question has a model answer (used by the question picker in Speaking review). */
+  answered?: boolean[]
 }
 
 export interface SpeakingJob {
