@@ -23,6 +23,13 @@ export const speakingEffort = () => effortOf(process.env.SPEAKING_EFFORT, 'mediu
 export const polishEffort = () => effortOf(process.env.SPEAKING_POLISH_EFFORT, speakingEffort())
 /** Effort of the tagging calls in a sync (a simple classification). */
 export const tagEffort = () => effortOf(process.env.SPEAKING_TAG_EFFORT, 'low')
+/**
+ * Effort of Speaking review calls: SPEAKING_REVIEW_EFFORT, default 'low' (at 'medium', thinking tokens of 5k–20k
+ * drove review times to 1–4 min on a 1-minute recording).
+ */
+export const speakingReviewEffort = () => effortOf(process.env.SPEAKING_REVIEW_EFFORT, 'low')
+/** Effort of Call A (score + criteria) in Speaking review: SPEAKING_REVIEW_SCORE_EFFORT, else speakingReviewEffort(). */
+export const speakingScoreEffort = () => effortOf(process.env.SPEAKING_REVIEW_SCORE_EFFORT, speakingReviewEffort())
 
 export interface SpeakingCall<T> {
   label: string

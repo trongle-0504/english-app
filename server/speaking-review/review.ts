@@ -19,6 +19,7 @@ import {
   type TalkComparison,
   type TalkCriterion,
   type TalkCriterionId,
+  type TalkCriterionIssue,
   type TalkFix,
   type TalkHistoryItem,
   type TalkModelAnswer,
@@ -29,6 +30,7 @@ import {
   type TalkMisheard,
   type TalkScriptPoint,
   type TalkSource,
+  type TalkStep,
   type TalkWord,
 } from '../../src/types/speakingReview.ts'
 import type { WritingFix } from '../../src/types/writingReview.ts'
@@ -36,7 +38,7 @@ import { ApiError, type ApiContext } from '../api.ts'
 import { readJsonFile, writeJsonFile, writeTextFile } from '../files.ts'
 import { creditInBackground } from '../practice/real-use.ts'
 import { talkReviews } from '../practice/works.ts'
-import { antigravityModel, speakingEffort, speakingJson } from '../speaking/llm.ts'
+import { antigravityModel, speakingJson, speakingReviewEffort, speakingScoreEffort } from '../speaking/llm.ts'
 import { MAX_QUESTIONS, startSuggest } from '../speaking/suggest.ts'
 import {
   applyEdits,
@@ -51,7 +53,7 @@ import {
   type IssueKind,
   type RewriteIssue,
 } from '../writing-review/rewrite.ts'
-import { measureFluency, UNCLEAR } from './fluency.ts'
+import { hesitationSpots, measureFluency, UNCLEAR, type HesitationSpot } from './fluency.ts'
 import { readWav, transcribe } from './stt.ts'
 
 export const dir = (ctx: Pick<ApiContext, 'rootDir'>) => path.join(ctx.rootDir, 'progress', 'speaking-reviews')
@@ -64,12 +66,24 @@ const jobs = ((globalThis as { __talkReviewJobs?: Map<string, TalkReviewJob> }).
 
 const text = (value: unknown, max: number) => (typeof value === 'string' ? value.trim().slice(0, max) : '')
 
-/* ───────────── The examiner call ───────────── */
+/* ───────────── The examiner calls (A: score, B: edits, C: script) ───────────── */
+
+const CriterionIssue = z.object({
+  n: z.number().int().describe('Transcript sentence number.'),
+  quote: z.string().describe('A few words copied exactly from that RESTORED sentence: the place to improve.'),
+  ref: z.string().describe('H… for a hesitation spot, M… for the k-th item of your misheard list; "" otherwise.'),
+  problem: z.string().describe('Vietnamese, at most 20 words: what is wrong or missing here.'),
+  better: z.string().describe('English: how to say it better here; for pron, the IPA and the sound to fix.'),
+})
 
 const Criterion = z.object({
-  band: z.number().describe('0-9 in steps of 0.5.'),
-  summary: z.string().describe('Vietnamese, ONE sentence (at most 25 words): the main thing keeping this band from going higher.'),
-  improve: z.array(z.string()).describe('1-2 items, Vietnamese, one sentence each: a concrete fix quoting their words and a better English version.'),
+  strengths: z
+    .array(z.string())
+    .describe('1-3 items, English, a few words each with a short quote: what this answer clearly shows for this criterion.'),
+  gaps: z.array(z.string()).describe('0-3 items, English, a few words each: what keeps it from the next band.'),
+  band: z.number().describe('0-9 in steps of 0.5: the highest band whose features this answer fully shows.'),
+  summary: z.string().describe('Vietnamese, ONE sentence (at most 25 words): what this answer needs for the next band.'),
+  issues: z.array(CriterionIssue).describe('1-4 concrete places in this answer, most important first; fewer when there are fewer real ones.'),
 })
 
 const ReviewSchema = z.object({
@@ -87,8 +101,8 @@ const ReviewSchema = z.object({
         n: z.number().int().describe('Transcript sentence number.'),
         heard: z.string().describe('The misheard words, copied exactly from the transcript sentence.'),
         meant: z.string().describe('What they most likely said.'),
-        ipa: z.string().describe('IPA (British) of what they meant.'),
-        tip: z.string().describe('Vietnamese, at most 15 words: the sound to fix.'),
+        ipa: z.string().default('').describe('IPA (British) of what they meant.'),
+        tip: z.string().default('').describe('Vietnamese, at most 15 words: the sound to fix.'),
       }),
     )
     .describe('One per restored phrase.'),
@@ -127,10 +141,27 @@ const ReviewSchema = z.object({
       }),
     )
     .describe('The script idea by idea; [] when there is no script.'),
-  idea: z.string().describe('The speaker’s ideas restated in plain English as a short outline.'),
   question: z.string(),
   topic: z.string().describe('1-3 words.'),
 })
+
+const ScoreSchema = z.object({
+  restored: ReviewSchema.shape.restored,
+  misheard: ReviewSchema.shape.misheard,
+  criteria: z.object({ fc: Criterion, lr: Criterion, gra: Criterion, pron: Criterion }),
+  question: z.string(),
+  topic: z.string().describe('1-3 words.'),
+})
+const EditsSchema = ReviewSchema.pick({ edits: true })
+const ScriptSchema = ReviewSchema.pick({ points: true })
+
+const IdeaSchema = z.object({
+  idea: z.string().describe('The speaker’s ideas restated in plain English as a short outline.'),
+})
+
+const IDEA_SYSTEM = `You prepare the ideas of a Vietnamese learner's spoken IELTS answer for a coach who will write a model answer from them.
+You get the question, the part, and what the learner said, one sentence per line (an automatic transcript with misheard words already restored; their own mistakes are still in it).
+idea: their ideas restated in plain English as a short outline (what they meant, mistakes fixed, nothing new added). Keep their order of ideas, their reasons and examples; no new opinions, facts or details.`
 
 const PART_RULE: Record<TalkPart, string> = {
   1: 'IELTS Part 1: a short, direct answer of 2-4 sentences (20-35 s) with a reason or a detail.',
@@ -139,30 +170,84 @@ const PART_RULE: Record<TalkPart, string> = {
   free: 'Free talk: no IELTS part; judge it as connected spoken English on its topic.',
 }
 
-const SYSTEM = `You are an experienced IELTS Speaking examiner and coach. The speaker is a Vietnamese learner.
-You get an automatic transcript of their recorded answer — a speech recognizer wrote it: it adds punctuation and capitals itself, may drop filler sounds and may mishear a word (the words it was unsure of are listed) — with fluency figures measured from the timing, the question and the part.
+const INTRO = `You are an experienced IELTS Speaking examiner and coach. The speaker is a Vietnamese learner.
+You get an automatic transcript of their recorded answer — a speech recognizer wrote it: it adds punctuation and capitals itself, may drop filler sounds and may mishear a word (the words it was unsure of are listed) — with the question and the part.
+In every text you write, quote words with curly quotes “ ” — never straight double quotes, which would break the JSON.`
+
+const MISHEARD_GUARD = `The recognizer hears an unclear pronunciation as real but wrong words (“Movie Dust Moonly” for “multitasking smoothly”, “A on IPOs” for “8 or 9 points”, “effort dictionary” for “Oxford dictionary”, “can” where the meaning needs “can't”). Another pass restores those words and judges the pronunciation. Words that look misheard — words that make no sense there but sound like words that would, or unsure words that do not fit the meaning — are NOT the speaker's mistakes: read them as what the speaker most likely said, and never edit, quote or mark them down.`
+
+const SCORE_SYSTEM = `${INTRO}
+You also get fluency figures and the hesitation spots (H…) measured from the timing. Your job: restore what was misheard, rate the four criteria the way a trained IELTS examiner does, and point to the exact places to improve. Corrections and the script check are done by other passes.
 
 0. restored and misheard — FIRST, before anything else. The recognizer hears an unclear pronunciation as real but wrong words (“Movie Dust Moonly” for “multitasking smoothly”, “A on IPOs” for “8 or 9 points”, “effort dictionary” for “Oxford dictionary”, “can” where the meaning needs “can't”). Restore what they most likely SAID, from the question, the script (if any), the words around, the words the recognizer was unsure of, and how close the sounds are.
-- restored: for each transcript sentence that has misheard words, the sentence with ONLY those words restored. Keep everything else exactly as heard — every grammar mistake, wrong word form, wrong word choice, simple wording and filler stays: no upgrades, no fixes (the edits do that). When you cannot tell what they meant, leave the words as heard.
+- restored: for each transcript sentence that has misheard words, the sentence with ONLY those words restored. Keep everything else exactly as heard — every grammar mistake, wrong word form, wrong word choice, simple wording and filler stays: no upgrades, no fixes. When you cannot tell what they meant, leave the words as heard. Never restore a different form of the same word (“retired” → “retirees”, “city” → “cities”, “go” → “went”) and never add or remove an article: those are their grammar, not mishearings — leave them as heard.
 - misheard: one item per restored phrase: n, heard (copied exactly from the transcript sentence), meant, ipa of what they meant, tip (the sound or stress to fix, in Vietnamese).
 Everything below works on the RESTORED sentences (a sentence not restored stays as heard).
 
-1. edits: correct what they SAID (the restored sentences), as spoken English (never formal written style):
+1. HOW AN EXAMINER RATES — read before choosing any band:
+- Rate what a listener hears, not a written text. Spoken English is looser than writing: contractions, ideas chained with “and” or “so”, short fragments, a self-correction fixed at once, and an occasional “you know” or “I mean” are normal at every band and are never errors.
+- The punctuation and sentence breaks were added by the machine: never judge sentence length, run-on sentences or punctuation.
+- Misheard words are not the speaker's mistakes.
+- For each criterion, first collect the evidence — what the answer clearly shows (strengths) and what keeps it from the next band (gaps) — then give the HIGHEST band whose features this answer fully shows; use .5 when it fully shows one band and clearly most of the next. One or two slips never pull a criterion down a band: examiners rate typical performance. A single short answer shows less range than a whole test: do not mark down range the question did not call for.
+- Rate against the anchors below, never against a perfect native speaker. Most answers that are easy to follow, developed and mostly accurate sit at 6.5-7; keep 5.5 and below for answers that are hard to follow, very short or full of basic errors.
+
+2. BAND ANCHORS (paraphrased from the public IELTS Speaking descriptors):
+fc — Fluency & Coherence (use the figures: about 120-160 words a minute is natural; hesitations inside sentences matter, pauses between sentences are natural):
+  8: fluent; repetition or self-correction rare; pauses are mostly to think about content; ideas developed fully and easy to follow.
+  7: keeps going at length without visible effort; some hesitation, repetition or self-correction to find language, but the answer stays coherent; uses a range of linking words and discourse markers flexibly; ideas developed.
+  6: willing to speak at length, but coherence slips at times because of hesitation, repetition or self-correction; uses a range of linkers, not always appropriately.
+  5: keeps going mainly by repeating, self-correcting or speaking slowly; frequent mid-sentence pauses to find basic words; overuses a few linkers.
+lr — Lexical Resource:
+  8: wide vocabulary used readily to give precise meaning; skilful use of less common and idiomatic items, with only occasional slips in word choice or collocation; paraphrases well.
+  7: vocabulary used flexibly; some less common and idiomatic items and awareness of collocation and style, with some inappropriate choices; paraphrases effectively.
+  6: enough vocabulary to talk at length; some inappropriate choices, but the meaning is clear; generally paraphrases successfully.
+  5: enough for familiar topics but little flexibility; paraphrase attempts do not always work.
+  Natural, precise, common collocations count as range; rare or “big” words used for show do not raise the band, and a misused one lowers it.
+gra — Grammatical Range & Accuracy:
+  8: a wide range of structures used flexibly; most sentences error-free; only occasional, non-systematic errors.
+  7: a range of complex structures used with some flexibility; error-free sentences are frequent; some errors remain, including a few basic ones.
+  6: a mix of simple and complex forms with limited flexibility; errors are frequent in complex structures but rarely make the meaning unclear.
+  5: basic forms fairly accurate; complex structures attempted but limited and nearly always with errors.
+pron — Pronunciation: see 3.
+
+3. PRONUNCIATION — you cannot hear the audio, so rate it from the recognizer's evidence and say in the summary that it is an estimate:
+- Count only the misheard phrases that come from pronunciation. Do NOT count names, places, brands, numbers, rare or technical words, or words cut off at the start or end of the recording: the recognizer often mishears those even when they are said well.
+- Use the rate per 100 words together with the share of unclear words, the speed and the pauses (rhythm):
+  0 such phrases and few unclear words, smooth speech: 7.5-8;
+  about 1 per 100 words: 7;
+  about 2-3 per 100 words: 6-6.5;
+  4 or more per 100 words, or phrases whose mishearing changes the meaning: 5-5.5.
+  These are guides, not rules: the meaning of what was misheard and how easy the rest is to follow matter more than the count.
+
+4. FOR EACH CRITERION (fc, lr, gra, pron), in this order:
+- strengths: 1-3 short English notes, each with a short quote from the answer.
+- gaps: 0-3 short English notes: what keeps it from the next band (empty at 9).
+- band.
+- summary: ONE Vietnamese sentence: what this answer needs for the next band (never a description of the answer).
+- issues: 1-4 concrete places in THIS answer, most important first — fewer when there are fewer real ones; never invent one:
+  * fc: a hesitation spot (ref = its H number; quote = the words around it), a missing or weak link between two ideas, or an idea left undeveloped (quote = where it stops); better = how to keep going or link it.
+  * lr: a word or phrase that is plain, repeated, imprecise or a wrong combination; better = a natural, precise spoken alternative (band 7-8, never academic writing).
+  * gra: an error, or a place where two simple sentences would naturally be one complex sentence; better = the corrected or combined version.
+  * pron: a misheard phrase (ref = M and its number in your misheard list; quote = what they meant) or a word likely mispronounced; better = the IPA and the sound or stress to fix.
+  * n = the sentence number; quote = a few words copied exactly from that RESTORED sentence; problem in Vietnamese (at most 20 words). Do not use the same quote under two criteria.
+
+5. question: the question they answered (as given; for free talk, an IELTS-style question their talk answers). topic: a short topic name.`
+
+const EDITS_SYSTEM = `${INTRO}
+${MISHEARD_GUARD}
+Your job: the corrections. Bands and the script check are done by other passes.
+
+edits: correct what they SAID, as spoken English (never formal written style):
 - severity "error": grammar (tense, agreement, articles, plurals, verb patterns), word_form, collocation, word_choice (meaning does not fit), naturalness (not how a fluent speaker would say it);
 - severity "improve": correct but basic or repetitive wording an examiner would mark down for Lexical Resource, upgraded to natural band 7-8 SPOKEN English (common idiomatic phrases, collocations, less common words — not academic writing).
 Never edit punctuation, capitals, filler words, repetitions or false starts (that is fluency, measured separately). Keep their ideas.
-For each edit: sentence number; original = the SHORTEST exact substring of that RESTORED sentence the edit replaces, copied character for character; edits must not overlap; replacement; kind; severity; why in Vietnamese (at most 30 words); checks = ONLY the new word combinations the replacement creates, for a collocation dictionary (base = lemma of the headword whose entry lists it: the noun for verb+noun / adjective+noun / noun+noun / noun+verb, the verb for verb+preposition, the adjective for adverb+adjective; collocate = lemma of the partner; pattern). Spelling, grammar and word_form edits: checks [].
+For each edit: sentence number; original = the SHORTEST exact substring of that transcript sentence the edit replaces, copied character for character, never containing words that look misheard; edits must not overlap; replacement; kind; severity; why in Vietnamese (at most 30 words); checks = ONLY the new word combinations the replacement creates, for a collocation dictionary (base = lemma of the headword whose entry lists it: the noun for verb+noun / adjective+noun / noun+noun / noun+verb, the verb for verb+preposition, the adjective for adverb+adjective; collocate = lemma of the partner; pattern). Spelling, grammar and word_form edits: checks [].`
 
-2. criteria: a band for each, following the public IELTS Speaking band descriptors:
-- fc (Fluency & Coherence): use the figures (speed — about 120-160 words a minute is natural —, pauses, fillers, repeats) AND coherence: linking, how ideas are developed, relevance to the question, length against what the part expects;
-- lr (Lexical Resource), gra (Grammatical Range & Accuracy): from the RESTORED sentences (range of structures and words, and the errors) — never mark down words the recognizer misheard;
-- pron (Pronunciation): you cannot hear the audio. Base it on the misheard phrases (each is most likely an unclear pronunciation: the more and the worse, the lower), then the share of unclear words, speed and pauses; be conservative (at most 7 unless almost nothing was misheard or unclear), say in the summary that it is an estimate from the recognizer, and in improve name the sounds behind the misheard phrases.
-Each, in Vietnamese and SHORT — about two sentences in all, about what to improve, never general praise or a description of the answer:
-- summary: ONE sentence naming the main weakness that keeps this criterion's band from going higher (for a strong criterion: what the next band needs);
-- improve: 1-2 concrete fixes, one sentence each, quoting their own words and giving a better English version (bạn nói “…” → nói “…”).
-In every text you write, quote words with curly quotes “ ” — never straight double quotes, which would break the JSON.
+const SCRIPT_SYSTEM = `${INTRO}
+${MISHEARD_GUARD}
+You also get the script they planned to say. Your job: the script check. Bands and corrections are done by other passes.
 
-3. points: only when a planned script is given — the script idea by idea, judging by MEANING how well what they said matches each.
+points: the script idea by idea, judging by MEANING how well what they said matches each.
 Group the numbered script sentences (S…) into points: one per main idea or paragraph, consecutive sentences, covering all of them in order with no gaps or overlaps (from, to). A short script (Part 1, or under ~60 words) is ONE point; Part 3 usually 2-4; Part 2 usually 3-6. title = a few words naming the idea.
 heard = the numbers of the transcript sentences (T…) that say that point: any of them, in any order; a paraphrase with the same meaning counts; [] when it was not said. Each script sentence comes with code's guess from shared words ("hint") — it may be wrong: decide yourself.
 Scores 0-100:
@@ -175,9 +260,7 @@ diffs: at most 5 per point, the phrases or structures that matter — NEVER whol
 - weaker: simpler or less precise than the script's phrase;
 - wrong: a mistake or an unnatural phrase where the script has it right;
 - missing: a script phrase or detail they left out (said "").
-note: a few Vietnamese words (at most 12): why it matters or what to say. Compare the RESTORED sentences: misheard words are not their wording. With no script: [].
-
-4. idea: their ideas restated in plain English as a short outline (what they meant, mistakes fixed, nothing new added) — a model answer will be written from it. question: the question they answered (as given; for free talk, an IELTS-style question their talk answers). topic: a short topic name.`
+note: a few Vietnamese words (at most 12): why it matters or what to say. Misheard words are not their wording: compare what they most likely said.`
 
 /** One line of fluency figures for the prompt. */
 function figures(r: ReturnType<typeof measureFluency>, part: TalkPart): string {
@@ -212,7 +295,7 @@ const few = (list: string[], max: number) =>
 
 /* ───────────── What you most likely said ───────────── */
 
-type Graded = z.infer<typeof ReviewSchema>
+type GradedScore = z.infer<typeof ScoreSchema>
 const plainWords = (s: string) =>
   s
     .toLowerCase()
@@ -225,7 +308,7 @@ const plainWords = (s: string) =>
  * Your sentences with the misheard words restored. A restored sentence must still be mostly yours (half of its words
  * kept, about the same length): one the AI rewrote more than that stays as heard.
  */
-function restore(sentences: string[], restored: Graded['restored']): string[] {
+function restore(sentences: string[], restored: GradedScore['restored']): string[] {
   return sentences.map((sentence, i) => {
     const text = restored.find((r) => r.n === i + 1)?.text.trim()
     if (!text || text === sentence) return sentence
@@ -244,36 +327,173 @@ function restore(sentences: string[], restored: Graded['restored']): string[] {
  * The misheard phrases, each placed in your sentences and in the recording (by the words' timings) so it can be heard
  * again. A phrase not found in the transcript is dropped.
  */
-function placeMisheard(items: Graded['misheard'], sentences: string[], words: TalkWord[]): TalkMisheard[] {
+export function placePhrase(
+  phraseText: string,
+  sentenceIndex: number,
+  sentences: string[],
+  words: TalkWord[],
+): { sentence: number; start: number; end: number } {
+  const phrase = plainWords(phraseText)
+  if (!phrase.length) return { sentence: -1, start: 0, end: 0 }
+  const needle = phrase.join(' ')
+  let sentence = sentenceIndex
+  if (!(sentence >= 0 && sentence < sentences.length && plainWords(sentences[sentence]).join(' ').includes(needle)))
+    sentence = sentences.findIndex((s) => plainWords(s).join(' ').includes(needle))
+  if (sentence < 0) return { sentence: -1, start: 0, end: 0 }
+  if (!words.length) return { sentence, start: 0, end: 0 }
   const spoken = words.map((w) => plainWords(w.w).join(''))
-  // Where each of your sentences starts among the recognizer's words.
   const starts: number[] = []
   sentences.reduce((at, s) => (starts.push(at), at + s.split(/\s+/).filter(Boolean).length), 0)
-  const find = (phrase: string[], from: number, to: number) => {
+  const find = (from: number, to: number) => {
     for (let i = Math.max(0, from); i + phrase.length <= Math.min(spoken.length, to); i++) if (phrase.every((p, k) => spoken[i + k] === p)) return i
     return -1
   }
+  const near = find(starts[sentence] - 3, (starts[sentence + 1] ?? spoken.length) + 3)
+  const at = near >= 0 ? near : find(0, spoken.length)
+  return {
+    sentence,
+    start: at >= 0 ? words[at].start : 0,
+    end: at >= 0 ? words[at + phrase.length - 1].end : 0,
+  }
+}
+
+export function placeMisheard(items: GradedScore['misheard'], sentences: string[], words: TalkWord[]): TalkMisheard[] {
   const out: TalkMisheard[] = []
   for (const m of items) {
-    const phrase = plainWords(m.heard)
-    if (!phrase.length || !m.meant.trim()) continue
-    let sentence = m.n - 1
-    if (!(sentence >= 0 && sentence < sentences.length && plainWords(sentences[sentence]).join(' ').includes(phrase.join(' '))))
-      sentence = sentences.findIndex((s) => plainWords(s).join(' ').includes(phrase.join(' ')))
-    if (sentence < 0) continue
-    const near = find(phrase, starts[sentence] - 3, (starts[sentence + 1] ?? spoken.length) + 3)
-    const at = near >= 0 ? near : find(phrase, 0, spoken.length)
+    if (!m.meant.trim()) continue
+    const placed = placePhrase(m.heard, m.n - 1, sentences, words)
+    if (placed.sentence < 0) continue
     out.push({
-      sentence,
+      sentence: placed.sentence,
       heard: m.heard.trim(),
       meant: m.meant.trim(),
-      ipa: m.ipa.trim(),
-      tip: clip(m.tip.trim(), 120),
-      start: at >= 0 ? words[at].start : 0,
-      end: at >= 0 ? words[at + phrase.length - 1].end : 0,
+      ipa: (m.ipa || '').trim(),
+      tip: clip((m.tip || '').trim(), 120),
+      start: placed.start,
+      end: placed.end,
     })
   }
   return out
+}
+
+export function sentenceAudioRange(
+  sentenceIndex: number,
+  heardSentences: string[],
+  words: TalkWord[],
+): { start: number; end: number } {
+  if (sentenceIndex < 0 || sentenceIndex >= heardSentences.length || !words.length) {
+    return { start: 0, end: 0 }
+  }
+  const starts: number[] = []
+  heardSentences.reduce((at, s) => (starts.push(at), at + s.split(/\s+/).filter(Boolean).length), 0)
+  const startWordIdx = starts[sentenceIndex]
+  const wordCount = heardSentences[sentenceIndex].split(/\s+/).filter(Boolean).length
+  if (startWordIdx === undefined || wordCount === 0 || startWordIdx >= words.length) {
+    return { start: 0, end: 0 }
+  }
+  const endWordIdx = Math.min(words.length - 1, startWordIdx + wordCount - 1)
+  return {
+    start: words[startWordIdx].start,
+    end: words[endWordIdx].end,
+  }
+}
+
+export type RawMisheardItem = {
+  n: number
+  heard: string
+  meant: string
+  ipa?: string
+  tip?: string
+}
+
+export type RawCriterionIssue = z.infer<typeof CriterionIssue>
+
+export function mapCriterionIssues(
+  rawIssues: RawCriterionIssue[],
+  restoredSentences: string[],
+  heardSentences: string[],
+  words: TalkWord[],
+  spots: HesitationSpot[],
+  misheard: TalkMisheard[],
+  rawMisheard?: RawMisheardItem[],
+): { issues: TalkCriterionIssue[]; dropped: number } {
+  const hasQuote = (sentence: string | undefined, quote: string) => {
+    if (!sentence) return false
+    const q = plainWords(quote)
+    return q.length > 0 && plainWords(sentence).join(' ').includes(q.join(' '))
+  }
+  const round2 = (n: number) => Math.round(n * 100) / 100
+
+  // Pre-place each item in rawMisheard (before any filtering) to preserve 1-based indexing for M1, M2...
+  const placedRaw = (rawMisheard ?? []).map((m) => {
+    if (!m || !m.heard?.trim()) return null
+    return placePhrase(m.heard, m.n - 1, heardSentences, words)
+  })
+
+  const issues: TalkCriterionIssue[] = []
+  let dropped = 0
+  for (const raw of rawIssues) {
+    const quote = raw.quote.trim()
+    if (!quote) {
+      dropped++
+      continue
+    }
+    const ref = raw.ref.trim()
+    const spot = /^H\d+$/i.test(ref) ? spots.find((s) => s.ref.toLowerCase() === ref.toLowerCase()) : undefined
+    const mMatch = ref.match(/^M(\d+)$/i)
+    const misheardItem = mMatch ? misheard[Number(mMatch[1]) - 1] : undefined
+
+    const sentence = spot ? spot.sentence : raw.n - 1
+    if (!(sentence >= 0 && sentence < restoredSentences.length && hasQuote(restoredSentences[sentence], quote))) {
+      dropped++
+      continue
+    }
+
+    let start = 0
+    let end = 0
+    if (spot) {
+      start = Math.max(0, round2(spot.start - 1.5))
+      end = round2(spot.end + 1.5)
+    } else if (mMatch) {
+      const k = Number(mMatch[1])
+      if (rawMisheard && k >= 1 && k <= rawMisheard.length) {
+        const placed = placedRaw[k - 1]
+        if (placed && placed.sentence >= 0 && (placed.start > 0 || placed.end > 0)) {
+          start = placed.start
+          end = placed.end
+        }
+      } else if (misheardItem) {
+        start = misheardItem.start
+        end = misheardItem.end
+      }
+    } else {
+      let placed = placePhrase(quote, sentence, restoredSentences, words)
+      if (placed.start === 0 && placed.end === 0) {
+        placed = placePhrase(quote, sentence, heardSentences, words)
+      }
+      start = placed.start
+      end = placed.end
+    }
+
+    // Task 4: If timing not found (start = end = 0) but sentence is known, use the whole sentence's audio range
+    if (start === 0 && end === 0) {
+      const range = sentenceAudioRange(sentence, heardSentences, words)
+      start = range.start
+      end = range.end
+    }
+
+    if (issues.length < 4) {
+      issues.push({
+        sentence,
+        quote,
+        problem: raw.problem.trim(),
+        better: raw.better.trim(),
+        start,
+        end,
+      })
+    }
+  }
+  return { issues, dropped }
 }
 
 /* ───────────── Script ───────────── */
@@ -284,7 +504,7 @@ const WORD_FOR_WORD = 0.9
 /** The script goes to the AI sentence by sentence up to this many (passages of sentences beyond: a very long script). */
 const MAX_SCRIPT_SENTENCES = 40
 
-type GradedPoint = z.infer<typeof ReviewSchema>['points'][number]
+type GradedPoint = z.infer<typeof ScriptSchema>['points'][number]
 const clip = (s: string, max: number) => (s.length > max ? `${s.slice(0, max).replace(/\s+\S*$/, '')}…` : s)
 
 /**
@@ -357,6 +577,24 @@ function scriptComparison(aligned: ScriptLine[], graded: GradedPoint[], spoken: 
 
 /* ───────────── Model answer (Speaking ideas) ───────────── */
 
+/** Restates the speaker's restored answer as a short plain-English outline (on demand when a model answer is requested). */
+export async function ideaOf(_ctx: Pick<ApiContext, 'rootDir'>, result: TalkReviewResult): Promise<string> {
+  const ideaPrompt = [
+    PART_RULE[result.part],
+    `Question: ${result.question || '(none given — free talk)'}`,
+    `What they said, one sentence per line:\n${result.sentences.map((s, i) => `${i + 1}. ${s}`).join('\n')}`,
+  ].join('\n\n')
+  const { value } = await speakingJson({
+    label: 'speaking review: idea',
+    engine: 'antigravity',
+    effort: 'low',
+    system: IDEA_SYSTEM,
+    schema: IdeaSchema,
+    prompt: ideaPrompt,
+  })
+  return value.idea.trim()
+}
+
 /** Starts Speaking ideas on your ideas; the result keeps its id (or why it could not start). */
 function startModel(ctx: ApiContext, model: TalkModelAnswer): TalkModelAnswer {
   const { jobId: _old, error: _error, ...rest } = model
@@ -376,7 +614,7 @@ function startModel(ctx: ApiContext, model: TalkModelAnswer): TalkModelAnswer {
 
 /* ───────────── The job ───────────── */
 
-interface Input {
+export interface Input {
   part: TalkPart
   question: string
   topic: string
@@ -401,71 +639,219 @@ interface Pending extends Input {
   at: string
 }
 
-async function run(ctx: ApiContext, job: TalkReviewJob, input: Input, audio: ReturnType<typeof readWav>) {
+export interface ReviewRecordingOpts {
+  id?: string
+  createdAt?: string
+  onStep?: (step: TalkStep) => void
+  onPartial?: (partial: TalkReviewResult) => void
+  onStats?: (stats: { droppedEdits: number }) => void
+}
+
+/** Runs the speaking review pipeline on a decoded recording without writing job files. */
+export async function reviewRecording(
+  ctx: Pick<ApiContext, 'rootDir'>,
+  input: Input,
+  audio: ReturnType<typeof readWav>,
+  opts: ReviewRecordingOpts = {},
+): Promise<TalkReviewResult> {
   const started = Date.now()
-  try {
-    job.step = 'transcribe'
-    const heard = await transcribe(ctx.rootDir, audio)
-    if (heard.words.length < 3) throw new ApiError(422, 'Không nghe được lời nói nào trong bản ghi — kiểm tra micro rồi thử lại.')
-    const sentences = splitSentences(heard.text)
-    const fluency = measureFluency(heard.words, heard.duration, sentences)
-    const unclear = [...new Set(heard.words.filter((w) => w.conf < UNCLEAR).map((w) => w.w.replace(/[^\p{L}\p{N}'-]/gu, '')))].filter(Boolean)
+  const id = opts.id ?? 'rereview'
+  const createdAt = opts.createdAt ?? new Date().toISOString()
 
-    // Each script sentence with the stretch of the answer that shares most of its words (code); the AI then judges the
-    // match by meaning — and may point at other words when the sentence was said elsewhere or in other words.
-    const aligned = input.script ? checkScript(input.script, sentences, MAX_SCRIPT_SENTENCES).lines : []
+  opts.onStep?.('transcribe')
+  const tTranscribe = Date.now()
+  const heard = await transcribe(ctx.rootDir, audio)
+  const transcribeMs = Date.now() - tTranscribe
+  if (heard.words.length < 3) throw new ApiError(422, 'Không nghe được lời nói nào trong bản ghi — kiểm tra micro rồi thử lại.')
+  const sentences = splitSentences(heard.text)
+  const fluency = measureFluency(heard.words, heard.duration, sentences)
+  const unclear = [...new Set(heard.words.filter((w) => w.conf < UNCLEAR).map((w) => w.w.replace(/[^\p{L}\p{N}'-]/gu, '')))].filter(Boolean)
 
-    job.step = 'analyze'
-    const { value, model } = await speakingJson({
-      label: 'speaking review',
+  // Each script sentence with the stretch of the answer that shares most of its words (code); the AI then judges the
+  // match by meaning — and may point at other words when the sentence was said elsewhere or in other words.
+  const aligned = input.script ? checkScript(input.script, sentences, MAX_SCRIPT_SENTENCES).lines : []
+
+  opts.onStep?.('analyze')
+  const effort = speakingReviewEffort()
+  const scoreEffort = speakingScoreEffort()
+  const transcript = sentences.map((s, i) => `${i + 1}. ${s}`).join('\n')
+  const unsure = `Words the recognizer was unsure of: ${unclear.length ? unclear.join(', ') : 'none'}`
+  const spots = hesitationSpots(heard.words, sentences)
+  const spotLines = spots.length
+    ? spots.map((h) => `${h.ref}: sentence ${h.sentence + 1}, ${h.seconds} s between “${h.before}” and “${h.after}”`).join('\n')
+    : 'none'
+
+  const scorePrompt = [
+    PART_RULE[input.part],
+    `Question: ${input.question || '(none given — free talk)'}`,
+    ...(input.topic ? [`Topic: ${input.topic}`] : []),
+    `Fluency figures: ${figures(fluency, input.part)}`,
+    `Hesitation spots (silences of 0.8 s or more inside a sentence):\n${spotLines}`,
+    unsure,
+    `Transcript, one sentence per line:\n${transcript}`,
+    ...(input.script ? [`The script they planned to say (only to help you work out misheard words):\n${input.script}`] : []),
+  ].join('\n\n')
+
+  const scriptPrompt = [
+    PART_RULE[input.part],
+    `Question: ${input.question || '(none given — free talk)'}`,
+    unsure,
+    `Transcript, one sentence per line (T1, T2… in the hints):\n${transcript}`,
+    `The script they planned to say, sentence by sentence (S…), with code's guess of the transcript sentences that say it:\n${aligned
+      .map((l, i) => `S${i + 1}. ${l.sentence}\n    hint: ${l.heard.length ? l.heard.map((n) => `T${n + 1}`).join(', ') : 'none found'}`)
+      .join('\n')}`,
+  ].join('\n\n')
+
+  const tScore = Date.now()
+  let scoreMs = 0
+  const callA = speakingJson({
+    label: 'speaking review: score',
+    engine: 'antigravity',
+    effort: scoreEffort,
+    system: SCORE_SYSTEM,
+    schema: ScoreSchema,
+    prompt: scorePrompt,
+  }).then((res) => {
+    scoreMs = Date.now() - tScore
+    return res
+  })
+
+  const tScript = Date.now()
+  let scriptMs = 0
+  const callC = input.script
+    ? speakingJson({
+        label: 'speaking review: script',
+        engine: 'antigravity',
+        effort,
+        system: SCRIPT_SYSTEM,
+        schema: ScriptSchema,
+        prompt: scriptPrompt,
+      }).then((res) => {
+        scriptMs = Date.now() - tScript
+        return res
+      })
+    : null
+
+  // Prevent unhandled rejection warning if C fails before A settles
+  callC?.catch(() => {})
+
+  const { value: a, model } = await callA
+
+  // What you most likely said: misheard words restored (your own mistakes kept) — what is corrected, graded and
+  // compared with the script. As heard stays for the timings (fluency, the words on the page).
+  const said = restore(sentences, a.restored)
+  const misheard = placeMisheard(a.misheard, sentences, heard.words)
+
+  let droppedCriterionIssues = 0
+  const criteria = Object.fromEntries(
+    (['fc', 'lr', 'gra', 'pron'] as const).map((cid) => {
+      const c = a.criteria[cid]
+      const mapped = mapCriterionIssues(c.issues, said, sentences, heard.words, spots, misheard, a.misheard)
+      droppedCriterionIssues += mapped.dropped
+      return [
+        cid,
+        {
+          band: band(c.band),
+          summary: c.summary.trim(),
+          good: [] as string[],
+          improve: [] as string[],
+          strengths: few(c.strengths, 3),
+          gaps: few(c.gaps, 3),
+          issues: mapped.issues,
+        } satisfies TalkCriterion,
+      ]
+    }),
+  ) as Record<TalkCriterionId, TalkCriterion>
+  if (droppedCriterionIssues > 0) {
+    console.log(`[speaking-review] ${id} dropped ${droppedCriterionIssues} criterion issue(s) whose quote was not in the restored sentence`)
+  }
+
+  const question = input.question || a.question.trim()
+  const topic = input.topic || a.topic.trim()
+  // Your ideas, ready for a model answer: Speaking ideas summarizes and writes it only when you ask.
+  let modelAnswer: TalkModelAnswer | undefined
+  if (!input.script) {
+    const part: SpeakingPart = input.part === 'free' ? (fluency.speech >= 75 ? 2 : 3) : input.part
+    modelAnswer = { topic, question, part }
+  }
+
+  let current: TalkReviewResult = {
+    id,
+    createdAt,
+    durationMs: Date.now() - started,
+    part: input.part,
+    question,
+    ...(topic ? { topic } : {}),
+    ...(input.script ? { script: input.script } : {}),
+    ...(input.source ? { source: input.source } : {}),
+    audio: true,
+    transcript: heard.text,
+    words: heard.words,
+    sentences: said,
+    ...(said.some((s, i) => s !== sentences[i]) ? { heardSentences: sentences } : {}),
+    correctedSentences: said,
+    ...(misheard.length ? { misheard } : {}),
+    corrected: said.join(' '),
+    fixes: [],
+    warnings: [],
+    fluency,
+    criteria,
+    overall: overallBand(Object.values(criteria).map((x) => x.band)),
+    ...(modelAnswer ? { model: modelAnswer } : {}),
+    reviewer: model || antigravityModel(),
+    pending: ['fixes', ...(input.script ? (['comparison'] as const) : [])],
+  }
+  opts.onPartial?.(current)
+
+  const restoredTranscript = said.map((s, i) => `${i + 1}. ${s}`).join('\n')
+  const editsPrompt = [
+    PART_RULE[input.part],
+    `Question: ${input.question || '(none given — free talk)'}`,
+    unsure,
+    `Transcript with misheard words already restored, one sentence per line (the edits refer to these numbers):\n${restoredTranscript}`,
+  ].join('\n\n')
+
+  let editsMs = 0
+  let dictMs = 0
+  const fixesBranch = (async () => {
+    const tEdits = Date.now()
+    const { value: b } = await speakingJson({
+      label: 'speaking review: edits',
       engine: 'antigravity',
-      effort: speakingEffort(),
-      system: SYSTEM,
-      schema: ReviewSchema,
-      prompt: [
-        PART_RULE[input.part],
-        `Question: ${input.question || '(none given — free talk)'}`,
-        ...(input.topic ? [`Topic: ${input.topic}`] : []),
-        `Fluency figures: ${figures(fluency, input.part)}`,
-        `Words the recognizer was unsure of: ${unclear.length ? unclear.join(', ') : 'none'}`,
-        `Transcript, one sentence per line (the edits refer to these numbers; T${1}… in the script check):\n${sentences.map((s, i) => `${i + 1}. ${s}`).join('\n')}`,
-        ...(input.script
-          ? [
-              `The script they planned to say, sentence by sentence (S…), with code's guess of the transcript sentences that say it:\n${aligned
-                .map((l, i) => `S${i + 1}. ${l.sentence}\n    hint: ${l.heard.length ? l.heard.map((n) => `T${n + 1}`).join(', ') : 'none found'}`)
-                .join('\n')}`,
-            ]
-          : ['No script was given.']),
-      ].join('\n\n'),
+      effort,
+      system: EDITS_SYSTEM,
+      schema: EditsSchema,
+      prompt: editsPrompt,
+    })
+    editsMs = Date.now() - tEdits
+    opts.onStep?.('dictionary')
+    const tDict = Date.now()
+
+    // Edit only needs to be locatable in said[i], as in the old pipeline:
+    const validEdits = b.edits.filter((edit) => {
+      const idx = edit.sentence - 1
+      const sentence = said[idx]
+      const orig = edit.original.trim()
+      if (!sentence || !orig || orig === edit.replacement.trim()) return false
+      return locate(sentence, edit.original) >= 0
     })
 
-    // What you most likely said: misheard words restored (your own mistakes kept) — what is corrected, graded and
-    // compared with the script. As heard stays for the timings (fluency, the words on the page).
-    const said = restore(sentences, value.restored)
-    const misheard = placeMisheard(value.misheard, sentences, heard.words)
-
-    job.step = 'dictionary'
     const dict = dictionaries()
     const issues: RewriteIssue[] = await Promise.all(
-      value.edits
-        .filter((raw) => {
-          const sentence = said[raw.sentence - 1]
-          return sentence && raw.original.trim() && raw.original !== raw.replacement && locate(sentence, raw.original) >= 0
-        })
-        .map(async (raw) => {
-          const issue: RewriteIssue = {
-            sentenceIndex: raw.sentence - 1,
-            original: raw.original,
-            replacement: raw.replacement,
-            kind: raw.kind,
-            severity: raw.severity,
-            why: raw.why,
-            checks: await Promise.all(raw.checks.map((c) => dict.combination(c))),
-            verified: false,
-          }
-          await verify(issue, dict)
-          return issue
-        }),
+      validEdits.map(async (raw) => {
+        const issue: RewriteIssue = {
+          sentenceIndex: raw.sentence - 1,
+          original: raw.original,
+          replacement: raw.replacement,
+          kind: raw.kind,
+          severity: raw.severity,
+          why: raw.why,
+          checks: await Promise.all(raw.checks.map((c) => dict.combination(c))),
+          verified: false,
+        }
+        await verify(issue, dict)
+        return issue
+      }),
     )
     const fixed: RewriteIssue[] = []
     const unconfirmed = issues.filter((i) => !i.verified)
@@ -489,58 +875,70 @@ async function run(ctx: ApiContext, job: TalkReviewJob, input: Input, audio: Ret
         explanation: issue.why,
         ...proofOf(issue),
       }))
-      .sort((a, b) => a.sentenceIndex - b.sentenceIndex)
+      .sort((x, y) => x.sentenceIndex - y.sentenceIndex)
+    const warnings = unconfirmed.map((issue) => ({
+      phrase: issue.original,
+      ...(issue.replacement ? { suggestion: issue.replacement } : {}),
+      explanation: `${issue.why} (AI đề xuất; Longman/OZDIC chưa xác nhận cách sửa nên không tự sửa.)`,
+    }))
+    dictMs = Date.now() - tDict
 
-    const criteria = Object.fromEntries(
-      (['fc', 'lr', 'gra', 'pron'] as const).map((id) => {
-        const c = value.criteria[id]
-        return [id, { band: band(c.band), summary: c.summary.trim(), good: [] as string[], improve: few(c.improve, 2) } satisfies TalkCriterion]
-      }),
-    ) as Record<TalkCriterionId, TalkCriterion>
-
-    const question = input.question || value.question.trim()
-    const topic = input.topic || value.topic.trim()
-    // Your ideas, ready for a model answer: Speaking ideas writes it only when you ask (six AI calls, ~90k tokens).
-    let modelAnswer: TalkModelAnswer | undefined
-    if (!input.script) {
-      const part: SpeakingPart = input.part === 'free' ? (fluency.speech >= 75 ? 2 : 3) : input.part
-      modelAnswer = { topic, question, idea: value.idea.trim(), part }
-    }
-
-    const result: TalkReviewResult = {
-      id: job.id,
-      createdAt: job.startedAt,
-      durationMs: Date.now() - started,
-      part: input.part,
-      question,
-      ...(topic ? { topic } : {}),
-      ...(input.script ? { script: input.script } : {}),
-      ...(input.source ? { source: input.source } : {}),
-      audio: true,
-      transcript: heard.text,
-      words: heard.words,
-      sentences: said,
-      ...(said.some((s, i) => s !== sentences[i]) ? { heardSentences: sentences } : {}),
+    const nextPending = (current.pending ?? []).filter((p) => p !== 'fixes')
+    current = {
+      ...current,
       correctedSentences,
-      ...(misheard.length ? { misheard } : {}),
       corrected: correctedSentences.join(' '),
       fixes,
-      warnings: unconfirmed.map((issue) => ({
-        phrase: issue.original,
-        ...(issue.replacement ? { suggestion: issue.replacement } : {}),
-        explanation: `${issue.why} (AI đề xuất; Longman/OZDIC chưa xác nhận cách sửa nên không tự sửa.)`,
-      })),
-      fluency,
-      criteria,
-      overall: overallBand(Object.values(criteria).map((x) => x.band)),
-      ...(input.script
-        ? {
-            comparison: scriptComparison(aligned, value.points, said),
-          }
-        : {}),
-      ...(modelAnswer ? { model: modelAnswer } : {}),
-      reviewer: model || antigravityModel(),
+      warnings,
+      ...(nextPending.length ? { pending: nextPending } : { pending: undefined }),
     }
+    if (nextPending.length) opts.onPartial?.(current)
+  })()
+
+  const scriptBranch = (async () => {
+    if (!callC) return
+    const { value: c } = await callC
+    const comparison = scriptComparison(aligned, c.points, said)
+    const nextPending = (current.pending ?? []).filter((p) => p !== 'comparison')
+    current = {
+      ...current,
+      comparison,
+      ...(nextPending.length ? { pending: nextPending } : { pending: undefined }),
+    }
+    if (nextPending.length) opts.onPartial?.(current)
+  })()
+
+  await Promise.all([fixesBranch, scriptBranch])
+
+  const totalMs = Date.now() - started
+  const timings = {
+    transcribe: transcribeMs,
+    ai: { score: scoreMs, edits: editsMs, ...(callC ? { script: scriptMs } : {}) },
+    dictionary: dictMs,
+    total: totalMs,
+  }
+  console.log('[speaking-review]', id, 'timings', JSON.stringify(timings))
+
+  const { pending: _pending, ...finalResult } = current
+  return {
+    ...finalResult,
+    durationMs: totalMs,
+    timings,
+  }
+}
+
+async function run(ctx: ApiContext, job: TalkReviewJob, input: Input, audio: ReturnType<typeof readWav>) {
+  try {
+    const result = await reviewRecording(ctx, input, audio, {
+      id: job.id,
+      createdAt: job.startedAt,
+      onStep: (step) => {
+        job.step = step
+      },
+      onPartial: (partial) => {
+        job.result = partial
+      },
+    })
     await writeJsonFile(fileOf(ctx, job.id), result)
     job.result = result
     job.status = 'done'
@@ -549,6 +947,7 @@ async function run(ctx: ApiContext, job: TalkReviewJob, input: Input, audio: Ret
     creditInBackground(ctx, 'talk', job.id)
     await rm(fileOf(ctx, job.id, 'pending'), { force: true })
   } catch (error) {
+    job.result = undefined
     job.status = 'error'
     job.error = (error as Error).message
     // The recording stays: "Try again" reviews it again without recording it again.
@@ -636,6 +1035,15 @@ export async function talkAudio(ctx: ApiContext, id: string): Promise<Buffer> {
 export async function restartModel(ctx: ApiContext, id: string): Promise<TalkReviewResult> {
   const result = await talkReview(ctx, id)
   if (!result?.model) throw new ApiError(404, 'Review not found.')
+  if (!result.model.idea?.trim()) {
+    try {
+      const idea = await ideaOf(ctx, result)
+      if (!idea) throw new Error('Empty idea')
+      result.model.idea = idea
+    } catch {
+      throw new ApiError(502, 'Không tóm tắt được ý từ bài nói để viết bài mẫu — vui lòng thử lại.')
+    }
+  }
   result.model = startModel(ctx, result.model)
   if (result.model.error) throw new ApiError(429, result.model.error)
   await writeJsonFile(fileOf(ctx, id), result)

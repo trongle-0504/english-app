@@ -43,6 +43,63 @@ function variety(words: string[]): number {
 
 const round = (n: number, digits = 2) => Math.round(n * 10 ** digits) / 10 ** digits
 
+export interface HesitationSpot {
+  /** H1, H2… in time order. */
+  ref: string
+  /** 0-based sentence index in `sentences` (same counting as placeMisheard: words per sentence). */
+  sentence: number
+  before: string
+  after: string
+  seconds: number
+  /** Start and end of the silence, seconds into the recording. */
+  start: number
+  end: number
+}
+
+/**
+ * Silences ≥ HESITATION (0.8 s) inside a sentence (the word before does not end a sentence).
+ * Keeps the `max` longest, then numbers them H1… in time order.
+ */
+export function hesitationSpots(words: TalkWord[], sentences: string[], max = 10): HesitationSpot[] {
+  if (words.length < 2 || max <= 0) return []
+  const starts: number[] = []
+  sentences.reduce((at, s) => (starts.push(at), at + s.split(/\s+/).filter(Boolean).length), 0)
+  const sentenceOf = (wordIdx: number) => {
+    for (let s = starts.length - 1; s >= 0; s--) {
+      if (wordIdx >= starts[s]!) return s
+    }
+    return 0
+  }
+
+  const raw: (Omit<HesitationSpot, 'ref'> & { idx: number; rawGap: number })[] = []
+  for (let i = 0; i < words.length - 1; i++) {
+    const prev = words[i]!
+    const next = words[i + 1]!
+    if (endsSentence(prev.w)) continue
+    const gap = next.start - prev.end
+    if (gap < HESITATION) continue
+    raw.push({
+      idx: i,
+      rawGap: gap,
+      sentence: sentenceOf(i),
+      before: prev.w.replace(/[,;:]+$/, '') || prev.w,
+      after: next.w.replace(/[.!?,;:]+$/, '') || next.w,
+      seconds: round(gap, 1),
+      start: prev.end,
+      end: next.start,
+    })
+  }
+
+  return raw
+    .sort((a, b) => b.rawGap - a.rawGap || a.idx - b.idx)
+    .slice(0, max)
+    .sort((a, b) => a.idx - b.idx)
+    .map(({ idx: _idx, rawGap: _rawGap, ...spot }, k) => ({
+      ref: `H${k + 1}`,
+      ...spot,
+    }))
+}
+
 export function measureFluency(words: TalkWord[], duration: number, sentences: string[]): TalkFluency {
   const spoken = words.map((w) => plain(w.w)).filter(Boolean)
   const speech = words.length ? Math.max(0, words[words.length - 1].end - words[0].start) : 0

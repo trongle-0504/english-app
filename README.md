@@ -437,7 +437,8 @@ Task 2) vào `content/speaking/topic-tags.json`: ngoài chức năng / chủ đ�
 ideas bỏ mẩu câu, cụm C2 và cụm chỉ hợp văn viết, và xếp cụm C1 thấp hơn B1/B2; Writing Review (tab "Cụm từ gợi ý") bỏ mẩu
 câu và cụm C2. Mục chưa gắn nhãn vẫn được dùng như trước (chức năng/chủ đề đoán theo tên nhóm). Sync bỏ qua giá trị
 nhãn lạ thay vì làm hỏng cả lô 50 mục. Biến môi trường (tuỳ chọn): `SPEAKING_CLAUDE_MODEL` (trống = model của Writing Review),
-`SPEAKING_EFFORT` (mặc định `medium`), `SPEAKING_TAG_EFFORT` (Sync, mặc định `low`).
+`SPEAKING_EFFORT` (mặc định `medium`), `SPEAKING_TAG_EFFORT` (Sync, mặc định `low`), `SPEAKING_REVIEW_EFFORT` (Speaking Review, mặc định `low`),
+`SPEAKING_REVIEW_SCORE_EFFORT` (bước chấm điểm/tiêu chí của Speaking Review, mặc định theo `SPEAKING_REVIEW_EFFORT`). Hiệu chuẩn điểm Speaking Review với bộ bản ghi có sẵn band chuẩn (`cache/calibration/speaking.json`): `node scripts/speaking-calibration.ts`.
 
 ## Cấu trúc code
 

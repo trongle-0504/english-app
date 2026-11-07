@@ -166,6 +166,8 @@ export function Transcript({
   // Corrected first: what to fix is what you came for; "As heard" is a click away.
   const [view, setView] = useState<'heard' | 'corrected'>('corrected')
   const [open, setOpen] = useState(true)
+  const fixesPending = Boolean(result.pending?.includes('fixes'))
+  const effectiveView = fixesPending ? 'heard' : view
   return (
     <>
       {audioSrc ? (
@@ -190,9 +192,11 @@ export function Transcript({
               <FileText className="size-4.5" />
             </span>
             What you said
-            <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-semibold text-slate-600 dark:bg-slate-800 dark:text-slate-300">
-              {result.fixes.length} corrections
-            </span>
+            {!fixesPending ? (
+              <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-semibold text-slate-600 dark:bg-slate-800 dark:text-slate-300">
+                {result.fixes.length} corrections
+              </span>
+            ) : null}
           </span>
           <span className="inline-flex items-center gap-1 text-sm font-semibold text-slate-500 dark:text-slate-400">
             {open ? 'Hide' : 'Show'}
@@ -202,16 +206,18 @@ export function Transcript({
         {open ? (
           <div className="space-y-4 border-t border-slate-100 px-5 pt-4 pb-5 sm:px-6 sm:pb-6 dark:border-slate-800">
             <div className="flex flex-wrap items-center justify-between gap-2">
-              <SegmentedControl
-                size="sm"
-                value={view}
-                onChange={setView}
-                options={[
-                  { value: 'heard', label: 'As heard' },
-                  { value: 'corrected', label: `Corrected (${result.fixes.length})` },
-                ]}
-              />
-              {view === 'heard' ? (
+              {!fixesPending ? (
+                <SegmentedControl
+                  size="sm"
+                  value={view}
+                  onChange={setView}
+                  options={[
+                    { value: 'heard', label: 'As heard' },
+                    { value: 'corrected', label: `Corrected (${result.fixes.length})` },
+                  ]}
+                />
+              ) : null}
+              {effectiveView === 'heard' ? (
                 <span className="flex flex-wrap items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
                   <span className="inline-flex items-center gap-1">
                     <span className="rounded-full bg-amber-100 px-1.5 text-[11px] font-bold text-amber-800 dark:bg-amber-950/60 dark:text-amber-300">
@@ -224,7 +230,7 @@ export function Transcript({
                 </span>
               ) : null}
             </div>
-            {view === 'heard' ? (
+            {effectiveView === 'heard' ? (
               <Heard words={result.words} audio={audio} />
             ) : (
               <div className="space-y-2 text-[16px]">

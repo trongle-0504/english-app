@@ -79,6 +79,19 @@ export const TALK_CRITERIA: { id: TalkCriterionId; label: string; short: string;
   },
 ]
 
+/** A place in your answer to improve for one criterion (newer reviews). */
+export interface TalkCriterionIssue {
+  /** Your sentence (0-based, into `sentences`). */
+  sentence: number
+  quote: string
+  /** Vietnamese. */
+  problem: string
+  better: string
+  /** Seconds into the recording (both 0 when it could not be placed). */
+  start: number
+  end: number
+}
+
 export interface TalkCriterion {
   /** Estimated band, 0–9 in steps of 0.5. */
   band: number
@@ -86,8 +99,14 @@ export interface TalkCriterion {
   summary: string
   /** Vietnamese: what you did well — older reviews only (now empty: the review is about what to improve). */
   good: string[]
-  /** Vietnamese: 1–2 concrete fixes, your own words quoted with a better version. */
+  /** Vietnamese: 1–2 concrete fixes, your own words quoted with a better version (older reviews). */
   improve: string[]
+  /** 1–3 items, English, with a short quote: what this answer clearly shows (newer reviews). */
+  strengths?: string[]
+  /** 0–3 items, English: what keeps it from the next band (newer reviews). */
+  gaps?: string[]
+  /** 1–4 concrete places in this answer to improve, with recording timestamps (newer reviews). */
+  issues?: TalkCriterionIssue[]
 }
 
 /**
@@ -185,8 +204,8 @@ export interface TalkModelAnswer {
   jobId?: string
   topic: string
   question: string
-  /** Your ideas as the AI understood them (English): what the model answer is built on. */
-  idea: string
+  /** Your ideas as the AI understood them (English): filled when a model answer is first asked for; older reviews have it. */
+  idea?: string
   part: SpeakingPart
   /** Why it could not start (another suggestion running…): POST /api/speaking-review/model starts it again. */
   error?: string
@@ -227,6 +246,10 @@ export interface TalkReviewResult {
   model?: TalkModelAnswer
   /** The AI model that reviewed it. */
   reviewer: string
+  /** How long each step took, ms (reviews from before timings were kept have none). */
+  timings?: { transcribe: number; ai: Record<string, number>; dictionary: number; total: number }
+  /** Sections still being computed on a running job's in-memory result (never saved to disk). */
+  pending?: ('fixes' | 'comparison')[]
 }
 
 export type TalkStep = 'transcribe' | 'analyze' | 'dictionary' | 'model'

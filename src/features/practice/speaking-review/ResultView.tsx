@@ -6,11 +6,13 @@ import {
   ArrowRight,
   BookOpenCheck,
   CheckCircle2,
+  ChevronDown,
   ExternalLink,
   Info,
   ListChecks,
   Loader2,
   MessageSquareQuote,
+  Play,
   RotateCcw,
   Sparkles,
   type LucideIcon,
@@ -20,11 +22,11 @@ import { Link } from 'react-router'
 import { Badge, Button, Card } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import type { SpeakingJob } from '@/types/speaking'
-import { TALK_CRITERIA, talkPartLabel, type TalkReviewResult } from '@/types/speakingReview'
+import { TALK_CRITERIA, talkPartLabel, type TalkCriterion, type TalkReviewResult } from '@/types/speakingReview'
 import { speakingApi } from '../speaking-ideas/api'
 import { Segments } from '../speaking-ideas/SuggestionResult'
 import { audioUrl, talkApi } from './api'
-import { useTalkAudio } from './audio'
+import { useTalkAudio, type AudioControl } from './audio'
 import { FluencyFigures } from './Figures'
 import { Pronunciation } from './Pronunciation'
 import { ScriptComparison } from './ScriptComparison'
@@ -100,53 +102,146 @@ function Section({
   )
 }
 
-function Criteria({ result }: { result: TalkReviewResult }) {
+function CriterionCard({
+  meta,
+  r,
+  audio,
+}: {
+  meta: (typeof TALK_CRITERIA)[number]
+  r: TalkCriterion
+  audio: AudioControl | null
+}) {
+  const [gapsOpen, setGapsOpen] = useState(false)
+  const hasNewFields = Boolean(r.issues !== undefined || r.strengths?.length || r.gaps?.length)
+  return (
+    <Card className="p-4 sm:p-5">
+      <div className="mb-2 flex items-start justify-between gap-3">
+        <div>
+          <p className="text-xs font-bold tracking-wide text-slate-400 uppercase">{meta.short}</p>
+          <h3 className="flex items-center gap-1.5 font-bold text-slate-900 dark:text-white">
+            {meta.label}
+            <span title={meta.hint} className="text-slate-400">
+              <Info className="size-3.5" />
+            </span>
+          </h3>
+        </div>
+        <span className={cn('text-3xl leading-none font-extrabold tabular-nums', bandTone(r.band))}>{r.band.toFixed(1)}</span>
+      </div>
+      <div className="mb-3 h-1.5 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800">
+        <div
+          className={cn('h-full rounded-full bg-current transition-[width] duration-700', bandTone(r.band))}
+          style={{ width: `${(r.band / 9) * 100}%` }}
+        />
+      </div>
+      <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-300">{r.summary}</p>
+
+      {hasNewFields ? (
+        <>
+          {r.strengths?.length ? (
+            <ul className="mt-3 space-y-1.5">
+              {r.strengths.map((s, i) => (
+                <li key={i} className="flex gap-2 text-sm text-slate-700 dark:text-slate-300">
+                  <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-emerald-500" />
+                  <span className="min-w-0 break-words">{s}</span>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+
+          {r.issues?.length ? (
+            <div className="mt-3 space-y-2 border-t border-slate-100 pt-3 dark:border-slate-800">
+              <p className="text-xs font-bold tracking-wide text-slate-500 uppercase dark:text-slate-400">Cần cải thiện</p>
+              <ul className="space-y-2">
+                {r.issues.map((issue, i) => {
+                  const canPlay = Boolean(audio?.el) && issue.end > issue.start
+                  return (
+                    <li key={i} className="flex items-start gap-2.5 rounded-xl bg-slate-50/80 p-2.5 text-sm dark:bg-slate-900/60">
+                      {issue.end > issue.start ? (
+                        <button
+                          type="button"
+                          disabled={!canPlay}
+                          onClick={() => audio?.playRange(issue.start, issue.end)}
+                          title={canPlay ? 'Nghe lại đoạn này trong bản ghi của bạn' : 'Không có bản ghi để nghe lại'}
+                          aria-label={`Play “${issue.quote}”`}
+                          className="mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full bg-brand-600 text-white shadow-sm transition-transform hover:scale-105 disabled:bg-slate-200 disabled:text-slate-400 dark:bg-brand-500 dark:disabled:bg-slate-800"
+                        >
+                          <Play className="ml-0.5 size-3.5" />
+                        </button>
+                      ) : null}
+                      <div className="min-w-0 flex-1 leading-relaxed">
+                        <span className="inline rounded bg-amber-100/80 px-1.5 py-0.5 font-semibold text-amber-900 dark:bg-amber-950/60 dark:text-amber-200">
+                          “{issue.quote}”
+                        </span>{' '}
+                        <span className="text-slate-600 dark:text-slate-400">{issue.problem}</span>
+                        {issue.better ? (
+                          <span className="block sm:inline">
+                            {' '}
+                            → <strong className="font-semibold text-emerald-700 dark:text-emerald-300">{issue.better}</strong>
+                          </span>
+                        ) : null}
+                      </div>
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+          ) : null}
+
+          {r.gaps?.length ? (
+            <div className="mt-2.5">
+              <button
+                type="button"
+                onClick={() => setGapsOpen((v) => !v)}
+                aria-expanded={gapsOpen}
+                className="inline-flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-brand-700 dark:text-slate-400 dark:hover:text-brand-300"
+              >
+                Để lên band tiếp theo
+                <ChevronDown className={cn('size-3.5 transition-transform', gapsOpen && 'rotate-180')} />
+              </button>
+              {gapsOpen ? (
+                <ul className="mt-1.5 space-y-1 pl-3 text-xs text-slate-600 dark:text-slate-400">
+                  {r.gaps.map((g, i) => (
+                    <li key={i} className="list-disc">
+                      {g}
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+            </div>
+          ) : null}
+        </>
+      ) : (
+        <>
+          {r.good.length ? (
+            <ul className="mt-3 space-y-1.5">
+              {r.good.map((g, i) => (
+                <li key={i} className="flex gap-2 text-sm text-slate-700 dark:text-slate-300">
+                  <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-emerald-500" /> {g}
+                </li>
+              ))}
+            </ul>
+          ) : null}
+          {r.improve.length ? (
+            <ul className="mt-2 space-y-1.5">
+              {r.improve.map((g, i) => (
+                <li key={i} className="flex gap-2 text-sm text-slate-700 dark:text-slate-300">
+                  <ArrowRight className="mt-0.5 size-4 shrink-0 text-amber-500" /> {g}
+                </li>
+              ))}
+            </ul>
+          ) : null}
+        </>
+      )}
+    </Card>
+  )
+}
+
+function Criteria({ result, audio }: { result: TalkReviewResult; audio: AudioControl | null }) {
   return (
     <div className="grid gap-4 md:grid-cols-2">
-      {TALK_CRITERIA.map((c) => {
-        const r = result.criteria[c.id]
-        return (
-          <Card key={c.id} className="p-4 sm:p-5">
-            <div className="mb-2 flex items-start justify-between gap-3">
-              <div>
-                <p className="text-xs font-bold tracking-wide text-slate-400 uppercase">{c.short}</p>
-                <h3 className="flex items-center gap-1.5 font-bold text-slate-900 dark:text-white">
-                  {c.label}
-                  <span title={c.hint} className="text-slate-400">
-                    <Info className="size-3.5" />
-                  </span>
-                </h3>
-              </div>
-              <span className={cn('text-3xl leading-none font-extrabold tabular-nums', bandTone(r.band))}>{r.band.toFixed(1)}</span>
-            </div>
-            <div className="mb-3 h-1.5 overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800">
-              <div
-                className={cn('h-full rounded-full bg-current transition-[width] duration-700', bandTone(r.band))}
-                style={{ width: `${(r.band / 9) * 100}%` }}
-              />
-            </div>
-            <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-300">{r.summary}</p>
-            {r.good.length ? (
-              <ul className="mt-3 space-y-1.5">
-                {r.good.map((g, i) => (
-                  <li key={i} className="flex gap-2 text-sm text-slate-700 dark:text-slate-300">
-                    <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-emerald-500" /> {g}
-                  </li>
-                ))}
-              </ul>
-            ) : null}
-            {r.improve.length ? (
-              <ul className="mt-2 space-y-1.5">
-                {r.improve.map((g, i) => (
-                  <li key={i} className="flex gap-2 text-sm text-slate-700 dark:text-slate-300">
-                    <ArrowRight className="mt-0.5 size-4 shrink-0 text-amber-500" /> {g}
-                  </li>
-                ))}
-              </ul>
-            ) : null}
-          </Card>
-        )
-      })}
+      {TALK_CRITERIA.map((c) => (
+        <CriterionCard key={c.id} meta={c} r={result.criteria[c.id]} audio={audio} />
+      ))}
     </div>
   )
 }
@@ -161,6 +256,13 @@ const FIX_TONE: Record<string, 'rose' | 'amber' | 'violet' | 'sky' | 'teal' | 's
 }
 
 function Corrections({ result }: { result: TalkReviewResult }) {
+  if (result.pending?.includes('fixes')) {
+    return (
+      <p className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+        <Loader2 className="size-4 animate-spin text-brand-600" /> Đang tìm và kiểm tra lỗi sai qua Longman/OZDIC…
+      </p>
+    )
+  }
   if (!result.fixes.length && !result.warnings.length)
     return <p className="text-sm text-slate-600 dark:text-slate-400">Không có lỗi nào cần sửa trong những gì bạn nói.</p>
   return (
@@ -266,10 +368,12 @@ function ModelAnswer({ result, onUpdate }: { result: TalkReviewResult; onUpdate:
     >
       <div className="mb-4 rounded-xl bg-slate-50 p-3.5 text-sm dark:bg-slate-900/60">
         <p className="font-semibold text-slate-900 dark:text-white">{model.question}</p>
-        <p className="mt-1 whitespace-pre-line text-slate-600 dark:text-slate-400">
-          <span className="font-semibold text-slate-500">Your ideas, as understood: </span>
-          {model.idea}
-        </p>
+        {model.idea ? (
+          <p className="mt-1 whitespace-pre-line text-slate-600 dark:text-slate-400">
+            <span className="font-semibold text-slate-500">Your ideas, as understood: </span>
+            {model.idea}
+          </p>
+        ) : null}
       </div>
       {!jobId && !model.error && !error ? (
         // Not written yet: only when asked (Speaking ideas makes six AI calls).
@@ -367,20 +471,31 @@ export function ResultView({
             <p className="text-xs text-slate-500 dark:text-slate-400">
               Estimated band — AI reads your transcript; Pronunciation is estimated from how clearly the recognizer heard you.
             </p>
+            {result.timings ? (
+              <p
+                className="text-xs text-slate-400 dark:text-slate-500 tabular-nums"
+                title={Object.entries(result.timings.ai)
+                  .map(([k, v]) => `${k}: ${Math.round(v / 1000)} s`)
+                  .join(' · ')}
+              >
+                Scored in {Math.round(result.timings.total / 1000)} s (speech {Math.round(result.timings.transcribe / 1000)} s · AI{' '}
+                {Math.round(Math.max(0, ...Object.values(result.timings.ai)) / 1000)} s · dictionary {Math.round(result.timings.dictionary / 1000)} s)
+              </p>
+            ) : null}
           </div>
         </div>
       </Card>
 
       {!hideFigures ? <FluencyFigures fluency={result.fluency} part={result.part} /> : null}
 
-      <Criteria result={result} />
+      <Criteria result={result} audio={audioSrc ? audio : null} />
 
       {/* The recording on its own; then your words with the AI's corrections, the list explaining each change marked. */}
       <Transcript result={result} audioSrc={audioSrc} audio={audio} bind={bind}>
         <div className="mt-2 border-t border-slate-100 pt-5 dark:border-slate-800">
           <h3 className="mb-3 flex items-center gap-2 font-bold text-slate-900 dark:text-white">
             <ListChecks className="size-4.5 text-brand-600 dark:text-brand-400" /> Corrections
-            <Badge tone="slate">{result.fixes.length}</Badge>
+            {!result.pending?.includes('fixes') ? <Badge tone="slate">{result.fixes.length}</Badge> : null}
           </h3>
           <Corrections result={result} />
         </div>
@@ -389,7 +504,7 @@ export function ResultView({
       <Pronunciation result={result} audio={audioSrc ? audio : null} />
 
       {!hideScriptComparison ? <ScriptComparison result={result} /> : null}
-      <ModelAnswer result={result} onUpdate={onUpdate} />
+      {!result.pending?.length ? <ModelAnswer result={result} onUpdate={onUpdate} /> : null}
     </div>
   )
 }

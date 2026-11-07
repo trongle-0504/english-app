@@ -766,7 +766,22 @@ export default function SpeakingReviewPage() {
             </Button>
           </Card>
         ) : null}
-        {job?.status === 'running' ? <Progress job={job} /> : null}
+        {job?.status === 'running' && !job.result ? <Progress job={job} /> : null}
+        {job?.status === 'running' && job.result ? (
+          <div className="space-y-4">
+            <Card className="flex items-center gap-2.5 border-brand-200 bg-brand-50/70 px-4 py-2.5 text-sm font-medium text-brand-900 dark:border-brand-800/60 dark:bg-brand-950/40 dark:text-brand-200">
+              <Loader2 className="size-4 shrink-0 animate-spin text-brand-600 dark:text-brand-400" />
+              <span>
+                {job.result.pending?.includes('fixes') && job.result.pending?.includes('comparison')
+                  ? 'Đang kiểm tra lỗi sai và so với script…'
+                  : job.result.pending?.includes('comparison')
+                    ? 'Đang so với script…'
+                    : 'Đang kiểm tra lỗi sai…'}
+              </span>
+            </Card>
+            <ResultView result={job.result} onUpdate={(result) => setJob((prev) => (prev ? { ...prev, result } : prev))} />
+          </div>
+        ) : null}
         {job?.status === 'error' ? (
           <Card className="flex flex-col items-center gap-3 px-6 py-8 text-center">
             <p className="text-sm text-rose-700 dark:text-rose-300">Lỗi: {job.error}</p>
