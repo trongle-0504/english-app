@@ -279,6 +279,11 @@ export function WritingReviewHistoryDrawer({
                                 <Check className="size-3" /> Đang xem
                               </Badge>
                             ) : null}
+                            {item.overall !== undefined ? (
+                              <Badge tone="brand" className="text-[10px] py-0 px-1.5 font-bold">
+                                Band {item.overall.toFixed(1)}
+                              </Badge>
+                            ) : null}
                             <Badge tone="emerald" className="text-[10px] py-0 px-1.5">
                               {item.fixes} lỗi đã sửa
                             </Badge>

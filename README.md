@@ -346,7 +346,7 @@ nhập trên máy (gói Pro/Max/Team) — không cần API key, tính vào hạn
 cho của Claude Code, không công cụ, chạy trong thư mục trống, JSON được CLI kiểm theo schema (`--json-schema`).
 Cài một lần trong WSL: `curl -fsSL https://claude.ai/install.sh | bash`, thêm `~/.local/bin` vào PATH, chạy `claude` để
 đăng nhập. Biến môi trường (tuỳ chọn): `WRITING_REVIEW_CLAUDE_MODEL` (`opus` / `sonnet` / id; trống = model mặc định của
-gói), `WRITING_REVIEW_EFFORT` (`low`…`max`, mặc định `high`), `CLAUDE_BIN`, `CLAUDE_CODE_PARALLEL` (mặc định 2 lượt cùng
+gói), `WRITING_REVIEW_EFFORT` (`low`…`max`, mặc định `medium`, cho bước diagnose), `WRITING_ESSAY_EFFORT` (`low`…`max`, mặc định `medium`, cho essay plan và model essay), `WRITING_CHECK_EFFORT` (`low`…`max`, mặc định `low`, cho retry, essay review và annotate), `CLAUDE_BIN`, `CLAUDE_CODE_PARALLEL` (mặc định 2 lượt cùng
 lúc), `CLAUDE_CODE_TIMEOUT_MS` (mặc định 5 phút). Tra OZDIC bị rớt mạng thì từ đó ghi "không tra được", bài vẫn chạy tiếp.
 Tra từ điển có cache (`cache/ozdic/`, `cache/longman/`), mỗi lượt tra mạng cách nhau 1,5 s (OZDIC) / 3 s (Longman), tự
 dừng một lúc nếu bị giới hạn/chặn; `LONGMAN_LOOKUP=off` tắt Longman. Bài nâng cấp (model essay) chạy song song với bước

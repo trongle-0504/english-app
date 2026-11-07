@@ -10,6 +10,50 @@ import type {
   UsedStructure,
 } from './speaking.ts'
 import type { WritingReviewTopic, WritingReviewType } from '../features/practice/writing-review/categories.ts'
+import { overallBand } from './speakingReview.ts'
+
+export { overallBand }
+
+export type WritingCriterionId = 'tr' | 'cc' | 'lr' | 'gra'
+
+export const WRITING_CRITERIA: { id: WritingCriterionId; label: string; short: string; hint: string }[] = [
+  { id: 'tr', label: 'Task Response', short: 'TR', hint: 'Trả lời đủ các phần của đề, quan điểm rõ và nhất quán, ý được phát triển và có dẫn chứng.' },
+  { id: 'cc', label: 'Coherence & Cohesion', short: 'CC', hint: 'Bố cục logic, mỗi đoạn một ý chính, liên kết câu và đoạn tự nhiên, dùng từ nối và từ thay thế linh hoạt.' },
+  { id: 'lr', label: 'Lexical Resource', short: 'LR', hint: 'Vốn từ đa dạng và chính xác, collocation tự nhiên, đúng văn phong học thuật, ít lỗi chính tả và cấu tạo từ.' },
+  { id: 'gra', label: 'Grammatical Range & Accuracy', short: 'GRA', hint: 'Dùng nhiều cấu trúc câu (câu phức, mệnh đề) và ít lỗi ngữ pháp, dấu câu.' },
+]
+
+/** A place in the essay to improve for one criterion. */
+export interface WritingCriterionIssue {
+  /** 0-based index into the review's sentences. */
+  sentence: number
+  quote: string
+  /** Vietnamese. */
+  problem: string
+  better: string
+}
+
+export interface WritingCriterion {
+  /** Whole band 0-9 (IELTS examiners give whole bands per criterion). */
+  band: number
+  /** Vietnamese, one sentence: what the essay needs for the next band. */
+  summary: string
+  /** English notes with short quotes. */
+  strengths: string[]
+  gaps: string[]
+  issues: WritingCriterionIssue[]
+}
+
+/** The examiner-style estimate (Task 2). */
+export interface WritingScore {
+  criteria: Record<WritingCriterionId, WritingCriterion>
+  /** The four bands averaged and rounded the IELTS way (overallBand). */
+  overall: number
+  words: number
+  /** false: no question was given; TR was rated against the question the AI inferred. */
+  questionGiven: boolean
+  reviewer: string
+}
 
 /** One change made to the essay. */
 export interface WritingFix {
@@ -73,6 +117,7 @@ export interface WritingCall {
   output: number
   /** "Thinking" tokens (Gemini 2.5): billed as output, reported separately. */
   thinking: number
+  ms?: number
 }
 
 export interface WritingUsage {
@@ -109,6 +154,12 @@ export interface WritingModelEssay {
   originalAnswer?: OriginalAnswerBackup
 }
 
+export interface WritingReviewTimings {
+  firstResult?: number
+  total: number
+  steps: Record<string, number>
+}
+
 export interface WritingReviewResult {
   id: string
   createdAt: string
@@ -140,6 +191,13 @@ export interface WritingReviewResult {
   /** Phrases of the Vietnamese text and their English in the DOL dictionary (given to the AI as preferred wording). */
   dolHints?: DolHint[]
   modelEssay?: WritingModelEssay
+  timings?: WritingReviewTimings
+  /** The IELTS Task 2 score estimate. */
+  score?: WritingScore
+  /** Reason why scoring was skipped: under 150 words or error during score call. */
+  scoreSkipped?: 'short' | 'error'
+  /** Only present on a running job's in-memory result; never written to disk. */
+  pending?: ('retry' | 'modelEssay' | 'score')[]
   usage: WritingUsage
 }
 
@@ -166,6 +224,7 @@ export interface WritingReviewSummary {
   prompt?: string
   topic?: WritingReviewTopic
   questionType?: WritingReviewType
+  overall?: number
   excerpt: string
   vietnameseExcerpt?: string
   fixes: number

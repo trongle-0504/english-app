@@ -15,8 +15,9 @@ import { readJsonFile, writeJsonFile } from '../files.ts'
 import { annotate, keepWritersText, plainOf, replaceInMarked, samePhrase, WordingItemSchema, type UnlistedReplacement } from '../annotate.ts'
 import { markSentence } from '../speaking/suggest.ts'
 import type { LlmProvider } from './llm-types.ts'
+import { writingCheckEffort } from './llm.ts'
 import { chosenHints, dolPromptBlock } from './dol.ts'
-import { CheckSchema } from './rewrite.ts'
+import { CheckSchema, splitParagraphs } from './rewrite.ts'
 
 /**
  * The Task 2 part of the writing guide (content/blog/prompts/writing-skills.md). The study plan and Task 1 sections
@@ -152,12 +153,12 @@ const essayEffort = () =>
   (['low', 'medium', 'high', 'xhigh', 'max'] as const).find((l) => l === process.env.WRITING_ESSAY_EFFORT) ?? 'medium'
 
 const ESSAY_PLAN_SYSTEM = `You are an IELTS Writing Task 2 examiner preparing a model essay for a Vietnamese learner. You do not write the essay: you read the learner's draft and decide what the model essay keeps and what it changes.
-The Vietnamese text is what the learner means (ground truth). The corrected draft is the learner's English after confirmed spelling, grammar and collocation fixes; the original draft is shown for reference. Paragraph labels such as "Mở bài:", "Thân bài 1:", "Kết bài:" only mark paragraphs.
+The Vietnamese text is what the learner means (ground truth). The draft is the learner's English exactly as they wrote it, numbered sentence by sentence: NOTHING in it has been corrected, so judge every sentence yourself — spelling, grammar, word forms and collocations included. Paragraph labels such as "Mở bài:", "Thân bài 1:", "Kết bài:" only mark paragraphs.
 - meaning: the learner's ideas as a concise English outline with arrows (→), one line per paragraph ("Intro: … → …", "Body 1: …", "Body 2: …", "Conclusion: …").
-- draft: one item per corrected draft sentence:
+- draft: one item per numbered draft sentence:
   * verdict: keep = a skilled writer would write this sentence exactly this way in an essay (frames included); fix = the idea and most of the wording are right, but some part is wrong, clumsy, wordy, vague, too spoken or too formal for an essay, or reads like a translation; rewrite = unclear, wrong or clumsy as a whole, so the idea is said again from the Vietnamese.
-  * keep: the phrases of the sentence that are correct, natural, concise and precise, copied exactly — plain ones too. Plain and correct beats formal and rare: a phrase is never marked for change just because a more academic synonym exists ("use technology" is better than "utilise technological devices").
-  * problems: what an examiner would mark down. Grammatical is not enough: wrong words, unnatural combinations, Vietnamese-style or word-for-word phrasing, wordy or roundabout wording ("there are many negative effects of people working from home" → "working from home has several drawbacks"; "people who live in the area of the countryside" → "people in rural areas"), vague words, weak logic, a claim the idea does not support; "" when nothing.
+  * keep: the phrases of the sentence that are correct, natural, concise and precise, copied exactly — plain ones too; never a phrase that contains a spelling, grammar, word-form or collocation error. Plain and correct beats formal and rare: a phrase is never marked for change just because a more academic synonym exists ("use technology" is better than "utilise technological devices"). A sentence with any such error is never "keep".
+  * problems: what an examiner would mark down. Grammatical is not enough: wrong words, unnatural combinations, Vietnamese-style or word-for-word phrasing, wordy or roundabout wording ("there are many negative effects of people working from home" → "working from home has several drawbacks"; "people who live in the area of the countryside" → "people in rural areas"), vague words, weak logic, a claim the idea does not support; "" when nothing. Name every spelling, grammar, word-form and collocation error too, each with its correct form ("informations" → "information").
 - develop: at most 3 places where an idea is too thin to convince a reader and needs one more NeuralSymbolic step (cause, effect or a concrete example) built from the learner's own idea; never a new opinion. [] when the draft is developed enough.
 - picks: a library candidate only when it says exactly one of the learner's ideas and would sit naturally in that sentence. Most candidates will not fit; [] is normal.
 - dol: the refs of the DOL entries that say part of the learner's idea exactly.`
@@ -169,6 +170,7 @@ The goal is natural, accurate English that fits a written essay: the words a ski
    - keep: use the sentence as it is.
    - fix: keep the sentence and its "keep" phrases word for word; say the parts the plan's problems name the way a skilled writer would — concise, direct, idiomatic, in plain words.
    - rewrite: say the Vietnamese idea again in plain, precise English.
+   - The draft has NOT been corrected: never copy a spelling, grammar, word-form or collocation error from it, even in a sentence marked keep — write the correct form. The plan's problems list the errors it found; fix any other error you see too.
    - Every phrase the plan lists under "keep" appears exactly as written. Never swap a correct word for a rarer synonym (use → utilise, help → facilitate, cause → precipitate, show → manifest, a lot of → a plethora of).
    - Keep the learner's NeuralSymbolic frames where they fit; the guide's templates are welcome.
 2. MEANING: exactly the learner's ideas (the Vietnamese is the ground truth). Develop only where the plan's "develop" says, from the learner's own idea. No new opinions, numbers, or claims stronger than the learner's ("dramatically", "drastically", "substantially" when the learner said "can").
@@ -210,7 +212,7 @@ Edit only what an examiner would mark down:
 - overwritten: a rare or formal word where a plain one is clearer ("facilitate" → "help", "precipitate" → "cause"), noun stacks ("the risk of the development of lung disease" → "the risk of lung disease"), redundant words ("past history" → "history"), stacked adjectives or intensifiers, vague abstract nouns ("vehicular mobility solutions" → "cars"), a suggested phrase squeezed in where it does not fit.
 - clumsy: grammatical but wordy, roundabout or word-for-word phrasing a skilled writer would say more directly ("there are many negative effects of people working from home" → "working from home has several drawbacks"; "people who live in the area of the countryside" → "people in rural areas"; "in the case that" → "if").
 - consistency: a thesis or conclusion that names points the body never makes, or a body point the conclusion contradicts; the same word or idea repeated close together.
-When an edit is needed and the learner's draft says that thing correctly and naturally, use the learner's words. Never undo the essay's improvements: wording that is already natural and precise stays, even when the draft said it differently. Keep the frames that read naturally, the order of ideas and the length (±10%). Dropping a [[ ]] phrase is fine when it is what sounds forced (the replacement is then plain words). An essay that needs no edits gets none: never edit for the sake of it.
+When an edit is needed and the learner's draft says that thing correctly and naturally, use the learner's words — but the draft has not been corrected, so never bring back a draft word or phrase that is wrong. Never undo the essay's improvements: wording that is already natural and precise stays, even when the draft said it differently. Keep the frames that read naturally, the order of ideas and the length (±10%). Dropping a [[ ]] phrase is fine when it is what sounds forced (the replacement is then plain words). An essay that needs no edits gets none: never edit for the sake of it.
 Go through EVERY sentence, one item each: read it as an examiner would and give verdict ok (natural and right for a written essay; no edits) or edit (with the edits). For each edit: original = the shortest exact substring of that sentence as printed, without brackets; replacement; kind; why in Vietnamese (at most 25 words).`
 
 export interface CandidateItem {
@@ -252,37 +254,92 @@ const tidy = (text: string) =>
 /** A library phrase still in the essay: some [[ ]] span says it (inflected or slightly shortened forms count). */
 const pickUsed = (term: string, wrapped: string[]) => wrapped.some((w) => samePhrase(term, w))
 
+const EssayReviewWithNotesSchema = EssayReviewSchema.extend({
+  notes: z.array(
+    z.object({
+      n: z.number().int().describe('Note number.'),
+      sentence: z.number().int().describe("The essay sentence that says this draft sentence's idea."),
+      resolved: z.boolean().describe('True when that essay sentence no longer has the problem.'),
+      original: z.string().describe('When not resolved: shortest exact substring of that essay sentence, as printed without brackets; "" otherwise.'),
+      replacement: z.string().describe('When not resolved: the fix; "" otherwise.'),
+      why: z.string().describe('Vietnamese, max 25 words.'),
+    }),
+  ),
+})
+
+const ESSAY_REVIEW_WITH_NOTES_SYSTEM = `${ESSAY_REVIEW_SYSTEM}
+
+You also get the examiner's notes on the learner's draft ("draft sentence" — problem). Do them FIRST, in "notes": for EVERY note, one item: find the essay sentence that says that draft sentence's idea; resolved = true when that sentence no longer has the problem. When it still has it, give one edit: original = the shortest exact substring of that essay sentence as printed, without brackets; replacement = the fix, in natural written English that fits an essay — plain and precise, never more formal or rarer than needed; everything else in the sentence stays. why in Vietnamese (at most 25 words).
+Then review every sentence as above, in "sentences", reading each sentence as it will be AFTER your note fixes: never repeat a note's fix as an edit, and never edit the same words twice.`
+
+export const MIN_EDITS_FOR_SECOND_REVIEW_ROUND = 3
+
+export const writingEssayReviewRounds = (): number => {
+  const val = parseInt(process.env.WRITING_ESSAY_REVIEW_ROUNDS || '1', 10)
+  return Number.isNaN(val) ? 1 : Math.min(Math.max(val, 1), 2)
+}
+
+/**
+ * Decides whether to run a second review round.
+ * Round 2 only runs if maxRounds >= 2 and round 1 produced at least minEdits (default 3) edits.
+ */
+export function shouldRunSecondReviewRound(
+  round1EditsCount: number,
+  maxRounds = writingEssayReviewRounds(),
+  minEdits = MIN_EDITS_FOR_SECOND_REVIEW_ROUND,
+): boolean {
+  return maxRounds >= 2 && round1EditsCount >= minEdits
+}
+
 /**
  * The examiner's pass over the written essay: edits only what an examiner would mark down (meaning drift, unnatural or
  * over-written wording, an inconsistent conclusion), preferring the learner's own words. Edits `lines` in place and
  * drops sentences an edit empties; returns the edits made.
+ * Round 1 merges examiner's notes on the draft when provided.
  */
 async function reviewEssay(
   lines: { tool: AnswerSentence['tool']; text: string }[],
   draft: { text: string; vietnameseText?: string },
   llm: LlmProvider,
+  notes?: string[],
 ): Promise<EssayReviewEdit[]> {
+  const hasNotes = Boolean(notes?.length)
+  const system = hasNotes ? ESSAY_REVIEW_WITH_NOTES_SYSTEM : ESSAY_REVIEW_SYSTEM
+  const schema = hasNotes ? EssayReviewWithNotesSchema : EssayReviewSchema
+  const prompt = [
+    ...(draft.vietnameseText?.trim() ? [`Learner's idea (Vietnamese):\n"${draft.vietnameseText.trim()}"\n`] : []),
+    `Learner's draft (not corrected):\n"${draft.text.trim()}"`,
+    `\nModel essay, one sentence per line:\n${lines.map((l, i) => `${i + 1}. [${l.tool}] ${l.text}`).join('\n')}`,
+    ...(hasNotes ? [`\nNotes on the draft ("draft sentence" — problem):\n${notes!.map((n, i) => `${i + 1}. ${n}`).join('\n')}`] : []),
+  ].join('\n')
+
   const value = await llm
     .json({
       label: 'writing: essay review',
-      system: ESSAY_REVIEW_SYSTEM,
-      prompt: [
-        ...(draft.vietnameseText?.trim() ? [`Learner's idea (Vietnamese):\n"${draft.vietnameseText.trim()}"\n`] : []),
-        `Learner's draft:\n"${draft.text.trim()}"`,
-        `\nModel essay, one sentence per line:\n${lines.map((l, i) => `${i + 1}. [${l.tool}] ${l.text}`).join('\n')}`,
-      ].join('\n'),
-      schema: EssayReviewSchema,
-      effort: essayEffort(),
+      system,
+      prompt,
+      schema,
+      effort: writingCheckEffort(),
     })
     .then((r) => r.value)
     .catch((error: Error) => {
       console.warn(`[writing-review] essay review skipped (${error.message})`)
-      return { sentences: [] }
+      return { sentences: [], notes: [] }
     })
-  return applyEssayEdits(
+
+  const noteEdits =
+    hasNotes && 'notes' in value && Array.isArray((value as { notes?: any[] }).notes)
+      ? applyEssayEdits(
+          lines,
+          ((value as { notes: any[] }).notes || []).filter((n) => !n.resolved && n.original.trim()).map((n) => ({ ...n, kind: 'plan' })),
+        )
+      : []
+
+  const reviewEdits = applyEssayEdits(
     lines,
     value.sentences.flatMap((s) => s.edits.map((e) => ({ ...e, sentence: s.n }))),
   )
+  return [...noteEdits, ...reviewEdits]
 }
 
 /** Edits applied to the essay's marked lines (numbered as given); sentences an edit emptied go. */
@@ -308,54 +365,6 @@ function applyEssayEdits(
   return done
 }
 
-const PlanNotesSchema = z.object({
-  notes: z.array(
-    z.object({
-      n: z.number().int().describe('Note number.'),
-      sentence: z.number().int().describe('The essay sentence that says this draft sentence\'s idea.'),
-      resolved: z.boolean().describe('True when that essay sentence no longer has the problem.'),
-      original: z.string().describe('When not resolved: shortest exact substring of that essay sentence, as printed without brackets; "" otherwise.'),
-      replacement: z.string().describe('When not resolved: the fix; "" otherwise.'),
-      why: z.string().describe('Vietnamese, max 25 words.'),
-    }),
-  ),
-})
-
-const PLAN_NOTES_SYSTEM = `You check that a model essay fixed the problems an examiner noted in a Vietnamese learner's draft. In the essay, [[ ]] = suggested phrases and {{ }} = NeuralSymbolic frames.
-For EVERY note, one item: find the essay sentence that says that draft sentence's idea; resolved = true when that sentence no longer has the problem. When it still has it, give one edit: original = the shortest exact substring of that essay sentence as printed, without brackets; replacement = the fix, in natural written English that fits an essay — plain and precise, never more formal or rarer than needed; everything else in the sentence stays. why in Vietnamese (at most 25 words).`
-
-/**
- * The plan's notes checked one by one against the written essay (the writer sometimes keeps a draft sentence the plan
- * said to fix): each still-present problem gets its edit. Edits `lines` in place.
- */
-async function checkPlanNotes(
-  lines: { tool: AnswerSentence['tool']; text: string }[],
-  notes: string[],
-  llm: LlmProvider,
-): Promise<EssayReviewEdit[]> {
-  if (!notes.length) return []
-  const value = await llm
-    .json({
-      label: 'writing: plan notes',
-      system: PLAN_NOTES_SYSTEM,
-      prompt: [
-        `Essay, one sentence per line:\n${lines.map((l, i) => `${i + 1}. ${l.text}`).join('\n')}`,
-        `\nNotes on the draft ("draft sentence" — problem):\n${notes.map((n, i) => `${i + 1}. ${n}`).join('\n')}`,
-      ].join('\n'),
-      schema: PlanNotesSchema,
-      effort: essayEffort(),
-    })
-    .then((r) => r.value)
-    .catch((error: Error) => {
-      console.warn(`[writing-review] plan notes check skipped (${error.message})`)
-      return { notes: [] }
-    })
-  return applyEssayEdits(
-    lines,
-    value.notes.filter((n) => !n.resolved && n.original.trim()).map((n) => ({ ...n, kind: 'plan' })),
-  )
-}
-
 /**
  * The model essay, in steps (quality over time):
  * 1. plan: an examiner reads the corrected draft sentence by sentence — keep / fix / rewrite, the phrases to keep word
@@ -375,7 +384,7 @@ export async function generateWritingModelEssay(
   const { text, vietnameseText, candidates, guide, dolHints = [], onStep } = input
   const byRef = new Map(candidates.map((c, i) => [`k${i + 1}`, c]))
   const unref = (str: string) => str.replace(/\bk\d+\*?/g, (ref) => byRef.get(ref.replace('*', ''))?.term ?? ref)
-  const draftSentences = input.correctedSentences?.length ? input.correctedSentences : [text.trim()]
+  const draftSentences = splitParagraphs(text).sentences
   const draftBlock = draftSentences.map((s, i) => `${i + 1}. ${s}`).join('\n')
   const idea = vietnameseText?.trim() ? [`Learner's idea (Vietnamese, ground truth):\n"${vietnameseText.trim()}"`] : []
 
@@ -387,8 +396,7 @@ export async function generateWritingModelEssay(
     system: ESSAY_PLAN_SYSTEM,
     prompt: [
       ...idea,
-      `\nOriginal draft:\n"${text.trim()}"`,
-      `\nCorrected draft, one sentence per line:\n${draftBlock}`,
+      `\nLearner's draft (not corrected), one sentence per line:\n${draftBlock}`,
       `\nLibrary candidates (ref|phrase|meaning|example):\n${candidateLines || '(none)'}`,
       ...(dolHints.length ? [`\nDictionary entries (DOL):\n${dolPromptBlock(dolHints)}`] : []),
     ].join('\n'),
@@ -405,7 +413,7 @@ export async function generateWritingModelEssay(
     system: WRITING_ESSAY_SYSTEM(guide),
     prompt: [
       ...idea,
-      `\nCorrected draft, one sentence per line:\n${draftBlock}`,
+      `\nLearner's draft (not corrected), one sentence per line:\n${draftBlock}`,
       `\nExaminer's plan:\nOutline:\n${plan.meaning}\n\nSentence plan:\n${planLines(plan)}`,
       `\nDevelop:\n${plan.develop.map((d) => `- ${d}`).join('\n') || '(nothing: the draft is developed enough)'}`,
       `\nApproved library candidates (ref|phrase|meaning|the idea it says):\n${
@@ -420,17 +428,17 @@ export async function generateWritingModelEssay(
     .filter((s) => s.text.trim())
     .map((s) => ({ tool: s.tool, text: unref(sanitizeSentenceMarkers(s.text.trim())) }))
 
-  // 3. Review: a second round only when the first changed something.
+  // 3. Review: round 1 merges notes; round 2 runs only when round 1 made >= 3 edits and WRITING_ESSAY_REVIEW_ROUNDS >= 2.
   onStep?.('essay_review')
-  // The plan's problems, each with its draft sentence, checked one by one; then the examiner's review of the whole.
   const notes = plan.draft
     .filter((d) => d.verdict !== 'keep' && d.problems.trim() && draftSentences[d.n - 1])
     .map((d) => `"${draftSentences[d.n - 1]}" — ${d.problems.trim()}`)
-  const reviewEdits: EssayReviewEdit[] = await checkPlanNotes(lines, notes, llm)
-  for (let round = 0; round < 2; round++) {
-    const edits = await reviewEssay(lines, { text, vietnameseText }, llm)
-    reviewEdits.push(...edits)
-    if (!edits.length) break
+  const reviewEdits: EssayReviewEdit[] = []
+  const round1 = await reviewEssay(lines, { text, vietnameseText }, llm, notes)
+  reviewEdits.push(...round1)
+  if (shouldRunSecondReviewRound(round1.length)) {
+    const round2 = await reviewEssay(lines, { text, vietnameseText }, llm)
+    reviewEdits.push(...round2)
   }
 
   // 5. Every combination found and looked up, what the AI wrote that the dictionaries do not list fixed (see annotate).
@@ -441,12 +449,13 @@ export async function generateWritingModelEssay(
       sentences: lines.map((l) => l.text),
       picks: usedRefs.map((c) => ({ term: c.term, slot: c.slot })),
       extras: value.extras || [],
-      learnerText: [text, ...(input.correctedSentences ?? [])],
+      learnerText: [text],
       mode: 'model',
       kind: 'an IELTS Writing Task 2 model essay (written English)',
       dolHints: chosenDol,
-      effort: essayEffort(),
+      effort: writingCheckEffort(),
       label: 'writing',
+      maxRounds: 1,
     },
     llm,
   )
@@ -634,7 +643,7 @@ export async function analyzeUserEditedWriting(
       mode: 'user',
       kind: "a learner's own IELTS Writing Task 2 essay (written English)",
       seed: value.wording || [],
-      effort: essayEffort(),
+      effort: writingCheckEffort(),
       label: 'writing',
     },
     llm,
@@ -728,7 +737,7 @@ export async function refreshEssayWording(ctx: Pick<ApiContext, 'rootDir'>, id: 
       mode: essay.userEdited ? 'user' : 'model',
       fix: false,
       kind: essay.userEdited ? "a learner's own IELTS Writing Task 2 essay (written English)" : 'an IELTS Writing Task 2 model essay (written English)',
-      effort: essayEffort(),
+      effort: writingCheckEffort(),
       label: 'writing',
     },
     llm,

@@ -11,6 +11,7 @@ import {
   Lightbulb,
   List,
   ListChecks,
+  Loader2,
   MessageSquareQuote,
   RotateCcw,
   ShieldCheck,
@@ -23,7 +24,15 @@ import { Badge, Button, Card } from '@/components/ui'
 import { ExportReport } from '@/features/report/ExportReport'
 import { cn } from '@/lib/cn'
 import type { AnswerSentence, LinearTool } from '@/types/speaking'
-import type { WritingFix, WritingModelEssay, WritingReviewResult, WritingSuggestedPhrase } from '@/types/writingReview'
+import {
+  WRITING_CRITERIA,
+  type WritingFix,
+  type WritingModelEssay,
+  type WritingReviewResult,
+  type WritingScore,
+  type WritingSuggestedPhrase,
+} from '@/types/writingReview'
+import { BandRing, bandBadgeTone, bandTone } from '../BandScore'
 import {
   DolHints,
   ExtraRow,
@@ -143,7 +152,11 @@ function MarkedEssay({ result }: { result: WritingReviewResult }) {
       {paragraphs(indexed, result.paragraphStarts).map((para, p) => (
         <p key={p}>
           {para.map(({ s, i }) => (
-            <span key={i}>
+            <span
+              key={i}
+              id={`writing-sentence-${i}`}
+              className="inline rounded px-0.5 transition-all duration-500"
+            >
               <MarkedSentence sentence={s} corrected={result.correctedSentences[i] ?? s} fixes={fixesOf(i)} />{' '}
             </span>
           ))}
@@ -262,18 +275,31 @@ function DetailTab({ result }: { result: WritingReviewResult }) {
           </ul>
         </section>
       ) : null}
-      {result.warnings.length ? (
+      {(result.warnings.length || result.pending?.includes('retry')) ? (
         <section className="rounded-xl bg-amber-50/60 px-4 py-3 dark:bg-amber-950/20">
-          <h3 className="mb-1 font-bold text-amber-800 dark:text-amber-300">Cần xem lại — chưa sửa vào bài ({result.warnings.length})</h3>
-          <ul className="space-y-2 text-sm">
-            {result.warnings.map((w, i) => (
-              <li key={i}>
-                <span className="font-semibold text-amber-700 dark:text-amber-300">{w.phrase}</span>
-                {w.suggestion ? <span className="text-slate-500"> → {w.suggestion}</span> : null}
-                <p className="text-slate-600 dark:text-slate-300">{w.explanation}</p>
-              </li>
-            ))}
-          </ul>
+          <div className="mb-1 flex items-center gap-2">
+            <h3 className="font-bold text-amber-800 dark:text-amber-300">
+              Cần xem lại — chưa sửa vào bài {result.warnings.length ? `(${result.warnings.length})` : ''}
+            </h3>
+            {result.pending?.includes('retry') ? (
+              <span className="inline-flex items-center gap-1 rounded bg-amber-100 px-2 py-0.5 text-xs font-normal text-amber-800 dark:bg-amber-900/60 dark:text-amber-200">
+                <Loader2 className="size-3 animate-spin" /> đang kiểm tra lại…
+              </span>
+            ) : null}
+          </div>
+          {result.warnings.length ? (
+            <ul className="space-y-2 text-sm">
+              {result.warnings.map((w, i) => (
+                <li key={i}>
+                  <span className="font-semibold text-amber-700 dark:text-amber-300">{w.phrase}</span>
+                  {w.suggestion ? <span className="text-slate-500"> → {w.suggestion}</span> : null}
+                  <p className="text-slate-600 dark:text-slate-300">{w.explanation}</p>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="text-xs text-amber-700 dark:text-amber-300">Đang kiểm tra lại các lỗi chưa xác nhận với từ điển…</p>
+          )}
         </section>
       ) : null}
     </div>
@@ -440,10 +466,12 @@ function WritingModelAnswer({
   modelEssay,
   reviewId,
   onUpdateResult,
+  pending,
 }: {
   modelEssay: WritingModelEssay
   reviewId: string
   onUpdateResult?: (res: WritingReviewResult) => void
+  pending?: ('retry' | 'modelEssay' | 'score')[]
 }) {
   const [copied, setCopied] = useState(false)
   const [isEditing, setIsEditing] = useState(false)
@@ -573,12 +601,12 @@ function WritingModelAnswer({
               </button>
             </div>
 
-            {isCustomized && !isEditing ? (
+            {isCustomized && !isEditing && !pending?.length ? (
               <Button size="sm" variant="ghost" onClick={() => void handleResetToAI()} disabled={analyzing} className="text-slate-400 hover:text-rose-600">
                 <RotateCcw className="size-3.5" /> Bản gốc AI
               </Button>
             ) : null}
-            {!isEditing ? (
+            {!isEditing && !pending?.length ? (
               <Button size="sm" variant={isCustomized ? 'outline' : 'primary'} onClick={handleStartEdit} disabled={analyzing}>
                 <Edit3 className="size-4" /> {isCustomized ? 'Sửa bài của bạn' : 'Tùy chỉnh theo ý bạn'}
               </Button>
@@ -778,7 +806,7 @@ function UpgradedTab({
 
     return (
       <div className="space-y-6">
-        <WritingModelAnswer modelEssay={result.modelEssay} reviewId={result.id} onUpdateResult={onUpdateResult} />
+        <WritingModelAnswer modelEssay={result.modelEssay} reviewId={result.id} onUpdateResult={onUpdateResult} pending={result.pending} />
 
         {result.modelEssay.structures?.length ? (
           <Structures structures={result.modelEssay.structures} />
@@ -868,6 +896,15 @@ function UpgradedTab({
           </details>
         ) : null}
       </div>
+    )
+  }
+
+  if (result.pending?.includes('modelEssay')) {
+    return (
+      <Card className="flex flex-col items-center justify-center gap-3 p-8 text-center text-sm text-slate-500 dark:text-slate-400">
+        <Loader2 className="size-5 animate-spin text-brand-600 dark:text-brand-400" />
+        <span>Đang viết bài mẫu theo phương pháp NeuralSymbolic…</span>
+      </Card>
     )
   }
 
@@ -977,6 +1014,199 @@ const TABS: { value: Tab; label: string; icon: ReactNode }[] = [
   { value: 'vocab', label: 'Từ vựng bài sửa', icon: <BookOpen className="size-4" /> },
 ]
 
+function formatDuration(ms: number): string {
+  const s = Math.round(ms / 1000)
+  const m = Math.floor(s / 60)
+  const remS = s % 60
+  if (m === 0) return `${remS} s`
+  return `${m} m ${remS} s`
+}
+
+function WritingScoreCard({
+  score,
+  scoreSkipped,
+  pending,
+  onScrollToSentence,
+}: {
+  score?: WritingScore
+  scoreSkipped?: 'short' | 'error'
+  pending?: ('retry' | 'modelEssay' | 'score')[]
+  onScrollToSentence: (sentenceIdx: number) => void
+}) {
+  if (pending?.includes('score')) {
+    return (
+      <Card className="mb-6 flex items-center justify-center gap-3 border-brand-200 bg-brand-50/50 p-6 text-sm font-medium text-brand-900 dark:border-brand-800/60 dark:bg-brand-950/30 dark:text-brand-200">
+        <Loader2 className="size-5 animate-spin text-brand-600 dark:text-brand-400" />
+        <span>Đang ước lượng band điểm IELTS Writing Task 2…</span>
+      </Card>
+    )
+  }
+
+  if (scoreSkipped === 'short') {
+    return (
+      <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50/70 px-4 py-3 text-xs text-amber-800 dark:border-amber-800/50 dark:bg-amber-950/30 dark:text-amber-300">
+        ℹ️ Cần bài từ 150 từ trở lên để ước lượng band Task 2.
+      </div>
+    )
+  }
+
+  if (scoreSkipped === 'error') {
+    return (
+      <div className="mb-6 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs text-slate-600 dark:border-slate-800 dark:bg-slate-900/50 dark:text-slate-400">
+        Chưa chấm được band cho bài này.
+      </div>
+    )
+  }
+
+  if (!score) return null
+
+  return (
+    <section className="mb-8 space-y-5 rounded-2xl border border-slate-200 bg-slate-50/70 p-4 dark:border-slate-800 dark:bg-slate-900/40 sm:p-6">
+      {/* Top row: Overall band + 4 criteria + word count */}
+      <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex items-center gap-4 sm:gap-5">
+          <BandRing band={score.overall} />
+          <div>
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-lg font-bold text-slate-900 dark:text-white sm:text-2xl">
+                IELTS Task 2 Estimate
+              </span>
+              <span className={cn('rounded-full px-2.5 py-0.5 text-xs font-semibold', bandBadgeTone(score.overall))}>
+                Band {score.overall.toFixed(1)}
+              </span>
+            </div>
+            <p className="mt-1 text-xs text-slate-500">
+              {score.words} words
+              {score.words < 250 ? (
+                <span className="ml-1.5 font-medium text-amber-600 dark:text-amber-400">
+                  (dưới 250 từ — Task 2 khuyến nghị ≥ 250 từ)
+                </span>
+              ) : null}
+            </p>
+            {!score.questionGiven ? (
+              <p className="mt-0.5 text-xs text-amber-700 dark:text-amber-300">
+                Không có đề bài — TR được ước lượng theo đề AI suy ra.
+              </p>
+            ) : null}
+          </div>
+        </div>
+
+        {/* 4 criteria quick overview in a row */}
+        <div className="grid grid-cols-4 gap-1.5 sm:gap-3">
+          {WRITING_CRITERIA.map((c) => {
+            const crit = score.criteria[c.id]
+            return (
+              <div
+                key={c.id}
+                className="flex flex-col items-center justify-center rounded-xl border border-slate-200 bg-white p-2 text-center shadow-xs dark:border-slate-800 dark:bg-slate-900"
+              >
+                <span className="text-[11px] font-bold text-slate-500">{c.short}</span>
+                <span className={cn('text-base font-extrabold tabular-nums sm:text-xl', bandTone(crit?.band ?? 0))}>
+                  {crit?.band ?? '—'}
+                </span>
+              </div>
+            )
+          })}
+        </div>
+      </div>
+
+      {/* 4 Criterion Detail Cards: 2x2 desktop, 1 col mobile */}
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        {WRITING_CRITERIA.map((c) => {
+          const crit = score.criteria[c.id]
+          if (!crit) return null
+          return (
+            <Card key={c.id} className="flex flex-col justify-between p-4 sm:p-5">
+              <div>
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <div className="flex items-center gap-1.5">
+                      <span className="font-bold text-slate-900 dark:text-white">{c.label}</span>
+                      <span className="text-xs text-slate-400">({c.short})</span>
+                    </div>
+                    <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">{c.hint}</p>
+                  </div>
+                  <div className="flex flex-col items-end shrink-0">
+                    <span className={cn('text-2xl font-extrabold tabular-nums', bandTone(crit.band))}>
+                      {crit.band}
+                    </span>
+                    <span className="text-[10px] font-semibold uppercase text-slate-400">Band</span>
+                  </div>
+                </div>
+
+                <p className="mt-3 text-sm font-medium text-slate-700 dark:text-slate-300">
+                  {crit.summary}
+                </p>
+
+                {crit.strengths?.length ? (
+                  <div className="mt-3">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400">
+                      Điểm tốt
+                    </span>
+                    <ul className="mt-1 space-y-1 text-xs text-slate-600 dark:text-slate-300">
+                      {crit.strengths.map((s, i) => (
+                        <li key={i} className="flex items-start gap-1.5">
+                          <Check className="size-3.5 shrink-0 text-emerald-600 dark:text-emerald-400 mt-0.5" />
+                          <span>{s}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
+
+                {crit.issues?.length ? (
+                  <div className="mt-3">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-rose-700 dark:text-rose-400">
+                      Cần cải thiện ({crit.issues.length})
+                    </span>
+                    <ul className="mt-1.5 space-y-2 text-xs">
+                      {crit.issues.map((iss, i) => (
+                        <li
+                          key={i}
+                          onClick={() => onScrollToSentence(iss.sentence)}
+                          className="group cursor-pointer rounded-lg border border-slate-200 bg-white p-2.5 transition-colors hover:border-brand-300 hover:bg-brand-50/40 dark:border-slate-800 dark:bg-slate-900/60 dark:hover:border-brand-700"
+                        >
+                          <div className="flex items-center gap-1.5">
+                            <span className="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[11px] text-slate-700 group-hover:bg-brand-100 dark:bg-slate-800 dark:text-slate-300 dark:group-hover:bg-brand-950">
+                              Câu {iss.sentence + 1}
+                            </span>
+                            <span className="font-semibold text-slate-800 dark:text-slate-200">“{iss.quote}”</span>
+                          </div>
+                          <p className="mt-1 text-slate-600 dark:text-slate-400">{iss.problem}</p>
+                          <p className="mt-0.5 text-brand-600 dark:text-brand-400">
+                            → <span className="font-semibold">{iss.better}</span>
+                          </p>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
+              </div>
+
+              {crit.gaps?.length ? (
+                <details className="mt-3 border-t border-slate-100 pt-2 text-xs text-slate-500 dark:border-slate-800">
+                  <summary className="cursor-pointer font-medium hover:text-slate-800 dark:hover:text-slate-200">
+                    Để lên band tiếp theo
+                  </summary>
+                  <ul className="mt-1.5 list-disc pl-4 space-y-0.5">
+                    {crit.gaps.map((g, i) => (
+                      <li key={i}>{g}</li>
+                    ))}
+                  </ul>
+                </details>
+              ) : null}
+            </Card>
+          )
+        })}
+      </div>
+
+      <p className="text-[11px] text-slate-400 dark:text-slate-500 text-right">
+        * Ước lượng theo band descriptors công khai của IELTS, không phải điểm chính thức.
+      </p>
+    </section>
+  )
+}
+
 export function ReviewResult({
   result: initialResult,
   onResultChange,
@@ -996,14 +1226,51 @@ export function ReviewResult({
     onResultChange?.(updated)
   }
 
+  const handleScrollToSentence = (sentenceIdx: number) => {
+    if (tab !== 'detail') setTab('detail')
+    setTimeout(() => {
+      const el = document.getElementById(`writing-sentence-${sentenceIdx}`)
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        el.classList.add('bg-amber-100', 'dark:bg-amber-950/60', 'ring-2', 'ring-amber-400')
+        setTimeout(() => {
+          el.classList.remove('bg-amber-100', 'dark:bg-amber-950/60', 'ring-2', 'ring-amber-400')
+        }, 2500)
+      }
+    }, 50)
+  }
+
+  const timingNote = useMemo(() => {
+    if (!result.timings) return null
+    const totalStr = formatDuration(result.timings.total)
+    if (result.timings.firstResult) {
+      const firstStr = formatDuration(result.timings.firstResult)
+      return `Reviewed in ${totalStr} (corrections after ${firstStr})`
+    }
+    return `Reviewed in ${totalStr}`
+  }, [result.timings])
+
   // One panel whose content follows the tab bar under it (nothing else below the bar).
   return (
     <PhraseWorkProvider work={{ kind: 'writing', id: result.id, title: `Writing · ${result.text.replace(/\s+/g, ' ').trim().slice(0, 60)}` }}>
     <div className="animate-fade-in">
       <Card className="p-4 sm:p-7">
-        <div className="mb-4 flex justify-end">
-          <ExportReport kind="writing" result={result} />
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
+          {timingNote ? (
+            <p className="text-xs text-slate-400 dark:text-slate-500 font-medium">
+              ⏱️ {timingNote}
+            </p>
+          ) : <div />}
+          {!result.pending?.length ? <ExportReport kind="writing" result={result} /> : null}
         </div>
+
+        <WritingScoreCard
+          score={result.score}
+          scoreSkipped={result.scoreSkipped}
+          pending={result.pending}
+          onScrollToSentence={handleScrollToSentence}
+        />
+
         {result.vietnameseText ? (
           <IdeaPanel
             className="mb-6"

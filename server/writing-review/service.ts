@@ -4,12 +4,30 @@
 import { randomBytes } from 'node:crypto'
 import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises'
 import path from 'node:path'
-import type { WritingFix, WritingReviewJob, WritingReviewResult, WritingReviewSummary, WritingUsage } from '../../src/types/writingReview.ts'
+import type {
+  WritingFix,
+  WritingModelEssay,
+  WritingReviewJob,
+  WritingReviewResult,
+  WritingReviewSummary,
+  WritingReviewTimings,
+  WritingUsage,
+} from '../../src/types/writingReview.ts'
 import { ApiError, type ApiContext } from '../api.ts'
 import { writingReviewEffort, writingReviewModelName, writingReviewModel } from './llm.ts'
-import { proofOf, rewriteReview, type IssueKind, type RewriteReport } from './rewrite.ts'
+import {
+  proofOf,
+  prepare,
+  reviewDraft,
+  retryUnconfirmed,
+  applyAllEdits,
+  type IssueKind,
+  type RewriteReport,
+} from './rewrite.ts'
 import { creditInBackground } from '../practice/real-use.ts'
 import { analyzeUserEditedWriting, resetUserEditedWriting } from './writing-essay.ts'
+import { chosenHints } from './dol.ts'
+import { countWords, MIN_WORDS_FOR_SCORING, scoreEssay } from './score.ts'
 import { WRITING_REVIEW_TOPICS, WRITING_REVIEW_TYPES, type WritingReviewTopic, type WritingReviewType } from '../../src/features/practice/writing-review/categories.ts'
 import { z } from 'zod'
 
@@ -41,7 +59,7 @@ const FIX_TYPE: Record<IssueKind, WritingFix['type']> = {
 export { proofOf } from './rewrite.ts'
 
 /** Turns the Claude report into what the page shows (the result shape is shared with older reviews). */
-function buildResult(
+export function buildResult(
   id: string,
   createdAt: string,
   text: string,
@@ -52,6 +70,8 @@ function buildResult(
   prompt?: string,
   vietnameseText?: string,
   classification?: { topic: WritingReviewTopic; questionType: WritingReviewType },
+  timings?: WritingReviewTimings,
+  pending?: ('retry' | 'modelEssay' | 'score')[],
 ): WritingReviewResult {
   const fixes: WritingFix[] = report.fixed
     .map((issue, n): WritingFix => ({
@@ -95,9 +115,10 @@ function buildResult(
     suggestedPhrases: report.suggestedPhrases,
     ...(report.dolHints?.length ? { dolHints: report.dolHints } : {}),
     modelEssay: report.modelEssay,
+    ...(timings ? { timings } : {}),
+    ...(pending?.length ? { pending } : {}),
     usage,
   }
-
 }
 
 const ClassificationSchema = z.object({
@@ -122,12 +143,14 @@ export async function classifyWritingReview(
 
 async function run(ctx: ApiContext, job: WritingReviewJob, text: string, prompt?: string, vietnameseText?: string, title?: string) {
   const started = Date.now()
-  // The step shown comes from rewriteReview's onStep only: call labels ("writing: model essay") are not step ids the
-  // page knows.
+  const timings: WritingReviewTimings = {
+    total: 0,
+    steps: {},
+  }
   const llm = writingReviewModel({
     onCall: (call) => {
       job.usage.model = call.model
-      job.usage.calls.push({ step: call.label, input: call.input, output: call.output, thinking: call.thinking })
+      job.usage.calls.push({ step: call.label, input: call.input, output: call.output, thinking: call.thinking, ms: call.ms })
       job.usage.input += call.input
       job.usage.output += call.output
       job.usage.thinking += call.thinking
@@ -135,32 +158,243 @@ async function run(ctx: ApiContext, job: WritingReviewJob, text: string, prompt?
     },
   })
   try {
-    const report = await rewriteReview(text, llm, {
-      prompt,
+    // 0. Format idea runs independently in parallel at the start
+    const ideaPromise = vietnameseText?.trim()
+      ? import('../format-idea.ts').then((m) => m.formatIdea(vietnameseText, llm, 'writing')).catch(() => undefined)
+      : Promise.resolve(undefined)
+
+    // Score call lane: runs in parallel from the start, replaces separate classify
+    const wordsCount = countWords(text)
+    let scoreDone = false
+    let scoreResult: any = undefined
+    let scoreTopic: WritingReviewTopic | undefined
+    let scoreType: WritingReviewType | undefined
+    let scoreSkippedReason: 'short' | 'error' | undefined
+
+    const scoreLane = (async () => {
+      if (wordsCount < MIN_WORDS_FOR_SCORING) {
+        scoreSkippedReason = 'short'
+        scoreDone = true
+        return
+      }
+      const tScore = Date.now()
+      try {
+        const res = await scoreEssay(llm, { text, prompt, vietnameseText })
+        timings.steps['score'] = Date.now() - tScore
+        scoreResult = res.score
+        scoreTopic = res.topic
+        scoreType = res.questionType
+      } catch (err) {
+        console.warn(`[writing-review] score call failed: ${(err as Error).message}`)
+        scoreSkippedReason = 'error'
+      } finally {
+        scoreDone = true
+        if (job.result) {
+          if (scoreResult) job.result.score = scoreResult
+          if (scoreSkippedReason) job.result.scoreSkipped = scoreSkippedReason
+          if (scoreTopic) job.result.topic = scoreTopic
+          if (scoreType) job.result.questionType = scoreType
+          job.result.pending = job.result.pending?.filter((p) => p !== 'score')
+          if (!job.result.pending?.length) delete job.result.pending
+        }
+      }
+    })()
+
+    // 1. Shared prepare step: collocations retrieve + chunk & DOL lookups
+    const tPrep = Date.now()
+    const prepared = await prepare(text, llm, {
       vietnameseText,
       rootDir: ctx.rootDir,
-      onStep: (step) => (job.step = step),
+      onStep: (step) => {
+        job.step = step
+      },
     })
-    job.step = 'classify'
-    const classification = await classifyWritingReview(llm, text, prompt).catch((error: Error) => {
-      console.warn(`[writing-review] classification skipped: ${error.message}`)
-      return { topic: 'Other' as const, questionType: 'Other' as const }
-    })
-    job.topic = classification.topic
-    job.questionType = classification.questionType
-    job.result = buildResult(job.id, job.startedAt, text, report, job.usage, Date.now() - started, title, prompt, vietnameseText, classification)
+    timings.steps['prepare'] = Date.now() - tPrep
+
+    let hasPartial = false
+    let essayDone = false
+    let writtenEssay: any = null
+
+    // 2. Parallel lanes: Corrections lane & Model Essay lane
+    const correctionsLane = (async () => {
+      const tDraft = Date.now()
+      const draft = await reviewDraft(prepared, llm, {
+        prompt,
+        vietnameseText,
+        onStep: (step) => {
+          if (!hasPartial) job.step = step
+        },
+      })
+      timings.steps['diagnose_dict'] = Date.now() - tDraft
+
+      // Build partial result
+      const formattedIdea = await ideaPromise
+      const partialReport: RewriteReport = {
+        sentences: draft.sentences,
+        paragraphStarts: draft.paragraphStarts,
+        correctedSentences: draft.correctedSentences,
+        fixed: draft.fixed,
+        unconfirmed: draft.unconfirmed,
+        suggestedPhrases: prepared.suggestedPhrases,
+        dolHints: prepared.dolHints,
+        vietnameseFormatted: formattedIdea,
+      }
+
+      const pending: ('retry' | 'modelEssay' | 'score')[] = []
+      if (draft.failed.length) pending.push('retry')
+      if (!essayDone) pending.push('modelEssay')
+      if (!scoreDone) pending.push('score')
+
+      timings.firstResult = Date.now() - started
+      job.result = buildResult(
+        job.id,
+        job.startedAt,
+        text,
+        partialReport,
+        job.usage,
+        timings.firstResult,
+        title,
+        prompt,
+        vietnameseText,
+        scoreTopic && scoreType ? { topic: scoreTopic, questionType: scoreType } : undefined,
+        timings,
+        pending.length ? pending : undefined,
+      )
+      if (scoreResult) job.result.score = scoreResult
+      if (scoreSkippedReason) job.result.scoreSkipped = scoreSkippedReason
+      hasPartial = true
+
+      // If essay finished before corrections, attach it now
+      if (essayDone && writtenEssay && job.result) {
+        const { dolRefs, ...modelEssay } = writtenEssay
+        job.result.modelEssay = modelEssay as WritingModelEssay
+        job.result.dolHints = chosenHints(prepared.dolHints, dolRefs)
+      }
+
+      // Retry step for unconfirmed edits
+      if (draft.failed.length) {
+        const tRetry = Date.now()
+        await retryUnconfirmed(draft.failed, prepared.sentences, draft.dict, llm, (step) => {
+          if (hasPartial && essayDone) job.step = step
+        })
+        timings.steps['retry'] = Date.now() - tRetry
+
+        const updated = applyAllEdits(prepared.sentences, draft.issues)
+        if (job.result) {
+          const updatedReport: RewriteReport = {
+            ...partialReport,
+            correctedSentences: updated.correctedSentences,
+            fixed: updated.fixed,
+            unconfirmed: updated.unconfirmed,
+          }
+          const rebuilt = buildResult(
+            job.id,
+            job.startedAt,
+            text,
+            updatedReport,
+            job.usage,
+            Date.now() - started,
+            title,
+            prompt,
+            vietnameseText,
+            job.result.topic && job.result.questionType
+              ? { topic: job.result.topic, questionType: job.result.questionType }
+              : undefined,
+            timings,
+            job.result.pending?.filter((p) => p !== 'retry'),
+          )
+          job.result.fixes = rebuilt.fixes
+          job.result.warnings = rebuilt.warnings
+          job.result.correctedSentences = rebuilt.correctedSentences
+          job.result.corrected = rebuilt.corrected
+          job.result.pending = job.result.pending?.filter((p) => p !== 'retry')
+          if (!job.result.pending?.length) delete job.result.pending
+        }
+      }
+    })()
+
+    const essayLane = (async () => {
+      const { writingLinearGuide, generateWritingModelEssay } = await import('./writing-essay.ts')
+      const tEssay = Date.now()
+      const written = await generateWritingModelEssay(
+        {
+          text,
+          vietnameseText,
+          candidates: prepared.suggestedPhrases.map((c) => ({
+            id: c.cardId,
+            term: c.term,
+            meaning_vi: c.meaning_vi,
+            origin: c.origin,
+            example: c.example,
+            isTopicCollocation: true,
+          })),
+          guide: await writingLinearGuide({ rootDir: ctx.rootDir || process.cwd() }),
+          dolHints: prepared.dolHints,
+          onStep: (step) => {
+            if (hasPartial) job.step = step
+          },
+        },
+        llm,
+      ).catch((err) => {
+        console.error('Failed to generate writing model essay:', err)
+        return undefined
+      })
+      timings.steps['essay'] = Date.now() - tEssay
+      essayDone = true
+      writtenEssay = written
+
+      if (job.result) {
+        if (written) {
+          const { dolRefs, unlistedFixes, reviewEdits, plan: _plan, ...modelEssay } = written
+          for (const edit of reviewEdits ?? []) console.info(`[writing-review] essay review (${edit.kind}): "${edit.original}" → "${edit.replacement}"`)
+          for (const fix of unlistedFixes ?? []) console.info(`[writing-review] not in Longman / OZDIC: "${fix.original}" → "${fix.replacement}" (${fix.source})`)
+          job.result.modelEssay = modelEssay as WritingModelEssay
+          job.result.dolHints = chosenHints(prepared.dolHints, dolRefs)
+        }
+        job.result.pending = job.result.pending?.filter((p) => p !== 'modelEssay')
+        if (!job.result.pending?.length) delete job.result.pending
+      }
+    })()
+
+    await Promise.all([correctionsLane, essayLane, scoreLane])
+
+    // Fall back to separate classify only if score did not provide topic/questionType
+    let finalTopic = scoreTopic
+    let finalType = scoreType
+    if (!finalTopic || !finalType) {
+      job.step = 'classify'
+      const classification = await classifyWritingReview(llm, text, prompt).catch((error: Error) => {
+        console.warn(`[writing-review] classification fallback skipped: ${error.message}`)
+        return { topic: 'Other' as const, questionType: 'Other' as const }
+      })
+      finalTopic ??= classification.topic
+      finalType ??= classification.questionType
+    }
+    job.topic = finalTopic
+    job.questionType = finalType
+
+    timings.total = Date.now() - started
+    if (job.result) {
+      job.result.topic = finalTopic
+      job.result.questionType = finalType
+      job.result.durationMs = timings.total
+      job.result.timings = timings
+      if (scoreResult) job.result.score = scoreResult
+      if (scoreSkippedReason) job.result.scoreSkipped = scoreSkippedReason
+      delete job.result.pending
+    }
+
     job.status = 'done'
     job.step = undefined
     await mkdir(dir(ctx), { recursive: true })
     await writeFile(fileOf(ctx, job.id), JSON.stringify(job.result, null, 1))
-    // Review cards you used yourself in the essay (right: up to "Tự dùng"; wrong: back to practise).
+    console.log(`[writing-review] ${job.id} timings: total=${timings.total}ms, firstResult=${timings.firstResult ?? 0}ms`)
     creditInBackground(ctx, 'writing', job.id)
   } catch (error) {
     job.status = 'error'
     job.error = (error as Error).message
     console.error('[writing-review]', error)
   } finally {
-    // Finished jobs are served from disk; keep failed ones briefly so the page can show the error.
     setTimeout(() => jobs.delete(job.id), job.status === 'error' ? 10 * 60_000 : 60_000).unref()
   }
 }
@@ -222,6 +456,7 @@ export async function listReviews(ctx: ApiContext, limit = 100): Promise<Writing
         prompt: r.prompt,
         topic: r.topic,
         questionType: r.questionType,
+        overall: r.score?.overall,
         excerpt: (r.text || '').slice(0, 140),
         vietnameseExcerpt: r.vietnameseText ? r.vietnameseText.slice(0, 140) : undefined,
         fixes: r.fixes?.length ?? 0,

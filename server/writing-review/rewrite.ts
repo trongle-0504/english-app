@@ -18,6 +18,7 @@ import { lookupLemma, type OzdicEntry } from './ozdic.ts'
 import type { DolHint, FormattedIdea } from '../../src/types/speaking.ts'
 import type { WritingModelEssay, WritingSuggestedPhrase } from '../../src/types/writingReview.ts'
 import { chosenHints, dolHints as lookupDol, dolHintsForText, dolIndex, dolPromptBlock, numberHints, viChunkRule } from './dol.ts'
+import { writingCheckEffort } from './llm.ts'
 
 const ChunkSchema = z.object({ chunks: z.array(z.string()).describe('Collocation-sized Vietnamese chunks, copied as written.') })
 import { findRelevantTopicCollocations } from '../topic-collocations.ts'
@@ -659,25 +660,67 @@ export async function verifyPhrase(phrase: string, checks: DictionaryCheck[], di
   return issue
 }
 
-export async function rewriteReview(
+export interface PreparedReview {
+  sentences: string[]
+  paragraphStarts: number[]
+  suggestedPhrases: WritingSuggestedPhrase[]
+  dolHints: DolHint[]
+  collocationsPrompt: string
+  dolPrompt: string
+}
+
+export interface DraftReviewResult {
+  sentences: string[]
+  paragraphStarts: number[]
+  issues: RewriteIssue[]
+  failed: RewriteIssue[]
+  correctedSentences: string[]
+  fixed: RewriteIssue[]
+  unconfirmed: RewriteIssue[]
+  suggestedPhrases: WritingSuggestedPhrase[]
+  dolHints: DolHint[]
+  dict: ReturnType<typeof dictionaries>
+}
+
+/** Re-applies all verified issues to original sentences and returns corrected sentences and lists. */
+export function applyAllEdits(
+  sentences: string[],
+  issues: RewriteIssue[],
+): {
+  correctedSentences: string[]
+  fixed: RewriteIssue[]
+  unconfirmed: RewriteIssue[]
+} {
+  const fixed: RewriteIssue[] = []
+  const unconfirmed: RewriteIssue[] = issues.filter((i) => !i.verified)
+  const correctedSentences = sentences.map((sentence, index) => {
+    const result = applyEdits(
+      sentence,
+      issues.filter((i) => i.verified && i.sentenceIndex === index),
+    )
+    fixed.push(...result.applied)
+    unconfirmed.push(...result.skipped)
+    return result.text
+  })
+  return { correctedSentences, fixed, unconfirmed }
+}
+
+/** Shared preparation step: retrieve topic collocations + chunk & DOL dictionary entries. */
+export async function prepare(
   text: string,
   llm: LlmProvider,
   {
-    prompt,
     vietnameseText,
     rootDir,
     onStep,
   }: {
-    prompt?: string
     vietnameseText?: string
     rootDir?: string
     onStep?: (step: string) => void
   } = {},
-): Promise<RewriteReport> {
+): Promise<PreparedReview> {
   const { sentences, paragraphStarts } = splitParagraphs(text)
   if (vietnameseText?.trim()) void dolIndex()
-  // The Vietnamese idea laid out for reading, side by side with the review (it never fails: see formatIdea).
-  const ideaLaidOut = vietnameseText?.trim() ? import('../format-idea.ts').then((m) => m.formatIdea(vietnameseText, llm, 'writing')) : Promise.resolve(undefined)
 
   // 1. Retrieve relevant collocations from the 4,886 topic collocations library
   let suggestedPhrases: WritingSuggestedPhrase[] = []
@@ -705,9 +748,7 @@ export async function rewriteReview(
     }
   }
 
-  // The DOL dictionary's English for the phrases of the writer's Vietnamese (best effort: none when it is not ready).
-  // The AI cuts the Vietnamese into collocation-sized chunks first (a small low-effort call, ~6-10 s): it knows where a
-  // phrase begins and ends far better than cutting at punctuation. If that call fails, code cuts it instead.
+  // The DOL dictionary's English for the phrases of the writer's Vietnamese (best effort).
   let dolHints: DolHint[] = []
   if (vietnameseText?.trim()) {
     onStep?.('dol')
@@ -724,7 +765,6 @@ export async function rewriteReview(
         console.warn(`[writing-review] chunking skipped (${error.message}); cutting at punctuation instead`)
         return null
       })
-    // Exact matches plus up to 5 "near" neighbours per chunk, numbered: the model essay call says which ones fit.
     dolHints = numberHints(
       await (chunks?.length ? lookupDol(chunks, { max: 40, near: 5 }) : dolHintsForText(vietnameseText)).catch(() => []),
     )
@@ -732,6 +772,25 @@ export async function rewriteReview(
   const dolPrompt = dolHints.length
     ? `\n\nDictionary entries (DOL) for the writer's Vietnamese — "exact" ones are the dictionary's words for that chunk, "near" ones are related phrases the search found and may not mean the same thing; when the draft says one of these ideas awkwardly or wrongly, prefer the wording of an entry that means exactly what the writer means:\n${dolPromptBlock(dolHints)}`
     : ''
+
+  return { sentences, paragraphStarts, suggestedPhrases, dolHints, collocationsPrompt, dolPrompt }
+}
+
+/** Diagnose + dictionary lookup on the prepared draft + initial applyEdits. */
+export async function reviewDraft(
+  prepared: PreparedReview,
+  llm: LlmProvider,
+  {
+    prompt,
+    vietnameseText,
+    onStep,
+  }: {
+    prompt?: string
+    vietnameseText?: string
+    onStep?: (step: string) => void
+  } = {},
+): Promise<DraftReviewResult> {
+  const { sentences, paragraphStarts, suggestedPhrases, dolHints, collocationsPrompt, dolPrompt } = prepared
 
   onStep?.('diagnose')
   const viPrompt = vietnameseText?.trim()
@@ -747,8 +806,6 @@ export async function rewriteReview(
 
   const dict = dictionaries()
   onStep?.('dictionary')
-  // All edits are checked at once (in order): cached pages answer at once, and the dictionaries space out their own
-  // network requests.
   const issues: RewriteIssue[] = await Promise.all(
     value.edits
       .filter((raw) => {
@@ -771,31 +828,56 @@ export async function rewriteReview(
       }),
   )
 
-  // One more pass for edits the dictionaries do not confirm, with their own lists and definitions in hand.
   const failed = issues.filter((i) => !i.verified)
-  if (failed.length) {
-    onStep?.('retry')
-    const blocks = await Promise.all(
-      failed.map(async (issue, n) => {
-        const lists = listLines(issue.checks.flatMap((c) => c.lists))
-        const senses = (await Promise.all(newContentWords(issue.original, issue.replacement).map((w) => dict.definitions(w)))).filter(Boolean)
-        return [
-          `${n + 1}. Sentence: ${sentences[issue.sentenceIndex]}`,
-          `Edit: "${issue.original}" -> "${issue.replacement}" (${issue.kind}, ${issue.severity}) — ${issue.why}`,
-          lists ? `Collocation lists:\n${lists}` : 'Collocation lists: (none for these headwords)',
-          senses.length ? `Longman definitions:\n${senses.flatMap((s) => s!.lines).join('\n')}` : 'Longman definitions: (none)',
-        ].join('\n')
-      }),
-    )
-    // Best effort: when the retry call fails, those edits simply stay unconfirmed.
-    const retry = await llm
-      .json({ label: 'retry', system: RETRY_SYSTEM, prompt: blocks.join('\n\n'), schema: RetrySchema })
-      .then((r) => r.value)
-      .catch((error: Error) => {
-        console.warn(`[writing-review] retry skipped: ${error.message}`)
-        return { answers: [] }
-      })
-    await Promise.all(retry.answers.map(async (answer) => {
+  const { correctedSentences, fixed, unconfirmed } = applyAllEdits(sentences, issues)
+
+  return {
+    sentences,
+    paragraphStarts,
+    issues,
+    failed,
+    correctedSentences,
+    fixed,
+    unconfirmed,
+    suggestedPhrases,
+    dolHints,
+    dict,
+  }
+}
+
+/** Retry unconfirmed edits against dictionary definitions and lists; mutates rescued issues and returns them. */
+export async function retryUnconfirmed(
+  failed: RewriteIssue[],
+  sentences: string[],
+  dict: ReturnType<typeof dictionaries>,
+  llm: LlmProvider,
+  onStep?: (step: string) => void,
+): Promise<RewriteIssue[]> {
+  if (!failed.length) return []
+  onStep?.('retry')
+  const blocks = await Promise.all(
+    failed.map(async (issue, n) => {
+      const lists = listLines(issue.checks.flatMap((c) => c.lists))
+      const senses = (await Promise.all(newContentWords(issue.original, issue.replacement).map((w) => dict.definitions(w)))).filter(Boolean)
+      return [
+        `${n + 1}. Sentence: ${sentences[issue.sentenceIndex]}`,
+        `Edit: "${issue.original}" -> "${issue.replacement}" (${issue.kind}, ${issue.severity}) — ${issue.why}`,
+        lists ? `Collocation lists:\n${lists}` : 'Collocation lists: (none for these headwords)',
+        senses.length ? `Longman definitions:\n${senses.flatMap((s) => s!.lines).join('\n')}` : 'Longman definitions: (none)',
+      ].join('\n')
+    }),
+  )
+  const retry = await llm
+    .json({ label: 'retry', system: RETRY_SYSTEM, prompt: blocks.join('\n\n'), schema: RetrySchema, effort: writingCheckEffort() })
+    .then((r) => r.value)
+    .catch((error: Error) => {
+      console.warn(`[writing-review] retry skipped: ${error.message}`)
+      return { answers: [] }
+    })
+
+  const rescued: RewriteIssue[] = []
+  await Promise.all(
+    retry.answers.map(async (answer) => {
       const issue = failed[answer.n - 1]
       if (!issue || !answer.replacement.trim() || answer.replacement === issue.original) return
       const candidate: RewriteIssue = {
@@ -806,7 +888,6 @@ export async function rewriteReview(
         verified: false,
       }
       await verify(candidate, dict)
-      // The meaning route: the definition Claude points at must really be one of the new word's Longman senses.
       if (!candidate.verified && answer.sense.trim()) {
         for (const w of newContentWords(candidate.original, candidate.replacement)) {
           const defs = await dict.definitions(w)
@@ -817,31 +898,50 @@ export async function rewriteReview(
           }
         }
       }
-      if (candidate.verified) Object.assign(issue, candidate)
-    }))
+      if (candidate.verified) {
+        Object.assign(issue, candidate)
+        rescued.push(issue)
+      }
+    }),
+  )
+  return rescued
+}
+
+export async function rewriteReview(
+  text: string,
+  llm: LlmProvider,
+  {
+    prompt,
+    vietnameseText,
+    rootDir,
+    onStep,
+  }: {
+    prompt?: string
+    vietnameseText?: string
+    rootDir?: string
+    onStep?: (step: string) => void
+  } = {},
+): Promise<RewriteReport> {
+  const ideaLaidOut = vietnameseText?.trim()
+    ? import('../format-idea.ts').then((m) => m.formatIdea(vietnameseText, llm, 'writing'))
+    : Promise.resolve(undefined)
+
+  const prepared = await prepare(text, llm, { vietnameseText, rootDir, onStep })
+  const draft = await reviewDraft(prepared, llm, { prompt, vietnameseText, onStep })
+
+  if (draft.failed.length) {
+    await retryUnconfirmed(draft.failed, prepared.sentences, draft.dict, llm, onStep)
   }
 
-  const fixed: RewriteIssue[] = []
-  const unconfirmed: RewriteIssue[] = issues.filter((i) => !i.verified)
-  const correctedSentences = sentences.map((sentence, index) => {
-    const result = applyEdits(
-      sentence,
-      issues.filter((i) => i.verified && i.sentenceIndex === index),
-    )
-    fixed.push(...result.applied)
-    unconfirmed.push(...result.skipped)
-    return result.text
-  })
+  const { correctedSentences, fixed, unconfirmed } = applyAllEdits(prepared.sentences, draft.issues)
 
-  // 2. The upgraded NeuralSymbolic model essay starts from the corrected draft (the review's confirmed fixes), so it
-  // waits for the review: quality over time. Its own steps (plan, write, review, dictionary) report through onStep.
+  // 2. Model essay lane
   const { writingLinearGuide, generateWritingModelEssay } = await import('./writing-essay.ts')
   const written = await generateWritingModelEssay(
     {
       text,
       vietnameseText,
-      correctedSentences,
-      candidates: suggestedPhrases.map((c) => ({
+      candidates: prepared.suggestedPhrases.map((c) => ({
         id: c.cardId,
         term: c.term,
         meaning_vi: c.meaning_vi,
@@ -850,7 +950,7 @@ export async function rewriteReview(
         isTopicCollocation: true,
       })),
       guide: await writingLinearGuide({ rootDir: rootDir || process.cwd() }),
-      dolHints,
+      dolHints: prepared.dolHints,
       onStep,
     },
     llm,
@@ -861,16 +961,15 @@ export async function rewriteReview(
   const { dolRefs, unlistedFixes, reviewEdits, plan: _plan, ...modelEssay } = written ?? {}
   for (const edit of reviewEdits ?? []) console.info(`[writing-review] essay review (${edit.kind}): "${edit.original}" → "${edit.replacement}"`)
   for (const fix of unlistedFixes ?? []) console.info(`[writing-review] not in Longman / OZDIC: "${fix.original}" → "${fix.replacement}" (${fix.source})`)
-  // Shown on the page: the DOL entries the essay call said fit the writer's ideas (exact matches when it chose none).
-  const shownDol = chosenHints(dolHints, dolRefs)
+  const shownDol = chosenHints(prepared.dolHints, dolRefs)
 
   return {
-    sentences,
-    paragraphStarts,
+    sentences: prepared.sentences,
+    paragraphStarts: prepared.paragraphStarts,
     correctedSentences,
     fixed,
     unconfirmed,
-    suggestedPhrases,
+    suggestedPhrases: prepared.suggestedPhrases,
     dolHints: shownDol,
     modelEssay: written ? (modelEssay as WritingModelEssay) : undefined,
     vietnameseFormatted: await ideaLaidOut,

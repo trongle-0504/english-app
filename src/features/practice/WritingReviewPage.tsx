@@ -1,4 +1,4 @@
-import { History, Plus, ServerOff, ShieldCheck } from 'lucide-react'
+import { History, Loader2, Plus, ServerOff, ShieldCheck } from 'lucide-react'
 import { useCallback, useEffect, useState } from 'react'
 import { Badge, Button, Card, PageHeader, SectionTitle } from '@/components/ui'
 import { cn } from '@/lib/cn'
@@ -285,7 +285,24 @@ export default function WritingReviewPage() {
           </>
         ) : null}
 
-        {job?.status === 'running' ?         <WritingReviewProgress job={job} /> : null}
+        {job?.status === 'running' && !job.result ? <WritingReviewProgress job={job} /> : null}
+        {job?.status === 'running' && job.result ? (
+          <div className="space-y-4">
+            <Card className="flex items-center gap-2.5 border-brand-200 bg-brand-50/70 px-4 py-2.5 text-sm font-medium text-brand-900 dark:border-brand-800/60 dark:bg-brand-950/40 dark:text-brand-200">
+              <Loader2 className="size-4 shrink-0 animate-spin text-brand-600 dark:text-brand-400" />
+              <span>
+                {job.result.pending?.includes('retry') && job.result.pending?.includes('modelEssay')
+                  ? 'Đang kiểm tra lại các lỗi chưa xác nhận và viết bài mẫu…'
+                  : job.result.pending?.includes('retry')
+                    ? 'Đang kiểm tra lại các lỗi chưa xác nhận…'
+                    : job.result.pending?.includes('modelEssay')
+                      ? 'Đang viết bài mẫu theo phương pháp NeuralSymbolic…'
+                      : 'Đang hoàn tất bài chấm…'}
+              </span>
+            </Card>
+            <ReviewResult result={job.result} onResultChange={(updated) => setJob((prev) => (prev ? { ...prev, result: updated } : null))} />
+          </div>
+        ) : null}
         {job?.status === 'error' ? (
           <p className="rounded-xl bg-rose-50 px-4 py-3 text-sm text-rose-700 dark:bg-rose-950/40 dark:text-rose-300">Review lỗi: {job.error}</p>
         ) : null}
