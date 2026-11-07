@@ -212,6 +212,11 @@ function FixCard({ fix, n }: { fix: WritingFix; n: number }) {
             </span>
           </p>
           <Badge tone="slate">{TYPE[fix.type]}</Badge>
+          {fix.keptInEssay ? (
+            <Badge tone="slate" title="Bài nâng cấp vẫn giữ cách viết của bạn: cả hai cách đều dùng được.">
+              Gợi ý văn phong
+            </Badge>
+          ) : null}
           <Badge tone={evidence.tone} title={evidence.title}>
             {fix.evidence === 'model' ? <TriangleAlert className="size-3" /> : <ShieldCheck className="size-3" />}
             {evidence.label}
@@ -255,7 +260,10 @@ function DetailTab({ result }: { result: WritingReviewResult }) {
           <h3 className="mb-1 flex items-center gap-1.5 font-bold text-slate-900 dark:text-white">
             <Sparkles className="size-4 text-violet-500" /> Nâng cấp cho mượt ({improvements.length})
           </h3>
-          <p className="text-xs text-slate-500">Không sai, nhưng đã đổi sang cách nói tự nhiên, chính xác hơn.</p>
+          <p className="text-xs text-slate-500">
+            Không sai, nhưng đã đổi sang cách nói tự nhiên, chính xác hơn.
+            {improvements.some((f) => f.keptInEssay) ? ' Mục “Gợi ý văn phong”: bài nâng cấp vẫn giữ cách viết của bạn — cả hai đều dùng được.' : ''}
+          </p>
           <ol>
             {improvements.map((fix, i) => (
               <FixCard key={fix.id} fix={fix} n={i + 1} />
@@ -1270,13 +1278,6 @@ export function ReviewResult({
           {!result.pending?.length && !running ? <ExportReport kind="writing" result={result} /> : null}
         </div>
 
-        <WritingScoreCard
-          score={result.score}
-          scoreSkipped={result.scoreSkipped}
-          pending={result.pending}
-          onScrollToSentence={handleScrollToSentence}
-        />
-
         {result.vietnameseText ? (
           <IdeaPanel
             className="mb-6"
@@ -1287,12 +1288,16 @@ export function ReviewResult({
             source={{ source: 'writing', id: result.id }}
           />
         ) : null}
-        <div className="mb-6 empty:hidden">
-          <RealUsePanel refPrefix={`writing:${result.id}:`} stamp={`${result.id}|${result.modelEssay?.userEdited ?? ''}`} />
-        </div>
 
         {tab === 'detail' ? (
           <>
+            {/* The band belongs with the corrections; the other tabs stay simple. */}
+            <WritingScoreCard
+              score={result.score}
+              scoreSkipped={result.scoreSkipped}
+              pending={result.pending}
+              onScrollToSentence={handleScrollToSentence}
+            />
             <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
               <h2 className="text-lg font-bold text-slate-900 dark:text-white">Bài làm đã chấm</h2>
               <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-500">
@@ -1328,6 +1333,11 @@ export function ReviewResult({
             <VocabularyTab result={result} />
           </>
         )}
+
+        {/* Review-card feedback is secondary: keep it at the end, after the tab's content. */}
+        <div className="mt-8 empty:hidden">
+          <RealUsePanel refPrefix={`writing:${result.id}:`} stamp={`${result.id}|${result.modelEssay?.userEdited ?? ''}`} />
+        </div>
       </Card>
 
       <div className="sticky bottom-4 z-10 mt-5 flex justify-center">

@@ -29,6 +29,7 @@ import { analyzeUserEditedWriting, resetUserEditedWriting, type EssayReviewEdit,
 
 type WrittenEssay = Awaited<ReturnType<typeof generateWritingModelEssay>>
 import { chosenHints } from './dol.ts'
+import { styleFixesKeptInEssay } from './copied-errors.ts'
 import { countWords, MIN_WORDS_FOR_SCORING, scoreEssay } from './score.ts'
 import { WRITING_REVIEW_TOPICS, WRITING_REVIEW_TYPES, type WritingReviewTopic, type WritingReviewType } from '../../src/features/practice/writing-review/categories.ts'
 import { z } from 'zod'
@@ -427,6 +428,15 @@ export async function reviewWriting(
   if (scoreResult) finalResult.score = scoreResult
   if (scoreSkippedReason) finalResult.scoreSkipped = scoreSkippedReason
   delete finalResult.pending
+
+  // The essay lane never saw the corrections: label upgrades the essay itself does not make, so the two tabs agree.
+  if (finalResult.modelEssay) {
+    const essaySentences = finalResult.modelEssay.sentences.map((s) => s.segments.map((seg) => seg.text).join(''))
+    const kept = styleFixesKeptInEssay(finalResult.fixes, essaySentences)
+    for (const fix of finalResult.fixes) {
+      if (kept.has(fix.id)) fix.keptInEssay = true
+    }
+  }
 
   return finalResult
 }

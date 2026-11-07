@@ -1,4 +1,5 @@
-// Finds learner errors that the model essay repeats. Used by `scripts/rereview-writing.ts --copied-errors`.
+// Compares the corrections with the model essay: learner errors the essay repeats (`scripts/rereview-writing.ts
+// --copied-errors`), and style fixes whose original wording the essay keeps (marked at the end of a review).
 
 export interface CopiedError {
   phrase: string
@@ -50,4 +51,23 @@ export function findCopiedErrors(
     }
   }
   return copied
+}
+
+/**
+ * Ids of "improve" fixes whose original wording appears (whole words, any case) in the model essay. The corrections and
+ * the essay run in parallel, so the essay can keep a phrase the corrections upgraded; such a fix is a style option.
+ */
+export function styleFixesKeptInEssay(
+  fixes: { id: string; original: string; severity?: string }[],
+  essaySentences: string[],
+): Set<string> {
+  const kept = new Set<string>()
+  for (const fix of fixes) {
+    if (fix.severity !== 'improve') continue
+    const phrase = fix.original.trim()
+    if (!/\p{L}/u.test(phrase)) continue
+    const pattern = new RegExp(`(?<=^|[^\\p{L}\\p{N}])${escapeRegex(phrase)}(?=[^\\p{L}\\p{N}]|$)`, 'iu')
+    if (essaySentences.some((sentence) => pattern.test(sentence))) kept.add(fix.id)
+  }
+  return kept
 }

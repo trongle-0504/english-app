@@ -82,6 +82,8 @@ export interface WritingFix {
   word: string
   /** Dictionary pages that confirm the fix (Claude reviews). */
   sources?: { name: 'Longman' | 'OZDIC'; url: string }[]
+  /** An "improve" fix whose original wording the model essay still uses: a style option, not a mistake. */
+  keptInEssay?: boolean
 }
 
 /** Doubtful but not changed. */

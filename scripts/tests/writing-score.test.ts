@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { buildErrorPhrase, findCopiedErrors, isSurfaceOnlyFix } from '../../server/writing-review/copied-errors.ts'
+import { buildErrorPhrase, findCopiedErrors, isSurfaceOnlyFix, styleFixesKeptInEssay } from '../../server/writing-review/copied-errors.ts'
 import { countWords, quoteInSentence, WRITING_SCORE_SYSTEM } from '../../server/writing-review/score.ts'
 import { overallBand } from '../../src/types/writingReview.ts'
 
@@ -87,4 +87,21 @@ test('findCopiedErrors handles case-only fixes without false positives and catch
   // 4. isSurfaceOnlyFix assertions
   assert.equal(isSurfaceOnlyFix('funds, the', 'funds; the'), true)
   assert.equal(isSurfaceOnlyFix('buget', 'budget'), false)
+})
+
+test('styleFixesKeptInEssay marks only improve fixes whose original the essay keeps', () => {
+  // From progress/writing-reviews/mw6kmvdx-bab436.json.
+  const fixes = [
+    { id: 'f1', original: 'have little alternative but to', severity: 'improve' },
+    { id: 'f2', original: 'a large number of the population', severity: 'error' },
+    { id: 'f3', original: 'punish', severity: 'improve' },
+    { id: 'f4', original: 'natural surroundings', severity: 'improve' },
+  ]
+  const essay = [
+    'Many people live in rural areas, meaning that they Have little alternative but to rely on private vehicles.',
+    'This illustrates that increasing fuel prices could punish ordinary residents.',
+    'Factories also emit a large number of the population of pollutants, and deforestation harms the environment.',
+    'Punishment is not the aim.',
+  ]
+  assert.deepEqual([...styleFixesKeptInEssay(fixes, essay)].sort(), ['f1', 'f3'])
 })

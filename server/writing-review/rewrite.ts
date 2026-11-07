@@ -81,6 +81,7 @@ Make two kinds of edits:
 - severity "error": anything wrong — spelling ("axious"), grammar (agreement, articles, tense, a missing verb, verb patterns such as "allow sb to do", singular/plural), word_form (wrong word class: "entertainment contain" -> "entertainment content"), collocation ("significantly expensive", "give raise to"), word_choice (the meaning does not fit: "compromise" a schedule), naturalness (not how an educated writer would say it: "break hours").
 - severity "improve": correct but weak wording an examiner would mark down — vague, repetitive, informal or wordy ("free time" -> "leisure time", "help" -> "enable", "which can give rise to" -> "thereby giving rise to", "TV" -> "television"); use kind naturalness, or word_choice / collocation when that is what changes.
 Use precise, natural academic English, keep the writer's voice, and leave wording that is already good.
+Plain and correct beats formal and rare: an "improve" edit is only for wording an examiner would really mark down. Never replace a correct, natural word or phrase with a more formal synonym or another correct collocation ("have little alternative but to" and "have little choice but to" are both fine; "punish ordinary drivers" is fine). When in doubt, leave it.
 
 For each edit:
 - sentence: its number; original: the SHORTEST exact substring of that sentence the edit replaces (a whole clause only when it must be restructured), copied character for character; edits must not overlap;
