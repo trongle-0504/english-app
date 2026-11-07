@@ -2,7 +2,7 @@
 // script and for each point, and the phrases that differ — what you said well, what to upgrade or fix, what you left
 // out — in a few words each. The AI groups the script into points (the whole answer when it is short) and grades them;
 // reviews made before that show code's pairing by shared words, one script sentence per point.
-import { ArrowRight, ArrowUpRight, Check, ChevronDown, CircleDashed, ListChecks, X, type LucideIcon } from 'lucide-react'
+import { ArrowRight, ArrowUpRight, Check, ChevronDown, CircleDashed, ListChecks, Loader2, X, type LucideIcon } from 'lucide-react'
 import { useState, type ReactNode } from 'react'
 import { Badge, Card } from '@/components/ui'
 import { cn } from '@/lib/cn'
@@ -308,6 +308,19 @@ export function ScriptComparison({ result }: { result: TalkReviewResult }) {
   // Open at first; the header folds it away (the match stays in the header).
   const [open, setOpen] = useState(true)
   if (!result.script) return null
+  if (result.pending?.includes('comparison')) {
+    return (
+      <Card className="flex items-center gap-3 px-5 py-4 sm:px-6">
+        <span className="flex size-8 items-center justify-center rounded-lg bg-brand-50 text-brand-600 dark:bg-brand-950/60 dark:text-brand-300">
+          <Loader2 className="size-4.5 animate-spin" />
+        </span>
+        <div>
+          <p className="font-bold text-slate-900 dark:text-white">Script vs what you said</p>
+          <p className="text-xs text-slate-500 dark:text-slate-400">Đang so bài nói với script…</p>
+        </div>
+      </Card>
+    )
+  }
   const c = result.comparison
   const graded = Boolean(c?.points?.length)
   // Reviews made before the AI graded the script: code's pairing, one script sentence per point.

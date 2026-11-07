@@ -245,7 +245,8 @@ test('listSuggestions populates answered and listTalkReviews returns 3-field sou
       usage: { model: 'claude', input: 10, output: 10, thinking: 0 },
     } satisfies SpeakingResult)
 
-    const suggestions = await listSuggestions({ rootDir })
+    const ctx = { rootDir, contentDir: rootDir, onContentChange: () => {} }
+    const suggestions = await listSuggestions(ctx)
     assert.equal(suggestions.length, 1)
     assert.deepEqual(suggestions[0]!.questions, ['Q1?', 'Q2?'])
     assert.deepEqual(suggestions[0]!.answered, [true, false])
@@ -289,7 +290,7 @@ test('listSuggestions populates answered and listTalkReviews returns 3-field sou
       reviewer: 'test',
     })
 
-    const reviews = await listTalkReviews({ rootDir })
+    const reviews = await listTalkReviews(ctx)
     assert.equal(reviews.length, 1)
     assert.deepEqual(reviews[0]!.source, {
       suggestionId: 'sid-test1',
