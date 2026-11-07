@@ -262,8 +262,13 @@ export default function WritingMockTestPage() {
               <ul className="mt-2 space-y-2 text-sm">
                 {selectedHistory.slice(0, 5).map((item) => (
                   <li key={item.id} className="flex flex-wrap items-center justify-between gap-2">
-                    <span className="text-slate-600 dark:text-slate-300">
+                    <span className="flex items-center gap-2 text-slate-600 dark:text-slate-300">
                       {new Date(item.createdAt).toLocaleString('vi-VN')} · {item.fixes} lỗi đã nhận diện
+                      {item.overall !== undefined ? (
+                        <Badge tone="brand" className="text-xs">
+                          Band {item.overall.toFixed(1)}
+                        </Badge>
+                      ) : null}
                     </span>
                     <Button size="sm" variant="outline" onClick={() => (window.location.href = `/practice/writing-review?id=${item.id}`)}>
                       Xem kết quả

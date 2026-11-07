@@ -354,6 +354,7 @@ async function runJsonOnce(request: AntigravityJsonRequest, staged: StagedImages
     ms,
     billing: 'subscription',
     provider: 'antigravity',
+    ...(effort ? { effort } : {}),
     ...(usable ? {} : { failed: true }),
   })
 
@@ -464,6 +465,7 @@ async function runText(request: AntigravityTextRequest, staged: StagedImages): P
     ms,
     billing: 'subscription',
     provider: 'antigravity',
+    ...(effort ? { effort } : {}),
     ...(usable ? {} : { failed: true }),
   })
 

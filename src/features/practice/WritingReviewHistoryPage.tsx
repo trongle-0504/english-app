@@ -278,6 +278,11 @@ export default function WritingReviewHistoryPage() {
                               {timeLabel(item.createdAt)}
                             </span>
                             <div className="flex items-center gap-1.5">
+                              {item.overall !== undefined ? (
+                                <Badge tone="brand" className="text-[10px] py-0 px-1.5 font-bold">
+                                  Band {item.overall.toFixed(1)}
+                                </Badge>
+                              ) : null}
                               <Badge tone="emerald" className="text-[10px] py-0 px-1.5">
                                 {item.fixes} lỗi đã sửa
                               </Badge>

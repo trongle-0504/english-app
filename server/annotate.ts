@@ -617,6 +617,8 @@ export interface AnnotateRequest {
   keepWrapped?: string[]
   /** The learner's own words (draft, idea, or the revision itself): whose words a phrase is. */
   learnerText: string[]
+  /** Max coverage retry rounds for thin/empty sentences (default 2). Writing uses 1. */
+  maxRounds?: number
   /** model: the AI wrote the text; user: the learner's own text, never changed. */
   mode: 'model' | 'user'
   /** Let the judge step replace suspicious combinations the AI wrote (default: a model text). */
@@ -771,7 +773,8 @@ export async function annotate(req: AnnotateRequest, model: JsonModel): Promise<
   }
 
   // 5. Coverage: a sentence with fewer phrases than its length suggests (or none) is asked about again.
-  for (let round = 0; round < 2; round++) {
+  const maxRounds = req.maxRounds ?? 2
+  for (let round = 0; round < maxRounds; round++) {
     const { thin } = coverage(sentences, found)
     if (!thin.length) break
     report.retried.push(...thin)

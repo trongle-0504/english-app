@@ -32,9 +32,17 @@ export const writingReviewModelName = () => {
 export const writingReviewEngineAvailable = () =>
   defaultWritingReviewEngine() === 'antigravity' ? antigravityAvailable() : claudeCodeAvailable()
 
-/** Effort for every call (low · medium · high · xhigh · max). Default is from env or 'medium'/'high'. */
+/** Effort for diagnose and every writing-review call that passes no effort of its own: WRITING_REVIEW_EFFORT, default low. */
 export const writingReviewEffort = (): ClaudeEffort =>
-  (['low', 'medium', 'high', 'xhigh', 'max'] as const).find((l) => l === process.env.WRITING_REVIEW_EFFORT) ?? 'medium'
+  (['low', 'medium', 'high', 'xhigh', 'max'] as const).find((l) => l === process.env.WRITING_REVIEW_EFFORT) ?? 'low'
+
+/** Effort for checking calls (retry, plan notes, essay review, wording): WRITING_CHECK_EFFORT, default low. */
+export const writingCheckEffort = (): ClaudeEffort =>
+  (['low', 'medium', 'high', 'xhigh', 'max'] as const).find((l) => l === process.env.WRITING_CHECK_EFFORT) ?? 'low'
+
+/** Effort for score call: WRITING_SCORE_EFFORT, default low. */
+export const writingScoreEffort = (): ClaudeEffort =>
+  (['low', 'medium', 'high', 'xhigh', 'max'] as const).find((l) => l === process.env.WRITING_SCORE_EFFORT) ?? 'low'
 
 export interface CallUsage {
   label: string
@@ -42,6 +50,7 @@ export interface CallUsage {
   input: number
   output: number
   thinking: number
+  ms?: number
 }
 
 function jsonSchema(schema: z.ZodType): unknown {
@@ -70,10 +79,11 @@ export function writingReviewModel({
           effort,
         })
         const usage = result.usage
-        onCall?.({ label, model: result.model, ...usage })
+        onCall?.({ label, model: result.model, ...usage, ms: result.ms })
         return { value: schema.parse(result.value), model: result.model, usage }
       }
 
+      const tStartClaude = Date.now()
       const result = await claudeJson({
         label: `writing-review: ${label}`,
         system,
@@ -83,7 +93,7 @@ export function writingReviewModel({
         effort,
       })
       const usage = result.usage
-      onCall?.({ label, model: result.model, ...usage })
+      onCall?.({ label, model: result.model, ...usage, ms: Date.now() - tStartClaude })
       return { value: schema.parse(result.value), model: result.model, usage }
     },
   }

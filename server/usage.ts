@@ -32,6 +32,8 @@ export interface UsageEntry {
   billing?: 'subscription'
   /** Provider: 'antigravity', 'claude', or 'gemini_api'. */
   provider?: UsageProvider
+  /** Effort passed to the CLI (--effort), when there was one. */
+  effort?: string
 }
 
 export function providerOf(e: UsageEntry): UsageProvider {

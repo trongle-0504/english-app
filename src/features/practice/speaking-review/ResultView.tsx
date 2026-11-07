@@ -32,44 +32,7 @@ import { Pronunciation } from './Pronunciation'
 import { ScriptComparison } from './ScriptComparison'
 import { Transcript } from './Transcript'
 
-/* ───────────── Bands ───────────── */
-
-const bandTone = (band: number) =>
-  band >= 7
-    ? 'text-emerald-600 dark:text-emerald-400'
-    : band >= 6
-      ? 'text-brand-600 dark:text-brand-400'
-      : band >= 5
-        ? 'text-amber-600 dark:text-amber-400'
-        : 'text-rose-600 dark:text-rose-400'
-
-function BandRing({ band }: { band: number }) {
-  const radius = 52
-  const circumference = 2 * Math.PI * radius
-  return (
-    <div className="relative size-32 shrink-0">
-      <svg viewBox="0 0 120 120" className="size-full -rotate-90" aria-hidden>
-        <circle cx="60" cy="60" r={radius} fill="none" strokeWidth="10" className="stroke-slate-100 dark:stroke-slate-800" />
-        <circle
-          cx="60"
-          cy="60"
-          r={radius}
-          fill="none"
-          strokeWidth="10"
-          strokeLinecap="round"
-          stroke="currentColor"
-          strokeDasharray={circumference}
-          strokeDashoffset={circumference * (1 - band / 9)}
-          className={cn('transition-[stroke-dashoffset] duration-1000 ease-out', bandTone(band))}
-        />
-      </svg>
-      <span className="absolute inset-0 flex flex-col items-center justify-center">
-        <span className="text-[11px] font-bold tracking-wide text-slate-500 uppercase">Band</span>
-        <span className="text-4xl leading-none font-extrabold text-slate-900 tabular-nums dark:text-white">{band.toFixed(1)}</span>
-      </span>
-    </div>
-  )
-}
+import { bandTone, BandRing } from '../BandScore'
 
 /* ───────────── Sections ───────────── */
 
