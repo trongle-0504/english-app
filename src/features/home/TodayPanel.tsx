@@ -369,12 +369,18 @@ function OverdueBanner({
           ))}
         </ul>
       ) : null}
-      <div className="mt-2 flex flex-wrap gap-2">
-        <button type="button" onClick={onReschedule} className="inline-flex min-h-10 items-center gap-1.5 rounded-full bg-amber-600 px-4 text-sm font-semibold text-white">
-          <Sparkles className="size-4" /> Smart reschedule
+      {/* One row on phones: compact padding, no wrapping. */}
+      <div className="mt-2 flex gap-2">
+        <button type="button" onClick={onReschedule} className="inline-flex min-h-10 items-center gap-1.5 rounded-full bg-amber-600 px-3 text-[13px] font-semibold whitespace-nowrap text-white sm:px-4 sm:text-sm">
+          <Sparkles className="size-4 shrink-0" /> Smart reschedule
         </button>
-        <button type="button" onClick={onMoveToday} className="inline-flex min-h-10 items-center rounded-full border border-amber-300 px-4 text-sm font-semibold text-amber-800 dark:border-amber-800 dark:text-amber-300">
-          Move to today
+        <button
+          type="button"
+          onClick={onMoveToday}
+          title="Move every overdue task to today"
+          className="inline-flex min-h-10 items-center rounded-full border border-amber-300 px-3 text-[13px] font-semibold whitespace-nowrap text-amber-800 sm:px-4 sm:text-sm dark:border-amber-800 dark:text-amber-300"
+        >
+          All to today
         </button>
       </div>
     </div>

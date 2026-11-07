@@ -90,7 +90,7 @@ export function ReschedulePreview({ open, onOpenChange, onApplied }: { open: boo
               Move to tomorrow
             </Button>
             <Button onClick={() => void moveAll(vnDay())} loading={busy}>
-              Move all to today
+              All to today
             </Button>
           </>
         ) : proposal && (proposal.moves.length || proposal.drop.length) ? (
