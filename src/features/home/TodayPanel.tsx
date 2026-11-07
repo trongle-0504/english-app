@@ -1,4 +1,4 @@
-// The home page's "today", drawn on the hero photo: date and greeting, exam countdown, week progress, the AI brief,
+// The home page's "today", drawn on the hero photo: date, exam countdown, week progress, the AI brief,
 // today's tasks (solid card for legibility), overdue work, next events and a quick-add bar.
 import { ArrowRight, Bell, CalendarClock, CalendarPlus, ChevronDown, Plus, Repeat, Sparkles, WifiOff } from 'lucide-react'
 import { useEffect, useState, type ReactNode } from 'react'
@@ -22,11 +22,6 @@ import { WeekDraftSheet } from '@/features/planner/WeekDraftSheet'
 
 const glass = 'bg-white/12 ring-1 ring-white/20 backdrop-blur-xl'
 const roundGlass = cn(glass, 'relative flex size-11 items-center justify-center rounded-full text-white transition hover:bg-white/20')
-
-function greetingByHour(): string {
-  const hour = Number(new Date().toLocaleString('en-GB', { timeZone: 'Asia/Ho_Chi_Minh', hour: '2-digit', hour12: false }))
-  return hour < 11 ? 'Chào buổi sáng' : hour < 18 ? 'Chào buổi chiều' : 'Chào buổi tối'
-}
 
 /** A white ring on the photo: `value` out of `max`. */
 function Ring({ value, max, children }: { value: number; max: number; children: ReactNode }) {
@@ -117,15 +112,13 @@ export function TodayPanel() {
   }
 
   const day = home?.day ?? vnDay()
-  const greeting = home?.brief?.greeting || greetingByHour()
 
   return (
     <div className="text-white">
-      {/* 1. Date, greeting, bell, + */}
-      <div className="flex items-start justify-between gap-3">
+      {/* 1. Date, bell, + */}
+      <div className="flex items-center justify-between gap-3">
         <div className="min-w-0">
-          <p className="text-xs font-bold tracking-[0.14em] text-white/70 uppercase">{viLongDate(day)}</p>
-          <h1 className="mt-1 text-2xl leading-tight font-extrabold tracking-tight text-white sm:text-3xl">{greeting}</h1>
+          <h1 className="text-sm font-bold tracking-[0.14em] text-white/85 uppercase">{viLongDate(day)}</h1>
           {offline ? (
             <p className="mt-1 inline-flex items-center gap-1 rounded-full bg-amber-500/25 px-2 py-0.5 text-xs font-semibold text-amber-100">
               <WifiOff className="size-3" /> Ngoại tuyến
@@ -143,9 +136,9 @@ export function TodayPanel() {
         </div>
       </div>
 
-      <div className="mt-4 grid gap-3 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-6">
+      <div className="mt-3 grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-6">
         {/* Left column on desktop: tiles + brief */}
-        <div className="space-y-3">
+        <div className="min-w-0 space-y-3">
           {/* 2. Countdown + week progress */}
           <div className="grid grid-cols-2 gap-3">
             {home?.countdown ? (
@@ -205,7 +198,7 @@ export function TodayPanel() {
         </div>
 
         {/* 4–6. Solid card: today, overdue, events */}
-        <div className="rounded-3xl bg-white/92 p-4 text-slate-900 shadow-xl backdrop-blur-xl sm:p-5 dark:bg-slate-900/88 dark:text-slate-100">
+        <div className="min-w-0 rounded-3xl bg-white/92 p-4 text-slate-900 shadow-xl backdrop-blur-xl sm:p-5 dark:bg-slate-900/88 dark:text-slate-100">
           {loading && !home ? (
             <div className="space-y-3">
               <Skeleton className="h-5 w-24" />
