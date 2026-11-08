@@ -1,6 +1,7 @@
 import { Save } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import { Button, Card } from '@/components/ui'
+import { CoachStatsCard } from '@/features/coach/CoachStatsCard'
 import { adminApi, errorMessage } from './api'
 import { EditorSkeleton, StatusAlert, TextInput } from './ui'
 import { useAction } from './utils'
@@ -643,6 +644,8 @@ export default function UsageAdminPage() {
           </div>
         </Card>
       ) : null}
+
+      <CoachStatsCard />
 
       {report ? (
         <>

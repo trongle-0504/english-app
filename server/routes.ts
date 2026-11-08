@@ -3,6 +3,7 @@ import { geminiConfigured } from './gemini.ts'
 import { adminRoutes } from './routes/admin.ts'
 import { analyzeRoutes } from './routes/analyze.ts'
 import { authRoutes } from './routes/auth.ts'
+import { coachRoutes } from './routes/coach.ts'
 import { essayRoutes } from './routes/essays.ts'
 import { ideaRoutes } from './routes/idea.ts'
 import { reportRoutes } from './routes/report.ts'
@@ -24,6 +25,7 @@ import { writingReviewRoutes } from './routes/writing-review.ts'
 export const routes: Record<string, ApiHandler> = {
   'GET /health': () => ({ json: { ok: true, gemini: geminiConfigured() } }),
   ...authRoutes,
+  ...coachRoutes,
   ...analyzeRoutes,
   ...adminRoutes,
   ...reviewRoutes,

@@ -122,7 +122,7 @@ export function checkRemind(value: unknown, fallback: number[]): number[] {
   return [...new Set(value as number[])].sort((a, b) => b - a)
 }
 
-const SOURCES: PlannerTask['source'][] = ['manual', 'routine', 'quick-add', 'ai-week', 'reschedule']
+const SOURCES: PlannerTask['source'][] = ['manual', 'routine', 'quick-add', 'ai-week', 'reschedule', 'coach']
 
 /** A task from a request body; `prev` is the stored task being edited (keeps fields the body leaves out). */
 export function taskFromBody(body: JsonObject, now: string, prev?: PlannerTask): PlannerTask {

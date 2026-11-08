@@ -4,6 +4,7 @@ import { ArrowRight, Bell, CalendarClock, CalendarPlus, Check, ChevronDown, Play
 import { useEffect, useState, type ReactNode } from 'react'
 import { Link, useNavigate } from 'react-router'
 import { Skeleton } from '@/components/ui'
+import { AskCoachButton } from '@/features/coach/AskCoachButton'
 import { cn } from '@/lib/cn'
 import type { PlannerEvent, PlannerHome } from '@/types/planner'
 import { AddSheet, type AddTab } from '@/features/planner/AddSheet'
@@ -131,7 +132,7 @@ export function TodayPanel() {
 
   return (
     <div className="text-white">
-      {/* 1. Date, bell */}
+      {/* 1. Date; Add task (Quick add sheet) and the bell on the right (the bottom of the screen belongs to the Coach button). */}
       <div className="flex items-center justify-between gap-3">
         <div className="min-w-0">
           <h1 className="text-sm font-bold tracking-[0.14em] text-white/85 uppercase">{longDate(day)}</h1>
@@ -141,7 +142,8 @@ export function TodayPanel() {
             </p>
           ) : null}
         </div>
-        <div className="flex shrink-0 gap-2">
+        <div className="flex shrink-0 items-center gap-2">
+          <QuickAddBar onClick={() => setAdd({ open: true, tab: 'quick' })} />
           <button type="button" aria-label="Notifications" onClick={() => setPushOpen(true)} className={roundGlass}>
             <Bell className="size-5" />
             {push && push !== 'on' && push !== 'unsupported' && push !== 'dev' ? <span className="absolute top-2.5 right-2.5 size-2 rounded-full bg-amber-400 ring-2 ring-slate-900/40" /> : null}
@@ -197,7 +199,6 @@ export function TodayPanel() {
               {briefBusy ? 'Writing today’s brief…' : 'Get today’s brief'}
             </button>
           ) : null}
-          <QuickAddBar onClick={() => setAdd({ open: true, tab: 'quick' })} className="hidden lg:flex" />
         </div>
 
         {/* 4–6. Solid card: today, overdue, events */}
@@ -223,9 +224,6 @@ export function TodayPanel() {
           )}
         </div>
       </div>
-
-      {/* 7. Quick add bar: at the bottom on phones and tablets; from lg up it sits under the brief instead. */}
-      <QuickAddBar onClick={() => setAdd({ open: true, tab: 'quick' })} className="mt-3 lg:hidden" />
 
       <AddSheet open={add.open} onOpenChange={(open) => setAdd((a) => ({ ...a, open }))} tab={add.tab} event={add.event} onSaved={() => void reload()} />
       <ReschedulePreview open={rescheduleOpen} onOpenChange={setRescheduleOpen} onApplied={() => void reload()} />
@@ -411,24 +409,27 @@ function BriefCard({
       </p>
       <p className="mt-1.5 text-sm leading-relaxed text-white/95">{brief.focus || brief.body}</p>
       {open && brief.tip ? <p className="mt-1 text-sm leading-relaxed text-white/80">💡 {brief.tip}</p> : null}
-      {task || hasMore ? (
-        <div className="mt-2 flex items-center gap-2">
-          {task?.link ? (
-            <Link to={task.link} className={action}>
-              <Play className="size-3.5 fill-current" /> Start
-            </Link>
-          ) : task ? (
-            <button type="button" onClick={() => onToggle(task, true)} className={action}>
-              <Check className="size-3.5" strokeWidth={3} /> Done
-            </button>
-          ) : null}
-          {hasMore ? (
-            <button type="button" onClick={() => onOpenChange(!open)} className="ml-auto inline-flex min-h-8 items-center gap-1 text-xs font-semibold text-white/80">
-              {open ? 'Less' : 'Tip'} <ChevronDown className={cn('size-3.5 transition-transform', open && 'rotate-180')} />
-            </button>
-          ) : null}
-        </div>
-      ) : null}
+      <div className="mt-2 flex flex-wrap items-center gap-2">
+        {task?.link ? (
+          <Link to={task.link} className={action}>
+            <Play className="size-3.5 fill-current" /> Start
+          </Link>
+        ) : task ? (
+          <button type="button" onClick={() => onToggle(task, true)} className={action}>
+            <Check className="size-3.5" strokeWidth={3} /> Done
+          </button>
+        ) : null}
+        <AskCoachButton
+          label="Ask Nova Agent"
+          question="What should I focus on today, given my plan, my due flashcards and my recent mistakes?"
+          className="h-auto min-h-8 border-0 bg-white/20 px-3 text-xs font-bold text-white hover:bg-white/30 dark:border-0 dark:bg-white/20 dark:text-white dark:hover:bg-white/30 [&_svg]:size-3.5"
+        />
+        {hasMore ? (
+          <button type="button" onClick={() => onOpenChange(!open)} className="ml-auto inline-flex min-h-8 items-center gap-1 text-xs font-semibold text-white/80">
+            {open ? 'Less' : 'Tip'} <ChevronDown className={cn('size-3.5 transition-transform', open && 'rotate-180')} />
+          </button>
+        ) : null}
+      </div>
     </div>
   )
 }
@@ -438,10 +439,12 @@ function QuickAddBar({ onClick, className }: { onClick: () => void; className?: 
     <button
       type="button"
       onClick={onClick}
-      className={cn(glass, 'flex min-h-12 w-full items-center gap-2 rounded-full px-4 text-left text-sm text-white/80 transition hover:bg-white/20', className)}
+      aria-label="Add a task to your plan"
+      title="Add a task to your plan"
+      className={cn(glass, 'flex h-11 items-center gap-2 rounded-full px-3.5 text-sm font-semibold text-white/90 transition hover:bg-white/20 sm:px-4', className)}
     >
-      <Sparkles className="size-4 shrink-0" />
-      <span className="truncate">Quick add…</span>
+      <CalendarPlus className="size-4 shrink-0" />
+      <span className="hidden whitespace-nowrap min-[360px]:inline">Add task</span>
     </button>
   )
 }

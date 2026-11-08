@@ -4,6 +4,7 @@ import { isObject, jsonBody, queryParam } from '../admin/input.ts'
 import type { PlannerTask } from '../../src/types/planner.ts'
 import { addDays, daysBetween, isoWeekday, vnDay, weekDays, weekStart } from '../../src/features/planner/dates.ts'
 import { draftWeek, ensureBrief, proposeReschedule, quickAdd } from '../planner/ai.ts'
+import { applyMoves, createTasks } from '../planner/actions.ts'
 import { buildHome } from '../planner/context.ts'
 import { eventToIcs, icsFileName } from '../planner/ics.ts'
 import { listDevices, sendToAll, subscribe, unsubscribe, vapidKeys } from '../planner/push.ts'
@@ -83,17 +84,7 @@ export const plannerRoutes: Record<string, ApiHandler> = {
     return { json: { task } }
   },
 
-  'POST /planner/tasks': async (req, ctx) => {
-    const list = body(req).tasks
-    if (!Array.isArray(list) || !list.length || list.length > 60) throw new ApiError(400, 'Send 1–60 tasks.')
-    const now = new Date().toISOString()
-    const created = list.map((item) => {
-      if (!isObject(item)) throw new ApiError(400, 'Each task must be an object.')
-      return taskFromBody(item, now)
-    })
-    await updatePlanner(ctx, (doc) => void doc.tasks.push(...created))
-    return { json: { tasks: created } }
-  },
+  'POST /planner/tasks': async (req, ctx) => ({ json: { tasks: await createTasks(ctx, body(req).tasks) } }),
 
   'DELETE /planner/task': async (req, ctx) => {
     const id = queryParam(req, 'id')
@@ -268,28 +259,7 @@ export const plannerRoutes: Record<string, ApiHandler> = {
     const input = body(req)
     const moves = Array.isArray(input.moves) ? input.moves : []
     const drop = Array.isArray(input.drop) ? input.drop.filter((id): id is string => typeof id === 'string') : []
-    const now = new Date().toISOString()
-    const result = await updatePlanner(ctx, (doc) => {
-      let moved = 0
-      for (const m of moves) {
-        if (!isObject(m)) continue
-        const task = doc.tasks.find((t) => t.id === m.taskId)
-        if (!task) continue
-        const date = checkDay(m.date)
-        const time = checkTime(m.time)
-        if (task.date !== date) task.movedFrom = task.date
-        task.date = date
-        if (time) task.time = time
-        else delete task.time
-        delete task.snoozedUntil
-        task.updatedAt = now
-        moved++
-      }
-      const before = doc.tasks.length
-      doc.tasks = doc.tasks.filter((t) => !drop.includes(t.id))
-      return { moved, dropped: before - doc.tasks.length }
-    })
-    return { json: result }
+    return { json: await applyMoves(ctx, moves, drop) }
   },
 
   'POST /planner/week/draft': async (req, ctx) => {
