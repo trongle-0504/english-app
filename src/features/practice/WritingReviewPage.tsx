@@ -3,7 +3,6 @@ import { useCallback, useEffect, useState } from 'react'
 import { Badge, Button, Card, PageHeader, SectionTitle } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import { useLocalStorage } from '@/lib/storage'
-import { AskCoachButton } from '@/features/coach/AskCoachButton'
 import { useQueryParam } from '@/lib/useQueryParam'
 import type { WritingReviewJob, WritingReviewSummary } from '@/types/writingReview'
 import { MAX_LENGTH, MIN_LENGTH, OfflineError, writingReviewApi } from './writing-review/api'
@@ -310,11 +309,6 @@ export default function WritingReviewPage() {
         ) : null}
         {job?.status === 'error' ? (
           <p className="rounded-xl bg-rose-50 px-4 py-3 text-sm text-rose-700 dark:bg-rose-950/40 dark:text-rose-300">Review lỗi: {job.error}</p>
-        ) : null}
-        {job?.status === 'done' && job.result ? (
-          <div className="flex justify-end">
-            <AskCoachButton question={`About my Writing review ${job.result.id}: what are the 3 most important things to fix, and how?`} />
-          </div>
         ) : null}
         {job?.status === 'done' && job.result ? (
           <ReviewResult

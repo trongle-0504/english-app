@@ -25,7 +25,6 @@ import { Link, useSearchParams } from 'react-router'
 import { Badge, Button, ButtonLink, Card, PageHeader, SegmentedControl } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import { useLocalStorage } from '@/lib/storage'
-import { AskCoachButton } from '@/features/coach/AskCoachButton'
 import { useQueryParam } from '@/lib/useQueryParam'
 import type { SpeakingHistoryItem } from '@/types/speaking'
 import {
@@ -849,9 +848,6 @@ export default function SpeakingReviewPage() {
                 </div>
               </Card>
             ) : null}
-            <div className="flex justify-end">
-              <AskCoachButton question={`About my Speaking review ${job.result.id}: what are the 3 most important things to fix (grammar, wording, pronunciation)?`} />
-            </div>
             <ResultView result={job.result} onUpdate={(result) => setJob((prev) => (prev ? { ...prev, result } : prev))} />
           </div>
         ) : null}
