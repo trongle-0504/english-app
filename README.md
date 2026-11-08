@@ -459,6 +459,18 @@ Dữ liệu: `progress/planner/planner.json` (việc, sự kiện, lịch cố �
 
 **Biến môi trường** (`.env`, đều tuỳ chọn): `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` (mặc định `mailto:admin@ailab.com.vn`; đổi khoá thì mọi thiết bị phải bật lại thông báo), `PLANNER_ANTIGRAVITY_MODEL` (mặc định `gemini-3.8-flash`, không kèm hậu tố effort), `PLANNER_FAST_EFFORT` (mặc định `low`: thêm nhanh, tóm tắt), `PLANNER_PLAN_EFFORT` (mặc định `low`: dời lịch, lập tuần; `medium` kỹ hơn nhưng lập tuần có thể mất tới 4 phút).
 
+## Coach (trợ lý chat, nút ✦ góc dưới phải mọi trang)
+
+Chat hỏi đáp dựa trên **dữ liệu của chính bạn** trong app: lỗi hay gặp (sổ lỗi), bài Writing / Speaking đã chấm (điểm, lỗi, phát âm), lịch Planner, thẻ ôn và kho từ (Vocabulary, Collocations, Notes, Topic collocations). Phase 1 chỉ **đọc**: Coach chưa thêm/sửa/xoá gì.
+
+**Cách chạy:** server mở một tiến trình `agy acp` (Agent Client Protocol) khi có câu hỏi đầu tiên, dùng chung cho mọi chat, tự tắt sau 15 phút rảnh. Agent chỉ gọi được công cụ của app qua một MCP server riêng trên `127.0.0.1` (cổng ngẫu nhiên, token riêng mỗi chat; không nằm dưới `/api`). Mọi yêu cầu quyền khác của agy (chạy lệnh, đọc file ngoài thư mục) đều bị từ chối; agy chạy trong một thư mục trống. Câu hỏi chạy nền, trình duyệt hỏi lại mỗi 0,7 s (`GET /api/coach/turn`).
+
+Dữ liệu: `progress/coach/sessions/<id>.json` (câu hỏi, trả lời, các bước gọi công cụ, token). Chat **tự xoá sau 30 ngày** kể từ tin nhắn cuối. Mỗi câu hỏi ghi token vào `logs/gemini-usage.jsonl` với nhãn `coach` (Admin → Usage). Trong khung chat, bấm "Details" dưới câu trả lời để xem token, số công cụ và thời gian.
+
+Đánh giá với AI thật (đọc dữ liệu thật, không ghi gì): `COACH_NOW=2026-11-08T10:00:00+07:00 node scripts/coach-eval.ts` — 10 câu, in đạt/trượt, thời gian, công cụ đã gọi và token từng câu.
+
+**Biến môi trường** (`.env`, đều tuỳ chọn): `COACH_ENABLED` (`0` = tắt hẳn: ẩn nút, `/api/coach/*` trả 404), `COACH_MODEL` (mặc định `gemini-3.8-flash-low`), `COACH_TURN_TIMEOUT_MS` (180000), `COACH_MAX_TURNS_PER_HOUR` (40), `COACH_MAX_RUNNING` (2 câu chạy cùng lúc), `COACH_RETENTION_DAYS` (30).
+
 ## Cấu trúc code
 
 ```

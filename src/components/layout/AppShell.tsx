@@ -5,6 +5,8 @@ import { Footer } from './Footer'
 import { Header } from './Header'
 
 const WordLookup = lazy(() => import('@/features/lookup/WordLookup'))
+// The Coach button on every page (the chat itself loads on first open).
+const CoachButton = lazy(() => import('@/features/coach/CoachButton'))
 
 /** Scrolls to #hash targets once the (possibly lazy) page has rendered them, and flashes them. */
 function useScrollToHash() {
@@ -75,6 +77,9 @@ export function AppShell() {
           <WordLookup open={lookupOpen} onOpenChange={openLookup} />
         </Suspense>
       ) : null}
+      <Suspense fallback={null}>
+        <CoachButton />
+      </Suspense>
       <ScrollRestoration getKey={(location) => location.pathname} />
     </div>
   )

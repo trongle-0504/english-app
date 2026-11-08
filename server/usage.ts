@@ -160,6 +160,7 @@ export const FEATURES: Record<string, string> = {
   'essay rebuild': 'Model essays · Rebuild',
   'essay transfer': 'Model essays · Use it',
   review: 'Review · My cards',
+  coach: 'Coach',
   'review produce': 'Review · Viết câu (Viết lại câu / Tự dùng)',
   selftest: 'Test',
   test: 'Test',

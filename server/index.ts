@@ -6,6 +6,7 @@ import { createGzip } from 'node:zlib'
 import { createContentStore } from '../content-pipeline/store.ts'
 import { createApiMiddleware } from './api.ts'
 import { gate } from './auth/middleware.ts'
+import { stopCoach } from './coach/service.ts'
 import { loadEnv } from './env.ts'
 import { startNewsScheduler } from './news/service.ts'
 import { startPlannerScheduler } from './planner/scheduler.ts'
@@ -99,3 +100,10 @@ const server = createServer(async (req, res) => {
 
 const port = Number(process.env.PORT || 4173)
 server.listen(port, () => console.log(`English App running at http://localhost:${port}`))
+
+// The coach's agent process and MCP listener stop with the server (they start only on the first coach question).
+for (const signal of ['SIGTERM', 'SIGINT'] as const) {
+  process.once(signal, () => {
+    void stopCoach().finally(() => process.exit(0))
+  })
+}
