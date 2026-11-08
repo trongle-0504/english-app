@@ -132,7 +132,7 @@ export function TodayPanel() {
 
   return (
     <div className="text-white">
-      {/* 1. Date; Quick add and the bell on the right (the bottom of the screen belongs to the Coach button). */}
+      {/* 1. Date; Add task (Quick add sheet) and the bell on the right (the bottom of the screen belongs to the Coach button). */}
       <div className="flex items-center justify-between gap-3">
         <div className="min-w-0">
           <h1 className="text-sm font-bold tracking-[0.14em] text-white/85 uppercase">{longDate(day)}</h1>
@@ -439,11 +439,12 @@ function QuickAddBar({ onClick, className }: { onClick: () => void; className?: 
     <button
       type="button"
       onClick={onClick}
-      aria-label="Quick add"
+      aria-label="Add a task to your plan"
+      title="Add a task to your plan"
       className={cn(glass, 'flex h-11 items-center gap-2 rounded-full px-3.5 text-sm font-semibold text-white/90 transition hover:bg-white/20 sm:px-4', className)}
     >
-      <Sparkles className="size-4 shrink-0" />
-      <span className="hidden whitespace-nowrap min-[360px]:inline">Quick add</span>
+      <CalendarPlus className="size-4 shrink-0" />
+      <span className="hidden whitespace-nowrap min-[360px]:inline">Add task</span>
     </button>
   )
 }
