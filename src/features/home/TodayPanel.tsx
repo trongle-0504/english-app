@@ -132,7 +132,7 @@ export function TodayPanel() {
 
   return (
     <div className="text-white">
-      {/* 1. Date, bell */}
+      {/* 1. Date; Quick add and the bell on the right (the bottom of the screen belongs to the Coach button). */}
       <div className="flex items-center justify-between gap-3">
         <div className="min-w-0">
           <h1 className="text-sm font-bold tracking-[0.14em] text-white/85 uppercase">{longDate(day)}</h1>
@@ -142,7 +142,8 @@ export function TodayPanel() {
             </p>
           ) : null}
         </div>
-        <div className="flex shrink-0 gap-2">
+        <div className="flex shrink-0 items-center gap-2">
+          <QuickAddBar onClick={() => setAdd({ open: true, tab: 'quick' })} />
           <button type="button" aria-label="Notifications" onClick={() => setPushOpen(true)} className={roundGlass}>
             <Bell className="size-5" />
             {push && push !== 'on' && push !== 'unsupported' && push !== 'dev' ? <span className="absolute top-2.5 right-2.5 size-2 rounded-full bg-amber-400 ring-2 ring-slate-900/40" /> : null}
@@ -198,7 +199,6 @@ export function TodayPanel() {
               {briefBusy ? 'Writing today’s brief…' : 'Get today’s brief'}
             </button>
           ) : null}
-          <QuickAddBar onClick={() => setAdd({ open: true, tab: 'quick' })} className="hidden lg:flex" />
         </div>
 
         {/* 4–6. Solid card: today, overdue, events */}
@@ -224,9 +224,6 @@ export function TodayPanel() {
           )}
         </div>
       </div>
-
-      {/* 7. Quick add bar: at the bottom on phones and tablets; from lg up it sits under the brief instead. */}
-      <QuickAddBar onClick={() => setAdd({ open: true, tab: 'quick' })} className="mt-3 lg:hidden" />
 
       <AddSheet open={add.open} onOpenChange={(open) => setAdd((a) => ({ ...a, open }))} tab={add.tab} event={add.event} onSaved={() => void reload()} />
       <ReschedulePreview open={rescheduleOpen} onOpenChange={setRescheduleOpen} onApplied={() => void reload()} />
@@ -442,10 +439,11 @@ function QuickAddBar({ onClick, className }: { onClick: () => void; className?: 
     <button
       type="button"
       onClick={onClick}
-      className={cn(glass, 'flex min-h-12 w-full items-center gap-2 rounded-full px-4 text-left text-sm text-white/80 transition hover:bg-white/20', className)}
+      aria-label="Quick add"
+      className={cn(glass, 'flex h-11 items-center gap-2 rounded-full px-3.5 text-sm font-semibold text-white/90 transition hover:bg-white/20 sm:px-4', className)}
     >
       <Sparkles className="size-4 shrink-0" />
-      <span className="truncate">Quick add…</span>
+      <span className="hidden whitespace-nowrap min-[360px]:inline">Quick add</span>
     </button>
   )
 }
