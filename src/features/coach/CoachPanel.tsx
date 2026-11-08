@@ -4,14 +4,15 @@ import { ArrowLeft, ArrowUp, Check, History, Loader2, Plus, Sparkles, Square, Tr
 import { useEffect, useRef, useState, type KeyboardEvent } from 'react'
 import { useLocation } from 'react-router'
 import { cn } from '@/lib/cn'
-import type { CoachSession, CoachSessionSummary, CoachTurn } from '@/types/coach'
+import type { CoachProposal, CoachSession, CoachSessionSummary, CoachTurn } from '@/types/coach'
 import * as api from './api'
+import type { CoachAsk } from './ask'
 import { CoachMarkdown } from './CoachMarkdown'
+import { ProposalCard } from './ProposalCard'
+import { suggestionsFor } from './suggestions'
 
 const SESSION_KEY = 'coach:session'
 const POLL_MS = 700
-
-const SUGGESTIONS = ['What mistakes do I make most often?', 'Which collocations in my last essay were unnatural?', 'What is left on my plan today?', 'Collocations with “traffic”?']
 
 const readStored = () => {
   try {
@@ -54,7 +55,17 @@ function TurnDetails({ turn }: { turn: CoachTurn }) {
   )
 }
 
-function TurnView({ turn, onNavigate }: { turn: CoachTurn; onNavigate: () => void }) {
+function TurnView({
+  turn,
+  sessionId,
+  onNavigate,
+  onProposal,
+}: {
+  turn: CoachTurn
+  sessionId: string
+  onNavigate: () => void
+  onProposal: (turnId: string, p: CoachProposal) => void
+}) {
   const waiting = isOpenTurn(turn)
   return (
     <div className="space-y-2">
@@ -85,6 +96,7 @@ function TurnView({ turn, onNavigate }: { turn: CoachTurn; onNavigate: () => voi
             <Loader2 className="size-4 animate-spin" /> {turn.status === 'queued' ? 'Waiting for the coach…' : 'Thinking…'}
           </p>
         ) : null}
+        {turn.proposals?.map((p) => <ProposalCard key={p.id} sessionId={sessionId} proposal={p} onNavigate={onNavigate} onChange={(next) => onProposal(turn.id, next)} />)}
         {turn.status === 'cancelled' ? <p className="mt-1 text-xs text-slate-400">Stopped.</p> : null}
         {turn.status === 'error' ? <p className="mt-1 text-sm text-rose-600 dark:text-rose-400">{turn.error || 'Something went wrong — try again.'}</p> : null}
         <TurnDetails turn={turn} />
@@ -93,7 +105,7 @@ function TurnView({ turn, onNavigate }: { turn: CoachTurn; onNavigate: () => voi
   )
 }
 
-export default function CoachPanel({ open, onClose }: { open: boolean; onClose: () => void }) {
+export default function CoachPanel({ open, onClose, ask }: { open: boolean; onClose: () => void; ask?: CoachAsk & { n: number } }) {
   const location = useLocation()
   const [sessionId, setSessionId] = useState<string | null>(readStored)
   const [session, setSession] = useState<CoachSession | null>(null)
@@ -160,13 +172,15 @@ export default function CoachPanel({ open, onClose }: { open: boolean; onClose: 
     return () => window.removeEventListener('keydown', onKey)
   }, [open, onClose])
 
-  const send = async (question: string) => {
+  /** `fresh`: in a new chat (the page's "Ask Coach" buttons: the question is about that page, not the last chat). */
+  const send = async (question: string, fresh = false) => {
     const q = question.trim()
-    if (!q || sending || active) return
+    if (!q || sending || (active && !fresh)) return
     setSending(true)
     setError('')
+    setView('chat')
     try {
-      let id = session?.id ?? null
+      let id = fresh ? null : (session?.id ?? null)
       if (!id) {
         id = await api.createSession()
         setSessionId(id)
@@ -175,7 +189,7 @@ export default function CoachPanel({ open, onClose }: { open: boolean; onClose: 
       const turnId = await api.startTurn(id, q, `${location.pathname}${location.search}`)
       const turn: CoachTurn = { id: turnId, at: new Date().toISOString(), question: q, answer: '', steps: [], status: 'queued' }
       setSession((s) =>
-        s && s.id === id
+        s && s.id === id && !fresh
           ? { ...s, turns: [...s.turns, turn] }
           : { version: 1, id: id!, title: q.slice(0, 60), model: '', createdAt: turn.at, updatedAt: turn.at, turns: [turn] },
       )
@@ -186,6 +200,21 @@ export default function CoachPanel({ open, onClose }: { open: boolean; onClose: 
       setSending(false)
     }
   }
+
+  // "Ask Coach about this" from a page: sent in a new chat (or only put in the box when the page asks so).
+  const askN = ask?.n ?? 0
+  const sendRef = useRef(send)
+  sendRef.current = send
+  useEffect(() => {
+    if (!askN || !ask) return
+    if (ask.send === false) setText(ask.text)
+    else void sendRef.current(ask.text, true)
+    // Only a new ask (n) triggers this.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [askN])
+
+  const onProposal = (turnId: string, next: CoachProposal) =>
+    setSession((s) => (s ? { ...s, turns: s.turns.map((t) => (t.id === turnId ? { ...t, proposals: t.proposals?.map((p) => (p.id === next.id ? next : p)) } : t)) } : s))
 
   const stop = () => {
     if (session && active) void api.cancelTurn(session.id, active.id).catch(() => {})
@@ -301,7 +330,7 @@ export default function CoachPanel({ open, onClose }: { open: boolean; onClose: 
                   Ask about your essays, recordings, mistakes, plan or flashcards. The coach answers from your own data in the app.
                 </p>
                 <div className="flex flex-col items-start gap-2">
-                  {SUGGESTIONS.map((s) => (
+                  {suggestionsFor(location.pathname, location.search).map((s) => (
                     <button
                       key={s}
                       type="button"
@@ -314,7 +343,7 @@ export default function CoachPanel({ open, onClose }: { open: boolean; onClose: 
                 </div>
               </div>
             ) : (
-              session.turns.map((t) => <TurnView key={t.id} turn={t} onNavigate={onNavigate} />)
+              session.turns.map((t) => <TurnView key={t.id} turn={t} sessionId={session.id} onNavigate={onNavigate} onProposal={onProposal} />)
             )}
           </div>
           {error ? <p className="px-4 pb-1 text-sm text-rose-600 dark:text-rose-400">{error}</p> : null}

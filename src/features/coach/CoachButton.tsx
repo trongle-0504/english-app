@@ -4,6 +4,7 @@ import { lazy, Suspense, useEffect, useState } from 'react'
 import { useLocation } from 'react-router'
 import { cn } from '@/lib/cn'
 import * as api from './api'
+import { COACH_ASK_EVENT, type CoachAsk } from './ask'
 
 const CoachPanel = lazy(() => import('./CoachPanel'))
 
@@ -12,6 +13,7 @@ export default function CoachButton() {
   const [enabled, setEnabled] = useState(false)
   const [open, setOpen] = useState(false)
   const [used, setUsed] = useState(false)
+  const [ask, setAsk] = useState<(CoachAsk & { n: number }) | undefined>()
 
   useEffect(() => {
     api
@@ -19,6 +21,19 @@ export default function CoachButton() {
       .then((s) => setEnabled(s.enabled))
       .catch(() => setEnabled(false))
   }, [])
+
+  useEffect(() => {
+    if (!enabled) return
+    const onAsk = (e: Event) => {
+      const detail = (e as CustomEvent<CoachAsk>).detail
+      if (!detail?.text) return
+      setUsed(true)
+      setOpen(true)
+      setAsk((a) => ({ ...detail, n: (a?.n ?? 0) + 1 }))
+    }
+    window.addEventListener(COACH_ASK_EVENT, onAsk)
+    return () => window.removeEventListener(COACH_ASK_EVENT, onAsk)
+  }, [enabled])
 
   if (!enabled) return null
   // The Planner has its own + button in the same corner: sit above it there.
@@ -44,7 +59,7 @@ export default function CoachButton() {
       ) : null}
       {used ? (
         <Suspense fallback={null}>
-          <CoachPanel open={open} onClose={() => setOpen(false)} />
+          <CoachPanel open={open} onClose={() => setOpen(false)} ask={ask} />
         </Suspense>
       ) : null}
     </>

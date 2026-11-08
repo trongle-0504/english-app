@@ -4,10 +4,12 @@
 import { writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { CoachService } from '../server/coach/service.ts'
+import { COACH_TOOLS } from '../server/coach/tools/index.ts'
 import { searchEntries, libraryEntries } from '../server/coach/tools/library.ts'
 import { summarizeMistakes } from '../server/coach/tools/mistakes.ts'
 import { getPlan } from '../server/coach/tools/plan.ts'
-import { getScores, listWorks } from '../server/coach/tools/works.ts'
+import { getScores, getWritingReview, listWorks } from '../server/coach/tools/works.ts'
+import { readPlanner } from '../server/planner/store.ts'
 import { loadEnv } from '../server/env.ts'
 import { mistakeBook } from '../server/practice/mistakes.ts'
 import { MISTAKE_LABEL } from '../src/types/practice.ts'
@@ -25,8 +27,8 @@ const coach = new CoachService({ rootDir, contentDir, now: () => NOW })
 const ctx = coach.toolContext()
 const lower = (s: string) => s.toLowerCase()
 
-async function ask(sessionId: string, question: string): Promise<CoachTurn> {
-  const turnId = await coach.startTurn(sessionId, question, '/')
+async function ask(sessionId: string, question: string, page = '/'): Promise<CoachTurn> {
+  const turnId = await coach.startTurn(sessionId, question, page)
   for (;;) {
     const poll = await coach.getTurn(sessionId, turnId)
     if (poll.done) return poll.turn
@@ -37,13 +39,15 @@ async function ask(sessionId: string, question: string): Promise<CoachTurn> {
 const usedApp = (t: CoachTurn, tool: string) => t.steps.some((s) => s.tool === tool)
 /** agy built-in tools (terminal, files, web) that actually ran. */
 const nonAppDone = (t: CoachTurn) => t.steps.filter((s) => !COACH_TOOL_NAMES.has(s.tool) && s.status === 'done').length
-const COACH_TOOL_NAMES = new Set(['get_mistakes', 'list_works', 'get_scores', 'get_plan', 'get_review_stats', 'get_writing_review', 'get_speaking_review', 'search_library'])
+const COACH_TOOL_NAMES = new Set(COACH_TOOLS.map((t) => t.name))
 
 interface Case {
   id: string
   question: string
   /** Reuse the session of another case (follow-up). */
   after?: string
+  /** The page the question is asked from (default "/"). */
+  page?: string
   check: (t: CoachTurn, prev?: CoachTurn) => Promise<string | true> | string | true
 }
 
@@ -57,9 +61,19 @@ const allScores = (await getScores.run({ kind: 'writing', limit: 5 }, ctx)) as {
 const plan = (await getPlan.run({ from: ctx.now.toLocaleDateString('en-CA', { timeZone: 'Asia/Ho_Chi_Minh' }), to: ctx.now.toLocaleDateString('en-CA', { timeZone: 'Asia/Ho_Chi_Minh' }) }, ctx)) as {
   tasks: { title: string; done: boolean }[]
 }
-const trafficTerms = searchEntries(await libraryEntries(ctx), 'traffic', 'any', 8).map((e) => lower(e.term))
+const entries = await libraryEntries(ctx)
+// Library terms the model may find, whichever kind it searches.
+const trafficTerms = [...new Set((['any', 'collocation'] as const).flatMap((kind) => searchEntries(entries, 'traffic', kind, 8).map((e) => lower(e.term))))]
 const talksYesterday = (await listWorks.run({ kind: 'speaking_review', from: yDay, to: yDay }, ctx)) as { items: { id: string; mispronounced: number }[] }
 const writingDays = ((await listWorks.run({ kind: 'writing' }, ctx)) as { items: { day: string }[] }).items.map((i) => i.day)
+
+// Phase 2/3: the planner must not change (proposals only), Tuesday's open tasks, sentence 3 of the last essay.
+const plannerBefore = JSON.stringify((await readPlanner(ctx)).tasks)
+const plannerSame = async () => JSON.stringify((await readPlanner(ctx)).tasks) === plannerBefore
+const tuesday = '2026-11-10'
+const tuesdayTasks = (await readPlanner(ctx)).tasks.filter((t) => t.date === tuesday && !t.doneAt).map((t) => t.id)
+const lastEssay = ((await listWorks.run({ kind: 'writing', limit: 1 }, ctx)) as { items: { id: string }[] }).items[0]?.id ?? ''
+const sentence3 = (await getWritingReview.run({ id: lastEssay, section: 'fixes', sentence: 3 }, ctx).catch(() => ({ fixes: [] }))) as { fixes: { replacement: string }[] }
 
 const WEAK_NAMES: Record<string, string[]> = { TR: ['tr', 'task response'], CC: ['cc', 'coherence'], LR: ['lr', 'lexical'], GRA: ['gra', 'grammatical', 'ngữ pháp'] }
 
@@ -151,6 +165,56 @@ const CASES: Case[] = [
       return missing.length ? `${missing.length}/${talksYesterday.items.length} links missing` : true
     },
   },
+  {
+    id: 'E-13',
+    question: 'Thêm 3 việc luyện Speaking vào thứ 3 tuần sau',
+    check: async (t) => {
+      const p = t.proposals?.find((x) => x.kind === 'tasks')
+      if (!p) return 'no task proposal'
+      if (p.items.length !== 3) return `${p.items.length} items`
+      if (!p.items.every((i) => i.data.date === tuesday)) return `dates ${p.items.map((i) => i.data.date).join(',')}`
+      return (await plannerSame()) ? true : 'planner changed before Confirm'
+    },
+  },
+  {
+    id: 'E-14',
+    question: 'Thêm các cụm đó vào thẻ ôn giúp tôi',
+    after: 'E-01',
+    check: (t) => {
+      const p = t.proposals?.find((x) => x.kind === 'review-cards')
+      if (!p) return 'no review-card proposal'
+      return p.items.length >= 5 && p.items.some((i) => i.label.includes('proportion')) ? true : `${p.items.length} items: ${p.items.map((i) => i.label).join(' | ').slice(0, 120)}`
+    },
+  },
+  {
+    id: 'E-15',
+    question: 'Thứ 3 tôi bận, dời việc sang thứ 4',
+    check: async (t) => {
+      const p = t.proposals?.find((x) => x.kind === 'moves')
+      if (!p) return 'no move proposal'
+      const ids = p.items.map((i) => i.data.taskId).sort()
+      if (JSON.stringify(ids) !== JSON.stringify([...tuesdayTasks].sort())) return `moves ${ids.join(',')} vs ${tuesdayTasks.join(',')}`
+      if (!p.items.every((i) => i.data.date === '2026-11-11')) return 'not to Wednesday'
+      return (await plannerSame()) ? true : 'planner changed before Confirm'
+    },
+  },
+  {
+    id: 'E-16',
+    question: 'Đố tôi 3 thẻ đến hạn',
+    check: (t) => (!usedApp(t, 'get_due_cards') ? 'get_due_cards not used' : t.answer.includes('?') ? true : 'no question asked'),
+  },
+  {
+    id: 'E-17',
+    question: 'Câu 3 sai gì?',
+    page: `/practice/writing-review?id=${lastEssay}`,
+    check: (t) => {
+      if (usedApp(t, 'list_works')) return 'looked the essay up instead of using the open one'
+      if (!t.steps.some((s) => s.tool === 'get_writing_review' && s.args?.includes(lastEssay))) return 'did not open the essay'
+      const want = sentence3.fixes.map((f) => f.replacement.toLowerCase())
+      const a = t.answer.toLowerCase()
+      return want.every((w) => a.includes(w.slice(0, 25))) ? true : `missing: ${want.filter((w) => !a.includes(w.slice(0, 25))).join(' | ')}`
+    },
+  },
 ]
 
 const rows: Record<string, unknown>[] = []
@@ -178,7 +242,7 @@ for (const c of CASES) {
   let sid = c.after ? sessions.get(c.after) : undefined
   if (!sid) sid = await coach.createSession()
   sessions.set(c.id, sid)
-  const t = await ask(sid, c.question)
+  const t = await ask(sid, c.question, c.page)
   results.set(c.id, t)
   const verdict = t.status !== 'done' ? `status ${t.status}: ${t.error ?? ''}` : await c.check(t, c.after ? results.get(c.after) : undefined)
   const row = {

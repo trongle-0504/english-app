@@ -6,12 +6,23 @@ import { vnDay } from '../../src/features/planner/dates.ts'
 import type { TalkReviewResult } from '../../src/types/speakingReview.ts'
 import type { SpeakingResult } from '../../src/types/speaking.ts'
 import type { WritingReviewResult } from '../../src/types/writingReview.ts'
+import type { CoachProposal, CoachProposalItem, CoachProposalKind } from '../../src/types/coach.ts'
+
+/** What a propose_* tool hands to the chat (the service adds id, status and time). */
+export interface ProposalDraft {
+  kind: CoachProposalKind
+  title: string
+  items: CoachProposalItem[]
+  notes?: string[]
+}
 
 /** What every tool gets: the app folders and "now" (fixed in tests and in the eval). */
 export interface ToolContext {
   rootDir: string
   contentDir: string
   now: Date
+  /** Stores a proposal on the chat's running turn (only inside a coach turn). */
+  propose?: (draft: ProposalDraft) => CoachProposal
 }
 
 /** VN calendar day of an ISO time ("2026-11-07T23:30Z" → "2026-11-08"). */

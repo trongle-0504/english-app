@@ -4,6 +4,7 @@
 //   PERMISSION  → asks permission to run `ls /`, logs the chosen option, then "denied ok"
 //   SLOW        → waits 5 s (or until session/cancel)
 //   CRASH       → exits in the middle of the turn
+//   CALL <tool> <json args> → a real MCP call of that app tool; the answer is the tool's result text
 //   otherwise   → "ok"
 import { appendFileSync } from 'node:fs'
 import readline from 'node:readline'
@@ -33,6 +34,21 @@ async function prompt(id: number, params: { sessionId: string; prompt: { type: s
     for (let i = 0; i < 50 && !cancelled.has(sessionId); i++) await sleep(100)
     if (cancelled.has(sessionId)) return send({ id, result: { stopReason: 'cancelled', usage } })
     update(sessionId, { sessionUpdate: 'agent_message_chunk', content: { type: 'text', text: 'slow done' } })
+    return send({ id, result: { stopReason: 'end_turn', usage } })
+  }
+  const call = /CALL (\w+) (\{.*\})\s*$/s.exec(text)
+  if (call) {
+    const mcp = sessions.get(sessionId)?.mcp[0]
+    const auth = mcp?.headers.find((h) => h.name === 'Authorization')?.value ?? ''
+    update(sessionId, { sessionUpdate: 'tool_call', toolCallId: 'k1', name: `mcp_app_1a2b3c4d_${call[1]}`, title: call[1], status: 'in_progress', rawInput: JSON.parse(call[2]) })
+    const res = await fetch(mcp!.url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: auth },
+      body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'tools/call', params: { name: call[1], arguments: JSON.parse(call[2]) } }),
+    })
+    const body = (await res.json()) as { result: { content: { text: string }[]; isError?: boolean } }
+    update(sessionId, { sessionUpdate: 'tool_call_update', toolCallId: 'k1', status: body.result.isError ? 'failed' : 'completed' })
+    update(sessionId, { sessionUpdate: 'agent_message_chunk', content: { type: 'text', text: body.result.content[0].text } })
     return send({ id, result: { stopReason: 'end_turn', usage } })
   }
   if (text.includes('TOOL')) {

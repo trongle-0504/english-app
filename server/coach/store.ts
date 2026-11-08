@@ -28,6 +28,17 @@ export function updateSession<R>(rootDir: string, id: string, create: CoachSessi
   })
 }
 
+/** Every saved chat (for the Admin stats). */
+export async function allSessions(rootDir: string): Promise<CoachSession[]> {
+  let names: string[]
+  try {
+    names = (await readdir(sessionsDir(rootDir))).filter((f) => f.endsWith('.json'))
+  } catch {
+    return []
+  }
+  return (await Promise.all(names.map((n) => readSession(rootDir, n.slice(0, -5))))).filter((s): s is CoachSession => Boolean(s))
+}
+
 export async function listSessions(rootDir: string, limit = 50): Promise<CoachSessionSummary[]> {
   let names: string[]
   try {

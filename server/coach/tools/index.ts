@@ -7,14 +7,26 @@ import { computeStats } from '../../review/stats.ts'
 import { dayOf, ideaDocs, talkDocs, type ToolContext, writingDocs } from '../data.ts'
 import { searchLibrary } from './library.ts'
 import { getMistakes } from './mistakes.ts'
-import { getPlan, getReviewStats } from './plan.ts'
+import { getDueCards, getPlan, getReviewStats } from './plan.ts'
+import { PROPOSE_TOOLS } from './propose.ts'
 import type { CoachTool } from './types.ts'
 import { getScores, getSpeakingReview, getWritingReview, listWorks } from './works.ts'
 
 export type { CoachTool } from './types.ts'
 
-/** Summaries first, details by id after, search last (the order agy lists them to the model). */
-export const COACH_TOOLS: CoachTool[] = [getMistakes, listWorks, getScores, getPlan, getReviewStats, getWritingReview, getSpeakingReview, searchLibrary]
+/** Summaries first, details by id after, then search, the quiz and the proposals (the order agy lists them to the model). */
+export const COACH_TOOLS: CoachTool[] = [
+  getMistakes,
+  listWorks,
+  getScores,
+  getPlan,
+  getReviewStats,
+  getWritingReview,
+  getSpeakingReview,
+  searchLibrary,
+  getDueCards,
+  ...PROPOSE_TOOLS,
+]
 
 export const toolByName = (name: string) => COACH_TOOLS.find((t) => t.name === name)
 

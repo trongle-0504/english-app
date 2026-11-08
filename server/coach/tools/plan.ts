@@ -1,12 +1,13 @@
 // The planner and the flashcards, read only.
 import { addDays, daysBetween, vnDay } from '../../../src/features/planner/dates.ts'
+import { studyDay } from '../../../src/features/review/schedule.ts'
 import { readLog, readState } from '../../review/progress.ts'
 import { computeStats } from '../../review/stats.ts'
 import { reviewCards } from '../../practice/works.ts'
 import { eventsAhead, overdueTasks, readPlanner } from '../../planner/store.ts'
 import type { ApiContext } from '../../api.ts'
 import { cut, ToolError } from '../data.ts'
-import { optDay } from './args.ts'
+import { optDay, optInt } from './args.ts'
 import { DAY, type CoachTool } from './types.ts'
 
 export const getPlan: CoachTool = {
@@ -52,5 +53,28 @@ export const getReviewStats: CoachTool = {
       reviewedToday: stats.today.reviewed,
       hardest: stats.hardest.slice(0, 5).map((h) => ({ term: cut(terms.get(h.id) ?? h.id, 60), lapses: h.lapses })),
     }
+  },
+}
+
+export const getDueCards: CoachTool = {
+  name: 'get_due_cards',
+  description:
+    'Flashcards due today (oldest first) for a quiz in the chat: term, meaning, example. The quiz does not change the schedule.',
+  inputSchema: { type: 'object', properties: { limit: { type: 'integer', description: '1-10, default 5' } } },
+  label: () => 'Picking your due flashcards…',
+  async run(args, ctx) {
+    const limit = optInt(args, 'limit', 1, 10, 5)
+    const state = await readState(ctx as unknown as ApiContext)
+    const today = studyDay(ctx.now, state.settings)
+    const due = Object.entries(state.cards)
+      .filter(([, c]) => !c.done && c.fsrs.state !== 0 && studyDay(new Date(c.fsrs.due), state.settings) <= today)
+      .sort((a, b) => a[1].fsrs.due.localeCompare(b[1].fsrs.due))
+    const cards = new Map(reviewCards(ctx).map((c) => [c.id, c]))
+    const items = due
+      .map(([id]) => cards.get(id))
+      .filter((c): c is NonNullable<typeof c> => Boolean(c))
+      .slice(0, limit)
+      .map((c) => ({ term: cut(c.term, 80), meaning_vi: cut(c.meaning_vi, 160), example: cut(c.examples[0]?.en, 200) }))
+    return { dueToday: due.length, items, reviewHref: '/review' }
   },
 }

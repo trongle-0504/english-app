@@ -115,8 +115,20 @@ function fixRows(fixes: WritingFix[], sentences: string[]) {
       original: cut(f.original, 120),
       replacement: cut(f.replacement, 120),
       why: cut(f.explanation, 120),
+      sentenceNo: f.sentenceIndex + 1,
       sentence: cut(sentences[f.sentenceIndex], 110),
     }))
+}
+
+const SENTENCE = { type: 'integer', description: 'only this sentence (1 = first; "câu 3" = 3); with section fixes' }
+
+/** The fixes of a work, or of one sentence (its full text and every fix in it, so "câu 3 sai gì?" needs one call). */
+function fixesOf(fixes: WritingFix[], sentences: string[], args: Args) {
+  if (args.sentence === undefined || args.sentence === null || args.sentence === '') return page(fixRows(fixes, sentences), args)
+  const n = optInt(args, 'sentence', 1, 10_000, 1)
+  if (n > sentences.length) throw new ToolError(`The text has ${sentences.length} sentences.`)
+  const rows = fixRows(fixes.filter((f) => f.sentenceIndex === n - 1), sentences).map(({ sentence: _s, sentenceNo: _n, ...rest }) => rest)
+  return { sentenceNo: n, sentences: sentences.length, sentenceText: cut(sentences[n - 1], 600), fixes: rows, ...(rows.length ? {} : { note: 'No correction in this sentence.' }) }
 }
 
 /** Budget for a page of items, leaving room for the head fields inside MAX_RESULT_CHARS. */
@@ -148,6 +160,7 @@ export const getWritingReview: CoachTool = {
       section: { type: 'string', enum: ['fixes', 'score', 'prompt', 'essay'] },
       types: { type: 'array', items: { type: 'string', enum: FIX_TYPES } },
       severity: { type: 'string', enum: ['error', 'improve', 'all'] },
+      sentence: SENTENCE,
       offset: { type: 'integer' },
     },
     required: ['id', 'section'],
@@ -163,7 +176,7 @@ export const getWritingReview: CoachTool = {
       const types = optEnumList(args, 'types', FIX_TYPES)
       const severity = optEnum(args, 'severity', ['error', 'improve', 'all'] as const, 'all')
       const fixes = r.fixes.filter((f) => (!types.length || types.includes(f.type)) && (severity === 'all' || (f.severity ?? 'error') === severity))
-      return { ...head, ...page(fixRows(fixes, r.sentences), args) }
+      return { ...head, ...fixesOf(fixes, r.sentences, args) }
     }
     if (section === 'score') {
       if (!r.score) return { ...head, score: null, note: r.scoreSkipped === 'short' ? 'Not scored: under 150 words.' : 'Not scored.' }
@@ -185,7 +198,7 @@ export const getSpeakingReview: CoachTool = {
     'One scored Speaking review (a recording) by id. section: fixes (corrections of what was said), score (bands per criterion), pronunciation (words heard wrongly, with IPA and a tip), transcript (paged).',
   inputSchema: {
     type: 'object',
-    properties: { id: { type: 'string' }, section: { type: 'string', enum: ['fixes', 'score', 'pronunciation', 'transcript'] }, offset: { type: 'integer' } },
+    properties: { id: { type: 'string' }, section: { type: 'string', enum: ['fixes', 'score', 'pronunciation', 'transcript'] }, sentence: SENTENCE, offset: { type: 'integer' } },
     required: ['id', 'section'],
   },
   label: (a) => (a.section === 'pronunciation' ? 'Checking your pronunciation…' : a.section === 'score' ? 'Reading the recording’s scores…' : 'Opening the Speaking review…'),
@@ -195,7 +208,7 @@ export const getSpeakingReview: CoachTool = {
     if (!r) throw new ToolError('Unknown id. Use list_works with kind speaking_review.')
     const section = optEnum(args, 'section', ['fixes', 'score', 'pronunciation', 'transcript'] as const, 'fixes')
     const head = { id: r.id, href: workHref('speaking_review', r.id), day: dayOf(r.createdAt), time: timeOf(r.createdAt), part: r.part, question: talkTitle(r) }
-    if (section === 'fixes') return { ...head, ...page(fixRows(r.fixes, r.sentences), args) }
+    if (section === 'fixes') return { ...head, ...fixesOf(r.fixes, r.sentences, args) }
     if (section === 'score')
       return {
         ...head,

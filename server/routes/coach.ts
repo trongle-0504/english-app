@@ -1,4 +1,5 @@
 // Study Coach API (behind the login gate). With COACH_ENABLED=0 every route but /coach/status answers 404.
+import { isAuthorized } from '../admin/auth.ts'
 import { isObject } from '../admin/input.ts'
 import { ApiError, type ApiContext, type ApiHandler, type ApiRequest } from '../api.ts'
 import { coachConfig, getCoach } from '../coach/service.ts'
@@ -45,4 +46,24 @@ export const coachRoutes: Record<string, ApiHandler> = {
     coach(ctx).cancelTurn(String(input.sessionId ?? ''), String(input.turnId ?? ''))
     return { json: { ok: true } }
   },
+
+  /** { sessionId, proposalId, keep?: number[], library?: outcomes } → { proposal }: the learner's Confirm. */
+  'POST /coach/proposal/apply': async (req, ctx) => {
+    const input = body(req)
+    const proposal = await coach(ctx).applyProposal(ctx, String(input.sessionId ?? ''), String(input.proposalId ?? ''), input.keep, {
+      authorized: isAuthorized(req),
+      library: input.library,
+    })
+    return { json: { proposal } }
+  },
+
+  /** { sessionId, proposalId } → { ok } */
+  'POST /coach/proposal/dismiss': async (req, ctx) => {
+    const input = body(req)
+    await coach(ctx).dismissProposal(String(input.sessionId ?? ''), String(input.proposalId ?? ''))
+    return { json: { ok: true } }
+  },
+
+  /** Coach use per day (Admin → Usage). */
+  'GET /coach/stats': async (_req, ctx) => ({ json: { days: await coach(ctx).stats(30) } }),
 }

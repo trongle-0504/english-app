@@ -4,6 +4,7 @@ import { ArrowRight, Bell, CalendarClock, CalendarPlus, Check, ChevronDown, Play
 import { useEffect, useState, type ReactNode } from 'react'
 import { Link, useNavigate } from 'react-router'
 import { Skeleton } from '@/components/ui'
+import { AskCoachButton } from '@/features/coach/AskCoachButton'
 import { cn } from '@/lib/cn'
 import type { PlannerEvent, PlannerHome } from '@/types/planner'
 import { AddSheet, type AddTab } from '@/features/planner/AddSheet'
@@ -411,24 +412,27 @@ function BriefCard({
       </p>
       <p className="mt-1.5 text-sm leading-relaxed text-white/95">{brief.focus || brief.body}</p>
       {open && brief.tip ? <p className="mt-1 text-sm leading-relaxed text-white/80">💡 {brief.tip}</p> : null}
-      {task || hasMore ? (
-        <div className="mt-2 flex items-center gap-2">
-          {task?.link ? (
-            <Link to={task.link} className={action}>
-              <Play className="size-3.5 fill-current" /> Start
-            </Link>
-          ) : task ? (
-            <button type="button" onClick={() => onToggle(task, true)} className={action}>
-              <Check className="size-3.5" strokeWidth={3} /> Done
-            </button>
-          ) : null}
-          {hasMore ? (
-            <button type="button" onClick={() => onOpenChange(!open)} className="ml-auto inline-flex min-h-8 items-center gap-1 text-xs font-semibold text-white/80">
-              {open ? 'Less' : 'Tip'} <ChevronDown className={cn('size-3.5 transition-transform', open && 'rotate-180')} />
-            </button>
-          ) : null}
-        </div>
-      ) : null}
+      <div className="mt-2 flex flex-wrap items-center gap-2">
+        {task?.link ? (
+          <Link to={task.link} className={action}>
+            <Play className="size-3.5 fill-current" /> Start
+          </Link>
+        ) : task ? (
+          <button type="button" onClick={() => onToggle(task, true)} className={action}>
+            <Check className="size-3.5" strokeWidth={3} /> Done
+          </button>
+        ) : null}
+        <AskCoachButton
+          label="Ask Coach"
+          question="What should I focus on today, given my plan, my due flashcards and my recent mistakes?"
+          className="h-auto min-h-8 border-0 bg-white/20 px-3 text-xs font-bold text-white hover:bg-white/30 dark:border-0 dark:bg-white/20 dark:text-white dark:hover:bg-white/30 [&_svg]:size-3.5"
+        />
+        {hasMore ? (
+          <button type="button" onClick={() => onOpenChange(!open)} className="ml-auto inline-flex min-h-8 items-center gap-1 text-xs font-semibold text-white/80">
+            {open ? 'Less' : 'Tip'} <ChevronDown className={cn('size-3.5 transition-transform', open && 'rotate-180')} />
+          </button>
+        ) : null}
+      </div>
     </div>
   )
 }

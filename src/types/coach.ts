@@ -21,6 +21,42 @@ export interface CoachStep {
   args?: string
 }
 
+/* ───────────── Proposals (Phase 2): the coach suggests a change, the learner confirms it ───────────── */
+
+export type CoachProposalKind = 'tasks' | 'moves' | 'review-cards' | 'library'
+
+/** One line of a proposal; `data` is the checked input the server applies. */
+export interface CoachProposalItem {
+  label: string
+  detail?: string
+  data: Record<string, unknown>
+}
+
+export interface CoachProposalResult {
+  /** "3 tasks added" */
+  summary: string
+  links?: { label: string; href: string }[]
+  /** Items that could not be applied, with the reason. */
+  failed?: string[]
+}
+
+export interface CoachProposal {
+  id: string
+  kind: CoachProposalKind
+  /** "Add 3 tasks to your plan" */
+  title: string
+  items: CoachProposalItem[]
+  /** Items the coach asked for but that were left out (unknown task, duplicate…). */
+  notes?: string[]
+  status: 'open' | 'applied' | 'dismissed'
+  createdAt: string
+  /** Kept item indexes, once applied. */
+  kept?: number[]
+  result?: CoachProposalResult
+  /** Set once the coach has been told about the learner's choice (next question). */
+  reported?: boolean
+}
+
 export type CoachTurnStatus = 'queued' | 'running' | 'done' | 'cancelled' | 'error'
 
 /** One question and its answer. */
@@ -41,6 +77,8 @@ export interface CoachTurn {
   /** App tool calls (MCP) and other tool attempts (agy built-ins, all refused or unused). */
   toolCalls?: number
   stopReason?: string
+  /** Changes the coach suggested in this turn (Phase 2). */
+  proposals?: CoachProposal[]
 }
 
 /** progress/coach/sessions/<id>.json */
@@ -72,6 +110,17 @@ export interface CoachStatus {
   enabled: boolean
   model: string
   retentionDays: number
+}
+
+/** GET /coach/stats: coach use per VN day (Admin). */
+export interface CoachDayStats {
+  day: string
+  turns: number
+  errors: number
+  medianMs: number
+  tokens: number
+  proposals: number
+  applied: number
 }
 
 /** GET /coach/turn */

@@ -16,7 +16,8 @@ export interface McpBinding {
 
 export interface McpServerOptions {
   tools: CoachTool[]
-  context: () => ToolContext
+  /** The tool context for a call; `binding` says which chat it belongs to. */
+  context: (binding: McpBinding) => ToolContext
   /** Max request body, bytes. */
   maxBody?: number
 }
@@ -120,7 +121,7 @@ export class CoachMcpServer {
         return reply({ content: [{ type: 'text', text: `Error: unknown tool ${name}.` }], isError: true })
       }
       try {
-        const text = JSON.stringify(fit(await tool.run(args, this.opts.context())))
+        const text = JSON.stringify(fit(await tool.run(args, this.opts.context(binding))))
         binding.onCall?.({ tool: name, args, ok: true, ms: Date.now() - started, chars: text.length })
         return reply({ content: [{ type: 'text', text }] })
       } catch (error) {

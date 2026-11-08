@@ -51,8 +51,9 @@ function tempCtx(): ApiContext & { cleanup: () => void; planner: () => { tasks: 
   }
 }
 
-test('T-COMPAT-01: task sources — known kept, unknown becomes manual', () => {
+test('T-COMPAT-01: task sources — known kept (now with coach), unknown becomes manual', () => {
   const now = '2026-11-08T00:00:00.000Z'
+  assert.equal(taskFromBody({ title: 'A', date: '2026-11-08', source: 'coach' }, now).source, 'coach')
   assert.equal(taskFromBody({ title: 'A', date: '2026-11-08', source: 'quick-add' }, now).source, 'quick-add')
   assert.equal(taskFromBody({ title: 'A', date: '2026-11-08', source: 'weird' }, now).source, 'manual')
   assert.equal(taskFromBody({ title: 'A', date: '2026-11-08' }, now).source, 'manual')
