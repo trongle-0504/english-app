@@ -1,5 +1,6 @@
 // Practice → Speaking ideas → History: every saved suggestion, grouped by day and filtered by date. The questions are
-// listed on the left; the chosen one's model answer and full analysis fill the wide panel on the right.
+// listed on the left; the chosen one's model answer and full analysis fill the wide panel on the right. On phones the
+// two take turns: tapping a question opens its panel in place of the list, and "back" returns to the same spot.
 import { ArrowLeft, CalendarDays, History, Layers, Loader2, Mic, Search, Trash2 } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useSearchParams } from 'react-router'
@@ -116,6 +117,9 @@ export default function SpeakingHistoryPage() {
     deepId ? { id: deepId, index: deepQ } : null,
   )
   const [results, setResults] = useState<Record<string, SpeakingResult>>({})
+  // Phones only (below md): the answer panel replaces the list after a tap. A deep link opens straight on the answer.
+  const [mobileDetail, setMobileDetail] = useState(Boolean(deepId))
+  const listScroll = useRef(0)
   const review = useAddToReview()
   const stats = useMemo(() => practiceStats(talkItems), [talkItems])
 
@@ -290,6 +294,22 @@ export default function SpeakingHistoryPage() {
     }
   }, [topicGroups, selected])
 
+  const openQuestion = (id: string, index: number) => {
+    setSelected({ id, index })
+    // Phones: remember where the list was, then show the answer from its top.
+    if (window.matchMedia('(max-width: 767px)').matches) {
+      listScroll.current = window.scrollY
+      setMobileDetail(true)
+      window.scrollTo({ top: 0 })
+    }
+  }
+
+  const backToList = () => {
+    setMobileDetail(false)
+    // After the list is shown again, return to where the reader left it.
+    requestAnimationFrame(() => window.scrollTo({ top: listScroll.current }))
+  }
+
   const result = selected ? results[selected.id] : undefined
   const answer = result?.answers[selected!.index]
 
@@ -307,7 +327,7 @@ export default function SpeakingHistoryPage() {
       />
 
       {/* Filter toolbar: Date Range, Part filter, Search input */}
-      <div className="mb-5 flex flex-wrap items-center gap-2 rounded-2xl border border-slate-200 bg-white p-2 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+      <div className={cn('mb-5 flex flex-wrap items-center gap-2 rounded-2xl border border-slate-200 bg-white p-2 shadow-sm dark:border-slate-800 dark:bg-slate-900', mobileDetail && 'max-md:hidden')}>
         {RANGES.map((r) => (
           <button
             key={r.value}
@@ -407,7 +427,7 @@ export default function SpeakingHistoryPage() {
         <EmptyState icon={<History className="size-6" />} title="Không tìm thấy gợi ý nào" description="Thử chọn khoảng ngày hoặc thay đổi từ khoá tìm kiếm / bộ lọc Part." />
       ) : (
         <div className="grid items-start gap-6 md:grid-cols-[320px_minmax(0,1fr)]">
-          <aside className="space-y-4 md:sticky md:top-20 md:max-h-[calc(100vh-6rem)] md:overflow-y-auto md:pr-1">
+          <aside className={cn('space-y-4 md:sticky md:top-20 md:max-h-[calc(100vh-6rem)] md:overflow-y-auto md:pr-1', mobileDetail && 'max-md:hidden')}>
             {!items ? <Loader2 className="size-5 animate-spin text-slate-400" /> : null}
 
             {topicGroups.map((group) => {
@@ -465,7 +485,7 @@ export default function SpeakingHistoryPage() {
                         <li key={`${qItem.id}-${qItem.index}`} className="group/item flex items-start gap-1">
                           <button
                             type="button"
-                            onClick={() => setSelected({ id: qItem.id, index: qItem.index })}
+                            onClick={() => openQuestion(qItem.id, qItem.index)}
                             className={cn(
                               'flex min-w-0 flex-1 items-start gap-2 rounded-lg px-2 py-1.5 text-left text-sm transition-colors',
                               isActive
@@ -520,7 +540,14 @@ export default function SpeakingHistoryPage() {
             })}
           </aside>
 
-          <div className="min-w-0">
+          <div className={cn('min-w-0', !mobileDetail && 'max-md:hidden')}>
+            <button
+              type="button"
+              onClick={backToList}
+              className="mb-3 inline-flex min-h-10 items-center gap-1.5 rounded-xl px-2 text-sm font-semibold text-brand-700 hover:bg-brand-50 md:hidden dark:text-brand-300 dark:hover:bg-brand-950/40"
+            >
+              <ArrowLeft className="size-4" /> Danh sách câu hỏi
+            </button>
             {answer && result ? (
               <>
                 <p className="mb-3 text-xs text-slate-500">
