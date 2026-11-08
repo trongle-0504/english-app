@@ -72,7 +72,7 @@ export interface CoachServiceOptions {
   record?: (entry: UsageEntry) => void
 }
 
-const BUSY = 'The coach could not answer — try again in a moment.'
+const BUSY = 'Nova Agent could not answer — try again in a moment.'
 const MAX_PROPOSALS_PER_TURN = 3
 
 /** What the browser sends back after saving library entries itself (the Admin generator runs from the page). */
@@ -186,7 +186,7 @@ export class CoachService {
     if (text.length > this.config.maxQuestionChars) throw new ApiError(400, `At most ${this.config.maxQuestionChars} characters.`)
     const session = await readSession(this.opts.rootDir, sessionId)
     if (!session) throw new ApiError(404, 'Chat not found.')
-    if (this.runningBySession.has(sessionId)) throw new ApiError(409, 'The coach is still answering in this chat.')
+    if (this.runningBySession.has(sessionId)) throw new ApiError(409, 'Nova Agent is still answering in this chat.')
     if (session.turns.length >= this.config.maxTurnsPerSession) throw new ApiError(409, 'This chat is full — start a new chat.')
     const hourAgo = Date.now() - 3_600_000
     this.recent = this.recent.filter((t) => t > hourAgo)
@@ -318,7 +318,7 @@ export class CoachService {
         : null
       if (live.timedOut) {
         turn.status = 'error'
-        turn.error = 'The coach took too long — try a shorter question.'
+        turn.error = 'Nova Agent took too long — try a shorter question.'
       } else turn.status = result.stopReason === 'cancelled' ? 'cancelled' : 'done'
       for (const step of turn.steps) if (step.status === 'running') step.status = turn.status === 'done' ? 'done' : 'failed'
     } catch (error) {
@@ -422,7 +422,7 @@ export class CoachService {
         }
         for (const [key, group] of groups) {
           // Library phrases use their library card; `from` is only stored on a new phrase card.
-          const from = (JSON.parse(key) as { kind: WorkKind; id: string; title: string } | null) ?? { kind: 'writing' as WorkKind, id: 'coach', title: 'Coach' }
+          const from = (JSON.parse(key) as { kind: WorkKind; id: string; title: string } | null) ?? { kind: 'writing' as WorkKind, id: 'coach', title: 'Nova Agent' }
           const rows = group.map((p) => ({
             term: String(p.data.term),
             group: 'extra' as PhraseGroup,

@@ -43,8 +43,8 @@ export default function CoachButton() {
       {!open ? (
         <button
           type="button"
-          aria-label="Open Coach"
-          title="Coach"
+          aria-label="Open Nova Agent, your AI study coach"
+          title="Nova Agent · AI study coach"
           onClick={() => {
             setUsed(true)
             setOpen(true)

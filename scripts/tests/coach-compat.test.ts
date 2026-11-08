@@ -126,7 +126,7 @@ test('T-COMPAT-04: POST /practice/cards — the request checks', async () => {
 })
 
 test('T-COMPAT-05: usage feature names', () => {
-  assert.equal(featureOf('coach'), 'Coach')
+  assert.equal(featureOf('coach'), 'Nova Agent')
   assert.equal(featureOf('writing-review: judge'), 'Writing Review')
   assert.equal(featureOf('something-new: x'), 'something-new')
 })

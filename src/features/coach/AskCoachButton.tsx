@@ -12,7 +12,7 @@ const coachEnabled = () =>
     .then((s: { enabled?: boolean }) => Boolean(s.enabled))
     .catch(() => false))
 
-export function AskCoachButton({ question, label = 'Ask Coach about this', className }: { question: string; label?: string; className?: string }) {
+export function AskCoachButton({ question, label = 'Ask Nova Agent', className }: { question: string; label?: string; className?: string }) {
   const [enabled, setEnabled] = useState(false)
   useEffect(() => {
     let live = true

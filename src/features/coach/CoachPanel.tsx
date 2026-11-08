@@ -93,7 +93,7 @@ function TurnView({
           <CoachMarkdown text={turn.answer} onNavigate={onNavigate} />
         ) : waiting ? (
           <p className="flex items-center gap-1.5 text-sm text-slate-500">
-            <Loader2 className="size-4 animate-spin" /> {turn.status === 'queued' ? 'Waiting for the coach…' : 'Thinking…'}
+            <Loader2 className="size-4 animate-spin" /> {turn.status === 'queued' ? 'Waiting for Nova Agent…' : 'Thinking…'}
           </p>
         ) : null}
         {turn.proposals?.map((p) => <ProposalCard key={p.id} sessionId={sessionId} proposal={p} onNavigate={onNavigate} onChange={(next) => onProposal(turn.id, next)} />)}
@@ -266,7 +266,7 @@ export default function CoachPanel({ open, onClose, ask }: { open: boolean; onCl
   return (
     <div
       role="dialog"
-      aria-label="Coach"
+      aria-label="Nova Agent"
       aria-hidden={!open}
       className={cn(
         'fixed z-50 flex flex-col bg-white text-slate-900 dark:bg-slate-900 dark:text-slate-100',
@@ -280,11 +280,18 @@ export default function CoachPanel({ open, onClose, ask }: { open: boolean; onCl
             <ArrowLeft className="size-5" />
           </button>
         ) : (
-          <span className="flex size-10 items-center justify-center text-brand-600 dark:text-brand-400">
-            <Sparkles className="size-5" />
+          <span className="ml-1 flex size-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-500 to-fuchsia-500 text-white shadow-md shadow-violet-500/30">
+            <Sparkles className="size-[18px]" />
           </span>
         )}
-        <h2 className="min-w-0 flex-1 truncate font-bold">{view === 'history' ? 'Chats' : 'Coach'}</h2>
+        {view === 'history' ? (
+          <h2 className="min-w-0 flex-1 truncate font-bold">Chats</h2>
+        ) : (
+          <div className="ml-1.5 min-w-0 flex-1 leading-tight">
+            <h2 className="truncate font-bold tracking-tight">Nova Agent</h2>
+            <p className="truncate text-xs text-slate-500 dark:text-slate-400">AI study coach</p>
+          </div>
+        )}
         {view === 'chat' ? (
           <>
             <button type="button" aria-label="New chat" title="New chat" onClick={newChat} className="flex size-10 items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-800">
@@ -327,7 +334,7 @@ export default function CoachPanel({ open, onClose, ask }: { open: boolean; onCl
             {!session?.turns.length ? (
               <div className="space-y-3 px-1 pt-2">
                 <p className="text-sm text-slate-600 dark:text-slate-300">
-                  Ask about your essays, recordings, mistakes, plan or flashcards. The coach answers from your own data in the app.
+                  Ask about your essays, recordings, mistakes, plan or flashcards. Nova Agent answers from your own data in the app.
                 </p>
                 <div className="flex flex-col items-start gap-2">
                   {suggestionsFor(location.pathname, location.search).map((s) => (
@@ -361,7 +368,7 @@ export default function CoachPanel({ open, onClose, ask }: { open: boolean; onCl
               maxLength={2000}
               onChange={(e) => setText(e.target.value)}
               onKeyDown={onKeyDown}
-              placeholder="Ask the coach…"
+              placeholder="Ask Nova Agent…"
               className="field-sizing-content max-h-36 min-h-11 flex-1 resize-none rounded-2xl border border-slate-200 bg-slate-50 px-3.5 py-2.5 text-base focus:border-brand-500 focus:bg-white focus:outline-none sm:text-sm dark:border-slate-700 dark:bg-slate-800 dark:focus:bg-slate-900"
             />
             {active ? (

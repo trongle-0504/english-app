@@ -459,7 +459,7 @@ Dữ liệu: `progress/planner/planner.json` (việc, sự kiện, lịch cố �
 
 **Biến môi trường** (`.env`, đều tuỳ chọn): `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT` (mặc định `mailto:admin@ailab.com.vn`; đổi khoá thì mọi thiết bị phải bật lại thông báo), `PLANNER_ANTIGRAVITY_MODEL` (mặc định `gemini-3.8-flash`, không kèm hậu tố effort), `PLANNER_FAST_EFFORT` (mặc định `low`: thêm nhanh, tóm tắt), `PLANNER_PLAN_EFFORT` (mặc định `low`: dời lịch, lập tuần; `medium` kỹ hơn nhưng lập tuần có thể mất tới 4 phút).
 
-## Coach (trợ lý chat, nút ✦ góc dưới phải mọi trang)
+## Nova Agent — Coach (trợ lý chat AI, nút ✦ tím góc dưới phải mọi trang)
 
 Chat hỏi đáp dựa trên **dữ liệu của chính bạn** trong app: lỗi hay gặp (sổ lỗi), bài Writing / Speaking đã chấm (điểm, lỗi, phát âm), lịch Planner, thẻ ôn và kho từ (Vocabulary, Collocations, Notes, Topic collocations).
 
@@ -467,7 +467,7 @@ Chat hỏi đáp dựa trên **dữ liệu của chính bạn** trong app: lỗi
 
 **Đố thẻ:** "Đố tôi 5 thẻ đến hạn" — Coach hỏi từng thẻ đến hạn, chấm câu trả lời; không đổi lịch ôn (chấm thẻ ở trang Review).
 
-**Theo trang đang mở:** Coach biết trang bạn đang xem; ở trang chấm Writing / Speaking, "câu 3 sai gì?" hay "bài này" là bài đang mở. Gợi ý câu hỏi đổi theo trang. Nút **Ask Coach** có ở trang chấm Writing, trang chấm Speaking và khung Today's focus (mở chat mới với câu hỏi về nội dung đó). Admin → Usage có bảng Coach theo ngày (số câu hỏi, lỗi, thời gian trả lời trung vị, token, đề xuất đã Confirm).
+**Theo trang đang mở:** Coach biết trang bạn đang xem; ở trang chấm Writing / Speaking, "câu 3 sai gì?" hay "bài này" là bài đang mở. Gợi ý câu hỏi đổi theo trang. Nút **Ask Nova Agent** có ở trang chấm Writing, trang chấm Speaking và khung Today's focus (mở chat mới với câu hỏi về nội dung đó). Admin → Usage có bảng Nova Agent theo ngày (số câu hỏi, lỗi, thời gian trả lời trung vị, token, đề xuất đã Confirm).
 
 **Cách chạy:** server mở một tiến trình `agy acp` (Agent Client Protocol) khi có câu hỏi đầu tiên, dùng chung cho mọi chat, tự tắt sau 15 phút rảnh. Agent chỉ gọi được công cụ của app qua một MCP server riêng trên `127.0.0.1` (cổng ngẫu nhiên, token riêng mỗi chat; không nằm dưới `/api`). Mọi yêu cầu quyền khác của agy (chạy lệnh, đọc file ngoài thư mục) đều bị từ chối; agy chạy trong một thư mục trống. Câu hỏi chạy nền, trình duyệt hỏi lại mỗi 0,7 s (`GET /api/coach/turn`).
 

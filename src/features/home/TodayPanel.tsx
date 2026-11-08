@@ -420,7 +420,7 @@ function BriefCard({
           </button>
         ) : null}
         <AskCoachButton
-          label="Ask Coach"
+          label="Ask Nova Agent"
           question="What should I focus on today, given my plan, my due flashcards and my recent mistakes?"
           className="h-auto min-h-8 border-0 bg-white/20 px-3 text-xs font-bold text-white hover:bg-white/30 dark:border-0 dark:bg-white/20 dark:text-white dark:hover:bg-white/30 [&_svg]:size-3.5"
         />

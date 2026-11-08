@@ -27,7 +27,7 @@ export function CoachStatsCard() {
     <Card className="space-y-3 p-4 sm:p-5">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <h2 className="flex items-center gap-1.5 font-bold">
-          <Sparkles className="size-4 text-violet-600 dark:text-violet-400" /> Coach
+          <Sparkles className="size-4 text-violet-600 dark:text-violet-400" /> Nova Agent
         </h2>
         <p className="text-xs text-slate-500">
           {turns} questions · {fmtTokens(tokens)} tokens · {fmtTokens(Math.round(tokens / Math.max(1, turns)))} per question · last {days.length} active days
