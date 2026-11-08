@@ -932,6 +932,40 @@ export function Structures({ structures }: { structures: UsedStructure[] }) {
   )
 }
 
+/**
+ * A collocation's heading: the term with its speaker button on the first line (the term gets the full width), then
+ * "IPA · origin" in small type; `side` (a badge or button) sits top right. Shared with Writing review.
+ */
+export function TermHeading({ term, href, origin, meta, side }: { term: string; href?: string; origin?: string; meta?: ReactNode; side?: ReactNode }) {
+  const index = useLibraryLookup()
+  const ipa = pronunciationFor(term, index)
+  return (
+    <div className="flex items-start gap-2">
+      <div className="min-w-0 flex-1">
+        <p className="leading-snug break-words">
+          {href ? (
+            <Link to={href} className="font-bold text-slate-900 hover:text-brand-700 dark:text-white dark:hover:text-brand-300">
+              {term}
+            </Link>
+          ) : (
+            <span className="font-bold text-slate-900 dark:text-white">{term}</span>
+          )}
+          <SpeakButton text={term} className="-my-1 ml-0.5 inline-flex size-7 align-middle" />
+        </p>
+        {ipa || origin || meta ? (
+          <div className="mt-0.5 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-xs text-slate-400">
+            {ipa ? <span className="ipa text-slate-500 dark:text-slate-400">{ipa}</span> : null}
+            {ipa && origin ? <span aria-hidden>·</span> : null}
+            {origin ? <span>{origin}</span> : null}
+            {meta}
+          </div>
+        ) : null}
+      </div>
+      {side ? <div className="shrink-0 whitespace-nowrap">{side}</div> : null}
+    </div>
+  )
+}
+
 /** Term, slot, learning state, where it comes from, and the review button. */
 function ItemHead({
   term,
@@ -952,41 +986,29 @@ function ItemHead({
   onAdd: () => void
   isTopicCollocation?: boolean
 }) {
+  const side = isTopicCollocation ? (
+    <Badge tone="slate" title="Thuộc kho cụm từ chủ đề tham khảo (chưa thêm vào Vocabulary hoặc Notes cá nhân)">
+      Kho tham khảo
+    </Badge>
+  ) : learning ? (
+    <Badge tone="amber">Đang học</Badge>
+  ) : inReview ? (
+    <Badge tone="emerald">
+      <Check className="size-3" /> Ôn tập
+    </Badge>
+  ) : (
+    <button
+      type="button"
+      onClick={onAdd}
+      title="Thêm vào ôn tập"
+      className="inline-flex shrink-0 items-center gap-1 rounded-lg border border-slate-200 px-2 py-1 text-xs font-semibold text-brand-700 hover:border-brand-300 hover:bg-brand-50 dark:border-slate-700 dark:text-brand-300 dark:hover:bg-brand-950/40"
+    >
+      <BookPlus className="size-3.5" /> Ôn tập
+    </button>
+  )
   return (
     <>
-      <div className="flex items-start gap-2">
-        <div className="min-w-0 flex-1">
-          {href ? (
-            <Link to={href} className="font-bold text-slate-900 hover:text-brand-700 dark:text-white dark:hover:text-brand-300">
-              {term}
-            </Link>
-          ) : (
-            <span className="font-bold text-slate-900 dark:text-white">{term}</span>
-          )}
-          <p className="text-xs text-slate-400">{origin}</p>
-        </div>
-        <TermPronunciation term={term} />
-        {isTopicCollocation ? (
-          <Badge tone="slate" title="Thuộc kho cụm từ chủ đề tham khảo (chưa thêm vào Vocabulary hoặc Notes cá nhân)">
-            Kho tham khảo
-          </Badge>
-        ) : learning ? (
-          <Badge tone="amber">Đang học</Badge>
-        ) : inReview ? (
-          <Badge tone="emerald">
-            <Check className="size-3" /> Ôn tập
-          </Badge>
-        ) : (
-          <button
-            type="button"
-            onClick={onAdd}
-            title="Thêm vào ôn tập"
-            className="inline-flex shrink-0 items-center gap-1 rounded-lg border border-slate-200 px-2 py-1 text-xs font-semibold text-brand-700 hover:border-brand-300 hover:bg-brand-50 dark:border-slate-700 dark:text-brand-300 dark:hover:bg-brand-950/40"
-          >
-            <BookPlus className="size-3.5" /> Ôn tập
-          </button>
-        )}
-      </div>
+      <TermHeading term={term} href={href} origin={origin} side={side} />
       {slot ? <code className={cn(SLOT, 'inline-block')}>{slot}</code> : null}
     </>
   )
@@ -1043,17 +1065,6 @@ function pronunciationFor(term: string, index: LookupIndex | null): string | und
   if (collocation?.word.pronunciation) return collocation.word.pronunciation
   const note = index.notes.find((item) => item.title.trim().toLowerCase() === wanted)
   return note?.pronunciation
-}
-
-function TermPronunciation({ term }: { term: string }) {
-  const index = useLibraryLookup()
-  const ipa = pronunciationFor(term, index)
-  return (
-    <span className="inline-flex items-center gap-1">
-      {ipa ? <span className="ipa text-xs text-slate-500 dark:text-slate-400">{ipa}</span> : null}
-      <SpeakButton text={term} className="size-7" />
-    </span>
-  )
 }
 
 export function findInLibrary(phrase: string, index: LookupIndex | null) {
@@ -1283,24 +1294,25 @@ export function WordingRow({ w, example }: { w: CheckedWording; example?: string
 
   return (
     <li className={ITEM}>
-      <div className="flex flex-wrap items-center gap-2">
-        <span className="font-bold text-slate-900 dark:text-white">{w.text}</span>
-        <TermPronunciation term={w.text} />
-        {w.verified ? (
-          <Badge tone="emerald" title={w.dictionary.join('\n')}>
-            <ShieldCheck className="size-3" /> Longman / OZDIC
-          </Badge>
-        ) : w.natural ? (
-          <Badge tone="slate" title={NATURAL_HINT}>
-            <Check className="size-3" /> Tự nhiên
-          </Badge>
-        ) : (
-          <Badge tone="amber" title="Longman và OZDIC không liệt kê cụm này.">
-            <TriangleAlert className="size-3" /> Chưa xác nhận
-          </Badge>
-        )}
-        <SourceLinks sources={w.sources} />
-      </div>
+      <TermHeading
+        term={w.text}
+        meta={<SourceLinks sources={w.sources} />}
+        side={
+          w.verified ? (
+            <Badge tone="emerald" title={w.dictionary.join('\n')}>
+              <ShieldCheck className="size-3" /> Longman / OZDIC
+            </Badge>
+          ) : w.natural ? (
+            <Badge tone="slate" title={NATURAL_HINT}>
+              <Check className="size-3" /> Tự nhiên
+            </Badge>
+          ) : (
+            <Badge tone="amber" title="Longman và OZDIC không liệt kê cụm này.">
+              <TriangleAlert className="size-3" /> Chưa xác nhận
+            </Badge>
+          )
+        }
+      />
       {w.meaning_vi ? <p className="text-sm text-slate-600 dark:text-slate-300">{w.meaning_vi}</p> : null}
       {w.original ? (
         <p className="text-xs text-slate-500">
@@ -1496,24 +1508,25 @@ export function ExtraRow({ extra }: { extra: SpeakingExtra }) {
   }
   return (
     <li className={ITEM}>
-      <div className="flex flex-wrap items-center gap-2">
-        <span className="font-bold text-slate-900 dark:text-white">{extra.phrase}</span>
-        <TermPronunciation term={extra.phrase} />
-        {extra.verified ? (
-          <Badge tone="emerald" title={extra.dictionary.join('\n')}>
-            <ShieldCheck className="size-3" /> Longman / OZDIC
-          </Badge>
-        ) : extra.natural ? (
-          <Badge tone="slate" title={NATURAL_HINT}>
-            <Check className="size-3" /> Tự nhiên
-          </Badge>
-        ) : (
-          <Badge tone="amber" title={`Longman và OZDIC không liệt kê cụm này: chỉ là đề xuất của AI.${extra.why ? ` Lưu ý: ${extra.why}` : ''}`}>
-            <TriangleAlert className="size-3" /> Chưa xác nhận
-          </Badge>
-        )}
-        <SourceLinks sources={extra.sources} />
-      </div>
+      <TermHeading
+        term={extra.phrase}
+        meta={<SourceLinks sources={extra.sources} />}
+        side={
+          extra.verified ? (
+            <Badge tone="emerald" title={extra.dictionary.join('\n')}>
+              <ShieldCheck className="size-3" /> Longman / OZDIC
+            </Badge>
+          ) : extra.natural ? (
+            <Badge tone="slate" title={NATURAL_HINT}>
+              <Check className="size-3" /> Tự nhiên
+            </Badge>
+          ) : (
+            <Badge tone="amber" title={`Longman và OZDIC không liệt kê cụm này: chỉ là đề xuất của AI.${extra.why ? ` Lưu ý: ${extra.why}` : ''}`}>
+              <TriangleAlert className="size-3" /> Chưa xác nhận
+            </Badge>
+          )
+        }
+      />
       <p className="text-sm text-slate-600 dark:text-slate-300">{extra.meaning_vi}</p>
       {extra.original ? (
         <p className="text-xs text-slate-500">

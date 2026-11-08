@@ -49,6 +49,7 @@ import {
   Segments,
   Structures,
   TOOL,
+  TermHeading,
   ThinkInEnglish,
   Wording,
   copyFormatted,
@@ -1000,10 +1001,7 @@ function SuggestedPhrasesTab({ phrases }: { phrases?: WritingSuggestedPhrase[] }
       <ul className="grid gap-3 sm:grid-cols-2">
         {phrases.map((item) => (
           <li key={item.cardId || item.term} className="space-y-2 border-b border-slate-100 py-3 last:border-b-0 dark:border-slate-800">
-            <div className="flex items-start justify-between gap-2">
-              <span className="font-bold text-slate-900 dark:text-white">{item.term}</span>
-              <Badge tone="slate">Kho tham khảo</Badge>
-            </div>
+            <TermHeading term={item.term} href={item.href} origin={item.origin} side={<Badge tone="slate">Kho tham khảo</Badge>} />
             <p className="text-sm text-slate-600 dark:text-slate-300">{item.meaning_vi}</p>
             {item.example ? (
               <p className="border-l-2 border-brand-300 pl-2.5 text-xs italic text-slate-600 dark:border-brand-700 dark:text-slate-400">
