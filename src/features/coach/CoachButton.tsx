@@ -35,7 +35,7 @@ export default function CoachButton() {
             setOpen(true)
           }}
           className={cn(
-            'fixed right-4 z-40 flex size-12 items-center justify-center rounded-full bg-slate-900 text-white shadow-xl shadow-slate-900/25 ring-1 ring-white/10 transition-transform hover:scale-105 active:scale-95 dark:bg-white dark:text-slate-900',
+            'fixed right-4 z-40 flex size-12 items-center justify-center rounded-full bg-violet-600 text-white shadow-xl shadow-violet-600/30 ring-1 ring-white/10 transition-transform hover:scale-105 hover:bg-violet-700 active:scale-95 dark:bg-violet-500 dark:shadow-violet-950/40 dark:hover:bg-violet-400',
             raised ? 'bottom-[max(5.75rem,calc(env(safe-area-inset-bottom)+5.25rem))]' : 'bottom-[max(1.25rem,calc(env(safe-area-inset-bottom)+0.75rem))]',
           )}
         >
