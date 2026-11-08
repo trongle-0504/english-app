@@ -9,7 +9,7 @@ import { appToolName, overview, COACH_TOOLS } from '../../server/coach/tools/ind
 import { fold, searchEntries, type LibraryEntry } from '../../server/coach/tools/library.ts'
 import { summarizeMistakes } from '../../server/coach/tools/mistakes.ts'
 import { getPlan } from '../../server/coach/tools/plan.ts'
-import { getScores, getSpeakingReview, getWritingReview, listWorks } from '../../server/coach/tools/works.ts'
+import { getScores, getSpeakingReview, getWritingReview, listWorks, workHref } from '../../server/coach/tools/works.ts'
 import type { MistakeItem } from '../../src/types/practice.ts'
 
 function fixtureRoot(): ToolContext & { cleanup: () => void } {
@@ -289,4 +289,10 @@ test('every tool has a schema, a label and a unique name', () => {
     assert.ok(t.description.length > 20)
     assert.equal(typeof t.label({}), 'string')
   }
+})
+
+test('T-TOOL: every saved work links to the page that opens it', () => {
+  assert.equal(workHref('writing', 'mw6kmvdx-bab436'), '/practice/writing-review?id=mw6kmvdx-bab436')
+  assert.equal(workHref('speaking_review', 'abc123'), '/practice/speaking-review?id=abc123')
+  assert.equal(workHref('speaking_ideas', 'abc123'), '/practice/speaking-ideas/history?id=abc123')
 })

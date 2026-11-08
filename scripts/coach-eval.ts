@@ -136,6 +136,21 @@ const CASES: Case[] = [
       return /không|no |not|chưa/i.test(t.answer) && shown ? true : 'should say none and name existing dates'
     },
   },
+  {
+    id: 'E-11',
+    question: 'Hôm qua tôi làm được bao nhiêu bài speaking',
+    check: (t) => (!usedApp(t, 'list_works') ? 'list_works not used' : t.answer.includes(String(talksYesterday.items.length)) ? true : `count ${talksYesterday.items.length} missing`),
+  },
+  {
+    id: 'E-12',
+    question: 'Đưa tôi link chủ đề để tôi xem lại bài làm',
+    after: 'E-11',
+    check: (t) => {
+      if (usedApp(t, 'search_library')) return 'searched the library instead of linking the work'
+      const missing = talksYesterday.items.filter((i) => !t.answer.includes(`/practice/speaking-review?id=${i.id}`))
+      return missing.length ? `${missing.length}/${talksYesterday.items.length} links missing` : true
+    },
+  },
 ]
 
 const rows: Record<string, unknown>[] = []

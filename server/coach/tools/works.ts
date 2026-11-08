@@ -12,12 +12,19 @@ const PAGE = 10
 
 const writingTitle = (r: WritingReviewResult) => cut(r.title || r.prompt || r.text, 80)
 const talkTitle = (r: TalkReviewResult) => cut(r.question || r.topic || r.transcript, 80)
+/** In-app page that opens one saved work (the review pages read `?id=`). */
+export const workHref = (kind: (typeof WORK_KINDS)[number], id: string) =>
+  kind === 'writing'
+    ? `/practice/writing-review?id=${encodeURIComponent(id)}`
+    : kind === 'speaking_review'
+      ? `/practice/speaking-review?id=${encodeURIComponent(id)}`
+      : `/practice/speaking-ideas/history?id=${encodeURIComponent(id)}`
 const errorsOf = (fixes: WritingFix[]) => fixes.filter((f) => f.severity !== 'improve').length
 
 export const listWorks: CoachTool = {
   name: 'list_works',
   description:
-    "The learner's saved work, newest first: Writing reviews (scored essays), Speaking reviews (scored recordings) or Speaking ideas (suggested answers, not scored). Gives ids for get_writing_review / get_speaking_review.",
+    "The learner's saved work, newest first: Writing reviews (scored essays), Speaking reviews (scored recordings) or Speaking ideas (suggested answers, not scored). Each item has its id (for get_writing_review / get_speaking_review) and href (the in-app page that opens it).",
   inputSchema: {
     type: 'object',
     properties: {
@@ -40,15 +47,15 @@ export const listWorks: CoachTool = {
     if (kind === 'writing') {
       rows = (await writingDocs(ctx))
         .filter((r) => inRange(dayOf(r.createdAt), from, to))
-        .map((r) => ({ id: r.id, day: dayOf(r.createdAt), time: timeOf(r.createdAt), title: writingTitle(r), band: r.score?.overall ?? null, fixes: r.fixes.length, errors: errorsOf(r.fixes) }))
+        .map((r) => ({ id: r.id, href: workHref('writing', r.id), day: dayOf(r.createdAt), time: timeOf(r.createdAt), title: writingTitle(r), band: r.score?.overall ?? null, fixes: r.fixes.length, errors: errorsOf(r.fixes) }))
     } else if (kind === 'speaking_review') {
       rows = (await talkDocs(ctx))
         .filter((r) => inRange(dayOf(r.createdAt), from, to))
-        .map((r) => ({ id: r.id, day: dayOf(r.createdAt), time: timeOf(r.createdAt), part: r.part, question: talkTitle(r), band: r.overall ?? null, fixes: r.fixes.length, mispronounced: r.misheard?.length ?? 0 }))
+        .map((r) => ({ id: r.id, href: workHref('speaking_review', r.id), day: dayOf(r.createdAt), time: timeOf(r.createdAt), part: r.part, question: talkTitle(r), band: r.overall ?? null, fixes: r.fixes.length, mispronounced: r.misheard?.length ?? 0 }))
     } else {
       rows = (await ideaDocs(ctx))
         .filter((r) => inRange(dayOf(r.createdAt), from, to))
-        .map((r) => ({ id: r.id, day: dayOf(r.createdAt), part: r.part, topic: cut(r.topic, 80), questions: r.answers.length }))
+        .map((r) => ({ id: r.id, href: workHref('speaking_ideas', r.id), day: dayOf(r.createdAt), part: r.part, topic: cut(r.topic, 80), questions: r.answers.length }))
     }
     const page = rows.slice(offset, offset + limit)
     return { kind, total: rows.length, items: page, ...(offset + limit < rows.length ? { more: { offset: offset + limit } } : {}) }
@@ -151,7 +158,7 @@ export const getWritingReview: CoachTool = {
     const r = (await writingDocs(ctx)).find((x) => x.id === args.id)
     if (!r) throw new ToolError('Unknown id. Use list_works to find Writing review ids.')
     const section = optEnum(args, 'section', ['fixes', 'score', 'prompt', 'essay'] as const, 'fixes')
-    const head = { id: r.id, day: dayOf(r.createdAt), time: timeOf(r.createdAt), title: writingTitle(r) }
+    const head = { id: r.id, href: workHref('writing', r.id), day: dayOf(r.createdAt), time: timeOf(r.createdAt), title: writingTitle(r) }
     if (section === 'fixes') {
       const types = optEnumList(args, 'types', FIX_TYPES)
       const severity = optEnum(args, 'severity', ['error', 'improve', 'all'] as const, 'all')
@@ -187,7 +194,7 @@ export const getSpeakingReview: CoachTool = {
     const r = (await talkDocs(ctx)).find((x) => x.id === args.id)
     if (!r) throw new ToolError('Unknown id. Use list_works with kind speaking_review.')
     const section = optEnum(args, 'section', ['fixes', 'score', 'pronunciation', 'transcript'] as const, 'fixes')
-    const head = { id: r.id, day: dayOf(r.createdAt), time: timeOf(r.createdAt), part: r.part, question: talkTitle(r) }
+    const head = { id: r.id, href: workHref('speaking_review', r.id), day: dayOf(r.createdAt), time: timeOf(r.createdAt), part: r.part, question: talkTitle(r) }
     if (section === 'fixes') return { ...head, ...page(fixRows(r.fixes, r.sentences), args) }
     if (section === 'score')
       return {
