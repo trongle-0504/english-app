@@ -72,8 +72,16 @@ test('set up, log in with a code, recovery code, disable', async () => {
   assert.match(setup.qr, /^data:image\/png/)
   assert.equal((await post('2fa/enable', { code: '000000' }, cookie)).status, 400)
   let step = currentStep()
-  const { recoveryCodes } = await json<{ recoveryCodes: string[] }>(await post('2fa/enable', { code: hotp(setup.secret, step) }, cookie))
+  const enableRes = await post('2fa/enable', { code: hotp(setup.secret, step) }, cookie)
+  const freshCookie = cookieOf(enableRes)
+  assert.ok(freshCookie)
+  const { recoveryCodes } = await json<{ recoveryCodes: string[] }>(enableRes)
   assert.equal(recoveryCodes.length, 10)
+
+  // Enabling signs out the session that existed before; the response carries a fresh one.
+  const before = await fetch(`${base}/api/analyze/history`, { headers: { cookie } })
+  assert.equal(before.status, 401, 'old session ended')
+  assert.equal((await fetch(`${base}/api/analyze/history`, { headers: { cookie: freshCookie } })).status, 200, 'this device stays in')
 
   // The stored secret is not the plain one.
   const { readFile } = await import('node:fs/promises')

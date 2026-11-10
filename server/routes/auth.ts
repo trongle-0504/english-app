@@ -113,7 +113,7 @@ export const authRoutes: Record<string, ApiHandler> = {
     return { json: { secret, uri, qr: await QRCode.toDataURL(uri, { margin: 1, width: 240 }) } }
   },
 
-  /** Body `{ code }` → `{ recoveryCodes }`, shown this once. Turns two-factor on. */
+  /** Body `{ code }` → `{ recoveryCodes }`, shown this once. Turns two-factor on and signs out every other device. */
   'POST /auth/2fa/enable': async (req) => {
     const user = await authenticate(req.incoming)
     if (!user) throw new ApiError(401, 'Not logged in.')
@@ -129,7 +129,11 @@ export const authRoutes: Record<string, ApiHandler> = {
     }
     const recoveryCodes = newRecoveryCodes()
     await updateUser(user.id, ({ totpPending, ...u }) => ({ ...u, totpSecret: totpPending, totpLastStep: step, recoveryHashes: recoveryCodes.map(hashRecovery) }))
-    return { json: { recoveryCodes } }
+    // Sessions made before two-factor existed never passed the second step: end them all (other phones and browsers
+    // must log in again) and give this one a fresh cookie.
+    await deleteUserSessions(user.id)
+    const token = await createSession(user.id)
+    return { json: { recoveryCodes }, headers: { 'Set-Cookie': sessionCookie(req, token, Math.floor(sessionTtlMs() / 1000)) } }
   },
 
   /** Body `{ password, code }` → `{ ok }`. */
