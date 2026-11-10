@@ -3,6 +3,7 @@ import { useEffect, useState, type FormEvent } from 'react'
 import { Button, Card, PageHeader } from '@/components/ui'
 import { Field, TextInput } from '@/features/admin/ui'
 import { changePassword, fetchMe } from './session'
+import { TwoFactorCard } from './TwoFactorCard'
 
 /** Same rule as the server (server/auth/password.ts), checked here first for a quicker message. */
 const MIN_LENGTH = 10
@@ -98,6 +99,8 @@ export default function AccountPage() {
           </Button>
         </form>
       </Card>
+
+      <TwoFactorCard />
     </div>
   )
 }
