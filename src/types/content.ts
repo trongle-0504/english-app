@@ -197,6 +197,10 @@ export interface Note {
   examples: NoteExample[]
   related_notes: string[]
   created_at: string
+  /** Dictionaries the generated note rests on (Admin → Notes → Generate); "none" = written by the AI alone. */
+  dictionarySource?: 'longman' | 'ozdic' | 'both' | 'none'
+  /** Why a dictionary could not be used, shown to the admin. */
+  dictionaryNote?: string
   /** Review drills, as on vocabulary words (targets: the title or one of the patterns). */
   use_prompts?: UsePrompt[]
   dictation?: DictationLine[]

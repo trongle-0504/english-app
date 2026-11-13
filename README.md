@@ -148,7 +148,7 @@ cũng cần đăng nhập (mục *Đăng nhập*).
 
 | Biến | Dùng cho |
 |---|---|
-| `GEMINI_API_KEY`, `GEMINI_MODEL` (mặc định `gemini-3-flash-preview`), `GEMINI_THINKING` (`low`/`medium`/`high`, mặc định `low`) | Mọi tính năng AI: Grammar Analyze, các nút "Generate" trong Admin, thẻ ôn tập bằng Gemini, Writing Review. Với Gemini 3, temperature để mặc định và schema gửi dạng JSON Schema |
+| `GEMINI_API_KEY`, `GEMINI_MODEL` (mặc định `gemini-3-flash-preview`), `GEMINI_THINKING` (`low`/`medium`/`high`, mặc định `low`) | Mọi tính năng AI: Grammar Analyze, các nút "Generate" trong Admin (riêng Vocabulary/Notes/practice/drills dùng `ADMIN_GENERATE_EFFORT`, mặc định `low`), thẻ ôn tập bằng Gemini, Writing Review. Với Gemini 3, temperature để mặc định và schema gửi dạng JSON Schema |
 | `PIXABAY_API_KEY` | Ảnh minh hoạ trong Admin → Vocabulary / Notes, và `scripts/fetch-images.ts` (miễn phí: pixabay.com/api/docs) |
 | `SESSION_TTL_DAYS` | Số ngày giữ đăng nhập (mặc định 30) |
 | `TRUST_PROXY` | `1` khi chạy sau Cloudflare Tunnel: lấy IP người dùng từ `CF-Connecting-IP` (giới hạn sai mật khẩu) |
@@ -214,14 +214,14 @@ Trang `/review` dùng thuật toán **FSRS** (thư viện `ts-fsrs`): thẻ hay 
   trong vòng viết câu) hoặc ở cột Bậc của tab *Words* cho từ ít dùng khi nói/viết → thẻ chỉ ôn ở mức **Nhận ra**
   (`ladder: false` trong `progress/review.json`, `POST /api/review/ladder`); bậc cũ được giữ, tick lại thì học tiếp từ đó.
   Có áp dụng từ lần ôn kế tiếp của thẻ. Bộ lọc bậc có mục "Chỉ nhận dạng".
-- **Dữ liệu bài tập trong `words.json`** (Gemini viết luôn khi tạo từ bằng *Generate* ở Admin Vocabulary; xem khung dưới
+- **Dữ liệu bài tập trong `words.json`** (lô ban đêm 03:00 viết cho từ mới tạo bằng *Generate* ở Admin Vocabulary, xem mục Admin → Vocabulary → Generate; xem khung dưới
   Preview; 605 từ cũ đã được bổ sung sẵn). **Collocation trong bài học** (`content/collocations/lessons/*.json`, mục
   `vocabulary_data`) dùng đúng 3 trường này với cùng schema: mục tiêu duy nhất là chính cụm đó (`fits` = [], 1 câu nghe chép,
   2 bài viết lại đều dùng cụm). 1.790/1.800 cụm đã có; 10 mục cố ý không có (tiêu đề mục và các cụm ghi "cách dùng không
   phù hợp" / lỗi sai — luyện chúng sẽ học nhầm).
   **Notes** (`content/note/notes.json`) cũng có đủ 3 trường (192/192): mục tiêu là tiêu đề note hoặc một `patterns` của nó;
-  câu nghe chép và câu mẫu luôn điền chỗ trống bằng từ thật. Tạo note bằng *Generate* ở Admin Notes thì Gemini viết luôn
-  (schema và prompt dùng chung: `server/admin/drills.ts`); lưu note trong Admin giữ nguyên các trường này.
+  câu nghe chép và câu mẫu luôn điền chỗ trống bằng từ thật. Note tạo bằng *Generate* ở Admin Notes được viết drills trong
+  lô ban đêm (schema và prompt dùng chung: `server/admin/drills.ts`); lưu note trong Admin giữ nguyên các trường này.
   Bậc "Nhớ ra từ" chấm tiêu đề kiểu mẫu câu linh hoạt (`src/features/review/recall.ts`): chỗ trống (`+ N`, `sb/sth`,
   `somebody`, `A/B`, `do something`, `S + V`…) được bỏ trống hoặc điền vài từ đều đúng; "x / y" và "x vs y" gõ một vế là đủ. Kiểu: `UsePrompt`, `DictationLine`, `ParaphraseTask` trong
   `src/types/content.ts`; làm sạch chung trong `src/lib/wordDrills.ts` (pipeline, Admin, Preview dùng chung):
@@ -272,26 +272,59 @@ không hoạt động, vì chúng cần `npm start` hoặc `npm run dev`.
 
 ## Admin → Vocabulary → Generate
 
-3 bước: (1) Gemini đưa từ về nguyên mẫu (`decisions` → decision, `took responsibility` → take responsibility) và chọn 1–2 từ khoá;
-(2) tra từ điển cho từng từ khoá: **Longman trước** (ldoceonline.com, cache `cache/longman/`, 1 lần/3 s,
-`server/writing-review/longman.ts`); chỉ khi Longman không có hộp COLLOCATIONS mới tra OZDIC (Oxford Collocations, cache
-`cache/ozdic/`). `LONGMAN_LOOKUP=off` trong `.env` tắt tra Longman (chỉ dùng cache);
-(3) prompt chính nhận toàn bộ mục từ điển cùng ghi chú + hình ảnh của bạn, sửa collocation/pattern viết sai theo từ điển
-và liệt kê các chỗ đã sửa. AI tách ghi chú thành câu ví dụ / collocation / pattern (một câu hoàn chỉnh luôn là ví dụ).
-Nếu không có collocation nào, AI thêm 3–4 cụm thông dụng trong IELTS Speaking/Writing kèm ví dụ, cho mọi loại từ (kể cả
-động từ): lấy từ từ điển (code kiểm lại, cụm bịa bị bỏ); nếu từ điển có quá ít thì AI bổ sung và trang ghi
-"not verified by a dictionary". Mã: `server/admin/ozdic-grounding.ts`.
-Nếu bước 1 lỗi hoặc cả hai từ điển không có dữ liệu, entry vẫn được tạo như trước.
+Request Generate chỉ chờ những gì cần để xem và duyệt mục từ (thường 15–30 s); ảnh, practice và drills làm sau.
 
-**Ảnh minh hoạ** (`server/admin/images.ts`): Gemini trả thêm `image_query` — một cảnh chụp được thể hiện nghĩa
-("ambitious" → "person climbing mountain summit success"); server tìm Pixabay (`PIXABAY_API_KEY`) + Wikipedia search +
-Openverse, tải ảnh đầu tiên về `public/vocab-images/<từ>.webp` (640px) và lưu `image_credit`/`image_source`/`image_query`
-trên từ. Khung *Picture* trong Admin hiện lưới ảnh ứng viên để đổi ảnh, tìm lại hoặc bỏ ảnh. Thay ảnh hàng loạt:
+1. **Chuẩn hoá + nguyên mẫu** (`server/admin/headword.ts`, `ozdic-grounding.ts`): bỏ khoảng trắng/dấu câu/ngoặc kép ở hai đầu,
+   chữ thường, nháy cong → thẳng. Từ đơn không có dấu hiệu biến tố (`-s/-es/-ies/-ed/-ing/-er/-est`) được tra Longman ngay;
+   Longman có mục trùng đúng từ đó → đó là nguyên mẫu, **không gọi AI** (`ADMIN_LEMMA_FAST_PATH=off` để tắt). Cụm từ, dạng
+   biến tố hoặc từ Longman không có → AI đưa về nguyên mẫu (`decisions` → decision) và chọn 1–2 từ khoá, rồi mới tra.
+   Chỉ tra bằng từ khoá đã chuẩn hoá, không tra dạng như đã gõ.
+2. **Từ điển, không bao giờ đứng chờ**: Longman trước (ldoceonline.com, cache `cache/longman/`, 1 request/3 s); Longman
+   không được (không có trang, 429/503/403, trang challenge, timeout, lỗi mạng, đang tạm dừng) hoặc thiếu hộp COLLOCATIONS
+   → OZDIC ngay (cache `cache/ozdic/`). Generate không ngủ theo Retry-After; back-off và 30 phút tạm dừng chỉ áp cho các
+   request sau. Các từ khoá tra song song. Cả hai không được → AI tự làm (prompt nói rõ không có từ điển), mục từ vẫn lưu
+   với `dictionarySource: "none"` và `dictionaryNote` ("Không lấy được Longman (HTTP 429) và OZDIC (không có trang): nội dung
+   do AI tự tạo…"), ghi chú hiện ngay trong kết quả. Mọi mục từ ghi `dictionarySource` (`longman`/`ozdic`/`both`/`none`).
+   Rời ô "Word" → `POST /api/admin/dictionary/prefetch` làm ấm cache cho từ đơn dạng gốc (không gọi AI, không bật agy).
+   `LONGMAN_LOOKUP=off` tắt tra Longman; `LONGMAN_CACHE_DIR` / `OZDIC_CACHE_DIR` đổi thư mục cache (đo với cache trống).
+3. **Lượt AI lõi**: senses, collocations, relations, roots, breakdown, corrections, placement, `image_query` — **không có
+   drills**. Sửa collocation/pattern viết sai theo từ điển; không có collocation nào thì thêm 3–4 cụm IELTS (từ từ điển, code
+   kiểm lại; quá ít thì AI bổ sung và ghi "not verified by a dictionary").
+4. **Lưu + trả về**, rồi **ở nền** (`server/admin/generate-jobs.ts`, song song): ảnh (`firstImages()`: nguồn đầu có kết quả
+   → tải → WebP) và practice (nếu tích chọn). Trang theo dõi qua `GET /api/admin/generate/job?id=…`: "Ảnh / Practice: đang
+   tạo · xong · lỗi, thử lại". Picker tự tải danh sách ứng viên khi mở.
+
+**Effort**: mọi lượt AI của Admin Generate (lemma, lõi, practice, drills) chạy `ADMIN_GENERATE_EFFORT` (mặc định `low`),
+không theo `GEMINI_THINKING`.
+
+**Drills ban đêm** (`server/admin/drills-nightly.ts`): 03:00 Asia/Ho_Chi_Minh quét `words.json` / `notes.json` tìm mục thiếu
+`use_prompts` / `dictation` / `paraphrase`, ≈ 5 mục mỗi lượt AI (nhãn usage `drills: nightly`), làm sạch bằng
+`cleanDrills` và chỉ ghi các trường drills (bỏ qua mục đã xoá, không đè chỉnh sửa của admin). Máy tắt lúc 03:00 → chạy bù
+khi server khởi động. Trạng thái `data/drills-nightly.json`. Admin → Vocabulary / Notes hiện số mục chờ, lần chạy cuối, nút
+**Chạy ngay** và **Tạo drills ngay** cho từng mục.
+
+**Thời gian từng bước**: response có `timings` (lemma, dictionary, main, commit, total, số request, cache hit, thời gian chờ
+khoảng cách, `lemmaSkipped`, `dictionarySource`, `longmanError`), hiện dưới tóm tắt từ điển; mỗi request, mỗi job nền và
+mỗi lô đêm ghi một dòng vào `logs/admin-generate.jsonl` và log server `[admin-generate] …`.
+
+**Ảnh minh hoạ** (`server/admin/images.ts`): `image_query` là một cảnh chụp được thể hiện nghĩa ("ambitious" → "person
+climbing mountain summit success"); nguồn Pixabay (`PIXABAY_API_KEY`), Wikipedia, Openverse; ảnh lưu ở
+`public/vocab-images/<từ>.webp` (640px) cùng `image_credit`/`image_source`. Thay ảnh hàng loạt:
 `node scripts/refresh-vocab-images.ts <file index|query>`. Nghiên cứu so sánh nguồn ảnh: `../image-lab`.
 
-**Admin → Notes → Generate** dùng cùng cách: bước 1 tìm mục chính của note ở dạng nguyên mẫu (hoặc "A vs B" khi so sánh)
-và 1–3 từ khoá; bước 2 tra Longman rồi OZDIC như trên (chỉ gửi danh sách collocation, không gửi câu ví dụ của từ điển); prompt chính sửa
-collocation/pattern/ví dụ viết sai theo OZDIC và liệt kê các chỗ đã sửa. Note không tự thêm collocation mới.
+**Admin → Notes → Generate** dùng cùng mẫu: fast path chỉ khi dòng đầu là một từ đơn; còn lại AI tìm mục chính (hoặc
+"A vs B") và 1–3 từ khoá; Longman → OZDIC → AI tự làm + ghi chú (chỉ gửi danh sách collocation, không gửi câu ví dụ); ảnh
+ở nền; drills ban đêm. Note không tự thêm collocation mới.
+
+**Antigravity ấm** (`server/llm/acp-pool.ts`, áp cho mọi tính năng dùng `antigravityJson` / `antigravityText`): một tiến
+trình `agy acp` bật ở lời gọi AI thật đầu tiên (lời gọi đó vẫn chạy `agy -p`), các lời gọi sau đi qua nó, bỏ phần khởi
+động CLI (đo được ≈ 3 s mỗi lượt). Mỗi lời gọi một phiên mới (model + effort riêng, vd. `gemini-3.8-flash-low`), thư mục
+trống, không MCP, từ chối mọi quyền, đóng phiên ngay sau đó. Tắt sau `ANTIGRAVITY_WARM_IDLE_MS` (mặc định 30 phút) không
+có lời gọi, không tắt khi đang chạy; khởi động lại lúc rảnh sau ~200 lượt hoặc 6 giờ; lỗi / treo / không có JSON → chạy
+lại bằng `agy -p`. Lượt có ảnh vẫn đi `agy -p`. Usage ghi `provider: "antigravity-acp"`; sự kiện bật/tắt ghi
+`logs/antigravity-warm.jsonl`. `ANTIGRAVITY_WARM=off` tắt hẳn. Usage log của `agy -p` có thêm `duration_seconds` (thời gian
+agy tự báo) và `queueMs` (chờ chỗ trong `ANTIGRAVITY_PARALLEL`): S ≈ ms − queueMs − duration_seconds × 1000. Đo S trực tiếp:
+`node scripts/acp-probe.ts [lần] [model]`.
 
 ## Model essays (Practice → Model essays, Admin → Essays)
 

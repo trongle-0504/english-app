@@ -12,7 +12,7 @@ const LOG = path.join(LOG_DIR, 'gemini-usage.jsonl')
 const LEGACY_LOG = path.join(LOG_DIR, 'gemini_usage.json')
 const PRICING = path.join(ROOT, 'config', 'gemini-pricing.json')
 
-export type UsageProvider = 'antigravity' | 'claude' | 'gemini_api'
+export type UsageProvider = 'antigravity' | 'antigravity-acp' | 'claude' | 'gemini_api'
 
 export interface UsageEntry {
   /** ISO time of the response. */
@@ -34,6 +34,10 @@ export interface UsageEntry {
   provider?: UsageProvider
   /** Effort passed to the CLI (--effort), when there was one. */
   effort?: string
+  /** `agy -p` only: the CLI's own working time as it reports it. ms − queueMs − this = CLI start-up and shutdown. */
+  duration_seconds?: number
+  /** Antigravity: time spent waiting for a free ANTIGRAVITY_PARALLEL slot (included in `ms`). */
+  queueMs?: number
 }
 
 export function providerOf(e: UsageEntry): UsageProvider {

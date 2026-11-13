@@ -8,7 +8,8 @@ import path from 'node:path'
 import { parse, type HTMLElement } from 'node-html-parser'
 import type { CollocationGroup, OzdicEntry } from './ozdic.ts'
 
-const CACHE_DIR = path.join(import.meta.dirname, '..', '..', 'cache', 'longman')
+/** LONGMAN_CACHE_DIR overrides it (a scratch folder for measuring with an empty cache, tests). */
+const cacheDir = () => process.env.LONGMAN_CACHE_DIR || path.join(import.meta.dirname, '..', '..', 'cache', 'longman')
 /** 2: senses record whether the COLLOCATIONS box belongs to them. */
 const CACHE_VERSION = 2
 const MIN_GAP_MS = Number(process.env.LONGMAN_GAP_MS) || 3000
@@ -60,6 +61,8 @@ export interface LongmanEntry {
   entries: LongmanHomograph[]
   /** Longman could not be reached or blocked the request: no data, and nothing was cached. */
   unavailable?: boolean
+  /** Why it was unavailable: "HTTP 429", "timeout", "network error", "Longman requests are paused after a block"… */
+  reason?: string
   v?: number
 }
 
@@ -117,38 +120,97 @@ export function parseLongmanPage(html: string, word: string, url: string): Longm
 
 let lastRequest = 0
 let blockedUntil = 0
+/** After a 429/503: no request before this time (Retry-After), and a second one in a row blocks. */
+let backoffUntil = 0
+let strikes = 0
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
 
-/** One polite GET: "" when the word has no page. 429/503 retried once after Retry-After; 403 or a challenge pauses all. */
-async function politeFetch(url: string): Promise<string> {
+/** What a lookup cost, filled in by `lookupLongman` / OZDIC `lookup` (Admin → Generate timings). */
+export interface LookupStats {
+  /** Network requests sent. */
+  requests: number
+  cacheHits: number
+  /** Time spent waiting for the polite gap between two requests. */
+  waitMs: number
+  /** A cached page that the "Word" field prefetch had stored (see `prefetchedRecently`). */
+  prefetched?: boolean
+}
+
+export interface FetchOptions {
+  /**
+   * false (Admin → Generate): never sleep for Retry-After or a back-off — fail at once with LongmanUnavailableError so
+   * the caller moves on to OZDIC. The back-off still applies to later requests. Default true: wait and retry once.
+   */
+  wait?: boolean
+  stats?: LookupStats
+}
+
+/** Reserves the next request time (one every MIN_GAP_MS, also when lookups run side by side) and waits for it. */
+async function takeTurn(stats?: LookupStats) {
+  const now = Date.now()
+  const at = Math.max(now, lastRequest + MIN_GAP_MS)
+  lastRequest = at
+  if (at > now) {
+    await sleep(at - now)
+    if (stats) stats.waitMs += at - now
+  }
+}
+
+/**
+ * One polite GET: "" when the word has no page. 429/503 retried once after Retry-After (or, with `wait: false`, not at
+ * all); a second 429/503 in a row, a 403 or a challenge pauses all requests.
+ */
+async function politeFetch(url: string, { wait = true, stats }: FetchOptions = {}): Promise<string> {
   const block = (reason: string): never => {
     blockedUntil = Date.now() + BLOCK_PAUSE_MS
     throw new LongmanUnavailableError(`${reason}; Longman requests paused for ${BLOCK_PAUSE_MS / 60_000} min`)
   }
-  for (let attempt = 0; ; attempt++) {
+  for (;;) {
     if (Date.now() < blockedUntil) throw new LongmanUnavailableError('Longman requests are paused after a block')
-    const wait = lastRequest + MIN_GAP_MS - Date.now()
-    if (wait > 0) await sleep(wait)
-    lastRequest = Date.now()
+    if (Date.now() < backoffUntil) {
+      if (!wait) throw new LongmanUnavailableError(`backing off after HTTP 429/503 for ${Math.ceil((backoffUntil - Date.now()) / 1000)} s`)
+      await sleep(backoffUntil - Date.now())
+    }
+    await takeTurn(stats)
+    if (stats) stats.requests++
     const res = await fetch(url, {
       headers: { 'User-Agent': USER_AGENT, Accept: 'text/html' },
       redirect: 'manual',
       signal: AbortSignal.timeout(20_000),
     })
-    // Unknown words redirect to /spellcheck/ (disallowed by robots.txt): treated as "no page", never followed.
-    if (res.status === 404 || (res.status >= 300 && res.status < 400)) return ''
     if (res.status === 429 || res.status === 503) {
-      if (attempt > 0) block(`HTTP ${res.status} twice`)
-      await sleep(Math.min(Number(res.headers.get('retry-after')) || 30, 120) * 1000)
+      if (strikes > 0) block(`HTTP ${res.status} twice`)
+      strikes++
+      backoffUntil = Date.now() + Math.min(Number(res.headers.get('retry-after')) || 30, 120) * 1000
+      if (!wait) throw new LongmanUnavailableError(`HTTP ${res.status}`)
       continue
     }
+    strikes = 0
+    // Unknown words redirect to /spellcheck/ (disallowed by robots.txt): treated as "no page", never followed.
+    if (res.status === 404 || (res.status >= 300 && res.status < 400)) return ''
     if (res.status === 403) block('HTTP 403')
-    if (!res.ok) throw new Error(`longman ${url}: HTTP ${res.status}`)
+    if (!res.ok) throw new Error(`HTTP ${res.status}`)
     const html = await res.text()
     if (/challenge-platform|Just a moment\.\.\.|cf-chl-/i.test(html) && !html.includes('ldoceEntry')) block('bot challenge page')
     return html
   }
 }
+
+/** Short reason for a failed request, shown to the admin: "HTTP 429", "timeout", "network error"… */
+export function failureReason(error: unknown): string {
+  const message = String((error as Error)?.message ?? error)
+  if ((error as Error)?.name === 'TimeoutError' || /timed? ?out|aborted/i.test(message)) return 'timeout'
+  if (error instanceof TypeError || /fetch failed|ECONNRESET|ENOTFOUND|EAI_AGAIN|ECONNREFUSED|ETIMEDOUT/i.test(message)) return 'network error'
+  return message.replace(/;.*$/, '').slice(0, 120)
+}
+
+/** Words whose Longman page the Admin "Word" field prefetch looked up (see Admin → Generate timings). */
+const prefetched = new Map<string, number>()
+export function markPrefetched(word: string): void {
+  prefetched.set(word.trim().toLowerCase(), Date.now())
+  if (prefetched.size > 200) prefetched.delete(prefetched.keys().next().value!)
+}
+const prefetchedRecently = (key: string) => Date.now() - (prefetched.get(key) ?? 0) < 60 * 60_000
 
 const emptyEntry = (word: string, url: string, extra: Partial<LongmanEntry> = {}): LongmanEntry => ({
   word,
@@ -160,31 +222,38 @@ const emptyEntry = (word: string, url: string, extra: Partial<LongmanEntry> = {}
 
 /** Longman page for a word (cached). `offline` or LONGMAN_LOOKUP=off never touches the network. */
 /** `refresh`: fetch the page again even when it is cached (to read data an older cache version did not keep). */
-export async function lookupLongman(word: string, { offline = false, refresh = false } = {}): Promise<LongmanEntry> {
+export async function lookupLongman(
+  word: string,
+  { offline = false, refresh = false, wait = true, stats }: { offline?: boolean; refresh?: boolean } & FetchOptions = {},
+): Promise<LongmanEntry> {
   const key = word.trim().toLowerCase()
   const slug = key.replace(/\s+/g, '-').replace(/[^a-z0-9'-]/g, '')
   const url = `https://www.ldoceonline.com/dictionary/${encodeURIComponent(slug)}`
-  const file = path.join(CACHE_DIR, `${slug.replace(/[^a-z0-9-]+/g, '_') || '_'}.json`)
+  const file = path.join(cacheDir(), `${slug.replace(/[^a-z0-9-]+/g, '_') || '_'}.json`)
   try {
     const cached = JSON.parse(await readFile(file, 'utf8')) as LongmanEntry
-    if (offline || (cached.v === CACHE_VERSION && !refresh)) return cached
+    if (offline || (cached.v === CACHE_VERSION && !refresh)) {
+      if (stats) {
+        stats.cacheHits++
+        if (prefetchedRecently(key)) stats.prefetched = true
+      }
+      return cached
+    }
   } catch {
     // not cached yet
   }
-  if (offline || !longmanEnabled() || !slug) return emptyEntry(key, url, { unavailable: !slug ? undefined : true })
+  if (!slug) return emptyEntry(key, url)
+  if (offline || !longmanEnabled()) return emptyEntry(key, url, { unavailable: true, reason: offline ? 'offline' : 'LONGMAN_LOOKUP=off' })
   let html: string
   try {
-    html = await politeFetch(url)
+    html = await politeFetch(url, { wait, stats })
   } catch (error) {
-    if (!(error instanceof LongmanUnavailableError)) {
-      console.warn(`[longman] ${key}: ${(error as Error).message}`)
-      return emptyEntry(key, url, { unavailable: true })
-    }
-    console.warn(`[longman] ${key}: ${error.message}`)
-    return emptyEntry(key, url, { unavailable: true })
+    const reason = failureReason(error)
+    console.warn(`[longman] ${key}: ${(error as Error).message}`)
+    return emptyEntry(key, url, { unavailable: true, reason })
   }
   const entry = html ? parseLongmanPage(html, key, url) : { ...emptyEntry(key, url), v: CACHE_VERSION }
-  await mkdir(CACHE_DIR, { recursive: true })
+  await mkdir(cacheDir(), { recursive: true })
   await writeFile(file, JSON.stringify(entry, null, 1))
   return entry
 }

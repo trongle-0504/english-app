@@ -6,8 +6,10 @@ import { existsSync, mkdirSync } from 'node:fs'
 import { mkdtemp, rm, writeFile } from 'node:fs/promises'
 import os from 'node:os'
 import path from 'node:path'
+import { appendFileSync } from 'node:fs'
 import { ApiError } from '../api.ts'
 import { recordUsage } from '../usage.ts'
+import { WarmAgentPool, type WarmEvent, type WarmTurn } from './acp-pool.ts'
 
 /** The CLI: ANTIGRAVITY_BIN, else the native installer's ~/.local/bin/agy, else `agy` on PATH. */
 const bin = () => process.env.ANTIGRAVITY_BIN || [path.join(os.homedir(), '.local', 'bin', 'agy')].find((p) => existsSync(p)) || 'agy'
@@ -30,6 +32,11 @@ export interface AntigravityJsonRequest {
   model?: string
   effort?: string
   images?: CliImage[]
+  /**
+   * Optional check of the parsed answer (e.g. a Zod schema's safeParse). An answer from the warm agent that fails it is
+   * run again through `agy -p`. Without it, the schema's top-level "required" keys are checked.
+   */
+  validate?: (value: unknown) => boolean
 }
 
 export interface AntigravityJsonResult {
@@ -80,6 +87,26 @@ async function stageImages(images: CliImage[] | undefined): Promise<StagedImages
   }
 }
 
+/** Warm-agent start/stop/restart/fallback events, to check the on/off rules: logs/antigravity-warm.jsonl. */
+function logWarmEvent(event: WarmEvent) {
+  console.log(`[antigravity-warm] ${event.event}: ${event.reason}`)
+  try {
+    const dir = path.join(process.cwd(), 'logs')
+    mkdirSync(dir, { recursive: true })
+    appendFileSync(path.join(dir, 'antigravity-warm.jsonl'), `${JSON.stringify({ at: new Date().toISOString(), ...event })}\n`)
+  } catch {
+    // Logging only.
+  }
+}
+
+// One warm `agy acp` for every one-shot call (server/llm/acp-pool.ts); kept on globalThis like the slots below.
+const warm = ((globalThis as { __antigravityWarm?: WarmAgentPool }).__antigravityWarm ??= new WarmAgentPool({ onEvent: logWarmEvent }))
+
+/** Stops the warm agent (server shutdown). */
+export function stopWarmAgent(): void {
+  warm.stop('server shutdown', true)
+}
+
 // Kept on globalThis: the dev server reloads server modules in-process when they change, and calls still running in
 // the old instance must keep counting against the limit.
 const slots = ((globalThis as { __antigravitySlots?: { running: number; queue: (() => void)[] } }).__antigravitySlots ??= {
@@ -87,11 +114,14 @@ const slots = ((globalThis as { __antigravitySlots?: { running: number; queue: (
   queue: [],
 })
 
-async function inSlot<T>(task: () => Promise<T>): Promise<T> {
+/** Runs `task` when one of the ANTIGRAVITY_PARALLEL slots is free; `queueMs` = how long it waited for that slot. */
+async function inSlot<T>(task: () => Promise<T>): Promise<T & { queueMs: number }> {
+  const queued = Date.now()
   if (slots.running >= maxParallel()) await new Promise<void>((resolve) => slots.queue.push(resolve))
+  const queueMs = Date.now() - queued
   slots.running++
   try {
-    return await task()
+    return { ...(await task()), queueMs }
   } finally {
     slots.running--
     slots.queue.shift()?.()
@@ -186,6 +216,11 @@ interface CliOutput {
   }
 }
 
+/** agy's own working time and the wait for a free slot, for the usage log. */
+function cliTimes(out: CliOutput, queueMs: number): { duration_seconds?: number; queueMs: number } {
+  return { ...(typeof out.duration_seconds === 'number' ? { duration_seconds: Math.round(out.duration_seconds * 1000) / 1000 } : {}), queueMs }
+}
+
 export async function antigravityJson(request: AntigravityJsonRequest): Promise<AntigravityJsonResult> {
   const staged = await stageImages(request.images)
   try {
@@ -226,6 +261,59 @@ export function repairQuotes(text: string): string {
     } else out += '\\"'
   }
   return out
+}
+
+/** The JSON object in a model's text answer: a ```json block, the outermost { … }, then the same with quotes repaired. */
+export function parseStructured(response: string | undefined): unknown {
+  if (!response) return undefined
+  const trimmed = response.trim()
+  const match = trimmed.match(/```(?:json)?\s*([\s\S]*?)\s*```/)
+  const candidates = [match ? match[1].trim() : null, trimmed].filter(Boolean) as string[]
+  for (const cand of candidates) {
+    const objMatch = cand.match(/(\{[\s\S]*\}|\[[\s\S]*\])/)
+    for (const text of [cand, objMatch?.[1], repairQuotes(cand), objMatch && repairQuotes(objMatch[1])]) {
+      if (!text) continue
+      try {
+        return JSON.parse(text)
+      } catch {
+        // try the next form
+      }
+    }
+  }
+  return undefined
+}
+
+/** A warm-agent answer is accepted when `validate` passes, or else when it has the schema's top-level required keys. */
+export function acceptable(value: unknown, schema: unknown, validate?: (value: unknown) => boolean): boolean {
+  if (value == null || typeof value !== 'object') return false
+  if (validate) return validate(value)
+  const required = (schema as { required?: unknown })?.required
+  return !Array.isArray(required) || required.every((key) => typeof key === 'string' && key in (value as Record<string, unknown>))
+}
+
+/** The model id for `session/set_model`: effort is its suffix ("gemini-3.8-flash" + low → "gemini-3.8-flash-low"). */
+const warmModelId = (model: string, effort: string | undefined) => (effort ? `${model}-${effort}` : model)
+
+/** A warm-agent turn in the usage log, next to the `agy -p` ones (provider "antigravity-acp"). */
+function recordWarmUsage(label: string, model: string, effort: string | undefined, turn: WarmTurn, queueMs: number, failed: boolean) {
+  const input = turn.usage?.inputTokens ?? 0
+  const thinking = turn.usage?.thoughtTokens ?? 0
+  const output = turn.usage?.outputTokens ?? 0
+  recordUsage({
+    at: new Date().toISOString(),
+    label,
+    model,
+    input,
+    output,
+    thinking,
+    total: input + output + thinking,
+    ms: turn.ms + queueMs,
+    billing: 'subscription',
+    provider: 'antigravity-acp',
+    ...(effort ? { effort } : {}),
+    ...(failed ? { failed: true } : {}),
+    queueMs,
+  })
 }
 
 /** No JSON came back (the model answered in prose or tried a tool): worth one more try. A timeout is not. */
@@ -277,6 +365,26 @@ async function runJsonOnce(request: AntigravityJsonRequest, staged: StagedImages
   // Caller's effort wins over global env and model suffix so per-task effort (e.g. 'low' for fast calls) actually applies.
   const effort = request.effort || process.env.ANTIGRAVITY_EFFORT || match?.[1].toLowerCase()
 
+  // Warm agent first (not for calls with images: those need agy's file viewer); anything unusable falls through to agy -p.
+  if (!staged.note) {
+    const warmTried = Date.now()
+    const turn = await inSlot(async () => ({ turn: await warm.run(request.label, fullPrompt, warmModelId(model, effort)) }))
+    if (turn.turn) {
+      const value = parseStructured(turn.turn.text)
+      const ok = acceptable(value, request.jsonSchema, request.validate)
+      recordWarmUsage(request.label, model, effort, turn.turn, turn.queueMs, !ok)
+      if (ok) {
+        return {
+          value,
+          model,
+          usage: { input: turn.turn.usage?.inputTokens ?? 0, output: turn.turn.usage?.outputTokens ?? 0, thinking: turn.turn.usage?.thoughtTokens ?? 0 },
+          ms: Date.now() - warmTried,
+        }
+      }
+      console.warn(`[antigravity-warm] '${request.label}': no usable JSON from the warm agent; running it through agy -p`)
+    }
+  }
+
   // The schema goes in the prompt only: agy's --json-schema makes the model submit through an extra tool turn (twice
   // the input tokens, ~5 s more per call); a missing JSON answer is retried once instead.
   const args = [
@@ -291,7 +399,7 @@ async function runJsonOnce(request: AntigravityJsonRequest, staged: StagedImages
     ...staged.args,
   ]
   const started = Date.now()
-  let { code, stdout, stderr } = await inSlot(() => runCli(args))
+  let { code, stdout, stderr, queueMs } = await inSlot(() => runCli(args))
   if (code !== 0 && effort && (stderr.includes('--effort is not supported') || stderr.includes('effort is not supported') || stderr.includes('conflicts with --effort'))) {
     // Retry without --effort flag if CLI complains
     const retryArgs = ['-p', fullPrompt, '--output-format', 'json', '--disable-slash-commands', '--model', model, ...staged.args]
@@ -299,6 +407,7 @@ async function runJsonOnce(request: AntigravityJsonRequest, staged: StagedImages
     code = retryRes.code
     stdout = retryRes.stdout
     stderr = retryRes.stderr
+    queueMs += retryRes.queueMs
   }
   const ms = Date.now() - started
 
@@ -323,24 +432,7 @@ async function runJsonOnce(request: AntigravityJsonRequest, staged: StagedImages
       // ignore
     }
   }
-  if (structured == null && out.response) {
-    const trimmed = out.response.trim()
-    const match = trimmed.match(/```(?:json)?\s*([\s\S]*?)\s*```/)
-    const candidates = [match ? match[1].trim() : null, trimmed].filter(Boolean) as string[]
-    search: for (const cand of candidates) {
-      const objMatch = cand.match(/(\{[\s\S]*\}|\[[\s\S]*\])/)
-      // As written; the outermost { … }; then both with quotes the model left unescaped inside a string repaired.
-      for (const text of [cand, objMatch?.[1], repairQuotes(cand), objMatch && repairQuotes(objMatch[1])]) {
-        if (!text) continue
-        try {
-          structured = JSON.parse(text)
-          break search
-        } catch {
-          // try the next form
-        }
-      }
-    }
-  }
+  if (structured == null) structured = parseStructured(out.response)
 
   const usable = out.status === 'SUCCESS' && structured != null
   recordUsage({
@@ -356,6 +448,8 @@ async function runJsonOnce(request: AntigravityJsonRequest, staged: StagedImages
     provider: 'antigravity',
     ...(effort ? { effort } : {}),
     ...(usable ? {} : { failed: true }),
+    // S (CLI start-up and shutdown) ≈ ms − queueMs − duration_seconds × 1000.
+    ...cliTimes(out, queueMs),
   })
 
   if (structured == null) {
@@ -417,6 +511,17 @@ async function runText(request: AntigravityTextRequest, staged: StagedImages): P
   }
   const effort = request.effort || process.env.ANTIGRAVITY_EFFORT || match?.[1].toLowerCase()
 
+  if (!staged.note) {
+    const warmTried = Date.now()
+    const turn = await inSlot(async () => ({ turn: await warm.run(request.label, fullPrompt, warmModelId(model, effort)) }))
+    const text = turn.turn?.text.trim()
+    if (turn.turn) recordWarmUsage(request.label, model, effort, turn.turn, turn.queueMs, !text)
+    if (turn.turn && text) {
+      const u = turn.turn.usage
+      return { text, model, usage: { input: u?.inputTokens ?? 0, output: u?.outputTokens ?? 0, thinking: u?.thoughtTokens ?? 0 }, ms: Date.now() - warmTried }
+    }
+  }
+
   const args = [
     '-p',
     fullPrompt,
@@ -429,13 +534,14 @@ async function runText(request: AntigravityTextRequest, staged: StagedImages): P
     ...staged.args,
   ]
   const started = Date.now()
-  let { code, stdout, stderr } = await inSlot(() => runCli(args))
+  let { code, stdout, stderr, queueMs } = await inSlot(() => runCli(args))
   if (code !== 0 && effort && (stderr.includes('--effort is not supported') || stderr.includes('effort is not supported') || stderr.includes('conflicts with --effort'))) {
     const retryArgs = ['-p', fullPrompt, '--output-format', 'json', '--disable-slash-commands', '--model', model, ...staged.args]
     const retryRes = await inSlot(() => runCli(retryArgs))
     code = retryRes.code
     stdout = retryRes.stdout
     stderr = retryRes.stderr
+    queueMs += retryRes.queueMs
   }
   const ms = Date.now() - started
 
@@ -467,6 +573,8 @@ async function runText(request: AntigravityTextRequest, staged: StagedImages): P
     provider: 'antigravity',
     ...(effort ? { effort } : {}),
     ...(usable ? {} : { failed: true }),
+    // S (CLI start-up and shutdown) ≈ ms − queueMs − duration_seconds × 1000.
+    ...cliTimes(out, queueMs),
   })
 
   if (out.status !== 'SUCCESS') throw new ApiError(502, `Antigravity CLI: ${(out.error ?? out.response ?? 'the request failed').slice(0, 400)}`)

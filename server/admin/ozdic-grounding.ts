@@ -1,12 +1,31 @@
-// Dictionary grounding for Admin → Vocabulary and Admin → Notes → Generate. Step 1: Gemini turns what the admin typed into
-// its dictionary base form ("decisions" → decision, "made up my mind" → make up your mind) and names the headword(s) to
-// look up. Step 2: each headword is looked up in Longman (server/writing-review/longman.ts); only when Longman has no
-// COLLOCATIONS box for it is OZDIC (Oxford Collocations, server/writing-review/ozdic.ts) looked up. Both are cached. The
+// Dictionary grounding for Admin → Vocabulary and Admin → Notes → Generate. Step 1: what the admin typed is normalised
+// (server/admin/headword.ts); a single word without an inflection sign whose Longman page has that exact headword is its
+// own base form, otherwise Gemini turns it into its dictionary base form ("decisions" → decision, "made up my mind" →
+// make up your mind) and names the headword(s) to look up. Step 2: each headword is looked up in Longman
+// (server/writing-review/longman.ts); when Longman has no COLLOCATIONS box for it, or fails, OZDIC (Oxford Collocations,
+// server/writing-review/ozdic.ts) is looked up at once. Nothing waits for a rate limit: a source that fails is skipped,
+// and when neither has data the entry is written by the AI alone and says so (dictionarySource "none" + a note). The
 // entries go into the main prompt, so collocations and patterns the admin wrote wrongly are corrected against them.
 import type { ApiContext } from '../api.ts'
-import { formatLongman, lookupLongman } from '../writing-review/longman.ts'
-import { lookupLemma, type OzdicEntry } from '../writing-review/ozdic.ts'
+import type { ThinkingLevel } from '../gemini.ts'
+import { formatLongman, lookupLongman, markPrefetched, type LongmanEntry, type LookupStats } from '../writing-review/longman.ts'
+import { lookup as lookupOzdic, lookupLemma, type OzdicEntry } from '../writing-review/ozdic.ts'
 import { generateLogged } from './ai.ts'
+import { lookupAsTyped, normalizeTerm } from './headword.ts'
+
+/** ADMIN_GENERATE_EFFORT=low|medium|high, low by default: Admin Generate is not pulled up by GEMINI_THINKING. */
+export function adminEffort(): ThinkingLevel {
+  return (['low', 'medium', 'high'] as const).find((l) => l === process.env.ADMIN_GENERATE_EFFORT) ?? 'low'
+}
+
+/** ADMIN_LEMMA_FAST_PATH=off always asks Gemini for the base form. */
+export const lemmaFastPathEnabled = () => (process.env.ADMIN_LEMMA_FAST_PATH ?? 'on').toLowerCase() !== 'off'
+
+/** Longman has a page whose headword is exactly this word ("access" also matches "Access"). */
+export function longmanHasHeadword(entry: LongmanEntry, word: string): boolean {
+  const key = normalizeTerm(word)
+  return entry.found && entry.entries.some((h) => normalizeTerm(h.headword) === key)
+}
 
 const MAX_HEADWORDS = 2
 
@@ -17,6 +36,10 @@ export interface LemmaResult {
   /** Single words whose OZDIC entries are looked up ("take responsibility" → responsibility). */
   headwords: string[]
   note_vi: string
+  /** The headwords are base forms: from Gemini, or a word Longman lists as typed (no singular forms are tried on OZDIC). */
+  baseForms?: boolean
+  /** The AI base-form call was skipped: Longman has a page for the word exactly as typed. */
+  skipped?: boolean
 }
 
 const LEMMA_SCHEMA = {
@@ -55,13 +78,19 @@ export async function toLemma(ctx: ApiContext, word: string, description: string
     const res = await generateLogged<{ lemma?: string; headwords?: string[]; note_vi?: string }>(ctx, `vocabulary lemma: ${word}`, {
       prompt: lemmaPrompt(word, description),
       schema: LEMMA_SCHEMA,
-      thinking: 'low',
+      thinking: adminEffort(),
       retries: 2,
     })
     const lemma = (res.value.lemma ?? '').trim().replace(/\s+/g, ' ').slice(0, 120) || word
     const headwords = [...new Set((res.value.headwords ?? []).map((h) => h.trim().toLowerCase()).filter((h) => /^[a-z][a-z'-]*$/.test(h)))].slice(0, MAX_HEADWORDS)
     return {
-      result: { input: word, lemma, headwords: headwords.length ? headwords : fallback.headwords, note_vi: lemma === word ? '' : (res.value.note_vi ?? '').trim() },
+      result: {
+        input: word,
+        lemma,
+        headwords: (headwords.length ? headwords : fallback.headwords).map((h) => normalizeTerm(h)),
+        note_vi: lemma === word ? '' : (res.value.note_vi ?? '').trim(),
+        baseForms: headwords.length > 0,
+      },
       usage: res.usage,
     }
   } catch (error) {
@@ -103,15 +132,58 @@ export async function noteLemma(ctx: ApiContext, input: string): Promise<{ resul
     const res = await generateLogged<{ title?: string; headwords?: string[]; note_vi?: string }>(ctx, `note lemma: ${firstLine.slice(0, 60)}`, {
       prompt: noteLemmaPrompt(input),
       schema: NOTE_SCHEMA,
-      thinking: 'low',
+      thinking: adminEffort(),
       retries: 2,
     })
     const title = (res.value.title ?? '').trim().replace(/\s+/g, ' ').slice(0, 200)
     const headwords = [...new Set((res.value.headwords ?? []).map((h) => h.trim().toLowerCase()).filter((h) => /^[a-z][a-z'-]*$/.test(h)))].slice(0, 3)
-    return { result: { input: firstLine, lemma: title || firstLine, headwords, note_vi: (res.value.note_vi ?? '').trim() }, usage: res.usage }
+    return {
+      result: { input: firstLine, lemma: title || firstLine, headwords: headwords.map((h) => normalizeTerm(h)), note_vi: (res.value.note_vi ?? '').trim(), baseForms: true },
+      usage: res.usage,
+    }
   } catch (error) {
     return { result: { input: firstLine, lemma: firstLine, headwords: [], note_vi: '' }, error: (error as Error).message }
   }
+}
+
+interface LemmaStep {
+  result: LemmaResult
+  usage?: unknown
+  error?: string
+}
+
+/**
+ * Step 1 with the fast path: a single word without an inflection sign ("decision", not "decisions" or "took") is looked
+ * up in Longman as typed (cached, else fetched); when Longman has that exact headword it is the base form and Gemini is
+ * not asked. Anything else — a phrase, an inflected form, a word Longman does not list — goes to Gemini first, and only
+ * the headwords it returns are looked up (never the form as typed: its page almost never exists).
+ */
+async function withFastPath(typed: string, stats: LookupStats, ai: () => Promise<LemmaStep>): Promise<LemmaStep & { lemmaMs: number }> {
+  const word = normalizeTerm(typed)
+  if (lemmaFastPathEnabled() && lookupAsTyped(word)) {
+    const entry = await lookupLongman(word, { wait: false, stats })
+    if (longmanHasHeadword(entry, word)) {
+      const lemma = normalizeTerm(typed, { lower: false })
+      return { result: { input: typed, lemma, headwords: [word], note_vi: '', baseForms: true, skipped: true }, lemmaMs: 0 }
+    }
+  }
+  const aiStarted = Date.now()
+  const step = await ai()
+  return { ...step, lemmaMs: Date.now() - aiStarted }
+}
+
+/** Vocabulary step 1: the fast path, else `toLemma`. `lemmaMs` is the AI call only (0 when skipped). */
+export function resolveLemma(ctx: ApiContext, word: string, description: string, stats: LookupStats) {
+  return withFastPath(word, stats, () => toLemma(ctx, word, description))
+}
+
+/**
+ * Notes step 1: the fast path only when the whole first line is one word (a note is usually a phrase or a comparison,
+ * which Gemini must read), else `noteLemma`.
+ */
+export function resolveNoteLemma(ctx: ApiContext, input: string, stats: LookupStats) {
+  const firstLine = input.trim().split('\n')[0].slice(0, 120)
+  return withFastPath(firstLine, stats, () => noteLemma(ctx, input))
 }
 
 export interface OzdicSource {
@@ -122,6 +194,8 @@ export interface OzdicSource {
   oxford: boolean
   /** oxford/no_oxford: OZDIC; collocations/senses_only/not_found: Longman (senses_only = no COLLOCATIONS box). */
   status: 'oxford' | 'no_oxford' | 'collocations' | 'senses_only' | 'not_found' | 'unavailable' | 'error'
+  /** Why the lookup failed ("HTTP 429", "timeout"…), when status is unavailable. */
+  reason?: string
 }
 
 /** Oxford Collocations entry as plain text for the prompt: every sense, every group, a few examples each (optional). */
@@ -138,6 +212,8 @@ function formatEntry(entry: OzdicEntry, withExamples: boolean): string {
   return lines.join('\n')
 }
 
+export type DictionarySource = 'longman' | 'ozdic' | 'both' | 'none'
+
 export interface DictionaryReference {
   text: string
   /** Only the listed combinations (no definitions or examples), to check what Gemini says it took from a dictionary. */
@@ -145,65 +221,129 @@ export interface DictionaryReference {
   sources: OzdicSource[]
   /** How many collocations the reference lists: few (< 6) means Gemini may add well-known ones of its own. */
   collocationCount: number
+  /** Which dictionaries gave data; saved on the entry. */
+  dictionarySource: DictionarySource
+  /** Vietnamese note for the admin when a headword (or every one) had no dictionary data; '' when all had some. */
+  dictionaryNote: string
+  /** Why Longman failed for a headword, if it did ("HTTP 429", "timeout"…). */
+  longmanError?: string
 }
 
+const longmanReason = (entry: LongmanEntry) => (entry.unavailable ? entry.reason || 'không truy cập được' : 'không có trang')
+const ozdicReason = (entry: OzdicEntry) => (entry.unavailable ? entry.reason || 'không truy cập được' : entry.found ? 'không có dữ liệu Oxford' : 'không có trang')
+
+const AI_ONLY = 'nội dung do AI tự tạo, nên kiểm tra lại collocations.'
+
 /**
- * Looks each headword up in Longman first; only when Longman has no COLLOCATIONS box for it (no entry, or senses only) is
- * OZDIC (Oxford Collocations) looked up too. Never throws: a missing or blocked entry only means less grounding.
- * `examples: false` leaves dictionary example sentences out (notes copy them too eagerly).
+ * Looks every headword up side by side: Longman first; when Longman has no COLLOCATIONS box for it (no page, senses
+ * only) or fails (429/503/403, challenge, timeout, network, paused), OZDIC (Oxford Collocations) at once. Longman
+ * requests still go out one every LONGMAN_GAP_MS (an OZDIC page can be fetched in between); nothing sleeps for a
+ * Retry-After. Never throws: a missing or blocked entry only means less grounding, reported in `dictionaryNote`.
+ * `examples: false` leaves dictionary example sentences out (notes copy them too eagerly). `baseForms`: the headwords
+ * are already base forms, so no singular forms are tried on OZDIC.
  */
-export async function ozdicReference(headwords: string[], { examples = true } = {}): Promise<DictionaryReference> {
-  const sources: OzdicSource[] = []
-  const blocks: string[] = []
-  const items: string[] = []
-  let collocationCount = 0
-  for (const word of headwords) {
-    let longmanCollocations = 0
-    try {
-      const entry = await lookupLongman(word)
-      const collocates = entry.entries.flatMap((h) => h.collocations.flatMap((c) => c.collocates.map((x) => x.phrase)))
-      const inline = entry.entries.flatMap((h) => h.senses.flatMap((x) => x.inline))
-      const status = entry.unavailable ? 'unavailable' : !entry.found ? 'not_found' : collocates.length ? 'collocations' : 'senses_only'
-      sources.push({ dictionary: 'longman', word: entry.word, url: entry.url, oxford: entry.found, status })
-      if (entry.found) {
+export async function dictionaryReference(
+  headwords: string[],
+  { examples = true, baseForms = false, stats }: { examples?: boolean; baseForms?: boolean; stats?: LookupStats } = {},
+): Promise<DictionaryReference> {
+  const looked = await Promise.all(
+    headwords.map(async (word) => {
+      const sources: OzdicSource[] = []
+      const blocks: string[] = []
+      const items: string[] = []
+      let count = 0
+      const longman = await lookupLongman(word, { wait: false, stats })
+      const collocates = longman.entries.flatMap((h) => h.collocations.flatMap((c) => c.collocates.map((x) => x.phrase)))
+      const inline = longman.entries.flatMap((h) => h.senses.flatMap((x) => x.inline))
+      sources.push({
+        dictionary: 'longman',
+        word: longman.word,
+        url: longman.url,
+        oxford: longman.found,
+        status: longman.unavailable ? 'unavailable' : !longman.found ? 'not_found' : collocates.length ? 'collocations' : 'senses_only',
+        ...(longman.unavailable ? { reason: longmanReason(longman) } : {}),
+      })
+      if (longman.found) {
         // Senses are kept even without a collocations box: they are clear learner definitions.
-        blocks.push(`# Longman (LDOCE)\n${formatLongman(entry, examples)}`)
+        blocks.push(`# Longman (LDOCE)\n${formatLongman(longman, examples)}`)
         items.push(...collocates, ...inline)
-        collocationCount += collocates.length + inline.length
-        longmanCollocations = collocates.length
+        count += collocates.length + inline.length
       }
-    } catch {
-      sources.push({ dictionary: 'longman', word, url: `https://www.ldoceonline.com/dictionary/${encodeURIComponent(word)}`, oxford: false, status: 'error' })
-    }
-    if (longmanCollocations) continue
-    try {
-      const entry = await lookupLemma(word)
-      const status = entry.unavailable ? 'unavailable' : entry.oxford && entry.senses.length ? 'oxford' : 'no_oxford'
-      sources.push({ dictionary: 'ozdic', word: entry.word || word, url: entry.url || `https://ozdic.com/word/${encodeURIComponent(word)}`, oxford: status === 'oxford', status })
-      if (status === 'oxford') {
-        blocks.push(`# OZDIC (Oxford Collocations)\n${formatEntry(entry, examples)}`)
-        for (const sense of entry.senses) {
-          for (const group of sense.groups) {
-            items.push(group.category, ...group.items)
-            collocationCount += group.items.length
+      let ozdic: OzdicEntry | undefined
+      if (!collocates.length) {
+        ozdic = await (baseForms ? lookupOzdic : lookupLemma)(word, { wait: false, stats })
+        const status = ozdic.unavailable ? 'unavailable' : ozdic.oxford && ozdic.senses.length ? 'oxford' : 'no_oxford'
+        sources.push({
+          dictionary: 'ozdic',
+          word: ozdic.word || word,
+          url: ozdic.url || `https://ozdic.com/word/${encodeURIComponent(word)}`,
+          oxford: status === 'oxford',
+          status,
+          ...(ozdic.unavailable ? { reason: ozdicReason(ozdic) } : {}),
+        })
+        if (status === 'oxford') {
+          blocks.push(`# OZDIC (Oxford Collocations)\n${formatEntry(ozdic, examples)}`)
+          for (const sense of ozdic.senses) {
+            for (const group of sense.groups) {
+              items.push(group.category, ...group.items)
+              count += group.items.length
+            }
           }
         }
       }
-    } catch {
-      sources.push({ dictionary: 'ozdic', word, url: `https://ozdic.com/word/${encodeURIComponent(word)}`, oxford: false, status: 'error' })
-    }
+      const fromOzdic = sources.some((src) => src.dictionary === 'ozdic' && src.oxford)
+      return {
+        word,
+        sources,
+        blocks,
+        items,
+        count,
+        longman: longman.found,
+        ozdic: fromOzdic,
+        longmanError: longman.unavailable ? longmanReason(longman) : undefined,
+        missing: !longman.found && !fromOzdic ? `Longman (${longmanReason(longman)}) và OZDIC (${ozdic ? ozdicReason(ozdic) : 'không tra'})` : '',
+      }
+    }),
+  )
+  const usedLongman = looked.some((l) => l.longman)
+  const usedOzdic = looked.some((l) => l.ozdic)
+  const dictionarySource: DictionarySource = usedLongman && usedOzdic ? 'both' : usedLongman ? 'longman' : usedOzdic ? 'ozdic' : 'none'
+  const missing = looked.filter((l) => l.missing)
+  const dictionaryNote = !looked.length
+    ? `Không có từ khoá nào để tra từ điển: ${AI_ONLY}`
+    : dictionarySource === 'none'
+      ? looked.length === 1
+        ? `Không lấy được ${missing[0].missing}: ${AI_ONLY}`
+        : `Không lấy được từ điển cho ${missing.map((m) => `«${m.word}»: ${m.missing}`).join('; ')}: ${AI_ONLY}`
+      : missing.length
+        ? `Không có dữ liệu từ điển cho ${missing.map((m) => `«${m.word}»: ${m.missing}`).join('; ')}.`
+        : ''
+  return {
+    text: looked.flatMap((l) => l.blocks).join('\n\n'),
+    lexicon: looked.flatMap((l) => l.items).join('\n'),
+    sources: looked.flatMap((l) => l.sources),
+    collocationCount: looked.reduce((n, l) => n + l.count, 0),
+    dictionarySource,
+    dictionaryNote,
+    longmanError: looked.find((l) => l.longmanError)?.longmanError,
   }
-  return { text: blocks.join('\n\n'), lexicon: items.join('\n'), sources, collocationCount }
 }
+
+/** Sent when neither dictionary had data, so the model does not claim anything comes "from Longman" or "from OZDIC". */
+const NO_REFERENCE_PROMPT = [
+  '',
+  '### NO DICTIONARY REFERENCE',
+  'Longman and OZDIC could not be used for this item, so there is NO dictionary reference. Work from the notes and your own knowledge; never say or imply that anything comes from Longman, OZDIC, Oxford or any other dictionary. Keep only combinations you are certain are standard and frequent.',
+].join('\n')
 
 const REFERENCE_INTRO = [
   'Longman (LDOCE) is the main dictionary: numbered senses (with bold combinations used in them, "[in use: …]") and a COLLOCATIONS box listing whole combinations, often with a gloss "(= …)".',
   'OZDIC (Oxford Collocations) appears only for words Longman has no collocations box for: categories read like "VERB + DECISION" (verbs used before the noun), "ADJ." (adjectives before it), "PREP." (prepositions), "PHRASES". Both are reliable; together they are the DICTIONARY REFERENCE.',
 ]
 
-/** Main-prompt section with the dictionary data and how to use it. Empty when neither dictionary had data. */
+/** Main-prompt section with the dictionary data and how to use it; says plainly that there is none when neither dictionary had data. */
 export function ozdicPrompt(reference: string): string {
-  if (!reference) return ''
+  if (!reference) return NO_REFERENCE_PROMPT
   return [
     '',
     '### DICTIONARY REFERENCE (Longman, then OZDIC / Oxford Collocations)',
@@ -280,7 +420,7 @@ export function ozdicNotePrompt(reference: string, title: string): string {
           '',
           reference,
         ]
-      : []),
+      : [NO_REFERENCE_PROMPT]),
   ].join('\n')
 }
 
@@ -336,4 +476,22 @@ export function corrections(value: unknown): OzdicCorrection[] {
     .filter((c): c is Record<string, unknown> => Boolean(c) && typeof c === 'object')
     .map((c) => ({ original: String(c.original ?? '').trim(), corrected: String(c.corrected ?? '').trim(), reason_vi: String(c.reason_vi ?? '').trim() }))
     .filter((c) => c.original && c.corrected && c.original.toLowerCase() !== c.corrected.toLowerCase())
+}
+
+/**
+ * Warms the dictionary cache for a word the admin has typed (the "Word" field lost focus): Longman, and OZDIC when
+ * Longman has no collocations box. Only a single word without an inflection sign, through the same polite gap; never
+ * calls the AI nor starts agy. Returns false when the word is not looked up.
+ */
+export function prefetchDictionary(typed: string): { word: string; started: boolean } {
+  const word = normalizeTerm(typed)
+  if (!lookupAsTyped(word)) return { word, started: false }
+  void (async () => {
+    const stats: LookupStats = { requests: 0, cacheHits: 0, waitMs: 0 }
+    const entry = await lookupLongman(word, { wait: false, stats })
+    if (stats.requests) markPrefetched(word)
+    const collocates = entry.entries.some((h) => h.collocations.length)
+    if (!collocates) await lookupOzdic(word, { wait: false })
+  })().catch((error) => console.warn(`[admin-generate] prefetch ${word}:`, (error as Error).message))
+  return { word, started: true }
 }

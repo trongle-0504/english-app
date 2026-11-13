@@ -10,7 +10,9 @@ import { stopCoach } from './coach/service.ts'
 import { loadEnv } from './env.ts'
 import { startNewsScheduler } from './news/service.ts'
 import { startPlannerScheduler } from './planner/scheduler.ts'
+import { startDrillsScheduler } from './admin/drills-nightly.ts'
 import { routes } from './routes.ts'
+import { stopWarmAgent } from './llm/antigravity-cli.ts'
 
 const rootDir = path.resolve(import.meta.dirname, '..')
 const distDir = path.join(rootDir, 'dist')
@@ -27,6 +29,7 @@ watch(contentDir, { recursive: true }, (_event, file) => {
 const api = createApiMiddleware({ contentDir, rootDir, onContentChange: store.invalidate }, routes)
 startNewsScheduler({ rootDir })
 startPlannerScheduler({ rootDir, contentDir })
+startDrillsScheduler({ rootDir, contentDir, onContentChange: store.invalidate })
 const data = store.middleware({ cache: 'no-cache', compress: true })
 
 const MIME: Record<string, string> = {
@@ -104,6 +107,7 @@ server.listen(port, () => console.log(`English App running at http://localhost:$
 // The coach's agent process and MCP listener stop with the server (they start only on the first coach question).
 for (const signal of ['SIGTERM', 'SIGINT'] as const) {
   process.once(signal, () => {
+    stopWarmAgent()
     void stopCoach().finally(() => process.exit(0))
   })
 }

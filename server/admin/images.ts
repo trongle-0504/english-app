@@ -118,7 +118,8 @@ export async function firstImages(query: string, limit = 3): Promise<ImageCandid
   return []
 }
 
-export async function storeImage(ctx: ApiContext, word: string, url: string, folder = 'vocab-images'): Promise<string> {
+/** Downloads a picture and shrinks it to a 640px WebP (no file is written). */
+export async function downloadImage(url: string): Promise<Buffer> {
   if (!/^https:\/\//.test(url)) throw new ApiError(400, 'Only https image URLs can be saved.')
   const res = await fetch(url, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(20_000) })
   if (!res.ok) throw new ApiError(502, `Could not download the picture (HTTP ${res.status}).`)
@@ -129,15 +130,23 @@ export async function storeImage(ctx: ApiContext, word: string, url: string, fol
   } catch {
     throw new ApiError(503, 'Saving pictures needs the "sharp" package (npm install).')
   }
-  const webp = await sharp(Buffer.from(await res.arrayBuffer()))
+  return sharp(Buffer.from(await res.arrayBuffer()))
     .rotate()
     .resize({ width: 640, height: 640, fit: 'inside', withoutEnlargement: true })
     .webp({ quality: 78 })
     .toBuffer()
+}
+
+/** Writes a downloaded picture to public/<folder>/<slug>.webp and returns its URL. */
+export async function writeImage(ctx: ApiContext, word: string, webp: Buffer, folder = 'vocab-images'): Promise<string> {
   const name = slugify(word) || 'item'
   const dir = path.join(ctx.rootDir, 'public', folder)
   await mkdir(dir, { recursive: true })
   await writeFile(path.join(dir, `${name}.webp`), webp)
   // The version query busts browser caches when an item's picture is replaced.
   return `/${folder}/${name}.webp?v=${Date.now().toString(36)}`
+}
+
+export async function storeImage(ctx: ApiContext, word: string, url: string, folder = 'vocab-images'): Promise<string> {
+  return writeImage(ctx, word, await downloadImage(url), folder)
 }

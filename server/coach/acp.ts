@@ -79,6 +79,8 @@ export class AcpClient {
   private idleTimer: NodeJS.Timeout | null = null
   private generation = 0
   private readonly opts: AcpClientOptions
+  /** What `initialize` returned: the agent's capabilities (prompt content types it accepts…). */
+  agentCapabilities: { promptCapabilities?: { image?: boolean; embeddedContext?: boolean; audio?: boolean } } | null = null
 
   constructor(opts: AcpClientOptions = {}) {
     this.opts = opts
@@ -86,6 +88,11 @@ export class AcpClient {
 
   get cwd(): string {
     return this.opts.cwd ?? EMPTY_CWD
+  }
+
+  /** The running agent's process id, if any. */
+  get pid(): number | undefined {
+    return this.child?.pid
   }
 
   isLive(sessionId: string): boolean {
@@ -109,7 +116,11 @@ export class AcpClient {
     child.on('error', (error) => this.onExit(generation, `cannot start the agent: ${error.message}`))
     child.on('exit', (code, signal) => this.onExit(generation, `the agent stopped (${signal ?? code})`))
     readline.createInterface({ input: child.stdout }).on('line', (line) => this.onLine(line))
-    await this.request('initialize', { protocolVersion: 1, clientCapabilities: { fs: { readTextFile: false, writeTextFile: false }, terminal: false } })
+    const init = await this.request<{ agentCapabilities?: AcpClient['agentCapabilities'] }>('initialize', {
+      protocolVersion: 1,
+      clientCapabilities: { fs: { readTextFile: false, writeTextFile: false }, terminal: false },
+    })
+    this.agentCapabilities = init?.agentCapabilities ?? null
   }
 
   private onExit(generation: number, reason: string) {

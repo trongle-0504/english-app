@@ -5,10 +5,12 @@ import { adminApi, refreshSiteData, useAdminResource } from './api'
 import { EntryEditor } from './EntryEditor'
 import { ImageAttachments } from './ImageAttachments'
 import { WordCard } from '../words/WordCard'
-import { ImagePicker, type ImageCandidate } from './ImagePicker'
+import { ImagePicker } from './ImagePicker'
 import { previewWord } from './wordPreview'
 import { ReviewDrills } from './ReviewDrills'
 import { OzdicSummary, type OzdicGrounding } from './OzdicSummary'
+import { BackgroundJobStatus, DrillsNowButton, DrillsPanel, type GenerateJob } from './GenerateExtras'
+import { lacksDrills } from './drillsState'
 import { EditorSkeleton, Field, NamePicker, Panel, StatusAlert, TextArea, TextInput, Toggle } from './ui'
 import { parseJson, readFileAsBase64, slugify, useAction, useAdminContext } from './utils'
 
@@ -39,14 +41,15 @@ interface GenerateResponse {
   placement: Placement
   /** Gemini chose the topic / sub-topic because none was picked. */
   autoPlaced?: boolean
-  practice?: { file: string; added: number; replaced: number }
-  practiceError?: string
   lemma?: OzdicGrounding['lemma']
   lemmaError?: string
   ozdic?: OzdicGrounding['ozdic']
   notes?: OzdicGrounding['notes']
-  /** Gemini's scene description and the picture candidates found with it (the first one is already saved). */
-  image?: { query: string; candidates: ImageCandidate[] }
+  timings?: OzdicGrounding['timings']
+  /** Picture and practice questions made in the background after saving. */
+  job?: GenerateJob
+  /** Gemini's scene description: the picker searches with it when it opens. */
+  image?: { query: string }
 }
 
 const isEntry = (value: unknown): value is WordEntry =>
@@ -123,18 +126,25 @@ export default function VocabularyAdminPage() {
       showEntry(res.entry, [res.placement])
       setGenerated(res)
       editor.setStatus(null)
-      refreshSiteData('vocabulary', ...(res.practice ? ['practice'] : []))
+      refreshSiteData('vocabulary')
       overview.reload()
       form.setStatus({
-        tone: res.practiceError ? 'warning' : 'success',
-        message: res.practiceError
-          ? `"${res.entry.word}" was saved, but practice generation failed: ${res.practiceError}`
-          : `"${res.entry.word}" ${res.action === 'created' ? 'added to' : 'updated in'} ${res.placement.topic} › ${res.placement.subTopic}${res.autoPlaced ? ' (chosen by AI)' : ''}${res.action === 'created' ? ' — it is in today’s review session' : ''}.`,
+        tone: res.ozdic?.dictionarySource === 'none' ? 'warning' : 'success',
+        message: `"${res.entry.word}" ${res.action === 'created' ? 'added to' : 'updated in'} ${res.placement.topic} › ${res.placement.subTopic}${res.autoPlaced ? ' (chosen by AI)' : ''}${res.action === 'created' ? ' — it is in today’s review session' : ''}.${res.job ? ' Picture / practice are being made in the background.' : ''}`,
       })
       setWord('')
       setDescription('')
       setImages([])
     })
+
+  // A background part finished: show the stored picture; refresh practice data.
+  const onJobPart = (part: 'image' | 'practice', result: { status: string; result?: { entry?: Record<string, unknown> } }) => {
+    if (part === 'image' && result.status === 'done' && isEntry(result.result?.entry) && result.result.entry.word === original) {
+      showEntry(result.result.entry, placements)
+      refreshSiteData('vocabulary')
+    }
+    if (part === 'practice' && result.status === 'done') refreshSiteData('practice')
+  }
 
   const load = (name: string) =>
     editor.run('load', async () => {
@@ -208,7 +218,17 @@ export default function VocabularyAdminPage() {
             </div>
 
             <Field label="Word or phrase" htmlFor="vocab-word">
-              <TextInput id="vocab-word" value={word} onChange={(e) => setWord(e.target.value)} placeholder="e.g. boarding pass" required />
+              <TextInput
+                id="vocab-word"
+                value={word}
+                onChange={(e) => setWord(e.target.value)}
+                // Warms the Longman/OZDIC cache for a single base-form word (no AI call).
+                onBlur={() => {
+                  if (word.trim() && gemini) void adminApi('dictionary/prefetch', { method: 'POST', body: { word } }).catch(() => {})
+                }}
+                placeholder="e.g. boarding pass"
+                required
+              />
             </Field>
 
             <Field
@@ -245,12 +265,14 @@ export default function VocabularyAdminPage() {
               {!gemini ? <span className="text-xs text-slate-500">Needs GEMINI_API_KEY on the server.</span> : null}
               {form.pending === 'generate' ? (
                 <span className="text-xs text-slate-500">
-                  Base form → OZDIC + Longman → full entry: usually 15–40 seconds (a few more for a word looked up for the first time)…
+                  Base form → Longman / OZDIC → entry: usually 15–30 seconds (a few more for a word looked up for the first time). Picture and practice follow in the background; drills come with the 03:00 batch…
                 </span>
               ) : null}
             </div>
             <StatusAlert status={form.status} onDismiss={() => form.setStatus(null)} />
             {generated && !form.pending ? <OzdicSummary res={generated} /> : null}
+            {generated?.job && !form.pending ? <BackgroundJobStatus key={generated.job.id} job={generated.job} onPart={onJobPart} /> : null}
+            <DrillsPanel refreshKey={generated} />
           </form>
         </Panel>
         {original && current ? (
@@ -262,7 +284,7 @@ export default function VocabularyAdminPage() {
             initialQuery={
               generated?.entry.word === original ? generated.image?.query : typeof current.image_query === 'string' ? current.image_query : undefined
             }
-            initialCandidates={generated?.entry.word === original ? generated.image?.candidates : undefined}
+            autoSearch={generated?.entry.word === original}
             onSaved={(entry) => showEntry(entry, placements)}
           />
         ) : null}
@@ -308,11 +330,7 @@ export default function VocabularyAdminPage() {
                 ]}
               />
               {generated ? <Badge tone={generated.action === 'created' ? 'emerald' : 'sky'}>{generated.action}</Badge> : null}
-              {generated?.practice ? (
-                <Badge tone="violet" title={generated.practice.file}>
-                  +{generated.practice.added} practice questions
-                </Badge>
-              ) : null}
+              {current && lacksDrills(current) ? <DrillsNowButton kind="word" itemKey={original} onDone={(entry) => isEntry(entry) && showEntry(entry, placements)} /> : null}
               {placements.length ? (
                 <span className="ml-auto flex flex-wrap gap-1">
                   {placements.map((p) => (

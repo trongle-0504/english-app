@@ -1,5 +1,6 @@
 import { ExternalLink } from 'lucide-react'
 import { Badge } from '@/components/ui'
+import { TimingsLine, type GenerateTimings } from './GenerateExtras'
 
 /** What the base-form and dictionary (OZDIC, Longman) steps of a Generate request did (Admin → Vocabulary and Notes). */
 export interface OzdicGrounding {
@@ -14,7 +15,12 @@ export interface OzdicGrounding {
       url: string
       oxford: boolean
       status: 'oxford' | 'no_oxford' | 'collocations' | 'senses_only' | 'not_found' | 'unavailable' | 'error'
+      reason?: string
     }[]
+    /** Which dictionaries the entry rests on; "none" = written by the AI alone. */
+    dictionarySource?: 'longman' | 'ozdic' | 'both' | 'none'
+    /** Why a dictionary could not be used (Vietnamese), '' when all were. */
+    dictionaryNote?: string
     corrections: { original: string; corrected: string; reason_vi: string }[]
     /** Collocations chosen from the dictionaries because the notes had none (checked against the dictionary data). */
     added?: string[]
@@ -25,6 +31,8 @@ export interface OzdicGrounding {
   }
   /** How Gemini read the notes: sentences are examples, never collocations. */
   notes?: { examples: string[]; collocations: string[]; patterns: string[] }
+  /** Step times of the request. */
+  timings?: GenerateTimings
 }
 
 const count = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`
@@ -65,14 +73,20 @@ export function OzdicSummary({ res, subject = 'Base form', showInput = true }: {
           {ozdic.sources.length ? (
             ozdic.sources.map((src) => (
               <a key={`${src.dictionary ?? 'ozdic'}:${src.word}`} href={src.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1">
-                <Badge tone={src.oxford ? 'emerald' : 'amber'} title={SOURCE_STATUS[src.status]}>
-                  {src.dictionary === 'longman' ? 'Longman' : 'OZDIC'} · {src.word} · {SOURCE_STATUS[src.status]} <ExternalLink className="size-3" />
+                <Badge tone={src.oxford ? 'emerald' : 'amber'} title={src.reason ?? SOURCE_STATUS[src.status]}>
+                  {src.dictionary === 'longman' ? 'Longman' : 'OZDIC'} · {src.word} · {SOURCE_STATUS[src.status]}
+                  {src.reason ? ` (${src.reason})` : ''} <ExternalLink className="size-3" />
                 </Badge>
               </a>
             ))
           ) : (
             <span className="text-slate-500">no headword to look up</span>
           )}
+        </p>
+      ) : null}
+      {ozdic?.dictionaryNote ? (
+        <p className={ozdic.dictionarySource === 'none' ? 'font-medium text-amber-700 dark:text-amber-400' : 'text-amber-700 dark:text-amber-400'}>
+          {ozdic.dictionaryNote}
         </p>
       ) : null}
       {notes && notes.examples.length + notes.collocations.length + notes.patterns.length ? (
@@ -123,6 +137,7 @@ export function OzdicSummary({ res, subject = 'Base form', showInput = true }: {
       ) : ozdic?.sources.some((src) => src.oxford) && !ozdic.added?.length && !ozdic.unverifiedAdded?.length ? (
         <p className="text-slate-500">Nothing needed correcting — your collocations and patterns matched the dictionaries.</p>
       ) : null}
+      <TimingsLine timings={res.timings} />
     </div>
   )
 }

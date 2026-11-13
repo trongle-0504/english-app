@@ -1,5 +1,6 @@
 // Practice questions generated from a vocabulary entry, merged into content/practice/quiz/<Topic>_<SubTopic>.json
 // (the folder the practice pages are built from).
+import { adminEffort } from './ozdic-grounding.ts'
 import { slugify } from '../../content-pipeline/shared.ts'
 import type { RawVocabWord } from '../../content-pipeline/vocabulary.ts'
 import type { QuizQuestion } from '../../src/types/content.ts'
@@ -105,6 +106,7 @@ export async function buildQuestions(ctx: ApiContext, entry: RawVocabWord): Prom
       prompt,
       schema: DISTRACTOR_SCHEMA,
       temperature: 0.7,
+      thinking: adminEffort(),
     })
     for (const item of value.cases ?? []) {
       const source = cases[(item.case ?? 0) - 1]
