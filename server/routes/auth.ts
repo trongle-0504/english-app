@@ -224,7 +224,8 @@ export const authRoutes: Record<string, ApiHandler> = {
   /** → `{ open, turnstileSiteKey }`: whether the sign-up form is offered. */
   'GET /auth/register/config': async () => {
     const settings = await readSettings()
-    return { json: { open: multiUser() && settings.registration === 'open', turnstileSiteKey: turnstileSiteKey() } }
+    if (!multiUser()) throw new ApiError(404, 'Not found')
+    return { json: { multi: true, open: settings.registration === 'open', turnstileSiteKey: turnstileSiteKey() } }
   },
 
   /**

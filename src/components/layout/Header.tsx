@@ -7,7 +7,8 @@ import { cn } from '@/lib/cn'
 import { useTheme, type ThemePreference } from '@/lib/theme'
 import { Logo } from './Logo'
 import { MobileNav } from './MobileNav'
-import { activeItem, AdminIcon, adminNav, isGroupActive, navGroups, type NavItem } from './nav'
+import { activeItem, AdminIcon, adminMenuLabel, adminNavFor, isGroupActive, navGroups, type NavItem } from './nav'
+import { currentUser, isMultiUser } from '@/features/auth/session'
 
 const triggerClass = (active: boolean) =>
   cn(
@@ -116,8 +117,8 @@ function AdminMenu() {
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
         <DropdownMenu.Content align="end" sideOffset={8} className={cn(menuContentClass, 'min-w-48')}>
-          <DropdownMenu.Label className="px-3 pt-1.5 pb-1 text-[11px] font-bold tracking-[0.16em] text-slate-400 uppercase">Admin</DropdownMenu.Label>
-          {adminNav.map((item) => (
+          <DropdownMenu.Label className="px-3 pt-1.5 pb-1 text-[11px] font-bold tracking-[0.16em] text-slate-400 uppercase">{adminMenuLabel(currentUser()?.role)}</DropdownMenu.Label>
+          {adminNavFor(currentUser()?.role, isMultiUser()).map((item) => (
             <DropdownMenu.Item key={item.to} asChild>
               <Link
                 to={item.to}

@@ -1,10 +1,10 @@
 import { Eye, EyeOff, LockKeyhole, ShieldCheck } from "lucide-react";
 import { useEffect, useState, type FormEvent } from "react";
-import { useSearchParams } from "react-router";
+import { Link, useSearchParams } from "react-router";
 import { Button, Card } from "@/components/ui";
 import { Field, TextInput } from "@/features/admin/ui";
 import { LoginBackdrop } from "./LoginBackdrop";
-import { fetchMe, login, login2fa, safeNext } from "./session";
+import { fetchMe, forgotPassword, loadRegisterConfig, login, login2fa, safeNext } from "./session";
 
 export default function LoginPage() {
   const [params] = useSearchParams();
@@ -18,6 +18,24 @@ export default function LoginPage() {
   // Set when the password was right and the account asks for its authenticator code.
   const [challenge, setChallenge] = useState("");
   const [code, setCode] = useState("");
+  // Multi-user app: sign-up link and "forgot password" (asks the admin; no email is sent).
+  const [signup, setSignup] = useState<{ multi: boolean; open: boolean }>({ multi: false, open: false });
+  const [forgotSent, setForgotSent] = useState("");
+
+  useEffect(() => {
+    loadRegisterConfig().then(setSignup, () => {});
+  }, []);
+
+  const forgot = async () => {
+    setError("");
+    if (!email.trim()) return setError("Nhập email của bạn trước, rồi bấm Quên mật khẩu.");
+    try {
+      await forgotPassword(email.trim());
+      setForgotSent("Đã báo admin. Admin sẽ gửi cho bạn mật khẩu tạm (qua Zalo/tin nhắn); đăng nhập bằng mật khẩu đó rồi đặt mật khẩu mới.");
+    } catch (e) {
+      setError((e as Error).message);
+    }
+  };
 
   // Already logged in (another tab, or the back button): go straight on. No account yet: say how to create one.
   useEffect(() => {
@@ -187,6 +205,23 @@ export default function LoginPage() {
                 {busy ? null : <LockKeyhole className="size-4" />}
                 Đăng nhập
               </Button>
+              {forgotSent ? (
+                <p role="status" className="rounded-xl bg-emerald-50 px-3 py-2 text-sm text-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-300">
+                  {forgotSent}
+                </p>
+              ) : null}
+              {signup.multi ? (
+                <div className="flex items-center justify-between text-sm">
+                  <button type="button" onClick={() => void forgot()} className="font-semibold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200">
+                    Quên mật khẩu?
+                  </button>
+                  {signup.open ? (
+                    <Link to="/register" className="font-semibold text-brand-700 hover:underline dark:text-brand-300">
+                      Đăng ký tài khoản
+                    </Link>
+                  ) : null}
+                </div>
+              ) : null}
             </form>
           )}
         </Card>

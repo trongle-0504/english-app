@@ -2,7 +2,9 @@ import { CheckCircle2, Eye, EyeOff, KeyRound } from 'lucide-react'
 import { useEffect, useState, type FormEvent } from 'react'
 import { Button, Card, PageHeader } from '@/components/ui'
 import { Field, TextInput } from '@/features/admin/ui'
-import { changePassword, fetchMe } from './session'
+import { useSearchParams } from 'react-router'
+import { AccountExtras } from './AccountExtras'
+import { changePassword, fetchMe, type AuthUser } from './session'
 import { TwoFactorCard } from './TwoFactorCard'
 
 /** Same rule as the server (server/auth/password.ts), checked here first for a quicker message. */
@@ -17,9 +19,14 @@ export default function AccountPage() {
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState('')
   const [done, setDone] = useState(false)
+  const [user, setUser] = useState<AuthUser | null>(null)
+  const [params] = useSearchParams()
 
   useEffect(() => {
-    fetchMe().then((me) => setEmail(me.user?.email ?? ''), () => {})
+    fetchMe().then((me) => {
+      setEmail(me.user?.email ?? '')
+      setUser(me.user)
+    }, () => {})
   }, [])
 
   const submit = async (event: FormEvent) => {
@@ -35,6 +42,8 @@ export default function AccountPage() {
       setNext('')
       setRepeat('')
       setDone(true)
+      // The admin-given password is replaced: the app opens fully (a fresh load re-reads the account).
+      if (user?.mustChangePassword) window.location.assign('/')
     } catch (e) {
       setError((e as Error).message)
     } finally {
@@ -46,6 +55,17 @@ export default function AccountPage() {
   return (
     <div className="mx-auto max-w-md pb-16">
       <PageHeader eyebrow="Account" title="Tài khoản" />
+
+      {params.get('first') || user?.mustChangePassword ? (
+        <p role="alert" className="mb-5 rounded-xl border border-amber-200 bg-amber-50 px-3 py-2.5 text-sm text-amber-900 dark:border-amber-900/60 dark:bg-amber-950/30 dark:text-amber-200">
+          Mật khẩu hiện tại do admin tạo. Hãy đặt mật khẩu mới của riêng bạn để bắt đầu dùng app.
+        </p>
+      ) : null}
+      {params.get('admin2fa') ? (
+        <p role="alert" className="mb-5 rounded-xl border border-amber-200 bg-amber-50 px-3 py-2.5 text-sm text-amber-900 dark:border-amber-900/60 dark:bg-amber-950/30 dark:text-amber-200">
+          Tài khoản admin phải bật xác thực hai lớp (bên dưới) trước khi dùng app.
+        </p>
+      ) : null}
 
       <Card className="p-4 sm:p-6">
         <p className="text-sm text-slate-500 dark:text-slate-400">Đang đăng nhập</p>
@@ -101,6 +121,7 @@ export default function AccountPage() {
       </Card>
 
       <TwoFactorCard />
+      <AccountExtras role={user?.role} />
     </div>
   )
 }

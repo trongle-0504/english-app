@@ -7,7 +7,8 @@ import { logout } from '@/features/auth/session'
 import { cn } from '@/lib/cn'
 import { AiBadge } from './Header'
 import { Logo } from './Logo'
-import { activeItem, adminNav, navGroups, type NavItem } from './nav'
+import { activeItem, adminMenuLabel, adminNav, adminNavFor, navGroups, type NavItem } from './nav'
+import { currentUser, isMultiUser } from '@/features/auth/session'
 
 function MobileLink({ item, active }: { item: NavItem; active: boolean }) {
   return (
@@ -84,8 +85,8 @@ export function MobileNav() {
               </div>
             ) : null}
             <div className="border-t border-slate-100 pt-4 dark:border-slate-800">
-              <p className="mb-1 px-3 text-[11px] font-bold tracking-[0.16em] text-slate-400 uppercase">Admin</p>
-              {adminNav.map((item) => (
+              <p className="mb-1 px-3 text-[11px] font-bold tracking-[0.16em] text-slate-400 uppercase">{adminMenuLabel(currentUser()?.role)}</p>
+              {adminNavFor(currentUser()?.role, isMultiUser()).map((item) => (
                 <MobileLink key={item.to} item={item} active={current?.to === item.to} />
               ))}
             </div>

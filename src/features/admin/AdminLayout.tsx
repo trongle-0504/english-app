@@ -1,7 +1,8 @@
 import { KeyRound, ServerOff, Sparkles } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { NavLink, Outlet } from 'react-router'
-import { adminNav } from '@/components/layout/nav'
+import { adminNavFor } from '@/components/layout/nav'
+import { currentUser, isMultiUser } from '@/features/auth/session'
 import { Button, EmptyState, PageHeader, Skeleton } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import { getAdminToken, setAdminToken, useTokenRejected } from './api'
@@ -78,7 +79,7 @@ export default function AdminLayout() {
       />
 
       <nav aria-label="Admin sections" className="mb-6 flex gap-1 overflow-x-auto rounded-2xl border border-slate-200/80 bg-white p-1 shadow-sm dark:border-slate-800 dark:bg-slate-900/60">
-        {adminNav.map(({ to, label, icon: Icon }) => (
+        {adminNavFor(currentUser()?.role, isMultiUser()).map(({ to, label, icon: Icon }) => (
           <NavLink
             key={to}
             to={to}

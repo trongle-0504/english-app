@@ -1,4 +1,5 @@
 // Vocabulary admin: content/vocabulary/{words,topics}.json (+ optional practice questions).
+import { adoptWord, inReference as inSharedBank } from '../users/reference.ts'
 import { slugify } from '../../content-pipeline/shared.ts'
 import type { RawVocabWord } from '../../content-pipeline/vocabulary.ts'
 import { ApiError, type ApiContext, type ApiHandler } from '../api.ts'
@@ -364,6 +365,14 @@ export const generateWord: ApiHandler = async (req, ctx) => {
   const withPractice = body.generateQuestions === true
   // Speaking ideas adds phrases with one click: never replace an entry that already exists.
   const onlyNew = body.onlyNew === true
+
+  // Multi-user app: a word in the shared bank is copied into the learner's library (no AI, no allowance).
+  if (process.env.MULTI_USER === '1' && inSharedBank(word)) {
+    const adopted = await adoptWord(ctx, word)
+    const entry = (await readJsonDoc<WordEntry[]>(wordsFile(ctx), [])).value.find((w) => wordKey(w.word) === wordKey(word))
+    if (!adopted.added && onlyNew) throw new ApiError(409, `"${word}" is already in Vocabulary.`)
+    return { json: { action: adopted.added ? 'created' : 'updated', entry, placement: { topic: adopted.topic, subTopic: adopted.subTopic }, autoPlaced: true, fromReference: true } }
+  }
 
   // Fail before spending tokens if the placement is wrong; otherwise Gemini picks it in the same request.
   const topics = topicList((await readJsonDoc<TopicFile>(topicsFile(ctx), { topics: [] })).value)

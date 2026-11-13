@@ -18,12 +18,27 @@
     "content/review/_example.json",
     "content/review/_example.md",
     "content/practice/speaking-mock",
-    "content/practice/writing-mock"
+    "content/practice/writing-mock",
+    "content/docs",
+    "content/samples"
   ],
   "minimalSkips": {
     "$comment": "Left out of the minimal pack (pack --minimal): pictures scripts/fetch-images.ts downloads again from their source, blog originals (the site serves the WebP copies in public/blog-images), recordings, PDFs (lessons show without their PDF tab), and what restore builds again: the pronunciation list (scripts/build-pronunciation.ts) and the topic collocations index (scripts/build-topic-index.ts, from the per-topic files).",
-    "paths": ["public/vocab-images", "public/note-images", "content/blog/images", "public/pronunciation", "content/topic-collocations/index.json"],
-    "extensions": [".wav", ".mp3", ".webm", ".ogg", ".m4a", ".pdf"]
+    "paths": [
+      "public/vocab-images",
+      "public/note-images",
+      "content/blog/images",
+      "public/pronunciation",
+      "content/topic-collocations/index.json"
+    ],
+    "extensions": [
+      ".wav",
+      ".mp3",
+      ".webm",
+      ".ogg",
+      ".m4a",
+      ".pdf"
+    ]
   },
   "neither": [
     ".env",

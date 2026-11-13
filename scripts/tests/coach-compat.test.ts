@@ -19,6 +19,8 @@ import { newsRoutes } from '../../server/routes/news.ts'
 import { notepadRoutes } from '../../server/routes/notepad.ts'
 import { plannerRoutes } from '../../server/routes/planner.ts'
 import { userRoutes } from '../../server/routes/users.ts'
+import { helpRoutes } from '../../server/routes/help.ts'
+import { referenceRoutes } from '../../server/users/reference.ts'
 import { practiceRoutes } from '../../server/routes/practice.ts'
 import { reportRoutes } from '../../server/routes/report.ts'
 import { reviewRoutes } from '../../server/routes/review.ts'
@@ -157,6 +159,8 @@ test('T-COMPAT-06: the route table — no module overwrites another, the coach a
     listeningRoutes,
     plannerRoutes,
     userRoutes,
+    helpRoutes,
+    referenceRoutes,
   ]
   const all = modules.flatMap((m) => Object.keys(m))
   assert.equal(new Set(all).size, all.length, 'a key is defined twice')

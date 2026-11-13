@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
-import { Outlet, ScrollRestoration, useLocation } from 'react-router'
+import { Link, Outlet, ScrollRestoration, useLocation } from 'react-router'
 import { PageSkeleton } from '@/components/ui'
+import { isMultiUser, setViewAs, viewingAs } from '@/features/auth/session'
 import { Footer } from './Footer'
 import { Header } from './Header'
 
@@ -65,6 +66,8 @@ export function AppShell() {
       >
         Skip to content
       </a>
+      <ViewAsBanner />
+      <WelcomeBanner />
       <Header onOpenLookup={() => openLookup(true)} />
       <main id="main" className="mx-auto w-full max-w-7xl flex-1 px-2 pb-20 sm:px-6">
         <Suspense fallback={<PageSkeleton />}>
@@ -81,6 +84,52 @@ export function AppShell() {
         <CoachButton />
       </Suspense>
       <ScrollRestoration getKey={(location) => location.pathname} />
+    </div>
+  )
+}
+
+/** Admin reading a learner's pages (multi-user app): always visible, with the way back. */
+function ViewAsBanner() {
+  const viewAs = viewingAs()
+  if (!viewAs) return null
+  return (
+    <div role="status" className="sticky top-0 z-50 flex items-center justify-center gap-3 bg-amber-400 px-3 py-1.5 text-sm font-semibold text-amber-950">
+      Đang xem như học viên: {viewAs.name} (chỉ đọc)
+      <button type="button" className="rounded bg-amber-950/10 px-2 py-0.5 hover:bg-amber-950/20" onClick={() => setViewAs(null, '/admin/users')}>
+        Thoát
+      </button>
+    </div>
+  )
+}
+
+/** Multi-user app: a first-visit pointer to the getting-started page and Nova (dismissed for good on this device). */
+function WelcomeBanner() {
+  const [seen, setSeen] = useState(() => {
+    try {
+      return localStorage.getItem('welcomeSeen') === '1'
+    } catch {
+      return true
+    }
+  })
+  if (seen || !isMultiUser() || viewingAs()) return null
+  const close = () => {
+    try {
+      localStorage.setItem('welcomeSeen', '1')
+    } catch {
+      /* private mode */
+    }
+    setSeen(true)
+  }
+  return (
+    <div role="status" className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 bg-brand-600 px-3 py-2 text-sm text-white">
+      <span>Chào mừng! Xem</span>
+      <Link to="/help/getting-started" onClick={close} className="font-semibold underline">
+        hướng dẫn 7 ngày đầu
+      </Link>
+      <span>hoặc hỏi Nova (nút tròn góc dưới) “làm sao để…”.</span>
+      <button type="button" onClick={close} className="rounded bg-white/15 px-2 py-0.5 hover:bg-white/25">
+        Đã hiểu
+      </button>
     </div>
   )
 }

@@ -5,6 +5,7 @@ import { eventsAhead, overdueTasks, readPlanner, tasksForDay } from '../../plann
 import { readLog, readState } from '../../review/progress.ts'
 import { computeStats } from '../../review/stats.ts'
 import { dayOf, ideaDocs, talkDocs, type ToolContext, writingDocs } from '../data.ts'
+import { readHelp, searchHelp } from './help.ts'
 import { searchLibrary } from './library.ts'
 import { getMistakes } from './mistakes.ts'
 import { getDueCards, getPlan, getReviewStats } from './plan.ts'
@@ -25,6 +26,8 @@ export const COACH_TOOLS: CoachTool[] = [
   getSpeakingReview,
   searchLibrary,
   getDueCards,
+  searchHelp,
+  readHelp,
   ...PROPOSE_TOOLS,
 ]
 

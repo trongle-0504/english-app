@@ -10,6 +10,7 @@ import { appendFileSync } from 'node:fs'
 import { ApiError } from '../api.ts'
 import { recordUsage } from '../usage.ts'
 import { chargeAgyCall } from '../users/quota.ts'
+import { currentUserId } from '../users/context.ts'
 import { WarmAgentPool, type WarmEvent, type WarmTurn } from './acp-pool.ts'
 import { agyBinary, ephemeralProfiles, sandboxedAgy } from './agy-sandbox.ts'
 
@@ -111,23 +112,60 @@ export function stopWarmAgent(): void {
 
 // Kept on globalThis: the dev server reloads server modules in-process when they change, and calls still running in
 // the old instance must keep counting against the limit.
-const slots = ((globalThis as { __antigravitySlots?: { running: number; queue: (() => void)[] } }).__antigravitySlots ??= {
+// Waiting calls are queued per account and served round-robin (PLAN-multi-user-v2.md, 4.3): when a slot frees up, the
+// next account in turn that has a call waiting gets it, so one learner's long job (a Listening transcript in parts, a
+// 30-word library proposal) cannot hold every slot while someone else waits. With one account it is plain FIFO.
+interface SlotState {
+  running: number
+  queues: Map<string, (() => void)[]>
+  order: string[]
+}
+const slots: SlotState = ((globalThis as { __antigravityRoundRobin?: SlotState }).__antigravityRoundRobin ??= {
   running: 0,
-  queue: [],
+  queues: new Map(),
+  order: [],
 })
+
+function wakeNext() {
+  for (let i = 0; i < slots.order.length; i++) {
+    const who = slots.order.shift() as string
+    const queue = slots.queues.get(who)
+    const next = queue?.shift()
+    if (queue?.length) slots.order.push(who)
+    else slots.queues.delete(who)
+    if (next) return next()
+  }
+}
 
 /** Runs `task` when one of the ANTIGRAVITY_PARALLEL slots is free; `queueMs` = how long it waited for that slot. */
 async function inSlot<T>(task: () => Promise<T>): Promise<T & { queueMs: number }> {
   const queued = Date.now()
-  if (slots.running >= maxParallel()) await new Promise<void>((resolve) => slots.queue.push(resolve))
+  if (slots.running >= maxParallel()) {
+    const who = currentUserId() ?? 'system'
+    await new Promise<void>((resolve) => {
+      const queue = slots.queues.get(who)
+      if (queue) queue.push(resolve)
+      else {
+        slots.queues.set(who, [resolve])
+        slots.order.push(who)
+      }
+    })
+  }
   const queueMs = Date.now() - queued
   slots.running++
   try {
     return { ...(await task()), queueMs }
   } finally {
     slots.running--
-    slots.queue.shift()?.()
+    wakeNext()
   }
+}
+
+/** Calls waiting for a slot, in total and for one account (the "waiting for AI" line in the pages). */
+export function queueStatus(uid?: string): { running: number; waiting: number; mine: number } {
+  let waiting = 0
+  for (const q of slots.queues.values()) waiting += q.length
+  return { running: slots.running, waiting, mine: uid ? (slots.queues.get(uid)?.length ?? 0) : 0 }
 }
 
 /** The whole JSON answer has arrived on stdout (agy prints it in one piece just before it exits). */
@@ -592,3 +630,6 @@ async function runText(request: AntigravityTextRequest, staged: StagedImages): P
   if (out.status !== 'SUCCESS') throw new ApiError(502, `Antigravity CLI: ${(out.error ?? out.response ?? 'the request failed').slice(0, 400)}`)
   return { text, model, usage: { input, output, thinking }, ms }
 }
+
+/** For tests: the slot queue around one task. */
+export const inSlotForTests = inSlot

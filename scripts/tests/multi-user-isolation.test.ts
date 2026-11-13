@@ -21,7 +21,7 @@ const password = randomBytes(12).toString('base64url')
 let server: ChildProcess
 let uidA = ''
 let uidB = ''
-let uidAdmin = ''
+
 const cookies: Record<string, string> = {}
 
 const json = (body: unknown) => ({ method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
@@ -39,7 +39,7 @@ const get = (url: string, cookie: string, headers: Record<string, string> = {}) 
 
 before(async () => {
   const { createUser } = await import('../../server/auth/users.ts')
-  uidAdmin = (await createUser('admin@example.test', password, { role: 'admin' })).id
+  await createUser('admin@example.test', password, { role: 'admin' })
   uidA = (await createUser('a@example.test', password, { role: 'learner', displayName: 'A' })).id
   uidB = (await createUser('b@example.test', password, { role: 'learner', displayName: 'B' })).id
 

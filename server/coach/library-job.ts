@@ -54,7 +54,8 @@ export async function runLibraryJob(
   progress: CoachLibraryProgress[],
   save: () => Promise<void>,
   write: LibraryWriter = writeLibraryEntry,
-  workers = 4,
+  // Multi-user app: one at a time per account (four would take every agy slot of the machine for one learner).
+  workers = process.env.MULTI_USER === '1' ? 1 : 4,
 ): Promise<void> {
   let next = 0
   const one = async () => {

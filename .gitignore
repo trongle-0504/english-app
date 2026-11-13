@@ -27,6 +27,9 @@ dist
 /content/*
 # …except what the code needs from content/: schemas, prompts, the example review deck.
 !/content/schema/
+# Multi-user app: help pages Nova reads, and the read-only sample results (code-like, kept with the code).
+!/content/docs/
+!/content/samples/
 !/content/grammar/
 /content/grammar/*
 !/content/grammar/analyze-prompt.md

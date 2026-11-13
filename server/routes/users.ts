@@ -16,6 +16,7 @@ import { audit } from '../users/audit.ts'
 import { quotaStatus } from '../users/quota.ts'
 import { ensureUserRoot, forgetUserRoot, userRootDir } from '../users/root.ts'
 import { readSettings, updateSettings } from '../users/settings.ts'
+import { accountBytes } from '../users/storage.ts'
 
 const run = promisify(execFile)
 const appRoot = path.resolve(import.meta.dirname, '..', '..')
@@ -32,19 +33,6 @@ async function account(id: string): Promise<User> {
   const user = id ? await findById(id) : undefined
   if (!user) throw new ApiError(404, 'Không có tài khoản này.')
   return user
-}
-
-const sizeCache = new Map<string, { at: number; bytes: number }>()
-/** Bytes used by an account's folder (links to shared content not followed); cached 10 minutes. */
-async function folderBytes(uid: string): Promise<number> {
-  const hit = sizeCache.get(uid)
-  if (hit && Date.now() - hit.at < 600_000) return hit.bytes
-  const dir = userRootDir(uid)
-  if (!existsSync(dir)) return 0
-  const { stdout } = await run('du', ['-sb', dir]).catch(() => ({ stdout: '0' }))
-  const bytes = Number(stdout.split(/\s/)[0]) || 0
-  sizeCache.set(uid, { at: Date.now(), bytes })
-  return bytes
 }
 
 const activeLearners = (users: User[]) => users.filter((u) => u.role === 'learner' && !u.disabled && statusOf(u) === 'active').length
@@ -90,7 +78,7 @@ export const userRoutes: Record<string, ApiHandler> = {
           devices: (u.devices ?? []).map((d) => ({ id: d.idHash.slice(0, 16), label: d.label, firstSeen: d.firstSeen, lastSeen: d.lastSeen, lastIp: d.lastIp, lastCountry: d.lastCountry ?? '' })),
           quota: u.quota ?? {},
           usage: exists ? await quotaStatus(userRootDir(u.id), u.id) : null,
-          storageBytes: await folderBytes(u.id),
+          storageBytes: await accountBytes(u.id),
         }
       }),
     )

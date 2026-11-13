@@ -17,7 +17,10 @@ import { routeClass } from './users/access.ts'
 import { assertActive, multiUserResolver } from './users/resolve.ts'
 import { multiUser, ensureUserRoot } from './users/root.ts'
 import { createUserStores } from './users/stores.ts'
+import { findById } from './auth/users.ts'
 import { charge, quotaFor } from './users/quota.ts'
+import { inReference } from './users/reference.ts'
+import { assertRoomFor, UPLOAD_ROUTES } from './users/storage.ts'
 import { startMultiUserSchedulers } from './users/schedulers.ts'
 
 const rootDir = path.resolve(import.meta.dirname, '..')
@@ -44,6 +47,9 @@ const api = createApiMiddleware(
         ctx: multiUserResolver({ appRoot: rootDir, base, invalidate: userStores.invalidate }),
         classOf: routeClass,
         charge: async (ctx, key, body) => {
+          if (UPLOAD_ROUTES.has(key) && ctx.user) await assertRoomFor(ctx.user.id, ctx.user.role)
+          // A word that is in the shared bank is copied, not generated: no allowance used.
+          if (key === 'POST /admin/vocabulary/generate' && inReference(String((body as { word?: unknown } | undefined)?.word ?? ''))) return null
           const q = quotaFor(key, body)
           return q ? charge(ctx, q.kind, q.units) : null
         },
@@ -193,7 +199,10 @@ async function handle(req: IncomingMessage, res: ServerResponse) {
         res.statusCode = 403
         return res.end('{"error":"Account not active."}')
       }
-      return userStores.middleware(user.id)(req, res, () => {
+      // Admin "view as": the learner's /data (read-only by nature).
+      const viewAs = String(req.headers['x-view-as'] ?? '')
+      const target = viewAs && viewAs !== user.id && user.role === 'admin' ? await findById(viewAs) : undefined
+      return userStores.middleware(target?.id ?? user.id)(req, res, () => {
         res.statusCode = 404
         res.end('{}')
       })

@@ -15,7 +15,7 @@
 // The links point at files the service account cannot write (the app folder is owned by the deploying user), so a
 // learner's request can read shared content but never change it. Admin edits of shared content are not offered in
 // the multi-user app.
-import { existsSync, lstatSync, mkdirSync, readdirSync, symlinkSync, writeFileSync } from 'node:fs'
+import { existsSync, lstatSync, mkdirSync, readdirSync, readFileSync, symlinkSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { ApiError } from '../api.ts'
 import { dataDir } from '../auth/store.ts'
@@ -68,8 +68,23 @@ function seedPersonal(contentDir: string, appContent: string) {
       writeFileSync(file, text)
     }
   }
-  // The topic tree and the example decks are structure, not learner data: linked.
-  link(path.join(appContent, 'vocabulary', 'topics.json'), path.join(contentDir, 'vocabulary', 'topics.json'))
+  // The topic tree is the learner's own copy (adding a word places it in a sub-topic): the shared names and
+  // descriptions, with no words yet. The example decks are structure: linked.
+  const topicsFile = path.join(contentDir, 'vocabulary', 'topics.json')
+  if (!existsSync(topicsFile)) {
+    let tree: { topics?: { sub_topics?: { words?: string[] }[] }[] } = { topics: [] }
+    try {
+      tree = JSON.parse(readFileSync(path.join(appContent, 'reference', 'topics.json'), 'utf8'))
+    } catch {
+      try {
+        tree = JSON.parse(readFileSync(path.join(appContent, 'vocabulary', 'topics.json'), 'utf8'))
+      } catch {
+        /* no tree yet */
+      }
+    }
+    for (const topic of tree.topics ?? []) for (const sub of topic.sub_topics ?? []) sub.words = []
+    writeFileSync(topicsFile, `${JSON.stringify(tree, null, 2)}\n`)
+  }
   mkdirSync(path.join(contentDir, 'review'), { recursive: true })
   for (const example of ['_example.json', '_example.md']) link(path.join(appContent, 'review', example), path.join(contentDir, 'review', example))
 }

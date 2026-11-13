@@ -28,6 +28,9 @@ function Legacy({ to }: { to: (params: Record<string, string | undefined>) => st
 const routes: RouteObject[] = [
   // Outside the app shell: no header or menus before logging in.
   { path: 'login', errorElement: <RouteError />, ...page(() => import('@/features/auth/LoginPage')) },
+  // Multi-user app: the sign-up form and the "waiting for approval" page, also outside the shell.
+  { path: 'register', errorElement: <RouteError />, ...page(() => import('@/features/auth/RegisterPage')) },
+  { path: 'pending', errorElement: <RouteError />, ...page(() => import('@/features/auth/PendingPage')) },
   {
     element: <AppShell />,
     errorElement: <RouteError />,
@@ -223,6 +226,8 @@ const routes: RouteObject[] = [
           { path: 'news', ...page(() => import('@/features/news/NewsPage')) },
           { path: 'notepad', ...page(() => import('@/features/notepad/NotepadPage')) },
           { path: 'account', ...page(() => import('@/features/auth/AccountPage')) },
+          { path: 'help', ...page(() => import('@/features/help/HelpPage')) },
+          { path: 'help/:id', ...page(() => import('@/features/help/HelpPage')) },
 
           /* Admin (needs the local API server) */
           {
@@ -237,6 +242,8 @@ const routes: RouteObject[] = [
               { path: 'blog', ...page(() => import('@/features/admin/BlogAdminPage')) },
               { path: 'essays', ...page(() => import('@/features/admin/EssayAdminPage')) },
               { path: 'usage', ...page(() => import('@/features/admin/UsageAdminPage')) },
+              { path: 'users', ...page(() => import('@/features/admin/UsersAdminPage')) },
+              { path: 'reference', ...page(() => import('@/features/admin/ReferenceBankPage')) },
             ],
           },
 

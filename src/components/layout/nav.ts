@@ -23,6 +23,8 @@ import {
   StickyNote,
   Timer,
   Volume2,
+  Users,
+  LifeBuoy,
 } from 'lucide-react'
 
 export interface NavItem {
@@ -38,6 +40,10 @@ export interface NavItem {
    */
   match?: string[]
   exact?: boolean
+  /** Admin menu: only the admin sees it (shared content, accounts). */
+  adminOnly?: boolean
+  /** Admin menu: only in the multi-user app. */
+  multiOnly?: boolean
 }
 
 export interface NavGroup {
@@ -156,13 +162,26 @@ export const navGroups: NavGroup[] = [
 
 export const adminNav: NavItem[] = [
   { to: '/admin/vocabulary', label: 'Vocabulary', icon: BookOpen },
-  { to: '/admin/grammar', label: 'Grammar', icon: SpellCheck },
+  { to: '/admin/grammar', label: 'Grammar', icon: SpellCheck, adminOnly: true },
   { to: '/admin/note', label: 'Notes', icon: NotebookPen },
   { to: '/notepad', label: 'Notepad', icon: StickyNote },
-  { to: '/admin/blog', label: 'Blog', icon: FileText },
-  { to: '/admin/essays', label: 'Essays', icon: Library },
-  { to: '/admin/usage', label: 'Usage', icon: Coins },
+  { to: '/admin/blog', label: 'Blog', icon: FileText, adminOnly: true },
+  { to: '/admin/essays', label: 'Essays', icon: Library, adminOnly: true },
+  { to: '/admin/usage', label: 'Usage', icon: Coins, adminOnly: true },
+  { to: '/admin/reference', label: 'Kho từ chung', icon: Library, multiOnly: true },
+  { to: '/admin/users', label: 'Users', icon: Users, adminOnly: true, multiOnly: true },
+  { to: '/help', label: 'Hướng dẫn', icon: LifeBuoy, multiOnly: true },
 ]
+
+/**
+ * The menu for this account. Multi-user app: a learner's "Admin" menu is their own library (Vocabulary, Notes,
+ * Notepad: the pages that add and edit their own entries) and the help pages.
+ */
+export function adminNavFor(role: 'admin' | 'learner' | undefined, multi: boolean): NavItem[] {
+  return adminNav.filter((item) => (!item.adminOnly || role === 'admin') && (!item.multiOnly || multi))
+}
+
+export const adminMenuLabel = (role: 'admin' | 'learner' | undefined) => (role === 'learner' ? 'Thư viện của tôi' : 'Admin')
 
 export const AdminIcon = Settings
 
