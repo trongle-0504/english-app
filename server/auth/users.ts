@@ -10,16 +10,23 @@ export interface User {
   passwordHash: string
   role: 'admin'
   disabled?: boolean
+  /** Two-factor (server/auth/totp.ts): the encrypted TOTP secret once enabled; `totpPending` while setting up. */
+  totpSecret?: string
+  totpPending?: string
+  /** Last accepted time step: a code works only once. */
+  totpLastStep?: number
+  /** SHA-256 of each unused recovery code. */
+  recoveryHashes?: string[]
   createdAt: string
 }
 
 /** What the API may send to the browser. */
-export type PublicUser = Pick<User, 'id' | 'email' | 'role'>
+export type PublicUser = Pick<User, 'id' | 'email' | 'role'> & { twoFactor: boolean }
 
 const FILE = 'users.json'
 
 export const normalizeEmail = (email: string) => email.trim().toLowerCase()
-export const publicUser = ({ id, email, role }: User): PublicUser => ({ id, email, role })
+export const publicUser = ({ id, email, role, totpSecret }: User): PublicUser => ({ id, email, role, twoFactor: Boolean(totpSecret) })
 
 export const listUsers = () => readAuthFile<User[]>(FILE, [])
 
@@ -48,4 +55,9 @@ export async function setPassword(id: string, password: string): Promise<void> {
 
 export async function setDisabled(id: string, disabled: boolean): Promise<void> {
   await updateAuthFile<User[]>(FILE, [], (users) => users.map((u) => (u.id === id ? { ...u, disabled } : u)))
+}
+
+/** Changes one account in place (two-factor fields). */
+export async function updateUser(id: string, change: (user: User) => User): Promise<void> {
+  await updateAuthFile<User[]>(FILE, [], (users) => users.map((u) => (u.id === id ? change(u) : u)))
 }
