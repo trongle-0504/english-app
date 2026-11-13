@@ -29,7 +29,8 @@ const contentDir = path.join(rootDir, 'content')
 loadEnv(rootDir)
 
 const store = createContentStore(contentDir)
-store.current()
+// Multi-user app: /data is built per account (server/users/stores.ts), never from the app's own content/.
+if (process.env.MULTI_USER !== '1') store.current()
 // content/speaking/ (Speaking ideas' tags) is not part of the build.
 watch(contentDir, { recursive: true }, (_event, file) => {
   if (!file?.startsWith('speaking')) store.invalidate()

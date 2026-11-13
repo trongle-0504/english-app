@@ -46,3 +46,8 @@ dist
 /content/practice/*
 !/content/practice/speaking-mock/
 !/content/practice/writing-mock/
+
+# Multi-user deploy: the admin's first one-time password, the word-bank review list.
+/ADMIN-FIRST-LOGIN.txt
+/reference-review.md
+/reference-approved.txt
