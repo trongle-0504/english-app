@@ -29,7 +29,8 @@ export function updateAuthFile<T>(name: string, fallback: T, update: (value: T) 
   const file = authFile(name)
   const run = async () => {
     const next = await update(await readJsonFile<T>(file, fallback))
-    await writeJsonFile(file, next)
+    // Accounts and sessions: readable by this user only.
+    await writeJsonFile(file, next, 0o600)
     shared.cache.delete(file)
     return next
   }

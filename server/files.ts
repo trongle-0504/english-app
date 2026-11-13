@@ -19,13 +19,14 @@ export async function readJsonFile<T>(file: string, fallback: T): Promise<T> {
 }
 
 /** Atomic write (temp file + rename) so a crash never leaves half-written JSON. */
-export async function writeJsonFile(file: string, value: unknown): Promise<void> {
-  await writeTextFile(file, `${JSON.stringify(value, null, 2)}\n`)
+export async function writeJsonFile(file: string, value: unknown, mode?: number): Promise<void> {
+  await writeTextFile(file, `${JSON.stringify(value, null, 2)}\n`, mode)
 }
 
-export async function writeTextFile(file: string, text: string | Buffer): Promise<void> {
+/** `mode` (e.g. 0o600) sets the file's permissions: the temp file is created with them, so the rename keeps them. */
+export async function writeTextFile(file: string, text: string | Buffer, mode?: number): Promise<void> {
   await mkdir(path.dirname(file), { recursive: true })
   const tmp = `${file}.${process.pid}.tmp`
-  await writeFile(tmp, text)
+  await writeFile(tmp, text, mode === undefined ? undefined : { mode })
   await rename(tmp, file)
 }
