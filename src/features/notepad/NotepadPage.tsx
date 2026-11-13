@@ -563,7 +563,7 @@ export default function NotepadPage() {
         <Card
           className={cn(
             'flex flex-col p-3 sm:p-4',
-            expanded ? 'min-h-[82dvh]' : 'md:h-[calc(100dvh-8.2rem)]',
+            expanded ? 'min-h-[82dvh]' : 'md:h-[calc(100dvh-8.2rem)] md:min-h-[520px]',
             !mobileShowEditor && notes.length > 0 && sidebarOpen && !expanded && 'hidden md:flex',
           )}
         >
@@ -957,7 +957,7 @@ export default function NotepadPage() {
           {/* Content Area: Edit / Preview / Split */}
           <div
             className={cn(
-              'mt-2.5 min-h-[420px] flex-1 overflow-hidden',
+              'mt-2.5 min-h-[280px] flex-1 overflow-hidden',
               viewMode === 'split' ? 'grid gap-3 sm:grid-cols-2' : 'flex flex-col',
             )}
           >
@@ -988,7 +988,7 @@ export default function NotepadPage() {
                 }}
                 placeholder="Viết tự do tại đây (tiếng Việt, tiếng Anh, dàn ý, nháp bài viết, ghi chú cá nhân...) — bôi đen chữ để in đậm/nghiêng hoặc bấm nút AI Format để tự động trình bày đẹp."
                 className={cn(
-                  'h-full min-h-[400px] w-full flex-1 resize-none border-0 bg-transparent text-slate-800 placeholder:text-slate-400 focus:outline-none dark:text-slate-100 dark:placeholder:text-slate-500',
+                  'h-full min-h-[260px] w-full flex-1 resize-none border-0 bg-transparent text-slate-800 placeholder:text-slate-400 focus:outline-none dark:text-slate-100 dark:placeholder:text-slate-500',
                   textSizeClass,
                   viewMode === 'split' && 'border-r border-slate-200/80 pr-3 dark:border-slate-800',
                 )}
@@ -1000,7 +1000,7 @@ export default function NotepadPage() {
                 onDoubleClick={() => setViewMode('edit')}
                 title="Nhấp đúp để chuyển nhanh sang chế độ Soạn thảo"
                 className={cn(
-                  'h-full min-h-[400px] flex-1 overflow-y-auto rounded-xl bg-slate-50/40 p-3 text-slate-800 dark:bg-slate-900/30 dark:text-slate-100',
+                  'h-full min-h-[260px] flex-1 overflow-y-auto rounded-xl bg-slate-50/40 p-3 text-slate-800 dark:bg-slate-900/30 dark:text-slate-100',
                   textSizeClass,
                 )}
               >
