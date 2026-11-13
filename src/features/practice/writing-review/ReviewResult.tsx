@@ -7,6 +7,7 @@ import {
   Copy,
   Edit3,
   ExternalLink,
+  GitCompare,
   Languages,
   Library,
   Lightbulb,
@@ -26,8 +27,11 @@ import { ExportReport } from '@/features/report/ExportReport'
 import { cn } from '@/lib/cn'
 import type { AnswerSentence, LinearTool } from '@/types/speaking'
 import {
-  WRITING_CRITERIA,
+  criteriaFor,
   type WritingFix,
+  type WritingReviewPending,
+  type WritingScoreSkipped,
+  type WritingTask,
   type WritingModelEssay,
   type WritingReviewResult,
   type WritingScore,
@@ -58,6 +62,8 @@ import { phraseGroups } from '../phrase-groups'
 import { PhraseWorkProvider, RealUsePanel } from '../PhraseReview'
 import { useAddToReview } from '../speaking-ideas/useAddToReview'
 import { writingReviewApi } from './api'
+import { Task1Insights } from './Task1Insights'
+import { Task1CompareTab, Task1ModelVocab } from './Task1ModelTab'
 
 const ozdicUrl = (word: string) => `https://ozdic.com/word/${encodeURIComponent(word.toLowerCase())}`
 
@@ -483,7 +489,7 @@ function WritingModelAnswer({
   modelEssay: WritingModelEssay
   reviewId: string
   onUpdateResult?: (res: WritingReviewResult) => void
-  pending?: ('retry' | 'modelEssay' | 'score')[]
+  pending?: WritingReviewPending[]
   running?: boolean
 }) {
   const [copied, setCopied] = useState(false)
@@ -1020,13 +1026,24 @@ function SuggestedPhrasesTab({ phrases }: { phrases?: WritingSuggestedPhrase[] }
 
 /* ───────────── The result ───────────── */
 
-type Tab = 'detail' | 'upgraded' | 'suggested' | 'vocab'
+type Tab = 'detail' | 'upgraded' | 'compare' | 'suggested' | 'vocab'
 const TABS: { value: Tab; label: string; icon: ReactNode }[] = [
   { value: 'detail', label: 'Sửa bài chi tiết', icon: <ListChecks className="size-4" /> },
   { value: 'upgraded', label: 'Bài nâng cấp', icon: <Sparkles className="size-4" /> },
   { value: 'suggested', label: 'Cụm từ gợi ý', icon: <Lightbulb className="size-4" /> },
   { value: 'vocab', label: 'Từ vựng bài sửa', icon: <BookOpen className="size-4" /> },
 ]
+
+/** Task 2: as before. Task 1: no upgraded essay, a "So với bài mẫu" tab, "Cụm từ gợi ý" only with DOL hints. */
+function tabsFor(result: WritingReviewResult): typeof TABS {
+  if (result.task !== 1) return TABS
+  return [
+    TABS[0],
+    { value: 'compare', label: 'So với bài mẫu', icon: <GitCompare className="size-4" /> },
+    ...(result.dolHints?.length ? [TABS[2]] : []),
+    { value: 'vocab', label: 'Từ vựng', icon: <BookOpen className="size-4" /> },
+  ]
+}
 
 function formatDuration(ms: number): string {
   const s = Math.round(ms / 1000)
@@ -1040,18 +1057,23 @@ function WritingScoreCard({
   score,
   scoreSkipped,
   pending,
+  task,
   onScrollToSentence,
 }: {
   score?: WritingScore
-  scoreSkipped?: 'short' | 'error'
-  pending?: ('retry' | 'modelEssay' | 'score')[]
+  scoreSkipped?: WritingScoreSkipped
+  pending?: WritingReviewPending[]
+  task?: WritingTask
   onScrollToSentence: (sentenceIdx: number) => void
 }) {
+  const criteria = criteriaFor(task)
+  const taskLabel = task === 1 ? 'Task 1' : 'Task 2'
+  const target = task === 1 ? 150 : 250
   if (pending?.includes('score')) {
     return (
       <div className="mb-6 flex items-center gap-2 rounded-xl bg-brand-50/60 px-4 py-3 text-sm font-medium text-brand-900 dark:bg-brand-950/30 dark:text-brand-200">
         <Loader2 className="size-4 animate-spin text-brand-600 dark:text-brand-400" />
-        <span>Đang ước lượng band IELTS Task 2…</span>
+        <span>{task === 1 ? 'Đang đọc biểu đồ và ước lượng band IELTS Task 1…' : 'Đang ước lượng band IELTS Task 2…'}</span>
       </div>
     )
   }
@@ -1059,7 +1081,15 @@ function WritingScoreCard({
   if (scoreSkipped === 'short') {
     return (
       <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50/70 px-4 py-3 text-xs text-amber-800 dark:border-amber-800/50 dark:bg-amber-950/30 dark:text-amber-300">
-        ℹ️ Cần bài từ 150 từ trở lên để ước lượng band Task 2.
+        ℹ️ Cần bài từ 150 từ trở lên để ước lượng band {taskLabel}.
+      </div>
+    )
+  }
+
+  if (scoreSkipped === 'task1') {
+    return (
+      <div className="mb-6 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-xs text-slate-600 dark:border-slate-800 dark:bg-slate-900/50 dark:text-slate-400">
+        Bài Task 1 này được chấm trước khi có ước lượng band Task 1, nên chưa có band.
       </div>
     )
   }
@@ -1081,18 +1111,18 @@ function WritingScoreCard({
       <div className="flex items-center gap-3 sm:gap-5">
         <BandRing band={score.overall} size="sm" />
         <div className="min-w-0 flex-1">
-          <p className="text-sm font-bold text-slate-900 dark:text-white sm:text-base">Ước lượng band IELTS Task 2</p>
+          <p className="text-sm font-bold text-slate-900 dark:text-white sm:text-base">Ước lượng band IELTS {taskLabel}</p>
           <p className="text-xs text-slate-500">
             {score.words} từ
-            {score.words < 250 ? (
-              <span className="font-medium text-amber-600 dark:text-amber-400"> · dưới 250 từ</span>
+            {score.words < target ? (
+              <span className="font-medium text-amber-600 dark:text-amber-400"> · dưới {target} từ</span>
             ) : null}
             {!score.questionGiven ? (
               <span className="text-amber-700 dark:text-amber-300"> · không có đề, TR theo đề AI suy ra</span>
             ) : null}
           </p>
           <div className="mt-2 flex flex-wrap gap-1.5">
-            {WRITING_CRITERIA.map((c) => {
+            {criteria.map((c) => {
               const band = score.criteria[c.id]?.band
               return (
                 <span
@@ -1110,7 +1140,7 @@ function WritingScoreCard({
       </div>
 
       <div className="mt-4 divide-y divide-slate-100 dark:divide-slate-800">
-        {WRITING_CRITERIA.map((c) => {
+        {criteria.map((c) => {
           const crit = score.criteria[c.id]
           if (!crit) return null
           return (
@@ -1196,6 +1226,7 @@ export function ReviewResult({
 }) {
   const [tab, setTab] = useState<Tab>('detail')
   const [result, setResult] = useState<WritingReviewResult>(initialResult)
+  const tabs = tabsFor(result)
 
   useEffect(() => {
     setResult(initialResult)
@@ -1262,8 +1293,10 @@ export function ReviewResult({
               score={result.score}
               scoreSkipped={result.scoreSkipped}
               pending={result.pending}
+              task={result.task}
               onScrollToSentence={handleScrollToSentence}
             />
+            {result.task === 1 ? <Task1Insights result={result} onScrollToSentence={handleScrollToSentence} /> : null}
             <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
               <h2 className="text-lg font-bold text-slate-900 dark:text-white">Bài làm đã chấm</h2>
               <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-500">
@@ -1283,15 +1316,31 @@ export function ReviewResult({
             <h2 className="mb-2 text-lg font-bold text-slate-900 dark:text-white">Bài nâng cấp</h2>
             <UpgradedTab result={result} running={running} onUpdateResult={handleUpdate} />
           </>
+        ) : tab === 'compare' ? (
+          <>
+            <h2 className="mb-4 text-lg font-bold text-slate-900 dark:text-white">So với bài mẫu</h2>
+            <Task1CompareTab result={result} running={running} onUpdate={handleUpdate} />
+          </>
         ) : tab === 'suggested' ? (
           <>
-            <h2 className="mb-4 text-lg font-bold text-slate-900 dark:text-white">Cụm từ gợi ý từ kho chủ đề</h2>
-            <SuggestedPhrasesTab phrases={result.suggestedPhrases} />
+            {result.task !== 1 ? (
+              <>
+                <h2 className="mb-4 text-lg font-bold text-slate-900 dark:text-white">Cụm từ gợi ý từ kho chủ đề</h2>
+                <SuggestedPhrasesTab phrases={result.suggestedPhrases} />
+              </>
+            ) : null}
             {result.dolHints?.length ? (
               <div className="mt-6">
                 <DolHints hints={result.dolHints} />
               </div>
             ) : null}
+          </>
+        ) : result.task === 1 ? (
+          <>
+            <h2 className="mb-4 text-lg font-bold text-slate-900 dark:text-white">Từ vựng đáng học từ bài mẫu</h2>
+            <Task1ModelVocab result={result} />
+            <h2 className="mt-8 mb-4 text-lg font-bold text-slate-900 dark:text-white">Từ vựng cần học từ lỗi trong bài</h2>
+            <VocabularyTab result={result} />
           </>
         ) : (
           <>
@@ -1312,7 +1361,7 @@ export function ReviewResult({
           aria-label="Review sections"
           className="inline-flex flex-wrap rounded-2xl border border-slate-200 bg-white/95 p-1 shadow-lg backdrop-blur dark:border-slate-700 dark:bg-slate-900/95"
         >
-          {TABS.map((t) => (
+          {tabs.map((t) => (
             <button
               key={t.value}
               type="button"

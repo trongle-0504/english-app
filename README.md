@@ -352,6 +352,34 @@ Tra từ điển có cache (`cache/ozdic/`, `cache/longman/`), mỗi lượt tra
 dừng một lúc nếu bị giới hạn/chặn; `LONGMAN_LOOKUP=off` tắt Longman. Bài nâng cấp (model essay) chạy song song với bước
 chẩn đoán; khi có bản tiếng Việt, các cụm tiếng Việt được tra từ điển DOL và đưa vào prompt (tab "Cụm từ gợi ý").
 
+## Writing Mock Test — Task 1 (Practice → Writing Mock Test → tab Task 1)
+
+Làm đề Writing Task 1 có giờ, chấm theo biểu đồ. Tab **Task 2** giữ nguyên như trước; `?task=1` mở thẳng Task 1. Kế hoạch
+và đặc tả: file PLAN.md của tính năng Writing Task 1.
+
+- **Đề:** `content/practice/writing-mock/task1-prompts.json` (129 đề: Bar, Line, Pie, Table, Mixed), xuất ra
+  `/data/practice/writing-mock/task1-prompts.json`. Đề không có hình: **người học dán hình biểu đồ** (Ctrl+V ở bất kỳ đâu,
+  kể cả khi đang ở ô chữ nếu clipboard chỉ có hình; kéo thả; chọn file), tối đa 4 hình, lưu theo đề (WebP ≤ 1600 px).
+- **Bài mẫu của người học:** dán ở màn chuẩn bị (tự lưu, ẩn trong lúc làm bài) hoặc sau khi chấm ở tab "So với bài mẫu".
+- **Luồng:** chọn đề → chuẩn bị (hình, bài mẫu) → lập ý tiếng Việt 5′ → viết 20′ (biểu đồ bên trái, thanh kéo chia cột) →
+  gửi vào Writing Review với `task: 1`, `promptId`. Danh sách đề đánh dấu đề đã làm (số lần, ngày gần nhất, band).
+- **Chấm** (`server/writing-review/task1.ts`): agent đọc biểu đồ một lần (cache theo bộ hình), rồi chấm TA / CC / LR / GRA theo
+  band descriptors Task 1, kèm skill `content/writing/task1-skill.md` (phần "Task 1" của `writing-skills.md`) và ý tiếng
+  Việt: overview, đặc điểm chính đã nêu / còn thiếu, số liệu sai so với biểu đồ, ý tiếng Việt đúng / sai so với biểu đồ.
+  TA nằm ở ô `tr` của `WritingScore`, nhãn đổi theo task (`criteriaFor`). Lời gọi có ảnh luôn chạy qua agy (Claude Code
+  chạy không có công cụ nên không mở được ảnh). Phần sửa lỗi câu chữ dùng chung với Task 2; bài nâng cấp và kho cụm theo
+  chủ đề (của Task 2) không chạy.
+- **So với bài mẫu** (`server/writing-review/task1-model.ts`): từng điểm (mở bài, overview, cách nhóm, câu so sánh, số liệu,
+  từ ngữ xu hướng) với câu "thử viết lại" giữ số liệu của người học; 6–12 cụm đáng học từ bài mẫu, tra Longman / OZDIC,
+  đánh dấu cụm đã dùng, nút Ôn tập / thêm vào Vocabulary, Notes. Cache từ vựng theo nội dung bài mẫu. Thêm bài mẫu sau khi
+  chấm: `POST /api/writing-review/task1/compare`.
+- **Dữ liệu:** `progress/writing-task1/prompts/<id>.json` (hình, bài mẫu, cache), `progress/writing-task1/images/`. Kết quả
+  chấm như Writing Review (`progress/writing-reviews/`), thêm `task`, `promptId`, `task1`, `task1Model`. Lịch sử Writing
+  Review lọc được Task 1 / Task 2; báo cáo xuất file, Coach và sổ lỗi đều biết bài Task 1.
+- **Dữ liệu thử:** `mocks/samples/task1/` (hình biểu đồ — vẽ bằng `node mocks/samples/task1/draw-chart.mjs`, bài mẫu, ý tưởng,
+  bài làm có lỗi cài sẵn cho đề `bar-001`); `mocks/llm/` là câu trả lời mẫu của agent mà test đơn vị
+  (`scripts/tests/writing-task1-*.test.ts`) dùng.
+
 ## Speaking Ideas (Practice → Speaking Ideas)
 
 Dán đề IELTS Speaking (dòng đầu là chủ đề, mỗi dòng sau là một câu hỏi; Part 2 = cả cue card là một câu), ghi ý của mình cho

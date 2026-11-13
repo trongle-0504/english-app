@@ -1,0 +1,331 @@
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
+import { CheckCircle2, Clock3, FileText, RotateCcw, Send } from 'lucide-react'
+import { Badge, Button, Card, EmptyState, PageHeader } from '@/components/ui'
+import { cn } from '@/lib/cn'
+import { useData } from '@/lib/data'
+import { useLocalStorage } from '@/lib/storage'
+import type { WritingReviewJob, WritingReviewSummary } from '@/types/writingReview'
+import type { WritingMockPrompt, WritingMockTopics } from '@/types/writingMock'
+import { writingReviewApi } from '../writing-review/api'
+import { WritingReviewProgress } from '../writing-review/WritingReviewProgress'
+import { DoneStatus, doneCardClass, MOCK_HISTORY_LIMIT } from './DoneStatus'
+import { ListToolbar } from './ListToolbar'
+
+type Stage = 'select' | 'ideas' | 'english' | 'review'
+const IDEA_SECONDS = 15 * 60
+const ENGLISH_SECONDS = 40 * 60
+
+function timerLabel(seconds: number): string {
+  const safe = Math.max(0, Math.ceil(seconds))
+  return `${Math.floor(safe / 60)}:${String(safe % 60).padStart(2, '0')}`
+}
+
+function promptKey(value: string): string {
+  return value.trim().replace(/\s+/g, ' ').toLocaleLowerCase()
+}
+
+/** Writing Mock Test, Task 2 (essay): the original page, unchanged apart from the task switch and the done status. */
+export default function Task2Mock({ taskSwitch }: { taskSwitch?: ReactNode }) {
+  const prompts = useData<WritingMockPrompt[]>('practice/writing-mock/prompts.json')
+  const topicData = useData<WritingMockTopics>('practice/writing-mock/topics.json')
+  const [stage, setStage] = useState<Stage>('select')
+  const [topic, setTopic] = useState('all')
+  const [type, setType] = useState('all')
+  const [completion, setCompletion] = useState<'all' | 'done' | 'todo'>('all')
+  const [query, setQuery] = useState('')
+  const [selectedId, setSelectedId] = useState<number | null>(null)
+  const [idea, setIdea] = useLocalStorage('practice:writing-mock:idea', '')
+  const [english, setEnglish] = useLocalStorage('practice:writing-mock:english', '')
+  const [editingIdea, setEditingIdea] = useState(false)
+  const [startedAt, setStartedAt] = useState<number | null>(null)
+  const [secondsLeft, setSecondsLeft] = useState(IDEA_SECONDS)
+  const [job, setJob] = useState<WritingReviewJob | null>(null)
+  const [historyItems, setHistoryItems] = useState<WritingReviewSummary[]>([])
+  const [error, setError] = useState('')
+  const submitRef = useRef<() => Promise<void>>(async () => {})
+
+  // The whole history (not the latest 100), Task 2 only: reloaded on returning to the list and when a review finishes.
+  const loadHistory = useCallback(() => {
+    void writingReviewApi
+      .history(MOCK_HISTORY_LIMIT)
+      .then(({ items }) => setHistoryItems(items.filter((item) => item.task !== 1)))
+      .catch(() => {})
+  }, [])
+
+  useEffect(() => {
+    if (stage === 'select') loadHistory()
+  }, [stage, loadHistory])
+
+  useEffect(() => {
+    if (job?.status === 'done') loadHistory()
+  }, [job?.status, loadHistory])
+
+  const selected = prompts.find((item) => item.id === selectedId)
+  const selectedHistory = selected
+    ? historyItems.filter((item) => [item.prompt, item.title].some((value) => value && promptKey(value) === promptKey(selected.prompt)))
+    : []
+  const historyByPrompt = useMemo(() => {
+    const map = new Map<string, WritingReviewSummary[]>()
+    for (const item of historyItems) {
+      for (const value of [item.prompt, item.title]) {
+        if (!value) continue
+        const key = promptKey(value)
+        if (!map.has(key)) map.set(key, [])
+        if (!map.get(key)!.some((existing) => existing.id === item.id)) map.get(key)!.push(item)
+      }
+    }
+    return map
+  }, [historyItems])
+  const filtered = useMemo(
+    () =>
+      prompts.filter(
+        (item) =>
+          (topic === 'all' || item.topics.includes(topic)) &&
+          (type === 'all' || item.type === type) &&
+          (completion === 'all' || (completion === 'done' ? historyByPrompt.has(promptKey(item.prompt)) : !historyByPrompt.has(promptKey(item.prompt)))) &&
+          (!query.trim() || `${item.prompt} ${item.topics.join(' ')} ${item.type}`.toLowerCase().includes(query.trim().toLowerCase())),
+      ),
+    [prompts, query, topic, type, completion, historyByPrompt],
+  )
+
+  const choosePrompt = useCallback(
+    (random: boolean, requested?: WritingMockPrompt) => {
+      const pool = filtered.length ? filtered : prompts
+      const item = requested ?? (random ? pool[Math.floor(Math.random() * pool.length)] : pool[0])
+      if (!item) return
+      setSelectedId(item.id)
+      setIdea('')
+      setEnglish('')
+      setEditingIdea(false)
+      setError('')
+      setJob(null)
+      setStage('ideas')
+      setStartedAt(Date.now())
+      setSecondsLeft(IDEA_SECONDS)
+    },
+    [filtered, prompts, setEnglish, setIdea],
+  )
+
+  useEffect(() => {
+    if (!startedAt || stage === 'select' || stage === 'review') return
+    const timer = window.setInterval(() => {
+      const limit = stage === 'ideas' ? IDEA_SECONDS : ENGLISH_SECONDS
+      const remaining = limit - (Date.now() - startedAt) / 1000
+      if (remaining <= 0) {
+        window.clearInterval(timer)
+        if (stage === 'ideas') {
+          setStage('english')
+          setStartedAt(Date.now())
+          setSecondsLeft(ENGLISH_SECONDS)
+        } else {
+          void submitRef.current()
+        }
+      } else setSecondsLeft(remaining)
+    }, 250)
+    return () => window.clearInterval(timer)
+  }, [stage, startedAt])
+
+  const submit = async () => {
+    if (!selected || english.trim().length < 30) {
+      setError('Bài tiếng Anh cần có ít nhất 30 ký tự trước khi gửi chấm.')
+      return
+    }
+    setError('')
+    try {
+      const { job: created } = await writingReviewApi.start(english.trim(), idea.trim() || undefined, selected.prompt, selected.prompt)
+      setJob(created)
+      setStage('review')
+    } catch (cause) {
+      setError((cause as Error).message)
+    }
+  }
+  submitRef.current = submit
+
+  useEffect(() => {
+    if (stage !== 'review' || !job || job.status !== 'running') return
+    const timer = window.setTimeout(async () => {
+      try {
+        const { job: next } = await writingReviewApi.get(job.id)
+        setJob(next)
+        if (next.status === 'error') setError(next.error || 'Không thể chấm bài.')
+      } catch (cause) {
+        setError((cause as Error).message)
+      }
+    }, 2000)
+    return () => window.clearTimeout(timer)
+  }, [job, stage])
+
+  const startEnglish = () => {
+    setStage('english')
+    setStartedAt(Date.now())
+    setSecondsLeft(ENGLISH_SECONDS)
+  }
+
+  const reset = () => {
+    setStage('select')
+    setSelectedId(null)
+    setIdea('')
+    setEnglish('')
+    setEditingIdea(false)
+    setJob(null)
+    setError('')
+    setStartedAt(null)
+  }
+
+  if (stage === 'select') {
+    return (
+      <div className="mx-auto max-w-6xl pb-16">
+        <PageHeader eyebrow="Writing" title="Writing Mock Test" actions={taskSwitch} />
+        <ListToolbar
+          query={query}
+          onQuery={setQuery}
+          onRandom={() => choosePrompt(true)}
+          randomDisabled={!filtered.length}
+          filters={[
+            { label: 'Dạng đề', value: type, onChange: setType, options: [{ value: 'all', label: 'Tất cả dạng đề' }, ...topicData.types.map((v) => ({ value: v, label: v }))] },
+            { label: 'Chủ đề', value: topic, onChange: setTopic, options: [{ value: 'all', label: 'Tất cả chủ đề' }, ...topicData.topics.map((v) => ({ value: v, label: v }))] },
+            {
+              label: 'Trạng thái',
+              value: completion,
+              onChange: (v) => setCompletion(v as 'all' | 'done' | 'todo'),
+              options: [
+                { value: 'all', label: 'Đã làm & chưa làm' },
+                { value: 'done', label: 'Đã làm' },
+                { value: 'todo', label: 'Chưa làm' },
+              ],
+            },
+          ]}
+        />
+        <div>
+          <main className="min-w-0">
+            <div className="space-y-3">
+              {filtered.map((item) => {
+                const attempts = historyByPrompt.get(promptKey(item.prompt)) ?? []
+                const latestAttempt = attempts[0]
+                return (
+                <Card key={item.id} className={cn('p-4 transition-shadow hover:shadow-md sm:p-5', latestAttempt && doneCardClass)}>
+                  {(() => {
+                    return (
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                    <div className="min-w-0">
+                      <div className="mb-2 flex flex-wrap gap-2">
+                        <Badge tone="violet">{item.type}</Badge>
+                        {item.topics.map((itemTopic) => <Badge key={itemTopic} tone="slate">{itemTopic}</Badge>)}
+                      </div>
+                      <p className="text-[15px] leading-relaxed text-slate-700 sm:text-base dark:text-slate-300">{item.prompt}</p>
+                      <DoneStatus attempts={attempts} />
+                    </div>
+                    {latestAttempt ? (
+                      <div className="flex flex-wrap gap-2 self-start">
+                        <Button size="sm" onClick={() => choosePrompt(false, item)}>
+                          <RotateCcw className="size-4" /> Làm lại
+                        </Button>
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          onClick={() => (window.location.href = `/practice/writing-review?id=${latestAttempt.id}`)}
+                        >
+                          <CheckCircle2 className="size-4" /> Xem kết quả
+                        </Button>
+                      </div>
+                    ) : (
+                      <Button size="sm" className="self-start" onClick={() => choosePrompt(false, item)}>
+                        <FileText className="size-4" /> Vào làm bài
+                      </Button>
+                    )}
+                  </div>
+                    )
+                  })()}
+                </Card>
+                )
+              })}
+              {!filtered.length ? <EmptyState title="Không tìm thấy đề phù hợp" description="Hãy đổi từ khóa hoặc bộ lọc." /> : null}
+            </div>
+          </main>
+        </div>
+      </div>
+    )
+  }
+
+  if (stage === 'review' && selected) {
+    const done = job?.status === 'done'
+    return (
+      <div className="readable-xs mx-auto max-w-4xl pb-16">
+        <PageHeader eyebrow="Writing Mock Test" title={done ? 'Đã có kết quả chấm' : 'AI đang chấm bài…'} description={selected.prompt} />
+        <Card className="space-y-4 p-5 sm:p-6">
+          <Badge tone={done ? 'emerald' : 'brand'}>{done ? 'Hoàn tất' : 'Đang xử lý'}</Badge>
+          <p className="text-sm text-slate-600 dark:text-slate-300">Ý tưởng tiếng Việt và bài tiếng Anh đã được gửi cùng đề bài vào Writing Review.</p>
+          {selectedHistory.length ? (
+            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 dark:border-slate-700 dark:bg-slate-800/60">
+              <h2 className="font-semibold text-slate-900 dark:text-white">Lịch sử chấm đề này</h2>
+              <ul className="mt-2 space-y-2 text-sm">
+                {selectedHistory.slice(0, 5).map((item) => (
+                  <li key={item.id} className="flex flex-wrap items-center justify-between gap-2">
+                    <span className="flex items-center gap-2 text-slate-600 dark:text-slate-300">
+                      {new Date(item.createdAt).toLocaleString('vi-VN')} · {item.fixes} lỗi đã nhận diện
+                      {item.overall !== undefined ? (
+                        <Badge tone="brand" className="text-xs">
+                          Band {item.overall.toFixed(1)}
+                        </Badge>
+                      ) : null}
+                    </span>
+                    <Button size="sm" variant="outline" onClick={() => (window.location.href = `/practice/writing-review?id=${item.id}`)}>
+                      Xem kết quả
+                    </Button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+          {job?.status === 'running' ? <WritingReviewProgress job={job} /> : null}
+          {job?.status === 'error' || error ? <p className="text-sm text-rose-600">{error || job?.error}</p> : null}
+          <div className="flex flex-wrap gap-2">
+            {done ? <Button onClick={() => (window.location.href = `/practice/writing-review?id=${job.id}`)}>Mở bản chấm chi tiết</Button> : null}
+            <Button variant="outline" onClick={reset}><RotateCcw className="size-4" /> Làm đề khác</Button>
+          </div>
+        </Card>
+      </div>
+    )
+  }
+
+  if (!selected) return null
+  const isIdeas = stage === 'ideas'
+  return (
+    <div className="readable-xs mx-auto max-w-5xl pb-16">
+      <PageHeader eyebrow="Writing Mock Test" title="Writing Mock Test" />
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+        <p className="min-w-0 flex-1 text-base leading-relaxed text-slate-600 dark:text-slate-300">{selected.prompt}</p>
+        <span className={cn('inline-flex shrink-0 items-center gap-1 rounded-full border bg-white px-3 py-1.5 font-mono text-base font-bold shadow-sm dark:bg-slate-900', secondsLeft < 60 && 'border-rose-300 text-rose-600')}>
+          <Clock3 className="size-4" />{timerLabel(secondsLeft)}
+        </span>
+      </div>
+      <Card className="space-y-4 p-5 sm:p-6">
+        {!isIdeas ? (
+          <div className="space-y-2">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <label htmlFor="writing-mock-vietnamese-idea" className="block text-sm font-semibold">Ý tưởng tiếng Việt của bạn</label>
+              <Button type="button" size="sm" variant="outline" onClick={() => setEditingIdea((value) => !value)}>
+                {editingIdea ? 'Lưu ý tưởng' : 'Sửa ý tưởng'}
+              </Button>
+            </div>
+            <textarea
+              id="writing-mock-vietnamese-idea"
+              value={idea}
+              readOnly={!editingIdea}
+              onChange={(e) => setIdea(e.target.value)}
+              className="min-h-[220px] w-full resize-y rounded-xl border bg-slate-50 p-4 leading-relaxed text-slate-700 dark:bg-slate-800 dark:text-slate-200"
+              placeholder="Bạn chưa ghi ý tưởng tiếng Việt."
+              aria-label="Ý tưởng tiếng Việt dùng để chuyển sang bài viết tiếng Anh"
+            />
+          </div>
+        ) : null}
+        <textarea value={isIdeas ? idea : english} onChange={(e) => (isIdeas ? setIdea(e.target.value) : setEnglish(e.target.value))} className="min-h-[360px] w-full rounded-xl border p-4 leading-relaxed" placeholder={isIdeas ? 'Viết dàn ý, luận điểm và ví dụ bằng tiếng Việt…' : 'Write your IELTS Writing Task 2 essay here…'} autoFocus />
+        {error ? <p className="text-sm text-rose-600">{error}</p> : null}
+        <div className="flex flex-wrap justify-between gap-2">
+          <Button variant="ghost" onClick={reset}>Thoát</Button>
+          {isIdeas ? <Button onClick={startEnglish}>Bắt đầu viết tiếng Anh <CheckCircle2 className="size-4" /></Button> : <Button onClick={() => void submit()}><Send className="size-4" /> Gửi AI chấm</Button>}
+        </div>
+      </Card>
+    </div>
+  )
+}

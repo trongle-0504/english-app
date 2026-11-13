@@ -1,6 +1,7 @@
 import { ApiError, type ApiHandler } from '../api.ts'
 import { deleteSimplify, getSimplify, listSimplify, saveSimplify } from '../listening/history.ts'
-import { parseImages, readQuestionImages } from '../listening/questions-image.ts'
+import { parseImages } from '../images.ts'
+import { readQuestionImages } from '../listening/questions-image.ts'
 import { SIMPLIFY_QUESTIONS_MAX, SIMPLIFY_TRANSCRIPT_MAX, simplifyTranscript } from '../listening/simplify.ts'
 
 const text = (value: unknown, max: number) => (typeof value === 'string' ? value.trim() : '').slice(0, max)

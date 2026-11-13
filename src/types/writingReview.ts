@@ -23,6 +23,98 @@ export const WRITING_CRITERIA: { id: WritingCriterionId; label: string; short: s
   { id: 'gra', label: 'Grammatical Range & Accuracy', short: 'GRA', hint: 'Dùng nhiều cấu trúc câu (câu phức, mệnh đề) và ít lỗi ngữ pháp, dấu câu.' },
 ]
 
+/** Task 1: the same four slots, with `tr` holding Task Achievement. */
+export const WRITING_TASK1_CRITERIA: typeof WRITING_CRITERIA = WRITING_CRITERIA.map((c) =>
+  c.id === 'tr'
+    ? {
+        id: 'tr',
+        label: 'Task Achievement',
+        short: 'TA',
+        hint: 'Có overview rõ (xu hướng / so sánh chính), chọn và làm nổi bật đặc điểm chính, số liệu chính xác, có so sánh khi cần.',
+      }
+    : c,
+)
+
+/** The criterion labels of a review's task (no task = Task 2). */
+export const criteriaFor = (task?: WritingTask) => (task === 1 ? WRITING_TASK1_CRITERIA : WRITING_CRITERIA)
+
+export type WritingTask = 1 | 2
+
+/** Which Writing Mock Test question a review came from (no task = Task 2 or a free review). */
+export interface WritingReviewSource {
+  task?: WritingTask
+  /** Task 1 question id ("bar-001"). */
+  promptId?: string
+}
+
+/** Why there is no band: under 150 words, the score call failed, or ('task1') a Task 1 review made before Task 1 scoring. */
+export type WritingScoreSkipped = 'short' | 'error' | 'task1'
+
+/** Parts of a review still running (only on a running job's in-memory result). */
+export type WritingReviewPending = 'retry' | 'modelEssay' | 'score' | 'compare'
+
+/** What the agent read from the Task 1 chart picture(s). */
+export interface WritingTask1Chart {
+  kind: string
+  subject: string
+  unit: string
+  period: string
+  categories: string[]
+  overview: string[]
+  keyFeatures: string[]
+  figures: { label: string; value: string }[]
+}
+
+/** The Task 1 checks of a review (Vietnamese notes). */
+export interface WritingTask1Review {
+  /** No chart picture: TA was rated from the question text, figures were not checked. */
+  noChart: boolean
+  chart?: WritingTask1Chart
+  overview: { status: 'clear' | 'unclear' | 'missing'; note: string }
+  keyFeatures: { covered: string[]; missed: string[] }
+  /** `sentence` is 0-based. */
+  dataErrors: { sentence: number; quote: string; wrote: string; correct: string }[]
+  /** The Vietnamese plan held against the chart; absent when there was no plan. */
+  ideaCheck?: { summary: string; matched: string[]; missing: string[]; wrong: string[] }
+}
+
+export type WritingTask1CompareArea = 'intro' | 'overview' | 'grouping' | 'comparison' | 'data' | 'language'
+
+export interface WritingTask1Comparison {
+  summary: string
+  points: {
+    area: WritingTask1CompareArea
+    /** The answer's words; '' when the answer has nothing for the point. */
+    yours: string
+    model: string
+    why: string
+    try: string
+  }[]
+}
+
+export type WritingTask1VocabCategory = 'trend' | 'comparison' | 'proportion' | 'approximation' | 'overview' | 'sequence' | 'other'
+
+export interface WritingTask1VocabItem {
+  phrase: string
+  category: WritingTask1VocabCategory
+  meaning_vi: string
+  example: string
+  /** The answer already uses it. */
+  used: boolean
+  /** Confirmed in Longman / OZDIC. */
+  verified: boolean
+  dictionary: string[]
+  sources: { name: string; url: string }[]
+}
+
+/** What the answer can learn from the learner's own model essay. */
+export interface WritingTask1ModelLesson {
+  modelUpdatedAt: string
+  modelWords: number
+  comparison?: WritingTask1Comparison
+  vocab: WritingTask1VocabItem[]
+}
+
 /** A place in the essay to improve for one criterion. */
 export interface WritingCriterionIssue {
   /** 0-based index into the review's sentences. */
@@ -44,7 +136,7 @@ export interface WritingCriterion {
   issues: WritingCriterionIssue[]
 }
 
-/** The examiner-style estimate (Task 2). */
+/** The examiner-style estimate. For Task 1, the `tr` slot holds Task Achievement (labels: criteriaFor(task)). */
 export interface WritingScore {
   criteria: Record<WritingCriterionId, WritingCriterion>
   /** The four bands averaged and rounded the IELTS way (overallBand). */
@@ -162,7 +254,7 @@ export interface WritingReviewTimings {
   steps: Record<string, number>
 }
 
-export interface WritingReviewResult {
+export interface WritingReviewResult extends WritingReviewSource {
   id: string
   createdAt: string
   title?: string
@@ -194,16 +286,20 @@ export interface WritingReviewResult {
   dolHints?: DolHint[]
   modelEssay?: WritingModelEssay
   timings?: WritingReviewTimings
-  /** The IELTS Task 2 score estimate. */
+  /** The IELTS score estimate (Task 1: TA in the tr slot). */
   score?: WritingScore
-  /** Reason why scoring was skipped: under 150 words or error during score call. */
-  scoreSkipped?: 'short' | 'error'
+  /** Reason why scoring was skipped. */
+  scoreSkipped?: WritingScoreSkipped
+  /** Task 1: chart reading and Task 1 checks. */
+  task1?: WritingTask1Review
+  /** Task 1: comparison with the learner's model essay and its vocabulary. */
+  task1Model?: WritingTask1ModelLesson
   /** Only present on a running job's in-memory result; never written to disk. */
-  pending?: ('retry' | 'modelEssay' | 'score')[]
+  pending?: WritingReviewPending[]
   usage: WritingUsage
 }
 
-export interface WritingReviewJob {
+export interface WritingReviewJob extends WritingReviewSource {
   id: string
   status: 'running' | 'done' | 'error'
   startedAt: string
@@ -219,7 +315,7 @@ export interface WritingReviewJob {
   result?: WritingReviewResult
 }
 
-export interface WritingReviewSummary {
+export interface WritingReviewSummary extends WritingReviewSource {
   id: string
   createdAt: string
   title?: string

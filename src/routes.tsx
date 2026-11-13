@@ -186,7 +186,7 @@ const routes: RouteObject[] = [
             path: 'practice/writing-mock',
             ...page(
               () => import('@/features/practice/WritingMockTestPage'),
-              () => ['practice/writing-mock/prompts.json', 'practice/writing-mock/topics.json'],
+              () => ['practice/writing-mock/prompts.json', 'practice/writing-mock/topics.json', 'practice/writing-mock/task1-prompts.json'],
             ),
           },
           { path: 'practice/writing-review/history', ...page(() => import('@/features/practice/WritingReviewHistoryPage')) },

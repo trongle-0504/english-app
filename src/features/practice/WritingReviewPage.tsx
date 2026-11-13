@@ -291,7 +291,15 @@ export default function WritingReviewPage() {
             <Card className="flex items-center gap-2.5 border-brand-200 bg-brand-50/70 px-4 py-2.5 text-sm font-medium text-brand-900 dark:border-brand-800/60 dark:bg-brand-950/40 dark:text-brand-200">
               <Loader2 className="size-4 shrink-0 animate-spin text-brand-600 dark:text-brand-400" />
               <span>
-                {job.result.pending?.includes('retry') && job.result.pending?.includes('modelEssay')
+                {job.result.task === 1
+                  ? job.result.pending?.includes('score')
+                    ? 'Đang đọc biểu đồ và chấm band Task 1…'
+                    : job.result.pending?.includes('compare')
+                      ? 'Đang so sánh với bài mẫu của bạn…'
+                      : job.result.pending?.includes('retry')
+                        ? 'Đang kiểm tra lại các lỗi chưa xác nhận…'
+                        : 'Đang hoàn tất bài chấm…'
+                  : job.result.pending?.includes('retry') && job.result.pending?.includes('modelEssay')
                   ? 'Đang kiểm tra lại các lỗi chưa xác nhận và viết bài mẫu…'
                   : job.result.pending?.includes('retry')
                     ? 'Đang kiểm tra lại các lỗi chưa xác nhận…'

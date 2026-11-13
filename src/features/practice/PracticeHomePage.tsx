@@ -61,7 +61,7 @@ export default function PracticeHomePage() {
           prefetch="practice/writing-mock/prompts.json"
           icon={Timer}
           title="Writing mock test"
-          description="Lập ý tưởng tiếng Việt 15 phút, viết bài tiếng Anh 40 phút, rồi gửi cả đề và ý tưởng cho AI chấm."
+          description="Task 1 (dán hình biểu đồ: lập ý 5 phút, viết 20 phút) và Task 2 (lập ý 15 phút, viết 40 phút), rồi gửi đề và ý tưởng cho AI chấm band."
         />
         <PracticeLinkCard
           to="/practice/speaking-ideas"

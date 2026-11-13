@@ -2,15 +2,16 @@
 // and Claude suggests phrases from the app's library (tagged by the Library sync), example sentences, a few
 // dictionary-checked phrases from outside the library, and a model answer that uses them.
 import { Check, Database, History, Lightbulb, ListChecks, Loader2, MessageSquareQuote, Plus, ServerOff, type LucideIcon } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { Link } from 'react-router'
-import { Button, Card, PageHeader } from '@/components/ui'
+import { Button, Card, PageHeader, SegmentedControl } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import { useLocalStorage } from '@/lib/storage'
 import { useQueryParam } from '@/lib/useQueryParam'
 import type { SpeakingJob, SpeakingMode, SpeakingPart } from '@/types/speaking'
 import { OfflineError, speakingApi, STEPS } from './speaking-ideas/api'
 import { parseTopic } from './speaking-ideas/parse'
+import { QuestionBank, type BankPick } from './speaking-ideas/QuestionBank'
 import { SuggestionResult } from './speaking-ideas/SuggestionResult'
 import { SyncPanel } from './speaking-ideas/SyncPanel'
 import { useSyncStatus } from './speaking-ideas/useSyncStatus'
@@ -222,8 +223,14 @@ function Progress({ job, onCancel }: { job: SpeakingJob; onCancel?: () => void }
 }
 
 export default function SpeakingIdeasPage() {
-  const [text, setText] = useLocalStorage('practice:speaking-ideas-draft', '')
+  // The topic comes from what the learner typed, or from a question picked in the Mock Test bank. The two are kept
+  // apart: switching back to "Tự nhập" brings the typed draft back, and picking never touches the Mock Test.
+  const [draft, setDraft] = useLocalStorage('practice:speaking-ideas-draft', '')
+  const [source, setSource] = useLocalStorage<'manual' | 'bank'>('practice:speaking-ideas-source', 'manual')
+  const [bankPicks, setBankPicks] = useLocalStorage<Partial<Record<SpeakingPart, BankPick>>>('practice:speaking-ideas-bank-pick', {})
   const [part, setPart] = useLocalStorage<SpeakingPart>('practice:speaking-ideas-part', 1)
+  const bankPick = bankPicks[part]
+  const text = source === 'bank' ? (bankPick?.text ?? '') : draft
   const [mode, setMode] = useLocalStorage<SpeakingMode>('practice:speaking-ideas-mode', 'answer')
   // The learner's idea per question, keyed by the question text so editing the list keeps them.
   const [ideas, setIdeas] = useLocalStorage<Record<string, string>>('practice:speaking-ideas-ideas', {})
@@ -293,7 +300,9 @@ export default function SpeakingIdeasPage() {
   }
 
   const blocked = !questions.length
-    ? 'Dán chủ đề và ít nhất một câu hỏi để bắt đầu.'
+    ? source === 'bank'
+      ? 'Chọn một đề trong kho để bắt đầu.'
+      : 'Dán chủ đề và ít nhất một câu hỏi để bắt đầu.'
     : questions.length > MAX_QUESTIONS
       ? `Tối đa ${MAX_QUESTIONS} câu hỏi một lần.`
       : sync.status && !tagged
@@ -372,19 +381,57 @@ export default function SpeakingIdeasPage() {
                       Topic &amp; questions
                     </label>
                     <p className="text-sm text-slate-600 dark:text-slate-400">
-                      {part === 2 ? 'Dán cả cue card: dòng đầu là đề, các dòng sau là gợi ý.' : 'Dòng đầu là chủ đề, mỗi dòng sau là một câu hỏi.'}
+                      {source === 'bank'
+                        ? `Chọn một đề Part ${part} có sẵn trong kho đề Speaking Mock Test.`
+                        : part === 2
+                          ? 'Dán cả cue card: dòng đầu là đề, các dòng sau là gợi ý.'
+                          : 'Dòng đầu là chủ đề, mỗi dòng sau là một câu hỏi.'}
                     </p>
                   </div>
-                  <PartPicker value={part} onChange={setPart} />
+                  <div className="flex flex-wrap items-center gap-2">
+                    <SegmentedControl<'manual' | 'bank'>
+                      value={source}
+                      onChange={setSource}
+                      options={[
+                        { value: 'manual', label: 'Tự nhập' },
+                        { value: 'bank', label: 'Kho đề Mock Test' },
+                      ]}
+                    />
+                    <PartPicker value={part} onChange={setPart} />
+                  </div>
                 </div>
-                <textarea
-                  id="speaking-topic"
-                  rows={6}
-                  value={text}
-                  onChange={(e) => setText(e.target.value)}
-                  placeholder={part === 2 ? 'Describe a piece of art you like.\nYou should say:\nwhat it is\nwhere you saw it\n…' : PLACEHOLDER}
-                  className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-[15px] leading-relaxed text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15 focus:outline-none dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100"
-                />
+                {source === 'bank' ? (
+                  <div className="space-y-2">
+                    <Suspense fallback={<p className="rounded-xl border border-slate-200 p-4 text-sm text-slate-500 dark:border-slate-700">Đang tải kho đề…</p>}>
+                      <QuestionBank part={part} picked={bankPick?.id} onPick={(pick) => setBankPicks({ ...bankPicks, [part]: pick })} />
+                    </Suspense>
+                    {bankPick ? (
+                      <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
+                        <span>Đề đã chọn được lưu riêng cho Speaking ideas, không ảnh hưởng bài làm Mock Test.</span>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            if (draft.trim() && !window.confirm('Thay nội dung ô "Tự nhập" bằng đề này?')) return
+                            setDraft(bankPick.text)
+                            setSource('manual')
+                          }}
+                          className="font-semibold text-brand-600 hover:underline"
+                        >
+                          Chép sang “Tự nhập” để sửa
+                        </button>
+                      </div>
+                    ) : null}
+                  </div>
+                ) : (
+                  <textarea
+                    id="speaking-topic"
+                    rows={6}
+                    value={draft}
+                    onChange={(e) => setDraft(e.target.value)}
+                    placeholder={part === 2 ? 'Describe a piece of art you like.\nYou should say:\nwhat it is\nwhere you saw it\n…' : PLACEHOLDER}
+                    className="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-[15px] leading-relaxed text-slate-900 shadow-sm placeholder:text-slate-400 focus:border-brand-500 focus:ring-4 focus:ring-brand-500/15 focus:outline-none dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100"
+                  />
+                )}
               </div>
 
               {questions.length ? (
