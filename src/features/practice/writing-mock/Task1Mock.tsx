@@ -141,6 +141,19 @@ export default function Task1Mock({ taskSwitch }: { taskSwitch?: ReactNode }) {
     }
   }, [selectedId])
 
+  // A link to one question (from a planner task): ?prompt=<id> opens its prepare screen, unless an attempt is resumed.
+  const [linkedPrompt] = useState(() => new URLSearchParams(window.location.search).get('prompt'))
+  useEffect(() => {
+    if (resumable || !linkedPrompt) return
+    const prompt = index.prompts.find((p) => p.id === linkedPrompt)
+    if (prompt) {
+      setSelectedId(prompt.id)
+      setStage('prepare')
+    }
+    // Once, on mount.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
   // A resumed attempt: start the background chart reading again (a no-op when it is already stored).
   useEffect(() => {
     if (resumable) void task1Api.prepare(resumable.promptId).catch(() => {})

@@ -73,6 +73,30 @@ export default function SpeakingMockTestPage() {
 
   const abortEvaluationRef = useRef<boolean>(false)
 
+  // A link to one question (from a planner task): ?mode=p1|p2|p3|p23|full&topic=<set id>. Read once: it picks the part
+  // combination and the question and narrows the list to it; the learner starts the test as usual.
+  const linked = useRef(false)
+  useEffect(() => {
+    if (linked.current) return
+    linked.current = true
+    const params = new URLSearchParams(window.location.search)
+    const mode = params.get('mode')
+    const topic = params.get('topic')
+    if (mode && PART_COMBINATIONS.some((c) => c.id === mode)) setCombinationId(mode as PartCombinationId)
+    if (!topic) return
+    const p1 = dataset.part1Topics.find((t) => t.id === topic)
+    if (p1) {
+      setSelectedPart1Id(p1.id)
+      setSearchQuery(p1.topic)
+      return
+    }
+    const p23 = dataset.part23Categories.flatMap((c) => c.subTopics).find((s) => s.id === topic)
+    if (p23) {
+      setSelectedPart23Id(p23.id)
+      setSearchQuery(p23.subTopic)
+    }
+  }, [dataset, setCombinationId])
+
   const syncSavedAttempts = useCallback(async (attempts: Record<string, SavedMockAttempt>) => {
     try {
       await fetch('/api/speaking-mock/attempts', {

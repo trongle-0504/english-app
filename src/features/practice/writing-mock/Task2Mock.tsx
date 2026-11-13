@@ -33,6 +33,8 @@ export default function Task2Mock({ taskSwitch }: { taskSwitch?: ReactNode }) {
   const [type, setType] = useState('all')
   const [completion, setCompletion] = useState<'all' | 'done' | 'todo'>('all')
   const [query, setQuery] = useState('')
+  // A link to one question (from a planner task): ?prompt=<id> lists only that question until "Xem tất cả đề".
+  const [focusId, setFocusId] = useState<number | null>(() => Number(new URLSearchParams(window.location.search).get('prompt')) || null)
   const [selectedId, setSelectedId] = useState<number | null>(null)
   const [idea, setIdea] = useLocalStorage('practice:writing-mock:idea', '')
   const [english, setEnglish] = useLocalStorage('practice:writing-mock:english', '')
@@ -80,12 +82,13 @@ export default function Task2Mock({ taskSwitch }: { taskSwitch?: ReactNode }) {
     () =>
       prompts.filter(
         (item) =>
+          (focusId === null || item.id === focusId) &&
           (topic === 'all' || item.topics.includes(topic)) &&
           (type === 'all' || item.type === type) &&
           (completion === 'all' || (completion === 'done' ? historyByPrompt.has(promptKey(item.prompt)) : !historyByPrompt.has(promptKey(item.prompt)))) &&
           (!query.trim() || `${item.prompt} ${item.topics.join(' ')} ${item.type}`.toLowerCase().includes(query.trim().toLowerCase())),
       ),
-    [prompts, query, topic, type, completion, historyByPrompt],
+    [prompts, query, topic, type, completion, historyByPrompt, focusId],
   )
 
   const choosePrompt = useCallback(
@@ -176,6 +179,14 @@ export default function Task2Mock({ taskSwitch }: { taskSwitch?: ReactNode }) {
     return (
       <div className="mx-auto max-w-6xl pb-16">
         <PageHeader eyebrow="Writing" title="Writing Mock Test" actions={taskSwitch} />
+        {focusId !== null ? (
+          <p className="mb-3 flex flex-wrap items-center justify-between gap-2 rounded-xl border border-brand-200 bg-brand-50/70 px-4 py-2.5 text-sm text-brand-900 dark:border-brand-800/60 dark:bg-brand-950/40 dark:text-brand-200">
+            <span>Đề trong kế hoạch học của bạn.</span>
+            <button type="button" onClick={() => setFocusId(null)} className="font-semibold text-brand-700 hover:underline dark:text-brand-300">
+              Xem tất cả đề
+            </button>
+          </p>
+        ) : null}
         <ListToolbar
           query={query}
           onQuery={setQuery}
