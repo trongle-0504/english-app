@@ -1,7 +1,7 @@
 // Library entries Nova proposed, written on the server after the learner's Confirm (this replaced Admin's "Batch agent").
 // Each kept item goes through the Admin generator itself (generateWord / generateNote with onlyNew: an entry that exists
-// is never replaced), two at a time; the proposal on disk carries each item's progress, so the card shows it and
-// closing the tab does not stop it. Its review card is linked like the app's own "Vocabulary / Notes" buttons do.
+// is never replaced), four at a time (the app-wide ANTIGRAVITY_PARALLEL cap of 4 still bounds all agy calls); the
+// proposal on disk carries each item's progress, so the card shows it and closing the tab does not stop it. Its review card is linked like the app's own "Vocabulary / Notes" buttons do.
 import { slugify } from '../../src/lib/text.ts'
 import type { CoachLibraryProgress } from '../../src/types/coach.ts'
 import { generateNote } from '../admin/notes.ts'
@@ -54,7 +54,7 @@ export async function runLibraryJob(
   progress: CoachLibraryProgress[],
   save: () => Promise<void>,
   write: LibraryWriter = writeLibraryEntry,
-  workers = 2,
+  workers = 4,
 ): Promise<void> {
   let next = 0
   const one = async () => {
