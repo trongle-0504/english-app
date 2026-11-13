@@ -1,4 +1,4 @@
-import type { WritingReviewJob, WritingReviewSummary } from '@/types/writingReview'
+import type { WritingReviewJob, WritingReviewResult, WritingReviewSource, WritingReviewSummary } from '@/types/writingReview'
 
 export const MIN_LENGTH = 30
 export const MAX_LENGTH = 5000
@@ -16,6 +16,9 @@ export const STEPS: { id: string; label: string }[] = [
   { id: 'essay_dictionary', label: 'Tra Longman + OZDIC các cụm AI tự viết' },
   { id: 'classify', label: 'Phân loại chủ đề và dạng đề bài' },
 ]
+
+/** The steps a Task 1 review shows (chart reading, the band and the model-essay comparison run alongside). */
+export const TASK1_STEP_IDS = ['dol', 'diagnose', 'dictionary', 'retry']
 
 export class OfflineError extends Error {
   constructor() {
@@ -42,22 +45,29 @@ export const writingReviewApi = {
     request<{ items: WritingReviewSummary[]; ready: boolean; model: string; effort: string; engine?: string }>(
       `/api/writing-review/history?limit=${limit}`,
     ),
-  start: (text: string, vietnameseText?: string, prompt?: string, title?: string) =>
+  start: (text: string, vietnameseText?: string, prompt?: string, title?: string, source?: WritingReviewSource) =>
     request<{ job: WritingReviewJob }>('/api/writing-review', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text, vietnameseText, prompt, title }),
+      body: JSON.stringify({ text, vietnameseText, prompt, title, ...source }),
+    }),
+  /** Task 1: compares the review with the question's model essay again (after adding or editing it). */
+  task1Compare: (id: string) =>
+    request<{ result: WritingReviewResult }>('/api/writing-review/task1/compare', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id }),
     }),
   get: (id: string) => request<{ job: WritingReviewJob }>(`/api/writing-review?id=${encodeURIComponent(id)}`),
   remove: (id: string) => request<{ ok: true }>(`/api/writing-review?id=${encodeURIComponent(id)}`, { method: 'DELETE' }),
   analyzeEdit: (id: string, userEdited: string) =>
-    request<{ result: import('@/types/writingReview').WritingReviewResult }>('/api/writing-review/analyze-edit', {
+    request<{ result: WritingReviewResult }>('/api/writing-review/analyze-edit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ id, userEdited }),
     }),
   resetEdit: (id: string) =>
-    request<{ result: import('@/types/writingReview').WritingReviewResult }>('/api/writing-review/reset-edit', {
+    request<{ result: WritingReviewResult }>('/api/writing-review/reset-edit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ id }),

@@ -33,6 +33,9 @@ dist
 !/content/speaking/
 /content/speaking/*
 !/content/speaking/linearthinking-skill.md
+!/content/writing/
+/content/writing/*
+!/content/writing/task1-skill.md
 !/content/review/
 /content/review/*
 !/content/review/_example.*

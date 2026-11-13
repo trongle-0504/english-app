@@ -24,17 +24,58 @@ const glass = 'bg-white/12 ring-1 ring-white/20 backdrop-blur-xl'
 const roundGlass = cn(glass, 'relative flex size-11 items-center justify-center rounded-full text-white transition hover:bg-white/20')
 
 /** A white ring on the photo: `value` out of `max`. */
-function Ring({ value, max, children }: { value: number; max: number; children: ReactNode }) {
+/** Heat colours for the rings, light enough to read on the dark gradient. */
+const HEAT = {
+  hot: 'stroke-rose-400',
+  warm: 'stroke-orange-400',
+  mild: 'stroke-amber-300',
+  good: 'stroke-lime-300',
+  done: 'stroke-emerald-400',
+  calm: 'stroke-sky-300',
+} as const
+
+/** Week progress: red when little is done, through amber, to green at 100 %. */
+function progressHeat(done: number, total: number): string {
+  if (!total) return 'stroke-white'
+  const pct = done / total
+  return pct >= 1 ? HEAT.done : pct >= 0.7 ? HEAT.good : pct >= 0.4 ? HEAT.mild : pct > 0 ? HEAT.warm : HEAT.hot
+}
+
+/** Exam countdown: calm while far away, warmer as the day comes close. */
+function countdownHeat(daysLeft: number): string {
+  return daysLeft <= 3 ? HEAT.hot : daysLeft <= 7 ? HEAT.warm : daysLeft <= 14 ? HEAT.mild : HEAT.calm
+}
+
+function Ring({ value, max, tone = 'stroke-white', children }: { value: number; max: number; tone?: string; children: ReactNode }) {
   const r = 22
   const c = 2 * Math.PI * r
   const ratio = max > 0 ? Math.max(0, Math.min(1, value / max)) : 0
+  // "100%" is four characters: a smaller size keeps it inside the ring.
+  const long = String(children).length >= 4
   return (
     <div className="relative size-12 shrink-0 sm:size-14">
       <svg viewBox="0 0 56 56" className="size-full -rotate-90" aria-hidden>
         <circle cx="28" cy="28" r={r} fill="none" strokeWidth="5" className="stroke-white/20" />
-        <circle cx="28" cy="28" r={r} fill="none" strokeWidth="5" strokeLinecap="round" className="stroke-white transition-[stroke-dashoffset] duration-700" strokeDasharray={c} strokeDashoffset={c * (1 - ratio)} />
+        <circle
+          cx="28"
+          cy="28"
+          r={r}
+          fill="none"
+          strokeWidth="5"
+          strokeLinecap="round"
+          className={cn('transition-[stroke-dashoffset,stroke] duration-700', tone)}
+          strokeDasharray={c}
+          strokeDashoffset={c * (1 - ratio)}
+        />
       </svg>
-      <span className="absolute inset-0 flex items-center justify-center text-[13px] font-extrabold sm:text-sm text-white tabular-nums">{children}</span>
+      <span
+        className={cn(
+          'absolute inset-0 flex items-center justify-center font-extrabold text-white tabular-nums',
+          long ? 'text-[10px] tracking-tight sm:text-[11px]' : 'text-[13px] sm:text-sm',
+        )}
+      >
+        {children}
+      </span>
     </div>
   )
 }
@@ -158,7 +199,11 @@ export function TodayPanel() {
             {home?.countdown ? (
               <Link to="/planner?view=events" className={cn(glass, 'flex items-center gap-2.5 rounded-2xl p-2.5 sm:gap-3 sm:p-3')}>
                 {/* Days left out of 30, or out of the days since the event was added when that is smaller. */}
-                <Ring value={home.countdown.daysLeft} max={Math.min(30, Math.max(1, daysBetween(home.countdown.createdAt.slice(0, 10), home.countdown.date)))}>
+                <Ring
+                  value={home.countdown.daysLeft}
+                  max={Math.min(30, Math.max(1, daysBetween(home.countdown.createdAt.slice(0, 10), home.countdown.date)))}
+                  tone={countdownHeat(home.countdown.daysLeft)}
+                >
                   {home.countdown.daysLeft}
                 </Ring>
                 <span className="min-w-0">
@@ -177,7 +222,11 @@ export function TodayPanel() {
               </button>
             )}
             <Link to="/planner?view=week" className={cn(glass, 'flex items-center gap-2.5 rounded-2xl p-2.5 sm:gap-3 sm:p-3')}>
-              <Ring value={home?.weekProgress.done ?? 0} max={home?.weekProgress.total ?? 0}>
+              <Ring
+                value={home?.weekProgress.done ?? 0}
+                max={home?.weekProgress.total ?? 0}
+                tone={progressHeat(home?.weekProgress.done ?? 0, home?.weekProgress.total ?? 0)}
+              >
                 {home?.weekProgress.total ? `${Math.round(((home.weekProgress.done ?? 0) / home.weekProgress.total) * 100)}%` : '–'}
               </Ring>
               <span className="min-w-0">

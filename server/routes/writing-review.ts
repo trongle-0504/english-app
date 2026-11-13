@@ -6,9 +6,12 @@ import {
   listReviews,
   MAX_LENGTH,
   MIN_LENGTH,
+  rerunTask1Model,
   resetReviewEdit,
   startReview,
 } from '../writing-review/service.ts'
+import { checkPromptId } from '../writing-task1/store.ts'
+import type { WritingReviewSource } from '../../src/types/writingReview.ts'
 import {
   defaultWritingReviewEngine,
   writingReviewEffort,
@@ -18,15 +21,22 @@ import {
 
 /** Practice → Writing Review: collocation and word-choice review checked against ozdic.com. */
 export const writingReviewRoutes: Record<string, ApiHandler> = {
-  /** Body `{ text }` → `{ job }` (running; poll GET /writing-review?id=). */
-  'POST /writing-review': (req, ctx) => {
-    const body = req.body as { text?: unknown; title?: unknown; prompt?: unknown; vietnameseText?: unknown } | undefined
+  /**
+   * Body `{ text, title?, prompt?, vietnameseText?, task?: 1 | 2, promptId? }` → `{ job }` (running; poll GET
+   * /writing-review?id=). `task: 1` (Writing Mock Test, Task 1) needs the question's `promptId`.
+   */
+  'POST /writing-review': async (req, ctx) => {
+    const body = req.body as
+      | { text?: unknown; title?: unknown; prompt?: unknown; vietnameseText?: unknown; task?: unknown; promptId?: unknown }
+      | undefined
     const text = typeof body?.text === 'string' ? body.text.trim() : ''
     const title = typeof body?.title === 'string' ? body.title.trim() : undefined
     const prompt = typeof body?.prompt === 'string' ? body.prompt.trim() : undefined
     const vietnameseText = typeof body?.vietnameseText === 'string' ? body.vietnameseText.trim() : undefined
     if (text.length < MIN_LENGTH) throw new ApiError(400, `Please paste a paragraph (at least ${MIN_LENGTH} characters).`)
     if (text.length > MAX_LENGTH) throw new ApiError(400, `Text is too long (max ${MAX_LENGTH} characters).`)
+    if (body?.task !== undefined && body.task !== 1 && body.task !== 2) throw new ApiError(400, '"task" must be 1 or 2.')
+    const source: WritingReviewSource = body?.task === 1 ? { task: 1, promptId: await checkPromptId(ctx, body.promptId) } : {}
     if (!writingReviewEngineAvailable()) {
       const isAntigravity = defaultWritingReviewEngine() === 'antigravity'
       throw new ApiError(
@@ -36,7 +46,7 @@ export const writingReviewRoutes: Record<string, ApiHandler> = {
           : 'Claude Code is not installed. Install it (claude.ai/install.sh) and sign in once with `claude`.',
       )
     }
-    return { status: 202, json: { job: startReview(ctx, text, prompt, vietnameseText, title) } }
+    return { status: 202, json: { job: startReview(ctx, text, prompt, vietnameseText, title, source) } }
   },
 
   /** `?id=` → `{ job }` (running, done with `result`, or error). */
@@ -81,5 +91,11 @@ export const writingReviewRoutes: Record<string, ApiHandler> = {
     const id = String(b.id ?? '')
     const result = await resetReviewEdit(ctx, id)
     return { json: { result } }
+  },
+
+  /** Task 1: body `{ id }` → `{ result }` with the model-essay comparison made again (after adding or editing it). */
+  'POST /writing-review/task1/compare': async (req, ctx) => {
+    const b = (req.body ?? {}) as { id?: unknown }
+    return { json: { result: await rerunTask1Model(ctx, String(b.id ?? '')) } }
   },
 }

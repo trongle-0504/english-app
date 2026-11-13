@@ -6,7 +6,7 @@ import { COOKIE, sessionUserId } from './sessions.ts'
 import { findById, type User } from './users.ts'
 
 /** Reachable without a session: logging in, and asking whether one is logged in. */
-const PUBLIC_API = new Set(['/api/auth/login', '/api/auth/logout', '/api/auth/me', '/api/health'])
+const PUBLIC_API = new Set(['/api/auth/login', '/api/auth/login/2fa', '/api/auth/logout', '/api/auth/me', '/api/health'])
 
 export function readCookie(req: IncomingMessage, name: string): string {
   for (const part of String(req.headers.cookie ?? '').split(';')) {

@@ -1,0 +1,47 @@
+{
+  "summary": "Bài mẫu hơn bạn ở cách gom số liệu vào một câu (“topped the list…, followed by…”) và ở động từ xu hướng chính xác; overview của bạn đã đúng ý, chỉ cần nhấn mạnh mức chênh.",
+  "points": [
+    {
+      "area": "intro",
+      "yours": "The bar chart illustrate how much money a company donated to six charity organisations from 2012 to 2014.",
+      "model": "The bar chart illustrates how much money a company donated to six charities between 2012 and 2014.",
+      "why": "Đúng bước Paraphrase của guide: “from A to B” đổi thành “between A and B”, và động từ chia theo chủ ngữ số ít.",
+      "try": "The bar chart illustrates how much money a company donated to six charities between 2012 and 2014."
+    },
+    {
+      "area": "overview",
+      "yours": "Overall, social welfare received the most money in every year, while the arts received the least.",
+      "model": "Overall, social welfare received by far the largest share of the donations in every year, whereas the arts consistently received the least.",
+      "why": "“by far” cho thấy mức chênh rất lớn, “consistently” nói đây là xu hướng của cả giai đoạn — overview mạnh hơn mà không thêm số liệu.",
+      "try": "Overall, social welfare received by far the most money in every year, whereas the arts consistently received the least."
+    },
+    {
+      "area": "data",
+      "yours": "the company gave about 40 thousand dollars to social welfare",
+      "model": "social welfare topped the list at $40,000, followed by health and education at $30,000 and $25,000 respectively",
+      "why": "Đưa hạng mục lên làm chủ ngữ và dùng “topped the list… followed by… respectively” để gói 3 số liệu trong một câu, thay vì mỗi câu một số.",
+      "try": "In 2012, social welfare topped the list at $40,000, followed by health at $30,000."
+    },
+    {
+      "area": "language",
+      "yours": "had raised to 50 thousand dollars",
+      "model": "climbed steadily to reach $50,000 in 2014",
+      "why": "“climb steadily” vừa đúng ngữ pháp (nội động từ) vừa nói được tốc độ tăng; “$50,000” gọn hơn “50 thousand dollars”.",
+      "try": "By 2014, the figure for social welfare had climbed steadily to reach $50,000."
+    },
+    {
+      "area": "comparison",
+      "yours": "Environment saw the biggest increase, reaching 22 thousand dollars.",
+      "model": "The most striking change was in environmental causes, whose funding rose by almost half to $22,000.",
+      "why": "Bài mẫu nói rõ tăng “by almost half” (theo tỉ lệ) nên không sai số liệu; “the biggest increase” của bạn bị hiểu là tăng nhiều tiền nhất.",
+      "try": "The most striking change was in environment, whose funding rose by almost half to 22 thousand dollars."
+    },
+    {
+      "area": "grouping",
+      "yours": "In contrast, the amounts gave to wildlife and the arts fell slightly to 9 and 4 thousand dollars.",
+      "model": "By contrast, after a small increase in 2013, the amounts given to wildlife and the arts dipped to $9,000 and $4,000.",
+      "why": "Gom 2 hạng mục có cùng xu hướng vào một câu và nhắc cả biến động năm 2013 — đúng một key feature bạn còn thiếu.",
+      "try": "In contrast, after a small increase in 2013, the amounts given to wildlife and the arts fell slightly to 9 and 4 thousand dollars."
+    }
+  ]
+}

@@ -15,7 +15,7 @@ import type { SpeakingResult } from '../src/types/speaking.ts'
 import type { WritingReviewResult } from '../src/types/writingReview.ts'
 import type { ReportDoc } from '../src/features/report/model.ts'
 import { SPEAKING_SECTIONS, speakingCollectionReport, speakingReport } from '../src/features/report/speaking-report.ts'
-import { WRITING_SECTIONS, writingReport } from '../src/features/report/writing-report.ts'
+import { writingReport, writingSectionsFor } from '../src/features/report/writing-report.ts'
 import { toMarkdown } from '../src/features/report/to-markdown.ts'
 import { reportPdf } from '../server/report-pdf.ts'
 import { docxDocument } from '../src/features/report/to-docx.ts'
@@ -157,7 +157,7 @@ for (const kind of ['speaking', 'writing-reviews'] as const) {
     const result = JSON.parse(readFileSync(path.join(dir, f), 'utf8'))
     const id = f.replace(/\.json$/, '')
     for (const showNatural of [false, true]) {
-      const all = new Set((kind === 'speaking' ? SPEAKING_SECTIONS : WRITING_SECTIONS).map((s) => s.key))
+      const all = new Set((kind === 'speaking' ? SPEAKING_SECTIONS : writingSectionsFor((result as WritingReviewResult).task)).map((s) => s.key))
       const doc =
         kind === 'speaking'
           ? speakingReport(result as SpeakingResult, (result as SpeakingResult).answers.map((_, i) => i), { sections: all, showNatural })

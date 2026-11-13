@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { Card } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import type { WritingReviewJob } from '@/types/writingReview'
-import { STEPS } from './api'
+import { STEPS, TASK1_STEP_IDS } from './api'
 
 export function WritingReviewProgress({ job }: { job: WritingReviewJob }) {
   const [now, setNow] = useState(Date.now())
@@ -11,7 +11,8 @@ export function WritingReviewProgress({ job }: { job: WritingReviewJob }) {
     const timer = setInterval(() => setNow(Date.now()), 1000)
     return () => clearInterval(timer)
   }, [])
-  const current = STEPS.findIndex((step) => step.id === job.step)
+  const steps = job.task === 1 ? STEPS.filter((step) => TASK1_STEP_IDS.includes(step.id)) : STEPS
+  const current = steps.findIndex((step) => step.id === job.step)
   const elapsed = Math.max(0, Math.round((now - Date.parse(job.startedAt)) / 1000))
 
   return (
@@ -23,7 +24,7 @@ export function WritingReviewProgress({ job }: { job: WritingReviewJob }) {
         </h2>
       </div>
       <ol className="mt-4 grid gap-1.5 sm:grid-cols-3">
-        {STEPS.map((step, index) => {
+        {steps.map((step, index) => {
           const state = index < current ? 'done' : index === current ? 'active' : 'todo'
           return (
             <li

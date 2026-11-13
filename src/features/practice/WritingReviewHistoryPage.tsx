@@ -10,7 +10,8 @@ import {
 } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router'
-import { Badge, ButtonLink, Card, EmptyState, PageHeader, SearchInput } from '@/components/ui'
+import { Badge, ButtonLink, Card, EmptyState, PageHeader, SearchInput, SegmentedControl } from '@/components/ui'
+import { MOCK_HISTORY_LIMIT } from './writing-mock/DoneStatus'
 import { cn } from '@/lib/cn'
 import type { WritingReviewResult, WritingReviewSummary } from '@/types/writingReview'
 import { writingReviewApi } from './writing-review/api'
@@ -53,6 +54,7 @@ export default function WritingReviewHistoryPage() {
   const [search, setSearch] = useState('')
   const [topic, setTopic] = useState('all')
   const [questionType, setQuestionType] = useState('all')
+  const [taskFilter, setTaskFilter] = useState<'all' | '1' | '2'>('all')
   const [items, setItems] = useState<WritingReviewSummary[] | null>(null)
   const [error, setError] = useState('')
   const [selectedId, setSelectedId] = useState<string>(initialId)
@@ -62,7 +64,7 @@ export default function WritingReviewHistoryPage() {
   // Load history list on mount
   useEffect(() => {
     let active = true
-    writingReviewApi.history(100).then(
+    writingReviewApi.history(MOCK_HISTORY_LIMIT).then(
       (h) => {
         if (!active) return
         setItems(h.items)
@@ -140,12 +142,14 @@ export default function WritingReviewHistoryPage() {
     const q = search.trim().toLowerCase()
     return items.filter((item) => {
       if (!matchesRange(item.createdAt, range)) return false
-      if (topic !== 'all' && item.topic !== topic) return false
-      if (questionType !== 'all' && item.questionType !== questionType) return false
+      // No task = Task 2 (every review before Task 1 existed).
+      if (taskFilter !== 'all' && String(item.task ?? 2) !== taskFilter) return false
+      if (taskFilter !== '1' && topic !== 'all' && item.topic !== topic) return false
+      if (taskFilter !== '1' && questionType !== 'all' && item.questionType !== questionType) return false
       if (!q) return true
-      return (item.title || '').toLowerCase().includes(q)
+      return `${item.title || ''} ${item.prompt || ''}`.toLowerCase().includes(q)
     })
-  }, [items, search, range, topic, questionType])
+  }, [items, search, range, topic, questionType, taskFilter])
 
   // Group by day label
   const grouped = useMemo(() => {
@@ -190,9 +194,19 @@ export default function WritingReviewHistoryPage() {
         <div className="lg:col-span-4 xl:col-span-4 space-y-4">
           <Card className="p-3.5 space-y-3">
             <SearchInput
-              placeholder="Tìm theo tiêu đề..."
+              placeholder="Tìm theo tiêu đề hoặc đề bài..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
+            />
+            <SegmentedControl<'all' | '1' | '2'>
+              size="sm"
+              value={taskFilter}
+              onChange={setTaskFilter}
+              options={[
+                { value: 'all', label: 'Tất cả' },
+                { value: '1', label: 'Task 1' },
+                { value: '2', label: 'Task 2' },
+              ]}
             />
             <div className="flex flex-wrap items-center gap-1.5">
               {RANGES.map((r) => (
@@ -211,7 +225,7 @@ export default function WritingReviewHistoryPage() {
                 </button>
               ))}
             </div>
-            <div className="grid gap-2 sm:grid-cols-2">
+            {taskFilter !== '1' ? <div className="grid gap-2 sm:grid-cols-2">
               <select className="w-full rounded-lg border border-slate-200 bg-white px-2.5 py-2 text-xs dark:border-slate-700 dark:bg-slate-800" value={questionType} onChange={(e) => setQuestionType(e.target.value)}>
                 <option value="all">Tất cả dạng đề</option>
                 {WRITING_REVIEW_TYPES.map((value) => <option key={value}>{value}</option>)}
@@ -220,7 +234,7 @@ export default function WritingReviewHistoryPage() {
                 <option value="all">Tất cả chủ đề</option>
                 {WRITING_REVIEW_TOPICS.map((value) => <option key={value}>{value}</option>)}
               </select>
-            </div>
+            </div> : null}
           </Card>
 
           {/* List items */}
@@ -278,6 +292,7 @@ export default function WritingReviewHistoryPage() {
                               {timeLabel(item.createdAt)}
                             </span>
                             <div className="flex items-center gap-1.5">
+                              {item.task === 1 ? <Badge tone="sky" className="text-[10px] py-0 px-1.5 font-bold">Task 1</Badge> : null}
                               {item.overall !== undefined ? (
                                 <Badge tone="brand" className="text-[10px] py-0 px-1.5 font-bold">
                                   Band {item.overall.toFixed(1)}

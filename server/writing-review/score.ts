@@ -60,7 +60,7 @@ const CriterionIssue = z.object({
   better: z.string().describe('English: the improved wording; for tr and cc, briefly what to add or how to restructure.'),
 })
 
-const Criterion = z.object({
+export const Criterion = z.object({
   strengths: z
     .array(z.string())
     .describe('1-3 items, English, a few words each with a short quote: what this essay clearly shows for this criterion.'),
@@ -149,6 +149,51 @@ export function buildScorePrompt(
   return { scorePrompt, sentences, paragraphStarts, words }
 }
 
+/**
+ * The four criteria as the model rated them, cleaned for both tasks: whole bands 0-9, ≤ 3 strengths, ≤ 3 gaps,
+ * ≤ 4 issues, and an issue whose quote is not in the sentence it names is dropped.
+ */
+export function cleanCriteria(
+  raw: Record<WritingCriterionId, z.infer<typeof Criterion>>,
+  sentences: string[],
+): Record<WritingCriterionId, WritingCriterion> {
+  let totalDropped = 0
+  const cleanCriterion = (c: z.infer<typeof Criterion>): WritingCriterion => {
+    const band = Math.min(9, Math.max(0, Math.round(c.band)))
+    const validIssues: WritingCriterionIssue[] = []
+    for (const issue of c.issues.slice(0, 4)) {
+      const sentenceIdx = issue.n - 1
+      if (sentenceIdx >= 0 && sentenceIdx < sentences.length && quoteInSentence(issue.quote, sentences[sentenceIdx])) {
+        validIssues.push({
+          sentence: sentenceIdx,
+          quote: issue.quote.trim(),
+          problem: issue.problem.trim(),
+          better: issue.better.trim(),
+        })
+      } else {
+        totalDropped++
+      }
+    }
+    return {
+      band,
+      summary: c.summary.trim(),
+      strengths: (c.strengths || []).map((s) => s.trim()).filter(Boolean).slice(0, 3),
+      gaps: (c.gaps || []).map((g) => g.trim()).filter(Boolean).slice(0, 3),
+      issues: validIssues,
+    }
+  }
+  const criteria: Record<WritingCriterionId, WritingCriterion> = {
+    tr: cleanCriterion(raw.tr),
+    cc: cleanCriterion(raw.cc),
+    lr: cleanCriterion(raw.lr),
+    gra: cleanCriterion(raw.gra),
+  }
+  if (totalDropped > 0) {
+    console.info(`[writing-score] dropped ${totalDropped} issue(s) not found in their sentence or out of range`)
+  }
+  return criteria
+}
+
 export async function scoreEssay(
   llm: LlmProvider,
   {
@@ -171,42 +216,7 @@ export async function scoreEssay(
     effort: writingScoreEffort(),
   })
 
-  let totalDropped = 0
-  const cleanCriterion = (raw: z.infer<typeof Criterion>): WritingCriterion => {
-    const band = Math.min(9, Math.max(0, Math.round(raw.band)))
-    const validIssues: WritingCriterionIssue[] = []
-    for (const issue of raw.issues.slice(0, 4)) {
-      const sentenceIdx = issue.n - 1
-      if (sentenceIdx >= 0 && sentenceIdx < sentences.length && quoteInSentence(issue.quote, sentences[sentenceIdx])) {
-        validIssues.push({
-          sentence: sentenceIdx,
-          quote: issue.quote.trim(),
-          problem: issue.problem.trim(),
-          better: issue.better.trim(),
-        })
-      } else {
-        totalDropped++
-      }
-    }
-    return {
-      band,
-      summary: raw.summary.trim(),
-      strengths: (raw.strengths || []).map((s) => s.trim()).filter(Boolean).slice(0, 3),
-      gaps: (raw.gaps || []).map((g) => g.trim()).filter(Boolean).slice(0, 3),
-      issues: validIssues,
-    }
-  }
-
-  const criteria: Record<WritingCriterionId, WritingCriterion> = {
-    tr: cleanCriterion(value.criteria.tr),
-    cc: cleanCriterion(value.criteria.cc),
-    lr: cleanCriterion(value.criteria.lr),
-    gra: cleanCriterion(value.criteria.gra),
-  }
-
-  if (totalDropped > 0) {
-    console.info(`[writing-score] dropped ${totalDropped} issue(s) not found in their sentence or out of range`)
-  }
+  const criteria = cleanCriteria(value.criteria, sentences)
 
   const overall = overallBand([criteria.tr.band, criteria.cc.band, criteria.lr.band, criteria.gra.band])
 

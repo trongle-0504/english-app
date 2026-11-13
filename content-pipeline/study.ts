@@ -14,6 +14,7 @@ import type {
   WritingSet,
   WritingTask,
 } from '../src/types/content.ts'
+import { TASK1_PROMPT_ID, type WritingMockPrompt, type WritingMockTopics, type WritingTask1Index, type WritingTask1Prompt } from '../src/types/writingMock.ts'
 import { cleanDrills } from '../src/lib/wordDrills.ts'
 import { asStringArray, contentPath, listFiles, readJson, slugify, warn, type Output } from './shared.ts'
 
@@ -160,18 +161,6 @@ export function buildPractice(root: string, out: Output): PracticeIndex {
   return index
 }
 
-interface WritingMockPrompt {
-  id: number
-  prompt: string
-  type: string
-  topics: string[]
-}
-
-interface WritingMockTopics {
-  types: string[]
-  topics: string[]
-}
-
 export function buildWritingMock(root: string, out: Output): void {
   const dir = contentPath(root, 'practice/writing-mock')
   const prompts = readJson<WritingMockPrompt[]>(path.join(dir, 'prompts.json'), []).filter(
@@ -183,6 +172,42 @@ export function buildWritingMock(root: string, out: Output): void {
     types: Array.isArray(topics.types) ? topics.types.filter((item) => typeof item === 'string' && item.trim()) : [],
     topics: Array.isArray(topics.topics) ? topics.topics.filter((item) => typeof item === 'string' && item.trim()) : [],
   })
+  buildWritingTask1(root, out)
+}
+
+/** Writing Task 1 questions: no chart pictures (the learner pastes them; they live in progress/writing-task1/). */
+export function buildWritingTask1(root: string, out: Output): WritingTask1Index {
+  const raw = readJson<Partial<WritingTask1Prompt>[]>(contentPath(root, 'practice/writing-mock/task1-prompts.json'), [])
+  const seen = new Set<string>()
+  const prompts: WritingTask1Prompt[] = []
+  for (const [i, item] of (Array.isArray(raw) ? raw : []).entries()) {
+    const id = typeof item?.id === 'string' ? item.id.trim() : ''
+    if (!TASK1_PROMPT_ID.test(id) || !item.prompt?.trim() || !item.chart_type?.trim()) {
+      warn(`writing-mock/task1-prompts.json: item ${i} (${id || 'no id'}) has no valid id, prompt or chart_type — skipped`)
+      continue
+    }
+    if (seen.has(id)) {
+      warn(`writing-mock/task1-prompts.json: repeated id ${id} — only the first is kept`)
+      continue
+    }
+    seen.add(id)
+    prompts.push({
+      id,
+      title: item.title?.trim() ?? '',
+      prompt: item.prompt.trim(),
+      chart_type: item.chart_type.trim(),
+      type_key: item.type_key?.trim() ?? '',
+      type_name: item.type_name?.trim() ?? '',
+    })
+  }
+  const distinct = (values: string[]) => [...new Set(values.filter(Boolean))].sort()
+  const index: WritingTask1Index = {
+    prompts,
+    chartTypes: distinct(prompts.map((p) => p.chart_type)),
+    typeNames: distinct(prompts.map((p) => p.type_name)),
+  }
+  out.set('practice/writing-mock/task1-prompts.json', index)
+  return index
 }
 
 interface RawSpeakingPart1 {

@@ -48,7 +48,7 @@ const excerpt = (text: string, max: number) => {
   return flat.length > max ? `${flat.slice(0, max).replace(/\s+\S*$/, '')}…` : flat
 }
 export const speakingTitle = (r: SpeakingResult) => `Speaking Part ${r.part} · ${r.topic.trim()}`
-export const writingTitle = (r: WritingReviewResult) => `Writing · ${excerpt(r.text, 60)}`
+export const writingTitle = (r: WritingReviewResult) => `${r.task === 1 ? 'Writing Task 1' : 'Writing'} · ${excerpt(r.text, 60)}`
 export const talkTitle = (r: TalkReviewResult) => `${r.part === 'free' ? 'Free talk' : `Part ${r.part}`} · ${excerpt(r.question || r.topic || r.transcript, 60)}`
 
 /** Your recorded answers (Speaking review). */

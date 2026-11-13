@@ -1,0 +1,1034 @@
+[
+    {
+        "id":  "bar-001",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 04/01/2025 kèm bài mẫu band 8",
+        "prompt":  "The bar chart illustrates the amount of money a company donated to six charitable organizations namely social welfare, health, education, environment, wildlife, and arts over three consecutive years from 2012 to 2014.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "bar-002",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 22/02/2025 kèm bài mẫu band 8.5+",
+        "prompt":  "The bar charts provide information on the proportion of school-aged and college-aged students who were able to pursue secondary and higher education, categorized according to gender in four regions namely Europe, Sub-Saharan Africa, Latin America and East Asia in 2000.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "bar-003",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 06/03/2025 kèm bài mẫu band 8.5+",
+        "prompt":  "The table illustrates how much money young individuals aged 18 to 20 in one country spent on five different categories - namely food, clothes, books, smartphones, and toiletries - in two separate years, 2010 and 2014.",
+        "chart_type":  "Table",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "bar-004",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 29/03/2025 kèm bài mẫu band 8.5+",
+        "prompt":  "The given bar charts illustrate the average daily time spent on two leisure activities—reading and listening to music—by people in five different age groups in New Zealand.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "bar-005",
+        "title":  "Forecast IELTS Writing Task 1 - (Bar chart) - Topic Renewable energy supply & sample band 8.5+",
+        "prompt":  "The bar chart illustrates the percentage of renewable energy as part of the total energy supply in four countries—Australia, Germany, Norway, and Iceland—across the years 2000, 2004, and 2007.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "bar-006",
+        "title":  "Forecast IELTS Writing Task 1 - (Bar chart) - Topic Fruit and vegetable consumption & sample band 8.5+",
+        "prompt":  "The bar chart illustrates the proportion of men and women in the UK, by age group, who met the World Health Organization’s recommendation of eating at least five portions of fruit and vegetables per day in 2006.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "bar-007",
+        "title":  "Forecast IELTS Writing Task 1 - (Bar chart) - Topic Employment by sector in Australia & sample band 8.5+",
+        "prompt":  "The bar chart compares the number of people employed in five different sectors in a particular region of Australia in the years 2001 and 2008.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "bar-008",
+        "title":  "Forecast IELTS Writing Task 1 - (Bar chart) - Topic Urban population growth trends & sample band 8.5+",
+        "prompt":  "The bar chart compares the proportion of people living in cities in 1950 and 2000, and gives projections for 2030 in four regions: the world as a whole, Africa, Asia, and Latin America.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "bar-009",
+        "title":  "Forecast IELTS Writing Task 1 - (Bar chart) - Topic Work performance factors by age & sample band 8.5+",
+        "prompt":  "The bar chart compares the views of two age groups, 18–30 and 45–60, regarding various factors that influence their work performance, based on a company-conducted survey.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "bar-010",
+        "title":  "Forecast IELTS Writing Task 1 - (Bar chart) - Topic Noise impact in Europe & sample band 8.5+",
+        "prompt":  "The bar charts depict the number of Europeans exposed to four sources of noise—traffic, train, aircraft and industrial—during daytime and nighttime in urban and rural settings in 2007.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "bar-011",
+        "title":  "Real IELTS Writing Task 1 - Bar chart - Topic Job stability & sample band 8.5+",
+        "prompt":  "The bar chart compares the average length of time that workers aged 25–35 and 35–45 remained in a single job in Europe and the USA in 1985 and 2005.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "bar-012",
+        "title":  "Real IELTS Writing Task 1 - Bar chart - Topic Kids' pastimes & sample band 8.5+",
+        "prompt":  "The bar chart illustrates the proportions of Australian children in three age brackets (5–8, 9–11 and 12–16 years) who took part in four leisure activities—watching TV, reading, doing art and riding a bike—in 2012.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "bar-013",
+        "title":  "Real IELTS Writing Task 1 - Bar chart - Topic Migrant sources & sample band 8.5+",
+        "prompt":  "The bar chart compares the regional origins of people who migrated to Australia in 1987 and again a decade later. Percentages are given for six broad areas.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "bar-014",
+        "title":  "Real IELTS Writing Task 1 - Bar chart - Topic Housework by gender & sample band 8.5+",
+        "prompt":  "The two bar charts illustrate how domestic chores are shared between men and women in Great Britain, showing both the percentage of adults who undertake each task and the average time they spend on it.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "bar-015",
+        "title":  "Real IELTS Writing Task 1 - Bar chart - Topic Tea and coffee imports & sample band 8.5+",
+        "prompt":  "The bar chart illustrates the quantities, in tonnes, of tea and coffee imported by Canada, the United Kingdom, the United States and Germany.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "bar-016",
+        "title":  "Real IELTS Writing Task 1 - Bar chart - Topic Household goods ownership & sample band 8.5+",
+        "prompt":  "The bar chart compares the proportions of households owning eight different items in one country in 2001 and 2008.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "bar-017",
+        "title":  "Real IELTS Writing Task 1 - Bar chart - Topic Student study types & sample band 8.5+",
+        "prompt":  "The charts compare the proportions of male and female students across four age groups who pursued part-time and full-time education in Australia in 2006.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "bar-018",
+        "title":  "Real IELTS Writing Task 1 - Bar chart - Topic Renewable energy share & sample band 8.5+",
+        "prompt":  "The bar chart compares the proportion of renewable energy in total supply across four countries—Australia, Germany, Norway, and Iceland—in 2000, 2004, and 2007.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "bar-019",
+        "title":  "Real IELTS Writing Task 1 - Bar Chart - Topic European Absenteeism & sample band 8.5+",
+        "prompt":  "The bar chart presents the reasons for absenteeism in a European country in 2000, 2005, and 2010, across five categories: illness, stress, personal needs, family responsibilities, and unexpected problems.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "bar-020",
+        "title":  "Real IELTS Writing Task 1 - Bar chart - Topic Exercise inactivity & sample band 8.5+",
+        "prompt":  "The bar chart illustrates the percentage of men and women in five age groups in 2005 who reported doing no exercise at all.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "bar-021",
+        "title":  "Real IELTS Writing Task 1 - Bar chart - Topic Music event attendance & sample band 8.5+",
+        "prompt":  "The bar chart illustrates the percentages of five age groups attending three types of music events—classical concerts, opera performances and popular music shows—in Australia in 2006.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "bar-022",
+        "title":  "Real IELTS Writing Task 1 - Bar chart - Topic Industrial working hours & sample band 8.5+",
+        "prompt":  "The charts illustrate the weekly working hours of employees in the industrial sector across four European countries—France, Denmark, Sweden, and the UK—in 2002.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "bar-023",
+        "title":  "Real IELTS Writing Task 1 - Bar chart - Topic Employees in 5 types of work in Australia & sample band 8.5+",
+        "prompt":  "The given bar chart compares five different occupations in terms of the number of employees in an Australian region across two separate years, 2001 and 2008.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "bar-024",
+        "title":  "Real IELTS Writing Task 1 - Bar Chart - Topic UK's Museum Visitor Numbers & sample band 8.5+",
+        "prompt":  "The bar chart illustrates the number of visitors to four different UK museums over a five-month period, from June to October 2015.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "bar-025",
+        "title":  "Real IELTS Writing Task 1 - Bar Chart - Topic An European Country's Waste disposal & sample band 8.5+",
+        "prompt":  "The bar chart illustrates the average amount of waste, in millions of tonnes, managed by three different disposal methods—landfill, burning, and dumping at sea—in a specific European nation between 2005 and 2008.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "bar-026",
+        "title":  "Real IELTS Writing Task 1 - Bar Chart - Topic Consumption levels & sample band 8.5+",
+        "prompt":  "The bar chart compares daily expenditure in three spending categories—food, entertainment, and transport—across Areas A, B, and C.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "bar-027",
+        "title":  "Real IELTS Writing Task 1 - Bar Chart - Topic Carbon emissions of fossil fuels & sample band 8.5+",
+        "prompt":  "The provided bar chart delineates the volume of carbon emissions generated by three distinct fossil fuels—gas, oil, and coal—in the United Kingdom over a two-decade period commencing in 1990.",
+        "chart_type":  "Bar Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-001",
+        "title":  "Real IELTS Writing Task 1 - Line Graph - Topic Mobile phone manufacturers market share & sample band 8.5+",
+        "prompt":  "The line graph compares the market share, as a percentage of sales, for three mobile phone manufacturers—Motorola, Nokia, and Sony Ericsson—over the decade between 1994 and 2004.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-002",
+        "title":  "Real IELTS Writing Task 1 - Line Graph - Topic Top-level football matches in Europe & sample band 8.5+",
+        "prompt":  "The line graph delineates the average attendance at elite football matches across three European nations—Italy, England, and Germany—over a 24-year period commencing in 1980.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-003",
+        "title":  "Real IELTS Writing Task 1 - Line Graph - Topic UK museum visitors & sample band 8.5+",
+        "prompt":  "The line graph illustrates attendance figures, in thousands, for five distinct categories of museums in the UK over a 20-year period spanning from 1999 to 2019.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-004",
+        "title":  "Real IELTS Writing Task 1 - Line chart - Topic Australian workforce in five industries & sample band 8.5+",
+        "prompt":  "The line graph illustrates the changes in workforce distribution across five sectors in Australia from 1962 to 2012.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-005",
+        "title":  "Real IELTS Writing Task 1 - Line graph - Topic Air pollutants in the UK & sample band 8.5+",
+        "prompt":  "The graph displays the different factors that caused air pollution in the UK from 1990 to 2005.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-006",
+        "title":  "Real IELTS Writing Task 1 - Line graph - Topic Unemployment trends & sample band 8.5+",
+        "prompt":  "The line graph illustrates the unemployment rates in the United Kingdom, the rest of Europe, and Japan from 1993 to 2007.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-007",
+        "title":  "Real IELTS Writing Task 1 - Line graph - Topic Immigration trends & sample band 8.5+",
+        "prompt":  "The line graph illustrates the annual numbers of immigrants arriving in the USA, Canada and Australia between 1991 and 2001.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-008",
+        "title":  "Real IELTS Writing Task 1 - Line graph - Topic Forest product output & sample band 8.5+",
+        "prompt":  "The line graph illustrates the production volumes, in million tonnes, of timber, pulp, and paper in a European country between 1980 and 2000.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-009",
+        "title":  "Real IELTS Writing Task 1 - Line graph - Topic UK steel trends & sample band 8.5+",
+        "prompt":  "The two line graphs illustrate trends in the UK steel industry between 1970 and 2000: the first depicts changes in demand, domestic production and imports (in thousands of tonnes), while the second shows employment levels over the same period.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-010",
+        "title":  "Real IELTS Writing Task 1 - Line graph - Topic Banana price trends & sample band 8.5+",
+        "prompt":  "The line graph illustrates the cost per kilogram of bananas in Japan, France, Germany and the USA from 1994 to 2004.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-011",
+        "title":  "Real IELTS Writing Task 1 - Line graph - Topic Sports participation trends & sample band 8.5+",
+        "prompt":  "The line graph illustrates participation numbers in four sports—badminton, tennis, basketball and rugby—in a European country over the period from 1985 to 2005.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-012",
+        "title":  "Real IELTS Writing Task 1 - Line graph - Topic Overseas visitor trends & sample band 8.5+",
+        "prompt":  "The line graph compares the number of international tourists who visited the coast, the mountains and the lakes in a European country from 1987 to 2007, measured in thousands.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-013",
+        "title":  "Real IELTS Writing Task 1 - Line graph - Topic Advertising channels & sample band 8.5+",
+        "prompt":  "The line graph illustrates the proportions of advertising expenditure devoted to five media—television, radio, newspapers, magazines and the Internet—in a particular country from 2010 to 2040.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-014",
+        "title":  "Real IELTS Writing Task 1 - Line graph - Topic Home price trends & sample band 8.5+",
+        "prompt":  "The line graph tracks average house prices in three nations from 1997 to 2014, with values expressed in thousands of US dollars.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-015",
+        "title":  "Real IELTS Writing Task 1 - Line graph - Topic Travel mode changes & sample band 8.5+",
+        "prompt":  "The line chart illustrates how the proportions of journeys made by car, bus, rail and other means changed in a particular country from 1985 to 2015.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-016",
+        "title":  null,
+        "prompt":  "The line graph depicts the changing proportions of household expenditure on five categories—food, leisure, clothing, transport, and energy—in a European country between 1960 and 2000.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-017",
+        "title":  "Forecast IELTS Writing Task 1 - (Line graph) - Topic Tourist info requests trend & sample band 8.5+",
+        "prompt":  "The line graph illustrates the number of information requests made to a UK tourist office by three different methods—in person, by letter/email and by telephone—over the six-month period from January to June.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-018",
+        "title":  "Forecast IELTS Writing Task 1 - (Line graph) - Topic Nitrogen oxide by vehicle & sample band 8.5+",
+        "prompt":  "The line graph illustrates the amount of nitrogen oxide emitted by four types of vehicles—diesel cars, petrol cars, lorries, and buses—at various speeds ranging from 10 to 130 kilometers per hour.",
+        "chart_type":  "Line",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "line-019",
+        "title":  "Real IELTS Writing Task 1 - Line Graph - Topic Monthly Contract of Cellular Companies & sample band 8.5+",
+        "prompt":  "The line graph compares the average monthly contract costs (in euros) of four cellular providers—Domo, Lex, SIM TX and Alpha—in a European country between January and September 2012.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-020",
+        "title":  "Real IELTS Writing Task 1 - Line Graph - Topic UK's Birth Rate & sample band 8.5+",
+        "prompt":  "The line graph illustrates trends in the birth rates per 1,000 women across six age groups in the UK from 1973 to 2008.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-021",
+        "title":  "Real IELTS Writing Task 1 - Line Graph - Topic Africa's Phone Subscriptions & sample band 8.5+",
+        "prompt":  "The line graph illustrates the percentage of people in Africa who subscribed to mobile and fixed-line telephones between 1994 and 2004.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-022",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 19/08/2023 kèm bài mẫu band 8",
+        "prompt":  "The provided chart illustrates changes in the unemployment rate of Ireland as well as the emigration statistics of this country over a span of 20 years, commencing from 1988.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-023",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 10/08/2023 kèm bài mẫu band 8",
+        "prompt":  "The provided charts compare three countries namely China, Japan, and the United States in terms of their imports from and exports to Australia between 2004 and 2009.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-024",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 16/09/2023 kèm bài mẫu band 8",
+        "prompt":  "The provided line graph illustrates changes in the percentage of households owning four different electronic devices over a 20-year period, commencing in 1995. These devices include MP3 players, mobile phones, computers, and tablets.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-025",
+        "title":  "The percentage of people by age group visiting the cinema in a specific country from 1978 to 2008",
+        "prompt":  "The provided graph depicts the percentage of individuals belonging to four distinct age groups who frequented the cinema at least once a month in a specific country from 1978 to 2008.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-026",
+        "title":  "Computer possession by households in one European country between 1997 & 2011",
+        "prompt":  "The given chart illustrates the changes in computer ownership among households in a European country from 1997 to 2011.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-027",
+        "title":  "The percentages of tourists who used different types of transport to travel within a particular nation",
+        "prompt":  "The given line graph illustrates how travelers commuted in a country over a 20-year period, starting from 1989. Five modes of transportation including car, rail, airplane, coach and ferry were surveyed with percent as the unit of measurement.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-028",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 27/01/2024 kèm bài mẫu band 8",
+        "prompt":  "The line graph compares the manufacturing level of 3 primary kinds of fuel in the UK from 1981 to 2000.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-029",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 03/02/2024 kèm bài mẫu band 8",
+        "prompt":  "The given line graph represents the proportion of Australian exports to four countries spanning from 1990 to 2012.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-030",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 24/02/2024 kèm bài mẫu band 8",
+        "prompt":  "The given line graph compares Japan, the United Kingdom, and the rest of Europe in terms of the unemployment rates from 1993 to 2007.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-031",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 20/04/2024 kèm bài mẫu band 8",
+        "prompt":  "The line graph illustrates how many kilometers people in five countries traveled by car over the course of 2 decades, starting from 1990.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-032",
+        "title":  "Real IELTS Writing Task 1 - Line Graph - Topic Satisfaction with Healthcare System & sample band 8.5+",
+        "prompt":  "The line graph depicts population satisfaction with the healthcare system in Canada, the UK, the Netherlands, and the US across three survey years: 1991, 1998, and 2007.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-033",
+        "title":  "Bài mẫu IELTS Writing Task 1 band 8 ngày 19/10/2024",
+        "prompt":  "The given line graph compares six different age groups in terms of birth rates in the UK between 1973 and 2008.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "line-034",
+        "title":  "Bài mẫu IELTS Writing Task 1 band 8 ngày 07/12/2024",
+        "prompt":  "The line graph compares four different age groups in terms of the percentage of individuals in each group who visited gyms at least once a month from 1990 to 2010.",
+        "chart_type":  "Line",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "mix-001",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 17/02/2024 kèm bài mẫu band 8",
+        "prompt":  "The pie chart illustrates the proportion of three different groups of workers in Australia in the year of 2003 while the line chart shows the changes in their unemployment rates from 1993 to 2003.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-002",
+        "title":  "Bài mẫu IELTS Writing Task 1 band 8 ngày 09/05/2024",
+        "prompt":  "The provided charts illustrate the participation of local and international students in research fields at Australian universities in 2001 and 2010, along with a breakdown of research students by gender over the same period.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-003",
+        "title":  "Bài mẫu IELTS Writing Task 1 band 8 ngày 25/05/2024",
+        "prompt":  "The graphs below show the percentage of math graduates and other graduates who got full-time job after graduating from a university in Australia, and also show the average salary of both these types of graduates, from 2004 to 2012.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-004",
+        "title":  "Real IELTS Writing Task 1 - Mixed Charts - Topic Australian Graduates & sample band 8.5+",
+        "prompt":  "The line graph and table present data on full‐time employment rates and average salaries of university graduates in Australia from 2004 to 2012, comparing all graduates with those in mathematics.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-005",
+        "title":  "Bài mẫu IELTS Writing Task 1 band 8 ngày 06/07/2024",
+        "prompt":  "The charts below show the comparison of time spent, in minutes per day, by UK’s males and females on household and leisure activities in 2008.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-006",
+        "title":  "Bài mẫu IELTS Writing Task 1 band 8 ngày 08/08/2024",
+        "prompt":  "The graph and the chart below show the number of students choosing different kinds of courses in a particular university in 2012.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-007",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 18/01/2025 kèm bài mẫu band 8",
+        "prompt":  "The bar chart below shows how tourism to Australia from three different countries changed between 1995 and 2005. The line chart illustrates the types of stay that tourists chose during the same period.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-008",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 15/03/2025 kèm bài mẫu band 8.5+",
+        "prompt":  "The table illustrates the number of online searches conducted in the US in two years, 2004 and 2010, while the line graph compares five different search engines in terms of the number of searches on these platforms over the same period.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-009",
+        "title":  "Forecast IELTS Writing Task 1 - (Mixed charts) - Topic Domestic activities by gender & sample band 8.5+",
+        "prompt":  "The table and bar chart compare how men and women in the UK allocated their time to various unpaid household and leisure activities in 2008.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-010",
+        "title":  "Forecast IELTS Writing Task 1 - (Mixed charts) - Topic UK migrant stay and reasons & sample band 8.5+",
+        "prompt":  "The graph and chart below give information about migration to the UK. The graph below shows how long immigrants in the years 2000-2008 intended to stay in the UK. The pie chart shows reasons for migration in 2008.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-011",
+        "title":  "Real IELTS Writing Task 1 - Mixed charts - Topic Medical workforce trends & sample band 8.5+",
+        "prompt":  "The table and charts below give information about doctors in one country between 1986 and 2006.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-012",
+        "title":  "Real IELTS Writing Task 1 - Mixed charts- Topic Tourist data Australia & sample band 8.5+",
+        "prompt":  "The pie chart and accompanying table illustrate the distribution of tourists to an Australian holiday resort by region of origin, alongside data on their average length of stay, preferred accommodation and principal leisure activity.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-013",
+        "title":  "Real IELTS Writing Task 1 - Mixed charts - Topic Life expectancy trends & sample band 8.5+",
+        "prompt":  "The bar chart delineates the life expectancy for individuals born in 2008 in Japan, Korea, the United States, and Indonesia, while the accompanying table details the change in life expectancy between 1953 and 2008.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-014",
+        "title":  "Real IELTS Writing Task 1 - Mixed charts - Topic Bottled water consumption & sample band 8.5+",
+        "prompt":  "The pie graph below shows bottled water consumption in various regions as a percent of global consumption and the bar-chart shows the growth of bottled water consumption in 2001.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-015",
+        "title":  "Real IELTS Writing Task 1 - Mixed charts - Topic Student spending abroad & sample band 8.5+",
+        "prompt":  "The table and chart provide a breakdown of the total expenditure and the average amount of money spent by students per week while studying abroad in four countries.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-016",
+        "title":  "Forecast IELTS Writing Task 1 - (Mixed Charts) - Topic The weather for Glasgow & sample band 8.5+",
+        "prompt":  "The charts below give information about the weather for Glasgow, a city in Scotland.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-017",
+        "title":  "Cinema attendants in Australia and the average cinema visits by age groups from 1996 to 2000",
+        "prompt":  "The given graphs illustrate Australians’ cinema attendance according to age, frequency, and percentage of the population.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-018",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 25/02/2023 kèm bài mẫu",
+        "prompt":  "The graph and chart below give information on the average daily maximum and minimum temperatures in degrees Celsius and the average number of days with rainfall each month for two Australian cities.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-019",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 25/03/2023 kèm bài mẫu",
+        "prompt":  "The graph and chart below give information about migration to the UK. The graph below shows how long immigrants in the year 2000-2008 intended to stay in the UK. And the pie-chart shows reasons for migration in 2008.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-020",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 08/04/2023 kèm bài mẫu",
+        "prompt":  "The provided bar graph and table present a comparison of office hours and wages for four different professions.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-021",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 10/06/2023 kèm bài mẫu band 8",
+        "prompt":  "The chart and table below give information about tourists at a particular holiday resort in Australia.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-022",
+        "title":  "Real IELTS Writing Task 1 - Mixed Charts - Topic Economic Contributions of Industries & sample band 8.5+",
+        "prompt":  "The line graph shows the contributions of five industries to the economy of a country between 2005 and 2009. The pie chart shows the total employment rate in2009.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-023",
+        "title":  "Real IELTS Writing Task 1 - Mixed Charts - Topic Types of Australian Workers & Unemployment Levels & sample band 8.5+",
+        "prompt":  "The chart and graph below give information about three categories of workers in Australia and the unemployment levels within those groups.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "mix-024",
+        "title":  "Real IELTS Writing Task 1 - Mixed Charts - Topic Australian Doctors & sample band 8.5+",
+        "prompt":  "The table and accompanying bar charts present data on the total number of doctors in Australia and their distribution by gender and birthplace in 1986, 1996 and 2006.",
+        "chart_type":  "Mixed",
+        "type_key":  "mix",
+        "type_name":  "Mix"
+    },
+    {
+        "id":  "pie-001",
+        "title":  "Real IELTS Writing Task 1 - Pie chart - Topic Australian Energy Sources & sample band 8.5+",
+        "prompt":  "The pie charts compare Australia’s energy mix in 2008 with projections for 2030.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-002",
+        "title":  "Real IELTS Writing Task 1 - Pie chart - Topic Male & Female Workers & sample band 8.5+",
+        "prompt":  "The pie charts illustrate the proportion of male and female workers employed in three different sectors—services, agriculture, and industry—in two countries in the year 2007.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "pie-003",
+        "title":  "Bài mẫu IELTS Writing Task 1 band 8 ngày 17/08/2024",
+        "prompt":  "The given pie charts provide information on the percentage of people immigrating to and from a European country in 2009, categorized by different purposes.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "pie-004",
+        "title":  "Bài mẫu IELTS Writing Task 1 band 8 ngày 19/09/2024",
+        "prompt":  "The provided pie charts compare different book genres in terms of their sales from a bookseller over a 40-year period, starting in 1972.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-005",
+        "title":  "Bài mẫu IELTS Writing Task 1 band 8 ngày 16/11/2024",
+        "prompt":  "The charts below show the percentage of students on an adult education center taking various courses offered in 1985 and this year.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-006",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 08/02/2025 kèm bài mẫu band 8.5+",
+        "prompt":  "The pie charts illustrate the proportion of UK tourists traveling to Spain, classified according to age, in two years, 1983 and 2003.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-007",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 08/03/2025 kèm bài mẫu band 8.5+",
+        "prompt":  "The pie charts compare the market share of different computer operating systems worldwide over a four-year period, starting from 2012.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-008",
+        "title":  "Forecast IELTS Writing Task 1 - (Pie chart) - Topic Course types & sample band 8.5+",
+        "prompt":  "The pie charts illustrate the proportion of students enrolled in four different types of courses (face-to-face, correspondence, mixed media, and online) during the years 1984, 1994, and 2004.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-009",
+        "title":  "Forecast IELTS Writing Task 1 - (Pie chart) - Topic Waste disposal methods & sample band 8.5+",
+        "prompt":  "The two pie charts illustrate how various types of waste were disposed of in one country in 1960 and 2011, highlighting changes in waste composition over the five-decade period.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-010",
+        "title":  "Forecast IELTS Writing Task 1 - (Pie chart) - Topic Engineering company graduate & sample band 8.5+",
+        "prompt":  "The two pie charts illustrate the distribution of employees with different academic qualifications in an engineering company in the years 1980 and 2008.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-011",
+        "title":  "Forecast IELTS Writing Task 1 - (Pie chart) - Topic New car sales in Australia & sample band 8.5+",
+        "prompt":  "The pie charts provide a comparative overview of the percentage distribution of new car sales in Australia across three categories—SUVs, sedans and other models—in 1984, 1993 and 2013.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-012",
+        "title":  "Forecast IELTS Writing Task 1 - (Pie chart) - Topic Australia energy sources comparison & sample band 8.5+",
+        "prompt":  "The two pie charts compare the proportions of different energy sources in Australia in 2008 and projected figures for 2030.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-013",
+        "title":  "Forecast IELTS Writing Task 1 - (Pie chart) - Topic Energy resource changes & sample band 8.5+",
+        "prompt":  "The two pie charts illustrate how a nation’s electricity portfolio was distributed across six energy sources in 1985 and 2003.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-014",
+        "title":  "Forecast IELTS Writing Task 1 - (Pie chart) - Topic Energy production comparison & sample band 8.5+",
+        "prompt":  "The pie charts compare the distribution of five energy sources—coal, natural gas, petroleum, nuclear and other—in a country’s power generation mix in 1995 and 2005.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-015",
+        "title":  "Real IELTS Writing Task 1 - Pie chart - Topic Reasons for flying & sample band 8.5+",
+        "prompt":  "The pie charts show the reasons (visiting friends/family, business, holiday, other) people fly from the airport.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "pie-016",
+        "title":  "Real IELTS Writing Task 1 - Pie chart - Topic Graduation rates & sample band 8.5+",
+        "prompt":  "The pie charts compare the distribution of graduates across six qualification types in 1980 and 2008.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-017",
+        "title":  "Real IELTS Writing Task 1 - Pie chart - Topic University selection reasons & sample band 8.5+",
+        "prompt":  "The two pie charts compare why students selected a particular UK university in 1987 and in 2007.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-018",
+        "title":  "Real IELTS Writing Task 1 - Pie chart - Topic Waste disposal methods & sample band 8.5+",
+        "prompt":  "The pie charts illustrate the proportions of various waste types disposed of in one country in the years 1960 and 2011.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-019",
+        "title":  "Real IELTS Writing Task 1 - Pie chart - Topic Course type trends & sample band 8.5+",
+        "prompt":  "The three pie charts illustrate the proportions of students enrolled in four different course types—face-to-face, correspondence, mixed-media, and online—in 1984, 1994, and 2004.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-020",
+        "title":  "Real IELTS Writing Task 1 - Pie chart - Topic Graduate qualifications & sample band 8.5+",
+        "prompt":  "The two pie charts compare the proportions of graduates with six different qualifications—three at postgraduate level and three at undergraduate level—employed by an engineering company in 1980 and again in 2008.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-021",
+        "title":  "Real IELTS Writing Task 1 - Pie Chart - Topic Booking online English courses & sample band 8.5+",
+        "prompt":  "The pie charts below show the methods used by international students when booking online English courses in three different countries in 2009 and 2010.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "pie-022",
+        "title":  "Real IELTS Writing Task 1 - Pie Chart - Topic Teachers' Response Regarding Foreign Language Learning & sample band 8.5+",
+        "prompt":  "The pie charts below show responses by teachers of foreign languages in Britain to a survey concerning why their students are learning a foreign language. The first chart shows the main reason for learning a foreign language. The second chart shows how many teachers felt that there has been a recent change in the reason.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "pie-023",
+        "title":  "Real IELTS Writing Task 1 - Pie Chart - Topic World’s forests & sample band 8.5+",
+        "prompt":  "The two pie charts compare the distribution of the world's forest coverage and timber production across five distinct geographical regions: Africa, North America, Europe, South America, and Asia.",
+        "chart_type":  "Pie Chart",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "table-001",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 13/02/2025 kèm bài mẫu band 8.5+",
+        "prompt":  "The table presents the percentage of first-year students who rated different aspects of their courses as ‘very good’ in a university satisfaction survey.",
+        "chart_type":  "Table",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "table-002",
+        "title":  "Đề thi IELTS Writing Task 1 ngày 22/03/2025 kèm bài mẫu band 8.5+",
+        "prompt":  "The table illustrates the proportion of workers in six different sectors in New Zealand, classified according to gender, between 1993 and 2003.",
+        "chart_type":  "Table",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "table-003",
+        "title":  "Forecast IELTS Writing Task 1 - (Table) - Topic Annual milk production & sample band 8.5+",
+        "prompt":  "The table compares the annual milk production (in litres) in four countries—Netherlands, Australia, Tanzania, and Guatemala—over three years: 1990, 2000, and 2010.",
+        "chart_type":  "Table",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "table-004",
+        "title":  "Forecast IELTS Writing Task 1 - (Table) - Topic Post-study work in the UK & sample band 8.5+",
+        "prompt":  "The table illustrates the percentage of first degree graduates from four UK countries—Scotland, England, Wales, and Northern Ireland—who were in employment (permanent, temporary, or overseas) in 2001.",
+        "chart_type":  "Table",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "table-005",
+        "title":  "Forecast IELTS Writing Task 1 - (Table) - Topic Retirement age by gender & sample band 8.5+",
+        "prompt":  "The table illustrates the average retirement ages of men and women in six countries in 2003.",
+        "chart_type":  "Table",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "table-006",
+        "title":  "Forecast IELTS Writing Task 1 - (Table) - Topic Poverty by age and state & sample band 8.5+",
+        "prompt":  "The table compares poverty rates for two age groups, average per‐person income and the overall proportion of people living below the poverty line in California, Utah and Florida.",
+        "chart_type":  "Table",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "table-007",
+        "title":  "Forecast IELTS Writing Task 1 - (Table) - Topic Graduate vs non-graduate salaries & sample band 8.5+",
+        "prompt":  "The tables compare the average annual earnings of UK graduates and non‐graduates between 2000 and 2010, both overall and across five age brackets.",
+        "chart_type":  "Table",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "table-008",
+        "title":  "Real IELTS Writing Task 1 - Table - Topic Visitor age distribution & sample band 8.5+",
+        "prompt":  "The table compares the age distribution of UK tourists visiting Spain in 1981 and 2015.",
+        "chart_type":  "Table",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "table-009",
+        "title":  "Real IELTS Writing Task 1 - Table - Topic Cinema number changes & sample band 8.5+",
+        "prompt":  "The table illustrates the number of cinemas operating in four distinct zones of a European country in 2004 and 2009, alongside the change rates over this five-year interval.",
+        "chart_type":  "Table",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "table-010",
+        "title":  "Real IELTS Writing Task 1 - Table - Topic Course satisfaction survey & sample band 8.5+",
+        "prompt":  "The table presents the proportions of first-year students in three programmes—Economics, Law and Commerce—who rated various aspects of their course as “very good.”",
+        "chart_type":  "Table",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "table-011",
+        "title":  "Real IELTS Writing Task 1 - Table - Topic Dairy consumption patterns & sample band 8.5+",
+        "prompt":  "The table presents the weekly per‐person consumption of milk and butter in a European country, broken down by age groups, along with the proportions of full‐fat and low‐fat varieties.",
+        "chart_type":  "Table",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "table-012",
+        "title":  "Real IELTS Writing Task 1 - Table - Topic Medical care comparison & sample band 8.5+",
+        "prompt":  "The table provides data on three aspects of medical care—number of physicians, hospital beds per 1,000 people, and average hospital stay—in Austria, France, and Sweden from 1980 to 2000.",
+        "chart_type":  "Table",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "table-013",
+        "title":  "Real IELTS Writing Task 1 - Table - Topic Income and expenditure of Harckley Hall & sample band 8.5+",
+        "prompt":  "The table illustrates the financial performance of Harckley Hall, a public venue for hire, detailing its income sources and expenditure across a three-year timeframe.",
+        "chart_type":  "Table",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "table-014",
+        "title":  "Real IELTS Writing Task 1 - Table - Topic Australia's registered vehicles & sample band 8.5+",
+        "prompt":  "The tables present data on the registration figures for five different categories of vehicles in Australia across the years 2010, 2012, and 2014.",
+        "chart_type":  "Table",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "table-015",
+        "title":  "Real IELTS Writing Task 1 - Table - Topic Free time activities of adults in rural & urban areas & sample band 8.5+",
+        "prompt":  "The table presents data on the participation of adults in both urban and rural settings across four different leisure activities, comparing the years 1990 and 2010.",
+        "chart_type":  "Table",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "table-016",
+        "title":  "Real IELTS Writing Task 1 - Table - Topic Difficulty in finding staff & sample band 8.5+",
+        "prompt":  "The table provides data on the percentage of difficulty employers faced when recruiting three different categories of workers across four economic sectors for the years 2003 and 2004.",
+        "chart_type":  "Table",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "table-017",
+        "title":  "Real IELTS Writing Task 1 - Table - Topic 15 & 75 year-old Males & Females & sample band 8.5+",
+        "prompt":  "The table provides data on the UK's total population, alongside the percentage and specific numbers of males and females at ages 15 and 75, for the years 1911, 1961, and 2011.",
+        "chart_type":  "Table",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "table-018",
+        "title":  "Real IELTS Writing Task 1 - Table - Topic Kinds of Accommodation in the UK & sample band 8.5+",
+        "prompt":  "The table provides data on the percentage of residents inhabiting four different types of accommodation, comparing three separate areas—Central, Green Park, and Southberg—within a particular UK city.",
+        "chart_type":  "Table",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    },
+    {
+        "id":  "table-019",
+        "title":  "Real IELTS Writing Task 1 - Table - Topic Annual Milk Production & sample band 8.5+",
+        "prompt":  "The table provides data on the annual milk production (in litres) for four nations—Netherlands, Australia, Tanzania, and Guatemala—in 1990, 2000, and 2010.",
+        "chart_type":  "Table",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "table-020",
+        "title":  "Real IELTS Writing Task 1 - Table - Topic Unemployment Rate in 9 countries & sample band 8.5+",
+        "prompt":  "The table compares the unemployment rates within the labor force across nine different nations in 1994 and a decade later in 2004.",
+        "chart_type":  "Table",
+        "type_key":  "trend_and_compare",
+        "type_name":  "Compare + Trend"
+    },
+    {
+        "id":  "table-021",
+        "title":  "Real IELTS Writing Task 1 - Table - Topic Spending on health & sample band 8.5+",
+        "prompt":  "The provided table compares the percentage of GDP allocated to health spending across five different nations, categorized into total, public, and private sector contributions.",
+        "chart_type":  "Table",
+        "type_key":  "two_compare",
+        "type_name":  "Compare"
+    }
+]

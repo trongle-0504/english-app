@@ -27,6 +27,7 @@ import { speakingRoutes } from '../../server/routes/speaking.ts'
 import { translateRoutes } from '../../server/routes/translate.ts'
 import { ttsRoutes } from '../../server/routes/tts.ts'
 import { writingReviewRoutes } from '../../server/routes/writing-review.ts'
+import { writingTask1Routes } from '../../server/routes/writing-task1.ts'
 import { routes } from '../../server/routes.ts'
 import { featureOf } from '../../server/usage.ts'
 
@@ -143,6 +144,7 @@ test('T-COMPAT-06: the route table — no module overwrites another, the coach a
     notepadRoutes,
     newsRoutes,
     writingReviewRoutes,
+    writingTask1Routes,
     speakingRoutes,
     speakingMockRoutes,
     speakingReviewRoutes,
