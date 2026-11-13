@@ -268,6 +268,262 @@
             "Do you agree or disagree that practical experience is more useful than qualifications when working in an international company?"
           ]
         }
+      },
+      {
+        "id": 13,
+        "sub_topic": "Describe somewhere near a natural place that you have been to",
+        "part_2": {
+          "topic": "Describe somewhere near a natural place that you have been to",
+          "cue_card": [
+            "Where this place is",
+            "Who you went there with",
+            "Why you went there",
+            "And explain how you feel about the place"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Are there any natural attractions that are great to visit?",
+            "Do you think it is necessary to include natural spaces in a city?",
+            "Do you think people who live in natural places are more likely to protect it?"
+          ]
+        }
+      },
+      {
+        "id": 14,
+        "sub_topic": "Describe a public building you enjoy visiting (e.g. a library, a shopping mall, etc.)",
+        "part_2": {
+          "topic": "Describe a public building you enjoy visiting (e.g. a library, a shopping mall, etc.)",
+          "cue_card": [
+            "Where it is",
+            "How you knew it",
+            "What it looks like",
+            "And explain why you enjoy visiting it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Do you think old buildings are valuable?",
+            "Do you think all old buildings should be demolished?",
+            "Is it better to live in an apartment than in a house?"
+          ]
+        }
+      },
+      {
+        "id": 15,
+        "sub_topic": "Describe a natural place in your city that you enjoy visiting",
+        "part_2": {
+          "topic": "Describe a natural place in your city that you enjoy visiting",
+          "cue_card": [
+            "Where it is",
+            "What it is like",
+            "How often you go there",
+            "Who you often go there with",
+            "And explain why you enjoy visiting there"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Do you think there should be many natural places in cities?",
+            "Do you think staying in a natural place would help change people's mood?",
+            "Which is more important, protecting the environment or developing the economy?"
+          ]
+        }
+      },
+      {
+        "id": 16,
+        "sub_topic": "Describe a city that you have been to and would like to visit again",
+        "part_2": {
+          "topic": "Describe a city that you have been to and would like to visit again",
+          "cue_card": [
+            "When you visited it",
+            "What you did there",
+            "What it was like",
+            "And explain why you would like to visit it again"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What's the difference between the city and the countryside?",
+            "Some people say large cities are suitable for old people. What do you think?",
+            "Do you think it is possible that all of the population move to cities?",
+            "Do you think people in the countryside are friendlier than people in the city?",
+            "Are there any changes in your city?",
+            "What should the government do to improve citizens' safety?"
+          ]
+        }
+      },
+      {
+        "id": 17,
+        "sub_topic": "Describe a crowded place you went to",
+        "part_2": {
+          "topic": "Describe a crowded place you went to",
+          "cue_card": [
+            "Where it was",
+            "When you went there",
+            "Who you went there with",
+            "What you did there",
+            "And how you felt about it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Which cities are overcrowded in your country?",
+            "Will there be more or less green space in cities in the future?",
+            "Will people use bikes more or less in cities in the future?",
+            "Why do people go to crowded places?",
+            "Do you think there are some people who enjoy crowded places?",
+            "Do you think it is a good trend to have more big cities?"
+          ]
+        }
+      },
+      {
+        "id": 18,
+        "sub_topic": "Describe a noisy place you have been to",
+        "part_2": {
+          "topic": "Describe a noisy place you have been to",
+          "cue_card": [
+            "Where it is",
+            "When you went there",
+            "What you did there",
+            "And explain why you feel it's a noisy place"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Do you think it is good for children to make noise?",
+            "Should children not be allowed to make noise under any circumstances?",
+            "What kinds of noises are there in our life?",
+            "Which area is exposed to noise more, the city or the countryside?",
+            "How would people usually respond to noises in your country?",
+            "How can people consider others' feelings when chatting in public?"
+          ]
+        }
+      },
+      {
+        "id": 19,
+        "sub_topic": "Describe a place you have travelled to that you would like to recommend to others",
+        "part_2": {
+          "topic": "Describe a place you have travelled to that you would like to recommend to others",
+          "cue_card": [
+            "What it is",
+            "Where it is",
+            "What you saw and did there",
+            "And explain why you would like to recommend it to others"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Where do people in your country often go for holidays?",
+            "What is the ideal length for a holiday?",
+            "How do people usually plan holidays?",
+            "Is it important to plan a holiday?"
+          ]
+        }
+      },
+      {
+        "id": 20,
+        "sub_topic": "Describe a tall building you like or dislike",
+        "part_2": {
+          "topic": "Describe a tall building you like or dislike",
+          "cue_card": [
+            "What it is used for",
+            "Where it is",
+            "What it looks like",
+            "And explain why you like/dislike it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Are there many tall buildings in your country?",
+            "What are the differences between those tall buildings in your country?",
+            "Why are different places laid out and designed differently?"
+          ]
+        }
+      },
+      {
+        "id": 21,
+        "sub_topic": "Describe a boring place",
+        "part_2": {
+          "topic": "Describe a boring place",
+          "cue_card": [
+            "Where it is",
+            "Who you went there with",
+            "What you did there",
+            "And explain why you think it is a boring place"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why do most children think education is boring?",
+            "Why aren't young people willing to listen to the experiences of older people?",
+            "What can people do when they feel bored?",
+            "Why are some teachers' classes boring? Are there any solutions?"
+          ]
+        }
+      },
+      {
+        "id": 22,
+        "sub_topic": "Describe a home that you like to visit but do not want to live in",
+        "part_2": {
+          "topic": "Describe a home that you like to visit but do not want to live in",
+          "cue_card": [
+            "Where it is",
+            "What it is like",
+            "Why you like to visit it",
+            "And explain why you would not like to live there"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Do Vietnamese people like to visit others' homes?",
+            "What do Vietnamese people do when they visit others?",
+            "What kind of place do people in your country like to live in?",
+            "What's the difference between homes in cities and those in the countryside?"
+          ]
+        }
+      },
+      {
+        "id": 23,
+        "sub_topic": "Describe an important river/lake in your country",
+        "part_2": {
+          "topic": "Describe an important river/lake in your country",
+          "cue_card": [
+            "Where it is located",
+            "How big/long it is",
+            "What it looks like",
+            "And explain why it is important"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What are the popular water sports in your country?",
+            "Are rivers and lakes important to a country?",
+            "How can rivers and lakes benefit local people?",
+            "Do you think rivers and lakes attract tourists?",
+            "How do rivers and lakes affect local tourism?",
+            "Are rivers and lakes good for transport? Why?"
+          ]
+        }
+      },
+      {
+        "id": 24,
+        "sub_topic": "Describe a place you would like to visit in your free time",
+        "part_2": {
+          "topic": "Describe a place you would like to visit in your free time",
+          "cue_card": [
+            "Where it is",
+            "What you will do there",
+            "How long you will stay there",
+            "And explain why you would like to visit it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why do you think some people choose not to travel abroad?",
+            "Do you think a gap period in life is important?"
+          ]
+        }
       }
     ]
   }

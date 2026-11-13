@@ -271,6 +271,157 @@
             "What do you think of people using their mobile phones during a meal?"
           ]
         }
+      },
+      {
+        "id": 13,
+        "sub_topic": "Describe a gift you would like to buy for your friend",
+        "part_2": {
+          "topic": "Describe a gift you would like to buy for your friend",
+          "cue_card": [
+            "How you knew your friend",
+            "How long you have known him/her",
+            "How you would choose a gift for him/her",
+            "And explain why you would choose that gift for him/her"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "When do people normally send gifts to others?",
+            "Is it hard to choose a gift?",
+            "Will people feel happy when receiving an expensive gift?",
+            "Which do people give on traditional festivals, red envelopes or other kinds of gifts?",
+            "What do people usually consider when buying gifts?",
+            "Are there any unlucky things that people should not buy as gifts in your country?"
+          ]
+        }
+      },
+      {
+        "id": 14,
+        "sub_topic": "Describe a book you read that made you happy",
+        "part_2": {
+          "topic": "Describe a book you read that made you happy",
+          "cue_card": [
+            "What kind of book it was",
+            "What it was about",
+            "Why you read it",
+            "And explain why it made you happy"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What kinds of books are popular in Vietnam?",
+            "Do you think people should read the original book before watching the movie?",
+            "Are success books useful to everyone?"
+          ]
+        }
+      },
+      {
+        "id": 15,
+        "sub_topic": "Describe your least favourite movie",
+        "part_2": {
+          "topic": "Describe your least favourite movie",
+          "cue_card": [
+            "When you watched it",
+            "Where you watched it",
+            "What it was about",
+            "And explain why it's your least favourite movie"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What kinds of movies are the most popular in Vietnam?",
+            "What are the differences between watching movies at home and in a cinema?",
+            "Are movies more likely to help people become more creative than books?",
+            "Can movies help people better understand the cultural background of a country?"
+          ]
+        }
+      },
+      {
+        "id": 16,
+        "sub_topic": "Describe a story/book with animals in it",
+        "part_2": {
+          "topic": "Describe a story/book with animals in it",
+          "cue_card": [
+            "What animals are in it",
+            "What the story/book is about",
+            "Why you read the story/book",
+            "And explain what you think of this story/book"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Should schools teach children about animals?",
+            "Some people think pets should not be kept in cities. What do you think?",
+            "Many people regard pets as members of their family. What do you think?",
+            "Do many people keep pets in your country?",
+            "What are the advantages of keeping a pet?",
+            "Why do people always tell children stories with animals?"
+          ]
+        }
+      },
+      {
+        "id": 17,
+        "sub_topic": "Describe an advertisement with a famous person in it",
+        "part_2": {
+          "topic": "Describe an advertisement with a famous person in it",
+          "cue_card": [
+            "Who the person is",
+            "Where you can see it",
+            "What the advertisement is about",
+            "And explain how you feel about the advertisement"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What are the advantages and disadvantages of advertisements?",
+            "Why are many advertisements endorsed by celebrities? How useful are they?",
+            "What is the most important factor in an advertisement?",
+            "Why are some advertisements boring?",
+            "Is advertising important for a company? Why?",
+            "Which is more effective, online advertising or offline advertising?"
+          ]
+        }
+      },
+      {
+        "id": 18,
+        "sub_topic": "Describe a food that people eat on special occasions/events",
+        "part_2": {
+          "topic": "Describe a food that people eat on special occasions/events",
+          "cue_card": [
+            "What it is",
+            "What the special event/occasion is",
+            "How it is cooked/made",
+            "And explain why people eat it on that special occasion/event"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why are there special foods on special occasions or events?",
+            "What are the differences between everyday food and festival food?",
+            "Are there any differences between the food people eat today and the food people ate in the past?"
+          ]
+        }
+      },
+      {
+        "id": 19,
+        "sub_topic": "Describe an interesting video",
+        "part_2": {
+          "topic": "Describe an interesting video",
+          "cue_card": [
+            "When and where you watched it",
+            "What it is about",
+            "Why you watched it",
+            "And explain how you feel about it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What kind of videos do people in your country like to watch?",
+            "Which is more helpful, watching videos or reading books?",
+            "What skills can people learn from watching videos?",
+            "Are there any differences between the videos that young people and old people like to watch?"
+          ]
+        }
       }
     ]
   }
