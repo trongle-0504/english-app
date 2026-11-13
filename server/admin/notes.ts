@@ -5,12 +5,15 @@ import { ApiError, type ApiContext, type ApiHandler } from '../api.ts'
 import { contentFile } from '../files.ts'
 import { cleanDrills } from '../../src/lib/wordDrills.ts'
 import { generateLogged, loadSchema } from './ai.ts'
-import { DRILL_FIELDS, drillsPrompt, drillsSchema, type DrillSubject } from './drills.ts'
-import { CORRECTIONS_PROPERTY, corrections, noteLemma, ozdicNotePrompt, ozdicReference } from './ozdic-grounding.ts'
+import { DRILL_FIELDS } from './drills.ts'
+import { adminEffort, CORRECTIONS_PROPERTY, corrections, dictionaryReference, ozdicNotePrompt, resolveNoteLemma } from './ozdic-grounding.ts'
 import { isObject, jsonBody, optionalText, queryParam, requiredObject, requiredText, stringList, type JsonObject } from './input.ts'
 import { readJsonDoc, updateJsonDoc } from './store.ts'
 import { autoAddFromAdmin } from '../review/progress.ts'
-import { searchImages, storeImage, type ImageCandidate } from './images.ts'
+import { downloadImage, firstImages, searchImages, storeImage, writeImage } from './images.ts'
+import { startGenerateJob, type PartRunner } from './generate-jobs.ts'
+import { logTimings, type GenerateTimings } from './generate-log.ts'
+import type { LookupStats } from '../writing-review/longman.ts'
 
 const NOTE_TYPES: NoteType[] = ['Structure', 'Idiom', 'Collocation', 'Vocabulary', 'Other']
 
@@ -116,7 +119,9 @@ function parseNote(raw: JsonObject): Omit<Note, 'id' | 'created_at'> {
   if (!NOTE_TYPES.includes(type)) throw new ApiError(400, `"type" must be one of ${NOTE_TYPES.join(', ')}.`)
   const patterns = raw.patterns == null ? [] : raw.patterns
   if (!Array.isArray(patterns)) throw new ApiError(400, '"patterns" must be an array.')
-  const optional = (key: 'pronunciation' | 'formula' | 'usage_context' | 'image' | 'image_credit' | 'image_source' | 'image_query') => {
+  const optional = (
+    key: 'pronunciation' | 'formula' | 'usage_context' | 'image' | 'image_credit' | 'image_source' | 'image_query' | 'dictionarySource' | 'dictionaryNote',
+  ) => {
     const value = optionalText(raw, key)
     return value ? { [key]: value } : {}
   }
@@ -141,7 +146,11 @@ function parseNote(raw: JsonObject): Omit<Note, 'id' | 'created_at'> {
     }),
     examples: examples(raw.examples, 'examples'),
     related_notes: stringList(raw.related_notes, 'related_notes'),
-    // Review drills are kept (and cleaned) on every save, so editing a note in Admin never drops them.
+    ...optional('dictionarySource'),
+    ...optional('dictionaryNote'),
+    // Review drills are kept (and cleaned) on every save, so editing a note in Admin never drops them. A drill the
+    // nightly batch wrote as [] stays [] (present = done), so the batch does not try that note again every night.
+    ...Object.fromEntries(DRILL_FIELDS.filter((f) => Array.isArray(raw[f])).map((f) => [f, []])),
     ...cleanDrills(
       raw,
       requiredText(raw, 'title', { max: 200, collapse: true }),
@@ -173,9 +182,8 @@ export const listNotes: ApiHandler = async (_req, ctx) => {
   return { json: { notes } }
 }
 
-const NOTE_DRILLS: DrillSubject = { item: 'note title', partners: 'patterns' }
-
 export const generateNote: ApiHandler = async (req, ctx) => {
+  const started = Date.now()
   const body = jsonBody(req)
   const prompt = requiredText(body, 'prompt', { max: 20_000 })
   const type = optionalText(body, 'type') || 'auto'
@@ -184,67 +192,118 @@ export const generateNote: ApiHandler = async (req, ctx) => {
   }
   // Speaking ideas adds phrases with one click: never replace a note that already exists.
   const onlyNew = body.onlyNew === true
-  // 1. The item in base form + headwords, 2. their Oxford Collocations entries on OZDIC, 3. the note grounded on them.
-  const lemmaStep = await noteLemma(ctx, prompt)
+  // 1. The item in base form + headwords, 2. Longman, else OZDIC, for them, 3. the note grounded on them (no drills:
+  // the nightly batch writes those, drills-nightly.ts).
+  const stats: LookupStats = { requests: 0, cacheHits: 0, waitMs: 0 }
+  const lemmaStep = await resolveNoteLemma(ctx, prompt, stats)
+  const lemmaDone = Date.now()
   if (onlyNew) {
     const known = (await readJsonDoc<RawNote[]>(notesFile(ctx), [])).value.find((n) => n.id === slugify(lemmaStep.result.lemma))
     if (known) throw new ApiError(409, `"${known.title}" is already in Notes.`)
   }
   // Notes get the combinations only: dictionary example sentences tempt Gemini to copy unrelated ones.
-  const ozdic = await ozdicReference(lemmaStep.result.headwords, { examples: false })
+  const ozdic = await dictionaryReference(lemmaStep.result.headwords, { examples: false, baseForms: lemmaStep.result.baseForms, stats })
+  const dictionaryDone = Date.now()
   const grounded = Boolean(ozdic.text)
   const baseSchema = (await loadSchema(ctx, 'note_schema')) as JsonObject
   const schema = {
     ...baseSchema,
     properties: {
       ...(baseSchema.properties as JsonObject),
-      ...drillsSchema(NOTE_DRILLS),
       ...(grounded ? { ozdic_corrections: CORRECTIONS_PROPERTY } : {}),
     },
-    required: [...((baseSchema.required as string[]) ?? []), ...DRILL_FIELDS, ...(grounded ? ['ozdic_corrections'] : [])],
+    required: [...((baseSchema.required as string[]) ?? []), ...(grounded ? ['ozdic_corrections'] : [])],
   }
   const generated = await generateLogged<unknown>(ctx, `note: ${prompt.slice(0, 60)}`, {
-    prompt: notePrompt(prompt) + (lemmaStep.error ? '' : ozdicNotePrompt(ozdic.text, lemmaStep.result.lemma)) + drillsPrompt(NOTE_DRILLS) + IMAGE_PROMPT,
+    prompt: notePrompt(prompt) + (lemmaStep.error ? '' : ozdicNotePrompt(ozdic.text, lemmaStep.result.lemma)) + IMAGE_PROMPT,
     schema,
     temperature: 0.1,
+    thinking: adminEffort(),
   })
+  const mainDone = Date.now()
   if (!isObject(generated.value)) throw new ApiError(502, 'Gemini did not return a JSON object.')
   const raw = { ...generated.value, type: type === 'auto' ? generated.value.type : type } as JsonObject
   if (!NOTE_TYPES.includes(raw.type as NoteType)) raw.type = 'Other'
+  // Drills come from the nightly batch, never from this answer.
+  for (const field of DRILL_FIELDS) delete raw[field]
+  raw.dictionarySource = ozdic.dictionarySource
+  if (ozdic.dictionaryNote) raw.dictionaryNote = ozdic.dictionaryNote
+  else delete raw.dictionaryNote
 
-  // Look for image candidates based on image_query
+  // The picture is found in the background after saving; the picker loads the full list of candidates itself.
   const imageQuery = optionalText(generated.value as JsonObject, 'image_query')
-  let imageCandidates: ImageCandidate[] = []
-  if (imageQuery) {
-    const searchRes = await searchImages(imageQuery)
-    imageCandidates = searchRes.candidates
-    const candidate = imageCandidates[0]
-    if (candidate) {
-      try {
-        raw.image = await storeImage(ctx, String(raw.title || prompt.slice(0, 30)), candidate.url, 'note-images')
-        raw.image_credit = candidate.credit
-        raw.image_source = candidate.source
-        raw.image_query = imageQuery
-      } catch {
-        // If downloading the first candidate fails, the picker still offers the rest.
-      }
-    }
-  }
+  if (imageQuery) raw.image_query = imageQuery
+  for (const field of ['image', 'image_credit', 'image_source']) delete raw[field]
 
   const result = await commitNote(ctx, parseNote(raw), undefined, onlyNew)
   ctx.onContentChange()
+  const commitDone = Date.now()
   if (result.action === 'created') await autoAddFromAdmin(ctx, [`note:${result.note.id}`])
+  const job = startGenerateJob('note', String(result.note.title), { image: imageQuery ? noteImageJob(ctx, String(result.note.id), imageQuery) : undefined })
+
+  const timings: GenerateTimings = {
+    lemma: lemmaStep.lemmaMs,
+    dictionary: lemmaDone - started - lemmaStep.lemmaMs + (dictionaryDone - lemmaDone),
+    main: mainDone - dictionaryDone,
+    commit: commitDone - mainDone,
+    total: Date.now() - started,
+    dictionaryRequests: stats.requests,
+    cacheHits: stats.cacheHits,
+    longmanWaitMs: stats.waitMs,
+    longmanPrefetched: Boolean(stats.prefetched),
+    lemmaSkipped: Boolean(lemmaStep.result.skipped),
+    dictionarySource: ozdic.dictionarySource,
+    ...(ozdic.longmanError ? { longmanError: ozdic.longmanError } : {}),
+  }
+  logTimings('note', String(result.note.title), timings)
   return {
     json: {
       ...result,
+      job,
       lemma: lemmaStep.result,
       lemmaError: lemmaStep.error,
-      ozdic: { sources: ozdic.sources, corrections: grounded ? corrections(generated.value.ozdic_corrections) : [] },
+      ozdic: {
+        sources: ozdic.sources,
+        corrections: grounded ? corrections(generated.value.ozdic_corrections) : [],
+        dictionarySource: ozdic.dictionarySource,
+        dictionaryNote: ozdic.dictionaryNote,
+      },
       model: generated.model,
       usage: generated.usage,
       lemmaUsage: lemmaStep.usage,
-      image: { query: imageQuery, candidates: imageCandidates },
+      image: { query: imageQuery },
+      timings,
     },
+  }
+}
+
+/** Background picture for a saved note (see wordImageJob in vocabulary.ts). null = the note is gone or has a picture. */
+function noteImageJob(ctx: ApiContext, id: string, query: string): PartRunner {
+  return async () => {
+    const candidates = await firstImages(query)
+    if (!candidates.length) throw new Error(`No picture found for "${query}".`)
+    let webp: Buffer | undefined
+    let chosen = candidates[0]
+    for (const candidate of candidates.slice(0, 3)) {
+      try {
+        webp = await downloadImage(candidate.url)
+        chosen = candidate
+        break
+      } catch {
+        // try the next candidate
+      }
+    }
+    if (!webp) throw new Error('Could not download any of the pictures found.')
+    const note = await updateJsonDoc<RawNote[], RawNote | null>(notesFile(ctx), [], async (notes) => {
+      const found = notes.find((n) => n.id === id)
+      if (!found || found.image) return null
+      found.image = await writeImage(ctx, String(found.title || id), webp, 'note-images')
+      found.image_credit = chosen.credit
+      found.image_source = chosen.source
+      return found
+    })
+    if (note) ctx.onContentChange()
+    return note && { note }
   }
 }
 

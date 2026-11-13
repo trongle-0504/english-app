@@ -1,5 +1,5 @@
 import { FilePlus2, NotebookPen, Pencil, Sparkles } from 'lucide-react'
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Markdown } from '@/components/Markdown'
 import { Badge, Button, EmptyState, SearchInput, SegmentedControl, type Tone } from '@/components/ui'
 import { cn } from '@/lib/cn'
@@ -10,7 +10,9 @@ import { ReviewDrills } from './ReviewDrills'
 import { adminApi, refreshSiteData, useAdminResource } from './api'
 import { EntryEditor } from './EntryEditor'
 import { OzdicSummary, type OzdicGrounding } from './OzdicSummary'
-import { ImagePicker, type ImageCandidate } from './ImagePicker'
+import { ImagePicker } from './ImagePicker'
+import { BackgroundJobStatus, DrillsNowButton, DrillsPanel, type GenerateJob } from './GenerateExtras'
+import { lacksDrills } from './drillsState'
 import { WordImage } from '../words/WordImage'
 import { SpeakButton } from '@/components/SpeakButton'
 import { ConfirmDelete, EditorSkeleton, Field, Panel, StatusAlert, TextArea } from './ui'
@@ -122,10 +124,15 @@ export default function NoteAdminPage() {
   const [type, setType] = useState<'auto' | NoteType>('auto')
   const form = useAction()
   const [grounding, setGrounding] = useState<OzdicGrounding>()
-  const [generatedImage, setGeneratedImage] = useState<{ id: string; query?: string; candidates?: ImageCandidate[] } | null>(null)
+  const [generatedImage, setGeneratedImage] = useState<{ id: string; query?: string } | null>(null)
+  const [job, setJob] = useState<GenerateJob>()
 
   const [json, setJson] = useState('')
   const [originalId, setOriginalId] = useState<string>()
+  const originalIdRef = useRef<string | undefined>(undefined)
+  useEffect(() => {
+    originalIdRef.current = originalId
+  }, [originalId])
   const [view, setView] = useState<'json' | 'preview'>('json')
   const editor = useAction()
 
@@ -153,19 +160,22 @@ export default function NoteAdminPage() {
       const res = await adminApi<{
         action: 'created' | 'updated'
         note: Note
-        image?: { query: string; candidates: ImageCandidate[] }
+        image?: { query: string }
+        job?: GenerateJob
       } & OzdicGrounding>('notes/generate', {
         method: 'POST',
         body: { prompt, type },
       })
       setGrounding(res)
-      if (res.image) {
-        setGeneratedImage({ id: res.note.id, query: res.image.query, candidates: res.image.candidates })
-      }
+      setJob(res.job)
+      setGeneratedImage(res.image?.query ? { id: res.note.id, query: res.image.query } : null)
       edit(res.note)
       setView('preview')
       afterWrite()
-      form.setStatus({ tone: 'success', message: `"${res.note.title}" ${res.action}.` })
+      form.setStatus({
+        tone: res.ozdic?.dictionarySource === 'none' ? 'warning' : 'success',
+        message: `"${res.note.title}" ${res.action}.${res.job ? ' The picture is being found in the background.' : ''}`,
+      })
       setPrompt('')
     })
 
@@ -245,6 +255,20 @@ export default function NoteAdminPage() {
             {grounding && !form.pending ? (
               <OzdicSummary res={{ ...grounding, lemma: grounding.lemma && { ...grounding.lemma, note_vi: '' } }} subject="Title" showInput={false} />
             ) : null}
+            {job && !form.pending ? (
+              <BackgroundJobStatus
+                key={job.id}
+                job={job}
+                onPart={(part, result) => {
+                  const note = result.result?.note as Note | undefined
+                  if (part === 'image' && result.status === 'done' && note) {
+                    if (note.id === originalIdRef.current) edit(note)
+                    afterWrite()
+                  }
+                }}
+              />
+            ) : null}
+            <DrillsPanel refreshKey={grounding} />
           </form>
         </Panel>
 
@@ -261,7 +285,7 @@ export default function NoteAdminPage() {
                   ? draft.image_query
                   : draft.title
             }
-            initialCandidates={generatedImage?.id === originalId ? generatedImage.candidates : undefined}
+            autoSearch={generatedImage?.id === originalId}
             searchEndpoint="notes/images"
             saveEndpoint="notes/image"
             itemKey="id"
@@ -359,16 +383,27 @@ export default function NoteAdminPage() {
           placeholder="Generate a note, pick one from the list, or start a new one."
           summary={
             json ? (
-              <SegmentedControl
-                size="sm"
-                className="mb-3"
-                value={view}
-                onChange={setView}
-                options={[
-                  { value: 'json', label: 'JSON' },
-                  { value: 'preview', label: 'Preview' },
-                ]}
-              />
+              <div className="mb-3 flex flex-wrap items-center gap-2">
+                <SegmentedControl
+                  size="sm"
+                  value={view}
+                  onChange={setView}
+                  options={[
+                    { value: 'json', label: 'JSON' },
+                    { value: 'preview', label: 'Preview' },
+                  ]}
+                />
+                {originalId && draft && lacksDrills(draft as Record<string, unknown>) ? (
+                  <DrillsNowButton
+                    kind="note"
+                    itemKey={originalId}
+                    onDone={(note) => {
+                      edit(note as unknown as Note)
+                      afterWrite()
+                    }}
+                  />
+                ) : null}
+              </div>
             ) : null
           }
           preview={view === 'preview' && draft ? <NotePreview note={draft} /> : undefined}

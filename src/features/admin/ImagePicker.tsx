@@ -1,5 +1,5 @@
 import { ImageOff, Search, Trash2 } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Badge, Button } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import { adminApi, refreshSiteData } from './api'
@@ -26,6 +26,7 @@ export function ImagePicker({
   credit,
   initialQuery,
   initialCandidates,
+  autoSearch = false,
   searchEndpoint = 'vocabulary/images',
   saveEndpoint = 'vocabulary/image',
   itemKey = 'word',
@@ -39,6 +40,8 @@ export function ImagePicker({
   credit?: string
   initialQuery?: string
   initialCandidates?: ImageCandidate[]
+  /** Search with `initialQuery` as soon as the picker opens (a freshly generated item). */
+  autoSearch?: boolean
   searchEndpoint?: string
   saveEndpoint?: string
   itemKey?: string
@@ -65,6 +68,13 @@ export function ImagePicker({
       setPending('')
     }
   }
+
+  // A freshly generated item: load the full list of candidates (its picture is stored in the background).
+  useEffect(() => {
+    if (autoSearch && !initialCandidates?.length && query.trim()) void search()
+    // Once per mount: the picker is remounted (key) for each item.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const save = async (body: Record<string, unknown>, key: string) => {
     setPending(key)

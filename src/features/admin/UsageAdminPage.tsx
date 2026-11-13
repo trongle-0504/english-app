@@ -64,6 +64,7 @@ interface UsageReport {
 
 const PROVIDER_LABEL: Record<string, { label: string; badge: string; color: string }> = {
   antigravity: { label: 'Antigravity CLI', badge: 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800', color: 'emerald' },
+  'antigravity-acp': { label: 'Antigravity (agy ấm)', badge: 'bg-teal-50 text-teal-700 dark:bg-teal-950/60 dark:text-teal-300 border-teal-200 dark:border-teal-800', color: 'teal' },
   claude: { label: 'Claude Code', badge: 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950/60 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800', color: 'indigo' },
   gemini_api: { label: 'Gemini API Key', badge: 'bg-sky-50 text-sky-700 dark:bg-sky-950/60 dark:text-sky-300 border-sky-200 dark:border-sky-800', color: 'sky' },
 }
@@ -414,6 +415,7 @@ export default function UsageAdminPage() {
         <select value={providerPick} onChange={(e) => setProviderPick(e.target.value)} className={chip} aria-label="Nguồn Engine">
           <option value="*">Tất cả nguồn (Engine)</option>
           <option value="antigravity">Antigravity CLI (Gói sub)</option>
+          <option value="antigravity-acp">Antigravity ấm, agy acp (Gói sub)</option>
           <option value="claude">Claude Code (Gói sub)</option>
           <option value="gemini_api">Gemini API Key (Google Cloud)</option>
         </select>
@@ -478,8 +480,8 @@ export default function UsageAdminPage() {
             <h3 className="font-bold text-slate-900 dark:text-white">Theo nguồn Engine (Antigravity CLI / Claude Code / Gemini API)</h3>
             <span className="text-xs text-slate-500">Phân loại nguồn thực thi</span>
           </div>
-          <div className="grid gap-3 sm:grid-cols-3">
-            {(['antigravity', 'claude', 'gemini_api'] as const).map((pk) => {
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {(['antigravity', 'antigravity-acp', 'claude', 'gemini_api'] as const).map((pk) => {
               const meta = PROVIDER_LABEL[pk]
               const bucket = report.providers.find((p) => p.key === pk)
               const calls = bucket?.calls ?? 0

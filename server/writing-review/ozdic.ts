@@ -3,8 +3,10 @@
 // so no browser is needed. Results are cached on disk and requests are spaced out to be polite.
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
+import { failureReason, type FetchOptions, type LookupStats } from './longman.ts'
 
-const CACHE_DIR = path.join(import.meta.dirname, '..', '..', 'cache', 'ozdic')
+/** OZDIC_CACHE_DIR overrides it (a scratch folder for measuring with an empty cache, tests). */
+const cacheDir = () => process.env.OZDIC_CACHE_DIR || path.join(import.meta.dirname, '..', '..', 'cache', 'ozdic')
 /** Bumped when the cached shape changes; older cache files are re-fetched (offline mode still uses them). */
 const CACHE_VERSION = 2
 /** Gap between two network requests; raise it for bulk jobs (OZDIC_GAP_MS=4000 for warm-cache). */
@@ -42,6 +44,8 @@ export interface OzdicEntry {
   definitions?: { pos: string; gloss: string }[]
   /** OZDIC could not be reached (rate limit, bot protection): no data, and nothing was cached. */
   unavailable?: boolean
+  /** Why it was unavailable: "HTTP 429", "timeout", "network error"… */
+  reason?: string
   v?: number
 }
 
@@ -118,29 +122,50 @@ export function parseWordPage(html: string, word: string): OzdicEntry {
 
 let lastRequest = 0
 let blockedUntil = 0
+/** After a 429/503: no request before this time (Retry-After), and a second one in a row blocks. */
+let backoffUntil = 0
+let strikes = 0
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
 
+/** Reserves the next request time (one every MIN_GAP_MS, also when lookups run side by side) and waits for it. */
+async function takeTurn(stats?: LookupStats) {
+  const now = Date.now()
+  const at = Math.max(now, lastRequest + MIN_GAP_MS)
+  lastRequest = at
+  if (at > now) {
+    await sleep(at - now)
+    if (stats) stats.waitMs += at - now
+  }
+}
+
 /**
- * One polite GET. Never tries to get around protection: a 429/503 is retried once after Retry-After; a 403, a second
- * 429 or a page without the data (a bot challenge) pauses all requests for BLOCK_PAUSE_MS.
+ * One polite GET. Never tries to get around protection: a 429/503 is retried once after Retry-After (with `wait: false`,
+ * Admin → Generate, not at all: it fails at once and only later requests honour the back-off); a 403, a second 429 or a
+ * page without the data (a bot challenge) pauses all requests for BLOCK_PAUSE_MS.
  */
-async function politeFetch(url: string): Promise<string> {
+async function politeFetch(url: string, { wait = true, stats }: FetchOptions = {}): Promise<string> {
   const block = (reason: string): never => {
     blockedUntil = Date.now() + BLOCK_PAUSE_MS
     throw new OzdicUnavailableError(`${reason}; OZDIC requests paused for ${BLOCK_PAUSE_MS / 60_000} min`)
   }
-  for (let attempt = 0; ; attempt++) {
+  for (;;) {
     if (Date.now() < blockedUntil) throw new OzdicUnavailableError('OZDIC requests are paused after a block')
-    const wait = lastRequest + MIN_GAP_MS - Date.now()
-    if (wait > 0) await sleep(wait)
-    lastRequest = Date.now()
+    if (Date.now() < backoffUntil) {
+      if (!wait) throw new OzdicUnavailableError(`backing off after HTTP 429/503 for ${Math.ceil((backoffUntil - Date.now()) / 1000)} s`)
+      await sleep(backoffUntil - Date.now())
+    }
+    await takeTurn(stats)
+    if (stats) stats.requests++
     const res = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Accept: 'text/html' }, signal: AbortSignal.timeout(20_000) })
-    if (res.status === 404) return ''
     if (res.status === 429 || res.status === 503) {
-      if (attempt > 0) block(`HTTP ${res.status} twice`)
-      await sleep(Math.min(Number(res.headers.get('retry-after')) || 30, 120) * 1000)
+      if (strikes > 0) block(`HTTP ${res.status} twice`)
+      strikes++
+      backoffUntil = Date.now() + Math.min(Number(res.headers.get('retry-after')) || 30, 120) * 1000
+      if (!wait) throw new OzdicUnavailableError(`HTTP ${res.status}`)
       continue
     }
+    strikes = 0
+    if (res.status === 404) return ''
     if (res.status === 403) block('HTTP 403 (bot protection)')
     if (!res.ok) throw new Error(`ozdic ${url}: HTTP ${res.status}`)
     const html = await res.text()
@@ -154,9 +179,9 @@ async function politeFetch(url: string): Promise<string> {
  * Like `lookup`, but when a plural form has no Oxford data it tries the singular ("jobs" → "job", "cities" → "city"):
  * OZDIC's Oxford entries are keyed by the base form, while plural pages hold machine-mined data.
  */
-export async function lookupLemma(word: string, options: { offline?: boolean } = {}): Promise<OzdicEntry> {
+export async function lookupLemma(word: string, options: { offline?: boolean } & FetchOptions = {}): Promise<OzdicEntry> {
   const entry = await lookup(word, options)
-  if (entry.oxford) return entry
+  if (entry.oxford || entry.unavailable) return entry
   const w = word.trim().toLowerCase()
   const singulars = [w.endsWith('ies') ? `${w.slice(0, -3)}y` : '', w.endsWith('es') ? w.slice(0, -2) : '', w.endsWith('s') ? w.slice(0, -1) : ''].filter(
     (s) => s.length > 2,
@@ -168,30 +193,45 @@ export async function lookupLemma(word: string, options: { offline?: boolean } =
   return entry
 }
 
+const missing = (key: string, extra: Partial<OzdicEntry> = {}): OzdicEntry => ({
+  word: key,
+  url: `https://ozdic.com/word/${key}`,
+  found: false,
+  oxford: false,
+  sources: [],
+  pos: [],
+  senses: [],
+  examples: [],
+  ...extra,
+})
+
 /** Looks a lemma up on ozdic.com (cached). `offline` never touches the network. */
-export async function lookup(word: string, { offline = false } = {}): Promise<OzdicEntry> {
+export async function lookup(word: string, { offline = false, wait = true, stats }: { offline?: boolean } & FetchOptions = {}): Promise<OzdicEntry> {
   const key = word.trim().toLowerCase()
-  const file = path.join(CACHE_DIR, `${key.replace(/[^a-z0-9'-]+/g, '_')}.json`)
+  const file = path.join(cacheDir(), `${key.replace(/[^a-z0-9'-]+/g, '_')}.json`)
   try {
     const cached = JSON.parse(await readFile(file, 'utf8')) as OzdicEntry
-    if (offline || cached.v === CACHE_VERSION) return cached
+    if (offline || cached.v === CACHE_VERSION) {
+      if (stats) stats.cacheHits++
+      return cached
+    }
   } catch {
-    if (offline) return { word: key, url: `https://ozdic.com/word/${key}`, found: false, oxford: false, sources: [], pos: [], senses: [], examples: [] }
+    if (offline) return missing(key)
   }
   let html: string
   try {
-    html = await politeFetch(`https://ozdic.com/word/${encodeURIComponent(key)}`)
+    html = await politeFetch(`https://ozdic.com/word/${encodeURIComponent(key)}`, { wait, stats })
   } catch (error) {
     // Refused / challenged, or the network dropped ("fetch failed", timeout): this word has no data, the review goes on.
     const network = error instanceof TypeError || /fetch failed|ETIMEDOUT|ECONNRESET|ENOTFOUND|EAI_AGAIN/i.test(String((error as Error).message))
-    if (!(error instanceof OzdicUnavailableError) && !network) throw error
+    const timeout = (error as Error)?.name === 'TimeoutError'
+    // Admin → Generate (wait: false) never stops for a dictionary: any failure means "no OZDIC data".
+    if (!(error instanceof OzdicUnavailableError) && !network && !timeout && wait) throw error
     console.warn(`[ozdic] ${key}: ${(error as Error).message}`)
-    return { word: key, url: `https://ozdic.com/word/${key}`, found: false, oxford: false, unavailable: true, sources: [], pos: [], senses: [], examples: [] }
+    return missing(key, { unavailable: true, reason: failureReason(error) })
   }
-  const entry: OzdicEntry = html
-    ? parseWordPage(html, key)
-    : { word: key, url: `https://ozdic.com/word/${key}`, found: false, oxford: false, sources: [], pos: [], senses: [], examples: [], v: CACHE_VERSION }
-  await mkdir(CACHE_DIR, { recursive: true })
+  const entry: OzdicEntry = html ? parseWordPage(html, key) : missing(key, { v: CACHE_VERSION })
+  await mkdir(cacheDir(), { recursive: true })
   await writeFile(file, JSON.stringify(entry, null, 1))
   return entry
 }

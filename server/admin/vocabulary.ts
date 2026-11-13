@@ -1,8 +1,6 @@
 // Vocabulary admin: content/vocabulary/{words,topics}.json (+ optional practice questions).
 import { slugify } from '../../content-pipeline/shared.ts'
 import type { RawVocabWord } from '../../content-pipeline/vocabulary.ts'
-import { cleanDrills } from '../../src/lib/wordDrills.ts'
-import { DRILL_FIELDS, drillsPrompt, drillsSchema, type DrillSubject } from './drills.ts'
 import { ApiError, type ApiContext, type ApiHandler } from '../api.ts'
 import { contentFile } from '../files.ts'
 import { generateLogged, loadSchema } from './ai.ts'
@@ -19,21 +17,25 @@ import {
   stringList,
   type JsonObject,
 } from './input.ts'
-import { buildQuestions, saveQuestions, type PracticeSummary } from './practice.ts'
+import { buildQuestions, saveQuestions } from './practice.ts'
 import { exclusive, readJsonDoc, updateJsonDoc, writeJsonDoc } from './store.ts'
 import {
   ADDED_PROPERTY,
+  adminEffort,
   BREAKDOWN_PROPERTY,
   collocationRulesPrompt,
   CORRECTIONS_PROPERTY,
   corrections,
+  dictionaryReference,
   inReference,
   ozdicPrompt,
-  ozdicReference,
+  resolveLemma,
   stringArray,
-  toLemma,
 } from './ozdic-grounding.ts'
-import { searchImages, storeImage, type ImageCandidate } from './images.ts'
+import { downloadImage, firstImages, searchImages, storeImage, writeImage } from './images.ts'
+import { startGenerateJob, type PartRunner } from './generate-jobs.ts'
+import { logTimings, type GenerateTimings } from './generate-log.ts'
+import type { LookupStats } from '../writing-review/longman.ts'
 import { vocabularyPrompt } from './vocabulary-prompt.ts'
 import { autoAddFromAdmin } from '../review/progress.ts'
 
@@ -354,6 +356,7 @@ function placementPrompt(topics: RawTopic[], choices: Placement[]): string {
 }
 
 export const generateWord: ApiHandler = async (req, ctx) => {
+  const started = Date.now()
   const body = jsonBody(req)
   const word = requiredText(body, 'word', { max: 120, collapse: true })
   const description = optionalText(body, 'description', { max: 20_000 })
@@ -367,13 +370,17 @@ export const generateWord: ApiHandler = async (req, ctx) => {
   const { target: fixed, choices } = placementChoices(topics, optionalName(body, 'topic'), optionalName(body, 'subTopic'))
   const baseSchema = (await loadSchema(ctx, 'vocabulary_schema')) as JsonObject
 
-  // 1. Base form ("decisions" → decision), 2. its Oxford Collocations entries on OZDIC, 3. the full entry grounded on them.
-  const lemmaStep = await toLemma(ctx, word, description)
+  // 1. Base form ("decisions" → decision; skipped when Longman lists the word as typed), 2. Longman, else OZDIC, for
+  // its headwords, 3. the entry grounded on them (no drills: those are written by the nightly batch, drills-nightly.ts).
+  const stats: LookupStats = { requests: 0, cacheHits: 0, waitMs: 0 }
+  const lemmaStep = await resolveLemma(ctx, word, description, stats)
   const lemma = lemmaStep.result.lemma
+  const lemmaDone = Date.now()
   if (onlyNew && findWord((await readJsonDoc<WordEntry[]>(wordsFile(ctx), [])).value, wordKey(lemma))) {
     throw new ApiError(409, `"${lemma}" is already in Vocabulary.`)
   }
-  const ozdic = await ozdicReference(lemmaStep.result.headwords)
+  const ozdic = await dictionaryReference(lemmaStep.result.headwords, { baseForms: lemmaStep.result.baseForms, stats })
+  const dictionaryDone = Date.now()
   const grounded = Boolean(ozdic.text)
 
   const schema = {
@@ -392,7 +399,6 @@ export const generateWord: ApiHandler = async (req, ctx) => {
       notes_breakdown: BREAKDOWN_PROPERTY,
       auto_collocations: ADDED_PROPERTY,
       image_query: { type: 'string', description: 'Search words for a stock photo that shows the meaning (see IMAGE).' },
-      ...drillsSchema(WORD_DRILLS),
       ...(grounded ? { ozdic_corrections: CORRECTIONS_PROPERTY } : {}),
     },
     required: [
@@ -401,7 +407,6 @@ export const generateWord: ApiHandler = async (req, ctx) => {
       'notes_breakdown',
       'auto_collocations',
       'image_query',
-      ...DRILL_FIELDS,
       ...(grounded ? ['ozdic_corrections'] : []),
     ],
   }
@@ -412,12 +417,13 @@ export const generateWord: ApiHandler = async (req, ctx) => {
       collocationRulesPrompt(grounded) +
       ozdicPrompt(ozdic.text) +
       IMAGE_PROMPT +
-      drillsPrompt(WORD_DRILLS) +
       (fixed ? '' : placementPrompt(topics, choices)),
     images: attachments,
     schema,
     temperature: 1,
+    thinking: adminEffort(),
   })
+  const mainDone = Date.now()
   if (!isObject(generated.value)) throw new ApiError(502, 'Gemini did not return a JSON object.')
   const answer = text(generated.value.placement)
   const picked = choices.find((c) => `${c.topic}${PLACEMENT_SEPARATOR}${c.subTopic}` === answer)
@@ -458,61 +464,59 @@ export const generateWord: ApiHandler = async (req, ctx) => {
       return false
     })
   }
-  // After the collocation check, so a question never points to a collocation that was dropped.
-  const collocationTexts = Array.isArray(entry.collocations) ? entry.collocations.map((c) => text((c as JsonObject).text)) : []
-  Object.assign(entry, cleanDrills(generated.value, entry.word, collocationTexts))
   const breakdown = isObject(generated.value.notes_breakdown) ? generated.value.notes_breakdown : {}
   if (!entry.senses?.length) throw new ApiError(502, 'Gemini returned an entry without senses. Try again or add more notes.')
+  // Which dictionaries the entry rests on, and a note for the admin when one (or both) could not be used.
+  entry.dictionarySource = ozdic.dictionarySource
+  if (ozdic.dictionaryNote) entry.dictionaryNote = ozdic.dictionaryNote
 
-  // Picture: a link the admin gave is kept; otherwise search with Gemini's scene description and store the first hit.
-  // The other candidates go back to the page so a better one can be picked.
+  // Picture: a link the admin gave is kept; otherwise one is found in the background after saving (the picker loads
+  // the full list of candidates itself).
   const imageQuery = text(generated.value.image_query) || entry.word
   entry.image_query = imageQuery
-  let imageCandidates: ImageCandidate[] = []
   const given = typeof entry.image === 'string' ? entry.image : ''
-  if (!/^https?:\/\//.test(given)) {
-    entry.image = ''
-    try {
-      imageCandidates = (await searchImages(imageQuery)).candidates
-      for (const candidate of imageCandidates.slice(0, 3)) {
-        try {
-          entry.image = await storeImage(ctx, entry.word, candidate.url)
-          entry.image_credit = candidate.credit
-          entry.image_source = candidate.source
-          break
-        } catch {
-          // try the next candidate
-        }
-      }
-    } catch (error) {
-      console.warn('[vocabulary] image search failed:', (error as Error).message)
-    }
-  }
+  if (!/^https?:\/\//.test(given)) entry.image = ''
 
   const { action, entry: saved } = await commitWord(ctx, entry, { target, onlyNew })
   ctx.onContentChange()
-
-  let practice: PracticeSummary | undefined
-  let practiceError: string | undefined
-  if (withPractice) {
-    try {
-      const questions = await buildQuestions(ctx, saved)
-      practice = await saveQuestions(ctx, target.topic, target.subTopic, saved.word, questions)
-      ctx.onContentChange()
-    } catch (error) {
-      practiceError = (error as Error).message
-    }
-  }
-
+  const commitDone = Date.now()
   if (action === 'created') await autoAddFromAdmin(ctx, [`vocab:${slugify(saved.word)}`])
+
+  const job = startGenerateJob('vocabulary', saved.word, {
+    image: saved.image ? undefined : wordImageJob(ctx, saved.word, imageQuery),
+    practice: withPractice
+      ? async () => {
+          const questions = await buildQuestions(ctx, saved)
+          const summary = await saveQuestions(ctx, target.topic, target.subTopic, saved.word, questions)
+          ctx.onContentChange()
+          return summary
+        }
+      : undefined,
+  })
+
+  const timings: GenerateTimings = {
+    lemma: lemmaStep.lemmaMs,
+    dictionary: lemmaDone - started - lemmaStep.lemmaMs + (dictionaryDone - lemmaDone),
+    main: mainDone - dictionaryDone,
+    commit: commitDone - mainDone,
+    total: Date.now() - started,
+    dictionaryRequests: stats.requests,
+    cacheHits: stats.cacheHits,
+    longmanWaitMs: stats.waitMs,
+    longmanPrefetched: Boolean(stats.prefetched),
+    lemmaSkipped: Boolean(lemmaStep.result.skipped),
+    dictionarySource: ozdic.dictionarySource,
+    ...(ozdic.longmanError ? { longmanError: ozdic.longmanError } : {}),
+  }
+  logTimings('vocabulary', saved.word, timings)
+
   return {
     json: {
       action,
       entry: saved,
       placement: target,
       autoPlaced,
-      practice,
-      practiceError,
+      job,
       lemma: lemmaStep.result,
       lemmaError: lemmaStep.error,
       ozdic: {
@@ -521,6 +525,8 @@ export const generateWord: ApiHandler = async (req, ctx) => {
         added,
         droppedAdded,
         unverifiedAdded,
+        dictionarySource: ozdic.dictionarySource,
+        dictionaryNote: ozdic.dictionaryNote,
       },
       notes: {
         examples: stringArray(breakdown.examples),
@@ -530,12 +536,46 @@ export const generateWord: ApiHandler = async (req, ctx) => {
       model: generated.model,
       usage: generated.usage,
       lemmaUsage: lemmaStep.usage,
-      image: { query: imageQuery, candidates: imageCandidates },
+      image: { query: imageQuery },
+      timings,
     },
   }
 }
 
-const WORD_DRILLS: DrillSubject = { item: 'word', partners: 'collocations' }
+/**
+ * Background picture for a saved word: the first source with results (firstImages), up to 3 candidates tried, stored
+ * as WebP and written into the entry — unless the entry is gone or got a picture meanwhile (null = skipped).
+ */
+function wordImageJob(ctx: ApiContext, word: string, query: string): PartRunner {
+  return async () => {
+    const candidates = await firstImages(query)
+    if (!candidates.length) throw new Error(`No picture found for "${query}".`)
+    let webp: Buffer | undefined
+    let chosen = candidates[0]
+    for (const candidate of candidates.slice(0, 3)) {
+      try {
+        webp = await downloadImage(candidate.url)
+        chosen = candidate
+        break
+      } catch {
+        // try the next candidate
+      }
+    }
+    if (!webp) throw new Error('Could not download any of the pictures found.')
+    const updated = await exclusive(async () => {
+      const doc = await readJsonDoc<WordEntry[]>(wordsFile(ctx), [])
+      const found = findWord(doc.value, wordKey(word))
+      if (!found || (typeof found.image === 'string' && found.image)) return null
+      found.image = await writeImage(ctx, found.word, webp)
+      found.image_credit = chosen.credit
+      found.image_source = chosen.source
+      await writeJsonDoc(wordsFile(ctx), doc.value, doc.style)
+      return found
+    })
+    if (updated) ctx.onContentChange()
+    return updated && { entry: updated }
+  }
+}
 
 const IMAGE_PROMPT = `
 
