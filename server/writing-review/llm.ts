@@ -67,9 +67,10 @@ export function writingReviewModel({
   return {
     name: activeEngine === 'antigravity' ? 'antigravity' : 'claude-code',
     model: writingReviewModelName(),
-    async json<T>({ label, system, prompt, schema, effort = writingReviewEffort() }: JsonRequest<T>): Promise<JsonResult<T>> {
+    async json<T>({ label, system, prompt, schema, effort = writingReviewEffort(), images }: JsonRequest<T>): Promise<JsonResult<T>> {
       onStart?.(label)
-      if (activeEngine === 'antigravity') {
+      // Claude Code runs tool-less here and cannot open a picture: a call with pictures always goes to agy.
+      if (activeEngine === 'antigravity' || images?.length) {
         const result = await antigravityJson({
           label: `writing-review: ${label}`,
           system,
@@ -77,6 +78,7 @@ export function writingReviewModel({
           jsonSchema: jsonSchema(schema),
           model: writingReviewAntigravityModel(),
           effort,
+          ...(images?.length ? { images } : {}),
         })
         const usage = result.usage
         onCall?.({ label, model: result.model, ...usage, ms: result.ms })

@@ -8,6 +8,8 @@ export interface JsonRequest<T> {
   schema: z.ZodType<T>
   /** Overrides the configured effort for this call (a small extraction step runs at "low"). */
   effort?: 'low' | 'medium' | 'high' | 'xhigh' | 'max'
+  /** Pictures the model must look at (base64, no data: prefix). A call with pictures always runs on agy. */
+  images?: { mimeType: string; data: string }[]
 }
 
 export interface JsonResult<T> {

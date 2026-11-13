@@ -7,6 +7,12 @@ import path from 'node:path'
 import type {
   WritingFix,
   WritingReviewJob,
+  WritingReviewPending,
+  WritingReviewSource,
+  WritingScore,
+  WritingScoreSkipped,
+  WritingTask1ModelLesson,
+  WritingTask1Review,
   WritingReviewResult,
   WritingReviewSummary,
   WritingReviewTimings,
@@ -31,6 +37,9 @@ type WrittenEssay = Awaited<ReturnType<typeof generateWritingModelEssay>>
 import { chosenHints } from './dol.ts'
 import { styleFixesKeptInEssay } from './copied-errors.ts'
 import { countWords, MIN_WORDS_FOR_SCORING, scoreEssay } from './score.ts'
+import { reviewTask1 } from './task1.ts'
+import { stripHeadingLines } from '../../src/features/practice/writing-review/headings.ts'
+import { task1ModelLesson } from './task1-model.ts'
 import { WRITING_REVIEW_TOPICS, WRITING_REVIEW_TYPES, type WritingReviewTopic, type WritingReviewType } from '../../src/features/practice/writing-review/categories.ts'
 import { z } from 'zod'
 
@@ -74,7 +83,7 @@ export function buildResult(
   vietnameseText?: string,
   classification?: { topic: WritingReviewTopic; questionType: WritingReviewType },
   timings?: WritingReviewTimings,
-  pending?: ('retry' | 'modelEssay' | 'score')[],
+  pending?: WritingReviewPending[],
 ): WritingReviewResult {
   const fixes: WritingFix[] = report.fixed
     .map((issue, n): WritingFix => ({
@@ -163,7 +172,7 @@ export function attachEssay(
   result.dolHints = chosenHints(prepared.dolHints, dolRefs)
 }
 
-export interface ReviewWritingInput {
+export interface ReviewWritingInput extends WritingReviewSource {
   text: string
   prompt?: string
   vietnameseText?: string
@@ -194,6 +203,12 @@ export async function reviewWriting(
   const id = opts.id ?? 'review'
   const startedAt = opts.startedAt ?? new Date().toISOString()
   const usage: WritingUsage = emptyUsage()
+  // Heading lines of a pasted essay ("**Introduction**", "Body Paragraph 1") are not sentences: never review or count them.
+  input = { ...input, text: stripHeadingLines(input.text) || input.text }
+  // Task 1 (a Writing Mock Test chart question): Task 1 score and model-essay lanes; no topic retrieve, no upgraded essay.
+  const task1 = input.task === 1 && Boolean(input.promptId)
+  const task1Ctx = { rootDir: ctx.rootDir, contentDir: path.join(ctx.rootDir, 'content') }
+  const source: WritingReviewSource = task1 ? { task: 1, promptId: input.promptId } : {}
 
   const llm = writingReviewModel({
     onCall: (call) => {
@@ -216,10 +231,11 @@ export async function reviewWriting(
   // Score call lane: runs in parallel from the start, replaces separate classify
   const wordsCount = countWords(input.text)
   let scoreDone = false
-  let scoreResult: any = undefined
+  let scoreResult: WritingScore | undefined
   let scoreTopic: WritingReviewTopic | undefined
   let scoreType: WritingReviewType | undefined
-  let scoreSkippedReason: 'short' | 'error' | undefined
+  let scoreSkippedReason: WritingScoreSkipped | undefined
+  let task1Review: WritingTask1Review | undefined
 
   const state: { result: WritingReviewResult | null } = { result: null }
 
@@ -231,11 +247,23 @@ export async function reviewWriting(
     }
     const tScore = Date.now()
     try {
-      const res = await scoreEssay(llm, { text: input.text, prompt: input.prompt, vietnameseText: input.vietnameseText })
-      timings.steps['score'] = Date.now() - tScore
-      scoreResult = res.score
-      scoreTopic = res.topic
-      scoreType = res.questionType
+      if (task1) {
+        const res = await reviewTask1(task1Ctx, llm, {
+          promptId: input.promptId!,
+          text: input.text,
+          prompt: input.prompt,
+          vietnameseText: input.vietnameseText,
+        })
+        timings.steps['score'] = Date.now() - tScore
+        scoreResult = res.score
+        task1Review = res.task1
+      } else {
+        const res = await scoreEssay(llm, { text: input.text, prompt: input.prompt, vietnameseText: input.vietnameseText })
+        timings.steps['score'] = Date.now() - tScore
+        scoreResult = res.score
+        scoreTopic = res.topic
+        scoreType = res.questionType
+      }
     } catch (err) {
       console.warn(`[writing-review] score call failed: ${(err as Error).message}`)
       scoreSkippedReason = 'error'
@@ -244,6 +272,7 @@ export async function reviewWriting(
       if (state.result) {
         if (scoreResult) state.result.score = scoreResult
         if (scoreSkippedReason) state.result.scoreSkipped = scoreSkippedReason
+        if (task1Review) state.result.task1 = task1Review
         if (scoreTopic) state.result.topic = scoreTopic
         if (scoreType) state.result.questionType = scoreType
         state.result.pending = state.result.pending?.filter((p) => p !== 'score')
@@ -257,14 +286,16 @@ export async function reviewWriting(
   const tPrep = Date.now()
   const prepared = await prepare(input.text, llm, {
     vietnameseText: input.vietnameseText,
-    rootDir: ctx.rootDir,
+    rootDir: task1 ? undefined : ctx.rootDir,
     onStep: opts.onStep,
   })
   timings.steps['prepare'] = Date.now() - tPrep
 
   let hasPartial = false
-  let essayDone = false
+  let essayDone = task1
   let writtenEssay: WrittenEssay | undefined
+  let compareDone = !task1
+  let task1Model: WritingTask1ModelLesson | undefined
 
   // 2. Parallel lanes: Corrections lane & Model Essay lane
   const correctionsLane = (async () => {
@@ -291,10 +322,11 @@ export async function reviewWriting(
       vietnameseFormatted: formattedIdea,
     }
 
-    const pending: ('retry' | 'modelEssay' | 'score')[] = []
+    const pending: WritingReviewPending[] = []
     if (draft.failed.length) pending.push('retry')
     if (!essayDone) pending.push('modelEssay')
     if (!scoreDone) pending.push('score')
+    if (!compareDone) pending.push('compare')
 
     timings.firstResult = Date.now() - started
     state.result = buildResult(
@@ -311,8 +343,11 @@ export async function reviewWriting(
       timings,
       pending.length ? pending : undefined,
     )
+    Object.assign(state.result, source)
     if (scoreResult) state.result.score = scoreResult
     if (scoreSkippedReason) state.result.scoreSkipped = scoreSkippedReason
+    if (task1Review) state.result.task1 = task1Review
+    if (task1Model) state.result.task1Model = task1Model
     hasPartial = true
 
     // If essay finished before corrections, attach it now
@@ -365,6 +400,7 @@ export async function reviewWriting(
   })()
 
   const essayLane = (async () => {
+    if (task1) return
     const { writingLinearGuide, generateWritingModelEssay } = await import('./writing-essay.ts')
     const tEssay = Date.now()
     const written = await generateWritingModelEssay(
@@ -404,12 +440,32 @@ export async function reviewWriting(
     }
   })()
 
-  await Promise.all([correctionsLane, essayLane, scoreLane])
+  // Task 1: what the answer can learn from the learner's own model essay (none when the question has no model essay).
+  const compareLane = (async () => {
+    if (!task1) return
+    const tCompare = Date.now()
+    try {
+      task1Model = await task1ModelLesson(task1Ctx, llm, { promptId: input.promptId!, text: input.text, prompt: input.prompt })
+      timings.steps['compare'] = Date.now() - tCompare
+    } catch (err) {
+      console.warn(`[writing-review] task 1 model comparison failed: ${(err as Error).message}`)
+    } finally {
+      compareDone = true
+      if (state.result) {
+        if (task1Model) state.result.task1Model = task1Model
+        state.result.pending = state.result.pending?.filter((p) => p !== 'compare')
+        if (!state.result.pending?.length) delete state.result.pending
+        opts.onPartial?.(state.result)
+      }
+    }
+  })()
 
-  // Fall back to separate classify only if score did not provide topic/questionType
+  await Promise.all([correctionsLane, essayLane, scoreLane, compareLane])
+
+  // Fall back to separate classify only if score did not provide topic/questionType (Task 2 only)
   let finalTopic = scoreTopic
   let finalType = scoreType
-  if (!finalTopic || !finalType) {
+  if (!task1 && (!finalTopic || !finalType)) {
     opts.onStep?.('classify')
     const classification = await classifyWritingReview(llm, input.text, input.prompt).catch((error: Error) => {
       console.warn(`[writing-review] classification fallback skipped: ${error.message}`)
@@ -421,12 +477,15 @@ export async function reviewWriting(
 
   timings.total = Date.now() - started
   const finalResult = state.result!
-  finalResult.topic = finalTopic
-  finalResult.questionType = finalType
+  Object.assign(finalResult, source)
+  if (finalTopic) finalResult.topic = finalTopic
+  if (finalType) finalResult.questionType = finalType
   finalResult.durationMs = timings.total
   finalResult.timings = timings
   if (scoreResult) finalResult.score = scoreResult
   if (scoreSkippedReason) finalResult.scoreSkipped = scoreSkippedReason
+  if (task1Review) finalResult.task1 = task1Review
+  if (task1Model) finalResult.task1Model = task1Model
   delete finalResult.pending
 
   // The essay lane never saw the corrections: label upgrades the essay itself does not make, so the two tabs agree.
@@ -441,11 +500,11 @@ export async function reviewWriting(
   return finalResult
 }
 
-async function run(ctx: ApiContext, job: WritingReviewJob, text: string, prompt?: string, vietnameseText?: string, title?: string) {
+async function run(ctx: ApiContext, job: WritingReviewJob, input: ReviewWritingInput) {
   try {
     const result = await reviewWriting(
       ctx,
-      { text, prompt, vietnameseText, title },
+      input,
       {
         id: job.id,
         startedAt: job.startedAt,
@@ -482,11 +541,20 @@ async function run(ctx: ApiContext, job: WritingReviewJob, text: string, prompt?
 export function normalizeVietnameseOutline(raw?: string): string | undefined {
   if (!raw) return undefined
   const SECTION_REGEX = /(?<=[^\n])\s*(?=(?:Mở bài|Thân bài(?:\s*\d+)?|Body(?:\s*\d+)?|Kết bài|Kết luận|Conclusion|Introduction|Luận điểm(?:\s*\d+)?|Ưu điểm|Nhược điểm|Lợi ích|Bất lợi|Mặt lợi|Mặt hại|Nguyên nhân|Hậu quả|Hệ quả|Giải pháp|Ý(?:\s*\d+)?|Idea(?:\s*\d+)?)\s*[:\-–])/gi
-  const LIST_REGEX = /(?<=[^\n])\s*(?=(?:[-*•]\s+|\d+[.)]\s+))/g
+  // A list marker starts after a space: "- ", "• ", "* " or "1. ", "2) " (one or two digits). Without the space a year at
+  // the end of a sentence ("năm 2010.") was split into "2 / 0 / 1 / 0." and "**Mở bài**" lost its closing "*".
+  const LIST_REGEX = /(?<=\S)\s+(?=(?:[-*•]\s+|\d{1,2}[.)]\s+))/g
   return raw.replace(SECTION_REGEX, '\n\n').replace(LIST_REGEX, '\n\n').trim()
 }
 
-export function startReview(ctx: ApiContext, text: string, prompt?: string, vietnameseText?: string, title?: string): WritingReviewJob {
+export function startReview(
+  ctx: ApiContext,
+  text: string,
+  prompt?: string,
+  vietnameseText?: string,
+  title?: string,
+  source: WritingReviewSource = {},
+): WritingReviewJob {
   if ([...jobs.values()].filter((j) => j.status === 'running').length >= MAX_RUNNING) {
     throw new ApiError(429, 'Another review is still running — please wait for it to finish.')
   }
@@ -500,9 +568,10 @@ export function startReview(ctx: ApiContext, text: string, prompt?: string, viet
     vietnameseText: cleanVietnamese,
     step: 'diagnose',
     usage: emptyUsage(),
+    ...(source.task === 1 && source.promptId ? { task: 1 as const, promptId: source.promptId } : {}),
   }
   jobs.set(job.id, job)
-  void run(ctx, job, text, prompt, cleanVietnamese, title)
+  void run(ctx, job, { text, prompt, vietnameseText: cleanVietnamese, title, ...source })
   return job
 }
 
@@ -534,6 +603,8 @@ export async function listReviews(ctx: ApiContext, limit = 100): Promise<Writing
         createdAt: r.createdAt,
         title: r.title,
         prompt: r.prompt,
+        ...(r.task ? { task: r.task } : {}),
+        ...(r.promptId ? { promptId: r.promptId } : {}),
         topic: r.topic,
         questionType: r.questionType,
         overall: r.score?.overall,
@@ -566,4 +637,34 @@ export async function analyzeReviewEdit(ctx: ApiContext, id: string, userEdited:
 export async function resetReviewEdit(ctx: ApiContext, id: string): Promise<WritingReviewResult> {
   if (!validId(id)) throw new ApiError(400, 'Invalid id.')
   return resetUserEditedWriting(ctx, id)
+}
+
+/**
+ * Task 1: runs the model-essay comparison again for a saved review (a model essay added or edited after grading).
+ * No model essay any more → the comparison is removed.
+ */
+export async function rerunTask1Model(ctx: ApiContext, id: string): Promise<WritingReviewResult> {
+  if (!validId(id)) throw new ApiError(400, 'Invalid id.')
+  if (jobs.get(id)?.status === 'running') throw new ApiError(409, 'The review is still running.')
+  let result: WritingReviewResult
+  try {
+    result = JSON.parse(await readFile(fileOf(ctx, id), 'utf8')) as WritingReviewResult
+  } catch {
+    throw new ApiError(404, 'Review not found.')
+  }
+  if (result.task !== 1 || !result.promptId) throw new ApiError(400, 'Not a Task 1 review.')
+  const llm = writingReviewModel({
+    onCall: (call) => {
+      result.usage.calls.push({ step: call.label, input: call.input, output: call.output, thinking: call.thinking, ms: call.ms })
+      result.usage.input += call.input
+      result.usage.output += call.output
+      result.usage.thinking += call.thinking
+      result.usage.total = result.usage.input + result.usage.output + result.usage.thinking
+    },
+  })
+  const lesson = await task1ModelLesson(ctx, llm, { promptId: result.promptId, text: result.text, prompt: result.prompt })
+  if (lesson) result.task1Model = lesson
+  else delete result.task1Model
+  await writeFile(fileOf(ctx, id), JSON.stringify(result, null, 1))
+  return result
 }

@@ -20,6 +20,32 @@ export const workHref = (kind: (typeof WORK_KINDS)[number], id: string) =>
       ? `/practice/speaking-review?id=${encodeURIComponent(id)}`
       : `/practice/speaking-ideas/history?id=${encodeURIComponent(id)}`
 const errorsOf = (fixes: WritingFix[]) => fixes.filter((f) => f.severity !== 'improve').length
+/** A criterion's name as the learner knows it: Task 1 keeps Task Achievement in the tr slot. */
+const criterionKey = (k: string, task?: number) => (task === 1 && k === 'tr' ? 'TA' : k.toUpperCase())
+const taskOf = (r: WritingReviewResult) => (r.task === 1 ? 1 : 2)
+
+/** The Task 1 checks of a review, short: overview, key features, wrong figures, plan check, model-essay comparison. */
+function task1Section(r: WritingReviewResult) {
+  const t = r.task1
+  const m = r.task1Model
+  return {
+    noChart: t?.noChart ?? null,
+    chart: t?.chart ? { kind: t.chart.kind, subject: cut(t.chart.subject, 120), overview: t.chart.overview.map((o) => cut(o, 200)) } : null,
+    overview: t ? { status: t.overview.status, note: cut(t.overview.note, 200) } : null,
+    keyFeatures: t ? { covered: t.keyFeatures.covered.map((x) => cut(x, 120)), missed: t.keyFeatures.missed.map((x) => cut(x, 120)) } : null,
+    dataErrors: (t?.dataErrors ?? []).map((e) => ({ sentenceNo: e.sentence + 1, quote: cut(e.quote, 120), wrote: cut(e.wrote, 120), chartShows: cut(e.correct, 120) })),
+    planCheck: t?.ideaCheck
+      ? { summary: cut(t.ideaCheck.summary, 200), matched: t.ideaCheck.matched.map((x) => cut(x, 120)), missing: t.ideaCheck.missing.map((x) => cut(x, 120)), wrong: t.ideaCheck.wrong.map((x) => cut(x, 120)) }
+      : null,
+    modelEssay: m?.comparison
+      ? {
+          summary: cut(m.comparison.summary, 200),
+          points: m.comparison.points.map((p) => ({ area: p.area, yours: cut(p.yours, 120), model: cut(p.model, 160), why: cut(p.why, 160), try: cut(p.try, 160) })),
+          phrases: m.vocab.map((v) => ({ phrase: v.phrase, meaning: cut(v.meaning_vi, 80), used: v.used })),
+        }
+      : null,
+  }
+}
 
 export const listWorks: CoachTool = {
   name: 'list_works',
@@ -47,7 +73,7 @@ export const listWorks: CoachTool = {
     if (kind === 'writing') {
       rows = (await writingDocs(ctx))
         .filter((r) => inRange(dayOf(r.createdAt), from, to))
-        .map((r) => ({ id: r.id, href: workHref('writing', r.id), day: dayOf(r.createdAt), time: timeOf(r.createdAt), title: writingTitle(r), band: r.score?.overall ?? null, fixes: r.fixes.length, errors: errorsOf(r.fixes) }))
+        .map((r) => ({ id: r.id, href: workHref('writing', r.id), day: dayOf(r.createdAt), time: timeOf(r.createdAt), title: writingTitle(r), task: taskOf(r), band: r.score?.overall ?? null, fixes: r.fixes.length, errors: errorsOf(r.fixes) }))
     } else if (kind === 'speaking_review') {
       rows = (await talkDocs(ctx))
         .filter((r) => inRange(dayOf(r.createdAt), from, to))
@@ -70,11 +96,17 @@ export const getScores: CoachTool = {
   async run(args, ctx) {
     const kind = optEnum(args, 'kind', SCORED_KINDS, 'writing')
     const limit = optInt(args, 'limit', 1, 10, 5)
-    const rows: { id: string; day: string; overall: number; criteria: Record<string, number> }[] = []
+    const rows: { id: string; day: string; task?: number; overall: number; criteria: Record<string, number> }[] = []
     if (kind === 'writing') {
       for (const r of await writingDocs(ctx)) {
         if (!r.score) continue
-        rows.push({ id: r.id, day: dayOf(r.createdAt), overall: r.score.overall, criteria: Object.fromEntries(Object.entries(r.score.criteria).map(([k, c]) => [k.toUpperCase(), c.band])) })
+        rows.push({
+          id: r.id,
+          day: dayOf(r.createdAt),
+          task: taskOf(r),
+          overall: r.score.overall,
+          criteria: Object.fromEntries(Object.entries(r.score.criteria).map(([k, c]) => [criterionKey(k, r.task), c.band])),
+        })
       }
     } else {
       for (const r of await talkDocs(ctx)) {
@@ -95,7 +127,7 @@ export const getScores: CoachTool = {
     const overall = items.length ? Math.round((items.reduce((s, r) => s + r.overall, 0) / items.length) * 10) / 10 : null
     return {
       kind,
-      criteriaNames: kind === 'writing' ? { TR: 'Task Response', CC: 'Coherence & Cohesion', LR: 'Lexical Resource', GRA: 'Grammatical Range & Accuracy' } : { FC: 'Fluency & Coherence', LR: 'Lexical Resource', GRA: 'Grammatical Range & Accuracy', PRON: 'Pronunciation' },
+      criteriaNames: kind === 'writing' ? { TR: 'Task Response (Task 2)', TA: 'Task Achievement (Task 1)', CC: 'Coherence & Cohesion', LR: 'Lexical Resource', GRA: 'Grammatical Range & Accuracy' } : { FC: 'Fluency & Coherence', LR: 'Lexical Resource', GRA: 'Grammatical Range & Accuracy', PRON: 'Pronunciation' },
       items,
       averageOverall: overall,
       averages,
@@ -152,12 +184,12 @@ function textPage(text: string, args: Args, size = 1500) {
 export const getWritingReview: CoachTool = {
   name: 'get_writing_review',
   description:
-    "One scored Writing review by id. section: fixes (the corrections, filter by types / severity: error = wrong, improve = correct but weak or unnatural; for unnatural wording use types collocation, naturalness, word choice), score (bands and the one-line reason per criterion), prompt (the question), essay (the learner's text, paged).",
+    "One scored Writing review by id (task 1 = chart description, task 2 = essay). section: fixes (the corrections, filter by types / severity: error = wrong, improve = correct but weak or unnatural; for unnatural wording use types collocation, naturalness, word choice), score (bands and the one-line reason per criterion; Task 1 has TA instead of TR), prompt (the question), essay (the learner's text, paged), task1 (Task 1 only: overview, key features covered / missed, figures reported wrongly against the chart, the Vietnamese plan checked against the chart, the comparison with the learner's model essay and its phrases).",
   inputSchema: {
     type: 'object',
     properties: {
       id: { type: 'string' },
-      section: { type: 'string', enum: ['fixes', 'score', 'prompt', 'essay'] },
+      section: { type: 'string', enum: ['fixes', 'score', 'prompt', 'essay', 'task1'] },
       types: { type: 'array', items: { type: 'string', enum: FIX_TYPES } },
       severity: { type: 'string', enum: ['error', 'improve', 'all'] },
       sentence: SENTENCE,
@@ -170,8 +202,8 @@ export const getWritingReview: CoachTool = {
     if (!validWorkId(args.id)) throw new ToolError('Unknown id. Use list_works to find Writing review ids.')
     const r = (await writingDocs(ctx)).find((x) => x.id === args.id)
     if (!r) throw new ToolError('Unknown id. Use list_works to find Writing review ids.')
-    const section = optEnum(args, 'section', ['fixes', 'score', 'prompt', 'essay'] as const, 'fixes')
-    const head = { id: r.id, href: workHref('writing', r.id), day: dayOf(r.createdAt), time: timeOf(r.createdAt), title: writingTitle(r) }
+    const section = optEnum(args, 'section', ['fixes', 'score', 'prompt', 'essay', 'task1'] as const, 'fixes')
+    const head = { id: r.id, href: workHref('writing', r.id), day: dayOf(r.createdAt), time: timeOf(r.createdAt), title: writingTitle(r), task: taskOf(r) }
     if (section === 'fixes') {
       const types = optEnumList(args, 'types', FIX_TYPES)
       const severity = optEnum(args, 'severity', ['error', 'improve', 'all'] as const, 'all')
@@ -179,13 +211,21 @@ export const getWritingReview: CoachTool = {
       return { ...head, ...fixesOf(fixes, r.sentences, args) }
     }
     if (section === 'score') {
-      if (!r.score) return { ...head, score: null, note: r.scoreSkipped === 'short' ? 'Not scored: under 150 words.' : 'Not scored.' }
+      if (!r.score) {
+        const note =
+          r.scoreSkipped === 'short' ? 'Not scored: under 150 words.' : r.scoreSkipped === 'task1' ? 'Not scored: reviewed before Task 1 scoring existed.' : 'Not scored.'
+        return { ...head, score: null, note }
+      }
       return {
         ...head,
         overall: r.score.overall,
         words: r.score.words,
-        criteria: Object.fromEntries(Object.entries(r.score.criteria).map(([k, c]) => [k.toUpperCase(), { band: c.band, next: cut(c.summary, 200) }])),
+        criteria: Object.fromEntries(Object.entries(r.score.criteria).map(([k, c]) => [criterionKey(k, r.task), { band: c.band, next: cut(c.summary, 200) }])),
       }
+    }
+    if (section === 'task1') {
+      if (r.task !== 1) return { ...head, note: 'Not a Task 1 review: the task1 section exists only for Writing Task 1 (charts).' }
+      return { ...head, task1: task1Section(r) }
     }
     if (section === 'prompt') return { ...head, prompt: cut(r.prompt, 600), questionType: r.questionType ?? null, topic: r.topic ?? null, words: r.score?.words ?? null }
     return { ...head, ...textPage(r.text, args) }

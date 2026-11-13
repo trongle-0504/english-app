@@ -1,0 +1,128 @@
+{
+  "criteria": {
+    "tr": {
+      "strengths": [
+        "Clear overview: “Overall, social welfare received the most money”",
+        "Reports figures for every charity in both years"
+      ],
+      "gaps": [
+        "“the biggest increase” misreports the chart (absolute vs relative growth)",
+        "The 2013 rise and fall of wildlife and the arts is not mentioned"
+      ],
+      "band": 6,
+      "summary": "Ghi rõ môi trường tăng mạnh nhất theo tỉ lệ (phúc lợi tăng nhiều nhất theo số tiền) và nhắc đỉnh năm 2013 của động vật hoang dã.",
+      "issues": [
+        {
+          "n": 7,
+          "quote": "saw the biggest increase",
+          "problem": "Sai số liệu: phúc lợi tăng nhiều tiền nhất (+10), môi trường chỉ tăng mạnh nhất theo tỉ lệ.",
+          "better": "Environment saw the largest relative increase, rising by almost half to $22,000."
+        },
+        {
+          "n": 3,
+          "quote": "was decreased at the end",
+          "problem": "Overview chưa nói wildlife và arts tăng năm 2013 rồi mới giảm.",
+          "better": "Add: wildlife and the arts rose slightly in 2013 before falling below their 2012 levels."
+        }
+      ]
+    },
+    "cc": {
+      "strengths": [
+        "Logical order: overview, 2012, then 2014",
+        "Linkers used to compare: “while”, “In contrast”"
+      ],
+      "gaps": ["The overview and the introduction share one paragraph"],
+      "band": 7,
+      "summary": "Tách overview thành đoạn riêng sau câu mở bài để bố cục 4 đoạn rõ ràng hơn.",
+      "issues": [
+        {
+          "n": 2,
+          "quote": "Overall, social welfare",
+          "problem": "Overview nằm chung đoạn với câu mở bài.",
+          "better": "Start a new paragraph with “Overall, …”."
+        }
+      ]
+    },
+    "lr": {
+      "strengths": ["Some range for figures: “respectively”, “the figure for”"],
+      "gaps": ["“much more smaller” is a word-form error", "“thousand dollars” repeated in every sentence"],
+      "band": 6,
+      "summary": "Thay cách nói lặp “thousand dollars” bằng “$40,000” và dùng thêm động từ xu hướng (climb, dip, peak).",
+      "issues": [
+        {
+          "n": 5,
+          "quote": "much more smaller amounts",
+          "problem": "Sai so sánh hơn: không dùng “more” với “smaller”.",
+          "better": "much smaller amounts"
+        },
+        {
+          "n": 4,
+          "quote": "40 thousand dollars",
+          "problem": "Lặp cụm “thousand dollars” trong hầu hết các câu.",
+          "better": "$40,000"
+        }
+      ]
+    },
+    "gra": {
+      "strengths": ["Relative clause used well: “which was followed by health”"],
+      "gaps": ["Subject–verb agreement and verb-form errors"],
+      "band": 6,
+      "summary": "Soát lại chia động từ (illustrates, were), dạng bị động và động từ bất quy tắc (risen, given).",
+      "issues": [
+        {
+          "n": 1,
+          "quote": "The bar chart illustrate",
+          "problem": "Chủ ngữ số ít cần động từ thêm “s”.",
+          "better": "The bar chart illustrates"
+        },
+        {
+          "n": 6,
+          "quote": "had raised to 50",
+          "problem": "“raise” cần tân ngữ; con số tự tăng dùng “rise” (had risen).",
+          "better": "had risen to $50,000"
+        },
+        {
+          "n": 8,
+          "quote": "the amounts gave to wildlife",
+          "problem": "Cần phân từ bị động “given”, không dùng quá khứ “gave”.",
+          "better": "the amounts given to wildlife"
+        }
+      ]
+    }
+  },
+  "overview": {
+    "status": "clear",
+    "note": "Overview nêu đúng 2 điểm chính (phúc lợi cao nhất, nghệ thuật thấp nhất) nhưng chưa nói rõ xu hướng tăng rồi giảm của động vật hoang dã và nghệ thuật."
+  },
+  "keyFeatures": {
+    "covered": [
+      "Phúc lợi xã hội luôn nhận nhiều nhất, nghệ thuật ít nhất",
+      "Số liệu năm 2012 và 2014 của cả 6 hạng mục",
+      "Y tế và giáo dục tăng đều"
+    ],
+    "missed": [
+      "Động vật hoang dã đạt đỉnh 12 năm 2013 rồi giảm còn 9",
+      "Phúc lợi tăng nhiều nhất theo số tiền (+10 nghìn đô)"
+    ]
+  },
+  "dataErrors": [
+    {
+      "n": 7,
+      "quote": "saw the biggest increase",
+      "wrote": "Environment had the biggest increase",
+      "correct": "Social welfare rose the most (+$10,000, 40 → 50); environment rose the most in relative terms (+$7,000, about +47%)."
+    }
+  ],
+  "ideaCheck": {
+    "summary": "Dàn ý tiếng Việt đọc đúng phần lớn biểu đồ và có overview rõ; chỉ nhầm ý “môi trường tăng mạnh nhất” giữa số tiền và tỉ lệ.",
+    "matched": [
+      "Phúc lợi xã hội luôn nhiều nhất, nghệ thuật luôn ít nhất",
+      "Số liệu năm 2012 của cả 6 hạng mục đều đúng",
+      "Động vật hoang dã và nghệ thuật giảm nhẹ vào cuối kỳ"
+    ],
+    "missing": ["Động vật hoang dã và nghệ thuật có tăng nhẹ năm 2013 trước khi giảm"],
+    "wrong": [
+      "“Môi trường tăng mạnh nhất lên 22”: chỉ đúng theo tỉ lệ (~47%); theo số tiền thì phúc lợi tăng nhiều nhất (+10 so với +7)."
+    ]
+  }
+}

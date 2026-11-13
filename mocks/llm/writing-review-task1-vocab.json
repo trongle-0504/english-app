@@ -1,0 +1,88 @@
+{
+  "items": [
+    {
+      "phrase": "by far the largest share",
+      "category": "comparison",
+      "meaning_vi": "phần lớn nhất, vượt xa các nhóm còn lại",
+      "example": "social welfare received by far the largest share of the donations in every year",
+      "checks": [{ "base": "share", "collocate": "large", "pattern": "adjective + noun" }]
+    },
+    {
+      "phrase": "consistently received the least",
+      "category": "comparison",
+      "meaning_vi": "luôn nhận ít nhất (trong suốt giai đoạn)",
+      "example": "whereas the arts consistently received the least",
+      "checks": [{ "base": "receive", "collocate": "consistently", "pattern": "adverb" }]
+    },
+    {
+      "phrase": "topped the list",
+      "category": "comparison",
+      "meaning_vi": "đứng đầu danh sách",
+      "example": "social welfare topped the list at $40,000",
+      "checks": [{ "base": "top", "collocate": "list", "pattern": "verb + noun" }]
+    },
+    {
+      "phrase": "followed by",
+      "category": "sequence",
+      "meaning_vi": "tiếp theo là, xếp sau là",
+      "example": "followed by health and education at $30,000 and $25,000 respectively",
+      "checks": []
+    },
+    {
+      "phrase": "respectively",
+      "category": "other",
+      "meaning_vi": "lần lượt (theo đúng thứ tự vừa kể)",
+      "example": "at $30,000 and $25,000 respectively",
+      "checks": []
+    },
+    {
+      "phrase": "far smaller sums",
+      "category": "comparison",
+      "meaning_vi": "những khoản tiền nhỏ hơn nhiều",
+      "example": "Far smaller sums went to the environment ($15,000), wildlife ($10,000) and the arts ($5,000).",
+      "checks": [{ "base": "sum", "collocate": "small", "pattern": "adjective + noun" }]
+    },
+    {
+      "phrase": "climbed steadily",
+      "category": "trend",
+      "meaning_vi": "tăng đều đặn",
+      "example": "donations to social welfare climbed steadily to reach $50,000 in 2014",
+      "checks": [{ "base": "climb", "collocate": "steadily", "pattern": "adverb" }]
+    },
+    {
+      "phrase": "more modest growth",
+      "category": "trend",
+      "meaning_vi": "mức tăng khiêm tốn hơn, chậm hơn",
+      "example": "Health and education saw more modest growth, to $35,000 and $30,000.",
+      "checks": [{ "base": "growth", "collocate": "modest", "pattern": "adjective + noun" }]
+    },
+    {
+      "phrase": "the most striking change",
+      "category": "trend",
+      "meaning_vi": "thay đổi nổi bật nhất",
+      "example": "The most striking change was in environmental causes",
+      "checks": [{ "base": "change", "collocate": "striking", "pattern": "adjective + noun" }]
+    },
+    {
+      "phrase": "rose by almost half",
+      "category": "approximation",
+      "meaning_vi": "tăng gần một nửa (khoảng 50%)",
+      "example": "whose funding rose by almost half to $22,000",
+      "checks": [{ "base": "rise", "collocate": "by", "pattern": "preposition" }]
+    },
+    {
+      "phrase": "dipped to",
+      "category": "trend",
+      "meaning_vi": "giảm nhẹ xuống còn",
+      "example": "the amounts given to wildlife and the arts dipped to $9,000 and $4,000",
+      "checks": [{ "base": "dip", "collocate": "to", "pattern": "preposition" }]
+    },
+    {
+      "phrase": "over the next two years",
+      "category": "sequence",
+      "meaning_vi": "trong hai năm tiếp theo",
+      "example": "Over the next two years, donations to social welfare climbed steadily",
+      "checks": []
+    }
+  ]
+}

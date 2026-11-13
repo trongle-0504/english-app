@@ -13,7 +13,7 @@ import type { WritingReviewResult } from '@/types/writingReview'
 import type { ReportDoc, SectionOption } from './model.ts'
 import { SPEAKING_SECTIONS, speakingCollectionReport, speakingReport, type ReportOptions } from './speaking-report.ts'
 import { toMarkdown } from './to-markdown.ts'
-import { WRITING_SECTIONS, writingReport } from './writing-report.ts'
+import { writingReport, writingSectionsFor } from './writing-report.ts'
 
 type Source =
   | { kind: 'speaking'; result: SpeakingResult; current: number }
@@ -39,8 +39,8 @@ const TRIGGER =
   'border border-brand-200 bg-brand-50 text-brand-700 hover:border-brand-300 hover:bg-brand-100 dark:border-brand-800 dark:bg-brand-950/50 dark:text-brand-300 dark:hover:bg-brand-900/60'
 
 export function ExportReport(props: Source & { className?: string; /** Icon-only trigger (a list row). */ compact?: boolean }) {
-  const page = props.kind === 'writing' ? 'writing' : 'speaking'
-  const sections = page === 'speaking' ? SPEAKING_SECTIONS : WRITING_SECTIONS
+  const page = props.kind === 'writing' ? (props.result.task === 1 ? 'writing-task1' : 'writing') : 'speaking'
+  const sections = props.kind === 'writing' ? writingSectionsFor(props.result.task) : SPEAKING_SECTIONS
   // Remembered per page kind in this browser (a convenience only).
   const [chosen, setChosen] = useLocalStorage<string[]>(`report:${page}:sections`, defaults(sections))
   const [showNatural, setShowNatural] = useLocalStorage(`report:${page}:natural`, false)
