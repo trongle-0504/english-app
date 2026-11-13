@@ -47,15 +47,17 @@ export const coachRoutes: Record<string, ApiHandler> = {
     return { json: { ok: true } }
   },
 
-  /** { sessionId, proposalId, keep?: number[], library?: outcomes } → { proposal }: the learner's Confirm. */
+  /** { sessionId, proposalId, keep?: number[] } → { proposal }: the learner's Confirm (library: "applying", then poll). */
   'POST /coach/proposal/apply': async (req, ctx) => {
     const input = body(req)
     const proposal = await coach(ctx).applyProposal(ctx, String(input.sessionId ?? ''), String(input.proposalId ?? ''), input.keep, {
       authorized: isAuthorized(req),
-      library: input.library,
     })
     return { json: { proposal } }
   },
+
+  /** ?session=&id= → { proposal }: the card polls a library proposal while its entries are written. */
+  'GET /coach/proposal': async (req, ctx) => ({ json: { proposal: await coach(ctx).getProposal(param(req, 'session'), param(req, 'id')) } }),
 
   /** { sessionId, proposalId } → { ok } */
   'POST /coach/proposal/dismiss': async (req, ctx) => {

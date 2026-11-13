@@ -7,7 +7,6 @@ import { cn } from '@/lib/cn'
 import { getAdminToken, setAdminToken, useTokenRejected } from './api'
 import { StatusAlert, TextInput } from './ui'
 import type { AdminOutletContext } from './utils'
-import { AgentBatchChat } from './AgentBatchChat'
 
 type Health = { state: 'checking' } | { state: 'offline' } | { state: 'online'; gemini: boolean }
 
@@ -132,7 +131,6 @@ export default function AdminLayout() {
             />
           ) : null}
           <Outlet context={{ gemini: health.gemini } satisfies AdminOutletContext} />
-          <AgentBatchChat />
         </>
       )}
     </div>

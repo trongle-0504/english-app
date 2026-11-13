@@ -40,6 +40,16 @@ export interface CoachProposalResult {
   failed?: string[]
 }
 
+/** One kept library item while the server writes it (Confirm of a "library" proposal). */
+export interface CoachLibraryProgress {
+  /** The item's index in `items`. */
+  index: number
+  status: 'queued' | 'running' | 'done' | 'skipped' | 'error'
+  label?: string
+  href?: string
+  error?: string
+}
+
 export interface CoachProposal {
   id: string
   kind: CoachProposalKind
@@ -48,8 +58,11 @@ export interface CoachProposal {
   items: CoachProposalItem[]
   /** Items the coach asked for but that were left out (unknown task, duplicate…). */
   notes?: string[]
-  status: 'open' | 'applied' | 'dismissed'
+  /** "applying": confirmed, the server is still writing it (library entries take minutes). */
+  status: 'open' | 'applying' | 'applied' | 'dismissed'
   createdAt: string
+  /** Library proposals: each kept item's progress, from Confirm on. */
+  progress?: CoachLibraryProgress[]
   /** Kept item indexes, once applied. */
   kept?: number[]
   result?: CoachProposalResult

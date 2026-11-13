@@ -4,7 +4,8 @@
 //   That first call itself still runs through `agy -p` while the process starts in the background.
 // - Every call opens a fresh session, sets its own model + effort ("gemini-3.8-flash-low"), sends one prompt and closes
 //   the session: nothing carries over between tasks. The session's folder is empty, no MCP server is attached and every
-//   permission request is refused. Coach keeps its own process (it needs MCP tools).
+//   permission request is refused; agy runs in the bubblewrap sandbox (agy-sandbox.ts, profile "llm"). Coach keeps its
+//   own process (it needs MCP tools).
 // - One process serves parallel sessions (measured: 3 at once fine); the ANTIGRAVITY_PARALLEL queue around the call
 //   still caps how many run together.
 // - It stops after ANTIGRAVITY_WARM_IDLE_MS (30 min) with no call, never while a call runs; restarts when idle after
@@ -83,6 +84,7 @@ export class WarmAgentPool {
       command: this.opts.command,
       args: this.opts.args,
       cwd: this.opts.cwd ?? path.join(os.tmpdir(), 'english-app-antigravity-warm', 'empty'),
+      profile: 'llm',
       // The pool keeps its own idle clock; this only guards against a forgotten process.
       idleMs: 24 * 60 * 60_000,
       onPermission: (p) => console.warn(`[antigravity-warm] refused agent permission: ${p.kind ?? '?'} ${p.title ?? ''}`),

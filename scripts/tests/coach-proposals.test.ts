@@ -5,8 +5,9 @@ import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync
 import os from 'node:os'
 import path from 'node:path'
 import test from 'node:test'
-import type { ApiContext } from '../../server/api.ts'
+import { ApiError, type ApiContext } from '../../server/api.ts'
 import { AcpClient } from '../../server/coach/acp.ts'
+import type { LibraryWriter } from '../../server/coach/library-job.ts'
 import { pageContext, proposalNews, turnHeader } from '../../server/coach/preamble.ts'
 import { CoachService } from '../../server/coach/service.ts'
 import { createTasks } from '../../server/planner/actions.ts'
@@ -16,7 +17,7 @@ import type { CoachTurn } from '../../src/types/coach.ts'
 const FAKE = path.join(import.meta.dirname, 'helpers', 'fake-acp-agent.ts')
 const NOW = new Date('2026-11-08T03:00:00.000Z') // 10:00 VN, Sunday
 
-function setup() {
+function setup(opts: { writeLibrary?: LibraryWriter } = {}) {
   const root = mkdtempSync(path.join(os.tmpdir(), 'coach-prop-'))
   const logFile = path.join(root, 'fake.log')
   process.env.FAKE_ACP_LOG = logFile
@@ -57,7 +58,7 @@ function setup() {
   )
   const ctx: ApiContext = { rootDir: root, contentDir: path.join(root, 'content'), onContentChange: () => {} }
   const acp = new AcpClient({ command: process.execPath, args: [FAKE], cwd: path.join(root, 'agent-cwd') })
-  const coach = new CoachService({ rootDir: root, contentDir: ctx.contentDir, acp, now: () => NOW, config: { turnTimeoutMs: 20_000 }, record: () => {} })
+  const coach = new CoachService({ rootDir: root, contentDir: ctx.contentDir, acp, now: () => NOW, config: { turnTimeoutMs: 20_000 }, record: () => {}, writeLibrary: opts.writeLibrary })
   const ask = async (sessionId: string, text: string): Promise<CoachTurn> => {
     const turnId = await coach.startTurn(sessionId, text, '/')
     for (let i = 0; i < 300; i++) {
@@ -232,28 +233,76 @@ test('T-PROP-07: review cards from the mistake book need the admin token like th
   }
 })
 
-test('library proposals: the browser’s outcomes are recorded; only in-app links are kept', async () => {
-  const s = setup()
+test('library proposals: Confirm starts a server job; progress, 409 = already there, errors, in-app links only', async () => {
+  const written: string[] = []
+  const s = setup({
+    writeLibrary: async (_ctx, item) => {
+      written.push(`${item.target}|${item.phrase}|${item.meaning_vi ?? ''}|${item.example ?? ''}`)
+      await new Promise((r) => setTimeout(r, 20))
+      if (item.phrase === 'have little choice but to') throw new ApiError(409, 'already in Notes')
+      if (item.phrase === 'boom') throw new Error('Gemini did not answer')
+      return { label: `Vocabulary › Transport › ${item.phrase}`, href: item.phrase === 'evil' ? '//evil.example' : `/vocabulary/transport#${item.phrase.replace(/ /g, '-')}`, cardId: `vocab:${item.phrase}` }
+    },
+  })
   try {
     const sid = await s.coach.createSession()
+    const bad = await s.call(sid, 'propose_library_add', { items: [{ target: 'vocabulary' }] })
+    assert.match(bad.answer, /^Error: items\[0\] needs target/)
     const turn = await s.call(sid, 'propose_library_add', {
       items: [
         { target: 'vocabulary', phrase: 'heavy traffic', meaning_vi: 'giao thông đông đúc', example: 'There was heavy traffic.' },
-        { target: 'note', phrase: 'have little choice but to', meaning_vi: 'buộc phải', example: 'We had little choice but to wait.' },
+        { target: 'note', phrase: 'have little choice but to' },
+        { target: 'vocabulary', phrase: 'Heavy  Traffic' },
+        { target: 'vocabulary', phrase: 'boom' },
+        { target: 'vocabulary', phrase: 'evil' },
       ],
     })
     const p = turn.proposals![0]
-    assert.equal(p.items[1].detail, 'Notes · buộc phải')
-    await assert.rejects(s.coach.applyProposal(s.ctx, sid, p.id, [0, 1], { authorized: true, library: [{ index: 0, ok: true }] }), rejects(400))
-    const applied = await s.coach.applyProposal(s.ctx, sid, p.id, [0, 1], {
-      authorized: true,
-      library: [
-        { index: 0, ok: true, label: 'Vocabulary › Transport', href: '/vocabulary/transport#heavy-traffic' },
-        { index: 1, ok: true, label: 'Notes › x', href: '//evil.example' },
-      ],
-    })
-    assert.equal(applied.result?.summary, '2 phrases saved to your library')
-    assert.deepEqual(applied.result?.links, [{ label: 'Vocabulary › Transport', href: '/vocabulary/transport#heavy-traffic' }])
+    assert.equal(p.title, 'Add 4 entries to your library')
+    assert.deepEqual(p.items.map((i) => i.label), ['heavy traffic', 'have little choice but to', 'boom', 'evil'])
+    assert.equal(p.items[0].detail, 'Vocabulary · giao thông đông đúc · “There was heavy traffic.”')
+    assert.deepEqual(p.items[1].data, { target: 'note', phrase: 'have little choice but to' })
+    assert.equal(written.length, 0, 'nothing is written before Confirm')
+
+    await assert.rejects(s.coach.applyProposal(s.ctx, sid, p.id, [0], { authorized: false }), rejects(401))
+    const started = await s.coach.applyProposal(s.ctx, sid, p.id, [0, 1, 2, 3], { authorized: true })
+    assert.equal(started.status, 'applying')
+    assert.equal(started.progress?.length, 4)
+    await assert.rejects(s.coach.applyProposal(s.ctx, sid, p.id, [0], { authorized: true }), rejects(409))
+
+    let now = started
+    for (let i = 0; i < 200 && now.status === 'applying'; i++) {
+      await new Promise((r) => setTimeout(r, 20))
+      now = await s.coach.getProposal(sid, p.id)
+    }
+    assert.equal(now.status, 'applied')
+    assert.deepEqual(now.progress?.map((r) => r.status), ['done', 'skipped', 'error', 'done'])
+    assert.deepEqual(written[0], 'vocabulary|heavy traffic|giao thông đông đúc|There was heavy traffic.')
+    assert.equal(now.result?.summary, '2 entries saved to your library · 1 already there')
+    assert.deepEqual(now.result?.links, [{ label: 'Vocabulary › Transport › heavy traffic', href: '/vocabulary/transport#heavy-traffic' }])
+    assert.deepEqual(now.result?.failed, ['boom: Gemini did not answer'])
+    // The next question tells the coach what happened.
+    await s.ask(sid, 'ok')
+    assert.match(s.prompts().at(-1)!, /confirmed “Add 4 entries to your library” \(4 of 4: 2 entries saved/)
+  } finally {
+    await s.cleanup()
+  }
+})
+
+test('library proposals: a job cut off by a restart is reported as interrupted, not left running', async () => {
+  const s = setup({ writeLibrary: () => new Promise(() => {}) })
+  try {
+    const sid = await s.coach.createSession()
+    const turn = await s.call(sid, 'propose_library_add', { items: [{ target: 'vocabulary', phrase: 'traffic jam' }] })
+    const p = turn.proposals![0]
+    assert.equal((await s.coach.applyProposal(s.ctx, sid, p.id, [0], { authorized: true })).status, 'applying')
+    assert.equal((await s.coach.getProposal(sid, p.id)).status, 'applying', 'still running in this process')
+    // A new process (server restart) finds it "applying" with no job behind it.
+    const restarted = new CoachService({ rootDir: s.root, contentDir: s.ctx.contentDir, now: () => NOW, record: () => {} })
+    const settled = await restarted.getProposal(sid, p.id)
+    assert.equal(settled.status, 'applied')
+    assert.deepEqual(settled.progress?.map((r) => r.status), ['error'])
+    assert.match(settled.result?.failed?.[0] ?? '', /^traffic jam: interrupted by a server restart/)
   } finally {
     await s.cleanup()
   }

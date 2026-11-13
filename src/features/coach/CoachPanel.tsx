@@ -351,7 +351,7 @@ export default function CoachPanel({ open, onClose }: { open: boolean; onClose: 
               ref={input}
               rows={1}
               value={text}
-              maxLength={2000}
+              maxLength={8000}
               onChange={(e) => setText(e.target.value)}
               onKeyDown={onKeyDown}
               placeholder="Ask Nova Agent…"

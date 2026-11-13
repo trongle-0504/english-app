@@ -9,12 +9,12 @@ import { checkDay, checkTime, readPlanner, taskFromBody } from '../../planner/st
 import { mistakeBook } from '../../practice/mistakes.ts'
 import { cardIdsOf } from '../../practice/recent.ts'
 import { cut, talkDocs, ToolError, validWorkId, writingDocs, type ToolContext } from '../data.ts'
-import { fold } from './library.ts'
+import { fold, libraryEntries } from './library.ts'
 import type { CoachTool } from './types.ts'
 
 const MAX_TASKS = 20
 const MAX_CARDS = 30
-const MAX_LIBRARY = 5
+const MAX_LIBRARY = 30
 
 /** What every propose_* tool tells the model: nothing changed yet. */
 const AFTER = 'Nothing has changed yet. Tell the learner, in one short line, to check the card under your answer and press Confirm (they can untick items).'
@@ -231,7 +231,11 @@ export const proposeReviewCards: CoachTool = {
 
 export const proposeLibraryAdd: CoachTool = {
   name: 'propose_library_add',
-  description: `Proposes saving phrases to the library (vocabulary: word/collocation; note: structure/usage), ≤ ${MAX_LIBRARY}; written only when the learner confirms.`,
+  description:
+    `Proposes adding words/phrases to the app library (vocabulary: word or collocation; note: structure/usage), ≤ ${MAX_LIBRARY} in one ` +
+    'proposal. Use it for every "add these words / thêm từ" request: all items in one call. The server writes full entries ' +
+    '(meanings, collocations, examples, picture, review card) only after the learner confirms. meaning_vi and example are ' +
+    "optional: copy the learner's own text, never invent one. Words already in the library are left out.",
   inputSchema: {
     type: 'object',
     properties: {
@@ -243,28 +247,44 @@ export const proposeLibraryAdd: CoachTool = {
             target: { type: 'string', enum: ['vocabulary', 'note'] },
             phrase: { type: 'string' },
             meaning_vi: { type: 'string' },
-            example: { type: 'string' },
+            example: { type: 'string', description: 'the example or context the learner gave' },
           },
-          required: ['target', 'phrase', 'meaning_vi', 'example'],
+          required: ['target', 'phrase'],
         },
       },
     },
     required: ['items'],
   },
-  label: () => 'Preparing library entries…',
+  label: (a) => `Preparing ${Array.isArray(a.items) ? `${a.items.length} ` : ''}library entr${Array.isArray(a.items) && a.items.length === 1 ? 'y' : 'ies'}…`,
   async run(args, ctx) {
     const propose = proposeOrFail(ctx)
-    const items: CoachProposalItem[] = list(args.items, 'items', MAX_LIBRARY).map((raw, i) => {
-      const it = obj(raw, `items[${i}]`)
+    const raw = list(args.items, 'items', MAX_LIBRARY)
+    const known = new Map<string, string>()
+    for (const e of await libraryEntries(ctx)) if (e.kind === 'word' || e.kind === 'note') known.set(`${e.kind === 'word' ? 'vocabulary' : 'note'}:${fold(e.term)}`, e.href)
+    const notes: string[] = []
+    const items: CoachProposalItem[] = []
+    for (const [i, value] of raw.entries()) {
+      const it = obj(value, `items[${i}]`)
       const target = it.target === 'note' ? 'note' : it.target === 'vocabulary' ? 'vocabulary' : null
       const phrase = cut(it.phrase, 120)
       const meaning_vi = cut(it.meaning_vi, 300)
-      const example = cut(it.example, 400)
-      if (!target || !phrase || !meaning_vi || !example) throw new ToolError(`items[${i}] needs target (vocabulary | note), phrase, meaning_vi and example.`)
-      return { label: phrase, detail: `${target === 'note' ? 'Notes' : 'Vocabulary'} · ${meaning_vi}`, data: { target, phrase, meaning_vi, example } }
-    })
-    const p = propose({ kind: 'library', title: `Save ${items.length} phrase${items.length === 1 ? '' : 's'} to your library`, items })
-    return { proposalId: p.id, proposed: items.length, note: AFTER }
+      const example = cut(it.example, 600)
+      if (!target || !phrase) throw new ToolError(`items[${i}] needs target (vocabulary | note) and phrase.`)
+      const key = `${target}:${fold(phrase)}`
+      if (known.has(key)) {
+        notes.push(`“${cut(phrase, 40)}” is already in the library — skipped.`)
+        continue
+      }
+      if (items.some((x) => `${x.data.target}:${fold(String(x.data.phrase))}` === key)) continue
+      items.push({
+        label: phrase,
+        detail: [target === 'note' ? 'Notes' : 'Vocabulary', meaning_vi, example ? `“${cut(example, 80)}”` : ''].filter(Boolean).join(' · '),
+        data: { target, phrase, ...(meaning_vi ? { meaning_vi } : {}), ...(example ? { example } : {}) },
+      })
+    }
+    if (!items.length) throw new ToolError(`Nothing to add. ${notes.join(' ')}`)
+    const p = propose({ kind: 'library', title: `Add ${items.length} entr${items.length === 1 ? 'y' : 'ies'} to your library`, items, ...(notes.length ? { notes } : {}) })
+    return { proposalId: p.id, proposed: items.length, ...(notes.length ? { skipped: notes } : {}), note: AFTER }
   },
 }
 

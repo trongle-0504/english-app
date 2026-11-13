@@ -4,6 +4,7 @@ import { randomBytes } from 'node:crypto'
 import { enWeekday, vnDay, vnTime } from '../../src/features/planner/dates.ts'
 import type {
   CoachDayStats,
+  CoachLibraryProgress,
   CoachProposal,
   CoachProposalResult,
   CoachSession,
@@ -21,6 +22,7 @@ import { phraseCards } from '../practice/recent.ts'
 import { recordUsage, type UsageEntry } from '../usage.ts'
 import { AcpClient, type AcpMcpServer, type AcpUpdate } from './acp.ts'
 import { cut, dayOf, ToolError, type ProposalDraft, type ToolContext } from './data.ts'
+import { runLibraryJob, type LibraryItemData, type LibraryWriter } from './library-job.ts'
 import { CoachMcpServer } from './mcp.ts'
 import { promptBlocks, proposalNews, turnHeader } from './preamble.ts'
 import { allSessions, deleteSession, expiredSessions, listSessions, newSessionId, readSession, updateSession, validSessionId } from './store.ts'
@@ -48,7 +50,8 @@ export function coachConfig(env = process.env): CoachConfig {
     maxRunning: num(env.COACH_MAX_RUNNING, 2),
     maxTurnsPerSession: 30,
     retentionDays: num(env.COACH_RETENTION_DAYS, 30),
-    maxQuestionChars: 2000,
+    // A pasted word list for the library ("thêm các từ này") needs room.
+    maxQuestionChars: 8000,
   }
 }
 
@@ -70,27 +73,44 @@ export interface CoachServiceOptions {
   now?: () => Date
   /** Usage log writer (default: logs/gemini-usage.jsonl). */
   record?: (entry: UsageEntry) => void
+  /** Writes one library entry (default: the Admin generator); tests pass a fake. */
+  writeLibrary?: LibraryWriter
 }
 
 const BUSY = 'Nova Agent could not answer — try again in a moment.'
 const MAX_PROPOSALS_PER_TURN = 3
 
-/** What the browser sends back after saving library entries itself (the Admin generator runs from the page). */
-export interface LibraryOutcome {
-  index: number
-  ok: boolean
-  label?: string
-  href?: string
-  error?: string
-}
-
-const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`
+const plural = (n: number, word: string, many = `${word}s`) => `${n} ${n === 1 ? word : many}`
 
 function median(values: number[]): number {
   if (!values.length) return 0
   const sorted = [...values].sort((a, b) => a - b)
   const mid = sorted.length >> 1
   return sorted.length % 2 ? sorted[mid] : Math.round((sorted[mid - 1] + sorted[mid]) / 2)
+}
+
+/**
+ * A permission request agy sends before an MCP call: allowed only for the coach's own tools, by exact name
+ * ("Run mcp_app_get_plan", "Run mcp_app_82aaed4d_get_plan" or the bare tool name). Pure (tested).
+ */
+export function allowAppTool(call: { title?: string; kind?: string; name?: string }): boolean {
+  const names = [call.name ?? '', /^Run (\S+)$/.exec(call.title ?? '')?.[1] ?? '']
+  return names.some((n) => /^mcp_app_/.test(n) && Boolean(toolByName(appToolName(n))))
+}
+
+/** The card's "Done" line of a library proposal, from its items' progress. Pure (tested). */
+export function libraryResult(proposal: Pick<CoachProposal, 'items'>, progress: CoachLibraryProgress[]): CoachProposalResult {
+  const done = progress.filter((r) => r.status === 'done')
+  const skipped = progress.filter((r) => r.status === 'skipped')
+  const failed = progress.filter((r) => r.status === 'error').map((r) => `${cut(String(proposal.items[r.index]?.label ?? ''), 60)}: ${cut(r.error || 'failed', 120)}`)
+  return {
+    summary: `${plural(done.length, 'entry', 'entries')} saved to your library${skipped.length ? ` · ${skipped.length} already there` : ''}`,
+    links: done
+      .filter((r) => typeof r.href === 'string' && r.href.startsWith('/') && !r.href.startsWith('//'))
+      .slice(0, 5)
+      .map((r) => ({ label: cut(r.label || proposal.items[r.index]?.label, 80), href: cut(r.href, 300) })),
+    ...(failed.length ? { failed } : {}),
+  }
 }
 
 export class CoachService {
@@ -107,12 +127,19 @@ export class CoachService {
   private waiters: (() => void)[] = []
   private sweptAt = 0
   private applying = new Set<string>()
+  /** Library proposals whose entries are being written right now (by this process). */
+  private libraryJobs = new Set<string>()
 
   constructor(opts: CoachServiceOptions) {
     this.opts = opts
     this.config = { ...coachConfig(), ...opts.config }
     this.now = opts.now ?? (() => new Date())
-    this.acp = opts.acp ?? new AcpClient({ onPermission: (p) => console.warn(`[coach] refused agent permission: ${p.kind ?? '?'} ${p.title ?? ''}`) })
+    this.acp =
+      opts.acp ??
+      new AcpClient({
+        allow: allowAppTool,
+        onPermission: (p) => !p.allowed && console.warn(`[coach] refused agent permission: ${p.kind ?? '?'} ${p.title ?? ''}`),
+      })
     this.mcp =
       opts.mcp ?? new CoachMcpServer({ tools: COACH_TOOLS, context: (binding) => ({ ...this.toolContext(), propose: (draft) => this.addProposal(binding.sessionId, draft) }) })
   }
@@ -144,8 +171,32 @@ export class CoachService {
   async getSession(id: string): Promise<CoachSession> {
     const session = await readSession(this.opts.rootDir, id)
     if (!session) throw new ApiError(404, 'Chat not found.')
+    if (await this.settleOrphans(session)) return this.getSession(id)
     // A turn still running shows its live state.
     return { ...session, turns: session.turns.map((t) => this.live.get(t.id)?.turn ?? t) }
+  }
+
+  /** One proposal, for the card polling a library job. */
+  async getProposal(sessionId: string, proposalId: string): Promise<CoachProposal> {
+    if (!validSessionId(sessionId)) throw new ApiError(404, 'Chat not found.')
+    const proposal = (await this.getSession(sessionId)).turns.flatMap((t) => t.proposals ?? []).find((p) => p.id === proposalId)
+    if (!proposal) throw new ApiError(404, 'Proposal not found.')
+    return proposal
+  }
+
+  /** A library job cut off by a server restart: its unfinished items are reported as interrupted. True if it changed. */
+  private async settleOrphans(session: CoachSession): Promise<boolean> {
+    const orphans = session.turns.flatMap((t) => t.proposals ?? []).filter((p) => p.status === 'applying' && !this.libraryJobs.has(p.id))
+    if (!orphans.length) return false
+    const ids = new Set(orphans.map((p) => p.id))
+    await this.changeProposals(session.id, (p) => ids.has(p.id) && p.status === 'applying' && !this.libraryJobs.has(p.id), (p) => {
+      const progress = (p.progress ?? []).map((r) => (r.status === 'queued' || r.status === 'running' ? { ...r, status: 'error' as const, error: 'interrupted by a server restart — ask again' } : r))
+      p.progress = progress
+      p.status = 'applied'
+      p.result = libraryResult(p, progress)
+      p.reported = false
+    })
+    return true
   }
 
   async deleteSession(id: string): Promise<void> {
@@ -297,7 +348,7 @@ export class CoachService {
       const today = vnDay(ctx.now)
       const pending = session.turns.flatMap((t) => (t.proposals ?? []).filter((p) => !p.reported))
       const header = turnHeader({ nowLabel: `${today} (${enWeekday(today)}) ${vnTime(ctx.now)}`, page: turn.page, overview: await overview(ctx), news: proposalNews(pending) })
-      const told = new Set(pending.filter((p) => p.status !== 'open').map((p) => p.id))
+      const told = new Set(pending.filter((p) => p.status === 'applied' || p.status === 'dismissed').map((p) => p.id))
       if (told.size)
         await this.changeProposals(sessionId, (p) => told.has(p.id), (p) => void (p.reported = true))
       // A chat whose agy session was lost gets its last exchanges back as context.
@@ -370,7 +421,8 @@ export class CoachService {
     const session = await this.getSession(sessionId)
     const proposal = session.turns.flatMap((t) => t.proposals ?? []).find((p) => p.id === proposalId)
     if (!proposal) throw new ApiError(404, 'Proposal not found.')
-    if (proposal.status !== 'open') throw new ApiError(409, proposal.status === 'applied' ? 'Already applied.' : 'This proposal was dismissed.')
+    if (proposal.status !== 'open')
+      throw new ApiError(409, proposal.status === 'applied' ? 'Already applied.' : proposal.status === 'applying' ? 'Already being applied.' : 'This proposal was dismissed.')
     if (this.applying.has(proposalId)) throw new ApiError(409, 'Already being applied.')
     return proposal
   }
@@ -378,14 +430,15 @@ export class CoachService {
   /**
    * The learner's Confirm: applies the kept items through the same code as the app's own buttons, once.
    * `authorized`: the admin-token check of the card / library routes (cards and library entries need it).
-   * Library entries are written by the browser (the Admin generator); it sends their outcomes here to record them.
+   * Library entries take minutes: the proposal turns "applying" at once and a background job writes them (the card
+   * polls GET /coach/proposal until it is "applied").
    */
   async applyProposal(
     ctx: ApiContext,
     sessionId: string,
     proposalId: string,
     keepRaw: unknown,
-    opts: { authorized: boolean; library?: unknown },
+    opts: { authorized: boolean },
   ): Promise<CoachProposal> {
     const proposal = await this.findProposal(sessionId, proposalId)
     const all = proposal.items.map((_, i) => i)
@@ -433,20 +486,15 @@ export class CoachService {
         }
         result = { summary: `${plural(added, 'card')} added to your reviews`, links: [{ label: 'Open Review', href: '/review' }] }
       } else {
-        const outcomes = (Array.isArray(opts.library) ? opts.library : []).filter(
-          (o): o is LibraryOutcome => Boolean(o) && typeof o === 'object' && keep.includes((o as LibraryOutcome).index),
-        )
-        if (outcomes.length !== keep.length) throw new ApiError(400, 'Send the outcome of every kept item.')
-        const ok = outcomes.filter((o) => o.ok)
-        const failed = outcomes.filter((o) => !o.ok).map((o) => `${cut(String(proposal.items[o.index].label), 60)}: ${cut(o.error || 'failed', 120)}`)
-        result = {
-          summary: `${plural(ok.length, 'phrase')} saved to your library`,
-          links: ok
-            .filter((o) => typeof o.href === 'string' && o.href.startsWith('/') && !o.href.startsWith('//'))
-            .slice(0, 5)
-            .map((o) => ({ label: cut(o.label || proposal.items[o.index].label, 80), href: cut(o.href, 300) })),
-          ...(failed.length ? { failed } : {}),
-        }
+        const progress: CoachLibraryProgress[] = keep.map((index) => ({ index, status: 'queued' }))
+        await this.changeProposals(sessionId, (p) => p.id === proposalId, (p) => {
+          p.status = 'applying'
+          p.kept = keep
+          p.progress = progress.map((r) => ({ ...r }))
+        })
+        this.libraryJobs.add(proposalId)
+        void this.runLibrary(ctx, sessionId, proposal, keep.map((i) => proposal.items[i].data as unknown as LibraryItemData), progress)
+        return { ...proposal, status: 'applying', kept: keep, progress }
       }
       await this.changeProposals(sessionId, (p) => p.id === proposalId, (p) => {
         p.status = 'applied'
@@ -457,6 +505,26 @@ export class CoachService {
       return { ...proposal, status: 'applied', kept: keep, result }
     } finally {
       this.applying.delete(proposalId)
+    }
+  }
+
+  /** The background half of a library Confirm: writes the entries, then marks the proposal applied. Never throws. */
+  private async runLibrary(ctx: ApiContext, sessionId: string, proposal: CoachProposal, items: LibraryItemData[], progress: CoachLibraryProgress[]) {
+    const mine = (p: CoachProposal) => p.id === proposal.id
+    const save = () => this.changeProposals(sessionId, mine, (p) => void (p.progress = progress.map((r) => ({ ...r }))))
+    try {
+      await runLibraryJob(ctx, items, progress, save, this.opts.writeLibrary)
+    } catch (error) {
+      console.error('[coach] library job failed:', error)
+    } finally {
+      for (const r of progress) if (r.status === 'queued' || r.status === 'running') Object.assign(r, { status: 'error', error: 'stopped' })
+      await this.changeProposals(sessionId, mine, (p) => {
+        p.progress = progress.map((r) => ({ ...r }))
+        p.status = 'applied'
+        p.result = libraryResult(p, progress)
+        p.reported = false
+      }).catch((e) => console.error('[coach] could not save the library job:', e))
+      this.libraryJobs.delete(proposal.id)
     }
   }
 
@@ -486,7 +554,7 @@ export class CoachService {
           medianMs: median(turns.filter((t) => t.status === 'done' && t.ms).map((t) => t.ms!)),
           tokens: turns.reduce((sum, t) => sum + (t.usage?.total ?? 0), 0),
           proposals: proposals.length,
-          applied: proposals.filter((p) => p.status === 'applied').length,
+          applied: proposals.filter((p) => p.status === 'applied' || p.status === 'applying').length,
         }
       })
   }

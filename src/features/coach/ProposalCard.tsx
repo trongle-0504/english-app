@@ -1,15 +1,13 @@
 // A change the coach suggested: the learner unticks what they do not want and presses Confirm (or Dismiss).
-// Nothing changes before Confirm. Library entries are written here, by the same Admin generator as the app's own
-// "Vocabulary / Notes" buttons; the server then records the outcome.
-import { BookPlus, CalendarPlus, CalendarRange, Check, Layers, Loader2 } from 'lucide-react'
-import { useState } from 'react'
+// Nothing changes before Confirm. Library entries are written on the server by the Admin generator (minutes): the card
+// polls the proposal and shows each entry's progress; closing the panel does not stop it.
+import { BookPlus, CalendarPlus, CalendarRange, Check, CircleAlert, Layers, Loader2, MinusCircle } from 'lucide-react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router'
-import { AdminApiError } from '@/features/admin/api'
+import { refreshSiteData } from '@/features/admin/api'
 import { invalidateData } from '@/lib/data'
 import { cn } from '@/lib/cn'
-import type { CoachProposal } from '@/types/coach'
-import { addToLibrary } from '../practice/library-add'
-import { practiceApi } from '../practice/practice-api'
+import type { CoachLibraryProgress, CoachProposal } from '@/types/coach'
 import * as api from './api'
 
 const ICONS = { tasks: CalendarPlus, moves: CalendarRange, 'review-cards': Layers, library: BookPlus } as const
@@ -27,10 +25,41 @@ export function ProposalCard({
 }) {
   const [picked, setPicked] = useState(() => new Set(proposal.items.map((_, i) => i)))
   const [busy, setBusy] = useState<'' | 'apply' | 'dismiss'>('')
-  const [progress, setProgress] = useState('')
   const [error, setError] = useState('')
   const Icon = ICONS[proposal.kind]
   const open = proposal.status === 'open'
+  const applying = proposal.status === 'applying'
+
+  // A library job runs on the server: poll it until it is applied (refs: the parent passes a new onChange each render).
+  const latest = useRef({ proposal, onChange })
+  useEffect(() => {
+    latest.current = { proposal, onChange }
+  })
+  useEffect(() => {
+    if (!applying) return
+    let stop = false
+    const timer = window.setInterval(async () => {
+      try {
+        const next = await api.getProposal(sessionId, proposal.id)
+        if (stop) return
+        if (next.status !== 'applying') {
+          refreshSiteData('vocabulary')
+          refreshSiteData('notes.json')
+          invalidateData('review/')
+        }
+        if (JSON.stringify(next) !== JSON.stringify(latest.current.proposal)) latest.current.onChange(next)
+      } catch {
+        // try again on the next tick
+      }
+    }, 3000)
+    return () => {
+      stop = true
+      window.clearInterval(timer)
+    }
+  }, [applying, sessionId, proposal.id])
+
+  const rowOf = (i: number): CoachLibraryProgress | undefined => proposal.progress?.find((r) => r.index === i)
+  const doneCount = (proposal.progress ?? []).filter((r) => r.status !== 'queued' && r.status !== 'running').length
 
   const toggle = (i: number) =>
     setPicked((p) => {
@@ -46,32 +75,13 @@ export function ProposalCard({
     setBusy('apply')
     setError('')
     try {
-      let library: { index: number; ok: boolean; label?: string; href?: string; error?: string }[] | undefined
-      if (proposal.kind === 'library') {
-        library = []
-        for (const [n, index] of keep.entries()) {
-          const data = proposal.items[index].data as { target: 'vocabulary' | 'note'; phrase: string; meaning_vi: string; example: string }
-          setProgress(`Writing ${n + 1} of ${keep.length}: ${data.phrase}…`)
-          try {
-            const done = await addToLibrary(data.target, { phrase: data.phrase, meaning_vi: data.meaning_vi, example: data.example })
-            await practiceApi.libraryAdded([{ term: data.phrase, cardId: done.cardId }]).catch(() => {})
-            library.push({ index, ok: true, label: done.label, href: done.href })
-          } catch (e) {
-            // Already in the library (409): linked to that entry, like the Review page does.
-            const exists = e instanceof AdminApiError && e.status === 409
-            if (exists) await practiceApi.libraryAdded([{ term: data.phrase }]).catch(() => {})
-            library.push({ index, ok: exists, error: exists ? 'already in the library' : (e as Error).message })
-          }
-        }
-      }
-      const applied = await api.applyProposal(sessionId, proposal.id, keep, library)
-      if (proposal.kind === 'review-cards' || proposal.kind === 'library') invalidateData('review/')
+      const applied = await api.applyProposal(sessionId, proposal.id, keep)
+      if (proposal.kind === 'review-cards') invalidateData('review/')
       onChange(applied)
     } catch (e) {
       setError((e as Error).message)
     } finally {
       setBusy('')
-      setProgress('')
     }
   }
 
@@ -97,6 +107,7 @@ export function ProposalCard({
       <ul className="mt-2 space-y-1">
         {proposal.items.map((item, i) => {
           const on = open ? picked.has(i) : (proposal.kept ?? []).includes(i)
+          const row = rowOf(i)
           return (
             <li key={i}>
               <label className={cn('flex items-start gap-2 rounded-lg px-1 py-1 text-sm', open && 'cursor-pointer hover:bg-white/70 dark:hover:bg-slate-800/60', !on && 'opacity-50')}>
@@ -110,6 +121,7 @@ export function ProposalCard({
                 <span className="min-w-0">
                   <span className="block break-words text-slate-800 dark:text-slate-100">{item.label}</span>
                   {item.detail ? <span className="block text-xs break-words text-slate-500 dark:text-slate-400">{item.detail}</span> : null}
+                  {row ? <ProgressLine row={row} onNavigate={onNavigate} /> : null}
                 </span>
               </label>
             </li>
@@ -137,8 +149,11 @@ export function ProposalCard({
           >
             Dismiss
           </button>
-          {progress ? <span className="w-full text-xs text-slate-500">{progress}</span> : null}
         </div>
+      ) : applying ? (
+        <p className="mt-2 flex items-center gap-1.5 text-sm text-violet-800 dark:text-violet-200">
+          <Loader2 className="size-4 animate-spin" /> Writing {doneCount} of {proposal.progress?.length ?? 0}… (you can close this panel)
+        </p>
       ) : proposal.status === 'applied' ? (
         <div className="mt-2 text-sm">
           <p className="flex items-center gap-1.5 font-medium text-emerald-700 dark:text-emerald-400">
@@ -160,5 +175,36 @@ export function ProposalCard({
       )}
       {error ? <p className="mt-1.5 text-sm text-rose-600 dark:text-rose-400">{error}</p> : null}
     </div>
+  )
+}
+
+function ProgressLine({ row, onNavigate }: { row: CoachLibraryProgress; onNavigate: () => void }) {
+  if (row.status === 'queued') return <span className="block text-xs text-slate-400">Waiting…</span>
+  if (row.status === 'running')
+    return (
+      <span className="flex items-center gap-1 text-xs text-violet-700 dark:text-violet-300">
+        <Loader2 className="size-3 animate-spin" /> Writing…
+      </span>
+    )
+  if (row.status === 'done')
+    return row.href ? (
+      <Link to={row.href} onClick={onNavigate} className="flex items-center gap-1 text-xs font-medium text-emerald-700 underline underline-offset-2 dark:text-emerald-400">
+        <Check className="size-3" /> {row.label ?? 'Saved'}
+      </Link>
+    ) : (
+      <span className="flex items-center gap-1 text-xs text-emerald-700 dark:text-emerald-400">
+        <Check className="size-3" /> Saved
+      </span>
+    )
+  if (row.status === 'skipped')
+    return (
+      <span className="flex items-center gap-1 text-xs text-slate-500">
+        <MinusCircle className="size-3" /> {row.error ?? 'already in the library'}
+      </span>
+    )
+  return (
+    <span className="flex items-center gap-1 text-xs text-rose-600 dark:text-rose-400">
+      <CircleAlert className="size-3" /> {row.error ?? 'failed'}
+    </span>
   )
 }
