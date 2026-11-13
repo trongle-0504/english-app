@@ -87,7 +87,7 @@ export function searchDocs(docs: HelpDoc[], query: string, limit = 4): HelpHit[]
         if (fold(heading).includes(w)) score += 2
         if (text.includes(w)) score += 1
       }
-      if (score > 0) hits.push({ id: doc.id, title: doc.title, section: heading, text: section.replace(/^## .+\n/, '').trim().slice(0, 1500), href: `/help/${doc.id}`, score })
+      if (score > 0) hits.push({ id: doc.id, title: doc.title, section: heading, text: section.replace(/^#{1,2} .+\n/gm, '').trim().slice(0, 1500), href: `/help/${doc.id}`, score })
     }
   }
   return hits.sort((a, b) => b.score - a.score).slice(0, limit)
