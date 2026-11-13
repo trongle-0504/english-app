@@ -1,0 +1,23 @@
+#!/bin/bash
+# agy-gate: every agy the English apps start runs through bwrap; this wrapper sits first on the services' PATH and
+# lets at most AGY_SLOTS (4) of them run on the whole machine. Each holds an flock on one slot file for its whole
+# life (the lock is inherited by bwrap and released by the kernel when it exits, even on a crash). No free slot: wait.
+SLOT_DIR=${AGY_SLOT_DIR:-/run/agy-slots}
+N=${AGY_SLOTS:-4}
+MAX=${AGY_GATE_MAX_WAIT:-600}
+REAL=${AGY_GATE_REAL:-/usr/bin/bwrap}
+start=$SECONDS
+waited=0
+while :; do
+  for ((i = 1; i <= N; i++)); do
+    exec {fd}>>"$SLOT_DIR/slot$i" || continue
+    if flock -n "$fd"; then
+      printf 'app=%s pid=%s since=%s\n' "${AGY_GATE_APP:-?}" "$$" "$(date -Is)" >"$SLOT_DIR/slot$i.owner" 2>/dev/null
+      exec "$REAL" "$@"
+    fi
+    exec {fd}>&-
+  done
+  if ((waited == 0)); then echo "agy-gate: waiting for a free agy slot" >&2; waited=1; fi
+  if ((SECONDS - start >= MAX)); then echo "agy-gate: no free agy slot after ${MAX}s" >&2; exit 75; fi
+  sleep "0.$((RANDOM % 5 + 3))"
+done

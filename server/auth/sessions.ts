@@ -6,6 +6,8 @@ import { readAuthFile, updateAuthFile } from './store.ts'
 interface Session {
   tokenHash: string
   userId: string
+  /** SHA-256 of the device cookie the session was made on (multi-user device limit). */
+  deviceHash?: string
   createdAt: string
   expiresAt: string
 }
@@ -17,10 +19,16 @@ export const sessionTtlMs = () => (Number(process.env.SESSION_TTL_DAYS) || 30) *
 const hashToken = (token: string) => createHash('sha256').update(token).digest('hex')
 const live = (s: Session) => Date.parse(s.expiresAt) > Date.now()
 
-export async function createSession(userId: string): Promise<string> {
+export async function createSession(userId: string, deviceHash?: string): Promise<string> {
   const token = randomBytes(32).toString('base64url')
   const now = Date.now()
-  const session: Session = { tokenHash: hashToken(token), userId, createdAt: new Date(now).toISOString(), expiresAt: new Date(now + sessionTtlMs()).toISOString() }
+  const session: Session = {
+    tokenHash: hashToken(token),
+    userId,
+    ...(deviceHash ? { deviceHash } : {}),
+    createdAt: new Date(now).toISOString(),
+    expiresAt: new Date(now + sessionTtlMs()).toISOString(),
+  }
   // Expired sessions are dropped whenever a new one is written.
   await updateAuthFile<Session[]>(FILE, [], (all) => [...all.filter(live), session])
   return token
@@ -42,4 +50,9 @@ export async function deleteSession(token: string): Promise<void> {
 /** Signs a user out everywhere (password reset, account disabled). */
 export async function deleteUserSessions(userId: string): Promise<void> {
   await updateAuthFile<Session[]>(FILE, [], (all) => all.filter((s) => s.userId !== userId && live(s)))
+}
+
+/** Signs one device of a user out (the device was removed from the account). */
+export async function deleteDeviceSessions(userId: string, deviceHash: string): Promise<void> {
+  await updateAuthFile<Session[]>(FILE, [], (all) => all.filter((s) => !(s.userId === userId && s.deviceHash === deviceHash) && live(s)))
 }

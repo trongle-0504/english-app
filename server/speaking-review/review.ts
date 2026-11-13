@@ -55,6 +55,7 @@ import {
 } from '../writing-review/rewrite.ts'
 import { hesitationSpots, measureFluency, UNCLEAR, type HesitationSpot } from './fluency.ts'
 import { readWav, transcribe } from './stt.ts'
+import { ownedMap } from '../users/context.ts'
 
 export const dir = (ctx: Pick<ApiContext, 'rootDir'>) => path.join(ctx.rootDir, 'progress', 'speaking-reviews')
 /** json: the review · wav: the recording · pending: what you asked, kept until the review is done (a failed one can be retried). */
@@ -62,7 +63,7 @@ const fileOf = (ctx: Pick<ApiContext, 'rootDir'>, id: string, ext: 'json' | 'wav
 export const validId = (id: string) => /^[a-z0-9-]{6,40}$/.test(id)
 
 // Kept on globalThis: the dev server reloads server modules in-process while running jobs carry on.
-const jobs = ((globalThis as { __talkReviewJobs?: Map<string, TalkReviewJob> }).__talkReviewJobs ??= new Map())
+const jobs = ((globalThis as { __talkReviewJobs?: Map<string, TalkReviewJob> }).__talkReviewJobs = ownedMap((globalThis as { __talkReviewJobs?: Map<string, TalkReviewJob> }).__talkReviewJobs))
 
 const text = (value: unknown, max: number) => (typeof value === 'string' ? value.trim().slice(0, max) : '')
 

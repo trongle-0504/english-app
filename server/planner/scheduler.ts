@@ -168,7 +168,7 @@ async function payloadFor(ctx: PlannerCtx, doc: PlannerDoc, due: Due, now: Date)
 let running = false
 let lastAutoTick = 0
 
-async function tick(ctx: PlannerCtx) {
+export async function plannerTick(ctx: PlannerCtx) {
   if (running) return // a slow brief generation must not overlap the next tick
   running = true
   try {
@@ -199,10 +199,12 @@ async function tick(ctx: PlannerCtx) {
 }
 
 export function startPlannerScheduler(ctx: PlannerCtx & { contentDir?: string }): void {
+  // Multi-user app: server/users/schedulers.ts runs the planner once per account instead.
+  if (process.env.MULTI_USER === '1') return
   const g = globalThis as { __plannerSchedulerStarted?: boolean }
   if (g.__plannerSchedulerStarted) return
   g.__plannerSchedulerStarted = true
-  const timer = setInterval(() => void tick(ctx), 30_000)
+  const timer = setInterval(() => void plannerTick(ctx), 30_000)
   timer.unref?.()
-  setTimeout(() => void tick(ctx), 5_000).unref?.()
+  setTimeout(() => void plannerTick(ctx), 5_000).unref?.()
 }

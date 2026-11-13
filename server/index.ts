@@ -13,6 +13,12 @@ import { startPlannerScheduler } from './planner/scheduler.ts'
 import { startDrillsScheduler } from './admin/drills-nightly.ts'
 import { routes } from './routes.ts'
 import { stopWarmAgent } from './llm/antigravity-cli.ts'
+import { routeClass } from './users/access.ts'
+import { assertActive, multiUserResolver } from './users/resolve.ts'
+import { multiUser, ensureUserRoot } from './users/root.ts'
+import { createUserStores } from './users/stores.ts'
+import { charge, quotaFor } from './users/quota.ts'
+import { startMultiUserSchedulers } from './users/schedulers.ts'
 
 const rootDir = path.resolve(import.meta.dirname, '..')
 const distDir = path.join(rootDir, 'dist')
@@ -26,11 +32,46 @@ watch(contentDir, { recursive: true }, (_event, file) => {
   if (!file?.startsWith('speaking')) store.invalidate()
 })
 
-const api = createApiMiddleware({ contentDir, rootDir, onContentChange: store.invalidate }, routes)
-startNewsScheduler({ rootDir })
-startPlannerScheduler({ rootDir, contentDir })
-startDrillsScheduler({ rootDir, contentDir, onContentChange: store.invalidate })
+const MULTI = multiUser()
+// Multi-user app: one /data build per learner (their own library + the shared content), the few most recent kept.
+const userStores = createUserStores(rootDir)
+const base = { contentDir, rootDir, onContentChange: store.invalidate }
+const api = createApiMiddleware(
+  base,
+  routes,
+  MULTI
+    ? {
+        ctx: multiUserResolver({ appRoot: rootDir, base, invalidate: userStores.invalidate }),
+        classOf: routeClass,
+        charge: async (ctx, key, body) => {
+          const q = quotaFor(key, body)
+          return q ? charge(ctx, q.kind, q.units) : null
+        },
+      }
+    : undefined,
+)
+if (process.env.NEWS_SCHEDULER !== 'off') startNewsScheduler({ rootDir })
+if (MULTI) {
+  // Shared content changed (a deploy): every learner's /data is rebuilt on next use.
+  watch(contentDir, { recursive: true }, () => userStores.invalidateAll())
+  startMultiUserSchedulers(rootDir, userStores.invalidate)
+} else {
+  startPlannerScheduler({ rootDir, contentDir })
+  startDrillsScheduler({ rootDir, contentDir, onContentChange: store.invalidate })
+}
 const data = store.middleware({ cache: 'no-cache', compress: true })
+
+/** Multi-user app: the logged-in, approved account behind a /data or picture request, or null. */
+async function activeUser(req: IncomingMessage) {
+  const user = await authenticate(req)
+  if (!user) return null
+  try {
+    assertActive(user)
+  } catch {
+    return null
+  }
+  return user
+}
 
 const MIME: Record<string, string> = {
   '.html': 'text/html; charset=utf-8',
@@ -72,8 +113,18 @@ function redirectToHttps(req: IncomingMessage, res: ServerResponse): boolean {
 
 /** Pictures pasted into Notepad are personal: only a logged-in visitor gets them (the page's <img> sends the cookie). */
 const PRIVATE_STATIC = ['/notepad-images/']
+/** Multi-user app: pictures of a learner's own words, notes and notepad live in their folder (then the shared ones). */
+const USER_STATIC = ['/notepad-images/', '/vocab-images/', '/note-images/']
 
-function serveStatic(req: IncomingMessage, res: ServerResponse) {
+/** A learner's own copy of a picture, if there is one. */
+function userStaticFile(uid: string, urlPath: string): string | null {
+  const pub = path.join(ensureUserRoot(uid, rootDir), 'public')
+  const file = path.resolve(pub, '.' + urlPath)
+  if (!file.startsWith(pub + path.sep)) return null
+  return existsSync(file) && statSync(file).isFile() ? file : null
+}
+
+function serveStatic(req: IncomingMessage, res: ServerResponse, userFile?: string) {
   let urlPath: string
   try {
     urlPath = decodeURIComponent(new URL(req.url ?? '/', 'http://x').pathname)
@@ -82,10 +133,10 @@ function serveStatic(req: IncomingMessage, res: ServerResponse) {
     res.statusCode = 400
     return res.end('Bad request')
   }
-  let file = path.join(distDir, urlPath)
+  let file = userFile ?? path.join(distDir, urlPath)
   // Images uploaded through the admin after the last build live only in public/.
-  if (!existsSync(file)) file = path.join(rootDir, 'public', urlPath)
-  if (!file.startsWith(distDir + path.sep) && !file.startsWith(path.join(rootDir, 'public') + path.sep)) {
+  if (!userFile && !existsSync(file)) file = path.join(rootDir, 'public', urlPath)
+  if (!userFile && !file.startsWith(distDir + path.sep) && !file.startsWith(path.join(rootDir, 'public') + path.sep)) {
     res.statusCode = 403
     return res.end()
   }
@@ -136,10 +187,37 @@ async function handle(req: IncomingMessage, res: ServerResponse) {
   }
   if (url.startsWith('/data/')) {
     req.url = url.slice(5)
+    if (MULTI) {
+      const user = await activeUser(req)
+      if (!user) {
+        res.statusCode = 403
+        return res.end('{"error":"Account not active."}')
+      }
+      return userStores.middleware(user.id)(req, res, () => {
+        res.statusCode = 404
+        res.end('{}')
+      })
+    }
     return data(req, res, () => {
       res.statusCode = 404
       res.end('{}')
     })
+  }
+  if (MULTI && USER_STATIC.some((prefix) => url.startsWith(prefix))) {
+    const user = await activeUser(req)
+    let urlPath = ''
+    try {
+      urlPath = decodeURIComponent(new URL(url, 'http://x').pathname)
+    } catch {
+      /* serveStatic answers 400 */
+    }
+    const own = user && urlPath ? userStaticFile(user.id, urlPath) : null
+    if (own) return serveStatic(req, res, own)
+    // Notepad pictures are only ever personal; word and note pictures fall back to the shared ones.
+    if (url.startsWith('/notepad-images/')) {
+      res.statusCode = user ? 404 : 401
+      return res.end()
+    }
   }
   if (PRIVATE_STATIC.some((prefix) => url.startsWith(prefix)) && !(await authenticate(req))) {
     res.statusCode = 401

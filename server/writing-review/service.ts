@@ -42,6 +42,7 @@ import { stripHeadingLines } from '../../src/features/practice/writing-review/he
 import { task1ModelLesson } from './task1-model.ts'
 import { WRITING_REVIEW_TOPICS, WRITING_REVIEW_TYPES, type WritingReviewTopic, type WritingReviewType } from '../../src/features/practice/writing-review/categories.ts'
 import { z } from 'zod'
+import { ownedMap } from '../users/context.ts'
 
 export const MIN_LENGTH = 30
 export const MAX_LENGTH = 5000
@@ -53,7 +54,7 @@ const validId = (id: string) => /^[a-z0-9-]{6,40}$/.test(id)
 
 // Kept on globalThis: the dev server reloads server modules in-process when they change, while running jobs carry on in
 // the old instance — the page must still find them, and MAX_RUNNING must still count them.
-const jobs = ((globalThis as { __writingReviewJobs?: Map<string, WritingReviewJob> }).__writingReviewJobs ??= new Map())
+const jobs = ((globalThis as { __writingReviewJobs?: Map<string, WritingReviewJob> }).__writingReviewJobs = ownedMap((globalThis as { __writingReviewJobs?: Map<string, WritingReviewJob> }).__writingReviewJobs))
 
 function emptyUsage(): WritingUsage {
   return { model: writingReviewModelName(), thinkingLevel: writingReviewEffort(), calls: [], input: 0, output: 0, thinking: 0, total: 0 }

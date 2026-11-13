@@ -9,8 +9,9 @@ import path from 'node:path'
 import { appendFileSync } from 'node:fs'
 import { ApiError } from '../api.ts'
 import { recordUsage } from '../usage.ts'
+import { chargeAgyCall } from '../users/quota.ts'
 import { WarmAgentPool, type WarmEvent, type WarmTurn } from './acp-pool.ts'
-import { agyBinary, sandboxedAgy } from './agy-sandbox.ts'
+import { agyBinary, ephemeralProfiles, sandboxedAgy } from './agy-sandbox.ts'
 
 /** The CLI: ANTIGRAVITY_BIN, else the native installer's ~/.local/bin/agy, else `agy` on PATH. */
 const bin = agyBinary
@@ -151,15 +152,16 @@ function runCli(args: string[]): Promise<{ code: number | null; stdout: string; 
   const TIMEOUT_MS = timeoutMs()
   return new Promise((resolve, reject) => {
     // Sandboxed (agy-sandbox.ts): agy sees WORKDIR (with the staged images) read-only, never the project.
-    let run: { command: string; args: string[] }
+    let run: { command: string; args: string[]; cleanup: () => void }
     try {
-      run = sandboxedAgy(args, { profile: 'llm', cwd: WORKDIR })
+      run = sandboxedAgy(args, { profile: 'llm', cwd: WORKDIR, ephemeral: ephemeralProfiles() })
     } catch (error) {
       reject(new ApiError(503, (error as Error).message))
       return
     }
     // Own process group, so a stop also reaches anything agy started.
     const child = spawn(run.command, run.args, { cwd: WORKDIR, stdio: ['ignore', 'pipe', 'pipe'], detached: true })
+    child.on('exit', () => run.cleanup())
     let stdout = ''
     let stderr = ''
     let settled = false
@@ -230,6 +232,7 @@ function cliTimes(out: CliOutput, queueMs: number): { duration_seconds?: number;
 }
 
 export async function antigravityJson(request: AntigravityJsonRequest): Promise<AntigravityJsonResult> {
+  await chargeAgyCall()
   const staged = await stageImages(request.images)
   try {
     return await runJson(request, staged)
@@ -499,6 +502,7 @@ export interface AntigravityTextResult {
 }
 
 export async function antigravityText(request: AntigravityTextRequest): Promise<AntigravityTextResult> {
+  await chargeAgyCall()
   const staged = await stageImages(request.images)
   try {
     return await runText(request, staged)

@@ -12,6 +12,7 @@ import { annotate, keepWritersText, type JsonModel } from '../annotate.ts'
 import { CheckSchema } from '../writing-review/rewrite.ts'
 import { defaultSpeakingEngine, speakingEffort, speakingJson } from './llm.ts'
 import { fileOf, jobs, markSentence, sentenceTool, validId } from './suggest.ts'
+import { OwnedMap } from '../users/context.ts'
 
 export interface AnalyzeEditJob {
   id: string
@@ -22,7 +23,7 @@ export interface AnalyzeEditJob {
   credited?: boolean
 }
 
-const editJobs = new Map<string, AnalyzeEditJob>()
+const editJobs = new OwnedMap<string, AnalyzeEditJob>()
 
 const AnalyzeEditSchema = z.object({
   sentences: z.array(

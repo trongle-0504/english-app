@@ -2,6 +2,7 @@
 // appended to logs/gemini-usage.jsonl by server/gemini.ts, and every Claude Code call by server/llm/claude-code.ts
 // (billing "subscription": runs on the user's Claude plan, 0 USD). Older entries from logs/gemini_usage.json are read as well.
 // Prices: config/gemini-pricing.json (USD per 1M tokens), editable in Admin → Usage.
+import { currentUserId } from './users/context.ts'
 import { appendFileSync, mkdirSync } from 'node:fs'
 import { readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
@@ -51,7 +52,9 @@ export function providerOf(e: UsageEntry): UsageProvider {
 export function recordUsage(entry: UsageEntry): void {
   try {
     mkdirSync(LOG_DIR, { recursive: true })
-    appendFileSync(LOG, `${JSON.stringify(entry)}\n`)
+    // Multi-user app: whose request it was (Admin → Usage per account).
+    const user = currentUserId()
+    appendFileSync(LOG, `${JSON.stringify(user ? { ...entry, user } : entry)}\n`)
   } catch (error) {
     console.warn('[usage] could not write:', (error as Error).message)
   }

@@ -5,6 +5,7 @@
 import { randomUUID } from 'node:crypto'
 import { ApiError } from '../api.ts'
 import { logGenerate } from './generate-log.ts'
+import { OwnedMap } from '../users/context.ts'
 
 export type PartName = 'image' | 'practice'
 
@@ -28,7 +29,7 @@ export interface GenerateJob {
 export type PartRunner = () => Promise<unknown>
 
 const MAX_JOBS = 100
-const jobs = new Map<string, GenerateJob>()
+const jobs = new OwnedMap<string, GenerateJob>()
 const runners = new Map<string, Partial<Record<PartName, PartRunner>>>()
 
 const running = (job: GenerateJob) => Object.values(job.parts).some((p) => p?.status === 'running')

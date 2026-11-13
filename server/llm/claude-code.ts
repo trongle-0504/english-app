@@ -46,6 +46,8 @@ export interface ClaudeJsonResult {
 
 /** The CLI is installed (signing in is checked by the first call, which then fails with Claude Code's own message). */
 export function claudeCodeAvailable(): boolean {
+  // Multi-user app: AI runs only through the sandboxed agy (no Claude Code on the server for learners).
+  if (process.env.MULTI_USER === '1') return false
   return bin() !== 'claude' || process.env.PATH?.split(path.delimiter).some((dir) => existsSync(path.join(dir, 'claude'))) === true
 }
 

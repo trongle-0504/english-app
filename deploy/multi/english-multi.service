@@ -1,0 +1,27 @@
+[Unit]
+Description=English App (multi-user) on study.ailab.com.vn
+After=network.target
+
+[Service]
+Type=simple
+User=englishmulti
+Group=englishmulti
+SupplementaryGroups=agyslots
+WorkingDirectory=/srv/english-multi/app
+EnvironmentFile=/srv/english-multi/app/.env
+Environment=HOME=/home/englishmulti
+Environment=PATH=/usr/local/lib/agy-gate:/usr/local/bin:/usr/bin:/bin
+Environment=AGY_GATE_APP=multi
+Environment=NODE_OPTIONS=--max-old-space-size=1024
+ExecStart=/usr/bin/node /srv/english-multi/app/server/index.ts
+Restart=on-failure
+RestartSec=5
+StartLimitIntervalSec=300
+StartLimitBurst=5
+MemoryHigh=1600M
+MemoryMax=2000M
+NoNewPrivileges=yes
+PrivateTmp=yes
+
+[Install]
+WantedBy=multi-user.target

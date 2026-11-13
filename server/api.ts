@@ -1,4 +1,6 @@
 import type { IncomingMessage, ServerResponse } from 'node:http'
+import type { RouteClass } from './users/access.ts'
+import { requestUser, type RequestUser } from './users/context.ts'
 
 export interface ApiContext {
   /** Absolute path of the content/ folder. */
@@ -7,7 +9,15 @@ export interface ApiContext {
   rootDir: string
   /** Call after writing to content/ so /data is rebuilt. */
   onContentChange: () => void
+  /** Multi-user app: the account this request works for (rootDir/contentDir are that account's own folder). */
+  user?: RequestUser & { email: string }
 }
+
+/**
+ * Multi-user app: builds the context of one request, or answers it (401/403) by throwing ApiError. `routeKey` is
+ * "METHOD /path"; `routeClass` its access class (server/users/access.ts).
+ */
+export type ContextResolver = (req: IncomingMessage, routeKey: string, routeClass: RouteClass) => Promise<ApiContext>
 
 export interface ApiRequest {
   method: string
@@ -38,7 +48,14 @@ type Routes = Record<string, ApiHandler>
 
 async function readBody(req: IncomingMessage): Promise<Buffer> {
   const chunks: Buffer[] = []
-  for await (const chunk of req) chunks.push(chunk as Buffer)
+  let size = 0
+  const max = maxBodyBytes()
+  for await (const chunk of req) {
+    size += (chunk as Buffer).length
+    // Recordings and pictures arrive as base64 JSON (a few MB); anything far larger is refused before it fills memory.
+    if (size > max) throw new ApiError(413, 'Dữ liệu gửi lên quá lớn.')
+    chunks.push(chunk as Buffer)
+  }
   return Buffer.concat(chunks)
 }
 
@@ -46,7 +63,16 @@ async function readBody(req: IncomingMessage): Promise<Buffer> {
  * Connect-style middleware mounted at /api. Routes are keyed "METHOD /path" (path relative to /api).
  * Used by the Vite dev server and by server/index.ts in production.
  */
-export function createApiMiddleware(ctx: ApiContext, routes: Routes) {
+export interface MultiUserHooks {
+  ctx: ContextResolver
+  classOf: (key: string) => RouteClass
+  /** Takes the day's allowance for an AI route (throws 429); returns the refund. */
+  charge?: (ctx: ApiContext, routeKey: string, body: unknown) => Promise<(() => Promise<void>) | null>
+}
+
+const maxBodyBytes = () => (Number(process.env.MAX_BODY_MB) || 60) * 1024 * 1024
+
+export function createApiMiddleware(base: ApiContext, routes: Routes, resolve?: MultiUserHooks) {
   return async (req: IncomingMessage, res: ServerResponse, next: () => void) => {
     const url = new URL(req.url ?? '/', 'http://localhost')
     const method = (req.method ?? 'GET').toUpperCase()
@@ -61,6 +87,8 @@ export function createApiMiddleware(ctx: ApiContext, routes: Routes) {
     }
 
     try {
+      const key = `${method} ${url.pathname}`
+      const ctx = resolve ? await resolve.ctx(req, key, resolve.classOf(key)) : base
       const rawBody = method === 'GET' ? Buffer.alloc(0) : await readBody(req)
       let body: unknown
       if (rawBody.length && String(req.headers['content-type'] ?? '').includes('application/json')) {
@@ -70,10 +98,19 @@ export function createApiMiddleware(ctx: ApiContext, routes: Routes) {
           throw new ApiError(400, 'Invalid JSON body.')
         }
       }
-      const result = await handler(
-        { method, path: url.pathname, query: url.searchParams, headers: req.headers, body, rawBody, incoming: req },
-        ctx,
-      )
+      const request: ApiRequest = { method, path: url.pathname, query: url.searchParams, headers: req.headers, body, rawBody, incoming: req }
+      const refund = ctx.user && resolve?.charge ? await resolve.charge(ctx, key, body) : null
+      let result: ApiResult
+      try {
+        result = ctx.user
+          ? await requestUser.run({ id: ctx.user.id, role: ctx.user.role, viewAs: ctx.user.viewAs }, () => handler(request, ctx))
+          : await handler(request, ctx)
+      } catch (error) {
+        // The work never started for a server reason (busy, AI down): the allowance is given back.
+        const status = error instanceof ApiError ? error.status : 500
+        if (refund && (status >= 500 || status === 429 || status === 409)) await refund().catch(() => {})
+        throw error
+      }
       for (const [name, value] of Object.entries(result.headers ?? {})) res.setHeader(name, value)
       if (result.body) {
         const body = result.body

@@ -54,6 +54,7 @@ import { chosenHints, DOL_RULE, dolHints, dolIndex, dolPromptBlock, numberHints,
 import { loadTopicCollocationItems, topicCard, topicItemUsable, topicTags } from '../topic-collocations.ts'
 import { loadLibrary, readIndex } from './library.ts'
 import { polishEffort, speakingEffort, speakingJson } from './llm.ts'
+import { ownedMap } from '../users/context.ts'
 
 export const MAX_QUESTIONS = 8
 /**
@@ -780,7 +781,7 @@ function replaceExtra(extra: SpeakingExtra, alt: Alternative): void {
 
 // Kept on globalThis: the dev server reloads server modules in-process when they change, while running jobs carry on in
 // the old instance — the page must still find them.
-export const jobs = ((globalThis as { __speakingJobs?: Map<string, SpeakingJob> }).__speakingJobs ??= new Map())
+export const jobs = ((globalThis as { __speakingJobs?: Map<string, SpeakingJob> }).__speakingJobs = ownedMap((globalThis as { __speakingJobs?: Map<string, SpeakingJob> }).__speakingJobs))
 
 function addUsage(usage: SpeakingUsage, call: { model: string; usage: { input: number; output: number; thinking: number } }) {
   usage.model = call.model

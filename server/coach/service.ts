@@ -20,7 +20,8 @@ import { applyMoves, createTasks } from '../planner/actions.ts'
 import { mistakeCards } from '../practice/mistakes.ts'
 import { phraseCards } from '../practice/recent.ts'
 import { recordUsage, type UsageEntry } from '../usage.ts'
-import { AcpClient, type AcpMcpServer, type AcpUpdate } from './acp.ts'
+import path from 'node:path'
+import { AcpClient, EMPTY_CWD, type AcpMcpServer, type AcpUpdate } from './acp.ts'
 import { cut, dayOf, ToolError, type ProposalDraft, type ToolContext } from './data.ts'
 import { runLibraryJob, type LibraryItemData, type LibraryWriter } from './library-job.ts'
 import { CoachMcpServer } from './mcp.ts'
@@ -584,7 +585,46 @@ export class CoachService {
 
 const holder = globalThis as { __coach?: CoachService; __coachTimer?: NodeJS.Timeout }
 
-export function getCoach(ctx: { rootDir: string; contentDir: string }): CoachService {
+const coaches = ((globalThis as { __coaches?: Map<string, CoachService> }).__coaches ??= new Map())
+
+/**
+ * Multi-user app: one coach per account, each with its own chats (in the account's folder), its own agy process and
+ * sandbox profile ("coach-<uid>": agy keeps conversations in its profile and could read them back) and its own MCP
+ * tokens, so a chat, a tool call or the agent can only ever see that account's data. The agy process stops after
+ * COACH_IDLE_MS (it holds one of the machine's four agy slots while it lives).
+ */
+function getUserCoach(ctx: { rootDir: string; contentDir: string; user?: { id: string } }): CoachService {
+  const uid = ctx.user?.id ?? ''
+  let coach = coaches.get(uid)
+  if (!coach) {
+    const idleMs = Number(process.env.COACH_IDLE_MS) || 3 * 60_000
+    coach = new CoachService({
+      rootDir: ctx.rootDir,
+      contentDir: ctx.contentDir,
+      acp: new AcpClient({
+        profile: `coach-${uid}`,
+        idleMs,
+        cwd: path.join(EMPTY_CWD, '..', `empty-${uid}`),
+        allow: allowAppTool,
+        onPermission: (p) => !p.allowed && console.warn(`[coach] refused agent permission: ${p.kind ?? '?'} ${p.title ?? ''}`),
+      }),
+    })
+    coaches.set(uid, coach)
+  }
+  return coach
+}
+
+export function getCoach(ctx: { rootDir: string; contentDir: string; user?: { id: string } }): CoachService {
+  if (process.env.MULTI_USER === '1') {
+    if (!ctx.user?.id) throw new ApiError(401, 'Not logged in.')
+    if (!holder.__coachTimer) {
+      holder.__coachTimer = setInterval(() => {
+        for (const c of coaches.values()) void c.sweep().catch(() => {})
+      }, 24 * 3_600_000)
+      holder.__coachTimer.unref()
+    }
+    return getUserCoach(ctx)
+  }
   if (!holder.__coach) {
     holder.__coach = new CoachService({ rootDir: ctx.rootDir, contentDir: ctx.contentDir })
     holder.__coachTimer = setInterval(() => void holder.__coach?.sweep().catch(() => {}), 24 * 3_600_000)
@@ -595,6 +635,9 @@ export function getCoach(ctx: { rootDir: string; contentDir: string }): CoachSer
 
 export async function stopCoach(): Promise<void> {
   if (holder.__coachTimer) clearInterval(holder.__coachTimer)
+  holder.__coachTimer = undefined
   await holder.__coach?.stop()
   holder.__coach = undefined
+  for (const c of coaches.values()) await c.stop()
+  coaches.clear()
 }

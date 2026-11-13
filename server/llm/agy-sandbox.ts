@@ -7,12 +7,16 @@
 //   the rest of $HOME, /mnt (Windows drives), /var, /run.
 // The environment is cleared (no ADMIN_TOKEN, AUTH_ENC_KEY, API keys); the network stays (agy calls Google and the
 // coach's MCP server on 127.0.0.1). Without bwrap nothing runs: there is no unsandboxed fallback.
-import { chmodSync, copyFileSync, existsSync, lstatSync, mkdirSync, realpathSync, statSync } from 'node:fs'
+import { chmodSync, copyFileSync, existsSync, lstatSync, mkdirSync, mkdtempSync, realpathSync, rmSync, statSync } from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
 
-/** One sandbox home per use: the coach keeps its chats apart from the one-shot calls. */
-export type AgyProfile = 'coach' | 'llm'
+/**
+ * One sandbox home per use: the coach keeps its chats apart from the one-shot calls. agy stores its conversations in
+ * that home and its read_file tool can read them, so the multi-user app gives every account its own coach profile
+ * ("coach-<uid>") and every one-shot call a throwaway one (`ephemeral`).
+ */
+export type AgyProfile = 'coach' | 'llm' | `coach-${string}`
 
 /** The login files agy needs, relative to ~/.gemini (copied in; nothing else of the real ~/.gemini is visible). */
 export const LOGIN_FILES = ['antigravity-cli/antigravity-oauth-token', 'antigravity-cli/installation_id', 'jetski-standalone-oauth-token']
@@ -23,6 +27,8 @@ export interface SandboxOptions {
   cwd: string
   /** Extra folders agy may read (images staged for `agy -p`), bound read-only at the same path. */
   readOnly?: string[]
+  /** A fresh profile for this one process, deleted by `cleanup()` (multi-user app: AGY_EPHEMERAL_PROFILE=1). */
+  ephemeral?: boolean
   /** For tests: the user's home, the state folder and the agy binary. */
   home?: string
   stateDir?: string
@@ -59,6 +65,7 @@ export function bwrapPath(): string {
  * older there (a token the sandboxed agy refreshed itself is newer and kept). Returns its path.
  */
 export function prepareProfile(profile: AgyProfile, home = os.homedir(), stateDir = stateRoot(home)): string {
+  if (!/^(coach|llm)(-[A-Za-z0-9-]{1,64})?$/.test(profile)) throw new Error(`Invalid agy profile: ${profile}`)
   const gemini = path.join(stateDir, profile, '.gemini')
   mkdirSync(path.join(gemini, 'antigravity-cli'), { recursive: true, mode: 0o700 })
   chmodSync(path.join(stateDir, profile), 0o700)
@@ -129,9 +136,19 @@ export function sandboxArgs(agyArgs: string[], opts: SandboxOptions & { gemini: 
 }
 
 /** The command and arguments to spawn for a sandboxed agy. Creates the working folder and the profile home. */
-export function sandboxedAgy(agyArgs: string[], opts: SandboxOptions): { command: string; args: string[] } {
+export function sandboxedAgy(agyArgs: string[], opts: SandboxOptions): { command: string; args: string[]; cleanup: () => void } {
   const command = bwrapPath()
   mkdirSync(opts.cwd, { recursive: true })
+  if (opts.ephemeral) {
+    const root = stateRoot(opts.home)
+    mkdirSync(root, { recursive: true, mode: 0o700 })
+    const stateDir = mkdtempSync(path.join(root, 'once-'))
+    const gemini = prepareProfile(opts.profile, opts.home, stateDir)
+    return { command, args: sandboxArgs(agyArgs, { ...opts, gemini }), cleanup: () => rmSync(stateDir, { recursive: true, force: true }) }
+  }
   const gemini = prepareProfile(opts.profile, opts.home, opts.stateDir)
-  return { command, args: sandboxArgs(agyArgs, { ...opts, gemini }) }
+  return { command, args: sandboxArgs(agyArgs, { ...opts, gemini }), cleanup: () => {} }
 }
+
+/** Multi-user app: one-shot agy calls get a throwaway profile (nothing one learner sent is left for the next call). */
+export const ephemeralProfiles = () => process.env.AGY_EPHEMERAL_PROFILE === '1'

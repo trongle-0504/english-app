@@ -483,6 +483,8 @@ export function runFullNewsPipeline(
 const SCHEDULE_SLOTS = new Set(['06:00', '18:00'])
 
 export function startNewsScheduler(ctx: Pick<ApiContext, 'rootDir'>): void {
+  // NEWS_SCHEDULER=off (the multi-user app): no timed collection; the admin collects by hand.
+  if (process.env.NEWS_SCHEDULER === 'off') return
   const g = globalThis as { __newsSchedulerStarted?: boolean }
   if (g.__newsSchedulerStarted) return
   g.__newsSchedulerStarted = true

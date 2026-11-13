@@ -236,16 +236,28 @@ async function readState(ctx: Ctx): Promise<DrillsState> {
   return isObject(doc.value) ? doc.value : {}
 }
 
-const g = globalThis as { __drillsNightly?: { running: Promise<DrillsRun> | null; started: boolean; current?: DrillsRun } }
-const shared = (g.__drillsNightly ??= { running: null, started: false })
+// One run at a time per library (per account folder in the multi-user app): a run, its progress and its result are
+// never shared between accounts.
+interface RunSlot {
+  running: Promise<DrillsRun> | null
+  current?: DrillsRun
+}
+const g = globalThis as { __drillsNightlyRuns?: { started: boolean; runs: Map<string, RunSlot> } }
+const shared = (g.__drillsNightlyRuns ??= { started: false, runs: new Map() })
+const slotOf = (ctx: Pick<Ctx, 'rootDir'>): RunSlot => {
+  let slot = shared.runs.get(ctx.rootDir)
+  if (!slot) shared.runs.set(ctx.rootDir, (slot = { running: null }))
+  return slot
+}
 
 /** Runs the whole pending list once, batches one after another (never more than one AI call at a time). */
 export function runNightlyDrills(ctx: Ctx, trigger: DrillsRun['trigger']): Promise<DrillsRun> {
-  if (shared.running) return shared.running
-  shared.running = (async () => {
+  const slot = slotOf(ctx)
+  if (slot.running) return slot.running
+  slot.running = (async () => {
     const started = Date.now()
     const run: DrillsRun = { trigger, startedAt: new Date(started).toISOString(), items: 0, calls: 0, written: 0, failed: [] }
-    shared.current = run
+    slot.current = run
     try {
       if (trigger !== 'manual') {
         const state = await readState(ctx)
@@ -280,10 +292,10 @@ export function runNightlyDrills(ctx: Ctx, trigger: DrillsRun['trigger']): Promi
     logGenerate({ kind: 'nightly', ...run })
     return run
   })().finally(() => {
-    shared.running = null
-    shared.current = undefined
+    slot.running = null
+    slot.current = undefined
   })
-  return shared.running
+  return slot.running
 }
 
 /** "Tạo drills ngay" for one entry. Returns the updated entry. */
@@ -303,17 +315,17 @@ export async function drillsStatus(ctx: Ctx) {
   const pending = pendingItems(words, notes)
   return {
     pending: { words: pending.filter((p) => p.kind === 'word').length, notes: pending.filter((p) => p.kind === 'note').length, items: pending.slice(0, 50) },
-    running: shared.current ?? null,
+    running: slotOf(ctx).current ?? null,
     lastRun: state.lastRun ?? null,
     lastRunDay: state.lastRunDay ?? null,
     runAt: `${RUN_AT} Asia/Ho_Chi_Minh`,
   }
 }
 
-async function tick(ctx: Ctx) {
+export async function drillsTick(ctx: Ctx) {
   try {
     const now = new Date()
-    if (shared.running || !runDue(now, (await readState(ctx)).lastRunDay)) return
+    if (slotOf(ctx).running || !runDue(now, (await readState(ctx)).lastRunDay)) return
     // Started more than a few minutes after 03:00: the machine was off or the server down — catch up.
     const trigger = vnTime(now) > '03:05' ? 'catch-up' : 'schedule'
     await runNightlyDrills(ctx, trigger)
@@ -327,8 +339,10 @@ async function tick(ctx: Ctx) {
  * also runs under `npm run dev`. The first check comes a few seconds after start: that is the catch-up.
  */
 export function startDrillsScheduler(ctx: Ctx): void {
+  // Multi-user app: server/users/schedulers.ts runs the drills once per account instead.
+  if (process.env.MULTI_USER === '1') return
   if (shared.started) return
   shared.started = true
-  setInterval(() => void tick(ctx), 60_000).unref?.()
-  setTimeout(() => void tick(ctx), 10_000).unref?.()
+  setInterval(() => void drillsTick(ctx), 60_000).unref?.()
+  setTimeout(() => void drillsTick(ctx), 10_000).unref?.()
 }
