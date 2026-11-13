@@ -1,19 +1,17 @@
 // "Bài gần đây" (Review page tab): the review, limited to the phrases of your Speaking / Writing of the last days — the
 // result pages' three lists ("Cụm từ trong thư viện", "Cụm ngoài thư viện", "Cụm AI tự viết, đã tra từ điển"). The
 // cards are your usual cards: what you learn here counts everywhere.
-import { CalendarClock, Check, ExternalLink, Loader2, NotebookPen, PenLine, Play, Plus, RefreshCw, Repeat, Sparkles, Trophy, X } from 'lucide-react'
+import { CalendarClock, NotebookPen, PenLine, Play, Plus, RefreshCw, Repeat, Sparkles, Trophy } from 'lucide-react'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router'
-import { Badge, buttonClass, Card, EmptyState } from '@/components/ui'
+import { buttonClass, Card, EmptyState } from '@/components/ui'
 import { cn } from '@/lib/cn'
 import { useLocalStorage } from '@/lib/storage'
 import type { ReviewIndex } from '@/types/content'
-import { PHRASE_GROUP_LABEL, PHRASE_GROUP_LABEL_EN, WORK_LABEL, type PhraseGroup, type RecentResponse } from '@/types/practice'
-import type { RealUse, StoredCard } from '@/types/review'
+import { PHRASE_GROUP_LABEL_EN, type PhraseGroup, type RecentResponse } from '@/types/practice'
 import { practiceApi, waitForCards } from '../practice/practice-api'
 import { InfoTip } from './InfoTip'
 import { NotInLibrary } from './NotInLibrary'
-import { stageOf, STAGE_LABEL_EN } from './ladder'
 import { buildQueue } from './queue'
 import { ActionTileBody, actionTileClass, InfoStat, HeroBackdrop, PillChoice, PrimaryActionBody, primaryActionClass, StudyCardsArt } from './HeroParts'
 import { DEFAULT_RECENT_DAYS, RECENT_DAYS, RECENT_DAYS_KEY, RECENT_NEW, RECENT_NEW_KEY } from './recent-scope'
@@ -21,32 +19,11 @@ import { StartSessionButton } from './StartSessionButton'
 import { loadReviews, useReviewStore } from './store'
 import { DEFAULT_USAGE_COUNT, USAGE_COUNT_KEY, USAGE_COUNTS, usageCandidates } from './usagePlan'
 
-const GROUP_STYLE: Record<PhraseGroup, string> = {
-  library: 'border-brand-200 bg-brand-50/60 text-brand-800 dark:border-brand-900 dark:bg-brand-950/40 dark:text-brand-200',
-  extra: 'border-violet-200 bg-violet-50/60 text-violet-800 dark:border-violet-900 dark:bg-violet-950/40 dark:text-violet-200',
-  wording: 'border-slate-200 bg-slate-50 text-slate-700 dark:border-slate-700 dark:bg-slate-800/50 dark:text-slate-200',
-}
 const GROUP_DOT: Record<PhraseGroup, string> = {
   library: 'bg-brand-500',
   extra: 'bg-violet-500',
   wording: 'bg-slate-400',
 }
-
-/** Where a phrase's card stands. */
-function statusOf(id: string, known: ReadonlySet<string>, card: StoredCard | undefined): { label: string; done?: boolean } {
-  if (!known.has(id)) return { label: 'no card yet' }
-  if (!card) return { label: 'not in reviews' }
-  if (card.done) return { label: 'known', done: true }
-  if (card.fsrs.state === 0) return { label: 'new' }
-  if (card.fsrs.state !== 2) return { label: 'learning' }
-  return { label: STAGE_LABEL_EN[stageOf(card)], done: true }
-}
-
-const dayOf = (iso: string) =>
-  new Date(iso).toLocaleDateString('vi-VN', {
-    day: '2-digit',
-    month: '2-digit',
-  })
 
 /** Recent work's phrases (GET /api/practice/recent); `reload` after writing cards. */
 function useRecentWork(days: number) {
@@ -75,8 +52,6 @@ export function RecentWorkTab({ index }: { index: ReviewIndex }) {
   const [days, setDays] = useLocalStorage<number>(RECENT_DAYS_KEY, DEFAULT_RECENT_DAYS)
   const [newMax] = useLocalStorage<number>(RECENT_NEW_KEY, 20)
   const { data, error, reload } = useRecentWork(days)
-  // The period ends now: fixed when the page opens (enough for a list of days).
-  const [now] = useState(() => Date.now())
   const [message, setMessage] = useState<{
     tone: 'ok' | 'error'
     text: string
@@ -116,13 +91,6 @@ export function RecentWorkTab({ index }: { index: ReviewIndex }) {
     return out
   }, [data])
 
-  // Your own uses of cards in the period (Writing essays, edited answers).
-  const uses = useMemo(() => {
-    const cutoff = now - days * 86_400_000
-    const list: RealUse[] = []
-    for (const card of Object.values(review.cards)) for (const u of card.uses ?? []) if (Date.parse(u.at) >= cutoff) list.push(u)
-    return list.sort((a, b) => b.at.localeCompare(a.at))
-  }, [review.cards, days, now])
 
   const createCards = async (phraseIds: string[]) => {
     setMessage(null)
@@ -277,103 +245,6 @@ export function RecentWorkTab({ index }: { index: ReviewIndex }) {
       </Card>
 
       {data ? <NotInLibrary data={data} onAdded={reload} onCreateCards={(ids) => createCards(ids)} /> : null}
-
-      {uses.length ? (
-        <Card className="p-4 sm:p-6">
-          <h3 className="flex items-center gap-2 font-bold text-slate-900 dark:text-white">
-            Cards you used in your own work
-            <InfoTip>
-              Cụm của thẻ bạn đã học, tìm thấy trong chính bài viết của bạn (bài Writing, hoặc câu trả lời / bài mẫu bạn sửa). Dùng đúng: thẻ lên bậc
-              “Tự dùng”. Dùng sai (bài chấm đã sửa): thẻ về bậc “Dùng đúng cụm” và đến hạn ôn ngay.
-            </InfoTip>
-          </h3>
-          <ul className="mt-3 grid gap-2.5 md:grid-cols-2">
-            {uses.slice(0, 12).map((u) => (
-              <li
-                key={`${u.ref}-${u.term}`}
-                className="flex items-start gap-2 rounded-xl border border-slate-100 px-3 py-2.5 text-[13px] dark:border-slate-800"
-              >
-                {u.ok ? <Check className="mt-0.5 size-4 shrink-0 text-emerald-500" /> : <X className="mt-0.5 size-4 shrink-0 text-rose-500" />}
-                <div className="min-w-0">
-                  <p className="font-semibold text-slate-900 dark:text-white">
-                    {u.term}
-                    {u.to ? (
-                      <span className="ml-2 text-xs font-medium text-slate-500">
-                        {STAGE_LABEL_EN[u.from ?? 'recognize']} → {STAGE_LABEL_EN[u.to]}
-                      </span>
-                    ) : null}
-                  </p>
-                  <p className="text-slate-600 dark:text-slate-300">
-                    {u.ok ? (
-                      u.sentence.replace(/\*\*/g, '')
-                    ) : (
-                      <>
-                        <span className="line-through decoration-rose-400">{u.wrote}</span>
-                        {u.fixed ? <> → {u.fixed}</> : null}
-                        {u.why ? <span className="text-slate-500"> — {u.why}</span> : null}
-                      </>
-                    )}
-                  </p>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </Card>
-      ) : null}
-
-      {!data ? (
-        <p className="flex items-center justify-center gap-2 py-10 text-sm text-slate-400">
-          <Loader2 className="size-4 animate-spin" /> Gathering phrases from your recent work…
-        </p>
-      ) : !data.works.length ? (
-        <EmptyState
-          title={`No work in the last ${days} days`}
-          description="Do a Speaking Ideas or Writing Review, or choose a longer period."
-        />
-      ) : (
-        <div className="space-y-3">
-          {data.works.map((w) => (
-            <Card key={`${w.kind}-${w.id}`} className="p-4 sm:p-5">
-              <div className="mb-2.5 flex flex-wrap items-center gap-2">
-                <Badge tone={w.kind === 'speaking' ? 'violet' : w.kind === 'talk' ? 'teal' : 'sky'}>{WORK_LABEL[w.kind]}</Badge>
-                <Link
-                  to={w.href}
-                  className="min-w-0 flex-1 truncate font-semibold text-slate-900 hover:text-brand-700 dark:text-white dark:hover:text-brand-300"
-                >
-                  {w.title}
-                </Link>
-                <span className="text-xs text-slate-400">
-                  {dayOf(w.at)} · {w.phrases.length} phrases
-                </span>
-                <Link to={w.href} className="relative text-slate-400 hit-area hover:text-brand-600" title="Mở bài">
-                  <ExternalLink className="size-3.5" />
-                </Link>
-              </div>
-              <ul className="flex flex-wrap gap-1.5">
-                {w.phrases.map((p) => {
-                  const status = statusOf(p.id, known, review.cards[p.id])
-                  return (
-                    <li
-                      key={p.id}
-                      title={`${PHRASE_GROUP_LABEL[p.group]}${p.meaning_vi ? ` — ${p.meaning_vi}` : ''}`}
-                      className={cn(
-                        'inline-flex items-center gap-1.5 rounded-lg border px-2 py-1 text-[13px]',
-                        GROUP_STYLE[p.group],
-                        !known.has(p.id) && 'border-dashed opacity-70',
-                      )}
-                    >
-                      <span className="font-medium">{p.term}</span>
-                      <span className={cn('text-[11px]', status.done ? 'font-semibold text-emerald-700 dark:text-emerald-300' : 'opacity-60')}>
-                        {status.label}
-                      </span>
-                    </li>
-                  )
-                })}
-              </ul>
-            </Card>
-          ))}
-        </div>
-      )}
     </div>
   )
 }
