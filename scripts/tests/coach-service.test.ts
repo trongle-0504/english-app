@@ -5,7 +5,7 @@ import os from 'node:os'
 import path from 'node:path'
 import test from 'node:test'
 import { AcpClient } from '../../server/coach/acp.ts'
-import { CoachService } from '../../server/coach/service.ts'
+import { allowAppTool, CoachService } from '../../server/coach/service.ts'
 import { sessionsDir } from '../../server/coach/store.ts'
 import type { UsageEntry } from '../../server/usage.ts'
 import type { CoachTurnPoll } from '../../src/types/coach.ts'
@@ -18,7 +18,7 @@ function setup(config: Partial<CoachService['config']> = {}) {
   const logFile = path.join(root, 'fake.log')
   process.env.FAKE_ACP_LOG = logFile
   const permissions: string[] = []
-  const acp = new AcpClient({ command: process.execPath, args: [FAKE], cwd, onPermission: (p) => permissions.push(`${p.kind}:${p.title}`) })
+  const acp = new AcpClient({ command: process.execPath, args: [FAKE], cwd, allow: allowAppTool, onPermission: (p) => permissions.push(`${p.kind}:${p.title}:${p.allowed ? 'allowed' : 'refused'}`) })
   const usage: UsageEntry[] = []
   const coach = new CoachService({ rootDir: root, contentDir: path.join(root, 'content'), acp, config: { turnTimeoutMs: 20_000, ...config }, record: (e) => usage.push(e) })
   const log = () =>
@@ -97,7 +97,7 @@ test('T-ACP-03/04: every permission request is rejected', async () => {
     assert.equal(poll.turn.status, 'done')
     assert.equal(poll.turn.answer, 'denied ok')
     assert.deepEqual(s.log().find((e) => e.permissionAnswer).permissionAnswer, { outcome: { outcome: 'selected', optionId: 'reject' } })
-    assert.deepEqual(s.permissions, ['execute:ls /'])
+    assert.deepEqual(s.permissions, ['execute:ls /:refused'])
     assert.equal(poll.turn.steps[0].status, 'failed')
     assert.match(poll.turn.steps[0].label, /not an app tool/)
   } finally {
@@ -176,7 +176,7 @@ test('limits: empty, too long, unknown chat, rate limit', async () => {
   try {
     const sid = await s.coach.createSession()
     await assert.rejects(s.coach.startTurn(sid, '   '), /Type a question/)
-    await assert.rejects(s.coach.startTurn(sid, 'x'.repeat(2001)), /At most 2000/)
+    await assert.rejects(s.coach.startTurn(sid, 'x'.repeat(8001)), /At most 8000/)
     await assert.rejects(s.coach.startTurn('nosuchchat000', 'hi'), /Chat not found/)
     await s.done(sid, await s.coach.startTurn(sid, 'one'))
     await assert.rejects(s.coach.startTurn(sid, 'two'), /Too many questions/)
@@ -206,4 +206,36 @@ test('T-STORE-01/02: chats older than 30 days are deleted; newer ones stay', asy
     await coach.stop()
     rmSync(root, { recursive: true, force: true })
   }
+})
+
+test('T-ACP-05: only the coach\'s own MCP tools are allowed (agy asks before each MCP call when sandboxed)', async () => {
+  const s = setup()
+  try {
+    const sid = await s.coach.createSession()
+    for (const title of ['Run mcp_app_get_plan', 'Run mcp_app_82aaed4d_propose_library_add', 'Run mcp_app_write_file', 'Run mcp_other_get_plan', 'Run mcp_app_get_plan; ls /', 'Write .env']) {
+      const turnId = await s.coach.startTurn(sid, `PERMISSION ${title}`)
+      await s.done(sid, turnId)
+    }
+    assert.deepEqual(s.permissions, [
+      'other:Run mcp_app_get_plan:allowed',
+      'other:Run mcp_app_82aaed4d_propose_library_add:allowed',
+      'other:Run mcp_app_write_file:refused',
+      'other:Run mcp_other_get_plan:refused',
+      'other:Run mcp_app_get_plan; ls /:refused',
+      'other:Write .env:refused',
+    ])
+    const answers = s.log().filter((e) => e.permissionAnswer).map((e) => e.permissionAnswer.outcome.optionId)
+    assert.deepEqual(answers, ['allow', 'allow', 'reject', 'reject', 'reject', 'reject'])
+  } finally {
+    await s.cleanup()
+  }
+})
+
+test('allowAppTool: exact app tool names only', () => {
+  assert.equal(allowAppTool({ title: 'Run mcp_app_search_library' }), true)
+  assert.equal(allowAppTool({ name: 'mcp_app_1a2b3c4d_get_mistakes' }), true)
+  assert.equal(allowAppTool({ title: 'Run read_file' }), false)
+  assert.equal(allowAppTool({ title: 'mcp_app_get_plan' }), false)
+  assert.equal(allowAppTool({ title: 'Run mcp_app_get_plan x' }), false)
+  assert.equal(allowAppTool({}), false)
 })

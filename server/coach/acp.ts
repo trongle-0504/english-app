@@ -1,11 +1,13 @@
 // A small Agent Client Protocol client for `agy acp` (JSON-RPC over stdio). One long-lived process serves every coach
-// session. Every permission request is rejected: the coach may only use the app's MCP tools (those run without asking).
-// The process starts on first use, restarts after a crash, and stops after an idle period.
+// session. Every permission request is rejected except, when `allow` says so, the coach's own MCP tools.
+// The process starts on first use, restarts after a crash, and stops after an idle period. The real agy always runs in
+// the bubblewrap sandbox (server/llm/agy-sandbox.ts): it cannot see the project, .env or the real ~/.gemini.
 import { spawn, type ChildProcessWithoutNullStreams } from 'node:child_process'
-import { existsSync, mkdirSync } from 'node:fs'
+import { mkdirSync } from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
 import readline from 'node:readline'
+import { sandboxedAgy, type AgyProfile } from '../llm/agy-sandbox.ts'
 
 export interface AcpUsage {
   inputTokens?: number
@@ -45,18 +47,23 @@ export type ContentBlock =
   | { type: 'resource'; resource: { uri: string; mimeType: string; text: string } }
 
 export interface AcpClientOptions {
-  /** The agent command; default: ANTIGRAVITY_BIN, ~/.local/bin/agy, else `agy` on PATH. Tests pass a fake agent. */
+  /** A fake agent command (tests only; run as given, without the sandbox). Default: the sandboxed agy. */
   command?: string
+  /** The agent's arguments; default ['acp']. */
   args?: string[]
+  /** The sandbox home of the real agy: 'coach' (default) or 'llm' (the warm pool). */
+  profile?: AgyProfile
   /** The agent's working directory: kept empty (agy reads files in its workspace without asking). */
   cwd?: string
   idleMs?: number
   /** Called for every permission request (already rejected). */
-  onPermission?: (info: { sessionId: string; title?: string; kind?: string }) => void
+  onPermission?: (info: { sessionId: string; title?: string; kind?: string; allowed: boolean }) => void
+  /**
+   * The only requests ever allowed: agy (sandboxed, default settings) asks before each MCP tool call ("Run
+   * mcp_app_get_plan"); the coach allows exactly its own app tools. Everything else (files, shell…) is rejected.
+   */
+  allow?: (info: { title?: string; kind?: string; name?: string }) => boolean
 }
-
-const defaultCommand = () =>
-  process.env.ANTIGRAVITY_BIN || [path.join(os.homedir(), '.local', 'bin', 'agy')].find((p) => existsSync(p)) || 'agy'
 
 export const EMPTY_CWD = path.join(os.tmpdir(), 'english-app-coach', 'empty')
 
@@ -109,7 +116,9 @@ export class AcpClient {
 
   private async start(): Promise<void> {
     mkdirSync(this.cwd, { recursive: true })
-    const child = spawn(this.opts.command ?? defaultCommand(), this.opts.args ?? ['acp'], { cwd: this.cwd, stdio: ['pipe', 'pipe', 'pipe'], detached: true })
+    const args = this.opts.args ?? ['acp']
+    const run = this.opts.command ? { command: this.opts.command, args } : sandboxedAgy(args, { profile: this.opts.profile ?? 'coach', cwd: this.cwd })
+    const child = spawn(run.command, run.args, { cwd: this.cwd, stdio: ['pipe', 'pipe', 'pipe'], detached: true })
     const generation = ++this.generation
     this.child = child
     child.stderr.on('data', () => {})
@@ -165,11 +174,15 @@ export class AcpClient {
       return
     }
     if (msg.method === 'session/request_permission') {
-      const params = msg.params as { sessionId?: string; toolCall?: { title?: string; kind?: string }; options?: { optionId: string; kind: string }[] }
+      const params = msg.params as { sessionId?: string; toolCall?: { title?: string; kind?: string; name?: string }; options?: { optionId: string; kind: string }[] }
       const options = params.options ?? []
-      const reject = options.find((o) => o.kind === 'reject_once') ?? options.find((o) => o.kind.startsWith('reject')) ?? options.at(-1)
-      this.opts.onPermission?.({ sessionId: params.sessionId ?? '', title: params.toolCall?.title, kind: params.toolCall?.kind })
-      this.send(reject ? { id: msg.id, result: { outcome: { outcome: 'selected', optionId: reject.optionId } } } : { id: msg.id, result: { outcome: { outcome: 'cancelled' } } })
+      const call = { title: params.toolCall?.title, kind: params.toolCall?.kind, name: params.toolCall?.name }
+      const allowOnce = options.find((o) => o.kind === 'allow_once')
+      const allowed = Boolean(allowOnce && this.opts.allow?.(call))
+      const reject = options.find((o) => o.kind === 'reject_once') ?? options.find((o) => o.kind.startsWith('reject'))
+      this.opts.onPermission?.({ sessionId: params.sessionId ?? '', title: call.title, kind: call.kind, allowed })
+      const choice = allowed ? allowOnce : reject
+      this.send(choice ? { id: msg.id, result: { outcome: { outcome: 'selected', optionId: choice.optionId } } } : { id: msg.id, result: { outcome: { outcome: 'cancelled' } } })
       return
     }
     // File system / terminal requests from the agent: never served.

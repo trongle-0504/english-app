@@ -27,16 +27,19 @@ export const startTurn = async (sessionId: string, text: string, page: string) =
 export const pollTurn = (sessionId: string, turnId: string) => request<CoachTurnPoll>(`/turn?session=${encodeURIComponent(sessionId)}&id=${encodeURIComponent(turnId)}`)
 export const cancelTurn = (sessionId: string, turnId: string) => post<{ ok: true }>('/turn/cancel', { sessionId, turnId })
 
-/** Confirm: cards and library entries need the admin token, like the app's own buttons. */
-export const applyProposal = async (sessionId: string, proposalId: string, keep: number[], library?: { index: number; ok: boolean; label?: string; href?: string; error?: string }[]) => {
+/** Confirm: cards and library entries need the admin token, like the app's own buttons. A library proposal comes back
+ * "applying": poll it with getProposal until it is "applied". */
+export const applyProposal = async (sessionId: string, proposalId: string, keep: number[]) => {
   const token = getAdminToken()
   return (
     await request<{ proposal: CoachProposal }>('/proposal/apply', {
       method: 'POST',
-      json: { sessionId, proposalId, keep, ...(library ? { library } : {}) },
+      json: { sessionId, proposalId, keep },
       headers: token ? { 'x-admin-token': token } : {},
     })
   ).proposal
 }
+export const getProposal = async (sessionId: string, proposalId: string) =>
+  (await request<{ proposal: CoachProposal }>(`/proposal?session=${encodeURIComponent(sessionId)}&id=${encodeURIComponent(proposalId)}`)).proposal
 export const dismissProposal = (sessionId: string, proposalId: string) => post<{ ok: true }>('/proposal/dismiss', { sessionId, proposalId })
 export const stats = async () => (await request<{ days: CoachDayStats[] }>('/stats')).days

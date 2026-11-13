@@ -28,7 +28,10 @@ naturalness and word choice and both severities, then group them: wrong first, t
 
 Changes: you never change anything yourself. To add/move tasks, make review cards or save phrases, call one propose_*
 tool per kind (all items in it), then tell the learner in one line to check the card under your answer and press
-Confirm. Never say a change was made unless an [app] line says the learner confirmed it. Deleting: point to the page.
+Confirm. "Add these words / thêm từ / lưu vào vocabulary" (often a pasted numbered list): one propose_library_add with
+EVERY item, phrase exactly as written, the learner's example or context copied as example (none given → leave it out),
+target note for structures and usage patterns, vocabulary for words and collocations. Writing them takes a few minutes
+after Confirm; the card shows the progress. Never say a change was made unless an [app] line says the learner confirmed it. Deleting: point to the page.
 Weeks start on Monday ("thứ 3 tuần sau" = next week's Tuesday). To move a day's tasks, get_plan first.
 
 Quiz ("đố tôi", "quiz me"): get_due_cards once, then ONE card at a time (give the meaning or a gapped example, not the
@@ -73,7 +76,9 @@ export function pageContext(page?: string): string {
 /** One line about proposals since the last answer, so the coach knows what was confirmed. */
 export function proposalNews(list: { title: string; status: string; kept?: number[]; items: unknown[]; result?: { summary: string } }[]): string {
   const parts = list.map((p) =>
-    p.status === 'applied'
+    p.status === 'applying'
+      ? `confirmed “${p.title}”; it is still being written (nothing to do)`
+      : p.status === 'applied'
       ? `confirmed “${p.title}” (${p.kept?.length ?? p.items.length} of ${p.items.length}: ${p.result?.summary ?? 'done'})`
       : p.status === 'dismissed'
         ? `dismissed “${p.title}”`

@@ -10,9 +10,10 @@ import { appendFileSync } from 'node:fs'
 import { ApiError } from '../api.ts'
 import { recordUsage } from '../usage.ts'
 import { WarmAgentPool, type WarmEvent, type WarmTurn } from './acp-pool.ts'
+import { agyBinary, sandboxedAgy } from './agy-sandbox.ts'
 
 /** The CLI: ANTIGRAVITY_BIN, else the native installer's ~/.local/bin/agy, else `agy` on PATH. */
-const bin = () => process.env.ANTIGRAVITY_BIN || [path.join(os.homedir(), '.local', 'bin', 'agy')].find((p) => existsSync(p)) || 'agy'
+const bin = agyBinary
 const WORKDIR = path.join(os.tmpdir(), 'english-app-antigravity')
 const timeoutMs = () => Number(process.env.ANTIGRAVITY_TIMEOUT_MS) || 5 * 60_000
 /** ANTIGRAVITY_PARALLEL, else 4: a long Listening transcript is analysed in parts side by side. */
@@ -147,11 +148,18 @@ function completeJson(stdout: string): boolean {
  */
 function runCli(args: string[]): Promise<{ code: number | null; stdout: string; stderr: string }> {
   mkdirSync(WORKDIR, { recursive: true })
-  const BIN = bin()
   const TIMEOUT_MS = timeoutMs()
   return new Promise((resolve, reject) => {
+    // Sandboxed (agy-sandbox.ts): agy sees WORKDIR (with the staged images) read-only, never the project.
+    let run: { command: string; args: string[] }
+    try {
+      run = sandboxedAgy(args, { profile: 'llm', cwd: WORKDIR })
+    } catch (error) {
+      reject(new ApiError(503, (error as Error).message))
+      return
+    }
     // Own process group, so a stop also reaches anything agy started.
-    const child = spawn(BIN, args, { cwd: WORKDIR, stdio: ['ignore', 'pipe', 'pipe'], detached: true })
+    const child = spawn(run.command, run.args, { cwd: WORKDIR, stdio: ['ignore', 'pipe', 'pipe'], detached: true })
     let stdout = ''
     let stderr = ''
     let settled = false
@@ -191,7 +199,7 @@ function runCli(args: string[]): Promise<{ code: number | null; stdout: string; 
       clearTimeout(timer)
       if (settled) return
       settled = true
-      reject(new ApiError(503, `Cannot start Antigravity CLI (${BIN}): ${error.message}. Ensure 'agy' is installed.`))
+      reject(new ApiError(503, `Cannot start Antigravity CLI (${bin()}): ${error.message}. Ensure 'agy' and bwrap are installed.`))
     })
     child.on('exit', (code) => {
       // stdout may still hold a last chunk: 'close' delivers it; fall back to 'exit' if close never comes.

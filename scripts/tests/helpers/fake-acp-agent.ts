@@ -1,7 +1,7 @@
 // A scripted stand-in for `agy acp`, for the coach tests (no AI). Every received message is appended to FAKE_ACP_LOG.
 // The last text block of a prompt decides what happens:
 //   TOOL        → a tool_call for mcp_app_list_works, a real MCP call to the app's server, then "Hello world"
-//   PERMISSION  → asks permission to run `ls /`, logs the chosen option, then "denied ok"
+//   PERMISSION [title] → asks permission to run `ls /` (or that title), logs the chosen option, then "denied ok"
 //   SLOW        → waits 5 s (or until session/cancel)
 //   CRASH       → exits in the middle of the turn
 //   CALL <tool> <json args> → a real MCP call of that app tool; the answer is the tool's result text
@@ -69,10 +69,14 @@ async function prompt(id: number, params: { sessionId: string; prompt: { type: s
     return send({ id, result: { stopReason: 'end_turn', usage: { ...usage, inputTokens: 15000, totalTokens: 15100 } } })
   }
   if (text.includes('PERMISSION')) {
-    update(sessionId, { sessionUpdate: 'tool_call', toolCallId: 'c2', name: 'run_command', title: 'ls /', kind: 'execute', status: 'pending' })
+    // "PERMISSION <title>" asks for that title (an MCP call: "Run mcp_app_get_plan", kind other); else `ls /`.
+    const asked = /PERMISSION (.+)$/.exec(text)?.[1]?.trim()
+    const title = asked || 'ls /'
+    const kind = asked ? 'other' : 'execute'
+    update(sessionId, { sessionUpdate: 'tool_call', toolCallId: 'c2', name: asked ? 'mcp' : 'run_command', title, kind, status: 'pending' })
     const answer = await new Promise((resolve) => {
       waiting.set('perm-1', resolve)
-      send({ id: 'perm-1', method: 'session/request_permission', params: { sessionId, toolCall: { title: 'ls /', kind: 'execute' }, options: [{ optionId: 'allow', kind: 'allow_once' }, { optionId: 'reject', kind: 'reject_once' }] } })
+      send({ id: 'perm-1', method: 'session/request_permission', params: { sessionId, toolCall: { title, kind }, options: [{ optionId: 'allow', kind: 'allow_once' }, { optionId: 'reject', kind: 'reject_once' }] } })
     })
     log({ permissionAnswer: answer })
     update(sessionId, { sessionUpdate: 'tool_call_update', toolCallId: 'c2', status: 'failed' })
