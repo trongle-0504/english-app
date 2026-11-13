@@ -12,9 +12,9 @@ export interface AppSettings {
 export const DEFAULT_QUOTA: Quota = {
   writingPerDay: 5,
   speakingPerDay: 30,
-  lightPerDay: 30,
-  novaPerDay: 30,
-  agyCallsPerDay: 150,
+  lightPerDay: 50,
+  novaPerDay: 50,
+  agyCallsPerDay: 200,
   storageMb: 300,
 }
 

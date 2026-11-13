@@ -24,8 +24,8 @@ Ngày 2026-11-13. Code ở nhánh `multi` (thư mục `/home/trongle/english-mul
 - **Tối đa 2 thiết bị mỗi học viên.** Thiết bị thứ 3 bị từ chối. Học viên tự gỡ thiết bị được 1 lần mỗi tuần; admin gỡ được bất cứ lúc nào.
 - **Admin "Xem như học viên":** chỉ đọc, có ghi nhật ký `audit.jsonl`.
 - **Hạn mức mỗi ngày:**
-  - 5 bài Writing, 30 lượt Speaking (tính theo câu), 30 lượt AI khác, 30 câu hỏi Nova.
-  - Trần ẩn 150 lượt `agy` mỗi người mỗi ngày.
+  - 5 bài Writing, 30 lượt Speaking (tính theo câu), 50 lượt AI khác, 50 câu hỏi Nova.
+  - Trần ẩn 200 lượt `agy` mỗi người mỗi ngày.
   - Lượt được hoàn lại khi lỗi do máy chủ.
 - **AI:**
   - **Cả WSL tối đa 4 tiến trình `agy`**, dùng chung cho 2 app. Bên nào đủ 4 thì bên kia chờ (cổng `/usr/local/lib/agy-gate/bwrap`).

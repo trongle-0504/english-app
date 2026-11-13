@@ -11,8 +11,8 @@ updated: 2026-11-13
 ## Hạn mức mặc định
 - **Writing**: 5 bài/ngày (Task 1 và Task 2 tính chung).
 - **Speaking**: 30 lượt/ngày, tính theo **từng câu hỏi** (Speaking Ideas với 3 câu = 3 lượt; mỗi bản ghi Speaking Review = 1 lượt).
-- **AI khác** (phân tích câu, định dạng ghi chú, dịch, tóm transcript, sinh từ vựng/ghi chú…): 30 lượt/ngày.
-- **Nova Agent**: 30 câu hỏi/ngày.
+- **AI khác** (phân tích câu, định dạng ghi chú, dịch, tóm transcript, sinh từ vựng/ghi chú…): 50 lượt/ngày.
+- **Nova Agent**: 50 câu hỏi/ngày.
 
 ## Xem còn bao nhiêu
 Vào **Tài khoản → Hạn mức AI hôm nay**. Hạn mức mới bắt đầu lúc **0:00** (giờ Việt Nam).

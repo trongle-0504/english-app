@@ -17,4 +17,4 @@ Trợ lý học tập: xem lỗi hay mắc, điểm, kế hoạch, thẻ cần �
 3. Với đề xuất (thêm thẻ, thêm từ, xếp lịch), kiểm tra thẻ dưới câu trả lời rồi bấm **Xác nhận**.
 
 ## Hạn mức
-30 câu hỏi/ngày. Thêm nhiều từ qua Nova: mỗi từ cần AI soạn tính 1 lượt AI.
+50 câu hỏi/ngày. Thêm nhiều từ qua Nova: mỗi từ cần AI soạn tính 1 lượt AI.

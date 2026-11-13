@@ -1,5 +1,5 @@
-// Daily AI limits per account (PLAN-multi-user-v2.md, 6.2): Writing 5 essays, Speaking 30 questions, 30 lighter AI
-// actions, 30 Nova questions a day, and a hidden cap on real agy calls. Counted when the work is started (the route),
+// Daily AI limits per account (PLAN-multi-user-v2.md, 6.2): Writing 5 essays, Speaking 30 questions, 50 lighter AI
+// actions, 50 Nova questions a day, and a hidden cap on real agy calls. Counted when the work is started (the route),
 // given back when the start itself failed for a server reason. The admin has no limit.
 import path from 'node:path'
 import { ApiError, type ApiContext } from '../api.ts'

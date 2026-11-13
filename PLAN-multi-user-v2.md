@@ -498,7 +498,7 @@ Chạy `npm test` trong CI cục bộ trước mỗi lần deploy instance multi
 | Dung lượng | 300 MB/user (đã chốt). WAV > 15 ngày tự xóa (đã chốt), giữ transcript + kết quả |
 | Upload | Giữ giới hạn body theo route (v1, mục 1.3). Ảnh ≤ 5 MB, ghi âm ≤ 4 phút |
 
-- Quota lưu trong `users.json` (`quota: {writingPerDay: 5, speakingPerDay: 30, lightPerDay: 30, novaPerDay: 30, agyCallsPerDay: 150, storageMb: 300}`), chỉnh trên trang Admin.
+- Quota lưu trong `users.json` (`quota: {writingPerDay: 5, speakingPerDay: 30, lightPerDay: 50, novaPerDay: 50, agyCallsPerDay: 200, storageMb: 300}`), chỉnh trên trang Admin.
 - Lượt bị trừ lúc **tạo** job. Hoàn lại nếu lỗi do hệ thống (503, timeout), không hoàn nếu lỗi do dữ liệu người dùng.
 - `GET /me/quota` → `{used, limit, resetAt, queue: {position, etaSec}}`.
 
