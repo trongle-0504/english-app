@@ -105,6 +105,232 @@
         "part_3": {
           "questions": []
         }
+      },
+      {
+        "id": 6,
+        "sub_topic": "Describe a way/change that helps you save a lot of time",
+        "part_2": {
+          "topic": "Describe a way/change that helps you save a lot of time",
+          "cue_card": [
+            "What it is",
+            "How you implement it",
+            "How difficult it is",
+            "And explain how you feel about the way/change"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Is it necessary for children to learn time management?",
+            "What can schools do to help students learn time management?",
+            "What can people do to save time?",
+            "Does technology help people save time? How and why?",
+            "Do you think parents should be responsible for teaching children to save time?",
+            "Do people who can manage time well become successful more easily?"
+          ]
+        }
+      },
+      {
+        "id": 7,
+        "sub_topic": "Describe a course that impressed you a lot",
+        "part_2": {
+          "topic": "Describe a course that impressed you a lot",
+          "cue_card": [
+            "What the course was about",
+            "Where you took the course",
+            "What you did during the course",
+            "And explain why it impressed you a lot"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What do people need to remember in their daily lives?",
+            "What can we learn from history?",
+            "Why do some people have a better memory than others?",
+            "Do people like things of memorial significance?",
+            "Which can help people remember things better, words or photos?",
+            "Can technology help people remember things better? How?"
+          ]
+        }
+      },
+      {
+        "id": 8,
+        "sub_topic": "Describe a new skill you learned when you were a child",
+        "part_2": {
+          "topic": "Describe a new skill you learned when you were a child",
+          "cue_card": [
+            "What the skill was",
+            "Who taught you this skill",
+            "How you learned it",
+            "And explain how you felt about learning the skill"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What skills should children learn before they go to school?",
+            "What are the differences between learning in a group and learning by yourself?",
+            "What are the differences between the way adults learn and the way children learn?",
+            "Do you think it is easier for children to learn new skills than for adults?",
+            "Can a child learn skills from another child?",
+            "Is it important for everyone to have a specialized skill?"
+          ]
+        }
+      },
+      {
+        "id": 9,
+        "sub_topic": "Describe an activity you do regularly that you think is a waste of time",
+        "part_2": {
+          "topic": "Describe an activity you do regularly that you think is a waste of time",
+          "cue_card": [
+            "What it is",
+            "When you usually do it",
+            "Why you do it",
+            "And explain why you think it is a waste of time"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "How do you balance life and work?",
+            "Will you continue doing something when you are aware that it's a waste of time?",
+            "What kinds of things make people feel pressured?",
+            "Why do some people refuse to abide by rules?"
+          ]
+        }
+      },
+      {
+        "id": 10,
+        "sub_topic": "Describe a change that you made recently",
+        "part_2": {
+          "topic": "Describe a change that you made recently",
+          "cue_card": [
+            "What the change was",
+            "What caused the change",
+            "What you did for the change",
+            "And explain how you feel about the change"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Do you think it is good to change one's daily routine?",
+            "Do you think it is good to change jobs?",
+            "Is it good for people to get a job promotion?",
+            "Do people often make plans around their regular routines?",
+            "Who tend to change their daily routine more, young people or old people?"
+          ]
+        }
+      },
+      {
+        "id": 11,
+        "sub_topic": "Describe a law on environmental protection",
+        "part_2": {
+          "topic": "Describe a law on environmental protection",
+          "cue_card": [
+            "What it is",
+            "How you first learned about it",
+            "Who benefits from it",
+            "And explain how you feel about this law"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What kinds of rules do schools in Vietnam have?",
+            "Do you think school rules are important?",
+            "Are children unhappy with the school rules?",
+            "How can parents and teachers help children understand and follow rules?",
+            "What are the rules people should obey at work?",
+            "What is the purpose of punishment?"
+          ]
+        }
+      },
+      {
+        "id": 12,
+        "sub_topic": "Describe a long-term goal/ambition you would like to achieve",
+        "part_2": {
+          "topic": "Describe a long-term goal/ambition you would like to achieve",
+          "cue_card": [
+            "How long you have had this goal/ambition",
+            "What it is",
+            "How you will achieve it",
+            "And explain why you set it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why should children have ambitions?",
+            "What do you think of people going after high positions?",
+            "Why are some young people keen on being fans of superstars?",
+            "Is it good for a person to be ambitious?",
+            "Do you think it is necessary to be ambitious when working in a team in a company?",
+            "Should parents support their children in pursuing their ambitions?"
+          ]
+        }
+      },
+      {
+        "id": 13,
+        "sub_topic": "Describe a new law you would like to introduce in your country",
+        "part_2": {
+          "topic": "Describe a new law you would like to introduce in your country",
+          "cue_card": [
+            "What law it is",
+            "What changes this law brings",
+            "Whether this new law will be popular",
+            "How you came up with the new law",
+            "And explain how you feel about this new law"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What rules should students follow at school?",
+            "Do people in your country usually obey the law?",
+            "What kinds of behavior are considered as good behavior?",
+            "Do you think children can learn about the law outside of school?",
+            "What are the benefits for people to obey rules?",
+            "How can parents teach children to obey rules?"
+          ]
+        }
+      },
+      {
+        "id": 14,
+        "sub_topic": "Describe a thing you did to learn another language",
+        "part_2": {
+          "topic": "Describe a thing you did to learn another language",
+          "cue_card": [
+            "What language you learned",
+            "What you did",
+            "How it helped you learn the language",
+            "And how you felt about it"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What are the advantages and disadvantages of learning a language?",
+            "Some people think that technology has made it unnecessary to learn languages. What do you think?",
+            "What difficulties do people face when learning a language?",
+            "Do you think language learning is important? Why?",
+            "Which is better, to study a language alone or to study it in a group? Why?",
+            "What's the best way to learn a language?"
+          ]
+        }
+      },
+      {
+        "id": 15,
+        "sub_topic": "Describe an environmental law you would like your country to introduce",
+        "part_2": {
+          "topic": "Describe an environmental law you would like your country to introduce",
+          "cue_card": [
+            "What law it should be",
+            "Why people should follow the law",
+            "Whether the law will be popular",
+            "And explain how you feel about this law"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "How does technology affect the law?",
+            "What kinds of rules do schools in China have?",
+            "Will there be a law that is universally accepted?",
+            "What environmental laws does your country already have?"
+          ]
+        }
       }
     ]
   }

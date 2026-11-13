@@ -7,8 +7,13 @@
       "Has the kind of food you like changed as you've got older?",
       "Do you eat different food at different times of the year?",
       "Do you like to eat with others?",
-      "In your country, is it very important to eat with other people?"
-    ]
+      "In your country, is it very important to eat with other people?",
+      "What is your favorite food?",
+      "What kind of food did you like when you were young?",
+      "Do you eat different foods at different times of the year?",
+      "Has your favourite food changed since you were a child?"
+    ],
+    "category": "Health, Food & Sports"
   },
   {
     "part": "Part 1",
@@ -19,8 +24,14 @@
       "Where do you prefer to keep your pet, indoors or outdoors?",
       "Do you see many birds and animals where you live?",
       "Have you ever been to a zoo?",
-      "What kind of animals is famous in your country?"
-    ]
+      "What kind of animals is famous in your country?",
+      "Do you keep a pet? (Why/ Why not?)",
+      "Did you have any pets when you were a child? ( Why/ Why not?)",
+      "What's your favorite animal? Why?",
+      "Have you ever had a pet before?",
+      "What is the most popular animal in your country?"
+    ],
+    "category": "Nature, Science & Environment"
   },
   {
     "part": "Part 1",
@@ -30,8 +41,12 @@
       "Did you learn how to type at school when you were younger?",
       "When did you learn how to type on a keyboard?",
       "Which do you find easier: typing on a keyboard or writing by hand?",
-      "Do you like to improve your typing skills?"
-    ]
+      "Do you like to improve your typing skills?",
+      "Do you prefer typing or handwriting?",
+      "Do you type on a desktop or laptop keyboard every day?",
+      "How do you improve your typing?"
+    ],
+    "category": "Technology & Media"
   },
   {
     "part": "Part 1",
@@ -52,8 +67,14 @@
       "How often do you walk to the shops now?",
       "Are there many parks near where you live?",
       "Do people enjoy walking in parks in your country?",
-      "Where would you want to go for a long walk if you have a chance?"
-    ]
+      "Where would you want to go for a long walk if you have a chance?",
+      "Do you walk a lot?",
+      "Did you often go outside to have a walk when you were a child?",
+      "Why do people like to walk in parks?",
+      "Where would you like to take a long walk if you had the chance?",
+      "Where did you go for a walk lately?"
+    ],
+    "category": "Health, Food & Sports"
   },
   {
     "part": "Part 1",
@@ -62,8 +83,18 @@
       "What kinds of things do you have to read carefully in your language?",
       "Do you like to read things carefully or quickly in daily life?",
       "Do you read things more carefully on paper or on a screen?",
-      "Why do you think some people don't read messages very carefully?"
-    ]
+      "Why do you think some people don't read messages very carefully?",
+      "Which do you prefer, reading books or watching movies?",
+      "Have you ever read a novel that has been adapted into a film?",
+      "Are your reading habits now different than before?",
+      "Do you often read books? When?",
+      "Do you read more or less now than when you were younger?",
+      "Do you like reading?",
+      "Do you prefer to read on paper or on a screen?",
+      "When do you need to read carefully, and when not?",
+      "Do you prefer scanning or detailed reading?"
+    ],
+    "category": "Hobbies & Entertainment"
   },
   {
     "part": "Part 1",
@@ -72,8 +103,19 @@
       "Do you get up early in the morning?",
       "Did you get up early in the morning when you were younger?",
       "What do you do every morning?",
-      "What's your favourite morning of the week?"
-    ]
+      "What's your favourite morning of the week?",
+      "Do you have the same morning routine every day?",
+      "Do you usually eat breakfast at home?",
+      "Are there any differences between what you do in the morning now and what you did in the past?",
+      "Do you like getting up early in the morning?",
+      "What do you usually do in the morning?",
+      "What did you do in the morning when you were little? Why?",
+      "Do you spend your mornings doing the same things on both weekends and weekdays? Why?",
+      "What is your morning routine?",
+      "Is breakfast important?",
+      "What do you do right after getting up in the morning?"
+    ],
+    "category": "Daily life & Routines"
   },
   {
     "part": "Part 1",
@@ -83,8 +125,20 @@
       "What kinds of gifts did you like when you were younger?",
       "Have you received any gifts recently?",
       "Do you enjoy giving people gifts?",
-      "Do you think buying gifts online is a good idea?"
-    ]
+      "Do you think buying gifts online is a good idea?",
+      "Have you ever sent handmade gifts to others?",
+      "How to choose a gift?",
+      "Can you share an experience of giving a special gift to someone?",
+      "Do you like giving gifts/presents? [Why/Why not?]",
+      "When do you usually give gifts to others? [Why/Why not?]",
+      "Have you ever given somebody a handmade gift/present? [Why/Why not?]",
+      "Do you think choosing expensive gifts/presents is a good way to express feelings towards somebody? [Why/Why not?]",
+      "Have you ever received a great gift?",
+      "What do you consider when choosing a gift?",
+      "Do you think you are good at choosing gifts?",
+      "What gift have you received recently?"
+    ],
+    "category": "People & Relationships"
   },
   {
     "part": "Part 1",
@@ -94,8 +148,13 @@
       "Is your sport team famous?",
       "Are team sports popular in your country?",
       "Would you like to try a new team sport in the future?",
-      "Do you enjoy watching team sports?"
-    ]
+      "Do you enjoy watching team sports?",
+      "Have you ever been part of a sports team?",
+      "Are team sports popular in your culture?",
+      "Do you like watching team games? Why?",
+      "What are the differences between team sports and individual sports?"
+    ],
+    "category": "Health, Food & Sports"
   },
   {
     "part": "Part 1",
@@ -105,8 +164,12 @@
       "Are there many tall buildings where you live?",
       "Have you ever taken a photo of a building?",
       "What kind of building would you like to live in?",
-      "Is there a famous building that you would like to have a visit?"
-    ]
+      "Is there a famous building that you would like to have a visit?",
+      "Are there tall buildings near your home?",
+      "Do you take photos of buildings?",
+      "Is there a building that you would like to visit?"
+    ],
+    "category": "Places & Buildings"
   },
   {
     "part": "Part 1",
@@ -116,8 +179,11 @@
       "Did you ever travel to a faraway place when you were a child?",
       "Do you prefer to look at mountain views or ocean views?",
       "When you see a beautiful view, do you like to take a photo of it?",
-      "Would you like to hang a beautiful view picture on the wall at home?"
-    ]
+      "Would you like to hang a beautiful view picture on the wall at home?",
+      "Do you prefer to sit by the window when travelling?",
+      "Did you have a long journey with your family as a child?"
+    ],
+    "category": "Travel & Transport"
   },
   {
     "part": "Part 1",
@@ -148,8 +214,13 @@
       "Will you sing in the car?",
       "Do you like listening to other people sing?",
       "How well did you sing?",
-      "Did you take music lessons?"
-    ]
+      "Did you take music lessons?",
+      "Do you like singing? Why?",
+      "Have you ever learnt how to sing?",
+      "Who do you want to sing for?",
+      "Do you think singing can bring happiness to people?"
+    ],
+    "category": "Hobbies & Entertainment"
   },
   {
     "part": "Part 1",
@@ -161,7 +232,8 @@
       "Does happy music make you feel more excited?",
       "Is it easy to learn music?",
       "Do you learn music lessons at school?"
-    ]
+    ],
+    "category": "Hobbies & Entertainment"
   },
   {
     "part": "Part 1",
@@ -173,8 +245,12 @@
       "What kind of watch do the people around you like to wear?",
       "Do you wear a watch?",
       "Do people around you like wearing watches?",
-      "What kind of watches do they usually like?"
-    ]
+      "What kind of watches do they usually like?",
+      "Have you ever got a watch as a gift?",
+      "Why do some people wear expensive watches?",
+      "Do you think it is important to wear a watch? Why?"
+    ],
+    "category": "Shopping, Money & Possessions"
   },
   {
     "part": "Part 1",
@@ -185,8 +261,17 @@
       "Do you think there should be more parks and gardens in your city?",
       "Is there a famous park or garden that you want to visit?",
       "Was there a park near your home that you liked to go to when you were a child?",
-      "What did you do there?"
-    ]
+      "What did you do there?",
+      "Did you like going to parks as a child?",
+      "Do you still like going to parks now?",
+      "Would you like to see more parks in your city?",
+      "Are there any parks you want to go to in the future?",
+      "Would you prefer to play in a personal garden or public garden?",
+      "How are the parks today different from those you visited as a kid?",
+      "What do you like to do when visiting a park?",
+      "Would you like to play in a public garden or park?"
+    ],
+    "category": "Places & Buildings"
   },
   {
     "part": "Part 1",
@@ -196,8 +281,11 @@
       "Are you a tidy person now?",
       "What do you think of those who don't care about tidiness?",
       "What do you think of untidy people?",
-      "What do you think of people who are overly tidy?"
-    ]
+      "What do you think of people who are overly tidy?",
+      "Do you like to keep things tidy?",
+      "Did you use to keep your room tidy as a child?"
+    ],
+    "category": "Daily life & Routines"
   },
   {
     "part": "Part 1",
@@ -206,8 +294,13 @@
       "How often do you wear headphones?",
       "Do you think headphones are useful?",
       "Are headphones popular in your country?",
-      "In what situations should people not wear headphones?"
-    ]
+      "In what situations should people not wear headphones?",
+      "Do you use headphones?",
+      "What type of headphones do you use?",
+      "When would you use headphones?",
+      "In what conditions would you not use headphones?"
+    ],
+    "category": "Technology & Media"
   },
   {
     "part": "Part 1",
@@ -216,8 +309,13 @@
       "Do you usually use websites?",
       "Which website do you usually use?",
       "Do you prefer to search for information through websites or books?",
-      "Do you want to create your own website in the future?"
-    ]
+      "Do you want to create your own website in the future?",
+      "What kinds of websites do you often visit?",
+      "What is your favourite website?",
+      "Are there any changes to the websites you often visit?",
+      "What kinds of websites are popular in your country?"
+    ],
+    "category": "Technology & Media"
   },
   {
     "part": "Part 1",
@@ -227,8 +325,13 @@
       "Do you often joke with your friends?",
       "Do you have friends who love telling jokes?",
       "What are some common comedy shows in your country?",
-      "Do you like being joked about?"
-    ]
+      "Do you like being joked about?",
+      "Are you good at telling jokes?",
+      "Do your friends like to tell jokes?",
+      "Do you like to watch comedies?",
+      "Have you ever watched a live show?"
+    ],
+    "category": "Hobbies & Entertainment"
   },
   {
     "part": "Part 1",
@@ -238,8 +341,15 @@
       "Do you think everyone should study science at school?",
       "How does knowing about science help you in your everyday life?",
       "Did you learn much about science at school?",
-      "How do you learn about science in daily life?"
-    ]
+      "How do you learn about science in daily life?",
+      "Do you like science?",
+      "When did you start to learn about science?",
+      "Which science subject is interesting to you?",
+      "What kinds of interesting things have you done with science?",
+      "Do you like watching science TV programs?",
+      "Do Vietnamese people often visit science museums?"
+    ],
+    "category": "Nature, Science & Environment"
   },
   {
     "part": "Part 1",
@@ -250,8 +360,13 @@
       "Do you still keep in touch with your former teachers?",
       "Is it easy to remember your teachers in elementary school?",
       "Did you want to be a teacher when you were young?",
-      "Do you think teachers are different now than when your parents were at school?"
-    ]
+      "Do you think teachers are different now than when your parents were at school?",
+      "In what way has your favourite teacher helped you?",
+      "Are you still in touch with your primary school teachers?",
+      "Do you have a teacher from your past that you still remember?",
+      "Do you want to be a teacher in the future?"
+    ],
+    "category": "Work & Study"
   },
   {
     "part": "Part 1",
@@ -260,8 +375,13 @@
       "Do your friends and family use social media?",
       "Do you think people in your country find social media useful?",
       "Do you spend too much time on social media?",
-      "When did you start using social media?"
-    ]
+      "When did you start using social media?",
+      "Have you ever posted anything on social media?",
+      "Do you think you spend too much time on social media?",
+      "Do your friends use social media?",
+      "What do people often do on social media?"
+    ],
+    "category": "Technology & Media"
   },
   {
     "part": "Part 1",
@@ -269,16 +389,26 @@
     "questions": [
       "Would you like to be the driver or the passenger?",
       "Is there a lot of cars on the roads in your city?",
-      "Do you want to own a very expensive car?"
-    ]
+      "Do you want to own a very expensive car?",
+      "Do you think car colours are important?",
+      "Did you enjoy traveling by car when you were a kid?",
+      "What types of cars do you like?",
+      "Do you prefer to be a driver or a passenger?",
+      "What do you usually do when there is a traffic jam?"
+    ],
+    "category": "Travel & Transport"
   },
   {
     "part": "Part 1",
     "topic": "Clothes",
     "questions": [
       "What kind of clothes do you like to wear?",
-      "Do you wear different clothes on the weekend?"
-    ]
+      "Do you wear different clothes on the weekend?",
+      "Do you prefer to wear comfortable and casual clothes or smart clothes?",
+      "Do you like wearing T-shirts?",
+      "Do you spend a lot of time choosing clothes?"
+    ],
+    "category": "Shopping, Money & Possessions"
   },
   {
     "part": "Part 1",
@@ -286,8 +416,13 @@
     "questions": [
       "Do you often go shopping?",
       "Do you prefer online or offline shopping?",
-      "Do you compare prices before making a purchase?"
-    ]
+      "Do you compare prices before making a purchase?",
+      "How often do you go shopping?",
+      "Do you prefer online shopping or in-store shopping?",
+      "Have you ever returned anything you bought online?",
+      "Do you like shopping?"
+    ],
+    "category": "Shopping, Money & Possessions"
   },
   {
     "part": "Part 1",
@@ -296,8 +431,12 @@
       "Have you ever learnt anything about space and the stars when you were at school?",
       "Would you like to know more about space and the stars?",
       "Do you like science-fiction movies set in space?",
-      "Do you want to go into outer space in the future?"
-    ]
+      "Do you want to go into outer space in the future?",
+      "Have you ever learnt about outer space and stars?",
+      "Do you like science fiction movies? Why?",
+      "Do you want to know more about outer space?"
+    ],
+    "category": "Nature, Science & Environment"
   },
   {
     "part": "Part 1",
@@ -306,8 +445,12 @@
       "Do you often feel bored?",
       "Did you ever find school boring when you were a child?",
       "What sort of things do you find most boring now?",
-      "What do you do to stop yourself feeling bored?"
-    ]
+      "What do you do to stop yourself feeling bored?",
+      "When would you feel bored?",
+      "What do you do when you feel bored?",
+      "Do you think childhood is boring or adulthood is boring?"
+    ],
+    "category": "Daily life & Routines"
   },
   {
     "part": "Part 1",
@@ -316,8 +459,14 @@
       "When you were a child, what job did you dream of doing?",
       "Do you think you are an ambitious person?",
       "What kind of job do you want to do in the future?",
-      "Do you have any dreams or hopes for your life?"
-    ]
+      "Do you have any dreams or hopes for your life?",
+      "What was your childhood dream?",
+      "Are you the kind of person who sticks to dreams?",
+      "What is your dream job?",
+      "What was your dream job when you were young?",
+      "Have you changed your mind on your dream job?"
+    ],
+    "category": "Personal development & Dreams"
   },
   {
     "part": "Part 1",
@@ -325,8 +474,14 @@
     "questions": [
       "Do you often talk to elderly people?",
       "Do you enjoy spending time with elderly people?",
-      "How do you feel about getting old?"
-    ]
+      "How do you feel about getting old?",
+      "Have you ever worked with old people?",
+      "Are you happy to work with people who are older than you?",
+      "What are the advantages of working with old people?",
+      "Do you enjoy spending time with old people?",
+      "What are the benefits of being friends with or working with old people?"
+    ],
+    "category": "People & Relationships"
   },
   {
     "part": "Part 1",
@@ -334,7 +489,683 @@
     "questions": [
       "Do you like looking at yourself in the mirror? How often?",
       "Have you ever bought mirrors? Do you usually take a mirror with you?",
-      "Would you use mirrors to decorate your room?"
+      "Would you use mirrors to decorate your room?",
+      "Have you ever bought mirrors?",
+      "Do you usually take a mirror with you?"
+    ],
+    "category": "Shopping, Money & Possessions"
+  },
+  {
+    "part": "Part 1",
+    "topic": "Work or Studies",
+    "category": "Work & Study",
+    "questions": [
+      "Are you a student or do you work now?",
+      "What would you like to do in the future?",
+      "What are the benefits of being your age?",
+      "What do you think is the most important at the moment?",
+      "What work do you do?",
+      "Why did you choose to do that type of work (or that job)?",
+      "Do you like your job?",
+      "What requirements did you need to meet to get your current job?",
+      "Do you have any plans for your work in the next five years?",
+      "Do you want to change to another job?",
+      "Do you miss being a student?",
+      "What technology do you use at work?",
+      "Who helps you the most? And how?",
+      "What do you like best about your job?",
+      "Do you refer to work in the morning or afternoon?",
+      "Have you changed your work before?",
+      "What do you find most interesting about your work? (Why?)",
+      "Which is more important to you - the people you work with or the work you do? (Why?)",
+      "Do you work best in the morning or the afternoon? (Why?)"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Studying",
+    "category": "Work & Study",
+    "questions": [
+      "What do you study?",
+      "Which study is the most interesting, and why?",
+      "Which is more important to you—the teachers or the other students on your course? (Why?)",
+      "How much time do you spend studying every week?",
+      "How do you usually travel to the city where you study?",
+      "Do you study best in the morning or the afternoon? (Why?)",
+      "Have you always wanted to study this subject/ these subjects (Why/ Why not?)",
+      "Do you think that your subject is popular in your country?",
+      "Do you have any plans for your studies in the next five years?",
+      "Do you want to change your major?",
+      "Do you prefer to study in the mornings or in the afternoons?",
+      "How much time do you spend on your studies each week?",
+      "What technology do you use when you study?",
+      "What changes would you like to see in your school?",
+      "What are the most popular subjects in Vietnam?",
+      "What are your favourite classes/ courses/ subjects at school/ university?",
+      "Do you think it's important to choose a subject you like?",
+      "Are you looking forward to working?",
+      "What subjects are you studying?",
+      "Do you like your subject?",
+      "Why did you choose to study that subject?",
+      "Do you miss being a student?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Rules",
+    "category": "Work & Study",
+    "questions": [
+      "Are there any rules for students at your school?",
+      "Do you think students would benefit more from more rules?",
+      "What rules did your teacher tell you when you were a child?",
+      "Did any teacher require you to strictly follow these rules?",
+      "Have you ever had a really dedicated teacher?",
+      "Do you prefer to have more or fewer rules at school?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Secondary school",
+    "category": "Work & Study",
+    "questions": [
+      "Do you remember your first day at secondary school?",
+      "Were there any subjects that you found difficult at secondary school?",
+      "What was your favourite subject at secondary school?",
+      "Is there anything you miss about your secondary school?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "History",
+    "category": "Work & Study",
+    "questions": [
+      "Did you like history when you were young?",
+      "When was the last time you read about history?",
+      "Do you like history?",
+      "Have you ever been to historical museums?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "The area you live in",
+    "category": "Home & Hometown",
+    "questions": [
+      "Do you like the area that you live in?",
+      "Where do you like to go in that area?",
+      "Do you know any famous people in your area?",
+      "What are some changes in the area recently?",
+      "Do you know any of your neighbors?",
+      "Are the people in your neighborhood nice and friendly?",
+      "Which town or city do you live in now?",
+      "Are there any things you don't like about your area? [What are they?]",
+      "Do you think you will continue to live there for a long time? [Why/Why not?]",
+      "Do you like living in the countryside?",
+      "What is your favourite room in your home? (Why?)",
+      "What things make your home pleasant to live in? (Why?)",
+      "Do you live in a noisy or a quiet area?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "The city you live in",
+    "category": "Home & Hometown",
+    "questions": [
+      "Would you recommend your city to others?",
+      "What's the weather like where you live?",
+      "Are there people of different ages living in this city?",
+      "Are the people friendly in the city?",
+      "Is the city friendly to children and old people?",
+      "Do you often see your neighbors?",
+      "What city do you live in?",
+      "Do you like this city? Why?",
+      "How long have you lived in this city?",
+      "Are there big changes in this city?",
+      "Is this city your permanent residence?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Home & Accommodation",
+    "category": "Home & Hometown",
+    "questions": [
+      "Who do you live with?",
+      "Do you live in an apartment or a house?",
+      "What part of your home do you like the most?",
+      "What's the difference between where you are living now and where you have lived in the past?",
+      "What kind of house or apartment do you want to live in in the future?",
+      "What room does your family spend most of the time in?",
+      "What do you usually do in your apartment?",
+      "What kinds of accommodation do you live in?",
+      "Do you plan to live there for a long time?",
+      "Can you describe the place where you live?",
+      "Do you prefer living in a house or an apartment?",
+      "Please describe the room you live in.",
+      "What's your favorite room in your apartment or house?",
+      "What makes you feel pleasant in your home?",
+      "How long have you lived there?",
+      "Do you think it is important to live in a comfortable environment?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Hometown",
+    "category": "Home & Hometown",
+    "questions": [
+      "Have you learned anything about the history of your hometown?",
+      "Did you learn about the culture of your hometown in your childhood?",
+      "Is that a big city or a small place?",
+      "Do you like your hometown?",
+      "What do you like (most) about your hometown?",
+      "Is there anything you dislike about it?",
+      "How long have you been living there?",
+      "Do you like living there?",
+      "Please describe your hometown a little.",
+      "What's your hometown famous for?",
+      "Did you learn about the history of your hometown at school?",
+      "Are there many young people in your hometown?",
+      "Is your hometown a good place for young people to pursue their careers?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Noisy places and quiet places",
+    "category": "Places & Buildings",
+    "questions": [
+      "Do you like quiet or noisy places? [Why/Why not?]",
+      "What are some sounds you like? [Why/Why not?]",
+      "What kinds of noise do you hear in your daily life? [Why/Why not?]",
+      "Where is the noise louder, in cities or the countryside? [Why/Why not?]",
+      "Would you like to go to quiet or noisy places on weekends when you are free?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Public places",
+    "category": "Places & Buildings",
+    "questions": [
+      "Do you usually go to public places with your friends?",
+      "Do you think your place should add more public places?",
+      "Do you wear headphones when you are in public places?",
+      "Have you ever talked with someone you don't know in public places?",
+      "Would you like to see more public places near where you live?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Museum",
+    "category": "Places & Buildings",
+    "questions": [
+      "Do you think museums are important?",
+      "Are there many museums in your hometown?",
+      "Do you often visit a museum?",
+      "When was the last time you visited a museum?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Crowded place",
+    "category": "Places & Buildings",
+    "questions": [
+      "Is the city where you live crowded?",
+      "Is there a crowded place near where you live?",
+      "Do you like crowded places?",
+      "When was the last time you were in a crowded place?",
+      "Do most people like crowded places?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Old buildings",
+    "category": "Places & Buildings",
+    "questions": [
+      "Have you ever seen old buildings in the city?",
+      "Do you think we should preserve old buildings in cities?",
+      "Do you prefer living in an old building or a modern house?",
+      "Are there any old buildings you want to see in the future? Why?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Day Off",
+    "category": "Daily life & Routines",
+    "questions": [
+      "When was the last time you had a few days off?",
+      "What do you usually do when you have days off?",
+      "Do you usually spend your days off with your parents or with your friends?",
+      "What would you like to do if you had a day off tomorrow?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Taking a break",
+    "category": "Daily life & Routines",
+    "questions": [
+      "Do you often take breaks?",
+      "What do you do when you take breaks?",
+      "Have you ever slept when you take a break?",
+      "How do you feel after taking a nap?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Going out",
+    "category": "Daily life & Routines",
+    "questions": [
+      "Do you bring food or snacks with you when going out?",
+      "Do you always take your mobile phone with you when going out?",
+      "Do you often bring cash with you?",
+      "How often do you use cash?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Tiredness",
+    "category": "Daily life & Routines",
+    "questions": [
+      "Do you often feel tired?",
+      "When would you feel tired?",
+      "What do you do when you feel tired?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Evening time",
+    "category": "Daily life & Routines",
+    "questions": [
+      "What do you hate doing in the evening?",
+      "Do you like the morning or evening?",
+      "What do you usually do in the evening?",
+      "What did you do in the evening when you were little? Why?",
+      "Are there any differences between what you do in the evening now and what you did in the past?",
+      "Do you spend your evenings doing the same things on both weekends and weekdays? Why?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Hobbies",
+    "category": "Hobbies & Entertainment",
+    "questions": [
+      "Do you have the same hobbies as your family members?",
+      "Do you have a hobby that you've had since childhood?",
+      "Did you have any hobbies when you were a child?",
+      "Do you have any hobbies?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Taking photos",
+    "category": "Hobbies & Entertainment",
+    "questions": [
+      "Do you take photos by camera or phone?",
+      "How do you deal with pictures after you take them?",
+      "Do you want to learn photography to improve your taking-photo skills?",
+      "How will people in the future take photos?",
+      "Is it good to keep photos on a cell phone?",
+      "How often do you take photos? (Why/Why not?)",
+      "Do you like taking photos of yourself? (Why/Why not?)",
+      "Do you have a favorite family photo? (Why/Why not?)",
+      "Would you like to learn how to take better photos (Why/Why not?)"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Arts and Drawing",
+    "category": "Hobbies & Entertainment",
+    "questions": [
+      "Do you like art?",
+      "Do you like visiting art galleries?",
+      "Do you want to be an artist?",
+      "Do you like modern art or traditional art?",
+      "Do you like drawing? Why?",
+      "Do you want to visit an art gallery or museum?",
+      "What are the differences between old and modern arts?",
+      "Have you ever visited an art gallery?",
+      "Do you think it would be interesting for you to be an artist?",
+      "Did you learn to draw or paint when you were younger? (Why/Why not?)",
+      "Do you like looking at drawings or paintings? (Why/Why not?)",
+      "Would you like to learn more about art in the future? (Why/Why not?)"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Collecting things",
+    "category": "Hobbies & Entertainment",
+    "questions": [
+      "Do you collect things?",
+      "Are there any things you have kept from your childhood?",
+      "Would you keep old things for a long time? Why?",
+      "Where do you usually keep things you need?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Films/cinemas",
+    "category": "Hobbies & Entertainment",
+    "questions": [
+      "How often do you watch films?",
+      "Do you prefer to watch films at home or in the cinema?",
+      "What films do you like?",
+      "Did you often watch films when you were a child?",
+      "Did you ever go to the cinema alone as a child?",
+      "Do you often go to the cinema with your friends?",
+      "Do you think going to the cinema is a good way to spend time with friends?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Health",
+    "category": "Health, Food & Sports",
+    "questions": [
+      "How do you keep healthy?",
+      "What are your favorite sports?",
+      "Are there health classes in your school?",
+      "What sports help people stay healthy?",
+      "Is it easy for people to exercise in your country?",
+      "What are some ways to live a healthy lifestyle",
+      "Did you learn how to live a healthy lifestyle when you were a child?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Fruit and vegetables",
+    "category": "Health, Food & Sports",
+    "questions": [
+      "How often do you eat fruit and vegetables?",
+      "Where do you usually buy fruit and vegetables?",
+      "What kind of fruits and vegetables do you dislike?",
+      "Were there any kinds of fruits and vegetables you disliked as a child?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Sports programs",
+    "category": "Health, Food & Sports",
+    "questions": [
+      "Do you like watching sports programs on TV?",
+      "Do you like to watch live sports games?",
+      "Who do you like to watch sports games with?",
+      "What kinds of games do you expect to watch in the future?",
+      "Do you prefer to watch sports games alone or with a group of friends?",
+      "Have you ever watched a sports game in a stadium?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Borrowing and lending things",
+    "category": "People & Relationships",
+    "questions": [
+      "Have you ever borrowed books from others?",
+      "Have you ever borrowed money from others?",
+      "Do you like to lend things to others?",
+      "How do you feel when people don't return the things they borrowed from you?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Sharing things",
+    "category": "People & Relationships",
+    "questions": [
+      "Have you shared anything with others recently?",
+      "Did your parents teach you how to share when you were a child?",
+      "What kind of things do you like to share with others?",
+      "What kinds of things are not suitable for sharing?",
+      "Who is the first person you would like to share good news with?",
+      "When you were a kid, did your parents encourage you to share things with others?",
+      "Is there anything you don't want to share?",
+      "Do you have anything to share with others?",
+      "What kind of news do you share with your friends?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Chatting",
+    "category": "People & Relationships",
+    "questions": [
+      "Do you like chatting with friends?",
+      "What do you usually chat about with friends?",
+      "Do you prefer to chat with a group of people or with only one friend?",
+      "Do you prefer to communicate face-to-face or via social media?",
+      "Do you argue with friends?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Friends",
+    "category": "People & Relationships",
+    "questions": [
+      "How important are friends to you?",
+      "Do you often go out with your friends?",
+      "Where do you often meet each other?",
+      "What do you usually do with your friends?",
+      "Do you have a friend you have known for a long time?",
+      "What do you value about your friends?",
+      "Is there a difference between where you meet friends now and where you used to meet them in the past?",
+      "Why are some places suitable for meeting while others are not?",
+      "Would you invite friends to your home?",
+      "Do you prefer to spend time with one friend or with a group of friends?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Politeness",
+    "category": "People & Relationships",
+    "questions": [
+      "How did you learn to be polite as a child?",
+      "Do you think being polite is very important?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Name",
+    "category": "People & Relationships",
+    "questions": [
+      "Is it easy for you to remember people's names?",
+      "How do you remember people's names?",
+      "How do you feel when people can't remember your name?",
+      "Do you often forget people's names?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Childhood activities",
+    "category": "Personal development & Dreams",
+    "questions": [
+      "What were your favourite activities when you were a child?",
+      "Did you prefer to do activities alone or with a group of people when you were a child?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Dreams",
+    "category": "Personal development & Dreams",
+    "questions": [
+      "Can you remember the dreams you had?",
+      "Do you share your dreams with others?",
+      "Do you think dreams have special meanings?",
+      "Do you want to make your dreams come true?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Doing something well",
+    "category": "Personal development & Dreams",
+    "questions": [
+      "Do you have an experience that you did something well?",
+      "Do you have an experience that your teacher thought you did a good job?",
+      "Do you often tell your friends when they do something well?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Opportunities",
+    "category": "Personal development & Dreams",
+    "questions": [
+      "Did you have any opportunities to take part in new activities as a child?",
+      "Should people try as many different things as they can?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Cash",
+    "category": "Shopping, Money & Possessions",
+    "questions": [
+      "Do you have a school bank account?",
+      "Why do people use banks?",
+      "Do you prefer to use cash or bank services (like cards, online banking)?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Keys",
+    "category": "Shopping, Money & Possessions",
+    "questions": [
+      "Do you always bring a lot of keys with you?",
+      "Have you ever lost your keys?",
+      "Do you often forget the keys and lock yourself out?",
+      "Do you think it's a good idea to leave your keys with a neighbor?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Carrying things",
+    "category": "Shopping, Money & Possessions",
+    "questions": [
+      "What do you do if your item is heavy?",
+      "When you go out, what do you carry with you?",
+      "When you go to different places, do you carry different kinds of things?",
+      "What is the difference between the things you carry in the evening and in the morning?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Shoes",
+    "category": "Shopping, Money & Possessions",
+    "questions": [
+      "How often do you buy shoes?",
+      "Have you ever bought shoes online?",
+      "Do you like to wear shoes that are comfortable or good-looking?",
+      "Do people like to wear shoes that are comfortable or good-looking?",
+      "What is your favourite type of shoes?",
+      "How much money do you usually spend on shoes?",
+      "Do you often buy shoes from famous brands?",
+      "Do you like buying shoes? How often?",
+      "Which do you prefer, fashionable shoes or comfortable shoes?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Lost and found",
+    "category": "Shopping, Money & Possessions",
+    "questions": [
+      "What will you do if you find something lost by others?",
+      "Do you report to the police when finding something lost by others? Why?",
+      "Have you ever lost things?",
+      "Will you post on social media if you lose your item?",
+      "Have you ever lost your keys?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Street market",
+    "category": "Shopping, Money & Possessions",
+    "questions": [
+      "What do people usually buy on the street market?",
+      "Do you prefer to go shopping in the shopping mall or on the street market?",
+      "When was the last time you went to a street market?",
+      "Are there many street markets in Vietnam?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Paper",
+    "category": "Shopping, Money & Possessions",
+    "questions": [
+      "Have you made any crafts with paper?",
+      "Do you still write physical letters?",
+      "Do people still keep handwritten letters today?",
+      "Do you carry paper and pens with you when you go out?",
+      "What did you like to do with paper as a child?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Advertisements",
+    "category": "Technology & Media",
+    "questions": [
+      "Do you often remember advertisements/commercials that you've seen? (Why/Why not?)",
+      "What do you usually do when an advertisement/a commercial comes on TV or the Internet? (Why/Why not?)",
+      "Have you ever seen an advertisement/a commercial that you really didn't like? (Why?)",
+      "Would you like to be in an advertisement/a commercial one day? (What kind/Why/Why not?)",
+      "How do you feel about advertisements?",
+      "Do you like advertisements?",
+      "Do you like advertisements on TV?",
+      "Is there much advertising in your country?",
+      "What are the different places where we see advertisements?",
+      "What advertising do you have in your country?",
+      "Is there an advertisement that made an impression on you when you were a child?",
+      "Do you see a lot of advertising on trains or other transport?",
+      "What kind of advertising do you like?",
+      "Do you often see advertisements when you are on your phone or computer?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Computers/tablets",
+    "category": "Technology & Media",
+    "questions": [
+      "Would you like to use a computer or tablet?",
+      "In what conditions would you use a computer or tablet?",
+      "When was the first time you used a computer or tablet?",
+      "What would your life be like without computers or tablets?",
+      "In what conditions would it be difficult for you to use a computer or tablet?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Scenery",
+    "category": "Nature, Science & Environment",
+    "questions": [
+      "Where can you enjoy beautiful views where you live?",
+      "What's the best view that you have ever enjoyed?",
+      "Do you take photos of good views?",
+      "Do you book rooms that have good views when you go travelling?",
+      "Do you look out the window at the scenery when travelling by bus or car?",
+      "Do you prefer the mountains or the sea?",
+      "Do you like to take scenery pictures?",
+      "What are the most beautiful sights you have seen while travelling?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Plants",
+    "category": "Nature, Science & Environment",
+    "questions": [
+      "Do Vietnamese people send plants as gifts?",
+      "Do you know anything about growing a plant?",
+      "What plant did you grow when you were young?",
+      "Do you keep plants at home?",
+      "Have you ever had a plant?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Growing vegetables/fruits",
+    "category": "Nature, Science & Environment",
+    "questions": [
+      "Are you interested in growing vegetables and fruits?",
+      "Is growing vegetables popular in your country?",
+      "Do many people grow vegetables in your city?",
+      "Do you think it's easy to grow vegetables?",
+      "Should schools teach students how to grow vegetables?"
+    ]
+  },
+  {
+    "part": "Part 1",
+    "topic": "Rubbish and recycling",
+    "category": "Nature, Science & Environment",
+    "questions": [
+      "What do you do when you see rubbish on the street?",
+      "How do you recycle things like paper and plastic?"
     ]
   }
 ]

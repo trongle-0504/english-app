@@ -314,6 +314,398 @@
             "Should schools teach more foreign languages?"
           ]
         }
+      },
+      {
+        "id": 14,
+        "sub_topic": "Describe a person you only met once recently and want to know more about",
+        "part_2": {
+          "topic": "Describe a person you only met once recently and want to know more about",
+          "cue_card": [
+            "Who he/she is",
+            "When you met him/her",
+            "Why you want to know more about him/her",
+            "And explain how you feel about him/her"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What can we do to leave a good impression on people we meet for the first time?",
+            "What should we not talk about when we meet a person for the first time?",
+            "How do people make friends in Vietnam?",
+            "On what occasions do people like to make friends?",
+            "Is it important to have the same hobbies and interests when making friends?",
+            "What qualities make true friends?"
+          ]
+        }
+      },
+      {
+        "id": 15,
+        "sub_topic": "Describe a person whose health and fitness you have helped to improve",
+        "part_2": {
+          "topic": "Describe a person whose health and fitness you have helped to improve",
+          "cue_card": [
+            "Who this person was",
+            "Why you helped him/her",
+            "How you helped him/her",
+            "And explain whether it was easy or difficult"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Which group pays more attention to health, young people or old people?",
+            "What effect does stress have on health?"
+          ]
+        }
+      },
+      {
+        "id": 16,
+        "sub_topic": "Describe a person who taught you a new skill",
+        "part_2": {
+          "topic": "Describe a person who taught you a new skill",
+          "cue_card": [
+            "Who this person was",
+            "What the skill was",
+            "How you learned it",
+            "And explain how you felt about this person"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why should children learn new skills?",
+            "Where can children learn new skills?",
+            "How can parents and teachers teach children new skills?",
+            "How do adults learn a new skill?",
+            "What are the differences between learning from a teacher and learning by oneself?",
+            "Why is self-discipline important when learning a new skill?"
+          ]
+        }
+      },
+      {
+        "id": 17,
+        "sub_topic": "Describe a person who learns history and loves history",
+        "part_2": {
+          "topic": "Describe a person who learns history and loves history",
+          "cue_card": [
+            "Who this person is",
+            "How he/she learns history",
+            "Why he/she loves history",
+            "And explain how you feel about him/her"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Do you think children should begin learning history from an early age?",
+            "At what age do you think people should begin to learn history?",
+            "How do children learn history before they attend school?",
+            "Is it important to learn how people in the past lived their lives?",
+            "Do you think people should learn ancient history before learning modern history?",
+            "Besides big historical events, what else is important when learning history?"
+          ]
+        }
+      },
+      {
+        "id": 18,
+        "sub_topic": "Describe a person who is good at making things by hand",
+        "part_2": {
+          "topic": "Describe a person who is good at making things by hand",
+          "cue_card": [
+            "Who this person is",
+            "What he/she makes",
+            "What materials or technologies he/she uses",
+            "And why you think this person is good at making things by hand"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Do you think art classes are important for children?",
+            "Why do some children enjoy making things by hand?",
+            "Do children these days still like doing arts and crafts?",
+            "What impact can artistic buildings have on society?",
+            "Is it good to have creative people in a team?",
+            "Does art, like music or theater, have an impact on society?"
+          ]
+        }
+      },
+      {
+        "id": 19,
+        "sub_topic": "Describe a person you know who really likes taking photos",
+        "part_2": {
+          "topic": "Describe a person you know who really likes taking photos",
+          "cue_card": [
+            "Who the person is",
+            "When and how you got to know him/her",
+            "Where he/she takes photos",
+            "And explain how you feel about him/her"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why are some people keen on taking photos?",
+            "What kind of photos do people often take?",
+            "Do you think it's ok to take photos everywhere?",
+            "Why do tourists like taking photos while they are travelling?",
+            "Some people don't mind others walking into their shot when they're taking photos. What do you think?"
+          ]
+        }
+      },
+      {
+        "id": 20,
+        "sub_topic": "Describe a person you know who is very organized",
+        "part_2": {
+          "topic": "Describe a person you know who is very organized",
+          "cue_card": [
+            "Who this person is",
+            "What this person usually does to stay organized",
+            "In what situations you have noticed this quality",
+            "And explain why you think being organized is important to him/her"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why is it important for people to be organized?",
+            "Do you think children should learn to be organized from a young age?",
+            "Are organized people more likely to be successful at work or in their studies?",
+            "What can people do to become more organized?",
+            "Should parents teach their children to be organized?",
+            "Do you think it is important for managers to be well organized?"
+          ]
+        }
+      },
+      {
+        "id": 21,
+        "sub_topic": "Describe a happy person you know",
+        "part_2": {
+          "topic": "Describe a happy person you know",
+          "cue_card": [
+            "Who this person is",
+            "What he/she is like",
+            "How he/she shows happiness",
+            "And explain why you think he/she is a happy person"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Should teachers know what children are doing all the time?",
+            "Do you think teachers are able to spot the unhappy children?",
+            "How can the arts spread positive emotions in society?",
+            "When do you think people are happiest?"
+          ]
+        }
+      },
+      {
+        "id": 22,
+        "sub_topic": "Describe a famous person in your local area",
+        "part_2": {
+          "topic": "Describe a famous person in your local area",
+          "cue_card": [
+            "Who this person is",
+            "What he/she has done",
+            "Why he/she is popular",
+            "And explain how you feel about this person"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Is it always good to be a popular student at school?",
+            "Why are some students popular?"
+          ]
+        }
+      },
+      {
+        "id": 23,
+        "sub_topic": "Describe a person you know who did something difficult and was successful",
+        "part_2": {
+          "topic": "Describe a person you know who did something difficult and was successful",
+          "cue_card": [
+            "Who this person is",
+            "What difficult thing this person did",
+            "Why this person was successful",
+            "And explain how you feel about this person"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Other than making money, what is more important for a company?",
+            "Is it easy to start up a company?",
+            "In which sectors are companies more likely to succeed in Vietnam?",
+            "Is it difficult to do business in today's world?",
+            "How can companies help protect the environment?",
+            "Does money equal success?"
+          ]
+        }
+      },
+      {
+        "id": 24,
+        "sub_topic": "Describe a popular person",
+        "part_2": {
+          "topic": "Describe a popular person",
+          "cue_card": [
+            "Who this person is",
+            "What kind of person he or she is",
+            "When you see him/her normally",
+            "And explain why you think this person is popular"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why are some students popular in school?",
+            "Is it important for a teacher to be popular?",
+            "Do you think good teachers are always popular among students?",
+            "What are the qualities of being a good teacher?",
+            "Is it easier to become popular nowadays?",
+            "Why do people want to be popular?"
+          ]
+        }
+      },
+      {
+        "id": 25,
+        "sub_topic": "Describe someone who is older than you that you admire",
+        "part_2": {
+          "topic": "Describe someone who is older than you that you admire",
+          "cue_card": [
+            "Who this person is",
+            "How you knew this person",
+            "What kinds of things you like to do together",
+            "And explain how you feel about this person"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What can young and old people learn from each other?",
+            "Has old people's life quality improved when compared to the past?",
+            "Why is there a generation gap between the young and the old?",
+            "What do old people usually do in their daily life?"
+          ]
+        }
+      },
+      {
+        "id": 26,
+        "sub_topic": "Describe a person who is good at learning and speaking new languages",
+        "part_2": {
+          "topic": "Describe a person who is good at learning and speaking new languages",
+          "cue_card": [
+            "How you got to know him/her",
+            "How he/she learns a new language",
+            "What languages he/she can speak",
+            "And explain how you feel about him/her"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Are there many people who can speak foreign languages in your country?",
+            "Does speaking other languages help at work?",
+            "Do people learn any languages other than English?",
+            "Why is it easier for children to learn new things than for adults?",
+            "How do people learn new things?"
+          ]
+        }
+      },
+      {
+        "id": 27,
+        "sub_topic": "Describe a person you know who would like to choose a career in the medical field (e.g. a doctor, a nurse)",
+        "part_2": {
+          "topic": "Describe a person you know who would like to choose a career in the medical field (e.g. a doctor, a nurse)",
+          "cue_card": [
+            "When you knew him/her",
+            "When he/she started to think about that",
+            "What he/she would like to do",
+            "And explain why he/she would like to choose this career"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Do you think being a doctor is easy or difficult?",
+            "Do you think learning biology is interesting for children?"
+          ]
+        }
+      },
+      {
+        "id": 28,
+        "sub_topic": "Describe a person you know who has a successful business",
+        "part_2": {
+          "topic": "Describe a person you know who has a successful business",
+          "cue_card": [
+            "Who this person is",
+            "How you got to know him/her",
+            "Why and how he/she started the business",
+            "What business he/she does",
+            "And explain why you think the business is successful"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Why do some people start their own business?",
+            "Should governments provide financial support to start-ups?",
+            "Do most people prefer shopping at big stores or small stores?",
+            "What makes a business successful?",
+            "What makes a business fail?"
+          ]
+        }
+      },
+      {
+        "id": 29,
+        "sub_topic": "Describe a person who loves to grow plants (e.g. vegetables, flowers) at home or in the garden",
+        "part_2": {
+          "topic": "Describe a person who loves to grow plants (e.g. vegetables, flowers) at home or in the garden",
+          "cue_card": [
+            "Who this person is",
+            "What plants he/she grows",
+            "How he/she grows the plants",
+            "And explain why he/she loves growing plants"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "What are the advantages of growing vegetables or flowers at home?",
+            "Do many people grow vegetables or flowers at home in your country?",
+            "Is it easy to grow plants at home?",
+            "Why do some people like to grow plants?",
+            "Why do some people prefer to grow their own fruits and vegetables instead of buying them from the market?"
+          ]
+        }
+      },
+      {
+        "id": 30,
+        "sub_topic": "Describe a friend from your childhood",
+        "part_2": {
+          "topic": "Describe a friend from your childhood",
+          "cue_card": [
+            "Who he/she is",
+            "Where and how you met each other",
+            "What you often did together",
+            "And explain what made you like him/her"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Do you still keep in touch with your friends from childhood? Why or why not?",
+            "How important is childhood friendship to children?",
+            "What do you think of communicating via social media?",
+            "Do you think online communication through social media will replace face-to-face communication?",
+            "What's the difference between having younger friends and older friends?",
+            "Has technology changed people's friendships? How?"
+          ]
+        }
+      },
+      {
+        "id": 31,
+        "sub_topic": "Describe a person who works in a successful company",
+        "part_2": {
+          "topic": "Describe a person who works in a successful company",
+          "cue_card": [
+            "Who he/she is",
+            "What he/she does in the company",
+            "What business the company does",
+            "And explain why you think it is a successful company"
+          ]
+        },
+        "part_3": {
+          "questions": [
+            "Do you think governments should provide financial support to companies?",
+            "Do you think companies should donate money to help society?",
+            "Do you think customer satisfaction is important for a company?"
+          ]
+        }
       }
     ]
   }
